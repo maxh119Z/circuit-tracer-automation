@@ -33,9 +33,15 @@ window.initCgFeatureDetail = async function({visState, renderAll, data, cgSel}){
       return
     }
     
+    if (visState.graphSchemaVersion > 0) {
+      var [layerIdx, featIdx] = util.cantorUnpair(d.featureIndex)
+    } else {
+      var featIdx = d.featureIndex
+    }
+
     var label = d.isTmpFeature ? d.featureId : 
       visState.isHideLayer ? `#F${d.featureIndex}` : 
-      `${utilCg.layerLocationLabel(d.layer, d.probe_location_idx)}/${d.featureIndex}`
+      `${utilCg.layerLocationLabel(d.layer, d.probe_location_idx)}/${featIdx}`
 
     if (d.isError || d.feature_type == 'embedding' || d.feature_type == 'logit'){
       if (d.isError) addLogits(d)

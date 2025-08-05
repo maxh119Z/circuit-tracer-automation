@@ -7,9 +7,8 @@ import torch.nn as nn
 from torch import device
 from transformer_lens import HookedTransformerConfig
 
-from circuit_tracer.attribution import attribute
-from circuit_tracer.replacement_model import ReplacementModel
-from circuit_tracer.transcoder import SingleLayerTranscoder
+from circuit_tracer import attribute, ReplacementModel
+from circuit_tracer.transcoder import SingleLayerTranscoder, TranscoderSet
 from circuit_tracer.transcoder.activation_functions import TopK
 
 sys.path.append(os.path.dirname(__file__))
@@ -27,8 +26,11 @@ def load_dummy_llama_model(cfg: HookedTransformerConfig, k: int):
         for _, param in transcoder.named_parameters():
             nn.init.uniform_(param, a=-1, b=1)
 
-    model = ReplacementModel.from_config(cfg, transcoders)
-    model.tokenizer.bos_token_id = None
+    transcoder_set = TranscoderSet(transcoders, feature_input_hook="mlp.hook_in", feature_output_hook="mlp.hook_out")
+    model = ReplacementModel.from_config(cfg, transcoder_set)
+
+    ids = model.tokenizer.all_special_ids
+    type(model.tokenizer).all_special_ids = property(lambda self: [0] + ids)
     for _, param in model.named_parameters():
         nn.init.uniform_(param, a=-1, b=1)
 
@@ -201,7 +203,7 @@ def verify_llama_3_2_1b(s: str):
 
 
 def test_small_llama_model():
-    s = torch.tensor([10, 3, 4, 3, 2, 5, 3, 8])
+    s = torch.tensor([0, 3, 4, 3, 2, 5, 3, 8])
     verify_small_llama_model(s)
 
 

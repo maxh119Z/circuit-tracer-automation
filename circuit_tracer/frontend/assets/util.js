@@ -38,7 +38,7 @@ window.util = (function () {
     return rv
   })()
   
-  async function getFile(path, useCache = true) {
+  async function getFile(path, useCache = true, fileType = null, range = null) {
     // Cache storage 
     var __datacache = window.__datacache = window.__datacache || {}
 
@@ -57,19 +57,22 @@ window.util = (function () {
     }
     
     // Return cached result if available 
-    if (!useCache || !__datacache[path]) __datacache[path] = __fetch()
-    return __datacache[path]
+    var cacheKey = path + (range ? `-${range}` : '') + (fileType ? `-${fileType}` : '')
+    if (!useCache || !__datacache[cacheKey]) __datacache[cacheKey] = __fetch()
+    return __datacache[cacheKey]
 
     async function __fetch() {
       var cacheOption = useCache ? 'force-cache' : 'no-cache'
-      var res = await fetch(path, {cache: cacheOption})
+      var headers = range ? {'Range': range} : {}
+      var res = await fetch(path, {cache: cacheOption, headers})
+
       if (res.status == 500) {
         var resText = await res.text()
         console.log(resText, res) 
         throw '500 error'
       }
 
-      var type = path.replaceAll('..', '').split('.').at(-1)
+      var type = fileType || path.replaceAll('..', '').split('.').at(-1)
       if (type == 'csv') {
         return d3.csvParse(await res.text())
       } else if (type == 'npy') {
@@ -79,6 +82,15 @@ window.util = (function () {
       } else if (type == 'jsonl') {
         var text = await res.text()
         return text.split(/\r?\n/).filter(d => d).map(line => JSON.parse(line))
+      } else if (type == 'json.gz' || type == 'gz' && path.endsWith('.json.gz')) {
+        var compressedData = await res.arrayBuffer()
+        var decompressed = pako.inflate(new Uint8Array(compressedData), { to: 'string' })
+        return JSON.parse(decompressed)
+      } else if (type == 'bin') {
+        var bytes = new Uint8Array(await res.arrayBuffer())
+        var dataLength = bytes[0] | (bytes[1] << 8) | (bytes[2] << 16) | (bytes[3] << 24)
+        var decompressed = pako.inflate(bytes.slice(4, 4 + dataLength), { to: 'string' })
+        return JSON.parse(decompressed)
       } else {
         return await res.text()
       }
@@ -213,6 +225,14 @@ window.util = (function () {
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
   }
+
+  function cantorUnpair(z) {
+    const w = Math.floor((Math.sqrt(8 * z + 1) - 1) / 2)
+    const t = (w * w + w) / 2
+    const y = z - t
+    const x = w - y
+    return [x, y]
+  }
   
   function cache(fn){
     var cache = {}
@@ -220,107 +240,6 @@ window.util = (function () {
       var key = JSON.stringify(args)
       if (!(key in cache)) cache[key] = fn.apply(this, args)
       return cache[key]
-    }
-  }
-  var featureExamplesTooltipSel
-  var featureExamples 
-  var featureQueue = []
-  function attachFeatureExamplesTooltip(sel, getFeatureParams, getNearby){
-    if (!featureExamplesTooltipSel){
-      featureExamplesTooltipSel = d3.select('body')
-        .selectAppend('div.tooltip.feature-examples-tooltip.tooltip-hidden')
-        .on('mouseover', mousemove)
-        .on('mousemove', mousemove) 
-        .on('mouseleave', mouseout)
-      
-      // Add touch event handler to body
-      d3.select('body').on('click.feature-tooltip', ev => {
-        // Don't trigger if touch is on tooltip or tooltipped element
-        if (ev.target.closest('.feature-examples-tooltip') || ev.target.closest('.feature-examples-tooltipped')) return
-        mouseout()
-      })
-
-      d3.select(window).on('scroll.feature-examples-tooltip', () => {
-        if (featureExamplesTooltipSel.isFading || featureExamplesTooltipSel.isFaded) return
-        mouseout()
-      })
-
-      featureExamplesTooltipSel.append('div.feature-nav')
-      featureExamples = window.initFeatureExamples({
-        containerSel: featureExamplesTooltipSel.append('div'),
-        hideStaleOutputs: true,
-      })
-
-      if (window.__feature_tooltip_queue_timer) __feature_tooltip_queue_timer.stop()
-      window.__feature_tooltip_queue_timer = d3.timer(() => {
-        if (!featureQueue.length) return
-        var feature = featureQueue.pop()
-        featureExamples.loadFeature(feature.scan, feature.featureIndex)
-      }, 250)
-    }
-
-    sel
-      .on('mousemove.feature-examples-tooltip', mousemove)
-      .on('mouseleave.feature-examples-tooltip', mouseout)
-      .on('mouseenter.feature-examples-tooltip', function(ev, d){
-        setTimeout(mousemove, 0)
-        
-        // skip moving if we're just bouncing in and out of the current feature
-        if (featureExamplesTooltipSel.cur == d && !featureExamplesTooltipSel.classed('tooltip-hidden')) return 
-        featureExamplesTooltipSel.cur = d
-        
-        featureExamplesTooltipSel.node().scrollTop = -200
-
-        featureExamplesTooltipSel.isFaded = false
-        featureExamplesTooltipSel.classed('tooltip-hidden', 0)
-
-        // requires either featureIndex or featureIndices
-        var {scan, featureIndex, featureIndices} = getFeatureParams(d)
-        featureIndices = featureIndices ?? [featureIndex]
-        featureIndex = featureIndex ?? featureIndices[0]
-
-        var buttonSel = featureExamplesTooltipSel.select('.feature-nav').html('')
-          .appendMany('div.button', featureIndices)
-          .text((_, i) => 'Feature ' + (i + 1))
-          .classed('active', idx => idx == featureIndex)
-          .on('click', (ev, idx) => {
-            featureExamples.renderFeature(scan, idx)
-            buttonSel.classed('active', idx2 => idx2 == idx)
-          })
-
-        featureExamples.renderFeature(scan, featureIndex)
-
-        d3.selectAll('.feature-examples-tooltipped').classed('feature-examples-tooltipped', 0)
-        d3.select(this).classed('feature-examples-tooltipped', 1)
-
-        var snBB = this.getBoundingClientRect()
-        var ttBB = featureExamplesTooltipSel.node().getBoundingClientRect()
-        var left = d3.clamp(20, (ev.clientX-ttBB.width/2), window.innerWidth - ttBB.width - 20)
-        var top = snBB.top > innerHeight - snBB.bottom ?
-            snBB.top - ttBB.height - 10 :
-            snBB.bottom + 10
-        featureExamplesTooltipSel.st({left, top, pointerEvents: 'all'})
-
-        getNearby?.(d).forEach(e => featureQueue.push(e))
-      })
-
-    function mousemove(){
-      if (window.__ttfade) window.__ttfade.stop()
-      featureExamplesTooltipSel.isFading = false
-      featureExamplesTooltipSel.isFaded = false
-    }
-
-    function mouseout(){
-      if (featureExamplesTooltipSel.isFading) return
-
-      if (window.__ttfade) window.__ttfade.stop()
-      featureExamplesTooltipSel.isFading = true
-      window.__ttfade = d3.timeout(() => {
-        featureExamplesTooltipSel.classed('tooltip-hidden', 1).st({pointerEvents: 'none'})
-        d3.selectAll('.feature-examples-tooltipped').classed('feature-examples-tooltipped', 0)
-        featureExamplesTooltipSel.isFading = false
-        featureExamplesTooltipSel.isFaded = true
-      }, 250)
     }
   }
   
@@ -424,7 +343,7 @@ window.util = (function () {
     attachCgLinkEvents,
     ppToken,
     ppClerp,
-    attachFeatureExamplesTooltip,
+    cantorUnpair,
   }
 })()
 

@@ -7,10 +7,8 @@ from torch import device
 from tqdm import tqdm
 from transformer_lens import HookedTransformerConfig
 
-from circuit_tracer.attribution import attribute
-from circuit_tracer.graph import Graph
-from circuit_tracer.replacement_model import ReplacementModel
-from circuit_tracer.transcoder import SingleLayerTranscoder
+from circuit_tracer import attribute, Graph, ReplacementModel
+from circuit_tracer.transcoder import SingleLayerTranscoder, TranscoderSet
 from circuit_tracer.transcoder.activation_functions import JumpReLU
 
 
@@ -30,7 +28,10 @@ def verify_token_and_error_edges(
     total_active_features = active_features.size(0)
     pos_start = 1 if delete_bos else 0
 
-    _, _, error_vectors, token_vectors = model.setup_attribution(s)
+    ctx = model.setup_attribution(s)
+
+    error_vectors = ctx.error_vectors
+    token_vectors = ctx.token_vectors
 
     logits, activation_cache = model.get_activations(s, apply_activation_function=False)
     logits = logits.squeeze(0)
@@ -182,13 +183,16 @@ def load_dummy_gemma_model(cfg: HookedTransformerConfig):
         for _, param in transcoder.named_parameters():
             nn.init.uniform_(param, a=-1, b=1)
 
-    model = ReplacementModel.from_config(cfg, transcoders)
-    model.tokenizer.bos_token_id = None
+    transcoder_set = TranscoderSet(transcoders, feature_input_hook="mlp.hook_in", feature_output_hook="mlp.hook_out")
+    model = ReplacementModel.from_config(cfg, transcoder_set)
+
+    type(model.tokenizer).all_special_ids = property(lambda self: [0])
+
     for _, param in model.named_parameters():
         nn.init.uniform_(param, a=-1, b=1)
 
-    for i in range(len(transcoders)):
-        nn.init.uniform_(model.transcoders[i].activation_function.threshold, a=0, b=1)
+    for transcoder in model.transcoders:
+        nn.init.uniform_(transcoder.activation_function.threshold, a=0, b=1)
 
     return model
 
@@ -375,7 +379,7 @@ def verify_gemma_2_2b(s: str):
 
 
 def test_small_gemma_model():
-    s = torch.tensor([10, 3, 4, 3, 2, 5, 3, 8])
+    s = torch.tensor([0, 3, 4, 3, 2, 5, 3, 8])
     verify_small_gemma_model(s)
 
 

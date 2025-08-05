@@ -22,10 +22,7 @@ def load_graph_data(file_path) -> Graph:
     return graph
 
 
-scan_to_d_transcoder = {"gemma-2-2b": 2**15, "llama-3-131k-relu": 2**17}
-
-
-def create_nodes(graph: Graph, node_mask, tokenizer, cumulative_scores, scan):
+def create_nodes(graph: Graph, node_mask, tokenizer, cumulative_scores):
     """Create all nodes for the graph."""
     start_time = time.time()
 
@@ -36,11 +33,6 @@ def create_nodes(graph: Graph, node_mask, tokenizer, cumulative_scores, scan):
     error_end_idx = n_features + graph.n_pos * layers
     token_end_idx = error_end_idx + len(graph.input_tokens)
 
-    # we only need to know the d_transcoder if we're using a preset scan covering the
-    # whole transcoder set otherwise, if we're using individual transcoders, we don't
-    # need this info at all.
-    d_transcoder = scan_to_d_transcoder[scan] if isinstance(scan, str) else None
-
     for node_idx in node_mask.nonzero().squeeze().tolist():
         if node_idx in range(n_features):
             layer, pos, feat_idx = graph.active_features[graph.selected_features[node_idx]].tolist()
@@ -48,7 +40,6 @@ def create_nodes(graph: Graph, node_mask, tokenizer, cumulative_scores, scan):
                 layer,
                 pos,
                 feat_idx,
-                num_features=d_transcoder,
                 influence=cumulative_scores[node_idx],
                 activation=graph.activation_values[graph.selected_features[node_idx]].item(),
             )
@@ -189,7 +180,7 @@ def create_graph_files(
     graph.to("cpu")
 
     tokenizer = AutoTokenizer.from_pretrained(graph.cfg.tokenizer_name)
-    nodes = create_nodes(graph, node_mask, tokenizer, cumulative_scores, scan)
+    nodes = create_nodes(graph, node_mask, tokenizer, cumulative_scores)
     used_nodes, used_edges = create_used_nodes_and_edges(graph, nodes, edge_mask)
     model = build_model(graph, used_nodes, used_edges, slug, scan, node_threshold, tokenizer)
 

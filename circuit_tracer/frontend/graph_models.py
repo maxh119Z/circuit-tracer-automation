@@ -1,4 +1,3 @@
-import math
 from typing import List
 
 from pydantic import BaseModel
@@ -11,6 +10,7 @@ class Metadata(BaseModel):
     prompt_tokens: List[str]
     prompt: str
     node_threshold: float | None = None
+    schema_version: int | None = 1
 
 
 class QParams(BaseModel):
@@ -42,13 +42,16 @@ class Node(BaseModel):
         super().__init__(**data)
 
     @classmethod
-    def feature_node(cls, layer, pos, feat_idx, num_features=None, influence=None, activation=None):
+    def feature_node(cls, layer, pos, feat_idx, influence=None, activation=None):
         """Create a feature node."""
-        offset = 10 ** math.ceil(math.log10(num_features)) if num_features is not None else 0
+
+        def cantor_pairing(x, y):
+            return (x + y) * (x + y + 1) // 2 + y
+
         reverse_ctx_idx = 0
         return cls(
             node_id=f"{layer}_{feat_idx}_{pos}",
-            feature=feat_idx + offset * int(layer),
+            feature=cantor_pairing(layer, feat_idx),
             layer=str(layer),
             ctx_idx=pos,
             feature_type="cross layer transcoder",

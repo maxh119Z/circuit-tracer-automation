@@ -1,13 +1,16 @@
 from __future__ import annotations
-import logging
 
-from typing import Dict, Iterable, NamedTuple, Optional, Dict
+import glob
+import logging
+import os
+from typing import Dict, Iterable, NamedTuple, Optional
 from urllib.parse import parse_qs, urlparse
 
-from huggingface_hub import hf_hub_download, get_token, hf_api
+import torch
+import yaml
+from huggingface_hub import get_token, hf_api, hf_hub_download, snapshot_download
 from huggingface_hub.constants import HF_HUB_ENABLE_HF_TRANSFER
 from huggingface_hub.utils.tqdm import tqdm as hf_tqdm
-from huggingface_hub.utils import RepositoryNotFoundError
 from tqdm.contrib.concurrent import thread_map
 
 logger = logging.getLogger(__name__)
@@ -17,8 +20,123 @@ class HfUri(NamedTuple):
     """Structured representation of a HuggingFace URI."""
 
     repo_id: str
-    file_path: str
+    file_path: Optional[str]
     revision: Optional[str]
+
+    @classmethod
+    def from_str(cls, hf_ref: str):
+        if hf_ref.startswith("hf://"):
+            return parse_hf_uri(hf_ref)
+
+        parts = hf_ref.split("@", 1)
+        repo_id = parts[0]
+        revision = parts[1] if len(parts) > 1 else None
+        return cls(repo_id, None, revision)
+
+
+def load_transcoder_from_hub(
+    hf_ref: str,
+    device: Optional[torch.device] = None,
+    dtype: Optional[torch.dtype] = torch.float32,
+    lazy_encoder: bool = False,
+    lazy_decoder: bool = True,
+):
+    """Load a transcoder from a HuggingFace URI."""
+
+    # resolve legacy references
+    if hf_ref == "gemma":
+        hf_ref = "mntss/gemma-scope-transcoders"
+    elif hf_ref == "llama":
+        hf_ref = "mntss/transcoder-Llama-3.2-1B"
+
+    hf_ref = HfUri.from_str(hf_ref)
+    try:
+        config_path = hf_hub_download(
+            repo_id=hf_ref.repo_id,
+            revision=hf_ref.revision,
+            filename="config.yaml",
+        )
+    except Exception as e:
+        raise FileNotFoundError(f"Could not download config.yaml from {hf_ref.repo_id}") from e
+
+    with open(config_path, "r") as f:
+        config = yaml.safe_load(f)
+
+    config["repo_id"] = hf_ref.repo_id
+    config["revision"] = hf_ref.revision
+    config["scan"] = f"{hf_ref.repo_id}@{hf_ref.revision}" if hf_ref.revision else hf_ref.repo_id
+
+    return load_transcoders(config, device, dtype, lazy_encoder, lazy_decoder), config
+
+
+def load_transcoders(
+    config: dict,
+    device: Optional[torch.device] = None,
+    dtype: Optional[torch.dtype] = torch.float32,
+    lazy_encoder: bool = False,
+    lazy_decoder: bool = True,
+):
+    """Load a transcoder from a HuggingFace URI."""
+
+    model_kind = config["model_kind"]
+    if model_kind == "transcoder_set":
+        from circuit_tracer.transcoder.single_layer_transcoder import load_transcoder_set
+
+        transcoder_paths = resolve_transcoder_paths(config)
+        is_gemma_scope = "gemma-scope" in config.get("repo_id", "")
+
+        return load_transcoder_set(
+            transcoder_paths,
+            scan=config["scan"],
+            feature_input_hook=config["feature_input_hook"],
+            feature_output_hook=config["feature_output_hook"],
+            gemma_scope=is_gemma_scope,
+            dtype=dtype,
+            device=device,
+            lazy_encoder=lazy_encoder,
+            lazy_decoder=lazy_decoder,
+        )
+    elif model_kind == "cross_layer_transcoder":
+        from circuit_tracer.transcoder.cross_layer_transcoder import load_clt
+
+        local_path = snapshot_download(
+            config["repo_id"],
+            revision=config.get("revision", "main"),
+            allow_patterns=["*.safetensors"],
+        )
+
+        return load_clt(
+            local_path,
+            scan=config["scan"],
+            feature_input_hook=config["feature_input_hook"],
+            feature_output_hook=config["feature_output_hook"],
+            lazy_decoder=lazy_decoder,
+            lazy_encoder=lazy_encoder,
+            dtype=dtype,
+            device=device,
+        )
+    else:
+        raise ValueError(f"Unknown model kind: {model_kind}")
+
+
+def resolve_transcoder_paths(config: dict) -> dict:
+    if "transcoders" in config:
+        hf_paths = [path for path in config["transcoders"] if path.startswith("hf://")]
+        local_map = download_hf_uris(hf_paths)
+        transcoder_paths = {
+            i: local_map.get(path, path) for i, path in enumerate(config["transcoders"])
+        }
+    else:
+        local_path = snapshot_download(
+            config["repo_id"],
+            revision=config.get("revision", "main"),
+            allow_patterns=["layer_*.safetensors"],
+        )
+        layer_files = glob.glob(os.path.join(local_path, "layer_*.safetensors"))
+        transcoder_paths = {
+            i: os.path.join(local_path, f"layer_{i}.safetensors") for i in range(len(layer_files))
+        }
+    return transcoder_paths
 
 
 def parse_hf_uri(uri: str) -> HfUri:
@@ -53,6 +171,7 @@ def download_hf_uri(uri: str) -> str:
         force_download=False,
     )
 
+
 def download_hf_uris(uris: Iterable[str], max_workers: int = 8) -> Dict[str, str]:
     """Download multiple HuggingFace URIs concurrently with pre-flight auth checks.
 
@@ -77,7 +196,7 @@ def download_hf_uris(uris: Iterable[str], max_workers: int = 8) -> Dict[str, str
     token = get_token()
 
     for repo_id in unique_repos:
-        if hf_api.repo_info(repo_id=repo_id, token=token).gated != False:
+        if hf_api.repo_info(repo_id=repo_id, token=token).gated is not False:
             if token is None:
                 raise PermissionError("Cannot access a gated repo without a hf token.")
 

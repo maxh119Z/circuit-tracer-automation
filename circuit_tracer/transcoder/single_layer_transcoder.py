@@ -1,31 +1,37 @@
 import os
-from collections import namedtuple
-from importlib import resources
-from typing import Callable, Optional
+from typing import Dict, List, Optional, Union
 
 import numpy as np
 import torch
 import torch.nn.functional as F
-import yaml
 from huggingface_hub import hf_hub_download
-from safetensors.torch import load_file
+from safetensors import safe_open
 from torch import nn
 
-import circuit_tracer
 from circuit_tracer.transcoder.activation_functions import JumpReLU
-from circuit_tracer.utils.hf_utils import download_hf_uris, parse_hf_uri
+from circuit_tracer.utils import get_default_device
 
 
 class SingleLayerTranscoder(nn.Module):
-    d_model: int
-    d_transcoder: int
-    layer_idx: int
-    W_enc: nn.Parameter
-    W_dec: nn.Parameter
-    b_enc: nn.Parameter
-    b_dec: nn.Parameter
-    W_skip: Optional[nn.Parameter]
-    activation_function: Callable[[torch.Tensor], torch.Tensor]
+    """
+    A per-layer transcoder (PLT) that replaces MLP computation with interpretable features.
+
+    Per-layer transcoders decompose the output of a single MLP layer into sparsely active
+    features that often correspond to interpretable concepts. Unlike cross-layer transcoders,
+    each PLT operates independently on its assigned layer, which can result in longer paths
+    through attribution graphs when features amplify across multiple layers.
+
+    Attributes:
+        d_model: Dimension of the transformer's residual stream
+        d_transcoder: Number of learned features (typically >> d_model for superposition)
+        layer_idx: Which transformer layer this transcoder replaces
+        W_enc: Encoder weights mapping residual stream to feature space
+        W_dec: Decoder weights mapping features back to residual stream
+        b_enc: Encoder bias terms
+        b_dec: Decoder bias terms (reconstruction baseline)
+        W_skip: Optional skip connection weights (https://arxiv.org/abs/2501.18823)
+        activation_function: Sparsity-inducing nonlinearity (e.g., ReLU, JumpReLU)
+    """
 
     def __init__(
         self,
@@ -34,51 +40,86 @@ class SingleLayerTranscoder(nn.Module):
         activation_function,
         layer_idx: int,
         skip_connection: bool = False,
+        transcoder_path: Optional[str] = None,
+        lazy_encoder: bool = False,
+        lazy_decoder: bool = False,
+        device: Optional[torch.device] = None,
+        dtype: torch.dtype = torch.bfloat16,
     ):
-        """Single layer transcoder implementation, adapted from the JumpReLUSAE implementation here:
-        https://colab.research.google.com/drive/17dQFYUYnuKnP6OwQPH9v_GSYUW5aj-Rp
-
-        Args:
-            d_model (int): The dimension of the model.
-            d_transcoder (int): The dimension of the transcoder.
-            activation_function (nn.Module): The activation function.
-            layer_idx (int): The layer index.
-            skip_connection (bool): Whether there is a skip connection,
-                as in https://arxiv.org/abs/2501.18823
-        """
         super().__init__()
+
+        if device is None:
+            device = get_default_device()
 
         self.d_model = d_model
         self.d_transcoder = d_transcoder
         self.layer_idx = layer_idx
+        self.transcoder_path = transcoder_path
+        self.lazy_encoder = lazy_encoder
+        self.lazy_decoder = lazy_decoder
 
-        self.W_enc = nn.Parameter(torch.zeros(d_model, d_transcoder))
-        self.W_dec = nn.Parameter(torch.zeros(d_transcoder, d_model))
-        self.b_enc = nn.Parameter(torch.zeros(d_transcoder))
-        self.b_dec = nn.Parameter(torch.zeros(d_model))
+        if lazy_encoder or lazy_decoder:
+            assert self.transcoder_path is not None, "Transcoder path must be set for lazy loading"
+
+        if not lazy_encoder:
+            self.W_enc = nn.Parameter(
+                torch.zeros(d_transcoder, d_model, device=device, dtype=dtype)
+            )
+
+        if not lazy_decoder:
+            self.W_dec = nn.Parameter(
+                torch.zeros(d_transcoder, d_model, device=device, dtype=dtype)
+            )
+
+        self.b_enc = nn.Parameter(torch.zeros(d_transcoder, device=device, dtype=dtype))
+        self.b_dec = nn.Parameter(torch.zeros(d_model, device=device, dtype=dtype))
 
         if skip_connection:
-            self.W_skip = nn.Parameter(torch.zeros(d_model, d_model))
+            self.W_skip = nn.Parameter(torch.zeros(d_model, d_model, device=device, dtype=dtype))
         else:
             self.W_skip = None
 
         self.activation_function = activation_function
 
+    @property
+    def device(self):
+        """Get the device of the module's parameters."""
+        return next(self.parameters()).device
+
+    @property
+    def dtype(self):
+        """Get the dtype of the module's parameters."""
+        return self.b_enc.dtype
+
+    def __getattr__(self, name):
+        """Dynamically load weights when accessed if lazy loading is enabled."""
+        if name == "W_enc" and self.lazy_encoder and self.transcoder_path is not None:
+            with safe_open(self.transcoder_path, framework="pt", device=self.device.type) as f:
+                return f.get_tensor("W_enc").to(self.dtype)
+        elif name == "W_dec" and self.lazy_decoder and self.transcoder_path is not None:
+            with safe_open(self.transcoder_path, framework="pt", device=self.device.type) as f:
+                return f.get_tensor("W_dec").to(self.dtype)
+
+        return super().__getattr__(name)
+
+    def _get_decoder_vectors(self, feat_ids=None):
+        to_read = feat_ids if feat_ids is not None else np.s_[:]
+        if not self.lazy_decoder:
+            return self.W_dec[to_read].to(self.dtype)
+
+        with safe_open(self.transcoder_path, framework="pt", device=self.device.type) as f:
+            return f.get_slice("W_dec")[to_read].to(self.dtype)
+
     def encode(self, input_acts, apply_activation_function: bool = True):
-        pre_acts = input_acts.to(self.W_enc.dtype) @ self.W_enc + self.b_enc
+        W_enc = self.W_enc
+        pre_acts = F.linear(input_acts.to(W_enc.dtype), W_enc, self.b_enc)
         if not apply_activation_function:
             return pre_acts
-        acts = self.activation_function(pre_acts)
-        return acts
+        return self.activation_function(pre_acts)
 
     def decode(self, acts):
-        if acts.is_sparse:
-            return (
-                torch.bmm(acts, self.W_dec.unsqueeze(0).expand(acts.size(0), *self.W_dec.size()))
-                + self.b_dec
-            )
-        else:
-            return acts @ self.W_dec + self.b_dec
+        W_dec = self.W_dec
+        return acts @ W_dec + self.b_dec
 
     def compute_skip(self, input_acts):
         if self.W_skip is not None:
@@ -98,14 +139,174 @@ class SingleLayerTranscoder(nn.Module):
 
         return decoded
 
+    def encode_sparse(self, input_acts, zero_first_pos: bool = True):
+        """Encode and return sparse activations with active encoder vectors.
+
+        Args:
+            input_acts: Input activations
+            zero_first_pos: Whether to zero out position 0
+
+        Returns:
+            sparse_acts: Sparse tensor of activations
+            active_encoders: Encoder vectors for active features only
+        """
+        W_enc = self.W_enc
+        pre_acts = F.linear(input_acts.to(W_enc.dtype), W_enc, self.b_enc)
+        acts = self.activation_function(pre_acts)
+
+        if zero_first_pos:
+            acts[0] = 0
+
+        sparse_acts = acts.to_sparse()
+        _, feat_idx = sparse_acts.indices()
+        active_encoders = W_enc[feat_idx]
+
+        return sparse_acts, active_encoders
+
+    def decode_sparse(self, sparse_acts):
+        """Decode sparse activations and return reconstruction with scaled decoder vectors.
+
+        Returns:
+            reconstruction: Decoded output
+            scaled_decoders: Decoder vectors scaled by activation values
+        """
+        pos_idx, feat_idx = sparse_acts.indices()
+        values = sparse_acts.values()
+
+        # Get decoder vectors for active features only
+        W_dec = self._get_decoder_vectors(feat_idx.cpu())
+        scaled_decoders = W_dec * values[:, None]
+
+        # Reconstruct using index_add
+        n_pos = sparse_acts.shape[0]
+        reconstruction = torch.zeros(
+            n_pos, self.d_model, device=sparse_acts.device, dtype=sparse_acts.dtype
+        )
+        reconstruction = reconstruction.index_add_(0, pos_idx, scaled_decoders)
+        reconstruction = reconstruction + self.b_dec
+
+        return reconstruction, scaled_decoders
+
+
+class TranscoderSet(nn.Module):
+    """
+    A collection of per-layer transcoders that enable construction of a replacement model.
+
+    TranscoderSet manages the collection of SingleLayerTranscoders needed for this substitution,
+    where each transcoder replaces the MLP computation at its corresponding layer.
+
+    Attributes:
+        transcoders: ModuleList of SingleLayerTranscoder instances, one per layer
+        n_layers: Total number of layers covered
+        d_transcoder: Common feature dimension across all transcoders
+        feature_input_hook: Hook point where features read from (e.g., "hook_resid_mid")
+        feature_output_hook: Hook point where features write to (e.g., "hook_mlp_out")
+        scan: Optional identifier to identify corresponding feature visualization
+        skip_connection: Whether transcoders include learned skip connections
+    """
+
+    def __init__(
+        self,
+        transcoders: Dict[int, SingleLayerTranscoder],
+        feature_input_hook: str,
+        feature_output_hook: str,
+        scan: Optional[Union[str, List[str]]] = None,
+    ):
+        super().__init__()
+        # Validate that we have continuous layers from 0 to max
+        assert set(transcoders.keys()) == set(range(max(transcoders.keys()) + 1)), (
+            f"Each layer should have a transcoder, but got transcoders for layers "
+            f"{set(transcoders.keys())}"
+        )
+
+        self.transcoders = nn.ModuleList([transcoders[i] for i in range(len(transcoders))])
+        self.n_layers = len(self.transcoders)
+        self.d_transcoder = self.transcoders[0].d_transcoder
+
+        # Verify all transcoders have the same d_transcoder
+        for transcoder in self.transcoders:
+            assert transcoder.d_transcoder == self.d_transcoder, (
+                f"All transcoders must have the same d_transcoder, but got "
+                f"{transcoder.d_transcoder} != {self.d_transcoder}"
+            )
+
+        # Store hook configuration
+        self.feature_input_hook = feature_input_hook
+        self.feature_output_hook = feature_output_hook
+        self.scan = scan
+        self.skip_connection = self.transcoders[0].W_skip is not None
+
+    def __len__(self):
+        return self.n_layers
+
+    def __getitem__(self, idx):
+        return self.transcoders[idx]
+
+    def encode(self, input_acts):
+        return torch.stack([transcoder.encode(input_acts[i]) for i, transcoder in enumerate(self.transcoders)], dim=0)
+
+    def decode(self, acts):
+        return torch.stack([transcoder.decode(acts[i]) for i, transcoder in enumerate(self.transcoders)], dim=0)
+
+    def compute_attribution_components(
+        self,
+        mlp_inputs: torch.Tensor,
+    ) -> Dict[str, torch.Tensor]:
+        """Extract active features and their encoder/decoder vectors for attribution.
+
+        Args:
+            mlp_inputs: (n_layers, n_pos, d_model) tensor of MLP inputs
+
+        Returns:
+            Dict containing all components needed for AttributionContext:
+                - activation_matrix: Sparse (n_layers, n_pos, d_transcoder) activations
+                - reconstruction: (n_layers, n_pos, d_model) reconstructed outputs
+                - encoder_vecs: Concatenated encoder vectors for active features
+                - decoder_vecs: Concatenated decoder vectors (scaled by activations)
+                - encoder_to_decoder_map: Mapping from encoder to decoder indices
+        """
+        device = mlp_inputs.device
+
+        reconstruction = torch.zeros_like(mlp_inputs)
+        encoder_vectors = []
+        decoder_vectors = []
+        sparse_acts_list = []
+
+        for layer, transcoder in enumerate(self.transcoders):
+            sparse_acts, active_encoders = transcoder.encode_sparse(
+                mlp_inputs[layer], zero_first_pos=True
+            )
+            reconstruction[layer], active_decoders = transcoder.decode_sparse(sparse_acts)
+            encoder_vectors.append(active_encoders)
+            decoder_vectors.append(active_decoders)
+            sparse_acts_list.append(sparse_acts)
+
+        activation_matrix = torch.stack(sparse_acts_list).coalesce()
+        encoder_to_decoder_map = torch.arange(activation_matrix._nnz(), device=device)
+
+        return {
+            "activation_matrix": activation_matrix,
+            "reconstruction": reconstruction,
+            "encoder_vecs": torch.cat(encoder_vectors, dim=0),
+            "decoder_vecs": torch.cat(decoder_vectors, dim=0),
+            "encoder_to_decoder_map": encoder_to_decoder_map,
+            "decoder_locations": activation_matrix.indices()[:2],
+        }
+
+    def encode_layer(self, x, layer_id):
+        return self.transcoders[layer_id].encode(x)
+
 
 def load_gemma_scope_transcoder(
     path: str,
     layer: int,
-    device: Optional[torch.device] = torch.device("cuda"),
+    device: Optional[torch.device] = None,
     dtype: Optional[torch.dtype] = torch.float32,
     revision: Optional[str] = None,
+    **kwargs,
 ) -> SingleLayerTranscoder:
+    if device is None:
+        device = get_default_device()
     if os.path.isfile(path):
         path_to_params = path
     else:
@@ -121,11 +322,13 @@ def load_gemma_scope_transcoder(
     param_dict = np.load(path_to_params)
     param_dict = {k: torch.tensor(v, device=device, dtype=dtype) for k, v in param_dict.items()}
     param_dict["activation_function.threshold"] = param_dict["threshold"]
+    param_dict["W_enc"] = param_dict["W_enc"].T.contiguous()
     del param_dict["threshold"]
 
     # create the transcoders
-    d_model = param_dict["W_enc"].shape[0]
-    d_transcoder = param_dict["W_enc"].shape[1]
+    # d_model = param_dict["W_enc"].shape[0]
+    # d_transcoder = param_dict["W_enc"].shape[1]
+    d_transcoder, d_model = param_dict["W_enc"].shape
 
     # dummy JumpReLU; will get loaded via load_state_dict
     activation_function = JumpReLU(0.0, 0.1)
@@ -138,15 +341,25 @@ def load_gemma_scope_transcoder(
 def load_relu_transcoder(
     path: str,
     layer: int,
-    device: torch.device = torch.device("cuda"),
+    device: Optional[torch.device] = None,
     dtype: Optional[torch.dtype] = torch.float32,
+    lazy_encoder: bool = True,
+    lazy_decoder: bool = True,
 ):
-    param_dict = load_file(path, device=device.type)
-    W_enc = param_dict["W_enc"]
-    d_sae, d_model = W_enc.shape
+    if device is None:
+        device = get_default_device()
 
-    param_dict["W_enc"] = param_dict["W_enc"].T.contiguous()
-    param_dict["W_dec"] = param_dict["W_dec"].T.contiguous()
+    param_dict = {}
+    with safe_open(path, framework="pt", device=device.type) as f:
+        for k in f.keys():
+            if lazy_encoder and k == "W_enc":
+                continue
+            if lazy_decoder and k == "W_dec":
+                continue
+            param_dict[k] = f.get_tensor(k)
+
+    d_sae = param_dict["b_enc"].shape[0]
+    d_model = param_dict["b_dec"].shape[0]
 
     assert param_dict.get("log_thresholds") is None
     activation_function = F.relu
@@ -156,89 +369,65 @@ def load_relu_transcoder(
             d_sae,
             activation_function,
             layer,
-            skip_connection=param_dict["W_skip"] is not None,
+            skip_connection=param_dict.get("W_skip") is not None,
+            transcoder_path=path,
+            lazy_encoder=lazy_encoder,
+            lazy_decoder=lazy_decoder,
         )
     transcoder.load_state_dict(param_dict, assign=True)
     return transcoder.to(dtype)
 
 
-TranscoderSettings = namedtuple(
-    "TranscoderSettings", ["transcoders", "feature_input_hook", "feature_output_hook", "scan"]
-)
-
-
 def load_transcoder_set(
-    transcoder_config_file: str,
-    device: Optional[torch.device] = torch.device("cuda"),
+    transcoder_paths: dict,
+    scan: str,
+    feature_input_hook: str,
+    feature_output_hook: str,
+    device: Optional[torch.device] = None,
     dtype: Optional[torch.dtype] = torch.float32,
-) -> TranscoderSettings:
-    """Loads either a preset set of transformers, or a set specified by a file.
+    gemma_scope: bool = False,
+    lazy_encoder: bool = True,
+    lazy_decoder: bool = True,
+) -> TranscoderSet:
+    if device is None:
+        device = get_default_device()
+    """Loads either a preset set of transcoders, or a set specified by a file.
 
     Args:
-        transcoder_config_file (str): _description_
-        device (Optional[torch.device], optional): _description_. Defaults to torch.device('cuda').
+        transcoder_paths: Dictionary mapping layer indices to transcoder paths
+        scan: Scan identifier
+        feature_input_hook: Hook point where features read from
+        feature_output_hook: Hook point where features write to
+        device (Optional[torch.device], optional): Device to load to
+        dtype (Optional[torch.dtype], optional): Data type to use
+        gemma_scope: Whether to use gemma scope loader
+        lazy_encoder: Whether to use lazy loading for encoder weights
+        lazy_decoder: Whether to use lazy loading for decoder weights
 
     Returns:
-        TranscoderSettings: A namedtuple consisting of the transcoder dict,
-        and their feature input hook, feature output hook and associated scan.
+        TranscoderSet: The loaded transcoder set with all configuration
     """
 
-    scan = None
-    # try to match a preset, and grab its config
-    if transcoder_config_file == "gemma":
-        package_path = resources.files(circuit_tracer)
-        transcoder_config_file = package_path / "configs/gemmascope-l0-0.yaml"
-        scan = "gemma-2-2b"
-    elif transcoder_config_file == "llama":
-        package_path = resources.files(circuit_tracer)
-        transcoder_config_file = package_path / "configs/llama-relu.yaml"
-        scan = "llama-3-131k-relu"
-
-    with open(transcoder_config_file, "r") as file:
-        config = yaml.safe_load(file)
-
-    sorted_transcoder_configs = sorted(config["transcoders"], key=lambda x: x["layer"])
-    if scan is None:
-        # the scan defaults to a list of transcoder ids, preceded by the model's name
-        model_name_no_slash = config["model_name"].split("/")[-1]
-        scan = [
-            f"{model_name_no_slash}/{transcoder_config['id']}"
-            for transcoder_config in sorted_transcoder_configs
-        ]
-
-    hf_paths = [
-        t["filepath"] for t in sorted_transcoder_configs if t["filepath"].startswith("hf://")
-    ]
-    local_map = download_hf_uris(hf_paths)
-
     transcoders = {}
-    for transcoder_config in sorted_transcoder_configs:
-        path = transcoder_config["filepath"]
-        if path.startswith("hf://"):
-            local_path = local_map[path]
-            repo_id = parse_hf_uri(path).repo_id
-            if "gemma-scope" in repo_id:
-                transcoder = load_gemma_scope_transcoder(
-                    local_path, transcoder_config["layer"], device=device, dtype=dtype
-                )
-            else:
-                transcoder = load_relu_transcoder(
-                    local_path, transcoder_config["layer"], device=device, dtype=dtype
-                )
-        else:
-            transcoder = load_relu_transcoder(
-                path, transcoder_config["layer"], device=device, dtype=dtype
-            )
-        assert transcoder.layer_idx not in transcoders, (
-            f"Got multiple transcoders for layer {transcoder.layer_idx}"
+    load_fn = load_gemma_scope_transcoder if gemma_scope else load_relu_transcoder
+    for layer in range(len(transcoder_paths)):
+        transcoders[layer] = load_fn(
+            transcoder_paths[layer],
+            layer,
+            device=device,
+            dtype=dtype,
+            lazy_encoder=lazy_encoder,
+            lazy_decoder=lazy_decoder,
         )
-        transcoders[transcoder.layer_idx] = transcoder
-
     # we don't know how many layers the model has, but we need all layers from 0 to max covered
     assert set(transcoders.keys()) == set(range(max(transcoders.keys()) + 1)), (
         f"Each layer should have a transcoder, but got transcoders for layers "
         f"{set(transcoders.keys())}"
     )
-    feature_input_hook = config["feature_input_hook"]
-    feature_output_hook = config["feature_output_hook"]
-    return TranscoderSettings(transcoders, feature_input_hook, feature_output_hook, scan)
+
+    return TranscoderSet(
+        transcoders,
+        feature_input_hook=feature_input_hook,
+        feature_output_hook=feature_output_hook,
+        scan=scan,
+    )

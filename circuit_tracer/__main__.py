@@ -26,16 +26,16 @@ def main():
         "-m",
         "--model",
         type=str,
-        help=(
-            "Model architecture to use for attribution. Will be inferred if using "
-            "'gemma' or 'llama' preset."
-        ),
+        help=("Model architecture to use for attribution. Can be inferred from transcoder config."),
     )
     attr_parser.add_argument(
         "-t",
         "--transcoder_set",
         required=True,
-        help="Transcoders to use for attribution. Presets: [gemma, llama]. Or path to config file.",
+        help=(
+            "HuggingFace repository ID containing transcoders "
+            "(e.g. username/repo-name, username/repo-name@revision)."
+        ),
     )
     attr_parser.add_argument("-p", "--prompt", required=True, help="Input prompt text to analyze.")
     attr_parser.add_argument(
@@ -78,6 +78,17 @@ def main():
         help="Maximum number of feature nodes.",
     )
     attr_parser.add_argument("--verbose", action="store_true", help="Display progress information.")
+    attr_parser.add_argument(
+        "--lazy-encoder",
+        action="store_true",
+        help="Enable lazy loading for encoder weights to save memory.",
+    )
+    attr_parser.add_argument(
+        "--lazy-decoder",
+        action="store_true",
+        default=True,
+        help="Enable lazy loading for decoder weights to save memory (default: True).",
+    )
 
     # Arguments for graph creation
     attr_parser.add_argument(
@@ -165,15 +176,6 @@ def run_attribution(args, parser):
             )
         )
 
-    # Infer model from transcoder_set if using presets
-    if not args.model:
-        if args.transcoder_set == "gemma":
-            args.model = "google/gemma-2-2b"
-        elif args.transcoder_set == "llama":
-            args.model = "meta-llama/Llama-3.2-1B"
-        else:
-            parser.error("--model must be specified when not using 'gemma' or 'llama' presets")
-
     # Ensure graph output directory exists if needed
     if create_graph_files_enabled:
         os.makedirs(args.graph_file_dir, exist_ok=True)
@@ -205,11 +207,23 @@ def run_attribution(args, parser):
     )
     logging.info(f"Using batch size of {args.batch_size} for backward passes")
 
-    from circuit_tracer.attribution import attribute
-    from circuit_tracer.replacement_model import ReplacementModel
+    from circuit_tracer import ReplacementModel, attribute
     from circuit_tracer.utils.create_graph_files import create_graph_files
+    from circuit_tracer.utils.hf_utils import load_transcoder_from_hub
 
-    model_instance = ReplacementModel.from_pretrained(args.model, args.transcoder_set, dtype=dtype)
+    transcoder, config = load_transcoder_from_hub(
+        args.transcoder_set,
+        dtype=dtype,
+        lazy_encoder=args.lazy_encoder,
+        lazy_decoder=args.lazy_decoder,
+    )
+    args.model = args.model or config.get("model_name", None)
+    if not args.model:
+        parser.error("--model must be specified when not provided in transcoder config")
+
+    model_instance = ReplacementModel.from_pretrained_and_transcoders(
+        args.model, transcoder, dtype=dtype
+    )
 
     logging.info("Running attribution...")
     graph = attribute(
