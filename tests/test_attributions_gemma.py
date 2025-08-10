@@ -1,15 +1,16 @@
 from functools import partial
 
 import numpy as np
+import pytest
 import torch
 import torch.nn as nn
-from torch import device
 from tqdm import tqdm
 from transformer_lens import HookedTransformerConfig
 
-from circuit_tracer import attribute, Graph, ReplacementModel
+from circuit_tracer import Graph, ReplacementModel, attribute
 from circuit_tracer.transcoder import SingleLayerTranscoder, TranscoderSet
 from circuit_tracer.transcoder.activation_functions import JumpReLU
+from circuit_tracer.utils import get_default_device
 
 
 def verify_token_and_error_edges(
@@ -22,9 +23,9 @@ def verify_token_and_error_edges(
     logit_rtol=1e-3,
 ):
     s = graph.input_tokens
-    adjacency_matrix = graph.adjacency_matrix.cuda()
-    active_features = graph.active_features.cuda()
-    logit_tokens = graph.logit_tokens.cuda()
+    adjacency_matrix = graph.adjacency_matrix.to(get_default_device())
+    active_features = graph.active_features.to(get_default_device())
+    logit_tokens = graph.logit_tokens.to(get_default_device())
     total_active_features = active_features.size(0)
     pos_start = 1 if delete_bos else 0
 
@@ -115,9 +116,9 @@ def verify_feature_edges(
     logit_rtol=1e-3,
 ):
     s = graph.input_tokens
-    adjacency_matrix = graph.adjacency_matrix.cuda()
-    active_features = graph.active_features.cuda()
-    logit_tokens = graph.logit_tokens.cuda()
+    adjacency_matrix = graph.adjacency_matrix.to(get_default_device())
+    active_features = graph.active_features.to(get_default_device())
+    logit_tokens = graph.logit_tokens.to(get_default_device())
     total_active_features = active_features.size(0)
 
     logits, activation_cache = model.get_activations(s, apply_activation_function=False)
@@ -165,7 +166,7 @@ def verify_feature_edges(
     random_order = torch.randperm(active_features.size(0))
     chosen_nodes = random_order[:n_samples]
     for chosen_node in tqdm(chosen_nodes):
-        layer, pos, feature_idx = active_features[chosen_node]
+        layer, pos, feature_idx = active_features[chosen_node].tolist()
         old_activation = activation_cache[layer, pos, feature_idx]
         new_activation = old_activation * 2
         expected_effects = adjacency_matrix[:, chosen_node]
@@ -175,7 +176,7 @@ def verify_feature_edges(
 def load_dummy_gemma_model(cfg: HookedTransformerConfig):
     transcoders = {
         layer_idx: SingleLayerTranscoder(
-            cfg.d_model, cfg.d_model * 4, JumpReLU(0.0, 0.1), layer_idx
+            cfg.d_model, cfg.d_model * 4, JumpReLU(torch.tensor(0.0), 0.1), layer_idx
         )
         for layer_idx in range(cfg.n_layers)
     }
@@ -183,15 +184,19 @@ def load_dummy_gemma_model(cfg: HookedTransformerConfig):
         for _, param in transcoder.named_parameters():
             nn.init.uniform_(param, a=-1, b=1)
 
-    transcoder_set = TranscoderSet(transcoders, feature_input_hook="mlp.hook_in", feature_output_hook="mlp.hook_out")
+    transcoder_set = TranscoderSet(
+        transcoders, feature_input_hook="mlp.hook_in", feature_output_hook="mlp.hook_out"
+    )
     model = ReplacementModel.from_config(cfg, transcoder_set)
 
-    type(model.tokenizer).all_special_ids = property(lambda self: [0])
+    type(model.tokenizer).all_special_ids = property(lambda self: [0])  # type: ignore
 
     for _, param in model.named_parameters():
         nn.init.uniform_(param, a=-1, b=1)
 
+    assert isinstance(model.transcoders, TranscoderSet)
     for transcoder in model.transcoders:
+        assert isinstance(transcoder.activation_function, JumpReLU)
         nn.init.uniform_(transcoder.activation_function.threshold, a=0, b=1)
 
     return model
@@ -222,12 +227,12 @@ def verify_small_gemma_model(s: torch.Tensor):
         "checkpoint_index": None,
         "checkpoint_label_type": None,
         "checkpoint_value": None,
-        "tokenizer_name": "google/gemma-2-2b",
+        "tokenizer_name": "gpt2",  # using wrong tokenizer to avoid gated repos
         "window_size": 4096,
         "attn_types": ["global", "local"],
         "init_mode": "gpt2",
         "normalization_type": "RMSPre",
-        "device": device(type="cuda"),
+        "device": get_default_device(),
         "n_devices": 1,
         "attention_dir": "causal",
         "attn_only": False,
@@ -299,7 +304,7 @@ def verify_large_gemma_model(s: torch.Tensor):
         "checkpoint_index": None,
         "checkpoint_label_type": None,
         "checkpoint_value": None,
-        "tokenizer_name": "google/gemma-2-2b",
+        "tokenizer_name": "gpt2",  # using wrong tokenizer to avoid gated repos
         "window_size": 4096,
         "attn_types": [
             "global",
@@ -321,7 +326,7 @@ def verify_large_gemma_model(s: torch.Tensor):
         ],
         "init_mode": "gpt2",
         "normalization_type": "RMSPre",
-        "device": device(type="cuda"),
+        "device": get_default_device(),
         "n_devices": 1,
         "attention_dir": "causal",
         "attn_only": False,
@@ -388,13 +393,7 @@ def test_large_gemma_model():
     verify_large_gemma_model(s)
 
 
+@pytest.mark.skipif(not torch.cuda.is_available(), reason="CUDA not available")
 def test_gemma_2_2b():
     s = "The National Digital Analytics Group (ND"
     verify_gemma_2_2b(s)
-
-
-if __name__ == "__main__":
-    torch.manual_seed(42)
-    test_small_gemma_model()
-    test_large_gemma_model()
-    test_gemma_2_2b()

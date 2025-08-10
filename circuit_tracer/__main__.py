@@ -170,10 +170,8 @@ def run_attribution(args, parser):
 
     if not create_graph_files_enabled and not args.graph_output_path:
         parser.error(
-            (
-                "--graph_output_path is required when not creating graph files "
-                "(--slug and --graph_file_dir)"
-            )
+            "--graph_output_path is required when not creating graph files "
+            "(--slug and --graph_file_dir)"
         )
 
     # Ensure graph output directory exists if needed
@@ -200,10 +198,8 @@ def run_attribution(args, parser):
     if args.graph_output_path:
         logging.info(f"Output will be saved to: {args.graph_output_path}")
     logging.info(
-        (
-            f"Including logits with cumulative probability >= {args.desired_logit_prob} "
-            f"(max {args.max_n_logits})"
-        )
+        f"Including logits with cumulative probability >= {args.desired_logit_prob} "
+        f"(max {args.max_n_logits})"
     )
     logging.info(f"Using batch size of {args.batch_size} for backward passes")
 

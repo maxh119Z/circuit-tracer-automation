@@ -1,6 +1,6 @@
 import glob
 import os
-from typing import List, Optional, Union
+
 
 import numpy as np
 import torch
@@ -13,7 +13,8 @@ from circuit_tracer.utils import get_default_device
 
 class CrossLayerTranscoder(torch.nn.Module):
     """
-    A cross-layer transcoder (CLT) where features read from one layer and write to all subsequent layers.
+    A cross-layer transcoder (CLT) where features read from one layer and write to all
+    subsequent layers.
 
     Cross-layer transcoders are the core architecture enabling the circuit tracing methodology.
     Unlike per-layer transcoders, CLT features can "bridge over" multiple MLP layers, allowing
@@ -54,10 +55,10 @@ class CrossLayerTranscoder(torch.nn.Module):
         lazy_encoder=False,
         feature_input_hook: str = "hook_resid_mid",
         feature_output_hook: str = "hook_mlp_out",
-        scan: Optional[Union[str, List[str]]] = None,
-        device: Optional[torch.device] = None,
+        scan: str | list[str] | None = None,
+        device: torch.device | None = None,
         dtype: torch.dtype = torch.bfloat16,
-        clt_path: Optional[str] = None,
+        clt_path: str | None = None,
     ):
         super().__init__()
 
@@ -122,6 +123,7 @@ class CrossLayerTranscoder(torch.nn.Module):
         if not self.lazy_encoder:
             return self.W_enc if layer_id is None else self.W_enc[layer_id]
 
+        assert self.clt_path is not None, "CLT path is not set"
         if layer_id is not None:
             # Load single layer encoder
             enc_file = os.path.join(self.clt_path, f"W_enc_{layer_id}.safetensors")
@@ -199,14 +201,16 @@ class CrossLayerTranscoder(torch.nn.Module):
         to_read = feat_ids if feat_ids is not None else np.s_[:]
 
         if not self.lazy_decoder:
+            assert self.W_dec is not None, "Decoder weights are not set"
             return self.W_dec[layer_id][to_read].to(self.dtype)
 
+        assert self.clt_path is not None, "CLT path is not set"
         path = os.path.join(self.clt_path, f"W_dec_{layer_id}.safetensors")
         with safe_open(path, framework="pt", device=self.device.type) as f:
             return f.get_slice(f"W_dec_{layer_id}")[to_read].to(self.dtype)
 
     def select_decoder_vectors(self, features):
-        if not isinstance(features, torch.sparse.Tensor):
+        if not isinstance(features, torch.Tensor):
             features = features.to_sparse()
         layer_idx, pos_idx, feat_idx = features.indices()
         activations = features.values()
@@ -307,8 +311,8 @@ def load_clt(
     clt_path: str,
     feature_input_hook: str = "hook_resid_mid",
     feature_output_hook: str = "hook_mlp_out",
-    scan: Optional[Union[str, List[str]]] = None,
-    device: Optional[torch.device] = None,
+    scan: str | list[str] | None = None,
+    device: torch.device | None = None,
     dtype: torch.dtype = torch.bfloat16,
     lazy_decoder: bool = True,
     lazy_encoder: bool = False,

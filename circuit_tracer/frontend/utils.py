@@ -8,7 +8,7 @@ def add_graph_metadata(graph_metadata, path):
         path = os.path.join(path, "graph-metadata.json")
 
     if os.path.exists(path):
-        with open(path, "r") as f:
+        with open(path) as f:
             metadata = json.load(f)
     else:
         metadata = {"graphs": []}

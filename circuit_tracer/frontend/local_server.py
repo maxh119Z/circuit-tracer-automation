@@ -34,7 +34,7 @@ class ReusableTCPServer(socketserver.TCPServer):
 
 # Create handler for serving circuit graph data
 class CircuitGraphHandler(http.server.SimpleHTTPRequestHandler):
-    def __init__(self, *args, frontend_dir=None, data_dir=None, **kwargs):
+    def __init__(self, *args, frontend_dir, data_dir, **kwargs):
         self.data_dir = data_dir
         super().__init__(*args, directory=str(frontend_dir), **kwargs)
 
@@ -85,7 +85,7 @@ class CircuitGraphHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_header("Content-Encoding", "gzip")
 
             self.send_header("Content-Type", "application/json")
-            self.send_header("Content-Length", len(content))
+            self.send_header("Content-Length", str(len(content)))
             self.end_headers()
             self.wfile.write(content)
             return
@@ -113,7 +113,7 @@ class CircuitGraphHandler(http.server.SimpleHTTPRequestHandler):
             save_path = os.path.join(self.data_dir, f"{slug}.json")
 
             # Read the existing file and update it
-            with open(save_path, "r") as f:
+            with open(save_path) as f:
                 graph = json.load(f)
                 graph["qParams"] = data["qParams"]
 
@@ -204,7 +204,7 @@ def serve(data_dir, frontend_dir=None, port=8032):
     # Use provided directories or defaults
     frontend_dir = Path(frontend_dir).resolve() if frontend_dir else DEFAULT_FRONTEND_DIR
 
-    frontend_dir_path = Path(frontend_dir)
+    frontend_dir_path = Path(frontend_dir)  # type: ignore
     if not frontend_dir_path.exists() and frontend_dir_path.is_dir():
         raise ValueError(f"Got frontend dir {frontend_dir} but this is not a valid directory")
 

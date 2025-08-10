@@ -5,12 +5,16 @@ Attribution context for managing hooks during attribution computation.
 import contextlib
 import weakref
 from functools import partial
-from typing import Callable, List, Tuple
+from typing import TYPE_CHECKING
+from collections.abc import Callable
 
 import numpy as np
 import torch
 from einops import einsum
 from transformer_lens.hook_points import HookPoint
+
+if TYPE_CHECKING:
+    from circuit_tracer.replacement_model import ReplacementModel
 
 
 class AttributionContext:
@@ -40,7 +44,7 @@ class AttributionContext:
 
     def __init__(
         self,
-        activation_matrix: torch.sparse.Tensor,
+        activation_matrix: torch.Tensor,
         error_vectors: torch.Tensor,
         token_vectors: torch.Tensor,
         decoder_vecs: torch.Tensor,
@@ -52,7 +56,7 @@ class AttributionContext:
         n_layers, n_pos, _ = activation_matrix.shape
 
         # Forward-pass cache
-        self._resid_activations: List[torch.Tensor | None] = [None] * (n_layers + 1)
+        self._resid_activations: list[torch.Tensor | None] = [None] * (n_layers + 1)
         self._batch_buffer: torch.Tensor | None = None
         self.n_layers: int = n_layers
 
@@ -69,7 +73,7 @@ class AttributionContext:
         total_active_feats = activation_matrix._nnz()
         self._row_size: int = total_active_feats + (n_layers + 1) * n_pos  # + logits later
 
-    def _caching_hooks(self, feature_input_hook: str) -> List[Tuple[str, Callable]]:
+    def _caching_hooks(self, feature_input_hook: str) -> list[tuple[str, Callable]]:
         """Return hooks that store residual activations layer-by-layer."""
 
         proxy = weakref.proxy(self)
@@ -91,7 +95,7 @@ class AttributionContext:
         output_vecs: torch.Tensor,
         write_index: slice,
         read_index: slice | np.ndarray = np.s_[:],
-    ) -> Tuple[str, Callable]:
+    ) -> tuple[str, Callable]:
         """
         Factory that contracts *gradients* with an **output vector set**.
         The hook computes A_{s->t} and writes the result into an in-place buffer row.
@@ -108,7 +112,7 @@ class AttributionContext:
 
         return hook_name, _hook_fn
 
-    def _make_attribution_hooks(self, feature_output_hook: str) -> List[Tuple[str, Callable]]:
+    def _make_attribution_hooks(self, feature_output_hook: str) -> list[tuple[str, Callable]]:
         """Create the complete backward-hook for computing attribution scores."""
 
         n_layers, n_pos, _ = self.activation_matrix.shape
@@ -119,8 +123,8 @@ class AttributionContext:
             self._compute_score_hook(
                 f"blocks.{layer}.{feature_output_hook}",
                 self.decoder_vecs[layer_mask],
-                write_index=self.encoder_to_decoder_map[layer_mask],
-                read_index=np.s_[:, nnz_positions[layer_mask]],
+                write_index=self.encoder_to_decoder_map[layer_mask],  # type: ignore
+                read_index=np.s_[:, nnz_positions[layer_mask]],  # type: ignore
             )
             for layer in range(n_layers)
             if (layer_mask := nnz_layers == layer).any()
@@ -155,8 +159,8 @@ class AttributionContext:
     def install_hooks(self, model: "ReplacementModel"):
         """Context manager instruments the hooks for the forward and backward passes."""
         with model.hooks(
-            fwd_hooks=self._caching_hooks(model.feature_input_hook),
-            bwd_hooks=self._make_attribution_hooks(model.feature_output_hook),
+            fwd_hooks=self._caching_hooks(model.feature_input_hook),  # type: ignore
+            bwd_hooks=self._make_attribution_hooks(model.feature_output_hook),  # type: ignore
         ):
             yield
 
@@ -182,6 +186,7 @@ class AttributionContext:
             torch.Tensor: ``(batch, row_size)`` matrix - one row per node.
         """
 
+        assert self._resid_activations[0] is not None, "Residual activations are not cached"
         batch_size = self._resid_activations[0].shape[0]
         self._batch_buffer = torch.zeros(
             self._row_size,
@@ -211,7 +216,9 @@ class AttributionContext:
                 pos_indices=positions[mask],
                 values=inject_values[mask],
             )
-            handles.append(self._resid_activations[int(layer)].register_hook(fn))
+            resid_activations = self._resid_activations[int(layer)]
+            assert resid_activations is not None, "Residual activations are not cached"
+            handles.append(resid_activations.register_hook(fn))
 
         try:
             last_layer = max(layers_in_batch)

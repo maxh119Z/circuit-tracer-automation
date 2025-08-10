@@ -5,8 +5,7 @@ from transformer_lens import HookedTransformerConfig
 from circuit_tracer import attribute
 from circuit_tracer.replacement_model import ReplacementModel
 from circuit_tracer.transcoder.cross_layer_transcoder import CrossLayerTranscoder
-
-torch.manual_seed(42)
+from circuit_tracer.utils import get_default_device
 
 
 def create_clt_model(cfg: HookedTransformerConfig):
@@ -17,7 +16,7 @@ def create_clt_model(cfg: HookedTransformerConfig):
         d_transcoder=cfg.d_model * 4,
         d_model=cfg.d_model,
         dtype=cfg.dtype,
-        lazy_decoder=False
+        lazy_decoder=False,
     )
 
     # Initialize CLT weights
@@ -29,7 +28,7 @@ def create_clt_model(cfg: HookedTransformerConfig):
     model = ReplacementModel.from_config(cfg, clt)
 
     # Monkey patch all_special_ids if necessary
-    type(model.tokenizer).all_special_ids = property(lambda self: [0])
+    type(model.tokenizer).all_special_ids = property(lambda self: [0])  # type: ignore
 
     # Initialize model weights
     with torch.no_grad():
@@ -51,8 +50,8 @@ def verify_feature_intervention(model, graph, feature_idx):
     decoder_vectors = model.transcoders.W_dec[layer][feat_id]
 
     def apply_steering(activations, hook):
-        l = hook.layer() - layer
-        activations[0, pos] += decoder_vectors[l] * activation
+        steer_layer = hook.layer() - layer
+        activations[0, pos] += decoder_vectors[steer_layer] * activation
         return activations
 
     # Setup hooks
@@ -61,8 +60,8 @@ def verify_feature_intervention(model, graph, feature_idx):
     )
     freeze_hooks = model.setup_intervention_with_freeze(prompt, direct_effects=True)
     steering_hooks = [
-        (f"blocks.{l}.{model.feature_output_hook}", apply_steering)
-        for l in range(layer, model.cfg.n_layers)
+        (f"blocks.{lyr}.{model.feature_output_hook}", apply_steering)
+        for lyr in range(layer, model.cfg.n_layers)
     ]
 
     # Run intervention
@@ -80,7 +79,7 @@ def verify_feature_intervention(model, graph, feature_idx):
     # Calculate error
     delta = new_activations - graph.activation_values
     n_active = len(graph.active_features)
-    expected_delta = influences[:n_active].cuda()
+    expected_delta = influences[:n_active].to(get_default_device())
 
     max_error = (delta - expected_delta).abs().max().item()
     return max_error
@@ -100,7 +99,7 @@ def test_clt_attribution():
             "act_fn": "gelu",
             "d_vocab": 50,
             "model_name": "test-clt",
-            "device": "cuda" if torch.cuda.is_available() else "cpu",
+            "device": get_default_device(),
             "tokenizer_name": "gpt2",
         }
     )
@@ -120,6 +119,7 @@ def test_clt_attribution():
     max_errors = []
 
     from tqdm import tqdm
+
     for idx in tqdm(sample_indices):
         max_error = verify_feature_intervention(model, graph, idx)
         max_errors.append(max_error)
@@ -129,10 +129,6 @@ def test_clt_attribution():
     mean_error = sum(max_errors) / len(max_errors)
     max_error = max(max_errors)
 
-    print(f"✓ CLT attribution test passed!")
+    print("✓ CLT attribution test passed!")
     print(f"  Tested {n_samples} features out of {n_active} active features")
     print(f"  Mean max error: {mean_error:.6f}, Worst error: {max_error:.6f}")
-
-
-if __name__ == "__main__":
-    test_clt_attribution()

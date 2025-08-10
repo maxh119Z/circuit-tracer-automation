@@ -1,7 +1,7 @@
 import logging
 import os
 import time
-from typing import Union
+
 
 import torch
 from transformers import AutoTokenizer
@@ -58,7 +58,7 @@ def create_nodes(graph: Graph, node_mask, tokenizer, cumulative_scores):
                 vocab_idx=graph.logit_tokens[pos],
                 token=process_token(tokenizer.decode(graph.logit_tokens[pos])),
                 target_logit=pos == 0,
-                token_prob=graph.logit_probabilities[pos],
+                token_prob=graph.logit_probabilities[pos].item(),
                 num_layers=layers,
             )
 
@@ -145,7 +145,7 @@ def build_model(graph: Graph, used_nodes, used_edges, slug, scan, node_threshold
 
 
 def create_graph_files(
-    graph_or_path: Union[Graph, str],
+    graph_or_path: Graph | str,
     slug: str,
     output_path,
     scan=None,

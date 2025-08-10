@@ -3,9 +3,10 @@
 import unittest
 from unittest import mock
 
+from huggingface_hub.errors import GatedRepoError, RepositoryNotFoundError
+
 # Import the function and exceptions you need to test or mock
 from circuit_tracer.utils.hf_utils import download_hf_uris
-from huggingface_hub.utils import GatedRepoError, RepositoryNotFoundError, HfHubHTTPError
 
 # A dummy URI for all tests
 TEST_URI = "hf://test-org/test-repo/model.bin"
@@ -52,7 +53,7 @@ class TestHfUtilsDownload(unittest.TestCase):
     @mock.patch("circuit_tracer.utils.hf_utils.get_token", return_value="fake_token_no_access")
     def test_gated_without_access(self, mock_get_token, mock_repo_info, mock_download):
         """Tests a gated repo where the user lacks access.
-           The download is attempted and raises GatedRepoError.
+        The download is attempted and raises GatedRepoError.
         """
         # Setup: Pre-flight check passes, as repo_info just returns metadata.
         mock_repo_info.return_value = mock.MagicMock(private=False, gated=True)
@@ -62,7 +63,7 @@ class TestHfUtilsDownload(unittest.TestCase):
         # Execute & Assert: Check that the GatedRepoError is raised by the function.
         with self.assertRaises(GatedRepoError):
             download_hf_uris([TEST_URI])
-        
+
         # Assert that the download was actually attempted.
         mock_download.assert_called_once()
 
@@ -70,8 +71,7 @@ class TestHfUtilsDownload(unittest.TestCase):
     @mock.patch("circuit_tracer.utils.hf_utils.hf_api.repo_info")
     @mock.patch("circuit_tracer.utils.hf_utils.get_token", return_value=None)
     def test_gated_no_token(self, mock_get_token, mock_repo_info, mock_download):
-        """Tests a gated repo when no token is available.
-        """
+        """Tests a gated repo when no token is available."""
         # Setup: Pre-flight check passes, as repo_info just returns metadata.
         mock_repo_info.return_value = mock.MagicMock(private=False, gated=True)
 
@@ -86,16 +86,12 @@ class TestHfUtilsDownload(unittest.TestCase):
     @mock.patch("circuit_tracer.utils.hf_utils.get_token", return_value="fake_token")
     def test_private_no_access_or_non_existent(self, mock_get_token, mock_repo_info, mock_download):
         """Tests a private repo the user can't see, or a repo that doesn't exist.
-           Pre-flight check fails and error is propagated
+        Pre-flight check fails and error is propagated
         """
         mock_repo_info.side_effect = RepositoryNotFoundError("Repo not found.")
 
         with self.assertRaises(RepositoryNotFoundError):
             download_hf_uris([TEST_URI])
-            
+
         # download is not called, as the repo is not found
         mock_download.assert_not_called()
-
-
-if __name__ == '__main__':
-    unittest.main()

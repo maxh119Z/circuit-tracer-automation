@@ -1,21 +1,19 @@
-from typing import List
-
 from pydantic import BaseModel
 
 
 class Metadata(BaseModel):
     slug: str
     scan: str
-    transcoder_list: List[str]
-    prompt_tokens: List[str]
+    transcoder_list: list[str]
+    prompt_tokens: list[str]
     prompt: str
     node_threshold: float | None = None
     schema_version: int | None = 1
 
 
 class QParams(BaseModel):
-    pinnedIds: List[str]
-    supernodes: List[List[str]]
+    pinnedIds: list[str]
+    supernodes: list[list[str]]
     linkType: str
     clickedId: str
     sg_pos: str
@@ -121,5 +119,5 @@ class Link(BaseModel):
 class Model(BaseModel):
     metadata: Metadata
     qParams: QParams
-    nodes: List[Node]
-    links: List[dict]
+    nodes: list[Node]
+    links: list[dict]

@@ -4,18 +4,20 @@ import urllib.parse
 from collections import namedtuple
 from typing import Dict, List, Tuple
 
-import torch 
+import torch
 from IPython.display import HTML, display
 
 Feature = namedtuple("Feature", ["layer", "pos", "feature_idx"])
 
-def get_topk(logits:torch.Tensor, tokenizer, k:int=5):
+
+def get_topk(logits: torch.Tensor, tokenizer, k: int = 5):
     probs = torch.softmax(logits.squeeze()[-1], dim=-1)
     topk = torch.topk(probs, k)
     return [(tokenizer.decode([topk.indices[i]]), topk.values[i].item()) for i in range(k)]
 
+
 # Now let's create a version that's more adaptive to dark/light mode
-def display_topk_token_predictions(sentence, original_logits, new_logits, tokenizer, k:int=5):
+def display_topk_token_predictions(sentence, original_logits, new_logits, tokenizer, k: int = 5):
     """
     Version that tries to be more adaptive to both dark and light modes
     using higher contrast elements and CSS variables where possible
@@ -23,7 +25,7 @@ def display_topk_token_predictions(sentence, original_logits, new_logits, tokeni
 
     original_tokens = get_topk(original_logits, tokenizer, k)
     new_tokens = get_topk(new_logits, tokenizer, k)
-    
+
     # This version uses a technique that will work better in dark mode
     # by using a combination of background colors and border styling
     html = f"""
@@ -123,13 +125,12 @@ def display_topk_token_predictions(sentence, original_logits, new_logits, tokeni
                 </thead>
                 <tbody>
     """
-    
+
     # Calculate max probability for scaling
     max_prob = max(
-        max([prob for _, prob in original_tokens]),
-        max([prob for _, prob in new_tokens])
+        max([prob for _, prob in original_tokens]), max([prob for _, prob in new_tokens])
     )
-    
+
     # Add rows for original tokens
     for i, (token, prob) in enumerate(original_tokens):
         bar_width = int(prob / max_prob * 100)
@@ -141,12 +142,12 @@ def display_topk_token_predictions(sentence, original_logits, new_logits, tokeni
                         <td class="dist-col">
                             <div class="bar-container">
                                 <div class="bar" style="background-color: #2471A3; width: {bar_width}%;"></div>
-                                <span class="bar-text">{prob*100:.1f}%</span>
+                                <span class="bar-text">{prob * 100:.1f}%</span>
                             </div>
                         </td>
                     </tr>
         """
-    
+
     # Add new tokens table
     html += f"""
                 </tbody>
@@ -163,7 +164,7 @@ def display_topk_token_predictions(sentence, original_logits, new_logits, tokeni
                 </thead>
                 <tbody>
     """
-    
+
     # Add rows for new tokens
     for i, (token, prob) in enumerate(new_tokens):
         bar_width = int(prob / max_prob * 100)
@@ -175,19 +176,19 @@ def display_topk_token_predictions(sentence, original_logits, new_logits, tokeni
                         <td class="dist-col">
                             <div class="bar-container">
                                 <div class="bar" style="background-color: #27AE60; width: {bar_width}%;"></div>
-                                <span class="bar-text">{prob*100:.1f}%</span>
+                                <span class="bar-text">{prob * 100:.1f}%</span>
                             </div>
                         </td>
                     </tr>
         """
-    
+
     html += """
                 </tbody>
             </table>
         </div>
     </div>
     """
-    
+
     display(HTML(html))
 
 
@@ -198,7 +199,7 @@ def display_generations_comparison(original_text, pre_intervention_gens, post_in
     """
     # Ensure the original text is properly escaped
     escaped_original = html.escape(original_text)
-    
+
     # Build the HTML with CSS for styling
     html_content = """
     <style>
@@ -265,55 +266,55 @@ def display_generations_comparison(original_text, pre_intervention_gens, post_in
     
     <div class="generations-viz">
     """
-    
+
     # Add pre-intervention section
     html_content += """
     <div class="section-header pre-intervention-header">Pre-intervention generations:</div>
     """
-    
+
     # Add each pre-intervention generation
     for i, gen_text in enumerate(pre_intervention_gens):
         # Split the text to highlight the continuation
         if gen_text.startswith(original_text):
             base_part = html.escape(original_text)
-            new_part = html.escape(gen_text[len(original_text):])
+            new_part = html.escape(gen_text[len(original_text) :])
             formatted_text = f'<span class="base-text">{base_part}</span><span class="new-text">{new_part}</span>'
         else:
             formatted_text = html.escape(gen_text)
-        
+
         html_content += f"""
         <div class="generation-container pre-intervention-item">
-            <div class="generation-number">Generation {i+1}</div>
+            <div class="generation-number">Generation {i + 1}</div>
             <div class="generation-text">{formatted_text}</div>
         </div>
         """
-    
+
     # Add post-intervention section
     html_content += """
     <div class="section-header post-intervention-header">Post-intervention generations:</div>
     """
-    
+
     # Add each post-intervention generation
     for i, gen_text in enumerate(post_intervention_gens):
         # Split the text to highlight the continuation
         if gen_text.startswith(original_text):
             base_part = html.escape(original_text)
-            new_part = html.escape(gen_text[len(original_text):])
+            new_part = html.escape(gen_text[len(original_text) :])
             formatted_text = f'<span class="base-text">{base_part}</span><span class="new-text">{new_part}</span>'
         else:
             formatted_text = html.escape(gen_text)
-        
+
         html_content += f"""
         <div class="generation-container post-intervention-item">
-            <div class="generation-number">Generation {i+1}</div>
+            <div class="generation-number">Generation {i + 1}</div>
             <div class="generation-text">{formatted_text}</div>
         </div>
         """
-    
+
     html_content += """
     </div>
     """
-    
+
     display(HTML(html_content))
 
 

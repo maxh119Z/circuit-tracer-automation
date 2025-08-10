@@ -1,4 +1,4 @@
-from typing import List, NamedTuple, Optional, Union
+from typing import NamedTuple
 
 import torch
 from transformer_lens import HookedTransformerConfig
@@ -14,7 +14,7 @@ class Graph:
     activation_values: torch.Tensor
     logit_probabilities: torch.Tensor
     cfg: HookedTransformerConfig
-    scan: Optional[Union[str, List[str]]]
+    scan: str | list[str] | None
 
     def __init__(
         self,
@@ -27,7 +27,7 @@ class Graph:
         logit_probabilities: torch.Tensor,
         selected_features: torch.Tensor,
         activation_values: torch.Tensor,
-        scan: Optional[Union[str, List[str]]] = None,
+        scan: str | list[str] | None = None,
     ):
         """
         A graph object containing the adjacency matrix describing the direct effect of each
@@ -158,7 +158,7 @@ def find_threshold(scores: torch.Tensor, threshold: float):
     # Find score threshold that keeps the desired fraction of total influence
     sorted_scores = torch.sort(scores, descending=True).values
     cumulative_score = torch.cumsum(sorted_scores, dim=0) / torch.sum(sorted_scores)
-    threshold_index = torch.searchsorted(cumulative_score, threshold)
+    threshold_index: int = int(torch.searchsorted(cumulative_score, threshold).item())
     # make sure we don't go out of bounds (only really happens at threshold=1.0)
     threshold_index = min(threshold_index, len(cumulative_score) - 1)
     return sorted_scores[threshold_index]

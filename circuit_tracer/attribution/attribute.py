@@ -22,7 +22,7 @@ https://transformer-circuits.pub/2025/attribution-graphs/methods.html
 
 import logging
 import time
-from typing import List, Literal, Optional, Tuple, Union
+from typing import Literal
 
 import torch
 from tqdm import tqdm
@@ -40,7 +40,7 @@ def compute_salient_logits(
     *,
     max_n_logits: int = 10,
     desired_logit_prob: float = 0.95,
-) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
+) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     """Pick the smallest logit set whose cumulative prob >= *desired_logit_prob*.
 
     Args:
@@ -90,13 +90,13 @@ def compute_partial_influences(edge_matrix, logit_p, row_to_node_index, max_iter
 
 
 def attribute(
-    prompt: Union[str, torch.Tensor, List[int]],
+    prompt: str | torch.Tensor | list[int],
     model: ReplacementModel,
     *,
     max_n_logits: int = 10,
     desired_logit_prob: float = 0.95,
     batch_size: int = 512,
-    max_feature_nodes: Optional[int] = None,
+    max_feature_nodes: int | None = None,
     offload: Literal["cpu", "disk", None] = None,
     verbose: bool = False,
     update_interval: int = 4,
@@ -151,7 +151,8 @@ def attribute(
         for reload_handle in offload_handles:
             reload_handle()
 
-        logger.removeHandler(handler)
+        if handler:
+            logger.removeHandler(handler)
 
 
 def _run_attribution(
@@ -164,8 +165,8 @@ def _run_attribution(
     offload,
     verbose,
     offload_handles,
+    logger,
     update_interval=4,
-    logger=None,
 ):
     start_time = time.time()
     # Phase 0: precompute

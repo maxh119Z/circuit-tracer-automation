@@ -1,5 +1,5 @@
 import os
-from typing import Dict, List, Optional, Union
+from collections.abc import Iterator
 
 import numpy as np
 import torch
@@ -40,10 +40,10 @@ class SingleLayerTranscoder(nn.Module):
         activation_function,
         layer_idx: int,
         skip_connection: bool = False,
-        transcoder_path: Optional[str] = None,
+        transcoder_path: str | None = None,
         lazy_encoder: bool = False,
         lazy_decoder: bool = False,
-        device: Optional[torch.device] = None,
+        device: torch.device | None = None,
         dtype: torch.dtype = torch.bfloat16,
     ):
         super().__init__()
@@ -207,10 +207,10 @@ class TranscoderSet(nn.Module):
 
     def __init__(
         self,
-        transcoders: Dict[int, SingleLayerTranscoder],
+        transcoders: dict[int, SingleLayerTranscoder],
         feature_input_hook: str,
         feature_output_hook: str,
-        scan: Optional[Union[str, List[str]]] = None,
+        scan: str | list[str] | None = None,
     ):
         super().__init__()
         # Validate that we have continuous layers from 0 to max
@@ -239,19 +239,28 @@ class TranscoderSet(nn.Module):
     def __len__(self):
         return self.n_layers
 
-    def __getitem__(self, idx):
-        return self.transcoders[idx]
+    def __getitem__(self, idx: int) -> SingleLayerTranscoder:
+        return self.transcoders[idx]  # type: ignore
+
+    def __iter__(self) -> Iterator[SingleLayerTranscoder]:
+        return iter(self.transcoders)  # type: ignore
 
     def encode(self, input_acts):
-        return torch.stack([transcoder.encode(input_acts[i]) for i, transcoder in enumerate(self.transcoders)], dim=0)
+        return torch.stack(
+            [transcoder.encode(input_acts[i]) for i, transcoder in enumerate(self.transcoders)],  # type: ignore
+            dim=0,
+        )
 
     def decode(self, acts):
-        return torch.stack([transcoder.decode(acts[i]) for i, transcoder in enumerate(self.transcoders)], dim=0)
+        return torch.stack(
+            [transcoder.decode(acts[i]) for i, transcoder in enumerate(self.transcoders)],  # type: ignore
+            dim=0,
+        )
 
     def compute_attribution_components(
         self,
         mlp_inputs: torch.Tensor,
-    ) -> Dict[str, torch.Tensor]:
+    ) -> dict[str, torch.Tensor]:
         """Extract active features and their encoder/decoder vectors for attribution.
 
         Args:
@@ -273,10 +282,10 @@ class TranscoderSet(nn.Module):
         sparse_acts_list = []
 
         for layer, transcoder in enumerate(self.transcoders):
-            sparse_acts, active_encoders = transcoder.encode_sparse(
+            sparse_acts, active_encoders = transcoder.encode_sparse(  # type: ignore
                 mlp_inputs[layer], zero_first_pos=True
             )
-            reconstruction[layer], active_decoders = transcoder.decode_sparse(sparse_acts)
+            reconstruction[layer], active_decoders = transcoder.decode_sparse(sparse_acts)  # type: ignore
             encoder_vectors.append(active_encoders)
             decoder_vectors.append(active_decoders)
             sparse_acts_list.append(sparse_acts)
@@ -294,15 +303,15 @@ class TranscoderSet(nn.Module):
         }
 
     def encode_layer(self, x, layer_id):
-        return self.transcoders[layer_id].encode(x)
+        return self.transcoders[layer_id].encode(x)  # type: ignore
 
 
 def load_gemma_scope_transcoder(
     path: str,
     layer: int,
-    device: Optional[torch.device] = None,
-    dtype: Optional[torch.dtype] = torch.float32,
-    revision: Optional[str] = None,
+    device: torch.device | None = None,
+    dtype: torch.dtype = torch.float32,
+    revision: str | None = None,
     **kwargs,
 ) -> SingleLayerTranscoder:
     if device is None:
@@ -331,7 +340,7 @@ def load_gemma_scope_transcoder(
     d_transcoder, d_model = param_dict["W_enc"].shape
 
     # dummy JumpReLU; will get loaded via load_state_dict
-    activation_function = JumpReLU(0.0, 0.1)
+    activation_function = JumpReLU(torch.tensor(0.0), 0.1)
     with torch.device("meta"):
         transcoder = SingleLayerTranscoder(d_model, d_transcoder, activation_function, layer)
     transcoder.load_state_dict(param_dict, assign=True)
@@ -341,8 +350,8 @@ def load_gemma_scope_transcoder(
 def load_relu_transcoder(
     path: str,
     layer: int,
-    device: Optional[torch.device] = None,
-    dtype: Optional[torch.dtype] = torch.float32,
+    device: torch.device | None = None,
+    dtype: torch.dtype = torch.float32,
     lazy_encoder: bool = True,
     lazy_decoder: bool = True,
 ):
@@ -383,8 +392,8 @@ def load_transcoder_set(
     scan: str,
     feature_input_hook: str,
     feature_output_hook: str,
-    device: Optional[torch.device] = None,
-    dtype: Optional[torch.dtype] = torch.float32,
+    device: torch.device | None = None,
+    dtype: torch.dtype = torch.float32,
     gemma_scope: bool = False,
     lazy_encoder: bool = True,
     lazy_decoder: bool = True,
@@ -398,8 +407,8 @@ def load_transcoder_set(
         scan: Scan identifier
         feature_input_hook: Hook point where features read from
         feature_output_hook: Hook point where features write to
-        device (Optional[torch.device], optional): Device to load to
-        dtype (Optional[torch.dtype], optional): Data type to use
+        device (torch.device | None, optional): Device to load to
+        dtype (torch.dtype | None, optional): Data type to use
         gemma_scope: Whether to use gemma scope loader
         lazy_encoder: Whether to use lazy loading for encoder weights
         lazy_decoder: Whether to use lazy loading for decoder weights

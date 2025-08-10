@@ -1,9 +1,9 @@
 import numpy as np
 import torch
-from torch import device
 from transformer_lens import HookedTransformerConfig
 
 from circuit_tracer.graph import Graph, compute_edge_influence, compute_node_influence
+from circuit_tracer.utils import get_default_device
 
 
 def test_small_graph():
@@ -67,7 +67,7 @@ def test_small_graph():
         "attn_types": ["global", "local"],
         "init_mode": "gpt2",
         "normalization_type": "RMSPre",
-        "device": device(type="cuda"),
+        "device": get_default_device(),
         "n_devices": 1,
         "attention_dir": "causal",
         "attn_only": False,
@@ -131,7 +131,3 @@ def test_small_graph():
 
     edge_influence_on_logits = compute_edge_influence(pruned_adjacency_matrix, logit_weights)
     assert torch.allclose(edge_influence_on_logits, post_pruning_edge_matrix)
-
-
-if __name__ == "__main__":
-    test_small_graph()

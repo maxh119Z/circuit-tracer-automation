@@ -2,13 +2,14 @@ import warnings
 from collections import defaultdict
 from contextlib import contextmanager
 from functools import partial
-from typing import Callable, List, Optional, Tuple, Union
+from collections.abc import Callable
 
 import torch
 import torch.nn.functional as F
 from torch import nn
 from transformer_lens import HookedTransformer, HookedTransformerConfig
 from transformer_lens.hook_points import HookPoint
+from transformers.tokenization_utils_base import PreTrainedTokenizerBase
 
 from circuit_tracer.attribution.context import AttributionContext
 from circuit_tracer.transcoder import TranscoderSet
@@ -17,7 +18,7 @@ from circuit_tracer.utils import get_default_device
 from circuit_tracer.utils.hf_utils import load_transcoder_from_hub
 
 # Type definition for an intervention tuple (layer, position, feature_idx, value)
-Intervention = Tuple[int, Union[int, slice, torch.Tensor], int, Union[int, torch.Tensor]]
+Intervention = tuple[int, int | slice | torch.Tensor, int, int | torch.Tensor]
 
 
 class ReplacementMLP(nn.Module):
@@ -59,17 +60,18 @@ class ReplacementUnembed(nn.Module):
 
 
 class ReplacementModel(HookedTransformer):
-    transcoders: Union[TranscoderSet, CrossLayerTranscoder]  # Support both types
+    transcoders: TranscoderSet | CrossLayerTranscoder  # Support both types
     feature_input_hook: str
     feature_output_hook: str
     skip_transcoder: bool
-    scan: Optional[Union[str, List[str]]]
+    scan: str | list[str] | None
+    tokenizer: PreTrainedTokenizerBase
 
     @classmethod
     def from_config(
         cls,
         config: HookedTransformerConfig,
-        transcoders: Union[TranscoderSet, CrossLayerTranscoder],  # Accept both
+        transcoders: TranscoderSet | CrossLayerTranscoder,  # Accept both
         **kwargs,
     ) -> "ReplacementModel":
         """Create a ReplacementModel from a given HookedTransformerConfig and TranscoderSet
@@ -89,7 +91,7 @@ class ReplacementModel(HookedTransformer):
     def from_pretrained_and_transcoders(
         cls,
         model_name: str,
-        transcoders: Union[TranscoderSet, CrossLayerTranscoder],  # Accept both
+        transcoders: TranscoderSet | CrossLayerTranscoder,  # Accept both
         **kwargs,
     ) -> "ReplacementModel":
         """Create a ReplacementModel from the name of HookedTransformer and TranscoderSet
@@ -117,8 +119,8 @@ class ReplacementModel(HookedTransformer):
         cls,
         model_name: str,
         transcoder_set: str,
-        device: Optional[torch.device] = None,
-        dtype: Optional[torch.dtype] = torch.float32,
+        device: torch.device | None = None,
+        dtype: torch.dtype = torch.float32,
         **kwargs,
     ) -> "ReplacementModel":
         """Create a ReplacementModel from model name and transcoder config
@@ -143,9 +145,7 @@ class ReplacementModel(HookedTransformer):
             **kwargs,
         )
 
-    def _configure_replacement_model(
-        self, transcoder_set: Union[TranscoderSet, CrossLayerTranscoder]
-    ):
+    def _configure_replacement_model(self, transcoder_set: TranscoderSet | CrossLayerTranscoder):
         transcoder_set.to(self.cfg.device, self.cfg.dtype)
 
         self.transcoders = transcoder_set
@@ -156,7 +156,7 @@ class ReplacementModel(HookedTransformer):
         self.scan = transcoder_set.scan
 
         for block in self.blocks:
-            block.mlp = ReplacementMLP(block.mlp)
+            block.mlp = ReplacementMLP(block.mlp)  # type: ignore
 
         self.unembed = ReplacementUnembed(self.unembed)
 
@@ -176,21 +176,21 @@ class ReplacementModel(HookedTransformer):
             return acts.detach()
 
         for block in self.blocks:
-            block.attn.hook_pattern.add_hook(stop_gradient, is_permanent=True)
-            block.ln1.hook_scale.add_hook(stop_gradient, is_permanent=True)
-            block.ln2.hook_scale.add_hook(stop_gradient, is_permanent=True)
+            block.attn.hook_pattern.add_hook(stop_gradient, is_permanent=True)  # type: ignore
+            block.ln1.hook_scale.add_hook(stop_gradient, is_permanent=True)  # type: ignore
+            block.ln2.hook_scale.add_hook(stop_gradient, is_permanent=True)  # type: ignore
             if hasattr(block, "ln1_post"):
-                block.ln1_post.hook_scale.add_hook(stop_gradient, is_permanent=True)
+                block.ln1_post.hook_scale.add_hook(stop_gradient, is_permanent=True)  # type: ignore
             if hasattr(block, "ln2_post"):
-                block.ln2_post.hook_scale.add_hook(stop_gradient, is_permanent=True)
-            self.ln_final.hook_scale.add_hook(stop_gradient, is_permanent=True)
+                block.ln2_post.hook_scale.add_hook(stop_gradient, is_permanent=True)  # type: ignore
+            self.ln_final.hook_scale.add_hook(stop_gradient, is_permanent=True)  # type: ignore
 
         for param in self.parameters():
             param.requires_grad = False
 
-        def enable_gradient(acts, hook):
-            acts.requires_grad = True
-            return acts
+        def enable_gradient(tensor, hook):
+            tensor.requires_grad = True
+            return tensor
 
         self.hook_embed.add_hook(enable_gradient, is_permanent=True)
 
@@ -241,28 +241,31 @@ class ReplacementModel(HookedTransformer):
         attn_masks = {}
 
         for block in self.blocks:
-            attn_masks[block.attn.attn_type] = block.attn.mask
+            attn_masks[block.attn.attn_type] = block.attn.mask  # type: ignore
             if hasattr(block.attn, "rotary_sin"):
-                attn_masks["rotary_sin"] = block.attn.rotary_sin
-                attn_masks["rotary_cos"] = block.attn.rotary_cos
+                attn_masks["rotary_sin"] = block.attn.rotary_sin  # type: ignore
+                attn_masks["rotary_cos"] = block.attn.rotary_cos  # type: ignore
 
         for block in self.blocks:
-            block.attn.mask = attn_masks[block.attn.attn_type]
+            block.attn.mask = attn_masks[block.attn.attn_type]  # type: ignore
             if hasattr(block.attn, "rotary_sin"):
-                block.attn.rotary_sin = attn_masks["rotary_sin"]
-                block.attn.rotary_cos = attn_masks["rotary_cos"]
+                block.attn.rotary_sin = attn_masks["rotary_sin"]  # type: ignore
+                block.attn.rotary_cos = attn_masks["rotary_cos"]  # type: ignore
 
     def _get_activation_caching_hooks(
         self,
         sparse: bool = False,
         apply_activation_function: bool = True,
         append: bool = False,
-    ) -> Tuple[List[torch.Tensor], List[Tuple[str, Callable]]]:
+    ) -> tuple[list[torch.Tensor], list[tuple[str, Callable]]]:
         activation_matrix = (
             [[] for _ in range(self.cfg.n_layers)] if append else [None] * self.cfg.n_layers
         )
 
         def cache_activations(acts, hook, layer):
+            assert isinstance(self.transcoders, TranscoderSet), (
+                "Only TranscoderSet is supported for activation caching"
+            )
             transcoder_acts = (
                 self.transcoders[layer]
                 .encode(acts, apply_activation_function=apply_activation_function)
@@ -275,7 +278,7 @@ class ReplacementModel(HookedTransformer):
             if append:
                 activation_matrix[layer].append(transcoder_acts)
             else:
-                activation_matrix[layer] = transcoder_acts
+                activation_matrix[layer] = transcoder_acts  # type: ignore
 
         activation_hooks = [
             (
@@ -284,23 +287,23 @@ class ReplacementModel(HookedTransformer):
             )
             for layer in range(self.cfg.n_layers)
         ]
-        return activation_matrix, activation_hooks
+        return activation_matrix, activation_hooks  # type: ignore
 
     def get_activations(
         self,
-        inputs: Union[str, torch.Tensor],
+        inputs: str | torch.Tensor,
         sparse: bool = False,
         apply_activation_function: bool = True,
-    ) -> Tuple[torch.Tensor, torch.Tensor]:
+    ) -> tuple[torch.Tensor, torch.Tensor]:
         """Get the transcoder activations for a given prompt
 
         Args:
-            inputs (Union[str, torch.Tensor]): The inputs you want to get activations over
+            inputs (str | torch.Tensor): The inputs you want to get activations over
             sparse (bool, optional): Whether to return a sparse tensor of activations.
                 Useful if d_transcoder is large. Defaults to False.
 
         Returns:
-            Tuple[torch.Tensor, torch.Tensor]: the model logits on the inputs and the
+            tuple[torch.Tensor, torch.Tensor]: the model logits on the inputs and the
                 associated activation cache
         """
 
@@ -308,7 +311,7 @@ class ReplacementModel(HookedTransformer):
             sparse=sparse,
             apply_activation_function=apply_activation_function,
         )
-        with torch.inference_mode(), self.hooks(activation_hooks):
+        with torch.inference_mode(), self.hooks(activation_hooks):  # type: ignore
             logits = self(inputs)
         activation_cache = torch.stack(activation_cache)
         if sparse:
@@ -324,7 +327,7 @@ class ReplacementModel(HookedTransformer):
         finally:
             self.cfg.output_logits_soft_cap = current_softcap
 
-    def ensure_tokenized(self, prompt: Union[str, torch.Tensor, List[int]]) -> torch.Tensor:
+    def ensure_tokenized(self, prompt: str | torch.Tensor | list[int]) -> torch.Tensor:
         """Convert prompt to 1-D tensor of token ids with proper special token handling.
 
         This method ensures that a special token (BOS/PAD) is prepended to the input sequence.
@@ -372,7 +375,8 @@ class ReplacementModel(HookedTransformer):
         dummy_bos_token_id = next(filter(None, candidate_bos_token_ids))
         if dummy_bos_token_id is None:
             warnings.warn(
-                "No suitable special token found for BOS token replacement. The first token will be ignored."
+                "No suitable special token found for BOS token replacement. "
+                "The first token will be ignored."
             )
         else:
             tokens = torch.cat([torch.tensor([dummy_bos_token_id], device=tokens.device), tokens])
@@ -380,7 +384,7 @@ class ReplacementModel(HookedTransformer):
         return tokens.to(self.cfg.device)
 
     @torch.no_grad()
-    def setup_attribution(self, inputs: Union[str, torch.Tensor]):
+    def setup_attribution(self, inputs: str | torch.Tensor):
         """Precomputes the transcoder activations and error vectors, saving them and the
         token embeddings.
 
@@ -429,18 +433,18 @@ class ReplacementModel(HookedTransformer):
         )
 
     def setup_intervention_with_freeze(
-        self, inputs: Union[str, torch.Tensor], direct_effects: bool = False
-    ) -> List[Tuple[str, Callable]]:
+        self, inputs: str | torch.Tensor, direct_effects: bool = False
+    ) -> list[tuple[str, Callable]]:
         """Sets up an intervention with either frozen attention (default) or frozen
         attention, LayerNorm, and MLPs, for direct effects
 
         Args:
-            inputs (Union[str, torch.Tensor]): The inputs to intervene on
+            inputs (str | torch.Tensor): The inputs to intervene on
             direct_effects (bool, optional): Whether to freeze not just attention, but also
                 LayerNorm and MLPs. Defaults to False.
 
         Returns:
-            List[Tuple[str, Callable]]: The freeze hooks needed to run the desired intervention.
+            list[tuple[str, Callable]]: The freeze hooks needed to run the desired intervention.
         """
 
         if direct_effects:
@@ -494,6 +498,9 @@ class ReplacementModel(HookedTransformer):
             skip_diffs = {}
 
             def diff_hook(activations, hook, layer: int):
+                assert isinstance(self.transcoders, TranscoderSet), (
+                    "Only TranscoderSet is supported for direct effects"
+                )
                 # The MLP hook out freeze hook sets the value of the MLP to the value it
                 # had when run on the inputs normally. We subtract out the skip that
                 # corresponds to such a run, and add in the skip with direct effects.
@@ -523,8 +530,8 @@ class ReplacementModel(HookedTransformer):
 
     def _get_feature_intervention_hooks(
         self,
-        inputs: Union[str, torch.Tensor],
-        interventions: List[Intervention],
+        inputs: str | torch.Tensor,
+        interventions: list[Intervention],
         direct_effects: bool = False,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
@@ -537,7 +544,7 @@ class ReplacementModel(HookedTransformer):
 
         Args:
             input (_type_): the input prompt to intervene on
-            intervention_dict (List[Tuple[int, Union[int, slice, torch.Tensor]], int,
+            intervention_dict (list[tuple[int, Union[int, slice, torch.Tensor]], int,
                 Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
                 a list of (layer, position, feature_idx, value)
             direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
@@ -568,6 +575,9 @@ class ReplacementModel(HookedTransformer):
             if transcoder_activations.is_sparse:
                 transcoder_activations = transcoder_activations.to_dense()
 
+            assert isinstance(self.transcoders, TranscoderSet), (
+                "Only TranscoderSet is supported for direct effects"
+            )
             if not apply_activation_function:
                 transcoder_activations = (
                     self.transcoders[layer]
@@ -621,13 +631,13 @@ class ReplacementModel(HookedTransformer):
     @torch.no_grad
     def feature_intervention(
         self,
-        inputs: Union[str, torch.Tensor],
-        interventions: List[Intervention],
+        inputs: str | torch.Tensor,
+        interventions: list[Intervention],
         direct_effects: bool = False,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
         sparse: bool = False,
-    ) -> Tuple[torch.Tensor, torch.Tensor]:
+    ) -> tuple[torch.Tensor, torch.Tensor]:
         """Given the input, and a dictionary of features to intervene on, performs the
         intervention, and returns the logits and feature activations. If direct_effects is
         True, attention patterns will be frozen, along with MLPs and LayerNorms. If it is
@@ -636,7 +646,7 @@ class ReplacementModel(HookedTransformer):
 
         Args:
             input (_type_): the input prompt to intervene on
-            interventions (List[Tuple[int, Union[int, slice, torch.Tensor]], int,
+            interventions (list[tuple[int, Union[int, slice, torch.Tensor]], int,
                 Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
                 a list of (layer, position, feature_idx, value)
             direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
@@ -659,7 +669,7 @@ class ReplacementModel(HookedTransformer):
             sparse=sparse,
         )
 
-        with self.hooks(hooks):
+        with self.hooks(hooks):  # type: ignore
             logits = self(inputs)
 
         activation_cache = torch.stack(activation_cache)
@@ -668,8 +678,8 @@ class ReplacementModel(HookedTransformer):
 
     def _convert_open_ended_interventions(
         self,
-        interventions: List[Intervention],
-    ) -> List[Intervention]:
+        interventions: list[Intervention],
+    ) -> list[Intervention]:
         """Convert open-ended interventions into position-0 equivalents.
 
         An intervention is *open-ended* if its position component is a ``slice`` whose
@@ -687,27 +697,31 @@ class ReplacementModel(HookedTransformer):
     @torch.no_grad
     def feature_intervention_generate(
         self,
-        inputs: Union[str, torch.Tensor],
-        interventions: List[Intervention],
+        inputs: str | torch.Tensor,
+        interventions: list[Intervention],
         direct_effects: bool = False,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
         sparse: bool = False,
         **kwargs,
-    ) -> Tuple[str, torch.Tensor, torch.Tensor]:
+    ) -> tuple[str, torch.Tensor, torch.Tensor]:
         """Given the input, and a dictionary of features to intervene on, performs the
-        intervention, and generates a continuation, along with the logits and activations at each generation position.
-        This function accepts all kwargs valid for HookedTransformer.generate(). Note that direct_effects
-        and freeze_attention apply only to the first token generated.
+        intervention, and generates a continuation, along with the logits and activations
+        at each generation position.
 
-        Note that if kv_cache is True (default), generation will be faster, as the model will cache the KVs, and only
-        process the one new token per step; if it is False, the model will generate by doing a full forward pass across
-        all tokens. Note that due to numerical precision issues, you are only guaranteed that the logits / activations of
-        model.feature_intervention_generate(s, ...) are equivalent to model.feature_intervention(s, ...) if kv_cache is False.
+        This function accepts all kwargs valid for HookedTransformer.generate(). Note that
+        direct_effects and freeze_attention apply only to the first token generated.
+
+        Note that if kv_cache is True (default), generation will be faster, as the model
+        will cache the KVs, and only process the one new token per step; if it is False,
+        the model will generate by doing a full forward pass across all tokens. Note that
+        due to numerical precision issues, you are only guaranteed that the logits /
+        activations of model.feature_intervention_generate(s, ...) are equivalent to
+        model.feature_intervention(s, ...) if kv_cache is False.
 
         Args:
             input (_type_): the input prompt to intervene on
-            interventions (List[Tuple[int, Union[int, slice, torch.Tensor]], int,
+            interventions (list[tuple[int, Union[int, slice, torch.Tensor]], int,
                 Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
                 a list of (layer, position, feature_idx, value)
             direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
@@ -738,7 +752,8 @@ class ReplacementModel(HookedTransformer):
             # `generate`) and build the corresponding hooks.
             open_ended_interventions = self._convert_open_ended_interventions(interventions)
 
-            # get new hooks that will target pos 0 / append logits / activations to the cache (not overwrite)
+            # get new hooks that will target pos 0 / append logits / activations to the
+            # cache (not overwrite)
             open_ended_hooks, open_ended_logits, open_ended_activations = (
                 self._get_feature_intervention_hooks(
                     inputs,
@@ -752,7 +767,7 @@ class ReplacementModel(HookedTransformer):
             )
 
             # at the end of the model, clear original hooks and add open-ended hooks
-            def clear_and_add_hooks(activations, hook):
+            def clear_and_add_hooks(tensor, hook):
                 self.reset_hooks()
                 for open_ended_name, open_ended_hook in open_ended_hooks:
                     self.add_hook(open_ended_name, open_ended_hook)
@@ -765,26 +780,26 @@ class ReplacementModel(HookedTransformer):
             generation = self.generate(inputs, **kwargs)
             self.reset_hooks()
 
-            logits = torch.cat((logit_cache[0], *open_ended_logits), dim=1)
+            logits = torch.cat((logit_cache[0], *open_ended_logits), dim=1)  # type: ignore
             open_ended_activations = torch.stack(
-                [torch.cat(acts, dim=0) for acts in open_ended_activations]
+                [torch.cat(acts, dim=0) for acts in open_ended_activations]  # type: ignore
             )
             activation_cache = torch.stack(activation_cache)
             activations = torch.cat((activation_cache, open_ended_activations), dim=1)
             if sparse:
                 activations = activations.coalesce()
 
-            return generation, logits, activations
+            return generation, logits, activations  # type: ignore
         else:
             # we can do more or less normal generation
-            with self.hooks(hooks):
+            with self.hooks(hooks):  # type: ignore
                 generation = self.generate(inputs, **kwargs)
 
             activation_cache = torch.stack(activation_cache)
             if sparse:
                 activation_cache = activation_cache.coalesce()
 
-            return generation, logit_cache[0], activation_cache
+            return generation, logit_cache[0], activation_cache  # type: ignore
 
     def __del__(self):
         # Prevent memory leaks
