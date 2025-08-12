@@ -145,15 +145,21 @@ class CrossLayerTranscoder(torch.nn.Module):
         features = torch.einsum("lbd,lfd->lbf", x, W_enc) + self.b_enc[:, None]
         return self.activation_function(features)
 
-    def encode_layer(self, x, layer_id):
-        W_enc_layer = self._get_encoder_weights(layer_id)
-        features = torch.einsum("...d,fd->...f", x, W_enc_layer) + self.b_enc[layer_id]
+    def apply_activation_function(self, layer_id, features):
         if isinstance(self.activation_function, JumpReLU):
             mask = features > self.activation_function.threshold[layer_id]
             features = features * mask
         else:
             features = self.activation_function(features)
         return features
+
+    def encode_layer(self, x, layer_id, apply_activation_function=True):
+        W_enc_layer = self._get_encoder_weights(layer_id)
+        features = torch.einsum("...d,fd->...f", x, W_enc_layer) + self.b_enc[layer_id]
+        if not apply_activation_function:
+            return features
+
+        return self.apply_activation_function(layer_id, features)
 
     def encode_sparse(self, x, zero_first_pos=True):
         """Encode input to sparse activations, processing one layer at a time for memory efficiency.
@@ -178,11 +184,7 @@ class CrossLayerTranscoder(torch.nn.Module):
                 torch.einsum("bd,fd->bf", x[layer_id], W_enc_layer) + self.b_enc[layer_id]
             )
 
-            if isinstance(self.activation_function, JumpReLU):
-                mask = layer_features > self.activation_function.threshold[layer_id]
-                layer_features = layer_features * mask
-            else:
-                layer_features = self.activation_function(layer_features)
+            layer_features = self.apply_activation_function(layer_id, layer_features)
 
             if zero_first_pos:
                 layer_features[0] = 0
@@ -206,11 +208,13 @@ class CrossLayerTranscoder(torch.nn.Module):
 
         assert self.clt_path is not None, "CLT path is not set"
         path = os.path.join(self.clt_path, f"W_dec_{layer_id}.safetensors")
+        if isinstance(to_read, torch.Tensor):
+            to_read = to_read.cpu()
         with safe_open(path, framework="pt", device=self.device.type) as f:
             return f.get_slice(f"W_dec_{layer_id}")[to_read].to(self.dtype)
 
     def select_decoder_vectors(self, features):
-        if not isinstance(features, torch.Tensor):
+        if not features.is_sparse:
             features = features.to_sparse()
         layer_idx, pos_idx, feat_idx = features.indices()
         activations = features.values()

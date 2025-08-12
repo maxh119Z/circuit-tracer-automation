@@ -93,6 +93,7 @@ class SingleLayerTranscoder(nn.Module):
 
     def __getattr__(self, name):
         """Dynamically load weights when accessed if lazy loading is enabled."""
+
         if name == "W_enc" and self.lazy_encoder and self.transcoder_path is not None:
             with safe_open(self.transcoder_path, framework="pt", device=self.device.type) as f:
                 return f.get_tensor("W_enc").to(self.dtype)
@@ -107,6 +108,8 @@ class SingleLayerTranscoder(nn.Module):
         if not self.lazy_decoder:
             return self.W_dec[to_read].to(self.dtype)
 
+        if isinstance(to_read, torch.Tensor):
+            to_read = to_read.cpu()
         with safe_open(self.transcoder_path, framework="pt", device=self.device.type) as f:
             return f.get_slice("W_dec")[to_read].to(self.dtype)
 
@@ -245,11 +248,40 @@ class TranscoderSet(nn.Module):
     def __iter__(self) -> Iterator[SingleLayerTranscoder]:
         return iter(self.transcoders)  # type: ignore
 
+    def apply_activation_function(self, layer_id, features):
+        return self.transcoders[layer_id].activation_function(features)  # type: ignore
+
     def encode(self, input_acts):
         return torch.stack(
             [transcoder.encode(input_acts[i]) for i, transcoder in enumerate(self.transcoders)],  # type: ignore
             dim=0,
         )
+
+    def _get_decoder_vectors(self, layer_id, features):
+        return self.transcoders[layer_id]._get_decoder_vectors(features)  # type: ignore
+
+    def select_decoder_vectors(self, features):
+        if not features.is_sparse:
+            features = features.to_sparse()
+
+        all_layer_idx, all_pos_idx, all_feat_idx = features.indices()
+        all_activations = features.values()
+        all_scaled_decoder_vectors = []
+        for unique_layer in all_layer_idx.unique():
+            layer_mask = all_layer_idx == unique_layer
+            feat_idx = all_feat_idx[layer_mask]
+            activations = all_activations[layer_mask]
+
+            decoder_vectors = self._get_decoder_vectors(unique_layer.item(), feat_idx)
+
+            # Multiply each activation by its corresponding decoder vector
+            scaled_decoder_vectors = activations.unsqueeze(-1) * decoder_vectors
+            all_scaled_decoder_vectors.append(scaled_decoder_vectors)
+
+        all_scaled_decoder_vectors = torch.cat(all_scaled_decoder_vectors)
+        encoder_mapping = torch.arange(features._nnz(), device=features.device)
+
+        return all_pos_idx, all_layer_idx, all_feat_idx, all_scaled_decoder_vectors, encoder_mapping
 
     def decode(self, acts):
         return torch.stack(
@@ -302,8 +334,10 @@ class TranscoderSet(nn.Module):
             "decoder_locations": activation_matrix.indices()[:2],
         }
 
-    def encode_layer(self, x, layer_id):
-        return self.transcoders[layer_id].encode(x)  # type: ignore
+    def encode_layer(self, x, layer_id, apply_activation_function=True):
+        return self.transcoders[layer_id].encode(
+            x, apply_activation_function=apply_activation_function
+        )  # type: ignore
 
 
 def load_gemma_scope_transcoder(

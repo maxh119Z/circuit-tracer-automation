@@ -111,7 +111,7 @@ def verify_small_llama_model(s: torch.Tensor):
     model = load_dummy_llama_model(cfg, k)
     graph = attribute(s, model)
 
-    verify_token_and_error_edges(model, graph, delete_bos=False)
+    verify_token_and_error_edges(model, graph)
     verify_feature_edges(model, graph)
 
 
@@ -189,7 +189,7 @@ def verify_large_llama_model(s: torch.Tensor):
     model = load_dummy_llama_model(cfg, k)
     graph = attribute(s, model)
 
-    verify_token_and_error_edges(model, graph, delete_bos=False)
+    verify_token_and_error_edges(model, graph)
     verify_feature_edges(model, graph)
 
 
@@ -197,7 +197,7 @@ def verify_llama_3_2_1b(s: str):
     model = ReplacementModel.from_pretrained("meta-llama/Llama-3.2-1B", "llama")
     graph = attribute(s, model, batch_size=128)
 
-    verify_token_and_error_edges(model, graph, delete_bos=True)
+    verify_token_and_error_edges(model, graph)
     verify_feature_edges(model, graph)
 
 

@@ -1,9 +1,9 @@
 import torch
 import torch.nn as nn
 from transformer_lens import HookedTransformerConfig
+from tqdm import tqdm
 
-from circuit_tracer import attribute
-from circuit_tracer.replacement_model import ReplacementModel
+from circuit_tracer import attribute, Graph, ReplacementModel
 from circuit_tracer.transcoder.cross_layer_transcoder import CrossLayerTranscoder
 from circuit_tracer.utils import get_default_device
 
@@ -39,50 +39,77 @@ def create_clt_model(cfg: HookedTransformerConfig):
     return model
 
 
-def verify_feature_intervention(model, graph, feature_idx):
-    """Verify that intervening on a feature produces the expected effects."""
-    prompt = graph.input_tokens.unsqueeze(0)
-    layer, pos, feat_id = graph.active_features[feature_idx]
-    activation = graph.activation_values[feature_idx]
-    influences = graph.adjacency_matrix[:, feature_idx]
+def verify_feature_edges(
+    model: ReplacementModel,
+    graph: Graph,
+    n_samples: int = 100,
+    act_atol=5e-4,
+    act_rtol=1e-5,
+    logit_atol=1e-5,
+    logit_rtol=1e-3,
+):
+    """Verify that feature interventions produce the expected effects using feature_intervention
+    method."""
+    s = graph.input_tokens
+    adjacency_matrix = graph.adjacency_matrix.to(get_default_device())
+    active_features = graph.active_features.to(get_default_device())
+    logit_tokens = graph.logit_tokens.to(get_default_device())
+    total_active_features = active_features.size(0)
 
-    # Get decoder vectors for cross-layer effects
-    decoder_vectors = model.transcoders.W_dec[layer][feat_id]
+    logits, activation_cache = model.get_activations(s, apply_activation_function=False)
+    logits = logits.squeeze(0)
 
-    def apply_steering(activations, hook):
-        steer_layer = hook.layer() - layer
-        activations[0, pos] += decoder_vectors[steer_layer] * activation
-        return activations
-
-    # Setup hooks
-    cache, caching_hooks, _ = model.get_caching_hooks(
-        names_filter=lambda name: model.feature_input_hook in name
-    )
-    freeze_hooks = model.setup_intervention_with_freeze(prompt, direct_effects=True)
-    steering_hooks = [
-        (f"blocks.{lyr}.{model.feature_output_hook}", apply_steering)
-        for lyr in range(layer, model.cfg.n_layers)
+    relevant_activations = activation_cache[
+        active_features[:, 0], active_features[:, 1], active_features[:, 2]
     ]
+    relevant_logits = logits[-1, logit_tokens]
+    demeaned_relevant_logits = relevant_logits - logits[-1].mean()
 
-    # Run intervention
-    with model.hooks(freeze_hooks + caching_hooks + steering_hooks):
-        _ = model(prompt)
+    def verify_intervention(
+        expected_effects,
+        layer: int | torch.Tensor,
+        pos: int | torch.Tensor,
+        feature_idx: int | torch.Tensor,
+        new_activation,
+    ):
+        new_logits, new_activation_cache = model.feature_intervention(
+            s,
+            [(layer, pos, feature_idx, new_activation)],
+            constrained_layers=range(model.cfg.n_layers),
+            apply_activation_function=False,
+        )
+        new_logits = new_logits.squeeze(0)
 
-    # Compute new activations
-    clt_inputs = torch.cat(list(cache.values()), dim=0)
-    new_activations = (
-        torch.einsum("lbd,lfd->lbf", clt_inputs, model.transcoders.W_enc)
-        + model.transcoders.b_enc[:, None]
-    )
-    new_activations = new_activations[tuple(graph.active_features.T)]
+        new_relevant_activations = new_activation_cache[
+            active_features[:, 0], active_features[:, 1], active_features[:, 2]
+        ]
+        new_relevant_logits = new_logits[-1, logit_tokens]
+        new_demeaned_relevant_logits = new_relevant_logits - new_logits[-1].mean()
 
-    # Calculate error
-    delta = new_activations - graph.activation_values
-    n_active = len(graph.active_features)
-    expected_delta = influences[:n_active].to(get_default_device())
+        expected_activation_difference = expected_effects[:total_active_features]
+        expected_logit_difference = expected_effects[-len(logit_tokens) :]
 
-    max_error = (delta - expected_delta).abs().max().item()
-    return max_error
+        assert torch.allclose(
+            new_relevant_activations,
+            relevant_activations + expected_activation_difference,
+            atol=act_atol,
+            rtol=act_rtol,
+        )
+        assert torch.allclose(
+            new_demeaned_relevant_logits,
+            demeaned_relevant_logits + expected_logit_difference,
+            atol=logit_atol,
+            rtol=logit_rtol,
+        )
+
+    random_order = torch.randperm(active_features.size(0))
+    chosen_nodes = random_order[:n_samples]
+    for chosen_node in tqdm(chosen_nodes):
+        layer, pos, feature_idx = active_features[chosen_node]
+        old_activation = activation_cache[layer, pos, feature_idx]
+        new_activation = old_activation * 2
+        expected_effects = adjacency_matrix[:, chosen_node]
+        verify_intervention(expected_effects, layer, pos, feature_idx, new_activation)
 
 
 def test_clt_attribution():
@@ -111,24 +138,12 @@ def test_clt_attribution():
     prompt = torch.tensor([[0, 1, 2, 3, 4, 5]])
     graph = attribute(prompt, model, max_n_logits=5, desired_logit_prob=0.8, batch_size=32)
 
-    # Test interventions on multiple random features
+    # Test feature interventions
     n_active = len(graph.active_features)
     n_samples = min(100, n_active)
-    sample_indices = torch.randperm(n_active)[:n_samples]
 
-    max_errors = []
+    verify_feature_edges(model, graph, n_samples=n_samples)
 
-    from tqdm import tqdm
 
-    for idx in tqdm(sample_indices):
-        max_error = verify_feature_intervention(model, graph, idx)
-        max_errors.append(max_error)
-
-        assert max_error < 5e-4, f"Feature {idx}: max error {max_error:.6f} exceeds threshold"
-
-    mean_error = sum(max_errors) / len(max_errors)
-    max_error = max(max_errors)
-
-    print("✓ CLT attribution test passed!")
-    print(f"  Tested {n_samples} features out of {n_active} active features")
-    print(f"  Mean max error: {mean_error:.6f}, Worst error: {max_error:.6f}")
+if __name__ == "__main__":
+    test_clt_attribution()

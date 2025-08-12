@@ -18,7 +18,9 @@ from circuit_tracer.utils import get_default_device
 from circuit_tracer.utils.hf_utils import load_transcoder_from_hub
 
 # Type definition for an intervention tuple (layer, position, feature_idx, value)
-Intervention = tuple[int, int | slice | torch.Tensor, int, int | torch.Tensor]
+Intervention = tuple[
+    int | torch.Tensor, int | slice | torch.Tensor, int | torch.Tensor, int | torch.Tensor
+]
 
 
 class ReplacementMLP(nn.Module):
@@ -263,12 +265,10 @@ class ReplacementModel(HookedTransformer):
         )
 
         def cache_activations(acts, hook, layer):
-            assert isinstance(self.transcoders, TranscoderSet), (
-                "Only TranscoderSet is supported for activation caching"
-            )
             transcoder_acts = (
-                self.transcoders[layer]
-                .encode(acts, apply_activation_function=apply_activation_function)
+                self.transcoders.encode_layer(
+                    acts, layer, apply_activation_function=apply_activation_function
+                )
                 .detach()
                 .squeeze(0)
             )
@@ -433,52 +433,53 @@ class ReplacementModel(HookedTransformer):
         )
 
     def setup_intervention_with_freeze(
-        self, inputs: str | torch.Tensor, direct_effects: bool = False
-    ) -> list[tuple[str, Callable]]:
-        """Sets up an intervention with either frozen attention (default) or frozen
-        attention, LayerNorm, and MLPs, for direct effects
+        self, inputs: str | torch.Tensor, constrained_layers: range | None = None
+    ) -> tuple[torch.Tensor, list[tuple[str, Callable]]]:
+        """Sets up an intervention with either frozen attention + LayerNorm(default) or frozen
+        attention, LayerNorm, and MLPs, for constrained layers
 
         Args:
-            inputs (str | torch.Tensor): The inputs to intervene on
-            direct_effects (bool, optional): Whether to freeze not just attention, but also
-                LayerNorm and MLPs. Defaults to False.
+            inputs (Union[str, torch.Tensor]): The inputs to intervene on
+            constrained_layers (range | None): whether to apply interventions only to a certain
+                range. Mostly applicable to CLTs. If the given range includes all model layers,
+                we also freeze layernorm denominators, computing direct effects. None means no
+                constraints (iterative patching)
 
         Returns:
             list[tuple[str, Callable]]: The freeze hooks needed to run the desired intervention.
         """
 
-        if direct_effects:
-            hookpoints_to_freeze = ["hook_pattern", "hook_scale", self.feature_output_hook]
+        hookpoints_to_freeze = ["hook_pattern"]
+        if constrained_layers:
+            if set(range(self.cfg.n_layers)).issubset(set(constrained_layers)):
+                hookpoints_to_freeze.append("hook_scale")
+            hookpoints_to_freeze.append(self.feature_output_hook)
             if self.skip_transcoder:
                 hookpoints_to_freeze.append(self.feature_input_hook)
-        else:
-            hookpoints_to_freeze = ["hook_pattern"]
 
-        freeze_cache, cache_hooks, _ = self.get_caching_hooks(
-            names_filter=lambda name: any(hookpoint in name for hookpoint in hookpoints_to_freeze)
-        )
-        self.run_with_hooks(inputs, fwd_hooks=cache_hooks)
+        # only freeze outputs in constrained range
+        selected_hook_points = []
+        for hook_point, hook_obj in self.hook_dict.items():
+            if any(
+                hookpoint_to_freeze in hook_point for hookpoint_to_freeze in hookpoints_to_freeze
+            ):
+                # don't freeze feature outputs if the layer is not in the constrained range
+                if (
+                    self.feature_output_hook in hook_point
+                    and constrained_layers
+                    and hook_obj.layer() not in constrained_layers
+                ):
+                    continue
+                selected_hook_points.append(hook_point)
+
+        freeze_cache, cache_hooks, _ = self.get_caching_hooks(names_filter=selected_hook_points)
+
+        original_activations, activation_caching_hooks = self._get_activation_caching_hooks()
+        self.run_with_hooks(inputs, fwd_hooks=cache_hooks + activation_caching_hooks)
 
         def freeze_hook(activations, hook):
             cached_values = freeze_cache[hook.name]
 
-            # if we're doing open-ended generation, the position dimensions won't match
-            # so we'll just freeze the previous positions, and leave the new ones unfrozen
-            if "hook_pattern" in hook.name and activations.shape[2:] != cached_values.shape[2:]:
-                new_activations = activations.clone()
-                new_activations[:, :, : cached_values.shape[2], : cached_values.shape[3]] = (
-                    cached_values
-                )
-                return new_activations
-
-            elif (
-                "hook_scale" in hook.name or self.feature_output_hook in hook.name
-            ) and activations.shape[1] != cached_values.shape[1]:
-                new_activations = activations.clone()
-                new_activations[:, : cached_values.shape[1]] = cached_values
-                return new_activations
-
-            # if other positions don't match, that's no good
             assert activations.shape == cached_values.shape, (
                 f"Activations shape {activations.shape} does not match cached values"
                 f" shape {cached_values.shape} at hook {hook.name}"
@@ -491,52 +492,44 @@ class ReplacementModel(HookedTransformer):
             if self.feature_input_hook not in hookpoint
         ]
 
-        if not direct_effects:
-            return fwd_hooks
+        if not (constrained_layers and self.skip_transcoder):
+            return torch.stack(original_activations), fwd_hooks
 
-        if self.skip_transcoder:
-            skip_diffs = {}
+        skip_diffs = {}
 
-            def diff_hook(activations, hook, layer: int):
-                assert isinstance(self.transcoders, TranscoderSet), (
-                    "Only TranscoderSet is supported for direct effects"
-                )
-                # The MLP hook out freeze hook sets the value of the MLP to the value it
-                # had when run on the inputs normally. We subtract out the skip that
-                # corresponds to such a run, and add in the skip with direct effects.
-                frozen_skip = self.transcoders[layer].compute_skip(freeze_cache[hook.name])
-                normal_skip = self.transcoders[layer].compute_skip(activations)
+        def diff_hook(activations, hook, layer: int):
+            # The MLP hook out freeze hook sets the value of the MLP to the value it
+            # had when run on the inputs normally. We subtract out the skip that
+            # corresponds to such a run, and add in the skip with direct effects.
+            assert not isinstance(self.transcoders, CrossLayerTranscoder), "Skip CLTs forbidden"
+            frozen_skip = self.transcoders[layer].compute_skip(freeze_cache[hook.name])
+            normal_skip = self.transcoders[layer].compute_skip(activations)
 
-                skip_diffs[layer] = normal_skip - frozen_skip
+            skip_diffs[layer] = normal_skip - frozen_skip
 
-            def add_diff_hook(activations, hook, layer: int):
-                # open-ended generation case
-                if activations.shape[1] != skip_diffs[layer].shape[1]:
-                    new_activations = activations.clone()
-                    new_activations[:, : skip_diffs[layer].shape[1]] += skip_diffs[layer]
-                    return new_activations
-                else:
-                    return activations + skip_diffs[layer]
+        def add_diff_hook(activations, hook, layer: int):
+            # open-ended generation case
+            return activations + skip_diffs[layer]
 
-            fwd_hooks += [
-                (f"blocks.{layer}.{self.feature_input_hook}", partial(diff_hook, layer=layer))
-                for layer in range(self.cfg.n_layers)
-            ]
-            fwd_hooks += [
-                (f"blocks.{layer}.{self.feature_output_hook}", partial(add_diff_hook, layer=layer))
-                for layer in range(self.cfg.n_layers)
-            ]
-        return fwd_hooks
+        fwd_hooks += [
+            (f"blocks.{layer}.{self.feature_input_hook}", partial(diff_hook, layer=layer))
+            for layer in constrained_layers
+        ]
+        fwd_hooks += [
+            (f"blocks.{layer}.{self.feature_output_hook}", partial(add_diff_hook, layer=layer))
+            for layer in constrained_layers
+        ]
+        return torch.stack(original_activations), fwd_hooks
 
     def _get_feature_intervention_hooks(
         self,
         inputs: str | torch.Tensor,
         interventions: list[Intervention],
-        direct_effects: bool = False,
+        constrained_layers: range | None = None,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
         sparse: bool = False,
-        append: bool = False,
+        using_past_kv_cache: bool = False,
     ):
         """Given the input, and a dictionary of features to intervene on, performs the
         intervention, allowing all effects to propagate (optionally allowing its effects to
@@ -544,72 +537,123 @@ class ReplacementModel(HookedTransformer):
 
         Args:
             input (_type_): the input prompt to intervene on
-            intervention_dict (list[tuple[int, Union[int, slice, torch.Tensor]], int,
-                Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
-                a list of (layer, position, feature_idx, value)
-            direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
-                layernorm denominators
+            intervention_dict (List[Intervention]): A list of interventions to perform, formatted
+                as a list of (layer, position, feature_idx, value)
+            constrained_layers (range | None): whether to apply interventions only to a certain
+                range, freezing all MLPs within the layer range before doing so. This is mostly
+                applicable to CLTs. If the given range includes all model layers, we also freeze
+                layernorm denominators, computing direct effects.nNone means no constraints
+                (iterative patching)
             apply_activation_function (bool): whether to apply the activation function when
                 recording the activations to be returned. This is useful to set to False for
                 testing purposes, as attribution predicts the change in pre-activation
                 feature values.
             sparse (bool): whether to sparsify the activations in the returned cache. Setting
                 this to True will take up less memory, at the expense of slower interventions.
-            append (bool): whether to append onto the existing logit / activation cache if the
-                hooks are run multiple times. Default to False (overwrite instead)
+            using_past_kv_cache (bool): whether we are generating with past_kv_cache, meaning that
+                n_pos is 1, and we must append onto the existing logit / activation cache if the
+                hooks are run multiple times. Defaults to False
         """
 
         interventions_by_layer = defaultdict(list)
         for layer, pos, feature_idx, value in interventions:
             interventions_by_layer[layer].append((pos, feature_idx, value))
 
-        # This activation cache will fill up during our forward intervention pass
-        activation_cache, activation_hooks = self._get_activation_caching_hooks(
-            apply_activation_function=apply_activation_function, sparse=sparse, append=append
+        if using_past_kv_cache:
+            # We're generating one token at a time
+            original_activations, freeze_hooks = [], []
+            n_pos = 1
+        elif (freeze_attention or constrained_layers) and interventions:
+            original_activations, freeze_hooks = self.setup_intervention_with_freeze(
+                inputs, constrained_layers=constrained_layers
+            )
+            n_pos = original_activations.size(1)
+        else:
+            original_activations, freeze_hooks = [], []
+            if isinstance(inputs, torch.Tensor):
+                n_pos = inputs.size(0)
+            else:
+                n_pos = len(self.tokenizer(inputs).input_ids)
+
+        layer_deltas = torch.zeros(
+            [self.cfg.n_layers, n_pos, self.cfg.d_model],
+            dtype=self.cfg.dtype,
+            device=self.cfg.device,
         )
 
-        def intervention_hook(activations, hook, layer: int, layer_interventions):
-            transcoder_activations = (
-                activation_cache[layer][-1] if append else activation_cache[layer]
-            )
-            if transcoder_activations.is_sparse:
-                transcoder_activations = transcoder_activations.to_dense()
+        # This activation cache will fill up during our forward intervention pass
+        activation_cache, activation_hooks = self._get_activation_caching_hooks(
+            apply_activation_function=apply_activation_function,
+            sparse=sparse,
+            append=using_past_kv_cache,
+        )
 
-            assert isinstance(self.transcoders, TranscoderSet), (
-                "Only TranscoderSet is supported for direct effects"
-            )
-            if not apply_activation_function:
+        def calculate_delta_hook(activations, hook, layer: int, layer_interventions):
+            if constrained_layers:
+                # base deltas on original activations; don't let effects propagate
+                transcoder_activations = original_activations[layer]
+            else:
+                # recompute deltas based on current activations
                 transcoder_activations = (
-                    self.transcoders[layer]
-                    .activation_function(transcoder_activations.unsqueeze(0))
-                    .squeeze(0)
+                    activation_cache[layer][-1] if using_past_kv_cache else activation_cache[layer]
+                )
+                if transcoder_activations.is_sparse:
+                    transcoder_activations = transcoder_activations.to_dense()
+
+                if not apply_activation_function:
+                    transcoder_activations = self.transcoders.apply_activation_function(
+                        layer, transcoder_activations.unsqueeze(0)
+                    ).squeeze(0)
+
+            activation_deltas = torch.zeros_like(transcoder_activations)
+            for pos, feature_idx, value in layer_interventions:
+                activation_deltas[pos, feature_idx] = (
+                    value - transcoder_activations[pos, feature_idx]
                 )
 
-            transcoder_activations = transcoder_activations.clone()
+            poss, feature_idxs = activation_deltas.nonzero(as_tuple=True)
+            new_values = activation_deltas[poss, feature_idxs]
 
-            transcoder_output = self.transcoders[layer].decode(transcoder_activations)
-            for pos, feature_idx, value in layer_interventions:
-                transcoder_activations[pos, feature_idx] = value
-            new_transcoder_output = self.transcoders[layer].decode(transcoder_activations)
-            steering_vector = new_transcoder_output - transcoder_output
-            return activations + steering_vector
+            decoder_vectors = self.transcoders._get_decoder_vectors(layer, feature_idxs)
 
-        intervention_hooks = [
+            if decoder_vectors.ndim == 2:
+                # Single-layer transcoder case: [n_feature_idxs, d_model]
+                decoder_vectors = decoder_vectors * new_values.unsqueeze(1)
+                layer_deltas[layer].index_add_(0, poss, decoder_vectors)
+            else:
+                # Cross-layer transcoder case: [n_feature_idxs, n_remaining_layers, d_model]
+                decoder_vectors = decoder_vectors * new_values.unsqueeze(-1).unsqueeze(-1)
+
+                # Transpose to [n_remaining_layers, n_feature_idxs, d_model]
+                decoder_vectors = decoder_vectors.transpose(0, 1)
+
+                # Distribute decoder vectors across layers
+                n_remaining_layers = decoder_vectors.shape[0]
+                layer_deltas[-n_remaining_layers:].index_add_(1, poss, decoder_vectors)
+
+        def intervention_hook(activations, hook, layer: int):
+            new_acts = activations
+            if layer in intervention_range:
+                new_acts = new_acts + layer_deltas[layer]
+            layer_deltas[layer] *= 0  # clearing this is important for multi-token generation
+            return new_acts
+
+        delta_hooks = [
             (
                 f"blocks.{layer}.{self.feature_output_hook}",
-                partial(intervention_hook, layer=layer, layer_interventions=layer_interventions),
+                partial(calculate_delta_hook, layer=layer, layer_interventions=layer_interventions),
             )
             for layer, layer_interventions in interventions_by_layer.items()
         ]
 
-        all_hooks = (
-            self.setup_intervention_with_freeze(inputs, direct_effects=direct_effects)
-            if freeze_attention or direct_effects
-            else []
-        )
-        all_hooks += activation_hooks + intervention_hooks
+        intervention_range = constrained_layers if constrained_layers else range(self.cfg.n_layers)
+        intervention_hooks = [
+            (f"blocks.{layer}.{self.feature_output_hook}", partial(intervention_hook, layer=layer))
+            for layer in range(self.cfg.n_layers)
+        ]
 
-        cached_logits = [] if append else [None]
+        all_hooks = freeze_hooks + activation_hooks + delta_hooks + intervention_hooks
+        cached_logits = [] if using_past_kv_cache else [None]
 
         def logit_cache_hook(activations, hook):
             # we need to manually apply the softcap (if used by the model), as it comes post-hook
@@ -619,7 +663,7 @@ class ReplacementModel(HookedTransformer):
                 )
             else:
                 logits = activations.clone()
-            if append:
+            if using_past_kv_cache:
                 cached_logits.append(logits)
             else:
                 cached_logits[0] = logits
@@ -633,25 +677,28 @@ class ReplacementModel(HookedTransformer):
         self,
         inputs: str | torch.Tensor,
         interventions: list[Intervention],
-        direct_effects: bool = False,
+        constrained_layers: range | None = None,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
         sparse: bool = False,
     ) -> tuple[torch.Tensor, torch.Tensor]:
         """Given the input, and a dictionary of features to intervene on, performs the
-        intervention, and returns the logits and feature activations. If direct_effects is
-        True, attention patterns will be frozen, along with MLPs and LayerNorms. If it is
-        False, the effects of the intervention will propagate through transcoders /
-        LayerNorms
+        intervention, and returns the logits and feature activations. If freeze_attention or
+        constrained_layers is True, attention patterns will be frozen, along with MLPs and
+        LayerNorms. If constrained_layers is set, the effects of intervention will not propagate
+        through the constrained layers, and CLTs will write only to those layers. Otherwise, the
+        effects of the intervention will propagate through transcoders / LayerNorms
 
         Args:
             input (_type_): the input prompt to intervene on
             interventions (list[tuple[int, Union[int, slice, torch.Tensor]], int,
                 Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
                 a list of (layer, position, feature_idx, value)
-            direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
-                layernorm denominators
-            freeze_attention (bool): whether to freeze all attention patterns.
+            constrained_layers (range | None): whether to apply interventions only to a certain
+                range. Mostly applicable to CLTs. If the given range includes all model layers,
+                we also freeze layernorm denominators, computing direct effects. None means no
+                constraints (iterative patching)
+            freeze_attention (bool): whether to freeze all attention patterns an layernorms
             apply_activation_function (bool): whether to apply the activation function when
                 recording the activations to be returned. This is useful to set to False for
                 testing purposes, as attribution predicts the change in pre-activation
@@ -663,7 +710,7 @@ class ReplacementModel(HookedTransformer):
         hooks, _, activation_cache = self._get_feature_intervention_hooks(
             inputs,
             interventions,
-            direct_effects=direct_effects,
+            constrained_layers=constrained_layers,
             freeze_attention=freeze_attention,
             apply_activation_function=apply_activation_function,
             sparse=sparse,
@@ -699,15 +746,17 @@ class ReplacementModel(HookedTransformer):
         self,
         inputs: str | torch.Tensor,
         interventions: list[Intervention],
-        direct_effects: bool = False,
+        constrained_layers: range | None = None,
         freeze_attention: bool = True,
         apply_activation_function: bool = True,
         sparse: bool = False,
         **kwargs,
     ) -> tuple[str, torch.Tensor, torch.Tensor]:
         """Given the input, and a dictionary of features to intervene on, performs the
-        intervention, and generates a continuation, along with the logits and activations
-        at each generation position.
+        intervention, and generates a continuation, along with the logits and activations at
+        each generation position.
+        This function accepts all kwargs valid for HookedTransformer.generate(). Note that
+        freeze_attention applies only to the first token generated.
 
         This function accepts all kwargs valid for HookedTransformer.generate(). Note that
         direct_effects and freeze_attention apply only to the first token generated.
@@ -724,9 +773,12 @@ class ReplacementModel(HookedTransformer):
             interventions (list[tuple[int, Union[int, slice, torch.Tensor]], int,
                 Union[int, torch.Tensor]]): A list of interventions to perform, formatted as
                 a list of (layer, position, feature_idx, value)
-            direct_effects (bool): whether to freeze all MLPs/transcoders / attn patterns /
-                layernorm denominators. This will only apply to the very first token generated.
-            freeze_attention (bool): whether to freeze all attention patterns.
+            constrained_layers: (range | None = None): whether to freeze all MLPs/transcoders /
+                attn patterns / layernorm denominators. This will only apply to the very first
+                token generated. If all layers are constrained, also freezes layernorm, computing
+                direct effects.
+            freeze_attention (bool): whether to freeze all attention patterns. Applies only to
+                the first token generated
             apply_activation_function (bool): whether to apply the activation function when
                 recording the activations to be returned. This is useful to set to False for
                 testing purposes, as attribution predicts the change in pre-activation
@@ -738,7 +790,7 @@ class ReplacementModel(HookedTransformer):
         feature_intervention_hook_output = self._get_feature_intervention_hooks(
             inputs,
             interventions,
-            direct_effects=direct_effects,
+            constrained_layers=constrained_layers,
             freeze_attention=freeze_attention,
             apply_activation_function=apply_activation_function,
             sparse=sparse,
@@ -746,60 +798,52 @@ class ReplacementModel(HookedTransformer):
 
         hooks, logit_cache, activation_cache = feature_intervention_hook_output
 
-        if kwargs.get("use_past_kv_cache", True):
-            # Next, convert any open-ended interventions so they target position `0` (the
-            # only token present during the incremental forward passes performed by
-            # `generate`) and build the corresponding hooks.
-            open_ended_interventions = self._convert_open_ended_interventions(interventions)
+        assert kwargs.get("use_past_kv_cache", True), (
+            "Generation is only possible with use_past_kv_cache=True"
+        )
+        # Next, convert any open-ended interventions so they target position `0` (the
+        # only token present during the incremental forward passes performed by
+        # `generate`) and build the corresponding hooks.
+        open_ended_interventions = self._convert_open_ended_interventions(interventions)
 
-            # get new hooks that will target pos 0 / append logits / activations to the
-            # cache (not overwrite)
-            open_ended_hooks, open_ended_logits, open_ended_activations = (
-                self._get_feature_intervention_hooks(
-                    inputs,
-                    open_ended_interventions,
-                    direct_effects=False,
-                    freeze_attention=False,
-                    apply_activation_function=apply_activation_function,
-                    sparse=sparse,
-                    append=True,
-                )
+        # get new hooks that will target pos 0 / append logits / acts to the cache (not overwrite)
+        open_ended_hooks, open_ended_logits, open_ended_activations = (
+            self._get_feature_intervention_hooks(
+                inputs,
+                open_ended_interventions,
+                constrained_layers=None,
+                freeze_attention=False,
+                apply_activation_function=apply_activation_function,
+                sparse=sparse,
+                using_past_kv_cache=True,
             )
+        )
 
-            # at the end of the model, clear original hooks and add open-ended hooks
-            def clear_and_add_hooks(tensor, hook):
-                self.reset_hooks()
-                for open_ended_name, open_ended_hook in open_ended_hooks:
-                    self.add_hook(open_ended_name, open_ended_hook)
-
-            for name, hook in hooks:
-                self.add_hook(name, hook)
-
-            self.add_hook("unembed.hook_post", clear_and_add_hooks)
-
-            generation = self.generate(inputs, **kwargs)
+        # at the end of the model, clear original hooks and add open-ended hooks
+        def clear_and_add_hooks(tensor, hook):
             self.reset_hooks()
+            for open_ended_name, open_ended_hook in open_ended_hooks:
+                self.add_hook(open_ended_name, open_ended_hook)
 
-            logits = torch.cat((logit_cache[0], *open_ended_logits), dim=1)  # type: ignore
-            open_ended_activations = torch.stack(
-                [torch.cat(acts, dim=0) for acts in open_ended_activations]  # type: ignore
-            )
-            activation_cache = torch.stack(activation_cache)
-            activations = torch.cat((activation_cache, open_ended_activations), dim=1)
-            if sparse:
-                activations = activations.coalesce()
+        for name, hook in hooks:
+            self.add_hook(name, hook)
 
-            return generation, logits, activations  # type: ignore
-        else:
-            # we can do more or less normal generation
-            with self.hooks(hooks):  # type: ignore
-                generation = self.generate(inputs, **kwargs)
+        self.add_hook("unembed.hook_post", clear_and_add_hooks)
 
-            activation_cache = torch.stack(activation_cache)
-            if sparse:
-                activation_cache = activation_cache.coalesce()
+        generation: str = self.generate(inputs, **kwargs)  # type:ignore
+        self.reset_hooks()
 
-            return generation, logit_cache[0], activation_cache  # type: ignore
+        logits = torch.cat((logit_cache[0], *open_ended_logits), dim=1)  # type:ignore
+        open_ended_activations = torch.stack(
+            [torch.cat(acts, dim=0) for acts in open_ended_activations],  # type:ignore
+            dim=0,
+        )
+        activation_cache = torch.stack(activation_cache)
+        activations = torch.cat((activation_cache, open_ended_activations), dim=1)
+        if sparse:
+            activations = activations.coalesce()
+
+        return generation, logits, activations
 
     def __del__(self):
         # Prevent memory leaks

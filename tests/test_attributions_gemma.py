@@ -16,7 +16,6 @@ from circuit_tracer.utils import get_default_device
 def verify_token_and_error_edges(
     model: ReplacementModel,
     graph: Graph,
-    delete_bos: bool = False,
     act_atol=1e-3,
     act_rtol=1e-3,
     logit_atol=1e-5,
@@ -27,7 +26,7 @@ def verify_token_and_error_edges(
     active_features = graph.active_features.to(get_default_device())
     logit_tokens = graph.logit_tokens.to(get_default_device())
     total_active_features = active_features.size(0)
-    pos_start = 1 if delete_bos else 0
+    pos_start = 1  # ignore first token (BOS)
 
     ctx = model.setup_attribution(s)
 
@@ -43,7 +42,9 @@ def verify_token_and_error_edges(
     relevant_logits = logits[-1, logit_tokens]
     demeaned_relevant_logits = relevant_logits - logits[-1].mean()
 
-    freeze_hooks = model.setup_intervention_with_freeze(s, direct_effects=True)
+    _, freeze_hooks = model.setup_intervention_with_freeze(
+        s, constrained_layers=range(model.cfg.n_layers)
+    )
 
     def verify_intervention(expected_effects, intervention):
         new_activation_cache, activation_hooks = model._get_activation_caching_hooks(
@@ -136,7 +137,7 @@ def verify_feature_edges(
         new_logits, new_activation_cache = model.feature_intervention(
             s,
             [(layer, pos, feature_idx, new_activation)],
-            direct_effects=True,
+            constrained_layers=range(model.cfg.n_layers),
             apply_activation_function=False,
         )
         new_logits = new_logits.squeeze(0)
@@ -275,7 +276,7 @@ def verify_small_gemma_model(s: torch.Tensor):
     model = load_dummy_gemma_model(cfg)
     graph = attribute(s, model)
 
-    verify_token_and_error_edges(model, graph, delete_bos=False)
+    verify_token_and_error_edges(model, graph)
     verify_feature_edges(model, graph)
 
 
@@ -369,7 +370,7 @@ def verify_large_gemma_model(s: torch.Tensor):
     model = load_dummy_gemma_model(cfg)
     graph = attribute(s, model)
 
-    verify_token_and_error_edges(model, graph, delete_bos=False)
+    verify_token_and_error_edges(model, graph)
     verify_feature_edges(model, graph)
 
 
@@ -379,7 +380,17 @@ def verify_gemma_2_2b(s: str):
 
     print("Changing logit softcap to 0, as the logits will otherwise be off.")
     with model.zero_softcap():
-        verify_token_and_error_edges(model, graph, delete_bos=True)
+        verify_token_and_error_edges(model, graph)
+        verify_feature_edges(model, graph)
+
+
+def verify_gemma_2_2b_clt(s: str):
+    model = ReplacementModel.from_pretrained("google/gemma-2-2b", "mntss/clt-gemma-2-2b-426k")
+    graph = attribute(s, model)
+
+    print("Changing logit softcap to 0, as the logits will otherwise be off.")
+    with model.zero_softcap():
+        verify_token_and_error_edges(model, graph)
         verify_feature_edges(model, graph)
 
 
@@ -397,3 +408,16 @@ def test_large_gemma_model():
 def test_gemma_2_2b():
     s = "The National Digital Analytics Group (ND"
     verify_gemma_2_2b(s)
+
+
+# def test_gemma_2_2b_clt():
+#     s = "The National Digital Analytics Group (ND"
+#     verify_gemma_2_2b_clt(s)
+
+
+if __name__ == "__main__":
+    torch.manual_seed(42)
+    test_small_gemma_model()
+    test_large_gemma_model()
+    test_gemma_2_2b()
+    # test_gemma_2_2b_clt()  # This will pass, but is slow to run
