@@ -122,6 +122,12 @@ When using the `--server` option, your browser will open to a local visualizatio
 - **Group nodes**: Hold G and click on nodes to group them together into a supernode. Hold G and click on the x next to a supernode to ungroup all of them.
 - **Annotate supernode / node group**: click on the label below the supernode to edit the supernode annotation.
 
+## Available Transcoders
+The following transcodrs are available for use with `circuit-tracer`; this means that the transcoder weights and features are both available (so features will load properly when you run the visualization server). You can use the HuggingFace repo name (e.g. `mntss/gemma-scope-transcoders`) as the `transcoders` argument of `ReplacementModel.from_pretrained`, or as the argument of `--transcoder_set` in the CLI. 
+- Gemma-2 (2B): [PLTs (originally from GemmaScope)](https://huggingface.co/mntss/gemma-scope-transcoders) and CLTs with 2 feature counts: [426K](https://huggingface.co/mntss/clt-gemma-2-2b-426k) and [2.5M](https://huggingface.co/mntss/clt-gemma-2-2b-2.5M)
+- Llama-3.2 (1B): [PLTs](https://huggingface.co/mntss/transcoder-Llama-3.2-1B) and [CLTs](https://huggingface.co/mntss/clt-llama-3.2-1b-524k)
+- Qwen-3 PLTs: for Qwen-3 [0.6B](https://huggingface.co/mwhanna/qwen3-0.6b-transcoders-lowl0), [1.7B](https://huggingface.co/mwhanna/qwen3-1.7b-transcoders-lowl0), [4B](https://huggingface.co/mwhanna/qwen3-4b-transcoders), [8B](https://huggingface.co/mwhanna/qwen3-8b-transcoders), and [14B](https://huggingface.co/mwhanna/qwen3-14b-transcoders-lowl0)
+
 ## Cite
 You can cite this library as follows:
 ```
