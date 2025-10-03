@@ -369,12 +369,10 @@ def load_gemma_scope_transcoder(
     del param_dict["threshold"]
 
     # create the transcoders
-    # d_model = param_dict["W_enc"].shape[0]
-    # d_transcoder = param_dict["W_enc"].shape[1]
     d_transcoder, d_model = param_dict["W_enc"].shape
 
-    # dummy JumpReLU; will get loaded via load_state_dict
-    activation_function = JumpReLU(torch.tensor(0.0), 0.1)
+    # JumpReLU; will get loaded via load_state_dict
+    activation_function = JumpReLU(param_dict["activation_function.threshold"], 0.1)
     with torch.device("meta"):
         transcoder = SingleLayerTranscoder(d_model, d_transcoder, activation_function, layer)
     transcoder.load_state_dict(param_dict, assign=True)
