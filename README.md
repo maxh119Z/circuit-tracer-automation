@@ -9,7 +9,8 @@ circuit-tracer attribute --prompt "The capital of the state containing Dallas is
 ```
 
 ---Custom-Automation---
-```chmod +x reproduce.sh
+```
+chmod +x reproduce.sh
 HF_TOKEN="hf_..." ./reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
