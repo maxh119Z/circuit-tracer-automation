@@ -1,6 +1,7 @@
 # Automation Quickstart
 
 Run in Order:
+
 ---Preliminary---
 ```
 !git clone https://github.com/maxh119Z/circuit-tracer-automation.git
