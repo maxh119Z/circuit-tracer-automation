@@ -10,12 +10,6 @@ export PRUNING_THRESHOLD="${1:-0.40}"
 python3 -m venv venv_auto-circuits
 source venv_auto-circuits/bin/activate
 
-# 1_A. Login to Huggingface for gated models.
-echo "Logging in to Huggingface"
-python huggingface_login.py
-cd custom_automation
-
-
 # 2. Descriptions for each feature.
 echo "------------------------------------------------"
 
