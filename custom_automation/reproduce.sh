@@ -66,7 +66,7 @@ echo "  ✓ PRUNING_THRESHOLD=${PRUNING_THRESHOLD}"
 # ---------------------------------------------------------------------------
 step_banner "Step 1/3 — Fetching pruned feature activations"
 t=$(date +%s)
-python fetch_all_activating_text.py
+python fetch_all_activation_text.py
 elapsed "$t"
 
 # ---------------------------------------------------------------------------
@@ -74,7 +74,7 @@ elapsed "$t"
 # ---------------------------------------------------------------------------
 step_banner "Step 2/3 — Generating descriptions (Transluce Llama)"
 t=$(date +%s)
-python add_description.py
+python generate_description.py
 elapsed "$t"
 
 # ---------------------------------------------------------------------------
