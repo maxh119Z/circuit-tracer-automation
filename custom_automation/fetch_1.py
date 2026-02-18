@@ -1,78 +1,98 @@
-# This file extracts the trigger/activation tax for a singular feature
+"""
+Standalone utility — inspect top activations for a single feature.
 
-import requests
-import json
+Useful for debugging / spot-checking before running the full pipeline.
+
+Usage:
+    python fetch_1.py --layer 14 --feature 2268
+    python fetch_1.py -l 0 -f 7118
+"""
+
+from __future__ import annotations
+
+import argparse
 import gzip
 import io
+import json
+import sys
 
-# --- CONFIGURATION ---
-HF_REPO = "mwhanna/gemma-scope-transcoders" 
-TARGET_LAYER = 14       
-TARGET_FEATURE = 2268   # Local Index
+from config import HF_FEATURES_BASE, make_session, setup_logging
 
-def get_feature_data():
-    base_url = f"https://huggingface.co/{HF_REPO}/resolve/main/features"
-    
-    # 1. Fetch Index
-    print(f"Fetching index...")
-    resp = requests.get(f"{base_url}/index.json.gz")
+log = setup_logging()
+
+
+def get_feature_data(session, layer: int, feature: int) -> dict | None:
+    """Fetch and decompress activation data for a single (layer, feature)."""
+    index_url = f"{HF_FEATURES_BASE}/index.json.gz"
+    log.info("Fetching index …")
+    resp = session.get(index_url, timeout=30)
+    resp.raise_for_status()
+
     with gzip.GzipFile(fileobj=io.BytesIO(resp.content)) as f:
         index_data = json.load(f)
-        
-    # 2. Get Offsets
-    layer_info = index_data.get(str(TARGET_LAYER))
-    filename = layer_info['filename']
-    offsets = layer_info['offsets']
-    start, end = offsets[TARGET_FEATURE], offsets[TARGET_FEATURE + 1]
-    
-    # 3. Fetch Data
-    print(f"Fetching bytes {start}-{end} from {filename}...\n")
-    headers = {"Range": f"bytes={start}-{end-1}"}
-    resp = requests.get(f"{base_url}/{filename}", headers=headers)
-    
+
+    layer_info = index_data.get(str(layer))
+    if layer_info is None:
+        log.error("Layer %d not found in the index.", layer)
+        return None
+
+    offsets = layer_info["offsets"]
+    if feature >= len(offsets) - 1:
+        log.error("Feature %d out of range for layer %d (max %d).", feature, layer, len(offsets) - 2)
+        return None
+
+    start, end = offsets[feature], offsets[feature + 1]
+    filename = layer_info["filename"]
+    url = f"{HF_FEATURES_BASE}/{filename}"
+    log.info("Fetching bytes %d–%d from %s …", start, end, filename)
+
+    resp = session.get(url, headers={"Range": f"bytes={start}-{end - 1}"}, timeout=15)
     content = resp.content
-    
-    # 4. Decode (handling the 4-byte prefix)
-    gzip_start = content.find(b'\x1f\x8b')
+
+    gzip_start = content.find(b"\x1f\x8b")
     if gzip_start != -1:
-        try:
-            decompressed = gzip.decompress(content[gzip_start:])
-            return json.loads(decompressed)
-        except Exception as e:
-            print(f"❌ Decompression error: {e}")
-            return None
+        return json.loads(gzip.decompress(content[gzip_start:]))
     return json.loads(content)
 
-# --- MAIN EXECUTION ---
-data = get_feature_data()
 
-if data:
-    print(f"\nSUCCESS! Analysis of Top Activations for Layer {TARGET_LAYER}, Feature {TARGET_FEATURE}:")
+def display(data: dict, layer: int, feature: int) -> None:
+    """Pretty-print the top activation examples."""
+    print(f"\nLayer {layer}, Feature {feature} — Top Activations")
     print("-" * 60)
-    
-    # Get top examples
-    examples = []
-    if 'examples_quantiles' in data:
-        examples = data['examples_quantiles'][0]['examples']
-    elif 'activations' in data:
-        examples = data['activations']
 
-    for i, ex in enumerate(examples[:10]):
-        tokens = ex.get('tokens', [])
-        scores = ex.get('tokens_acts_list') or ex.get('values') or []
-        
-        # Determine the "Main Trigger" (Max Score)
+    examples = (
+        data.get("examples_quantiles", [{}])[0].get("examples", [])
+        or data.get("activations", [])
+    )
+
+    for i, ex in enumerate(examples[:10], 1):
+        tokens = ex.get("tokens", [])
+        scores = ex.get("tokens_acts_list") or ex.get("values") or []
+
         if scores and len(scores) == len(tokens):
             max_score = max(scores)
-            max_index = scores.index(max_score)
-            main_token = str(tokens[max_index])
-            full_text = "".join([str(t) for t in tokens]).replace('\n', ' ')
-            
-            print(f"Example {i+1}:")
-            print(f"TRIGGER:  '{main_token}' (Score: {max_score:.2f})")
-            print(f"CONTEXT:  \"{full_text[:119]}...\"")
-            print("-" * 60)
-            
+            main_token = str(tokens[scores.index(max_score)])
+            full_text = "".join(str(t) for t in tokens).replace("\n", " ")
+            print(f"  Example {i}:")
+            print(f"    TRIGGER : '{main_token}' (score: {max_score:.2f})")
+            print(f"    CONTEXT : \"{full_text[:120]}…\"")
+            print()
         else:
-            print(f"Example {i+1}: Data mismatch.")
-            print(f"   Tokens: {len(tokens)}, Scores: {len(scores)}")
+            print(f"  Example {i}: token/score length mismatch ({len(tokens)} vs {len(scores)})")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Inspect activations for a single feature.")
+    parser.add_argument("-l", "--layer", type=int, required=True, help="Transcoder layer index")
+    parser.add_argument("-f", "--feature", type=int, required=True, help="Feature index within the layer")
+    args = parser.parse_args()
+
+    session = make_session()
+    data = get_feature_data(session, args.layer, args.feature)
+    if data is None:
+        sys.exit(1)
+    display(data, args.layer, args.feature)
+
+
+if __name__ == "__main__":
+    main()
