@@ -1,10 +1,12 @@
 # Automation Quickstart
+0. ```!git clone https://github.com/maxh119Z/circuit-tracer-automation.git```
+0_A. ```cd circuit-tracer-automation```
 
 1. ```pip install .```
   
 2. ```circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server```
 
-3. ### Edit/Run/Create files in custom_automation/
+4. ### Edit/Run/Create files in custom_automation/
 
 
 ## ------------------------------------------------------------------------------------------------------
