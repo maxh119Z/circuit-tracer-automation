@@ -34,7 +34,7 @@ cd the automation folder and then do reproduce.sh
 Make sure to run this cell!
 #pip install --force-reinstall torch torchvision torchaudio
 ```
-## ------------------------------------------------------------------------------------------
+## -------------------------------------------------------------
 
 circuit-tracer-automation/
 ```
