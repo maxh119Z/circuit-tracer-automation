@@ -30,8 +30,6 @@ def load_pruned_nodes_from_graph():
     all_links = data.get('links', [])
     
     # --- ORPHAN FILTER SETUP ---
-    # Create a set of all nodes that are actually connected by edges.
-    # The website hides nodes that have zero surviving connections.
     connected_ids = set()
     for link in all_links:
         connected_ids.add(link['source'])
@@ -49,15 +47,15 @@ def load_pruned_nodes_from_graph():
         score = float(n.get('influence') or n.get('score') or 0.0)
         node_id = n.get('node_id', '')
 
-        # 1. TYPE FILTER (Prevents overcounting Error Nodes in ALL layers)
+        # 1. TYPE FILTER 
         if f_type != 'cross layer transcoder':
             continue
 
-        # 2. SCORE FILTER (Strict Raw Score)
+        # 2. SCORE FILTER
         if score > PRUNING_THRESHOLD:
             continue
 
-        # 3. ORPHAN FILTER (Ensures node is visible in the graph)
+        # 3. ORPHAN FILTER 
         if node_id not in connected_ids:
             continue
 
@@ -65,12 +63,23 @@ def load_pruned_nodes_from_graph():
             parts = node_id.split('_')
             layer_idx = int(parts[0])
             feature_idx = int(parts[1])
+            
+            # --- KEY CHANGE: EXTRACT CONTEXT INDEX ---
+            # Try to get it from the node object first, then fall back to the ID string
+            ctx_idx = n.get('ctx_idx')
+            if ctx_idx is None and len(parts) > 2:
+                ctx_idx = int(parts[2])
+            
+            # If we still can't find it, default to 0 (or skip, but 0 is safer)
+            if ctx_idx is None:
+                ctx_idx = 0
 
             # Exclude final logit layers if necessary
             if layer_idx < 26:
                 pruned_list.append({
                     "layer": layer_idx,
                     "feature": feature_idx,
+                    "ctx_idx": ctx_idx,  # <--- WE SAVE IT HERE
                     "score": score,
                     "type": f_type
                 })
@@ -118,9 +127,14 @@ def fetch_single_feature(node, index_data):
         return None
 
 def parse_usable_data(node, raw_json):
+    # --- KEY CHANGE: CONSTRUCT ID WITH CTX_IDX ---
+    # This creates IDs like "0_4752_5" instead of just "0_4752"
+    unique_id = f"{node['layer']}_{node['feature']}_{node['ctx_idx']}"
+
     parsed = {
-        "id": f"{node['layer']}_{node['feature']}", 
+        "id": unique_id, 
         "layer": node['layer'],
+        "ctx_idx": node['ctx_idx'], # Save explicitly too
         "influence_score": node['score'],
         "top_activations": []
     }
