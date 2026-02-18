@@ -5,9 +5,7 @@
 set -e
 cd "$(dirname "$0")"
 
-# 1. Setup virtual environment and install dependencies
-python3 -m venv venv_auto-circuits
-source venv_auto-circuits/bin/activate
+export PRUNING_THRESHOLD="${1:-0.40}"
 
 # 2. Descriptions for each feature.
 echo "------------------------------------------------"
