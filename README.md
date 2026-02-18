@@ -16,6 +16,12 @@ HF_TOKEN="hf_..." ./reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
 
+
+---Runpod (For ameen and max)
+rm -rf circuit-tracer-automation (deletes folder to start clean if you want)
+Run clone, cd, both install.
+Then open a TERMINAL and run circuit-tracer attribute --prompt "The capital of . . .
+cd the automation folder and then do reproduce.sh
 ## ------------------------------------------------------------------------------------------------------
 
 
