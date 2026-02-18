@@ -32,6 +32,7 @@ cd the automation folder and then do reproduce.sh
 ## ------------------------------------------------------------------------------------------------------
 
 circuit-tracer-automation/
+```
 ├── custom_automation/             # MAIN PIPELINE
 │   ├── fetch_all_activating_text.py   # Step 1: Downloads feature activations from HF (Threshold filtering)
 │   ├── add_description.py             # Step 2: Generates descriptions using local TransLuce Llama-3 model
@@ -54,7 +55,7 @@ circuit-tracer-automation/
 │   └── ... 
 │
 └── README.md
-
+```
 
 # circuit-tracer
 
