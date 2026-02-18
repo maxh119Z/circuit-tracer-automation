@@ -11,7 +11,7 @@ pip install .
 
 ---Original Circuit-Tracer---
 ```
-python huggingface_login.py
+python huggingface_login.py hf_abc123yourtoken
 circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
 ```
 
