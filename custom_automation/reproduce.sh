@@ -1,10 +1,9 @@
 #!/bin/bash
-# Usage: HF_TOKEN="your_key_here" ./reproduce.sh 0.4
+# Usage: ./reproduce.sh 0.4
 # Reproduces the add descriptions section of our paper.
 
 set -e
 cd "$(dirname "$0")"
-export PRUNING_THRESHOLD="${1:-0.40}"
 
 # 1. Setup virtual environment and install dependencies
 python3 -m venv venv_auto-circuits
