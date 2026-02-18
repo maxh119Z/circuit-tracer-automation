@@ -1,91 +1,124 @@
-#Clear browser cache to update after running if necessary
+"""
+Step 3 — Merge generated descriptions into the attribution graph.
 
+Reads ``feature_descriptions.json`` from the artifacts directory, matches
+each description to its graph node by ``node_id``, and updates the label
+fields (``clerp``, ``localClerp``, ``ppClerp``) so the viewer shows
+human-readable feature names.
+
+A **backup** of the graph file is created before overwriting.
+
+Usage:
+    python push_to_website.py
+"""
+
+from __future__ import annotations
 
 import json
-import os
+import shutil
+import sys
+from pathlib import Path
 
-# --- CONFIGURATION ---
-descriptions_file = "feature_descriptions.json"
-graph_file = "../test_graphs/test-run.json"  # Ensure this is correct
+from config import (
+    FEATURE_DESCRIPTIONS_FILE,
+    GRAPH_FILE,
+    setup_logging,
+)
 
-def direct_id_merge():
-    # 1. Load Descriptions
-    if not os.path.exists(descriptions_file):
-        print(f"❌ Missing {descriptions_file}")
-        return
+log = setup_logging()
 
-    with open(descriptions_file, 'r') as f:
-        desc_list = json.load(f)
-    
-    # Map "0_7118_2" -> "Description"
-    desc_map = {}
+
+# ---------------------------------------------------------------------------
+# Merge Logic
+# ---------------------------------------------------------------------------
+
+
+def build_description_map(desc_path: Path) -> dict[str, str]:
+    """Load descriptions and return a mapping of node_id → description text."""
+    with open(desc_path, "r") as f:
+        desc_list: list[dict] = json.load(f)
+
+    desc_map: dict[str, str] = {}
     for item in desc_list:
-        # We use the ID exactly as it appears in the file
-        key = str(item.get('id', 'MISSING'))
-        desc_map[key] = item.get('generated_description', '')
-    
-    print(f"Loaded {len(desc_map)} descriptions.")
+        key = str(item.get("id", ""))
+        desc = item.get("generated_description", "")
+        if key and desc:
+            desc_map[key] = desc
 
-    # 2. Load Graph
-    if not os.path.exists(graph_file):
-        print(f"❌ Missing graph file at {graph_file}")
-        return
+    log.info("Loaded %d descriptions from %s", len(desc_map), desc_path)
+    return desc_map
 
-    with open(graph_file, 'r') as f:
-        graph_data = json.load(f)
-    
-    nodes = graph_data.get('nodes', [])
-    input_tokens = graph_data.get('input_tokens', [])
-    
-    # Check for tokenizer (for label context)
-    has_tokenizer = 'tokenizer' in globals()
-    
-    print(f"Scanning {len(nodes)} graph nodes...")
+
+def merge_descriptions(graph_path: Path, desc_map: dict[str, str]) -> int:
+    """Inject descriptions into graph nodes and save.  Returns match count."""
+    with open(graph_path, "r") as f:
+        graph_data: dict = json.load(f)
+
+    nodes = graph_data.get("nodes", [])
+    input_tokens = graph_data.get("input_tokens", [])
+    log.info("Scanning %d graph nodes …", len(nodes))
 
     match_count = 0
     for node in nodes:
-        try:
-            # --- THE FIX: USE THE NODE_ID DIRECTLY ---
-            # Your debug proved this is "0_7118_2"
-            node_id = str(node.get('node_id', ''))
-            
-            # Identify Context (for the "on 'word'" label)
-            ctx_idx = node.get('ctx_idx')
-            token_label = ""
-            
-            if ctx_idx is not None and isinstance(input_tokens, list):
-                if 0 <= ctx_idx < len(input_tokens):
-                    raw_token = input_tokens[ctx_idx]
-                    if isinstance(raw_token, int) and has_tokenizer:
-                        token_str = tokenizer.decode([raw_token]).strip()
-                    else:
-                        token_str = str(raw_token).strip()
-                    token_label = f" (on '{token_str}')"
-
-            # --- MERGE ---
-            if node_id in desc_map:
-                desc = desc_map[node_id]
-                full_label = f"{desc}{token_label}"
-                
-                # Update ALL label fields to be safe
-                node['clerp'] = full_label      # Standard field
-                node['localClerp'] = full_label # User-reported field
-                node['ppClerp'] = full_label    # Popup field
-                
-                match_count += 1
-
-        except Exception:
+        node_id = str(node.get("node_id", ""))
+        if node_id not in desc_map:
             continue
 
-    # 4. Save
-    if match_count > 0:
-        with open(graph_file, 'w') as f:
-            json.dump(graph_data, f, indent=2)
-        print(f"✅ Success! Updated {match_count} nodes.")
-        print("👉 Go refresh localhost:8041 now!")
-    else:
-        print("⚠️ Still 0 matches.") 
-        print("DOUBLE CHECK: Are you sure 'feature_descriptions.json' has the same IDs as the graph?")
+        # Build optional token context suffix, e.g. " (on 'Dallas')"
+        token_label = ""
+        ctx_idx = node.get("ctx_idx")
+        if ctx_idx is not None and isinstance(input_tokens, list):
+            if 0 <= ctx_idx < len(input_tokens):
+                token_str = str(input_tokens[ctx_idx]).strip()
+                if token_str:
+                    token_label = f" (on '{token_str}')"
+
+        full_label = f"{desc_map[node_id]}{token_label}"
+
+        node["clerp"] = full_label
+        node["localClerp"] = full_label
+        node["ppClerp"] = full_label
+        match_count += 1
+
+    if match_count == 0:
+        log.warning("0 matches — verify that feature_descriptions.json IDs match graph node_ids.")
+        return 0
+
+    # --- Backup before writing ---
+    backup_path = graph_path.with_suffix(".json.bak")
+    shutil.copy2(graph_path, backup_path)
+    log.info("Backup saved → %s", backup_path)
+
+    with open(graph_path, "w") as f:
+        json.dump(graph_data, f, indent=2)
+
+    log.info("Updated %d / %d nodes in %s", match_count, len(nodes), graph_path)
+    return match_count
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
+
+def main() -> None:
+    if not FEATURE_DESCRIPTIONS_FILE.exists():
+        log.error("Missing %s — run add_description.py first (Step 2).", FEATURE_DESCRIPTIONS_FILE)
+        sys.exit(1)
+
+    if not GRAPH_FILE.exists():
+        log.error("Missing graph file: %s", GRAPH_FILE)
+        sys.exit(1)
+
+    desc_map = build_description_map(FEATURE_DESCRIPTIONS_FILE)
+    if not desc_map:
+        log.error("Description file is empty or malformed.")
+        sys.exit(1)
+
+    matched = merge_descriptions(GRAPH_FILE, desc_map)
+    if matched > 0:
+        log.info("Done! Refresh localhost:8041 and clear browser cache to see updates.")
+
 
 if __name__ == "__main__":
-    direct_id_merge()
+    main()
