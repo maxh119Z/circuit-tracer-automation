@@ -8,6 +8,7 @@ cd "$(dirname "$0")"
 export PRUNING_THRESHOLD="${1:-0.40}"
 
 # 2. Descriptions for each feature.
+echo "2. Descriptions for each feature"
 echo "------------------------------------------------"
 
 echo "2_A. Fetching Features with influence <= PRUNING_THRESHOLD"
