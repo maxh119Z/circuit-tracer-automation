@@ -31,6 +31,29 @@ cd the automation folder and then do reproduce.sh
 ```
 ## ------------------------------------------------------------------------------------------------------
 
+circuit-tracer-automation/
+├── custom_automation/             # MAIN PIPELINE
+│   ├── fetch_all_activating_text.py   # Step 1: Downloads feature activations from HF (Threshold filtering)
+│   ├── add_description.py             # Step 2: Generates descriptions using local TransLuce Llama-3 model
+│   ├── push_to_website.py             # Step 3: Injects descriptions into test-run.json for the viewer
+│   ├── _TBA grouping file
+│   │
+│   ├── reproduce.sh                   # MASTER SCRIPT: Runs steps 1-3 in sequence
+│   │
+│   ├── artifacts/                     # Generated Files (Ignored by Git)
+│   │   ├── pruned_activations.json    # Output of Step 1 (Raw feature data)
+│   │   ├── feature_descriptions.json  # Output of Step 2 (AI explanations)
+│   │   └── feature_groups.json        # Output of Clustering
+│   │
+│   └── venv_auto-circuits/            # Virtual Environment (Auto-created by reproduce.sh)
+│
+├── test_graphs/                   # Graph Data
+│   └── test-run.json                  # The main graph file served to the website
+│
+├── circuit_tracer/                # Core Library (Original Tool)
+│   └── ... 
+│
+└── README.md
 
 
 # circuit-tracer
