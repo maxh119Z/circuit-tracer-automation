@@ -9,8 +9,6 @@ export PRUNING_THRESHOLD="${1:-0.40}"
 # 1. Setup virtual environment and install dependencies
 python3 -m venv venv_auto-circuits
 source venv_auto-circuits/bin/activate
-pip install .
-#pip install --force-reinstall torch torchvision torchaudio   (Mainly a Runpod Issue).
 
 # 1_A. Login to Huggingface for gated models.
 echo "Logging in to Huggingface"
