@@ -13,7 +13,10 @@ OUTPUT_FILE = "pruned_activations.json"
 GRAPH_FILE = "../test_graphs/test-run.json"
 
 # PRUNING THRESHOLD (Lower is stricter/more important)
-PRUNING_THRESHOLD = 0.40
+try:
+    PRUNING_THRESHOLD = float(os.environ.get("PRUNING_THRESHOLD", 0.40))
+except ValueError:
+    PRUNING_THRESHOLD = 0.40
 
 MAX_WORKERS = 10
 
