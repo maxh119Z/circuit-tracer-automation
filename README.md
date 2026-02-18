@@ -1,11 +1,15 @@
 # Automation Quickstart
 
----Original Circuit-Tracer---
+---Preliminary---
 ```
 !git clone https://github.com/maxh119Z/circuit-tracer-automation.git
 cd circuit-tracer-automation
 pip install .
 #pip install --force-reinstall torch torchvision torchaudio   (Mainly a Runpod Issue).
+```
+
+---Original Circuit-Tracer---
+```
 python huggingface_login.py
 circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
 ```
