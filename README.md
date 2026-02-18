@@ -1,11 +1,11 @@
 # Automation Quickstart
 
+Run in Order:
 ---Preliminary---
 ```
 !git clone https://github.com/maxh119Z/circuit-tracer-automation.git
 cd circuit-tracer-automation
 pip install .
-#pip install --force-reinstall torch torchvision torchaudio   (Mainly a Runpod Issue).
 ```
 
 ---Original Circuit-Tracer---
@@ -20,14 +20,18 @@ chmod +x reproduce.sh
 ./reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
+---END-----
 
-
+RUNPOD ONLY:
 ---Runpod (For ameen and max)---
 ```
 rm -rf circuit-tracer-automation (deletes folder to start clean if you want)
 Run clone, cd, both install.
 Then open a TERMINAL and run circuit-tracer attribute --prompt "The capital of . . .
 cd the automation folder and then do reproduce.sh
+
+Make sure to run this cell!
+#pip install --force-reinstall torch torchvision torchaudio
 ```
 ## ------------------------------------------------------------------------------------------------------
 
@@ -45,8 +49,6 @@ circuit-tracer-automation/
 │   │   ├── pruned_activations.json    # Output of Step 1 (Raw feature data)
 │   │   ├── feature_descriptions.json  # Output of Step 2 (AI explanations)
 │   │   └── feature_groups.json        # Output of Clustering
-│   │
-│   └── venv_auto-circuits/            # Virtual Environment (Auto-created by reproduce.sh)
 │
 ├── test_graphs/                   # Graph Data
 │   └── test-run.json                  # The main graph file served to the website
