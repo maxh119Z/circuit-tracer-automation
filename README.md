@@ -15,12 +15,6 @@ HF_TOKEN="hf_..." ./reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
 
-
-
-
-4. ### Edit/Run/Create files in custom_automation/
-
-
 ## ------------------------------------------------------------------------------------------------------
 
 
