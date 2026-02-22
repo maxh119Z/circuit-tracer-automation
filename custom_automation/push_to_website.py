@@ -1,124 +1,174 @@
 """
-Step 3 — Merge generated descriptions into the attribution graph.
+Step 4 — Push descriptions and groups into the graph, generate viewer URL.
 
-Reads ``feature_descriptions.json`` from the artifacts directory, matches
-each description to its graph node by ``node_id``, and updates the label
-fields (``clerp``, ``localClerp``, ``ppClerp``) so the viewer shows
-human-readable feature names.
+Reads:
+  - artifacts/feature_descriptions.json
+  - artifacts/feature_groups.json
+  - ../test_graphs/test-run.json
 
-A **backup** of the graph file is created before overwriting.
+Outputs:
+  - Updated test-run.json with clerp labels
+  - artifacts/viewer_url.txt with a clickable URL containing supernodes & clerps
 
 Usage:
-    python push_to_website.py
+    python push_to_graph.py
+    VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net python push_to_website.py
 """
 
 from __future__ import annotations
 
 import json
+import os
 import shutil
-import sys
-from pathlib import Path
+import urllib.parse
 
 from config import (
+    DEFAULT_PRUNING_THRESHOLD,
     FEATURE_DESCRIPTIONS_FILE,
+    FEATURE_GROUPS_FILE,
     GRAPH_FILE,
+    VIEWER_BASE_URL,
+    VIEWER_URL_FILE,
     setup_logging,
 )
 
 log = setup_logging()
 
-
-# ---------------------------------------------------------------------------
-# Merge Logic
-# ---------------------------------------------------------------------------
+PRUNING_THRESHOLD = os.environ.get("PRUNING_THRESHOLD", str(DEFAULT_PRUNING_THRESHOLD))
 
 
-def build_description_map(desc_path: Path) -> dict[str, str]:
-    """Load descriptions and return a mapping of node_id → description text."""
-    with open(desc_path, "r") as f:
-        desc_list: list[dict] = json.load(f)
+def push_to_graph() -> None:
+    # ==================================================================
+    # 1. LOAD DATA
+    # ==================================================================
+    if not GRAPH_FILE.exists():
+        log.error("Missing graph file: %s", GRAPH_FILE)
+        return
 
-    desc_map: dict[str, str] = {}
-    for item in desc_list:
-        key = str(item.get("id", ""))
-        desc = item.get("generated_description", "")
-        if key and desc:
-            desc_map[key] = desc
+    with open(GRAPH_FILE, "r") as f:
+        graph_data = json.load(f)
 
-    log.info("Loaded %d descriptions from %s", len(desc_map), desc_path)
-    return desc_map
+    # Descriptions (required)
+    descriptions: dict[str, str] = {}
+    if FEATURE_DESCRIPTIONS_FILE.exists():
+        with open(FEATURE_DESCRIPTIONS_FILE, "r") as f:
+            descriptions = {
+                item["id"]: item["generated_description"] for item in json.load(f)
+            }
+    else:
+        log.warning("No descriptions file found at %s", FEATURE_DESCRIPTIONS_FILE)
 
+    # Groups (optional — pipeline works without grouping)
+    groups: dict[str, str] = {}
+    if FEATURE_GROUPS_FILE.exists():
+        with open(FEATURE_GROUPS_FILE, "r") as f:
+            groups = json.load(f)
 
-def merge_descriptions(graph_path: Path, desc_map: dict[str, str]) -> int:
-    """Inject descriptions into graph nodes and save.  Returns match count."""
-    with open(graph_path, "r") as f:
-        graph_data: dict = json.load(f)
+    log.info("Loaded %d descriptions, %d group assignments.", len(descriptions), len(groups))
 
+    # ==================================================================
+    # 2. PROCESS NODES — inject labels
+    # ==================================================================
     nodes = graph_data.get("nodes", [])
     input_tokens = graph_data.get("input_tokens", [])
-    log.info("Scanning %d graph nodes …", len(nodes))
 
     match_count = 0
     for node in nodes:
         node_id = str(node.get("node_id", ""))
-        if node_id not in desc_map:
+        if node_id not in descriptions:
             continue
 
-        # Build optional token context suffix, e.g. " (on 'Dallas')"
-        token_label = ""
+        desc = descriptions[node_id]
+        group_name = groups.get(node_id)
+
+        # Context suffix, e.g. " (on 'capital')"
         ctx_idx = node.get("ctx_idx")
-        if ctx_idx is not None and isinstance(input_tokens, list):
-            if 0 <= ctx_idx < len(input_tokens):
-                token_str = str(input_tokens[ctx_idx]).strip()
-                if token_str:
-                    token_label = f" (on '{token_str}')"
+        token_label = ""
+        if ctx_idx is not None and isinstance(input_tokens, list) and 0 <= ctx_idx < len(input_tokens):
+            token_str = str(input_tokens[ctx_idx]).strip()
+            if token_str:
+                token_label = f" (on '{token_str}')"
 
-        full_label = f"{desc_map[node_id]}{token_label}"
+        base_label = f"{desc}{token_label}"
 
-        node["clerp"] = full_label
-        node["localClerp"] = full_label
-        node["ppClerp"] = full_label
+        node["clerp"] = base_label
+        node["localClerp"] = base_label
+
+        if group_name and group_name != "Ungrouped":
+            node["ppClerp"] = f"[{group_name}] {base_label}"
+        else:
+            node["ppClerp"] = base_label
+
         match_count += 1
 
-    if match_count == 0:
-        log.warning("0 matches — verify that feature_descriptions.json IDs match graph node_ids.")
-        return 0
+    # ==================================================================
+    # 3. BUILD SUPERNODES ARRAY (for URL)
+    # ==================================================================
+    # Format: [["Group A", "id1", "id2"], ["Group B", "id3"], ...]
+    group_to_nodes: dict[str, list[str]] = {}
+    for node in nodes:
+        node_id = str(node.get("node_id", ""))
+        group_name = groups.get(node_id)
+        if group_name and group_name != "Ungrouped":
+            group_to_nodes.setdefault(group_name, []).append(node_id)
 
-    # --- Backup before writing ---
-    backup_path = graph_path.with_suffix(".json.bak")
-    shutil.copy2(graph_path, backup_path)
+    supernodes_array = []
+    for gname, member_ids in group_to_nodes.items():
+        supernodes_array.append([gname] + member_ids)
+
+    # ==================================================================
+    # 4. BUILD CLERPS ARRAY (for URL)
+    # ==================================================================
+    # Format: [["node_id", "description"], ...]
+    clerps_array = [[nid, desc] for nid, desc in descriptions.items()]
+
+    # ==================================================================
+    # 5. BACKUP & SAVE GRAPH
+    # ==================================================================
+    backup_path = str(GRAPH_FILE) + ".bak"
+    shutil.copy2(GRAPH_FILE, backup_path)
     log.info("Backup saved → %s", backup_path)
 
-    with open(graph_path, "w") as f:
+    with open(GRAPH_FILE, "w") as f:
         json.dump(graph_data, f, indent=2)
 
-    log.info("Updated %d / %d nodes in %s", match_count, len(nodes), graph_path)
-    return match_count
+    log.info("Updated %d / %d nodes in graph.", match_count, len(nodes))
+    log.info("Built %d supernode groups.", len(supernodes_array))
 
+    # ==================================================================
+    # 6. GENERATE VIEWER URL
+    # ==================================================================
+    clean_supernodes = []
+    all_pinned_ids = []
+    for group in supernodes_array:
+        clean_name = group[0].replace("/", "-").replace("\\", "-")
+        member_ids = group[1:]
+        clean_supernodes.append([clean_name] + member_ids)
+        all_pinned_ids.extend(member_ids)
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
+    compact_json = json.dumps(clean_supernodes, separators=(",", ":"))
+    encoded_supernodes = urllib.parse.quote_plus(compact_json)
+    encoded_pinned = urllib.parse.quote_plus(",".join(all_pinned_ids))
 
+    base = VIEWER_BASE_URL.rstrip("/") + "/"
 
-def main() -> None:
-    if not FEATURE_DESCRIPTIONS_FILE.exists():
-        log.error("Missing %s — run add_description.py first (Step 2).", FEATURE_DESCRIPTIONS_FILE)
-        sys.exit(1)
+    full_url = (
+        f"{base}"
+        f"?pruningThreshold={PRUNING_THRESHOLD}"
+        f"&clerps=%5B%5D"
+        f"&pinnedIds={encoded_pinned}"
+        f"&supernodes={encoded_supernodes}"
+    )
 
-    if not GRAPH_FILE.exists():
-        log.error("Missing graph file: %s", GRAPH_FILE)
-        sys.exit(1)
+    log.info("")
+    log.info("🔗 Open this URL in your browser:")
+    print(full_url)
+    print()
 
-    desc_map = build_description_map(FEATURE_DESCRIPTIONS_FILE)
-    if not desc_map:
-        log.error("Description file is empty or malformed.")
-        sys.exit(1)
-
-    matched = merge_descriptions(GRAPH_FILE, desc_map)
-    if matched > 0:
-        log.info("Done! Refresh localhost:8041 and clear browser cache to see updates.")
+    with open(VIEWER_URL_FILE, "w") as f:
+        f.write(full_url)
+    log.info("URL also saved to %s", VIEWER_URL_FILE)
 
 
 if __name__ == "__main__":
-    main()
+    push_to_graph()

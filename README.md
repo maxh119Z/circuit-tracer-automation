@@ -18,7 +18,7 @@ circuit-tracer attribute --prompt "The capital of the state containing Dallas is
 ---Custom-Automation---
 ```
 chmod +x reproduce.sh
-./reproduce.sh 0.40
+OPENAI_API_KEY=sk-xxx bash reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
 ---END-----
@@ -26,10 +26,12 @@ chmod +x reproduce.sh
 RUNPOD ONLY:
 ---Runpod (For ameen and max)---
 ```
-rm -rf circuit-tracer-automation (deletes folder to start clean if you want)
-Run clone, cd, both install.
-Then open a TERMINAL and run circuit-tracer attribute --prompt "The capital of . . .
-cd the automation folder and then do reproduce.sh
+RUN INSTEAD:
+Important: OPENAI_API_KEY=sk-xxx VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net bash reproduce.sh 0.40
+
+1. rm -rf circuit-tracer-automation (to start clean if wanted)
+2. Open a Terminal ----> circuit-tracer attribute --prompt "The capital of . . .
+3. OPENAI_API_KEY=sk-xxx VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net bash reproduce.sh 0.40
 
 Make sure to run this cell!
 #pip install --force-reinstall torch torchvision torchaudio

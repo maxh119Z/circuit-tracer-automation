@@ -29,6 +29,8 @@ GRAPH_FILE = PACKAGE_DIR.parent / "test_graphs" / "test-run.json"
 # Artifact filenames (always resolved relative to ARTIFACTS_DIR).
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / "feature_descriptions.json"
+FEATURE_GROUPS_FILE = ARTIFACTS_DIR / "feature_groups.json"
+VIEWER_URL_FILE = ARTIFACTS_DIR / "viewer_url.txt"
 
 # ---------------------------------------------------------------------------
 # HuggingFace
@@ -56,6 +58,27 @@ CHECKPOINT_INTERVAL: int = 10
 
 # Explainer model used by add_description.py.
 EXPLAINER_MODEL_ID = "Transluce/llama_8b_explainer"
+
+# ---------------------------------------------------------------------------
+# Grouping (OpenAI) — used by group_features.py
+# ---------------------------------------------------------------------------
+
+# Model for semantic clustering. gpt-4o-mini is cheap and fast.
+GROUPING_MODEL: str = "gpt-5-mini"
+
+# How many top features to seed Phase 1 discovery with.
+GROUPING_TOP_K_SEED: int = 50
+
+# How many features per batch in Phase 2 assignment.
+GROUPING_BATCH_SIZE: int = 50
+
+# ---------------------------------------------------------------------------
+# Viewer
+# ---------------------------------------------------------------------------
+
+# Base URL for the circuit-tracer viewer.
+# Override with VIEWER_URL env var for RunPod / remote setups.
+VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "http://localhost:8041")
 
 # ---------------------------------------------------------------------------
 # HTTP Session with Retries
