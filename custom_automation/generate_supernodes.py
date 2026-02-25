@@ -33,7 +33,7 @@ from config import (
 )
 
 log = setup_logging()
-
+GROUPING_TOP_K_SEED = 60
 # ---------------------------------------------------------------------------
 # OpenAI client — reads OPENAI_API_KEY from environment automatically.
 # NEVER hardcode your API key in source code.
@@ -137,7 +137,7 @@ def main() -> None:
     log.info("Phase 1: Discovering supernodes from top %d features …", GROUPING_TOP_K_SEED)
 
     phase1_prompt = f"""You are an expert AI interpretability researcher analyzing the internal representations of a large language model.
-Context: The model was given the following prompt: "{prompt_text}"
+Context: The model was given the following prompt: {prompt_text}
 
 Task: Below is a list of the {GROUPING_TOP_K_SEED} most influential features (and their descriptions) that activated during this prompt. Your goal is to cluster these features into meaningful semantic groups ("super nodes").
 
@@ -145,7 +145,12 @@ Constraints:
 1. Target Size: Aim for roughly 8 high-level groups, though this is a flexible target.
 2. Do Not Force Structure: Neural network features are often messy and polysemantic. If a feature does not clearly fit into a group, assign it to "Ungrouped". Do not force loose connections.
 3. Hyper-Relevant Outliers: A single feature can constitute its own distinct group if it represents a highly specific and crucial concept related to the prompt.
-4. Keep group name concise and usually in format of "Say a __" (e.g. "Say a proper noun")
+4. Group Naming Convention: Follow a two-tier naming scheme based on the functional role of the features in the group:
+
+Conceptual/Semantic groups (features that encode a background concept, entity, or relationship): Use a short descriptive noun phrase that names the concept directly. Examples: capital, state, Texas-related, Dallas, U.S. geography.
+Output-driving groups (features that are proximal predictors of the next token — i.e., they are "steering" the model toward a specific output): Prefix the name with "say". Use say [specific token] if the features point to a particular word (e.g., say Austin), or say a [category] if they point to a class of tokens (e.g., say a capital, say a country name).
+
+To decide which tier a group belongs to: ask whether the features are representing a fact about the world (conceptual) or actively pushing a particular token to be generated (output-driving). When in doubt, prefer the conceptual label.
 
 Features to Cluster:
 {format_feature_list(seed_features)}
@@ -179,7 +184,7 @@ Features to Cluster:
             groups_context = json.dumps(active_groups, indent=2)
 
             phase2_prompt = f"""You are an expert AI interpretability researcher analyzing the internal representations of a large language model.
-Context: The model was given the prompt: "{prompt_text}"
+Context: The model was given the prompt: {prompt_text}
 
 Current State: We have already established the following feature groups and rationales:
 {groups_context}
@@ -199,7 +204,7 @@ New Batch:
                 model=GROUPING_MODEL,
                 messages=[{"role": "user", "content": phase2_prompt}],
                 response_format=Phase2Output,
-                temperature=0.1,
+                temperature=1,
             )
 
             p2 = response.choices[0].message.parsed
@@ -211,6 +216,26 @@ New Batch:
                 if new_g.group_name not in active_groups:
                     active_groups[new_g.group_name] = new_g.rationale
                     log.info("New group created mid-stream: %s", new_g.group_name)
+
+
+    # ==================================================================
+    # AUTO-GROUP EMBEDDING & OUTPUT (LOGIT) NODES
+    # ==================================================================
+    # These non-CLT nodes render as squares in the viewer. They are not
+    # processed by the LLM phases, so we group them directly from the graph.
+    if GRAPH_FILE.exists():
+        with open(GRAPH_FILE, "r") as f:
+            graph = json.load(f)
+
+        for node in graph.get("nodes", []):
+            nid = str(node.get("node_id", ""))
+            ftype = node.get("feature_type", "")
+            if ftype == "embedding":
+                final_assignments[nid] = "Embedding"
+            elif ftype == "logit":
+                final_assignments[nid] = "Output"
+
+        log.info("Auto-grouped embedding and logit nodes.")
 
     # ==================================================================
     # SAVE
