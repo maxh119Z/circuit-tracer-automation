@@ -15,10 +15,13 @@ python huggingface_login.py hf_abc123yourtoken
 circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
 ```
 
+```
+export OPENAI_API_KEY = ""
+```
 ---Custom-Automation---
 ```
 chmod +x reproduce.sh
-OPENAI_API_KEY=sk-xxx bash reproduce.sh 0.40
+./reproduce.sh 0.40
 #0.4 represents the PRUNING_THRESHOLD
 ```
 ---END-----
