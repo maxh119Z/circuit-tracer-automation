@@ -1,29 +1,29 @@
 """
 Step 2 — Generate natural-language descriptions for pruned features.
 
-Loads ``pruned_activations.json`` from the artifacts directory, prompts a
-local Transluce Llama-3 explainer model for each feature, and writes
+Loads ``pruned_activations.json`` from the artifacts directory, prompts
+OpenAI's GPT-5-mini model concurrently for each feature, and writes
 ``feature_descriptions.json``.
 
 Supports **checkpoint resume**: if the output file already exists, features
 that already have a description are skipped.
 
 Usage:
+    export OPENAI_API_KEY="sk-..."
     python add_description.py
 """
 
 from __future__ import annotations
 
+import asyncio
 import json
 import sys
 from pathlib import Path
 
-import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from openai import AsyncOpenAI
 
 from config import (
     CHECKPOINT_INTERVAL,
-    EXPLAINER_MODEL_ID,
     FEATURE_DESCRIPTIONS_FILE,
     PRUNED_ACTIVATIONS_FILE,
     setup_logging,
@@ -32,31 +32,39 @@ from config import (
 log = setup_logging()
 
 # ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+
+MODEL = "gpt-5-mini"
+CONCURRENCY_LIMIT = 20  # How many simultaneous requests to send to OpenAI
+CHUNK_SIZE = 50         # How many to process before saving a checkpoint
+
+# ---------------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = (
     "You are a meticulous AI researcher conducting an important investigation "
-    "into a specific neuron inside a language model that activates in response "
-    "to text excerpts. Your overall task is to describe features of text "
-    "excerpts that cause the neuron to strongly activate.\n\n"
-    "You will receive a list of text excerpts on which the neuron activates. "
-    "Tokens causing activation will appear between delimiters like {{this}}. "
-    "Consecutive activating tokens will also be accordingly delimited "
-    "{{just like this}}. If no tokens are highlighted with {{}}, then the "
-    "neuron does not activate on any tokens in the excerpt.\n\n"
-    "Note: Neurons activate on a word-by-word basis. Also, neuron activations "
-    "can only depend on words before the word it activates on, so the "
-    "description cannot depend on words that come after, and should only "
-    "depend on words that come before the activation. Note: make your final "
-    "descriptions as concise as possible, using as few words as possible to "
-    "describe text features that activate the neuron."
+    "into a specific neuron inside a language model. Your task is to concisely "
+    "describe the concept or feature that this neuron represents.\n\n"
+    "You will receive two types of evidence:\n"
+    "1. Input Activations: Text excerpts where the neuron activated strongly. "
+    "The specific tokens causing activation are delimited by {{ }}. "
+    "Remember that activations only depend on preceding tokens, never subsequent ones.\n"
+    "2. Global Output Tokens: A list of tokens the neuron intrinsically promotes "
+    "(increases probability) and demotes (decreases probability) across the vocabulary.\n\n"
+    "CRITICAL WARNING: The output tokens (promoted/demoted) can often be noisy, "
+    "polysemantic, or artifacts of the tokenizer. Be wary of this noise. "
+    "Use the output tokens merely as directional hints to support the context seen "
+    "in the input activations, not as absolute truth.\n\n"
+    "Keep your final description as concise as possible, using as few words as "
+    "possible to accurately capture the neuron's true function. Ideally should be less than 5 words, does not need"
+    " full gramatical correctedness."
 )
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
-
 
 def _format_excerpt(context: str, trigger: str) -> str:
     """Wrap *trigger* in ``{{ }}`` within *context*."""
@@ -65,64 +73,23 @@ def _format_excerpt(context: str, trigger: str) -> str:
         return context.replace(clean, f"{{{{{clean}}}}}", 1)
     return f"{context} [Activates on: {{{{{clean}}}}}]"
 
-
 def _build_user_prompt(feature: dict) -> str:
-    """Compose the user-turn content from a feature's activation examples."""
+    """Compose the user-turn content including inputs and output logits."""
     lines = [f"Neuron {feature.get('id', 'Unknown')}:\n"]
+    
+    lines.append("--- INPUT ACTIVATIONS ---")
     for i, act in enumerate(feature.get("top_activations", [])[:10], 1):
         formatted = _format_excerpt(act.get("context", ""), act.get("trigger", ""))
         lines.append(f"Excerpt {i}: {formatted}")
+        
+    lines.append("\n--- GLOBAL OUTPUT TOKENS ---")
+    promotes = feature.get("promotes", [])
+    demotes = feature.get("demotes", [])
+    
+    lines.append(f"Top Promoted Tokens: {', '.join(promotes) if promotes else 'None available'}")
+    lines.append(f"Top Demoted Tokens: {', '.join(demotes) if demotes else 'None available'}")
+    
     return "\n".join(lines)
-
-
-# ---------------------------------------------------------------------------
-# Model Loading
-# ---------------------------------------------------------------------------
-
-
-def load_model(model_id: str = EXPLAINER_MODEL_ID):
-    """Load tokenizer and model (float16, auto device-map)."""
-    log.info("Loading explainer model: %s", model_id)
-    tokenizer = AutoTokenizer.from_pretrained(model_id)
-    model = AutoModelForCausalLM.from_pretrained(
-        model_id,
-        torch_dtype=torch.float16,
-        device_map="auto",
-    )
-    return tokenizer, model
-
-
-# ---------------------------------------------------------------------------
-# Generation
-# ---------------------------------------------------------------------------
-
-
-def generate_description(feature: dict, tokenizer, model) -> str:
-    """Prompt the explainer model and return a concise description string."""
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": _build_user_prompt(feature)},
-    ]
-
-    input_ids = tokenizer.apply_chat_template(
-        messages,
-        add_generation_prompt=True,
-        return_tensors="pt",
-    ).to(model.device)
-
-    outputs = model.generate(input_ids, max_new_tokens=60, do_sample=False)
-    response = tokenizer.decode(outputs[0][input_ids.shape[1]:], skip_special_tokens=True)
-
-    # The model often prefixes with "[DESCRIPTION]: …"
-    if "[DESCRIPTION]:" in response:
-        return response.split("[DESCRIPTION]:")[-1].strip()
-    return response.strip()
-
-
-# ---------------------------------------------------------------------------
-# Checkpoint helpers
-# ---------------------------------------------------------------------------
-
 
 def _load_existing_descriptions(path: Path) -> dict[str, dict]:
     """Return a mapping of feature-id → feature-dict from a prior run."""
@@ -135,19 +102,47 @@ def _load_existing_descriptions(path: Path) -> dict[str, dict]:
     except (json.JSONDecodeError, KeyError):
         return {}
 
-
 def _save_checkpoint(features: list[dict], path: Path) -> None:
     with open(path, "w") as f:
         json.dump(features, f, indent=2)
-    log.debug("Checkpoint saved (%d features) → %s", len(features), path)
+    log.info("💾 Checkpoint saved (%d features) → %s", len(features), path)
 
+# ---------------------------------------------------------------------------
+# Async Generation
+# ---------------------------------------------------------------------------
+
+async def process_feature(feature: dict, client: AsyncOpenAI, sem: asyncio.Semaphore, idx: int, total: int) -> None:
+    fid = feature.get("id", "?")
+    
+    async with sem:
+        log.info("[%d/%d] Requesting GPT-5-mini for %s ...", idx, total, fid)
+        try:
+            response = await client.chat.completions.create(
+                model=MODEL,
+                messages=[
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": _build_user_prompt(feature)},
+                ],
+                reasoning_effort="low",
+                max_completion_tokens=500
+            )
+            desc = response.choices[0].message.content.strip()
+            
+            if "[DESCRIPTION]:" in desc:
+                desc = desc.split("[DESCRIPTION]:")[-1].strip()
+                
+            feature["generated_description"] = desc
+            log.info("  → %s: %s", fid, desc[:60])
+            
+        except Exception as exc:
+            log.warning("  ✗ Failed for %s: %s", fid, exc)
+            feature["generated_description"] = "Error generating description"
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
-
-def main() -> None:
+async def main_async() -> None:
     if not PRUNED_ACTIVATIONS_FILE.exists():
         log.error("Input file not found: %s", PRUNED_ACTIVATIONS_FILE)
         log.error("Run fetch_all_activating_text.py first (Step 1).")
@@ -168,34 +163,37 @@ def main() -> None:
             if prev and "generated_description" in prev:
                 feat["generated_description"] = prev["generated_description"]
 
-    tokenizer, model = load_model()
+    # Filter out features that already have descriptions
+    features_to_process = [f for f in features if "generated_description" not in f]
+    remaining = len(features_to_process)
+    
+    if remaining == 0:
+        log.info("All features already described. Exiting.")
+        return
 
-    processed = 0
-    for idx, feature in enumerate(features, 1):
-        fid = feature.get("id", "?")
+    # Initialize Async Client and Semaphore
+    client = AsyncOpenAI()
+    sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
-        if "generated_description" in feature:
-            log.debug("[%d/%d] Skipping %s (already described)", idx, total, fid)
-            continue
+    log.info("Starting async generation for %d features...", remaining)
+    
+    # Process in chunks to save checkpoints periodically
+    for i in range(0, remaining, CHUNK_SIZE):
+        chunk = features_to_process[i:i + CHUNK_SIZE]
+        
+        # Calculate the absolute index for logging purposes
+        tasks = [
+            process_feature(feat, client, sem, (total - remaining) + i + j + 1, total) 
+            for j, feat in enumerate(chunk)
+        ]
+        
+        await asyncio.gather(*tasks)
+        _save_checkpoint(features, FEATURE_DESCRIPTIONS_FILE)
 
-        log.info("[%d/%d] Processing %s …", idx, total, fid)
-        try:
-            desc = generate_description(feature, tokenizer, model)
-            feature["generated_description"] = desc
-            processed += 1
-            log.info("  → %s", desc[:60])
-        except Exception as exc:
-            log.warning("  ✗ Failed: %s", exc)
-            feature["generated_description"] = "Error generating description"
+    log.info("Done — Descriptions fully generated and saved to %s", FEATURE_DESCRIPTIONS_FILE)
 
-        # Periodic checkpoint
-        if processed > 0 and processed % CHECKPOINT_INTERVAL == 0:
-            _save_checkpoint(features, FEATURE_DESCRIPTIONS_FILE)
-
-    # --- Final save ---
-    _save_checkpoint(features, FEATURE_DESCRIPTIONS_FILE)
-    log.info("Done — %d new descriptions written to %s", processed, FEATURE_DESCRIPTIONS_FILE)
-
+def main():
+    asyncio.run(main_async())
 
 if __name__ == "__main__":
     main()

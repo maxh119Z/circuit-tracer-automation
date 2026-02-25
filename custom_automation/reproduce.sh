@@ -6,13 +6,14 @@
 #   ./reproduce.sh [PRUNING_THRESHOLD]   (default: 0.40)
 #
 # Environment variables:
-#   OPENAI_API_KEY   — Required for Step 3 (grouping).
+#   OPENAI_API_KEY   — Required for Step 2 (descriptions) and Step 3 (grouping).
+#                      (If not set, the script will prompt you for it).
 #   VIEWER_URL       — Optional. Base URL for the viewer (default: localhost:8041).
-#   SKIP_GROUPING    — Set to 1 to skip Step 3 (if no OpenAI key available).
+#   SKIP_GROUPING    — Set to 1 to skip Step 3.
 #
 # Steps:
 #   1. Fetch pruned feature activations from HuggingFace.
-#   2. Generate descriptions with the Transluce Llama explainer.
+#   2. Generate descriptions with OpenAI GPT-5-mini (Asyncio).
 #   3. Group features into supernodes via OpenAI.
 #   4. Push descriptions + groups into the graph and generate viewer URL.
 # =============================================================================
@@ -53,10 +54,10 @@ if ! command -v python &>/dev/null; then
     exit 1
 fi
 
-# Key packages (fail fast rather than mid-pipeline)
-python -c "import requests, torch, transformers" 2>/dev/null || {
-    echo "ERROR: Missing Python dependencies (requests, torch, transformers)." >&2
-    echo "       Install with:  pip install requests torch transformers" >&2
+# Key packages (No longer need heavy ML libraries!)
+python -c "import requests, openai" 2>/dev/null || {
+    echo "ERROR: Missing Python dependencies (requests, openai)." >&2
+    echo "       Install with:  pip install requests openai" >&2
     exit 1
 }
 
@@ -67,12 +68,25 @@ echo "  ✓ Python and dependencies OK"
 echo "  ✓ artifacts/ directory ready"
 echo "  ✓ PRUNING_THRESHOLD=${PRUNING_THRESHOLD}"
 
-if [ -n "${OPENAI_API_KEY:-}" ]; then
-    echo "  ✓ OPENAI_API_KEY is set"
-elif [ "${SKIP_GROUPING:-0}" = "1" ]; then
-    echo "  ⚠ OPENAI_API_KEY not set — Step 3 (grouping) will be skipped"
+# Enforce the API key: Prompt if not set, then export
+if [ -z "${OPENAI_API_KEY:-}" ]; then
+    echo -n "🔑 OPENAI_API_KEY not found. Please enter it now (input will be hidden): "
+    read -s USER_API_KEY
+    echo "" # Add a newline after silent input
+    
+    if [ -z "$USER_API_KEY" ]; then
+        echo "  ERROR: API key cannot be empty. Exiting." >&2
+        exit 1
+    fi
+    
+    export OPENAI_API_KEY="$USER_API_KEY"
+    echo "  ✓ OPENAI_API_KEY exported for this run."
 else
-    echo "  ⚠ OPENAI_API_KEY not set — Step 3 will fail unless you set SKIP_GROUPING=1"
+    echo "  ✓ OPENAI_API_KEY is already set in the environment."
+fi
+
+if [ "${SKIP_GROUPING:-0}" = "1" ]; then
+    echo "  ⚠ SKIP_GROUPING=1 — Step 3 will be skipped"
 fi
 
 # ---------------------------------------------------------------------------
@@ -86,7 +100,7 @@ elapsed "$t"
 # ---------------------------------------------------------------------------
 # Step 2 — Generate descriptions
 # ---------------------------------------------------------------------------
-step_banner "Step 2/4 — Generating descriptions (Transluce Llama)"
+step_banner "Step 2/4 — Generating descriptions (OpenAI GPT-5-mini)"
 t=$(date +%s)
 python generate_description.py
 elapsed "$t"

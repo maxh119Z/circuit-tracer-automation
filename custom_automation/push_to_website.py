@@ -67,40 +67,17 @@ def push_to_graph() -> None:
     log.info("Loaded %d descriptions, %d group assignments.", len(descriptions), len(groups))
 
     # ==================================================================
-    # 2. PROCESS NODES — inject labels
+    # 2. PROCESS NODES — (Skipping clerp injection to preserve originals)
     # ==================================================================
     nodes = graph_data.get("nodes", [])
-    input_tokens = graph_data.get("input_tokens", [])
-
+    
     match_count = 0
     for node in nodes:
         node_id = str(node.get("node_id", ""))
-        if node_id not in descriptions:
-            continue
-
-        desc = descriptions[node_id]
-        group_name = groups.get(node_id)
-
-        # Context suffix, e.g. " (on 'capital')"
-        ctx_idx = node.get("ctx_idx")
-        token_label = ""
-        if ctx_idx is not None and isinstance(input_tokens, list) and 0 <= ctx_idx < len(input_tokens):
-            token_str = str(input_tokens[ctx_idx]).strip()
-            if token_str:
-                token_label = f" (on '{token_str}')"
-
-        base_label = f"{desc}{token_label}"
-
-        node["clerp"] = base_label
-        node["localClerp"] = base_label
-
-        if group_name and group_name != "Ungrouped":
-            node["ppClerp"] = f"[{group_name}] {base_label}"
-        else:
-            node["ppClerp"] = base_label
-
-        match_count += 1
-
+        if node_id in groups:
+            # We no longer overwrite node["clerp"], node["localClerp"], or node["ppClerp"]
+            match_count += 1
+            
     # ==================================================================
     # 3. BUILD SUPERNODES ARRAY (for URL)
     # ==================================================================
@@ -152,10 +129,10 @@ def push_to_graph() -> None:
 
     base = VIEWER_BASE_URL.rstrip("/") + "/"
 
+    # Notice: &clerps parameter is removed entirely
     full_url = (
         f"{base}"
         f"?pruningThreshold={PRUNING_THRESHOLD}"
-        f"&clerps=%5B%5D"
         f"&pinnedIds={encoded_pinned}"
         f"&supernodes={encoded_supernodes}"
     )

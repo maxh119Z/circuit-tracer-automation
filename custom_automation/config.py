@@ -26,7 +26,7 @@ ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 # Graph file served to the viewer.
 GRAPH_FILE = PACKAGE_DIR.parent / "test_graphs" / "test-run.json"
 
-# Artifact filenames (always resolved relative to ARTIFACTS_DIR).
+# Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / "feature_descriptions.json"
 FEATURE_GROUPS_FILE = ARTIFACTS_DIR / "feature_groups.json"
@@ -46,30 +46,22 @@ HF_FEATURES_BASE = f"https://huggingface.co/{HF_REPO}/resolve/main/features"
 # Pruning: nodes with influence <= this threshold are kept.
 DEFAULT_PRUNING_THRESHOLD: float = 0.40
 
-# Only process cross-layer transcoder features in layers *below* this index.
 # For Gemma-2B this excludes the final logit projection layer(s).
 MAX_LAYER_INDEX: int = 26
 
-# Concurrent download workers for fetch_all_activating_text.py.
 MAX_WORKERS: int = 10
-
-# How many features to process before auto-saving in add_description.py.
 CHECKPOINT_INTERVAL: int = 10
 
-# Explainer model used by add_description.py.
-EXPLAINER_MODEL_ID = "Transluce/llama_8b_explainer"
+# Removed: # Explainer model used by add_description.py.
+# EXPLAINER_MODEL_ID = "Transluce/llama_8b_explainer"
 
 # ---------------------------------------------------------------------------
 # Grouping (OpenAI) — used by group_features.py
 # ---------------------------------------------------------------------------
 
-# Model for semantic clustering. gpt-4o-mini is cheap and fast.
+# Model for semantic clustering.
 GROUPING_MODEL: str = "gpt-5-mini"
-
-# How many top features to seed Phase 1 discovery with.
 GROUPING_TOP_K_SEED: int = 50
-
-# How many features per batch in Phase 2 assignment.
 GROUPING_BATCH_SIZE: int = 50
 
 # ---------------------------------------------------------------------------
@@ -78,12 +70,11 @@ GROUPING_BATCH_SIZE: int = 50
 
 # Base URL for the circuit-tracer viewer.
 # Override with VIEWER_URL env var for RunPod / remote setups.
-VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "http://localhost:8041")
+VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "https://skqak5p63vr3g0-8041.proxy.runpod.net")
 
 # ---------------------------------------------------------------------------
 # HTTP Session with Retries
 # ---------------------------------------------------------------------------
-
 
 def make_session(
     retries: int = 3,

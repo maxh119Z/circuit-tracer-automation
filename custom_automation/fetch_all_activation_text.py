@@ -3,6 +3,7 @@ Step 1 — Fetch activating text for pruned circuit features.
 
 Reads the attribution graph, filters nodes by type/score/connectivity,
 then downloads top-activation examples from HuggingFace for each feature.
+It also fetches the top/bottom logits (what the feature promotes vs suppresses).
 
 Usage:
     PRUNING_THRESHOLD=0.40 python fetch_all_activating_text.py
@@ -52,7 +53,7 @@ def load_pruned_nodes_from_graph(graph_path: Path = GRAPH_FILE) -> list[dict]:
 
     Filters applied (in order):
         1. **Type** — only ``cross layer transcoder`` features.
-        2. **Score** — influence/score ≤ ``PRUNING_THRESHOLD``.
+        2. **Score** — influence/score <= ``PRUNING_THRESHOLD``.
         3. **Connectivity** — node must have at least one link (no orphans).
         4. **Layer cap** — ``layer_idx < MAX_LAYER_INDEX``.
     """
@@ -174,7 +175,7 @@ def fetch_single_feature(node: dict, index_data: dict, session) -> dict | None:
 
 
 def _parse_feature(node: dict, raw_json: dict) -> dict:
-    """Extract a clean activation summary from the raw HuggingFace JSON."""
+    """Extract a clean activation summary from the raw HuggingFace JSON, including global output logits."""
     unique_id = f"{node['layer']}_{node['feature']}_{node['ctx_idx']}"
 
     parsed: dict = {
@@ -183,8 +184,11 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
         "ctx_idx": node["ctx_idx"],
         "influence_score": node["score"],
         "top_activations": [],
+        "promotes": [],
+        "demotes": [],
     }
 
+    # --- 1. Extract Input Activations ---
     examples = (
         raw_json.get("examples_quantiles", [{}])[0].get("examples", [])
         or raw_json.get("activations", [])
@@ -202,6 +206,15 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
                     "context": "".join(str(t) for t in tokens).replace("\n", " "),
                 }
             )
+
+    # --- 2. Extract Global Output Tokens ---
+    # Since the debug showed these are just flat lists of strings, we grab them directly.
+    top_logits = raw_json.get("top_logits", [])
+    bottom_logits = raw_json.get("bottom_logits", [])
+
+    parsed["promotes"] = [str(token) for token in top_logits]
+    parsed["demotes"] = [str(token) for token in bottom_logits]
+
     return parsed
 
 

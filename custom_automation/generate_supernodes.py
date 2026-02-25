@@ -2,8 +2,8 @@
 Step 3 — Semantically group features into supernodes using OpenAI.
 
 Two-phase approach:
-  Phase 1: Discover ~8 groups from the top-K most influential features.
-  Phase 2: Assign remaining features to existing groups in batches.
+  Phase 1: Discover groups from the top-K most influential features.
+  Phase 2: Assign remaining features to existing groups in concurrent batches.
 
 Reads:  artifacts/feature_descriptions.json
 Writes: artifacts/feature_groups.json
@@ -14,11 +14,13 @@ Usage:
 
 from __future__ import annotations
 
+import asyncio
 import json
 import os
+import re
 import sys
 
-from openai import OpenAI
+from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 from tqdm import tqdm
 
@@ -33,20 +35,21 @@ from config import (
 )
 
 log = setup_logging()
+
 GROUPING_TOP_K_SEED = 60
+
 # ---------------------------------------------------------------------------
-# OpenAI client — reads OPENAI_API_KEY from environment automatically.
-# NEVER hardcode your API key in source code.
+# Async OpenAI client
 # ---------------------------------------------------------------------------
 
 if not os.environ.get("OPENAI_API_KEY"):
-    log.error("OPENAI_API_KEY not set. Run with:  OPENAI_API_KEY=sk-xxx python group_features.py")
+    log.error("OPENAI_API_KEY not set.")
     sys.exit(1)
 
-client = OpenAI()
+client = AsyncOpenAI()
 
 # ---------------------------------------------------------------------------
-# Pydantic Schemas (for structured output)
+# Pydantic schemas (structured output)
 # ---------------------------------------------------------------------------
 
 
@@ -56,19 +59,34 @@ class Assignment(BaseModel):
 
 
 class GroupDef(BaseModel):
-    group_name: str = Field(description="The semantic name of the supernode group.")
-    rationale: str = Field(description="Brief rationale for why these features are clustered.")
+    group_name: str = Field(description="Semantic name of the supernode group.")
+    rationale: str = Field(description="Brief rationale for this cluster.")
 
 
 class Phase1Output(BaseModel):
-    groups: list[GroupDef] = Field(description="The ~8 high-level groups discovered.")
-    assignments: list[Assignment] = Field(description="List of feature_id to group_name assignments.")
+    groups: list[GroupDef] = Field(description="High-level groups discovered.")
+    assignments: list[Assignment] = Field(description="Feature-to-group assignments.")
 
 
 class Phase2Output(BaseModel):
-    assignments: list[Assignment] = Field(description="List of feature_id to group_name assignments.")
-    new_groups: list[GroupDef] = Field(description="Any NEW groups created during this batch (if absolutely necessary).")
+    assignments: list[Assignment] = Field(description="Feature-to-group assignments.")
+    new_groups: list[GroupDef] = Field(description="Any NEW groups created (only if absolutely necessary).")
 
+
+# ---------------------------------------------------------------------------
+# Shared prompt preamble
+# ---------------------------------------------------------------------------
+
+GROUPING_PHILOSOPHY = """
+Important principles:
+- The goal is a **cohesive attribution graph** that highlights *intent and meaning*.
+- Features encoding prepositions, articles, punctuation, conjunctions, or other
+  purely grammatical / syntactic scaffolding (e.g. "of", "the", "is", ",") should
+  mostly go to "Ungrouped". They rarely carry attribution-relevant signal.
+- Do NOT force a fixed number of groups. Create as few or as many groups as the
+  data genuinely supports. Fewer, cleaner groups are better than many noisy ones.
+- If a feature is ambiguous, polysemantic, or low-signal, prefer "Ungrouped".
+"""
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -76,7 +94,7 @@ class Phase2Output(BaseModel):
 
 
 def load_and_sort_features() -> tuple[list[dict], str]:
-    """Load described features sorted by influence, and the original prompt text."""
+    """Load described features sorted by influence; return them plus the prompt text."""
     log.info("Loading descriptions from %s", FEATURE_DESCRIPTIONS_FILE)
 
     if not FEATURE_DESCRIPTIONS_FILE.exists():
@@ -94,11 +112,8 @@ def load_and_sort_features() -> tuple[list[dict], str]:
         }
         for item in desc_data
     ]
-
-    # Highest influence first.
     features.sort(key=lambda x: x["score"], reverse=True)
 
-    # Grab prompt context from graph.
     prompt_text = "Unknown Prompt"
     if GRAPH_FILE.exists():
         with open(GRAPH_FILE, "r") as f:
@@ -114,54 +129,90 @@ def format_feature_list(batch: list[dict]) -> str:
     return "\n".join(f"ID: {f['id']} | Desc: {f['desc']}" for f in batch)
 
 
+async def process_batch(
+    batch: list[dict], 
+    groups_context: str, 
+    prompt_text: str, 
+    semaphore: asyncio.Semaphore
+) -> Phase2Output:
+    """Assign a single batch of features to existing (or new) groups."""
+    
+    prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
+Context: The model was given the prompt: {prompt_text}
+
+Current groups and rationales:
+{groups_context}
+
+{GROUPING_PHILOSOPHY}
+
+Task: For each feature below, assign it to an existing group if it strongly aligns,
+assign it to "Ungrouped" if it is noisy or purely structural, or — only if truly
+necessary — define a new group for a genuinely distinct concept.
+
+Features:
+{format_feature_list(batch)}
+"""
+
+    # The semaphore restricts how many of these blocks can run simultaneously
+    async with semaphore:
+        response = await client.beta.chat.completions.parse(
+            model=GROUPING_MODEL,
+            messages=[{"role": "user", "content": prompt}],
+            response_format=Phase2Output,
+            temperature=1,
+        )
+        return response.choices[0].message.parsed
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
 
-def main() -> None:
+async def main() -> None:
     features, prompt_text = load_and_sort_features()
     if not features:
         log.error("No described features found.")
         return
 
-    log.info("Total features to process: %d", len(features))
+    log.info("Total features: %d", len(features))
 
-    active_groups: dict[str, str] = {}        # name → rationale
-    final_assignments: dict[str, str] = {}    # feature_id → group_name
+    active_groups: dict[str, str] = {}      # name → rationale
+    final_assignments: dict[str, str] = {}  # feature_id → group_name
 
     # ==================================================================
-    # PHASE 1: DISCOVERY (seed with top-K)
+    # PHASE 1 — Discover groups from top-K seed features
     # ==================================================================
     seed_features = features[:GROUPING_TOP_K_SEED]
-    log.info("Phase 1: Discovering supernodes from top %d features …", GROUPING_TOP_K_SEED)
+    log.info("Phase 1: Discovering groups from top %d features…", GROUPING_TOP_K_SEED)
 
-    phase1_prompt = f"""You are an expert AI interpretability researcher analyzing the internal representations of a large language model.
+    phase1_prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
 Context: The model was given the following prompt: {prompt_text}
 
-Task: Below is a list of the {GROUPING_TOP_K_SEED} most influential features (and their descriptions) that activated during this prompt. Your goal is to cluster these features into meaningful semantic groups ("super nodes").
+Below are the {GROUPING_TOP_K_SEED} most influential features that activated during this prompt.
+Cluster them into meaningful semantic groups ("supernodes").
 
-Constraints:
-1. Target Size: Aim for roughly 8 high-level groups, though this is a flexible target.
-2. Do Not Force Structure: Neural network features are often messy and polysemantic. If a feature does not clearly fit into a group, assign it to "Ungrouped". Do not force loose connections.
-3. Hyper-Relevant Outliers: A single feature can constitute its own distinct group if it represents a highly specific and crucial concept related to the prompt.
-4. Group Naming Convention: Follow a two-tier naming scheme based on the functional role of the features in the group:
+{GROUPING_PHILOSOPHY}
 
-Conceptual/Semantic groups (features that encode a background concept, entity, or relationship): Use a short descriptive noun phrase that names the concept directly. Examples: capital, state, Texas-related, Dallas, U.S. geography.
-Output-driving groups (features that are proximal predictors of the next token — i.e., they are "steering" the model toward a specific output): Prefix the name with "say". Use say [specific token] if the features point to a particular word (e.g., say Austin), or say a [category] if they point to a class of tokens (e.g., say a capital, say a country name).
+Additional guidance:
+- A single feature can be its own group if it represents a highly specific, crucial
+  concept tied to the prompt.
+- Group naming convention (two tiers):
+    • Conceptual / semantic (encodes a background concept, entity, or relationship):
+      short descriptive noun phrase — e.g. "U.S. geography", "capital cities".
+    • Output-driving (proximal predictor steering toward a specific token):
+      prefix with "say" — e.g. "say Austin", "say a capital".
+  Ask: is the feature representing a fact (conceptual) or pushing a token (output-driving)?
+  When in doubt, prefer the conceptual label.
 
-To decide which tier a group belongs to: ask whether the features are representing a fact about the world (conceptual) or actively pushing a particular token to be generated (output-driving). When in doubt, prefer the conceptual label.
-
-Features to Cluster:
+Features:
 {format_feature_list(seed_features)}
 """
 
-    response = client.beta.chat.completions.parse(
+    response = await client.beta.chat.completions.parse(
         model=GROUPING_MODEL,
         messages=[{"role": "user", "content": phase1_prompt}],
         response_format=Phase1Output,
     )
-
     p1 = response.choices[0].message.parsed
 
     for g in p1.groups:
@@ -172,70 +223,76 @@ Features to Cluster:
     log.info("Established %d initial supernodes.", len(active_groups))
 
     # ==================================================================
-    # PHASE 2: ASSIGNMENT (rolling batches)
+    # PHASE 2 — Assign remaining features concurrently
     # ==================================================================
     remaining = features[GROUPING_TOP_K_SEED:]
 
     if remaining:
-        log.info("Phase 2: Assigning remaining %d features …", len(remaining))
+        log.info("Phase 2: Assigning remaining %d features…", len(remaining))
+        groups_context = json.dumps(active_groups, indent=2)
 
-        for i in tqdm(range(0, len(remaining), GROUPING_BATCH_SIZE)):
-            batch = remaining[i : i + GROUPING_BATCH_SIZE]
-            groups_context = json.dumps(active_groups, indent=2)
+        # Set maximum concurrent OpenAI requests to avoid 429 rate limits
+        MAX_CONCURRENT_REQUESTS = 15 
+        semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
-            phase2_prompt = f"""You are an expert AI interpretability researcher analyzing the internal representations of a large language model.
-Context: The model was given the prompt: {prompt_text}
-
-Current State: We have already established the following feature groups and rationales:
-{groups_context}
-
-Task: Below is a new batch of feature descriptions. For each feature, evaluate whether it belongs in one of the existing groups.
-
-Rules:
-1. Assign the feature to an existing group if it strongly aligns with the group's rationale.
-2. If a feature represents a strong, distinct concept not covered by existing groups, you may define a new group.
-3. If a feature is noisy or does not clearly fit anywhere, assign it to "Ungrouped". Do not force structure.
-
-New Batch:
-{format_feature_list(batch)}
-"""
-
-            response = client.beta.chat.completions.parse(
-                model=GROUPING_MODEL,
-                messages=[{"role": "user", "content": phase2_prompt}],
-                response_format=Phase2Output,
-                temperature=1,
+        tasks = [
+            process_batch(
+                remaining[i : i + GROUPING_BATCH_SIZE], 
+                groups_context, 
+                prompt_text, 
+                semaphore
             )
+            for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
+        ]
 
-            p2 = response.choices[0].message.parsed
-
+        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
+            p2 = await coro
             for a in p2.assignments:
                 final_assignments[a.feature_id] = a.group_name
-
-            for new_g in p2.new_groups:
-                if new_g.group_name not in active_groups:
-                    active_groups[new_g.group_name] = new_g.rationale
-                    log.info("New group created mid-stream: %s", new_g.group_name)
-
+            for g in p2.new_groups:
+                if g.group_name not in active_groups:
+                    active_groups[g.group_name] = g.rationale
+                    log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
     # AUTO-GROUP EMBEDDING & OUTPUT (LOGIT) NODES
     # ==================================================================
-    # These non-CLT nodes render as squares in the viewer. They are not
-    # processed by the LLM phases, so we group them directly from the graph.
     if GRAPH_FILE.exists():
         with open(GRAPH_FILE, "r") as f:
             graph = json.load(f)
 
+        logit_nodes = []
         for node in graph.get("nodes", []):
             nid = str(node.get("node_id", ""))
             ftype = node.get("feature_type", "")
+
             if ftype == "embedding":
                 final_assignments[nid] = "Embedding"
-            elif ftype == "logit":
-                final_assignments[nid] = "Output"
+            elif ftype == "logit" or node.get("is_target_logit") is True:
+                logit_nodes.append(node)
 
-        log.info("Auto-grouped embedding and logit nodes.")
+        # Isolate the single highest-probability logit node
+        if logit_nodes:
+            top_node, max_p = None, -1.0
+
+            for n in logit_nodes:
+                p = float(n.get("token_prob", 0.0))
+                nid = str(n.get("node_id", ""))
+                match = re.search(r"p=([0-9.]+)", nid)
+                if match:
+                    p = float(match.group(1))
+                if p > max_p:
+                    max_p, top_node = p, n
+
+            if top_node:
+                nid = str(top_node.get("node_id", ""))
+                token_str = top_node.get("logitToken")
+                if not token_str:
+                    match = re.search(r'"([^"]+)"', nid)
+                    token_str = match.group(1) if match else nid.replace("Output", "").split("(")[0].strip()
+                final_assignments[nid] = f"Predicted Output '{token_str}'"
+
+        log.info("Auto-grouped embedding and isolated top output node.")
 
     # ==================================================================
     # SAVE
@@ -244,7 +301,7 @@ New Batch:
         json.dump(final_assignments, f, indent=2)
 
     log.info(
-        "Done — mapped %d features across %d supernodes → %s",
+        "Done — %d features across %d supernodes → %s",
         len(final_assignments),
         len(active_groups),
         FEATURE_GROUPS_FILE,
@@ -252,4 +309,4 @@ New Batch:
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
