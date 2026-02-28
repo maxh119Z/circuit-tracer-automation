@@ -1,5 +1,10 @@
 """
-Step 4 — Push descriptions and groups into the graph, generate viewer URL.
+Step 4 — Push descriptions and groups into the graph JSON.
+
+Instead of generating a fragile URL with encoded supernodes/pinnedIds/clerps,
+this script writes everything into the graph's `qParams` field. The viewer
+already reads qParams on load (init-cg.js spreads them into visState), so
+groups render automatically when you refresh the page — no URL copying needed.
 
 Reads:
   - artifacts/feature_descriptions.json
@@ -7,12 +12,10 @@ Reads:
   - ../test_graphs/test-run.json
 
 Outputs:
-  - Updated test-run.json with clerp labels
-  - artifacts/viewer_url.txt with a clickable URL containing supernodes & clerps
+  - Updated test-run.json with qParams containing supernodes + pinnedIds + clerps
 
 Usage:
-    python push_to_graph.py
-    VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net python push_to_website.py
+    python push_to_website.py
 """
 
 from __future__ import annotations
@@ -20,14 +23,12 @@ from __future__ import annotations
 import json
 import os
 import shutil
-import urllib.parse
 
 from config import (
     DEFAULT_PRUNING_THRESHOLD,
     FEATURE_DESCRIPTIONS_FILE,
     FEATURE_GROUPS_FILE,
     GRAPH_FILE,
-    VIEWER_BASE_URL,
     VIEWER_URL_FILE,
     setup_logging,
 )
@@ -48,7 +49,7 @@ def push_to_graph() -> None:
     with open(GRAPH_FILE, "r") as f:
         graph_data = json.load(f)
 
-    # Descriptions (required)
+    # Descriptions (optional but recommended)
     descriptions: dict[str, str] = {}
     if FEATURE_DESCRIPTIONS_FILE.exists():
         with open(FEATURE_DESCRIPTIONS_FILE, "r") as f:
@@ -67,40 +68,64 @@ def push_to_graph() -> None:
     log.info("Loaded %d descriptions, %d group assignments.", len(descriptions), len(groups))
 
     # ==================================================================
-    # 2. PROCESS NODES — (Skipping clerp injection to preserve originals)
-    # ==================================================================
-    nodes = graph_data.get("nodes", [])
-    
-    match_count = 0
-    for node in nodes:
-        node_id = str(node.get("node_id", ""))
-        if node_id in groups:
-            # We no longer overwrite node["clerp"], node["localClerp"], or node["ppClerp"]
-            match_count += 1
-            
-    # ==================================================================
-    # 3. BUILD SUPERNODES ARRAY (for URL)
+    # 2. BUILD SUPERNODES ARRAY
     # ==================================================================
     # Format: [["Group A", "id1", "id2"], ["Group B", "id3"], ...]
+    nodes = graph_data.get("nodes", [])
+
     group_to_nodes: dict[str, list[str]] = {}
     for node in nodes:
         node_id = str(node.get("node_id", ""))
         group_name = groups.get(node_id)
         if group_name and group_name != "Ungrouped":
-            group_to_nodes.setdefault(group_name, []).append(node_id)
+            # Sanitize group names (no slashes)
+            clean_name = group_name.replace("/", "-").replace("\\", "-")
+            group_to_nodes.setdefault(clean_name, []).append(node_id)
 
-    supernodes_array = []
+    supernodes_array: list[list[str]] = []
+    all_pinned_ids: list[str] = []
     for gname, member_ids in group_to_nodes.items():
         supernodes_array.append([gname] + member_ids)
+        all_pinned_ids.extend(member_ids)
+
+    log.info("Built %d supernode groups with %d total pinned nodes.",
+             len(supernodes_array), len(all_pinned_ids))
 
     # ==================================================================
-    # 4. BUILD CLERPS ARRAY (for URL)
+    # 3. BUILD CLERPS ARRAY
     # ==================================================================
     # Format: [["node_id", "description"], ...]
-    clerps_array = [[nid, desc] for nid, desc in descriptions.items()]
+    clerps_array: list[list[str]] = []
+    for nid, desc in descriptions.items():
+        clerps_array.append([nid, desc])
+
+    log.info("Built %d clerp entries.", len(clerps_array))
 
     # ==================================================================
-    # 5. BACKUP & SAVE GRAPH
+    # 4. WRITE INTO qParams
+    # ==================================================================
+    # The viewer (init-cg.js) reads qParams and spreads them into visState.
+    # Values are stored as strings — same format as URL query parameters —
+    # because that's what the Save button writes and what the parsing code expects.
+    q_params = graph_data.get("qParams", {})
+
+    # supernodes: JSON string of the array
+    q_params["supernodes"] = json.dumps(supernodes_array, separators=(",", ":"))
+
+    # pinnedIds: comma-separated string of node IDs
+    q_params["pinnedIds"] = ",".join(all_pinned_ids)
+
+    # clerps: JSON string of the [id, description] pairs
+    if clerps_array:
+        q_params["clerps"] = json.dumps(clerps_array, separators=(",", ":"))
+
+    # pruningThreshold
+    q_params["pruningThreshold"] = PRUNING_THRESHOLD
+
+    graph_data["qParams"] = q_params
+
+    # ==================================================================
+    # 5. BACKUP & SAVE
     # ==================================================================
     backup_path = str(GRAPH_FILE) + ".bak"
     shutil.copy2(GRAPH_FILE, backup_path)
@@ -109,42 +134,33 @@ def push_to_graph() -> None:
     with open(GRAPH_FILE, "w") as f:
         json.dump(graph_data, f, indent=2)
 
-    log.info("Updated %d / %d nodes in graph.", match_count, len(nodes))
-    log.info("Built %d supernode groups.", len(supernodes_array))
+    log.info("Graph updated with qParams → %s", GRAPH_FILE)
+    log.info("  supernodes: %d groups", len(supernodes_array))
+    log.info("  pinnedIds:  %d nodes", len(all_pinned_ids))
+    log.info("  clerps:     %d descriptions", len(clerps_array))
+    log.info("  threshold:  %s", PRUNING_THRESHOLD)
 
-    # ==================================================================
-    # 6. GENERATE VIEWER URL
-    # ==================================================================
-    clean_supernodes = []
-    all_pinned_ids = []
-    for group in supernodes_array:
-        clean_name = group[0].replace("/", "-").replace("\\", "-")
-        member_ids = group[1:]
-        clean_supernodes.append([clean_name] + member_ids)
-        all_pinned_ids.extend(member_ids)
-
-    compact_json = json.dumps(clean_supernodes, separators=(",", ":"))
-    encoded_supernodes = urllib.parse.quote_plus(compact_json)
-    encoded_pinned = urllib.parse.quote_plus(",".join(all_pinned_ids))
-
-    base = VIEWER_BASE_URL.rstrip("/") + "/"
-
-    # Notice: &clerps parameter is removed entirely
-    full_url = (
-        f"{base}"
-        f"?pruningThreshold={PRUNING_THRESHOLD}"
-        f"&pinnedIds={encoded_pinned}"
-        f"&supernodes={encoded_supernodes}"
-    )
-
-    log.info("")
-    log.info("🔗 Open this URL in your browser:")
-    print(full_url)
-    print()
-
+    # Also write a summary file for reference
+    summary = {
+        "graph_file": str(GRAPH_FILE),
+        "num_supernodes": len(supernodes_array),
+        "num_pinned": len(all_pinned_ids),
+        "num_clerps": len(clerps_array),
+        "pruning_threshold": PRUNING_THRESHOLD,
+        "groups": {g[0]: len(g) - 1 for g in supernodes_array},
+    }
     with open(VIEWER_URL_FILE, "w") as f:
-        f.write(full_url)
-    log.info("URL also saved to %s", VIEWER_URL_FILE)
+        # Keep the file for backwards compat but write useful info instead of a URL
+        f.write("# Pipeline output saved to graph qParams — just refresh the viewer.\n")
+        f.write(f"# Graph file: {GRAPH_FILE}\n")
+        f.write(f"# Groups: {len(supernodes_array)}, Pinned: {len(all_pinned_ids)}, Clerps: {len(clerps_array)}\n")
+
+    print()
+    print("=" * 60)
+    print("  ✅  Groups written into graph JSON (qParams)")
+    print("  👉  Just refresh the viewer page to see them!")
+    print("=" * 60)
+    print()
 
 
 if __name__ == "__main__":

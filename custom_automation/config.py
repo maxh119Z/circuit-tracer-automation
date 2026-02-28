@@ -70,7 +70,7 @@ GROUPING_BATCH_SIZE: int = 50
 
 # Base URL for the circuit-tracer viewer.
 # Override with VIEWER_URL env var for RunPod / remote setups.
-VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "https://skqak5p63vr3g0-8041.proxy.runpod.net")
+VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "https://4p8fvpyf87mb0a-8041.proxy.runpod.net/")
 
 # ---------------------------------------------------------------------------
 # HTTP Session with Retries

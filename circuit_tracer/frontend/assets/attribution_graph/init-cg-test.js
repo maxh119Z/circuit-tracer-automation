@@ -41,7 +41,34 @@ window.initCg = async function (sel, slug, {clickedId, clickedIdCb, isModal, isG
   } catch (e) {
     console.error('Error parsing supernodes from URL:', e);
   }
-  if (urlSupernodes) visState.supernodes = urlSupernodes
+
+  // CUSTOM EDITS
+  //--------------------
+  if (urlSupernodes.length) visState.supernodes = urlSupernodes
+  //--------------------
+
+  //CUSTOM EDITS
+  //--------------------
+  // Parse qParams supernodes if stored as JSON string (from Save button or pipeline)
+  if (typeof visState.supernodes === 'string') {
+    try { visState.supernodes = JSON.parse(visState.supernodes) } catch(e) { visState.supernodes = [] }
+  }
+  // Parse qParams pinnedIds if stored as comma-separated string
+  if (typeof visState.pinnedIds === 'string') {
+    visState.pinnedIds = visState.pinnedIds.split(',').filter(Boolean)
+  }
+  //--------------------
+  //--------------------
+  console.log('[DEBUG]', 'supernodes:', Array.isArray(visState.supernodes), visState.supernodes?.length, 'pinnedIds:', Array.isArray(visState.pinnedIds), visState.pinnedIds?.length)
+  //--------------------
+    
+    // [PIPELINE PATCH] Parse qParams values that may be stored as strings
+  if (typeof visState.supernodes === 'string') {
+    try { visState.supernodes = JSON.parse(visState.supernodes) } catch(e) { visState.supernodes = [] }
+  }
+  if (typeof visState.pinnedIds === 'string') {
+    visState.pinnedIds = visState.pinnedIds.split(',').filter(Boolean)
+  }
 
   if (visState.clickedId?.includes('supernode')) delete visState.clickedId
   if (clickedId && clickedId != 'null' && !clickedId.includes('supernode-')) visState.clickedId = clickedId

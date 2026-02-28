@@ -118,9 +118,14 @@ def load_and_sort_features() -> tuple[list[dict], str]:
     if GRAPH_FILE.exists():
         with open(GRAPH_FILE, "r") as f:
             graph = json.load(f)
-        input_tokens = graph.get("input_tokens", [])
-        if input_tokens:
-            prompt_text = "".join(str(t) for t in input_tokens).replace("\n", " ")
+        metadata = graph.get("metadata", {})
+        prompt_text = metadata.get("prompt", "")
+        if not prompt_text:
+            input_tokens = metadata.get("prompt_tokens", [])
+            if input_tokens:
+                prompt_text = "".join(str(t) for t in input_tokens).replace("\n", " ")
+        if not prompt_text:
+            prompt_text = "Unknown Prompt"
 
     return features, prompt_text
 

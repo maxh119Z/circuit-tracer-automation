@@ -12,10 +12,13 @@
 #   SKIP_GROUPING    — Set to 1 to skip Step 3.
 #
 # Steps:
+#   0. Apply frontend patch (idempotent — safe to run multiple times).
 #   1. Fetch pruned feature activations from HuggingFace.
 #   2. Generate descriptions with OpenAI GPT-5-mini (Asyncio).
 #   3. Group features into supernodes via OpenAI.
-#   4. Push descriptions + groups into the graph and generate viewer URL.
+#   4. Push descriptions + groups into the graph JSON (qParams).
+#
+# After running: just refresh the viewer page. Groups load automatically.
 # =============================================================================
 
 set -euo pipefail
@@ -54,7 +57,7 @@ if ! command -v python &>/dev/null; then
     exit 1
 fi
 
-# Key packages (No longer need heavy ML libraries!)
+# Key packages
 python -c "import requests, openai" 2>/dev/null || {
     echo "ERROR: Missing Python dependencies (requests, openai)." >&2
     echo "       Install with:  pip install requests openai" >&2
@@ -90,9 +93,15 @@ if [ "${SKIP_GROUPING:-0}" = "1" ]; then
 fi
 
 # ---------------------------------------------------------------------------
+# Step 0 — Apply frontend patch (idempotent)
+# ---------------------------------------------------------------------------
+step_banner "Step 0 — Applying frontend patch (if needed)"
+python apply_frontend_patch.py
+
+# ---------------------------------------------------------------------------
 # Step 1 — Fetch activations
 # ---------------------------------------------------------------------------
-step_banner "Step 1/4 — Fetching pruned feature activations"
+step_banner "Step 1/5 — Fetching pruned feature activations"
 t=$(date +%s)
 python fetch_all_activation_text.py
 elapsed "$t"
@@ -100,7 +109,7 @@ elapsed "$t"
 # ---------------------------------------------------------------------------
 # Step 2 — Generate descriptions
 # ---------------------------------------------------------------------------
-step_banner "Step 2/4 — Generating descriptions (OpenAI GPT-5-mini)"
+step_banner "Step 2/5 — Generating descriptions (OpenAI GPT-5-mini)"
 t=$(date +%s)
 python generate_description.py
 elapsed "$t"
@@ -109,26 +118,38 @@ elapsed "$t"
 # Step 3 — Group features (requires OpenAI)
 # ---------------------------------------------------------------------------
 if [ "${SKIP_GROUPING:-0}" = "1" ]; then
-    step_banner "Step 3/4 — Grouping SKIPPED (SKIP_GROUPING=1)"
+    step_banner "Step 3/5 — Grouping SKIPPED (SKIP_GROUPING=1)"
 else
-    step_banner "Step 3/4 — Grouping features into supernodes (OpenAI)"
+    step_banner "Step 3/5 — Grouping features into supernodes (OpenAI)"
     t=$(date +%s)
     python generate_supernodes.py
     elapsed "$t"
 fi
 
 # ---------------------------------------------------------------------------
-# Step 4 — Push to graph & generate viewer URL
+# Step 4 — Push to graph qParams
 # ---------------------------------------------------------------------------
-step_banner "Step 4/4 — Pushing to graph & generating viewer URL"
+step_banner "Step 4/5 — Writing groups into graph JSON"
 t=$(date +%s)
 python push_to_website.py
+elapsed "$t"
+
+# ---------------------------------------------------------------------------
+# Step 5 — Register in viewer dropdown
+# ---------------------------------------------------------------------------
+step_banner "Step 5/5 — Registering graph in viewer dropdown"
+t=$(date +%s)
+python update_metadata.py
 elapsed "$t"
 
 # ---------------------------------------------------------------------------
 # Done
 # ---------------------------------------------------------------------------
 step_banner "SUCCESS — Pipeline complete"
-echo "  Check artifacts/viewer_url.txt for the full viewer URL."
-echo "  Or copy the URL printed above into your browser."
+echo ""
+echo "  Your groups are saved in the graph JSON (qParams)."
+echo "  The graph is registered in the viewer dropdown."
+echo "  👉 Just refresh the viewer page — select your graph, groups load automatically."
+echo ""
+echo "  No URL copying needed!"
 echo ""
