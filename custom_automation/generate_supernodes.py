@@ -119,22 +119,23 @@ Important principles:
 - The goal is a **cohesive attribution graph** that highlights *intent and meaning*.
 - Features encoding prepositions, articles, punctuation, conjunctions, or other
   purely grammatical / syntactic scaffolding (e.g. "of", "the", "is", ",") should
-  mostly go to "Ungrouped" unless it promotes a word (e.g capital OF ___; here, of has purpose). In most cases however, they rarely carry attribution-relevant signal.
+  mostly go to "Ungrouped" unless it promotes a word. In most cases however, they rarely carry attribution-relevant signal.
 - Do NOT force a fixed number of groups. Create as few or as many groups as the
-  data genuinely supports. Fewer, cleaner groups are better than many noisy ones. 
-- Balance a clean number with subgroups with SUBGROUP AWARENESS.
-- If a feature is ambiguous, polysemantic, or very low-signal, prefer "Ungrouped".
-- Group names should take into account the context of embedding prompt
+  data genuinely supports. Fewer, cleaner groups are usually better than many noisy ones. 
+- If a feature is ambiguous, polysemantic, or very low-signal (no specificity), prefer "Ungrouped".
+- Group names may be generated with context of embedding prompt
+- If you are planning to generate a group name with many disparate parts (sports + players), try to instead split the group up for specificity.
+- Group names should be <= 5 words and still fully represent the features you think fit inside.
 
 SUBGROUP AWARENESS:
 - Before finalizing a group, consider whether it contains meaningful subgroups.
-  A group like "education" might actually be two distinct circuits (algebra versus calculus). Similarly, "literary works" might split
-  into output driven "names" versus conceptual ideas. Cities can be broken into state roles or just locative names of places.
-- It is better to have 2-3 precise subgroups than one vague supergroup.
+  A group like "education" might actually be two distinct circuits. Similarly, "literary works" might split
+  into output driven versus conceptual ideas.
+- These cases call for SEPARATE groups even if they share a topic.
+- It is better to have 2-3 precise subgroups than one vague supergroup, balanced with an overall minimal number of groups in total.
 
 PROPER NOUNS & ENTITIES:
-- Groups involving specific named entities should include those names.
-- Do not lose specificity by oversimplification.
+- Groups involving specific named entities should include those names or be placed in a new subgroup.
 """
 
 
