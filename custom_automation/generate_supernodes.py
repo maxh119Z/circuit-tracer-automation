@@ -119,10 +119,22 @@ Important principles:
 - The goal is a **cohesive attribution graph** that highlights *intent and meaning*.
 - Features encoding prepositions, articles, punctuation, conjunctions, or other
   purely grammatical / syntactic scaffolding (e.g. "of", "the", "is", ",") should
-  mostly go to "Ungrouped". They rarely carry attribution-relevant signal.
+  mostly go to "Ungrouped" unless it promotes a word (e.g capital OF ___; here, of has purpose). In most cases however, they rarely carry attribution-relevant signal.
 - Do NOT force a fixed number of groups. Create as few or as many groups as the
-  data genuinely supports. Fewer, cleaner groups are better than many noisy ones.
-- If a feature is ambiguous, polysemantic, or low-signal, prefer "Ungrouped".
+  data genuinely supports. Fewer, cleaner groups are better than many noisy ones. 
+- Balance a clean number with subgroups with SUBGROUP AWARENESS.
+- If a feature is ambiguous, polysemantic, or very low-signal, prefer "Ungrouped".
+- Group names should take into account the context of embedding prompt
+
+SUBGROUP AWARENESS:
+- Before finalizing a group, consider whether it contains meaningful subgroups.
+  A group like "education" might actually be two distinct circuits (algebra versus calculus). Similarly, "literary works" might split
+  into output driven "names" versus conceptual ideas. Cities can be broken into state roles or just locative names of places.
+- It is better to have 2-3 precise subgroups than one vague supergroup.
+
+PROPER NOUNS & ENTITIES:
+- Groups involving specific named entities should include those names.
+- Do not lose specificity by oversimplification.
 """
 
 
@@ -274,6 +286,17 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
     selected: list[tuple[dict, float]] = []
     for n in logit_nodes:
         p = float(n.get("token_prob", 0.0))
+
+        token_str = n.get("logitToken", "")
+        if not token_str:
+            clerp = n.get("clerp", "")
+            match = re.search(r'"([^"]+)"', clerp)
+            token_str = match.group(1) if match else ""
+        token_clean = token_str.strip().lower().replace("▁", "").replace("Ġ", "")
+        print(token_clean)
+        if token_clean in FUNCTION_WORDS or len(token_clean) <= 1:
+            continue
+
         selected.append((n, p))
         cumulative_p += p
         if cumulative_p >= LOGIT_TOP_P or len(selected) >= LOGIT_MAX_NODES:
@@ -358,9 +381,9 @@ Additional guidance:
   concept tied to the prompt.
 - Group naming convention (two tiers):
     • Conceptual / semantic (encodes a background concept, entity, or relationship):
-      short descriptive noun phrase — e.g. "U.S. geography", "capital cities".
+      short descriptive noun phrase — e.g. "U.S. geography", "Celebrity Names".
     • Output-driving (proximal predictor steering toward a specific token):
-      prefix with "say" — e.g. "say Austin", "say a capital".
+      prefix with "say" — e.g. "say a fact", "say a capital".
   Ask: is the feature representing a fact (conceptual) or pushing a token (output-driving)?
   When in doubt, prefer the conceptual label.
 

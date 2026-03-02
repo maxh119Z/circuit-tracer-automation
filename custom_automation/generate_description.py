@@ -36,7 +36,7 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 MODEL = "gpt-5-mini"
-CONCURRENCY_LIMIT = 20  # How many simultaneous requests to send to OpenAI
+CONCURRENCY_LIMIT = 50  # How many simultaneous requests to send to OpenAI
 CHUNK_SIZE = 50         # How many to process before saving a checkpoint
 
 # ---------------------------------------------------------------------------
@@ -47,19 +47,37 @@ SYSTEM_PROMPT = (
     "You are a meticulous AI researcher conducting an important investigation "
     "into a specific neuron inside a language model. Your task is to concisely "
     "describe the concept or feature that this neuron represents.\n\n"
+
     "You will receive two types of evidence:\n"
     "1. Input Activations: Text excerpts where the neuron activated strongly. "
     "The specific tokens causing activation are delimited by {{ }}. "
     "Remember that activations only depend on preceding tokens, never subsequent ones.\n"
     "2. Global Output Tokens: A list of tokens the neuron intrinsically promotes "
     "(increases probability) and demotes (decreases probability) across the vocabulary.\n\n"
-    "CRITICAL WARNING: The output tokens (promoted/demoted) can often be noisy, "
-    "polysemantic, or artifacts of the tokenizer. Be wary of this noise. "
-    "Use the output tokens merely as directional hints to support the context seen "
-    "in the input activations, not as absolute truth.\n\n"
-    "Keep your final description as concise as possible, using as few words as "
-    "possible to accurately capture the neuron's true function. Ideally should be less than 5 words, does not need"
-    " full gramatical correctedness."
+
+    "HOW TO ANALYZE — follow this order:\n\n"
+
+    "Step 1 — CONTEXT, not just the trigger token.\n"
+    "The trigger token alone is almost never the full story. Look at recurring "
+    "patterns in what SURROUNDS the trigger across all examples — the phrases, "
+    "relationships, and semantic roles the trigger appears in. The feature is also about "
+    "the pattern, not just the word.\n\n"
+
+    "Step 2 — OUTPUT LOGITS as a second opinion.\n"
+    "Promoted/demoted tokens can very OFTEN BE noisy (critical hint), BUT if multiple promoted "
+    "tokens share a clear theme, that theme is real signal — it reveals what the "
+    "neuron is trying to make the model say next. If text seems generic but outputs "
+    "consistently point to a specific category, trust the outputs. Consistency.\n\n"
+
+    "Step 3 — COMBINE both signals.\n"
+    "The best description captures both what the neuron responds to (inputs) and "
+    "what it pushes toward (outputs) when these differ.\n\n"
+
+    "RULES:\n"
+    "- Include named entities (proper nouns of places, people, things, etc.) when they appear consistently across examples.\n"
+    "- Prefer specific over generic, but only as specific as the evidence supports.\n"
+    "- If the feature drives a specific output, note that.\n"
+    "- Under 6 words. No need for grammatical correctness.\n"
 )
 
 # ---------------------------------------------------------------------------
@@ -124,9 +142,9 @@ async def process_feature(feature: dict, client: AsyncOpenAI, sem: asyncio.Semap
                     {"role": "user", "content": _build_user_prompt(feature)},
                 ],
                 reasoning_effort="low",
-                max_completion_tokens=500
+                max_completion_tokens=1024
             )
-            desc = response.choices[0].message.content.strip()
+            desc = response.choices[0].message.content.strip() # type: ignore
             
             if "[DESCRIPTION]:" in desc:
                 desc = desc.split("[DESCRIPTION]:")[-1].strip()
@@ -159,7 +177,7 @@ async def main_async() -> None:
     if existing:
         log.info("Resuming — %d features already described, skipping those.", len(existing))
         for feat in features:
-            prev = existing.get(feat.get("id"))
+            prev = existing.get(feat.get("id")) # type: ignore
             if prev and "generated_description" in prev:
                 feat["generated_description"] = prev["generated_description"]
 
