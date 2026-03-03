@@ -1,9 +1,10 @@
 """
 Step 3 — Semantically group features into supernodes using OpenAI.
 
-Two-phase approach:
-  Phase 1: Discover groups from the top-K most influential features.
+Three-phase approach:
+  Phase 1: Discover groups from the top-30 most influential features.
   Phase 2: Assign remaining features to existing groups in concurrent batches.
+  Phase 3: Reconciliation — merge duplicates, fix misassignments, split broad groups.
 
 Post-processing:
   - Embedding nodes: grouped by semantic role of their token (skip function words)
@@ -39,8 +40,8 @@ from config import (
 
 log = setup_logging()
 
-# Override config — use 60 seed features for better group discovery
-GROUPING_TOP_K_SEED = 60
+# Phase 1 seed size
+GROUPING_TOP_K_SEED = 30
 
 # Top-p threshold for logit nodes: include output tokens until cumulative prob >= this
 LOGIT_TOP_P = 0.90
@@ -110,6 +111,31 @@ class Phase2Output(BaseModel):
     new_groups: list[GroupDef] = Field(description="Any NEW groups created (only if absolutely necessary).")
 
 
+class RenameAction(BaseModel):
+    old_name: str = Field(description="The current group name.")
+    new_name: str = Field(description="The new group name (must be <= 5 words).")
+
+
+
+class SplitAction(BaseModel):
+    group_to_split: str = Field(description="The group name to split.")
+    new_subgroups: list[GroupDef] = Field(description="The new subgroups to create.")
+    reassignments: list[Assignment] = Field(description="Feature reassignments into the new subgroups.")
+
+
+class ReassignAction(BaseModel):
+    feature_id: str = Field(description="The feature ID to reassign.")
+    from_group: str = Field(description="Current group name.")
+    to_group: str = Field(description="Target group name (can be 'Ungrouped' or a new name).")
+
+
+class Phase3Output(BaseModel):
+    renames: list[RenameAction] = Field(default_factory=list, description="Groups to rename.")
+    splits: list[SplitAction] = Field(default_factory=list, description="Groups to split into subgroups.")
+    reassignments: list[ReassignAction] = Field(default_factory=list, description="Individual features to move between groups.")
+    dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve entirely (members become Ungrouped).")
+
+
 # ---------------------------------------------------------------------------
 # Shared prompt preamble
 # ---------------------------------------------------------------------------
@@ -130,12 +156,14 @@ Important principles:
 SUBGROUP AWARENESS:
 - Before finalizing a group, consider whether it contains meaningful subgroups.
   A group like "education" might actually be two distinct circuits. Similarly, "literary works" might split
-  into output driven versus conceptual ideas.
+  into output driven versus conceptual ideas. A location could be a state versus a city.
 - These cases call for SEPARATE groups even if they share a topic.
 - It is better to have 2-3 precise subgroups than one vague supergroup, balanced with an overall minimal number of groups in total.
+- Do not prefer supergroups with too many features.
+- AVOID this AND that. If they are somewhat different, you can have a group "this" and a group "that"
 
 PROPER NOUNS & ENTITIES:
-- Groups involving specific named entities should include those names or be placed in a new subgroup.
+- Groups involving specific named entities or concepts should include those names or be placed in a new subgroup.
 """
 
 
@@ -202,7 +230,7 @@ Current groups and rationales:
 
 Task: For each feature below, assign it to an existing group if it strongly aligns,
 assign it to "Ungrouped" if it is noisy or purely structural, or — only if truly
-necessary — define a new group for a genuinely distinct concept.
+necessary — define a new group for a genuinely distinct concept. Do not force fit.
 
 Features:
 {format_feature_list(batch)}
@@ -222,16 +250,91 @@ Features:
 
 
 # ---------------------------------------------------------------------------
+# Phase 3 — Reconciliation
+# ---------------------------------------------------------------------------
+
+def build_group_summary(
+    final_assignments: dict[str, str],
+    all_features: list[dict],
+) -> str:
+    """Build a summary of all groups with their member features + descriptions."""
+    # Map feature id → description
+    id_to_desc: dict[str, str] = {f["id"]: f["desc"] for f in all_features}
+
+    # Build group → members
+    group_members: dict[str, list[str]] = {}
+    for fid, gname in final_assignments.items():
+        if gname == "Ungrouped":
+            continue
+        group_members.setdefault(gname, []).append(fid)
+
+    lines: list[str] = []
+    for gname, members in sorted(group_members.items()):
+        lines.append(f"\n## {gname} ({len(members)} members)")
+        for fid in members[:15]:  # Cap at 15 per group to stay within context
+            desc = id_to_desc.get(fid, "no description")
+            lines.append(f"  - {fid}: {desc}")
+        if len(members) > 15:
+            lines.append(f"  ... and {len(members) - 15} more")
+
+    # Also report ungrouped count
+    ungrouped = sum(1 for g in final_assignments.values() if g == "Ungrouped")
+    lines.append(f"\n## Ungrouped: {ungrouped} features")
+
+    return "\n".join(lines)
+
+
+def apply_phase3(
+    phase3: Phase3Output,
+    final_assignments: dict[str, str],
+    active_groups: dict[str, str],
+) -> None:
+    """Apply Phase 3 reconciliation actions to the assignments in place."""
+
+    # 1. Renames
+    for rename in phase3.renames:
+        old, new = rename.old_name, rename.new_name
+        if old in active_groups:
+            active_groups[new] = active_groups.pop(old)
+        for fid in list(final_assignments):
+            if final_assignments[fid] == old:
+                final_assignments[fid] = new
+        log.info("Renamed: '%s' → '%s'", old, new)
+
+    # 3. Splits
+    for split in phase3.splits:
+        # Add new subgroups
+        for sg in split.new_subgroups:
+            active_groups[sg.group_name] = sg.rationale
+        # Reassign features
+        for a in split.reassignments:
+            final_assignments[a.feature_id] = a.group_name
+        # Remove the old group
+        active_groups.pop(split.group_to_split, None)
+        log.info("Split: '%s' → %s", split.group_to_split,
+                 [sg.group_name for sg in split.new_subgroups])
+
+    # 4. Individual reassignments
+    for ra in phase3.reassignments:
+        if ra.feature_id in final_assignments:
+            final_assignments[ra.feature_id] = ra.to_group
+            log.info("Reassigned: %s from '%s' → '%s'", ra.feature_id, ra.from_group, ra.to_group)
+
+    # 5. Dropped groups
+    for gname in phase3.dropped_groups:
+        for fid in list(final_assignments):
+            if final_assignments[fid] == gname:
+                final_assignments[fid] = "Ungrouped"
+        active_groups.pop(gname, None)
+        log.info("Dropped group: '%s' (members → Ungrouped)", gname)
+
+
+# ---------------------------------------------------------------------------
 # Post-processing: Embedding & Logit grouping
 # ---------------------------------------------------------------------------
 
 def group_embedding_nodes(graph_data: dict, final_assignments: dict[str, str]) -> None:
-    """Group embedding nodes by their token, skipping function words.
-
-    Meaningful content tokens each get their own group named:
-        Emb: "<token>"
-    Function words / punctuation are left Ungrouped (not pinned).
-    """
+    """Group embedding nodes by their token, skipping function words."""
     metadata = graph_data.get("metadata", {})
     prompt_tokens: list[str] = metadata.get("prompt_tokens", [])
 
@@ -242,21 +345,17 @@ def group_embedding_nodes(graph_data: dict, final_assignments: dict[str, str]) -
         if ftype != "embedding":
             continue
 
-        # Figure out which token this embedding represents
         ctx_idx = node.get("ctx_idx", -1)
         if 0 <= ctx_idx < len(prompt_tokens):
             token = str(prompt_tokens[ctx_idx])
         else:
             token = "?"
 
-        # Clean the token for comparison
         token_clean = token.strip().lower().replace("▁", "").replace("Ġ", "")
 
         if token_clean in FUNCTION_WORDS or len(token_clean) <= 1:
-            # Skip — don't assign to any group (stays ungrouped / unpinned)
             final_assignments.pop(nid, None)
         else:
-            # Give it a descriptive group name
             display_token = token.strip().replace("▁", "").replace("Ġ", "")
             final_assignments[nid] = f'Emb: "{display_token}"'
 
@@ -264,12 +363,7 @@ def group_embedding_nodes(graph_data: dict, final_assignments: dict[str, str]) -
 
 
 def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> None:
-    """Group logit (output) nodes using top-p selection.
-
-    Collects logit nodes sorted by probability, includes tokens until
-    cumulative probability >= LOGIT_TOP_P. Each gets a descriptive name.
-    If one token dominates, only that one is shown.
-    """
+    """Group logit (output) nodes using top-p selection, skipping function words."""
     logit_nodes: list[dict] = []
     for node in graph_data.get("nodes", []):
         ftype = node.get("feature_type", "")
@@ -279,10 +373,8 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
     if not logit_nodes:
         return
 
-    # Sort by probability descending
     logit_nodes.sort(key=lambda n: float(n.get("token_prob", 0.0)), reverse=True)
 
-    # Top-p selection
     cumulative_p = 0.0
     selected: list[tuple[dict, float]] = []
     for n in logit_nodes:
@@ -294,7 +386,6 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
             match = re.search(r'"([^"]+)"', clerp)
             token_str = match.group(1) if match else ""
         token_clean = token_str.strip().lower().replace("▁", "").replace("Ġ", "")
-        print(token_clean)
         if token_clean in FUNCTION_WORDS or len(token_clean) <= 1:
             continue
 
@@ -303,7 +394,7 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
         if cumulative_p >= LOGIT_TOP_P or len(selected) >= LOGIT_MAX_NODES:
             break
 
-    # Also always include the target logit if it exists and wasn't already selected
+    # Always include target logit
     selected_ids = {str(n.get("node_id", "")) for n, _ in selected}
     for n in logit_nodes:
         if n.get("is_target_logit") and str(n.get("node_id", "")) not in selected_ids:
@@ -313,30 +404,25 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
 
     log.info("Logit top-p selection: %d tokens (cumulative p=%.3f)", len(selected), cumulative_p)
 
-    # Name each selected logit node
     for n, p in selected:
         nid = str(n.get("node_id", ""))
-
-        # Extract the actual token text
-        token_str: str = n.get("logitToken", "")
-        if not token_str:
-            # Try to parse from clerp: 'Output " Dallas" (p=0.026)'
-            clerp: str = n.get("clerp", "")
-            match = re.search(r'"([^"]+)"', clerp)
+        token_str_: str = n.get("logitToken", "")
+        if not token_str_:
+            clerp_: str = n.get("clerp", "")
+            match = re.search(r'"([^"]+)"', clerp_)
             if match:
-                token_str = match.group(1)
+                token_str_ = match.group(1)
             else:
-                token_str = nid
+                token_str_ = nid
 
-        token_str = token_str.strip()
+        token_str_ = token_str_.strip()
         pct = f"{p:.1%}"
 
         if n.get("is_target_logit"):
-            final_assignments[nid] = f'Output: "{token_str}" ({pct}) [target]'
+            final_assignments[nid] = f'Output: "{token_str_}" ({pct}) [target]'
         else:
-            final_assignments[nid] = f'Output: "{token_str}" ({pct})'
+            final_assignments[nid] = f'Output: "{token_str_}" ({pct})'
 
-    # Remove any old logit assignments for nodes NOT selected
     final_selected_ids = {str(n.get("node_id", "")) for n, _ in selected}
     for n in logit_nodes:
         nid = str(n.get("node_id", ""))
@@ -442,6 +528,62 @@ Features:
                     log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
+    # PHASE 3 — Reconciliation
+    # ==================================================================
+    log.info("Phase 3: Reconciling groups…")
+
+    group_summary = build_group_summary(final_assignments, features)
+    num_groups = len({g for g in final_assignments.values() if g != "Ungrouped"})
+
+    phase3_prompt = f"""You are an expert AI interpretability researcher reviewing the output of an automated feature grouping pipeline.
+
+Context: The model was given the prompt: {prompt_text}
+
+The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to
+clean up the result — rename unclear groups, split groups that are too broad,
+and reassign misplaced features.
+
+{GROUPING_PHILOSOPHY}
+
+Only make changes you are confident about. Do not restructure for the sake of it.
+
+REVIEW CHECKLIST:
+1. OVERLY BROAD: Does any group mix features that serve clearly different computational roles
+   (e.g. conceptual knowledge vs output-driving)? → Split it. 
+3. MISASSIGNED: Are any features obviously in the wrong group based on their description? → Reassign.
+4. NAMING: Are group names clear, specific, and <= 5 words? → Rename if not.
+5. MISSING GROUPS: Is there a coherent cluster of features currently in "Ungrouped" that deserves
+   its own group? If so, reassign those features to a new group name or existing group.
+
+IMPORTANT:
+- Only make changes you are confident about. Do not restructure for the sake of it.
+- If the grouping looks good, return empty lists for all actions.
+
+Current grouping:
+{group_summary}
+"""
+
+    response3 = await client.beta.chat.completions.parse(
+        model=GROUPING_MODEL,
+        messages=[{"role": "user", "content": phase3_prompt}],
+        response_format=Phase3Output,
+    )
+    p3 = response3.choices[0].message.parsed
+
+    if p3 is None:
+        log.warning("Phase 3 parsing returned None — skipping reconciliation.")
+    else:
+        total_actions = (
+            len(p3.renames) + len(p3.splits)
+            + len(p3.reassignments) + len(p3.dropped_groups)
+        )
+        if total_actions == 0:
+            log.info("Phase 3: No changes needed — grouping looks clean.")
+        else:
+            log.info("Phase 3: Applying %d actions…", total_actions)
+            apply_phase3(p3, final_assignments, active_groups)
+
+    # ==================================================================
     # POST-PROCESSING — Embedding & Logit nodes
     # ==================================================================
     if GRAPH_FILE.exists():
@@ -457,10 +599,11 @@ Features:
     with open(FEATURE_GROUPS_FILE, "w") as f:
         json.dump(final_assignments, f, indent=2)
 
+    final_group_count = len({g for g in final_assignments.values() if g != "Ungrouped"})
     log.info(
-        "Done — %d features across %d supernodes → %s",
+        "Done — %d features across %d groups → %s",
         len(final_assignments),
-        len(active_groups),
+        final_group_count,
         FEATURE_GROUPS_FILE,
     )
 
