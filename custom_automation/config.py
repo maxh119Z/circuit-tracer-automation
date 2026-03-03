@@ -30,6 +30,7 @@ GRAPH_FILE = PACKAGE_DIR.parent / "test_graphs" / "test-run.json"
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / "feature_descriptions.json"
 FEATURE_GROUPS_FILE = ARTIFACTS_DIR / "feature_groups.json"
+VALIDATION_REPORT_FILE = ARTIFACTS_DIR / "validation_report.json"
 VIEWER_URL_FILE = ARTIFACTS_DIR / "viewer_url.txt"
 
 # ---------------------------------------------------------------------------
