@@ -41,7 +41,7 @@ from config import (
 log = setup_logging()
 
 # Phase 1 seed size
-GROUPING_TOP_K_SEED = 30
+GROUPING_TOP_K_SEED = 100
 
 # Top-p threshold for logit nodes: include output tokens until cumulative prob >= this
 LOGIT_TOP_P = 0.90
