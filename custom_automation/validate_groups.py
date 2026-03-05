@@ -29,6 +29,7 @@ import asyncio
 import json
 import random
 import sys
+from datetime import datetime, timezone
 from typing import Any
 
 from openai import AsyncOpenAI
@@ -37,7 +38,9 @@ from pydantic import BaseModel, Field
 from config import (
     FEATURE_DESCRIPTIONS_FILE,
     FEATURE_GROUPS_FILE,
+    GRAPH_FILE,
     GROUPING_MODEL,
+    VALIDATION_HISTORY_FILE,
     VALIDATION_REPORT_FILE,
     setup_logging,
 )
@@ -195,7 +198,6 @@ async def run_validation_task(
                 model=VALIDATION_MODEL,
                 messages=[{"role": "user", "content": prompt}],
                 response_format=SelectionOutput,
-                temperature=0,
             )
             parsed = response.choices[0].message.parsed
             if parsed is None:
@@ -334,6 +336,21 @@ async def validate_method2(
 # Main
 # ---------------------------------------------------------------------------
 
+def _read_prompt_from_graph() -> str:
+    """Read the prompt string from the graph file metadata."""
+    try:
+        with open(GRAPH_FILE) as f:
+            data = json.load(f)
+        meta = data.get("metadata", {})
+        prompt = meta.get("prompt", "")
+        if not prompt:
+            tokens = meta.get("prompt_tokens", [])
+            prompt = "".join(str(t) for t in tokens)
+        return prompt or GRAPH_FILE.stem
+    except Exception:
+        return GRAPH_FILE.stem
+
+
 async def main_async() -> None:
     features, groups = load_data()
     group_index = build_group_index(features, groups)
@@ -348,6 +365,9 @@ async def main_async() -> None:
         log.error("No groups with enough features to validate. Exiting.")
         sys.exit(1)
 
+    prompt = _read_prompt_from_graph()
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
     client = AsyncOpenAI()
     sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
@@ -358,6 +378,8 @@ async def main_async() -> None:
     m2_results = await validate_method2(valid_groups, client, sem)
 
     report: dict[str, Any] = {
+        "prompt": prompt,
+        "timestamp": timestamp,
         "method1": {
             "description": (
                 "Can the model predict which feature descriptions belong to a group "
@@ -376,9 +398,20 @@ async def main_async() -> None:
         },
     }
 
+    # Overwrite latest report
     with open(VALIDATION_REPORT_FILE, "w") as f:
         json.dump(report, f, indent=2)
     log.info("Validation report saved → %s", VALIDATION_REPORT_FILE)
+
+    # Append to history
+    history: list[dict] = []
+    if VALIDATION_HISTORY_FILE.exists():
+        with open(VALIDATION_HISTORY_FILE) as f:
+            history = json.load(f)
+    history.append(report)
+    with open(VALIDATION_HISTORY_FILE, "w") as f:
+        json.dump(history, f, indent=2)
+    log.info("Appended to history (%d total runs) → %s", len(history), VALIDATION_HISTORY_FILE)
 
     # Summary table
     print("\n========== VALIDATION SUMMARY ==========")
