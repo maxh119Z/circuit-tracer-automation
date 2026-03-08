@@ -40,6 +40,7 @@ from config import (
     FEATURE_GROUPS_FILE,
     GRAPH_FILE,
     GROUPING_MODEL,
+    MANUAL_GROUPS_FILE,
     VALIDATION_HISTORY_FILE,
     VALIDATION_REPORT_FILE,
     setup_logging,
@@ -104,6 +105,31 @@ def build_group_index(
         if feat and feat.get("generated_description"):
             index.setdefault(gname, []).append(feat)
 
+    return index
+
+
+def create_random_group_index(
+    group_index: dict[str, list[dict]], rng: random.Random
+) -> dict[str, list[dict]]:
+    """Random baseline: shuffle features across groups, preserving group sizes."""
+    all_features = [f for feats in group_index.values() for f in feats]
+    rng.shuffle(all_features)
+    random_index: dict[str, list[dict]] = {}
+    idx = 0
+    for group_name, feats in group_index.items():
+        random_index[group_name] = all_features[idx: idx + len(feats)]
+        idx += len(feats)
+    return random_index
+
+
+def load_manual_group_index(features: list[dict]) -> dict[str, list[dict]] | None:
+    """Load hand-curated groups from MANUAL_GROUPS_FILE if it exists."""
+    if not MANUAL_GROUPS_FILE.exists():
+        return None
+    with open(MANUAL_GROUPS_FILE) as f:
+        manual_groups: dict[str, str] = json.load(f)
+    index = build_group_index(features, manual_groups)
+    log.info("Loaded manual groups from %s (%d groups)", MANUAL_GROUPS_FILE, len(index))
     return index
 
 
@@ -179,6 +205,16 @@ def macro_avg(results: list[dict]) -> dict[str, float]:
     }
 
 
+def degenerate_stats(results: list[dict]) -> dict[str, int]:
+    """Count groups where GPT selected everything or nothing."""
+    selected_all = sum(
+        1 for r in results
+        if r["n_predicted"] == r["n_positive"] + r["n_negative"]
+    )
+    selected_none = sum(1 for r in results if r["n_predicted"] == 0)
+    return {"selected_all": selected_all, "selected_none": selected_none, "total": len(results)}
+
+
 # ---------------------------------------------------------------------------
 # Async validation task (shared by both methods)
 # ---------------------------------------------------------------------------
@@ -224,6 +260,7 @@ async def run_validation_task(
         "group": group_name,
         "n_positive": len(actual_positive_indices),
         "n_negative": total_items - len(actual_positive_indices),
+        "n_predicted": len(predicted),
         **metrics,
     }
 
@@ -351,6 +388,13 @@ def _read_prompt_from_graph() -> str:
         return GRAPH_FILE.stem
 
 
+def _condition_block(m1: list[dict], m2: list[dict]) -> dict[str, Any]:
+    return {
+        "method1": {"groups": m1, "macro_avg": macro_avg(m1), "degenerate": degenerate_stats(m1)},
+        "method2": {"groups": m2, "macro_avg": macro_avg(m2), "degenerate": degenerate_stats(m2)},
+    }
+
+
 async def main_async() -> None:
     features, groups = load_data()
     group_index = build_group_index(features, groups)
@@ -371,32 +415,41 @@ async def main_async() -> None:
     client = AsyncOpenAI()
     sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
-    log.info("=== Method 1: Feature description matching ===")
-    m1_results = await validate_method1(valid_groups, client, sem)
+    # --- Auto groups ---
+    log.info("=== AUTO: Method 1 ===")
+    auto_m1 = await validate_method1(valid_groups, client, sem)
+    log.info("=== AUTO: Method 2 ===")
+    auto_m2 = await validate_method2(valid_groups, client, sem)
 
-    log.info("=== Method 2: Text snippet matching ===")
-    m2_results = await validate_method2(valid_groups, client, sem)
+    # --- Random baseline (same group sizes, shuffled features) ---
+    rng = random.Random(RANDOM_SEED)
+    random_groups = create_random_group_index(valid_groups, rng)
+    log.info("=== RANDOM: Method 1 ===")
+    rand_m1 = await validate_method1(random_groups, client, sem)
+    log.info("=== RANDOM: Method 2 ===")
+    rand_m2 = await validate_method2(random_groups, client, sem)
 
+    # --- Manual groups (optional — place manual_groups.json in artifacts/) ---
+    manual_m1: list[dict] | None = None
+    manual_m2: list[dict] | None = None
+    manual_group_index = load_manual_group_index(features)
+    if manual_group_index:
+        valid_manual = {k: v for k, v in manual_group_index.items() if len(v) >= MIN_GROUP_SIZE}
+        if valid_manual:
+            log.info("=== MANUAL: Method 1 ===")
+            manual_m1 = await validate_method1(valid_manual, client, sem)
+            log.info("=== MANUAL: Method 2 ===")
+            manual_m2 = await validate_method2(valid_manual, client, sem)
+
+    # Build report
     report: dict[str, Any] = {
         "prompt": prompt,
         "timestamp": timestamp,
-        "method1": {
-            "description": (
-                "Can the model predict which feature descriptions belong to a group "
-                "given the group description? (intra-graph hard negatives)"
-            ),
-            "groups": m1_results,
-            "macro_avg": macro_avg(m1_results),
-        },
-        "method2": {
-            "description": (
-                "Can the model predict which activating text snippets come from "
-                "features in a group given the group description? (intra-graph hard negatives)"
-            ),
-            "groups": m2_results,
-            "macro_avg": macro_avg(m2_results),
-        },
+        "auto": _condition_block(auto_m1, auto_m2),
+        "random": _condition_block(rand_m1, rand_m2),
     }
+    if manual_m1 is not None and manual_m2 is not None:
+        report["manual"] = _condition_block(manual_m1, manual_m2)
 
     # Overwrite latest report
     with open(VALIDATION_REPORT_FILE, "w") as f:
@@ -414,17 +467,32 @@ async def main_async() -> None:
     log.info("Appended to history (%d total runs) → %s", len(history), VALIDATION_HISTORY_FILE)
 
     # Summary table
+    conditions: list[tuple[str, str]] = [("Auto", "auto"), ("Random", "random")]
+    if "manual" in report:
+        conditions.append(("Manual", "manual"))
+
+    n = len(auto_m1)
     print("\n========== VALIDATION SUMMARY ==========")
-    for key, label in [
-        ("method1", "Method 1  Feature Desc Matching"),
-        ("method2", "Method 2  Text Snippet Matching"),
-    ]:
-        avg = report[key]["macro_avg"]
-        n = len(report[key]["groups"])
-        print(f"\n{label}  ({n} groups evaluated)")
-        print(f"  Macro Precision : {avg['precision']:.3f}")
-        print(f"  Macro Recall    : {avg['recall']:.3f}")
-        print(f"  Macro F1        : {avg['f1']:.3f}")
+    print(f"\n{'Condition':<10}  {'M1 P':>6}  {'M1 R':>6}  {'M1 F1':>6}  {'M2 P':>6}  {'M2 R':>6}  {'M2 F1':>6}")
+    print("-" * 55)
+    for label, key in conditions:
+        m1a = report[key]["method1"]["macro_avg"]
+        m2a = report[key]["method2"]["macro_avg"]
+        print(
+            f"{label:<10}  {m1a['precision']:>6.3f}  {m1a['recall']:>6.3f}  {m1a['f1']:>6.3f}"
+            f"  {m2a['precision']:>6.3f}  {m2a['recall']:>6.3f}  {m2a['f1']:>6.3f}"
+        )
+    print(f"\n({n} groups evaluated)")
+
+    print("\n--- Degenerate GPT Behavior ---")
+    for label, key in conditions:
+        for mkey, mlabel in [("method1", "M1"), ("method2", "M2")]:
+            d = report[key][mkey]["degenerate"]
+            print(
+                f"  {label} {mlabel}: "
+                f"selected_all={d['selected_all']}/{d['total']}  "
+                f"selected_none={d['selected_none']}/{d['total']}"
+            )
     print("=========================================\n")
 
 
