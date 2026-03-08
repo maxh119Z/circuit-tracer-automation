@@ -24,12 +24,15 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 
 # Graph file served to the viewer.
-GRAPH_FILE = PACKAGE_DIR.parent / "test_graphs" / "test-run.json"
+GRAPH_FILE = PACKAGE_DIR / "test_graphs" / "michael-jordan-plays-the-sport-of.json"
 
 # Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / "feature_descriptions.json"
 FEATURE_GROUPS_FILE = ARTIFACTS_DIR / "feature_groups.json"
+VALIDATION_REPORT_FILE = ARTIFACTS_DIR / "validation_report.json"
+VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / "validation_history.json"
+MANUAL_GROUPS_FILE = ARTIFACTS_DIR / "manual_groups.json"
 VIEWER_URL_FILE = ARTIFACTS_DIR / "viewer_url.txt"
 
 # ---------------------------------------------------------------------------

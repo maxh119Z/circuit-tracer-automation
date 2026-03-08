@@ -92,6 +92,10 @@ if [ "${SKIP_GROUPING:-0}" = "1" ]; then
     echo "  ⚠ SKIP_GROUPING=1 — Step 3 will be skipped"
 fi
 
+if [ "${RUN_VALIDATION:-0}" = "1" ]; then
+    echo "  ✓ RUN_VALIDATION=1 — Validation will run after Step 5"
+fi
+
 # ---------------------------------------------------------------------------
 # Step 0 — Apply frontend patch (idempotent)
 # ---------------------------------------------------------------------------
@@ -141,6 +145,16 @@ step_banner "Step 5/5 — Registering graph in viewer dropdown"
 t=$(date +%s)
 python update_metadata.py
 elapsed "$t"
+
+# ---------------------------------------------------------------------------
+# Step 6 (Optional) — Validate group descriptions
+# ---------------------------------------------------------------------------
+if [ "${RUN_VALIDATION:-0}" = "1" ]; then
+    step_banner "Step 6 — Validating group descriptions (Method 1 + Method 2)"
+    t=$(date +%s)
+    python validate_groups.py
+    elapsed "$t"
+fi
 
 # ---------------------------------------------------------------------------
 # Done
