@@ -1,8 +1,8 @@
 """
 Shared configuration for the custom_automation pipeline.
 
-Single source of truth for paths, constants, HTTP session setup, and logging.
-Import this module in every pipeline script to avoid duplicated magic strings.
+Source for paths, constants, HTTP session setup, and logging.
+Import this module in every pipeline script.
 """
 
 import logging
@@ -51,15 +51,11 @@ DEFAULT_PRUNING_THRESHOLD: float = 0.40
 
 # For Gemma-2B this excludes the final logit projection layer(s).
 MAX_LAYER_INDEX: int = 26
-
 MAX_WORKERS: int = 10
 CHECKPOINT_INTERVAL: int = 10
 
-# Removed: # Explainer model used by add_description.py.
-# EXPLAINER_MODEL_ID = "Transluce/llama_8b_explainer"
-
 # ---------------------------------------------------------------------------
-# Grouping (OpenAI) — used by group_features.py
+# Grouping (OpenAI) — used by generate_supernodes.py
 # ---------------------------------------------------------------------------
 
 # Model for semantic clustering.
@@ -73,7 +69,7 @@ GROUPING_BATCH_SIZE: int = 50
 
 # Base URL for the circuit-tracer viewer.
 # Override with VIEWER_URL env var for RunPod / remote setups.
-VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "https://4p8fvpyf87mb0a-8041.proxy.runpod.net/")
+VIEWER_BASE_URL: str = os.environ.get("VIEWER_URL", "http://localhost:8041/")
 
 # ---------------------------------------------------------------------------
 # HTTP Session with Retries
@@ -84,7 +80,6 @@ def make_session(
     backoff_factor: float = 0.5,
     status_forcelist: tuple[int, ...] = (429, 500, 502, 503, 504),
 ) -> requests.Session:
-    """Return a ``requests.Session`` with automatic retry on transient errors."""
     session = requests.Session()
     retry = Retry(
         total=retries,
@@ -99,14 +94,12 @@ def make_session(
 
 
 # ---------------------------------------------------------------------------
-# Logging
+# Logging (Terminal)
 # ---------------------------------------------------------------------------
 
 
 def setup_logging(level: int | None = None) -> logging.Logger:
     """Configure and return the pipeline-wide logger.
-
-    Respects the ``LOG_LEVEL`` environment variable (DEBUG, INFO, WARNING …).
     """
     if level is None:
         level = getattr(logging, os.environ.get("LOG_LEVEL", "INFO").upper(), logging.INFO)

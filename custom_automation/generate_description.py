@@ -1,11 +1,11 @@
 """
 Step 2 — Generate natural-language descriptions for pruned features.
 
-Loads ``pruned_activations.json`` from the artifacts directory, prompts
+Loads ``pruned_activations.json`` from the artifacts directory (fetch_all_activation_text.py), prompts
 OpenAI's GPT-5-mini model concurrently for each feature, and writes
 ``feature_descriptions.json``.
 
-Supports **checkpoint resume**: if the output file already exists, features
+If the output file already exists, features
 that already have a description are skipped.
 
 Usage:
@@ -36,34 +36,33 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 MODEL = "gpt-5-mini"
-CONCURRENCY_LIMIT = 50  # How many simultaneous requests to send to OpenAI
-CHUNK_SIZE = 50         # How many to process before saving a checkpoint
+CONCURRENCY_LIMIT = 50
+CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
 # ---------------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = (
-    "You are a meticulous AI researcher conducting an important investigation "
-    "into a specific neuron inside a language model. Your task is to concisely "
-    "describe the concept or feature that this neuron represents.\n\n"
+    "You are a mechanistic interpretability AI researcher. You will be given information regarding a specific feature neuron. Your task is to "
+    "describe the concept or feature that this neuron represents (generate a description).\n\n"
     "You will receive two types of evidence:\n"
     "1. Input Activations: Text excerpts where the neuron activated strongly. "
-    "The specific tokens causing activation are delimited by {{ }}. "
+    "The specific tokens triggers causing activation are delimited by {{ }}. "
     "Remember that activations only depend on preceding tokens, never subsequent ones.\n"
     "2. Global Output Tokens: A list of tokens the neuron intrinsically promotes "
     "(increases probability) and demotes (decreases probability) across the vocabulary.\n\n"
-    "CRITICAL WARNING: The output tokens (promoted/demoted) can often be noisy, "
+    "WARNING: The output tokens (promoted/demoted) can often be noisy, "
     "polysemantic, or artifacts of the tokenizer. Be wary of this noise. "
-    "Use the output tokens merely as directional hints to support the context seen "
-    "in the input activations, not as absolute truth.\n"
-    "In some cases, if input activations are noisy but output tokens follow clear patterns, listen to the tokens.""\n"
+    "Use the output tokens merely as directional hints to support the context when they provide an intelligible signal"
+    ", not as absolute truth.\n"
+    "In some cases, if input activations are noisy but output tokens follow clear patterns, listen to the tokens.\n"
     "IMPORTANT:\n"
-    "If the neuron consistently activates on or near a specific named entity "
+    "If the neuron consistently activates on or near a specific named proper noun entity "
     "(person, place, organization, brand, etc.), Include that entity in "
     "the description.\n"
     "SPECIFICITY OVER GENERALITY:\n"
-    "Prefer the most specific accurate description over a vague general one."
+    "Prefer the most specific accurate description over a vague general one. "
     "Keep your final description as concise as possible — ideally <= 5 words. "
     "There is no need for much grammatical correctness."
 )
@@ -98,14 +97,21 @@ def _build_user_prompt(feature: dict) -> str:
     return "\n".join(lines)
 
 def _load_existing_descriptions(path: Path) -> dict[str, dict]:
-    """Return a mapping of feature-id → feature-dict from a prior run."""
+    """Return successful prior descriptions only."""
     if not path.exists():
         return {}
+
     try:
         with open(path, "r") as f:
             data = json.load(f)
-        return {item["id"]: item for item in data if "generated_description" in item}
-    except (json.JSONDecodeError, KeyError):
+
+        return {
+            item["id"]: item
+            for item in data
+            if item.get("generated_description")
+            and item.get("generated_description") != "Error generating description"
+        }
+    except (json.JSONDecodeError, KeyError, TypeError):
         return {}
 
 def _save_checkpoint(features: list[dict], path: Path) -> None:
@@ -117,32 +123,55 @@ def _save_checkpoint(features: list[dict], path: Path) -> None:
 # Async Generation
 # ---------------------------------------------------------------------------
 
-async def process_feature(feature: dict, client: AsyncOpenAI, sem: asyncio.Semaphore, idx: int, total: int) -> None:
+async def process_feature(
+    feature: dict,
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+    idx: int,
+    total: int,
+) -> None:
     fid = feature.get("id", "?")
-    
+    max_retries = 3
+
     async with sem:
-        log.info("[%d/%d] Requesting GPT-5-mini for %s ...", idx, total, fid)
-        try:
-            response = await client.chat.completions.create(
-                model=MODEL,
-                messages=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": _build_user_prompt(feature)},
-                ],
-                reasoning_effort="low",
-                max_completion_tokens=1024
+        for attempt in range(1, max_retries + 1):
+            log.info(
+                "[%d/%d] Requesting GPT-5-mini for %s (attempt %d/%d)...",
+                idx, total, fid, attempt, max_retries
             )
-            desc = response.choices[0].message.content.strip() # type: ignore
-            
-            if "[DESCRIPTION]:" in desc:
-                desc = desc.split("[DESCRIPTION]:")[-1].strip()
-                
-            feature["generated_description"] = desc
-            log.info("  → %s: %s", fid, desc[:60])
-            
-        except Exception as exc:
-            log.warning("  ✗ Failed for %s: %s", fid, exc)
-            feature["generated_description"] = "Error generating description"
+            try:
+                response = await client.chat.completions.create(
+                    model=MODEL,
+                    messages=[
+                        {"role": "system", "content": SYSTEM_PROMPT},
+                        {"role": "user", "content": _build_user_prompt(feature)},
+                    ],
+                    reasoning_effort="low",
+                    max_completion_tokens=32,
+                )
+
+                desc = response.choices[0].message.content.strip()  # type: ignore
+
+                if "[DESCRIPTION]:" in desc:
+                    desc = desc.split("[DESCRIPTION]:", 1)[-1].strip()
+
+                feature["generated_description"] = desc
+                log.info("  → %s: %s", fid, desc[:60])
+                return
+
+            except Exception as exc:
+                log.warning(
+                    "Attempt %d/%d failed for %s: %s",
+                    attempt, max_retries, fid, exc
+                )
+
+                if attempt < max_retries:
+                    wait_time = 2 ** (attempt - 1)  # 1s, 2s, 4s
+                    log.info("Retrying %s in %ds...", fid, wait_time)
+                    await asyncio.sleep(wait_time)
+                else:
+                    feature["generated_description"] = "Error generating description"
+                    log.warning("Giving up on %s after %d attempts.", fid, max_retries)
 
 # ---------------------------------------------------------------------------
 # Main
