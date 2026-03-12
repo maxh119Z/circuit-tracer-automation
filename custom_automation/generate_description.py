@@ -60,7 +60,7 @@ SYSTEM_PROMPT = (
     "IMPORTANT:\n"
     "If the neuron consistently activates on or near a specific named entity "
     "(person, place, organization, brand, etc.), Include that entity in "
-    "the description.\n"
+    "the description. Proper nouns, a reappearing term, etc.\n"
     "SPECIFICITY OVER GENERALITY:\n"
     "Prefer the most specific accurate description over a vague general one. "
     "Keep your final description as concise as possible — ideally <= 5 words. "

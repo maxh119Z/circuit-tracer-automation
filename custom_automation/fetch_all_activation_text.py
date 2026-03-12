@@ -33,10 +33,6 @@ from config import (
 
 log = setup_logging()
 
-# ---------------------------------------------------------------------------
-# Configuration (overridable via environment)
-# ---------------------------------------------------------------------------
-
 try:
     PRUNING_THRESHOLD = float(os.environ.get("PRUNING_THRESHOLD", DEFAULT_PRUNING_THRESHOLD))
 except ValueError:
@@ -208,7 +204,7 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
             )
 
     # --- 2. Extract Global Output Tokens ---
-    # Since the debug showed these are just flat lists of strings, we grab them directly.
+    # For promoting and demoting logits.
     top_logits = raw_json.get("top_logits", [])
     bottom_logits = raw_json.get("bottom_logits", [])
 
@@ -222,8 +218,8 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
 # Main
 # ---------------------------------------------------------------------------
 
-
 def main() -> None:
+    # Fetch ndes
     nodes = load_pruned_nodes_from_graph()
 
     if not nodes:
