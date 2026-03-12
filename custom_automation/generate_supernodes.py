@@ -2,9 +2,9 @@
 Step 3 — Semantically group features into supernodes using OpenAI.
 
 Three-phase approach:
-- Phase 1 creates groups
-- Phase 2 only assigns to existing groups / Ungrouped
-- Phase 3 can split / rename / recover missed structure
+  Phase 1: Discover groups from the top-30 most influential features.
+  Phase 2: Assign remaining features to existing groups in concurrent batches.
+  Phase 3: Reconciliation — merge duplicates, fix misassignments, split broad groups.
 
 Post-processing:
   - Embedding nodes: grouped by semantic role of their token (skip function words)
@@ -41,7 +41,7 @@ from config import (
 log = setup_logging()
 
 # Phase 1 seed size
-GROUPING_TOP_K_SEED = 50
+GROUPING_TOP_K_SEED = 100
 
 # Top-p threshold for logit nodes: include output tokens until cumulative prob >= this
 LOGIT_TOP_P = 0.90
@@ -107,9 +107,9 @@ class Phase1Output(BaseModel):
 
 
 class Phase2Output(BaseModel):
-    assignments: list[Assignment] = Field(
-        description="Feature-to-group assignments. Must use an existing group name or 'Ungrouped'."
-    )
+    assignments: list[Assignment] = Field(description="Feature-to-group assignments.")
+    new_groups: list[GroupDef] = Field(description="Any NEW groups created (only if absolutely necessary).")
+
 
 class RenameAction(BaseModel):
     old_name: str = Field(description="The current group name.")
@@ -142,30 +142,64 @@ class Phase3Output(BaseModel):
 
 GROUPING_PHILOSOPHY = """
 Important principles:
-- The goal is a **cohesive attribution graph** that highlights *intent and meaning*.
-- Features encoding prepositions, articles, punctuation, conjunctions, or other
-  purely grammatical / syntactic scaffolding (e.g. "of", "the", "is", ",") should
-  mostly go to "Ungrouped" unless it promotes a word. In most cases however, they rarely carry attribution-relevant signal.
-- Do NOT force a fixed number of groups. Create as few or as many groups as the
-  data genuinely supports. Fewer, cleaner groups are usually better than many noisy ones. 
-- If a feature is ambiguous, polysemantic, or very low-signal (no specificity), prefer "Ungrouped".
-- Group names may be generated with context of embedding prompt
-- If you are planning to generate a group name with many disparate parts (sports + players), try to instead split the group up for specificity.
-- Group names should be <= 5 words and still fully represent the features you think fit inside.
+- The goal is a cohesive attribution graph that highlights the main intent and meaning of the prompt.
+- Do not force a fixed number of groups. Create only groups that are clearly supported by the data.
+- Prefer clean, reusable semantic groups over prompt-specific labels.
+- If a feature is ambiguous, polysemantic, weak, noisy, or only loosely relevant to the main prompt semantics, prefer "Ungrouped".
+- Features encoding prepositions, articles, punctuation, conjunctions, or other purely grammatical / syntactic scaffolding
+  (e.g. "of", "the", "is", ",") should usually go to "Ungrouped" unless they clearly promote a meaningful token.
+
+RELEVANCE TO THE MAIN PROMPT:
+- A group should represent a concept that is genuinely relevant to the main semantic structure of the prompt.
+- Do not create groups for side-patterns, incidental associations, or weak thematic echoes.
+- If a feature reflects a real concept but that concept is not central to the prompt or not supported by nearby related features, prefer "Ungrouped".
+- A valid group should usually feel meaningfully connected to other groups in the graph, not like an isolated curiosity.
+
+GROUP GRANULARITY:
+- Do not group features only because they belong to the same broad topic.
+- Preserve meaningful distinctions in abstraction level when those distinctions are relevant to the main prompt.
+- Broad categories and their stable subtypes should usually be separate groups only when both are actually supported and relevant.
+- If one feature represents a general domain and another represents a specific subtype within that domain, do not automatically merge them.
+- But do not create extra subgroups for weak or incidental distinctions.
+
+SEMANTIC ROLE:
+- Before grouping features together, ask whether they serve the same semantic role.
+- Features should usually be separated if they differ in role, even when they share a topic.
+- Common role differences that justify separate groups include:
+  - broad domain knowledge
+  - more specific subdomain knowledge
+  - named entities / specific referents
+  - terminology or jargon
+  - actions or behaviors
+  - evaluative / comparative language
+  - output-driving or token-predictive features
 
 SUBGROUP AWARENESS:
-- Before finalizing a group, consider whether it contains meaningful subgroups.
-  A group like "education" might actually be two distinct circuits. Similarly, "literary works" might split
-  into output driven versus conceptual ideas. A location could be a state versus a city.
-- These cases call for SEPARATE groups even if they share a topic.
-- It is better to have 2-3 precise subgroups than one vague supergroup, balanced with an overall minimal number of groups in total.
+- Before finalizing a group, consider whether it contains coherent subgroups that reflect genuinely different circuits.
+- If a group mixes multiple semantic roles or multiple abstraction levels, split it.
+- It is better to have 2–3 precise groups than one vague bucket.
+- But it is better to leave a weak distinction ungrouped than to create a low-value subgroup.
 - Do not prefer supergroups with too many features.
-- AVOID this AND that. If they are somewhat different, you can have a group "this" and a group "that"
+- Avoid "X and Y" groups when X and Y are meaningfully different.
+
+NAMING:
+- Group names should be <= 5 words.
+- Group names should be general and reusable across prompts, not tailored to the current prompt wording.
+- Name groups by their shared semantic content, not by accidental surface wording.
+- Prefer labels that describe a class, subtype, role, or reusable semantic pattern.
+- Avoid names based on a single prompt-local person, place, title, phrase, or answer.
 
 PROPER NOUNS & ENTITIES:
-- Groups involving specific named entities or concepts should include those names or be placed in a new subgroup.
-"""
+- Distinguish generic entity-type features from features that track particular named entities.
+- Do not automatically create a dedicated group for a specific named entity just because it appears in the prompt.
+- Prefer a broader reusable group unless multiple features clearly support a distinct entity-specific circuit.
+- If only one or two features mention a specific referent, they will often fit better in a reusable category-level group or in "Ungrouped".
 
+UNGROUPED IS GOOD:
+- "Ungrouped" is not a failure state.
+- Use "Ungrouped" for features that are weak, isolated, overly specific, not clearly relevant to the main prompt, or not part of a cohesive reusable cluster.
+- When uncertain between making a weak new group and assigning "Ungrouped", prefer "Ungrouped".
+"""
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -190,7 +224,7 @@ def load_and_sort_features() -> tuple[list[dict], str]:
         }
         for item in desc_data
     ]
-    features.sort(key=lambda x: x["score"])
+    features.sort(key=lambda x: x["score"], reverse=False)
 
     # Extract prompt text from graph metadata (nested under "metadata", not top-level)
     prompt_text = "Unknown Prompt"
@@ -219,8 +253,7 @@ async def process_batch(
     prompt_text: str,
     semaphore: asyncio.Semaphore,
 ) -> Phase2Output:
-    """Assign a single batch of features to existing groups or Ungrouped."""
-
+    """Assign a single batch of features to existing (or new) groups."""
     prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
 Context: The model was given the prompt: {prompt_text}
 
@@ -228,9 +261,21 @@ Current groups and rationales:
 {groups_context}
 
 {GROUPING_PHILOSOPHY}
-Task: For each feature below, assign it to one of the EXISTING groups if it strongly aligns.
-If it is noisy, purely structural, ambiguous, or does not clearly fit an existing group,
-assign it to "Ungrouped". Do NOT force fit features into weak matches.
+
+Task: For each feature below:
+- assign it to an existing group if it strongly aligns,
+- assign it to "Ungrouped" if it is noisy, weak, polysemantic, overly specific, or not clearly relevant to the main prompt semantics,
+- or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features.
+
+Do not create new groups for:
+- minor wording variation
+- one-off prompt details
+- isolated named entities
+- weak side-topics
+- concepts that are not meaningfully connected to the main prompt structure
+
+Do not force fit features into an existing group when the semantic role or abstraction level does not match.
+When uncertain between a weak new group and "Ungrouped", prefer "Ungrouped".
 
 Features:
 {format_feature_list(batch)}
@@ -239,12 +284,13 @@ Features:
         response = await client.beta.chat.completions.parse(
             model=GROUPING_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            response_format=Phase2Output
+            response_format=Phase2Output,
+            temperature=1,
         )
         parsed = response.choices[0].message.parsed
         if parsed is None:
             log.warning("Phase 2 batch returned None — skipping batch.")
-            return Phase2Output(assignments=[])
+            return Phase2Output(assignments=[], new_groups=[])
         return parsed
 
 
@@ -315,20 +361,9 @@ def apply_phase3(
 
     # 4. Individual reassignments
     for ra in phase3.reassignments:
-        if ra.feature_id not in final_assignments:
-            continue
-
-        if ra.to_group != "Ungrouped" and ra.to_group not in active_groups:
-            active_groups[ra.to_group] = f"Created during Phase 3 reassignment from '{ra.from_group}'."
-            log.info("Created new Phase 3 group: '%s'", ra.to_group)
-
-        final_assignments[ra.feature_id] = ra.to_group
-        log.info(
-            "Reassigned: %s from '%s' → '%s'",
-            ra.feature_id,
-            ra.from_group,
-            ra.to_group,
-        )
+        if ra.feature_id in final_assignments:
+            final_assignments[ra.feature_id] = ra.to_group
+            log.info("Reassigned: %s from '%s' → '%s'", ra.feature_id, ra.from_group, ra.to_group)
 
     # 5. Dropped groups
     for gname in phase3.dropped_groups:
@@ -474,31 +509,22 @@ Cluster them into meaningful semantic groups ("supernodes").
 {GROUPING_PHILOSOPHY}
 
 Additional guidance:
-- A single feature can be its own group if it represents a highly specific, crucial
-  concept tied to the prompt.
-- Group naming convention (two tiers):
-    • Conceptual / semantic (encodes a background concept, entity, or relationship):
-      short descriptive noun phrase — e.g. "U.S. geography", "Celebrity Names".
-    • Output-driving (proximal predictor steering toward a specific token):
-      prefix with "say" — e.g. "say a fact", "say a capital".
-  Ask: is the feature representing a fact (conceptual) or pushing a token (output-driving)?
-  When in doubt, prefer the conceptual label.
+- Do not create a highly specific group merely because a feature is salient in this prompt.
+- A single feature may form its own group only when it reflects a stable, reusable semantic pattern rather than a one-off surface detail.
+- A feature or group completely unrelated or uncorrelated to the rest of the prompt context can be removed.
+- Separate features when they differ in abstraction level or semantic role, even if they share a broad topic.
+
 
 Features:
 {format_feature_list(seed_features)}
 """
 
-    try:
-        response = await client.beta.chat.completions.parse(
-            model=GROUPING_MODEL,
-            messages=[{"role": "user", "content": phase1_prompt}],
-            response_format=Phase1Output,
-        )
-        p1 = response.choices[0].message.parsed
-    except Exception as exc:
-        log.error("Phase 1 request failed: %s", exc)
-        return
-
+    response = await client.beta.chat.completions.parse(
+        model=GROUPING_MODEL,
+        messages=[{"role": "user", "content": phase1_prompt}],
+        response_format=Phase1Output,
+    )
+    p1 = response.choices[0].message.parsed
 
     if p1 is None:
         log.error("Phase 1 parsing returned None — check OpenAI response.")
@@ -534,24 +560,13 @@ Features:
         ]
 
         for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
-            try:
-                p2: Phase2Output = await coro
-            except Exception as exc:
-                log.warning("Phase 2 batch failed: %s", exc)
-                continue
-
+            p2: Phase2Output = await coro
             for a in p2.assignments:
-                if a.group_name == "Ungrouped" or a.group_name in active_groups:
-                    final_assignments[a.feature_id] = a.group_name
-                else:
-                    log.warning(
-                        "Phase 2 returned unknown group '%s' for feature %s; coercing to Ungrouped",
-                        a.group_name,
-                        a.feature_id,
-                    )
-                    final_assignments[a.feature_id] = "Ungrouped"
-
-
+                final_assignments[a.feature_id] = a.group_name
+            for g in p2.new_groups:
+                if g.group_name not in active_groups:
+                    active_groups[g.group_name] = g.rationale
+                    log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
     # PHASE 3 — Reconciliation
@@ -589,17 +604,12 @@ Current grouping:
 {group_summary}
 """
 
-    try:
-        response3 = await client.beta.chat.completions.parse(
-            model=GROUPING_MODEL,
-            messages=[{"role": "user", "content": phase3_prompt}],
-            response_format=Phase3Output,
-        )
-        p3 = response3.choices[0].message.parsed
-    except Exception as exc:
-        log.warning("Phase 3 request failed: %s", exc)
-        p3 = None
-
+    response3 = await client.beta.chat.completions.parse(
+        model=GROUPING_MODEL,
+        messages=[{"role": "user", "content": phase3_prompt}],
+        response_format=Phase3Output,
+    )
+    p3 = response3.choices[0].message.parsed
 
     if p3 is None:
         log.warning("Phase 3 parsing returned None — skipping reconciliation.")

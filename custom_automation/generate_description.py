@@ -26,6 +26,7 @@ from config import (
     CHECKPOINT_INTERVAL,
     FEATURE_DESCRIPTIONS_FILE,
     PRUNED_ACTIVATIONS_FILE,
+    GRAPH_FILE,
     setup_logging,
 )
 
@@ -44,13 +45,15 @@ CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = (
+    
     "You are a mechanistic interpretability AI researcher. You will be given information regarding a specific feature neuron. Your task is to "
     "describe the concept or feature that this neuron represents (generate a description).\n\n"
-    "You will receive two types of evidence:\n"
-    "1. Input Activations: Text excerpts where the neuron activated strongly. "
+     "You will receive three types of evidence:\n"
+    "1. Overall Prompt Context: the original prompt the model was processing; can help weakly steer specifics and relevance of your decisions.\n"
+    "Preserve important domain-specific information when it is consistently supported by the activations, even if a broader label would also be technically true.\n"
+    "2. Input Activations: Text excerpts where the neuron activated strongly. "
     "The specific tokens triggers causing activation are delimited by {{ }}. "
-    "Remember that activations only depend on preceding tokens, never subsequent ones.\n"
-    "2. Global Output Tokens: A list of tokens the neuron intrinsically promotes "
+    "3. Global Output Tokens: A list of tokens the neuron intrinsically promotes "
     "(increases probability) and demotes (decreases probability) across the vocabulary.\n\n"
     "WARNING: The output tokens (promoted/demoted) can often be noisy, "
     "polysemantic, or artifacts of the tokenizer. Be wary of this noise. "
@@ -60,11 +63,12 @@ SYSTEM_PROMPT = (
     "IMPORTANT:\n"
     "If the neuron consistently activates on or near a specific named entity "
     "(person, place, organization, brand, etc.), Include that entity in "
-    "the description. Proper nouns, a reappearing term, etc.\n"
+    "the description. \n"
+    "For function words or prepositions, consider nearby content words for disambiguation, but do not assume the feature simply means the following phrase.\n"
     "SPECIFICITY OVER GENERALITY:\n"
-    "Prefer the most specific accurate description over a vague general one. "
-    "Keep your final description as concise as possible — ideally <= 5 words. "
-    "There is no need for much grammatical correctness."
+    "Prefer the specific accurate description over a vague general one. "
+    "Keep your final description as concise as possible — ideally 1-4 words. "
+    "There is no need for much grammatical correctness; less parenthesis."
 )
 
 # ---------------------------------------------------------------------------
@@ -78,24 +82,26 @@ def _format_excerpt(context: str, trigger: str) -> str:
         return context.replace(clean, f"{{{{{clean}}}}}", 1)
     return f"{context} [Activates on: {{{{{clean}}}}}]"
 
-def _build_user_prompt(feature: dict) -> str:
-    """Compose the user-turn content including inputs and output logits."""
+def _build_user_prompt(feature: dict, prompt_text: str) -> str:
+    """Compose the user-turn content including prompt context, inputs, and output logits."""
     lines = [f"Neuron {feature.get('id', 'Unknown')}:\n"]
-    
-    lines.append("--- INPUT ACTIVATIONS ---")
+
+    lines.append("--- OVERALL PROMPT CONTEXT ---")
+    lines.append(prompt_text)
+
+    lines.append("\n--- INPUT ACTIVATIONS ---")
     for i, act in enumerate(feature.get("top_activations", [])[:10], 1):
         formatted = _format_excerpt(act.get("context", ""), act.get("trigger", ""))
         lines.append(f"Excerpt {i}: {formatted}")
-        
+
     lines.append("\n--- GLOBAL OUTPUT TOKENS ---")
     promotes = feature.get("promotes", [])
     demotes = feature.get("demotes", [])
-    
+
     lines.append(f"Top Promoted Tokens: {', '.join(promotes) if promotes else 'None available'}")
     lines.append(f"Top Demoted Tokens: {', '.join(demotes) if demotes else 'None available'}")
-    
-    return "\n".join(lines)
 
+    return "\n".join(lines)
 def _load_existing_descriptions(path: Path) -> dict[str, dict]:
     """Return successful prior descriptions only."""
     if not path.exists():
@@ -129,6 +135,7 @@ async def process_feature(
     sem: asyncio.Semaphore,
     idx: int,
     total: int,
+    prompt_text: str,
 ) -> None:
     fid = feature.get("id", "?")
     max_retries = 3
@@ -144,7 +151,7 @@ async def process_feature(
                     model=MODEL,
                     messages=[
                         {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user", "content": _build_user_prompt(feature)},
+                        {"role": "user", "content": _build_user_prompt(feature, prompt_text)},
                     ],
                     reasoning_effort="low",
                     max_completion_tokens=1024,
@@ -173,6 +180,27 @@ async def process_feature(
                     feature["generated_description"] = "Error generating description"
                     log.warning("Giving up on %s after %d attempts.", fid, max_retries)
 
+def _load_prompt_text() -> str:
+    """Load original prompt text from graph metadata, if available."""
+    if not GRAPH_FILE.exists():
+        return "Unknown Prompt"
+
+    try:
+        with open(GRAPH_FILE, "r") as f:
+            graph = json.load(f)
+
+        metadata = graph.get("metadata", {})
+        prompt_text = metadata.get("prompt", "")
+
+        if not prompt_text:
+            input_tokens = metadata.get("prompt_tokens", [])
+            if input_tokens:
+                prompt_text = "".join(str(t) for t in input_tokens).replace("\n", " ")
+
+        return prompt_text or "Unknown Prompt"
+    except Exception:
+        return "Unknown Prompt"
+    
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
@@ -185,6 +213,8 @@ async def main_async() -> None:
 
     with open(PRUNED_ACTIVATIONS_FILE, "r") as f:
         features: list[dict] = json.load(f)
+        prompt_text = _load_prompt_text()
+        log.info("Prompt context: %s", prompt_text)
 
     total = len(features)
     log.info("Loaded %d features from %s", total, PRUNED_ACTIVATIONS_FILE)
@@ -218,7 +248,14 @@ async def main_async() -> None:
         
         # Calculate the absolute index for logging purposes
         tasks = [
-            process_feature(feat, client, sem, (total - remaining) + i + j + 1, total) 
+            process_feature(
+                feat,
+                client,
+                sem,
+                (total - remaining) + i + j + 1,
+                total,
+                prompt_text,
+            )
             for j, feat in enumerate(chunk)
         ]
         

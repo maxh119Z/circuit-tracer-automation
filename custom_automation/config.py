@@ -26,7 +26,7 @@ REPO_ROOT = PACKAGE_DIR.parent
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 
 # Graph file served to the viewer.
-GRAPH_FILE = REPO_ROOT / "test_graphs" / "michael-jordan-plays-the-sport-of.json"
+GRAPH_FILE = REPO_ROOT / "test_graphs" / "test-run.json"
 
 # Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"

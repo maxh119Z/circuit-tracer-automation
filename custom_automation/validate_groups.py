@@ -13,11 +13,14 @@ Method 2 — Text snippet matching:
     the group?
 
 Both methods use intra-graph negatives (hard negatives from the same attribution
-graph) to make the task non-trivial.
+graph) to make the task non-trivial. Each method is run N_RUNS times with
+different random seeds; results are reported as mean ± stderr.
 
 Reads:  artifacts/feature_descriptions.json
         artifacts/feature_groups.json
+        artifacts/manual_groups.json  (optional)
 Writes: artifacts/validation_report.json
+        artifacts/validation_history.json
 
 Usage:
     OPENAI_API_KEY=sk-xxx python validate_groups.py
@@ -27,6 +30,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import math
 import random
 import sys
 from datetime import datetime, timezone
@@ -53,11 +57,12 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 VALIDATION_MODEL = GROUPING_MODEL
-CONCURRENCY_LIMIT = 80
+CONCURRENCY_LIMIT = 20
 MIN_GROUP_SIZE = 2           # Skip groups with fewer features than this
 MAX_NEGATIVES_RATIO = 3      # Up to 3x negatives relative to positives per group
 MAX_SNIPPETS_PER_FEATURE = 2 # Activating text snippets sampled per feature (Method 2)
 RANDOM_SEED = 42
+N_RUNS = 5                   # Validation runs for error bar estimation
 
 
 # ---------------------------------------------------------------------------
@@ -98,7 +103,6 @@ def build_group_index(
     index: dict[str, list[dict]] = {}
 
     for fid, gname in groups.items():
-        # Skip non-semantic group types (embedding/logit nodes have their own naming convention)
         if gname in ("Ungrouped",) or gname.startswith(('Emb: "', 'Output: "')):
             continue
         feat = id_to_feature.get(fid)
@@ -129,6 +133,8 @@ def load_manual_group_index(features: list[dict]) -> dict[str, list[dict]] | Non
     with open(MANUAL_GROUPS_FILE) as f:
         manual_groups: dict[str, str] = json.load(f)
     index = build_group_index(features, manual_groups)
+    if not index:
+        return None
     log.info("Loaded manual groups from %s (%d groups)", MANUAL_GROUPS_FILE, len(index))
     return index
 
@@ -195,24 +201,153 @@ def compute_metrics(
     }
 
 
-def macro_avg(results: list[dict]) -> dict[str, float]:
-    if not results:
-        return {"precision": 0.0, "recall": 0.0, "f1": 0.0}
+def _stderr(values: list[float]) -> float:
+    n = len(values)
+    if n < 2:
+        return 0.0
+    mean = sum(values) / n
+    variance = sum((v - mean) ** 2 for v in values) / (n - 1)
+    return math.sqrt(variance / n)
+
+
+def compute_run_stats(runs: list[list[dict]]) -> list[dict]:
+    """Aggregate N runs into per-group mean ± stderr statistics."""
+    group_runs: dict[str, list[dict]] = {}
+    for run in runs:
+        for result in run:
+            group_runs.setdefault(result["group"], []).append(result)
+
+    stats = []
+    for group, results in sorted(group_runs.items()):
+        stat: dict[str, Any] = {"group": group, "n_runs": len(results)}
+        for metric in ("precision", "recall", "f1"):
+            values = [r[metric] for r in results]
+            mean = sum(values) / len(values)
+            stat[f"mean_{metric}"] = round(mean, 4)
+            stat[f"stderr_{metric}"] = round(_stderr(values), 4)
+        stat["n_positive"] = results[0].get("n_positive", 0)
+        stats.append(stat)
+    return stats
+
+
+def macro_stats(run_stats: list[dict]) -> dict[str, float]:
+    """Macro average ± stderr of per-group mean metrics."""
+    if not run_stats:
+        return {k: 0.0 for k in (
+            "mean_precision", "stderr_precision",
+            "mean_recall", "stderr_recall",
+            "mean_f1", "stderr_f1",
+        )}
+    result: dict[str, float] = {}
+    for metric in ("precision", "recall", "f1"):
+        means = [s[f"mean_{metric}"] for s in run_stats]
+        result[f"mean_{metric}"] = round(sum(means) / len(means), 4)
+        result[f"stderr_{metric}"] = round(_stderr(means), 4)
+    return result
+
+
+def degenerate_stats_multi(runs: list[list[dict]]) -> dict[str, Any]:
+    """Average degenerate GPT behavior (selected all / selected none) across runs."""
+    per_run = []
+    for run in runs:
+        selected_all = sum(
+            1 for r in run
+            if r["n_predicted"] == r["n_positive"] + r["n_negative"]
+        )
+        selected_none = sum(1 for r in run if r["n_predicted"] == 0)
+        per_run.append({
+            "selected_all": selected_all,
+            "selected_none": selected_none,
+            "total": len(run),
+        })
+    if not per_run:
+        return {"mean_selected_all": 0, "mean_selected_none": 0, "total": 0}
+    avg_all = sum(r["selected_all"] for r in per_run) / len(per_run)
+    avg_none = sum(r["selected_none"] for r in per_run) / len(per_run)
     return {
-        "precision": round(sum(r["precision"] for r in results) / len(results), 4),
-        "recall": round(sum(r["recall"] for r in results) / len(results), 4),
-        "f1": round(sum(r["f1"] for r in results) / len(results), 4),
+        "mean_selected_all": round(avg_all, 2),
+        "mean_selected_none": round(avg_none, 2),
+        "total": per_run[0]["total"],
     }
 
 
-def degenerate_stats(results: list[dict]) -> dict[str, int]:
-    """Count groups where GPT selected everything or nothing."""
-    selected_all = sum(
-        1 for r in results
-        if r["n_predicted"] == r["n_positive"] + r["n_negative"]
+# ---------------------------------------------------------------------------
+# Attribution coverage
+# ---------------------------------------------------------------------------
+
+def compute_attribution_coverage(
+    features: list[dict], groups: dict[str, str]
+) -> float:
+    """Fraction of total influence score flowing through annotated (non-Ungrouped) nodes."""
+    id_to_score = {
+        f["id"]: float(f.get("influence_score", 0.0))
+        for f in features if "id" in f
+    }
+    total = sum(id_to_score.values())
+    if total == 0.0:
+        return 0.0
+    annotated = sum(
+        id_to_score.get(fid, 0.0)
+        for fid, gname in groups.items()
+        if gname not in ("Ungrouped",)
+        and not gname.startswith(('Emb: "', 'Output: "'))
+        and fid in id_to_score
     )
-    selected_none = sum(1 for r in results if r["n_predicted"] == 0)
-    return {"selected_all": selected_all, "selected_none": selected_none, "total": len(results)}
+    return round(annotated / total, 4)
+
+
+# ---------------------------------------------------------------------------
+# LLM group name regeneration for manual groups
+# ---------------------------------------------------------------------------
+
+async def _regenerate_name(
+    original_name: str,
+    member_features: list[dict],
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+) -> str:
+    """Ask the LLM to generate a group label from its member feature descriptions."""
+    feature_list = "\n".join(
+        f"- {f.get('generated_description', 'No description')}"
+        for f in member_features
+    )
+    prompt = (
+        "You are an AI interpretability researcher. Below are descriptions of neurons "
+        "that form a semantic group inside a language model.\n"
+        "Generate a concise label (≤5 words) that best describes what they collectively represent.\n\n"
+        f"Features:\n{feature_list}\n\n"
+        "Respond with only the label, no explanation."
+    )
+    async with sem:
+        try:
+            response = await client.chat.completions.create(
+                model=VALIDATION_MODEL,
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=20,
+            )
+            return response.choices[0].message.content.strip()  # type: ignore
+        except Exception as exc:
+            log.warning("Failed to regenerate label for '%s': %s", original_name, exc)
+            return original_name
+
+
+async def regenerate_manual_group_names(
+    group_index: dict[str, list[dict]],
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+) -> dict[str, list[dict]]:
+    """Re-label manual groups using LLM descriptions to level the playing field vs auto groups."""
+    log.info("Regenerating manual group labels via LLM...")
+    names = list(group_index.keys())
+    new_names = await asyncio.gather(*[
+        _regenerate_name(name, group_index[name], client, sem)
+        for name in names
+    ])
+    new_index: dict[str, list[dict]] = {}
+    for original, new_name, feats in zip(names, new_names, group_index.values()):
+        log.info("  '%s'  →  '%s'", original, new_name)
+        new_index[new_name] = feats
+    return new_index
 
 
 # ---------------------------------------------------------------------------
@@ -240,7 +375,6 @@ async def run_validation_task(
                 log.warning("[%s] %s: parsed response was None", method_label, group_name)
                 predicted: set[int] = set()
             else:
-                # Clamp to valid 1-based range
                 predicted = {i for i in parsed.selected_indices if 1 <= i <= total_items}
         except Exception as exc:
             log.warning("[%s] %s: API error — %s", method_label, group_name, exc)
@@ -273,15 +407,15 @@ async def validate_method1(
     group_index: dict[str, list[dict]],
     client: AsyncOpenAI,
     sem: asyncio.Semaphore,
+    seed: int = RANDOM_SEED,
 ) -> list[dict]:
-    rng = random.Random(RANDOM_SEED)
+    rng = random.Random(seed)
     tasks = []
 
     for group_name, pos_features in group_index.items():
         if len(pos_features) < MIN_GROUP_SIZE:
             continue
 
-        # Hard negatives: feature descriptions from other groups in the same graph
         neg_pool = [
             f
             for gname, feats in group_index.items()
@@ -326,8 +460,9 @@ async def validate_method2(
     group_index: dict[str, list[dict]],
     client: AsyncOpenAI,
     sem: asyncio.Semaphore,
+    seed: int = RANDOM_SEED,
 ) -> list[dict]:
-    rng = random.Random(RANDOM_SEED)
+    rng = random.Random(seed)
     tasks = []
 
     for group_name, pos_features in group_index.items():
@@ -339,7 +474,6 @@ async def validate_method2(
             log.warning("[Method2] %s: no text snippets available, skipping.", group_name)
             continue
 
-        # Hard negatives: activating snippets from features in other groups
         neg_pool_feats = [
             f
             for gname, feats in group_index.items()
@@ -374,7 +508,6 @@ async def validate_method2(
 # ---------------------------------------------------------------------------
 
 def _read_prompt_from_graph() -> str:
-    """Read the prompt string from the graph file metadata."""
     try:
         with open(GRAPH_FILE) as f:
             data = json.load(f)
@@ -388,10 +521,22 @@ def _read_prompt_from_graph() -> str:
         return GRAPH_FILE.stem
 
 
-def _condition_block(m1: list[dict], m2: list[dict]) -> dict[str, Any]:
+def _condition_block(
+    m1_runs: list[list[dict]], m2_runs: list[list[dict]]
+) -> dict[str, Any]:
+    m1_stats = compute_run_stats(m1_runs)
+    m2_stats = compute_run_stats(m2_runs)
     return {
-        "method1": {"groups": m1, "macro_avg": macro_avg(m1), "degenerate": degenerate_stats(m1)},
-        "method2": {"groups": m2, "macro_avg": macro_avg(m2), "degenerate": degenerate_stats(m2)},
+        "method1": {
+            "groups": m1_stats,
+            "macro_avg": macro_stats(m1_stats),
+            "degenerate": degenerate_stats_multi(m1_runs),
+        },
+        "method2": {
+            "groups": m2_stats,
+            "macro_avg": macro_stats(m2_stats),
+            "degenerate": degenerate_stats_multi(m2_runs),
+        },
     }
 
 
@@ -409,49 +554,79 @@ async def main_async() -> None:
         log.error("No groups with enough features to validate. Exiting.")
         sys.exit(1)
 
-    prompt = _read_prompt_from_graph()
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
     client = AsyncOpenAI()
     sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
-    # --- Auto groups ---
-    log.info("=== AUTO: Method 1 ===")
-    auto_m1 = await validate_method1(valid_groups, client, sem)
-    log.info("=== AUTO: Method 2 ===")
-    auto_m2 = await validate_method2(valid_groups, client, sem)
+    # Attribution coverage (not run-dependent — computed once)
+    auto_coverage = compute_attribution_coverage(features, groups)
+    log.info("Auto attribution coverage: %.1f%%", auto_coverage * 100)
 
-    # --- Random baseline (same group sizes, shuffled features) ---
-    rng = random.Random(RANDOM_SEED)
-    random_groups = create_random_group_index(valid_groups, rng)
-    log.info("=== RANDOM: Method 1 ===")
-    rand_m1 = await validate_method1(random_groups, client, sem)
-    log.info("=== RANDOM: Method 2 ===")
-    rand_m2 = await validate_method2(random_groups, client, sem)
+    # N runs — auto + random
+    auto_m1_runs: list[list[dict]] = []
+    auto_m2_runs: list[list[dict]] = []
+    rand_m1_runs: list[list[dict]] = []
+    rand_m2_runs: list[list[dict]] = []
 
-    # --- Manual groups (optional — place manual_groups.json in artifacts/) ---
-    manual_m1: list[dict] | None = None
-    manual_m2: list[dict] | None = None
+    for run_idx in range(N_RUNS):
+        seed = RANDOM_SEED + run_idx
+        log.info("=== Run %d/%d (seed=%d) ===", run_idx + 1, N_RUNS, seed)
+
+        log.info("  AUTO: Method 1")
+        auto_m1_runs.append(await validate_method1(valid_groups, client, sem, seed))
+        log.info("  AUTO: Method 2")
+        auto_m2_runs.append(await validate_method2(valid_groups, client, sem, seed))
+
+        rng = random.Random(seed)
+        random_groups = create_random_group_index(valid_groups, rng)
+        log.info("  RANDOM: Method 1")
+        rand_m1_runs.append(await validate_method1(random_groups, client, sem, seed))
+        log.info("  RANDOM: Method 2")
+        rand_m2_runs.append(await validate_method2(random_groups, client, sem, seed))
+
+    # Manual groups (optional)
+    manual_m1_runs: list[list[dict]] = []
+    manual_m2_runs: list[list[dict]] = []
+    manual_coverage: float | None = None
+
     manual_group_index = load_manual_group_index(features)
     if manual_group_index:
+        with open(MANUAL_GROUPS_FILE) as f:
+            manual_groups_raw: dict[str, str] = json.load(f)
+        manual_coverage = compute_attribution_coverage(features, manual_groups_raw)
+        log.info("Manual attribution coverage: %.1f%%", manual_coverage * 100)
+
+        # Regenerate group labels via LLM to level the playing field
+        manual_group_index = await regenerate_manual_group_names(manual_group_index, client, sem)
         valid_manual = {k: v for k, v in manual_group_index.items() if len(v) >= MIN_GROUP_SIZE}
+
         if valid_manual:
-            log.info("=== MANUAL: Method 1 ===")
-            manual_m1 = await validate_method1(valid_manual, client, sem)
-            log.info("=== MANUAL: Method 2 ===")
-            manual_m2 = await validate_method2(valid_manual, client, sem)
+            for run_idx in range(N_RUNS):
+                seed = RANDOM_SEED + run_idx
+                log.info("  MANUAL: Run %d/%d", run_idx + 1, N_RUNS)
+                manual_m1_runs.append(await validate_method1(valid_manual, client, sem, seed))
+                manual_m2_runs.append(await validate_method2(valid_manual, client, sem, seed))
 
     # Build report
+    prompt = _read_prompt_from_graph()
+    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
     report: dict[str, Any] = {
         "prompt": prompt,
         "timestamp": timestamp,
-        "auto": _condition_block(auto_m1, auto_m2),
-        "random": _condition_block(rand_m1, rand_m2),
+        "n_runs": N_RUNS,
+        "auto": {
+            **_condition_block(auto_m1_runs, auto_m2_runs),
+            "attribution_coverage": auto_coverage,
+        },
+        "random": _condition_block(rand_m1_runs, rand_m2_runs),
     }
-    if manual_m1 is not None and manual_m2 is not None:
-        report["manual"] = _condition_block(manual_m1, manual_m2)
+    if manual_m1_runs:
+        report["manual"] = {
+            **_condition_block(manual_m1_runs, manual_m2_runs),
+            "attribution_coverage": manual_coverage,
+        }
 
-    # Overwrite latest report
+    # Save report
     with open(VALIDATION_REPORT_FILE, "w") as f:
         json.dump(report, f, indent=2)
     log.info("Validation report saved → %s", VALIDATION_REPORT_FILE)
@@ -471,18 +646,25 @@ async def main_async() -> None:
     if "manual" in report:
         conditions.append(("Manual", "manual"))
 
-    n = len(auto_m1)
-    print("\n========== VALIDATION SUMMARY ==========")
-    print(f"\n{'Condition':<10}  {'M1 P':>6}  {'M1 R':>6}  {'M1 F1':>6}  {'M2 P':>6}  {'M2 R':>6}  {'M2 F1':>6}")
-    print("-" * 55)
+    print(f"\n========== VALIDATION SUMMARY ({N_RUNS} runs) ==========")
+    print(f"\n{'Condition':<10}  {'M1 F1':>14}  {'M2 F1':>14}  {'Coverage':>9}")
+    print("-" * 57)
     for label, key in conditions:
         m1a = report[key]["method1"]["macro_avg"]
         m2a = report[key]["method2"]["macro_avg"]
+        cov = report[key].get("attribution_coverage")
+        cov_str = f"{cov:.1%}" if cov is not None else "    N/A"
         print(
-            f"{label:<10}  {m1a['precision']:>6.3f}  {m1a['recall']:>6.3f}  {m1a['f1']:>6.3f}"
-            f"  {m2a['precision']:>6.3f}  {m2a['recall']:>6.3f}  {m2a['f1']:>6.3f}"
+            f"{label:<10}  "
+            f"{m1a['mean_f1']:>6.3f}±{m1a['stderr_f1']:.3f}  "
+            f"{m2a['mean_f1']:>6.3f}±{m2a['stderr_f1']:.3f}  "
+            f"{cov_str:>9}"
         )
-    print(f"\n({n} groups evaluated)")
+
+    print(f"\n--- Per-group M1 F1 (mean ± stderr over {N_RUNS} runs) ---")
+    auto_stats = report["auto"]["method1"]["groups"]
+    for s in sorted(auto_stats, key=lambda x: x["mean_f1"], reverse=True):
+        print(f"  {s['group'][:42]:<42}  {s['mean_f1']:.3f} ± {s['stderr_f1']:.3f}")
 
     print("\n--- Degenerate GPT Behavior ---")
     for label, key in conditions:
@@ -490,10 +672,10 @@ async def main_async() -> None:
             d = report[key][mkey]["degenerate"]
             print(
                 f"  {label} {mlabel}: "
-                f"selected_all={d['selected_all']}/{d['total']}  "
-                f"selected_none={d['selected_none']}/{d['total']}"
+                f"mean_selected_all={d['mean_selected_all']}/{d['total']}  "
+                f"mean_selected_none={d['mean_selected_none']}/{d['total']}"
             )
-    print("=========================================\n")
+    print("=" * 57 + "\n")
 
 
 def main() -> None:
