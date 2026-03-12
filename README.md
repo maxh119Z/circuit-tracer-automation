@@ -13,6 +13,9 @@ pip install .
 ```
 python huggingface_login.py hf_abc123yourtoken
 circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
+
+circuit-tracer attribute --prompt "Michael Jordan plays the sport of" --transcoder_set gemma --slug michael-jordan-plays-the-sport-of --graph_file_dir ./custom_automation/test_graphs --server
+
 ```
 
 ```
