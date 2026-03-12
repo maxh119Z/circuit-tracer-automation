@@ -20,11 +20,13 @@ from urllib3.util.retry import Retry
 # Root of the custom_automation package (directory containing this file).
 PACKAGE_DIR = Path(__file__).resolve().parent
 
+REPO_ROOT = PACKAGE_DIR.parent
+
 # All intermediate / generated files go here.
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 
 # Graph file served to the viewer.
-GRAPH_FILE = PACKAGE_DIR / "test_graphs" / "michael-jordan-plays-the-sport-of.json"
+GRAPH_FILE = REPO_ROOT / "test_graphs" / "michael-jordan-plays-the-sport-of.json"
 
 # Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"

@@ -58,7 +58,7 @@ SYSTEM_PROMPT = (
     ", not as absolute truth.\n"
     "In some cases, if input activations are noisy but output tokens follow clear patterns, listen to the tokens.\n"
     "IMPORTANT:\n"
-    "If the neuron consistently activates on or near a specific named proper noun entity "
+    "If the neuron consistently activates on or near a specific named entity "
     "(person, place, organization, brand, etc.), Include that entity in "
     "the description.\n"
     "SPECIFICITY OVER GENERALITY:\n"
@@ -147,7 +147,7 @@ async def process_feature(
                         {"role": "user", "content": _build_user_prompt(feature)},
                     ],
                     reasoning_effort="low",
-                    max_completion_tokens=32,
+                    max_completion_tokens=1024,
                 )
 
                 desc = response.choices[0].message.content.strip()  # type: ignore
