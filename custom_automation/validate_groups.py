@@ -57,7 +57,7 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 VALIDATION_MODEL = GROUPING_MODEL
-CONCURRENCY_LIMIT = 20
+CONCURRENCY_LIMIT = 800
 MIN_GROUP_SIZE = 2           # Skip groups with fewer features than this
 MAX_NEGATIVES_RATIO = 3      # Up to 3x negatives relative to positives per group
 MAX_SNIPPETS_PER_FEATURE = 2 # Activating text snippets sampled per feature (Method 2)

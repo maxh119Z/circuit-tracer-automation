@@ -145,13 +145,13 @@ Important principles:
 - The goal is a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 - Do not force a fixed number of groups. Create only groups that are clearly supported by the data.
 - Prefer clean, reusable semantic groups over prompt-specific labels.
-- If a feature is ambiguous, polysemantic, weak, noisy, or only loosely relevant to the main prompt semantics, prefer "Ungrouped".
+- If a feature is weak, isolated, or not meaningfully relevant to the main prompt circuitry, assign it to "Ungrouped".
 - Features encoding prepositions, articles, punctuation, conjunctions, or other purely grammatical / syntactic scaffolding
   (e.g. "of", "the", "is", ",") should usually go to "Ungrouped" unless they clearly promote a meaningful token.
 
 RELEVANCE TO THE MAIN PROMPT:
 - A group should represent a concept that is genuinely relevant to the main semantic structure of the prompt.
-- Do not create groups for side-patterns, incidental associations, or weak thematic echoes.
+- Do not create groups for one-time incidental associations, or weak thematic echoes.
 - If a feature reflects a real concept but that concept is not central to the prompt or not supported by nearby related features, prefer "Ungrouped".
 - A valid group should usually feel meaningfully connected to other groups in the graph, not like an isolated curiosity.
 
@@ -160,11 +160,10 @@ GROUP GRANULARITY:
 - Preserve meaningful distinctions in abstraction level when those distinctions are relevant to the main prompt.
 - Broad categories and their stable subtypes should usually be separate groups only when both are actually supported and relevant.
 - If one feature represents a general domain and another represents a specific subtype within that domain, do not automatically merge them.
-- But do not create extra subgroups for weak or incidental distinctions.
 
 SEMANTIC ROLE:
 - Before grouping features together, ask whether they serve the same semantic role.
-- Features should usually be separated if they differ in role, even when they share a topic.
+- Features should usually be separated if they differ in role, even when they share a topic (say X vs. X itself. or adjective X vs. X itself).
 - Common role differences that justify separate groups include:
   - broad domain knowledge
   - more specific subdomain knowledge
@@ -175,12 +174,11 @@ SEMANTIC ROLE:
   - output-driving or token-predictive features
 
 SUBGROUP AWARENESS:
-- Before finalizing a group, consider whether it contains coherent subgroups that reflect genuinely different circuits.
 - If a group mixes multiple semantic roles or multiple abstraction levels, split it.
 - It is better to have 2–3 precise groups than one vague bucket.
-- But it is better to leave a weak distinction ungrouped than to create a low-value subgroup.
+- But it is better to leave a weak distinction.
 - Do not prefer supergroups with too many features.
-- Avoid "X and Y" groups when X and Y are meaningfully different.
+- Small groups are acceptable if they are interpretable, prompt-relevant, and helpful for explaining the graph, such as a specific entity.
 
 NAMING:
 - Group names should be <= 5 words.
@@ -188,14 +186,12 @@ NAMING:
 - Name groups by their shared semantic content, not by accidental surface wording.
 - Prefer labels that describe a class, subtype, role, or reusable semantic pattern.
 - Avoid names based on a single prompt-local person, place, title, phrase, or answer.
+- Prefer labels a human would naturally write on a diagram, not overly academic or mechanical phrasing.
 
 PROPER NOUNS & ENTITIES:
-- Distinguish generic entity-type features from features that track particular named entities.
-- Do not automatically create a dedicated group for a specific named entity just because it appears in the prompt.
-- Prefer a broader reusable group unless multiple features clearly support a distinct entity-specific circuit.
-- If only one or two features mention a specific referent, they will often fit better in a reusable category-level group or in "Ungrouped".
+- Distinguish generic entity-type features from features that track particular named entities if consistent and relevant.
 
-UNGROUPED IS GOOD:
+UNGROUPED IS NOT BAD:
 - "Ungrouped" is not a failure state.
 - Use "Ungrouped" for features that are weak, isolated, overly specific, not clearly relevant to the main prompt, or not part of a cohesive reusable cluster.
 - When uncertain between making a weak new group and assigning "Ungrouped", prefer "Ungrouped".
@@ -268,14 +264,14 @@ Task: For each feature below:
 - or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features.
 
 Do not create new groups for:
-- minor wording variation
 - one-off prompt details
 - isolated named entities
 - weak side-topics
 - concepts that are not meaningfully connected to the main prompt structure
 
+Variations in a group are important signal.
+
 Do not force fit features into an existing group when the semantic role or abstraction level does not match.
-When uncertain between a weak new group and "Ungrouped", prefer "Ungrouped".
 
 Features:
 {format_feature_list(batch)}
@@ -513,7 +509,8 @@ Additional guidance:
 - A single feature may form its own group only when it reflects a stable, reusable semantic pattern rather than a one-off surface detail.
 - A feature or group completely unrelated or uncorrelated to the rest of the prompt context can be removed.
 - Separate features when they differ in abstraction level or semantic role, even if they share a broad topic.
-
+- Prefer labels that make the graph easier for a human to read, not just labels that are taxonomically tidy.
+- A small but meaningful subgroup may be worth keeping if it tells a distinct local story in the graph.
 
 Features:
 {format_feature_list(seed_features)}
@@ -589,12 +586,16 @@ and reassign misplaced features.
 Only make changes you are confident about. Do not restructure for the sake of it.
 
 REVIEW CHECKLIST:
-1. OVERLY BROAD: Does any group mix features that serve clearly different computational roles
-   (e.g. conceptual knowledge vs output-driving)? → Split it. 
-3. MISASSIGNED: Are any features obviously in the wrong group based on their description? → Reassign.
-4. NAMING: Are group names clear, specific, and <= 5 words? → Rename if not.
-5. MISSING GROUPS: Is there a coherent cluster of features currently in "Ungrouped" that deserves
-   its own group? If so, reassign those features to a new group name or existing group.
+1. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
+2. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype that is still useful and interpretable in this graph? → Keep separate or split it.
+3. IRRELEVANT GROUPS: Drop only groups that are clearly isolated, or semantically off-topic; they do not add variational information or isn't related to the prompt.
+4. LOCAL USEFULNESS: Do not remove a subgroup merely because it is small if it is graph-useful, interpretable, and connected to the main prompt circuitry.
+5. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+6. NAMING: Are group names clear, natural, and <= 5 words? → Rename if needed.
+- Prefer preserving a small meaningful subgroup over collapsing it into a broader group, unless the subgroup is clearly noisy or redundant; information in attribution graph is usually good to know but not everything.
+- A group does not need to be globally perfect; it should be locally interpretable and useful in the graph.
+- Small groups are acceptable if they capture a distinct, prompt-relevant circuit.
+- Do not merge away distinctions like subtype, role, or local sports category if they help explain the graph.
 
 IMPORTANT:
 - Only make changes you are confident about. Do not restructure for the sake of it.
