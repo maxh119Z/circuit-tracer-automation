@@ -115,6 +115,10 @@ class RenameAction(BaseModel):
     old_name: str = Field(description="The current group name.")
     new_name: str = Field(description="The new group name (must be <= 5 words).")
 
+class MergeAction(BaseModel):
+    groups_to_merge: list[str] = Field(description="List of group names to merge together.")
+    merged_name: str = Field(description="The name for the merged group (must be <= 5 words).")
+
 
 
 class SplitAction(BaseModel):
@@ -131,10 +135,10 @@ class ReassignAction(BaseModel):
 
 class Phase3Output(BaseModel):
     renames: list[RenameAction] = Field(default_factory=list, description="Groups to rename.")
+    merges: list[MergeAction] = Field(default_factory=list, description="Groups to merge together.")
     splits: list[SplitAction] = Field(default_factory=list, description="Groups to split into subgroups.")
     reassignments: list[ReassignAction] = Field(default_factory=list, description="Individual features to move between groups.")
     dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve entirely (members become Ungrouped).")
-
 
 # ---------------------------------------------------------------------------
 # Shared prompt preamble
@@ -144,7 +148,7 @@ GROUPING_PHILOSOPHY = """
 Important principles:
 - The goal is a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 - Do not force a fixed number of groups. Create only groups that are clearly supported by the data.
-- Prefer clean, reusable semantic groups over prompt-specific labels.
+- Prefer clear, human-readable semantic groups.
 - If a feature is weak, isolated, or not meaningfully relevant to the main prompt circuitry, assign it to "Ungrouped".
 - Features encoding prepositions, articles, punctuation, conjunctions, or other purely grammatical / syntactic scaffolding
   (e.g. "of", "the", "is", ",") should usually go to "Ungrouped" unless they clearly promote a meaningful token.
@@ -160,48 +164,66 @@ GROUP GRANULARITY:
 - Preserve meaningful distinctions in abstraction level when those distinctions are relevant to the main prompt.
 - Broad categories and their stable subtypes should usually be separate groups only when both are actually supported and relevant.
 - If one feature represents a general domain and another represents a specific subtype within that domain, do not automatically merge them.
+- Use the model's predicted output tokens to guide granularity decisions.
+  Distinctions that are irrelevant to the actual output and attribution graph can be merged.
+  Distinctions that explain WHY the model chose one output over another should be preserved or split further.
 
 SEMANTIC ROLE:
 - Before grouping features together, ask whether they serve the same semantic role.
-- Features should usually be separated if they differ in role, even when they share a topic (say X vs. X itself. or adjective X vs. X itself).
-- Common role differences that justify separate groups include:
+- Features should usually be separated if they differ in role, framing, or function, even when they share the same topic.
+- A feature that introduces, says, frames, or sets up a concept is different from a feature representing the concept itself.
+- For example, "say a ___ and ___" should usually be a different group from the concept "___ and ___" by itself.
+- Likewise, "introduce a ___ and ___" should usually be a different group from the bare concept.
+- Do not merge a linguistic frame with the semantic content being framed.
+- Surface overlap is not enough reason to merge two groups.
+
+Common role differences that justify separate groups include:
   - broad domain knowledge
   - more specific subdomain knowledge
   - named entities / specific referents
   - terminology or jargon
   - actions or behaviors
   - evaluative / comparative language
+  - discourse framing or introducing language
   - output-driving or token-predictive features
 
 SUBGROUP AWARENESS:
 - If a group mixes multiple semantic roles or multiple abstraction levels, split it.
 - It is better to have 2–3 precise groups than one vague bucket.
-- But it is better to leave a weak distinction.
+- Distinctions are often useful when they help explain the attribution graph.
 - Do not prefer supergroups with too many features.
-- Small groups are acceptable if they are interpretable, prompt-relevant, and helpful for explaining the graph, such as a specific entity.
+- Small groups are acceptable if they are interpretable, prompt-relevant, and helpful for explaining the graph.
 
 NAMING:
 - Group names should be <= 5 words.
-- Group names should be general and reusable across prompts, not tailored to the current prompt wording.
-- Name groups by their shared semantic content, not by accidental surface wording.
-- Prefer labels that describe a class, subtype, role, or reusable semantic pattern.
-- Avoid names based on a single prompt-local person, place, title, phrase, or answer.
-- Prefer labels a human would naturally write on a diagram, not overly academic or mechanical phrasing.
+- Group names should sound natural to a human reading a graph.
+- Prefer short everyday phrasing over analytic or technical wording.
+- If a group is about referring to, naming, or introducing something in text, prefer "say ..." style names. Think human nature language (layman's).
+- Examples of preferred names:
+  - "say a city"
+  - "say a location"
+  - "say a team"
+  - "say a method"
+- Prefer "say X" over "X (mention)", "X mention", or "mention X".
+- Prefer "say a location" over "location mention", "location reference", or "mentioned location".
+- Avoid parentheses unless absolutely necessary.
+- Avoid labels with words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler natural phrase would work.
+- If the member features are primarily described as framing, introducing, or slot-filling language, preserve that style in the group name.
+- Avoid converting a natural framing-style cluster into a more abstract label unless the distinction is clearly unimportant.
 
 PROPER NOUNS & ENTITIES:
 - Distinguish generic entity-type features from features that track particular named entities if consistent and relevant.
 
 UNGROUPED IS NOT BAD:
 - "Ungrouped" is not a failure state.
-- Use "Ungrouped" for features that are weak, isolated, overly specific, not clearly relevant to the main prompt, or not part of a cohesive reusable cluster.
-- When uncertain between making a weak new group and assigning "Ungrouped", prefer "Ungrouped".
+- Use "Ungrouped" for features that are isolated and not clearly relevant to the main prompt, or not part of a cohesive cluster.
 """
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
-def load_and_sort_features() -> tuple[list[dict], str]:
+def load_and_sort_features() -> tuple[list[dict], str, str]:
+
     """Load described features sorted by influence; return them plus the prompt text."""
     log.info("Loading descriptions from %s", FEATURE_DESCRIPTIONS_FILE)
 
@@ -236,7 +258,27 @@ def load_and_sort_features() -> tuple[list[dict], str]:
         if not prompt_text:
             prompt_text = "Unknown Prompt"
 
-    return features, prompt_text
+    output_tokens_str = ""
+    if GRAPH_FILE.exists():
+        with open(GRAPH_FILE, "r") as f:
+            graph = json.load(f)
+        logit_nodes = [
+            n for n in graph.get("nodes", [])
+            if n.get("feature_type") == "logit" or n.get("is_target_logit")
+        ]
+        logit_nodes.sort(key=lambda n: float(n.get("token_prob", 0.0)), reverse=True)
+        top_outputs = []
+        for n in logit_nodes[:5]:
+            clerp = n.get("clerp", "")
+            match = re.search(r'"([^"]+)"', clerp)
+            tok = match.group(1).strip() if match else "?"
+            prob = float(n.get("token_prob", 0.0))
+            top_outputs.append(f'"{tok}" ({prob:.1%})')
+        if top_outputs:
+            output_tokens_str = "Model's top predicted outputs: " + ", ".join(top_outputs)
+            print(output_tokens_str)
+
+    return features, prompt_text, output_tokens_str
 
 
 def format_feature_list(batch: list[dict]) -> str:
@@ -247,11 +289,14 @@ async def process_batch(
     batch: list[dict],
     groups_context: str,
     prompt_text: str,
+    output_context: str,
     semaphore: asyncio.Semaphore,
 ) -> Phase2Output:
     """Assign a single batch of features to existing (or new) groups."""
     prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
 Context: The model was given the prompt: {prompt_text}
+
+{output_context}
 
 Current groups and rationales:
 {groups_context}
@@ -260,8 +305,9 @@ Current groups and rationales:
 
 Task: For each feature below:
 - assign it to an existing group if it strongly aligns,
-- assign it to "Ungrouped" if it is noisy, weak, polysemantic, overly specific, or not clearly relevant to the main prompt semantics,
-- or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features.
+- assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics,
+- or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features. 
+- Very specific entities that may form singular groups are allowed only if they are relevant and purposeful in the prompt and graph
 
 Do not create new groups for:
 - one-off prompt details
@@ -272,6 +318,16 @@ Do not create new groups for:
 Variations in a group are important signal.
 
 Do not force fit features into an existing group when the semantic role or abstraction level does not match.
+Important naming guidance:
+- Keep framing language separate from the concept being framed.
+- Use natural everyday graph labels, not analytic labels.
+- If a cluster is about referring to or naming something in text, prefer "say ..." style names.
+- Prefer "say Dallas" over "Dallas (mention)", "Dallas mention", or "mention Dallas".
+- Prefer "say a location" over "location mention" or "location reference".
+- If the feature descriptions in a cluster are mostly phrased as framing or slot-introducing language, preserve that style in the group name.
+- Example: "say a __ and __" and "___ and ___" should usually be different groups.
+- Example: "introduce a __ and __" and "___ and ___" should usually be different groups.
+- Do not rename a natural framing-style cluster into a technical or abstract label unless clearly necessary.
 
 Features:
 {format_feature_list(batch)}
@@ -341,6 +397,16 @@ def apply_phase3(
             if final_assignments[fid] == old:
                 final_assignments[fid] = new
         log.info("Renamed: '%s' → '%s'", old, new)
+
+    # 2. Merges
+    for merge in phase3.merges:
+        for old_name in merge.groups_to_merge:
+            for fid in list(final_assignments):
+                if final_assignments[fid] == old_name:
+                    final_assignments[fid] = merge.merged_name
+            active_groups.pop(old_name, None)
+        active_groups[merge.merged_name] = f"Merged from: {', '.join(merge.groups_to_merge)}"
+        log.info("Merged: %s → '%s'", merge.groups_to_merge, merge.merged_name)
 
     # 3. Splits
     for split in phase3.splits:
@@ -479,7 +545,7 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
 # ---------------------------------------------------------------------------
 
 async def main() -> None:
-    features, prompt_text = load_and_sort_features()
+    features, prompt_text, output_context = load_and_sort_features()
     if not features:
         log.error("No described features found.")
         return
@@ -499,6 +565,8 @@ async def main() -> None:
     phase1_prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
 Context: The model was given the following prompt: {prompt_text}
 
+{output_context}
+
 Below are the {GROUPING_TOP_K_SEED} most influential features that activated during this prompt.
 Cluster them into meaningful semantic groups ("supernodes").
 
@@ -511,6 +579,12 @@ Additional guidance:
 - Separate features when they differ in abstraction level or semantic role, even if they share a broad topic.
 - Prefer labels that make the graph easier for a human to read, not just labels that are taxonomically tidy.
 - A small but meaningful subgroup may be worth keeping if it tells a distinct local story in the graph.
+- If several seed features already share a natural framing-style description such as "say a location" or "introduce a comparison", prefer preserving that style in the group name rather than collapsing it to a bare concept label.
+- When a cluster reflects a discourse role, the group name should usually also reflect that discourse role.
+- When in doubt between one broad group and two narrower groups, prefer the two narrower groups.
+  Phase 3 will merge any that turn out to be redundant after seeing the full picture.
+- It is cheaper to merge two precise groups later than to split one vague group.
+- Err on the side of more specific, more granular groups at this stage.
 
 Features:
 {format_feature_list(seed_features)}
@@ -551,11 +625,12 @@ Features:
                 remaining[i : i + GROUPING_BATCH_SIZE],
                 groups_context,
                 prompt_text,
+                output_context,
                 semaphore,
             )
             for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
         ]
-
+        
         for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
             p2: Phase2Output = await coro
             for a in p2.assignments:
@@ -577,6 +652,8 @@ Features:
 
 Context: The model was given the prompt: {prompt_text}
 
+{output_context}
+
 The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to
 clean up the result — rename unclear groups, split groups that are too broad,
 and reassign misplaced features.
@@ -588,14 +665,20 @@ Only make changes you are confident about. Do not restructure for the sake of it
 REVIEW CHECKLIST:
 1. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
 2. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype that is still useful and interpretable in this graph? → Keep separate or split it.
-3. IRRELEVANT GROUPS: Drop only groups that are clearly isolated, or semantically off-topic; they do not add variational information or isn't related to the prompt.
+3. IRRELEVANT GROUPS: Drop only groups that are clearly isolated, or off-topic to any functionalty in the prompt; they do not add variational information or isn't related to the prompt.
 4. LOCAL USEFULNESS: Do not remove a subgroup merely because it is small if it is graph-useful, interpretable, and connected to the main prompt circuitry.
 5. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
 6. NAMING: Are group names clear, natural, and <= 5 words? → Rename if needed.
+7. DUPLICATE GROUPS: Are any two groups the same and without worthy and relevant nuances to stay separated? Merge them only if completely confident that detail is irrelevant to the attribution graph and final ouptut (use sparingly).
 - Prefer preserving a small meaningful subgroup over collapsing it into a broader group, unless the subgroup is clearly noisy or redundant; information in attribution graph is usually good to know but not everything.
 - A group does not need to be globally perfect; it should be locally interpretable and useful in the graph.
 - Small groups are acceptable if they capture a distinct, prompt-relevant circuit.
 - Do not merge away distinctions like subtype, role, or local sports category if they help explain the graph.
+- A feature introducing or saying a concept is different from a feature representing that concept by itself.
+- Rename technical or unnatural labels into plain natural language.
+- Prefer "say X" over "X (mention)", "X mention", or "mention X".
+- Clarification: Say should  be used in an "introduction" or "mentioning" context; if the features literally represent X, do not use "say." Do not use "say" for the sake of it.
+- Avoid parentheses and analytic suffixes when a simpler human phrase works.
 
 IMPORTANT:
 - Only make changes you are confident about. Do not restructure for the sake of it.
@@ -616,7 +699,7 @@ Current grouping:
         log.warning("Phase 3 parsing returned None — skipping reconciliation.")
     else:
         total_actions = (
-            len(p3.renames) + len(p3.splits)
+            len(p3.renames) + len(p3.merges) + len(p3.splits)
             + len(p3.reassignments) + len(p3.dropped_groups)
         )
         if total_actions == 0:

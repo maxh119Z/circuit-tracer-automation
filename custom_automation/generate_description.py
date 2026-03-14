@@ -37,7 +37,7 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 MODEL = "gpt-5-mini"
-CONCURRENCY_LIMIT = 50
+CONCURRENCY_LIMIT = 67
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
 # ---------------------------------------------------------------------------
@@ -46,7 +46,7 @@ CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
 SYSTEM_PROMPT = (
     "You are a mechanistic interpretability researcher. "
-    "You will be given evidence about a single feature neuron. "
+    "You will be given evidence about a single feature neuron. Treat neurons as humans for verb choosing."
     "Your task is to produce a short, natural label for the main semantic pattern this feature represents.\n\n"
 
     "You will receive three types of evidence:\n"
@@ -56,29 +56,31 @@ SYSTEM_PROMPT = (
     "3. Global Output Tokens: tokens the neuron tends to promote and demote across the vocabulary.\n\n"
 
     "Use input activations as the primary evidence. "
-    "Use prompt context only for disambiguation and tie-breaking, not as proof by itself. "
-    "Use output tokens only as supporting evidence, since they may be noisy, polysemantic, or tokenizer artifacts.\n\n"
+    "Use prompt context only for disambiguation, not as proof by itself. "
+    "Use output tokens only as supporting evidence (when outputs exhibits clear patterns or if other information is noisy), since they may be noisy, polysemantic, or tokenizer artifacts.\n\n"
 
-    "Prefer a short, graph-friendly prototype label over a long explanation. "
-    "If several labels are plausible, choose the one that would look most natural and useful as a node label in an attribution graph. "
+    "Prefer a short, graph-friendly label over a long explanation. "
+    "Choose the one that would look most natural and useful as a node label in an attribution graph. "
     "Preserve important domain-specific information when it is consistently supported by the activations, "
     "even if a broader label would also be technically true.\n"
 
     "If a narrower subtype is clearly supported, keep it rather than collapsing to a broader generic label. "
-    "If the evidence is mixed or weak, prefer a broader but still meaningful label rather than an overly specific guess.\n"
+    "If the evidence is mixed or weak, prefer a broader but still meaningful label; if text includes words meaningful to the prompt, could make educated guesses without full consistency. \n"
 
     "For function words, prepositions, punctuation, and other structural features: "
-    "if they mainly serve a local semantic role in this prompt, label that role rather than the raw token class "
-    "The subsequent text surrounding a preposition is often what the neuron is describing. "
-    "Consistent doesn't mean 100%, something interesting could be noted, but should not be one-off.\n"
+    "if they mainly serve a local semantic role in this prompt, label that role rather than the raw token class. Avoid labeling purely grammatical categories unless that is clearly the main feature (Do not include words like preposition, article, demonyms, puncutation, verb, noun, etc.). "
+    "The subsequent (or prior) text surrounding a preposition or connector is often what the neuron is describing. For function words, label the semantic slot they say rather than the word itself, often in a short phrase using 'say,' for example ‘say a location’ or ‘say a method.’"
+    " A pattern does not need to be universal, but ignore one-off details unless they are highly relevant to the prompt and main idea.\n"
 
-    "Include a specific named entity if it appears consistently across the evidence and is clearly the main shared concept, "
-    "not just a side detail.\n\n"
+    "Include a specific named entity if it appears consistently across the evidence and is clearly related to or is the main shared concept, "
+    "not just a side detail (such as a proper name).\n\n"
+
 
     "Return only the label text, with no explanation. "
-    "SPECIFICITY over something too general! Descriptions of specific proper nouns, names, places, methods, etc are important."
-    "Avoid explanatory phrases, quotes, examples, and parentheses unless truly necessary. "
-    "Keep it concise, ideally 1-4 words."
+    "Prefer specificity over something too general! Descriptions of specific proper nouns, names, places, methods, etc are important. "
+    "Consider surrounding context of input activations as secondary evidence if important words pop up relevant to the prompt; do not rely only on the trigger tokens. "
+    "Avoid explanatory phrases, quotes, examples, and parentheses in your label text unless truly necessary. "
+    "Keep it concise, ideally 1-4 words. Prefer layman's terms that catches specifics (proper nouns, locations, events, etc.) but without complex terminology unless it is relevant to the prompt."
 )
 
 # ---------------------------------------------------------------------------
