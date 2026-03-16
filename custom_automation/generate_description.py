@@ -52,7 +52,7 @@ SYSTEM_PROMPT = (
     "You will receive three types of evidence:\n"
     "1. Overall Prompt Context: the original prompt the model was processing.\n"
     "2. Input Activations: text excerpts where the neuron activated strongly. "
-    "The triggering tokens are delimited by {{ }}.\n"
+    "The triggering tokens are delimited by <<<>>>.\n"
     "3. Global Output Tokens: tokens the neuron tends to promote and demote across the vocabulary.\n\n"
 
     "Use input activations as the primary evidence. "
@@ -91,8 +91,8 @@ def _format_excerpt(context: str, trigger: str) -> str:
     """Wrap *trigger* in ``{{ }}`` within *context*."""
     clean = trigger.strip()
     if clean and clean in context:
-        return context.replace(clean, f"{{{{{clean}}}}}", 1)
-    return f"{context} [Activates on: {{{{{clean}}}}}]"
+        return context.replace(clean, f"<<<{clean}>>>", 1)
+    return f"{context} [Activates on: <<<{clean}>>>]"
 
 def _build_user_prompt(feature: dict, prompt_text: str) -> str:
     """Compose the user-turn content including prompt context, inputs, and output logits."""
