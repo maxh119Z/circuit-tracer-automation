@@ -1,10 +1,9 @@
-
 """
 Plot validation results from validation_report.json or validation_history.json.
 
 Usage:
     python plot_validation.py                # Latest report — per-group bar chart
-    python plot_validation.py --history      # History trend — macro F1 over time
+    python plot_validation.py --history      # History trend — macro accuracy over time
     python plot_validation.py --method m2    # Show Method 2 per-group instead of M1
 """
 
@@ -26,24 +25,38 @@ COLORS = {
     "manual": "#4CAF50",
 }
 
+# Chance baselines for each method
+CHANCE = {
+    "method1": 0.10,  # 1-in-10
+    "method2": 0.50,  # 5-in-10
+}
+
+METHOD_LABELS = {
+    "method1": "Method 1 — Feature ID (1-in-10)",
+    "method2": "Method 2 — Text Match (5-in-10)",
+}
+
 
 # ---------------------------------------------------------------------------
 # Per-group bar chart (single report)
 # ---------------------------------------------------------------------------
 
 def plot_report(report: dict, method: str = "method1") -> None:
-    """Bar chart of per-group F1 with error bars for each condition."""
-    method_label = "Method 1 (Description Match)" if method == "method1" else "Method 2 (Snippet Match)"
+    """Bar chart of per-group accuracy with error bars for each condition."""
+    method_label = METHOD_LABELS.get(method, method)
     conditions = [k for k in ("auto", "random", "manual") if k in report]
 
-    # Use auto group names as X-axis reference
     group_stats = report["auto"][method]["groups"]
     group_names = [s["group"] for s in group_stats]
     n_groups = len(group_names)
 
+    if n_groups == 0:
+        log.warning("No groups to plot for %s.", method)
+        return
+
     fig, ax = plt.subplots(figsize=(max(10, n_groups * 1.2), 6))
     fig.suptitle(
-        f"{method_label} — Per-group F1\n"
+        f"{method_label} — Per-group Accuracy\n"
         f"Prompt: {report.get('prompt', '')[:70]}",
         fontsize=10,
     )
@@ -53,8 +66,8 @@ def plot_report(report: dict, method: str = "method1") -> None:
 
     for i, cond in enumerate(conditions):
         stats_by_group = {s["group"]: s for s in report[cond][method]["groups"]}
-        means   = [stats_by_group.get(g, {}).get("mean_f1",   0.0) for g in group_names]
-        stderrs = [stats_by_group.get(g, {}).get("stderr_f1", 0.0) for g in group_names]
+        means   = [stats_by_group.get(g, {}).get("mean_accuracy",   0.0) for g in group_names]
+        stderrs = [stats_by_group.get(g, {}).get("stderr_accuracy", 0.0) for g in group_names]
 
         offset = (i - len(conditions) / 2 + 0.5) * width
         ax.bar(
@@ -66,24 +79,25 @@ def plot_report(report: dict, method: str = "method1") -> None:
             error_kw={"elinewidth": 1.2},
         )
 
-    ax.set_ylabel("F1 Score")
+    ax.set_ylabel("Accuracy")
     ax.set_ylim(0, 1.15)
     ax.set_xticks(x)
     ax.set_xticklabels(
         [g[:22] for g in group_names],
         rotation=40, ha="right", fontsize=8,
     )
-    ax.axhline(0.5, color="gray", linestyle="--", linewidth=0.8, alpha=0.5, label="chance")
+
+    chance = CHANCE.get(method, 0.5)
+    ax.axhline(chance, color="gray", linestyle="--", linewidth=0.8, alpha=0.5, label=f"chance ({chance:.0%})")
     ax.legend(loc="upper right")
 
-    # Annotate macro avg in legend area
     for cond in conditions:
         ma = report[cond][method]["macro_avg"]
         cov = report[cond].get("attribution_coverage")
         cov_str = f"  cov={cov:.1%}" if cov is not None else ""
         log.info(
-            "%s macro F1: %.3f ± %.3f%s",
-            cond, ma["mean_f1"], ma["stderr_f1"], cov_str,
+            "%s macro accuracy: %.3f ± %.3f%s",
+            cond, ma["mean_accuracy"], ma["stderr_accuracy"], cov_str,
         )
 
     plt.tight_layout()
@@ -94,15 +108,15 @@ def plot_report(report: dict, method: str = "method1") -> None:
 
 
 # ---------------------------------------------------------------------------
-# Macro F1 trend over history runs
+# Macro accuracy trend over history runs
 # ---------------------------------------------------------------------------
 
 def plot_history(history: list[dict]) -> None:
-    """Line plot of macro F1 trend across all history entries, both methods."""
+    """Line plot of macro accuracy trend across all history entries, both methods."""
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
-    fig.suptitle("Validation History — Macro F1 Trend", fontsize=11)
+    fig.suptitle("Validation History — Macro Accuracy Trend", fontsize=11)
 
-    methods = [("method1", "Method 1 (Desc. Match)"), ("method2", "Method 2 (Snippet Match)")]
+    methods = [("method1", METHOD_LABELS["method1"]), ("method2", METHOD_LABELS["method2"])]
 
     for ax, (method_key, method_label) in zip(axes, methods):
         for cond in ("auto", "random", "manual"):
@@ -111,8 +125,8 @@ def plot_history(history: list[dict]) -> None:
                 if cond not in entry:
                     continue
                 ma = entry[cond][method_key]["macro_avg"]
-                means.append(ma["mean_f1"])
-                stderrs.append(ma["stderr_f1"])
+                means.append(ma["mean_accuracy"])
+                stderrs.append(ma["stderr_accuracy"])
 
             if not means:
                 continue
@@ -127,11 +141,12 @@ def plot_history(history: list[dict]) -> None:
                 alpha=0.2, color=color,
             )
 
+        chance = CHANCE.get(method_key, 0.5)
         ax.set_title(method_label)
-        ax.set_ylabel("Macro F1 (mean ± stderr)")
+        ax.set_ylabel("Macro Accuracy (mean ± stderr)")
         ax.set_ylim(0, 1.0)
         ax.set_xlabel("History Run Index")
-        ax.axhline(0.5, color="gray", linestyle="--", linewidth=0.8, alpha=0.5)
+        ax.axhline(chance, color="gray", linestyle="--", linewidth=0.8, alpha=0.5, label=f"chance ({chance:.0%})")
         ax.legend()
 
     plt.tight_layout()
@@ -179,7 +194,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Plot validation results.")
     parser.add_argument(
         "--history", action="store_true",
-        help="Plot macro F1 trend across all history runs.",
+        help="Plot macro accuracy trend across all history runs.",
     )
     parser.add_argument(
         "--method", choices=["m1", "m2"], default="m1",
