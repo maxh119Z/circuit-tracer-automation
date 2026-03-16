@@ -178,3 +178,4 @@ cython_debug/
 test_graphs/
 custom_automation/artifacts/*
 !custom_automation/artifacts/.gitkeep
+custom_automation/artifacts

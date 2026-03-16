@@ -11,10 +11,8 @@ pip install .
 
 ---Original Circuit-Tracer---
 ```
-python huggingface_login.py hf_abc123yourtoken
+python huggingface_login.py [YOUR HUGGINGFACE TOKEN]
 circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
-
-circuit-tracer attribute --prompt "Michael Jordan plays the sport of" --transcoder_set gemma --slug michael-jordan-plays-the-sport-of --graph_file_dir ./custom_automation/test_graphs --server
 
 ```
 
@@ -24,49 +22,64 @@ export OPENAI_API_KEY = ""
 ---Custom-Automation---
 ```
 chmod +x reproduce.sh
-./reproduce.sh 0.40
-#0.4 represents the PRUNING_THRESHOLD
+echo "Runs both grouping + validation logic unless specified"
+echo "PRUNING_TRHRESHOLD is 0.40 by default"
+./reproduce.sh [PRUNING_THRESHOLD]
+./reproduce.sh all
+
+echo "Runs grouping only"
+./reproduce.sh core
+
+echo "Runs validation only. Assumes grouping is finished"
+./reproduce.sh validation
 ```
 ---END-----
 
-RUNPOD ONLY:
----Runpod (For ameen and max)---
-```
-RUN INSTEAD:
-Important: OPENAI_API_KEY=sk-xxx VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net bash reproduce.sh 0.40
-
-1. rm -rf circuit-tracer-automation (to start clean if wanted)
-2. Open a Terminal ----> circuit-tracer attribute --prompt "The capital of . . .
-3. OPENAI_API_KEY=sk-xxx VIEWER_URL=https://skqak5p63vr3g0-8041.proxy.runpod.net bash reproduce.sh 0.40
-
-Make sure to run this cell!
-#pip install --force-reinstall torch torchvision torchaudio
 ```
 ## -------------------------------------------------------------
 
 circuit-tracer-automation/
-```
-├── custom_automation/             # MAIN PIPELINE
-│   ├── fetch_all_activating_text.py   # Step 1: Downloads feature activations from HF (Threshold filtering)
-│   ├── add_description.py             # Step 2: Generates descriptions using local TransLuce Llama-3 model
-│   ├── push_to_website.py             # Step 3: Injects descriptions into test-run.json for the viewer
-│   ├── _TBA grouping file
+├── custom_automation/                 # MAIN PIPELINE
+│   ├── config.py                          # Shared config: paths, constants, HF URLs, API settings
+│   ├── fetch_all_activation_text.py       # Step 1: Download feature activations from HuggingFace (pruning by influence threshold)
+│   ├── generate_description.py            # Step 2: Generate short labels per feature via GPT-5-mini
+│   ├── generate_supernodes.py             # Step 3: 3-phase semantic grouping (discover → assign → reconcile) via GPT-5-mini
+│   ├── push_to_website.py                 # Step 4: Inject descriptions into node clerp fields + supernodes/pinnedIds into qParams
+│   ├── update_metadata.py                 # Step 5: Copy graph to slug-named file, register in viewer dropdown
+│   ├── validate_groups.py                 # Step 6: Validation — M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + random baseline
+│   ├── apply_frontend_patch.py            # Step 0: Patch init-cg.js for qParams parsing
+│   ├── plot_validation.py                 # Plot validation results from report/history JSON
 │   │
-│   ├── reproduce.sh                   # MASTER SCRIPT: Runs steps 1-3 in sequence
+│   ├── reproduce.sh                       # MASTER SCRIPT
+│   │                                      #   ./reproduce.sh              Core pipeline (steps 0-5)
+│   │                                      #   ./reproduce.sh core         Same as above
+│   │                                      #   ./reproduce.sh all          Core + validation
+│   │                                      #   ./reproduce.sh validate     Validation only (assumes core ran)
+│   │                                      #   ./reproduce.sh all 0.35     Custom pruning threshold
 │   │
-│   ├── artifacts/                     # Generated Files (Ignored by Git)
-│   │   ├── pruned_activations.json    # Output of Step 1 (Raw feature data)
-│   │   ├── feature_descriptions.json  # Output of Step 2 (AI explanations)
-│   │   └── feature_groups.json        # Output of Clustering
+│   ├── artifacts/                         # Generated files (gitignored)
+│   │   ├── pruned_activations.json            # Step 1 output: filtered features + HF activation data
+│   │   ├── feature_descriptions.json          # Step 2 output: features with generated_description field
+│   │   ├── feature_groups.json                # Step 3 output: feature_id → group_name mapping
+│   │   ├── manual_groups.json                 # (Optional) Hand-curated feature_id → group_name for validation comparison
+│   │   ├── validation_report.json             # Step 6 output: latest validation scores
+│   │   └── validation_history.json            # Step 6 output: append-only history of all validation runs
+│   │
+│   └── manual_groupings/         # Example manual groups folder to store json files for comparision
 │
-├── test_graphs/                   # Graph Data
-│   └── test-run.json                  # The main graph file served to the website
+├── test_graphs/                       # Graph data served by the viewer
+│   ├── test-run.json                      # Working copy (pipeline always writes here, then copies to slug)
+│   ├── graph-metadata.json                # Dropdown registry (auto-updated by Step 5)
+│   └── <slug>.json                        # Named copies created by Step 5 (e.g., the-capital-of-the-state-containing-dall.json). Allows for easy selection and storage
 │
-├── circuit_tracer/                # Core Library (Original Tool)
-│   └── ... 
+├── circuit_tracer/                    # Existing logic from Circuit-Tracer
+│   ├── frontend/
+│   │   └── assets/
+│   │       └── attribution_graph/
+│   │           ├── init-cg.js                 # Custom 2 line changes for our setup to work.
+│   └── ...
 │
 └── README.md
-```
 
 # circuit-tracer
 
