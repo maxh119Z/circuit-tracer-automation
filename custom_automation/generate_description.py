@@ -88,7 +88,7 @@ SYSTEM_PROMPT = (
 # ---------------------------------------------------------------------------
 
 def _format_excerpt(context: str, trigger: str) -> str:
-    """Wrap *trigger* in ``{{ }}`` within *context*."""
+    """Wrap *trigger* in ``<<<>>>`` within *context*."""
     clean = trigger.strip()
     if clean and clean in context:
         return context.replace(clean, f"<<<{clean}>>>", 1)

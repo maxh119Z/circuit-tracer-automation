@@ -573,7 +573,6 @@ Cluster them into meaningful semantic groups ("supernodes").
 {GROUPING_PHILOSOPHY}
 
 Additional guidance:
-- Do not create a highly specific group merely because a feature is salient in this prompt.
 - A single feature may form its own group only when it reflects a stable, reusable semantic pattern rather than a one-off surface detail.
 - A feature or group completely unrelated or uncorrelated to the rest of the prompt context can be removed.
 - Separate features when they differ in abstraction level or semantic role, even if they share a broad topic.
@@ -582,8 +581,7 @@ Additional guidance:
 - If several seed features already share a natural framing-style description such as "say a location" or "introduce a comparison", prefer preserving that style in the group name rather than collapsing it to a bare concept label.
 - When a cluster reflects a discourse role, the group name should usually also reflect that discourse role.
 - When in doubt between one broad group and two narrower groups, prefer the two narrower groups.
-  Phase 3 will merge any that turn out to be redundant after seeing the full picture.
-- It is cheaper to merge two precise groups later than to split one vague group.
+  Phase 3 will merge any that turn out to be redundant after seeing the full picture, therefore your role is to capture all relevant subgroups right now.
 - Err on the side of more specific, more granular groups at this stage.
 
 Features:

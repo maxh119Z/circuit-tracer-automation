@@ -13,7 +13,7 @@ This makes two surgical edits to init-cg.js:
 2. Fixes the `if (urlSupernodes)` → `if (urlSupernodes.length)` bug
    (empty arrays are truthy in JS, so the old code always overwrote qParams)
 
-Both changes are idempotent — running this script twice is safe.
+Both changes are needed — running this script twice is safe.
 """
 
 import re
