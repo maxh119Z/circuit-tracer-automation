@@ -303,31 +303,10 @@ Current groups and rationales:
 
 {GROUPING_PHILOSOPHY}
 
-Task: For each feature below:
-- assign it to an existing group if it strongly aligns,
-- assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics,
-- or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features. 
-- Very specific entities that may form singular groups are allowed only if they are relevant and purposeful in the prompt and graph
-
-Do not create new groups for:
-- one-off prompt details
-- isolated named entities
-- weak side-topics
-- concepts that are not meaningfully connected to the main prompt structure
-
-Variations in a group are important signal.
-
-Do not force fit features into an existing group when the semantic role or abstraction level does not match.
-Important naming guidance:
-- Keep framing language separate from the concept being framed.
-- Use natural everyday graph labels, not analytic labels.
-- If a cluster is about referring to or naming something in text, prefer "say ..." style names.
-- Prefer "say Dallas" over "Dallas (mention)", "Dallas mention", or "mention Dallas".
-- Prefer "say a location" over "location mention" or "location reference".
-- If the feature descriptions in a cluster are mostly phrased as framing or slot-introducing language, preserve that style in the group name.
-- Example: "say a __ and __" and "___ and ___" should usually be different groups.
-- Example: "introduce a __ and __" and "___ and ___" should usually be different groups.
-- Do not rename a natural framing-style cluster into a technical or abstract label unless clearly necessary.
+Task: For each feature below, assign it to one of the existing groups if it strongly aligns.
+Assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics.
+Only create a new group if the feature reflects a genuinely distinct semantic subgroup not covered by any existing group, is clearly relevant to the prompt, and would likely be shared by multiple related features.
+Do not force fit a feature into an existing group when the semantic role or abstraction level does not match.
 
 Features:
 {format_feature_list(batch)}
@@ -337,7 +316,6 @@ Features:
             model=GROUPING_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format=Phase2Output,
-            temperature=1,
         )
         parsed = response.choices[0].message.parsed
         if parsed is None:
