@@ -51,6 +51,7 @@ from config import (
     FEATURE_GROUPS_FILE,
     GRAPH_FILE,
     GROUPING_MODEL,
+    GROUPING_TOP_K_SEED,
     MANUAL_GROUPS_FILE,
     VALIDATION_HISTORY_FILE,
     VALIDATION_REPORT_FILE,
@@ -72,8 +73,6 @@ N_POS_SNIPPETS_M2 = 5         # 5 positive snippets in Method 2
 N_NEG_SNIPPETS_M2 = 5         # 5 negative snippets in Method 2 (5 + 5 = 10)
 RANDOM_SEED = 42
 N_RUNS = 5
-HARD_NEG_START: int = 100   # held-out features ranked 100–200 by influence score
-HARD_NEG_END: int = 200
 
 
 # ---------------------------------------------------------------------------
@@ -218,13 +217,14 @@ def build_medium_neg_pool(features: list[dict], groups: dict[str, str]) -> list[
 
 
 def build_hard_neg_pool(features: list[dict]) -> list[dict]:
-    """Features ranked HARD_NEG_START–HARD_NEG_END by influence score (held out from Phase 1 seed)."""
+    """Features beyond Phase 1's seed window — not seen by Phase 1 grouping."""
     sorted_feats = sorted(
         [f for f in features if "influence_score" in f],
         key=lambda f: float(f.get("influence_score", 0.0)),
+        reverse=True,
     )
     return [
-        f for f in sorted_feats[HARD_NEG_START:HARD_NEG_END]
+        f for f in sorted_feats[GROUPING_TOP_K_SEED:]
         if f.get("generated_description")
     ]
 
@@ -1017,7 +1017,7 @@ async def main_async() -> None:
     print(f"  VALIDATION SUMMARY ({N_RUNS} runs, run-level aggregation)")
     print(f"  M1: 1-in-{1+N_NEG_FEATURES_M1} feature ID (chance={chance_m1:.0%})")
     print(f"  M2: {N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text match (chance={chance_m2:.0%})")
-    print(f"  Neg sources: easy=other groups | medium=Ungrouped | hard=held-out features 100-200")
+    print(f"  Neg sources: easy=other groups | medium=Ungrouped | hard=unseen features (beyond Phase 1 seed of {GROUPING_TOP_K_SEED})")
     print(f"{'='*80}")
     print(f"\n{'Condition':<16}  {'M1 Accuracy':>16}  {'M2 Accuracy':>16}  {'Coverage':>9}")
     print("-" * 70)

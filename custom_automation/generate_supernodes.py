@@ -587,34 +587,35 @@ Features:
     # ==================================================================
     # PHASE 2 — Assign remaining features concurrently
     # ==================================================================
-    remaining = features[GROUPING_TOP_K_SEED:]
+    # TEMPORARILY DISABLED — comment back in to re-enable Phase 2
+    # remaining = features[GROUPING_TOP_K_SEED:]
 
-    if remaining:
-        log.info("Phase 2: Assigning remaining %d features…", len(remaining))
-        groups_context = json.dumps(active_groups, indent=2)
+    # if remaining:
+    #     log.info("Phase 2: Assigning remaining %d features…", len(remaining))
+    #     groups_context = json.dumps(active_groups, indent=2)
 
-        MAX_CONCURRENT_REQUESTS = 67
-        semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+    #     MAX_CONCURRENT_REQUESTS = 67
+    #     semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
-        tasks = [
-            process_batch(
-                remaining[i : i + GROUPING_BATCH_SIZE],
-                groups_context,
-                prompt_text,
-                output_context,
-                semaphore,
-            )
-            for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
-        ]
-        
-        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
-            p2: Phase2Output = await coro
-            for a in p2.assignments:
-                final_assignments[a.feature_id] = a.group_name
-            for g in p2.new_groups:
-                if g.group_name not in active_groups:
-                    active_groups[g.group_name] = g.rationale
-                    log.info("New group created mid-stream: %s", g.group_name)
+    #     tasks = [
+    #         process_batch(
+    #             remaining[i : i + GROUPING_BATCH_SIZE],
+    #             groups_context,
+    #             prompt_text,
+    #             output_context,
+    #             semaphore,
+    #         )
+    #         for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
+    #     ]
+    #
+    #     for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
+    #         p2: Phase2Output = await coro
+    #         for a in p2.assignments:
+    #             final_assignments[a.feature_id] = a.group_name
+    #         for g in p2.new_groups:
+    #             if g.group_name not in active_groups:
+    #                 active_groups[g.group_name] = g.rationale
+    #                 log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
     # PHASE 3 — Reconciliation
