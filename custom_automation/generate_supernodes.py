@@ -303,31 +303,10 @@ Current groups and rationales:
 
 {GROUPING_PHILOSOPHY}
 
-Task: For each feature below:
-- assign it to an existing group if it strongly aligns,
-- assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics,
-- or create a new group only if the feature reflects a stable, reusable semantic subgroup that is clearly relevant to the prompt and supported by multiple related features. 
-- Very specific entities that may form singular groups are allowed only if they are relevant and purposeful in the prompt and graph
-
-Do not create new groups for:
-- one-off prompt details
-- isolated named entities
-- weak side-topics
-- concepts that are not meaningfully connected to the main prompt structure
-
-Variations in a group are important signal.
-
-Do not force fit features into an existing group when the semantic role or abstraction level does not match.
-Important naming guidance:
-- Keep framing language separate from the concept being framed.
-- Use natural everyday graph labels, not analytic labels.
-- If a cluster is about referring to or naming something in text, prefer "say ..." style names.
-- Prefer "say Dallas" over "Dallas (mention)", "Dallas mention", or "mention Dallas".
-- Prefer "say a location" over "location mention" or "location reference".
-- If the feature descriptions in a cluster are mostly phrased as framing or slot-introducing language, preserve that style in the group name.
-- Example: "say a __ and __" and "___ and ___" should usually be different groups.
-- Example: "introduce a __ and __" and "___ and ___" should usually be different groups.
-- Do not rename a natural framing-style cluster into a technical or abstract label unless clearly necessary.
+Task: For each feature below, assign it to one of the existing groups if it strongly aligns.
+Assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics.
+Only create a new group if the feature reflects a genuinely distinct semantic subgroup not covered by any existing group, is clearly relevant to the prompt, and would likely be shared by multiple related features.
+Do not force fit a feature into an existing group when the semantic role or abstraction level does not match.
 
 Features:
 {format_feature_list(batch)}
@@ -337,7 +316,6 @@ Features:
             model=GROUPING_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format=Phase2Output,
-            temperature=1,
         )
         parsed = response.choices[0].message.parsed
         if parsed is None:
@@ -609,34 +587,35 @@ Features:
     # ==================================================================
     # PHASE 2 — Assign remaining features concurrently
     # ==================================================================
-    remaining = features[GROUPING_TOP_K_SEED:]
+    # TEMPORARILY DISABLED — comment back in to re-enable Phase 2
+    # remaining = features[GROUPING_TOP_K_SEED:]
 
-    if remaining:
-        log.info("Phase 2: Assigning remaining %d features…", len(remaining))
-        groups_context = json.dumps(active_groups, indent=2)
+    # if remaining:
+    #     log.info("Phase 2: Assigning remaining %d features…", len(remaining))
+    #     groups_context = json.dumps(active_groups, indent=2)
 
-        MAX_CONCURRENT_REQUESTS = 67
-        semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+    #     MAX_CONCURRENT_REQUESTS = 67
+    #     semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
-        tasks = [
-            process_batch(
-                remaining[i : i + GROUPING_BATCH_SIZE],
-                groups_context,
-                prompt_text,
-                output_context,
-                semaphore,
-            )
-            for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
-        ]
-        
-        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
-            p2: Phase2Output = await coro
-            for a in p2.assignments:
-                final_assignments[a.feature_id] = a.group_name
-            for g in p2.new_groups:
-                if g.group_name not in active_groups:
-                    active_groups[g.group_name] = g.rationale
-                    log.info("New group created mid-stream: %s", g.group_name)
+    #     tasks = [
+    #         process_batch(
+    #             remaining[i : i + GROUPING_BATCH_SIZE],
+    #             groups_context,
+    #             prompt_text,
+    #             output_context,
+    #             semaphore,
+    #         )
+    #         for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
+    #     ]
+    #
+    #     for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
+    #         p2: Phase2Output = await coro
+    #         for a in p2.assignments:
+    #             final_assignments[a.feature_id] = a.group_name
+    #         for g in p2.new_groups:
+    #             if g.group_name not in active_groups:
+    #                 active_groups[g.group_name] = g.rationale
+    #                 log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
     # PHASE 3 — Reconciliation

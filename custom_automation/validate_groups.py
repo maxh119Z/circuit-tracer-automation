@@ -51,6 +51,7 @@ from config import (
     FEATURE_GROUPS_FILE,
     GRAPH_FILE,
     GROUPING_MODEL,
+    GROUPING_TOP_K_SEED,
     MANUAL_GROUPS_FILE,
     VALIDATION_HISTORY_FILE,
     VALIDATION_REPORT_FILE,
@@ -198,6 +199,35 @@ def load_manual_group_index(features: list[dict]) -> dict[str, list[dict]] | Non
         return None
 
     return index
+
+# ---------------------------------------------------------------------------
+# Negative pool builders
+# ---------------------------------------------------------------------------
+
+def build_medium_neg_pool(features: list[dict], groups: dict[str, str]) -> list[dict]:
+    """Ungrouped features that have descriptions — harder than other named groups."""
+    id_to_feature = {f["id"]: f for f in features if "id" in f}
+    return [
+        id_to_feature[fid]
+        for fid, gname in groups.items()
+        if gname == "Ungrouped"
+        and fid in id_to_feature
+        and id_to_feature[fid].get("generated_description")
+    ]
+
+
+def build_hard_neg_pool(features: list[dict]) -> list[dict]:
+    """Features beyond Phase 1's seed window — not seen by Phase 1 grouping."""
+    sorted_feats = sorted(
+        [f for f in features if "influence_score" in f],
+        key=lambda f: float(f.get("influence_score", 0.0)),
+        reverse=True,
+    )
+    return [
+        f for f in sorted_feats[GROUPING_TOP_K_SEED:]
+        if f.get("generated_description")
+    ]
+
 
 # ---------------------------------------------------------------------------
 # Snippet formatting with <<<>>> triggers
@@ -352,11 +382,13 @@ async def run_m2_task(
 def generate_m1_tasks(
     group_index: dict[str, list[dict]],
     seed: int,
+    external_neg_pool: list[dict] | None = None,
 ) -> list[dict]:
     """
     Generate Method 1 trial specs for one run.
 
-    If a group has >MAX_FEATURES_M1 features, randomly sample MAX_FEATURES_M1.
+    If external_neg_pool is provided, use it as the negative source (medium/hard).
+    Otherwise fall back to other groups in group_index (easy).
     If fewer than N_NEG_FEATURES_M1 negatives available, use what we have
     (prompt reflects actual count, never lies about "10").
     """
@@ -367,11 +399,14 @@ def generate_m1_tasks(
         if len(pos_features) < MIN_GROUP_SIZE:
             continue
 
-        neg_pool = [
-            f for gname, feats in group_index.items()
-            if gname != group_name
-            for f in feats
-        ]
+        if external_neg_pool is not None:
+            neg_pool = external_neg_pool
+        else:
+            neg_pool = [
+                f for gname, feats in group_index.items()
+                if gname != group_name
+                for f in feats
+            ]
         if not neg_pool:
             continue
 
@@ -412,13 +447,14 @@ def generate_m1_tasks(
 def generate_m2_tasks(
     group_index: dict[str, list[dict]],
     seed: int,
+    external_neg_pool: list[dict] | None = None,
 ) -> list[dict]:
     """
     Generate Method 2 task specs for one run.
 
     Positive snippets: sample exactly N_POS_SNIPPETS_M2 from the group.
     If fewer available, skip this group.
-    Negative snippets: sample N_NEG_SNIPPETS_M2 from other groups.
+    Negative snippets: drawn from external_neg_pool (medium/hard) or other groups (easy).
     If fewer available, use what we have (prompt reflects actual count).
     """
     rng = random.Random(seed)
@@ -440,13 +476,18 @@ def generate_m2_tasks(
 
         pos_snippets = rng.sample(all_pos_snippets, N_POS_SNIPPETS_M2)
 
-        neg_snippet_pool = [
-            s
-            for gname, feats in group_index.items()
-            if gname != group_name
-            for f in feats
-            for s in _get_formatted_snippets(f)
-        ]
+        if external_neg_pool is not None:
+            neg_snippet_pool = [
+                s for f in external_neg_pool for s in _get_formatted_snippets(f)
+            ]
+        else:
+            neg_snippet_pool = [
+                s
+                for gname, feats in group_index.items()
+                if gname != group_name
+                for f in feats
+                for s in _get_formatted_snippets(f)
+            ]
         n_neg = min(len(neg_snippet_pool), N_NEG_SNIPPETS_M2)
         if n_neg == 0:
             log.warning("[M2] %s: no negative snippets available, skipping.", group_name)
@@ -635,74 +676,161 @@ async def regenerate_group_names(
 # Run all validation for one condition
 # ---------------------------------------------------------------------------
 
+# async def run_condition(
+#     label: str,
+#     group_index: dict[str, list[dict]],
+#     client: AsyncOpenAI,
+#     sem: asyncio.Semaphore,
+# ) -> dict[str, Any]:
+#     """
+#     Run N_RUNS of both methods for one condition, fully parallelized.
+#
+#     All tasks across all runs are generated upfront and fired in one
+#     asyncio.gather. The semaphore handles rate limiting. Results are
+#     tagged with run_idx for correct run-level aggregation.
+#     """
+#     valid_groups = {k: v for k, v in group_index.items() if len(v) >= MIN_GROUP_SIZE}
+#     if not valid_groups:
+#         log.warning("[%s] No valid groups for validation.", label)
+#         return {
+#             "method1": {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}},
+#             "method2": {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}},
+#         }
+#
+#     m1_specs: list[tuple[int, dict]] = []
+#     m2_specs: list[tuple[int, dict]] = []
+#
+#     for run_idx in range(N_RUNS):
+#         seed = RANDOM_SEED + run_idx
+#         for spec in generate_m1_tasks(valid_groups, seed):
+#             m1_specs.append((run_idx, spec))
+#         for spec in generate_m2_tasks(valid_groups, seed):
+#             m2_specs.append((run_idx, spec))
+#
+#     log.info(
+#         "[%s] Launching %d M1 trials + %d M2 tasks across %d runs…",
+#         label, len(m1_specs), len(m2_specs), N_RUNS,
+#     )
+#
+#     m1_coros = [
+#         run_m1_trial(s["group_name"], s["prompt"], s["correct_idx"], s["n_items"], client, sem)
+#         for _, s in m1_specs
+#     ]
+#     m2_coros = [
+#         run_m2_task(s["group_name"], s["prompt"], s["actual_positive_indices"], s["n_items"], s["n_expected"], client, sem)
+#         for _, s in m2_specs
+#     ]
+#
+#     all_results = await asyncio.gather(*m1_coros, *m2_coros)
+#     m1_scores = all_results[:len(m1_coros)]
+#     m2_scores = all_results[len(m1_coros):]
+#
+#     m1_tagged = [
+#         (run_idx, spec["group_name"], score)
+#         for (run_idx, spec), score in zip(m1_specs, m1_scores)
+#     ]
+#     m2_tagged = [
+#         (run_idx, spec["group_name"], score)
+#         for (run_idx, spec), score in zip(m2_specs, m2_scores)
+#     ]
+#
+#     m1_groups, m1_macro = aggregate_by_run(m1_tagged)
+#     m2_groups, m2_macro = aggregate_by_run(m2_tagged)
+#
+#     log.info("[%s] M1 macro: %.1f%% ± %.1f%%", label, m1_macro["mean_accuracy"] * 100, m1_macro["stderr_accuracy"] * 100)
+#     log.info("[%s] M2 macro: %.1f%% ± %.1f%%", label, m2_macro["mean_accuracy"] * 100, m2_macro["stderr_accuracy"] * 100)
+#
+#     return {
+#         "method1": {"groups": m1_groups, "macro_avg": m1_macro, "total_trials": len(m1_tagged)},
+#         "method2": {"groups": m2_groups, "macro_avg": m2_macro, "total_tasks": len(m2_tagged)},
+#     }
+
+
 async def run_condition(
     label: str,
     group_index: dict[str, list[dict]],
     client: AsyncOpenAI,
     sem: asyncio.Semaphore,
+    medium_neg_pool: list[dict] | None = None,
+    hard_neg_pool: list[dict] | None = None,
 ) -> dict[str, Any]:
     """
-    Run N_RUNS of both methods for one condition, fully parallelized.
+    Run N_RUNS of both methods for one condition across three negative-source difficulties.
 
-    All tasks across all runs are generated upfront and fired in one
-    asyncio.gather. The semaphore handles rate limiting. Results are
-    tagged with run_idx for correct run-level aggregation.
+    easy   — negatives from other named groups in the graph
+    medium — negatives from Ungrouped features (in-distribution but unlabeled)
+    hard   — negatives from held-out features ranked 100–200 by influence score
+
+    All tasks across all difficulties and runs are generated upfront and fired in one
+    asyncio.gather. Results are tagged by (neg_source, run_idx) for aggregation.
     """
     valid_groups = {k: v for k, v in group_index.items() if len(v) >= MIN_GROUP_SIZE}
+    empty_method: dict[str, Any] = {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}}
     if not valid_groups:
         log.warning("[%s] No valid groups for validation.", label)
-        return {
-            "method1": {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}},
-            "method2": {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}},
-        }
+        return {src: {"method1": empty_method, "method2": empty_method} for src in ("easy", "medium", "hard")}
 
-    m1_specs: list[tuple[int, dict]] = []
-    m2_specs: list[tuple[int, dict]] = []
+    neg_sources: list[tuple[str, list[dict] | None]] = [
+        ("easy",   None),
+        ("medium", medium_neg_pool),
+        ("hard",   hard_neg_pool),
+    ]
 
-    for run_idx in range(N_RUNS):
-        seed = RANDOM_SEED + run_idx
-        for spec in generate_m1_tasks(valid_groups, seed):
-            m1_specs.append((run_idx, spec))
-        for spec in generate_m2_tasks(valid_groups, seed):
-            m2_specs.append((run_idx, spec))
+    all_m1_specs: list[tuple[str, int, dict]] = []  # (neg_source, run_idx, spec)
+    all_m2_specs: list[tuple[str, int, dict]] = []
 
-    log.info(
-        "[%s] Launching %d M1 trials + %d M2 tasks across %d runs…",
-        label, len(m1_specs), len(m2_specs), N_RUNS,
-    )
+    for neg_source, ext_pool in neg_sources:
+        if ext_pool is not None and len(ext_pool) < N_NEG_FEATURES_M1:
+            log.warning("[%s/%s] Negative pool too small (%d), skipping.",
+                        label, neg_source, len(ext_pool))
+            continue
+        for run_idx in range(N_RUNS):
+            seed = RANDOM_SEED + run_idx
+            for spec in generate_m1_tasks(valid_groups, seed, ext_pool):
+                all_m1_specs.append((neg_source, run_idx, spec))
+            for spec in generate_m2_tasks(valid_groups, seed, ext_pool):
+                all_m2_specs.append((neg_source, run_idx, spec))
+
+    log.info("[%s] Launching %d M1 + %d M2 tasks (easy/medium/hard × %d runs)…",
+             label, len(all_m1_specs), len(all_m2_specs), N_RUNS)
 
     m1_coros = [
         run_m1_trial(s["group_name"], s["prompt"], s["correct_idx"], s["n_items"], client, sem)
-        for _, s in m1_specs
+        for _, _, s in all_m1_specs
     ]
     m2_coros = [
         run_m2_task(s["group_name"], s["prompt"], s["actual_positive_indices"], s["n_items"], s["n_expected"], client, sem)
-        for _, s in m2_specs
+        for _, _, s in all_m2_specs
     ]
 
-    all_results = await asyncio.gather(*m1_coros, *m2_coros)
-    m1_scores = all_results[:len(m1_coros)]
-    m2_scores = all_results[len(m1_coros):]
+    all_raw = await asyncio.gather(*m1_coros, *m2_coros)
+    m1_scores = all_raw[:len(m1_coros)]
+    m2_scores = all_raw[len(m1_coros):]
 
-    m1_tagged = [
-        (run_idx, spec["group_name"], score)
-        for (run_idx, spec), score in zip(m1_specs, m1_scores)
-    ]
-    m2_tagged = [
-        (run_idx, spec["group_name"], score)
-        for (run_idx, spec), score in zip(m2_specs, m2_scores)
-    ]
+    m1_by_source: dict[str, list[tuple[int, str, float]]] = defaultdict(list)
+    m2_by_source: dict[str, list[tuple[int, str, float]]] = defaultdict(list)
+    for (src, run_idx, spec), score in zip(all_m1_specs, m1_scores):
+        m1_by_source[src].append((run_idx, spec["group_name"], score))
+    for (src, run_idx, spec), score in zip(all_m2_specs, m2_scores):
+        m2_by_source[src].append((run_idx, spec["group_name"], score))
 
-    m1_groups, m1_macro = aggregate_by_run(m1_tagged)
-    m2_groups, m2_macro = aggregate_by_run(m2_tagged)
+    results: dict[str, Any] = {}
+    for neg_source in ("easy", "medium", "hard"):
+        if neg_source not in m1_by_source and neg_source not in m2_by_source:
+            results[neg_source] = {"method1": empty_method, "method2": empty_method}
+            continue
+        m1_groups, m1_macro = aggregate_by_run(m1_by_source.get(neg_source, []))
+        m2_groups, m2_macro = aggregate_by_run(m2_by_source.get(neg_source, []))
+        log.info("[%s/%s] M1: %.1f%% ± %.1f%%  M2: %.1f%% ± %.1f%%",
+                 label, neg_source,
+                 m1_macro["mean_accuracy"] * 100, m1_macro["stderr_accuracy"] * 100,
+                 m2_macro["mean_accuracy"] * 100, m2_macro["stderr_accuracy"] * 100)
+        results[neg_source] = {
+            "method1": {"groups": m1_groups, "macro_avg": m1_macro, "total_trials": len(m1_by_source.get(neg_source, []))},
+            "method2": {"groups": m2_groups, "macro_avg": m2_macro, "total_tasks": len(m2_by_source.get(neg_source, []))},
+        }
 
-    log.info("[%s] M1 macro: %.1f%% ± %.1f%%", label, m1_macro["mean_accuracy"] * 100, m1_macro["stderr_accuracy"] * 100)
-    log.info("[%s] M2 macro: %.1f%% ± %.1f%%", label, m2_macro["mean_accuracy"] * 100, m2_macro["stderr_accuracy"] * 100)
-
-    return {
-        "method1": {"groups": m1_groups, "macro_avg": m1_macro, "total_trials": len(m1_tagged)},
-        "method2": {"groups": m2_groups, "macro_avg": m2_macro, "total_tasks": len(m2_tagged)},
-    }
+    return results
 
 
 async def run_random_condition(
@@ -754,9 +882,12 @@ async def run_random_condition(
     log.info("[Random] M1 macro: %.1f%% ± %.1f%%", m1_macro["mean_accuracy"] * 100, m1_macro["stderr_accuracy"] * 100)
     log.info("[Random] M2 macro: %.1f%% ± %.1f%%", m2_macro["mean_accuracy"] * 100, m2_macro["stderr_accuracy"] * 100)
 
+    # Random only runs easy (shuffled within groups is already the baseline)
     return {
-        "method1": {"groups": m1_groups, "macro_avg": m1_macro, "total_trials": len(m1_tagged)},
-        "method2": {"groups": m2_groups, "macro_avg": m2_macro, "total_tasks": len(m2_tagged)},
+        "easy": {
+            "method1": {"groups": m1_groups, "macro_avg": m1_macro, "total_trials": len(m1_tagged)},
+            "method2": {"groups": m2_groups, "macro_avg": m2_macro, "total_tasks": len(m2_tagged)},
+        }
     }
 
 
@@ -802,8 +933,14 @@ async def main_async() -> None:
     auto_coverage = compute_attribution_coverage(features, groups)
     log.info("Auto attribution coverage: %.1f%%", auto_coverage * 100)
 
+    # Build medium and hard negative pools
+    medium_neg_pool = build_medium_neg_pool(features, groups)
+    hard_neg_pool = build_hard_neg_pool(features)
+    log.info("Negative pools — medium: %d features, hard: %d features",
+             len(medium_neg_pool), len(hard_neg_pool))
+
     auto_result, random_result = await asyncio.gather(
-        run_condition("Auto", group_index, client, sem),
+        run_condition("Auto", group_index, client, sem, medium_neg_pool, hard_neg_pool),
         run_random_condition(group_index, client, sem),
     )
 
@@ -818,8 +955,9 @@ async def main_async() -> None:
         manual_coverage = compute_attribution_coverage(features, manual_groups_raw)
         log.info("Manual attribution coverage: %.1f%%", manual_coverage * 100)
 
+        manual_medium = build_medium_neg_pool(features, manual_groups_raw)
         manual_group_index = await regenerate_group_names(manual_group_index, client, sem)
-        manual_result = await run_condition("Manual", manual_group_index, client, sem)
+        manual_result = await run_condition("Manual", manual_group_index, client, sem, manual_medium, hard_neg_pool)
 
     # ------------------------------------------------------------------
     # Build report
@@ -835,8 +973,9 @@ async def main_async() -> None:
             "method1": f"1-in-{1+N_NEG_FEATURES_M1} feature identification (chance={1/(1+N_NEG_FEATURES_M1):.0%})",
             "method2": f"{N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text snippet matching (chance={N_POS_SNIPPETS_M2/(N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2):.0%})",
             "aggregation": "per-group run-level means, then mean ± stderr across runs",
+            "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
             "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
-            "label_regeneration": "manual/random only; auto uses pipeline names",
+            "label_regeneration": "manual only; auto uses pipeline names",
         },
         "auto": {
             **auto_result,
@@ -867,50 +1006,58 @@ async def main_async() -> None:
     # ------------------------------------------------------------------
     # Summary table
     # ------------------------------------------------------------------
-    conditions: list[tuple[str, str]] = [("Auto", "auto"), ("Random", "random")]
+    cond_keys: list[tuple[str, str]] = [("Auto", "auto"), ("Random", "random")]
     if "manual" in report:
-        conditions.append(("Manual", "manual"))
+        cond_keys.append(("Manual", "manual"))
 
     chance_m1 = 1 / (1 + N_NEG_FEATURES_M1)
     chance_m2 = N_POS_SNIPPETS_M2 / (N_POS_SNIPPETS_M2 + N_NEG_SNIPPETS_M2)
 
-    print(f"\n{'='*70}")
+    print(f"\n{'='*80}")
     print(f"  VALIDATION SUMMARY ({N_RUNS} runs, run-level aggregation)")
     print(f"  M1: 1-in-{1+N_NEG_FEATURES_M1} feature ID (chance={chance_m1:.0%})")
-    print(f"  M2: {N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text match (chance={chance_m2:.0%}, exact-{N_POS_SNIPPETS_M2} enforced)")
-    print(f"  Labels: manual/random only; auto uses pipeline names")
-    print(f"{'='*70}")
-    print(f"\n{'Condition':<10}  {'M1 Accuracy':>16}  {'M2 Accuracy':>16}  {'Coverage':>9}")
-    print("-" * 63)
-    for cond_label, key in conditions:
-        m1a = report[key]["method1"]["macro_avg"]
-        m2a = report[key]["method2"]["macro_avg"]
+    print(f"  M2: {N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text match (chance={chance_m2:.0%})")
+    print(f"  Neg sources: easy=other groups | medium=Ungrouped | hard=unseen features (beyond Phase 1 seed of {GROUPING_TOP_K_SEED})")
+    print(f"{'='*80}")
+    print(f"\n{'Condition':<16}  {'M1 Accuracy':>16}  {'M2 Accuracy':>16}  {'Coverage':>9}")
+    print("-" * 70)
+
+    for cond_label, key in cond_keys:
         cov = report[key].get("attribution_coverage")
         cov_str = f"{cov:.1%}" if cov is not None else "    N/A"
-        print(
-            f"{cond_label:<10}  "
-            f"{m1a['mean_accuracy']:>6.1%} ± {m1a['stderr_accuracy']:.1%}    "
-            f"{m2a['mean_accuracy']:>6.1%} ± {m2a['stderr_accuracy']:.1%}    "
-            f"{cov_str:>9}"
-        )
+        sources = ("easy", "medium", "hard") if key != "random" else ("easy",)
+        for src in sources:
+            src_data = report[key].get(src, {})
+            m1a = src_data.get("method1", {}).get("macro_avg", {"mean_accuracy": 0.0, "stderr_accuracy": 0.0})
+            m2a = src_data.get("method2", {}).get("macro_avg", {"mean_accuracy": 0.0, "stderr_accuracy": 0.0})
+            row_label = f"{cond_label}/{src}"
+            cov_col = cov_str if src == sources[0] else "       -"
+            print(
+                f"{row_label:<16}  "
+                f"{m1a['mean_accuracy']:>6.1%} ± {m1a['stderr_accuracy']:.1%}    "
+                f"{m2a['mean_accuracy']:>6.1%} ± {m2a['stderr_accuracy']:.1%}    "
+                f"{cov_col:>9}"
+            )
 
-    print(f"\n--- Per-group M1 Accuracy (run-level mean ± stderr) ---")
-    for s in sorted(report["auto"]["method1"]["groups"], key=lambda x: x["mean_accuracy"], reverse=True):
+    print(f"\n--- Per-group M1 Accuracy — Auto/easy (run-level mean ± stderr) ---")
+    for s in sorted(report["auto"].get("easy", {}).get("method1", {}).get("groups", []),
+                    key=lambda x: x["mean_accuracy"], reverse=True):
         print(
             f"  {s['group'][:40]:<40}  "
             f"{s['mean_accuracy']:.1%} ± {s['stderr_accuracy']:.1%}  "
             f"({s['n_runs']} runs, {s['total_trials']} trials)"
         )
 
-    print(f"\n--- Per-group M2 Accuracy (run-level mean ± stderr) ---")
-    for s in sorted(report["auto"]["method2"]["groups"], key=lambda x: x["mean_accuracy"], reverse=True):
+    print(f"\n--- Per-group M2 Accuracy — Auto/easy (run-level mean ± stderr) ---")
+    for s in sorted(report["auto"].get("easy", {}).get("method2", {}).get("groups", []),
+                    key=lambda x: x["mean_accuracy"], reverse=True):
         print(
             f"  {s['group'][:40]:<40}  "
             f"{s['mean_accuracy']:.1%} ± {s['stderr_accuracy']:.1%}  "
             f"({s['n_runs']} runs, {s['total_trials']} trials)"
         )
 
-    print(f"{'='*70}\n")
+    print(f"{'='*80}\n")
 
 
 def main() -> None:
