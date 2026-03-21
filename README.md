@@ -2,6 +2,16 @@
 
 Run in Order:
 
+Batch Mass Production
+```
+circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
+
+cd custom_automation
+./batch_reproduce.sh ../prompts.csv all
+
+cd ..
+circuit-tracer start-server --graph_file_dir ./test_graphs
+```
 ---Preliminary---
 ```
 !git clone https://github.com/maxh119Z/circuit-tracer-automation.git
