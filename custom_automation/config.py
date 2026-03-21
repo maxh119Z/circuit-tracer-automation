@@ -22,11 +22,20 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 
 REPO_ROOT = PACKAGE_DIR.parent
 
-# All intermediate / generated files go here.
-ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
+# ---------------------------------------------------------------------------
+# Slug-aware paths (for batch mode)
+# Set CURRENT_SLUG env var to route artifacts + graph file per-slug.
+# ---------------------------------------------------------------------------
+
+CURRENT_SLUG: str | None = os.environ.get("CURRENT_SLUG")
 
 # Graph file served to the viewer.
-GRAPH_FILE = REPO_ROOT / "test_graphs" / "test-run.json"
+if CURRENT_SLUG:
+    GRAPH_FILE = REPO_ROOT / "test_graphs" / f"{CURRENT_SLUG}.json"
+    ARTIFACTS_DIR = PACKAGE_DIR / "artifacts" / CURRENT_SLUG
+else:
+    GRAPH_FILE = REPO_ROOT / "test_graphs" / "test-run.json"
+    ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 
 # Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"

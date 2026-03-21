@@ -147,10 +147,83 @@ def main():
     )
     server_parser.add_argument("--port", type=int, default=8041, help="Port for the local server.")
 
+    # --- ADDED: attribute-batch subcommand — run attribution on many prompts from a CSV,
+    #            loading the model once and reusing it across all rows.
+    batch_parser = subparsers.add_parser(
+        "attribute-batch",
+        help="Run attribution on multiple prompts from a CSV file (loads model once)",
+    )
+    batch_parser.add_argument(
+        "--csv",
+        required=True,
+        help=(
+            "Path to CSV file with columns: slug, prompt[, transcoder_set]. "
+            "Header row is required. transcoder_set column is optional if --transcoder_set is given."
+        ),
+    )
+    batch_parser.add_argument(
+        "-t",
+        "--transcoder_set",
+        help=(
+            "Default HuggingFace repo ID for transcoders. Used when transcoder_set column "
+            "is absent or empty in the CSV."
+        ),
+    )
+    batch_parser.add_argument(
+        "-m",
+        "--model",
+        type=str,
+        help="Model architecture (auto-inferred from transcoder config if not set).",
+    )
+    batch_parser.add_argument(
+        "--graph_file_dir",
+        required=True,
+        help="Directory to write graph JSON files. One file per slug.",
+    )
+    batch_parser.add_argument(
+        "--dtype",
+        type=str,
+        choices=["float32", "bfloat16", "float16", "fp32", "bf16", "fp16"],
+        default="float32",
+    )
+    batch_parser.add_argument("--max_n_logits", type=int, default=10)
+    batch_parser.add_argument("--desired_logit_prob", type=float, default=0.95)
+    batch_parser.add_argument("--batch_size", type=int, default=256)
+    batch_parser.add_argument("--offload", choices=["cpu", "disk", None], default=None)
+    batch_parser.add_argument("--max_feature_nodes", type=int, default=7500)
+    batch_parser.add_argument("--node_threshold", type=float, default=0.8)
+    batch_parser.add_argument("--edge_threshold", type=float, default=0.98)
+    batch_parser.add_argument(
+        "--lazy-encoder", action="store_true",
+        help="Enable lazy loading for encoder weights.",
+    )
+    batch_parser.add_argument(
+        "--lazy-decoder", action="store_true", default=True,
+        help="Enable lazy loading for decoder weights (default: True).",
+    )
+    batch_parser.add_argument(
+        "--backend",
+        type=str,
+        choices=["transformerlens", "nnsight"],
+        default="transformerlens",
+    )
+    batch_parser.add_argument("--verbose", action="store_true")
+    batch_parser.add_argument(
+        "--server",
+        action="store_true",
+        help="Start a local server after all attribution jobs complete.",
+    )
+    batch_parser.add_argument("--port", type=int, default=8041)
+
     args = parser.parse_args()
 
     if args.command == "attribute":
         run_attribution(args, attr_parser)
+    # ADDED: dispatch for attribute-batch
+    if args.command == "attribute-batch":
+        run_attribution_batch(args, batch_parser)
+        if args.server:
+            run_server(args)
     if args.command == "start-server" or args.server:
         run_server(args)
 
@@ -257,6 +330,111 @@ def run_attribution(args, parser):
             edge_threshold=args.edge_threshold,
         )
         logging.info(f"Graph JSON files written to {args.graph_file_dir}")
+
+
+# --- ADDED: batch attribution handler — parses CSV, loads model once per unique
+#            transcoder_set, skips slugs whose graph JSON already exists, stops on failure.
+def run_attribution_batch(args, parser):
+    import csv
+
+    csv_path = args.csv
+    if not os.path.exists(csv_path):
+        parser.error(f"CSV file not found: {csv_path}")
+
+    # Parse CSV
+    rows = []
+    with open(csv_path, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        if reader.fieldnames is None or "slug" not in reader.fieldnames or "prompt" not in reader.fieldnames:
+            parser.error("CSV must have at minimum a 'slug' and 'prompt' column header.")
+        for row in reader:
+            slug = row.get("slug", "").strip()
+            prompt = row.get("prompt", "").strip()
+            transcoder_set = row.get("transcoder_set", "").strip() or args.transcoder_set
+            if not slug or not prompt:
+                logging.warning("Skipping row with empty slug or prompt: %s", row)
+                continue
+            if not transcoder_set:
+                parser.error(
+                    f"No transcoder_set for slug '{slug}'. Provide it in the CSV column "
+                    "or via --transcoder_set."
+                )
+            rows.append((slug, prompt, transcoder_set))
+
+    if not rows:
+        logging.error("No valid rows found in CSV.")
+        return
+
+    logging.info("Batch attribution: %d prompts from %s", len(rows), csv_path)
+    os.makedirs(args.graph_file_dir, exist_ok=True)
+
+    import torch
+    from circuit_tracer import ReplacementModel, attribute
+    from circuit_tracer.utils.create_graph_files import create_graph_files
+    from circuit_tracer.utils.hf_utils import load_transcoder_from_hub
+
+    dtype_mapping = {"fp32": "float32", "bf16": "bfloat16", "fp16": "float16"}
+    dtype_str = dtype_mapping.get(args.dtype, args.dtype) or "float32"
+    dtype = getattr(torch, dtype_str)
+
+    # Determine if all rows share the same transcoder_set so we can load the model once.
+    unique_transcoder_sets = {ts for _, _, ts in rows}
+    if len(unique_transcoder_sets) > 1:
+        logging.warning(
+            "Multiple transcoder_sets in CSV: %s. Model will be reloaded for each group.",
+            unique_transcoder_sets,
+        )
+
+    model_cache: dict = {}  # transcoder_set -> (transcoder, model_instance)
+
+    for i, (slug, prompt, transcoder_set) in enumerate(rows, 1):
+        out_path = os.path.join(args.graph_file_dir, f"{slug}.json")
+        if os.path.exists(out_path):
+            logging.info("[%d/%d] Skipping '%s' — graph already exists at %s", i, len(rows), slug, out_path)
+            continue
+
+        logging.info("[%d/%d] Attributing: slug='%s'  prompt='%s'", i, len(rows), slug, prompt)
+
+        if transcoder_set not in model_cache:
+            logging.info("Loading transcoders + model for '%s'...", transcoder_set)
+            transcoder, config = load_transcoder_from_hub(
+                transcoder_set,
+                dtype=dtype,
+                lazy_encoder=args.lazy_encoder,
+                lazy_decoder=args.lazy_decoder,
+            )
+            model_name = args.model or config.get("model_name", None)
+            if not model_name:
+                parser.error("--model must be specified when not provided in transcoder config")
+            model_instance = ReplacementModel.from_pretrained_and_transcoders(
+                model_name, transcoder, dtype=dtype, backend=args.backend
+            )
+            model_cache[transcoder_set] = model_instance
+
+        model_instance = model_cache[transcoder_set]
+
+        graph = attribute(
+            prompt=prompt,
+            model=model_instance,  # type: ignore
+            max_n_logits=args.max_n_logits,
+            desired_logit_prob=args.desired_logit_prob,
+            batch_size=args.batch_size,
+            verbose=args.verbose,
+            offload=args.offload,
+            max_feature_nodes=args.max_feature_nodes,
+        )
+
+        create_graph_files(
+            graph_or_path=graph,
+            slug=slug,
+            scan=None,
+            output_path=args.graph_file_dir,
+            node_threshold=args.node_threshold,
+            edge_threshold=args.edge_threshold,
+        )
+        logging.info("[%d/%d] Done — wrote %s", i, len(rows), out_path)
+
+    logging.info("Batch attribution complete. %d graphs in %s", len(rows), args.graph_file_dir)
 
 
 def run_server(args):
