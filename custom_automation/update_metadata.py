@@ -23,6 +23,7 @@ import re
 from pathlib import Path
 
 from config import (
+    CURRENT_SLUG,
     GRAPH_FILE,
     setup_logging,
 )
@@ -62,7 +63,12 @@ def main() -> None:
         log.warning("No prompt found in graph metadata — using 'unknown-prompt'")
         prompt_str = "unknown-prompt"
 
-    slug = generate_slug(prompt_str)
+    # Use CURRENT_SLUG directly when set (e.g. during variant comparison),
+    # otherwise derive slug from prompt text as usual.
+    if CURRENT_SLUG:
+        slug = CURRENT_SLUG
+    else:
+        slug = generate_slug(prompt_str)
     log.info("Prompt: %s", prompt_str)
     log.info("Slug:   %s", slug)
 

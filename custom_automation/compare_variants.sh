@@ -99,29 +99,32 @@ echo ""
 # ---------------------------------------------------------------------------
 # Run each variant
 # ---------------------------------------------------------------------------
+BASE_GRAPH="../test_graphs/test-run.json"
+
+if [ ! -f "$BASE_GRAPH" ]; then
+    echo "ERROR: $BASE_GRAPH not found — run './reproduce.sh core' first." >&2
+    exit 1
+fi
+
 for variant in "${VARIANTS[@]}"; do
     step_banner "Running variant: $variant"
 
+    SLUG="desc-${variant}"
     export DESCRIPTION_VARIANT="$variant"
+    export CURRENT_SLUG="$SLUG"
 
-    # Create variant-specific artifact directory
-    VARIANT_DIR="artifacts/variants/${variant}"
-    mkdir -p "$VARIANT_DIR"
+    # Seed this variant's artifact dir with the shared pruned activations
+    mkdir -p "artifacts/${SLUG}"
+    cp artifacts/pruned_activations.json "artifacts/${SLUG}/pruned_activations.json"
 
-    # Clear previous descriptions and groups for this variant
-    # (keep pruned_activations.json shared)
-    rm -f artifacts/feature_descriptions.json
-    rm -f artifacts/feature_groups.json
-    rm -f artifacts/validation_report.json
+    # Seed this variant's graph file from the base graph
+    cp "$BASE_GRAPH" "../test_graphs/${SLUG}.json"
 
-    # Step 2 — Generate descriptions with this variant
+    # Step 2 — Generate descriptions
     step_banner "  [$variant] Step 2 — Generating descriptions"
     t=$(date +%s)
     python generate_description.py
     elapsed "$t"
-
-    # Save descriptions
-    cp artifacts/feature_descriptions.json "$VARIANT_DIR/feature_descriptions.json"
 
     # Step 3 — Group features
     step_banner "  [$variant] Step 3 — Grouping features"
@@ -129,13 +132,16 @@ for variant in "${VARIANTS[@]}"; do
     python generate_supernodes.py
     elapsed "$t"
 
-    # Save groups
-    cp artifacts/feature_groups.json "$VARIANT_DIR/feature_groups.json"
-
-    # Step 4 — Push to website
+    # Step 4 — Push groups into this variant's graph file
     step_banner "  [$variant] Step 4 — Writing groups to graph JSON"
     t=$(date +%s)
     python push_to_website.py
+    elapsed "$t"
+
+    # Step 5 — Register in viewer dropdown as "desc-<variant>"
+    step_banner "  [$variant] Step 5 — Registering in viewer dropdown"
+    t=$(date +%s)
+    python update_metadata.py
     elapsed "$t"
 
     # Step 6 — Validate
@@ -144,12 +150,13 @@ for variant in "${VARIANTS[@]}"; do
     python validate_groups.py
     elapsed "$t"
 
-    # Save validation report
-    cp artifacts/validation_report.json "$VARIANT_DIR/validation_report.json"
-
     echo ""
-    echo "  [$variant] Artifacts saved to $VARIANT_DIR/"
+    echo "  [$variant] Artifacts → artifacts/${SLUG}/"
+    echo "  [$variant] Graph     → test_graphs/${SLUG}.json"
+    echo "  [$variant] Viewable in dropdown as: ${SLUG}"
 done
+
+unset CURRENT_SLUG
 
 # ---------------------------------------------------------------------------
 # Compare results
@@ -163,7 +170,7 @@ variants = '${VARIANTS[*]}'.split()
 comparison = {'variants': {}, 'pruning_threshold': float('${PRUNING_THRESHOLD}')}
 
 for v in variants:
-    report_path = f'artifacts/variants/{v}/validation_report.json'
+    report_path = f'artifacts/desc-{v}/validation_report.json'
     if not os.path.exists(report_path):
         print(f'  WARNING: {report_path} not found, skipping {v}', file=sys.stderr)
         continue
@@ -219,6 +226,8 @@ print(f'\nComparison saved to artifacts/variant_comparison.json')
 "
 
 step_banner "SUCCESS — Variant comparison complete"
-echo "  Results: artifacts/variant_comparison.json"
-echo "  Per-variant artifacts: artifacts/variants/<variant>/"
+echo "  Results:  artifacts/variant_comparison.json"
+for variant in "${VARIANTS[@]}"; do
+    echo "  desc-${variant}: artifacts/desc-${variant}/  |  test_graphs/desc-${variant}.json  |  viewer dropdown: desc-${variant}"
+done
 echo ""

@@ -38,7 +38,7 @@ log = setup_logging()
 # ---------------------------------------------------------------------------
 
 MODEL = "gpt-5-mini"
-CONCURRENCY_LIMIT = 67
+CONCURRENCY_LIMIT = 167
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
 # Which description prompt variant to use.  Set DESCRIPTION_VARIANT env var
@@ -54,19 +54,23 @@ _EVIDENCE_BLOCK = (
     "You will receive three types of evidence:\n"
     "1. Overall Prompt Context: the original prompt the model was processing.\n"
     "2. Input Activations: text excerpts where the neuron activated strongly. "
-    "The triggering tokens are delimited by <<<>>>.\n"
-    "3. Global Output Tokens: tokens the neuron tends to promote and demote across the vocabulary.\n\n"
+    "The most relevant tokens are delimited by <<<>>>.\n"
+    "3. Global Output Tokens: tokens this neuron tends to push toward or away from in the output.\n\n"
 
     "Use input activations as the primary evidence. "
     "Use prompt context only for disambiguation, not as proof by itself. "
-    "Use output tokens only as supporting evidence (when outputs exhibits clear patterns "
-    "or if other information is noisy), since they may be noisy, polysemantic, or tokenizer artifacts.\n\n"
+    "Output tokens can be noisy — only factor them in when either show a clear, consistent pattern. If they are consistent, they likely reveal a lot of information.\n\n"
+
+    "STYLE: Write in short, direct fragments — not full sentences. "
+    "Get to the point immediately. No filler, no hedging, no grammatical padding. "
+    "'Capital of Texas' is better than 'This feature represents the capital of Texas.' "
+    "'Say a location' is better than 'This feature is used when a location is about to be mentioned.'\n\n"
 )
 
 # ── V0 — original concise (1-4 words) ─────────────────────────────────────
 SYSTEM_PROMPT_V0 = (
     "You are a mechanistic interpretability researcher. "
-    "You will be given evidence about a single feature neuron. Treat neurons as humans for verb choosing."
+    "You will be given evidence about a single feature neuron. Use natural, human-readable phrasing for labels."
     "Your task is to produce a short, natural label for the main semantic pattern this feature represents.\n\n"
 
     + _EVIDENCE_BLOCK +
@@ -77,7 +81,7 @@ SYSTEM_PROMPT_V0 = (
     "even if a broader label would also be technically true.\n"
 
     "If a narrower subtype is clearly supported, keep it rather than collapsing to a broader generic label. "
-    "If the evidence is mixed or weak, prefer a broader but still meaningful label; if text includes words meaningful to the prompt, could make educated guesses without full consistency. \n"
+    "If the evidence is mixed or weak, prefer a broader but still meaningful label.\n"
 
     "For function words, prepositions, punctuation, and other structural features: "
     "if they mainly serve a local semantic role in this prompt, label that role rather than the raw token class. Avoid labeling purely grammatical categories unless that is clearly the main feature (Do not include words like preposition, article, demonyms, puncutation, verb, noun, etc.). "
@@ -88,125 +92,94 @@ SYSTEM_PROMPT_V0 = (
     "not just a side detail (such as a proper name).\n\n"
 
     "Return only the label text, with no explanation. "
-    "Prefer specificity over something too general! Descriptions of specific proper nouns, names, places, methods, etc are important. "
-    "Consider surrounding context of input activations as secondary evidence if important words pop up relevant to the prompt; do not rely only on the trigger tokens. "
-    "Avoid explanatory phrases, quotes, examples, and parentheses in your label text unless truly necessary. "
-    "Keep it concise, ideally 1-4 words. Prefer layman’s terms that catches specifics (proper nouns, locations, events, etc.) but without complex terminology unless it is relevant to the prompt."
+    "Keep it concise, ideally 1-4 words. Prefer specifics (proper nouns, locations, events, methods) over generic labels. "
+    "Avoid explanatory phrases, quotes, examples, and parentheses."
 )
 
-# ── V1 — detailed descriptive (1-2 sentences) ─────────────────────────────
-# Goal: longer descriptions that preserve information for downstream grouping.
-# Explicitly classifies "say X" vs "represents X".
+# ── Shared v2 core ─────────────────────────────────────────────────────────
+# All variants below (v1, v2, v3) use the same format: SHORT_LABEL — elaboration.
+# Each tests a different emphasis. v0 is kept unchanged as a legacy reference.
+
+_V2_CORE = (
+    "You are a mechanistic interpretability researcher. "
+    "You will be given evidence about a single feature neuron. "
+    "Your task is to produce a label and brief description for this feature.\n\n"
+
+    + _EVIDENCE_BLOCK +
+
+    "FEATURE TYPES — use this to guide your description style:\n"
+    "Features tend to fall into three types. Figure out which one fits, then describe accordingly.\n\n"
+    "1. Input features — activate on a specific token or category of tokens.\n"
+    "   Describe what they activate on: ‘activates on X’ or just name the pattern directly.\n"
+    "   If they activate on a range of related things, describe the category.\n\n"
+    "2. Output features — consistently promote a specific next token or category.\n"
+    "   Label as ‘say X’ when a clear next-token pattern exists.\n"
+    "   If it promotes a range of related tokens, ‘say a [category]’ works.\n"
+    "   Use the output tokens (Promotes field) to identify these.\n\n"
+    "   Prepositions may fall under this category, where the important words are subsequent to the thing it is referencing."
+    "3. Abstract/middle features — neither cleanly input nor output.\n"
+    "   Describe the context pattern: what kind of text, what situation, what role it plays.\n"
+    "   These often need the surrounding context of activations, not just the highlighted token.\n\n"
+
+    "’SAY X’ vs ‘X ITSELF’:\n"
+    "Features either represent a concept directly, or signal that a concept is about to appear "
+    "(activating on structural words right before it — prepositions, articles, punctuation).\n"
+    "- Highlighted tokens are content words → SHORT_LABEL is the concept itself.\n"
+    "- Highlighted tokens are structural words setting up content → SHORT_LABEL is ‘say [what]’.\n"
+    "- Unsure? Ask: does the highlighted part carry meaning on its own?\n\n"
+
+    "PROPER NOUNS:\n"
+    "If a specific name, place, or entity appears consistently across the activations, "
+    "include it — in the SHORT_LABEL or elaboration. Don’t drop it for a generic label.\n\n"
+
+    "AVOID:\n"
+    "- Linguistic or technical jargon: copula, lemma, morpheme, orthogonal, syntactic, "
+    "prepositional phrase, noun phrase, etc. Prefer layman's vocabulary.\n"
+    "- Broad labels when something more specific is clearly supported.\n"
+    "- Full sentences. Filler. Hedging.\n\n"
+)
+
+# ── V1 — v2 variant: concise, label-first ──────────────────────────────────
+# Tests: tighter elaboration budget, label does most of the work.
 SYSTEM_PROMPT_V1 = (
-    "You are a mechanistic interpretability researcher. "
-    "You will be given evidence about a single feature neuron. "
-    "Your task is to produce a detailed, specific description of the semantic pattern this feature represents.\n\n"
+    _V2_CORE +
 
-    + _EVIDENCE_BLOCK +
+    "OUTPUT FORMAT: SHORT_LABEL — elaboration\n\n"
+    "- SHORT_LABEL: 1-4 words. The most specific natural label the evidence supports.\n"
+    "- After ‘ — ‘: one tight fragment only. The single most useful extra detail "
+    "(context, subpattern, or what it promotes). Omit if the label is already self-explanatory.\n"
+    "- Total: 5-20 words.\n\n"
 
-    "CRITICAL DISTINCTION — ‘say X’ vs ‘X itself’:\n"
-    "A feature can either (a) represent the concept X itself, or (b) represent the "
-    "act of mentioning / introducing / referring to X in text. These are fundamentally different.\n"
-    "- If the feature fires on tokens that ARE the concept (e.g., the word ‘Paris’ in a "
-    "feature about Paris), it represents the concept itself. Describe it as the concept.\n"
-    "- If the feature fires on structural tokens (prepositions, articles, punctuation, "
-    "connectors) that SET UP or INTRODUCE a concept, it is a ‘say’ feature. "
-    "Describe it as ‘say [what it introduces]’ — e.g., ‘say a location’, ‘say a method’, "
-    "’say a comparison’.\n"
-    "- Look at what tokens trigger the feature (the <<<>>> markers). If the triggers are "
-    "content words (nouns, verbs, adjectives carrying meaning), it’s likely the concept itself. "
-    "If the triggers are function words, punctuation, or structural tokens, it’s likely a ‘say’ feature.\n"
-    "- When in doubt, look at the promoted output tokens: if they are content words related "
-    "to a domain, the feature likely represents that domain concept. If promoted tokens are "
-    "structural or varied, it’s more likely a ‘say’ feature.\n\n"
-
-    "DESCRIPTION GUIDELINES:\n"
-    "- Write 1-2 sentences that summarize ALL the evidence about this feature, not just the strongest signal.\n"
-    "- Be specific: include named entities, domain terms, and concrete details that appear "
-    "consistently across activations.\n"
-    "- Mention the key trigger pattern: what kind of tokens activate this feature?\n"
-    "- If the feature is clearly about a specific concept (person, place, method, event), name it.\n"
-    "- If the feature captures a discourse role (introducing, comparing, listing), say so explicitly.\n"
-    "- Preserve important nuances rather than collapsing to a generic label.\n"
-    "- Do NOT pad with filler or hedging. Every word should carry information.\n"
-    "- Aim for 10-30 words. Longer is fine if the extra words carry genuine information.\n\n"
-
-    "Return only the description text, with no explanation or meta-commentary."
+    "Return only the formatted line, nothing else."
 )
 
-# ── V2 — structured label + explanation ────────────────────────────────────
-# Goal: a short label AND a longer explanation, separated by " — ".
-# This lets downstream code use either the label or the full description.
+# ── V2 — base variant ──────────────────────────────────────────────────────
+# Tests: balanced label + elaboration with room for specifics.
 SYSTEM_PROMPT_V2 = (
-    "You are a mechanistic interpretability researcher. "
-    "You will be given evidence about a single feature neuron. "
-    "Your task is to produce a label and description for this feature.\n\n"
+    _V2_CORE +
 
-    + _EVIDENCE_BLOCK +
+    "OUTPUT FORMAT: SHORT_LABEL — elaboration\n\n"
+    "- SHORT_LABEL: 1-5 words. Natural graph node name — specific over generic.\n"
+    "- After ‘ — ‘: 1-2 tight fragments. Add context, what it promotes, or consistent subpatterns. "
+    "Skip if the label already says it all.\n"
+    "- Total: 10-35 words.\n\n"
 
-    "CRITICAL DISTINCTION — ‘say X’ vs ‘X itself’:\n"
-    "Determine whether this feature represents a concept directly, or represents the "
-    "linguistic act of mentioning/introducing that concept:\n"
-    "- Concept features fire on content words (nouns, verbs, domain terms) that ARE the concept.\n"
-    "- ‘Say’ features fire on function words, punctuation, or structural tokens that "
-    "set up or introduce a concept. Label these as ‘say [what]’.\n"
-    "- Check the <<<>>> trigger tokens: content words → concept; function words → ‘say’.\n"
-    "- Check promoted output tokens for confirmation.\n\n"
-
-    "OUTPUT FORMAT:\n"
-    "Return a single line in this format:\n"
-    "  SHORT_LABEL — Detailed explanation of what this feature captures, what tokens "
-    "trigger it, and what semantic role it plays.\n\n"
-    "- SHORT_LABEL: 1-5 words, suitable as a graph node label.\n"
-    "- After the ‘ — ‘: 1-2 sentences summarizing all evidence. Be specific about "
-    "trigger patterns, promoted tokens, and the feature’s role in the prompt’s meaning.\n"
-    "- Include named entities, domain specifics, and concrete patterns.\n"
-    "- Total length: 15-40 words.\n\n"
-
-    "Return only the formatted description, nothing else."
+    "Return only the formatted line, nothing else."
 )
 
-# ── V3 — say-classification focused ───────────────────────────────────────
-# Goal: maximally clear on say vs concept, with a classification tag.
-# Output starts with [SAY] or [CONCEPT] for easy downstream parsing.
+# ── V3 — v2 variant: explicit [SAY]/[CONCEPT] tag ─────────────────────────
+# Tests: machine-readable classification prefix + same label — elaboration format.
+# Format: [SAY] SHORT_LABEL — elaboration  OR  [CONCEPT] SHORT_LABEL — elaboration
 SYSTEM_PROMPT_V3 = (
-    "You are a mechanistic interpretability researcher. "
-    "You will be given evidence about a single feature neuron. "
-    "Your task is to classify and describe this feature.\n\n"
+    _V2_CORE +
 
-    + _EVIDENCE_BLOCK +
+    "OUTPUT FORMAT: [TAG] SHORT_LABEL — elaboration\n\n"
+    "- [TAG]: either [SAY] or [CONCEPT] based on the highlighted tokens.\n"
+    "- SHORT_LABEL: 1-5 words. Same as v2 — most specific natural label.\n"
+    "- After ‘ — ‘: 1-2 tight fragments, same as v2.\n"
+    "- Total (excluding tag): 10-35 words.\n\n"
 
-    "STEP 1 — CLASSIFY the feature as [SAY] or [CONCEPT]:\n\n"
-    "[CONCEPT] features represent the concept itself:\n"
-    "- The <<<>>> trigger tokens are content words (nouns, adjectives, verbs, proper names) "
-    "that directly embody the concept.\n"
-    "- Promoted output tokens relate to the same semantic domain.\n"
-    "- Example: a feature triggering on ‘Einstein’, ‘relativity’, ‘physics’ → [CONCEPT] physics / Einstein.\n\n"
-
-    "[SAY] features represent the act of mentioning or introducing a concept:\n"
-    "- The <<<>>> trigger tokens are function words (prepositions, articles, conjunctions, "
-    "punctuation, connectors) that SET UP a slot for content.\n"
-    "- The feature fires on structural tokens adjacent to meaningful content.\n"
-    "- Promoted output tokens may be the content that fills the slot.\n"
-    "- Example: a feature triggering on ‘in’ before location names → [SAY] say a location.\n\n"
-
-    "AMBIGUOUS CASES:\n"
-    "- If trigger tokens are a mix of content and function words, classify based on the majority.\n"
-    "- If the feature seems to fire on a transition or framing pattern, prefer [SAY].\n"
-    "- If the feature fires on domain-specific content words, prefer [CONCEPT].\n\n"
-
-    "STEP 2 — DESCRIBE the feature:\n"
-    "- After the tag, write a specific description (10-30 words).\n"
-    "- Summarize what tokens trigger it, what it promotes, and its role in the prompt.\n"
-    "- Include named entities, specific patterns, and domain details.\n"
-    "- For [SAY] features, specify what kind of content the feature introduces.\n"
-    "- For [CONCEPT] features, specify what concept and any important sub-patterns.\n\n"
-
-    "OUTPUT FORMAT:\n"
-    "Return a single line: [SAY] or [CONCEPT] followed by the description.\n"
-    "Example: [SAY] Introduces location references, firing on prepositions like ‘in’ and ‘at’ before city and country names.\n"
-    "Example: [CONCEPT] Represents Paris and French geography, triggering on ‘Paris’, ‘France’, and related terms.\n\n"
-    "Return only the classification and description, nothing else."
+    "Return only the formatted line, nothing else."
 )
 
 # Map variant names to prompts.

@@ -24,7 +24,7 @@ import json
 import os
 import re
 import sys
-from typing import Any
+
 
 from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
@@ -146,91 +146,39 @@ class Phase3Output(BaseModel):
 # ---------------------------------------------------------------------------
 
 GROUPING_PHILOSOPHY = """
-Important principles:
-- The goal is a cohesive attribution graph that highlights the main intent and meaning of the prompt.
-- Do not force a fixed number of groups. Create only groups that are clearly supported by the data.
-- Prefer clear, human-readable semantic groups.
-- If a feature is weak, isolated, or not meaningfully relevant to the main prompt circuitry, assign it to "Ungrouped".
-- Features encoding prepositions, articles, punctuation, conjunctions, or other purely grammatical / syntactic scaffolding
-  (e.g. "of", "the", "is", ",") should usually go to "Ungrouped" unless they clearly promote a meaningful token.
+GOAL: Produce a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 
-RELEVANCE TO THE MAIN PROMPT:
-- A group should represent a concept that is genuinely relevant to the main semantic structure of the prompt.
-- Do not create groups for one-time incidental associations, or weak thematic echoes.
-- If a feature reflects a real concept but that concept is not central to the prompt or not supported by nearby related features, prefer "Ungrouped".
-- A valid group should usually feel meaningfully connected to other groups in the graph, not like an isolated curiosity.
+RELEVANCE & UNGROUPED:
+- Assign to "Ungrouped": weak, isolated, or noisy features; features not meaningfully connected to the main prompt semantics.
+- Purely grammatical tokens (prepositions, articles, conjunctions, punctuation) go to "Ungrouped" unless they clearly promote a meaningful output token.
+- A valid group should feel connected to at least one other group in the graph, not like an isolated curiosity.
+- "Ungrouped" is not a failure — use it freely.
 
-GROUP GRANULARITY:
-- Do not group features only because they belong to the same broad topic.
-- Preserve meaningful distinctions in abstraction level when those distinctions are relevant to the main prompt.
-- Broad categories and their stable subtypes should usually be separate groups only when both are actually supported and relevant.
-- If one feature represents a general domain and another represents a specific subtype within that domain, do not automatically merge them.
-- Use the model's predicted output tokens to guide granularity decisions.
-  Distinctions that are irrelevant to the actual output and attribution graph can be merged.
-  Distinctions that explain WHY the model chose one output over another should be preserved or split further.
+GRANULARITY & SPECIFICITY:
+- Create only groups clearly supported by the data. Prefer the most specific name the evidence supports over broad buckets.
+- Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't merge a broad category with a narrower stable subtype.
+- Use the "Promotes" field as a tiebreaker: features that promote clearly different tokens should be split; features promoting the same or related tokens can stay together.
+- Distinctions that explain WHY the model chose one output over another should be preserved.
 
-SEMANTIC ROLE — "SAY X" vs "X ITSELF" (CRITICAL):
-- Before grouping features together, ask whether they serve the same semantic role.
-- Features should usually be separated if they differ in role, framing, or function, even when they share the same topic.
-- A feature that introduces, says, frames, or sets up a concept is different from a feature representing the concept itself.
-  These MUST be in separate groups.
-- For example, "say a ___ and ___" should usually be a different group from the concept "___ and ___" by itself.
-- Likewise, "introduce a ___ and ___" should usually be a different group from the bare concept.
-- Do not merge a linguistic frame with the semantic content being framed.
-- Surface overlap is not enough reason to merge two groups.
-
-HOW TO TELL "SAY" FROM "CONCEPT" FEATURES:
-- Look at the feature description carefully. If the description mentions firing on function words,
-  prepositions, articles, punctuation, or structural tokens adjacent to content — it is a "say" feature.
-- If the description mentions firing on content words (nouns, verbs, proper names, domain terms)
-  that directly embody a concept — it is a "concept" feature.
-- Descriptions that start with "say", "introduce", or mention "framing" / "setting up" → "say" group.
-- Descriptions tagged [SAY] or [CONCEPT] should be respected as classification signals.
-- When descriptions are ambiguous, consider: would removing this feature change WHAT the model
-  talks about (concept) or HOW it structures its output (say)?
-- Never group a "say X" feature with an "X itself" feature. This is the single most important
-  grouping rule.
-
-Common role differences that justify separate groups include:
-  - broad domain knowledge
-  - more specific subdomain knowledge
-  - named entities / specific referents
-  - terminology or jargon
-  - actions or behaviors
-  - evaluative / comparative language
-  - discourse framing or introducing language ("say" features)
-  - output-driving or token-predictive features
-
-SUBGROUP AWARENESS:
-- If a group mixes multiple semantic roles or multiple abstraction levels, split it.
-- It is better to have 2–3 precise groups than one vague bucket.
-- Distinctions are often useful when they help explain the attribution graph.
-- Do not prefer supergroups with too many features.
-- Small groups are acceptable if they are interpretable, prompt-relevant, and helpful for explaining the graph.
+SEMANTIC ROLE — "SAY X" vs "X ITSELF" (highest-priority rule):
+- A feature that introduces or frames a concept is different from a feature that IS the concept. Keep them in separate groups.
+  - Highlighted tokens are function/structural words → the feature sets up what follows; name it "say [what]".
+  - Highlighted tokens are content words → the feature represents the concept directly; name the concept.
+- [SAY] / [CONCEPT] tags in descriptions are strong signals — respect them.
+- "Say" is for genuine framing or introduction. Do not use it when features directly represent a concept.
+- Surface overlap is never enough reason to merge groups with different semantic roles.
 
 NAMING:
-- Group names should be <= 5 words.
-- Group names should sound natural to a human reading a graph.
-- Prefer short everyday phrasing over analytic or technical wording.
-- If a group is about referring to, naming, or introducing something in text, prefer "say ..." style names. Think human nature language (layman's).
-- Examples of preferred names:
-  - "say a city"
-  - "say a location"
-  - "say a team"
-  - "say a method"
-- Prefer "say X" over "X (mention)", "X mention", or "mention X".
-- Prefer "say a location" over "location mention", "location reference", or "mentioned location".
-- Avoid parentheses unless absolutely necessary.
-- Avoid labels with words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler natural phrase would work.
-- If the member features are primarily described as framing, introducing, or slot-filling language, preserve that style in the group name.
-- Avoid converting a natural framing-style cluster into a more abstract label unless the distinction is clearly unimportant.
+- ≤5 words, natural human-readable phrasing.
+- Prefer "say a city" over "city mention", "city reference", or "mentioned city".
+- Avoid parentheses and words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler phrase works.
+- Include a specific named entity in the name if it appears consistently across member features.
+- Prefer layman's vocabulary
 
-PROPER NOUNS & ENTITIES:
-- Distinguish generic entity-type features from features that track particular named entities if consistent and relevant.
-
-UNGROUPED IS NOT BAD:
-- "Ungrouped" is not a failure state.
-- Use "Ungrouped" for features that are isolated and not clearly relevant to the main prompt, or not part of a cohesive cluster.
+SPLITTING vs MERGING:
+- Split when a group mixes semantic roles or abstraction levels.
+- Prefer two narrow groups over one vague bucket — Phase 3 can merge, but cannot recover lost distinctions.
+- Small groups are fine if they are interpretable and prompt-relevant.
 """
 # ---------------------------------------------------------------------------
 # Helpers
@@ -250,20 +198,11 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
 
     features = []
     for item in desc_data:
-        feat: dict[str, Any] = {
+        feat: dict = {
             "id": item.get("id"),
             "score": float(item.get("influence_score", 0.0)),
             "desc": item.get("generated_description", "No description"),
         }
-        # Extract trigger tokens from top activations for grouping context
-        triggers: list[str] = []
-        for act in item.get("top_activations", [])[:5]:
-            t = act.get("trigger", "").strip()
-            if t and t not in triggers:
-                triggers.append(t)
-        if triggers:
-            feat["triggers"] = triggers
-        # Extract promoted tokens
         promotes = item.get("promotes", [])
         if promotes:
             feat["promotes"] = promotes[:5]
@@ -308,23 +247,14 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
     return features, prompt_text, output_tokens_str
 
 
-def format_feature_list(batch: list[dict], include_evidence: bool = False) -> str:
-    """Format features for grouping prompts.
-
-    When *include_evidence* is True, append trigger tokens and promoted tokens
-    so the grouping model can distinguish "say X" from "X itself".
-    """
-    lines: list[str] = []
+def format_feature_list(batch: list[dict]) -> str:
+    lines = []
     for f in batch:
-        parts = [f"ID: {f['id']} | Desc: {f['desc']}"]
-        if include_evidence:
-            triggers = f.get("triggers")
-            if triggers:
-                parts.append(f"  Trigger tokens: {', '.join(triggers)}")
-            promotes = f.get("promotes")
-            if promotes:
-                parts.append(f"  Promoted outputs: {', '.join(promotes)}")
-        lines.append("\n".join(parts))
+        line = f"ID: {f['id']} | Desc: {f['desc']}"
+        promotes = f.get("promotes")
+        if promotes:
+            line += f" | Promotes: {', '.join(promotes)}"
+        lines.append(line)
     return "\n".join(lines)
 
 
@@ -593,28 +523,13 @@ Cluster them into meaningful semantic groups ("supernodes").
 
 {GROUPING_PHILOSOPHY}
 
-Additional guidance:
-- A single feature may form its own group only when it reflects a stable, reusable semantic pattern rather than a one-off surface detail.
-- A feature or group completely unrelated or uncorrelated to the rest of the prompt context can be removed.
-- Separate features when they differ in abstraction level or semantic role, even if they share a broad topic.
-- Prefer labels that make the graph easier for a human to read, not just labels that are taxonomically tidy.
-- A small but meaningful subgroup may be worth keeping if it tells a distinct local story in the graph.
-- If several seed features already share a natural framing-style description such as "say a location" or "introduce a comparison", prefer preserving that style in the group name rather than collapsing it to a bare concept label.
-- When a cluster reflects a discourse role, the group name should usually also reflect that discourse role.
-- When in doubt between one broad group and two narrower groups, prefer the two narrower groups.
-  Phase 3 will merge any that turn out to be redundant after seeing the full picture, therefore your role is to capture all relevant subgroups right now.
-- Err on the side of more specific, more granular groups at this stage.
-
-USING TRIGGER TOKENS AND PROMOTED OUTPUTS FOR GROUPING:
-- Each feature includes its trigger tokens (the tokens that activate it) and promoted output tokens.
-- Use trigger tokens to determine whether a feature is "say X" or "X itself":
-  * If triggers are function words (prepositions, articles, punctuation) → likely a "say" feature.
-  * If triggers are content words (nouns, names, domain terms) → likely a concept feature.
-- NEVER put a "say" feature and a concept feature in the same group, even if they relate to the same topic.
-- Use promoted outputs to confirm what concept a feature is driving toward.
+Additional guidance for this phase:
+- When in doubt between one broad group and two narrower groups, prefer the narrower ones — Phase 3 can merge, but cannot recover distinctions that were never captured.
+- A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
+- Prefer names that make the graph easy to read over taxonomically tidy labels.
 
 Features:
-{format_feature_list(seed_features, include_evidence=True)}
+{format_feature_list(seed_features)}
 """
 
     response = await client.beta.chat.completions.parse(
@@ -682,36 +597,20 @@ Context: The model was given the prompt: {prompt_text}
 
 {output_context}
 
-The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to
-clean up the result — rename unclear groups, split groups that are too broad,
-and reassign misplaced features.
+The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to clean up the result — rename unclear groups, split groups that are too broad, and reassign misplaced features.
 
 {GROUPING_PHILOSOPHY}
 
-Only make changes you are confident about. Do not restructure for the sake of it.
-
-REVIEW CHECKLIST:
-1. SAY vs CONCEPT MIXING: Does any group mix "say X" features (firing on function words / structural tokens that introduce a concept) with "X itself" features (firing on content words that ARE the concept)? → This is the highest-priority issue. Split them into separate groups.
+REVIEW CHECKLIST (work through in order):
+1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → Highest-priority issue. Split them.
 2. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
-3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype that is still useful and interpretable in this graph? → Keep separate or split it.
-4. IRRELEVANT GROUPS: Drop only groups that are clearly isolated, or off-topic to any functionalty in the prompt; they do not add variational information or isn't related to the prompt.
-5. LOCAL USEFULNESS: Do not remove a subgroup merely because it is small if it is graph-useful, interpretable, and connected to the main prompt circuitry.
-6. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
-7. NAMING: Are group names clear, natural, and <= 5 words? → Rename if needed.
-8. DUPLICATE GROUPS: Are any two groups the same and without worthy and relevant nuances to stay separated? Merge them only if completely confident that detail is irrelevant to the attribution graph and final ouptut (use sparingly).
-- Prefer preserving a small meaningful subgroup over collapsing it into a broader group, unless the subgroup is clearly noisy or redundant; information in attribution graph is usually good to know but not everything.
-- A group does not need to be globally perfect; it should be locally interpretable and useful in the graph.
-- Small groups are acceptable if they capture a distinct, prompt-relevant circuit.
-- Do not merge away distinctions like subtype, role, or local sports category if they help explain the graph.
-- A feature introducing or saying a concept is different from a feature representing that concept by itself.
-- Rename technical or unnatural labels into plain natural language.
-- Prefer "say X" over "X (mention)", "X mention", or "mention X".
-- Clarification: Say should  be used in an "introduction" or "mentioning" context; if the features literally represent X, do not use "say." Do not use "say" for the sake of it.
-- Avoid parentheses and analytic suffixes when a simpler human phrase works.
+3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype? → Keep separate or split.
+4. IRRELEVANT GROUPS: Drop groups that are clearly isolated or off-topic to the prompt's main functionality.
+5. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+6. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
+7. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
 
-IMPORTANT:
-- Only make changes you are confident about. Do not restructure for the sake of it.
-- If the grouping looks good, return empty lists for all actions.
+Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
 
 Current grouping:
 {group_summary}
