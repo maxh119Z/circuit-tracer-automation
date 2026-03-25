@@ -100,6 +100,7 @@ mkdir -p artifacts
 echo "  ✓ Python and dependencies OK"
 echo "  ✓ artifacts/ directory ready"
 echo "  ✓ PRUNING_THRESHOLD=${PRUNING_THRESHOLD}"
+echo "  ✓ DESCRIPTION_VARIANT=${DESCRIPTION_VARIANT:-v1}"
 echo "  ✓ Mode: $SUBCOMMAND"
 
 if [ -z "${OPENAI_API_KEY:-}" ]; then

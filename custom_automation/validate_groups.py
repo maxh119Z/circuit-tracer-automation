@@ -1,26 +1,33 @@
 """
-Validation — Evaluate group quality with two fixed-size methods.
+Validation — Evaluate group quality and description quality.
 
-Method 1 — Feature identification (1-in-10):
-    For each feature in a group (up to 5), present its description among 9
-    negative descriptions. Ask the model to pick the one that best matches
-    the group name. Score: binary accuracy (1 if correct, 0 if wrong).
-    Random chance baseline: 10%.
+Group-level methods:
 
-Method 2 — Text snippet matching (5-in-10):
-    Present 5 positive text snippets (from group features) and 5 negative
-    snippets. Tell the model exactly 5 are from the group. Score: fraction
-    of the 5 positives correctly identified (|correct ∩ actual| / 5).
-    Random chance baseline: 50% (C(5,k)*C(5,5-k)/C(10,5) → E[k]=2.5 → 2.5/5).
+  Method 1 — Feature identification (1-in-10):
+      For each feature in a group (up to 5), present its description among 9
+      negative descriptions. Ask the model to pick the one that best matches
+      the group name. Score: binary accuracy (1 if correct, 0 if wrong).
+      Random chance baseline: 10%.
 
-    The model's output is validated to contain exactly 5 unique indices in
-    [1, N_items]. If it doesn't, the response is discarded (score = 0).
+  Method 2 — Text snippet matching (5-in-10):
+      Present 5 positive text snippets (from group features) and 5 negative
+      snippets. Tell the model exactly 5 are from the group. Score: fraction
+      of the 5 positives correctly identified (|correct ∩ actual| / 5).
+      Random chance baseline: 50%.
+
+Description-level method:
+
+  Method D1 — Description accuracy (1-in-10):
+      For each feature, present the feature's raw evidence (activations +
+      output tokens) and ask the model to pick its description from a lineup
+      of 10 descriptions (1 correct + 9 from other features). Tests whether
+      the description accurately summarizes the feature's evidence.
+      Random chance baseline: 10%.
 
 Aggregation:
-    For each group, we compute one mean score per run (averaging over trials
-    within that run). We then report mean ± stderr across the N_RUNS run-level
-    means. This correctly captures between-run variance rather than pooling
-    all trial-level outcomes.
+    For each group (or "all" for D1), we compute one mean score per run
+    (averaging over trials within that run). We then report mean ± stderr
+    across the N_RUNS run-level means.
 
 Reads:  artifacts/feature_descriptions.json
         artifacts/feature_groups.json
@@ -71,6 +78,8 @@ MAX_FEATURES_M1 = 5           # Test up to 5 features per group in Method 1
 N_NEG_FEATURES_M1 = 9         # 9 negatives per trial in Method 1 (1 + 9 = 10)
 N_POS_SNIPPETS_M2 = 5         # 5 positive snippets in Method 2
 N_NEG_SNIPPETS_M2 = 5         # 5 negative snippets in Method 2 (5 + 5 = 10)
+MAX_FEATURES_D1 = 50          # Test up to 50 features total for description accuracy
+N_NEG_DESCS_D1 = 9            # 9 negative descriptions per trial (1 + 9 = 10)
 RANDOM_SEED = 42
 N_RUNS = 5
 
@@ -518,6 +527,114 @@ def generate_m2_tasks(
 
 
 # ---------------------------------------------------------------------------
+# Prompt builder — Method D1 (description accuracy)
+# ---------------------------------------------------------------------------
+
+def _format_feature_evidence(feat: dict, prompt_text: str) -> str:
+    """Format a feature's raw evidence (activations + output tokens) for D1 trials."""
+    lines = [f"Feature {feat.get('id', '?')}:\n"]
+
+    lines.append("--- PROMPT CONTEXT ---")
+    lines.append(prompt_text)
+
+    lines.append("\n--- INPUT ACTIVATIONS ---")
+    for i, act in enumerate(feat.get("top_activations", [])[:10], 1):
+        lines.append(f"Excerpt {i}: {_format_snippet(act)}")
+
+    lines.append("\n--- GLOBAL OUTPUT TOKENS ---")
+    promotes = feat.get("promotes", [])
+    demotes = feat.get("demotes", [])
+    lines.append(f"Top Promoted Tokens: {', '.join(promotes) if promotes else 'None available'}")
+    lines.append(f"Top Demoted Tokens: {', '.join(demotes) if demotes else 'None available'}")
+
+    return "\n".join(lines)
+
+
+def build_d1_prompt(evidence: str, items: list[tuple[str, bool]]) -> str:
+    """Method D1: given feature evidence, pick the 1 correct description from N."""
+    n = len(items)
+    lines = [
+        "Below is evidence about a single feature neuron in a language model "
+        "(its input activations and output tokens).\n",
+        evidence,
+        f"\nBelow are {n} candidate descriptions. Exactly 1 of these correctly "
+        "describes this feature. Pick the single best match.\n",
+    ]
+    for i, (desc, _) in enumerate(items, 1):
+        lines.append(f"{i}. {desc}")
+    lines.append(
+        "\nRespond with the 1-based index of the description that best matches "
+        "the feature evidence above."
+    )
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Task generation — Method D1
+# ---------------------------------------------------------------------------
+
+def generate_d1_tasks(
+    features: list[dict],
+    prompt_text: str,
+    seed: int,
+    max_features: int = MAX_FEATURES_D1,
+) -> list[dict]:
+    """
+    Generate Method D1 trial specs for one run.
+
+    For each feature (up to max_features), present its evidence and a lineup
+    of descriptions (1 correct + N_NEG_DESCS_D1 from other features).
+    """
+    rng = random.Random(seed)
+
+    # Only features that have descriptions and activations
+    eligible = [
+        f for f in features
+        if f.get("generated_description")
+        and f.get("generated_description") != "Error generating description"
+        and f.get("top_activations")
+    ]
+
+    if len(eligible) < 2:
+        return []
+
+    if len(eligible) > max_features:
+        test_features = rng.sample(eligible, max_features)
+    else:
+        test_features = list(eligible)
+
+    tasks: list[dict] = []
+    for pos_feat in test_features:
+        neg_pool = [f for f in eligible if f["id"] != pos_feat["id"]]
+        if not neg_pool:
+            continue
+
+        n_neg = min(len(neg_pool), N_NEG_DESCS_D1)
+        neg_feats = rng.sample(neg_pool, n_neg)
+
+        items: list[tuple[str, bool]] = [
+            (pos_feat["generated_description"], True)
+        ] + [
+            (f["generated_description"], False)
+            for f in neg_feats
+        ]
+        rng.shuffle(items)
+
+        correct_idx = next(i + 1 for i, (_, is_pos) in enumerate(items) if is_pos)
+        evidence = _format_feature_evidence(pos_feat, prompt_text)
+
+        tasks.append({
+            "group_name": "description_accuracy",  # pseudo-group for aggregation
+            "prompt": build_d1_prompt(evidence, items),
+            "correct_idx": correct_idx,
+            "n_items": len(items),
+            "feature_id": pos_feat["id"],
+        })
+
+    return tasks
+
+
+# ---------------------------------------------------------------------------
 # Run-level aggregation
 # ---------------------------------------------------------------------------
 
@@ -892,6 +1009,57 @@ async def run_random_condition(
 
 
 # ---------------------------------------------------------------------------
+# Run description accuracy (D1)
+# ---------------------------------------------------------------------------
+
+async def run_description_accuracy(
+    features: list[dict],
+    prompt_text: str,
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+) -> dict[str, Any]:
+    """
+    Run N_RUNS of Method D1: given feature evidence, pick the correct description.
+
+    Returns a dict with macro accuracy stats, compatible with the report format.
+    """
+    all_specs: list[tuple[int, dict]] = []
+    for run_idx in range(N_RUNS):
+        seed = RANDOM_SEED + run_idx
+        for spec in generate_d1_tasks(features, prompt_text, seed):
+            all_specs.append((run_idx, spec))
+
+    if not all_specs:
+        log.warning("[D1] No description accuracy tasks generated.")
+        return {"macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}, "total_trials": 0}
+
+    log.info("[D1] Launching %d description accuracy trials across %d runs…",
+             len(all_specs), N_RUNS)
+
+    coros = [
+        run_m1_trial(
+            s["group_name"], s["prompt"], s["correct_idx"], s["n_items"], client, sem
+        )
+        for _, s in all_specs
+    ]
+
+    scores = await asyncio.gather(*coros)
+    tagged = [
+        (run_idx, spec["group_name"], score)
+        for (run_idx, spec), score in zip(all_specs, scores)
+    ]
+
+    _, macro = aggregate_by_run(tagged)
+    log.info("[D1] Description accuracy: %.1f%% ± %.1f%%",
+             macro["mean_accuracy"] * 100, macro["stderr_accuracy"] * 100)
+
+    return {
+        "macro_avg": macro,
+        "total_trials": len(tagged),
+    }
+
+
+# ---------------------------------------------------------------------------
 # Read prompt from graph
 # ---------------------------------------------------------------------------
 
@@ -939,9 +1107,13 @@ async def main_async() -> None:
     log.info("Negative pools — medium: %d features, hard: %d features",
              len(medium_neg_pool), len(hard_neg_pool))
 
-    auto_result, random_result = await asyncio.gather(
+    # Read prompt text for D1 evidence formatting
+    prompt_text = _read_prompt_from_graph()
+
+    auto_result, random_result, d1_result = await asyncio.gather(
         run_condition("Auto", group_index, client, sem, medium_neg_pool, hard_neg_pool),
         run_random_condition(group_index, client, sem),
+        run_description_accuracy(features, prompt_text, client, sem),
     )
 
     # Manual groups (optional)
@@ -962,7 +1134,7 @@ async def main_async() -> None:
     # ------------------------------------------------------------------
     # Build report
     # ------------------------------------------------------------------
-    prompt = _read_prompt_from_graph()
+    prompt = prompt_text  # already loaded above for D1
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     report: dict[str, Any] = {
@@ -972,6 +1144,7 @@ async def main_async() -> None:
         "design": {
             "method1": f"1-in-{1+N_NEG_FEATURES_M1} feature identification (chance={1/(1+N_NEG_FEATURES_M1):.0%})",
             "method2": f"{N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text snippet matching (chance={N_POS_SNIPPETS_M2/(N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2):.0%})",
+            "method_d1": f"1-in-{1+N_NEG_DESCS_D1} description accuracy (chance={1/(1+N_NEG_DESCS_D1):.0%})",
             "aggregation": "per-group run-level means, then mean ± stderr across runs",
             "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
             "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
@@ -982,6 +1155,7 @@ async def main_async() -> None:
             "attribution_coverage": auto_coverage,
         },
         "random": random_result,
+        "description_accuracy": d1_result,
     }
     if manual_result:
         report["manual"] = {
@@ -1012,13 +1186,23 @@ async def main_async() -> None:
 
     chance_m1 = 1 / (1 + N_NEG_FEATURES_M1)
     chance_m2 = N_POS_SNIPPETS_M2 / (N_POS_SNIPPETS_M2 + N_NEG_SNIPPETS_M2)
+    chance_d1 = 1 / (1 + N_NEG_DESCS_D1)
 
     print(f"\n{'='*80}")
     print(f"  VALIDATION SUMMARY ({N_RUNS} runs, run-level aggregation)")
     print(f"  M1: 1-in-{1+N_NEG_FEATURES_M1} feature ID (chance={chance_m1:.0%})")
     print(f"  M2: {N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text match (chance={chance_m2:.0%})")
+    print(f"  D1: 1-in-{1+N_NEG_DESCS_D1} description accuracy (chance={chance_d1:.0%})")
     print(f"  Neg sources: easy=other groups | medium=Ungrouped | hard=unseen features (beyond Phase 1 seed of {GROUPING_TOP_K_SEED})")
     print(f"{'='*80}")
+
+    # Description accuracy (D1) — printed first since it's description-level
+    d1_macro = report.get("description_accuracy", {}).get("macro_avg", {})
+    d1_trials = report.get("description_accuracy", {}).get("total_trials", 0)
+    print(f"\n  Description Accuracy (D1): "
+          f"{d1_macro.get('mean_accuracy', 0.0):.1%} ± {d1_macro.get('stderr_accuracy', 0.0):.1%}  "
+          f"({d1_trials} trials, chance={chance_d1:.0%})")
+
     print(f"\n{'Condition':<16}  {'M1 Accuracy':>16}  {'M2 Accuracy':>16}  {'Coverage':>9}")
     print("-" * 70)
 

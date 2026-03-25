@@ -66,6 +66,14 @@ MAX_WORKERS: int = 10
 CHECKPOINT_INTERVAL: int = 10
 
 # ---------------------------------------------------------------------------
+# Descriptions — used by generate_description.py
+# ---------------------------------------------------------------------------
+
+# Which description prompt variant to use (v0=original concise, v1=detailed,
+# v2=label+explanation, v3=say-classification focused).  Override with env var.
+DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v1")
+
+# ---------------------------------------------------------------------------
 # Grouping (OpenAI) — used by generate_supernodes.py
 # ---------------------------------------------------------------------------
 
