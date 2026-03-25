@@ -42,8 +42,8 @@ CONCURRENCY_LIMIT = 167
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
 # Which description prompt variant to use.  Set DESCRIPTION_VARIANT env var
-# to one of: v0, v1, v2, v3.  Default is v1 (longer, more specific).
-DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v1")
+# to one of: v0, v1, v2, v3.  Default is v2 (balanced label + elaboration).
+DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
 
 # ---------------------------------------------------------------------------
 # Prompt variants
