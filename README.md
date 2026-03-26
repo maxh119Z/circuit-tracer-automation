@@ -1,4 +1,9 @@
 # Automation Quickstart
+core / all — now always includes validation (step 6). 
+Run as: DESCRIPTION_VARIANT=v0 ./reproduce.sh core
+all-variants — new subcommand: runs steps 0-1 once, then steps 2-6 for v0, v1, v2, v3 in sequence, producing 4 labeled graphs. 
+Run as: ./reproduce.sh all-variants
+
 
 Run in Order:
 

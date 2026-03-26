@@ -25,6 +25,7 @@ from openai import AsyncOpenAI
 
 from config import (
     CHECKPOINT_INTERVAL,
+    DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
     PRUNED_ACTIVATIONS_FILE,
     GRAPH_FILE,
@@ -41,9 +42,8 @@ MODEL = "gpt-5-mini"
 CONCURRENCY_LIMIT = 167
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
-# Which description prompt variant to use.  Set DESCRIPTION_VARIANT env var
-# to one of: v0, v1, v2, v3.  Default is v2 (balanced label + elaboration).
-DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
+# DESCRIPTION_VARIANT is imported from config (set via DESCRIPTION_VARIANT env var, default "v1").
+# This controls both the system prompt used here and the artifact filenames throughout the pipeline.
 
 # ---------------------------------------------------------------------------
 # Prompt variants

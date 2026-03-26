@@ -37,12 +37,7 @@ else:
     GRAPH_FILE = REPO_ROOT / "test_graphs" / "test-run.json"
     ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 
-# Artifact filenames.
 PRUNED_ACTIVATIONS_FILE = ARTIFACTS_DIR / "pruned_activations.json"
-FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / "feature_descriptions.json"
-FEATURE_GROUPS_FILE = ARTIFACTS_DIR / "feature_groups.json"
-VALIDATION_REPORT_FILE = ARTIFACTS_DIR / "validation_report.json"
-VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / "validation_history.json"
 MANUAL_GROUPS_FILE = ARTIFACTS_DIR / "manual_groups.json"
 VIEWER_URL_FILE = ARTIFACTS_DIR / "viewer_url.txt"
 
@@ -72,6 +67,13 @@ CHECKPOINT_INTERVAL: int = 10
 # Which description prompt variant to use (v0=original concise, v1=detailed,
 # v2=label+explanation, v3=say-classification focused).  Override with env var.
 DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v1")
+
+# Artifact filenames — namespaced by variant so multiple versions coexist.
+# """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""
+FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / f"feature_descriptions_{DESCRIPTION_VARIANT}.json"
+FEATURE_GROUPS_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}.json"
+VALIDATION_REPORT_FILE = ARTIFACTS_DIR / f"validation_report_{DESCRIPTION_VARIANT}.json"
+VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / f"validation_history_{DESCRIPTION_VARIANT}.json"
 
 # ---------------------------------------------------------------------------
 # Grouping (OpenAI) — used by generate_supernodes.py

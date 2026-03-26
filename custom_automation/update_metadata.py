@@ -24,6 +24,7 @@ from pathlib import Path
 
 from config import (
     CURRENT_SLUG,
+    DESCRIPTION_VARIANT,
     GRAPH_FILE,
     setup_logging,
 )
@@ -68,9 +69,10 @@ def main() -> None:
     if CURRENT_SLUG:
         slug = CURRENT_SLUG
     else:
-        slug = generate_slug(prompt_str)
-    log.info("Prompt: %s", prompt_str)
-    log.info("Slug:   %s", slug)
+        slug = f"{generate_slug(prompt_str)}-{DESCRIPTION_VARIANT}"
+    log.info("Prompt:  %s", prompt_str)
+    log.info("Variant: %s", DESCRIPTION_VARIANT)
+    log.info("Slug:    %s", slug)
 
     # ------------------------------------------------------------------
     # 2. Update the slug inside the graph data so the viewer knows its own identity
@@ -103,6 +105,7 @@ def main() -> None:
     # Build the new entry
     new_entry = {
         "slug": slug,
+        "title_prefix": f"[{DESCRIPTION_VARIANT}]",
         "scan": file_metadata.get("scan", "mwhanna/gemma-scope-transcoders"),
         "transcoder_list": file_metadata.get("transcoder_list", []),
         "prompt_tokens": input_tokens,
