@@ -129,8 +129,9 @@ _V2_CORE = (
     "- Unsure? Ask: does the highlighted part carry meaning on its own?\n\n"
 
     "PROPER NOUNS:\n"
-    "If a specific name, place, or entity appears consistently across the activations, "
-    "include it — in the SHORT_LABEL or elaboration. Don’t drop it for a generic label.\n\n"
+    "If a specific name, place, or entity recurs across the activations — even in a minority of them — "
+    "include it in the SHORT_LABEL or elaboration. Don’t collapse to a generic label when a specific one is clearly supported. "
+    "Recurring proper nouns are a signal of specificity, not noise.\n\n"
 
     "AVOID:\n"
     "- Linguistic or technical jargon: copula, lemma, morpheme, orthogonal, syntactic, "
@@ -286,7 +287,7 @@ async def process_feature(
                         {"role": "user", "content": _build_user_prompt(feature, prompt_text)},
                     ],
                     reasoning_effort="low",
-                    max_completion_tokens=2048,
+                    max_completion_tokens=4096,
                 )
 
                 desc = response.choices[0].message.content.strip()  # type: ignore

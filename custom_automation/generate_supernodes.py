@@ -94,11 +94,11 @@ client = AsyncOpenAI()
 
 class Assignment(BaseModel):
     feature_id: str = Field(description="The feature ID.")
-    group_name: str = Field(description="The group name (or 'Ungrouped').")
+    group_name: str = Field(description="The group name (or 'Ungrouped'). MUST be 5 words or fewer.")
 
 
 class GroupDef(BaseModel):
-    group_name: str = Field(description="Semantic name of the supernode group.")
+    group_name: str = Field(description="Semantic name of the supernode group. MUST be 5 words or fewer. Simple, natural phrasing only.")
     rationale: str = Field(description="Brief rationale for this cluster.")
 
 
@@ -168,12 +168,13 @@ SEMANTIC ROLE — "SAY X" vs "X ITSELF" (highest-priority rule):
 - "Say" is for genuine framing or introduction. Do not use it when features directly represent a concept.
 - Surface overlap is never enough reason to merge groups with different semantic roles.
 
-NAMING:
-- ≤5 words, natural human-readable phrasing.
+NAMING (STRICT — violating this is an error):
+- HARD LIMIT: 5 words maximum. No exceptions.
+- Natural, simple phrasing. If you need more than 5 words, the name is too specific — broaden it.
 - Prefer "say a city" over "city mention", "city reference", or "mentioned city".
 - Avoid parentheses and words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler phrase works.
-- Include a specific named entity in the name if it appears consistently across member features.
-- Prefer layman's vocabulary
+- Include a specific named entity only if it fits within 5 words and appears consistently.
+- Prefer layman's vocabulary.
 
 SPLITTING vs MERGING:
 - Split when a group mixes semantic roles or abstraction levels.
@@ -289,6 +290,7 @@ Features:
             model=GROUPING_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format=Phase2Output,
+            max_completion_tokens=4096,
         )
         parsed = response.choices[0].message.parsed
         if parsed is None:
@@ -536,6 +538,7 @@ Features:
         model=GROUPING_MODEL,
         messages=[{"role": "user", "content": phase1_prompt}],
         response_format=Phase1Output,
+        max_completion_tokens=8192,
     )
     p1 = response.choices[0].message.parsed
 
@@ -601,14 +604,22 @@ The pipeline produced {num_groups} groups from {len(final_assignments)} features
 
 {GROUPING_PHILOSOPHY}
 
+OUTPUT-RELEVANCE PRINCIPLE:
+Before any merge or drop decision, ask: does this group help explain WHY the model predicted the specific output above?
+- A group is worth keeping if it plays a distinct role in the reasoning path to the output.
+- A distinction between two groups is worth keeping only if the two groups relate to the output differently — e.g., one frames the output class while the other is the concept itself, or one is directly causal while the other is supporting context.
+- If two groups are both relevant but play the same role relative to the output, merge them.
+- If a group is real but its existence does not help a reader understand why the model chose this output, drop it.
+
 REVIEW CHECKLIST (work through in order):
 1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → Highest-priority issue. Split them.
 2. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
 3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype? → Keep separate or split.
-4. IRRELEVANT GROUPS: Drop groups that are clearly isolated or off-topic to the prompt's main functionality.
-5. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
-6. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-7. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
+4. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
+5. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
+6. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+7. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
+8. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
 
 Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
 
@@ -620,6 +631,7 @@ Current grouping:
         model=GROUPING_MODEL,
         messages=[{"role": "user", "content": phase3_prompt}],
         response_format=Phase3Output,
+        max_completion_tokens=8192,
     )
     p3 = response3.choices[0].message.parsed
 

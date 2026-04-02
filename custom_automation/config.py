@@ -66,7 +66,7 @@ CHECKPOINT_INTERVAL: int = 10
 
 # Which description prompt variant to use (v0=original concise, v1=detailed,
 # v2=label+explanation, v3=say-classification focused).  Override with env var.
-DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v1")
+DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
 
 # Artifact filenames — namespaced by variant so multiple versions coexist.
 # """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""

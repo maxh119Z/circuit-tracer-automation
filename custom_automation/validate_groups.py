@@ -746,7 +746,7 @@ async def _regenerate_name(
             response = await client.chat.completions.create(
                 model=VALIDATION_MODEL,
                 messages=[{"role": "user", "content": prompt}],
-                max_completion_tokens=1024,
+                max_completion_tokens=2048,
             )
             return response.choices[0].message.content.strip()  # type: ignore
         except Exception as exc:
