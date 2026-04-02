@@ -734,11 +734,12 @@ REVIEW CHECKLIST (work through in order):
 1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → Highest-priority issue. Split them.
 2. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
 3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype? → Keep separate or split.
-4. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
-5. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
-6. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
-7. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-8. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
+4. POLYSEMY / OFF-SENSE MEMBERS: Does any group contain features that activate on a different sense of the group's named concept than what this prompt requires? Features that belong to an irrelevant sense of the word should be reassigned to Ungrouped — they are real activations but not part of this prompt's reasoning. If the off-sense features are numerous and coherent, split them into their own group only if that group would itself pass the OUTPUT-RELEVANCE PRINCIPLE; otherwise Ungrouped.
+5. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
+6. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
+7. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
+9. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
 
 Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
 

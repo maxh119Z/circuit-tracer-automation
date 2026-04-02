@@ -12,11 +12,15 @@
 #                               4 separate labeled graphs + validation each.
 #   ./reproduce.sh desc-group   Steps 0-1 once, then steps 2-6 with the
 #                               specified DESCRIPTION_VARIANT + GROUPING_VARIANT.
+#   ./reproduce.sh all-groups   Steps 0-2 once with the chosen DESCRIPTION_VARIANT,
+#                               then steps 3-6 for all 4 grouping variants (a0–a3).
+#                               Produces 4 separate graphs in the viewer dropdown.
 #   ./reproduce.sh PRUNING_THRESHOLD      Core with custom pruning threshold
 #
 #   Ex: ./reproduce.sh core 0.35          Core with custom threshold
 #       ./reproduce.sh all-variants 0.35  All-variants with custom threshold
 #       DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
+#       DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
 #
 # Environment variables:
 #   OPENAI_API_KEY   — Required for descriptions, grouping, and validation.
@@ -49,6 +53,7 @@ RUN_CORE=false
 RUN_VALIDATE=false
 RUN_VARIANTS=false
 RUN_DESC_GROUP=false
+RUN_ALL_GROUPS=false
 
 case "$SUBCOMMAND" in
     core|all)
@@ -64,12 +69,19 @@ case "$SUBCOMMAND" in
     desc-group)
         RUN_DESC_GROUP=true
         ;;
+    all-groups)
+        RUN_ALL_GROUPS=true
+        ;;
     *)
         echo "Unknown subcommand: $SUBCOMMAND"
-        echo "Usage: ./reproduce.sh [core|all|validate|all-variants|desc-group] [PRUNING_THRESHOLD]"
+        echo "Usage: ./reproduce.sh [core|all|validate|all-variants|desc-group|all-groups] [PRUNING_THRESHOLD]"
         echo ""
-        echo "  desc-group — Run with specific DESCRIPTION_VARIANT and GROUPING_VARIANT."
+        echo "  desc-group  — Run with specific DESCRIPTION_VARIANT and GROUPING_VARIANT."
         echo "    Ex: DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group"
+        echo ""
+        echo "  all-groups  — Steps 0-2 once with chosen DESCRIPTION_VARIANT, then steps 3-6"
+        echo "                for all 4 grouping variants (a0-a3). 4 graphs in viewer dropdown."
+        echo "    Ex: DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups"
         exit 1
         ;;
 esac
@@ -118,6 +130,9 @@ echo "  ✓ PRUNING_THRESHOLD=${PRUNING_THRESHOLD}"
 echo "  ✓ DESCRIPTION_VARIANT=${DESCRIPTION_VARIANT:-v2}"
 echo "  ✓ GROUPING_VARIANT=${GROUPING_VARIANT:-a0}"
 echo "  ✓ Mode: $SUBCOMMAND"
+if [ "$RUN_ALL_GROUPS" = true ]; then
+    echo "  ✓ Description variant: ${DESCRIPTION_VARIANT:-v2} (all 4 grouping variants: a0 a1 a2 a3)"
+fi
 
 if [ -z "${OPENAI_API_KEY:-}" ]; then
     echo -n "🔑 OPENAI_API_KEY not found. Please enter it now (input will be hidden): "
@@ -278,11 +293,82 @@ if [ "$RUN_DESC_GROUP" = true ]; then
 fi
 
 # ---------------------------------------------------------------------------
+# All-groups pipeline (steps 0-2 once, steps 3-6 for each grouping variant)
+# ---------------------------------------------------------------------------
+if [ "$RUN_ALL_GROUPS" = true ]; then
+    DESC_VAR="${DESCRIPTION_VARIANT:-v2}"
+    GROUPING_VARIANTS_LIST=(a0 a1 a2 a3)
+    BASE_GRAPH="../test_graphs/test-run.json"
+
+    if [ ! -f "$BASE_GRAPH" ]; then
+        echo "ERROR: $BASE_GRAPH not found — run './reproduce.sh core' first." >&2
+        exit 1
+    fi
+
+    # Step 0 — once
+    step_banner "Step 0 — Applying frontend patch (if needed)"
+    python apply_frontend_patch.py
+
+    # Step 1 — once (shared pruned activations)
+    step_banner "Step 1 — Fetching pruned feature activations (shared)"
+    t=$(date +%s)
+    python fetch_all_activation_text.py
+    elapsed "$t"
+
+    # Step 2 — once (generate descriptions for chosen variant)
+    export DESCRIPTION_VARIANT="$DESC_VAR"
+    step_banner "Step 2 — Generating descriptions [desc=$DESC_VAR]"
+    t=$(date +%s)
+    python generate_description.py
+    elapsed "$t"
+
+    # Steps 3-6 for each grouping variant
+    for gvar in "${GROUPING_VARIANTS_LIST[@]}"; do
+        SLUG="${DESC_VAR}-${gvar}"
+        export GROUPING_VARIANT="$gvar"
+        export CURRENT_SLUG="$SLUG"
+
+        mkdir -p "artifacts/${SLUG}"
+        cp artifacts/pruned_activations.json "artifacts/${SLUG}/pruned_activations.json"
+        cp "artifacts/feature_descriptions_${DESC_VAR}.json" \
+           "artifacts/${SLUG}/feature_descriptions_${DESC_VAR}.json"
+        cp "$BASE_GRAPH" "../test_graphs/${SLUG}.json"
+
+        step_banner "[desc=$DESC_VAR group=$gvar] Step 3 — Grouping features into supernodes"
+        t=$(date +%s)
+        python generate_supernodes.py
+        elapsed "$t"
+
+        step_banner "[desc=$DESC_VAR group=$gvar] Step 4 — Writing groups into graph JSON"
+        t=$(date +%s)
+        python push_to_website.py
+        elapsed "$t"
+
+        step_banner "[desc=$DESC_VAR group=$gvar] Step 5 — Registering graph in viewer dropdown"
+        t=$(date +%s)
+        python update_metadata.py
+        elapsed "$t"
+
+        step_banner "[desc=$DESC_VAR group=$gvar] Step 6 — Validating groups"
+        t=$(date +%s)
+        python validate_groups.py
+        elapsed "$t"
+
+        echo ""
+        echo "  [$SLUG] Artifacts → artifacts/${SLUG}/"
+        echo "  [$SLUG] Graph     → test_graphs/${SLUG}.json"
+        echo "  [$SLUG] Viewer dropdown: ${SLUG}"
+    done
+
+    unset CURRENT_SLUG
+fi
+
+# ---------------------------------------------------------------------------
 # Done
 # ---------------------------------------------------------------------------
 step_banner "SUCCESS — Pipeline complete ($SUBCOMMAND)"
 echo ""
-if [ "$RUN_CORE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" = true ]; then
+if [ "$RUN_CORE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" = true ] || [ "$RUN_ALL_GROUPS" = true ]; then
     echo "  Your groups are saved in the graph JSON."
     echo "  The graph is registered in the viewer dropdown."
     echo "  👉 Just refresh the viewer page — select your graph, groups load automatically."
@@ -291,5 +377,13 @@ if [ "$RUN_CORE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" =
 fi
 if [ "$RUN_VALIDATE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" = true ]; then
     echo "  Validation report: artifacts/validation_report_<variant>.json"
+    echo ""
+fi
+if [ "$RUN_ALL_GROUPS" = true ]; then
+    _dv="${DESCRIPTION_VARIANT:-v2}"
+    echo "  4 graphs registered in viewer dropdown:"
+    for _gv in a0 a1 a2 a3; do
+        echo "    ${_dv}-${_gv}  →  test_graphs/${_dv}-${_gv}.json"
+    done
     echo ""
 fi

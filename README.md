@@ -5,6 +5,8 @@ all-variants — new subcommand: runs steps 0-1 once, then steps 2-6 for v0, v1,
 Run as: ./reproduce.sh all-variants
 desc-group — run with a specific description variant AND grouping prompt variant.
 Run as: DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
+all-groups — steps 0-2 once with the chosen DESCRIPTION_VARIANT, then steps 3-6 for all 4 grouping variants (a0–a3). Produces 4 separate graphs in the viewer dropdown named <desc>-<group> (e.g. v2-a0, v2-a1, v2-a2, v2-a3).
+Run as: DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
 
 Grouping variants (a0–a3):
   a0 — Original semantic-role grouping (SAY vs CONCEPT focus, balanced granularity)
@@ -82,6 +84,8 @@ circuit-tracer-automation/
 │   │                                      #   ./reproduce.sh all          Core + validation
 │   │                                      #   ./reproduce.sh validate     Validation only (assumes core ran)
 │   │                                      #   ./reproduce.sh all 0.35     Custom pruning threshold
+│   │                                      #   DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
+│   │                                      #                               Steps 0-2 once, then steps 3-6 for all 4 grouping variants (a0-a3)
 │   │
 │   ├── artifacts/                         # Generated files (gitignored)
 │   │   ├── pruned_activations.json            # Step 1 output: filtered features + HF activation data
