@@ -1,8 +1,16 @@
 # Automation Quickstart
-core / all — now always includes validation (step 6). 
+core / all — now always includes validation (step 6).
 Run as: DESCRIPTION_VARIANT=v0 ./reproduce.sh core
-all-variants — new subcommand: runs steps 0-1 once, then steps 2-6 for v0, v1, v2, v3 in sequence, producing 4 labeled graphs. 
+all-variants — new subcommand: runs steps 0-1 once, then steps 2-6 for v0, v1, v2, v3 in sequence, producing 4 labeled graphs.
 Run as: ./reproduce.sh all-variants
+desc-group — run with a specific description variant AND grouping prompt variant.
+Run as: DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
+
+Grouping variants (a0–a3):
+  a0 — Original semantic-role grouping (SAY vs CONCEPT focus, balanced granularity)
+  a1 — Output-centric (group by which output tokens features promote)
+  a2 — Coarse/hierarchical (fewer broad groups, 3–7 target, merge-first)
+  a3 — Functional-role (group by computational role: input encoding → knowledge retrieval → reasoning → output)
 
 
 Run in Order:
