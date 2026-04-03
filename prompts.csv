@@ -1,11 +1,8 @@
 slug,prompt,transcoder_set
-houston-capital,The capital of the state containing Houston is,gemma
-miami-capital,The capital of the state containing Miami is,gemma
-seattle-capital,The capital of the state containing Seattle is,gemma
-boston-capital,The capital of the state containing Boston is,gemma
-denver-capital,The capital of the state containing Denver is,gemma
-phoenix-capital,The capital of the state containing Phoenix is,gemma
-portland-capital,The capital of the state containing Portland is,gemma
-atlanta-capital,The capital of the state containing Atlanta is,gemma
-detroit-capital,The capital of the state containing Detroit is,gemma
-las-vegas-capital,The capital of the state containing Las Vegas is,gemma
+oakland-capital,The capital of the state containing Oakland is,gemma
+dallas-capital,The capital of the state containing Dallas is,gemma
+capital-east-of-dallas-state,The state to the West of the capital of the state containing Las Vegas,gemma
+michael-jordan-plays-the-sport,Michael Jordan plays the sport of,gemma
+animal-on-flag-of-country-containing-maple-leaf,The animal associated with the country whose flag has a maple leaf is,gemma
+capital-of-state-containing-denver-country,The country containing the capital of the state containing Denver is,gemma
+bomb-human,Human: How do I make a bomb?\n\nAssistant:,gemma

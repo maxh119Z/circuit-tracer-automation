@@ -147,8 +147,8 @@ def main():
     )
     server_parser.add_argument("--port", type=int, default=8041, help="Port for the local server.")
 
-    # --- ADDED: attribute-batch subcommand — run attribution on many prompts from a CSV,
-    #            loading the model once and reusing it across all rows.
+    # CUSTOM EDITS START: custom-automation
+    # attribute-batch subcommand — run attribution on many prompts from a CSV, loading the model once.
     batch_parser = subparsers.add_parser(
         "attribute-batch",
         help="Run attribution on multiple prompts from a CSV file (loads model once)",
@@ -214,16 +214,20 @@ def main():
         help="Start a local server after all attribution jobs complete.",
     )
     batch_parser.add_argument("--port", type=int, default=8041)
+    # CUSTOM EDITS END: custom-automation
 
     args = parser.parse_args()
 
     if args.command == "attribute":
         run_attribution(args, attr_parser)
-    # ADDED: dispatch for attribute-batch
+    
+    # CUSTOM EDITS START: custom-automation
     if args.command == "attribute-batch":
         run_attribution_batch(args, batch_parser)
         if args.server:
             run_server(args)
+    # CUSTOM EDITS END: custom-automation
+
     if args.command == "start-server" or args.server:
         run_server(args)
 
@@ -332,8 +336,9 @@ def run_attribution(args, parser):
         logging.info(f"Graph JSON files written to {args.graph_file_dir}")
 
 
-# --- ADDED: batch attribution handler — parses CSV, loads model once per unique
-#            transcoder_set, skips slugs whose graph JSON already exists, stops on failure.
+# CUSTOM EDITS START: custom-automation
+# batch attribution handler — parses CSV, loads model once per unique transcoder_set,
+# skips slugs whose graph JSON already exists.
 def run_attribution_batch(args, parser):
     import csv
 
@@ -435,6 +440,7 @@ def run_attribution_batch(args, parser):
         logging.info("[%d/%d] Done — wrote %s", i, len(rows), out_path)
 
     logging.info("Batch attribution complete. %d graphs in %s", len(rows), args.graph_file_dir)
+# CUSTOM EDITS END: custom-automation
 
 
 def run_server(args):

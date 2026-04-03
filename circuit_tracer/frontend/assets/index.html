@@ -34,6 +34,10 @@
 <script src='./attribution_graph/init-cg-feature-detail.js'></script>
 <script src='./attribution_graph/init-cg-feature-scatter.js'></script>
 <script src='./attribution_graph/init-cg-subgraph.js'></script>
+
+<!-- CUSTOM CHANGE: init-cg.js has 2 custom edits (marked CUSTOM EDITS START/END: custom-automation):
+     1. Fix urlSupernodes truthy-array bug (checks .length instead of bare array)
+     2. Parse qParams supernodes/pinnedIds from JSON string or comma-separated string -->
 <script src='./attribution_graph/init-cg.js'></script>
 
 <script>
