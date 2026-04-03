@@ -170,7 +170,8 @@ variants = '${VARIANTS[*]}'.split()
 comparison = {'variants': {}, 'pruning_threshold': float('${PRUNING_THRESHOLD}')}
 
 for v in variants:
-    report_path = f'artifacts/desc-{v}/validation_report.json'
+    gv = os.environ.get('GROUPING_VARIANT', 'a0')
+    report_path = f'artifacts/desc-{v}/validation_report_{v}_{gv}.json'
     if not os.path.exists(report_path):
         print(f'  WARNING: {report_path} not found, skipping {v}', file=sys.stderr)
         continue

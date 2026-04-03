@@ -36,6 +36,7 @@ from config import (
     GRAPH_FILE,
     GROUPING_BATCH_SIZE,
     GROUPING_MODEL,
+    GROUPING_VARIANT,
     setup_logging,
 )
 
@@ -145,12 +146,18 @@ class Phase3Output(BaseModel):
 # Shared prompt preamble
 # ---------------------------------------------------------------------------
 
-GROUPING_PHILOSOPHY = """
+# ---------------------------------------------------------------------------
+# Grouping prompt variants (a0–a3)
+# ---------------------------------------------------------------------------
+
+# a0 — Original: balanced semantic-role-aware grouping (SAY vs CONCEPT focus)
+GROUPING_PHILOSOPHY_A0 = """
 GOAL: Produce a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 
 RELEVANCE & UNGROUPED:
 - Assign to "Ungrouped": weak, isolated, or noisy features; features not meaningfully connected to the main prompt semantics.
-- Purely grammatical tokens (prepositions, articles, conjunctions, punctuation) go to "Ungrouped" unless they clearly promote a meaningful output token.
+- Purely grammatical tokens (prepositions, articles, conjunctions, punctuation, copulas) go to "Ungrouped" unless they clearly promote a semantically meaningful content token.
+- "say X" groups are ONLY valid when X is a meaningful content word or category (e.g., "say a city", "say a state"). Do NOT create "say X" groups when X is a function word, grammatical structure, or syntactic role — e.g., "say 'is'", "say a relative clause", "say 'of'", "say a preposition" are never valid groups. These belong in Ungrouped.
 - A valid group should feel connected to at least one other group in the graph, not like an isolated curiosity.
 - "Ungrouped" is not a failure — use it freely.
 
@@ -173,7 +180,7 @@ NAMING (STRICT — violating this is an error):
 - Natural, simple phrasing. If you need more than 5 words, the name is too specific — broaden it.
 - Prefer "say a city" over "city mention", "city reference", or "mentioned city".
 - Avoid parentheses and words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler phrase works.
-- Include a specific named entity only if it fits within 5 words and appears consistently.
+- Include a specific named entity in the group name when that entity is the clear shared referent — don't collapse "Oakland" into "a city" if the features are specifically about Oakland.
 - Prefer layman's vocabulary.
 
 SPLITTING vs MERGING:
@@ -181,6 +188,63 @@ SPLITTING vs MERGING:
 - Prefer two narrow groups over one vague bucket — Phase 3 can merge, but cannot recover lost distinctions.
 - Small groups are fine if they are interpretable and prompt-relevant.
 """
+
+# All variants use a0 as the base philosophy.
+# Per-phase extras are injected only into the specific phase each variant targets.
+GROUPING_PHILOSOPHY = GROUPING_PHILOSOPHY_A0
+
+# ---------------------------------------------------------------------------
+# Per-phase variant extras (a1 tweaks Phase 1, a2 tweaks Phase 2, a3 tweaks Phase 3)
+# ---------------------------------------------------------------------------
+
+# a1 — Phase 1 extra: push for completeness and specificity in group discovery
+PHASE1_EXTRAS: dict[str, str] = {
+    "a0": "",
+    "a1": """
+PHASE 1 COMPLETENESS (variant a1):
+Your primary goal is to surface EVERY meaningful semantic cluster, not just the most obvious ones.
+Phase 2 can only assign features to groups that already exist here — missing a group in Phase 1 means it is lost.
+- Actively look for groups you would expect to exist based on the prompt content and output, even if only 2–3 seed features represent them now.
+- Prefer two narrow groups over one broad bucket when the evidence supports a real distinction. Phase 3 can merge, but cannot recover a distinction that was never captured.
+- Be specific: a precise group name helps Phase 2 assign accurately. Vague bucket names produce wrong assignments.
+- Before finalising, ask: is there any concept clearly present in the prompt or output that has no group yet? If seed features support it, create it.
+""",
+    "a2": "",
+    "a3": "",
+}
+
+# a2 — Phase 2 extra: prioritise assignment accuracy over coverage
+PHASE2_EXTRAS: dict[str, str] = {
+    "a0": "",
+    "a1": "",
+    "a2": """
+PHASE 2 ASSIGNMENT ACCURACY (variant a2):
+Prioritise accuracy over coverage. A wrong assignment harms the graph more than leaving a feature Ungrouped.
+- Only assign a feature to a group if the semantic match is clear and strong — not just the closest available option.
+- When a feature fits two groups with equal confidence, choose Ungrouped over an arbitrary assignment.
+- Only create a new group if the feature is clearly relevant to the prompt and you are confident 2+ additional features from the broader set would belong there.
+""",
+    "a3": "",
+}
+
+# a3 — Phase 3 extra: be decisive about compression and output-relevance
+PHASE3_EXTRAS: dict[str, str] = {
+    "a0": "",
+    "a1": "",
+    "a2": "",
+    "a3": """
+PHASE 3 COMPRESSION (variant a3):
+Be decisive. The output-relevance principle above is not just a tiebreaker — apply it to every group.
+- Default to merging when two groups play the same role relative to the output. Only preserve a distinction if you can articulate how it changes a reader's understanding of WHY the model predicted this specific output.
+- Default to dropping when a group's connection to the output is indirect or unclear. Context that was present in the prompt but did not drive the prediction belongs in Ungrouped.
+- A graph with 5 clear, causally relevant groups is strictly better than one with 10 groups where 4 are marginal.
+- Drop any remaining "say X" groups where X is a function word, grammatical structure, or syntactic role (e.g., "say 'is'", "say a relative clause", "say 'of'"). These are never useful graph nodes.
+""",
+}
+
+if GROUPING_VARIANT not in PHASE1_EXTRAS:
+    log.warning("Unknown GROUPING_VARIANT '%s' — extras will be empty (a0 behaviour).", GROUPING_VARIANT)
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -281,7 +345,7 @@ Task: For each feature below, assign it to one of the existing groups if it stro
 Assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics.
 Only create a new group if the feature reflects a genuinely distinct semantic subgroup not covered by any existing group, is clearly relevant to the prompt, and would likely be shared by multiple related features.
 Do not force fit a feature into an existing group when the semantic role or abstraction level does not match.
-
+{PHASE2_EXTRAS.get(GROUPING_VARIANT, "")}
 Features:
 {format_feature_list(batch)}
 """
@@ -529,7 +593,7 @@ Additional guidance for this phase:
 - When in doubt between one broad group and two narrower groups, prefer the narrower ones — Phase 3 can merge, but cannot recover distinctions that were never captured.
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
-
+{PHASE1_EXTRAS.get(GROUPING_VARIANT, "")}
 Features:
 {format_feature_list(seed_features)}
 """
@@ -538,7 +602,7 @@ Features:
         model=GROUPING_MODEL,
         messages=[{"role": "user", "content": phase1_prompt}],
         response_format=Phase1Output,
-        max_completion_tokens=8192,
+        max_completion_tokens=32768,
     )
     p1 = response.choices[0].message.parsed
 
@@ -615,14 +679,15 @@ REVIEW CHECKLIST (work through in order):
 1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → Highest-priority issue. Split them.
 2. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
 3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype? → Keep separate or split.
-4. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
-5. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
-6. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
-7. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-8. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
+4. POLYSEMY / OFF-SENSE MEMBERS: Does any group contain features that activate on a different sense of the group's named concept than what this prompt requires? Features that belong to an irrelevant sense of the word should be reassigned to Ungrouped — they are real activations but not part of this prompt's reasoning. If the off-sense features are numerous and coherent, split them into their own group only if that group would itself pass the OUTPUT-RELEVANCE PRINCIPLE; otherwise Ungrouped.
+5. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
+6. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
+7. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
+9. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
 
 Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
-
+{PHASE3_EXTRAS.get(GROUPING_VARIANT, "")}
 Current grouping:
 {group_summary}
 """

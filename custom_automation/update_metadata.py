@@ -25,6 +25,7 @@ from pathlib import Path
 from config import (
     CURRENT_SLUG,
     DESCRIPTION_VARIANT,
+    GROUPING_VARIANT,
     GRAPH_FILE,
     setup_logging,
 )
@@ -105,7 +106,7 @@ def main() -> None:
     # Build the new entry
     new_entry = {
         "slug": slug,
-        "title_prefix": f"[{DESCRIPTION_VARIANT}]",
+        "title_prefix": f"[{DESCRIPTION_VARIANT}, {GROUPING_VARIANT}]",
         "scan": file_metadata.get("scan", "mwhanna/gemma-scope-transcoders"),
         "transcoder_list": file_metadata.get("transcoder_list", []),
         "prompt_tokens": input_tokens,

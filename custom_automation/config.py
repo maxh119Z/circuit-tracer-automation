@@ -68,12 +68,16 @@ CHECKPOINT_INTERVAL: int = 10
 # v2=label+explanation, v3=say-classification focused).  Override with env var.
 DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
 
+# Which grouping prompt variant to use (a0=original, a1=output-centric,
+# a2=coarse/hierarchical, a3=functional-role).  Override with env var.
+GROUPING_VARIANT: str = os.environ.get("GROUPING_VARIANT", "a0")
+
 # Artifact filenames — namespaced by variant so multiple versions coexist.
 # """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / f"feature_descriptions_{DESCRIPTION_VARIANT}.json"
-FEATURE_GROUPS_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}.json"
-VALIDATION_REPORT_FILE = ARTIFACTS_DIR / f"validation_report_{DESCRIPTION_VARIANT}.json"
-VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / f"validation_history_{DESCRIPTION_VARIANT}.json"
+FEATURE_GROUPS_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
+VALIDATION_REPORT_FILE = ARTIFACTS_DIR / f"validation_report_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
+VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / f"validation_history_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
 
 # ---------------------------------------------------------------------------
 # Grouping (OpenAI) — used by generate_supernodes.py
