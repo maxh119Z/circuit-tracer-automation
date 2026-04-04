@@ -64,6 +64,7 @@ cd custom_automation
 | `desc-group` | 0–5 | Specific `DESCRIPTION_VARIANT` + `GROUPING_VARIANT`. |
 | `all-groups` | 0–2 once, 3–6 ×4 | All 4 grouping variants (a0–a3) with one description variant. |
 | `all-variants` | 0–1 once, 2–6 ×4 | All 4 description variants (v0–v3). |
+| `compare` | — | Read all validation reports in `artifacts/` → write `artifacts/comparison.md`. |
 
 Custom pruning threshold: `./reproduce.sh core 0.40`
 

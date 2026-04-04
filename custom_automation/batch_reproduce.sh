@@ -154,9 +154,21 @@ while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
 done < "$CSV_FILE"
 
 # ---------------------------------------------------------------------------
+# Aggregate validation across all prompts
+# ---------------------------------------------------------------------------
+if [ "$RUN_VALIDATE" = true ]; then
+    step_banner "Aggregating validation scores across all prompts"
+    python aggregate_batch.py
+    echo "  Batch summary → artifacts/batch_summary.md"
+fi
+
+# ---------------------------------------------------------------------------
 # Done
 # ---------------------------------------------------------------------------
 step_banner "SUCCESS — Batch pipeline complete ($ROW_NUM slugs processed)"
 echo ""
 echo "  Refresh the viewer and use the dropdown to switch between graphs."
+if [ "$RUN_VALIDATE" = true ]; then
+    echo "  Validation summary → artifacts/batch_summary.md"
+fi
 echo ""

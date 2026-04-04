@@ -1,29 +1,40 @@
 """
-compare_variants.py — Aggregate all validation reports into a single comparison markdown.
+compare_variants.py — Aggregate all validation reports into per-prompt comparison markdowns.
 
-Scans artifacts/ recursively for every validation_report_*.json, reads each one,
-and writes artifacts/comparison.md with all variants in flat, readable tables.
+Scans artifacts/ recursively for every validation_report_*.json, groups by prompt,
+and writes one artifacts/comparison_<prompt-slug>.md per distinct prompt.
 
 Run this after any batch that produces multiple validation reports:
     python compare_variants.py
 
 Works for all-groups runs (same desc, different grouping),
 all-variants runs (different desc, same grouping), and mixed.
+Each prompt gets its own file so results are never overwritten.
 """
 
 from __future__ import annotations
 
 import json
+import re
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
 ARTIFACTS_DIR = Path(__file__).resolve().parent / "artifacts"
-OUTPUT_FILE = ARTIFACTS_DIR / "comparison.md"
 
 
 # ---------------------------------------------------------------------------
-# Load reports
+# Helpers
 # ---------------------------------------------------------------------------
+
+def _prompt_slug(prompt: str) -> str:
+    """Turn a prompt string into a short filename-safe slug."""
+    slug = prompt.lower().strip()
+    slug = re.sub(r"[^a-z0-9\s]", "", slug)
+    words = slug.split()[:8]
+    slug = "-".join(words)
+    return slug[:60] or "unknown"
+
 
 def _parse_variant_from_stem(stem: str) -> tuple[str, str]:
     """Extract (desc, grouping) from 'validation_report_v2_a0' → ('v2', 'a0')."""
@@ -34,13 +45,13 @@ def _parse_variant_from_stem(stem: str) -> tuple[str, str]:
     return without_prefix, "?"
 
 
-def find_reports() -> list[dict]:
+def find_reports() -> dict[str, list[dict]]:
     """
     Scan artifacts/ recursively for validation_report_*.json.
-    Returns list of dicts with: desc, grouping, label, report, timestamp_str.
-    Deduplicates by (desc, grouping), keeping the most recently generated report.
+    Returns {prompt_slug: [entry, ...]} grouped by prompt.
+    Deduplicates by (prompt, desc, grouping), keeping the most recently generated report.
     """
-    seen: dict[tuple[str, str], dict] = {}
+    seen: dict[tuple[str, str, str], dict] = {}
 
     for p in sorted(ARTIFACTS_DIR.rglob("validation_report_*.json")):
         try:
@@ -50,7 +61,9 @@ def find_reports() -> list[dict]:
             continue
 
         desc, grouping = _parse_variant_from_stem(p.stem)
-        key = (desc, grouping)
+        prompt = report.get("prompt", "")
+        slug = _prompt_slug(prompt)
+        key = (slug, desc, grouping)
         ts = report.get("timestamp", "")
 
         if key not in seen or ts > seen[key]["timestamp_str"]:
@@ -58,12 +71,20 @@ def find_reports() -> list[dict]:
                 "desc": desc,
                 "grouping": grouping,
                 "label": f"{desc} / {grouping}",
+                "prompt": prompt,
+                "prompt_slug": slug,
                 "report": report,
                 "timestamp_str": ts,
             }
 
-    # Sort: by desc first, then grouping
-    return sorted(seen.values(), key=lambda x: (x["desc"], x["grouping"]))
+    # Group by prompt slug, sorted by desc then grouping within each group
+    grouped: dict[str, list[dict]] = defaultdict(list)
+    for entry in seen.values():
+        grouped[entry["prompt_slug"]].append(entry)
+    for entries in grouped.values():
+        entries.sort(key=lambda x: (x["desc"], x["grouping"]))
+
+    return dict(grouped)
 
 
 # ---------------------------------------------------------------------------
@@ -87,7 +108,7 @@ def _fmt(d: dict) -> str:
 # Write markdown
 # ---------------------------------------------------------------------------
 
-def write_comparison(entries: list[dict], output: Path) -> None:
+def write_comparison(entries: list[dict], output: Path, prompt: str = "") -> None:
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     n = len(entries)
 
@@ -97,6 +118,10 @@ def write_comparison(entries: list[dict], output: Path) -> None:
     L += [
         "# Variant Comparison",
         "",
+    ]
+    if prompt:
+        L.append(f"**Prompt:** {prompt}")
+    L += [
         f"**Generated:** {timestamp}  |  **Variants found:** {n}",
         "",
         "Scores are **mean ± stderr** across runs. Higher is better.",
@@ -253,13 +278,22 @@ def write_comparison(entries: list[dict], output: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    entries = find_reports()
-    if not entries:
+    grouped = find_reports()
+    if not grouped:
         print(f"No validation_report_*.json files found under {ARTIFACTS_DIR}")
-    else:
+        # Write an empty file so the path is always predictable
+        (ARTIFACTS_DIR / "comparison.md").write_text("# Variant Comparison\n\nNo validation reports found.\n")
+        return
+
+    total = sum(len(v) for v in grouped.values())
+    print(f"Found {total} report(s) across {len(grouped)} prompt(s).")
+
+    for prompt_slug, entries in sorted(grouped.items()):
+        prompt = entries[0]["prompt"] if entries else ""
+        output = ARTIFACTS_DIR / f"comparison_{prompt_slug}.md"
         labels = [e["label"] for e in entries]
-        print(f"Found {len(entries)} report(s): {labels}")
-    write_comparison(entries, OUTPUT_FILE)
+        print(f"  [{prompt_slug}] {len(entries)} variant(s): {labels}")
+        write_comparison(entries, output, prompt=prompt)
 
 
 if __name__ == "__main__":
