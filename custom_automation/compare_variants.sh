@@ -6,7 +6,7 @@
 # Usage:
 #   ./compare_variants.sh                    Compare v0, v1, v2, v3
 #   ./compare_variants.sh v1 v3              Compare specific variants
-#   ./compare_variants.sh v1 v2 0.35         Compare v1, v2 with custom threshold
+#   ./compare_variants.sh v1 v2 0.40         Compare v1, v2 with custom threshold
 #
 # Prerequisites:
 #   - Step 1 (fetch_all_activation_text.py) must have already run.

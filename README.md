@@ -1,115 +1,118 @@
-# Automation Quickstart
-core / all — now always includes validation (step 6).
-Run as: DESCRIPTION_VARIANT=v0 ./reproduce.sh core
-all-variants — new subcommand: runs steps 0-1 once, then steps 2-6 for v0, v1, v2, v3 in sequence, producing 4 labeled graphs.
-Run as: ./reproduce.sh all-variants
-desc-group — run with a specific description variant AND grouping prompt variant.
-Run as: DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
-all-groups — steps 0-2 once with the chosen DESCRIPTION_VARIANT, then steps 3-6 for all 4 grouping variants (a0–a3). Produces 4 separate graphs in the viewer dropdown named <desc>-<group> (e.g. v2-a0, v2-a1, v2-a2, v2-a3).
-Run as: DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
+# circuit-tracer-automation
 
-Grouping variants (a0–a3):
-  a0 — Original semantic-role grouping (SAY vs CONCEPT focus, balanced granularity)
-  a1 — Output-centric (group by which output tokens features promote)
-  a2 — Coarse/hierarchical (fewer broad groups, 3–7 target, merge-first)
-  a3 — Functional-role (group by computational role: input encoding → knowledge retrieval → reasoning → output)
+Custom automation pipeline on top of the [circuit-tracer](https://github.com/safety-research/circuit-tracer) library. Automatically generates feature descriptions, supernodes, and validation scores for an attribution graph.
 
+## Setup
 
-Run in Order:
-
-Batch Mass Production
+```bash
+git clone https://github.com/maxh119Z/circuit-tracer-automation.git
+cd circuit-tracer-automation
+pip install .
+python huggingface_login.py [YOUR_HUGGINGFACE_TOKEN]
+export OPENAI_API_KEY="sk-..."
 ```
-circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
 
+
+
+### 1. Run attribution (circuit-tracer)
+```bash
+circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
+```
+
+### 2. Run the automation pipeline
+```bash
 cd custom_automation
-./batch_reproduce.sh ../prompts.csv all
 
+# Fetch activations only (no API key needed — do this first)
+./reproduce.sh fetch
+
+# Fetch + generate descriptions (defaults to description variant 2: the best version)
+./reproduce.sh fetch-desc
+
+# Run all 4 grouping variants for comparison (reuses existing descriptions)
+./reproduce.sh all-groups
+
+# Full pipeline in one shot; 1 grouping variant (a0), v2 description generation.
+./reproduce.sh core
+```
+
+### 3. Start the viewer if necessary
+```bash
 cd ..
 circuit-tracer start-server --graph_file_dir ./test_graphs
 ```
----Preliminary---
-```
-!git clone https://github.com/maxh119Z/circuit-tracer-automation.git
-cd circuit-tracer-automation
-pip install .
-```
 
----Original Circuit-Tracer---
-```
-python huggingface_login.py [YOUR HUGGINGFACE TOKEN]
-circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
+## Batch Production
 
-python -m circuit_tracer attribute -t mwhanna/gemma-scope-transcoders -p "Michael Jordan plays the sport of" --slug michael-jordan-plays-the-sport-of --graph_file_dir custom_automation/test_graphs --server
+```bash
+# Step 1: attribute all prompts
+circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
 
-
+# Step 2: run automation pipeline on all
+cd custom_automation
+./batch_reproduce.sh ../prompts.csv
 ```
 
-```
-export OPENAI_API_KEY = ""
-```
----Custom-Automation---
-```
-chmod +x reproduce.sh
-echo "Runs both grouping + validation logic unless specified"
-echo "PRUNING_TRHRESHOLD is 0.40 by default"
-./reproduce.sh [PRUNING_THRESHOLD]
-./reproduce.sh all
+## reproduce.sh subcommands
 
-echo "Runs grouping only"
-./reproduce.sh core
+| Subcommand | Steps | Description |
+|---|---|---|
+| `fetch` | 0–1 | Fetch activations only. No API key needed. |
+| `fetch-desc` | 0–2 | Fetch + generate descriptions. |
+| `core` / `all` | 0–5 + validation | Full pipeline (default). |
+| `validate` | 6 | Validation only (assumes core ran). |
+| `desc-group` | 0–5 | Specific `DESCRIPTION_VARIANT` + `GROUPING_VARIANT`. |
+| `all-groups` | 0–2 once, 3–6 ×4 | All 4 grouping variants (a0–a3) with one description variant. |
+| `all-variants` | 0–1 once, 2–6 ×4 | All 4 description variants (v0–v3). |
 
-echo "Runs validation only. Assumes grouping is finished"
-./reproduce.sh validation
+Custom pruning threshold: `./reproduce.sh core 0.40`
+
+## Variants
+
+**Description variants** (`DESCRIPTION_VARIANT`):
+- `v2` *(default)* — label + elaboration, balanced specificity
+
+**Grouping variants** (`GROUPING_VARIANT`):
+- `a0` *(default)* — semantic-role grouping (SAY vs CONCEPT focus)
+- `a1` — a0 + Phase 1 completeness push (more specific group discovery)
+- `a2` — a0 + Phase 2 accuracy push (conservative assignment)
+- `a3` — a0 + Phase 3 compression push (aggressive output-relevance cleanup)
+
+Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
+
+## Pipeline Steps
+
+| Step | Script | Description |
+|---|---|---|
+| 0 | `apply_frontend_patch.py` | Patch `init-cg.js` for qParams parsing |
+| 1 | `fetch_all_activation_text.py` | Download feature activations from HuggingFace |
+| 2 | `generate_description.py` | Generate labels per feature via GPT-5-mini |
+| 3 | `generate_supernodes.py` | 3-phase semantic grouping (discover → assign → reconcile) |
+| 4 | `push_to_website.py` | Inject descriptions + groups into graph JSON |
+| 5 | `update_metadata.py` | Register graph in viewer dropdown |
+| 6 | `validate_groups.py` | M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + D1 (description accuracy) |
+
+## File Structure
+
 ```
----END-----
-
-```
-## -------------------------------------------------------------
-
 circuit-tracer-automation/
-├── custom_automation/                 # MAIN PIPELINE
-│   ├── config.py                          # Shared config: paths, constants, HF URLs, API settings
-│   ├── fetch_all_activation_text.py       # Step 1: Download feature activations from HuggingFace (pruning by influence threshold)
-│   ├── generate_description.py            # Step 2: Generate short labels per feature via GPT-5-mini
-│   ├── generate_supernodes.py             # Step 3: 3-phase semantic grouping (discover → assign → reconcile) via GPT-5-mini
-│   ├── push_to_website.py                 # Step 4: Inject descriptions into node clerp fields + supernodes/pinnedIds into qParams
-│   ├── update_metadata.py                 # Step 5: Copy graph to slug-named file, register in viewer dropdown
-│   ├── validate_groups.py                 # Step 6: Validation — M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + random baseline
-│   ├── apply_frontend_patch.py            # Step 0: Patch init-cg.js for qParams parsing
-│   ├── plot_validation.py                 # Plot validation results from report/history JSON
-│   │
-│   ├── reproduce.sh                       # MASTER SCRIPT
-│   │                                      #   ./reproduce.sh              Core pipeline (steps 0-5)
-│   │                                      #   ./reproduce.sh core         Same as above
-│   │                                      #   ./reproduce.sh all          Core + validation
-│   │                                      #   ./reproduce.sh validate     Validation only (assumes core ran)
-│   │                                      #   ./reproduce.sh all 0.35     Custom pruning threshold
-│   │                                      #   DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
-│   │                                      #                               Steps 0-2 once, then steps 3-6 for all 4 grouping variants (a0-a3)
-│   │
-│   ├── artifacts/                         # Generated files (gitignored)
-│   │   ├── pruned_activations.json            # Step 1 output: filtered features + HF activation data
-│   │   ├── feature_descriptions.json          # Step 2 output: features with generated_description field
-│   │   ├── feature_groups.json                # Step 3 output: feature_id → group_name mapping
-│   │   ├── manual_groups.json                 # (Optional) Hand-curated feature_id → group_name for validation comparison
-│   │   ├── validation_report.json             # Step 6 output: latest validation scores
-│   │   └── validation_history.json            # Step 6 output: append-only history of all validation runs
-│   │
-│   └── manual_groupings/         # Example manual groups folder to store json files for comparision
-│
-├── test_graphs/                       # Graph data served by the viewer
-│   ├── test-run.json                      # Working copy (pipeline always writes here, then copies to slug)
-│   ├── graph-metadata.json                # Dropdown registry (auto-updated by Step 5)
-│   └── <slug>.json                        # Named copies created by Step 5 (e.g., the-capital-of-the-state-containing-dall.json). Allows for easy selection and storage
-│
-├── circuit_tracer/                    # Existing logic from Circuit-Tracer
-│   ├── frontend/
-│   │   └── assets/
-│   │       └── attribution_graph/
-│   │           ├── init-cg.js                 # Custom 2 line changes for our setup to work.
-│   └── ...
-│
-└── README.md
+├── custom_automation/
+│   ├── reproduce.sh                   # Master pipeline script
+│   ├── batch_reproduce.sh             # Batch pipeline over a prompts CSV
+│   ├── compare_variants.sh            # Compare description variants side-by-side
+│   ├── config.py                      # Paths, model names, variant settings
+│   ├── [step scripts...]
+│   └── artifacts/                     # Generated files (gitignored)
+│       ├── pruned_activations.json
+│       ├── feature_descriptions_<desc>.json
+│       ├── feature_groups_<desc>_<group>.json
+│       ├── validation_report_<desc>_<group>.json
+│       └── <slug>/                    # Per-slug artifacts (batch mode)
+├── test_graphs/
+│   ├── test-run.json                  # Working copy
+│   ├── graph-metadata.json            # Viewer dropdown registry
+│   └── <slug>.json                    # Named graph copies
+└── circuit_tracer/                    # Original circuit-tracer library
 
 # circuit-tracer
 

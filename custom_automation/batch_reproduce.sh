@@ -11,7 +11,7 @@
 # Examples:
 #   ./batch_reproduce.sh prompts.csv
 #   ./batch_reproduce.sh prompts.csv all
-#   ./batch_reproduce.sh prompts.csv all 0.35
+#   ./batch_reproduce.sh prompts.csv all 0.40
 #
 # Environment variables:
 #   OPENAI_API_KEY   — Required for descriptions, grouping, and validation.

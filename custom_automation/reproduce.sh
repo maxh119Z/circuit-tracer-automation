@@ -2,32 +2,32 @@
 # =============================================================================
 # reproduce.sh — Run the custom_automation pipeline.
 #
-# Usage:
-#   ./reproduce.sh              Run full pipeline: steps 0-5 + validation
-#   ./reproduce.sh core         Same as above
-#   ./reproduce.sh all          Same as core (kept for backward compat)
-#   ./reproduce.sh validate     Validation only (step 6, assumes core already ran)
-#   ./reproduce.sh all-variants Steps 0-1 once, then steps 2-6 for all 4
-#                               description variants (v0, v1, v2, v3) — produces
-#                               4 separate labeled graphs + validation each.
-#   ./reproduce.sh desc-group   Steps 0-1 once, then steps 2-6 with the
-#                               specified DESCRIPTION_VARIANT + GROUPING_VARIANT.
-#   ./reproduce.sh all-groups   Steps 0-2 once with the chosen DESCRIPTION_VARIANT,
-#                               then steps 3-6 for all 4 grouping variants (a0–a3).
-#                               Produces 4 separate graphs in the viewer dropdown.
-#   ./reproduce.sh PRUNING_THRESHOLD      Core with custom pruning threshold
+# Subcommands:
+#   fetch           Steps 0-1 only: patch frontend + fetch activations.
+#                   No OpenAI key needed. Run this first for any new prompt.
+#   fetch-desc      Steps 0-2: fetch activations + generate descriptions.
+#                   Run once per description variant before iterating on groups.
+#   core / all      Full pipeline: steps 0-5 + validation (default).
+#   validate        Validation only (step 6). Assumes core already ran.
+#   desc-group      Steps 0-5 with a specific DESCRIPTION_VARIANT + GROUPING_VARIANT.
+#   all-groups      Steps 0-2 once, then steps 3-6 for all 4 grouping variants (a0–a3).
+#   all-variants    Steps 0-1 once, then steps 2-6 for all description variants (v0–v3).
+#   compare         Compare all validation reports in artifacts/ → artifacts/comparison.md
 #
-#   Ex: ./reproduce.sh core 0.35          Core with custom threshold
-#       ./reproduce.sh all-variants 0.35  All-variants with custom threshold
-#       DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
-#       DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
+# Usage examples:
+#   ./reproduce.sh fetch
+#   DESCRIPTION_VARIANT=v2 ./reproduce.sh fetch-desc
+#   ./reproduce.sh core 0.40
+#   DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group
+#   DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups
+#   ./reproduce.sh compare
 #
 # Environment variables:
 #   OPENAI_API_KEY   — Required for descriptions, grouping, and validation.
 #   VIEWER_URL       — Optional. Base URL for the viewer (default: localhost:8041).
 #
-# After running: just refresh the viewer page. Groups load automatically.
-# You might have to Clear Browser Cache via Inspect Element
+# After running: refresh the viewer page. Groups load automatically.
+# Clear browser cache if regenerating a same-prompt graph.
 # =============================================================================
 
 set -euo pipefail
@@ -49,13 +49,22 @@ else
     shift || true
 fi
 
+RUN_FETCH=false
+RUN_FETCH_DESC=false
 RUN_CORE=false
 RUN_VALIDATE=false
 RUN_VARIANTS=false
 RUN_DESC_GROUP=false
 RUN_ALL_GROUPS=false
+RUN_COMPARE=false
 
 case "$SUBCOMMAND" in
+    fetch)
+        RUN_FETCH=true
+        ;;
+    fetch-desc)
+        RUN_FETCH_DESC=true
+        ;;
     core|all)
         RUN_CORE=true
         RUN_VALIDATE=true
@@ -72,16 +81,21 @@ case "$SUBCOMMAND" in
     all-groups)
         RUN_ALL_GROUPS=true
         ;;
+    compare)
+        RUN_COMPARE=true
+        ;;
     *)
         echo "Unknown subcommand: $SUBCOMMAND"
-        echo "Usage: ./reproduce.sh [core|all|validate|all-variants|desc-group|all-groups] [PRUNING_THRESHOLD]"
+        echo "Usage: ./reproduce.sh [fetch|fetch-desc|core|all|validate|all-variants|desc-group|all-groups|compare] [PRUNING_THRESHOLD]"
         echo ""
-        echo "  desc-group  — Run with specific DESCRIPTION_VARIANT and GROUPING_VARIANT."
+        echo "  fetch       — Steps 0-1 only (no OpenAI key needed)."
+        echo "  fetch-desc  — Steps 0-2: fetch + descriptions."
+        echo "    Ex: DESCRIPTION_VARIANT=v2 ./reproduce.sh fetch-desc"
+        echo "  desc-group  — Steps 0-5 with specific DESCRIPTION_VARIANT and GROUPING_VARIANT."
         echo "    Ex: DESCRIPTION_VARIANT=v2 GROUPING_VARIANT=a1 ./reproduce.sh desc-group"
-        echo ""
-        echo "  all-groups  — Steps 0-2 once with chosen DESCRIPTION_VARIANT, then steps 3-6"
-        echo "                for all 4 grouping variants (a0-a3). 4 graphs in viewer dropdown."
+        echo "  all-groups  — Steps 0-2 once, then steps 3-6 for all 4 grouping variants."
         echo "    Ex: DESCRIPTION_VARIANT=v2 ./reproduce.sh all-groups"
+        echo "  compare     — Read all validation reports in artifacts/ and write comparison.md."
         exit 1
         ;;
 esac
@@ -134,7 +148,9 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
     echo "  ✓ Description variant: ${DESCRIPTION_VARIANT:-v2} (all 4 grouping variants: a0 a1 a2 a3)"
 fi
 
-if [ -z "${OPENAI_API_KEY:-}" ]; then
+if [ "$RUN_FETCH" = true ] || [ "$RUN_COMPARE" = true ]; then
+    echo "  ✓ fetch/compare mode — OPENAI_API_KEY not required."
+elif [ -z "${OPENAI_API_KEY:-}" ]; then
     echo -n "🔑 OPENAI_API_KEY not found. Please enter it now (input will be hidden): "
     read -s USER_API_KEY
     echo ""
@@ -148,6 +164,42 @@ if [ -z "${OPENAI_API_KEY:-}" ]; then
     echo "  ✓ OPENAI_API_KEY exported for this run."
 else
     echo "  ✓ OPENAI_API_KEY is already set in the environment."
+fi
+
+# ---------------------------------------------------------------------------
+# Fetch only (steps 0-1)
+# ---------------------------------------------------------------------------
+if [ "$RUN_FETCH" = true ]; then
+
+    step_banner "Step 0 — Applying frontend patch (if needed)"
+    python apply_frontend_patch.py
+
+    step_banner "Step 1 — Fetching pruned feature activations"
+    t=$(date +%s)
+    python fetch_all_activation_text.py
+    elapsed "$t"
+
+fi
+
+# ---------------------------------------------------------------------------
+# Fetch + describe (steps 0-2)
+# ---------------------------------------------------------------------------
+if [ "$RUN_FETCH_DESC" = true ]; then
+    export DESCRIPTION_VARIANT="${DESCRIPTION_VARIANT:-v2}"
+
+    step_banner "Step 0 — Applying frontend patch (if needed)"
+    python apply_frontend_patch.py
+
+    step_banner "Step 1 — Fetching pruned feature activations"
+    t=$(date +%s)
+    python fetch_all_activation_text.py
+    elapsed "$t"
+
+    step_banner "Step 2 — Generating descriptions [desc=$DESCRIPTION_VARIANT]"
+    t=$(date +%s)
+    python generate_description.py
+    elapsed "$t"
+
 fi
 
 # ---------------------------------------------------------------------------
@@ -364,11 +416,19 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
 fi
 
 # ---------------------------------------------------------------------------
+# Compare (read all validation reports → artifacts/comparison.md)
+# ---------------------------------------------------------------------------
+if [ "$RUN_COMPARE" = true ]; then
+    step_banner "Generating comparison.md"
+    python compare_variants.py
+fi
+
+# ---------------------------------------------------------------------------
 # Done
 # ---------------------------------------------------------------------------
 step_banner "SUCCESS — Pipeline complete ($SUBCOMMAND)"
 echo ""
-if [ "$RUN_CORE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" = true ] || [ "$RUN_ALL_GROUPS" = true ]; then
+if [ "$RUN_CORE" = true ] || [ "$RUN_VARIANTS" = true ] || [ "$RUN_DESC_GROUP" = true ] || [ "$RUN_ALL_GROUPS" = true ] || [ "$RUN_FETCH_DESC" = true ]; then
     echo "  Your groups are saved in the graph JSON."
     echo "  The graph is registered in the viewer dropdown."
     echo "  👉 Just refresh the viewer page — select your graph, groups load automatically."
@@ -385,5 +445,10 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
     for _gv in a0 a1 a2 a3; do
         echo "    ${_dv}-${_gv}  →  test_graphs/${_dv}-${_gv}.json"
     done
+    echo "  Run './reproduce.sh compare' to generate artifacts/comparison.md"
+    echo ""
+fi
+if [ "$RUN_COMPARE" = true ]; then
+    echo "  Comparison → artifacts/comparison.md"
     echo ""
 fi

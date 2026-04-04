@@ -176,6 +176,10 @@ cython_debug/
 *.parquet
 .vscode/
 test_graphs/
+
+#CUSTOM CHANGES START: custom-automation
 custom_automation/artifacts/*
 !custom_automation/artifacts/.gitkeep
 custom_automation/artifacts
+myenv/
+# CUSTOM EDITS END: custom-automation

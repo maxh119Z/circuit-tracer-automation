@@ -51,7 +51,7 @@ def apply_patches():
 
     ANCHOR = "if (visState.clickedId?.includes('supernode'))"
 
-    if "[PIPELINE PATCH]" not in content:
+    if "CUSTOM EDITS START" not in content:
         # Insert the parse block right before the anchor line
         if ANCHOR in content:
             content = content.replace(ANCHOR, PARSE_BLOCK + "  " + ANCHOR)
@@ -60,7 +60,7 @@ def apply_patches():
             print(f"WARNING: Could not find anchor line: {ANCHOR!r}")
             print("  You may need to apply Patch 1 manually — see PATCH_INSTRUCTIONS.js")
     else:
-        print("  Patch 1 already applied (qParams parsing). Skipping.")
+        print("  Patch 1 already applied (CUSTOM EDITS block present). Skipping.")
 
     # -----------------------------------------------------------------------
     # PATCH 2: Fix the truthy-array bug

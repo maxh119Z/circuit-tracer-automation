@@ -42,33 +42,19 @@ window.initCg = async function (sel, slug, {clickedId, clickedIdCb, isModal, isG
     console.error('Error parsing supernodes from URL:', e);
   }
 
-  // CUSTOM EDITS
-  //--------------------
+  // CUSTOM EDITS START: custom-automation
+  // Fix: check .length so an empty array doesn't overwrite existing supernodes state
   if (urlSupernodes.length) visState.supernodes = urlSupernodes
-  //--------------------
 
-  //CUSTOM EDITS
-  //--------------------
-  // Parse qParams supernodes if stored as JSON string (from Save button or pipeline)
+  // Parse qParams values that pipeline or Save button may write as strings
   if (typeof visState.supernodes === 'string') {
     try { visState.supernodes = JSON.parse(visState.supernodes) } catch(e) { visState.supernodes = [] }
   }
-  // Parse qParams pinnedIds if stored as comma-separated string
   if (typeof visState.pinnedIds === 'string') {
     visState.pinnedIds = visState.pinnedIds.split(',').filter(Boolean)
   }
-  //--------------------
-  //--------------------
   console.log('[DEBUG]', 'supernodes:', Array.isArray(visState.supernodes), visState.supernodes?.length, 'pinnedIds:', Array.isArray(visState.pinnedIds), visState.pinnedIds?.length)
-  //--------------------
-    
-    // [PIPELINE PATCH] Parse qParams values that may be stored as strings
-  if (typeof visState.supernodes === 'string') {
-    try { visState.supernodes = JSON.parse(visState.supernodes) } catch(e) { visState.supernodes = [] }
-  }
-  if (typeof visState.pinnedIds === 'string') {
-    visState.pinnedIds = visState.pinnedIds.split(',').filter(Boolean)
-  }
+  // CUSTOM EDITS END: custom-automation
 
   if (visState.clickedId?.includes('supernode')) delete visState.clickedId
   if (clickedId && clickedId != 'null' && !clickedId.includes('supernode-')) visState.clickedId = clickedId
