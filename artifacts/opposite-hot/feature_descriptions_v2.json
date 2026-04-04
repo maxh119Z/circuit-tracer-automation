@@ -1,0 +1,1874 @@
+[
+  {
+    "id": "0_3302_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3706378638744354,
+    "top_activations": [
+      {
+        "trigger": " opposite",
+        "score": 18.25,
+        "context": " but attenuates those in a specific range to very low levels. It is the opposite of a band-pass filter. A notch filter is a band-stop"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.25,
+        "context": ". Scientists have found dozens of waterways that are becoming more alkaline. Alkaline is the opposite of acidic \u2014 think baking soda or Rolaids.\u23ceResearch published in"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.5,
+        "context": " of the same sex. Heterosexual teen-agers are attracted to people of the opposite sex, and bisexual teens are attracted to people of both sexes.\u23ceThe"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.5,
+        "context": " harvests in forest-dominated areas during acorn \u201cbust\u201d years. However, the opposite occurs in years of good acorn abundance by causing deer to become more evenly distributed"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.38,
+        "context": " Tourism is a good thing in some ways, but it can be something quite the opposite in certain contexts. Don't be a bad tourist--there are repercussions"
+      }
+    ],
+    "promotes": [
+      "Spolja\u0161nje",
+      "jectile",
+      "phazard",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      " fallait",
+      " dolo",
+      " faut",
+      "o"
+    ],
+    "generated_description": "\"opposite\" \u2014 activates on the token \"opposite\", especially when introducing antonyms/contrasts or phrases like \"the opposite of X\"."
+  },
+  {
+    "id": "0_11375_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3939885199069977,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "is \u2014 activates on the copula \"is\" (linking verb) in declarative phrases; fires when \"is\" links subject to predicate or description."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.34027180075645447,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\" (linking nouns/phrases), e.g., \"of Tennessee\", \"of Kilmaurs\", \"of San Miniato\""
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3899621367454529,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say sentence-initial \"In\" \u2014 activates on capitalized \"In\" that opens topic-intro clauses (e.g., \"In medicine,\" \"In music,\")"
+  },
+  {
+    "id": "4_11626_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.39529573917388916,
+    "top_activations": [
+      {
+        "trigger": "y",
+        "score": 15.75,
+        "context": " Rio de Janerio) cram two-to-a-seat in a steamy classroom. It is the day before summer (and Christmas) break in Brazil"
+      },
+      {
+        "trigger": "house",
+        "score": 25.25,
+        "context": " as CO2 to the atmosphere will not lead to an increase in the 'greenhouse effect' or increase in global temperature.\u23ceJournal of Climate 20"
+      },
+      {
+        "trigger": " house",
+        "score": 23.62,
+        "context": " used to grow plants all year long. Now there is another definition. A green house is the result of a movement to produce houses that are less harmful to the"
+      },
+      {
+        "trigger": " greenhouses",
+        "score": 16.5,
+        "context": "<bos>Aphids can be a major problem on plants still in greenhouses. Members of Univ. of Md. Extension are reporting finding aphids on zinnias, snapd"
+      },
+      {
+        "trigger": " greenhouse",
+        "score": 17.25,
+        "context": "`ale`ale, the rainiest spot on Earth. These plantlets, when grown to sufficient size in a greenhouse, may one day be planted b..."
+      }
+    ],
+    "promotes": [
+      " Heat",
+      "<bos>",
+      " nhi\u1ec7t",
+      "Heat",
+      " heat"
+    ],
+    "demotes": [
+      " \u0645\u0631\u0626\u064a\u0647",
+      " corren",
+      "WebElementEntity",
+      "\u0447\u0435\u0441\u0442\u0432\u0435",
+      " intptr"
+    ],
+    "generated_description": "greenhouse \u2014 activates on \"greenhouse\" and variants (greenhouse, greenhouses, \"greenhouse effect\"); tied to heat/temperature concepts (model also promotes \"heat\")."
+  },
+  {
+    "id": "7_3548_5",
+    "layer": 7,
+    "ctx_idx": 5,
+    "influence_score": 0.3478758931159973,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 15.75,
+        "context": " away in an instant should that child be left unattended in a car that is too hot or too cold. But few parents know that it isn't only the"
+      },
+      {
+        "trigger": " hot",
+        "score": 14.25,
+        "context": " combination of sun, tile roofs, unshaded streets and lots of asphalt keeps things hot day and night. It stays hotter longer in Phoenix than in most places."
+      },
+      {
+        "trigger": " cool",
+        "score": 16.38,
+        "context": " most weeds from germinating\u23ce- reduces the need to water, keeps the soil cool and most\u23ce- keeps dirt from splashing on flowers and vegetables\u23ce- reduces"
+      },
+      {
+        "trigger": " heat",
+        "score": 14.5,
+        "context": ". Unfortunately, the building\u2019s curvature and reflective glass windows, when combined with the blistering Las Vegas sun, create spots of heat directly on the pool area hot"
+      },
+      {
+        "trigger": " thermal",
+        "score": 14.38,
+        "context": " human cochlea detects an acoustic energy as low as about 10 times the thermal noise and covering 12 orders of magnitude. It responds to a spectrum"
+      }
+    ],
+    "promotes": [
+      " doInBackground",
+      "\u043d\u0456\u0446\u0438\u043f\u0430",
+      "AsUp",
+      "IUrlHelper",
+      "HomeAsUpEnabled"
+    ],
+    "demotes": [
+      " temperature",
+      " temperatures",
+      " warm",
+      " heat",
+      " Temperature"
+    ],
+    "generated_description": "Temperature / heat \u2014 activates on words about thermal state (hot, heat, cool, thermal); signals mentions of temperature, heat-related descriptors."
+  },
+  {
+    "id": "3_15843_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.3674275279045105,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 15.12,
+        "context": " as a cucumber, then fades into the infrared image, revealing a smokin' hot \"cigar.\"\u23ceThe visible-light picture of the Cigar galaxy,"
+      },
+      {
+        "trigger": " Hot",
+        "score": 17.75,
+        "context": "<bos>What's Hot Archive\u23ceJanuary 31, 2005\u23ceMajority of children need more fiber\u23ceThe results of a study published in"
+      },
+      {
+        "trigger": " Hot",
+        "score": 16.38,
+        "context": "<bos>Mandatory Solar Hot Water for New Homes: Don't Believe It\u23ceUPDATED 11/17/10 12 p.m."
+      },
+      {
+        "trigger": " hot",
+        "score": 17.0,
+        "context": " your hot water costs will be reduced.\u23ce- Cut your carbon footprint: solar hot water is a green, renewable heating system and can reduce your carbon dioxide emissions"
+      },
+      {
+        "trigger": " hot",
+        "score": 14.88,
+        "context": "<bos>Trauma seems to be the new hot button issue for those who work in the child welfare system. So...what exactly is trauma? The definition that I received"
+      }
+    ],
+    "promotes": [
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "adaptiveStyles",
+      "EDEFAULT",
+      "parsedMessage",
+      "KURZBESCHREIBUNG"
+    ],
+    "demotes": [
+      " hot",
+      "Hot",
+      " Hot",
+      "hot",
+      " HOT"
+    ],
+    "generated_description": "hot \u2014 activates on the literal token \"hot\"/\"Hot\" in titles, adjectives, and phrases; associated with suppressing/pushing away generation of the word \"hot.\""
+  },
+  {
+    "id": "3_339_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3690348267555237,
+    "top_activations": [
+      {
+        "trigger": "atively",
+        "score": 38.75,
+        "context": "2008 - Even small amounts of exposure to secondhand smoke can\u23cenegatively impact the cardiovascular health of children, new research\u23ceKids exposed to tobacco smoke"
+      },
+      {
+        "trigger": " damaging",
+        "score": 16.0,
+        "context": " amongst the flock, decreased quantities of eggs, unclean and unsightly eggs, and additional damaging consequences.\u23ceError 1: Not Selecting an Area with Satisfactory Water"
+      },
+      {
+        "trigger": " sense",
+        "score": 20.25,
+        "context": " The bovine respiratory syncytial virus (BRSV) is an enveloped, negative sense, single-stranded RNA virus belonging to the pneumovirus genus within the family"
+      },
+      {
+        "trigger": "ve",
+        "score": 37.0,
+        "context": "to-Be\u201d IDOLS b. Indirect (2) Non-inspirational (-ve) \u201cDON\u2019T Want to Be\u201d MICHEAL JACKSON\u23ceNorm"
+      },
+      {
+        "trigger": " positively",
+        "score": 16.0,
+        "context": " \u2013 and suddenly he saw daylight. According to the motto \u201cThink simply and always positively\u201c, he developed his Multi-User Solar System.\u23ceInstead of mounting expensive"
+      }
+    ],
+    "promotes": [
+      " Negative",
+      "negative",
+      " Positive",
+      " negative",
+      " positive"
+    ],
+    "demotes": [
+      "IsContent",
+      "Forr\u00e1sok",
+      "DockStyle",
+      "harusnya",
+      "nextDouble"
+    ],
+    "generated_description": "Polarity word \u2014 activates on sentiment/polarity tokens (negative, positively, negatively, damaging, -ve, \u201cnegative-sense\u201d); tends to promote \u201cnegative\u201d/\u201cpositive\u201d in output."
+  },
+  {
+    "id": "4_7879_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.3622133135795593,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 16.62,
+        "context": " for trick-or-treaters (or gently illuminate the garden while you drink hot cocoa around a bonfire). Need more jars?\u23ceClean out your used jam"
+      },
+      {
+        "trigger": " hot",
+        "score": 16.12,
+        "context": "<bos>Giffen goods are a hot commodity \u2013 literally.\u23ceGiffen goods, named for the economist Sir Robert Giffen, are goods that do not respond to"
+      },
+      {
+        "trigger": " hot",
+        "score": 16.25,
+        "context": " and fuel tank. Never use an incandescent trouble light near the fuel tank because the hot surface of the light bulb can ignite any fuel that might spill or splash on"
+      },
+      {
+        "trigger": " hot",
+        "score": 17.5,
+        "context": " dry roasted at Eden's AIB rated Superior, Michigan facility. While still hot they are misted with EDEN sea salt and air dried.\u23cePumpkin"
+      },
+      {
+        "trigger": " hot",
+        "score": 16.38,
+        "context": " few years back we took a road trip to Montana. Along the way we encountered hot springs, geysers, fumaroles, bison, elk, both living"
+      }
+    ],
+    "promotes": [
+      "edra",
+      " CHRON",
+      "=\"<?=$",
+      "ahon",
+      "InSection"
+    ],
+    "demotes": [
+      " hot",
+      "hot",
+      " Hot",
+      "Hot",
+      " HOT"
+    ],
+    "generated_description": "hot \u2014 activates on the content word \u201chot\u201d (literal temperature or figurative/popular uses) across varied contexts"
+  },
+  {
+    "id": "2_4693_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.3640379309654236,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 26.0,
+        "context": " result in massive landslides\u23ce- pyroclastic flows, which are dense mixtures of hot blocks, pumice, ash and gas, plunging down volcanic slopes into the"
+      },
+      {
+        "trigger": " hot",
+        "score": 26.0,
+        "context": " lost in the form of heat. By using this heat to produce space heat and hot water,CHPs can decrease energy costs and increase fuel use efficiency.\u23ce"
+      },
+      {
+        "trigger": " hot",
+        "score": 27.5,
+        "context": " hot and cold colored water handy.\u23ceFor most students, it is intuitive that hot and cold water would mix. To see the cold water staying at the bottom"
+      },
+      {
+        "trigger": " hot",
+        "score": 26.0,
+        "context": " heat from a laptop than a traditional fan. In addition to removing more heat form hot internal components like the CPU, lab tests have also reportedly shown that the ionic"
+      },
+      {
+        "trigger": " hot",
+        "score": 25.75,
+        "context": "\u23cePacific and Antarctic plates\u23ceNazca and South American plates\u23ceWhat do mid-ocean ridges and hot spots have in common?\u23ceThey are associated with rising"
+      }
+    ],
+    "promotes": [
+      " Bled",
+      " instru",
+      "\u671f\u520a\u8bba\u6587",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      " gani"
+    ],
+    "demotes": [
+      " hot",
+      "Hot",
+      " Hot",
+      "hot",
+      "HOT"
+    ],
+    "generated_description": "hot \u2014 activates on lowercase \"hot\" as an adjective (hot water, hot spots, hot components); often suppresses producing the token \"hot\" in outputs."
+  },
+  {
+    "id": "17_10824_5",
+    "layer": 17,
+    "ctx_idx": 5,
+    "influence_score": 0.2366909235715866,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 106.0,
+        "context": "veragerdi, Iceland as part of the University of Iceland. Research focus includes hot spring ecology, limnology and water quality, developing a hot spring and geothermal"
+      },
+      {
+        "trigger": " hot",
+        "score": 112.0,
+        "context": " about her face; a slattern.\u23ce- n. (noun) A hot-tempered, unjustifiably angry woman, usually stereotyped as"
+      },
+      {
+        "trigger": " hot",
+        "score": 105.0,
+        "context": " you can do it all less than two hours from San Francisco. But as the hot summer sun gives way to chilly fall days, staying dry can lead to hidden"
+      },
+      {
+        "trigger": " Hot",
+        "score": 112.0,
+        "context": "<bos>Did you know?\u23ce- Hot water heaters should be properly sized for your house.\u23ce- Extra thick insulation helps prevent radiant heat loss and saves energy and"
+      },
+      {
+        "trigger": " hot",
+        "score": 103.0,
+        "context": "<bos>Mmmm, a hot fudge sundae. The diet is supposed to start today, but surely it can wait until tomorrow -- or maybe the next day.\u23ce"
+      }
+    ],
+    "promotes": [
+      "Hot",
+      "hot",
+      "shot",
+      " surla",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      "]\")]",
+      "ismet",
+      "fazione",
+      "AddTagHelper"
+    ],
+    "generated_description": "\"hot\" token \u2014 activates on the word \"hot\" (Hot/hot), across uses: temperature, food, temperament, proper noun contexts."
+  },
+  {
+    "id": "19_5741_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.36036738753318787,
+    "top_activations": [
+      {
+        "trigger": " lovely",
+        "score": 78.5,
+        "context": " comfortable spot where you can spot birds. Either go outside, if it's a lovely day, or sit in a window where you can see birds coming and"
+      },
+      {
+        "trigger": " overcast",
+        "score": 49.0,
+        "context": " ventilation, while a natural daylighting scheme eliminates the need for artificial lighting except on overcast days. A high albedo membrane roof keeps the building cool, and the angled"
+      },
+      {
+        "trigger": " in",
+        "score": 47.0,
+        "context": "Faculty Members Bake Bread in Solar Oven\u23ceWhoever said you can\u2019t cook outdoors in below-freezing weather using only the heat of the sun? Faculty members from"
+      },
+      {
+        "trigger": " If",
+        "score": 58.0,
+        "context": " worse. If the air is still, smoke will linger in the air. If it is windy, smoke may blow into neighbouring properties and across roads.\u23ceBon"
+      },
+      {
+        "trigger": " hot",
+        "score": 56.5,
+        "context": " deprived of water. However, if you perspire profusely while gardening, particularly on hot, humid days, you may lose water so quickly that your thirst mechanism can"
+      }
+    ],
+    "promotes": [
+      "UserScript",
+      "JAMIN",
+      "istoitu",
+      "ComponentModel",
+      "addPreferredGap"
+    ],
+    "demotes": [
+      " weather",
+      " rainy",
+      " rain",
+      "Weather",
+      " Weather"
+    ],
+    "generated_description": "Weather-day adjective \u2014 activates on weather-describing adjectives (lovely, overcast, hot) especially in phrases like \u201c___ day\u201d or \u201c___ days\u201d; signals mention of weather/day conditions."
+  },
+  {
+    "id": "19_8656_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.37841954827308655,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 31.0,
+        "context": " if she does then a monster I'll be! / I'm big and strong! / I grumble and growl / and scare people off / with"
+      },
+      {
+        "trigger": ",",
+        "score": 34.25,
+        "context": " are also a main sponsor for many video games and concerts. Advertised as fun, youthful, and above all, healthy, many children and teens are being caught"
+      },
+      {
+        "trigger": " and",
+        "score": 32.0,
+        "context": " restricts or adds to the sense of a head noun (e.g. good and family in a good family house).More example sentences\u23ce- This is possible"
+      },
+      {
+        "trigger": ",",
+        "score": 34.5,
+        "context": "\u201d in India. The method of whistleblowing is capable of gifting a free, transparent and just social order and it can eliminate the arbitrariness, officialdom"
+      },
+      {
+        "trigger": "inking",
+        "score": 30.75,
+        "context": " in much of the United States. But seriously, it's been really stinking hot. How hot? Well, the last 12 months have been"
+      }
+    ],
+    "promotes": [
+      " smart",
+      " cool",
+      " funny",
+      " cute",
+      " beautiful"
+    ],
+    "demotes": [
+      "+:+",
+      "MessageInfo",
+      "\uf0f1",
+      "chability",
+      "passphrase"
+    ],
+    "generated_description": "say a positive adjective \u2014 activates on conjunctions/commas in adjective lists (e.g. \"and\", \",\") before descriptive words; pushes positive descriptors like smart, cool, funny, cute, beautiful"
+  },
+  {
+    "id": "19_7338_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3277658224105835,
+    "top_activations": [
+      {
+        "trigger": " when",
+        "score": 70.5,
+        "context": " conditions can be expected, it is recommended that you avoid cotton clothing, which insulates poorly when wet and dries very slowly.\u23ceCarry a compass and a topographic"
+      },
+      {
+        "trigger": " uniforms",
+        "score": 51.0,
+        "context": " I thought that was a great and stimulating challenge.\u201d\u23ceSoldiers cannot avoid getting their uniforms dirty while carrying out their missions, especially on the battlefield. Laundering"
+      },
+      {
+        "trigger": " kept",
+        "score": 45.25,
+        "context": ", or replace the dispenser with a larger container.\u23ceChicks need to be kept warm to stay healthy. Secure a climate thermometer on the cage floor and a"
+      },
+      {
+        "trigger": " get",
+        "score": 73.0,
+        "context": "\u23ce1. Dress in Layers\u23ceWear several layers of clothing and peel them off if you get too warm. The heat captured in between the layers keeps you toast"
+      },
+      {
+        "trigger": " keep",
+        "score": 45.75,
+        "context": " to prevent the foliage from burning.\u23ceThe Maidenhair Fern prefers to have its soil keep moist at all times, however not soggy. They also prefer higher humidity"
+      }
+    ],
+    "promotes": [
+      " Wet",
+      " warm",
+      "wet",
+      " cold",
+      " wet"
+    ],
+    "demotes": [
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "PyExc",
+      "posedge",
+      " ujednoznacz",
+      " SqlParameter"
+    ],
+    "generated_description": "State verbs for temp/moisture \u2014 activates on get/keep/kept/when used to introduce temperature or humidity states; promotes words like \"wet\", \"warm\", \"cold\"."
+  },
+  {
+    "id": "6_15037_5",
+    "layer": 6,
+    "ctx_idx": 5,
+    "influence_score": 0.2982160151004791,
+    "top_activations": [
+      {
+        "trigger": " heat",
+        "score": 25.25,
+        "context": " away to reveal a tiny blue and red hatchling, which appears to be emanating heat. On closer inspection, it appears to be an very small insect that,"
+      },
+      {
+        "trigger": " thermal",
+        "score": 26.0,
+        "context": " amount of energy exchange across the building enclosure.\u23ceI think that higher levels of thermal resistance and reduced heat gain across building enclosures has forever changed the performance of buildings"
+      },
+      {
+        "trigger": " heat",
+        "score": 26.0,
+        "context": "\u23ceUp in the stratosphere, the soot would absorb radiation from the sun and heat surrounding gases, causing chemical reactions that break down ozone.\u23ce\"We find"
+      },
+      {
+        "trigger": " warm",
+        "score": 28.25,
+        "context": "013, microcystis concentrations were falling, but the water remained too warm for the bloom to disperse quickly, according to the NOAA Experimental Lake Erie Harmful"
+      },
+      {
+        "trigger": " temperature",
+        "score": 25.75,
+        "context": " sedimentary stream of a hotspot.\u23ceAnother method is by using volcanic magma. The temperature of partially molten magma is approximately 650 degree Celsius. This heat"
+      }
+    ],
+    "promotes": [
+      "Temperature",
+      " Temperatures",
+      " Temperature",
+      " temperatures",
+      " temperature"
+    ],
+    "demotes": [
+      "AsUp",
+      "HomeAsUpEnabled",
+      "heed",
+      " utafiti",
+      " Bounty"
+    ],
+    "generated_description": "temperature / heat \u2014 activates on heat-related words (heat, thermal, warm, temperature); pushes output toward \u201ctemperature\u201d / \u201ctemperatures\u201d tokens."
+  },
+  {
+    "id": "20_9758_5",
+    "layer": 20,
+    "ctx_idx": 5,
+    "influence_score": 0.3814469575881958,
+    "top_activations": [
+      {
+        "trigger": " Hot",
+        "score": 103.0,
+        "context": "<bos>The rise of Hot Dry Rock (HDR) technology has reset the boundaries for what constitutes an exploitable geothermal resource. A new database of 572"
+      },
+      {
+        "trigger": " hot",
+        "score": 108.5,
+        "context": "<bos>Q. What's wrong with hot dogs?\u23ceA. Nitrite additives in hotdogs form carcinogens.\u23cePetition to ban\u23ceThree different studies"
+      },
+      {
+        "trigger": " hot",
+        "score": 103.0,
+        "context": ".\u23ceOnlookers gathered at vantage points on beaches, in boats and even hot air balloons to catch a glimpse of the celestial light show which, according to"
+      },
+      {
+        "trigger": " Hot",
+        "score": 107.0,
+        "context": " able to design an experiment to test their ideas.\u23ce- Mason jars\u23ce- Hot plates\u23ce- Dissolved oxygen kits\u23ce- Aquatic plants\u23ce- Fish tank bub"
+      },
+      {
+        "trigger": " hot",
+        "score": 106.0,
+        "context": "<bos>Students will soon find fewer hot dogs and more apples and broccoli on their school lunch menus thanks to new federal nutrition guidelines announced Wednesday.\u23ceThe new meal requirements"
+      }
+    ],
+    "promotes": [
+      "chec",
+      " @\"/",
+      "signol",
+      " admit",
+      " OFDb"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " resourceCulture",
+      " consultato",
+      "mybatisplus",
+      "\u0416\u0438\u0442\u0442\u0454\u043f\u0438\u0441"
+    ],
+    "generated_description": "hot (word) \u2014 activates on the token \"hot\"/\"Hot\" as an adjective across contexts (hot dogs, hot air balloons, hot plates, Hot Dry Rock)"
+  },
+  {
+    "id": "20_6666_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3542671799659729,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 89.0,
+        "context": " organs, at low temperatures.\u23ceCryoinjury is tissue injury due to exposure to low temperatures.\u23ceCryosurgery is the controlled destruction of undesired tissues"
+      },
+      {
+        "trigger": " about",
+        "score": 93.0,
+        "context": " extreme day-to-night temperature range, resulting from its thin atmosphere, from about 80\u00b0F (27\u00b0C) at noon to about"
+      },
+      {
+        "trigger": " and",
+        "score": 75.5,
+        "context": " of about 40,000 species in nitrogen-cooled vats and distributes to requests to geneticists free of charge.\u23ceOn July "
+      },
+      {
+        "trigger": " of",
+        "score": 84.0,
+        "context": "-dioxide, what's also called \"dry ice\", requires temperatures of about -125 Celsius ( \u2013193 degrees Fahrenheit), which is"
+      },
+      {
+        "trigger": " -",
+        "score": 78.5,
+        "context": " the CylR2 protein while cooling it down from 25\u00b0C to - 16\u00b0C. Their results show that the most instable intermediate"
+      }
+    ],
+    "promotes": [
+      " (\u2212",
+      "=-",
+      " cold",
+      "(-",
+      " (-"
+    ],
+    "demotes": [
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      "IUrlHelper",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "GEBURTSDATUM",
+      " my\u017felf"
+    ],
+    "generated_description": "say temperature value \u2014 activates on prepositions/connectors (to, about, of, and arrows) immediately before numeric temperature/measurement phrases; often in cold/negative-temperature contexts."
+  },
+  {
+    "id": "15_15591_5",
+    "layer": 15,
+    "ctx_idx": 5,
+    "influence_score": 0.38293832540512085,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 41.5,
+        "context": " Plan on spending a lot of time here and be sure to check out all the hotlinks so you don't miss out on all the great information at this"
+      },
+      {
+        "trigger": " Hot",
+        "score": 47.0,
+        "context": " Would it be Legal?\u23ceThe following is an excerpt from Drugs: Without the Hot Air, by David Nutt (2012 UIT Cambridge).\u23ceA"
+      },
+      {
+        "trigger": " hot",
+        "score": 45.5,
+        "context": "<bos>Mmmm, a hot fudge sundae. The diet is supposed to start today, but surely it can wait until tomorrow -- or maybe the next day.\u23ce"
+      },
+      {
+        "trigger": " hot",
+        "score": 45.0,
+        "context": " help them understand more about the nations that influence world events.\u23ceTake a ride in an imaginary hot air balloon, and prepare to have fun with world history!"
+      },
+      {
+        "trigger": " hot",
+        "score": 41.5,
+        "context": " or what ingested plastics can do to my body.\u23ceIf you stop for a hot cup of coffee on your way to work, ask for it in a lined"
+      }
+    ],
+    "promotes": [
+      "extAlignment",
+      " AssemblyCulture",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "ChildScrollView",
+      "DockStyle"
+    ],
+    "demotes": [
+      " jeu",
+      "migrationBuilder",
+      "h",
+      "unknownFields",
+      "diques"
+    ],
+    "generated_description": "hot (token) \u2014 activates on the word \"hot\" across contexts and compounds (hotlinks, Hot Air, hot fudge, hot cup of coffee)."
+  },
+  {
+    "id": "20_10911_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3079213798046112,
+    "top_activations": [
+      {
+        "trigger": " scal",
+        "score": 48.0,
+        "context": " fires in fireplaces, barbecue pits, and trash fires.\u23ceKitchen injury from tipping scalding liquids.\u23ceBathtub scalds often associated with lack of supervision or"
+      },
+      {
+        "trigger": " body",
+        "score": 44.5,
+        "context": " pressure, heart rate, and breathing. A rapid increase in body\u23cetemperature (hyperthermia) is frequently a late sign. If untreated, malignant\u23cehyperthermia"
+      },
+      {
+        "trigger": " ",
+        "score": 46.5,
+        "context": " of sunlight 1000 times with a solar reflector to create temperatures of 1000 Degree C in a test chamber. The ...\u23ceTo"
+      },
+      {
+        "trigger": " it",
+        "score": 43.0,
+        "context": "\" is a measure of temperature - a pepper is hot if it just came off the stove. \"Sweet\" is the flavor caused by sugar, not the opposite"
+      },
+      {
+        "trigger": " lower",
+        "score": 43.0,
+        "context": " and death because they have thinner skin than adults, resulting in more serious burns at lower temperatures. Most burns and fire injuries and deaths occur in the home. By"
+      }
+    ],
+    "promotes": [
+      " hotter",
+      " hot",
+      "Heat",
+      " heating",
+      " heat"
+    ],
+    "demotes": [
+      " tinh",
+      "\u00e1cara",
+      "gezogen",
+      "rute",
+      "TRAILING"
+    ],
+    "generated_description": "Heat/temperature \u2014 activates on temperature mentions (scalding, body temperature, lower temps, stove-related heat); promotes tokens like \"hotter\", \"heat\", \"heating\"."
+  },
+  {
+    "id": "21_11820_5",
+    "layer": 21,
+    "ctx_idx": 5,
+    "influence_score": 0.37534648180007935,
+    "top_activations": [
+      {
+        "trigger": " hot",
+        "score": 112.0,
+        "context": " filled with white (faux) oysters, an aluminum 1960s hot dog stand with a red-and-blue umbrella, a basket piled high"
+      },
+      {
+        "trigger": " hot",
+        "score": 120.5,
+        "context": " people have. When we talk about ethnic food, we never think about hamburgers and hot dogs. The truth is that everybody has a culture and everybody has an ethnic"
+      },
+      {
+        "trigger": " Hot",
+        "score": 112.0,
+        "context": "<bos>Did you know?\u23ce- Hot water heaters should be properly sized for your house.\u23ce- Extra thick insulation helps prevent radiant heat loss and saves energy and"
+      },
+      {
+        "trigger": " hot",
+        "score": 116.0,
+        "context": " or dried cranberry or runt candy\u23cemitochondria: Mike & Ike candy or hot tamale or goodies candy-covered licorice\u23cerough endoplasmic reticulum:"
+      },
+      {
+        "trigger": " Hot",
+        "score": 113.0,
+        "context": "<bos>Olympic Hot Springs Road Closed\u23ceThe Elwha Valley's Olympic Hot Springs Road is closed to public entry beyond the Altair Campground during removal of the G"
+      }
+    ],
+    "promotes": [
+      " Favre",
+      "\u0627\u0646\u064a\u0641",
+      "omitempty",
+      "tr\u00e9al",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641"
+    ],
+    "demotes": [
+      " createState",
+      "}))\r",
+      " \u0627\u0644\u0648\u0637\u0646\u064a\u0647",
+      "seamn\u0103",
+      " suspe"
+    ],
+    "generated_description": "hot \u2014 activates on the token \"hot\" (case-insensitive), including compounds: \"hot dog\", \"Hot Springs\", \"hot water\", \"hot tamale\"."
+  },
+  {
+    "id": "21_5114_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.365791380405426,
+    "top_activations": [
+      {
+        "trigger": " \u201c",
+        "score": 53.5,
+        "context": " help warm, clean, and moisten the air you breathe in. When you \u201ccatch a cold,\u2019 the lining of the nose and sinuses becomes inflamed, producing"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 54.0,
+        "context": " the times. Far too often, through today\u2019s symptom based healthcare system, \u2018illnesses\u2019 are too quickly diagnosed. Introducing yet another foreign substance (more"
+      },
+      {
+        "trigger": " '",
+        "score": 55.5,
+        "context": "<bos>Fourth 'R' for Earth Day - reduce, reuse, recycle ... repair\u23ceIn 2004, the Norwegian Nobel committee made a revolutionary decision"
+      },
+      {
+        "trigger": " \"",
+        "score": 53.5,
+        "context": " is present. The idea is to write the coordinate information in the world file to \"tell\" the software where to the image is located in the real-world"
+      },
+      {
+        "trigger": " \"",
+        "score": 59.5,
+        "context": " When a child is able to take its first step, that is the only first \"first step\" that child will take, and many parents want to preserve that"
+      }
+    ],
+    "promotes": [
+      " C\u00e6sar",
+      ".\u201d)",
+      "...'",
+      " Shakspeare",
+      "\u2026\u2019"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      " \u00ab",
+      " \u201e",
+      " ''"
+    ],
+    "generated_description": "Opening quote \u2014 activates on opening quotation marks (\", \u201c, \u2018, \u2039, \u00ab) immediately before quoted text or quoted tokens."
+  },
+  {
+    "id": "18_1296_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.38860267400741577,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 73.0,
+        "context": ". The ship was at its furthest point south on this expedition. Temperature was minus 4 degree C, with wind making it a bit chilly, but the sky"
+      },
+      {
+        "trigger": " -",
+        "score": 92.0,
+        "context": ".\u23ceAlthough a Dome C telescope would be inaccessible during use -- the temperatures that deep in the Antarctic during winter plunge as low as -86\u00b0 C (-"
+      },
+      {
+        "trigger": " below",
+        "score": 74.0,
+        "context": " outside. Ask your doctor if it is okay for you to exercise when it is below freezing.\u23ceResistance weight training, using Nautilus and similar machines, may improve"
+      },
+      {
+        "trigger": " ",
+        "score": 89.0,
+        "context": "5, in conjunction with Chicago\u2019s all-time lowest temperature of minus 27. Runners-up: dew point of minus 38 on Jan"
+      },
+      {
+        "trigger": "zero",
+        "score": 74.0,
+        "context": " was caught on a blackboard and transferred rapidly to a microscope slide. Even atsubzero temperatures, snowflakes are ephemeral because they sublime.\u23ceBentley poetically described snowflakes"
+      }
+    ],
+    "promotes": [
+      " cold",
+      "=-",
+      " congel",
+      " freezing",
+      " frozen"
+    ],
+    "demotes": [
+      "contentLoaded",
+      "\u51fa\u7248\u5e74",
+      "Geplaatst",
+      "DockStyle",
+      " AssemblyCompany"
+    ],
+    "generated_description": "cold temperature \u2014 activates on mentions of low/negative temps (below/zero/minus, Antarctic, freezing); pushes output toward \u201ccold\u201d, \u201cfreezing\u201d, \u201cfrozen\u201d."
+  },
+  {
+    "id": "21_8593_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.25757738947868347,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 65.5,
+        "context": " and then spend the next three decades telling everyone about how 2012 was the hottest year ever; by then, it will probably rank somewhere around "
+      },
+      {
+        "trigger": "s",
+        "score": 70.0,
+        "context": " gas wells in...\u23ceIn the Garden\u23ceAlthough other herbs flourish in summer%%%s heat, basil is the one that seems synonymous with summer, most likely because"
+      },
+      {
+        "trigger": " or",
+        "score": 75.5,
+        "context": " U.S. Cowboys were overworked hired hands who rode in freezing wind and rain or roasted in the Texas sun; searched for lost cattle; mended fences; ate"
+      },
+      {
+        "trigger": " is",
+        "score": 70.0,
+        "context": " form of light when it is heated. First it glows ruby red. When it is heated to a temperature of 3200 Kelvin, it gives off"
+      },
+      {
+        "trigger": "-",
+        "score": 76.5,
+        "context": "\u23ce\"You can imagine how bad the itching must be, that running a red-hot machete up and down your back would be a relief, but it was"
+      }
+    ],
+    "promotes": [
+      "FontOfSize",
+      "scor",
+      "IBarButtonItem",
+      "EndContext",
+      "tagHelperRunner"
+    ],
+    "demotes": [
+      " cold",
+      " Cold",
+      "cold",
+      "Cold",
+      " COLD"
+    ],
+    "generated_description": "suppress \"cold\" \u2014 strongly demotes the token cold; activates on small function words around temperature/heat mentions, pushing model away from outputting \"cold\"."
+  },
+  {
+    "id": "21_10862_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.39131051301956177,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 62.5,
+        "context": " the heat, cool down first. In one study, even placing one hand in cool air beforehand helped people with MS exercise longer.\u23ceTake a cool bath or"
+      },
+      {
+        "trigger": " warm",
+        "score": 53.5,
+        "context": " parent some advice over the phone.\u23ceOften, a doctor will recommend a nice warm washcloth. Warmth will help unclog the gland and get the g"
+      },
+      {
+        "trigger": " or",
+        "score": 47.0,
+        "context": " any swelling (inflammation) in the area of the pain.\u23ce- Apply heat or ice to the painful area. One good method is to use ice for the"
+      },
+      {
+        "trigger": " in",
+        "score": 50.0,
+        "context": " important to keep the area clean in order to avoid reinfection. Soak the hoof in a of Epsom salt solution to draw out any remaining infection. Keep the hoof"
+      },
+      {
+        "trigger": " of",
+        "score": 44.5,
+        "context": " sunlight will help them develop green leaves. Swish out seed caps in a basin of water if desired.\u23ce- Seeds for sprouting should be soaked, prior to"
+      }
+    ],
+    "promotes": [
+      "luke",
+      "Clik",
+      " warm",
+      " luke",
+      " weak"
+    ],
+    "demotes": [
+      "migrationBuilder",
+      "chmal",
+      " \u0627\u0644\u0623\u0635\u0644",
+      "alisme",
+      "SOUNDBITE"
+    ],
+    "generated_description": "say a temperature word \u2014 activates on structural words before temperature terms (heat, cool, warm, ice); signals upcoming temperature-related advice or instructions."
+  },
+  {
+    "id": "18_15495_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.33737456798553467,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 46.5,
+        "context": " the soil. They will slide out most easily if you pull them when the soil is wet. Getting the root up is crucial, so think of the main stem"
+      },
+      {
+        "trigger": " to",
+        "score": 55.5,
+        "context": " Any moisture present will\u23ceprevent the reaction from occurring.\u23ce- Allow the apparatus to cool, and assemble it as a refluxing apparatus\u23cewith the guard tube"
+      },
+      {
+        "trigger": " to",
+        "score": 43.5,
+        "context": "145 degrees.\u23ceCooked pork should also be put aside and allowed to rest for 3 minutes after removal from the grill and before serving, giving"
+      },
+      {
+        "trigger": " served",
+        "score": 55.0,
+        "context": " flavorings, a variety of sweeteners, and eggs. The pudding can be served both for dinner and dessert, with the dessert version often making use of sugar as"
+      },
+      {
+        "trigger": " still",
+        "score": 76.0,
+        "context": "-sided decorated iron griddle and then shaped on a conical rolling pin, while still hot. The cookie can have a sweet filling or can be used as an"
+      }
+    ],
+    "promotes": [
+      "warm",
+      " cooled",
+      " hot",
+      " cold",
+      " warm"
+    ],
+    "demotes": [
+      "ArgsConstructor",
+      "\\{\\\\",
+      "TestingModule",
+      " respecter",
+      "FXML"
+    ],
+    "generated_description": "say a temperature word \u2014 activates on linking verbs/adverbs (is, to, served, still) before state adjectives; promotes hot/warm/cold/cooled."
+  },
+  {
+    "id": "24_617_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.32085826992988586,
+    "top_activations": [
+      {
+        "trigger": " cold",
+        "score": 42.5,
+        "context": " at feasts. Don't start cucumbers too early, for they can\u00edt abide cold soil or weather. Sow indoors two weeks before the last frost date or direct"
+      },
+      {
+        "trigger": " the",
+        "score": 55.0,
+        "context": " it doesn't take long to lose all the heat out of the shop. The heater is always running continuously, and it never really heats the building. It"
+      },
+      {
+        "trigger": " Fahrenheit",
+        "score": 43.5,
+        "context": " removed by sand filters, but also require chlorination. They are also killed by heating to 122 degrees Fahrenheit (50 degrees Celsius) or by"
+      },
+      {
+        "trigger": ",",
+        "score": 42.5,
+        "context": " well as keeping it warm in winter. Since these materials absorb heat during the day, less heat radiates within the greenhouse when the sun is shining. When the"
+      },
+      {
+        "trigger": " to",
+        "score": 40.5,
+        "context": " it can handle multiplicative scale changes. It can also handle nonlinear conversions such as Fahrenheit to Celsius or wire gauge, and it can convert from and to sums of units"
+      }
+    ],
+    "promotes": [
+      " Pooja",
+      "orla",
+      "lt\u00e4",
+      " Hogarth",
+      "lark"
+    ],
+    "demotes": [
+      " temperature",
+      " cold",
+      " Temperature",
+      "cold",
+      "Temperature"
+    ],
+    "generated_description": "Temperature mention \u2014 activates on temperature/heat words and unit-conversion contexts (cold, heat, Fahrenheit, \"to Celsius\", heat-related clauses)."
+  },
+  {
+    "id": "15_14178_5",
+    "layer": 15,
+    "ctx_idx": 5,
+    "influence_score": 0.30324774980545044,
+    "top_activations": [
+      {
+        "trigger": " heating",
+        "score": 51.25,
+        "context": " gas emissions that are released by burning fossil fuels and cutting down forests and that are heating the planet.\u23ceWhat is at Stake?\u23ce- Human development: Climate"
+      },
+      {
+        "trigger": " warm",
+        "score": 51.75,
+        "context": " you to wheeze more and need more asthma medicine.\u23ceDust mites live in warm, humid areas filled with dust, such as bed pillows, mattresses, carpets"
+      },
+      {
+        "trigger": " warm",
+        "score": 55.25,
+        "context": " it.\u23ceIt might read like any Frankenstein story: \" Take organic material, warm it, add light, life forms\".\u23ceNot that advanced of course,"
+      },
+      {
+        "trigger": " temperature",
+        "score": 52.25,
+        "context": ", a living cell must assess and analyze myriad bits of information\u2014everything from the temperature of its environment to the chemical makeup of its surroundings. Sometimes, these inputs"
+      },
+      {
+        "trigger": " warm",
+        "score": 48.0,
+        "context": "ovine tuberculosis (TB) is caused by infectious bacteria and can spread to all warm-blooded animals, including humans. Efforts to eradicate it in the U."
+      }
+    ],
+    "promotes": [
+      " temperaturas",
+      " temp\u00e9rature",
+      " temp\u00e9ratures",
+      " temperature",
+      " temperatures"
+    ],
+    "demotes": [
+      "HomeAsUpEnabled",
+      "ANTLR",
+      "HideFlags",
+      "SDF",
+      "IntoConstraints"
+    ],
+    "generated_description": "Temperature / warmth \u2014 activates on words about heat, warm, heating, temperature; pushes tokens like \"temperature\" (and translations: temperaturas, temp\u00e9rature)."
+  },
+  {
+    "id": "23_15173_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3171015977859497,
+    "top_activations": [
+      {
+        "trigger": " weather",
+        "score": 54.75,
+        "context": "<bos>In the late fall as the weather alternated between 40\u00b0F and 70\u00b0F overnight, bumblebees sometimes got caught by cold temperatures"
+      },
+      {
+        "trigger": " of",
+        "score": 55.25,
+        "context": " ranked as the coolest April since 1997. It was a continuation of a cool weather pattern, contrary to the recent trend, where March and April"
+      },
+      {
+        "trigger": " very",
+        "score": 55.75,
+        "context": " be open to the air (so that the telescopes can look out) it gets very cold inside them. The astronomers sit in the cold dome for long periods of"
+      },
+      {
+        "trigger": " the",
+        "score": 59.75,
+        "context": " (OTEC) uses the temperature difference between the warmer surface of the ocean and the colder lower recesses. To this end, it employs a cyclic heat engine."
+      },
+      {
+        "trigger": "-",
+        "score": 51.25,
+        "context": "5 million people fled their homes in Oklahoma, Texas, and elsewhere, the bone-dry landscape, blistering heat and choking dust storms unfit for growing and raising the"
+      }
+    ],
+    "promotes": [
+      " chill",
+      " Cool",
+      " cool",
+      " chilled",
+      " cold"
+    ],
+    "demotes": [
+      " hot",
+      "hot",
+      " Hot",
+      "Hot",
+      " HOT"
+    ],
+    "generated_description": "say \"cold\"/\"cool\" \u2014 promotes tokens like cold, cool, chill/chilled; activates in low-temperature or contrast-with-\"hot\" contexts, suppresses \"hot\" tokens."
+  },
+  {
+    "id": "8_11858_5",
+    "layer": 8,
+    "ctx_idx": 5,
+    "influence_score": 0.3843837380409241,
+    "top_activations": [
+      {
+        "trigger": " warm",
+        "score": 13.06,
+        "context": ", just west of Tokyo.\u23ceThe system uses warm, oxygenated blood to heat the cold blood that has been in contact with a cold surface before returning it"
+      },
+      {
+        "trigger": " warm",
+        "score": 12.31,
+        "context": ", other chickens with pox and contaminated surfaces.\u23ceTreatment: Supportive care, warm dry quarters, soft food; many birds with good care will survive.\u23ce"
+      },
+      {
+        "trigger": " hot",
+        "score": 13.19,
+        "context": " made by heating the cochineal insects in an oven, immersing them in hot water, or exposing them to steam or sunlight. Each process results in a"
+      },
+      {
+        "trigger": " cool",
+        "score": 13.19,
+        "context": " endurance, and fatigue. Swimming is especially beneficial. The water helps keep your body cool during exercise.\u23ceOmega-3 fatty acids, found in fish oil,"
+      },
+      {
+        "trigger": " cool",
+        "score": 11.75,
+        "context": ", it's generally a good idea to not stop immediately, but rather to cool down. What is the specific purpose of cooling down? Does not properly cooling"
+      }
+    ],
+    "promotes": [
+      " Sera",
+      " universale",
+      "\u671f\u520a\u8bba\u6587",
+      "dientemente",
+      "createCanvas"
+    ],
+    "demotes": [
+      " temperatures",
+      " temperature",
+      " warm",
+      " Temperatures",
+      " heat"
+    ],
+    "generated_description": "temperature adjective \u2014 activates on words like hot, warm, cool; signals mentions of heat level or heating/cooling actions in context."
+  },
+  {
+    "id": "23_14350_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.31251898407936096,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": ". I don't\u23cesee any signs of gum infection and none of them\u23ceare loose as nearly as I can tell, so what is this\u23cebrown"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": " person access to a secure area. This tutorial will shows you how to build a\u23ceface recognition program using Matlab.\u23ceMotivation and Audience\u23ceThis tutorial has been"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 114.0,
+        "context": "traveled on it. It had not many comforts; several days and nights were\u23cerequired for the New York trip; yet it was a wonderful and beautiful\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": "ged north-northwestward late on 26 October, followed by a\u23cenorth-northeastward turn and acceleration on the 27th. During"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": " left\u23cefor about 300,000 light-years from\u23ceNGC 3628's warped, edge-on disk."
+      }
+    ],
+    "promotes": [
+      "P",
+      "p",
+      "I",
+      "in",
+      "to"
+    ],
+    "demotes": [
+      "\u00e6us",
+      "ine\u017fs",
+      "ratulations",
+      "BibitemShut",
+      "iffance"
+    ],
+    "generated_description": "Line break \u2014 activates on newline tokens (word\u23ceword); signals line/sentence break between adjacent words, often mid-sentence."
+  },
+  {
+    "id": "25_7089_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3563547432422638,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 124.0,
+        "context": " the current expression and allows access to the R interpreter.\u23ceThe purpose of the\u23cecondition arguments are to allow helper programs (e.g. external debuggers"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 124.0,
+        "context": " health\u23ceprofessionals from 17 health regions participated in a seven-week training\u23cecourse on health policy, management, economics, research methods, data\u23ceanalysis"
+      },
+      {
+        "trigger": "-",
+        "score": 139.0,
+        "context": " slot-boundp, slot-makunbound, or slot-value.\u23ceThe generic function slot-missing is invoked when an attempt is made to access"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 140.0,
+        "context": " the overall experience you have when you are using or interacting with something \u2013 and that \u2018something\u2019 could literally be almost anything in the world! For many people,"
+      },
+      {
+        "trigger": " \"",
+        "score": 123.0,
+        "context": " cholesterol circulates in the blood and remains unused. Normally, the liver removes this \"extra\" cholesterol, but many people have more LDL cholesterol than the liver can"
+      }
+    ],
+    "promotes": [
+      " d\u00e9chir",
+      " nuages",
+      " bless\u00e9s",
+      " varandra",
+      " genoux"
+    ],
+    "demotes": [
+      " new",
+      " current",
+      " plea\u017fure",
+      " purpo\u017fe",
+      " data"
+    ],
+    "generated_description": "Linebreak / opening-quote \u2014 activates on newline tokens (\u23ce) and opening-quote / boundary punctuation (\u2018\u2018, \", \u2190->>, slot- separators); marks start of a new line or quoted fragment."
+  },
+  {
+    "id": "25_10299_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3872218728065491,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 42.5,
+        "context": " dense materials heat faster because the amount of atoms is less and they take less time for all to heat. Light from the sun excites electrons in the atoms which create"
+      },
+      {
+        "trigger": " shown",
+        "score": 40.0,
+        "context": " co-author Prof. Adrian G. Barnett said, citing previous research that has shown exposure to extreme temperatures can trigger changes in blood pressure, blood thickness, cholesterol"
+      },
+      {
+        "trigger": " keep",
+        "score": 42.75,
+        "context": " base, causing the temperature of the materials in both containers to rise as needed. The insulating action of the water helps to keep contents of the inner pot from boiling"
+      },
+      {
+        "trigger": " into",
+        "score": 39.5,
+        "context": "\u2019t let as much of the rays pass back out. As a result, more energy goes into the car than goes out, and the inside temperature increases."
+      },
+      {
+        "trigger": " could",
+        "score": 42.75,
+        "context": " Climate Analytics.\u23ceThe report, based on recent climate science, says the planet could reach temperatures 4 degrees Celsius higher than pre-industrial levels as early as"
+      }
+    ],
+    "promotes": [
+      " recevrez",
+      "bukkit",
+      " Direito",
+      "andExpect",
+      "TRAILING"
+    ],
+    "demotes": [
+      " Heat",
+      " heat",
+      "Heat",
+      "heat",
+      " HEAT"
+    ],
+    "generated_description": "don't say \"heat\" \u2014 strongly suppresses the token \"heat\"/\"Heat\"; activates in temperature-related contexts."
+  },
+  {
+    "id": "25_16258_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.2657307982444763,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 83.0,
+        "context": "<bos>Cold-like infections make 'cough receptors' in the airways more sensitive, making asthmatics more prone to bouts of coughing and wheezing, reveal scientists"
+      },
+      {
+        "trigger": " cold",
+        "score": 85.5,
+        "context": "<bos>Photo: Luigi Anzivino (Flickr)\u23cePut cold tap water in a saucepan and heat it on the stove. After a few minutes you hear a"
+      },
+      {
+        "trigger": "Cold",
+        "score": 78.5,
+        "context": "<bos>Coldest Known Failed Stars Found\u23ceAs reported on Space.com\u23ceScientists located the 14 cosmic oddities, called brown dwarfs, using NASA'"
+      },
+      {
+        "trigger": " cold",
+        "score": 55.5,
+        "context": " winter drying and frost heaving. Frost heaving cracks the soil and exposes roots to drying cold and injury. Mulch also is benenficial to use over spring bulbs"
+      },
+      {
+        "trigger": " coldest",
+        "score": 60.0,
+        "context": ", now spends most of his days in his garden, leaving it only for the coldest months. From the window of his den, he can see over the tops"
+      }
+    ],
+    "promotes": [
+      "enumi",
+      "encodeWith",
+      "GraphicsUnit",
+      "posedge",
+      "Geplaatst"
+    ],
+    "demotes": [
+      " cold",
+      " Cold",
+      "Cold",
+      "cold",
+      " COLD"
+    ],
+    "generated_description": "Cold (temperature) \u2014 activates on tokens like \"cold\"/\"Cold\"/\"coldest\" and temperature-related mentions; tends to suppress/give negative logit weight to outputting \"cold\"."
+  },
+  {
+    "id": "25_7618_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3990906774997711,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 68.5,
+        "context": ", play a vital role conserving habitat for fish, wildlife, and plants. In\u23cefact, more than two- thirds of the nation\u2019s threatened and endangered"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 69.5,
+        "context": "\u23ceWoodlark and Kiriwina during\u23cea surprise landing by Army and Marine\u23cetroops and the 60th Construction Battalion \"Seabees\". They"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 80.5,
+        "context": " reservoirs.\u23ceBy Larry D. Hodge\u23ceA revolution is brewing among biologists managing\u23cefreshwater fisheries in reservoirs. Or, put another way, a\u23cere"
+      },
+      {
+        "trigger": " (",
+        "score": 69.5,
+        "context": " last organ in the GI system which is responsible in the absorbance of water and nutrients (specifically potassium) in the body. Just like the stomach, the colon also"
+      },
+      {
+        "trigger": " (",
+        "score": 70.0,
+        "context": " molecules) and hypothalamic-pituitary-adrenal (HPA) axis (part of the neuroendocrine system that controls stress) functioning in symptoms of"
+      }
+    ],
+    "promotes": [
+      "(!__",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "lining",
+      " Normdatei",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      " NDEBUG",
+      " Majefty",
+      " plea\u017fure",
+      " Monfieur",
+      " gracilis"
+    ],
+    "generated_description": "say linebreak/paragraph \u2014 activates at newlines, paragraph or sentence breaks and opening parenthesis; signals paragraph/sentence boundary formatting."
+  },
+  {
+    "id": "24_13704_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3456236720085144,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 69.0,
+        "context": "otherwise known as the Web).\u23ceWeb-based instruction (WBI) is\u23ceA potential set of questions have been identified and placed into a decision making model"
+      },
+      {
+        "trigger": "-",
+        "score": 77.0,
+        "context": " at home.\u23ceYet we may see episodes such as this unfold in the not-too-distant future, if food-importing nations continue to buy farmland"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 69.5,
+        "context": " guidelines are the first of their kind for this age group.\u23ceThe recommendations suggest\u23ceintegrating lifestyle modifications, including diet and exercise, in concert\u23cewith medication rather"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 68.5,
+        "context": "\u23celanguage arts curriculum into a reading class and a writing class. This allows teachers\u23cetime to teach the important skills of reading comprehension, vocabulary, Latin and\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 75.0,
+        "context": "0 to 500 each day.\u23ce- After you've made\u23cewalking a habit, set a longer-term goal. You may want to"
+      }
+    ],
+    "promotes": [
+      "appropriate",
+      "serious",
+      "both",
+      "professionals",
+      "a"
+    ],
+    "demotes": [
+      " Efq",
+      " Monfieur",
+      " my\u017felf",
+      " The\u017fe",
+      " Majefty"
+    ],
+    "generated_description": "say newline \u2014 activates on line-break/paragraph-boundary tokens; occurs before sentence starts, list items, or new lines in formatted text."
+  },
+  {
+    "id": "17_7119_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.379942387342453,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 59.5,
+        "context": "2011 global average land surface temperature was 0.8\u00b0C (1.49\u00b0F) above the 20th century average"
+      },
+      {
+        "trigger": " ",
+        "score": 82.0,
+        "context": " C. That\u2019s 287 kelvin, or 57.2\u00b0 F.\u23ceAs you probably realize, that number is just an"
+      },
+      {
+        "trigger": "2",
+        "score": 60.0,
+        "context": " which is just the Celsius scale shifted downwards so that 0 K= \u2212273.15\u00b0C, or absolute zero. Many engineering fields in"
+      },
+      {
+        "trigger": " ",
+        "score": 62.5,
+        "context": " magnetic field needed for the experiment is generated by a superconducting magnet that has been cooled to 4 Kelvin. The experiment also uses two induction coils: the lower coil"
+      },
+      {
+        "trigger": " ",
+        "score": 63.0,
+        "context": " their heat source remains shielded \u2014 the top 10 feet of earth consistently measures between 50 to 60 degrees Fahrenheit.\u23ceA heat pump system"
+      }
+    ],
+    "promotes": [
+      "Temperature",
+      " Temperature",
+      " cooled",
+      " temperatures",
+      " temperature"
+    ],
+    "demotes": [
+      "val",
+      "HttpEntity",
+      "ukses",
+      "gak",
+      " comisiones"
+    ],
+    "generated_description": "Numeric temperature mentions \u2014 activates on temperature values and units (\u00b0C, \u00b0F, K, kelvin), signals temperature-related wording (temperature, cooled, temperatures)"
+  },
+  {
+    "id": "24_5378_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.37223321199417114,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 66.0,
+        "context": "\u2014to participate in a range of class activities, such as lecture questions, pop-quizzes, and attendance checks.\u23ceClickers offer several potential benefits."
+      },
+      {
+        "trigger": "-",
+        "score": 65.0,
+        "context": " with her intellectual peers for the challenging interaction.\u23ceWe try to provide for age-peer relationships. She seeks relationships with older children while wanting to remain in the"
+      },
+      {
+        "trigger": "-",
+        "score": 68.0,
+        "context": "www.whitehouse.gov/the-press-office/first-lady-michelle-obama-launches-lets-move-americas-move"
+      },
+      {
+        "trigger": "-",
+        "score": 70.0,
+        "context": "f F) has been independently established.) See the functions fboundp and symbol-function.\u23cefeature n. 1. an aspect or attribute of Common"
+      },
+      {
+        "trigger": "-",
+        "score": 70.0,
+        "context": "ate-approves-anti-discrimination-bill-moves-on-to-house.html\u23ceThe Indian Caribbean Museum, described as \u201ca national treasure"
+      }
+    ],
+    "promotes": [
+      " Spain",
+      "invokeLater",
+      "providedIn",
+      "contentLoaded",
+      "like"
+    ],
+    "demotes": [
+      "Term",
+      "Record",
+      "Close",
+      "Trim",
+      "Profile"
+    ],
+    "generated_description": "segment-start (after - or /) \u2014 activates on tokens that begin a new segment in hyphenated compounds or URL/path splits (e.g., quizzes, peer, press, function, approves)"
+  },
+  {
+    "id": "24_4707_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.28707513213157654,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 203.0,
+        "context": " fruit, Spondias dulcis\u23ceGNU Webster's 1913\u23ce- The fruit of a Polynesian anacardiaceous tree (Spondias"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 204.0,
+        "context": "lemie, colmey, coal whiting, etc. See pollock.\u23ce- n. The beshow or candlefish of Alaska.\u23ce- n"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 194.0,
+        "context": " Math FAQ:\u23cecalendar & days\u23ceof the week\u23ce3D and higher\u23ceBrowse Middle School Measurement\u23ceStars indicate particularly interesting answers or\u23cegood places to"
+      },
+      {
+        "trigger": "-",
+        "score": 189.0,
+        "context": " world file.\u23ceWhen this file is present, ArcView performs the image-to-world\u23cetransformation. The image-to-world transformation is a six"
+      },
+      {
+        "trigger": " \u201c",
+        "score": 189.0,
+        "context": " in warding off mosquito bites.\u23ceThe efficacy of the isolated compound\u2014called \u201ccallicarpenal\u201d\u2014was affirmed through tests simulating human skin. But these"
+      }
+    ],
+    "promotes": [
+      "e\u017f",
+      " d\u00e9tru",
+      "CHREIB",
+      "f\u00f6ren",
+      "\u2003\u2003("
+    ],
+    "demotes": [
+      " C\u00e6sar",
+      " Sopho",
+      " Phoen",
+      " Athenians",
+      " Confucian"
+    ],
+    "generated_description": "say line break \u2014 fires on newlines and section/line separators (\u00b6, list breaks, arrows, opening quotes), signals paragraph or formatting boundary before next content"
+  },
+  {
+    "id": "24_8877_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.2930341362953186,
+    "top_activations": [
+      {
+        "trigger": " cooling",
+        "score": 61.25,
+        "context": " nature \u2014 red is the color of blazing fire and blood, blue the color of cooling waters and the sky. Other meanings may be more complex and not universal."
+      },
+      {
+        "trigger": " or",
+        "score": 65.0,
+        "context": "In essence, the map is a visualization of the lag time required to heat up or cool down a specific area of the Sun.\u23ceLooking at the map,"
+      },
+      {
+        "trigger": ",",
+        "score": 64.0,
+        "context": " on the outside,\" Clinton was underscoring the notion that\u23ceObama is, well, cool.\u23ceObama was elected, much has been made of his coolitude"
+      },
+      {
+        "trigger": " find",
+        "score": 58.75,
+        "context": " skin, and with increasing\u23cetemperatures and not enough places for these birds to find shelter\u23ceand water, large numbers are dying off due to heat stroke."
+      },
+      {
+        "trigger": " cool",
+        "score": 66.0,
+        "context": ". Taking a fan, he slowly waved it about the silken curtains, and the cool air, entering, enveloped and filled the pillows and bed. In winter,"
+      }
+    ],
+    "promotes": [
+      " c\u00e1ncer",
+      "\u00e9raire",
+      "rigal",
+      " Synd",
+      " Lark"
+    ],
+    "demotes": [
+      "Cool",
+      " Cool",
+      " cool",
+      " COOL",
+      "cool"
+    ],
+    "generated_description": "suppress \"cool\" \u2014 activates on mentions of cool/cooling (cool air, cooling, \"cool\"); consistently pushes down outputting the token \"cool\" and its variants."
+  }
+]

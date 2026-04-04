@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3808204233646393,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 activates on sentence-initial \"In\" introducing a domain/field phrase (e.g., \"In medicine,\", \"In music theory,\")."
+  },
+  {
+    "id": "3_15891_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.39936479926109314,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 18.62,
+        "context": " among the winonaites in our collections, although there is not yet an analog of the IAB complex irons for the acapulcoite/lodranite PB"
+      },
+      {
+        "trigger": " of",
+        "score": 18.88,
+        "context": " joined by staff as they attempt to each walk 50 miles, the equivalent of walking to Derby.\u23ceThe project is part of the Healthy Schools campaign,"
+      },
+      {
+        "trigger": " of",
+        "score": 20.62,
+        "context": " rendering gives the better sense. The \"G\u00e2teau de passage\" is the equivalent of the round bread-cake which is common all over Egypt and the\u23ceSudan"
+      },
+      {
+        "trigger": " of",
+        "score": 18.62,
+        "context": " pleasure and rewarding feelings. It\u2019s a social bonding activity, the monkey equivalent of a human hug. Grooming does have costs though, despite its appearance as a"
+      },
+      {
+        "trigger": " of",
+        "score": 19.5,
+        "context": " to help students cope. Those methods include homework-free nights and the teenage equivalent of \"recess\" at a small but growing number of schools across the country"
+      }
+    ],
+    "promotes": [
+      "Equivalent",
+      " equivalents",
+      "equivalent",
+      " counterpart",
+      " equivalent"
+    ],
+    "demotes": [
+      "MethodManager",
+      " beginnetje",
+      "BindingResult",
+      " VizieR",
+      " EconPapers"
+    ],
+    "generated_description": "say \"equivalent of\" \u2014 activates on the preposition in phrases expressing equivalence; promotes tokens like equivalent, equivalents, counterpart."
+  },
+  {
+    "id": "3_12834_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.3307541012763977,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 14.19,
+        "context": "<bos>Blueberries are small berries that grow on bushes.\u23ceThey might be small, but blueberries are considered a power food. They contain antioxidants, more than most"
+      },
+      {
+        "trigger": " small",
+        "score": 15.06,
+        "context": ", and I will rephrase it as follows: offspring of a big man and small woman will tend to have bigger heads relative to the size of the woman'"
+      },
+      {
+        "trigger": " Small",
+        "score": 14.56,
+        "context": " now has large observatories and even a couple in outer space.\u23ceThe Two Small Pieces of Glass program shows how telescopes work; and how astronomers have used them"
+      },
+      {
+        "trigger": " small",
+        "score": 15.06,
+        "context": "<bos>Most Active Stories\u23ce- In projects big and small, Watertown\u2019s downtown reviving \u2013 but some say city government lacks vision\u23ce- Audio postcard: Sackets"
+      },
+      {
+        "trigger": " small",
+        "score": 14.31,
+        "context": " driven by a combination of customer needs and a complex design process. Some products start small and dumpy looking (think of the Honda Accord), but get improved every"
+      }
+    ],
+    "promotes": [
+      "AutoresizingMask",
+      "FormTagHelper",
+      "+#+",
+      "Sucesor",
+      "\u0119dziesz"
+    ],
+    "demotes": [
+      " small",
+      "Small",
+      " Small",
+      "small",
+      " SMALL"
+    ],
+    "generated_description": "small (adjective) \u2014 activates on the word \"small\"/\"Small\" (adjective, usually before nouns); consistently associated with demoting the token \"small\" in output logits."
+  },
+  {
+    "id": "4_12355_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.37347596883773804,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 15.38,
+        "context": " resources for looking at Prime Factors in an earlier post.\u23ceIt\u2019s a small world! I see the second item is on Craig Barton\u2019s Web Whi"
+      },
+      {
+        "trigger": " small",
+        "score": 15.5,
+        "context": " potential for natural disasters. The week before the earthquake, they met to discuss the small earth tremors that had rattled the area for several months.\u23ceAfter the meeting"
+      },
+      {
+        "trigger": " small",
+        "score": 15.88,
+        "context": " board is measured and its sex determined. The data and location is noted and a small piece of dorsal fin is clipped and preserved for DNA analysis. Each shark is"
+      },
+      {
+        "trigger": " small",
+        "score": 15.38,
+        "context": ". She is semi-permanently moored in Galveston, Texas.\u23ceFor a small fee you can tour her daily at Texas Seaport Museum, on Pier "
+      },
+      {
+        "trigger": " small",
+        "score": 15.38,
+        "context": " membership, advancement, or continued good standing in organizations. The chance to experience a small community with similar values and interests working together for a common purpose or goal enri"
+      }
+    ],
+    "promotes": [
+      "\u23a9",
+      "+:+",
+      " distanciation",
+      " DialogInterface",
+      "+#+#"
+    ],
+    "demotes": [
+      " small",
+      "Small",
+      "small",
+      " Small",
+      " SMALL"
+    ],
+    "generated_description": "small (adjective) \u2014 activates on occurrences of the token \"small\" across contexts (e.g., \"small world\", \"small fee\", \"small piece\"); tends to demote/g\u2019stops generating \"small\"."
+  },
+  {
+    "id": "6_4362_5",
+    "layer": 6,
+    "ctx_idx": 5,
+    "influence_score": 0.3007432520389557,
+    "top_activations": [
+      {
+        "trigger": " large",
+        "score": 19.88,
+        "context": "aryngitis (sore throat)\u23ce, and tonsillitis.\u23ceFairly large studies have been performed to substantiate some of these uses.\u23ceFor example,"
+      },
+      {
+        "trigger": " large",
+        "score": 19.38,
+        "context": "board the vehicle. With current technologies, hydrogen gas storage tanks have to be as large as or larger than the trunk of a car to carry enough gas to travel"
+      },
+      {
+        "trigger": " size",
+        "score": 18.12,
+        "context": " lay in appearing to be an average traveler. The main restriction of this method was size. In order to protect large shipments of valuables, man has long relied on"
+      },
+      {
+        "trigger": " size",
+        "score": 20.12,
+        "context": " explore how the mass, shape, velocity, and angle of impactors affects the size and shape of the crater.This activity has been modified from Impact Crat"
+      },
+      {
+        "trigger": " size",
+        "score": 18.25,
+        "context": " and moshavim and an urban Jewish proletariat.\u23ceLabor Zionism grew in size and influence and eclipsed \"political Zionism\" by the 19"
+      }
+    ],
+    "promotes": [
+      " Size",
+      " sized",
+      "sized",
+      "size",
+      " size"
+    ],
+    "demotes": [
+      "FormTagHelper",
+      " propOrder",
+      "\u0627\u0646\u062c\u0644\u064a\u0632",
+      "liesslich",
+      " Audiodateien"
+    ],
+    "generated_description": "Size / largeness \u2014 activates on tokens about size or being large (large, size); tends to push the model toward \"size\"/\"sized\" output tokens."
+  },
+  {
+    "id": "0_3302_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.374968945980072,
+    "top_activations": [
+      {
+        "trigger": " opposite",
+        "score": 18.25,
+        "context": " but attenuates those in a specific range to very low levels. It is the opposite of a band-pass filter. A notch filter is a band-stop"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.25,
+        "context": ". Scientists have found dozens of waterways that are becoming more alkaline. Alkaline is the opposite of acidic \u2014 think baking soda or Rolaids.\u23ceResearch published in"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.5,
+        "context": " of the same sex. Heterosexual teen-agers are attracted to people of the opposite sex, and bisexual teens are attracted to people of both sexes.\u23ceThe"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.5,
+        "context": " harvests in forest-dominated areas during acorn \u201cbust\u201d years. However, the opposite occurs in years of good acorn abundance by causing deer to become more evenly distributed"
+      },
+      {
+        "trigger": " opposite",
+        "score": 18.38,
+        "context": " Tourism is a good thing in some ways, but it can be something quite the opposite in certain contexts. Don't be a bad tourist--there are repercussions"
+      }
+    ],
+    "promotes": [
+      "Spolja\u0161nje",
+      "jectile",
+      "phazard",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      " fallait",
+      " dolo",
+      " faut",
+      "o"
+    ],
+    "generated_description": "opposite \u2014 activates on \"opposite\" (e.g., \"the opposite of\"), marks antonym/contrast contexts"
+  },
+  {
+    "id": "0_13900_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39038145542144775,
+    "top_activations": [
+      {
+        "trigger": " opposite",
+        "score": 12.75,
+        "context": " kennel consisted of a wooden barn with 10 indoor/outdoor enclosures on two opposite sides. It had PVC piping and treated wire with doggie-doors in"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": "\u23ceFast forward to the turn of the 21st century, and the opposite occurs. Between 2000 and 2009,"
+      },
+      {
+        "trigger": " opposite",
+        "score": 12.88,
+        "context": " that despite its health benefits in moderate amounts, too much alcohol can have the exact opposite effect on heart health.\u23ceSo unless you can control your intake, Lav"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": ": bark often peeling distinctively\u23ceLeaves simple, generally cauline, alternate, opposite, rarely whorled, evergreen or deciduous, often leathery, petioled"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": ", from 2 to 4 feet high, and furrowed; the leaves are opposite and pinnate; and the flowers are small, white or pinkish, in"
+      }
+    ],
+    "promotes": [
+      "tagHelperRunner",
+      "mybatisplus",
+      "Personensuche",
+      "InjectAttribute",
+      "\u062a\u0642\u0627\u0648\u0649"
+    ],
+    "demotes": [
+      "\u23ce",
+      " `",
+      " ",
+      " cent",
+      "<eos>"
+    ],
+    "generated_description": "Opposite/antonym \u2014 activates on the word \u201copposite\u201d and contexts about antonyms or things being opposite (opposite sides, opposite effect, opposite leaf arrangement)."
+  },
+  {
+    "id": "0_11375_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3877200484275818,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "is (copula) \u2014 activates on the linking verb \"is\"; appears where subject is followed by predicate (adjective, noun phrase, descriptions)."
+  },
+  {
+    "id": "7_8760_5",
+    "layer": 7,
+    "ctx_idx": 5,
+    "influence_score": 0.38222160935401917,
+    "top_activations": [
+      {
+        "trigger": " sizes",
+        "score": 14.31,
+        "context": " of Technology reported.\u23ceNot that it's easy, they said; at sizes smaller than the wavelength of light, a few hundred nanometers in the case"
+      },
+      {
+        "trigger": " size",
+        "score": 14.19,
+        "context": " giant Jupiter because of its proximity to Earth and the Sun. Venus is about the size of the Earth, roughly 7,500 miles in diameter."
+      },
+      {
+        "trigger": " sizes",
+        "score": 16.62,
+        "context": " within 50 Km of a queried earthquake.\u23ceHistoric Map Legend\u23ceThe sizes of symbols scale with earthquake magnitude, and their color with either the age of"
+      },
+      {
+        "trigger": " size",
+        "score": 13.19,
+        "context": "-level numbers of evacuees, the report provides a rough forecast of the size, partisanship and racial composition of southern Louisiana's 'risky'"
+      },
+      {
+        "trigger": " size",
+        "score": 13.69,
+        "context": ".\u23ceMount Everest -- our closest\u23cepoint to heaven. It is not the size of Everest that makes it the greatest of\u23ceall the world mountains, but"
+      }
+    ],
+    "promotes": [
+      " inoxidable",
+      "cipar",
+      "IVEREF",
+      "UserScript",
+      " propOrder"
+    ],
+    "demotes": [
+      " size",
+      "size",
+      " SIZE",
+      " Size",
+      "Size"
+    ],
+    "generated_description": "size(s) \u2014 activates on the token \"size\"/\"sizes\", especially in contexts about measurements or magnitude (diameter, magnitude, comparative size, numeric/measurement phrases)."
+  },
+  {
+    "id": "3_339_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3836107850074768,
+    "top_activations": [
+      {
+        "trigger": "atively",
+        "score": 38.75,
+        "context": "2008 - Even small amounts of exposure to secondhand smoke can\u23cenegatively impact the cardiovascular health of children, new research\u23ceKids exposed to tobacco smoke"
+      },
+      {
+        "trigger": " damaging",
+        "score": 16.0,
+        "context": " amongst the flock, decreased quantities of eggs, unclean and unsightly eggs, and additional damaging consequences.\u23ceError 1: Not Selecting an Area with Satisfactory Water"
+      },
+      {
+        "trigger": " sense",
+        "score": 20.25,
+        "context": " The bovine respiratory syncytial virus (BRSV) is an enveloped, negative sense, single-stranded RNA virus belonging to the pneumovirus genus within the family"
+      },
+      {
+        "trigger": "ve",
+        "score": 37.0,
+        "context": "to-Be\u201d IDOLS b. Indirect (2) Non-inspirational (-ve) \u201cDON\u2019T Want to Be\u201d MICHEAL JACKSON\u23ceNorm"
+      },
+      {
+        "trigger": " positively",
+        "score": 16.0,
+        "context": " \u2013 and suddenly he saw daylight. According to the motto \u201cThink simply and always positively\u201c, he developed his Multi-User Solar System.\u23ceInstead of mounting expensive"
+      }
+    ],
+    "promotes": [
+      " Negative",
+      "negative",
+      " Positive",
+      " negative",
+      " positive"
+    ],
+    "demotes": [
+      "IsContent",
+      "Forr\u00e1sok",
+      "DockStyle",
+      "harusnya",
+      "nextDouble"
+    ],
+    "generated_description": "positive/negative word \u2014 activates on adjectives/adverbs expressing sentiment or polarity (negative, damaging, positively, -ve); tends to push tokens like \"negative\"/\"positive\"."
+  },
+  {
+    "id": "1_8623_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3719767928123474,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 18.0,
+        "context": " swap it for the cutting-edge set.\u23ceBut for families with toddlers and small children, it's imperative the switcheroo is done safely. In"
+      },
+      {
+        "trigger": " small",
+        "score": 18.25,
+        "context": ", and data easily from one computer to another in a format that\u2019s often small enough to be given a second job as a key chain. There\u2019s"
+      },
+      {
+        "trigger": " small",
+        "score": 18.25,
+        "context": "<bos>All toys which are small, or consist of small parts which can be\u23cetaken off or fall off, come with a warning that they are not suitable\u23ce"
+      },
+      {
+        "trigger": " Small",
+        "score": 18.25,
+        "context": " method to be tested\u23cein some framework (i.e. QuickCheck, SmallCheck, SmartCheck) which can\u23ceautomatically generate instances of your type and"
+      },
+      {
+        "trigger": " small",
+        "score": 18.25,
+        "context": " make a big difference. Appropriately development cycles (for example, yearly models with small changes, body/engine/platform changes about every three years) are driven"
+      }
+    ],
+    "promotes": [
+      " GoogleFonts",
+      "AxisAlignment",
+      "IMPORTED",
+      "interopRequire",
+      "\u041f\u043e\u043f\u0438\u0441"
+    ],
+    "demotes": [
+      " small",
+      "Small",
+      "small",
+      " Small",
+      " SMALL"
+    ],
+    "generated_description": "small (size adjective) \u2014 activates on 'small'/'Small' tokens denoting small size, tiny parts, minor changes or compact objects; often occurs immediately before nouns or in warnings."
+  },
+  {
+    "id": "0_12833_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3969109058380127,
+    "top_activations": [
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": " that text messaging did not hinder kids\u2019 literacy development; in fact, just the opposite.\u23ce- Rote Memorization: Overrated or Underrated? If nothing"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": " clambering subshrubs, shrubs, or lianas. Leaves alternate or opposite, entire, exstipulate. Flowers small, bisexual or unisexual"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.12,
+        "context": " be taught to love, for love comes more naturally to the human heart than its opposite\u2019.\u201d\u23ceMandela is known as a humanitarian hero world-wide for his"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": "left and the white frogs to the right, with the unoccupied tumbler at\u23cethe opposite end\u2014No. 7.\u23ceThey can jump to the next tumbler"
+      },
+      {
+        "trigger": " opposite",
+        "score": 13.0,
+        "context": "\u23ceBut recent data gathered by surgeons in the United Kingdom appears to show just the opposite.\u23ceIn March, British experts at the world\u2019s largest artificial joint"
+      }
+    ],
+    "promotes": [
+      "'));\r",
+      ")\";\r",
+      "ValueStyle",
+      "())\r",
+      " real"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " proprietario",
+      " d\u00e9chir",
+      " tramonto",
+      " feroit"
+    ],
+    "generated_description": "\"opposite\" (noun) \u2014 activates on the token \"opposite\" used as a noun in contrast phrases (\"the opposite\", \"just the opposite\", \"its opposite\", \"the opposite end\")."
+  },
+  {
+    "id": "2_3414_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.36873629689216614,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 19.5,
+        "context": " that time only the long cliff of Risco de Famara existed, itself a small, long stretched island 90km off the coast of Africa. The"
+      },
+      {
+        "trigger": " small",
+        "score": 20.0,
+        "context": "2010. This study considers it a have province because these payments are small relative to population and, taken together with other transfers, Ontario still contributes substantially"
+      },
+      {
+        "trigger": " small",
+        "score": 19.38,
+        "context": " While supplement users tend to have better diets than nonusers, the differences are relatively small, their diets have some substantial nutrient shortfalls, and their supplement use has"
+      },
+      {
+        "trigger": " small",
+        "score": 19.62,
+        "context": "33\u23ceText: Mark 15:38\u23ceProp: a small curtain\u23ceSummary: God used the veil of the temple as a barrier to"
+      },
+      {
+        "trigger": " small",
+        "score": 19.38,
+        "context": " and exploding all over the city? Hell on Earth.\u23ceAnd this was a small one\u2014the US Army Air Force dropped 1000-pound"
+      }
+    ],
+    "promotes": [
+      "Vegeu",
+      "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+      "phane",
+      "enumi",
+      " snippetHide"
+    ],
+    "demotes": [
+      " small",
+      "small",
+      "Small",
+      " Small",
+      " SMALL"
+    ],
+    "generated_description": "small (size adjective) \u2014 activates on the word \"small\" used as a size/degree descriptor; often associated with demoting/output suppression of the literal token \"small\"."
+  },
+  {
+    "id": "0_14562_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3849950134754181,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 26.5,
+        "context": " spacecraft \"has been sleeping in a polar orbit around Earth for two years\" and \"will be turned back on next month to hunt for more potentially hazardous asteroids,"
+      },
+      {
+        "trigger": " \"",
+        "score": 26.25,
+        "context": " moons as well, you should also make two additional layers, \"Moons\" and \"Moon Shadows.\" Keeping them all on separate layers will be useful later on."
+      },
+      {
+        "trigger": " \"",
+        "score": 26.5,
+        "context": "0 and in service 30 years after that.\u23ceYou may be thinking \"zero emissions and a rocket plane does not compute\" but here's why"
+      },
+      {
+        "trigger": " \"",
+        "score": 26.75,
+        "context": " his foot makes contact with the ball, and point out how far he's \"kicked\" it.\u23ceThis makes a great game when you get your"
+      },
+      {
+        "trigger": " \"",
+        "score": 27.0,
+        "context": " She gently released the little girl's grip and said comfortingly to Jack, \"There, there. She didn't mean it. She doesn't"
+      }
+    ],
+    "promotes": [
+      "\u2019\u201d",
+      ",\u201d",
+      "\u2019",
+      ".\u201d",
+      "\u201d"
+    ],
+    "demotes": [
+      " \"",
+      " '",
+      "\u3002\"",
+      " \"'",
+      "\uff1a\""
+    ],
+    "generated_description": "say opening quote \u2014 activates on an opening double-quote before quoted text; pushes for typographic/curly closing-quote tokens (\u201d, \u2019\u201d, etc.)"
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.327926903963089,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say a following place/organization \u2014 activates on the word \"of\" when it introduces locations, institutions, origins, or measurement amounts (e.g., of Kilmaurs, of St George's Medical School, of \u00bd liter)"
+  },
+  {
+    "id": "19_8658_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3793754279613495,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 34.75,
+        "context": ". Goliath was the champion of the Philistines. He was a man who was 9 feet tall! Goliath's coat weighed 150 pounds,"
+      },
+      {
+        "trigger": "than",
+        "score": 61.25,
+        "context": " literature, Gen. George S. Patton is often remembered as a charismatic, larger-than-life World War II commander who famously led American forces in the invasions"
+      },
+      {
+        "trigger": " true",
+        "score": 48.75,
+        "context": " in disguise. Given that the czar was six feet, six inches tall\u2014a true giant in an era when people were much smaller than they are today\u2014his"
+      },
+      {
+        "trigger": " garg",
+        "score": 43.5,
+        "context": " reported that the reef generally is in good shape\u2014protected in part by its sheer gargantuan size. But conservationists on the island continent and elsewhere are sounding alarms"
+      },
+      {
+        "trigger": " over",
+        "score": 37.25,
+        "context": " army had a hero named Goliath who was from the town of Gath and was over nine feet tall. 5 He wore a bronze helmet and had bronze armor"
+      }
+    ],
+    "promotes": [
+      " huge",
+      "size",
+      " size",
+      " gigantic",
+      " Huge"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "ContentAlignment",
+      "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c",
+      "unum",
+      "webElementXpaths"
+    ],
+    "generated_description": "say \"huge\"/\"giant\" \u2014 promotes tokens describing enormous size; activates on mentions of giants, gargantuan/larger\u2011than\u2011life things (Goliath, \"over nine feet\", \"gargantuan\")."
+  },
+  {
+    "id": "20_9765_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3383743464946747,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 29.5,
+        "context": " shows that the taxes for county purposes are almost invariably less in the smaller counties than in the large ones. Cherry county is now and for a number of years has"
+      },
+      {
+        "trigger": " for",
+        "score": 29.25,
+        "context": " circumferences of up to 27 cm, but larger cuffs will be required for obese patients.\u23ceIdeally the blood pressure should be measured in a seated patient"
+      },
+      {
+        "trigger": "to",
+        "score": 34.75,
+        "context": " past severe reaction to HepB vaccine\u23ce- anyone who is currently moderately-to-severely ill is advised to wait until a full recovery before getting vaccinated\u23ce"
+      },
+      {
+        "trigger": " the",
+        "score": 33.0,
+        "context": " low Reynolds Numbers and approach the point of minimum static pressure as a forward limit at the high Reynolds Numbers. The effect of compressibility on transition was slight. None"
+      },
+      {
+        "trigger": "||",
+        "score": 35.0,
+        "context": " stable for trick riding and smaller riders skating street, skate parks and bowls.\u23ce||Average wheel size for beginners and bigger riders skating street, skate parks, bowls"
+      }
+    ],
+    "promotes": [
+      " \u0645\u0634\u064a\u0646",
+      "rungsseite",
+      " ComVisible",
+      "apunov",
+      "Personensuche"
+    ],
+    "demotes": [
+      " smaller",
+      "smaller",
+      " big",
+      "larger",
+      " larger"
+    ],
+    "generated_description": "preposition/article \u2014 activates on small function words (in, for, to, the, ||) that precede noun phrases; often suppresses size adjectives (smaller, larger, big)"
+  },
+  {
+    "id": "19_5058_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3045627176761627,
+    "top_activations": [
+      {
+        "trigger": " too",
+        "score": 39.75,
+        "context": " The vast majority of animals that receive these drugs are not sick, and the doses they receive would be too low to successfully treat bacterial infections if they were. Rather"
+      },
+      {
+        "trigger": " relatively",
+        "score": 38.0,
+        "context": " biology. However, the information obtained will always be limited by the technique's relatively low spatial resolution about 200 nanometers (billionths of a"
+      },
+      {
+        "trigger": " unusually",
+        "score": 40.25,
+        "context": " 2012 and previous years finds that the epidemics begin early, after unusually warm winters; are often in similar geographical locations; and are predicted by the"
+      },
+      {
+        "trigger": "/",
+        "score": 36.0,
+        "context": " measurement. Experiences included have students sequencing events, measuring duration of time (long time/short time), and reading clocks. (from the back cover)I received"
+      },
+      {
+        "trigger": " relatively",
+        "score": 42.25,
+        "context": " first licensed experimental station? The answers aren't easy.\u23ceWireless itself is relatively broad. Within the wireless category are many subcategories and industries of which Radio"
+      }
+    ],
+    "promotes": [
+      "\u4e0b\u8f7d\u9644\u4ef6",
+      "\u0627\u0644\u062d\u064a\u0627\u0647",
+      "Brainz",
+      " \u017fmall",
+      " Efq"
+    ],
+    "demotes": [
+      "\u5e02\u9547",
+      " ",
+      ",",
+      ".",
+      " pokok"
+    ],
+    "generated_description": "Degree/qualifier adverbs \u2014 activates on degree or qualifier words and contrast markers (too, relatively, unusually; slashed contrasts like long/short)."
+  },
+  {
+    "id": "20_3830_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3407074809074402,
+    "top_activations": [
+      {
+        "trigger": " values",
+        "score": 38.25,
+        "context": ".)\u23ceThe minimum value to be plotted. If this keyword is present, data values less than the value of MIN_VALUE are treated as missing and are not"
+      },
+      {
+        "trigger": " made",
+        "score": 38.75,
+        "context": " which varies linearly with the amplitude of either wiggle if the amplitude of the other is made zero. It will be seen that D is periodic in the frequencies of the"
+      },
+      {
+        "trigger": " or",
+        "score": 33.75,
+        "context": " to macroscopic particles, it applies to microscopic quantum mechanical entities when the dimensions become equal or smaller than a billionth of a meter, a nanometer. We sometimes"
+      },
+      {
+        "trigger": " is",
+        "score": 37.25,
+        "context": "\u2019re asked to establish that the largest real root of one of these polynomials is smaller than something. This is very similar to the sort of problem that the probabilistic"
+      },
+      {
+        "trigger": " can",
+        "score": 35.5,
+        "context": " the corresponding value of the height, h? What is the minimum amount that r can vary from its optimal value before the area increases by 10%.\u23ce"
+      }
+    ],
+    "promotes": [
+      " larger",
+      "Small",
+      "Smaller",
+      " Smaller",
+      " smaller"
+    ],
+    "demotes": [
+      "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c",
+      "oneofs",
+      "TabIndex",
+      "Composable",
+      "MetaObject"
+    ],
+    "generated_description": "say \"larger\" \u2014 fires in size-comparison contexts (before words like \"or\", \"is\", \"can\"); promotes the comparative antonym of \"small\" (e.g., larger/smaller), especially \"larger\""
+  },
+  {
+    "id": "20_14623_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.386359840631485,
+    "top_activations": [
+      {
+        "trigger": " provide",
+        "score": 30.25,
+        "context": " energy from elsewhere - perhaps by switching to rich foods like nuts and meat, which provide more calories and require less energy to break down, or possibly by learning to"
+      },
+      {
+        "trigger": " ate",
+        "score": 29.5,
+        "context": ",000 people. They compared the rates of heart disease in those who ate the most chocolate with those who ate the least.\u23ceFive of the seven"
+      },
+      {
+        "trigger": " with",
+        "score": 29.75,
+        "context": " decreased by about 10% due to dirt and other residues. In areas with more bird dropping, pollution, or dust, the efficiency can decrease as high"
+      },
+      {
+        "trigger": " with",
+        "score": 35.25,
+        "context": " roads. If you\u2019re traveling along two-lane roads or in an area with deer signs posted, be extra vigilant as deer are likely to appear out of"
+      },
+      {
+        "trigger": " is",
+        "score": 28.75,
+        "context": " a slide or test strip. A bandage may be placed over the area if there is any bleeding.\u23ceThe blood sample is sent to a laboratory for examination."
+      }
+    ],
+    "promotes": [
+      "lots",
+      " many",
+      "Lots",
+      " Lots",
+      " lots"
+    ],
+    "demotes": [
+      " utafitiHapana",
+      "idigung",
+      "Datuak",
+      "\u0e1a\u0e31\u0e15\u0e34",
+      "CMYK"
+    ],
+    "generated_description": "say many \u2014 activates on structural contexts about quantity/comparison (e.g., \"provide more\", \"rates of\", \"areas with more\", \"if there is any\"); promotes tokens like \"lots\"/\"many\""
+  },
+  {
+    "id": "21_5114_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.3556068241596222,
+    "top_activations": [
+      {
+        "trigger": " \u201c",
+        "score": 53.5,
+        "context": " help warm, clean, and moisten the air you breathe in. When you \u201ccatch a cold,\u2019 the lining of the nose and sinuses becomes inflamed, producing"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 54.0,
+        "context": " the times. Far too often, through today\u2019s symptom based healthcare system, \u2018illnesses\u2019 are too quickly diagnosed. Introducing yet another foreign substance (more"
+      },
+      {
+        "trigger": " '",
+        "score": 55.5,
+        "context": "<bos>Fourth 'R' for Earth Day - reduce, reuse, recycle ... repair\u23ceIn 2004, the Norwegian Nobel committee made a revolutionary decision"
+      },
+      {
+        "trigger": " \"",
+        "score": 53.5,
+        "context": " is present. The idea is to write the coordinate information in the world file to \"tell\" the software where to the image is located in the real-world"
+      },
+      {
+        "trigger": " \"",
+        "score": 59.5,
+        "context": " When a child is able to take its first step, that is the only first \"first step\" that child will take, and many parents want to preserve that"
+      }
+    ],
+    "promotes": [
+      " C\u00e6sar",
+      ".\u201d)",
+      "...'",
+      " Shakspeare",
+      "\u2026\u2019"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      " \u00ab",
+      " \u201e",
+      " ''"
+    ],
+    "generated_description": "say opening quotation \u2014 activates on opening quote characters (\u201c, ', \u2018, \") before quoted text; signals start of quoted phrase or title, often followed by proper names or quoted content."
+  },
+  {
+    "id": "21_9082_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.36535489559173584,
+    "top_activations": [
+      {
+        "trigger": " sizes",
+        "score": 46.25,
+        "context": " of sizes and colors. A shirt, for example, might come in four different sizes and six different colors.\u23ceEach color and size combination is called a variation"
+      },
+      {
+        "trigger": " of",
+        "score": 47.5,
+        "context": " food, computer parts and equipment for air purifiers.\u23ce[ Satellites the size of softballs? Read NASA To Send Cube Satellites Into Space. ]\u23ceJust"
+      },
+      {
+        "trigger": ";",
+        "score": 48.5,
+        "context": " Fluorescent Fixtures?\u23ceThere are primarily 3 sizes of fluorescent fixtures; They are:\u23ce(Quick Tip: If you are unsure of what type of fixture you"
+      },
+      {
+        "trigger": " to",
+        "score": 46.5,
+        "context": "2.\u23ceScientists estimate the size of the largest particles ranges from a golf ball to a basketball. They have determined these are icy particles rather than dust. The"
+      },
+      {
+        "trigger": " (",
+        "score": 43.75,
+        "context": " range in size from a fraction of an inch to several inches. Very small stones (like those that are less than \u00bc inch or about 5 mm in size"
+      }
+    ],
+    "promotes": [
+      " kleinen",
+      "small",
+      "Small",
+      " Small",
+      " small"
+    ],
+    "demotes": [
+      " size",
+      " sizes",
+      " sized",
+      " SIZE",
+      "size"
+    ],
+    "generated_description": "Size/range context \u2014 activates on \"size\"/range words and connectors (of, to, ;, parentheses); consistently pushes the token \"small\"."
+  },
+  {
+    "id": "21_10855_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.3890528678894043,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " roads and bridges and promote education or we can choose to pass more tax breaks for the wealthiest Americans at the expense of our seniors. We cannot afford the latter."
+      },
+      {
+        "trigger": " really",
+        "score": 33.25,
+        "context": "<bos>Really, Really Old Chinese Wine\u23ceFancy drinking some really, really old Chinese wine?\u23ceArchaeologists say they may have discovered the oldest wine ever uncovered in"
+      },
+      {
+        "trigger": " very",
+        "score": 32.75,
+        "context": " that the risk of weight-related death in African-Americans is increased only at very high BMI levels, such as 35 and up. A BMI of"
+      },
+      {
+        "trigger": " very",
+        "score": 51.25,
+        "context": " unprecedented amount. That achievement is not diminished because some individuals in both these countries have become very rich. Fundamentally, poverty is about absolute deprivation.Kay observes that"
+      },
+      {
+        "trigger": " the",
+        "score": 37.0,
+        "context": ", wading pools, etc.)\u23ce\"WNV can affect everyone, not just the young or old. We all need to take measures to protect ourselves until the"
+      }
+    ],
+    "promotes": [
+      " big",
+      " tall",
+      " large",
+      " small",
+      " old"
+    ],
+    "demotes": [
+      "addCriterion",
+      " Majefty",
+      "SourceChecksum",
+      "Mid",
+      " poffe"
+    ],
+    "generated_description": "say intensified adjective \u2014 activates on \"very\"/\"really\" and \"the\" before descriptive words; pushes tokens like big, large, tall, old."
+  },
+  {
+    "id": "21_10062_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.30836021900177,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 74.0,
+        "context": " reduced in a crash. Second, helmets help spread the impact of the collision over a larger area of the skull, making the crash less likely to cause cranial damage"
+      },
+      {
+        "trigger": " on",
+        "score": 53.5,
+        "context": "\u23ceWhile the temples of Karnak and Deir el-Bahri at Luxor are breathtaking conceptions executed on a colossal scale, it is the exquisite quality of its"
+      },
+      {
+        "trigger": " over",
+        "score": 55.0,
+        "context": "This is the first time we've been able to measure sea-ice thickness over almost the entire Arctic ice pack,' says Dr Seymour Laxon, director of"
+      },
+      {
+        "trigger": " a",
+        "score": 44.5,
+        "context": " shorter ranges, and with finer spatial and temporal resolution. Four CASA radars covering a 100 x 100-kilometer testing area in Oklahoma"
+      },
+      {
+        "trigger": " a",
+        "score": 68.5,
+        "context": " event of 1908. It showered down small bits of rock over a pretty big area (the rock itself coming in is called a meteoroid,"
+      }
+    ],
+    "promotes": [
+      " HUGE",
+      "huge",
+      "large",
+      " huge",
+      " large"
+    ],
+    "demotes": [
+      "ItemBackground",
+      "SurfaceView",
+      "__*/",
+      " firebaseConfig",
+      "\u0338"
+    ],
+    "generated_description": "say large/huge \u2014 activates on prepositions/articles introducing scale/extent (over/on/a before area/scale); promotes tokens like HUGE, large"
+  },
+  {
+    "id": "15_5617_5",
+    "layer": 15,
+    "ctx_idx": 5,
+    "influence_score": 0.3120441734790802,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 46.25,
+        "context": " clue to the beauty of either the flower or the scent. Clerodendrums are small trees or vigorous shrubs. They have large heart-shaped leaves and flowers that"
+      },
+      {
+        "trigger": " small",
+        "score": 52.25,
+        "context": " that has washed up on shore. There are paintings of marshes full of birds and small mammals and paintings of native grasses. Cunningham also includes \u201cbefore and after\u201d"
+      },
+      {
+        "trigger": "Small",
+        "score": 45.0,
+        "context": " house is a park with a designated place, with special structures for toddlers.\u23ceSmall sized slides, wooden or plastic material cubes, arranged in a pyramidal shape helps"
+      },
+      {
+        "trigger": " small",
+        "score": 46.75,
+        "context": "<bos>A chapel is a small, simple structure constructed by the practitioners of a faith or religion to provide a meeting and worship space for the congregation. Chapels are"
+      },
+      {
+        "trigger": " Small",
+        "score": 45.75,
+        "context": " is a competition domain designed to advance robotics and AI research through a friendly competition. Small Size robot soccer is one of the RoboCup league divisions. Small Size robot"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " Shakspeare",
+      "MessageOf",
+      " MainAxisSize",
+      " \u017fmall"
+    ],
+    "demotes": [
+      " II",
+      " no",
+      " den",
+      " Gra",
+      " III"
+    ],
+    "generated_description": "\"small\" (size adjective) \u2014 activates on the token \"small\" (or \"Small\"/variants); used when describing small size or small things."
+  },
+  {
+    "id": "17_12530_5",
+    "layer": 17,
+    "ctx_idx": 5,
+    "influence_score": 0.2917914390563965,
+    "top_activations": [
+      {
+        "trigger": " Small",
+        "score": 88.0,
+        "context": ", U.S. Department of Housing and Urban Development, U.S. Small Business Administration, and the U.S. Department of Veterans Affairs -- have"
+      },
+      {
+        "trigger": " small",
+        "score": 94.0,
+        "context": "<bos>Stress Trigger Assessment\u23ceStress in small doses isn't a bad thing. Stress can challenge you to do your best. But too much stress can affect both"
+      },
+      {
+        "trigger": " small",
+        "score": 91.5,
+        "context": "<bos>Gallstone ileus is a rare form of small bowel obstruction caused by an impaction of a gallstone within the lumen of the small intestine. Such a"
+      },
+      {
+        "trigger": " small",
+        "score": 97.5,
+        "context": " employ 50% of the private sector workforce.\u23cePart of the larger small business population is made up of franchised businesses. For the past few years"
+      },
+      {
+        "trigger": " small",
+        "score": 92.0,
+        "context": " planters and merchants were doing well enough, times were not good for Alabama's small farmers. Postwar taxes, a nationwide financial panic in the 18"
+      }
+    ],
+    "promotes": [
+      " SMALL",
+      "SMALL",
+      "small",
+      "Small",
+      " Small"
+    ],
+    "demotes": [
+      "UnitTesting",
+      " sprung",
+      "ParseTree",
+      "marshaller",
+      " SqlParameter"
+    ],
+    "generated_description": "small (the word) \u2014 fires on the token \"small\" (any case/position); corresponds to the adjective \"small\" and pushes generation of \"small\"/\"SMALL\"."
+  },
+  {
+    "id": "18_9402_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.31569012999534607,
+    "top_activations": [
+      {
+        "trigger": " so",
+        "score": 34.5,
+        "context": "croh-or-gah-nih-zum), which means it's so small that you can't see it without a strong microscope.\u23ceOne"
+      },
+      {
+        "trigger": " boat",
+        "score": 36.0,
+        "context": " up against these massive 25 meter waves in the Southern Ocean. In a boat that size he's just going to be rolled around and around like he"
+      },
+      {
+        "trigger": " brewery",
+        "score": 40.5,
+        "context": " breweries are industrial and some smallish ones are.\u23ce- Large brewery: Any brewery with an annual capacity of 300,000 barrels or"
+      },
+      {
+        "trigger": " its",
+        "score": 37.0,
+        "context": " of our constitutional system -- like the allocation of two senators to each state, whatever its size -- that of their own force and without court intervention assure that the states"
+      },
+      {
+        "trigger": " tin",
+        "score": 33.5,
+        "context": " boulder-sized asteroids create blazing fireballs as they disintegrate in the atmosphere or tinier particles light up as shooting stars.\u23ceYet despite the low probability of"
+      }
+    ],
+    "promotes": [
+      " sized",
+      " sizes",
+      "size",
+      " Size",
+      " size"
+    ],
+    "demotes": [
+      "\u0642\u0627\u06cc\u0646\u0627\u0642\u200c\u0644\u0627\u0631",
+      " t\u1eadn",
+      " Danach",
+      "UTC",
+      "[]):"
+    ],
+    "generated_description": "Object size \u2014 activates on mentions of an object's size or smallness (boat, brewery, asteroid, \u201cso small\u201d/\u201ctinier\u201d); promotes tokens like \u201csize/sized.\u201d"
+  },
+  {
+    "id": "15_5756_5",
+    "layer": 15,
+    "ctx_idx": 5,
+    "influence_score": 0.33351361751556396,
+    "top_activations": [
+      {
+        "trigger": " large",
+        "score": 41.0,
+        "context": " so that the desirable, long, straight, unforked roots are produced. The large seeds are sown in 2.5cm (1 in) deep drills"
+      },
+      {
+        "trigger": " huge",
+        "score": 42.0,
+        "context": " Egg once someone has shown the way.\u23ceI'm still waiting for the huge effects on all science that were a major concern when she did (as a"
+      },
+      {
+        "trigger": " large",
+        "score": 42.0,
+        "context": " their resemblance to the genus Amoeba (order Amoebida), which includes several large, common species of which the freshwater Amoeba proteus is the most familiar"
+      },
+      {
+        "trigger": " large",
+        "score": 41.25,
+        "context": " attributable to particulate air pollution each year. We all pay for these costs in ways large and small.\u23ceEcosystem services, or the benefits of nature to people,"
+      },
+      {
+        "trigger": " large",
+        "score": 41.75,
+        "context": " mild and further testing of this variety is needed. It was not overly productive but large berry size made it appealing. The fruit is round, red, without much"
+      }
+    ],
+    "promotes": [
+      "Massive",
+      "sized",
+      " sized",
+      "size",
+      " size"
+    ],
+    "demotes": [
+      "aarrggbb",
+      "UnusedPrivate",
+      "UrlResolution",
+      "AsUp",
+      "HideFlags"
+    ],
+    "generated_description": "Large/huge (size adjective) \u2014 activates on size adjectives (large, huge, etc.); signals discussion of magnitude; pushes size-related tokens (size, sized, massive)."
+  },
+  {
+    "id": "23_8488_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.31887009739875793,
+    "top_activations": [
+      {
+        "trigger": " flat",
+        "score": 46.75,
+        "context": " sulla morte d'un eroe\u23ceMovement 4: Allegro\u23ceThe A flat major Sonata opens with a theme and five variations. A flat major is always"
+      },
+      {
+        "trigger": " F",
+        "score": 40.75,
+        "context": " 7 flat 5 \u2013 C major 7 \u2013 D minor 7 \u2013 E minor 7 \u2013 F major 7 \u2013 G dominant 7 \u2013 A"
+      },
+      {
+        "trigger": " too",
+        "score": 47.0,
+        "context": " that amount is too small, a computation may never terminate, while if it is too large, results will be needlessly inaccurate. Fudge factors are frequently adjusted incorrectly by"
+      },
+      {
+        "trigger": " and",
+        "score": 33.75,
+        "context": " woman's birth canal. On the other hand, offspring of a small man and big woman will not have that problem.\u23ceWe have some information about differences"
+      },
+      {
+        "trigger": " Arts",
+        "score": 42.5,
+        "context": "Students interested in music ministry may choose to pursue the Music track inside the Classical Liberal Arts major. Additionally, students may pursue the newly added Philosophy track or the Classics"
+      }
+    ],
+    "promotes": [
+      " big",
+      "great",
+      "Great",
+      " great",
+      " Great"
+    ],
+    "demotes": [
+      "Tikang",
+      "+#+#",
+      "Minor",
+      " Minor",
+      "LookAnd"
+    ],
+    "generated_description": "say big \u2014 activates in contrast contexts mentioning \"small\" or comparisons; consistently promotes tokens like \"big\"/\"great\" as antonym outputs."
+  },
+  {
+    "id": "23_14350_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.2754403352737427,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": ". I don't\u23cesee any signs of gum infection and none of them\u23ceare loose as nearly as I can tell, so what is this\u23cebrown"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": " person access to a secure area. This tutorial will shows you how to build a\u23ceface recognition program using Matlab.\u23ceMotivation and Audience\u23ceThis tutorial has been"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 114.0,
+        "context": "traveled on it. It had not many comforts; several days and nights were\u23cerequired for the New York trip; yet it was a wonderful and beautiful\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": "ged north-northwestward late on 26 October, followed by a\u23cenorth-northeastward turn and acceleration on the 27th. During"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": " left\u23cefor about 300,000 light-years from\u23ceNGC 3628's warped, edge-on disk."
+      }
+    ],
+    "promotes": [
+      "P",
+      "p",
+      "I",
+      "in",
+      "to"
+    ],
+    "demotes": [
+      "\u00e6us",
+      "ine\u017fs",
+      "ratulations",
+      "BibitemShut",
+      "iffance"
+    ],
+    "generated_description": "newline / line break \u2014 activates on end-of-line/newline positions; predicts sentence-start tokens (capitalized words like \"I\"/\"P\", and common sentence starters like \"in\", \"to\")."
+  },
+  {
+    "id": "16_7299_8",
+    "layer": 16,
+    "ctx_idx": 8,
+    "influence_score": 0.3429570496082306,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 20.0,
+        "context": " until week 20, your baby will be growing rapidly \u2014 increasing in size from about 2 inches (5 cm) to about 8 inches (2"
+      },
+      {
+        "trigger": " account",
+        "score": 21.25,
+        "context": " leaves, though, vary in appearance among species.\u23ceWhen you consider the size of a hickory leaf, take into account the individual leaflets and the length of the"
+      },
+      {
+        "trigger": " average",
+        "score": 20.5,
+        "context": " because of an explosive growth in home size. In 1960, average U.S. home size was 1,200 square feet"
+      },
+      {
+        "trigger": " pencil",
+        "score": 21.5,
+        "context": " size\u2014usually larger than the eraser of a pencil (5 millimeters or \u00bc inch)\u23ce|Sign of Potential Melanoma|\u23ce|Copyright \u00a9 Nucleus Medical Media"
+      },
+      {
+        "trigger": " it",
+        "score": 18.5,
+        "context": "s eccentric orbit, for transits occurring in May Mercury appears 158 times smaller than the diameter of the Sun, while for November transits it appears"
+      }
+    ],
+    "promotes": [
+      "Urine",
+      "\u03b9\u03b4",
+      " isolato",
+      "poste",
+      " Peirce"
+    ],
+    "demotes": [
+      " size",
+      "MemoryWarning",
+      "size",
+      " SIZE",
+      " larger"
+    ],
+    "generated_description": "Size/measurement mention \u2014 activates on phrases about size, dimensions, units or averages (inches, cm, average home size, comparisons like \u201csmaller than,\u201d measurement contexts)."
+  },
+  {
+    "id": "14_11360_5",
+    "layer": 14,
+    "ctx_idx": 5,
+    "influence_score": 0.3615208566188812,
+    "top_activations": [
+      {
+        "trigger": " small",
+        "score": 31.25,
+        "context": " please?\u23ceA No problem.\u23ceIt\u2019s tied to the idea of smallness. Ever since dot came back into the language in the sixteenth century ("
+      },
+      {
+        "trigger": " small",
+        "score": 32.0,
+        "context": " the south coast of England, Osbourne House, was one of many country houses and small estates there, owned and frequented by leading figures in Victorian society. The social"
+      },
+      {
+        "trigger": " small",
+        "score": 32.25,
+        "context": " Saxon Math concepts are introduced then reviewed and practiced every day. Material is introduced in small increments and continued increasing in complexity throughout the year.Saxon Math 5/"
+      },
+      {
+        "trigger": " small",
+        "score": 29.25,
+        "context": " do not make sense in most whole-house applications. However, in applications where small models can be installed at a point of use, doing so may be a"
+      },
+      {
+        "trigger": " small",
+        "score": 29.75,
+        "context": " 1929. At the beginning of 1929, small investors in the American markets started selling off their stock. This lead to a"
+      }
+    ],
+    "promotes": [
+      "XmlAccessType",
+      "MemoryWarning",
+      "\u041f\u043e\u043f\u0438\u0441",
+      " noqa",
+      " ar\u015fivlendi"
+    ],
+    "demotes": [
+      " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438",
+      " >=\",",
+      "sidemargin",
+      "ReusableCell",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430"
+    ],
+    "generated_description": "small / smallness \u2014 activates on the adjective \"small\" and variants; encodes size/scale concept across contexts (estates, models, increments, investors)."
+  },
+  {
+    "id": "23_14407_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.2692747712135315,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 37.75,
+        "context": "yen-Bi\u00e8re, near Fontainebleau, and began sketches for his new large-scale painting, planned for a canvas of nearly four by six metres.\u23ce"
+      },
+      {
+        "trigger": " at",
+        "score": 40.5,
+        "context": " class instances represent things that are rather large.\u23ceThere are two ways of looking at such a class: One is that it is or contains the representation of whatever"
+      },
+      {
+        "trigger": " for",
+        "score": 48.75,
+        "context": " if the technology and things which worked well for smaller airliners may not work for the larger one due to physical constraints; in the same way, new technologies are"
+      },
+      {
+        "trigger": " large",
+        "score": 42.5,
+        "context": " can cause problems with feeding and sleeping.\u23ceDevelopment of tumors\u23ceRespiratory difficulties from obstruction due to large tongue\u23ceCalling your health care provider\u23ceIf you have a"
+      },
+      {
+        "trigger": " larger",
+        "score": 39.0,
+        "context": " properties of nanoscale materials (measuring <100 nm) differ significantly from larger scales of the same materials, introducing new and potentially heightened risks of toxicity that"
+      }
+    ],
+    "promotes": [
+      "IRQn",
+      "balleur",
+      "invokeLater",
+      "argout",
+      "MIDDLEWARE"
+    ],
+    "demotes": [
+      "Large",
+      " large",
+      " Large",
+      "large",
+      "Larger"
+    ],
+    "generated_description": "large / larger \u2014 activates on words about bigness or larger scale (large, larger, larger-scale, \u201clarge\u201d contexts); tends to suppress output tokens that are the literal word \u201clarge.\u201d"
+  },
+  {
+    "id": "23_9338_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.2813093960285187,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 78.0,
+        "context": " an example of how cultural-centric most of our genealogical conventions have become. The instructions from FamilySearch Family Tree are perfectly valid unless... and that is a"
+      },
+      {
+        "trigger": " single",
+        "score": 68.0,
+        "context": " robusta, has surpassed Brazil, India, and Indonesia to become the world's single largest exporter. Approximately one third of the coffee produced in the world is robusta"
+      },
+      {
+        "trigger": " two",
+        "score": 60.75,
+        "context": " smaller parties that have passed the election threshold to secure representation in the parliament. The two large parties will each try to secure enough seats in any election to have a"
+      },
+      {
+        "trigger": " into",
+        "score": 80.0,
+        "context": " in the synovial fluid bathing the joint to form microscopic bubbles. These bubbles merge into large bubbles which then get popped by additional fluid which rushes in to fill the"
+      },
+      {
+        "trigger": " as",
+        "score": 68.0,
+        "context": ", and seven times as great as France. China\u2019s population is eight times as great as Japan and thirty times that of Korea. Her large resources, her"
+      }
+    ],
+    "promotes": [
+      " lark",
+      " lari",
+      " fasi",
+      "getL",
+      " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd"
+    ],
+    "demotes": [
+      "Huge",
+      "huge",
+      " Huge",
+      " huge",
+      " massive"
+    ],
+    "generated_description": "say size/magnitude (e.g. \"large\",\"great\") \u2014 activates on structural tokens before magnitude words (articles, numerals, prepositions like \"a\",\"single\",\"two\",\"into\",\"as\"); pushes away \"Huge\"/\"massive\""
+  },
+  {
+    "id": "24_13704_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3473113477230072,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 69.0,
+        "context": "otherwise known as the Web).\u23ceWeb-based instruction (WBI) is\u23ceA potential set of questions have been identified and placed into a decision making model"
+      },
+      {
+        "trigger": "-",
+        "score": 77.0,
+        "context": " at home.\u23ceYet we may see episodes such as this unfold in the not-too-distant future, if food-importing nations continue to buy farmland"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 69.5,
+        "context": " guidelines are the first of their kind for this age group.\u23ceThe recommendations suggest\u23ceintegrating lifestyle modifications, including diet and exercise, in concert\u23cewith medication rather"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 68.5,
+        "context": "\u23celanguage arts curriculum into a reading class and a writing class. This allows teachers\u23cetime to teach the important skills of reading comprehension, vocabulary, Latin and\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 75.0,
+        "context": "0 to 500 each day.\u23ce- After you've made\u23cewalking a habit, set a longer-term goal. You may want to"
+      }
+    ],
+    "promotes": [
+      "appropriate",
+      "serious",
+      "both",
+      "professionals",
+      "a"
+    ],
+    "demotes": [
+      " Efq",
+      " Monfieur",
+      " my\u017felf",
+      " The\u017fe",
+      " Majefty"
+    ],
+    "generated_description": "say sentence start \u2014 activates on newline/line-break before a new sentence; promotes common sentence-start tokens (appropriate, serious, both, professionals, a)."
+  },
+  {
+    "id": "25_7089_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.36709854006767273,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 124.0,
+        "context": " the current expression and allows access to the R interpreter.\u23ceThe purpose of the\u23cecondition arguments are to allow helper programs (e.g. external debuggers"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 124.0,
+        "context": " health\u23ceprofessionals from 17 health regions participated in a seven-week training\u23cecourse on health policy, management, economics, research methods, data\u23ceanalysis"
+      },
+      {
+        "trigger": "-",
+        "score": 139.0,
+        "context": " slot-boundp, slot-makunbound, or slot-value.\u23ceThe generic function slot-missing is invoked when an attempt is made to access"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 140.0,
+        "context": " the overall experience you have when you are using or interacting with something \u2013 and that \u2018something\u2019 could literally be almost anything in the world! For many people,"
+      },
+      {
+        "trigger": " \"",
+        "score": 123.0,
+        "context": " cholesterol circulates in the blood and remains unused. Normally, the liver removes this \"extra\" cholesterol, but many people have more LDL cholesterol than the liver can"
+      }
+    ],
+    "promotes": [
+      " d\u00e9chir",
+      " nuages",
+      " bless\u00e9s",
+      " varandra",
+      " genoux"
+    ],
+    "demotes": [
+      " new",
+      " current",
+      " plea\u017fure",
+      " purpo\u017fe",
+      " data"
+    ],
+    "generated_description": "Newline / opening-quote \u2014 activates on structural boundary tokens (newline, opening single/double quotes, similar punctuation like <<<->>>) before next content token."
+  },
+  {
+    "id": "25_9600_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.32200494408607483,
+    "top_activations": [
+      {
+        "trigger": " so",
+        "score": 33.0,
+        "context": "'ll be able to build bigger cells with bigger solar panels until we make a cell so large it will destroy us all. (Or something to that effect.)"
+      },
+      {
+        "trigger": " grow",
+        "score": 41.0,
+        "context": " a counterpart to their more exotic pond mates and they also have the potential to grow very large.\u23ceAsagi have a long, yet simple history. The As"
+      },
+      {
+        "trigger": " was",
+        "score": 32.75,
+        "context": " of gigantism in freshwater turtles. Likely a dominant preditor, the turtle was also probably a neighbor of the largest snake ever discovered, Titanoboa, which"
+      },
+      {
+        "trigger": ",",
+        "score": 31.75,
+        "context": " great pumpkin. In recent years, America has become obsessed with plus-sized pumpkins, as in the 1,500 pound-and-up behe"
+      },
+      {
+        "trigger": " grows",
+        "score": 36.5,
+        "context": " a hardy fish for those who can provide it with a proper environment. Because it grows so large and so quickly the ideal aquarium for this fish is a 5"
+      }
+    ],
+    "promotes": [
+      "Czytaj",
+      "<bos>",
+      "AndEndTag",
+      "AddHtmlAttribute",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      " size",
+      " Size",
+      "size",
+      "Size",
+      " SIZE"
+    ],
+    "generated_description": "say \"large/giant\" \u2014 activates on verbs/adverbs/words that introduce big size (grow, grows, so, was ... largest), signals upcoming mention of being very large."
+  },
+  {
+    "id": "23_8683_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.28704825043678284,
+    "top_activations": [
+      {
+        "trigger": " too",
+        "score": 28.0,
+        "context": " the best fit.\u23ceShape and Size Of Computer Mouse\u23ceExample of a mouse too small.\u23ceMost people don't consider buying a computer mouse because of"
+      },
+      {
+        "trigger": " as",
+        "score": 29.0,
+        "context": " cargo ships are huge -- a quarter mile long -- and they have engines in them as big as a house [below].\u23ceAs ships get bigger, the pollution"
+      },
+      {
+        "trigger": " be",
+        "score": 28.5,
+        "context": " luck.\u23ceWired reports while the asteroid is of moderate size, it will still be 201,700 miles away, so you need at"
+      },
+      {
+        "trigger": " too",
+        "score": 31.5,
+        "context": " at risk for obesity. You may notice that your child's clothing is getting too tight. As your child gains weight, he or she may have symptoms caused"
+      },
+      {
+        "trigger": " too",
+        "score": 38.5,
+        "context": " be needed if the baby is not tolerating labor, is breech, or is too big to be delivered vaginally. Although it may be medically indicated, there"
+      }
+    ],
+    "promotes": [
+      " big",
+      "large",
+      "Large",
+      " Large",
+      " large"
+    ],
+    "demotes": [
+      " ComVisible",
+      "\\{\\\\",
+      " ContentValues",
+      "createStatement",
+      "mobileqq"
+    ],
+    "generated_description": "say big/large \u2014 activates on structural words before size adjectives (too, as, be); pushes next-token toward \u201cbig\u201d/\u201clarge\u201d (promotes size-of-object completions)"
+  },
+  {
+    "id": "25_15920_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3764454424381256,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 186.0,
+        "context": ", forced labour, disease or execution during the Khmer Rouge \"killing fields,\" from 1975 to 1979.\u23ceBut to date"
+      },
+      {
+        "trigger": " ",
+        "score": 192.0,
+        "context": " paint the wooden face.\u201d\u23cePinocchio hit movie theaters the following year, in 1940.\u23ceToday, December 5, is Walt Disney"
+      },
+      {
+        "trigger": " ",
+        "score": 198.0,
+        "context": " utilities, savings bank life insurance, and anti-monopoly legislation.\u23ceIn 1908 Brandeis argued a case in front of the Supreme Court"
+      },
+      {
+        "trigger": " ",
+        "score": 216.0,
+        "context": "1984.\u23ceA settlement was founded on the site of Mobile in 1710 by the sieur de Bienville, and it was"
+      },
+      {
+        "trigger": "2",
+        "score": 186.0,
+        "context": "\u23ceWhile use of influenza antivirals in the United States has increased during the 2009-2010 flu season, there are still"
+      }
+    ],
+    "promotes": [
+      " enfans",
+      " sup\u00e9rieurs",
+      " europ\u00e9ennes",
+      " automatiques",
+      " varandra"
+    ],
+    "demotes": [
+      " DAF",
+      " Realt",
+      " IFT",
+      " Ruger",
+      " Sandman"
+    ],
+    "generated_description": "say sentence-start word \u2014 activates on newlines/period-boundary tokens, signals the next token is the first word of a new sentence."
+  },
+  {
+    "id": "22_10372_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.39170584082603455,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 39.5,
+        "context": "<bos>Erik has been \"in the computer game\" since 1970, but says he doesn't really believe in computers. He does believe in"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 38.0,
+        "context": ")\u23ce\u201cFor brain-to-brain technology to become a viable form of \u2018mind control,\u2019 the advances to be made in science and technology need to be"
+      },
+      {
+        "trigger": " \"",
+        "score": 39.0,
+        "context": "8 am\u23ceCould the microbes that inhabit our guts help explain that old idea of \"gut feelings?\" There's growing evidence that gut bacteria really might influence our"
+      },
+      {
+        "trigger": " \"",
+        "score": 37.25,
+        "context": " Dollo's law states that evolution is unidirectional and irreversible. But this \"law\" is not universally accepted and is the topic of heated debate among biologists"
+      },
+      {
+        "trigger": " \"",
+        "score": 37.5,
+        "context": " ethnic separation as the only solution, even though it would involve population exchanges. Will \"peace through partition\" become the final solution to ethnic conflict in Afghanistan, Che"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " \u0f0b\u0f0b",
+      " plea\u017fure",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      "-",
+      ",",
+      " (",
+      " \u201c",
+      " B"
+    ],
+    "generated_description": "Opening quote \u2014 activates on opening quotation marks (\", \u2018) immediately before a quoted word or phrase."
+  },
+  {
+    "id": "24_4707_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.2963780164718628,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 203.0,
+        "context": " fruit, Spondias dulcis\u23ceGNU Webster's 1913\u23ce- The fruit of a Polynesian anacardiaceous tree (Spondias"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 204.0,
+        "context": "lemie, colmey, coal whiting, etc. See pollock.\u23ce- n. The beshow or candlefish of Alaska.\u23ce- n"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 194.0,
+        "context": " Math FAQ:\u23cecalendar & days\u23ceof the week\u23ce3D and higher\u23ceBrowse Middle School Measurement\u23ceStars indicate particularly interesting answers or\u23cegood places to"
+      },
+      {
+        "trigger": "-",
+        "score": 189.0,
+        "context": " world file.\u23ceWhen this file is present, ArcView performs the image-to-world\u23cetransformation. The image-to-world transformation is a six"
+      },
+      {
+        "trigger": " \u201c",
+        "score": 189.0,
+        "context": " in warding off mosquito bites.\u23ceThe efficacy of the isolated compound\u2014called \u201ccallicarpenal\u201d\u2014was affirmed through tests simulating human skin. But these"
+      }
+    ],
+    "promotes": [
+      "e\u017f",
+      " d\u00e9tru",
+      "CHREIB",
+      "f\u00f6ren",
+      "\u2003\u2003("
+    ],
+    "demotes": [
+      " C\u00e6sar",
+      " Sopho",
+      " Phoen",
+      " Athenians",
+      " Confucian"
+    ],
+    "generated_description": "say newline/linebreak \u2014 activates on line breaks and formatting separators (\u23ce, ->, opening quote at line boundary); signals section breaks, list or header transitions"
+  },
+  {
+    "id": "23_1343_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.35154974460601807,
+    "top_activations": [
+      {
+        "trigger": " as",
+        "score": 40.25,
+        "context": "Set - A complete set of drums. This can consists of as many, or as little drums as desired.\u23ceDrum - A musical instrument with a hollow body"
+      },
+      {
+        "trigger": " dirt",
+        "score": 42.25,
+        "context": " of Manitoba\u2014especially since fossil fuel energy is so cheap.\u23ce\"Energy is dirt cheap. Oil is cheaper than any mineral you can buy,\" Smil noted"
+      },
+      {
+        "trigger": " and",
+        "score": 41.25,
+        "context": " by developing uncertainty estimates for its calculations. This work involved analyzing high, medium, and low ranked phenomena from an INL PIRT on a small break Loss-"
+      },
+      {
+        "trigger": " too",
+        "score": 46.25,
+        "context": " up to 75% of the adult population has vitamin D levels that are too low for good health. Vitamin D deficiencies are common because there are few food"
+      },
+      {
+        "trigger": " or",
+        "score": 41.25,
+        "context": "ziyeh is a community affair, with cooperative funds committed for the purpose. Performances may be long or short, but they often take place all day, particularly on"
+      }
+    ],
+    "promotes": [
+      "SupportActionBar",
+      "rungsseite",
+      "mybatisplus",
+      " uintptr",
+      "tagHelperRunner"
+    ],
+    "demotes": [
+      " very",
+      " high",
+      "Very",
+      " Very",
+      " heavy"
+    ],
+    "generated_description": "say connector word \u2014 activates on short function words (as, and, or, too) often preceding adjectives/phrases; also fires in idiomatic slot like \"dirt cheap.\""
+  }
+]

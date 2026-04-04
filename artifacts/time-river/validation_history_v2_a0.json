@@ -1,0 +1,280 @@
+[
+  {
+    "prompt": "<bos>Time is like a",
+    "timestamp": "2026-04-04T19:14:37Z",
+    "n_runs": 5,
+    "design": {
+      "method1": "1-in-10 feature identification (chance=10%)",
+      "method2": "5-in-10 text snippet matching (chance=50%)",
+      "method_d1": "1-in-10 description accuracy (chance=10%)",
+      "method_d2": "5-in-10 description snippet match (chance=50%)",
+      "aggregation": "per-group run-level means, then mean \u00b1 stderr across runs",
+      "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+      "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
+      "label_regeneration": "manual only; auto uses pipeline names"
+    },
+    "auto": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0667,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.89,
+            "stderr_accuracy": 0.0971
+          },
+          "total_trials": 75
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.36,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.72,
+            "stderr_accuracy": 0.1211
+          },
+          "total_tasks": 20
+        }
+      },
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.99,
+            "stderr_accuracy": 0.01
+          },
+          "total_trials": 75
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.78,
+            "stderr_accuracy": 0.0775
+          },
+          "total_tasks": 20
+        }
+      },
+      "hard": {
+        "method1": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        },
+        "method2": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        }
+      },
+      "attribution_coverage": 0.6197
+    },
+    "random": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 0.04,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.01,
+            "stderr_accuracy": 0.01
+          },
+          "total_trials": 75
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say 'time'",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a simile",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "time concept",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.48,
+            "stderr_accuracy": 0.0163
+          },
+          "total_tasks": 20
+        }
+      }
+    },
+    "description_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.8622,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 225
+    },
+    "description_snippet_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.8862,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 225
+    }
+  }
+]

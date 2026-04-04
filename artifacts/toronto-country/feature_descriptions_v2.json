@@ -1,0 +1,1586 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.35420283675193787,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 activates on sentence-initial preposition introducing a topical phrase (e.g., \"In medicine,\", \"In music theory,\", \"In my previous entries,\")."
+  },
+  {
+    "id": "4_8439_4",
+    "layer": 4,
+    "ctx_idx": 4,
+    "influence_score": 0.3145419955253601,
+    "top_activations": [
+      {
+        "trigger": "ava",
+        "score": 18.75,
+        "context": "ulina concolor (De Kay, 1842)\u23ce- Ungava seal or Hudson Bay Har - Phoca vitulina mellonae (D"
+      },
+      {
+        "trigger": " Waterloo",
+        "score": 17.12,
+        "context": " advances towards using technology to mimic the human brain, and scientists at the University of Waterloo have created their own functioning model that can even pass the kind of basic questions"
+      },
+      {
+        "trigger": " Code",
+        "score": 19.62,
+        "context": " of activity in\u23ceboxing rings and homes. Section 43 of the Criminal Code criminalizes violence\u23ceagainst children if it exceeds \"...what is reasonable under the"
+      },
+      {
+        "trigger": " Columbia",
+        "score": 17.25,
+        "context": " off the Oregon-California coast and a 6.3 magnitude quake in British Columbia...both of them in November.\u23ceThe most recent quake was a small"
+      },
+      {
+        "trigger": " Canada",
+        "score": 17.88,
+        "context": "001 in Detroit near a heavily trafficked shipping area adjacent to Ontario, Canada, where a larger population of the snails exists. Xerolenta obvia"
+      }
+    ],
+    "promotes": [
+      "Canadian",
+      "Canada",
+      " Canada",
+      " Canadian",
+      " Canadians"
+    ],
+    "demotes": [
+      " genannt",
+      "find",
+      "\u0425\u0440\u043e",
+      "homa",
+      " prevision"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on Canadian place names/provinces/cities (Toronto, Ontario, Waterloo, British Columbia, Hudson Bay); promotes output tokens \"Canada\"/\"Canadian\"."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3652624487876892,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "sentence-initial \"It\" / \"(\" \u2014 activates on sentence-start expletives like \"It\" and opening parenthesis markers, signals a new clause/sentence start."
+  },
+  {
+    "id": "0_5626_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.34237152338027954,
+    "top_activations": [
+      {
+        "trigger": " Croatia",
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia\u23ceCroatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.38,
+        "context": " diplomatic mission\u23ceAccording to the article 3 of the 1961 Vienna Convention, normal functions consist in:\u23ce- representing the sending State in the"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "European place \u2014 activates on European cities/countries (Vienna, Copenhagen, Croatia); signals Europe-related location mentions."
+  },
+  {
+    "id": "0_3598_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3337011933326721,
+    "top_activations": [
+      {
+        "trigger": " contained",
+        "score": 22.0,
+        "context": " rule, as some people find this helpful. In the notation, each syllable is contained in [ ], and numbers 1 to 4 indicate the tone of that"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.25,
+        "context": " impossible for lawmen to access without detection by the outlaws concealed there. It contained an infrastructure, with each gang supplying its own food and livestock supply, as"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.75,
+        "context": " of blood through the body, by way of the cardiac cycles. The heart is contained in the mediastinum in the thoracic cavity of the thorax.\u23ceThe"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.75,
+        "context": " of the Bible, both Old and New Testaments (though not all that is contained in the Old Testament is directly relevant for Christians). The Bible ultimately is about"
+      },
+      {
+        "trigger": " contained",
+        "score": 22.0,
+        "context": " threat, measures must be taken to ensure that it does not know that it is contained. SCP-850 must be kept in a large habitat maintained in"
+      }
+    ],
+    "promotes": [
+      "Geplaatst",
+      "contentLoaded",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "atshirt",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "WebServlet",
+      " />\";",
+      "/>\";",
+      "ly",
+      " involve"
+    ],
+    "generated_description": "\"contained\" / \"contained in\" \u2014 activates on the token \"contained\", especially the phrase \"contained in\" (passive/participle indicating something located or included)."
+  },
+  {
+    "id": "0_15423_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39569371938705444,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 13.19,
+        "context": ", is a nationwide organization that has established specific guidelines for foreign language proficiency across the country. Norych explained how ACTFL\u2019s main vision is for students"
+      },
+      {
+        "trigger": " country",
+        "score": 13.44,
+        "context": " will continue, especially so in the Upper Midwest and New England. Elsewhere across the country, near average temperatures will likely round out the season once all the months finish"
+      },
+      {
+        "trigger": " country",
+        "score": 13.56,
+        "context": "<bos>As debate rages over sexism and misogyny in Canberra and across the country, a global survey has found Australian women are the most economically empowered in the"
+      },
+      {
+        "trigger": " country",
+        "score": 13.06,
+        "context": " as the air we breathe. In recent months, many schools and districts around the country have taken steps to create social media policies and guidelines for their students and staff"
+      },
+      {
+        "trigger": " country",
+        "score": 13.44,
+        "context": " environmentally contaminated sites known as \"brownfields.\" He has worked in cities across the country, including Atlanta and Cleveland, to turn vacant properties into parks, gardens or"
+      }
+    ],
+    "promotes": [
+      " who\u017fe",
+      " hou\u017fe",
+      " them\u017felves",
+      " The\u017fe",
+      " purpo\u017fe"
+    ],
+    "demotes": [
+      "CloseOperation",
+      "\u4f8b\u53e5",
+      "tagHelperRunner",
+      "tvguidetime",
+      "rawDesc"
+    ],
+    "generated_description": "country (token) \u2014 activates on the word \"country\", especially in phrases like \"across/around the country\" referring to a nation or region."
+  },
+  {
+    "id": "0_11375_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3314089775085449,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "say copula \"is\" \u2014 activates on the verb \"is\" linking subject to predicate; signals predicative/definitional constructions and descriptions."
+  },
+  {
+    "id": "0_12082_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.37236514687538147,
+    "top_activations": [
+      {
+        "trigger": " containing",
+        "score": 14.88,
+        "context": "new\u201d sound. Again, I find it extremely valuable for them to practice words containing the \u201cnew\u201d sound, and then contrasting it by saying it in their"
+      },
+      {
+        "trigger": " containing",
+        "score": 15.12,
+        "context": "\u23ceFollowing the general introduction, the Middle Rocky Mountains themselves are examined. The area containing the Middle Rock Mountains includes southwestern Montana, Wyoming, and northeastern Utah. In"
+      },
+      {
+        "trigger": " containing",
+        "score": 14.88,
+        "context": " forms, with the river, an inclosure in the shape of a horseshoe, containing about fifteen acres of wooded ground. To this place elephants resort during the monsoon"
+      },
+      {
+        "trigger": " containing",
+        "score": 15.0,
+        "context": " host the DNS zones that correspond to their Active Directory domains.\u23ceConfigure the zone containing the Active Directory forest-wide locator records (_msdcs.forestname"
+      },
+      {
+        "trigger": " containing",
+        "score": 14.88,
+        "context": " roughly where the mast would have been, a wooden burial chamber had been constructed, containing a wooden coffin and furnished with magnificent grave goods, including:\u23ce- a"
+      }
+    ],
+    "promotes": [
+      "u",
+      "m",
+      "i",
+      "o",
+      "y"
+    ],
+    "demotes": [
+      "ratulations",
+      " Efq",
+      "ftance",
+      "@@@@@@@@",
+      "BibitemShut"
+    ],
+    "generated_description": "containing \u2014 activates on the word \"containing\", especially when introducing something that specifies contents or a containing clause"
+  },
+  {
+    "id": "0_8918_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35609108209609985,
+    "top_activations": [
+      {
+        "trigger": " countries",
+        "score": 20.88,
+        "context": ", libraries, facility upkeep and to provide a comfortable student learning experience. In most countries, especially in non-English-speaking countries, there are no or only"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " borders into economies both near and far, causing persistent social and economic detriment in many countries. The Global Economic Crisis in Latin America: Impacts and Responses is an examination"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " and schizophrenia) account for nearly 25% of all disability across major industrialized countries.12\u23ceAs the President indicated in his speech announcing the Commission ("
+      },
+      {
+        "trigger": " countries",
+        "score": 20.5,
+        "context": " implement and fund projects on autism spectrum disorders and other mental disorders in children in developing countries, the vast majority of whom do not currently receive any treatment or care."
+      },
+      {
+        "trigger": " countries",
+        "score": 20.62,
+        "context": "\u23ceLATCH stands for Lower Anchors and Tethers for Children. In other countries, it\u2019s known as ISOFIX/ISOFIT or LUAS"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "\ue315",
+      "InputBorder",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      " country",
+      "ral",
+      " current",
+      "en",
+      "country"
+    ],
+    "generated_description": "\"countries\" (plural) \u2014 activates on the token \"countries\" (plural), signals discussion of nations/regions in general, especially comparisons or developing/non\u2011English contexts."
+  },
+  {
+    "id": "6_11873_4",
+    "layer": 6,
+    "ctx_idx": 4,
+    "influence_score": 0.3869113624095917,
+    "top_activations": [
+      {
+        "trigger": " Bay",
+        "score": 11.25,
+        "context": " the wife of an early settler or taken its name from St. Margaret\u2019s Bay as it marks the eastern beginning of the Bay and Peggy is a nickname for"
+      },
+      {
+        "trigger": "sels",
+        "score": 11.75,
+        "context": "<bos>By Tracy G. Cassels\u23ceThe Science around Circumcision, continued\u23ceThis is considered one of the major bonuses by some religious sites who reported that in"
+      },
+      {
+        "trigger": " Columbia",
+        "score": 13.88,
+        "context": "-being,\" study researcher Janet Werker, a psychologist at the University of British Columbia, said in a statement. Werker and her colleagues encouraged moms and moms"
+      },
+      {
+        "trigger": "ose",
+        "score": 14.5,
+        "context": "<bos>Bass, Blue Nose\u23ceBluenose Bass is a large fish, growing to over 50 kg, found in temperate waters of New Zealand, Australia"
+      },
+      {
+        "trigger": " Lake",
+        "score": 14.12,
+        "context": " creates health problems | Beverley J. Anderson is the air quality educator for the Williams Lake Environmental Society, in partnership with the Williams Lake Air Quality Roundtable\u23cePublished:"
+      }
+    ],
+    "promotes": [
+      "Canada",
+      "Toronto",
+      "itoba",
+      " Canada",
+      " Canadians"
+    ],
+    "demotes": [
+      "unca",
+      "ee",
+      "kadi",
+      " CascadeType",
+      "alors"
+    ],
+    "generated_description": "Canadian place name \u2014 activates on geographic/place tokens (Bay, Columbia, Lake, Bluenose); pushes output toward \u201cCanada\u201d/Toronto and Canadian-related tokens"
+  },
+  {
+    "id": "7_8870_4",
+    "layer": 7,
+    "ctx_idx": 4,
+    "influence_score": 0.38535284996032715,
+    "top_activations": [
+      {
+        "trigger": " Cree",
+        "score": 20.88,
+        "context": "<bos>Eastmain is a small Cree community a short way inland from James Bay, on the\u23cesouth shore of the Eastmain River. It has a population of"
+      },
+      {
+        "trigger": " Earth",
+        "score": 21.25,
+        "context": " and angle of the teeth also directed food into its mouth, The Canadian Journal of Earth Science reported.\u23ceUniversity of Alberta paleontologist Miriam Reichel analyzed the"
+      },
+      {
+        "trigger": "ou",
+        "score": 19.25,
+        "context": "John Waddell was educated at the grammar school in Truro and at the Pictou Academy. In 1833 he began to study medicine under Dr"
+      },
+      {
+        "trigger": " (",
+        "score": 23.5,
+        "context": "007 (Democratic representation)\u23ceAn Act to amend the Constitution Act, 1867 (Democratic representation)\u23ceThis bill was last introduced in"
+      },
+      {
+        "trigger": "tels",
+        "score": 21.38,
+        "context": "Centered, Interdisciplinary Approach to Learning Leads to Education Innovation\u23ceThe Marcel Desautels Institute for Integrated Management (MDIIM) at McGill University views students as"
+      }
+    ],
+    "promotes": [
+      " provin",
+      "Canada",
+      " Canadian",
+      "canada",
+      " Canada"
+    ],
+    "demotes": [
+      " proposons",
+      "ViewImports",
+      " (\u00a3",
+      "RegressionTest",
+      "gi\u00e8ne"
+    ],
+    "generated_description": "Canadian entity \u2014 activates on Canadian place/organization/person names and related capitalized words; pushes output toward \u201cCanada\u201d / \u201cCanadian\u201d tokens."
+  },
+  {
+    "id": "2_11528_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.37406662106513977,
+    "top_activations": [
+      {
+        "trigger": " contain",
+        "score": 25.5,
+        "context": " vision of the organic food advocates.\u23ceAll Foods Contain Negatives\u23ceAll foods contain negatives provided by Mother Nature as a part of life.\u23ceMany people automatically"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.25,
+        "context": " training requirements, noise and neighborhoods were part of the equation. The concern was to contain the majority of the noise on the installation and away from other populations. But"
+      },
+      {
+        "trigger": " contain",
+        "score": 24.88,
+        "context": "<bos>What is in a CFL? CFLs contain a very small amount of mercury vapour (around 5 mg), which is approximately 100 times less"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.0,
+        "context": " you can get protein from food sources other than meat. Did you know that vegetables contain protein? Even if you omit meat from your meal, it\u2019s not"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.12,
+        "context": " are ripe with remotely accessible vulnerabilities. Even before enabling the servers, Windows based machines contain numerous exploitable holes allowing attackers to not only access the system but also execute"
+      }
+    ],
+    "promotes": [
+      " effect",
+      " Humphreys",
+      "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+      " IOError",
+      "WithIOException"
+    ],
+    "demotes": [
+      " contents",
+      "Contents",
+      "contents",
+      " Contents",
+      "Portail"
+    ],
+    "generated_description": "contain (verb) \u2014 activates on the verb \"contain\" meaning \"hold/include\", typically on occurrences just before noun phrases describing what is contained."
+  },
+  {
+    "id": "15_16329_4",
+    "layer": 15,
+    "ctx_idx": 4,
+    "influence_score": 0.3706149756908417,
+    "top_activations": [
+      {
+        "trigger": " -",
+        "score": 27.25,
+        "context": "<bos>EDMONTON - After decades of promise and many billions of research dollars, the buzz is becoming overwhelming in the heady world of physics and fusion research."
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 27.25,
+        "context": " Ste. Anne, northwest of Edmonton has sparked a warning from Health Link Alberta.\u23ceThe bacteria produce a toxin that can cause serious illness to animals or humans who"
+      },
+      {
+        "trigger": " -",
+        "score": 28.0,
+        "context": "<bos>HALIFAX - A US official is sounding the alarm over electromagnetic pulse attacks and says Canada is under threat.\u23ceAn electromagnetic pulse (EMP) is a"
+      },
+      {
+        "trigger": " Halifax",
+        "score": 27.75,
+        "context": " is recently retired from the Canadian Hydrographic Service at the Bedford Institute of Oceanography in Halifax, talked about the difficulty of making predictions about future ocean levels.\u23ce\u201c"
+      },
+      {
+        "trigger": " crayons",
+        "score": 28.75,
+        "context": " 2012-2013 school year are...\". All lines are traced with a thin marker. The art is colored in with pencil crayons."
+      }
+    ],
+    "promotes": [
+      "'}';",
+      "ikus",
+      "\u00edmetros",
+      " mendatang",
+      " kasarigan"
+    ],
+    "demotes": [
+      " CANADA",
+      " canadi",
+      "\ue315",
+      " Canada",
+      " Canadians"
+    ],
+    "generated_description": "Canadian city/place \u2014 activates on Canadian city names (Edmonton, Halifax); associated with demoting the token \u201cCanada\u201d in output predictions."
+  },
+  {
+    "id": "15_15999_4",
+    "layer": 15,
+    "ctx_idx": 4,
+    "influence_score": 0.3616301715373993,
+    "top_activations": [
+      {
+        "trigger": " Ontario",
+        "score": 37.5,
+        "context": " part in such behaviours.\u23ceJohn Eastwood, a Psychological Scientist at York University in Ontario, Canada and colleagues at the University of Guelph and the University of Waterloo discovered"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 37.25,
+        "context": " is not a perfect tool.\"\u23ceIn December, 2008, Canadian researchers reported that colonoscopies were good at discovering early signs of cancer on"
+      },
+      {
+        "trigger": " Canada",
+        "score": 37.0,
+        "context": " degrading their communities and to call for solutions.\u23ceGroups around the world, in Canada, Israel, Germany, Australia, South Africa, Thailand, India and dozens"
+      },
+      {
+        "trigger": " Canada",
+        "score": 36.25,
+        "context": " gene-related patents have also been granted or applied for in Europe, Japan, Canada, Australia, and elsewhere.\u23ceWhat's \"Under the Sun\"?"
+      },
+      {
+        "trigger": " Canada",
+        "score": 35.75,
+        "context": " not only in Hungary and neighboring countries (such as Romania, Serbia, and Slovakia), but also in the United States and Canada where large numbers of Hungarians reside"
+      }
+    ],
+    "promotes": [
+      " ?\";",
+      "Bronnen",
+      " JpaRepository",
+      " Efq",
+      " Oude"
+    ],
+    "demotes": [
+      "+#+#",
+      "bootstrapcdn",
+      "Personensuche",
+      "Controllo",
+      "PreferredItem"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on mentions of Canada or Canadian identifiers (Canada, Canadian, Ontario); signals Canadian location or demonym."
+  },
+  {
+    "id": "3_1595_4",
+    "layer": 3,
+    "ctx_idx": 4,
+    "influence_score": 0.38059160113334656,
+    "top_activations": [
+      {
+        "trigger": " Canada",
+        "score": 19.75,
+        "context": "<bos>Take a look at this snapshot from Health Canada's website fact sheet entitled Healthy Lawn Tips.\u23ce- Although it may look untidy, leave grass clippings"
+      },
+      {
+        "trigger": " Canada",
+        "score": 21.75,
+        "context": " the Government of Canada Web Standards. As per the Communications Policy of the Government of Canada, you can request alternate formats of this page on the Contact Us page."
+      },
+      {
+        "trigger": " Canada",
+        "score": 20.25,
+        "context": " some links to help you determine what zone you're in.\u23ce- Agriculture Canada Hardiness Zone Map\u23ce- The Old Farmer's Almanac Hardiness Zones"
+      },
+      {
+        "trigger": " Canada",
+        "score": 20.75,
+        "context": " population, including newborns and young children,\u201d said the Bureau of Chemical Safety of Health Canada in its report that was quietly issued Sept. 27.\u23ceStudies"
+      },
+      {
+        "trigger": " Canada",
+        "score": 20.75,
+        "context": " carried eastward via wind currents was dispersed and diluted over the ocean long before it reached Canada.\u23ceHealth Canada has monitoring stations across the country in strategic locations and major"
+      }
+    ],
+    "promotes": [
+      "\u00e4die",
+      "xase",
+      " \u0643\u0648\u0631\u0629",
+      "__*/",
+      "Datuak"
+    ],
+    "demotes": [
+      " Canada",
+      "Canada",
+      " CANADA",
+      " Canadian",
+      " Canad\u00e1"
+    ],
+    "generated_description": "Canada (country token) \u2014 activates on explicit mentions of \u201cCanada\u201d, often in institutional contexts (Health Canada, Government of Canada, Canadian reports)."
+  },
+  {
+    "id": "7_8821_4",
+    "layer": 7,
+    "ctx_idx": 4,
+    "influence_score": 0.3579649031162262,
+    "top_activations": [
+      {
+        "trigger": " Canada",
+        "score": 14.62,
+        "context": "), South Korea ($27.6bn), Australia ($24bn), Canada ($22.8bn) and Turkey ($17.5bn"
+      },
+      {
+        "trigger": "Canadian",
+        "score": 12.5,
+        "context": " exclamation of delight|\u23ce|7.||slang chiefly (US), (Canadian) lay an egg|\u23ce|a. to make a joke or give"
+      },
+      {
+        "trigger": " Canada",
+        "score": 14.25,
+        "context": " at all.\u23ceIn no other country, including federal systems such as Germany, Canada and Australia, does the citizen\u2019s opportunity to vote depend on the aff"
+      },
+      {
+        "trigger": "Canadian",
+        "score": 11.75,
+        "context": "<bos>Monitoring Results for the Factor 9 Home\u23ceCanadian building scientists and a family of four set out to build a home that uses nine times less energy than the"
+      },
+      {
+        "trigger": " Ontario",
+        "score": 12.0,
+        "context": "<bos>Blind River is a town in Northern Ontario and is considered a vacationer's paradise as it offers a break from busy city life surrounded by the beautiful Northern"
+      }
+    ],
+    "promotes": [
+      "derived",
+      "Provided",
+      "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+      "RenderAtEndOf",
+      " whilst"
+    ],
+    "demotes": [
+      " Canadian",
+      " Canada",
+      "Canada",
+      "Canadian",
+      " Canadians"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on tokens naming Canada or its demonym (Canada, Canadian) and related place names (Ontario); signals country-related content."
+  },
+  {
+    "id": "19_15275_5",
+    "layer": 19,
+    "ctx_idx": 5,
+    "influence_score": 0.3108430504798889,
+    "top_activations": [
+      {
+        "trigger": " also",
+        "score": 74.0,
+        "context": "\u23ceHypolimnas Bolina, Female A female Hypolimnas bolina, also called the Blue Moon or Great Eggfly butterfly. The proportion of females in"
+      },
+      {
+        "trigger": " also",
+        "score": 77.5,
+        "context": "<bos>Louisiana Voodoo, also known as New Orleans Voodoo, describes a set of religious practices which originated from the traditions of the African diaspora. It is one of many"
+      },
+      {
+        "trigger": " also",
+        "score": 82.0,
+        "context": " color palette, text and other elements as opposed to photos.\u23ceJPG files, also known as JPEG files, are a common file format for digital photos and other"
+      },
+      {
+        "trigger": " so",
+        "score": 83.0,
+        "context": " methods to track changes in income distribution in America.\u23ceFirst, we used the so-called Gini index, named after the 20th-century"
+      },
+      {
+        "trigger": "also",
+        "score": 86.0,
+        "context": " a radiology department so the tissue can be seen with an ultrasound or CAT scan (also called a CT scan or computed axial tomography scan) to show exactly where to"
+      }
+    ],
+    "promotes": [
+      "Called",
+      "called",
+      " Called",
+      " known",
+      " called"
+    ],
+    "demotes": [
+      " Roskov",
+      "f\u00f8lgelig",
+      " Bioaccumulative",
+      "\\{\\\\",
+      "orsese"
+    ],
+    "generated_description": "say alternate name \u2014 activates on phrases introducing an alternate name (\u201dalso called\u201d, \u201dalso known as\u201d, \u201dso-called\u201d); promotes tokens like \u201ccalled\u201d / \u201cknown\u201d"
+  },
+  {
+    "id": "14_5600_4",
+    "layer": 14,
+    "ctx_idx": 4,
+    "influence_score": 0.28579482436180115,
+    "top_activations": [
+      {
+        "trigger": " Canadian",
+        "score": 40.25,
+        "context": " walking, according to an earlier study.\u23ceThat's the conclusion of a Canadian study that found that dog ownership nearly doubles the amount of time spent healthily"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 42.0,
+        "context": "<bos>The Columbia Country is a term used in the Canadian province of British Columbia to refer to the upper basin of the Columbia River in that province. It includes a"
+      },
+      {
+        "trigger": " honour",
+        "score": 41.0,
+        "context": "We feel eating a lot of good Mexican food at this time is a way of honouring the day. Last year friends of mine, the Bryant's,"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 42.25,
+        "context": "<bos>What is the NIYC?\u23ceAcross the Canadian Arctic, there are four Inuit regions: Inuvialuit Settlement Region (ISR), Nunavut, Nun"
+      },
+      {
+        "trigger": " Canada",
+        "score": 41.25,
+        "context": " in many parts of Europe, Latin America and India and are catching on fast in Canada, South Africa, China and elsewhere. They typically hold a liter of milk"
+      }
+    ],
+    "promotes": [
+      "canada",
+      " Canadians",
+      " CANADA",
+      "Canada",
+      " Canada"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      " sp",
+      "\u043c\u043c\u0430",
+      "ate"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on mentions of \"Canadian\"/\"Canada\"; promotes output tokens like \"Canada\", \"Canadians\", \"CANADA\"."
+  },
+  {
+    "id": "1_2344_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.38219285011291504,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 21.0,
+        "context": " capital \"I\").\u23ce5. Imperialism is another country exerting their over a country. The 4 patterns of imperialism are 1.Make Colonies 2"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": ". This applies to entire countries as well. If the merits of all of a country's inhabitants are more numerous than its sins, the land is called righteous"
+      },
+      {
+        "trigger": " country",
+        "score": 21.75,
+        "context": " in the exchange rates of the country\u2019s currency. Such fluctuations may change a country\u2019s ranking from one year to the next, even though they often make"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Research Agency (NISRA) \u2013 following consultation with key users of projections in each country and advice from an expert advisory panel.\u23ceThe primary purpose of the national"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Nationality, & Ethnicity\u23ceNo one has submitted information on Agront-badil country of origin, nationality, or ethnicity. Add to this section\u23ceNo content"
+      }
+    ],
+    "promotes": [
+      " gesteld",
+      " Department",
+      "fortawesome",
+      "enderror",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      " Country",
+      " COUNTRY",
+      "Country"
+    ],
+    "generated_description": "country token \u2014 activates on the lexical token \"country\" (any casing/possessive forms); fires when referring to nations or country-related nouns."
+  },
+  {
+    "id": "19_15123_5",
+    "layer": 19,
+    "ctx_idx": 5,
+    "influence_score": 0.26655128598213196,
+    "top_activations": [
+      {
+        "trigger": " Agricultural",
+        "score": 75.0,
+        "context": " (CPLA) and their respective Regulations. Other legislation, such as the Canada Agricultural Products Act and Regulations, the Meat Inspection Act and Regulations, the Fish Inspection"
+      },
+      {
+        "trigger": "0",
+        "score": 84.0,
+        "context": " Wilfrid Laurier's Liberal administration as deputy minister of labor (1900\u20131908) and minister of labor (190"
+      },
+      {
+        "trigger": "1",
+        "score": 84.0,
+        "context": "10 current provinces in Canada. These provinces include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island"
+      },
+      {
+        "trigger": " Communications",
+        "score": 77.5,
+        "context": " the Internet are not subject to the Government of Canada Web Standards. As per the Communications Policy of the Government of Canada, you can request alternate formats of this page"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 69.5,
+        "context": "<bos>The Canadian Genealogy Centre has so much information on the military. The first page provides a list of different topics as well as other websites to help you with your"
+      }
+    ],
+    "promotes": [
+      "Canada",
+      "Canadian",
+      " Canadians",
+      " Canada",
+      " Canadian"
+    ],
+    "demotes": [
+      " correctes",
+      " MotionEvent",
+      " proposons",
+      "URLException",
+      "port\u00e1l"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on \u201cCanada\u201d, \u201cCanadian\u201d, province lists and Canada-related words; pushes output tokens like \u201cCanada\u201d / \u201cCanadian\u201d."
+  },
+  {
+    "id": "19_15123_4",
+    "layer": 19,
+    "ctx_idx": 4,
+    "influence_score": 0.2798255383968353,
+    "top_activations": [
+      {
+        "trigger": " Agricultural",
+        "score": 75.0,
+        "context": " (CPLA) and their respective Regulations. Other legislation, such as the Canada Agricultural Products Act and Regulations, the Meat Inspection Act and Regulations, the Fish Inspection"
+      },
+      {
+        "trigger": "0",
+        "score": 84.0,
+        "context": " Wilfrid Laurier's Liberal administration as deputy minister of labor (1900\u20131908) and minister of labor (190"
+      },
+      {
+        "trigger": "1",
+        "score": 84.0,
+        "context": "10 current provinces in Canada. These provinces include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island"
+      },
+      {
+        "trigger": " Communications",
+        "score": 77.5,
+        "context": " the Internet are not subject to the Government of Canada Web Standards. As per the Communications Policy of the Government of Canada, you can request alternate formats of this page"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 69.5,
+        "context": "<bos>The Canadian Genealogy Centre has so much information on the military. The first page provides a list of different topics as well as other websites to help you with your"
+      }
+    ],
+    "promotes": [
+      "Canada",
+      "Canadian",
+      " Canadians",
+      " Canada",
+      " Canadian"
+    ],
+    "demotes": [
+      " correctes",
+      " MotionEvent",
+      " proposons",
+      "URLException",
+      "port\u00e1l"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on Canada-related tokens (Canadian, provinces, federal acts, communications); promotes output tokens like \"Canada\", \"Canadian\", \"Canadians\"."
+  },
+  {
+    "id": "19_14058_5",
+    "layer": 19,
+    "ctx_idx": 5,
+    "influence_score": 0.33813244104385376,
+    "top_activations": [
+      {
+        "trigger": " Medicine",
+        "score": 40.5,
+        "context": "According to Dr. Christopher Kovacs, an endocrinologist in the Faculty of Medicine, the average person should be supplementing their diet with at least that amount of"
+      },
+      {
+        "trigger": "1",
+        "score": 38.75,
+        "context": " with C.N. Tripp as president, on December 18, 1854. The charter empowered the company to explore for asphalt beds and"
+      },
+      {
+        "trigger": "2",
+        "score": 48.75,
+        "context": " as its primary aircraft tracking/locating system. Effective Jan. 1, 2020, aircraft operating in the majority of United States airspace must be"
+      },
+      {
+        "trigger": "T",
+        "score": 54.75,
+        "context": " 1204\u23ceToronto, Ontario, Canada M9W 6T4\u23ce(416) 675-309"
+      },
+      {
+        "trigger": "'",
+        "score": 43.25,
+        "context": " and to assess the effectiveness of our groundwater management programs.\u23ceSome of the department's key groundwater management initiatives used to meet these objectives include (details below):"
+      }
+    ],
+    "promotes": [
+      " proposons",
+      "Whilst",
+      "asInstanceOf",
+      " (\u00a3",
+      " Whilst"
+    ],
+    "demotes": [
+      " Canadian",
+      " Canada",
+      " Canadians",
+      "Canada",
+      " Toronto"
+    ],
+    "generated_description": "Single-character tokens \u2014 activates on isolated single-char tokens (digits, single uppercase letters, punctuation like 1, 2, T, ') and occasional capitalized words."
+  },
+  {
+    "id": "19_14058_4",
+    "layer": 19,
+    "ctx_idx": 4,
+    "influence_score": 0.37898874282836914,
+    "top_activations": [
+      {
+        "trigger": " Medicine",
+        "score": 40.5,
+        "context": "According to Dr. Christopher Kovacs, an endocrinologist in the Faculty of Medicine, the average person should be supplementing their diet with at least that amount of"
+      },
+      {
+        "trigger": "1",
+        "score": 38.75,
+        "context": " with C.N. Tripp as president, on December 18, 1854. The charter empowered the company to explore for asphalt beds and"
+      },
+      {
+        "trigger": "2",
+        "score": 48.75,
+        "context": " as its primary aircraft tracking/locating system. Effective Jan. 1, 2020, aircraft operating in the majority of United States airspace must be"
+      },
+      {
+        "trigger": "T",
+        "score": 54.75,
+        "context": " 1204\u23ceToronto, Ontario, Canada M9W 6T4\u23ce(416) 675-309"
+      },
+      {
+        "trigger": "'",
+        "score": 43.25,
+        "context": " and to assess the effectiveness of our groundwater management programs.\u23ceSome of the department's key groundwater management initiatives used to meet these objectives include (details below):"
+      }
+    ],
+    "promotes": [
+      " proposons",
+      "Whilst",
+      "asInstanceOf",
+      " (\u00a3",
+      " Whilst"
+    ],
+    "demotes": [
+      " Canadian",
+      " Canada",
+      " Canadians",
+      "Canada",
+      " Toronto"
+    ],
+    "generated_description": "suppress Canada/Toronto \u2014 activates on single-character tokens, digits, capitals, punctuation; consistently pushes down tokens like \"Canada\", \"Canadian\", \"Toronto\""
+  },
+  {
+    "id": "24_13277_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.294793039560318,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say a location \u2014 activates on prepositions/articles/verbs that introduce a following place/entity (e.g., \"in\", \"to\", \"attended\", comma before a name); signals an upcoming country/place name."
+  },
+  {
+    "id": "19_5146_5",
+    "layer": 19,
+    "ctx_idx": 5,
+    "influence_score": 0.3913669288158417,
+    "top_activations": [
+      {
+        "trigger": " hormone",
+        "score": 56.5,
+        "context": " in the blood. It moves from the blood to cells with the help of a hormone called insulin. Once glucose is in those cells, it can be used for"
+      },
+      {
+        "trigger": " Scot",
+        "score": 54.5,
+        "context": " published in 1762 and 1763, was a Scot, James Macpherson (1736-1796)."
+      },
+      {
+        "trigger": "3",
+        "score": 54.0,
+        "context": "<bos>French author and visionary Jules Verne, wrote a book in 1863 called Paris in the Twentieth Century. The book presented what Verne thought Paris would"
+      },
+      {
+        "trigger": " application",
+        "score": 55.5,
+        "context": " is the name of the application with a .config extension. For example, an application called myApp.exe can be associated with a configuration file called myApp"
+      },
+      {
+        "trigger": " by",
+        "score": 78.5,
+        "context": " and kited to the bottom of the world. Amongst them was a young man by the name of Lewis Clarke, who crossed more than 700 miles"
+      }
+    ],
+    "promotes": [
+      "named",
+      " Called",
+      "called",
+      " named",
+      " called"
+    ],
+    "demotes": [
+      " betweenstory",
+      "Nox",
+      " Bioaccumulative",
+      "criminator",
+      " referenties"
+    ],
+    "generated_description": "Introduce-name cue \u2014 activates on tokens that signal an upcoming name or label (hormone, application, \u201cby the name of\u201d, etc.); promotes \u201ccalled\u201d/\u201cnamed\u201d formulations."
+  },
+  {
+    "id": "20_15360_5",
+    "layer": 20,
+    "ctx_idx": 5,
+    "influence_score": 0.2903536260128021,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 41.5,
+        "context": " administration gets its act together. Along with Japan, Canada, New Zealand and Australia, the country has formally requested that the conference of parties to the un Framework Convention"
+      },
+      {
+        "trigger": " \u2013",
+        "score": 46.0,
+        "context": " for CO2 emissions per capita \u2013 the US (#1), China (#2), and India (#5) [UCSUSA].\u23ce- Unless we move quickly to"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": " army captured Mexico City, forcing Mexico to agree to the sale of its northern territories to the U.S.\u23ceTerritorial expansion of the United States to the"
+      },
+      {
+        "trigger": " between",
+        "score": 54.0,
+        "context": " the first time that blood was drawn in the Olympic Games. During the water polo game between the USSR and Hungary, the Russian athlete Valentin Propokov cried out"
+      },
+      {
+        "trigger": " by",
+        "score": 41.0,
+        "context": " American Independence|\u23ce|b. a treaty of 1763 signed by Britain, France, and Spain that ended their involvement in the Seven Years'"
+      }
+    ],
+    "promotes": [
+      " Italy",
+      " Ireland",
+      " France",
+      " Australia",
+      " Canada"
+    ],
+    "demotes": [
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "RegressionTest",
+      "ParallelGroup",
+      "tvguidetime",
+      " Audiodateien"
+    ],
+    "generated_description": "say country name \u2014 activates on commas/dashes/prepositions introducing countries or country lists (e.g., \",\", \"\u2013\", \"to\", \"between\", \"by\"); promotes country names like Canada, France, Australia"
+  },
+  {
+    "id": "23_10696_5",
+    "layer": 23,
+    "ctx_idx": 5,
+    "influence_score": 0.3483867943286896,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 57.0,
+        "context": " Canadian Commission for UNESCO (CCU), an independent consultative forum that advises the Government of Canada on its relations with UNESCO and coordinates UNESCO's activities in Canada."
+      },
+      {
+        "trigger": " in",
+        "score": 57.0,
+        "context": ".\u23ceLibrary and Archives Canada holds one of the richest collections of documents on curling in Canada, acquired from various regional, national, and international curling bodies. In"
+      },
+      {
+        "trigger": ".",
+        "score": 64.0,
+        "context": " jam, pies, or just eating fresh right off the bush. Haskap.ca has several recipes you can try.\u23ceHigh in vitamins C and A"
+      },
+      {
+        "trigger": " of",
+        "score": 69.5,
+        "context": " in Japan do not pose a health risk to residents of British Columbia or the rest of Canada. Given the thousands of kilometers between Japan and Canada's west coast"
+      },
+      {
+        "trigger": " almost",
+        "score": 78.5,
+        "context": " very excited about these findings. It is estimated that it costs the Canadian health system almost $2 billion a year to take care of premature babies and their medical complications"
+      }
+    ],
+    "promotes": [
+      "CAN",
+      "Ca",
+      " Ca",
+      " CA",
+      "CA"
+    ],
+    "demotes": [
+      "rsiniz",
+      " tartalomaj\u00e1nl\u00f3",
+      "AppMethodBeat",
+      "AnchorStyles",
+      "::_('"
+    ],
+    "generated_description": "say Canada \u2014 activates in Canada-related contexts; promotes tokens like CAN/CA (outputs the country name \"Canada\")."
+  },
+  {
+    "id": "21_7764_5",
+    "layer": 21,
+    "ctx_idx": 5,
+    "influence_score": 0.3522965610027313,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 38.0,
+        "context": "13\u2019s centenary edition.\u23ceBuilding French identity with a race\u23ceBoth in his book and during an extensive interview with VeloNews, Thompson explained that since"
+      },
+      {
+        "trigger": " in",
+        "score": 42.0,
+        "context": ".5 miles (52.3 km) long, in north central Colorado in the United States. It drains large portion of the Middle Park basin in Grand"
+      },
+      {
+        "trigger": " in",
+        "score": 41.5,
+        "context": " thousand years and as such has played a vital role in the shaping of Western society.\u23ceWhile the Roman Catholic church has the largest number of worldwide members, in"
+      },
+      {
+        "trigger": " in",
+        "score": 40.0,
+        "context": ", lung cancer is one of the three most common cancers that kill men and women in developed countries with a statistic of one million deaths every year.\u23ceTraditionally"
+      },
+      {
+        "trigger": " in",
+        "score": 47.5,
+        "context": ", a U.S. study said.\u23ceMore than half a million children in the United States go to hospital each year with brain injuries, often due to"
+      }
+    ],
+    "promotes": [
+      " England",
+      " Canada",
+      " Australia",
+      " India",
+      " America"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " wireType",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ],
+    "generated_description": "say country \u2014 activates on the preposition \u201cin\u201d when it introduces locations; pushes country names (Canada, England, Australia, India, America)."
+  },
+  {
+    "id": "24_598_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.3179941475391388,
+    "top_activations": [
+      {
+        "trigger": " cells",
+        "score": 59.5,
+        "context": " is necessary to understand how the skin gets it color. The body naturally produces a pigment known as melanin through specialized cells known as melanocytes. A person's"
+      },
+      {
+        "trigger": " organization",
+        "score": 55.0,
+        "context": " Training and Research (UNITAR), and the University of Geneva to create\u23cean organization dubbed \"Citizen Cyberscience\u23ceCentre\", which looks to test and deploy"
+      },
+      {
+        "trigger": " process",
+        "score": 56.5,
+        "context": " novelty plant in your neighbor's garden.\u23ceThe plants are created by a process called grafting, meaning they aren't hybrids of genetically modified organisms (not"
+      },
+      {
+        "trigger": "making",
+        "score": 65.5,
+        "context": "\u23ceConcept/Goal: To learn about still life drawings and a method of printmaking.\u23ceActivity: Students will use a still life to make a drawing and"
+      },
+      {
+        "trigger": " data",
+        "score": 69.5,
+        "context": " networking technologies are based on packet switching, which involves the creation of small chunks of data to be sent over a network. Even though the word packet appears in the"
+      }
+    ],
+    "promotes": [
+      "uginosa",
+      "expandindo",
+      " gener",
+      "SequentialGroup",
+      "<>());"
+    ],
+    "demotes": [
+      " known",
+      " Known",
+      "Known",
+      "known",
+      " KNOWN"
+    ],
+    "generated_description": "Generic category nouns \u2014 activates on common-class nouns (cells, organization, process, data, making); often the head of definitional or explanatory phrases."
+  },
+  {
+    "id": "23_2209_5",
+    "layer": 23,
+    "ctx_idx": 5,
+    "influence_score": 0.3773695230484009,
+    "top_activations": [
+      {
+        "trigger": "computer",
+        "score": 48.0,
+        "context": " in the early 1980s, he built a massively parallel supercomputer which he named the Connection Machine. At the time, computers were still somewhat"
+      },
+      {
+        "trigger": " often",
+        "score": 49.0,
+        "context": " affection, love, comfort, and solace of the other. This bundle of rights is often called the \u201cright of consortium.\u201d Anyone who interferes with these rights by"
+      },
+      {
+        "trigger": " view",
+        "score": 42.0,
+        "context": " of our friends believe the opposite, namely there are many ways to God, a view called religious pluralism. In the next few posts, we will examine the claims"
+      },
+      {
+        "trigger": " industry",
+        "score": 54.5,
+        "context": " is also a newer polymer that is starting to move up in its use in the industry and under certain circumstances it is a better product than PVC. This is CP"
+      },
+      {
+        "trigger": "er",
+        "score": 44.0,
+        "context": " space programs.\u23ceTevatron has been overtaken by a more powerful atom smasher -- the world's largest -- the Large Hadron Collider, built on"
+      }
+    ],
+    "promotes": [
+      " KNOWN",
+      "Known",
+      " Known",
+      "known",
+      " known"
+    ],
+    "demotes": [
+      " Calls",
+      " Calling",
+      "cessite",
+      "Calls",
+      " jao"
+    ],
+    "generated_description": "say \"known\"/\"called\" \u2014 activates on nouns/phrases introducing a label or definition (e.g., \"often\", \"view\", \"computer\", \"named\") and promotes tokens like \"known\"/\"Known\""
+  },
+  {
+    "id": "25_286_5",
+    "layer": 25,
+    "ctx_idx": 5,
+    "influence_score": 0.35979777574539185,
+    "top_activations": [
+      {
+        "trigger": " In",
+        "score": 36.25,
+        "context": " U.S., hookworms and roundworms take top spot for dog parasites. In humans, roundworms transmitted from dog fur can cause ocular larva migrans ("
+      },
+      {
+        "trigger": " in",
+        "score": 33.75,
+        "context": "etal abnormalities, find experts\u23ceResearchers from University of Leeds, England together with colleagues in Paris, Rome, and San Diego established that a defective gene TMEM2"
+      },
+      {
+        "trigger": " medieval",
+        "score": 43.0,
+        "context": " was still in\u23ceuse in the 1950's. In medieval Japan building roads and\u23cebridges as an act of piety became almost an obsession"
+      },
+      {
+        "trigger": " expects",
+        "score": 39.5,
+        "context": " in The Hague on Wednesday.\u23ceAustralian Attorney General Mark Dreyfus said on Sunday he expects to win before the next southern hemisphere summer. The whaling fleet generally leaves"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": "tenberg??\u23ceDo you know where our Reher and Stoltenberg ancestors came from in Germany??\u23ceJohann Reher came from the town of Bebensee.\u23ce"
+      }
+    ],
+    "promotes": [
+      " @\"/",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "PerformLayout",
+      "makeConstraints",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      " Australia",
+      " Italy",
+      " Canada",
+      " France",
+      " Ireland"
+    ],
+    "generated_description": "say a location \u2014 activates on the preposition \"in\" (introducing places/times); often pushes away country-name tokens (e.g., Canada, Australia, Italy)."
+  },
+  {
+    "id": "25_9437_5",
+    "layer": 25,
+    "ctx_idx": 5,
+    "influence_score": 0.2732939124107361,
+    "top_activations": [
+      {
+        "trigger": " see",
+        "score": 47.0,
+        "context": " attacks further to the south. One of these, involving the First Army, would see the Canadian Corps attack Lens.\u23ceThe Attack on Hill 70\u23ce"
+      },
+      {
+        "trigger": " a",
+        "score": 52.25,
+        "context": " are gambling with their livelihoods.\"\u23ceThe International Development Research Centre (IDRC), a Canadian organisation supporting scientific research in developing countries, is working with FONGS"
+      },
+      {
+        "trigger": " the",
+        "score": 50.25,
+        "context": " get a driver's license and some information on the different licensing systems in place across the vast region known as Canada.\u23ceThere are 10 current provinces"
+      },
+      {
+        "trigger": ",",
+        "score": 54.75,
+        "context": " this Strategy, the Government of Canada created the Canadian Partnership Against Cancer, an independent not-for-profit organization which in 2006 received federal funding"
+      },
+      {
+        "trigger": " in",
+        "score": 47.0,
+        "context": ".\u23ceLibrary and Archives Canada holds one of the richest collections of documents on curling in Canada, acquired from various regional, national, and international curling bodies. In"
+      }
+    ],
+    "promotes": [
+      " Spire",
+      "actylus",
+      " m\u00e9ri",
+      " Tav",
+      "RegressionTest"
+    ],
+    "demotes": [
+      " Canadian",
+      " Canada",
+      "Canadian",
+      " Canadians",
+      "Canada"
+    ],
+    "generated_description": "say Canada \u2014 activates on structural tokens right before mentions of Canada/Canadian; associated with suppressing/promoting away Canada-related output tokens."
+  },
+  {
+    "id": "24_12412_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.30710652470588684,
+    "top_activations": [
+      {
+        "trigger": " Canadian",
+        "score": 55.75,
+        "context": " must end.\u23ceHow Greenpeace works to ensure fish for the future\u23ceChallenging the marketplace: Our supermarket campaign takes direct action at Canadian grocery chains to convince them"
+      },
+      {
+        "trigger": "ing",
+        "score": 53.25,
+        "context": " leadership, there had been a serious split in party ranks over the issue of stationing American nuclear missiles (see Bomarc missile) on Canadian soil for protection from"
+      },
+      {
+        "trigger": " and",
+        "score": 52.75,
+        "context": "<bos>Canada and Brazil both have vast and fertile lands and are large agricultural producers. Both countries are and will continue to be suppliers of food in the coming decades,"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 71.0,
+        "context": " would involve tankers crossing rough and environmentally sensitive U.S. waters.\u23ceThe Canadian government seems determined to develop the country's oil resources. There's"
+      },
+      {
+        "trigger": ".",
+        "score": 60.25,
+        "context": " present in about nine per cent of individuals from outside of Africa.\u23cehttp://www.cbc.ca/news/technology/story ... eding.html"
+      }
+    ],
+    "promotes": [
+      "POSE",
+      "Predecesor",
+      "eus",
+      "FailureListener",
+      "Brainz"
+    ],
+    "demotes": [
+      " Canada",
+      " Canadian",
+      "Canada",
+      "Canadian",
+      " CANADA"
+    ],
+    "generated_description": "Canada/Canadian \u2014 activates on mentions of \"Canada\"/\"Canadian\"; reliably suppresses output tokens for \"Canada\" or \"Canadian.\""
+  }
+]

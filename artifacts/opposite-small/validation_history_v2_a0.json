@@ -1,0 +1,280 @@
+[
+  {
+    "prompt": "<bos>The opposite of \"small\" is \"",
+    "timestamp": "2026-04-04T19:28:08Z",
+    "n_runs": 5,
+    "design": {
+      "method1": "1-in-10 feature identification (chance=10%)",
+      "method2": "5-in-10 text snippet matching (chance=50%)",
+      "method_d1": "1-in-10 description accuracy (chance=10%)",
+      "method_d2": "5-in-10 description snippet match (chance=50%)",
+      "aggregation": "per-group run-level means, then mean \u00b1 stderr across runs",
+      "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+      "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
+      "label_regeneration": "manual only; auto uses pipeline names"
+    },
+    "auto": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0816,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.77,
+            "stderr_accuracy": 0.0985
+          },
+          "total_trials": 90
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.77,
+            "stderr_accuracy": 0.1025
+          },
+          "total_tasks": 20
+        }
+      },
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 90
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.93,
+            "stderr_accuracy": 0.0473
+          },
+          "total_tasks": 20
+        }
+      },
+      "hard": {
+        "method1": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        },
+        "method2": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        }
+      },
+      "attribution_coverage": 0.5842
+    },
+    "random": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 0.1333,
+              "stderr_accuracy": 0.1333,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 0.08,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.1033,
+            "stderr_accuracy": 0.0423
+          },
+          "total_trials": 90
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "say large",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say opposite",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "size",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "small",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.58,
+            "stderr_accuracy": 0.0529
+          },
+          "total_tasks": 20
+        }
+      }
+    },
+    "description_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.919,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 210
+    },
+    "description_snippet_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.8876,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 210
+    }
+  }
+]

@@ -1,0 +1,1647 @@
+[
+  {
+    "id": "0_8131_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.39732804894447327,
+    "top_activations": [
+      {
+        "trigger": "5",
+        "score": 13.69,
+        "context": "\u23ceProgramming PHP, 2nd Edition, is the authoritative guide to PHP 5 and is filled with the unique knowledge of the creator of PHP (Rasmus"
+      },
+      {
+        "trigger": "5",
+        "score": 13.44,
+        "context": " Watch for the summer and fall of 2014, giving a 50% chance that an El Ni\u00f1o event will occur. The March 6"
+      },
+      {
+        "trigger": "5",
+        "score": 13.19,
+        "context": "\u2014Has a bore diameter of 7 mm. Examples are 7 x 57 and 7 mm-08.\u23ceThe larger the caliber number"
+      },
+      {
+        "trigger": "5",
+        "score": 13.19,
+        "context": "<bos>Up one level\u23ceSCE 5030: The Nature of Science (3 cr.)\u23ceIn thinking about the nature of science, we might raise"
+      },
+      {
+        "trigger": "5",
+        "score": 13.19,
+        "context": " and x-ray imaging?\u23ceBelieve it or not, as much as 50% of tooth decay may go undetected by traditional dental methods of probing and"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      "berdayakan",
+      "^(@)",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      "1",
+      "\u23ce\u23ce",
+      "8",
+      "2",
+      " "
+    ]
+  },
+  {
+    "id": "1_14137_1",
+    "layer": 1,
+    "ctx_idx": 1,
+    "influence_score": 0.378878653049469,
+    "top_activations": [
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>For many professors, it would be legacy enough to have sent so many students into the hallowed halls of academia and the boardrooms of Silicon Valley. But for"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>Over the millennia First Nation people in the Yukon lived a nomadic lifestyle. They followed the game and moved with the seasons to different locations where sources of food were"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>This region is dominated by dense unbroken tracts of forest. Majestic pine and hemlock stands shade deeply carved hollows with layered falls and moss-covered grottos that"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>Bearing in mind the postulates of the Universal Declaration\u23ceon Human Rights (1948) which determines the basic rights and freedoms\u23ceof every human being"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>\u201cMy husband likes to tease me by calling my parenting style the \u2018lazy parent\u2019s method\u2019 for raising a child,\u201d writes one mother. \u201cI"
+      }
+    ],
+    "promotes": [
+      " Resonance",
+      " PeEn",
+      " \u0648\u064a\u0643\u064a\u067e",
+      "ReusableCell",
+      " BrowserModule"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      "\u23ce\u23ce",
+      "'",
+      "\u2019"
+    ]
+  },
+  {
+    "id": "1_6710_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3714664876461029,
+    "top_activations": [
+      {
+        "trigger": " S",
+        "score": 8.0,
+        "context": " m\u00f4n Ti\u1ebfng Anh (\u0110\u1ec1 06)\u23ce- Ph\u00e1t h\u00e0nh: S\u1edf GD-\u0110T\u23ce- Dung l\u01b0\u1ee3ng: 173 KB"
+      },
+      {
+        "trigger": "qu",
+        "score": 6.44,
+        "context": "\u00e9n jungles and have now moved on to Belize, crossing the border into the Chiquibul and other remote areas. Xateros earn more collecting xate"
+      },
+      {
+        "trigger": "ane",
+        "score": 7.81,
+        "context": " attempts to repay in promoting Christian-Muslim dialogue.\u23ceThe other, John Chane, is concerned as a bishop but also as someone also passionately devoted to promoting"
+      },
+      {
+        "trigger": "ale",
+        "score": 6.62,
+        "context": " cranberry or runt candy\u23cemitochondria: Mike & Ike candy or hot tamale or goodies candy-covered licorice\u23cerough endoplasmic reticulum: twister licor"
+      },
+      {
+        "trigger": "idas",
+        "score": 6.56,
+        "context": " Greece\u23cein 1955. It features a bronze statue of Leonidas. A sign, under the statue, reads simply: \"\u039c\u039f\u039b"
+      }
+    ],
+    "promotes": [
+      "tvguidetime",
+      " AssemblyCulture",
+      "MemoryWarning",
+      "ViewFeatures",
+      "Sucesor"
+    ],
+    "demotes": [
+      "<bos>",
+      "RegressionTest",
+      "TOKYO",
+      "PerformLayout",
+      "TagHelper"
+    ]
+  },
+  {
+    "id": "2_7343_1",
+    "layer": 2,
+    "ctx_idx": 1,
+    "influence_score": 0.37529826164245605,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 30.75,
+        "context": "<bos>1884 Drew Pocket Map of Florida\u23ceDescription: An extremely scarce and important map of Florida drawn by Horace Drew in 1884."
+      },
+      {
+        "trigger": "1",
+        "score": 30.75,
+        "context": "<bos>10 Mar 2014\u23ce|Revision 6.5||05 Apr 2012||Revised by: mc|\u23ce"
+      },
+      {
+        "trigger": "1",
+        "score": 30.75,
+        "context": "<bos>1785 - 1854\u23ceJamaican-born widow of a prominent slave-owner; resident in Britain following the death of her"
+      },
+      {
+        "trigger": "1",
+        "score": 30.75,
+        "context": "<bos>100 years of desert research\u23ceResearcher William Lehman in 1958 in the nursery at the University of California Desert Research and Extension Center."
+      },
+      {
+        "trigger": "1",
+        "score": 30.75,
+        "context": "<bos>1941 in the United Kingdom\u23ceFrom Wikipedia, the free encyclopedia\u23ce|1941 in the United Kingdom:|\u23ce|193"
+      }
+    ],
+    "promotes": [
+      " volontaire",
+      "*",
+      ":\u2728",
+      "\ufeff#",
+      "\ufeff//"
+    ],
+    "demotes": [
+      "elemField",
+      "IntoConstraints",
+      "EndContext",
+      "InjectAttribute",
+      "ThroughAttribute"
+    ]
+  },
+  {
+    "id": "2_14718_1",
+    "layer": 2,
+    "ctx_idx": 1,
+    "influence_score": 0.3694216012954712,
+    "top_activations": [
+      {
+        "trigger": "2",
+        "score": 21.0,
+        "context": "<bos>2449 Dark Spectacle Abrostola triplasia\u23ce(Linnaeus, 1758)Wingspan 28-32"
+      },
+      {
+        "trigger": "2",
+        "score": 21.0,
+        "context": "<bos>22 Mar 2012\u23ce- Written by William Larsha\u23ceJust as I supported in year 1974, and in the"
+      },
+      {
+        "trigger": "0",
+        "score": 25.0,
+        "context": "<bos>06 September 2012\u23cePosted in Our Planet, Our Universe\u23ceTatooine may be the fictional home world of Anakin and Luke Skywalker"
+      },
+      {
+        "trigger": "2",
+        "score": 21.0,
+        "context": "<bos>20 March 2012\u23cePosted in Tornado Alley\u23ceWhat brings Florida to the top of the list?\u23ce\u201cSeveral things contribute to there"
+      },
+      {
+        "trigger": "0",
+        "score": 25.0,
+        "context": "<bos>03-23-2011, 01:37 PM\u23ce| || |\u23ceI have no clue why, but lud"
+      }
+    ],
+    "promotes": [
+      "elemField",
+      "AddTagHelper",
+      "IntoConstraints",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      "HtmlAttribute"
+    ],
+    "demotes": [
+      "\ufeff//",
+      "\ufeff#",
+      ":\u2728",
+      "*",
+      " *"
+    ]
+  },
+  {
+    "id": "0_12914_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.30810266733169556,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 19.12,
+        "context": "<bos>1 GCC The GCC command invokes the GNU C compiler. GCC file-spec 2 Parameters file-spec A C source file. If no input file extension"
+      },
+      {
+        "trigger": "1",
+        "score": 19.12,
+        "context": "<bos>1.0 ARTISTIC PERCEPTION\u23ceProcessing, Analyzing, and Responding to Sensory Information Through the Language and Skills Unique to the Visual Arts\u23ceStudents perceive and"
+      },
+      {
+        "trigger": "1",
+        "score": 19.12,
+        "context": "<bos>1948: The State of Israel is proclaimed amid civil war in British-administered Palestine. The new state finds itself at war with five Arab countries"
+      },
+      {
+        "trigger": "1",
+        "score": 19.12,
+        "context": "<bos>1. Nile River and Egypt\u23ceVegetation growing along the banks of the Nile River. In a spot like this, Moses\u2019 mother hid her infant son."
+      },
+      {
+        "trigger": "1",
+        "score": 19.12,
+        "context": "<bos>1954: Carbon children are in the front lines in the war against polio\u23ceEditor's Note: This is one of a series of articles"
+      }
+    ],
+    "promotes": [
+      "IndentedString",
+      "!\";",
+      "ReusableCell",
+      "WebElementEntity",
+      ":\u2728"
+    ],
+    "demotes": [
+      "<bos>",
+      "'",
+      "\u2019",
+      "I",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435"
+    ]
+  },
+  {
+    "id": "0_13578_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3513341248035431,
+    "top_activations": [
+      {
+        "trigger": "8",
+        "score": 15.31,
+        "context": " scale: the Moon is half a degree in diameter, so it would take \u201c80 Moons\u201d to cover the survey area.) This region near the galactic center"
+      },
+      {
+        "trigger": "9",
+        "score": 14.19,
+        "context": " to delist species, August 25, 1998\u23ce90-day public comment period\u23ceUSFWS evaluates comments\u23ceUSFWS issues"
+      },
+      {
+        "trigger": "5",
+        "score": 14.06,
+        "context": " beyond -- causing hundreds of deaths -- during what is called \"Black Sunday\"\u23ce5: The string of years in the 1930s of the"
+      },
+      {
+        "trigger": "9",
+        "score": 15.31,
+        "context": " What is it that makes diseases caused by viruses and bacteria hard to treat?\u23ce9. How old are the oldest fossils on earth?\u23ce10. Why"
+      },
+      {
+        "trigger": "6",
+        "score": 14.06,
+        "context": " proved impractical. As economist Hernando de Soto has written, few settlers had either $640 or the legal expertise to navigate America\u2019s cumbersome property laws."
+      }
+    ],
+    "promotes": [
+      "Five",
+      " Three",
+      "three",
+      "Four",
+      "Three"
+    ],
+    "demotes": [
+      "2",
+      "1",
+      "%]",
+      ")\";\r",
+      "5"
+    ]
+  },
+  {
+    "id": "1_12115_1",
+    "layer": 1,
+    "ctx_idx": 1,
+    "influence_score": 0.3673224151134491,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 20.5,
+        "context": "<bos>- Filed Under\u23ceHANOI \u2014 A jungle raid in January 1962 in which U.S. helicopter pilots ferried South Vietnamese troops"
+      },
+      {
+        "trigger": "-",
+        "score": 20.5,
+        "context": "<bos>- PDF (392 kb)\u23ce- Full Text with Thumbnail Figures\u23ce- Full Text with Large Figures\u23ce- Cited by in Scopus (51"
+      },
+      {
+        "trigger": "-",
+        "score": 20.5,
+        "context": "<bos>-Scientists fear temperature rise could lead to an Ice-free Artic, endangering polar bears.\u23ceWater flowing from the North Atlantic into the Arctic is at its"
+      },
+      {
+        "trigger": "-",
+        "score": 20.5,
+        "context": "<bos>- The baby can open and close her eyes and suck her thumb.\u23ce- The baby exercises by kicking and stretching.\u23ce- The baby responds to light"
+      },
+      {
+        "trigger": "-",
+        "score": 20.5,
+        "context": "<bos>- Fire Department Home\u23ce- Building Codes\u23ce- Community Emergency Response Team\u23ce- Community Enhancement\u23ce- Contact Us\u23ce- Fire Stations\u23ce- Job Opportunities\u23ce"
+      }
+    ],
+    "promotes": [
+      "raborty",
+      "NOPQRST",
+      ".",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      " my\u017felf",
+      " Monfieur",
+      "'}>"
+    ]
+  },
+  {
+    "id": "0_15984_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3892029821872711,
+    "top_activations": [
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a 32-foot-long aircraft based on a Predator drone, is advancing NASA's ambitious plan to develop a fleet of aerial vehicles that can"
+      },
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a1 Department of Entomology and Wildlife Ecology, University of Delaware, Newark, DE 19717, USA.\u23cea2 State University of"
+      },
+      {
+        "trigger": "Fe",
+        "score": 6.38,
+        "context": "<bos>Feasibility of quantitative ultrasound measurement of the heel bone in people with intellectual disabilities\u23ceLow bone mineral density (BMD) and fractures are common in people with"
+      },
+      {
+        "trigger": "a",
+        "score": 6.25,
+        "context": "<bos>23a. The Red-Shame of Menn Followeth Here\u23ceIt was then came to them great Menn son of Salcholga, he"
+      },
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a. Synoptic history\u23ceAn extratropical low pressure system formed just east of the Turks and\u23ceCaicos Islands near 0000 UTC"
+      }
+    ],
+    "promotes": [
+      "Roster",
+      "nuff",
+      "Pyx",
+      "CppCodeGen",
+      "migrationBuilder"
+    ],
+    "demotes": [
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      "bewerken",
+      " AttributeSet",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      "\u3063\u3066\u307f\u308b"
+    ]
+  },
+  {
+    "id": "2_3014_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.3012148141860962,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 30.5,
+        "context": " degrees a, b and y, respectively, such that \u03b1+\u03b2+\u03b3 = 0. The undecided case (6; 6; 8)"
+      },
+      {
+        "trigger": " =",
+        "score": 27.5,
+        "context": " under-12s. Then 220/1800 = 0.122... and (220/18"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": "||b|cos(\u03b8) => -1*2+2*3 = sqrt((-1)^2+2^2)*sqrt(2^2"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": " is prime. [Hint: If d is a divisor of p, say p = dt, then p | d or p | t. Show that this implies"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": " not an element of the Mandelbrot set.\u23ceOn the other hand, c = i gives the sequence 0, i, (-1 + i), \u2013"
+      }
+    ],
+    "promotes": [
+      " Bergmann",
+      "FundMe",
+      "tonode",
+      "}=\\",
+      ">=</"
+    ],
+    "demotes": [
+      "\u24e7",
+      " NgModule",
+      "tagHelperRunner",
+      "setopt",
+      " Chwiliwch"
+    ]
+  },
+  {
+    "id": "0_253_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3584575355052948,
+    "top_activations": [
+      {
+        "trigger": "you",
+        "score": 13.5,
+        "context": "<bos>you know what plants need to live?....come and find out!\u23ceyou wanna know how plants grow?\u23ceLearn the parts of a plant?\u23ce"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Browse by Issue:\u23ceOne of the oldest conflicts in the American system of government is that between Congress and the President over the right to formulate and implement"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- BC Games\u23ceMeasles cases rise in the eastern Fraser Valley\u23ceFraser Health's chief medical health officer is warning about the rise in measles cases in"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Draft SEPUP to CC Grades 6-8\u23ceCC & Storytown\u23ce- StoryTown CC Brochure information on purchasing additional curriculum resources to align with"
+      },
+      {
+        "trigger": "research",
+        "score": 14.12,
+        "context": "<bos>researchers have claimed that giant heat waves caused by global\u23cewarming will kill\u23ceoff desert bird communities over the next one hundred years,\u23ceand even believe"
+      }
+    ],
+    "promotes": [
+      " it",
+      " the",
+      " a",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " NDEBUG",
+      " Efq",
+      "ArgsConstructor",
+      " Shakspeare",
+      " ARXIV"
+    ]
+  },
+  {
+    "id": "3_373_1",
+    "layer": 3,
+    "ctx_idx": 1,
+    "influence_score": 0.29771628975868225,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 29.62,
+        "context": "<bos>: to cover (something) by winding or folding a piece of material around it\u23ce: to wind or fold (something) around something else\u23ce: to"
+      },
+      {
+        "trigger": "ver",
+        "score": 33.0,
+        "context": "<bos>verbo (posits, positing, posited)\u23ce- 1 [with object] Put forward as fact or as a basis for argument: the"
+      },
+      {
+        "trigger": "2",
+        "score": 28.12,
+        "context": "<bos>2nd ed. - Cold Spring Harbor, N.Y. : Cold Spring Harbor Laboratory Press, c2007.\u23ceviii, 1"
+      },
+      {
+        "trigger": "uus",
+        "score": 29.62,
+        "context": "<bos>uus in the news\u23ceInventor of World Wide Web is knighted by queen\u23ceMassachusetts Unitarian Universalist Tim Berners-Lee, the inventor of the"
+      },
+      {
+        "trigger": "1",
+        "score": 22.12,
+        "context": "<bos>11.2 Appraisal Methods\u23ce- Be able to describe the various appraisal methods.\u23ceIt probably goes without saying that different industries and jobs need different kinds"
+      }
+    ],
+    "promotes": [
+      " i",
+      " Guess",
+      " guess",
+      " direct",
+      "."
+    ],
+    "demotes": [
+      ")++;",
+      " Efq",
+      "]:\r",
+      "...');",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "4_9539_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.39416322112083435,
+    "top_activations": [
+      {
+        "trigger": "=",
+        "score": 15.62,
+        "context": "30% of them have smallpox, so 70*0.3=21. So your probability of taking kid with both simptoms is equal"
+      },
+      {
+        "trigger": "=",
+        "score": 15.62,
+        "context": " in quantity=56%, elasticity of demand =56/125=0.448. The increase in price has the same effect as"
+      },
+      {
+        "trigger": " =",
+        "score": 13.25,
+        "context": " represent the surface\u23ceof the earth.\u23ceTypical map scales are\u23ce1 inch = 100 feet and\u23ce1 inch = 200 feet"
+      },
+      {
+        "trigger": " =",
+        "score": 14.12,
+        "context": "5,000 is used for maps based on metric units (1 centimeter = 0.25 kilometer). The area portrayed on each sheet ranges from"
+      },
+      {
+        "trigger": " =",
+        "score": 18.25,
+        "context": ".\u23ceImplies, Angle between each branch is 720/5 = 144 degrees.\u23ceBut the kid says,\u23ceThe pattern"
+      }
+    ],
+    "promotes": [
+      " Petty",
+      "HasMaxLength",
+      "\ue315",
+      "}{-",
+      "ToBounds"
+    ],
+    "demotes": [
+      "\u3068\u3044\u3051\u306a\u3044",
+      "})*/",
+      "HasAnnotation",
+      "endwhile",
+      "WebControls"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.33310794830322266,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "4_9653_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.37711426615715027,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 18.38,
+        "context": " is the opposite of multiplication. Thus, the fact that 2 x 3 = 6 implies that 6 / 3 = 2.\u23ce1"
+      },
+      {
+        "trigger": "=",
+        "score": 20.5,
+        "context": " not.\u23ceCount the number of straight fingers on each hand 3x2=6. this represents 6 units.\u23ceCount number of bent fingers on"
+      },
+      {
+        "trigger": " =",
+        "score": 16.5,
+        "context": " would be\u23ce$100*10/100*2 = $20. The total amount that would be due would be $1"
+      },
+      {
+        "trigger": " =",
+        "score": 19.38,
+        "context": "5% i.e. 15% x 1000 = RM150. Hence total tax = RM675 + RM"
+      },
+      {
+        "trigger": " =",
+        "score": 15.62,
+        "context": "8 event\u23cebecause there are four reactors each at level seven (4x7 = 28). Chernobyl only had one reactor, and it stored far less"
+      }
+    ],
+    "promotes": [
+      "BufferException",
+      "WithIdentifier",
+      " resourceCulture",
+      "WebControls",
+      " AssemblyCulture"
+    ],
+    "demotes": [
+      "<bos>",
+      " keer",
+      " Pilipinas",
+      "ifrance",
+      " Piaget"
+    ]
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.38062381744384766,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ]
+  },
+  {
+    "id": "9_3056_1",
+    "layer": 9,
+    "ctx_idx": 1,
+    "influence_score": 0.39574968814849854,
+    "top_activations": [
+      {
+        "trigger": "tagon",
+        "score": 53.0,
+        "context": "<bos>tagonistic to the needs of a respiratory membrane. So\u2014to build an external coating that resists desiccation and then suffocate? Or build a surface respiratory"
+      },
+      {
+        "trigger": "hum",
+        "score": 50.5,
+        "context": "<bos>hum..I really must brush up on my linguistics courses at University... . If I rememeber well, 'descriptive grammar' basically refers to how"
+      },
+      {
+        "trigger": "end",
+        "score": 50.75,
+        "context": "<bos>endodermArticle Free Pass\u23ceendoderm, the innermost of the three germ layers, or masses of cells (lying within ectoderm and mesoderm), which"
+      },
+      {
+        "trigger": "Gen",
+        "score": 49.75,
+        "context": "<bos>Genistein, a plant-based antioxidant, helped control blood sugar, reduced risk for heart disease and increased bone mineral density (BMD) in post"
+      },
+      {
+        "trigger": "Kab",
+        "score": 50.5,
+        "context": "<bos>Kabir was a 15th/16th century devotional poet and social critic from northern India. The songs of Kabir are known (and passionately"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " becau\u017fe",
+      " Efq",
+      " The\u017fe",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      "<eos>",
+      "ilig",
+      "InteropServices",
+      "pri",
+      " We"
+    ]
+  },
+  {
+    "id": "0_9420_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.38581356406211853,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 17.88,
+        "context": ".1E-28 grams) times the speed of light squared (E = m c2) is\u23ce8.12E-07 er"
+      },
+      {
+        "trigger": " =",
+        "score": 17.88,
+        "context": "s instrument at St. Mary Church in L\u00fcbeck) and as low as a\u2019 = 416 (Silbermann\u2019s organ at the Frauenkirche"
+      },
+      {
+        "trigger": " =",
+        "score": 17.62,
+        "context": " linear equations\u23ceWe add the equations to find that\u23cey + x \u2013 y = 3x + 2 + 4.\u23ceThis simplifies to x"
+      },
+      {
+        "trigger": " =",
+        "score": 18.12,
+        "context": " also have 6 neutrons, giving them an atomic mass of 12 ( = 6 protons + 6 neutrons). Carbon-14 atoms have two"
+      },
+      {
+        "trigger": " =",
+        "score": 17.75,
+        "context": "0 ft/s, its height in feet after t seconds is given by y = 90t - 16t^2. Find the average"
+      }
+    ],
+    "promotes": [
+      "iffance",
+      " photolibrary",
+      "tvguidetime",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " Efq"
+    ],
+    "demotes": [
+      " =",
+      "\u23ce",
+      ".",
+      "  ",
+      "("
+    ]
+  },
+  {
+    "id": "0_15984_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.38751140236854553,
+    "top_activations": [
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a 32-foot-long aircraft based on a Predator drone, is advancing NASA's ambitious plan to develop a fleet of aerial vehicles that can"
+      },
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a1 Department of Entomology and Wildlife Ecology, University of Delaware, Newark, DE 19717, USA.\u23cea2 State University of"
+      },
+      {
+        "trigger": "Fe",
+        "score": 6.38,
+        "context": "<bos>Feasibility of quantitative ultrasound measurement of the heel bone in people with intellectual disabilities\u23ceLow bone mineral density (BMD) and fractures are common in people with"
+      },
+      {
+        "trigger": "a",
+        "score": 6.25,
+        "context": "<bos>23a. The Red-Shame of Menn Followeth Here\u23ceIt was then came to them great Menn son of Salcholga, he"
+      },
+      {
+        "trigger": "a",
+        "score": 6.38,
+        "context": "<bos>a. Synoptic history\u23ceAn extratropical low pressure system formed just east of the Turks and\u23ceCaicos Islands near 0000 UTC"
+      }
+    ],
+    "promotes": [
+      "Roster",
+      "nuff",
+      "Pyx",
+      "CppCodeGen",
+      "migrationBuilder"
+    ],
+    "demotes": [
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      "bewerken",
+      " AttributeSet",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      "\u3063\u3066\u307f\u308b"
+    ]
+  },
+  {
+    "id": "0_13004_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.29418447613716125,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "2_14931_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.39089059829711914,
+    "top_activations": [
+      {
+        "trigger": "+",
+        "score": 20.5,
+        "context": "^3-180 /(2*sqrt(pi*r^4+90/r\u00b2))=0\u23ceFast way to find R :\u23ce"
+      },
+      {
+        "trigger": " +",
+        "score": 21.75,
+        "context": " Rate = Total Interest Paid / Principal Amount\u23ce2. Effective Rate = (1 + i / n)n \u2013 1\u23ceis the nominal rate and n"
+      },
+      {
+        "trigger": "+",
+        "score": 23.25,
+        "context": "dt = A po Sqrt [(g/(R To)) (2/(g+1))^((g+1)/(g-1))) ] (eqn."
+      },
+      {
+        "trigger": " +",
+        "score": 22.75,
+        "context": " last?\u23ceAnswer: Option B\u23ceHence, total time taken = (6 + 4) days = 10 days.\u23ceA is 3"
+      },
+      {
+        "trigger": "+",
+        "score": 22.25,
+        "context": " = x\u00b2/(1+x\u00b2)f(x) = x\u00b2(1+x\u00b2)-\u00b9Now, use the uv method:- u'v +"
+      }
+    ],
+    "promotes": [
+      ")-\\",
+      "}+",
+      ")+\\",
+      " +",
+      "+"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "-------\f",
+      "i\u00e1ln\u00ed",
+      "endwhile"
+    ]
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3438962399959564,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "21_13234_5",
+    "layer": 21,
+    "ctx_idx": 5,
+    "influence_score": 0.24772337079048157,
+    "top_activations": [
+      {
+        "trigger": " +",
+        "score": 53.0,
+        "context": "1:17, function(u,v) round(sqrt(u + v),6) == floor(sqrt(u+v)) ) )"
+      },
+      {
+        "trigger": " =",
+        "score": 49.0,
+        "context": "<bos>Let G = . How many elements are there in the group G? Also show that G is not cyclic.\u23ceI know that no. of elements in"
+      },
+      {
+        "trigger": " +",
+        "score": 56.0,
+        "context": ": The N'th triangular number is defined to be 1 + 2 + 3 + ... + N. Alternatively, we could give a recursive definition"
+      },
+      {
+        "trigger": " +",
+        "score": 55.5,
+        "context": " 2X n^2 = 2n^2 = n^2 + n^2 = n^2 +nn\u23ceNow this is the part"
+      },
+      {
+        "trigger": " =",
+        "score": 49.0,
+        "context": "+1 = 0 gives x= -1.\u23ce2x-5 = 0 gives 2x= 5, or x= 5"
+      }
+    ],
+    "promotes": [
+      " I",
+      " A",
+      " l",
+      " R",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      "\u017felves",
+      " it\u017felf",
+      " An\u017f",
+      " plea\u017fure"
+    ]
+  },
+  {
+    "id": "23_8967_5",
+    "layer": 23,
+    "ctx_idx": 5,
+    "influence_score": 0.3302730321884155,
+    "top_activations": [
+      {
+        "trigger": " feces",
+        "score": 30.5,
+        "context": " the mucosa. Adult females produce unembryonated eggs that are passed in feces of the marine mammals.\u23ce2a. The eggs become embryonated"
+      },
+      {
+        "trigger": "Click",
+        "score": 30.5,
+        "context": "<bos>Click here for audio of Episode 1419.\u23ceToday, population reduction by disaster. The\u23ceUniversity of Houston's College of Engineering\u23ce"
+      },
+      {
+        "trigger": " German",
+        "score": 31.5,
+        "context": "<bos>To celebrate the birthday of German microbiologist Julius Richard Petri, inventor of the eponymous dish, Google has created a very germ-y, somewhat unsettling"
+      },
+      {
+        "trigger": "carry",
+        "score": 47.75,
+        "context": " the only prokaryotes. All other life forms are Eukaryotes (you-carry-oats), creatures whose cells have nuclei.\u23ce(Note: viruses"
+      },
+      {
+        "trigger": "ree",
+        "score": 37.75,
+        "context": " similar evolutionary history, but it belongs to the peccary (pECK-ah-ree) family, which developed in the Western Hemisphere. Its hide is covered"
+      }
+    ],
+    "promotes": [
+      "\u017felves",
+      " it\u017felf",
+      "\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "\u23ce",
+      "-",
+      "\u23ce\u23ce",
+      ".",
+      " ("
+    ]
+  },
+  {
+    "id": "24_3865_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.2742219865322113,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "23_5188_5",
+    "layer": 23,
+    "ctx_idx": 5,
+    "influence_score": 0.3179521858692169,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ]
+  },
+  {
+    "id": "24_13541_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.33590051531791687,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ]
+  },
+  {
+    "id": "23_57_5",
+    "layer": 23,
+    "ctx_idx": 5,
+    "influence_score": 0.30467724800109863,
+    "top_activations": [
+      {
+        "trigger": "This",
+        "score": 64.0,
+        "context": "<bos>This is the second book wrote by Lee Lehman and presents in a very detailed manner the astrological dignities. It was published in 1989"
+      },
+      {
+        "trigger": "There",
+        "score": 55.0,
+        "context": "<bos>There has never been anything like the Saturn V, the launch vehicle that powered the United States past the Soviet Union to a series of manned lunar landings in the"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The creation of dead zones begins when nitrogen and phosphorus from fertilizers used on land, and from raw or poorly treated sewage, wash into streams, into rivers,"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The first sea turtle hatchlings whose eggs were evacuated from the Gulf Coast oil spill to Florida's Kennedy Space Center have been released into the Atlantic Ocean."
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The school's playground consists of play structures and tetherball, volleyball, basketball and wall ball courts. For safety and supervision, students should remain within their"
+      }
+    ],
+    "promotes": [
+      "RenderAtEndOf",
+      "^(@)",
+      "\u4f8b\u6587\u5e33\u306b\u8ffd\u52a0",
+      " Saltar",
+      "saraba"
+    ],
+    "demotes": [
+      "<eos>",
+      "\u2003\u2003(",
+      "Port\u00e1ly",
+      " [\u2026]",
+      "\u5f88\u8d5e\u54e6"
+    ]
+  },
+  {
+    "id": "25_4431_5",
+    "layer": 25,
+    "ctx_idx": 5,
+    "influence_score": 0.31469252705574036,
+    "top_activations": [
+      {
+        "trigger": " December",
+        "score": 62.0,
+        "context": " many professions, and subjected to forced labor decrees by the Slovak regime.\u23ceIn December 1940 there were 88,951 Jews"
+      },
+      {
+        "trigger": " PA",
+        "score": 54.0,
+        "context": ", All rights reserved\u23ce105 Richman LN\u23ceKittanning PA 16201\u23ceCopyright 1989 by Howard"
+      },
+      {
+        "trigger": " April",
+        "score": 55.0,
+        "context": "tek, a Syrian brown bear, was found in Iran by a local boy in April 1942. He sold the bear cub to soldiers of the"
+      },
+      {
+        "trigger": ",",
+        "score": 62.5,
+        "context": "<bos>Date: February 13, 2012\u23ceCreator: Parfomak, Paul W.\u23ceDescription: Nearly half a million miles of"
+      },
+      {
+        "trigger": " in",
+        "score": 57.0,
+        "context": "<bos>Every May 15th since the creation of the state of\u23ceIsrael in 1948, the Palestinian Exodus from the Holy Land, known"
+      }
+    ],
+    "promotes": [
+      "\u00ad",
+      " ostavi",
+      "Vidite",
+      "<bos>",
+      "rungsseite"
+    ],
+    "demotes": [
+      " ",
+      " \r",
+      "%\");",
+      "%\")",
+      "HostException"
+    ]
+  },
+  {
+    "id": "25_13416_5",
+    "layer": 25,
+    "ctx_idx": 5,
+    "influence_score": 0.32423341274261475,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ]
+  },
+  {
+    "id": "18_9137_5",
+    "layer": 18,
+    "ctx_idx": 5,
+    "influence_score": 0.3988962471485138,
+    "top_activations": [
+      {
+        "trigger": "8",
+        "score": 47.5,
+        "context": "0s 1850s 1860s 1870s 1880s|\u23ce|Years:||"
+      },
+      {
+        "trigger": " Q",
+        "score": 45.0,
+        "context": " when collaborating? When is semantic precision a better choice? #lakoff\u23ce- Q4. \u201cWhen we define common terms we create common ground\u201d Have you"
+      },
+      {
+        "trigger": "2",
+        "score": 50.25,
+        "context": " My uncle used my car.\u23ce22. People admire the picture.\u23ce23. The wind blew his hat down the street.\u23ce24."
+      },
+      {
+        "trigger": " |",
+        "score": 47.75,
+        "context": " | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |\u23ce"
+      },
+      {
+        "trigger": "Page",
+        "score": 43.5,
+        "context": ": Miss Nelson Is Missing! Venn Diagram (My Teacher & Viola Swamp)\u23cePage 8: Miss Nelson Is Missing! Venn Diagram (Kids in Room "
+      }
+    ],
+    "promotes": [
+      "Personensuche",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      " AssemblyCulture",
+      " typelib",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " the",
+      " (",
+      " Am"
+    ]
+  },
+  {
+    "id": "22_16009_5",
+    "layer": 22,
+    "ctx_idx": 5,
+    "influence_score": 0.3464137017726898,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 39.25,
+        "context": "v$ as an eigenvector. If $(b_1, b_2, \\dots, b_n)$ is any row of $A$, then"
+      },
+      {
+        "trigger": "b",
+        "score": 40.25,
+        "context": "log_b a = log_b a^n`\u23ce`log_b a + log_b c = log_b(ac)`\u23ceNotice"
+      },
+      {
+        "trigger": " <",
+        "score": 38.25,
+        "context": " well characterized, severe CFS. RBC mass was found to be significantly reduced (p < 0.001) below the published normal range in the "
+      },
+      {
+        "trigger": "le",
+        "score": 36.75,
+        "context": " into two discs. Both have geodesic as a boundary, positive curvature and area $\\le$ than area of your original surface. If geodesic is long, then ("
+      },
+      {
+        "trigger": "true",
+        "score": 38.0,
+        "context": " PROOF-CHECKER-COMMANDS\u23ceExample: (generalize ((and (true-listp x) (true-listp y)) 0)"
+      }
+    ],
+    "promotes": [
+      " |",
+      "\u23ce\u23ce",
+      " [",
+      " ",
+      " ("
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      "awtextra",
+      " utafitiHapana",
+      "Personendaten",
+      " betweenstory"
+    ]
+  },
+  {
+    "id": "24_2998_5",
+    "layer": 24,
+    "ctx_idx": 5,
+    "influence_score": 0.38409698009490967,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 138.0,
+        "context": "009 | DOI: 10.4135/9781412971935 | Print ISBN:"
+      },
+      {
+        "trigger": "6",
+        "score": 151.0,
+        "context": " became popular in Japan during the Edo period (1603\u20131868). Perhaps the best-known type of mechanical doll is the chahak"
+      },
+      {
+        "trigger": " and",
+        "score": 124.0,
+        "context": " Comparisons - Mean Scale Score [ Grade 8 ]|\u23ceIn 2011, NAEP assessed reading (grades 4 and 8), mathematics"
+      },
+      {
+        "trigger": "4",
+        "score": 135.0,
+        "context": "\u23ceThe bird world is aflutter with news of snowy owls invading the Lower 48 and beyond. Here, Kenn Kaufman answers questions about the majestic birds posed"
+      },
+      {
+        "trigger": " figure",
+        "score": 129.0,
+        "context": " stereo image.\u23ceIt's basically that anything on your left enters into the figure-8 with positive polarity, thus being reinforced in the left speaker and cancelled"
+      }
+    ],
+    "promotes": [
+      " \u06f8",
+      "\u06f8",
+      "\uff18",
+      " eig",
+      "8"
+    ],
+    "demotes": [
+      "IsContent",
+      " snippetHide",
+      " Six",
+      " nineteen",
+      " six"
+    ]
+  },
+  {
+    "id": "18_12090_5",
+    "layer": 18,
+    "ctx_idx": 5,
+    "influence_score": 0.3488800525665283,
+    "top_activations": [
+      {
+        "trigger": " right",
+        "score": 65.5,
+        "context": " the feed our animals eat. Efficient producers try to lower costs to maximize profits, right? Cotton seeds contain a yellow pigment called gossypol which is \u2018"
+      },
+      {
+        "trigger": " right",
+        "score": 70.0,
+        "context": " $5 trillion in market cap would vanish from stock exchanges.\u23ceA disaster, right? It felt like one at the time. Raising money for an Internet startup"
+      },
+      {
+        "trigger": " Right",
+        "score": 79.0,
+        "context": " ESA is in full effect now, making sure that fish are not unduly harmed \u2013 Right? Well, not so fast. Though flows in the Delta are high,"
+      },
+      {
+        "trigger": " right",
+        "score": 73.5,
+        "context": "2011 -- Frequent hand washing will keep those nasty bugs at bay, right? Not if you\u2019re using a public bathroom. Paper dispensers,"
+      },
+      {
+        "trigger": " right",
+        "score": 66.5,
+        "context": " bees, deadly plagues.\u23ceSounds like the premise to a cheesy horror film, right? According to scientists, these are a few of the reasons bees are mysteriously"
+      }
+    ],
+    "promotes": [
+      "\uff1f",
+      "?,",
+      "??",
+      " ?",
+      "?"
+    ],
+    "demotes": [
+      ")\");\r",
+      ")\";\r",
+      "\".\r",
+      "'},\r",
+      "%\";"
+    ]
+  },
+  {
+    "id": "22_6514_5",
+    "layer": 22,
+    "ctx_idx": 5,
+    "influence_score": 0.3734619617462158,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 43.5,
+        "context": ". Also, find the length of the indicated portion of the curve. r(t) = (t)i + (2/3)t^(3"
+      },
+      {
+        "trigger": "x",
+        "score": 41.0,
+        "context": "<bos>The equations of 2 regression lines are\u23ce8x - 10y + 66 = 0 , 40x - 1"
+      },
+      {
+        "trigger": ":",
+        "score": 55.0,
+        "context": "<bos>B2: A mixture of 2% biodiesel and 98% petroleum diesel based on volume.\u23ceB20: A mixture of 2"
+      },
+      {
+        "trigger": "x",
+        "score": 51.5,
+        "context": "<bos>Better Students Ask More Questions.\u23ce(x+1)(2x-5)=0Not sure if I am heading in the right direction by x("
+      },
+      {
+        "trigger": ")",
+        "score": 58.5,
+        "context": "<bos>a) If the total population is 1,800, how many boys, girls, and teachers are there?\u23ceb) If 2"
+      }
+    ],
+    "promotes": [
+      " \u017find",
+      "FunctionFlags",
+      " niedersachsen",
+      " Sermons",
+      " \u0628\u0631\u0627\u0646\u064a\u0647"
+    ],
+    "demotes": [
+      " estekak",
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+      "egli",
+      "+#+",
+      "Tracce"
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+{
+  "prompt": "<bos>The state to the West of the capital of the state containing Las Vegas",
+  "timestamp": "2026-04-04T19:16:32Z",
+  "n_runs": 5,
+  "design": {
+    "method1": "1-in-10 feature identification (chance=10%)",
+    "method2": "5-in-10 text snippet matching (chance=50%)",
+    "method_d1": "1-in-10 description accuracy (chance=10%)",
+    "method_d2": "5-in-10 description snippet match (chance=50%)",
+    "aggregation": "per-group run-level means, then mean \u00b1 stderr across runs",
+    "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+    "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
+    "label_regeneration": "manual only; auto uses pipeline names"
+  },
+  "auto": {
+    "easy": {
+      "method1": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.7,
+            "stderr_accuracy": 0.1225,
+            "n_runs": 5,
+            "total_trials": 10
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.925,
+          "stderr_accuracy": 0.075
+        },
+        "total_trials": 85
+      },
+      "method2": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.96,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 0.96,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.84,
+            "stderr_accuracy": 0.098,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 0.72,
+            "stderr_accuracy": 0.102,
+            "n_runs": 5,
+            "total_trials": 5
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.87,
+          "stderr_accuracy": 0.0574
+        },
+        "total_tasks": 20
+      }
+    },
+    "medium": {
+      "method1": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 10
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 1.0,
+          "stderr_accuracy": 0.0
+        },
+        "total_trials": 85
+      },
+      "method2": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.92,
+            "stderr_accuracy": 0.08,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 5
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.98,
+          "stderr_accuracy": 0.02
+        },
+        "total_tasks": 20
+      }
+    },
+    "hard": {
+      "method1": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.7,
+            "stderr_accuracy": 0.1225,
+            "n_runs": 5,
+            "total_trials": 10
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 0.6,
+            "stderr_accuracy": 0.0632,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.44,
+            "stderr_accuracy": 0.098,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 0.4,
+            "stderr_accuracy": 0.1095,
+            "n_runs": 5,
+            "total_trials": 25
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.535,
+          "stderr_accuracy": 0.0699
+        },
+        "total_trials": 85
+      },
+      "method2": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.96,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 0.92,
+            "stderr_accuracy": 0.049,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.8,
+            "stderr_accuracy": 0.0632,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 0.96,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 5
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.91,
+          "stderr_accuracy": 0.0379
+        },
+        "total_tasks": 20
+      }
+    },
+    "attribution_coverage": 0.4202
+  },
+  "random": {
+    "easy": {
+      "method1": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 10
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 0.04,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.04,
+            "stderr_accuracy": 0.04,
+            "n_runs": 5,
+            "total_trials": 25
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0,
+            "n_runs": 5,
+            "total_trials": 25
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.02,
+          "stderr_accuracy": 0.0115
+        },
+        "total_trials": 85
+      },
+      "method2": {
+        "groups": [
+          {
+            "group": "U.S. state",
+            "mean_accuracy": 0.56,
+            "stderr_accuracy": 0.0748,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "West",
+            "mean_accuracy": 0.6,
+            "stderr_accuracy": 0.0894,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "city name",
+            "mean_accuracy": 0.48,
+            "stderr_accuracy": 0.102,
+            "n_runs": 5,
+            "total_trials": 5
+          },
+          {
+            "group": "say place after 'of'",
+            "mean_accuracy": 0.64,
+            "stderr_accuracy": 0.098,
+            "n_runs": 5,
+            "total_trials": 5
+          }
+        ],
+        "macro_avg": {
+          "mean_accuracy": 0.57,
+          "stderr_accuracy": 0.0342
+        },
+        "total_tasks": 20
+      }
+    }
+  },
+  "description_accuracy": {
+    "macro_avg": {
+      "mean_accuracy": 0.98,
+      "stderr_accuracy": 0.0
+    },
+    "total_trials": 250
+  },
+  "description_snippet_accuracy": {
+    "macro_avg": {
+      "mean_accuracy": 0.928,
+      "stderr_accuracy": 0.0
+    },
+    "total_tasks": 250
+  }
+}

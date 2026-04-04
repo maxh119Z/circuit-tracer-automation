@@ -1,0 +1,448 @@
+[
+  {
+    "prompt": "<bos>The country containing the capital of the state containing Las Vegas is",
+    "timestamp": "2026-04-04T19:21:07Z",
+    "n_runs": 5,
+    "design": {
+      "method1": "1-in-10 feature identification (chance=10%)",
+      "method2": "5-in-10 text snippet matching (chance=50%)",
+      "method_d1": "1-in-10 description accuracy (chance=10%)",
+      "method_d2": "5-in-10 description snippet match (chance=50%)",
+      "aggregation": "per-group run-level means, then mean \u00b1 stderr across runs",
+      "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+      "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
+      "label_regeneration": "manual only; auto uses pipeline names"
+    },
+    "auto": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0816,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 0.8667,
+              "stderr_accuracy": 0.0816,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.9583,
+            "stderr_accuracy": 0.028
+          },
+          "total_trials": 110
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.12,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.875,
+            "stderr_accuracy": 0.0342
+          },
+          "total_tasks": 40
+        }
+      },
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 1.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 110
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.1166,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.865,
+            "stderr_accuracy": 0.0338
+          },
+          "total_tasks": 40
+        }
+      },
+      "hard": {
+        "method1": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        },
+        "method2": {
+          "groups": [],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          }
+        }
+      },
+      "attribution_coverage": 0.5822
+    },
+    "random": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 0.1,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 0.1333,
+              "stderr_accuracy": 0.0816,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 0.1333,
+              "stderr_accuracy": 0.0816,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0708,
+            "stderr_accuracy": 0.0285
+          },
+          "total_trials": 110
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "California",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "capital city",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.12,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "contain",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "country",
+              "mean_accuracy": 0.36,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say Nevada",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.1414,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say US state",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place after 'of'",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say state",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.53,
+            "stderr_accuracy": 0.029
+          },
+          "total_tasks": 40
+        }
+      }
+    },
+    "description_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.9837,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 245
+    },
+    "description_snippet_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.9159,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 245
+    }
+  }
+]

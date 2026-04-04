@@ -1,0 +1,2117 @@
+[
+  {
+    "id": "0_7344_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.39104074239730835,
+    "top_activations": [
+      {
+        "trigger": "News",
+        "score": 13.5,
+        "context": "<bos>News>Archaeologists tour Luke's 5,000 year old site\u23ceRobert Wegener, Statistical Research Inc. principal investigator, briefs visitors"
+      },
+      {
+        "trigger": "Congress",
+        "score": 13.62,
+        "context": "<bos>Congress is currently deciding whether or not to minimize programs that help poor people buy food. There are public health experts, however, that say food stamp cuts could"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 8, 2013\u23ce- Centers for Disease Control and Prevention\u23ce- American Association for the Study of Liver Diseases\u23ce- Hepatitis Foundation"
+      },
+      {
+        "trigger": "Outdoor",
+        "score": 12.88,
+        "context": "<bos>Outdoor play time can enhance children's sleep\u23ceUpdated On: Jul 26 2013 03:03:58"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 18, 2012\u23ceCould 3D printing be a climate revolution?\u23ceAdditive manufacturing has five key attributes that could help"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " autorytatywna",
+      ":\u2728",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "<bos>",
+      "The",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<strong>"
+    ]
+  },
+  {
+    "id": "3_570_2",
+    "layer": 3,
+    "ctx_idx": 2,
+    "influence_score": 0.33097589015960693,
+    "top_activations": [
+      {
+        "trigger": " tie",
+        "score": 13.94,
+        "context": " have not liked the teacher. If that happens we think the principal should be the tie breaker. When the majority of the students don\u2019t like the teacher we"
+      },
+      {
+        "trigger": " ide",
+        "score": 18.25,
+        "context": "<bos>When All Data Are Not Created Equally\u23ceT idewater areas can be difficult places to acquire consistent-quality seismic data, because different sources have to be used"
+      },
+      {
+        "trigger": " time",
+        "score": 15.31,
+        "context": " it Sauvignon Blanc, Chardonnay, Merlot, Sangiovese, or Cabernet Sauvignon.\u23ceThe Millers are long time supporters of the department and its research endeavors."
+      },
+      {
+        "trigger": " time",
+        "score": 13.81,
+        "context": "Let\u2019s face it, black cats have had a bad rap for a long time. In some countries they are believed to have the magical ability to portend"
+      },
+      {
+        "trigger": " time",
+        "score": 18.25,
+        "context": " Belgium. This political complexity goes back centuries. We should had foreseen it coming long time ago.\u23ceSince the demise of Western Roman Empire in the 5th"
+      }
+    ],
+    "promotes": [
+      " TIME",
+      "Time",
+      "time",
+      " Time",
+      " time"
+    ],
+    "demotes": [
+      " \u064a\u062a\u064a\u0645\u0647",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "StoryboardSegue",
+      "AndEndTag",
+      "XMLSchema"
+    ]
+  },
+  {
+    "id": "0_11375_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.2406083196401596,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3487517237663269,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "0_10219_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.26087939739227295,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 42.5,
+        "context": " attention while the real trick is being done in plain sight.\u23ceHowever, if a new object enters our field of view, we quickly direct our attention that way"
+      },
+      {
+        "trigger": " a",
+        "score": 42.5,
+        "context": " Gluten Intolerance\u23ceCoeliac disease is caused by gluten intolerance. It affects a number of children and adults where populations have relied for centuries on foods containing gluten"
+      },
+      {
+        "trigger": " a",
+        "score": 42.5,
+        "context": "\u2019s Moby Dick:\u23ceMelville had never even been there.\u23ceAddressing a Rowan audience as part of the President\u2019s Lecture Series March 23"
+      },
+      {
+        "trigger": " a",
+        "score": 42.75,
+        "context": ", Montana, Minnesota, and Iowa where millions of ducks are raised\u2014involves a host of conservation efforts, from targeted fundraising and working with farmers and ranchers to"
+      },
+      {
+        "trigger": " a",
+        "score": 42.5,
+        "context": " CARMA\u2019s open house held June 8 felt really smart and more than a little awed.\u23ceThe OVRO just north of Big Pine represents a"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " it\u017felf",
+      " Jefus",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " a",
+      " the",
+      " an",
+      " ",
+      " in"
+    ]
+  },
+  {
+    "id": "0_12627_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.2744942605495453,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 31.5,
+        "context": " research and learn about breeds...every breed has certain unique characteristics. And, just like people, no animal is perfect; consistent socialization and training will be an important"
+      },
+      {
+        "trigger": " like",
+        "score": 31.25,
+        "context": " is oil dependent\u23ceMost of our modern medical system is oil-dependent, just like the rest of society. Oil has been so cheap for so long that it"
+      },
+      {
+        "trigger": " like",
+        "score": 32.25,
+        "context": " good grip comes is readily employed.\u23ce Housing and Heating\u23ceHousing locust is just like housing crickets, you will want to put them in the biggest tub you can"
+      },
+      {
+        "trigger": " like",
+        "score": 31.5,
+        "context": ", what is it? Well, dolphins produce tonal sounds using tissue vibrations, just like we do. Like humans \u2014 and most animals \u2014 they vibrate tissue in a"
+      },
+      {
+        "trigger": " like",
+        "score": 31.5,
+        "context": " watching videos, texting, listening to music, web surfing, etc. \u2014 just like their other family members \u2014 and they\u2019ll imitate the behaviors they see at"
+      }
+    ],
+    "promotes": [
+      "4",
+      "9",
+      "3",
+      "2",
+      "As"
+    ],
+    "demotes": [
+      " like",
+      " Like",
+      " LIKE",
+      " seperti",
+      "Like"
+    ]
+  },
+  {
+    "id": "0_4823_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3866010904312134,
+    "top_activations": [
+      {
+        "trigger": "Posted",
+        "score": 12.0,
+        "context": "<bos>Posted Sat Jun 23, 2012, 10:58am Subject: Re: Computing Brew Ratio and Measuring Water\u23ce"
+      },
+      {
+        "trigger": "Born",
+        "score": 10.75,
+        "context": "<bos>Born: April 26, 1785\u23ceDied: January 27, 1851\u23ceJohn James Audubon is most"
+      },
+      {
+        "trigger": "In",
+        "score": 10.88,
+        "context": "<bos>In the current system of IP addressing (version four, or \"IPv4\"), there are 4.3 billion possible addresses using the 32-"
+      },
+      {
+        "trigger": "What",
+        "score": 12.38,
+        "context": "<bos>What lurks in the ocean off the coast of Vancouver Island?\u23ceJudith LaVoie, Times ColonistPublished: Monday, August 26,"
+      },
+      {
+        "trigger": "A",
+        "score": 10.25,
+        "context": "<bos>A Road Map to Implementing Evidence-Based Programs\u23cePage 6 of 24\u23ceOverview Language Five\u23ceStages Exploration Installation Initial\u23ceThis section will introduce"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      " Mahomet",
+      " Shaksp",
+      " Negroes",
+      " Shakspeare"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      " a",
+      " it",
+      " he"
+    ]
+  },
+  {
+    "id": "0_14332_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3468469977378845,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 19.0,
+        "context": "<bos>It may seem like a mindless matter, but packing an apple instead of a sugary snack in a child\u2019s lunch this fall can help improve oral health and"
+      },
+      {
+        "trigger": " like",
+        "score": 18.75,
+        "context": "<bos>It seems like every day atmospheric scientists unload a new set of scary predictions about gases swirling about the planet. There are brown clouds, volatile organic compounds, methane"
+      },
+      {
+        "trigger": " like",
+        "score": 19.25,
+        "context": " by the country's economic activity.\u23ceOn a surface level it may seem like the United States' debt position, the biggest in the world, is also"
+      },
+      {
+        "trigger": " like",
+        "score": 18.5,
+        "context": " is known as income inequality (or disparity). By itself this doesn\u2019t seem like a really big deal. What I described to you is basically the United States"
+      },
+      {
+        "trigger": " like",
+        "score": 18.5,
+        "context": "iking anybody seems an even more difficult task these days, when self centred existence seems like the prevailing ideology. In such times though trying out seems like the best way"
+      }
+    ],
+    "promotes": [
+      " differentially",
+      "yntaxException",
+      "woosh",
+      " Warga",
+      "kkue"
+    ],
+    "demotes": [
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " kuten",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "\u24e7",
+      "saraba"
+    ]
+  },
+  {
+    "id": "3_908_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.35801053047180176,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 19.25,
+        "context": " in your airways tighten. Your airways swell up and get narrower. It's like pressing on a straw when you're trying to drink through it. The"
+      },
+      {
+        "trigger": " like",
+        "score": 20.0,
+        "context": "<bos>IBM\u2019s Watson: Interfacing with God\u23ceIBM\u2019s Watson is like nothing we have ever seen before.\u23ceWhile humans use neuronal memory banks to"
+      },
+      {
+        "trigger": " like",
+        "score": 19.62,
+        "context": " write history. What were they trying to tell us? I think it\u2019s like this\u2026\u23ceBefore, during, and after Jesus\u2019s lifetime, the"
+      },
+      {
+        "trigger": " like",
+        "score": 19.38,
+        "context": " as though we were\u23cementally deformed?\" Another says, \"It's like trying\u23ceto explain Mozart to someone who's never heard\u23ceMozart --"
+      },
+      {
+        "trigger": " like",
+        "score": 19.12,
+        "context": ", said Bell, \u201cThose mountains should not even be there. It\u2019s like opening an Egyptian pyramid and finding an astronaut inside.\u201d Along with searching for the"
+      }
+    ],
+    "promotes": [
+      "InjectMocks",
+      " added",
+      "<h1>",
+      " AssemblyTitle",
+      "<bos>"
+    ],
+    "demotes": [
+      " AssemblyCulture",
+      " Preferencias",
+      "ptonshire",
+      " Efq",
+      "SBATCH"
+    ]
+  },
+  {
+    "id": "3_2670_2",
+    "layer": 3,
+    "ctx_idx": 2,
+    "influence_score": 0.3850824534893036,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 10.88,
+        "context": " it\u2019s the mathematician, biologist, neurologist and physicist working together. Diversity is also an array of human characteristics that differ among us and shape our experiences."
+      },
+      {
+        "trigger": " meant",
+        "score": 9.5,
+        "context": " one person to know everything. This was true in the days when \"information\" meant only books, magazines and newspapers, and more so now in the Internet Age"
+      },
+      {
+        "trigger": " was",
+        "score": 9.12,
+        "context": " aligned over your feet. In the past we have tended to believe that perfect balance was best illustrated by standing on one leg and staying as still as possible for as"
+      },
+      {
+        "trigger": " the",
+        "score": 9.38,
+        "context": "TY effect robust, or did the authors report a false positive result? Replication is the best protection against false positives. In our paper, we replicated the effect "
+      },
+      {
+        "trigger": " can",
+        "score": 11.88,
+        "context": "<bos>Sex can trigger \"remarkable\" responses in women, including altered fertility, immunity, libido as well as changes in eating and sleep patterns, according to a"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " beginnetje",
+      "exitRule",
+      "\u0012",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      " olev",
+      "pecially",
+      " canst",
+      " \u017feveral",
+      " gewe"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3390880525112152,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "4_3534_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3410700559616089,
+    "top_activations": [
+      {
+        "trigger": " Required",
+        "score": 13.62,
+        "context": " steps 1-3 before you jump in to read the text.\u23ceTime Required: Differs by length of written material\u23ceRead the introduction and reflect."
+      },
+      {
+        "trigger": " is",
+        "score": 14.12,
+        "context": ".\u23ceParvovirus attacks the gastrointestinal tract, once symptoms occur time is of the essence, most deaths occur 2-3 days after symptoms show."
+      },
+      {
+        "trigger": " will",
+        "score": 11.62,
+        "context": " goes without saying but whether we decide to pick up the tab or not only time will tell. Yet rather than discriminate species, conservation efforts of all strategies should remember"
+      },
+      {
+        "trigger": " that",
+        "score": 11.0,
+        "context": " about plastic bags. It's something that everybody uses but it's time that we stop using them now.\u23ceestimated that the world uses 50"
+      },
+      {
+        "trigger": " of",
+        "score": 11.38,
+        "context": "8 statute mile) of the station if a maneuver were not performed. The time of closest approach is forecast to occur about 3 a.m. Central on"
+      }
+    ],
+    "promotes": [
+      " period",
+      "Time",
+      " Time",
+      "time",
+      " time"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      " InputDecoration",
+      "IntoConstraints",
+      "urious",
+      " IBOutlet"
+    ]
+  },
+  {
+    "id": "2_13104_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.35980260372161865,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 21.62,
+        "context": "ushka has seen a lot of action - too much action.\u23ce\u201cShe was like depressed almost, almost like a down and out mentality,\u201d said SSG Charles"
+      },
+      {
+        "trigger": " like",
+        "score": 19.88,
+        "context": "<bos>History is like a ship which has accommodated within itself the caravan of mankind. During its long journey it comes across some sensational moments which are called the turning points"
+      },
+      {
+        "trigger": " like",
+        "score": 20.0,
+        "context": "!\"\u23ce(Ignacio Estrada) [Peggy McKee]\u23ce\"A man is like a fraction whose numerator is what he is and whose\u23cedenominator is what he"
+      },
+      {
+        "trigger": " like",
+        "score": 18.75,
+        "context": " has his own Wikipedia page--thought that happened a lot: \u2033Opinion is like a pendulum and obeys the same law. If it goes past the centre of"
+      },
+      {
+        "trigger": " like",
+        "score": 20.25,
+        "context": ".\u23ceOnce, Sam had to be hospitalized after ingesting peanuts. He was like so many other children, who have life-threatening reactions that can occur from"
+      }
+    ],
+    "promotes": [
+      "\u043b\u0442\u0435\u043c\u0435\u043b\u0435\u0440",
+      " it\u017felf",
+      " rai\u017f",
+      " my\u017felf",
+      " Jefus"
+    ],
+    "demotes": [
+      " consultato",
+      "+#+#",
+      "Eloquent",
+      " practice",
+      "QPalette"
+    ]
+  },
+  {
+    "id": "2_8126_4",
+    "layer": 2,
+    "ctx_idx": 4,
+    "influence_score": 0.3720567226409912,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 14.5,
+        "context": " \"off his conk. His eyes rolled, his limbs began to spin like a windmill in a hurricane \u2013 his attention, riveted to the rhythm, transformed him"
+      },
+      {
+        "trigger": " a",
+        "score": 14.88,
+        "context": ". But in contrast to turnout in November elections, turnout in primaries is sinking like a stone.\u23cePlunging Turnout in Primaries: In 2"
+      },
+      {
+        "trigger": " a",
+        "score": 14.62,
+        "context": "<bos>The human eye is like a camera that collects, focuses, and transmits light through a lens to create an image of its surroundings. In a camera, the"
+      },
+      {
+        "trigger": " a",
+        "score": 15.0,
+        "context": "+c=0. She's impressed I can still rattle it off like a song \"Negative bee plus or minus the square root of bee squared minus for"
+      },
+      {
+        "trigger": " a",
+        "score": 14.88,
+        "context": "<bos>Andes Mountains Jumped Like a Cork\u23cefor National Geographic News\u23ce|June 5, 2008|\u23ceAfter millions of years of"
+      }
+    ],
+    "promotes": [
+      "ContentAsync",
+      "endregion",
+      "]|",
+      " Like",
+      " kasarigan"
+    ],
+    "demotes": [
+      " n\u0117",
+      "tagHelperRunner",
+      " sherds",
+      " geho",
+      " geldt"
+    ]
+  },
+  {
+    "id": "4_7284_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3996760845184326,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 22.38,
+        "context": " gas that harbor star forming regions glow vividly when seen in the infrared.\u23ceLooking like a spider's web swirled into a spiral, galaxy IC 3"
+      },
+      {
+        "trigger": " if",
+        "score": 24.75,
+        "context": "<bos>When you are injected with the flu vaccine, your body reacts as if it has been infected with the actual living virus and makes antibodies that provide immunity against the"
+      },
+      {
+        "trigger": " like",
+        "score": 21.0,
+        "context": "\u2019 file. Actually scientists investigated to find out how the subterranean cities of Ants looked like. The science work of the scientists has been achieved due to their continuous efforts"
+      },
+      {
+        "trigger": " like",
+        "score": 21.62,
+        "context": " were about 4,500 mixed cattle in that herd. It looked like a \"roundup\" when turning them off of the bedding ground. When"
+      },
+      {
+        "trigger": " were",
+        "score": 26.38,
+        "context": "<bos>Every movement of the theater by a skilful poet is communicated, as it were, by magic, to the spectators; who weep, tremble, resent, rejoice"
+      }
+    ],
+    "promotes": [
+      " g",
+      "gy",
+      "\u5f7f",
+      "\u0e2b\u0e21\u0e37\u0e2d\u0e19",
+      "<bos>"
+    ],
+    "demotes": [
+      " disambiguazione",
+      "Hauptartikel",
+      "\u092a\u092f\u093e",
+      "\u51fa\u7248\u5e74",
+      "HasAnnotation"
+    ]
+  },
+  {
+    "id": "4_7284_4",
+    "layer": 4,
+    "ctx_idx": 4,
+    "influence_score": 0.36156606674194336,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 22.38,
+        "context": " gas that harbor star forming regions glow vividly when seen in the infrared.\u23ceLooking like a spider's web swirled into a spiral, galaxy IC 3"
+      },
+      {
+        "trigger": " if",
+        "score": 24.75,
+        "context": "<bos>When you are injected with the flu vaccine, your body reacts as if it has been infected with the actual living virus and makes antibodies that provide immunity against the"
+      },
+      {
+        "trigger": " like",
+        "score": 21.0,
+        "context": "\u2019 file. Actually scientists investigated to find out how the subterranean cities of Ants looked like. The science work of the scientists has been achieved due to their continuous efforts"
+      },
+      {
+        "trigger": " like",
+        "score": 21.62,
+        "context": " were about 4,500 mixed cattle in that herd. It looked like a \"roundup\" when turning them off of the bedding ground. When"
+      },
+      {
+        "trigger": " were",
+        "score": 26.38,
+        "context": "<bos>Every movement of the theater by a skilful poet is communicated, as it were, by magic, to the spectators; who weep, tremble, resent, rejoice"
+      }
+    ],
+    "promotes": [
+      " g",
+      "gy",
+      "\u5f7f",
+      "\u0e2b\u0e21\u0e37\u0e2d\u0e19",
+      "<bos>"
+    ],
+    "demotes": [
+      " disambiguazione",
+      "Hauptartikel",
+      "\u092a\u092f\u093e",
+      "\u51fa\u7248\u5e74",
+      "HasAnnotation"
+    ]
+  },
+  {
+    "id": "2_12704_1",
+    "layer": 2,
+    "ctx_idx": 1,
+    "influence_score": 0.35435935854911804,
+    "top_activations": [
+      {
+        "trigger": " time",
+        "score": 14.5,
+        "context": "-growing crimes in the nation. These crimes can rob you of your money, time, and peace of mind.\u23ceTypically, these crimes happen on the Internet"
+      },
+      {
+        "trigger": " time",
+        "score": 14.38,
+        "context": " they of the same nature as Muhammad\u2019s religious pronouncements, or are they time-sensitive, culturally-situated, and thus not representative of a set"
+      },
+      {
+        "trigger": " time",
+        "score": 14.88,
+        "context": " opportunity to learn about data or use it in their studies. A key barrier was time. As anyone experienced in collecting datasets knows, compiling good data takes months,"
+      },
+      {
+        "trigger": " time",
+        "score": 13.88,
+        "context": " of new tools for people to interact. Because of the benefits to students it is time to collective rethinking the age of technology for the classroom.\u23ceAccording to"
+      },
+      {
+        "trigger": " time",
+        "score": 13.75,
+        "context": " mission to look for life on Mars? It is a question I have been asked time and again since Christmas Day 2003, when my team lost"
+      }
+    ],
+    "promotes": [
+      "fjspx",
+      " JOptionPane",
+      " manne",
+      "Miejs",
+      "ViewById"
+    ],
+    "demotes": [
+      " pinulongan",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "binant",
+      "InjectAttribute",
+      "SourceChecksum"
+    ]
+  },
+  {
+    "id": "4_8051_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.37031400203704834,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 19.62,
+        "context": "uring Modern Web Applications, one gets the feeling the writing secure web code is akin to Dante's experience.\u23ceIn this incredibly good and highly technical book,"
+      },
+      {
+        "trigger": " like",
+        "score": 19.0,
+        "context": " even invisible. Photographers and photographs, in contrast to painters and paintings, were more like manufacturers and mass-produced goods.\u23cePhotography legitimized and sanctioned the virtues"
+      },
+      {
+        "trigger": " like",
+        "score": 19.12,
+        "context": "chips are made, called fabs, can cost billions of dollars. They\u2019re like rocket launch sites or nuclear power plants: Everyone knows where they are and how"
+      },
+      {
+        "trigger": " to",
+        "score": 19.5,
+        "context": " liquid form that is enveloped by a layer of water repellent polymer that can be compared to a plastic.\u23ceThe polymer captures and holds in the drug while it is"
+      },
+      {
+        "trigger": " like",
+        "score": 19.0,
+        "context": "oriented, informal \"practice teaching\" activities--that get students involved in situations much like those they will encounter on-the-job. The authors offer thorough coverage"
+      }
+    ],
+    "promotes": [
+      " LIKE",
+      "like",
+      " Like",
+      "Like",
+      " like"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      "SequentialGroup",
+      " resourceCulture",
+      " fubject",
+      " poffe"
+    ]
+  },
+  {
+    "id": "4_9594_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3506290018558502,
+    "top_activations": [
+      {
+        "trigger": " I",
+        "score": 11.44,
+        "context": "- Do not install the latest Blender release (2.45 at the time I write this). Use 2.43 instead, as the Collada"
+      },
+      {
+        "trigger": " is",
+        "score": 14.44,
+        "context": " campaign group the Environmental Investigation Agency (EIA) today warned time is fast running out to secure a future for tigers and other big cats unless the Chinese government takes prompt"
+      },
+      {
+        "trigger": " would",
+        "score": 11.5,
+        "context": " for farming nor grazing, but Abraham insisted and assured him that the time would come when there would be a tomb there with a shrine, at which seventy thousand people"
+      },
+      {
+        "trigger": " was",
+        "score": 11.88,
+        "context": " earliest recollection of my racial identity was at the age of eight. The time was the mid-1960s. I clearly remember my parents and other"
+      },
+      {
+        "trigger": " time",
+        "score": 8.56,
+        "context": "72 hours to develop. You must return to your health care provider within that time to have the area checked. This test will determine whether you have had a"
+      }
+    ],
+    "promotes": [
+      "StoryboardSegue",
+      " InputDecoration",
+      " IBOutlet",
+      " CreateTagHelper",
+      "#+#"
+    ],
+    "demotes": [
+      " time",
+      "time",
+      " Time",
+      "Time",
+      " times"
+    ]
+  },
+  {
+    "id": "18_3526_4",
+    "layer": 18,
+    "ctx_idx": 4,
+    "influence_score": 0.39398685097694397,
+    "top_activations": [
+      {
+        "trigger": " intellectually",
+        "score": 26.75,
+        "context": " years I was almost a family member, the much-younger brother prone to intellectually stray. . . . I always looked forward to being with him and speaking"
+      },
+      {
+        "trigger": " Words",
+        "score": 28.25,
+        "context": " used to hurt others and the effect that hurtful words has on everyone.\u23ceCan Words Hurt Us?\u23ceCircle time or meeting time\u23ce- Two hand puppets\u23ce"
+      },
+      {
+        "trigger": " is",
+        "score": 25.0,
+        "context": " start looking at your life as an interesting story.\u23ceImagine that your memory bank is the shore of a great ocean of stories. Cast out a line or phrase"
+      },
+      {
+        "trigger": " intellectual",
+        "score": 26.5,
+        "context": " the sum of the tax bill paid.\u23ceA great example of this sort of intellectual confusion in action is the recent sturm und drang surrounding the tax credit"
+      },
+      {
+        "trigger": " '",
+        "score": 22.5,
+        "context": " a kavanah\u23ce, or meditative exercise, designed to \"help the reader 'live in the word.'\" This book is among Kushner's best and"
+      }
+    ],
+    "promotes": [
+      "MetaType",
+      "SharedDtor",
+      " swam",
+      " Signalez",
+      "########."
+    ],
+    "demotes": [
+      " problemer",
+      "\u05d1\u05d0\u05e0\u05d2\u05dc\u05d9\u05ea",
+      " C\u00e6sar",
+      " \u012fva",
+      "\u0443\u0437\u0430"
+    ]
+  },
+  {
+    "id": "14_4290_4",
+    "layer": 14,
+    "ctx_idx": 4,
+    "influence_score": 0.3954434096813202,
+    "top_activations": [
+      {
+        "trigger": " as",
+        "score": 36.25,
+        "context": " of this land are well made, rather tall than short. They are swarthy as leopards (see below), of good manners and gestures, for the greater"
+      },
+      {
+        "trigger": " as",
+        "score": 56.25,
+        "context": ", included a well-known tale of a young girl of great beauty, white as snow and red as blood, the object of intense jealousy by her wicked mother"
+      },
+      {
+        "trigger": " of",
+        "score": 39.5,
+        "context": " we were treated very kindly by them, they gave us round root near the size of a hens egg roasted which they call Wap-to to eat.\u23ceN"
+      },
+      {
+        "trigger": " as",
+        "score": 43.5,
+        "context": " flies, will bespatter him all over, and make you both as speckled as a dirty wall, and as black as the devil.\"\u23cestates, as"
+      },
+      {
+        "trigger": " as",
+        "score": 49.0,
+        "context": " the two-stringed Moor\u2019s gittern,\u23ce- High-pitched as to its range, as to its tone both harsh and bold;\u23ce-"
+      }
+    ],
+    "promotes": [
+      "\u0438\u0441\u043b\u0435\u043d\u043d\u043e\u0441\u0442\u044c",
+      "runApp",
+      "\u00edncia",
+      "ViewImports",
+      "LayoutPanel"
+    ],
+    "demotes": [
+      "PYX",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "loride",
+      " protoimpl",
+      "vir"
+    ]
+  },
+  {
+    "id": "18_8638_4",
+    "layer": 18,
+    "ctx_idx": 4,
+    "influence_score": 0.3160020411014557,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 52.0,
+        "context": " without reference to the Spanish-American War and what came out of it, and a very good companion volume to Professor Mowry\u2019s book is Frank Freidel"
+      },
+      {
+        "trigger": " a",
+        "score": 49.5,
+        "context": " your item list short.\u23ce- Make your search area very small.\u23ce5-8 years old:\u23ceChildren in this age group will need a lot of"
+      },
+      {
+        "trigger": " a",
+        "score": 47.0,
+        "context": " because they were normally spread out along reefs in deep offshore waters. She said only a few were seen at any time and that normal fish counting techniques, which count"
+      },
+      {
+        "trigger": " a",
+        "score": 50.5,
+        "context": " long group discussion about what makes a great trainer.\u23ce- Mr Haigh said a couple had knocked on his door on Sunday evening asking him if he had lost"
+      },
+      {
+        "trigger": " a",
+        "score": 47.5,
+        "context": " magnitude of the disaster, some benefit came from the fact that PG&E got a unique, first-hand view of their disaster recovery plan in action.\u23ce"
+      }
+    ],
+    "promotes": [
+      "esthetics",
+      "theros",
+      " handful",
+      " couple",
+      " few"
+    ],
+    "demotes": [
+      " a",
+      " eines",
+      " bont\u00e9",
+      "quilo",
+      "szta\u0142"
+    ]
+  },
+  {
+    "id": "16_6022_4",
+    "layer": 16,
+    "ctx_idx": 4,
+    "influence_score": 0.3114616274833679,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 37.75,
+        "context": " to the founding fathers of the United States. Seriously, they were all over him like white on rice. Aristotle talked about three types of government: democracy, olig"
+      },
+      {
+        "trigger": " like",
+        "score": 40.0,
+        "context": "\u23ceAnd watch her feet how they can dance\u23ce2. Her trembling lakes, like foamless seas,\u23ceHer bird delighting citon trees\u23ceIn every"
+      },
+      {
+        "trigger": " like",
+        "score": 41.0,
+        "context": "in, locked-in city.\u23ce- You are deserted now, Warsaw, like a gloomy wasteland.\u23ceYou are a cemetery now, more desolate than a"
+      },
+      {
+        "trigger": " like",
+        "score": 47.0,
+        "context": "-in, walled-in city,\u23ceDwindled, expired, melted like snow before my eyes.\u23ce- Warsaw, packed with Jews like a synagogue"
+      },
+      {
+        "trigger": " like",
+        "score": 50.0,
+        "context": "\u23ceFalls the Shadow.\u23ce- T. S. Eliot\u23ceCharacter is like a tree and reputation like a shadow.\u23ceThe shadow is what we think of"
+      }
+    ],
+    "promotes": [
+      " Pharisees",
+      "ELTS",
+      "hoeddwyd",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      "Autoritn\u00ed"
+    ],
+    "demotes": [
+      "='';\r",
+      "addition",
+      " addition",
+      " EINVAL",
+      " Addition"
+    ]
+  },
+  {
+    "id": "17_7913_4",
+    "layer": 17,
+    "ctx_idx": 4,
+    "influence_score": 0.3067348301410675,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 39.0,
+        "context": ", occupational, and locale-based diversity of Georgia folklife can be compared to a multipatterned patchwork quilt, with fishing and Geechee traditions on the"
+      },
+      {
+        "trigger": " a",
+        "score": 38.5,
+        "context": "<bos>|Nutrition and the Brain|\u23ceYour brain is like a car. A car needs gasoline, oil, brake fluid and\u23ceother materials to run properly."
+      },
+      {
+        "trigger": " enormous",
+        "score": 42.0,
+        "context": " that all our predictions about the world\u2019s climate may be wrong.\u23ceLike enormous clouds of volcanic ash, some forms of air pollution can significantly reduce the amount"
+      },
+      {
+        "trigger": " a",
+        "score": 45.0,
+        "context": "Fascia is a specialized system\u23ceof the body that has an appearance similar to a spider's web or a sweater. You can also look at it as"
+      },
+      {
+        "trigger": " of",
+        "score": 38.5,
+        "context": "ennan was based.\u23ceFor 7 to 10 minutes before the towers fell, the photographs show exterior columns bowing inward, almost like pieces of cooked spaghetti"
+      }
+    ],
+    "promotes": [
+      "cast",
+      "oa\u030dt",
+      " GoogleFonts",
+      "MessageOf",
+      "ValueGenerated"
+    ],
+    "demotes": [
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      " nakalista",
+      "ineno",
+      "\u043a\u043b\u043e\u043f\u0435",
+      " Audiodateien"
+    ]
+  },
+  {
+    "id": "19_9705_4",
+    "layer": 19,
+    "ctx_idx": 4,
+    "influence_score": 0.38037291169166565,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 35.5,
+        "context": " in older women, the researchers have found.\u23ce\"In a sense it is like aging, but it is different because it is an all-or-nothing"
+      },
+      {
+        "trigger": " a",
+        "score": 32.25,
+        "context": " a still and blazing sky, when the earth suddenly heaved and shook, like a great monster waking from slumber, and in a single minute 10,"
+      },
+      {
+        "trigger": " to",
+        "score": 39.5,
+        "context": " University, one of the paper\u2019s co-authors, compared the planet to a machine with 8.7 million parts, all of which perform a valuable"
+      },
+      {
+        "trigger": " like",
+        "score": 34.25,
+        "context": ". Dark energy results as the universe tries to pull neutrinos apart, yielding a tension like that in stretched rubber band, said Ann Nelson, a UW physics professor."
+      },
+      {
+        "trigger": " Like",
+        "score": 33.0,
+        "context": " fat of the land, forging the tools for the job from whatever it finds. Like that kid in the Hatchet books, if he was a computer virus and"
+      }
+    ],
+    "promotes": [
+      "Jeografia",
+      "\u0634\u0647\u0627\u062f",
+      "\u0414\u0435\u043c\u043e\u0433\u0440\u0430\u0444\u0456\u044f",
+      "InstrumentedTest",
+      "Personensuche"
+    ],
+    "demotes": [
+      " og\u00f3le",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u0131\u015ft\u0131r",
+      "\u0131\u015ft\u0131",
+      "SupportActionBar"
+    ]
+  },
+  {
+    "id": "15_11270_3",
+    "layer": 15,
+    "ctx_idx": 3,
+    "influence_score": 0.3350454568862915,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 67.0,
+        "context": "<bos>|Print this story|\u23ceA people without knowledge of its history is like a tree without roots. \u2014 Marcus Garvey\u23ceAs we approach the start of Black"
+      },
+      {
+        "trigger": " a",
+        "score": 59.25,
+        "context": " war\u2014that will not go away.\u23ceIn other words, religion lies like a force underneath the major wars we have going on today, and those brewing."
+      },
+      {
+        "trigger": " like",
+        "score": 63.25,
+        "context": "8 by the World Wide Web Consortium (usually called the W3C), the standard has spread like wildfire through science and into industries ranging from manufacturing to medicine."
+      },
+      {
+        "trigger": " cotton",
+        "score": 58.75,
+        "context": "v. i. - To take a liking to; to stick to one as cotton; -- used with to. 2\u23ceThe word \"cotton\" uses"
+      },
+      {
+        "trigger": " like",
+        "score": 53.25,
+        "context": " election. But in contrast to turnout in November elections, turnout in primaries is sinking like a stone.\u23cePlunging Turnout in Primaries: In "
+      }
+    ],
+    "promotes": [
+      "#+#",
+      " RequestMethod",
+      "InputLabel",
+      "yyj",
+      "\u00fcyada"
+    ],
+    "demotes": [
+      "AddHtmlAttribute",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u03bc\u03c9\u03c2",
+      "ecution",
+      " \u0645\u062d\u0641\u0648\u0638\u0629"
+    ]
+  },
+  {
+    "id": "19_14376_4",
+    "layer": 19,
+    "ctx_idx": 4,
+    "influence_score": 0.396874338388443,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 68.0,
+        "context": " language from the scratch. It\u2019s time-consuming and why should you invent the wheel a second time? I think this is normal. If you spend some"
+      },
+      {
+        "trigger": " the",
+        "score": 46.5,
+        "context": " and directives. Nor would it be fair or appropriate to expect each individual to reinvent the wheel for himself in having to discover through trial and error spiritual principles long known"
+      },
+      {
+        "trigger": "heet",
+        "score": 39.0,
+        "context": " supercharged CSS. XSL-FO is the other half of the XML stylesheet equation, with XSLT being the original half that you learned about in X"
+      },
+      {
+        "trigger": " the",
+        "score": 60.5,
+        "context": " sizeable collection of both generic and application-specific numerical and scientific code, written using Python, NumPy and SciPy. Don\u2019t reinvent the wheel, there"
+      },
+      {
+        "trigger": " the",
+        "score": 68.0,
+        "context": " production to estimate distance, etc. However it does not make sense to re-invent the wheel: for more complicated games there are open source physics engines, and"
+      }
+    ],
+    "promotes": [
+      " water",
+      " boat",
+      " proverbial",
+      " cake",
+      " fish"
+    ],
+    "demotes": [
+      "=\"@+",
+      "msgTypes",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "SourceChecksum",
+      "flats"
+    ]
+  },
+  {
+    "id": "15_11270_4",
+    "layer": 15,
+    "ctx_idx": 4,
+    "influence_score": 0.23510503768920898,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 67.0,
+        "context": "<bos>|Print this story|\u23ceA people without knowledge of its history is like a tree without roots. \u2014 Marcus Garvey\u23ceAs we approach the start of Black"
+      },
+      {
+        "trigger": " a",
+        "score": 59.25,
+        "context": " war\u2014that will not go away.\u23ceIn other words, religion lies like a force underneath the major wars we have going on today, and those brewing."
+      },
+      {
+        "trigger": " like",
+        "score": 63.25,
+        "context": "8 by the World Wide Web Consortium (usually called the W3C), the standard has spread like wildfire through science and into industries ranging from manufacturing to medicine."
+      },
+      {
+        "trigger": " cotton",
+        "score": 58.75,
+        "context": "v. i. - To take a liking to; to stick to one as cotton; -- used with to. 2\u23ceThe word \"cotton\" uses"
+      },
+      {
+        "trigger": " like",
+        "score": 53.25,
+        "context": " election. But in contrast to turnout in November elections, turnout in primaries is sinking like a stone.\u23cePlunging Turnout in Primaries: In "
+      }
+    ],
+    "promotes": [
+      "#+#",
+      " RequestMethod",
+      "InputLabel",
+      "yyj",
+      "\u00fcyada"
+    ],
+    "demotes": [
+      "AddHtmlAttribute",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u03bc\u03c9\u03c2",
+      "ecution",
+      " \u0645\u062d\u0641\u0648\u0638\u0629"
+    ]
+  },
+  {
+    "id": "20_2409_4",
+    "layer": 20,
+    "ctx_idx": 4,
+    "influence_score": 0.32473471760749817,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 53.25,
+        "context": " by oceans. Big, powerful, wave-filled oceans. Harnessing the energy of waves has recently moved out of science-fiction and into reality as Oregon gets"
+      },
+      {
+        "trigger": " across",
+        "score": 49.75,
+        "context": " exceptions, were largely dependent on Europeans \u2014 shipping botanical specimens, for example, across the Atlantic for study and classification, according to Marc Rothenberg, the agency"
+      },
+      {
+        "trigger": " azure",
+        "score": 48.5,
+        "context": " power boats you can launch at Lake Tahoe, due to protections instituted to keep the azure-blue waters of this huge alpine lake pristine. Similar restrictions can also be"
+      },
+      {
+        "trigger": " or",
+        "score": 48.25,
+        "context": "40mm, up to 200mm\u23ceGenerally in still or slow flowing streams at low elevations close to the sea. Usually found near cover such"
+      },
+      {
+        "trigger": "running",
+        "score": 53.25,
+        "context": " bridge presented enormous engineering difficulties, the contractors having to contend not only with a deep and fast-running stream nearly two miles in width, but also from vast flo"
+      }
+    ],
+    "promotes": [
+      " Waves",
+      "ocean",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " ocean",
+      " waves"
+    ],
+    "demotes": [
+      " beside",
+      " Beside",
+      "Alongside",
+      "glTexCoord",
+      "SharedCtor"
+    ]
+  },
+  {
+    "id": "19_3806_4",
+    "layer": 19,
+    "ctx_idx": 4,
+    "influence_score": 0.38352417945861816,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 39.5,
+        "context": " have a protective coating called Wharton's jelly, and the cord is coiled like a spring so that the baby is free to move around. The coiling pattern"
+      },
+      {
+        "trigger": " a",
+        "score": 40.5,
+        "context": " telescope has been likened variously to the Taj Mahal, a collapsed balloon, or an enormous Spanish onion!\u23ceThe dome\u2019s unique shape was actually an innovative solution"
+      },
+      {
+        "trigger": " resemble",
+        "score": 41.0,
+        "context": " bell shaped appearance. Some Dumbos are short, squat and yellow, while others resemble a jellyfish with one, big, brown, walking shoe. Some have suckers"
+      },
+      {
+        "trigger": "ling",
+        "score": 38.0,
+        "context": " of the deep is a finger-size shrimp with\u23cean oversize clawresembling a boxing glovethat it uses to\u23cestun its prey by snapping the claw"
+      },
+      {
+        "trigger": " resembled",
+        "score": 44.0,
+        "context": " treated me to a meal of bitter melon. Starting with light-green fruit that resembled warty cucumbers, she sliced the gourds thinly, discarding the seeds before"
+      }
+    ],
+    "promotes": [
+      "elemField",
+      "WebElementEntity",
+      "liflower",
+      " viewDidLoad",
+      "hyrchwyd"
+    ],
+    "demotes": [
+      " moeite",
+      "ografija",
+      "Referencie",
+      " \u00e9preuve",
+      " huiles"
+    ]
+  },
+  {
+    "id": "21_14673_4",
+    "layer": 21,
+    "ctx_idx": 4,
+    "influence_score": 0.30132368206977844,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 68.5,
+        "context": " playwright Oscar Wilde.\u23ceIf that\u2019s the case, I\u2019ve had a lot of \u201cexperience\u201d when I\u2019ve brought my students to the computer"
+      },
+      {
+        "trigger": " a",
+        "score": 63.5,
+        "context": " tool goes beyond traditional economic risk analysis, employing a multi-criteria approach that integrates a set of wide-ranging factors into a single index. Its flexible ranking system"
+      },
+      {
+        "trigger": " a",
+        "score": 63.5,
+        "context": " / source, or built into your own library. Which makes learning the smaller language a slightly\u23cebigger task - I say \"slightly\" because Pareto's Principle"
+      },
+      {
+        "trigger": " a",
+        "score": 64.0,
+        "context": "sel), but it is applied to the nation as a whole. Such information can be instructive for a variety of reasons. First, measurements of this type provide a"
+      },
+      {
+        "trigger": " a",
+        "score": 63.5,
+        "context": " fuel economy between 2005 and 2008 showed that a gap exists in achieving the roadmap\u2019s vision, cutting the average fuel economy"
+      }
+    ],
+    "promotes": [
+      "fraid",
+      " couple",
+      "taxia",
+      " lot",
+      " few"
+    ],
+    "demotes": [
+      " \u00e2ge",
+      " affrontare",
+      " amiti\u00e9",
+      " altri",
+      " abbandon"
+    ]
+  },
+  {
+    "id": "22_2059_4",
+    "layer": 22,
+    "ctx_idx": 4,
+    "influence_score": 0.36682480573654175,
+    "top_activations": [
+      {
+        "trigger": " its",
+        "score": 28.5,
+        "context": ", tired of its look of astonish-\u23cement, the blue ice of its gaze, its arrivals and departures, of\u23cethe way it gathers lovers and"
+      },
+      {
+        "trigger": " my",
+        "score": 25.25,
+        "context": " of breaths we take, but by the moments that take our breath away\u23ceBehold my friends as you pass by /As you are now, so once was I"
+      },
+      {
+        "trigger": " the",
+        "score": 24.0,
+        "context": "\u23ceThey bind the people's nail-pierced hands,\u23ceThey hide the people's nail-pierced feet;\u23ceAnd what man or what"
+      },
+      {
+        "trigger": "our",
+        "score": 27.0,
+        "context": " as we look in,\u23ceour eyes both extended into the stars\u23ceeven as our words get scribbled out,\u23cenear and far, letter by letter,"
+      },
+      {
+        "trigger": "s",
+        "score": 25.75,
+        "context": " Crocodile!\u23ceWe call thee fruitful, and that very while\u23ceA desert, fills our seeing's inward span.\u23ce- John Keats, Sonnet,"
+      }
+    ],
+    "promotes": [
+      " emptiness",
+      "})*/",
+      "};*/",
+      "});*/",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " verdaderas",
+      " st\u00f6d",
+      " illustrazione",
+      " culturelles",
+      " faciles"
+    ]
+  },
+  {
+    "id": "21_15079_4",
+    "layer": 21,
+    "ctx_idx": 4,
+    "influence_score": 0.36857083439826965,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 38.75,
+        "context": "<bos>People are often difficult to sleep or less sleep, have a high risk of various diseases. Not only fatigue the next day, lack of sleep can lead to"
+      },
+      {
+        "trigger": " a",
+        "score": 48.25,
+        "context": "0g/m2 of its own resistance to corrosion than hot dip galvanized pipe a lot of difference. Regular galvanized pipe manufacturers, in order to ensure the quality"
+      },
+      {
+        "trigger": " a",
+        "score": 39.5,
+        "context": " and aquosity, due to little baby has low disease resistance and poor adaptability, a temporary absentminded care might cause disease. Therefore, in order to maintain the"
+      },
+      {
+        "trigger": " a",
+        "score": 39.0,
+        "context": " the health of little baby in sumer, parents need to take preventive measures and do a good job on caring baby's clothing, food, housing and so on"
+      },
+      {
+        "trigger": " a",
+        "score": 39.5,
+        "context": " an elegant taste. Huangzhunxian lived here in his later years and produced a large quantity of verses. Besides, he in person edited poetry-a house"
+      }
+    ],
+    "promotes": [
+      " vector",
+      "match",
+      "trinity",
+      " match",
+      " pair"
+    ],
+    "demotes": [
+      "jooq",
+      "\u062a\u0642\u0627\u0648\u0649",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      "jsonwebtoken",
+      "mapStateToProps"
+    ]
+  },
+  {
+    "id": "20_16212_4",
+    "layer": 20,
+    "ctx_idx": 4,
+    "influence_score": 0.3040297329425812,
+    "top_activations": [
+      {
+        "trigger": " years",
+        "score": 95.0,
+        "context": " cultivation which is, historically, a transitional stage towards more permanent agriculture. As the years passed, the peoples living in river valleys advanced rapidly and brought about a number"
+      },
+      {
+        "trigger": " have",
+        "score": 97.5,
+        "context": "<bos>In the two years that have passed since the first edition of \"The American Democracy\" was published, the US has witnessed a large amount of conflict, both"
+      },
+      {
+        "trigger": " have",
+        "score": 100.0,
+        "context": " to increase geologists\u2019 capacity to measure seismic activity.\u23ceJust a few short weeks have passed since a magnitude 4.3 earthquake centered near Whitesburg struck southeastern"
+      },
+      {
+        "trigger": " Weeks",
+        "score": 93.5,
+        "context": " Congress to ratify the treaty, yet throughout December, scarcely that number was present. Weeks passed, the treaty sat, and Congress remained unable to act upon it."
+      },
+      {
+        "trigger": " would",
+        "score": 123.0,
+        "context": " and at some point the walls were covered with protective metal panels. Twenty two years would pass before the decorative painting was rediscovered when the metal panels were removed during"
+      }
+    ],
+    "promotes": [
+      " passed",
+      " passing",
+      " passage",
+      " passes",
+      " pass"
+    ],
+    "demotes": [
+      "InitVars",
+      "IsContent",
+      "ungszeit",
+      "bootstrapcdn",
+      "}());"
+    ]
+  },
+  {
+    "id": "24_13277_4",
+    "layer": 24,
+    "ctx_idx": 4,
+    "influence_score": 0.2702222764492035,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "22_5204_4",
+    "layer": 22,
+    "ctx_idx": 4,
+    "influence_score": 0.318224161863327,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 43.0,
+        "context": ", the vampire squid is a soft-bodied, passive creature, about the size, shape, and color of a football. A \"living fossil,\" it in"
+      },
+      {
+        "trigger": " a",
+        "score": 43.75,
+        "context": " feet (5 meters) across, but they can only fit prey the size of a human fist down their narrow esophagus.\u23ceMost commonly, humpbacks are solitary"
+      },
+      {
+        "trigger": " a",
+        "score": 38.0,
+        "context": " Mars\u23ceCAPE CANAVERAL, Fla. (AP) \u2014 As big as a car and as well-equipped as a laboratory, NASA's newest Mars"
+      },
+      {
+        "trigger": " a",
+        "score": 39.25,
+        "context": " boat that size he's just going to be rolled around and around like he's inside a giant washing machine,\" Knox-Johnston said.\u23ce\"He"
+      },
+      {
+        "trigger": " a",
+        "score": 37.5,
+        "context": " when hidden in the reeds, and their habitat of sinking slowly under the surface like a submarine retreating from periscope depth.|\u23ce|Although there are five genera in"
+      }
+    ],
+    "promotes": [
+      " Etr",
+      " Efq",
+      "UALA",
+      " hou\u017fe",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " charit\u00e9",
+      " belas",
+      " newBuilder",
+      "zn\u00e1",
+      " actes"
+    ]
+  },
+  {
+    "id": "21_2529_4",
+    "layer": 21,
+    "ctx_idx": 4,
+    "influence_score": 0.3330115079879761,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 38.75,
+        "context": " the skills crucial to laparoscopic surgery might be better taught with something as simple as a clementine.\u23ceThe idea came to Andreatta after a colleague"
+      },
+      {
+        "trigger": " a",
+        "score": 37.5,
+        "context": "\u23ceNext day he comes back for the engineless car, folds it up like a collapsible baby carriage, loads it on the most convenient high speed bus or aero"
+      },
+      {
+        "trigger": " a",
+        "score": 36.5,
+        "context": ", Calif., just unveiled the design for a small robot spacecraft about the size of a coffee table that it says could move about the moon's surface powered only"
+      },
+      {
+        "trigger": " a",
+        "score": 33.75,
+        "context": " inches tall and over 40 inches wide. This is about the size of a kitchen table that can seat four to five people. She painted it in "
+      },
+      {
+        "trigger": " a",
+        "score": 38.5,
+        "context": ", but scientists are still unsure where it will hit.\u23ceParts as large as a refrigerator door and weighing up to 400 kilograms could hit the Earth"
+      }
+    ],
+    "promotes": [
+      " PIECE",
+      " bag",
+      " stack",
+      " pile",
+      " piece"
+    ],
+    "demotes": [
+      " Audiodateien",
+      "\u062d\u064a\u0627\u062a\u0647\u0627",
+      " &___",
+      " onCreateView",
+      " int\u00e9rieure"
+    ]
+  },
+  {
+    "id": "20_4852_4",
+    "layer": 20,
+    "ctx_idx": 4,
+    "influence_score": 0.3754342794418335,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 47.5,
+        "context": " the cell. That means it is particularly important in parts of the body that use a lot of energy, like your heart, vital organs and muscles.**\u23ceWhy"
+      },
+      {
+        "trigger": " a",
+        "score": 51.0,
+        "context": " dedicated research and development program, we can bring the economics to a suitable place within a 10-year time frame,\u201d she says. \u201cWe chose to"
+      },
+      {
+        "trigger": " a",
+        "score": 49.0,
+        "context": " United States.\u23ceHealth disparities among different racial and ethnic groups have been noted for a number of conditions, including kidney disease. African-Americans in the United States"
+      },
+      {
+        "trigger": " a",
+        "score": 47.5,
+        "context": " never take another course in the sciences.\u23ceThis workshop will bring together educators from a wide variety of institutional settings and backgrounds with the common goal of sharing ideas about"
+      },
+      {
+        "trigger": " a",
+        "score": 49.0,
+        "context": "\u2014which is good, because The Ancient Maya World has only been on view for a couple of weeks so far. But, in the spirit of full disclosure,"
+      }
+    ],
+    "promotes": [
+      "__\":\r",
+      "__':\r",
+      "oa\u030dt",
+      " few",
+      " lot"
+    ],
+    "demotes": [
+      " a",
+      " \u00eele",
+      " enfance",
+      "a",
+      " amiti\u00e9"
+    ]
+  },
+  {
+    "id": "21_10087_4",
+    "layer": 21,
+    "ctx_idx": 4,
+    "influence_score": 0.37375256419181824,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 46.25,
+        "context": " the unusually large number of shipwrecks Endor experienced; it has been compared to a \"desert island\" in space.\u23ceTerrain and ClimateEdit\u23ceEndor'"
+      },
+      {
+        "trigger": " a",
+        "score": 39.5,
+        "context": " golf developments in the Murcia\u23ceregion of Spain says: \"The Sun is like a thermonuclear reactor that emits\u23ceenergy in the form of light and heat"
+      },
+      {
+        "trigger": " a",
+        "score": 38.5,
+        "context": ", once noted: \u201cIt\u2019s time to admit that public education operates like a planned economy, a bureaucratic system in which everybody\u2019s role is spelled out"
+      },
+      {
+        "trigger": " like",
+        "score": 49.0,
+        "context": " new species can evolve, says David Steadman.\u23ce\"Some islands are like a war zone,\" says Steadman, curator of birds at the University of Florida"
+      },
+      {
+        "trigger": " a",
+        "score": 36.25,
+        "context": " by releasing a pheromone that attracts hundreds of other beetles, which hit the tree like a hail of bullets. For several hours, all-out biological and chemical"
+      }
+    ],
+    "promotes": [
+      "Personensuche",
+      "afficheront",
+      "migrationBuilder",
+      "protoimpl",
+      " autorytatywna"
+    ],
+    "demotes": [
+      " prostu",
+      " alimentaires",
+      " lis\u00e4ksi",
+      " allm\u00e4n",
+      " ]\r"
+    ]
+  },
+  {
+    "id": "21_12069_4",
+    "layer": 21,
+    "ctx_idx": 4,
+    "influence_score": 0.320425420999527,
+    "top_activations": [
+      {
+        "trigger": " The",
+        "score": 31.25,
+        "context": "\u23ceThe cloud is the daughter of earth and water. The sky nurses it. The cloud has no death or decay. For after it has melted into rainwater,"
+      },
+      {
+        "trigger": " the",
+        "score": 29.75,
+        "context": " of life corresponding to late autumn, when almost no leaves remain on the trees and the birds have flown south. The poet\u2019s calling attention to his old age"
+      },
+      {
+        "trigger": " a",
+        "score": 38.0,
+        "context": "\u23ceA spider's web, tense for the dew's touch.\u23ceA pail lifted, still and brimming - mirror\u23ceTo tempt a first star to"
+      },
+      {
+        "trigger": " the",
+        "score": 31.0,
+        "context": " that travel fast, the opening door, The murdered brother rising through the floor, The ghost's white fingers on thy shoulders laid, And then the lonely duel"
+      },
+      {
+        "trigger": " like",
+        "score": 28.25,
+        "context": "<bos>The cove yawns like a Cheshire cat\u2019s ear-to-ear grin, inviting local inhabitants and tourists to stroll along a mile-long sandy beach"
+      }
+    ],
+    "promotes": [
+      " waves",
+      " lakes",
+      "SequentialGroup",
+      "NameInMap",
+      "queryInterface"
+    ],
+    "demotes": [
+      " sabido",
+      " positivos",
+      " d\u00e9tru",
+      "lewati",
+      "setVerticalGroup"
+    ]
+  },
+  {
+    "id": "25_11867_4",
+    "layer": 25,
+    "ctx_idx": 4,
+    "influence_score": 0.2985793948173523,
+    "top_activations": [
+      {
+        "trigger": " identify",
+        "score": 176.0,
+        "context": " discrimination).\u23ceConducting research to provide evidence-based insights and recommendations, we identify small to large scale successful interventions, while examining the impact of closing gender gaps"
+      },
+      {
+        "trigger": ",",
+        "score": 186.0,
+        "context": " affected include family relationships, roles of women and men, communication skills, physical hygiene, role of religion, importance of education and careers and clothing/manner of dress"
+      },
+      {
+        "trigger": "s",
+        "score": 165.0,
+        "context": " ponds in north Wellfleet to its mouth at Wellfleet Harbor. The river's floodplain encompasses more than 1,100 acres of degraded wetlands occupying"
+      },
+      {
+        "trigger": " a",
+        "score": 169.0,
+        "context": ", as I was driving along the highway, I looked to my left and saw a bird flying. Can you tell me what kind of a bird it was?"
+      },
+      {
+        "trigger": " of",
+        "score": 163.0,
+        "context": " (a small piece of protein), linked to a light-responsive dye, capable of switching 'on' death pathways in cancer cells. The peptide remains inactive until"
+      }
+    ],
+    "promotes": [
+      " r\u00e9guli",
+      " sup\u00e9rieurs",
+      " avoient",
+      " varandra",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      " \u0f0b\u0f0b",
+      " ECR",
+      " PDC",
+      " photolibrary",
+      " [?]"
+    ]
+  },
+  {
+    "id": "24_13792_4",
+    "layer": 24,
+    "ctx_idx": 4,
+    "influence_score": 0.29288697242736816,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 48.25,
+        "context": "arin is given to thin the blood which can lead to bleeding problems.\u23ceWhenever a tube is inserted in a blood vessel, there is an increased risk of infection"
+      },
+      {
+        "trigger": " a",
+        "score": 48.5,
+        "context": " the gene for HMGA-1. So this is the first time we have a genetic mechanism for insulin resistance in type 2 Diabetes.\u23ceNarrator: Study"
+      },
+      {
+        "trigger": " a",
+        "score": 50.0,
+        "context": " at the vast array of colours and sea life that live there. One would expect a place as diverse and important as this to be protected, however the Great Barrier"
+      },
+      {
+        "trigger": " a",
+        "score": 50.75,
+        "context": " Biology at Vanderbilt University in the US, said: \"If something as simple as a beta blocker could prevent cancer metastasis to bone, this would impact the treatment of"
+      },
+      {
+        "trigger": " a",
+        "score": 48.5,
+        "context": " the reflectivity of a perfect mirror only when you\u2019re looking straight across it at a very shallow angle. As the steepness of the angle of reflection increases,"
+      }
+    ],
+    "promotes": [
+      " set",
+      " bit",
+      " particular",
+      " group",
+      " lot"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " propOrder",
+      " CreateTagHelper",
+      " Exacts"
+    ]
+  },
+  {
+    "id": "24_10662_4",
+    "layer": 24,
+    "ctx_idx": 4,
+    "influence_score": 0.32262155413627625,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ]
+  },
+  {
+    "id": "25_15287_4",
+    "layer": 25,
+    "ctx_idx": 4,
+    "influence_score": 0.38956621289253235,
+    "top_activations": [
+      {
+        "trigger": " oversized",
+        "score": 71.0,
+        "context": " Jet Propulsion Laboratory in Pasadena, Calif., shooting out of a hilly mesa like an oversized erector set\u23ceThe first Cygnus Spacecraft to visit the International Space"
+      },
+      {
+        "trigger": " a",
+        "score": 55.75,
+        "context": "<bos>Like a sirens song, the Morro Bay sandspit regularly lures shallow-water sailors across the Back Bay. This alluring and dynamic peninsula of sand that separates Morro"
+      },
+      {
+        "trigger": " a",
+        "score": 85.0,
+        "context": " \"off his conk. His eyes rolled, his limbs began to spin like a windmill in a hurricane \u2013 his attention, riveted to the rhythm, transformed him"
+      },
+      {
+        "trigger": " a",
+        "score": 57.75,
+        "context": " areas of active mountain-building the middle crust can get hot and weak, like a soft jam/jelly filling in a sandwich. These squishy rocks are hidden from"
+      },
+      {
+        "trigger": " a",
+        "score": 57.75,
+        "context": " at up to 99.2 decibels, the equivalent of listening to a loud orchestra play while sitting in the front row.\u23ceThe insect makes the"
+      }
+    ],
+    "promotes": [
+      "\u7d9c\u5408\u5831\u5c0e",
+      " \u043a\u043e\u043f",
+      "Detached",
+      "campal",
+      "<?>>"
+    ],
+    "demotes": [
+      "Portale",
+      "__*/",
+      "])));",
+      "tanleria",
+      "']));"
+    ]
+  },
+  {
+    "id": "25_3949_4",
+    "layer": 25,
+    "ctx_idx": 4,
+    "influence_score": 0.26565438508987427,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 52.25,
+        "context": "\u00b7 Don\u2019t eat fish, turtles, eels, other wildlife or plants from the Woonasquatucket River;\u23ce\u00b7 Don\u2019t wade in the shallow"
+      },
+      {
+        "trigger": " longest",
+        "score": 46.75,
+        "context": ", Madison and Gallatin Rivers which combine to form the Missouri River to create the longest river in the United States. The confluence was discovered by Lewis and Clark in"
+      },
+      {
+        "trigger": "ding",
+        "score": 42.25,
+        "context": " to silently sneak up on an enemy, to floating for long periods, to fording strong rivers. Bushi needed to be able to swim while wearing armor,"
+      },
+      {
+        "trigger": " the",
+        "score": 46.5,
+        "context": " and the state finally agreed over how clean the river should be.\u23ceUntil recently the Metropolitan Water Reclamation District of Greater Chicago (MWRD)\u2014the agency responsible"
+      },
+      {
+        "trigger": " the",
+        "score": 50.75,
+        "context": " slick on the Cuyahoga River in Cleveland. It was not the first time the river had burned, and Cleveland was in the midst of cleaning up the city"
+      }
+    ],
+    "promotes": [
+      "Erreferentziak",
+      "fl\u00e4",
+      "zzjoni",
+      " Cabinet",
+      "BeginInit"
+    ],
+    "demotes": [
+      " River",
+      " river",
+      " RIVER",
+      "River",
+      " stream"
+    ]
+  }
+]

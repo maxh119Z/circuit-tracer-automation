@@ -1,0 +1,4226 @@
+[
+  {
+    "id": "0_604_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3632223308086395,
+    "top_activations": [
+      {
+        "trigger": " cream",
+        "score": 14.69,
+        "context": "ilever, the company that makes Dove soaps, Vaseline, Pond's skin cream and other personal care products, announced recently it's phasing out the use"
+      },
+      {
+        "trigger": " Cream",
+        "score": 14.19,
+        "context": " new school year which include tours led by student body leaders, and even an Ice Cream Social which allows students and parents to meet the teachers! Team teacher's"
+      },
+      {
+        "trigger": " cream",
+        "score": 19.0,
+        "context": " menu\u23ce- His wartime dinners were washed down with champagne\u23ce- Dessert was ice cream with raspberries, followed by apples, grapes and walnuts\u23ceDuring the 1"
+      },
+      {
+        "trigger": " cream",
+        "score": 14.44,
+        "context": ": Florida map, Florida maps, borders, thematic map, plants, green, cream color, mosaic, tessera, tesserae, outline map of Florida"
+      },
+      {
+        "trigger": " cream",
+        "score": 19.25,
+        "context": " assignment to be better.\u23ce\u201cYou need to expand on the link between ice cream and dairy farming.\u201d\u23ceBe specific \u2013 tell students about is needed to improve"
+      }
+    ],
+    "promotes": [
+      "bibitem",
+      "\ucc38\uace0",
+      " snippetHide",
+      "RetentionPolicy",
+      " GNP"
+    ],
+    "demotes": [
+      " doInBackground",
+      "cinogenicity",
+      "SaveChangesAsync",
+      "pektive",
+      "uesia"
+    ],
+    "generated_description": "cream token \u2014 activates on the word \u201ccream\u201d (ice cream, skin/beauty creams, cream color); fires for noun usages and compound forms."
+  },
+  {
+    "id": "0_4870_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3267119824886322,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " Longshot rifle and spots an enemy. He puts his cross hairs on his head, pulls the trigger and is rewarded with a gush of blood on his screen"
+      },
+      {
+        "trigger": ",",
+        "score": 28.88,
+        "context": " of your own voice.\u201d\u23ce\u201cHe's also probably a great conversationalist, which is the only reason I chose him over Neil Young, who would probably"
+      },
+      {
+        "trigger": ",",
+        "score": 28.12,
+        "context": ")\u23ce- The word \"palindrome\" is derived from the Greek pal\u00edndromos, meaning \"running back\" (pal\u00edn = back + dromos = running"
+      },
+      {
+        "trigger": ",",
+        "score": 28.0,
+        "context": " part of the inflammatory immune reaction. It\u2019s this inflammation that gives you puffy, swollen eyes or a blistery skin rash. As well as being produced"
+      },
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " this is the module for you. You can either study it on its own or, if you wish to embark on a programme of study, it will provide the"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      "^(@)",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      "-",
+      " (",
+      ";"
+    ],
+    "generated_description": "say comma (continuation) \u2014 activates on commas that introduce explanations or clause continuations (e.g., before \"which\", \"meaning\", \", pulls\", \", if\", lists/parenthetical follow-ups)."
+  },
+  {
+    "id": "0_7532_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.30728879570961,
+    "top_activations": [
+      {
+        "trigger": " Irene",
+        "score": 20.12,
+        "context": "<bos>Lewis, Ariane K.; Osborn, Irene P. MD; Roth, Ram MD\u23cePatients undergoing general anesthesia with paralysis are in an unconscious state but may"
+      },
+      {
+        "trigger": " Katie",
+        "score": 19.38,
+        "context": " have some balloons. Will's balloon burst at exactly\u23cethe same size as Katie's at the beginning of a puff. How many puffs\u23cehad Will"
+      },
+      {
+        "trigger": " Olivia",
+        "score": 19.5,
+        "context": "<bos>Birth Family John Marshall Clemens and Jane Lampton Clemens\u23ceMarriage/Spouse Olivia Langdon Clemens\u23ceChildren 4 children: Langdon, Susy, Clara, Jean"
+      },
+      {
+        "trigger": " Jacqueline",
+        "score": 20.25,
+        "context": " commander also gave him inspiration. Profiles in Courage, which Kennedy dedicated to his wife Jacqueline Kennedy, received the Pulitzer Prize for history in 1957."
+      },
+      {
+        "trigger": " Debbie",
+        "score": 18.38,
+        "context": " future of the wild tiger lies largely in the hands of the Chinese government,\u201d said Debbie Banks, EIA Head of Tiger Campaign. \u201cThere is much more they could"
+      }
+    ],
+    "promotes": [
+      "urator",
+      ").\u2014",
+      "Tetapi",
+      " Angele",
+      " who"
+    ],
+    "demotes": [
+      " Manuela",
+      " Karla",
+      " Kayla",
+      " Hayley",
+      " M\u00f3nica"
+    ],
+    "generated_description": "Female first name \u2014 activates on female given names (Irene, Katie, Olivia, Jacqueline, Debbie); appears in lists, credits, citations, and narrative mentions."
+  },
+  {
+    "id": "0_1847_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3938247561454773,
+    "top_activations": [
+      {
+        "trigger": " dehydration",
+        "score": 14.38,
+        "context": " essential to any animal life. It regulates the water content of the body and avoids dehydration.\u23ceThe proper consumption of salt is beneficial to our immune and digestive systems"
+      },
+      {
+        "trigger": " nationalism",
+        "score": 15.19,
+        "context": " value of local customs and traditions, to the movements that would redraw the map of Europe and lead to calls for \"self-determination\" of nationalities, nationalism was"
+      },
+      {
+        "trigger": " pharmaceuticals",
+        "score": 14.88,
+        "context": " Unused prescription medications should not be flushed or washed down the drain because the residue from pharmaceuticals adversely affects fish and other aquatic species, according to a Penn State Extension water"
+      },
+      {
+        "trigger": " minerals",
+        "score": 14.62,
+        "context": "<bos>25 good health natural foods that provide all of your vitamins and minerals\u23ceHere are 25 basic good health natural foods to prioritize because they are the"
+      },
+      {
+        "trigger": " subsurface",
+        "score": 14.12,
+        "context": ".\u23ceMicrohole technology holds great promise for economically recovering a sizeable portion of the estimated remaining, bypassed shallow (less than 5,000 ft subsurface"
+      }
+    ],
+    "promotes": [
+      "\"];\r",
+      " '\\\\;'",
+      "')));",
+      "')):",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " Monfieur",
+      " purpo\u017fe",
+      " \u017ftate",
+      " \u017fmall",
+      " \u017feveral"
+    ],
+    "generated_description": "Technical/academic noun \u2014 activates on domain-specific content nouns (dehydration, nationalism, pharmaceuticals, minerals, subsurface)."
+  },
+  {
+    "id": "0_2685_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.36543983221054077,
+    "top_activations": [
+      {
+        "trigger": " hate",
+        "score": 17.75,
+        "context": ", Census and Department of Homeland Security data to determine incidence levels of anti-Hispanic hate crime in periods and places with higher levels of immigration.\u23ceThe study\u2019"
+      },
+      {
+        "trigger": " hate",
+        "score": 18.25,
+        "context": "'ve sparked no shortage of controversy. Some Black Israelite groups have even been labeled hate groups.\u23ceKC Currents' Susan Wilson spoke to Michael \"Devar"
+      },
+      {
+        "trigger": " hate",
+        "score": 18.38,
+        "context": " this session, teens will focus on hate crime. They will examine the causes of hate crime, investigate and report on examples of hate crime involving teens, and look"
+      },
+      {
+        "trigger": " hate",
+        "score": 18.12,
+        "context": " the colour of his skin, or his background or his religion. People learn to hate, and if they can learn to hate, they can be taught to love"
+      },
+      {
+        "trigger": " hate",
+        "score": 17.88,
+        "context": "90 enactment of the Hate Crime Statistics Act (HCSA), the number of hate crimes reported has consistently ranged around 7,500 or more annually"
+      }
+    ],
+    "promotes": [
+      " and",
+      " vs",
+      " to",
+      ".",
+      ","
+    ],
+    "demotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      " CreateTagHelper",
+      "enumi",
+      "bootstrapcdn",
+      "IContainer"
+    ],
+    "generated_description": "hate \u2014 activates on the word \"hate\", especially in phrases like \"hate crime\", \"hate groups\", or \"learn to hate\""
+  },
+  {
+    "id": "0_2757_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.36019229888916016,
+    "top_activations": [
+      {
+        "trigger": " estimated",
+        "score": 18.62,
+        "context": "\u23ceThe top cause of fires in the home is cooking equipment, accounting for an estimated 147,400 or 40 percent of residential"
+      },
+      {
+        "trigger": " hate",
+        "score": 20.5,
+        "context": ".\u23ceVerse 8. - A time to love, and a time to hate. This reminds one of the gloss to which our Lord refers (Matthew "
+      },
+      {
+        "trigger": " estimated",
+        "score": 18.75,
+        "context": " Sumatra island, store the equivalent of one year's global greenhouse emissions -- an estimated 14.6 billion tonnes of carbon.\u23ceAbout three million hectares"
+      },
+      {
+        "trigger": " hate",
+        "score": 21.62,
+        "context": " the book on a long history of inequality. But the spate of racially-motivated hate crimes and violence against minorities and immigrants that occurred in the final weeks before and"
+      },
+      {
+        "trigger": " hate",
+        "score": 21.38,
+        "context": ".\u23ceA discussion of smells leads us to those smells we love, those we hate, those we don't mind, those that remind us of a certain"
+      }
+    ],
+    "promotes": [
+      "IBarButtonItem",
+      "\u00f6te",
+      "IGraphics",
+      "ftagPool",
+      " BrowserModule"
+    ],
+    "demotes": [
+      "\u010diai",
+      " Quindi",
+      " Asimismo",
+      " mainly",
+      "\u0417\u0430\u0447\u0435\u043c"
+    ],
+    "generated_description": "hate \u2014 activates on the word \u201chate\u201d and close variants; fires on phrases like \u201chate crimes,\u201d \u201cthose we hate,\u201d or \u201ca time to hate\u201d (negative-emotion/dislike concept)"
+  },
+  {
+    "id": "0_10792_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3199687600135803,
+    "top_activations": [
+      {
+        "trigger": " terms",
+        "score": 12.56,
+        "context": " rank to showing affiliation with certain cultures or groups. African jewelry covers the gamut in terms of design and materials used for making it. Types of jewelry include pendants,"
+      },
+      {
+        "trigger": " terms",
+        "score": 13.06,
+        "context": " musical thought were the works of the physicist Wilhelm Fuchs. Today, these theories may be seen of historical value only in terms of music, literature and fine art."
+      },
+      {
+        "trigger": " terms",
+        "score": 12.69,
+        "context": ", Lego robots are fun. Secondly, the robot kits are very flexible, in terms of building and programming. There are programming environments readily available for any level of"
+      },
+      {
+        "trigger": " terms",
+        "score": 13.31,
+        "context": "1). Kachru (1985) described the spread of English in terms of three concentric circles: the Inner Circle, the Outer Circle and the Expanding"
+      },
+      {
+        "trigger": " terms",
+        "score": 12.81,
+        "context": ". And while bacterial contamination of food in this country remains a large problem, in terms of disease burden it is dwarfed by the effects of unadulterated"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " i\u017ft",
+      " Efq",
+      " \u017fche",
+      " it\u017felf"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "\u23ce",
+      " \"",
+      "  ",
+      " ("
+    ],
+    "generated_description": "say \"in terms of\" \u2014 activates on the phrase introducing comparisons/measures; fires on the token 'terms' when used as \"in terms of X\" (signals upcoming comparative phrase)."
+  },
+  {
+    "id": "0_3786_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35234808921813965,
+    "top_activations": [
+      {
+        "trigger": " risk",
+        "score": 12.38,
+        "context": " and funds lifesaving programs that educate and support patients, their families and those at risk.\u23ceFor more information about these and other events please visit our Events section"
+      },
+      {
+        "trigger": " advance",
+        "score": 12.5,
+        "context": "ll have to \"plan\" as you shoot. But when possible, plan in advance. Planning before you shoot gives you control over the footage that you get on"
+      },
+      {
+        "trigger": " risk",
+        "score": 13.62,
+        "context": ". This usually makes the problem worse. Only use restraints if the person is at risk of harming themselves or others, and there is no other way to control the"
+      },
+      {
+        "trigger": " risk",
+        "score": 13.38,
+        "context": " you answer \"yes\" to any of these statements below, you may be at risk for an eating disorder.\u23ce- I feel guilty after eating.\u23ce-"
+      },
+      {
+        "trigger": " risk",
+        "score": 12.62,
+        "context": " killing animals when they become trapped or swallow the litter. Human health is also at risk, as plastics may break down into smaller pieces that may subsequently end up in"
+      }
+    ],
+    "promotes": [
+      " \u0641\u064a\u0647",
+      " waarin",
+      " \u0641\u064a\u0647\u0627",
+      "Behind",
+      "\u306e\u4eba\u306b"
+    ],
+    "demotes": [
+      "CloseOperation",
+      " cherch\u00e9s",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " Estadual",
+      "findpost"
+    ],
+    "generated_description": "risk / at risk \u2014 activates on \"risk\" and phrases about danger, vulnerability, or being \"at risk\" (e.g., \"at risk of harming themselves\", \"at risk for an eating disorder\")"
+  },
+  {
+    "id": "0_7681_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.348222553730011,
+    "top_activations": [
+      {
+        "trigger": " submitted",
+        "score": 10.38,
+        "context": "sson and other Norwegian nobles ensued. In 1333, the rebels submitted to king Magnus.\u23ceWho declared him to come of age and why?"
+      },
+      {
+        "trigger": " told",
+        "score": 11.12,
+        "context": " famine happened to the Irish was because we didn\u2019t have a government,\u201d he told the Irish Voice during a phone interview last week, not long after his highly"
+      },
+      {
+        "trigger": " realized",
+        "score": 11.12,
+        "context": " and students in the classroom. They spoke with over fifty educators, and they soon realized that many of those teachers ended up spending $2000-$4"
+      },
+      {
+        "trigger": " claimed",
+        "score": 12.12,
+        "context": " of choice for his case. He was also seen by a radiation oncologist who claimed that radiation therapy is just as effective as surgery. Could you help him?"
+      },
+      {
+        "trigger": " declared",
+        "score": 10.0,
+        "context": " to receive a Presidential Disaster Declaration under the recently amended Stafford Act when President Barack Obama declared a major disaster exists on the reservation.\u23ceThe amendment, known as the"
+      }
+    ],
+    "promotes": [
+      "took",
+      "gave",
+      " took",
+      " blew",
+      " gave"
+    ],
+    "demotes": [
+      " taken",
+      "\u064a\u0643\u0628",
+      " done",
+      " grown",
+      " drawn"
+    ],
+    "generated_description": "Past-tense -ed verb \u2014 activates on verbs in simple past form (submitted, told, realized, claimed, declared); often reporting/action/cognitive verbs."
+  },
+  {
+    "id": "0_7056_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3134896159172058,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " collisions. Recently, the AMS-02 research team announced the results of its first 18 months of data collection. These results are frustratingly ambiguous:"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " sediments, and bogs follows after. The downward slopes mirror the upward slopes in the first millennium BCE shown in 250. By then everyone was feeling the"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " 16\u23ce- Q = 8\u23cePlugging this back into the first equation gives P:\u23ce- P = $20 \u2212 Q = $"
+      },
+      {
+        "trigger": " first",
+        "score": 29.62,
+        "context": "\u201cForest Trees of Florida\u201d has been a standard handbook for tree identification since its first printing in 1925. The original book was prepared by Wilbur"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " that the prehistoric plant-eater sprouted its strange headgear before it celebrated its first birthday.\u23ceThe fossil skeleton was discovered in 2009 by"
+      }
+    ],
+    "promotes": [
+      " \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924",
+      "Predecesor",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "BeginInit",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448"
+    ],
+    "demotes": [
+      " first",
+      "first",
+      " fir\u017ft",
+      " eerste",
+      " firft"
+    ],
+    "generated_description": "ordinal \"first\" \u2014 activates on the word \"first\" as an ordinal/sequence marker before nouns, dates, equations, events (e.g., first printing, first birthday, first equation, first millennium)."
+  },
+  {
+    "id": "0_9026_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3661692142486572,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Named-entity noun \u2014 activates on content nouns and names (capitalized places/people/things like Nucleus, Jewell, Nile; also common noun tokens like walks, alfalfa)"
+  },
+  {
+    "id": "0_11611_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.32117950916290283,
+    "top_activations": [
+      {
+        "trigger": " fiscal",
+        "score": 18.0,
+        "context": "<bos>The current partisan rift over fiscal policy and the deadlock negotiators face regarding the impending fiscal cliff are nothing new. Indeed, divisions over fiscal policy have long been at"
+      },
+      {
+        "trigger": " hate",
+        "score": 29.75,
+        "context": " enjoyed a virtual hegemony over public debate, they were able to define all opposition as hate and intolerance, exemplified by people such as Pia Kjarsgaard of the Danish"
+      },
+      {
+        "trigger": " fiscal",
+        "score": 18.0,
+        "context": " American History Ronald Reagan delivered one of his weekly radio addresses on the budget plan for fiscal year 1988. In his prepared statement, he used the"
+      },
+      {
+        "trigger": " fiscal",
+        "score": 18.0,
+        "context": " we know that slamming on the brakes too quickly will hurt the recovery and worsen job prospects. Hence the potential longer-run benefits of fiscal consolidation must be balanced against"
+      },
+      {
+        "trigger": " fiscal",
+        "score": 18.25,
+        "context": " by the supply-side ( utbudsbest\u00e4mdSwedish ) which means that fiscal- and monetary policies are pointless in order to influence GDP.\u23ce- G"
+      }
+    ],
+    "promotes": [
+      "\ufeff/**",
+      " loisirs",
+      " cl\u00ednicos",
+      " t\u00e9l\u00e9charge",
+      "<bos>"
+    ],
+    "demotes": [
+      " Terraria",
+      "ville",
+      "hassee",
+      "opardy",
+      " ved"
+    ],
+    "generated_description": "fiscal \u2014 activates on the token \"fiscal\", especially in economic/policy contexts (fiscal policy, fiscal year, fiscal consolidation)"
+  },
+  {
+    "id": "0_13994_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3570837080478668,
+    "top_activations": [
+      {
+        "trigger": " hate",
+        "score": 18.75,
+        "context": " would be no moral choices. If love is acceptable, it must be chosen over hate and therefore evil and suffering result when we make morally poor choices. However this"
+      },
+      {
+        "trigger": " hate",
+        "score": 18.75,
+        "context": " and of liberal views, but I believe it's mainly the conservative ones who hate them then again it's to do with POLITICS so I mean who wouldn"
+      },
+      {
+        "trigger": " hate",
+        "score": 19.5,
+        "context": "<bos>I love dairy products but I hate milk (except when it's on cereal). I just can't stand the taste. Is that bad? Should"
+      },
+      {
+        "trigger": " hate",
+        "score": 19.0,
+        "context": " would say it's more 'about' or 'regarding.' Personally, I hate using these fancy loanwords when other alternatives are available.\u23ceIt means \""
+      },
+      {
+        "trigger": " hate",
+        "score": 18.5,
+        "context": "learned rabble, they are stirred up as by the authority of the learned to hate us more bitterly, thinking in their inexperience that things which have happened un"
+      }
+    ],
+    "promotes": [
+      "ljiv",
+      "ities",
+      "Cyfarwyddwr",
+      "ly",
+      "protoimpl"
+    ],
+    "demotes": [
+      " fotografico",
+      " fotogr\u00e1fico",
+      " universitario",
+      " navide\u00f1o",
+      " [],\r"
+    ],
+    "generated_description": "hate \u2014 activates on the token \"hate\"; marks explicit expressions of strong dislike / negative sentiment."
+  },
+  {
+    "id": "0_14556_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3431416451931,
+    "top_activations": [
+      {
+        "trigger": " noticed",
+        "score": 13.56,
+        "context": " to measure the data speed to a specific computer in the house? I\u2019ve noticed that the Internet speed to my PC, which is wired to the router,"
+      },
+      {
+        "trigger": " heard",
+        "score": 12.31,
+        "context": "<bos>\"I heard wails of pain, screams of agony\"... One young woman appeared to be in so much pain \"it was horrific.\"\u23ceTwo attendees who"
+      },
+      {
+        "trigger": " wondered",
+        "score": 12.81,
+        "context": " belief that she actually cares for him. (undeceive, correct)\u23ceI wondered how long he would allow the lie to be believed before he finally disab"
+      },
+      {
+        "trigger": " enjoyed",
+        "score": 12.06,
+        "context": " children's sleep.\u23ceGet Your Daily D-Dose\u23ceWe certainly have enjoyed lots of sunshine lately. But here in the Northwest we know our days of"
+      },
+      {
+        "trigger": " wished",
+        "score": 13.19,
+        "context": " and the battle over his kingdom lasted over thirty years, and one of those who wished to be the successor to the great Alexander was Antigonos the one-eyed"
+      }
+    ],
+    "promotes": [
+      "Kanpo",
+      "LookAnd",
+      "eably",
+      "\u06ea",
+      "Port\u00e1ly"
+    ],
+    "demotes": [
+      " enjoyed",
+      " appreciated",
+      " sought",
+      " watched",
+      " admired"
+    ],
+    "generated_description": "Past-tense verb \u2014 activates on past-simple verbs (noticed, heard, wondered, enjoyed, wished); picks up -ed forms and irregular pasts."
+  },
+  {
+    "id": "0_12687_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35153821110725403,
+    "top_activations": [
+      {
+        "trigger": " beginning",
+        "score": 12.25,
+        "context": " who has only read about slavery, while Alice, although a free woman at the beginning, has grown up in a society that condones slavery. Alice feels death"
+      },
+      {
+        "trigger": " beginning",
+        "score": 12.25,
+        "context": " scores and performance on memory and mental tests were the same in both groups at the beginning of the study, but marked differences were seen by the end:\u23ceADHD"
+      },
+      {
+        "trigger": " age",
+        "score": 13.5,
+        "context": " He decided to become an illustrator after viewing Walt Disney's film Fantasia at the age of twelve; however, his love of books came at an early age when"
+      },
+      {
+        "trigger": " age",
+        "score": 13.12,
+        "context": "1647 in Frankfurt and began painting images of insects and plants at the age of 13, with encouragement from her stepfather. Married at the age"
+      },
+      {
+        "trigger": " age",
+        "score": 12.62,
+        "context": " study outlines the case of Sarah Dazley, a young widow, who at the age of 28, was tried and found guilty of the murder of her"
+      }
+    ],
+    "promotes": [
+      "c\u00e8se",
+      "())))",
+      "ByVersion",
+      "\u0639\u0646\u06cc",
+      "ReusableCell"
+    ],
+    "demotes": [
+      "yship",
+      "Additionally",
+      " Additionally",
+      " Matters",
+      "uncur"
+    ],
+    "generated_description": "Time marker \u2014 activates on tokens that introduce temporal context (age, beginning, \u201cat the age of\u201d, \u201cat the beginning of\u201d)"
+  },
+  {
+    "id": "0_659_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.3298417925834656,
+    "top_activations": [
+      {
+        "trigger": " school",
+        "score": 18.75,
+        "context": " racial disparity aspect: minority students are more likely than white students to be arrested at school for committing similar crimes. According to the report: \u201cIn 20"
+      },
+      {
+        "trigger": " school",
+        "score": 19.5,
+        "context": " out of the year. Gomillion left home at 16 to attend secondary school at Paine College, a Methodist school in Augusta, Georgia, where he completed"
+      },
+      {
+        "trigger": " school",
+        "score": 19.25,
+        "context": " a hole poked in a paper plate to look at the sun, like my elementary school teacher told us at the time. I bet she laughed and laughed that night"
+      },
+      {
+        "trigger": " school",
+        "score": 19.25,
+        "context": " this type of fully collaborative community-based approach. They include watershed assessments in Atlanta, GA and rural Puerto Rico; balancing renovation options in an elementary school in Springfield"
+      },
+      {
+        "trigger": " school",
+        "score": 19.0,
+        "context": " learning difficulties is disturbing. Sometimes these problems are encountered only at home and not at school.\u23ceIs our environment triggering these problems? According to Doris J. Rapp"
+      }
+    ],
+    "promotes": [
+      "ecore",
+      "-\u00a3",
+      " criticise",
+      "endforeach",
+      "Packard"
+    ],
+    "demotes": [
+      " Majefty",
+      "\u017felves",
+      " \u017fmall",
+      " them\u017felves",
+      "\u017felf"
+    ],
+    "generated_description": "school \u2014 activates on the token \u201cschool\u201d and variants (elementary/secondary), signals mentions of educational institutions or in-school contexts"
+  },
+  {
+    "id": "0_8484_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.32565125823020935,
+    "top_activations": [
+      {
+        "trigger": " myself",
+        "score": 23.62,
+        "context": " Later he wrote: \u201cMy life as a scientist began with the questions I asked myself in the blackness of midnight when I lay with my ear pressed to the ground"
+      },
+      {
+        "trigger": " myself",
+        "score": 23.25,
+        "context": "'s the Germans, save yourself! I jumped out the window. I hid myself in a bush in the garden. I heard the cries of the children that"
+      },
+      {
+        "trigger": " myself",
+        "score": 23.38,
+        "context": " My own family has been sick off and on for the past few weeks, including myself, an annual affliction that makes me yearn for spring\u2019s fresh air and"
+      },
+      {
+        "trigger": " ourselves",
+        "score": 16.5,
+        "context": " are considered senior after about 12 years, so we always have to remind ourselves that with \u201caccelerated\u201d health, they may develop disease earlier so we"
+      },
+      {
+        "trigger": " myself",
+        "score": 22.62,
+        "context": " looking for planets around white dwarfs in a paper in 2002 by myself and colleagues,\u201d says Dr. Matt Burleigh at the University of Leicester,"
+      }
+    ],
+    "promotes": [
+      " prochaines",
+      " remercier",
+      " camicia",
+      " valid\u00e9s",
+      "<bos>"
+    ],
+    "demotes": [
+      "\\{\\\\",
+      "endphp",
+      "enderror",
+      "URLException",
+      "Autoritn\u00ed"
+    ],
+    "generated_description": "myself/ourselves \u2014 activates on first-person reflexive pronouns (myself, ourselves); signals self-reference or authorial insertion, including citations like \u201cby myself.\u201d"
+  },
+  {
+    "id": "0_14713_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39143818616867065,
+    "top_activations": [
+      {
+        "trigger": " well",
+        "score": 17.25,
+        "context": " prompt registration provide important remedial advantages in the U.S. Such matters, as well as fundamental distinctions based on ownership and key issues to consider when transferring rights are"
+      },
+      {
+        "trigger": " well",
+        "score": 17.5,
+        "context": " associated with plants genetically modified to be tolerant to unlimited amounts of herbicide applications, as well as those that produce a pesticide from within the plant itself. (Bt Corn"
+      },
+      {
+        "trigger": " well",
+        "score": 17.25,
+        "context": ". Common artistic motifs in Fraktur include birds, hearts, and tulips, as well as blackletter and italic calligraphy.\u23ceContent Description +/-\u23ceThis collection contains"
+      },
+      {
+        "trigger": " well",
+        "score": 17.25,
+        "context": " is literature?\u2019 Jean-Paul Sartre argued on the moral duty of intellectuals, as well as the ordinary citizen, to take a stand in face of political conflicts,"
+      },
+      {
+        "trigger": " well",
+        "score": 17.5,
+        "context": " Therefore, storytelling is a great tool for improving children's communication skills, as well as developing language skills, comprehension, and self-awareness. (Reading and"
+      }
+    ],
+    "promotes": [
+      " inoltre",
+      " modernisation",
+      " also",
+      " \u03b5\u03c0\u03af\u03c3\u03b7\u03c2",
+      "TagMode"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      "parsedMessage",
+      "\u062a\u0642\u0627\u0648\u0649",
+      "AlterField",
+      "webElementXpaths"
+    ],
+    "generated_description": "say also \u2014 fires on \"as well\"/\"as well as\" additive connective; promotes additive next tokens (also, inoltre, \u03b5\u03c0\u03af\u03c3\u03b7\u03c2) and continuation of list/parallel items."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3308705687522888,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "'In' (topic-intro) \u2014 activates on sentence-start \"In\" used to introduce a domain/topic (e.g., \"In music theory,\" \"In medicine,\" \"In word processing,\")"
+  },
+  {
+    "id": "0_12093_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36907485127449036,
+    "top_activations": [
+      {
+        "trigger": " search",
+        "score": 13.0,
+        "context": " men in the worst-off areas near the border with Kenya have moved north in search of water and pasture with the surviving cattle.\u23ceThe loss of their livestock"
+      },
+      {
+        "trigger": " terms",
+        "score": 12.5,
+        "context": " possessed a typical inventor's temperament\u2014a maverick and dreamer, and impractical in terms of business and personal affairs. \u00c9tienne had a much more even and business"
+      },
+      {
+        "trigger": " favor",
+        "score": 12.88,
+        "context": "-meter telescope at the La Silla Observatory in Chile. It is often overlooked in favor of its more prominent neighbor, the Eagle Nebula (M16), that"
+      },
+      {
+        "trigger": " front",
+        "score": 13.5,
+        "context": " as blue as||NqIqhIBK|\u23ce|The girl in front of me was as loud as||HxsTBQOfYJRvl"
+      },
+      {
+        "trigger": " terms",
+        "score": 12.88,
+        "context": " it). If we want to redefine the \u201cred\u201d of a fire engine in terms of how its surface reflects photons at certain wavelengths, we can say that the"
+      }
+    ],
+    "promotes": [
+      " showcasing",
+      " atracci\u00f3n",
+      " sp\u00e9ciaux",
+      " ruines",
+      " R\u00e9f\u00e9rence"
+    ],
+    "demotes": [
+      "NUMX",
+      "YMMV",
+      " transfieras",
+      " insofar",
+      "<_>"
+    ],
+    "generated_description": "in ___ of phrase \u2014 activates on nouns filling \"in ___ of\" constructions (search, terms, favor, front); detects idiomatic \"in X of\" prepositional pattern."
+  },
+  {
+    "id": "0_15429_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3440007269382477,
+    "top_activations": [
+      {
+        "trigger": " place",
+        "score": 14.75,
+        "context": "000 people will die from them.\u23ceWhile hospitals have safety measures in place, they can't protect you from what they don't know is"
+      },
+      {
+        "trigger": " risk",
+        "score": 16.0,
+        "context": ", or how much time they spend indoors vs. outdoors, all dogs are at risk for potentially deadly heartworm disease. If you own a dog, know these"
+      },
+      {
+        "trigger": " risk",
+        "score": 16.5,
+        "context": " age, the thirst urge diminishes.\u23ceUnfortunately, this makes older people acutely at risk for dehydration, because they can lose important amounts of body water without ever becoming"
+      },
+      {
+        "trigger": " risk",
+        "score": 15.0,
+        "context": " People who smoke may become infertile, and pregnant women who smoke are more at risk for stillbirths, having babies with low birth weight, and sudden infant"
+      },
+      {
+        "trigger": " risk",
+        "score": 16.0,
+        "context": ". This usually makes the problem worse. Only use restraints if the person is at risk of harming themselves or others, and there is no other way to control the"
+      }
+    ],
+    "promotes": [
+      " newfound",
+      "enumi",
+      " u\u0219",
+      " bezeichneter",
+      "CloseOperation"
+    ],
+    "demotes": [
+      " programme",
+      " programmes",
+      " organisation",
+      " favourites",
+      " colours"
+    ],
+    "generated_description": "Risk/vulnerable \u2014 activates on \"risk\" and related danger/vulnerability words/phrases (often in \"at risk\" or \"in place\" safety-contexts)."
+  },
+  {
+    "id": "0_3850_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.37052294611930847,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 22.75,
+        "context": ":11\u23ceIgbo terms that indicate people, beings, things, places, phenomena, qualities or ideas.\u23ce- Category:Igbo proper nouns:"
+      },
+      {
+        "trigger": ",",
+        "score": 22.0,
+        "context": " in competing and acquiring market share with some commercial software equivalents such as Microsoft, Sun, BEA systems and IBM. Companies such as RedHat, have coupled open source"
+      },
+      {
+        "trigger": ",",
+        "score": 22.12,
+        "context": " the equivalent of approximately 500 MCU taken four times per day. However, most of the bromelain used in the studies was enteric-coated in"
+      },
+      {
+        "trigger": ",",
+        "score": 22.75,
+        "context": " from a variety of occupations - kings, fishermen, tax collectors, shepherds, prophets, even a physician - their writings dovetail with one another intricately. Still"
+      },
+      {
+        "trigger": ",",
+        "score": 23.25,
+        "context": " direction, experience, fatherhood, good, government, honor, observation, people, politics, preparation, purity, and tyranny\u23ceThe Founding Fathers were careful to"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      " I",
+      " a"
+    ],
+    "generated_description": "say comma \u2014 activates on commas and list separators; marks clause boundaries or list-item structure (structural pause before next item)"
+  },
+  {
+    "id": "0_12353_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.3555213212966919,
+    "top_activations": [
+      {
+        "trigger": " simply",
+        "score": 16.75,
+        "context": " balances the desire for saving with the demand for investment. So negative real rates may simply indicate that savers are incredibly cautious, and that businesses are reluctant to invest"
+      },
+      {
+        "trigger": " simply",
+        "score": 16.62,
+        "context": " as the players.\u23ce\"It's amazing what our bodies go through when simply watching a game,\" says Vicki Greenberg, FNP-BC, and nursing"
+      },
+      {
+        "trigger": " simply",
+        "score": 16.5,
+        "context": " if it did not, it must have come from the other. Your detector is simply a means of determining trajectory direction, rather than simply incidence (or *splat"
+      },
+      {
+        "trigger": " simply",
+        "score": 16.5,
+        "context": "s unclear whether the illness causes or triggers asthma, or whether children who eventually develop asthma were simply more prone to developing bronchiolitis as infants. Studies are being"
+      },
+      {
+        "trigger": " simply",
+        "score": 16.88,
+        "context": " to a team of researchers in Japan, you may soon be able to find out simply by taking a breath test.\u23ceThe team developed a breathalyzer-"
+      }
+    ],
+    "promotes": [
+      " Chwiliwch",
+      " disambiguazione",
+      "rungsseite",
+      "AndEndTag",
+      "+#+#"
+    ],
+    "demotes": [
+      "lot",
+      " the",
+      " semplicemente",
+      " simply",
+      " that"
+    ],
+    "generated_description": "simply \u2014 activates on the adverb \"simply\" used as a discourse marker/qualifier before clauses, signaling emphasis or simplification."
+  },
+  {
+    "id": "0_6051_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.31629326939582825,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": ". Moreover, the tax code is used to promote and further government-centric preferences. Deductions, credits, subsidies, and grants are wielded by politicians to manipulate"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " \u2014 self-regulate their living environment in response to changing internal and external conditions.\u23ceThey were investigating as well whether similar principles could be used to design buildings"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " produce solar panels and power inverters, in solar research labs and for installation companies. German firms are in demand overseas, where they are building new factories for solar"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": ") never was capitalists' preferred policy for capitalism's recurring recessions and depressions. Their Plan A was government borrowing to bail out major financial and other corporations followed"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " and statements by clinicians that directly or indirectly blame parental behaviors for their kids\u2019 problems.\u23ce- You cuddle your kids too much\u23ce- You don\u2019t love"
+      }
+    ],
+    "promotes": [
+      " The\u017fe",
+      " Monfieur",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ".",
+      ",",
+      " ",
+      " (",
+      "-"
+    ],
+    "generated_description": "Sentence-final period \u2014 activates on '.' marking sentence boundaries; fires at end-of-sentence punctuation (period before space/newline)."
+  },
+  {
+    "id": "0_10187_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.39023664593696594,
+    "top_activations": [
+      {
+        "trigger": " time",
+        "score": 35.25,
+        "context": ", Rob, I understand the concerns about these scans have been building for a long time. So what's the specific source of worry here?\u23ceROB STEIN"
+      },
+      {
+        "trigger": " time",
+        "score": 35.0,
+        "context": " place at the right time to capture a prize picture.\u23ce\"For a long time I wanted to capture auroras with a field of sparse tall trees,\" he"
+      },
+      {
+        "trigger": " time",
+        "score": 35.25,
+        "context": " insulin to keep sugar under control and avoid type 2 diabetes. For a long time, clinicians and scientists thought that \"more insulin was a good thing,\" says"
+      },
+      {
+        "trigger": " time",
+        "score": 36.5,
+        "context": " with each other is something else entirely, and the problem was open for a long time. There is a whole book by Paulo Ribenboim, Catalan\u2019"
+      },
+      {
+        "trigger": " time",
+        "score": 35.0,
+        "context": ". \"There is clearly a group of people who walk slowly and live a long time,\" she said. \"It's not a death sentence.\"\u23ceOn"
+      }
+    ],
+    "promotes": [
+      " mentre",
+      "/",
+      " -",
+      " originalmente",
+      " while"
+    ],
+    "demotes": [
+      " time",
+      "time",
+      "Time",
+      " Time",
+      " TIME"
+    ],
+    "generated_description": "\"time\" (esp. \"a long time\") \u2014 activates on the duration token \"time\", often in the phrase \"a long time\"; signals mentions of extended duration or temporal span."
+  },
+  {
+    "id": "0_10629_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.38781219720840454,
+    "top_activations": [
+      {
+        "trigger": " time",
+        "score": 20.0,
+        "context": " shipped to North America as slaves brought there performing\u23cetraditions with them and over time these dances gradually fused with\u23ceEuropean and Asian forms of dance practised in the"
+      },
+      {
+        "trigger": " time",
+        "score": 20.75,
+        "context": "s habitat, by connecting isolated patches of prickly pear cactus with each other to over time create a larger, contiguous habitat for the coastal cactus wren.\u23ceBut why"
+      },
+      {
+        "trigger": " time",
+        "score": 20.0,
+        "context": "000 Years\u23ceThe strength of Earth's magnetic field fluctuates over time. Occasionally the magnetic field flips, with the North and South Magnetic Poles trading"
+      },
+      {
+        "trigger": " time",
+        "score": 20.25,
+        "context": " the two words probably derived independently, they doubtless affected each other's development of meaning over time.\u23ceWhatever Trapp's intention was, we can be confident"
+      },
+      {
+        "trigger": " time",
+        "score": 20.25,
+        "context": " study the whole of samurai history. The role the sword has played has changed over time, but so have the times brought out different aspects of that many-layered"
+      }
+    ],
+    "promotes": [
+      "Portail",
+      "Port\u00e1ly",
+      "Personendaten",
+      "homonymie",
+      "mybatisplus"
+    ],
+    "demotes": [
+      "\u00f3wczas",
+      " totalling",
+      " totalled",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " r\u00ea"
+    ],
+    "generated_description": "\"over time\" phrase \u2014 activates on the phrase \"over time\" and similar temporal-change expressions indicating development or change across periods."
+  },
+  {
+    "id": "0_12519_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.3586389720439911,
+    "top_activations": [
+      {
+        "trigger": " she",
+        "score": 41.5,
+        "context": " unknown slave.\u23ceStuart was well into her research and writing of the book before she fully accepted the reality of her family's story. It was, she"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " of tree-top platforms to observe wildlife in the Amazon rain forests. She says she's had 10 years of chances to see anacondas on"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": "DelGrosso says the digital mammogram enabled doctors to detect her cancer early so she could begin treatment. \u201cThis technology absolutely saved my life. It caught my"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " what would be some of the problems they could encounter in growing plants. She said she would put time aside tomorrow for them to plan.\u23ceThe next day Mrs"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " to it. When looking for a high school, Earhart canvassed several until she found one with a science program that suited her. At the time she made"
+      }
+    ],
+    "promotes": [
+      " a",
+      " He",
+      " We",
+      "__(/*!",
+      " I"
+    ],
+    "demotes": [
+      " she",
+      "she",
+      "She",
+      " shes",
+      " She"
+    ],
+    "generated_description": "female pronoun \"she\" \u2014 activates on tokens like \"she\" and \"she's\"; correlated with suppressing/promoting alternatives (demotes output \"she\")."
+  },
+  {
+    "id": "0_12519_17",
+    "layer": 0,
+    "ctx_idx": 17,
+    "influence_score": 0.34226149320602417,
+    "top_activations": [
+      {
+        "trigger": " she",
+        "score": 41.5,
+        "context": " unknown slave.\u23ceStuart was well into her research and writing of the book before she fully accepted the reality of her family's story. It was, she"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " of tree-top platforms to observe wildlife in the Amazon rain forests. She says she's had 10 years of chances to see anacondas on"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": "DelGrosso says the digital mammogram enabled doctors to detect her cancer early so she could begin treatment. \u201cThis technology absolutely saved my life. It caught my"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " what would be some of the problems they could encounter in growing plants. She said she would put time aside tomorrow for them to plan.\u23ceThe next day Mrs"
+      },
+      {
+        "trigger": " she",
+        "score": 41.0,
+        "context": " to it. When looking for a high school, Earhart canvassed several until she found one with a science program that suited her. At the time she made"
+      }
+    ],
+    "promotes": [
+      " a",
+      " He",
+      " We",
+      "__(/*!",
+      " I"
+    ],
+    "demotes": [
+      " she",
+      "she",
+      "She",
+      " shes",
+      " She"
+    ],
+    "generated_description": "she (female third-person pronoun) \u2014 activates on tokens like \"she\" and \"she's\", across narrative contexts; marks female third-person subject/reference."
+  },
+  {
+    "id": "0_11375_18",
+    "layer": 0,
+    "ctx_idx": 18,
+    "influence_score": 0.29991984367370605,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "say a predicate \u2014 activates on \"is\" when introducing descriptions, definitions, or states about a noun (e.g., \"X is Y,\" \"is where,\" \"is used\")."
+  },
+  {
+    "id": "0_6051_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.34738823771476746,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": ". Moreover, the tax code is used to promote and further government-centric preferences. Deductions, credits, subsidies, and grants are wielded by politicians to manipulate"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " \u2014 self-regulate their living environment in response to changing internal and external conditions.\u23ceThey were investigating as well whether similar principles could be used to design buildings"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " produce solar panels and power inverters, in solar research labs and for installation companies. German firms are in demand overseas, where they are building new factories for solar"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": ") never was capitalists' preferred policy for capitalism's recurring recessions and depressions. Their Plan A was government borrowing to bail out major financial and other corporations followed"
+      },
+      {
+        "trigger": ".",
+        "score": 39.5,
+        "context": " and statements by clinicians that directly or indirectly blame parental behaviors for their kids\u2019 problems.\u23ce- You cuddle your kids too much\u23ce- You don\u2019t love"
+      }
+    ],
+    "promotes": [
+      " The\u017fe",
+      " Monfieur",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ".",
+      ",",
+      " ",
+      " (",
+      "-"
+    ],
+    "generated_description": "sentence-final period \u2014 activates on end-of-sentence \u201c.\u201d punctuation, especially when followed by newline/paragraph breaks or sentence boundary contexts."
+  },
+  {
+    "id": "0_13004_18",
+    "layer": 0,
+    "ctx_idx": 18,
+    "influence_score": 0.29793354868888855,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "Short token fragment \u2014 activates on 1\u20132 character token pieces (single digits like \"2\", single letters/roman numerals \"I\", punctuation or tokenized substrings like \"is\"); often promotes rare/archaic glyphs."
+  },
+  {
+    "id": "1_805_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.38593098521232605,
+    "top_activations": [
+      {
+        "trigger": " all",
+        "score": 12.38,
+        "context": " water. Any information or tips would be greatly appreciated!\u23ceAnswer: First of all, thank you for your question. Prediabetes is an important issue to address"
+      },
+      {
+        "trigger": " only",
+        "score": 12.38,
+        "context": " the children to look at over and over again.\u23ceCreating the digital books not only works on their literacy skills by engaging them in a more personal way, but"
+      },
+      {
+        "trigger": " only",
+        "score": 12.38,
+        "context": " went into action on the western front, there were no official military photographers. Not only was the front line unsafe for commercial photographers, individual officers and men were prohibited"
+      },
+      {
+        "trigger": " only",
+        "score": 11.75,
+        "context": "lli, dental director for Delta Dental of Illinois. \u201cWearing a mouth guard not only protects the teeth and jaw, but it can also act as a shock absorber"
+      },
+      {
+        "trigger": " only",
+        "score": 11.75,
+        "context": " to themes that students had been tracking in Japanese literary texts all semester. Students not only got to see for themselves how these typically unseen and hidden worlds were visually rendered"
+      }
+    ],
+    "promotes": [
+      " assoluto",
+      " Inoltre",
+      "deauna",
+      " Zudem",
+      "erdings"
+    ],
+    "demotes": [
+      "__':\r",
+      "Sklici",
+      "LikeLiked",
+      "expandindo",
+      "AnchorStyles"
+    ],
+    "generated_description": "discourse marker (only / all) \u2014 activates on connective words in phrases like \u201cnot only\u201d and \u201cfirst of all\u201d; signals contrast/emphasis/discourse linking."
+  },
+  {
+    "id": "1_3604_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3609599769115448,
+    "top_activations": [
+      {
+        "trigger": " controls",
+        "score": 15.88,
+        "context": "1 prohibits people from \"breaking\" or hacking into any technological \"lock\" that controls access to a copyrighted work. The section also prohibits the sale or distribution of"
+      },
+      {
+        "trigger": " causes",
+        "score": 16.0,
+        "context": "<bos>It's Your Health\u23ceRadiation absorbed by the body causes cell changes that may increase the risk of cancer and hereditary effects. It is therefore important for workers"
+      },
+      {
+        "trigger": " runs",
+        "score": 15.88,
+        "context": " enough of the thyroid hormone, which plays an important role in the way the body runs.\u23ceChildren with congenital hypothyroidism are born with inadequate thyroid hormone function due"
+      },
+      {
+        "trigger": " suspects",
+        "score": 17.38,
+        "context": " your cornea or diagnosis certain conditions.\u23ceThis test is usually ordered if your doctor suspects you have damage on your cornea or foreign objects in your eye. If you"
+      },
+      {
+        "trigger": " shapes",
+        "score": 17.12,
+        "context": " the governed\" (as stated in the Declaration of independence), so public opinion ultimately shapes all democratic decisions, whether wise or folly.\u23ceA much debated question is"
+      }
+    ],
+    "promotes": [
+      "\ufeff#",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627",
+      " transfieras",
+      " Inf\u00f3rmanos",
+      "<bos>"
+    ],
+    "demotes": [
+      "StoryboardSegue",
+      "(\")\");",
+      "ypsies",
+      " \"*\",",
+      "havior"
+    ],
+    "generated_description": "3sg present verb (-s) \u2014 activates on third-person singular present-tense verbs (controls, causes, runs, suspects, shapes)"
+  },
+  {
+    "id": "1_7726_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3338998556137085,
+    "top_activations": [
+      {
+        "trigger": " hate",
+        "score": 27.5,
+        "context": " we release a new trick. Don\u2019t worry. We won\u2019t sell your information or send you a bunch of SPAM. We hate that stuff too!"
+      },
+      {
+        "trigger": " hate",
+        "score": 28.88,
+        "context": ": Provides current news releases about hate crimes, statistics concerning criminals\u2019 motivation to commit hate crime, and ways to prevent intolerance.\u23ce- Hate Crimes Prevention Act of"
+      },
+      {
+        "trigger": " hate",
+        "score": 27.62,
+        "context": " conjure up a scenario in which war seems the least worst option.\u23ceWhile I hate war, I have never considered myself a pacifist. But Nicholas Baker in"
+      },
+      {
+        "trigger": " hate",
+        "score": 28.38,
+        "context": ", threaten, intimidate, cyberbully, cause bodily injury to, or commit hate violence against any other student or school personnel.\u23ceUnwilling to force new"
+      },
+      {
+        "trigger": " hate",
+        "score": 28.38,
+        "context": ", investigate and report on examples of hate crime involving teens, and look at how hate crime can range from discrimination to genocide. Teens then explore some positive teen-"
+      }
+    ],
+    "promotes": [
+      " (",
+      " esp",
+      "TagMode",
+      " ",
+      " '"
+    ],
+    "demotes": [
+      "<bos>",
+      " hate",
+      " HATE",
+      " \u00e9toit",
+      "UnsafeEnabled"
+    ],
+    "generated_description": "hate \u2014 activates on the word \u201chate\u201d in various uses (verb + noun), including \u201cI hate\u201d, \u201chate crime\u201d, \u201chate violence\u201d; fires for standalone and compound occurrences."
+  },
+  {
+    "id": "1_8796_6",
+    "layer": 1,
+    "ctx_idx": 6,
+    "influence_score": 0.33290183544158936,
+    "top_activations": [
+      {
+        "trigger": " school",
+        "score": 25.0,
+        "context": " difference they had made. So for example, when asked about how children in the school felt about bullying or staying healthy, evidence presented tended to be about what had"
+      },
+      {
+        "trigger": " school",
+        "score": 26.38,
+        "context": " in the 1880's.\u23ceThe proposal soon took concrete shape and the school started functioning from 1st of June 188"
+      },
+      {
+        "trigger": " school",
+        "score": 24.12,
+        "context": " to produce school performance tables. Ofsted also review results before they visit a school for inspection.\u23ceOur National Assessments work covers from Early Years Foundation Stage ("
+      },
+      {
+        "trigger": " school",
+        "score": 24.12,
+        "context": ".2 This study revealed that these students often bear the full responsibility of paying for school: Nearly 6 in 10 students in our study who left higher"
+      },
+      {
+        "trigger": " school",
+        "score": 27.38,
+        "context": " Ones and Form Sixes. This is because it is at these points in the school system that the greatest leaps in learning are required. This is not simply because"
+      }
+    ],
+    "promotes": [
+      " mAdapter",
+      " zd",
+      " userRepository",
+      "getBytes",
+      " userService"
+    ],
+    "demotes": [
+      " school",
+      "school",
+      "School",
+      " SCHOOL",
+      " School"
+    ],
+    "generated_description": "school \u2014 activates on the token \"school\"; fires on mentions of educational institutions (students, inspections, fees, historical dates)"
+  },
+  {
+    "id": "2_146_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.36979925632476807,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 20.25,
+        "context": " Experimental Research. The study has been published online and will be in the journal's June issue.\u23ce\"The earliest [age at first drink] in our"
+      },
+      {
+        "trigger": " first",
+        "score": 24.75,
+        "context": " tell me what causes black coloration of sheep blood agar caused by bacterial grow? At first I though it was an alpha hemolysis, but I think it is not"
+      },
+      {
+        "trigger": " last",
+        "score": 18.88,
+        "context": "03 The idea that even small asteroids can create hazardous tsunamis may at last be pretty well washed up.\u23ceSmall asteroids do not make great ocean waves"
+      },
+      {
+        "trigger": " last",
+        "score": 18.62,
+        "context": "-Day Saints. It was repealed in 1997.\u23ceAt last estimates, 48% of the population were Presbyterian; 15"
+      },
+      {
+        "trigger": " first",
+        "score": 20.25,
+        "context": " the leaves. The fruits are brown and ovoid. It can be distinguished at first sight from Howea belmoreana by its leaflets, which are not erect"
+      }
+    ],
+    "promotes": [
+      "ArrowToggle",
+      " Mep",
+      " >=\",",
+      " \u0645\u0634\u064a\u0646",
+      "Portail"
+    ],
+    "demotes": [
+      " referrerpolicy",
+      "ombs",
+      " center",
+      "ChildScrollView",
+      "haustible"
+    ],
+    "generated_description": "say \"first\"/\"last\" \u2014 activates on temporal adverb after \"at\" (phrases like \"at first\", \"at last\", \"at first sight\")"
+  },
+  {
+    "id": "2_4069_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.2959417700767517,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 40.25,
+        "context": "<bos>The Evolution Deceit\u23ceAt first glance you may have been puzzled by the title \"The Religion of Irreligion\" because \"religion,\" as perceived by many"
+      },
+      {
+        "trigger": " first",
+        "score": 38.25,
+        "context": " friend's cat to bite her. The cat had purred so nicely at first, so Maya was startled when it sank its teeth into her leg. Maya"
+      },
+      {
+        "trigger": " first",
+        "score": 40.5,
+        "context": "<bos>At first glance, an adult metallic starling looks completely black with bright red eyes. Upon closer inspection, a visitor is rewarded with an iridescent collage of blues"
+      },
+      {
+        "trigger": " first",
+        "score": 39.25,
+        "context": "engineering research of a few leading climate scientists like Ken Caldeira at Stanford. At first, Caldeira thought geoengineering sounded crazy too, but his research showed that"
+      },
+      {
+        "trigger": " first",
+        "score": 39.5,
+        "context": " E. Lee made his stand against Federal Major General George B. McClellan. At first light, the fight raged on the Confederate left in the woods, the corn"
+      }
+    ],
+    "promotes": [
+      "Initially",
+      " sometimes",
+      " menudo",
+      "wykle",
+      "Originally"
+    ],
+    "demotes": [
+      "brainly",
+      "protoimpl",
+      "HasForeignKey",
+      "topus",
+      "atili"
+    ],
+    "generated_description": "At first (temporal) \u2014 activates on the token \"first\" in initial temporal phrase \"At first,\"; marks an introductory temporal contrast (sets up change over time)."
+  },
+  {
+    "id": "2_1592_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.3781414330005646,
+    "top_activations": [
+      {
+        "trigger": " hate",
+        "score": 23.25,
+        "context": " and not very adventurous. They don't know what to do with themselves but hate to go anywhere with the family, especially on vacation. Friendships are all"
+      },
+      {
+        "trigger": " hate",
+        "score": 23.12,
+        "context": "St. Louis Blues\u201d\u23ceWritten by W.C. Handy\u23ce\u201cI hate to see the evening sun go down\u2026\u201d\u23ceSo begins one of the most"
+      },
+      {
+        "trigger": " hate",
+        "score": 22.62,
+        "context": ", mathematicians and geometry.\u23ceFind out what mathematicians eat on Halloween, why plants hate math, what you call an empty parrot cage, what the acorn said when"
+      },
+      {
+        "trigger": " hate",
+        "score": 24.25,
+        "context": " in order to trick us into getting a false response!\u23ceAHHHHH. I hate that word! When did it start being used for describing children? How do"
+      },
+      {
+        "trigger": " hate",
+        "score": 23.0,
+        "context": " it increases the total entropy of the system.\u201d Huh? It makes you want to hate Rudolf Clausius. Couldn\u2019t he just say that heat goes from"
+      }
+    ],
+    "promotes": [
+      " one",
+      "\u00e9valuateur",
+      "AndEndTag",
+      "tuta",
+      "CloseOperation"
+    ],
+    "demotes": [
+      " hate",
+      " Hate",
+      "hate",
+      " HATE",
+      "Hate"
+    ],
+    "generated_description": "hate \u2014 activates on the content word \"hate\" (and caps/variants); marks a negative-emotion verb in context; also associated with suppressing the token \"hate\" in output."
+  },
+  {
+    "id": "3_147_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.34137922525405884,
+    "top_activations": [
+      {
+        "trigger": " Love",
+        "score": 26.12,
+        "context": " lutes, and the Spanish vihuela. The poem The Book of Good Love[when?] describes two early instruments, guitarra morisca and guitarra latina."
+      },
+      {
+        "trigger": " love",
+        "score": 28.62,
+        "context": "\u23ce: Does anyone know the origin of the phrase \"All's fair in love and war\". Is there a literature background? thanks\u23ceALL'S FAIR"
+      },
+      {
+        "trigger": " Love",
+        "score": 26.12,
+        "context": "<bos>Hello, Whole Latte Love Lovers. I was on the phone the other day with some of you and realized that as much as I was going over machines with"
+      },
+      {
+        "trigger": " love",
+        "score": 27.62,
+        "context": " The movement\u2019s leading figure in the United States, John Watson, considered mother love \u201ca dangerous instrument.\u201d He urged parents to leave crying babies alone; to"
+      },
+      {
+        "trigger": " love",
+        "score": 26.0,
+        "context": " have an inflated opinion of oneself. But pride cannot coexist with godly love. Christian love is not proud or focused on self.\u23ceJesus Christ is the perfect example"
+      }
+    ],
+    "promotes": [
+      "\u00farese",
+      "Bronnen",
+      " onOptions",
+      "audiovisuel",
+      "DoubleQuotes"
+    ],
+    "demotes": [
+      " love",
+      "Love",
+      " Love",
+      "love",
+      " LOVE"
+    ],
+    "generated_description": "love (token) \u2014 activates on occurrences of \"love\"/\"Love\" across contexts; consistently pushes against generating the word \"love\" (demotes love/Love tokens)."
+  },
+  {
+    "id": "3_5331_2",
+    "layer": 3,
+    "ctx_idx": 2,
+    "influence_score": 0.39617598056793213,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 25.38,
+        "context": "<bos>At first blush, recycled concrete aggregate may seem a second-best solution because its use is being driven not by concrete performance requirements but rather by the requirement to"
+      },
+      {
+        "trigger": " first",
+        "score": 25.38,
+        "context": "<bos>At first, Maggie's parents thought she was slacking off. After the Thanksgiving break, she couldn't concentrate in class, and after school all"
+      },
+      {
+        "trigger": " first",
+        "score": 24.25,
+        "context": " the larger the image of the Rashomon gate became in my mind.\u23ceAt first I thought my gate should be about the size of the entrance gate to To"
+      },
+      {
+        "trigger": " first",
+        "score": 24.88,
+        "context": "<bos>Sunday is characteristic of Hopper's vision of twentieth-century America. At first commonplace, his art has unexpected resonance, showing the significant rather than the beautiful"
+      },
+      {
+        "trigger": " first",
+        "score": 24.25,
+        "context": "11. He was a sickly boy, but showed astounding musical gifts. At first his musical abilities were nurtured by his father, but after a few years the"
+      }
+    ],
+    "promotes": [
+      " onCancelled",
+      " numerus",
+      "ThroughAttribute",
+      "GeneratedCode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      "<bos>",
+      "jmniej",
+      "ValueStyle",
+      "ppure",
+      "po\u0148"
+    ],
+    "generated_description": "say \"At first\" \u2014 activates on sentence-start temporal phrase indicating initial state or contrast, often \"At first,\" introducing a change or contrast in narrative."
+  },
+  {
+    "id": "3_8492_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.31490203738212585,
+    "top_activations": [
+      {
+        "trigger": " hate",
+        "score": 31.88,
+        "context": " the colour of his skin, or his background or his religion. People learn to hate, and if they can learn to hate, they can be taught to love"
+      },
+      {
+        "trigger": "hate",
+        "score": 30.88,
+        "context": " cannot be \"out\" of a relationship-\u23ceeven with a person we 'hate'. The act or thought of hating is a\u23ceprocess of relating.\u23ce"
+      },
+      {
+        "trigger": " hate",
+        "score": 34.5,
+        "context": " just don\u2019t understand humility. What does that mean? Does it mean to hate myself? To be a doormat? Does it mean to\u2026to what"
+      },
+      {
+        "trigger": " hate",
+        "score": 31.62,
+        "context": " that other four letter word.\u23ceThe Southern Pacific has had such great image problems historiographically. It is easy to hate the Southern Pacific. We,"
+      },
+      {
+        "trigger": " hate",
+        "score": 32.0,
+        "context": "People may think why I still think of my father, why don\u2019t I hate him for leaving us, why do I care, why? Mainly because he"
+      }
+    ],
+    "promotes": [
+      " LOVE",
+      "love",
+      "Love",
+      " Love",
+      " love"
+    ],
+    "demotes": [
+      "WaitGroup",
+      "SequentialGroup",
+      "bbene",
+      "AxisAlignment",
+      "audiovisuel"
+    ],
+    "generated_description": "hate \u2014 activates on the word \"hate\" (expressions of hating/hatred); often pushes output toward \"love\"/\"Love\" (promotes antonymic \"love\" tokens)."
+  },
+  {
+    "id": "3_10762_6",
+    "layer": 3,
+    "ctx_idx": 6,
+    "influence_score": 0.3733533024787903,
+    "top_activations": [
+      {
+        "trigger": " school",
+        "score": 16.62,
+        "context": "7 years) were also asked how often they felt that their children were safe in school. Overall, parents of 89.6 percent of children reported that"
+      },
+      {
+        "trigger": "school",
+        "score": 19.62,
+        "context": " and strategies.\u23ceReadWriteThink has a variety of resources for out-of-school use. Visit our Parent & Afterschool Resources section to learn more.\u23ce"
+      },
+      {
+        "trigger": " school",
+        "score": 17.38,
+        "context": "Teachers, no matter how dedicated or effective, cannot make sure your children leave for school on time and do their homework when they get back at night. These are"
+      },
+      {
+        "trigger": " school",
+        "score": 18.5,
+        "context": " answer.\u23ce1. Why does Melinda buy her lunch on her first day of school?\u23cea) She has plenty of money.\u23ceb) So she"
+      },
+      {
+        "trigger": " school",
+        "score": 16.88,
+        "context": "-being. It provides further compelling evidence of the benefits of walking and biking to school.\u23ceFinally, Gary Shipp, Schools, Children and Young People Co"
+      }
+    ],
+    "promotes": [
+      "\u2720",
+      "ValueGenerated",
+      "KommentareTeilen",
+      "EndGlobalSection",
+      "mybatisplus"
+    ],
+    "demotes": [
+      " school",
+      "school",
+      "School",
+      " schools",
+      " School"
+    ],
+    "generated_description": "school \u2014 activates on the token \"school\" and close variants (School, schools, out-of-school); signals the literal word rather than broader education topics"
+  },
+  {
+    "id": "2_16314_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3950048089027405,
+    "top_activations": [
+      {
+        "trigger": " last",
+        "score": 13.56,
+        "context": " hotel \u201cLondon, which has hitherto been badly supplied with hotel accommodation, is at last making a move in the right direction.\u201d He describes some of the facilities,"
+      },
+      {
+        "trigger": " first",
+        "score": 16.5,
+        "context": "After a few days they find a small island where they land the raft. At first, Phillip is totally dependent upon Timothy. This is difficult for Phillip since he"
+      },
+      {
+        "trigger": " first",
+        "score": 16.75,
+        "context": " Berlin, and later along the entire border between East Germany and West Germany. At first constructed of barbed wire, the wall was built to halt large numbers of def"
+      },
+      {
+        "trigger": " first",
+        "score": 15.69,
+        "context": " conclude that gaining true situational awareness is actually exceedingly difficult, even though it might at first appear to be simple. He then goes on to argue that the data we"
+      },
+      {
+        "trigger": " first",
+        "score": 14.81,
+        "context": " education; we must necessarily allow, that nothing but their own consent could, at first, associate them together, and subject them to any authority. The people,"
+      }
+    ],
+    "promotes": [
+      "quiao",
+      "gemeester",
+      "ombs",
+      " client",
+      "SUNG"
+    ],
+    "demotes": [
+      "Portail",
+      " GenerationType",
+      " Mosc\u00fa",
+      " Mep",
+      " h\u00e2te"
+    ],
+    "generated_description": "At first / At last \u2014 activates on temporal discourse markers like \"At first\" or \"At last\", signaling an initial/contrasting narrative shift."
+  },
+  {
+    "id": "4_8435_6",
+    "layer": 4,
+    "ctx_idx": 6,
+    "influence_score": 0.3908374607563019,
+    "top_activations": [
+      {
+        "trigger": " school",
+        "score": 12.5,
+        "context": ", craftsmen, or study to become monks or teachers. The fortunate students that attended school realized the demanding schedule, as classes occurred from early morning to late evening ("
+      },
+      {
+        "trigger": " school",
+        "score": 15.0,
+        "context": " one professor quit and another changed fields.\u23ceMeindl, then just starting graduate school, was open to suggestions about what to do next, and Professor Edward Schatz"
+      },
+      {
+        "trigger": " church",
+        "score": 12.25,
+        "context": " Craftsy community.\u23ceWe breathe printables! Whether it's for church, home, preschool, or for fun we have tons and tons and tons"
+      },
+      {
+        "trigger": " school",
+        "score": 14.5,
+        "context": " is how the Pesach Seder begins as the youngster who has practiced so long in school finally gets a chance to ask his father four questions about the distinctive nature of"
+      },
+      {
+        "trigger": " school",
+        "score": 16.75,
+        "context": " working on computers.\u23ceOutlines are heavily emphasized during the first year of law school, and for good reason. Though, the length of an outline can vary"
+      }
+    ],
+    "promotes": [
+      " servici",
+      " sessions",
+      "G\u00e9ographie",
+      "QtCore",
+      " kasarigan"
+    ],
+    "demotes": [
+      "DockStyle",
+      "ChildScrollView",
+      " getItemId",
+      " estekak",
+      "AnchorStyles"
+    ],
+    "generated_description": "Institution \u2014 activates on communal institutions, especially educational or religious words (school, law school, church)."
+  },
+  {
+    "id": "3_6656_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.38656240701675415,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 12.0,
+        "context": "1 years of electricity use, along with many of the major events in Danny\u2019s household. (Follow the green line.)\u23ceWhen the Parkers moved into"
+      },
+      {
+        "trigger": "s",
+        "score": 13.56,
+        "context": " the real challenge is practicing what you know.\u23ceRead about how difficult Alicia's diagnosis process was, and about what limitations the disease now imposes on her daily"
+      },
+      {
+        "trigger": "s",
+        "score": 11.75,
+        "context": " red, spot and checker pattern; abdomen has cream spots down sides. Edith's checkerspot has similar markings, but lacks cream spots on abdomen and is typically"
+      },
+      {
+        "trigger": " uses",
+        "score": 11.38,
+        "context": "<bos>So I took a look at them.\u23ceDan uses the First Law of Thermodynamics.\u23ceThat\u2019s a start: Energy(in) \u2013 Energy("
+      },
+      {
+        "trigger": ",",
+        "score": 11.88,
+        "context": ").\u23ceAll the characters in the GazziliWorld apps are the same: Lily, Benito, Kenji, Tyler, and Mimi. Each game begins with one of"
+      }
+    ],
+    "promotes": [
+      "boldmath",
+      " cherch\u00e9s",
+      "tierrez",
+      "\u00e9valuateur",
+      "<bos>"
+    ],
+    "demotes": [
+      "Hentet",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "CloseOperation",
+      "RetentionPolicy",
+      " \u0917\u094d\u0930\u093e\u0939\u0915"
+    ],
+    "generated_description": "\"s\" suffix / letter s \u2014 activates on the character sequence \"s\" (plural/3rd-person -s and \"is\" contractions), often when attached to words or as the single-letter token."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.37680190801620483,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "say \"It\" (sentence-initial) \u2014 activates on sentence-start dummy subject \"It\" and opening parenthesis initiating expository sentences."
+  },
+  {
+    "id": "17_10421_18",
+    "layer": 17,
+    "ctx_idx": 18,
+    "influence_score": 0.3833785355091095,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 27.25,
+        "context": "More example sentences\u23ce- He is able; he is voluble; he's, I think, a very decent man, but again the campaign I think"
+      },
+      {
+        "trigger": " was",
+        "score": 29.75,
+        "context": ". She longed and yearned for him\u23cebut found absolutely no response. He was incapable of responding. He was\u23ceincapable of loving. She loved him"
+      },
+      {
+        "trigger": " was",
+        "score": 30.5,
+        "context": " easily knowable figure, not as literate or profound as his revolutionary colleagues, and was the ultimate early Republic patrician.\u23ceOne thing this made me wonder was"
+      },
+      {
+        "trigger": " is",
+        "score": 28.25,
+        "context": " up and he will request certain items throughout the day. In many ways our boy is just like other typically developing four year olds, becoming a little more independent as"
+      },
+      {
+        "trigger": "s",
+        "score": 28.75,
+        "context": " studies them for Louisiana State University. Reed would make a great scout leadershe's got no-nonsense hair, an infectious smile, and she forges through"
+      }
+    ],
+    "promotes": [
+      " aligned",
+      " \u00e9tablissement",
+      "chossen",
+      " Exteriores",
+      " EconPapers"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0627\u0637\u0644\u0627\u0639",
+      "\u51fa\u7248\u5e74",
+      "rictive",
+      "\u0645\u0631\u0627\u062c\u0639",
+      "argout"
+    ],
+    "generated_description": "say predicate after copula \u2014 activates on third-person copulas (\"is\", \"was\", \"'s\"); signals an upcoming descriptive/state predicate or complement."
+  },
+  {
+    "id": "18_15734_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.28937825560569763,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " (d) family considerations.\u23ceWhen is Transfer Available?\u23ceThe transfer option is available to students who have begun their undergraduate coursework at a university, whether it"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": ", if left untreated the malady can become permanent.\u23ce- In men this ailment is known as androgenetic alopecia and teenager are very vulnerable to it."
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " restored.\u23ceThe settlement of the lawsuit defines legal requirements of the parties, and is often put in force by an order of the court after a joint stipulation by"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " 2030, according to the EIA. As a result, petroleum consumption is projected to only increase 20 percent by 2030"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": " cases, modifications to the existing rules for different eras of the Empire. This book is aimed at GMs looking for campaign ideas or fans wanting historical information in one"
+      }
+    ],
+    "promotes": [
+      " not",
+      " shown",
+      " done",
+      " taken",
+      " able"
+    ],
+    "demotes": [
+      "IContainer",
+      " Containing",
+      "containing",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " corresponded"
+    ],
+    "generated_description": "\"is\" token \u2014 activates on the lexical token \"is\" (including as substring in words like \"existing\"); appears before adjectives/participles and in passive/auxiliary constructions."
+  },
+  {
+    "id": "15_12624_18",
+    "layer": 15,
+    "ctx_idx": 18,
+    "influence_score": 0.3465455174446106,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 38.25,
+        "context": " the tomb is not a second temple tomb. It is much older and if we are looking for Jesus to be laid in a \"new tomb\" then this won"
+      },
+      {
+        "trigger": " am",
+        "score": 38.0,
+        "context": " play can also be fantasy like fighting dragons or going on adventures in space. I am sharing toys that work in our house to help our daughter with imaginative play."
+      },
+      {
+        "trigger": " were",
+        "score": 38.0,
+        "context": " study published in the journal Science on Thursday.\u23ce\"What is new is we were first to show the properties of these first stars depended so crucially on dark"
+      },
+      {
+        "trigger": " are",
+        "score": 37.0,
+        "context": " to determine a better way to do business or enhance performance. Historically, most organizations are passive when it comes to reporting problems and potential solutions shared with other like organizations"
+      },
+      {
+        "trigger": " was",
+        "score": 37.0,
+        "context": " had little time to track down or develop resources that supported their vocational needs. I was not alone.\u23ceA group of us \u2013 educators, clinicians, parents and"
+      }
+    ],
+    "promotes": [
+      "NameInMap",
+      "URLException",
+      "CardContent",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " \u0635\u0648\u062a\u064a\u0647"
+    ],
+    "demotes": [
+      " \u00e9nerg\u00e9",
+      " tilf",
+      "MENAFN",
+      " d\u00e9pla",
+      " cumplido"
+    ],
+    "generated_description": "say \"be\" verb \u2014 activates on copula forms (am, are, was, were); signals/encourages linking-verb tokens across tenses"
+  },
+  {
+    "id": "4_12187_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3358451724052429,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 27.88,
+        "context": " rare cancer of the bone and soft tissue \u2013 in August last year.\u23ceAt first Amy was misdiagnosed as having growing pains and when she began going to"
+      },
+      {
+        "trigger": "ally",
+        "score": 25.38,
+        "context": " glands, and the pituitary gland. Because these modalities were controlled by surgeons (initially including radiotherapy), the tradition in the United Kingdom has been for surgeons to take"
+      },
+      {
+        "trigger": " first",
+        "score": 29.38,
+        "context": "<bos>At first glance, robustness and evolvability \u2014 two keys to the continued existence of life \u2014 look incompatible. Living things need robust genes; otherwise, any"
+      },
+      {
+        "trigger": " beginning",
+        "score": 25.12,
+        "context": "<bos>At the beginning of the new millennium, a key development concern was the impact of agricultural policies in high-income countries on poor farmers in the rest of the"
+      },
+      {
+        "trigger": " beginning",
+        "score": 25.88,
+        "context": ", and is still considered advanced for the 21st century. In the beginning, The Louvre was used as a royal palace. It was built by King"
+      }
+    ],
+    "promotes": [
+      "initial",
+      " Initially",
+      " Initial",
+      "Initial",
+      " initial"
+    ],
+    "demotes": [
+      "internalType",
+      " th\u1ee9c",
+      " \u062f\u06cc\u06a9\u06be\u06cc\u06d2",
+      "layui",
+      "\u0628\u0648\u0627\u0628\u0629"
+    ],
+    "generated_description": "initial/beginning \u2014 activates on tokens meaning \"start\" (first, initially, beginning); pushes \u201cinitial\u201d/\u201cInitially\u201d variants in output."
+  },
+  {
+    "id": "18_14319_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.3794664740562439,
+    "top_activations": [
+      {
+        "trigger": "ll",
+        "score": 29.5,
+        "context": " perfect way to make sure children get a great-tasting and nutritious breakfast they\u2019ll love. A bowl of Kellogg\u2019s cereal plus one cup of milk provides"
+      },
+      {
+        "trigger": " of",
+        "score": 30.0,
+        "context": " Health, symptoms of depression may include a persistent sad or empty feeling; a loss of energy and appetite; and a lack of interest in socializing, work or hobbies"
+      },
+      {
+        "trigger": " actually",
+        "score": 37.5,
+        "context": "s unique visual and kinesthetic approach, they actually understand the concepts and experience success, thereby enhancing their interest in mathematics. In this workshop you will see how Hands"
+      },
+      {
+        "trigger": " you",
+        "score": 30.5,
+        "context": " stress and weight. Be physically active in your own way. Start by doing what you can, at least 10 minutes at a time. Always check with"
+      },
+      {
+        "trigger": " are",
+        "score": 29.75,
+        "context": " strategies can help you motivate your kids get a move on:\u23ceEncourage activities that are fun and physical, such as running, skating, swimming, bicycling,"
+      }
+    ],
+    "promotes": [
+      "enjoy",
+      " enjoy",
+      " Enjoy",
+      " pleasure",
+      " enjoyment"
+    ],
+    "demotes": [
+      " h\u1ea1ng",
+      " geografia",
+      " Thorne",
+      "Ssl",
+      "WebpackPlugin"
+    ],
+    "generated_description": "say enjoy/enjoyment \u2014 activates on contexts describing liking, fun, or positive experience; promotes tokens like \"enjoy\", \"Enjoy\", \"pleasure\", \"enjoyment\"."
+  },
+  {
+    "id": "18_14828_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.3871909976005554,
+    "top_activations": [
+      {
+        "trigger": "m",
+        "score": 29.25,
+        "context": "\u23ce3. My locker is opened approximately five times a day. I\u00e2\u20ac\u2122m there in the morning putting in my gym bag and my sweaters and jackets."
+      },
+      {
+        "trigger": " am",
+        "score": 27.5,
+        "context": "\u23ceBut the truth is, I am in the relationship-building business. I am here today to tell you that young people and students can have an impact and"
+      },
+      {
+        "trigger": " is",
+        "score": 31.5,
+        "context": " install gardens on front lawns. An architect by training, Haeg admits that he is not a botany expert; he\u2019s picked it up as he goes along"
+      },
+      {
+        "trigger": " am",
+        "score": 28.5,
+        "context": " never forget any task assigned, and since being a surgeon is my career goal I am sure that OCD will help me to never forget an instrument inside a patient."
+      },
+      {
+        "trigger": " is",
+        "score": 33.5,
+        "context": " He has a keen sense of humor and irony. He loves American history, and is regularly pointing out various absurdities in emails or written stories that he fires off"
+      }
+    ],
+    "promotes": [
+      "Colour",
+      " color\u00e9s",
+      " \u00e9ner",
+      " COLOUR",
+      " banho"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      "yntaxException",
+      "Jeografia",
+      "Autoritn\u00ed",
+      "NameInMap"
+    ],
+    "generated_description": "be-verb (am/is) \u2014 activates on present-tense \"am\" and \"is\" (and short internal letter matches like \"m\"/\"is\" inside words); signals copula/present\u2011tense be forms."
+  },
+  {
+    "id": "18_6847_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.3377341628074646,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 50.25,
+        "context": "19, after which he resumed practicing law.\u23ceReed, a Republican, was appointed to the United States Senate on August 8, 192"
+      },
+      {
+        "trigger": " was",
+        "score": 45.5,
+        "context": "0 BC) was a Spartan general of the 5th century BC. He was a scion of the royal house of the Agiads but not in"
+      },
+      {
+        "trigger": " been",
+        "score": 46.5,
+        "context": " degrees in English from The Pennsylvania State University. During his student days, Henry had been elected as president of the student government. He served as an instructor at Penn"
+      },
+      {
+        "trigger": " was",
+        "score": 46.5,
+        "context": " laboratory of electroencephalography and used it to study normal and pathological aspects of cerebral waves (2). He was a pioneer in introducing ECT in France and examined physiological"
+      },
+      {
+        "trigger": " was",
+        "score": 51.75,
+        "context": " York City, Ph.D. Columbia, 1955. He was a professor at the Univ. of Michigan from 1955 to"
+      }
+    ],
+    "promotes": [
+      "PUTY",
+      "Couleur",
+      "ena\u00e7\u00e3o",
+      " Director",
+      " director"
+    ],
+    "demotes": [
+      " resourceCulture",
+      " defaultstate",
+      "\u0627\u0644\u062d\u064a\u0627\u0647",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " ComVisible"
+    ],
+    "generated_description": "past \"be\" auxiliary \u2014 activates on \"was\"/\"been\" in past-tense biographical statements (e.g., \"was appointed\", \"was a professor\", \"had been elected\")."
+  },
+  {
+    "id": "17_12622_18",
+    "layer": 17,
+    "ctx_idx": 18,
+    "influence_score": 0.350719690322876,
+    "top_activations": [
+      {
+        "trigger": " they",
+        "score": 37.0,
+        "context": "\"They've been through this before,\" said Poague. \"Actually, they can probably handle whatever weather conditions you can throw at them. They've"
+      },
+      {
+        "trigger": " have",
+        "score": 26.12,
+        "context": " the building blocks of life might not just have lived through the journey \u2014 it might have triggered their transformation.\u23ceTop image: Comet Hale-Bopp, photographed"
+      },
+      {
+        "trigger": " probably",
+        "score": 29.62,
+        "context": " their products on those lists. But this is one \"top\" list that manufacturers probably aren't too thrilled to find their products on.\u23ceAs we note"
+      },
+      {
+        "trigger": " even",
+        "score": 26.88,
+        "context": " consumers (especially in the United States) seem to have no problem with it, even volunteering for it.\u23cePerhaps fortunately, some regulators are stepping in and keeping"
+      },
+      {
+        "trigger": " looks",
+        "score": 48.5,
+        "context": " picking \u2014 but on the other end of the spectrum, fall also brings something that nobody looks forward to \u2014 flu season. A simple flu shot, which is easy"
+      }
+    ],
+    "promotes": [
+      "welcome",
+      " WELCOME",
+      "DockStyle",
+      " welcomed",
+      " welcome"
+    ],
+    "demotes": [
+      "\u1eae",
+      "m\u00e4\u00dfigen",
+      "icated",
+      "Barney",
+      "\u021bei"
+    ],
+    "generated_description": "Short high-frequency words \u2014 activates on common short function words (they, have, probably, even, looks); signals general connective/auxiliary tokens."
+  },
+  {
+    "id": "19_1415_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.3747498095035553,
+    "top_activations": [
+      {
+        "trigger": "m",
+        "score": 60.25,
+        "context": " doctor must physically cut it or smash it until the growth stops.\u23ceI'm no legal scholar, but I can not see how this action can not be"
+      },
+      {
+        "trigger": "m",
+        "score": 60.25,
+        "context": "<bos>OK, I'm just gonna kid with you a bit here. . .\u23ceI took notes but have forgotten a lot. That is why I will"
+      },
+      {
+        "trigger": "m",
+        "score": 63.75,
+        "context": " drinking water in the country\"?\u23ce-Sarah from Astoria, NY\u23ceI'm sorry to burst your Big Apple bubble, but this is just wishful thinking."
+      },
+      {
+        "trigger": "m",
+        "score": 63.75,
+        "context": " work)\u23ceAs for economists, don't get me started\u23ceI'm sitting back, just nodding my head in agreement. I don't know"
+      },
+      {
+        "trigger": "m",
+        "score": 62.25,
+        "context": "environmental_issues\u23ce]Auto answered|Score 1Note:\u23ceI'm sorry that that wasn't a good answer. Please hold on while I"
+      }
+    ],
+    "promotes": [
+      " surprised",
+      " going",
+      " glad",
+      "migrationBuilder",
+      "oredCriteria"
+    ],
+    "demotes": [
+      " M\u00f6glich",
+      "CodedInputStream",
+      "RetentionPolicy",
+      "kh\u00e1u",
+      " Vichy"
+    ],
+    "generated_description": "subtoken \"m\" \u2014 activates on the isolated/inner subtoken \"m\" (contractions and words: I'm, from, must, economists, environmental, etc.)"
+  },
+  {
+    "id": "18_16051_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.3395861089229584,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 40.5,
+        "context": "'t really study the Fourier transform for what it is,\" says Laurent Demanet, an assistant professor of applied mathematics at MIT. \"You take a class in"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": " too appealing. So rather than stop buying Mega Millions tickets, Ms. Seemann, 50, who lives in suburban Chicago and works in advertising sales for"
+      },
+      {
+        "trigger": ",",
+        "score": 35.0,
+        "context": " a few used injected drugs much earlier in their lives, says Dr. John Ward, who runs the CDC's viral hepatitis division.\u23ce\"We had an"
+      },
+      {
+        "trigger": ",",
+        "score": 41.0,
+        "context": "Neither of us knew a whole lot about photonics before last summer,\" says Negro, an electrical engineering major, \"so the learning experience was huge.\u23ce\""
+      },
+      {
+        "trigger": ",",
+        "score": 44.5,
+        "context": " about how to respect people more ... and how powerful words can be,\u201d said Jenna, 14, an eighth-grader.\u23ceThe middle school is one"
+      }
+    ],
+    "promotes": [
+      " someone",
+      "\u4e00\u540d",
+      " seorang",
+      " an",
+      " a"
+    ],
+    "demotes": [
+      "NameInMap",
+      " unknownFields",
+      "\u51fa\u7248\u5e74",
+      "errHandler",
+      "styleType"
+    ],
+    "generated_description": "say comma before attribution \u2014 activates on commas closing quoted speech before speaker tags or names (\\\",\\\" before says/said/Name), signals dialogue attribution boundary"
+  },
+  {
+    "id": "18_1422_18",
+    "layer": 18,
+    "ctx_idx": 18,
+    "influence_score": 0.376125305891037,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 28.12,
+        "context": " thing that has happened in bipartisan politics since the years of President Bill Clinton. He is the second born in a family with 12 children living in a two"
+      },
+      {
+        "trigger": " was",
+        "score": 28.88,
+        "context": " not processed through a government-run public school system like cattle.\u23ceBen Franklin was also a self-taught writer. So there is something to be said for"
+      },
+      {
+        "trigger": " was",
+        "score": 29.38,
+        "context": " section and spent most of the war managing medical data and records.\u23ce\"He was very strict. He had a vocabulary that no one could keep up with,\""
+      },
+      {
+        "trigger": " is",
+        "score": 31.62,
+        "context": " painting \u201cThere\u2019s no free speech here\u201d on the gym floor. Sophie is never afraid to question authority. Francine, who tries to live by her father"
+      },
+      {
+        "trigger": " is",
+        "score": 26.88,
+        "context": " last open spot you\u2019ve got the decision down between two players \u2013 Athlete A is clearly a physical specimen (i.e., they look dominant and are extremely"
+      }
+    ],
+    "promotes": [
+      " alguien",
+      " someone",
+      " naturen",
+      " an",
+      " tramonto"
+    ],
+    "demotes": [
+      "Portale",
+      " C\u00e6sar",
+      " INTERESAR",
+      "NameInMap",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Copula \"is/was\" \u2014 activates on third-person singular linking verbs (is, was) when introducing predicates or descriptions about a subject."
+  },
+  {
+    "id": "19_1765_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.38143157958984375,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 44.5,
+        "context": "\u23ceThat's why it's so troubling that the Food and Drug Administration is expected to approve a powerful cattle antibiotic to treat a common pneumonia-like illness"
+      },
+      {
+        "trigger": " is",
+        "score": 45.0,
+        "context": " also review x-rays on their phone and calculate radiation dosages.\u23cethe FDA is worried about the consequences of those apps not working properly, and are asking developers"
+      },
+      {
+        "trigger": " are",
+        "score": 49.5,
+        "context": "0 residents.\u23ceAs this year\u2019s drought lingers into autumn, county officials are watching to see if intake pipes at its Clarks Hill Water Treatment Plant will remain"
+      },
+      {
+        "trigger": " are",
+        "score": 47.0,
+        "context": " Behavioral Economics in Child Nutrition Programs.\u23ceNow there is word that Los Angeles officials are relenting a bit and allowing some foods back in, such as hamburgers and"
+      },
+      {
+        "trigger": " are",
+        "score": 46.5,
+        "context": " annual day of prayer.\u23ceNow the atheists want in on the action. They are claiming that we can solve our problems with reason alone. The reason-alone"
+      }
+    ],
+    "promotes": [
+      " feeling",
+      " giving",
+      " taking",
+      " doing",
+      " making"
+    ],
+    "demotes": [
+      " The\u017fe",
+      " plea\u017fure",
+      "\u017felf",
+      " bezeichneter",
+      " my\u017felf"
+    ],
+    "generated_description": "Present copula (is / are) \u2014 activates on \"is\" and \"are\" in third-person present sentences, often before verbs/adjective clauses; often precedes gerundive/action words (feeling, doing, making)."
+  },
+  {
+    "id": "19_4929_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.37405189871788025,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 48.5,
+        "context": " for the vaccine had been hoping for higher vaccination rates, but some officials say they are happy with the current rate.\u23ceThe vaccine is expensive, about $3"
+      },
+      {
+        "trigger": " were",
+        "score": 48.0,
+        "context": "48, the magazine could not have been prepared for its visceral effect: readers were outraged, many immediately canceling their subscriptions, others sending hate mail to the author"
+      },
+      {
+        "trigger": " becomes",
+        "score": 49.5,
+        "context": " Huck that this, not the tavern, must be where the gold is hidden. Huck becomes frightened that Injun Joe\u2019s ghost could be lurking around, but"
+      },
+      {
+        "trigger": " seem",
+        "score": 62.0,
+        "context": " to film, and the villagers, who knew we were coming, didn't seem bothered by us at all.\u23ceIt's hard to imagine all the"
+      },
+      {
+        "trigger": " was",
+        "score": 61.5,
+        "context": " glass made a deep impression on him. He admired the coloration of medieval glass and was convinced that the quality of contemporary glass could be improved upon. In his own"
+      }
+    ],
+    "promotes": [
+      " shocked",
+      " surprised",
+      " amazed",
+      " intrigued",
+      " impressed"
+    ],
+    "demotes": [
+      " \u017feveral",
+      " chofe",
+      " greate\u017ft",
+      " Re\u017f",
+      " Monfieur"
+    ],
+    "generated_description": "Linking/state verbs \u2014 activates on copula and state verbs (are, were, was, seem, becomes)."
+  },
+  {
+    "id": "19_14390_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.3801272213459015,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 63.25,
+        "context": " who has won numerous state and national awards for his coverage of environmental issues. He is also the author of \"Manatee Insanity: Inside the War Over Florida"
+      },
+      {
+        "trigger": " is",
+        "score": 57.75,
+        "context": " Medicine residency and Rheumatology fellowship at the University of California, Irvine. He is board-certified in Internal Medicine and Rheumatology.\u23ceIn this Article"
+      },
+      {
+        "trigger": " is",
+        "score": 66.0,
+        "context": "us, a professional trumpet player, is a professor in the Harmony Department. He is the author of Beyond Functional Harmony published by Advance Music. For more information,"
+      },
+      {
+        "trigger": " is",
+        "score": 61.75,
+        "context": " Reading Specialist with the Merrimack Valley School District in New Hampshire.\u23ceBruce Johnson is also the author of \"Involving Parents in Their Children's Reading Development"
+      },
+      {
+        "trigger": " is",
+        "score": 58.25,
+        "context": " the Shift Age.\" He has been a contributor to Oprah.com. Houle is futurist-in- residence at the Ringling College of Art + Design"
+      }
+    ],
+    "promotes": [
+      "ActiveRecord",
+      "migrationBuilder",
+      " InputDecoration",
+      "Tikang",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448"
+    ],
+    "demotes": [
+      " judiciaire",
+      " vem",
+      " come",
+      "RefNanny",
+      "pos"
+    ],
+    "generated_description": "say a bio predicate \u2014 activates on \"is\" in biographical sentences; signals upcoming profession/role/credential/authorial info or other descriptive continuation."
+  },
+  {
+    "id": "20_251_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.32777032256126404,
+    "top_activations": [
+      {
+        "trigger": " am",
+        "score": 32.25,
+        "context": " for not only myself but for my family,\" says Martinez. \"My family has just been through so much. I am more concerned with the rest of my family"
+      },
+      {
+        "trigger": " am",
+        "score": 36.5,
+        "context": " it with a 10' pole.\u23ceDitto on the accuracy. I am going to paper piece a log cabin and schoolhuse quilt that I know"
+      },
+      {
+        "trigger": " is",
+        "score": 32.0,
+        "context": " more and more, she gives up, seeing no hope for her future. Dana is willing to do more to regain her freedom, while Alice feels death is her"
+      },
+      {
+        "trigger": "m",
+        "score": 35.5,
+        "context": " - I may be growing old but I still have not grown up. I'm the poster child for middle aged immaturity. I really wanted to try the"
+      },
+      {
+        "trigger": " also",
+        "score": 38.75,
+        "context": " of reasons. I love the history behind the Battle of Baltimore, but I\u2019m also a closet Jane Austen fan, and her books happened around that time."
+      }
+    ],
+    "promotes": [
+      "__\":\r",
+      "ovatel",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "vdots",
+      "GMENT"
+    ],
+    "demotes": [
+      " it\u017felf",
+      " n\u00e9z",
+      "ValueGeneration",
+      " whereof",
+      " prioritise"
+    ],
+    "generated_description": "present-tense be-forms \u2014 activates on short linking verbs: \"am\", \"is\", \"I'm\" (occasional nearby \"also\"); signals present-tense copula/auxiliary tokens."
+  },
+  {
+    "id": "19_9932_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.3840179145336151,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 27.12,
+        "context": " a pond to hunker down for the winter.\u23ceBut fate intervenes and presents an opportunity for Worthless to finally prove to himself that he is worthy of"
+      },
+      {
+        "trigger": " are",
+        "score": 26.88,
+        "context": "Cause this country of ours is built\u23ceLike pieces of a quilt.\u23ceWe are pieces of a quilt of many colors\u23ceSee, how we blend together in"
+      },
+      {
+        "trigger": "m",
+        "score": 35.0,
+        "context": " at a very young age. As many people see me as a normal girl, I\u2019m not. Deep down I\u2019m broken and I\u2019m searching"
+      },
+      {
+        "trigger": " are",
+        "score": 33.0,
+        "context": " it, than to look upon past evils with a sanctimonious superiority. We are different, but it is doubtful we are that much better, for few things"
+      },
+      {
+        "trigger": " am",
+        "score": 26.62,
+        "context": "t a free will. It might be that this convincing feeling I have, I am executing free will, is actually because I'm observing something that is there"
+      }
+    ],
+    "promotes": [
+      " has",
+      " part",
+      " an",
+      " the",
+      " a"
+    ],
+    "demotes": [
+      " my\u017felf",
+      "mybatisplus",
+      " fhew",
+      " odkazy",
+      " neceff"
+    ],
+    "generated_description": "forms of \"to be\" \u2014 activates on present-tense be-verbs: \"is\", \"are\", \"am\"; appears where subject is being linked to a predicate or adjective."
+  },
+  {
+    "id": "20_1716_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.3788042664527893,
+    "top_activations": [
+      {
+        "trigger": " students",
+        "score": 78.0,
+        "context": " that still need that). I got this great idea from another kindergarten teacher and my students love it. To play Snowman Shake, you need a snowman container, "
+      },
+      {
+        "trigger": " they",
+        "score": 79.0,
+        "context": " games as an integral aspect of training is to provide players with an opportunity to do what they enjoy doing the most, playing a game.\u23ceDuring the process of"
+      },
+      {
+        "trigger": " they",
+        "score": 79.0,
+        "context": " a task after only a few minutes. However, if they are doing something they really enjoy, they usually have no trouble paying attention. But focusing deliberate, conscious"
+      },
+      {
+        "trigger": " they",
+        "score": 79.0,
+        "context": " as an integral aspect of training is to provide players with an opportunity to do what they enjoy doing the most, playing a game.\u23ceDuring the process of playing"
+      },
+      {
+        "trigger": " to",
+        "score": 70.0,
+        "context": " much of the time?\u23ce2) Have you lost interest in things you used to be interested in?\u23ce90% of people who are depressed will answer"
+      }
+    ],
+    "promotes": [
+      "\u21b9",
+      " tromper",
+      "AsUp",
+      " varandra",
+      "protoimpl"
+    ],
+    "demotes": [
+      " loving",
+      " love",
+      " beloved",
+      " loved",
+      " Loving"
+    ],
+    "generated_description": "Plural human referents \u2014 activates on plural people tokens (they, students, other plural human nouns); flags plural-subject contexts."
+  },
+  {
+    "id": "19_256_18",
+    "layer": 19,
+    "ctx_idx": 18,
+    "influence_score": 0.2917247414588928,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 42.0,
+        "context": " own banks!\" he exclaims. As the film progresses, we learn that Gatewood is in fact skipping town with a satchel full of embezzled cash.\u23ceAs"
+      },
+      {
+        "trigger": " was",
+        "score": 33.5,
+        "context": " by the warden? Why did Mr. Pendanski insist on treating Zero like he was stupid?\u23ceCompare the relationship between Zero and Stanley to that of the relationship"
+      },
+      {
+        "trigger": " Was",
+        "score": 37.0,
+        "context": ", and so he returned to help in the family business.\u23ce\u201cMy Father Was a Poor Tobacconist\u201d\u23ceHis father was \u201ca poor tob"
+      },
+      {
+        "trigger": " is",
+        "score": 33.0,
+        "context": " the relative pronoun\u23cedoes not always function as the subject. Consider the\u23ceHe is the man whom\u23ceIn this example, whom is not\u23cethe subject in"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " child slavery and abuse - 'cause it's not in the past and he is a historian.\u23ceBut he also seems to be a blithering idiot."
+      }
+    ],
+    "promotes": [
+      " giving",
+      " an",
+      " ready",
+      " the",
+      " a"
+    ],
+    "demotes": [
+      "tagHelperRunner",
+      " it\u017felf",
+      " plea\u017fure",
+      " Administrativna",
+      "ynchronously"
+    ],
+    "generated_description": "be-verb (is/was) \u2014 activates on linking verb forms \"is\"/\"was\"; fires when sentence introduces a predicate or description."
+  },
+  {
+    "id": "20_11838_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.3386708199977875,
+    "top_activations": [
+      {
+        "trigger": " also",
+        "score": 32.0,
+        "context": "1836, Verdi married his childhood sweetheart Margherita Barezzi (who was also the daughter of his greatest benefactor), and returned to Milan several years later with"
+      },
+      {
+        "trigger": " was",
+        "score": 34.0,
+        "context": " \"Hispanic\" before you blast democrats and jews - Jusice Benjamin Cardozo was Sephardi Jew and Portugese - he was NOT Hispanic in contemp."
+      },
+      {
+        "trigger": " being",
+        "score": 37.0,
+        "context": "010. Now, being a physician and being against sodium reduction is like being a member of PETA and entering the Nathan's hot dog eating contest"
+      },
+      {
+        "trigger": " likely",
+        "score": 34.25,
+        "context": " take it seriously. Modern day biblical scholarship tells us the historical Jesus probably was most likely born in or near Nazareth, not Bethlehem. He was probably born in a"
+      },
+      {
+        "trigger": " is",
+        "score": 40.25,
+        "context": " court trial about to begin. Some of the facts are silly: the defense attorney is an Aries, the prosecutor is single, etc., to give students something to"
+      }
+    ],
+    "promotes": [
+      " someone",
+      " happy",
+      " somebody",
+      " one",
+      " addicted"
+    ],
+    "demotes": [
+      "AddTagHelper",
+      "saraba",
+      " autorytatywna",
+      "awtextra",
+      " estekak"
+    ],
+    "generated_description": "say predicate after to-be \u2014 activates on copula/auxiliary tokens (is, was, being, likely context); pushes predicates/roles/adjectives (someone, happy, addicted, one) after the verb."
+  },
+  {
+    "id": "20_7576_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.3367927372455597,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 56.25,
+        "context": " MD, a surgeon who performs gender reassignment surgery in Trinidad, Colo., and is herself transgender.\u23cePost-change, many men and women deal with ran"
+      },
+      {
+        "trigger": " is",
+        "score": 62.75,
+        "context": " from Antarctica: Music from the Ice with Phillip Greelief. Cheryl E. Leonard is a composer, performer, and instrument builder who creates instruments from unusual raw materials"
+      },
+      {
+        "trigger": " is",
+        "score": 57.75,
+        "context": " recent web chat with TES, children\u2019s author Frank Cottrell Boyce \u2013 who is a patron of The Reader Organisation, and now also Professor of Reading at Hope"
+      },
+      {
+        "trigger": " is",
+        "score": 65.5,
+        "context": ". Contained within several wieghty tomes, his illustrations serve as definitive guides to the identification of the insects.\u23ceOtte is one of six children born to"
+      },
+      {
+        "trigger": " is",
+        "score": 56.75,
+        "context": " be continued indefinitely thereby achieving speeds impossible to achieve with rocket propulsion. Minovitch is announcing that alll of the corresponding information and documents are now available at gravity"
+      }
+    ],
+    "promotes": [
+      " also",
+      " one",
+      " finishing",
+      " co",
+      " a"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "Rhestr",
+      " it\u017felf",
+      "WriteTagHelper",
+      "ViewImports"
+    ],
+    "generated_description": "say \"is\" \u2014 activates on third-person singular copula \"is\", especially before predicates in bios/descriptions and factual statements."
+  },
+  {
+    "id": "5_3400_6",
+    "layer": 5,
+    "ctx_idx": 6,
+    "influence_score": 0.38208192586898804,
+    "top_activations": [
+      {
+        "trigger": " debating",
+        "score": 15.56,
+        "context": " Although he is a monster, he is also courageous and curiously intellectual. He loves debating his views of life and earns the admiration of the novel\u2019s narrator,"
+      },
+      {
+        "trigger": " reading",
+        "score": 23.0,
+        "context": " simply\u23cewant to share with you what has helped us. Hope that you enjoy reading our posts\u23ceand please come back regularly to read more!\u23ceNiche"
+      },
+      {
+        "trigger": " eating",
+        "score": 17.5,
+        "context": " be more formal and so is less frequent.\u23ce- I used not to like eating spinach (but I do now.)\u23ce- She's friendly now but"
+      },
+      {
+        "trigger": " reading",
+        "score": 19.5,
+        "context": "<bos>I have been enjoying reading all the posts on this Thread....thank you for sharing your work.\u23ceI have one question. If as you say: \""
+      },
+      {
+        "trigger": " eating",
+        "score": 16.0,
+        "context": "? Do you suffer from bursitis or carpal tunnel syndrome? Do you enjoy eating popcorn, nuts, and seeds? If so you could be suffering from ile"
+      }
+    ],
+    "promotes": [
+      "SqlClient",
+      "ecma",
+      " gerne",
+      "ActivityCompat",
+      " graag"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " \u043c\u04d9\u043a\u0430\u043b",
+      " tran\u017f",
+      " auffi",
+      " fir\u017ft"
+    ],
+    "generated_description": "Verb -ing \u2014 activates on verbs in -ing form (gerunds/present participles) like \"debating,\" \"reading,\" \"eating.\""
+  },
+  {
+    "id": "20_13708_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.39203640818595886,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 52.0,
+        "context": " Urban transportation officials, facing growing populations, automobile congestion, and strained transit systems, are increasingly looking to bicycles as part of an overall solution. \"Cities are really"
+      },
+      {
+        "trigger": " are",
+        "score": 52.5,
+        "context": ", they\u2019re probably right.\u23ceSo Covanta and other companies like it are giving trash a new destiny: Instead of letting it spend decades slowly decaying in"
+      },
+      {
+        "trigger": " are",
+        "score": 52.5,
+        "context": " decades used sonar for underwater communication.\u23ceNow, researchers at the University at Buffalo are developing a miniaturized version of the same technology to be applied inside the"
+      },
+      {
+        "trigger": " are",
+        "score": 53.5,
+        "context": "- For some patients, AML is curable with current therapies.\u23ce- Researchers are studying new approaches to therapy in clinical trials.\u23ce- Hematologists and"
+      },
+      {
+        "trigger": " are",
+        "score": 53.0,
+        "context": "<bos>With many questions surrounding the health and environmental impacts of hydraulic fracturing, drillers are facing scrutiny about this natural gas retrieval technique. Can fracking be performed without"
+      }
+    ],
+    "promotes": [
+      " esterni",
+      " concerned",
+      " reluctant",
+      "GIH",
+      " interested"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "\u51fa\u7248\u5e74",
+      " plea\u017fure",
+      "()]);",
+      " Monfieur"
+    ],
+    "generated_description": "say \"are\" \u2014 activates on plural-present copula/auxiliary (before verbs/adjectives), marks plural subjects in factual/news sentences"
+  },
+  {
+    "id": "12_9882_18",
+    "layer": 12,
+    "ctx_idx": 18,
+    "influence_score": 0.397342324256897,
+    "top_activations": [
+      {
+        "trigger": " Now",
+        "score": 18.62,
+        "context": " 1927; Felix the Cat was the first character balloon. Now, 85 years later, the inflation of the balloons is an event itself"
+      },
+      {
+        "trigger": ",",
+        "score": 17.25,
+        "context": " scientist at Weslaco to conduct research on citrus and vegetable processing.\u23ceToday, the Center employs over 30 scientists and 110 technical personnel"
+      },
+      {
+        "trigger": " has",
+        "score": 18.12,
+        "context": " as a general-purpose Unix scripting language to make report processing easier. Since then, it has undergone many changes and revisions and become widely popular amongst programmers. Larry"
+      },
+      {
+        "trigger": " to",
+        "score": 20.0,
+        "context": " began as a summer program taking place in two elementary schools, but has since grown to reach more than 800 schools in 46 states.\u23ce"
+      },
+      {
+        "trigger": " into",
+        "score": 19.25,
+        "context": "Board started out as a senior project by a couple of college students but quickly turned into a far bigger project. The technology is similar to that used in a Seg"
+      }
+    ],
+    "promotes": [
+      "Refer\u00e8ncies",
+      " (",
+      " R\u00e9ponses",
+      "<bos>",
+      " estekak"
+    ],
+    "demotes": [
+      "WriteBarrier",
+      "StructEnd",
+      "ScopeManager",
+      "ItemBackground",
+      " Subsequent"
+    ],
+    "generated_description": "say transition word \u2014 activates on temporal/discourse connectors (Now, Today, has, to, into); signals narrative shift/continuation."
+  },
+  {
+    "id": "20_11212_18",
+    "layer": 20,
+    "ctx_idx": 18,
+    "influence_score": 0.3932301998138428,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 42.5,
+        "context": "and is the author of numerous articles on medical ethics. He also has taught at Hampden-Sydney and Bethel colleges and was the academic dean at Bethel.\u23ceFor"
+      },
+      {
+        "trigger": " currently",
+        "score": 41.0,
+        "context": " (UMN-SVM); Don H\u00f6glund, D.V.M., currently with the UMN-SVM; and Margaret Perala, D.V"
+      },
+      {
+        "trigger": " now",
+        "score": 43.5,
+        "context": " volcanoes; its a natural thing, and it's not something we're doing as a planet,\" said Neely, who is now a post-doctoral"
+      },
+      {
+        "trigger": " been",
+        "score": 42.5,
+        "context": " is an Instructional Technology Specialist in Cambridge Public Schools, Cambridge, MA. She has been using Scratch in public schools, both integrated throughout the school day and in after"
+      },
+      {
+        "trigger": " is",
+        "score": 41.5,
+        "context": ", the Summer 2010 issue of YES! Magazine. Berit is an editorial assistant for YES! Magazine.\u23ce- The Page That Counts:"
+      }
+    ],
+    "promotes": [
+      " impressed",
+      "TemporalType",
+      " co",
+      "CloseOperation",
+      "openqa"
+    ],
+    "demotes": [
+      "tierrez",
+      "HomeAsUpEnabled",
+      "awtextra",
+      "ObjectContext",
+      "IsPostBack"
+    ],
+    "generated_description": "say BE-verb \u2014 activates on copula/auxiliary forms (is, was, been, currently, now); marks state/tense around roles, positions, or biographical statements."
+  },
+  {
+    "id": "21_1529_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.3726494312286377,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 44.0,
+        "context": " in the history of the Middle East.\u201d\u23ceIn response, Kiir said he was moved to be in Israel and \u201cwalk on the soil of the Promised Land"
+      },
+      {
+        "trigger": " be",
+        "score": 40.25,
+        "context": " been said about Machiavelli, and so much that should be unsaid, one might be surprised to hear that there is anything new to say at all. Yet John"
+      },
+      {
+        "trigger": " been",
+        "score": 38.0,
+        "context": " Regiment of the New York Irish Brigade. No relation to my Daly family (as Maria, I am sure, would have been only too glad to tell you)"
+      },
+      {
+        "trigger": " was",
+        "score": 47.5,
+        "context": " training. He found much to admire on the walls of the Mus\u00e9e du Louvre yet was also receptive to the contemporary pictures he encountered in Parisian galleries. He was particularly"
+      },
+      {
+        "trigger": " are",
+        "score": 42.25,
+        "context": " learning environment.\u23ce\"We at the Sandra Day O'Connor College of Law are pursuing an innovative new model for 21st century legal education, and"
+      }
+    ],
+    "promotes": [
+      " surprised",
+      " satisfied",
+      " pleased",
+      " gratified",
+      "Personendaten"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " kasarigan",
+      "tehenden",
+      "jooq",
+      "OCCURRED"
+    ],
+    "generated_description": "Be (aux/copula) \u2014 activates on tokens: was, be, been, are; detects auxiliary/copular \"to be\" forms (stative/linking verbs)."
+  },
+  {
+    "id": "21_4083_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.32234910130500793,
+    "top_activations": [
+      {
+        "trigger": " considered",
+        "score": 43.5,
+        "context": " (catholicon or sobor), a blue-and-white building, is considered to be one of the architectural masterpieces of the Italian architect Francesco Bartolomeo Rast"
+      },
+      {
+        "trigger": " considered",
+        "score": 37.5,
+        "context": "\u23ceIn an exclusive interview, Doug Scott of the Pew Charitable Trusts, who is considered nation's historian on the Wilderness Act, noted, \"The grassroots wilderness"
+      },
+      {
+        "trigger": " them",
+        "score": 39.0,
+        "context": "21% of its population, according to the CIA World Factbook,1 making them one of the largest ethnic groups in Africa. The majority of the Yoruba speak"
+      },
+      {
+        "trigger": " represent",
+        "score": 40.5,
+        "context": " As reflected by their prominence in Phytopathology and Plant Disease, fusaria collectively represent the most important genus of plant pathogenic and mycotoxigenic fungi. Plant"
+      },
+      {
+        "trigger": " remains",
+        "score": 41.0,
+        "context": " attracting millions of viewers to admire its forensic detail \u2013 and buy the postcard, which remains a runaway bestseller in the gallery shops.\u23ceAs the painting takes centre stage"
+      }
+    ],
+    "promotes": [
+      "One",
+      " uno",
+      " \u00e9\u00e9n",
+      "one",
+      " one"
+    ],
+    "demotes": [
+      " surla",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "tinyos",
+      "AsUp",
+      "\u24d8"
+    ],
+    "generated_description": "Stative/assertion verbs \u2014 activates on factual-status verbs in encyclopedic statements (considered, represent, remains); marks claims about status, classification, persistence."
+  },
+  {
+    "id": "21_5884_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.3647070825099945,
+    "top_activations": [
+      {
+        "trigger": "m",
+        "score": 42.5,
+        "context": " reading devices are available, but their usage is not widespread yet. But I'm almost certain that ebooks will become very important within the next years. Hart had"
+      },
+      {
+        "trigger": " am",
+        "score": 39.5,
+        "context": " one class becouse each function has it own signature, but has i say i am not sure if can some one help me to understand it please i will be"
+      },
+      {
+        "trigger": " am",
+        "score": 36.5,
+        "context": " mine in a small gravel pit in northern Germany close to the Baltic Sea. I am sorry Silver Fox but what you interpret as breccia texture is likely nothing more"
+      },
+      {
+        "trigger": " am",
+        "score": 44.5,
+        "context": " result if I input those number will be likeCode:scanf(\"%d\", &n);\u23ceI am very beginning on c , please anyone can help me??"
+      },
+      {
+        "trigger": " am",
+        "score": 39.5,
+        "context": " stop\" or just crash the program\u23ceI know what you mean , and i am soo confused\u23ceand the problem is that MOST of the Q's are"
+      }
+    ],
+    "promotes": [
+      "\\{\\\\",
+      " Roskov",
+      " ExecuteAsync",
+      "oredCriteria",
+      " distanciation"
+    ],
+    "demotes": [
+      "<?>",
+      "orced",
+      "rxjs",
+      "phazard",
+      "visej\u00edc\u00ed"
+    ],
+    "generated_description": "\"I am\" / \"I'm\" \u2014 activates on first-person present-tense self-reference tokens (I'm, I am, i am), including lowercase 'i' and contractions, signals speaker self-statement."
+  },
+  {
+    "id": "21_4975_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.38529449701309204,
+    "top_activations": [
+      {
+        "trigger": "re",
+        "score": 37.25,
+        "context": ", another A on your math homework. That\u2019s really great. You\u2019re so smart.\u201d Many parents believe that applauding their fourth grader\u2019s intelligence"
+      },
+      {
+        "trigger": " is",
+        "score": 36.5,
+        "context": " recover fully and return to her sports and pre-surgery activities.\u23ce\u201cShe is tired, of course, but doing well,\u201d Katherine\u2019s mother Kathy said"
+      },
+      {
+        "trigger": " is",
+        "score": 41.25,
+        "context": " just happened to find him on youtube. Check out his channel\u23ce. He really is amazing, and with a quick e-mail he gave me Raw footage,"
+      },
+      {
+        "trigger": " was",
+        "score": 34.75,
+        "context": " in science.\u23cePHOTOS: Sally Ride dead at 61\u23ce\"Sally was a national hero and a powerful role model. She inspired generations of young girls"
+      },
+      {
+        "trigger": " was",
+        "score": 53.25,
+        "context": " \"We talked on the phone every day. She was the best company. She was one of the smartest people I knew,\" says Capron.\u23ceTwo years"
+      }
+    ],
+    "promotes": [
+      " that",
+      " a",
+      "\u00f3ticas",
+      "MemoryWarning",
+      "ReusableCell"
+    ],
+    "demotes": [
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "TagMode",
+      " adu",
+      ">\"+",
+      " kayna\u011f\u0131ndan"
+    ],
+    "generated_description": "Be-verb (is/was) \u2014 activates on copula forms (is, was) in third-person narration, often immediately after pronouns (she, he, his), signaling present/past state descriptions."
+  },
+  {
+    "id": "21_9325_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.340494304895401,
+    "top_activations": [
+      {
+        "trigger": " am",
+        "score": 53.0,
+        "context": " main temple building and one of the two pagodas were being renovated and since I am allergic to taking photos of scaffolding, there were very few views remaining for me"
+      },
+      {
+        "trigger": "m",
+        "score": 40.5,
+        "context": " have some suggested books to help make sense of the holidays. Personally, I\u2019m a fan of a book called The Hardest Word, which tells the story"
+      },
+      {
+        "trigger": " certainly",
+        "score": 41.5,
+        "context": " suspect, because those items were pleasing to them in some fashion. I\u2019m certainly not an anthropologist or an interior designer, but I\u2019m willing to bet"
+      },
+      {
+        "trigger": " are",
+        "score": 38.0,
+        "context": " as great a swallowing risk. ), a marker and some glue if like me you are reusing magnets and their sticky back is gone! You will also need a"
+      },
+      {
+        "trigger": " am",
+        "score": 39.0,
+        "context": " avoid on principle based on concerns about the potential for bacterial adulteration. But I am increasingly concerned about the general quality of the American diet as a cause of chronic"
+      }
+    ],
+    "promotes": [
+      " '{@",
+      " Paglinawan",
+      "oredCriteria",
+      "WithIOException",
+      "Spolja\u0161nje"
+    ],
+    "demotes": [
+      "\u03c1\u03af\u03b5\u03c2",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "estay",
+      "chlie\u00dfend",
+      "<_>"
+    ],
+    "generated_description": "present \"to be\" (am/are) \u2014 activates on tokens like \"am\" and \"are\" and nearby self-state/stance words (e.g., \"certainly\"), marks assertions about speaker/state."
+  },
+  {
+    "id": "21_13802_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.30186063051223755,
+    "top_activations": [
+      {
+        "trigger": " look",
+        "score": 91.0,
+        "context": " some creativity, and openness to new approaches make it easier to develop eager students who look forward to Church School on Sunday morning.\u23ceIt was a warm Sunday evening"
+      },
+      {
+        "trigger": " look",
+        "score": 94.0,
+        "context": " There is a strong collegial bond between MIT and Caltech, and we at MIT look forward to working with David in his new role.\"\u23ceCaltech'"
+      },
+      {
+        "trigger": "I",
+        "score": 67.0,
+        "context": ", NEVER, SOMETIMES, OFTEN, USUALLY, etc.\u23ceI write an example about my habitual actions to help you:\u23ce1. I"
+      },
+      {
+        "trigger": " and",
+        "score": 66.5,
+        "context": " NASA Langley are thrilled that the selection of unmanned aircraft system test sites has been made and that the country is moving forward to do the work needed to integrate unmanned aerial"
+      },
+      {
+        "trigger": " look",
+        "score": 94.0,
+        "context": " is a strong collegial bond between MIT and Caltech, and we at MIT look forward to working with David in his new role.\"\u23ceCaltech's"
+      }
+    ],
+    "promotes": [
+      " looking",
+      "Look",
+      " Look",
+      "look",
+      " look"
+    ],
+    "demotes": [
+      "SBATCH",
+      " betweenstory",
+      " \"\"\"\",",
+      " propOrder",
+      "\u24e7"
+    ],
+    "generated_description": "say \"look\"/\"looking\" \u2014 promotes the token \"look\" and its variants (looking, Look), often in contexts like \"look forward\" or \"look ...\"."
+  },
+  {
+    "id": "21_12600_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.34988948702812195,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 73.5,
+        "context": " Order of Extermination\u2014until the arrival of the transcontinental railroad.\u23ceWoods is associate professor of church history and doctrine at Brigham Young University, where he currently"
+      },
+      {
+        "trigger": " is",
+        "score": 75.0,
+        "context": " was raised when her school was raising funds to protect lands in the Dundas Valley. She is now happily retired living in Gatineau, Quebec.\u23ceJen has"
+      },
+      {
+        "trigger": " is",
+        "score": 76.5,
+        "context": ": Race and Democracy in the New Deal Era (1996). She is currently writing a history of the NAACP. Since 1995,"
+      },
+      {
+        "trigger": " is",
+        "score": 75.5,
+        "context": ". This work, The Road to Tepeyac, was most recently exhibited at the Festival de la Luz in Buenos Aires. She is currently based in London."
+      },
+      {
+        "trigger": " is",
+        "score": 71.5,
+        "context": " Watch and is a councilor with the Hamburg-based World Future Council. Barlow is the recipient of eight honorary doctorates as well as many awards, including the"
+      }
+    ],
+    "promotes": [
+      "ItemBackground",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u51fa\u7248\u5e74",
+      " mijne",
+      "DockStyle"
+    ],
+    "demotes": [
+      "irac",
+      "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+      "rdom",
+      "flox",
+      "clusal"
+    ],
+    "generated_description": "say present \"is\" \u2014 activates on the copula \"is\" introducing current role/state or ongoing activity (is currently writing, is associate professor, is now retired)"
+  },
+  {
+    "id": "21_13973_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.39263343811035156,
+    "top_activations": [
+      {
+        "trigger": " be",
+        "score": 38.0,
+        "context": " as it flowed in?\u23ceIt could happen. The U.S. could be sliding into the major dollar crisis that pessimistic economists have been predicting since the "
+      },
+      {
+        "trigger": " are",
+        "score": 29.88,
+        "context": " a Leicester car park - combined with historical research and weapons analysis - means we now are closer to the grisly truth.\u23ceAnd that truth combines heroic chivalry with"
+      },
+      {
+        "trigger": " be",
+        "score": 32.0,
+        "context": " with human activities, have to explain how thousands of scientists from dozens of countries could be dead wrong in their measurements of atmospheric CO2, average ocean temperatures and satellite"
+      },
+      {
+        "trigger": " was",
+        "score": 32.5,
+        "context": " find Starr\u2019s name in many textbooks. The tale of how Frederick Starr was nearly forgotten is one full of controversy and ideology.\u23ceStarr\u2019s Early"
+      },
+      {
+        "trigger": " be",
+        "score": 33.5,
+        "context": " at all. And if the beleaguered automaker survives that long, GM may be able to achieve that goal.\u23ceBut no company can ever remove cars from"
+      }
+    ],
+    "promotes": [
+      " ch\u00ednh",
+      "\u4e00\u53e5\u8bdd",
+      " reduced",
+      " free",
+      " left"
+    ],
+    "demotes": [
+      " \u00e9toient",
+      "Pratique",
+      "djangoproject",
+      "\u062d\u064a\u0627\u062a\u0647\u0627",
+      "GraphicsUnit"
+    ],
+    "generated_description": "Copula \"be\" \u2014 activates on forms of the verb \"be\" (be, are, was), detecting copula/auxiliary usage before predicates."
+  },
+  {
+    "id": "21_15152_18",
+    "layer": 21,
+    "ctx_idx": 18,
+    "influence_score": 0.37194472551345825,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 41.0,
+        "context": " reform school for stealing a bicycle and selling marijuana.\u23ceSoon after his release he was arrested for possession of marijuana. Found guilty he was sentenced to 30"
+      },
+      {
+        "trigger": " was",
+        "score": 47.0,
+        "context": " often when talking about animals and pets and when they sleep.\u23ceIn college I was also taught that one of the best ways to not only remember, but to"
+      },
+      {
+        "trigger": " was",
+        "score": 38.5,
+        "context": " an undergraduate major in oceanography at the U.S. Naval Academy, Berg was chosen by the Navy and by the faculty of the MIT/WHOI Joint"
+      },
+      {
+        "trigger": " was",
+        "score": 41.0,
+        "context": " but while playing music at a festival in France in 1974, was exposed to musical antecedents of his own heritage and this inspired him to return to"
+      },
+      {
+        "trigger": " was",
+        "score": 39.0,
+        "context": " his bedroom walls, as his mother encouraged him to be creative.\u23ceSeuss was his mother's maiden name.\u23ceNo one on Fairfield Street would have"
+      }
+    ],
+    "promotes": [
+      " muualla",
+      " excited",
+      " overjoyed",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " @\"/"
+    ],
+    "demotes": [
+      " NgModule",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "SBATCH",
+      "alamy",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ],
+    "generated_description": "say \"was\" \u2014 activates on the past-tense copula/auxiliary \"was\"; surfaces in narrative contexts before past participles, adjectives, or clauses."
+  },
+  {
+    "id": "24_13277_18",
+    "layer": 24,
+    "ctx_idx": 18,
+    "influence_score": 0.28702691197395325,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say a noun phrase \u2014 activates on preps/articles/commas/verbs that introduce an upcoming noun/name; predicts a following noun/NP or proper noun (locations, people, objects)."
+  },
+  {
+    "id": "25_9975_18",
+    "layer": 25,
+    "ctx_idx": 18,
+    "influence_score": 0.2938855290412903,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Clause introducer \u2014 activates on subordinating connectors and participial clause starters (while, following, removing, by X / verbs that open subordinate clauses)"
+  },
+  {
+    "id": "25_11867_18",
+    "layer": 25,
+    "ctx_idx": 18,
+    "influence_score": 0.36247485876083374,
+    "top_activations": [
+      {
+        "trigger": " identify",
+        "score": 176.0,
+        "context": " discrimination).\u23ceConducting research to provide evidence-based insights and recommendations, we identify small to large scale successful interventions, while examining the impact of closing gender gaps"
+      },
+      {
+        "trigger": ",",
+        "score": 186.0,
+        "context": " affected include family relationships, roles of women and men, communication skills, physical hygiene, role of religion, importance of education and careers and clothing/manner of dress"
+      },
+      {
+        "trigger": "s",
+        "score": 165.0,
+        "context": " ponds in north Wellfleet to its mouth at Wellfleet Harbor. The river's floodplain encompasses more than 1,100 acres of degraded wetlands occupying"
+      },
+      {
+        "trigger": " a",
+        "score": 169.0,
+        "context": ", as I was driving along the highway, I looked to my left and saw a bird flying. Can you tell me what kind of a bird it was?"
+      },
+      {
+        "trigger": " of",
+        "score": 163.0,
+        "context": " (a small piece of protein), linked to a light-responsive dye, capable of switching 'on' death pathways in cancer cells. The peptide remains inactive until"
+      }
+    ],
+    "promotes": [
+      " r\u00e9guli",
+      " sup\u00e9rieurs",
+      " avoient",
+      " varandra",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      " \u0f0b\u0f0b",
+      " ECR",
+      " PDC",
+      " photolibrary",
+      " [?]"
+    ],
+    "generated_description": "Short function tokens \u2014 activates on short/common tokens: articles (a, of), punctuation/comma, plural -s suffix; also on short tokenized words like \"identify.\""
+  },
+  {
+    "id": "25_15864_18",
+    "layer": 25,
+    "ctx_idx": 18,
+    "influence_score": 0.3712363541126251,
+    "top_activations": [
+      {
+        "trigger": " am",
+        "score": 51.5,
+        "context": " the students could get to know us both as we established our classroom procedures. I am so fortunate to have such a great teaching partner! Mrs. Ibrahim came up"
+      },
+      {
+        "trigger": " am",
+        "score": 54.0,
+        "context": "t measure effectiveness across a whole spectrum of people; the criteria change.\u23ceI am beginning to wonder if any system can handle the effectiveness question, because it really"
+      },
+      {
+        "trigger": " are",
+        "score": 63.0,
+        "context": " shared her theory on the \u201cfunction and strategy\" for teaching dogs.\u23ceWe are continuing our discussion on Problem Solving. This month Chris explains her theory on the"
+      },
+      {
+        "trigger": " are",
+        "score": 51.5,
+        "context": " it means we need a good size body for the size of the animal. We are basically looking for that deep, wide body to be what is called a dairy"
+      },
+      {
+        "trigger": " are",
+        "score": 47.0,
+        "context": " (PRR) which is a more efficient way to deal with traffic congestion. The research team are also looking at improved transmission recovery (data loss) in noisy"
+      }
+    ],
+    "promotes": [
+      "CodedInputStream",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " niv\u00e5",
+      "]='\\",
+      "__\":\r"
+    ],
+    "demotes": [
+      " eager",
+      " try",
+      " glad",
+      "AndEndTag",
+      " excited"
+    ],
+    "generated_description": "present-tense \"be\" (am/are) \u2014 activates on copula/auxiliary forms \"am\" and \"are\"; signals present-tense linking verbs (1st person singular and plural/3rd-person plural contexts)"
+  },
+  {
+    "id": "23_1059_18",
+    "layer": 23,
+    "ctx_idx": 18,
+    "influence_score": 0.3676244020462036,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 43.0,
+        "context": " with delicacy of touch that was surprising in such a hulking physique.\u23ceGrant is the guy who really started \u201cJurassic Park.\u201d\u23ceIt was Grant Meyer who"
+      },
+      {
+        "trigger": " is",
+        "score": 42.0,
+        "context": ". Leiam o texto a seguir.\u23ceMary is a nice woman. She is a nurse and works in a big hospital. She works at night on weekends"
+      },
+      {
+        "trigger": " is",
+        "score": 37.75,
+        "context": " 18 years old. She lives with her parents and her brother, who is a year and a half her senior. Her father was treated for a paraly"
+      },
+      {
+        "trigger": " was",
+        "score": 39.5,
+        "context": " of Minnesota. Sverdrup was the son of a Norwegian immigrant. His father was president of Augsburg College. Parcel was a U of M engineering professor who taught"
+      },
+      {
+        "trigger": " was",
+        "score": 38.0,
+        "context": " in K\u00f6ln, Germany, lost his job in 1936 because he was associated with the Catholic \u201cZentrum\u201d party that traditionally objected to Nazism"
+      }
+    ],
+    "promotes": [
+      " jScrollPane",
+      "estacks",
+      "SizeMode",
+      "Pol\u00edtica",
+      "yntaxException"
+    ],
+    "demotes": [
+      " doInBackground",
+      " NSCoder",
+      "Erreferentziak",
+      " brava",
+      "InputTagHelper"
+    ],
+    "generated_description": "say be-verb (\"is\"/\"was\") \u2014 activates on copular verbs linking subjects to descriptions, especially in biographical/descriptive sentences"
+  },
+  {
+    "id": "23_5509_18",
+    "layer": 23,
+    "ctx_idx": 18,
+    "influence_score": 0.3827320635318756,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 52.5,
+        "context": " in a uniform and she's off and running. Some people are naturals at playing an instrument; it's like they were born knowing how to count"
+      },
+      {
+        "trigger": " construction",
+        "score": 40.5,
+        "context": " flooding by determining the elevation of your property.\u23ceEvaluate your insurance coverage; as construction grows around areas, floodplains change. If you are in a flood area"
+      },
+      {
+        "trigger": " food",
+        "score": 50.0,
+        "context": " an emergency, you may need to survive on your own, which means you need food, water, and other supplies to last you around 72 hours."
+      },
+      {
+        "trigger": "s",
+        "score": 51.0,
+        "context": " cottages still stand in Saranac Lake, the most visible reminders of the village's days as America's \"Pioneer Health Resort.\"\u23ceThe incorporated Village of"
+      },
+      {
+        "trigger": " are",
+        "score": 39.5,
+        "context": ". Most of the cases are adults and more than 60% of them are women. Health experts are trying to figure out how these 172"
+      }
+    ],
+    "promotes": [
+      "\u20da",
+      "DockStyle",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      " ",
+      " the",
+      " or",
+      " and",
+      " \""
+    ],
+    "generated_description": "Say content words \u2014 activates around nouns/verbs/suffixes; suppresses common function words (the, and, or, etc.), promotes rarer/non-stopword tokens."
+  },
+  {
+    "id": "24_15433_18",
+    "layer": 24,
+    "ctx_idx": 18,
+    "influence_score": 0.3890323042869568,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 47.5,
+        "context": "4 Fairfield Street, in Springfield, Mass.\u23ceHe feasted on books and was wild about animals. Dr. Seuss lived three blocks from the library and six"
+      },
+      {
+        "trigger": " was",
+        "score": 46.75,
+        "context": " often when talking about animals and pets and when they sleep.\u23ceIn college I was also taught that one of the best ways to not only remember, but to"
+      },
+      {
+        "trigger": " be",
+        "score": 41.5,
+        "context": " got in Ashton's education the better he seemed to do. \"He would be so proud to show us his work,\" Amber said.\u23ceSoon Amber joined"
+      },
+      {
+        "trigger": " be",
+        "score": 43.5,
+        "context": "<bos>You have a toddler who loves books and stories and may even be ready to read simple books but you aren't quite sure how to encourage that. Or"
+      },
+      {
+        "trigger": " was",
+        "score": 53.5,
+        "context": " Race.\u23ceEarly in her education, she was interested in math and science and was often the only girl in the class.\u23ce\u201cMath was more fun than"
+      }
+    ],
+    "promotes": [
+      " rosette",
+      "thoff",
+      "poptosis",
+      "\u0627\u0644\u0633\u0643\u0627\u0646",
+      "MLLoader"
+    ],
+    "demotes": [
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "\u0421\u043f\u043e\u0459\u0430\u0448\u045a\u0435",
+      "\u062d\u0648\u0627\u0644\u06c1",
+      "`),",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448"
+    ],
+    "generated_description": "be / was / is \u2014 activates on copula forms (\"be\", \"was\", \"is\"); signals state/existence verbs, often right before predicates or adjective phrases."
+  },
+  {
+    "id": "23_3822_18",
+    "layer": 23,
+    "ctx_idx": 18,
+    "influence_score": 0.36834993958473206,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 43.25,
+        "context": "bbling and is encouraged will generally learn to write earlier than other children. Children who are enrolled in pre-school learn the importance of character through the praise and encouragement"
+      },
+      {
+        "trigger": " was",
+        "score": 44.75,
+        "context": "onda boasted the best musicians in Milan during that time, and Cozzolani was leader of at least one of the choruses there. As time passed,"
+      },
+      {
+        "trigger": " was",
+        "score": 50.25,
+        "context": " Democratic Republic).\u23ceBorn into a Lutheran farming family, Jens Haven was in his youth apprenticed to a joiner in Copenhagen who belonged to the Moravian Church"
+      },
+      {
+        "trigger": " was",
+        "score": 42.5,
+        "context": "<bos>When I was a student, I was wondering why until I read a \u8bcd(C\u00ed, a type of poery) by famous writer \u8f9b\u5f03\u75be"
+      },
+      {
+        "trigger": " initially",
+        "score": 49.0,
+        "context": " Christian family (most likely in Alexandria), the oldest of seven children, Origen was initially trained in both secular and religious literature by his father Leonides (who was"
+      }
+    ],
+    "promotes": [
+      "mente",
+      " dich",
+      " enca",
+      " given",
+      " raised"
+    ],
+    "demotes": [
+      " NSCoder",
+      "Personendaten",
+      "\u062d\u064a\u0627\u062a\u0647",
+      "Diweddarwch",
+      "quelize"
+    ],
+    "generated_description": "be-verb (is/was/are) \u2014 activates on copula forms (especially past \"was\" and present \"are\"), common in biographical/descriptive or temporal clauses."
+  },
+  {
+    "id": "22_4202_18",
+    "layer": 22,
+    "ctx_idx": 18,
+    "influence_score": 0.3985045850276947,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 33.25,
+        "context": " Manhattan and elsewhere, and served a term as Lyon County Superintendent of Schools. He was accidently killed while digging a well on their claim southeast of Emporia in"
+      },
+      {
+        "trigger": " was",
+        "score": 43.25,
+        "context": " labourer in Estonia facilitated the cultivation of land in Alberta's rugged wilderness. John was well trained in leather work and often repaired shoes, mittens, and harnesses."
+      },
+      {
+        "trigger": " was",
+        "score": 36.25,
+        "context": " White House.\u201d It was the first painted house in Walker County.\u23ceWilliam Wallace was best known as \u201cCarpenter\u201d throughout the South.\u23ceThe Wilsons were"
+      },
+      {
+        "trigger": " is",
+        "score": 32.75,
+        "context": " He has a keen sense of humor and irony. He loves American history, and is regularly pointing out various absurdities in emails or written stories that he fires off"
+      },
+      {
+        "trigger": " was",
+        "score": 38.75,
+        "context": " the last forty years have continued to make their own contributions to these fields. He was an enthusiastic and effective mentor who worked hard and expected his students to do likewise"
+      }
+    ],
+    "promotes": [
+      " respected",
+      "involved",
+      "Portale",
+      " involved",
+      " AssemblyTitle"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "InitVars",
+      "XmlAccessorType",
+      "Geografia"
+    ],
+    "generated_description": "say 'was' \u2014 activates on past-tense copula \"was\", signals biographical/descriptive statements or past-event assertions."
+  }
+]

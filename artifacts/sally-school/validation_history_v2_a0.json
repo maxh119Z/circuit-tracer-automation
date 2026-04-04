@@ -1,0 +1,676 @@
+[
+  {
+    "prompt": "<bos>At first, Sally hated school. But over time she changed her mind. Now she is",
+    "timestamp": "2026-04-04T19:24:28Z",
+    "n_runs": 5,
+    "design": {
+      "method1": "1-in-10 feature identification (chance=10%)",
+      "method2": "5-in-10 text snippet matching (chance=50%)",
+      "method_d1": "1-in-10 description accuracy (chance=10%)",
+      "method_d2": "5-in-10 description snippet match (chance=50%)",
+      "aggregation": "per-group run-level means, then mean \u00b1 stderr across runs",
+      "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+      "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
+      "label_regeneration": "manual only; auto uses pipeline names"
+    },
+    "auto": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.4667,
+              "stderr_accuracy": 0.17,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.55,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.8517,
+            "stderr_accuracy": 0.0697
+          },
+          "total_trials": 165
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.844,
+            "stderr_accuracy": 0.0479
+          },
+          "total_tasks": 50
+        }
+      },
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.85,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.919,
+            "stderr_accuracy": 0.0558
+          },
+          "total_trials": 165
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.872,
+            "stderr_accuracy": 0.0457
+          },
+          "total_tasks": 50
+        }
+      },
+      "hard": {
+        "method1": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.1247,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 0.7,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.55,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.6667,
+              "stderr_accuracy": 0.1491,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.6737,
+            "stderr_accuracy": 0.0699
+          },
+          "total_trials": 165
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.864,
+            "stderr_accuracy": 0.0405
+          },
+          "total_tasks": 50
+        }
+      },
+      "attribution_coverage": 0.6567
+    },
+    "random": {
+      "easy": {
+        "method1": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 0.04,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.04,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.24,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.3,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.05,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.0667,
+              "stderr_accuracy": 0.0667,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0937,
+            "stderr_accuracy": 0.035
+          },
+          "total_trials": 165
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "female pronoun she",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "hate",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past be tokens",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "past-tense verbs",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "positive emotion",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "predicate after 'is'",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say 'At first'",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a noun phrase",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say over time",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "school",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.5,
+            "stderr_accuracy": 0.0294
+          },
+          "total_tasks": 50
+        }
+      }
+    },
+    "description_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.932,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 250
+    },
+    "description_snippet_accuracy": {
+      "macro_avg": {
+        "mean_accuracy": 0.9232,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 250
+    }
+  }
+]

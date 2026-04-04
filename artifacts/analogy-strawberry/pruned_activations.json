@@ -1,0 +1,1929 @@
+[
+  {
+    "id": "0_253_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.37167736887931824,
+    "top_activations": [
+      {
+        "trigger": "you",
+        "score": 13.5,
+        "context": "<bos>you know what plants need to live?....come and find out!\u23ceyou wanna know how plants grow?\u23ceLearn the parts of a plant?\u23ce"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Browse by Issue:\u23ceOne of the oldest conflicts in the American system of government is that between Congress and the President over the right to formulate and implement"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- BC Games\u23ceMeasles cases rise in the eastern Fraser Valley\u23ceFraser Health's chief medical health officer is warning about the rise in measles cases in"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Draft SEPUP to CC Grades 6-8\u23ceCC & Storytown\u23ce- StoryTown CC Brochure information on purchasing additional curriculum resources to align with"
+      },
+      {
+        "trigger": "research",
+        "score": 14.12,
+        "context": "<bos>researchers have claimed that giant heat waves caused by global\u23cewarming will kill\u23ceoff desert bird communities over the next one hundred years,\u23ceand even believe"
+      }
+    ],
+    "promotes": [
+      " it",
+      " the",
+      " a",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " NDEBUG",
+      " Efq",
+      "ArgsConstructor",
+      " Shakspeare",
+      " ARXIV"
+    ]
+  },
+  {
+    "id": "4_12587_12",
+    "layer": 4,
+    "ctx_idx": 12,
+    "influence_score": 0.39112588763237,
+    "top_activations": [
+      {
+        "trigger": " green",
+        "score": 22.75,
+        "context": " deaths \u2014 possibly including Napoleon Bonaparte\u2019s in 1821. Emerald green, also known as Paris green, was incredibly toxic and was at one point"
+      },
+      {
+        "trigger": "anger",
+        "score": 21.5,
+        "context": " citrus plants in winters. In those days, orange tree was the main tree used for propagation; hence these structures were named as orangery and orangeries."
+      },
+      {
+        "trigger": " blue",
+        "score": 21.5,
+        "context": " central \"eye.\" The infrared signal does not penetrate through clouds, so the light blue areas reveal the cold clouds tops associated with strong thunderstorms embedded within the storm."
+      },
+      {
+        "trigger": "ous",
+        "score": 18.5,
+        "context": " Lateral margins of pale throat are defined by dark stripe and spaced dark streaks form a breast band that is flushed buff. Underparts are otherwise whitish with rufous streaks"
+      },
+      {
+        "trigger": "inks",
+        "score": 20.25,
+        "context": " and sassafras, offering a beautiful fall show of reds, pinks, oranges and yellow.\u23ceCome spring, the visitor sees airy stands of native az"
+      }
+    ],
+    "promotes": [
+      " Green",
+      "GREEN",
+      "Green",
+      "green",
+      " green"
+    ],
+    "demotes": [
+      "MigrationBuilder",
+      "GEBURTSDATUM",
+      "awaiter",
+      "makeConstraints",
+      " disambiguazione"
+    ]
+  },
+  {
+    "id": "0_7793_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3881583511829376,
+    "top_activations": [
+      {
+        "trigger": " grass",
+        "score": 19.25,
+        "context": " The tractor has a special double disk drill. Another application is the use of rye grass to absorb nitrogen and thus prevent it from leaching out of the soil.\u23ce"
+      },
+      {
+        "trigger": " grass",
+        "score": 20.5,
+        "context": " and whys of home composting, proper soil preparation and management, mulching and grasscycling. Participants take home a free wire compost bin and a booklet on home"
+      },
+      {
+        "trigger": " grass",
+        "score": 20.0,
+        "context": " limestone and very poor quality soil. But as you can see they are lush with grass.|\u23ceIn the summer months the grass turn brown hence the name chocolate hills"
+      },
+      {
+        "trigger": " grass",
+        "score": 20.5,
+        "context": " hours of direct sunlight. It can be on a balcony, on a patch of grass, or wherever. If you don't have such a spot, consider"
+      },
+      {
+        "trigger": " grass",
+        "score": 20.25,
+        "context": " it becomes more limited as the population grows. Watering the home lawn properly can improve grass quality yet still conserve water for future generations. Many times, home lawns are"
+      }
+    ],
+    "promotes": [
+      "ardless",
+      "\\}\\\\",
+      "XmlAccessType",
+      "}{*}{",
+      ".\"</"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "'",
+      "\u2018",
+      "\u23ce",
+      "<bos>"
+    ]
+  },
+  {
+    "id": "0_12958_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3820289671421051,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 12.0,
+        "context": "Posted: Mon Jul 14, 2008 10:12 am Post subject: New nanotechnique producing small things in large"
+      },
+      {
+        "trigger": ":",
+        "score": 14.12,
+        "context": "<bos>Re: teaching relational basics to people, questions\u23ceDate: Sat, 28 Nov 2009 20:33:3"
+      },
+      {
+        "trigger": ":",
+        "score": 12.38,
+        "context": "<bos>Submitted to: North American Cranberry Research and Extension Workers Annual Meeting\u23cePublication Type: Abstract Only\u23cePublication Acceptance Date: October 20, 20"
+      },
+      {
+        "trigger": ":",
+        "score": 12.5,
+        "context": ": 09/26/1999 at 18:14:46 From: Andrew Subject: Algebra II with Trigonometry On"
+      },
+      {
+        "trigger": ":",
+        "score": 13.12,
+        "context": "<bos>103: Introduction to Logic\u23ceThe Language of Symbolic Logic\u23ceAbstract: Conventions for\u23cetranslating ordinary language statements into symbolic notation are\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      " ",
+      " in"
+    ]
+  },
+  {
+    "id": "0_3916_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3861614167690277,
+    "top_activations": [
+      {
+        "trigger": "indonesia",
+        "score": 9.44,
+        "context": "<bos>indonesia: raising public awareness of environmental damage\u23ceDeforestation rates have reached about two million ha a day, with illegal logging and conversion to oil palm plantations the"
+      },
+      {
+        "trigger": "freight",
+        "score": 9.69,
+        "context": "<bos>freight train composed of cars carrying a single type of commodity that are all bound for the same destination. By hauling only one kind of freight for one destination,"
+      },
+      {
+        "trigger": "only",
+        "score": 9.44,
+        "context": " coach, who tracked their progress. they also attended nutrition and exercise classes.\u23ceonly using the app, without educational support, did not lead to weight loss."
+      },
+      {
+        "trigger": "cruise",
+        "score": 9.12,
+        "context": "<bos>cruise control in a sentence\u23ceExample sentences for cruise control\u23ceCruise control-which keeps a vehicle at a constant speed-has been around for decades.\u23ce"
+      },
+      {
+        "trigger": "published",
+        "score": 9.75,
+        "context": "<bos>published on 30 October 2013\u23ceThe Indus valley Civilization was an ancient civilization located in what today is Pakistan and northwest India, on"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u2019",
+      "'",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      "^(@)",
+      " Efq",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " my\u017felf",
+      "BibitemShut"
+    ]
+  },
+  {
+    "id": "0_16200_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3390616774559021,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ]
+  },
+  {
+    "id": "4_14527_13",
+    "layer": 4,
+    "ctx_idx": 13,
+    "influence_score": 0.35097527503967285,
+    "top_activations": [
+      {
+        "trigger": " fruits",
+        "score": 17.88,
+        "context": " climate of l'Ile d'Orl\u00e9ans advantageously lends itself to the culture of red fruits. The proximity of the river moderates the climate by delaying the first"
+      },
+      {
+        "trigger": "chine",
+        "score": 13.38,
+        "context": "1800s, the export market for Guatemala\u2019s indigo and cochineal collapsed. Coffee was developed as an export crop to take their place,"
+      },
+      {
+        "trigger": " pink",
+        "score": 13.38,
+        "context": "- Hardiness: fully hardy\u23ceMasses of mophead flowers start out deep pink in June, maturing to red with a crescendo of burgundy by the end of"
+      },
+      {
+        "trigger": " red",
+        "score": 15.62,
+        "context": "<bos>This sturdy, tannic, plumy red wine grape, a staple of Bordeaux for over a century, was in decline until it was discovered by Argentina."
+      },
+      {
+        "trigger": " red",
+        "score": 14.25,
+        "context": " the weather. Red shiso leaves are placed in the brine turning it a brilliant red. The sun dried plums are replaced in this red brine where they soak for"
+      }
+    ],
+    "promotes": [
+      " roja",
+      " RED",
+      " red",
+      "Red",
+      " Red"
+    ],
+    "demotes": [
+      "RectangleBorder",
+      " disambiguazione",
+      "tvguidetime",
+      " Wikimedijinoj",
+      "AccessorTable"
+    ]
+  },
+  {
+    "id": "0_16200_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.38716062903404236,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ]
+  },
+  {
+    "id": "0_1172_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3930293321609497,
+    "top_activations": [
+      {
+        "trigger": " family",
+        "score": 17.25,
+        "context": "\u23ceChaerophyllum bulbosum is a species of flowering plant in the carrot family known by several common names, including turnip-rooted chervil,"
+      },
+      {
+        "trigger": " family",
+        "score": 17.12,
+        "context": "<bos>Search for native plants by scientific name, common name or family. If you are not sure what you are looking for, try the Combination Search or our Recommended"
+      },
+      {
+        "trigger": " family",
+        "score": 17.25,
+        "context": " adding to to our knowldge of the Retta:\u23ce- Retta family history\u23ce- Retta country of origin, nationality, & ethnicity\u23ce-"
+      },
+      {
+        "trigger": " family",
+        "score": 17.38,
+        "context": "Family: Procellariidae, Shearwaters and Petrels view all from this family\u23ceDescription ALL BIRDS Have uniformly dark brown upperparts, but mainly pale under"
+      },
+      {
+        "trigger": " family",
+        "score": 17.12,
+        "context": "<bos>Family: Istiophoridae, Billfishes view all from this family\u23ceDescription The Atlantic blue marlin (Makaira nigricans) is a species of"
+      }
+    ],
+    "promotes": [
+      ".\")\r",
+      " my\u017felf",
+      "!\")\r",
+      " Efq",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "demotes": [
+      "  ",
+      " ",
+      "...",
+      " (",
+      ","
+    ]
+  },
+  {
+    "id": "0_16200_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3618396520614624,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ]
+  },
+  {
+    "id": "4_12587_6",
+    "layer": 4,
+    "ctx_idx": 6,
+    "influence_score": 0.3788115680217743,
+    "top_activations": [
+      {
+        "trigger": " green",
+        "score": 22.75,
+        "context": " deaths \u2014 possibly including Napoleon Bonaparte\u2019s in 1821. Emerald green, also known as Paris green, was incredibly toxic and was at one point"
+      },
+      {
+        "trigger": "anger",
+        "score": 21.5,
+        "context": " citrus plants in winters. In those days, orange tree was the main tree used for propagation; hence these structures were named as orangery and orangeries."
+      },
+      {
+        "trigger": " blue",
+        "score": 21.5,
+        "context": " central \"eye.\" The infrared signal does not penetrate through clouds, so the light blue areas reveal the cold clouds tops associated with strong thunderstorms embedded within the storm."
+      },
+      {
+        "trigger": "ous",
+        "score": 18.5,
+        "context": " Lateral margins of pale throat are defined by dark stripe and spaced dark streaks form a breast band that is flushed buff. Underparts are otherwise whitish with rufous streaks"
+      },
+      {
+        "trigger": "inks",
+        "score": 20.25,
+        "context": " and sassafras, offering a beautiful fall show of reds, pinks, oranges and yellow.\u23ceCome spring, the visitor sees airy stands of native az"
+      }
+    ],
+    "promotes": [
+      " Green",
+      "GREEN",
+      "Green",
+      "green",
+      " green"
+    ],
+    "demotes": [
+      "MigrationBuilder",
+      "GEBURTSDATUM",
+      "awaiter",
+      "makeConstraints",
+      " disambiguazione"
+    ]
+  },
+  {
+    "id": "3_373_1",
+    "layer": 3,
+    "ctx_idx": 1,
+    "influence_score": 0.39940401911735535,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 29.62,
+        "context": "<bos>: to cover (something) by winding or folding a piece of material around it\u23ce: to wind or fold (something) around something else\u23ce: to"
+      },
+      {
+        "trigger": "ver",
+        "score": 33.0,
+        "context": "<bos>verbo (posits, positing, posited)\u23ce- 1 [with object] Put forward as fact or as a basis for argument: the"
+      },
+      {
+        "trigger": "2",
+        "score": 28.12,
+        "context": "<bos>2nd ed. - Cold Spring Harbor, N.Y. : Cold Spring Harbor Laboratory Press, c2007.\u23ceviii, 1"
+      },
+      {
+        "trigger": "uus",
+        "score": 29.62,
+        "context": "<bos>uus in the news\u23ceInventor of World Wide Web is knighted by queen\u23ceMassachusetts Unitarian Universalist Tim Berners-Lee, the inventor of the"
+      },
+      {
+        "trigger": "1",
+        "score": 22.12,
+        "context": "<bos>11.2 Appraisal Methods\u23ce- Be able to describe the various appraisal methods.\u23ceIt probably goes without saying that different industries and jobs need different kinds"
+      }
+    ],
+    "promotes": [
+      " i",
+      " Guess",
+      " guess",
+      " direct",
+      "."
+    ],
+    "demotes": [
+      ")++;",
+      " Efq",
+      "]:\r",
+      "...');",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "6_4302_6",
+    "layer": 6,
+    "ctx_idx": 6,
+    "influence_score": 0.38411152362823486,
+    "top_activations": [
+      {
+        "trigger": " red",
+        "score": 22.25,
+        "context": "ah and Uxmal, in the Mexican state of Yucatan, there is a red church on a hill. The interior is lined with strange wooden shrines, their"
+      },
+      {
+        "trigger": " red",
+        "score": 22.62,
+        "context": " in either subtropical or temperate climates. The fruit has a tough skin that is deep red in color. Its interior contains numerous seeds that are quite hard and surrounded with"
+      },
+      {
+        "trigger": " red",
+        "score": 21.25,
+        "context": " and shape of a curve\u23ceIn the BlackBerry\u00ae Composer, anchor points appear as red squares along the path. When you select an anchor point on a curve,"
+      },
+      {
+        "trigger": " red",
+        "score": 22.25,
+        "context": "-12 per branch.\u23ceWhite oaks have rounded leaf lobes as opposed to red oaks which have pointed leaf lobes.\u23ceAll of the oaks (Quercus species"
+      },
+      {
+        "trigger": " red",
+        "score": 20.75,
+        "context": " this image, Reykjav\u00edk appears a silvery-brown and is surrounded by green and redish-brown fields. The black areas are water and the bright white patches"
+      }
+    ],
+    "promotes": [
+      "\u8272",
+      " colour",
+      "Color",
+      "color",
+      " color"
+    ],
+    "demotes": [
+      " it\u017felf",
+      " Efq",
+      " my\u017felf",
+      " Monfieur",
+      " becau\u017fe"
+    ]
+  },
+  {
+    "id": "6_8540_12",
+    "layer": 6,
+    "ctx_idx": 12,
+    "influence_score": 0.3967195749282837,
+    "top_activations": [
+      {
+        "trigger": " blue",
+        "score": 14.75,
+        "context": " a mile wide. From close up the lake is a glistening encrustation of blue-green glass 2,400 feet in diameter, formed when"
+      },
+      {
+        "trigger": " red",
+        "score": 14.88,
+        "context": " per student\u23ce- Paint in black, white, brown, yellow, blue, red, and green\u23ce- Googly eyes\u23ceWhat You Do:\u23ce-"
+      },
+      {
+        "trigger": "blue",
+        "score": 14.62,
+        "context": " flax lily put out panicles that held a flustering of small, pale-blue blooms, with three prominent, yellow sepals and three petals.\u23ceThe"
+      },
+      {
+        "trigger": " red",
+        "score": 15.75,
+        "context": ", and, by the time the sun reaches its zenith, the lagoon shines bright red.\u23ceHuman\u2019s are frail. We would die from sub-zero"
+      },
+      {
+        "trigger": " green",
+        "score": 15.88,
+        "context": " queen, 85, was wearing an outfit in the Irish color of emerald green, signaling what British and Irish officials have depicted as a mood of reconciliation between"
+      }
+    ],
+    "promotes": [
+      "BibitemShut",
+      " pinulongan",
+      "makeConstraints",
+      "DebuggerNonUser",
+      " Efq"
+    ],
+    "demotes": [
+      " color",
+      " blue",
+      " green",
+      "blue",
+      "color"
+    ]
+  },
+  {
+    "id": "17_14156_14",
+    "layer": 17,
+    "ctx_idx": 14,
+    "influence_score": 0.3678007125854492,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 41.5,
+        "context": " period through the early 1900s. These barrels consisted of red or white oak staves (the long, vertical parts) and oak hoops,"
+      },
+      {
+        "trigger": " and",
+        "score": 41.0,
+        "context": " you identify what each kind of marker or sign is for.\u23ce- The red and green channel markers point to where the water is deepest.\u23ce- The white"
+      },
+      {
+        "trigger": " and",
+        "score": 43.0,
+        "context": " chemical weapons: skin secretions containing nasty toxins called alkaloids. Like the red, yellow and black bands on a coral snake or the yellow stripes on a wasp, their"
+      },
+      {
+        "trigger": " or",
+        "score": 42.0,
+        "context": " made of a rougher version porcelain enamelled steel (black, green, blue or sometimes other colours). Porcelain is very hard wearing and blackboards made of porcelain"
+      },
+      {
+        "trigger": ",",
+        "score": 42.5,
+        "context": " distinguished by its size, its solid black snout and sharply delineated pattern of irregular red, orange or pink and black bands. A Gila monster\u2019s skin has a"
+      }
+    ],
+    "promotes": [
+      "Mi",
+      " liten",
+      "CrossRef",
+      "arriver",
+      " vera"
+    ],
+    "demotes": [
+      "IntoConstraints",
+      " my\u017felf",
+      " \u017fy",
+      " Jefus",
+      " \u017fever"
+    ]
+  },
+  {
+    "id": "20_5302_14",
+    "layer": 20,
+    "ctx_idx": 14,
+    "influence_score": 0.3663669228553772,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 50.0,
+        "context": ", DIAMONDS, and TRIANGLES\u23ceThere are 6 colors: RED, BLUE, YELLOW, ORANGE, PURPLE, GREEN\u23ceFor example: one"
+      },
+      {
+        "trigger": ",",
+        "score": 51.5,
+        "context": " song \u2013 depict mangroves, pelicans, turtles and crabs in bold reds, yellows and azure blues. \u201cIf art can give voice to these silent, fundamental elements"
+      },
+      {
+        "trigger": " of",
+        "score": 51.5,
+        "context": " houseplant. The plant features brightly colored flowers that look like daisies, in hues of pink, yellow or orange.\u23cePurchase an ice plant start from a nursery"
+      },
+      {
+        "trigger": ",",
+        "score": 49.75,
+        "context": " black were used most frequently, but many other colors were used as well: green, yellow, red, turquoise, dark brown, grey.\u23ceMETHOD: Both"
+      },
+      {
+        "trigger": ",",
+        "score": 49.5,
+        "context": " each party\u23ceDark blue: CSU, Light Blue: CDU, Red: SPD, Purple: The Left, Green: Alliance 90 / The Greens\u23ce"
+      }
+    ],
+    "promotes": [
+      "kheim",
+      "RTEX",
+      "XmlAccessType",
+      "BeginContext",
+      "StoryboardSegue"
+    ],
+    "demotes": [
+      ".~(\\",
+      "polation",
+      "urence",
+      "gr\u00f6\u00dfern",
+      "rawValue"
+    ]
+  },
+  {
+    "id": "19_14284_14",
+    "layer": 19,
+    "ctx_idx": 14,
+    "influence_score": 0.32300254702568054,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 78.5,
+        "context": " animated art and a 3D effect.\u23ce- The markers provided are blue, red,green, pink and orange and have medium tips for more control over"
+      },
+      {
+        "trigger": ",",
+        "score": 69.0,
+        "context": " on different principles. LEGO sensor uses a RGB\u23ceLED, and successively shines red, green and blue light on the object.\u23ceReflected light is collected by"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 66.0,
+        "context": " joy, abundance, hope, youth, mirth, gladness, resurrection, spring.\u23cePurple \u2014 Temperance, royalty\u23ceRed \u2014 Magnanimity, fortitude\u23ceWhite \u2014"
+      },
+      {
+        "trigger": ",",
+        "score": 66.5,
+        "context": " from white.\u23ceFor the protanope, the brightness of red, orange, and yellow is much reduced compared to normal. This 'dimming' can"
+      },
+      {
+        "trigger": ",",
+        "score": 94.0,
+        "context": " that light went through the colored blocks and it made a rainbow. It showed red, green, and blue.\u23ceC: The colors (on the projector)"
+      }
+    ],
+    "promotes": [
+      " orange",
+      "Purple",
+      " purple",
+      "ModelSerializer",
+      " violet"
+    ],
+    "demotes": [
+      "::::::::",
+      "\u89d2",
+      "Hentet",
+      " \u0438\u0441\u0442\u043e",
+      " ModelExpression"
+    ]
+  },
+  {
+    "id": "6_8540_6",
+    "layer": 6,
+    "ctx_idx": 6,
+    "influence_score": 0.3851366639137268,
+    "top_activations": [
+      {
+        "trigger": " blue",
+        "score": 14.75,
+        "context": " a mile wide. From close up the lake is a glistening encrustation of blue-green glass 2,400 feet in diameter, formed when"
+      },
+      {
+        "trigger": " red",
+        "score": 14.88,
+        "context": " per student\u23ce- Paint in black, white, brown, yellow, blue, red, and green\u23ce- Googly eyes\u23ceWhat You Do:\u23ce-"
+      },
+      {
+        "trigger": "blue",
+        "score": 14.62,
+        "context": " flax lily put out panicles that held a flustering of small, pale-blue blooms, with three prominent, yellow sepals and three petals.\u23ceThe"
+      },
+      {
+        "trigger": " red",
+        "score": 15.75,
+        "context": ", and, by the time the sun reaches its zenith, the lagoon shines bright red.\u23ceHuman\u2019s are frail. We would die from sub-zero"
+      },
+      {
+        "trigger": " green",
+        "score": 15.88,
+        "context": " queen, 85, was wearing an outfit in the Irish color of emerald green, signaling what British and Irish officials have depicted as a mood of reconciliation between"
+      }
+    ],
+    "promotes": [
+      "BibitemShut",
+      " pinulongan",
+      "makeConstraints",
+      "DebuggerNonUser",
+      " Efq"
+    ],
+    "demotes": [
+      " color",
+      " blue",
+      " green",
+      "blue",
+      "color"
+    ]
+  },
+  {
+    "id": "20_10103_14",
+    "layer": 20,
+    "ctx_idx": 14,
+    "influence_score": 0.3529784083366394,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 85.0,
+        "context": " available. The spectacular, trumpet-shaped blooms are available in many colors including red, pink, orange, salmon, white and bicolors. To find answers"
+      },
+      {
+        "trigger": " including",
+        "score": 71.0,
+        "context": "9th and early\u23ce20th century and many familiar forms were bred here including the first cactus\u23ceflowering and striped varieties. In the Victorian language of flowers"
+      },
+      {
+        "trigger": " Rosa",
+        "score": 66.0,
+        "context": "<bos>St. Lawrence Avenue\u23ceCommunity (Acer rubrum, Rosa palustris, Smilax rotundifolia, Carya cordiformis), 2011"
+      },
+      {
+        "trigger": " include",
+        "score": 84.5,
+        "context": " the longest vase life include alstroemeria, aster, celosia, cosmos, gypsophila, lavatera, rudbeckia, scabiosa, sna"
+      },
+      {
+        "trigger": " as",
+        "score": 94.0,
+        "context": " and flavor.\u23ceTrain Rose Canes\u23ceProvide horizontal support for climbing roses such as a fence or trellis. When long canes are trained to grow horizontally they produce"
+      }
+    ],
+    "promotes": [
+      " petals",
+      " oprot",
+      " roses",
+      "InjectAttribute",
+      " rose"
+    ],
+    "demotes": [
+      "IsContent",
+      "awtextra",
+      "ngilizce",
+      "acamata",
+      "utia"
+    ]
+  },
+  {
+    "id": "21_2003_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.3585824966430664,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 67.0,
+        "context": " wanton cruelty often stained their divan, their table, and their bed, with the blood of their favorites, there is a\u23cesaying recorded of a young nobleman"
+      },
+      {
+        "trigger": " pours",
+        "score": 70.0,
+        "context": " being made to pull a butcher\u2019s truck through the streets of London while it pours blood in the gutter, we shall have an idea of the present method of"
+      },
+      {
+        "trigger": " turns",
+        "score": 65.5,
+        "context": " checkup. In case the spotting is accompanied by cramps, or turns to light or heavy bleeding, it needs to be checked by a doctor immediately.\u23ceBrown discharge"
+      },
+      {
+        "trigger": " (",
+        "score": 59.25,
+        "context": "\u23ce- Menstrual bleeding lasting more than seven days\u23ce- Unusually heavy bleeding (soaking through a sanitary napkin or tampon every hour)\u23ce- Menstrual"
+      },
+      {
+        "trigger": " of",
+        "score": 74.5,
+        "context": "arno was the only Asian leader of the modern era\u23ceable to unify people of such differing ethnic, cultural and religious backgrounds\u23cewithout shedding a drop of blood."
+      }
+    ],
+    "promotes": [
+      "Blood",
+      " BLOOD",
+      " Blood",
+      "blood",
+      " blood"
+    ],
+    "demotes": [
+      "+#+",
+      "HandlerContext",
+      "UnusedPrivate",
+      "MLLoader",
+      "Carriera"
+    ]
+  },
+  {
+    "id": "21_2942_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.20468536019325256,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 79.5,
+        "context": "wood and sassafras, offering a beautiful fall show of reds, pinks, oranges and yellow.\u23ceCome spring, the visitor sees airy stands of native"
+      },
+      {
+        "trigger": " turn",
+        "score": 85.0,
+        "context": " vertical stripes on its body. It turns bluish-grey with age and some even turn completely black. Its horns turn in a corkscrew pattern and it can grow"
+      },
+      {
+        "trigger": ",",
+        "score": 91.0,
+        "context": " to 3\u00bd feet tall; pump out flowers in shades of lavender, pink, copper, yellow, or cream; and bloom over a longer period than standard"
+      },
+      {
+        "trigger": "-",
+        "score": 79.0,
+        "context": " nearly reaches caudal fin. With precaudal pit.\u23ceColoration: Grey-brown (olive), with white ventral surface. Dusky to black pectoral fin"
+      },
+      {
+        "trigger": " is",
+        "score": 80.0,
+        "context": " strata, the prevailing colour of which is brick red, but having portions greenish gray, which occur often in spots and stripes, so that the series is sometimes called"
+      }
+    ],
+    "promotes": [
+      " red",
+      " purple",
+      " yellow",
+      " green",
+      " blue"
+    ],
+    "demotes": [
+      " htons",
+      "httphttps",
+      " onOptions",
+      "featureID",
+      " femininas"
+    ]
+  },
+  {
+    "id": "21_10926_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.36022302508354187,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 33.0,
+        "context": "\" color (see Controlling One or More Visual Display Windows). The default foreground color is white. After creating the cylinder, you can change its color:\u23cerod"
+      },
+      {
+        "trigger": ",",
+        "score": 41.5,
+        "context": " Color values range from 0 to 3 and normally correspond to black, cyan, green and blue. Pattern values range from 0 to 3 and default"
+      },
+      {
+        "trigger": " to",
+        "score": 34.25,
+        "context": ", say you hop from any one color directly across the color wheel, like orange to blue. Side-by-side, they create a vibrant look that'"
+      },
+      {
+        "trigger": ",'",
+        "score": 44.75,
+        "context": " # plotting the line line = w*xi+w # regression line plot(xi,line,'r-',xi,y,'o') show()We can"
+      },
+      {
+        "trigger": ",'",
+        "score": 53.0,
+        "context": " plotted, all points form a circle-line.\u23cefill(x,y,'r') plots a red circle that is filled in (or colored in)"
+      }
+    ],
+    "promotes": [
+      "blue",
+      " red",
+      " yellow",
+      " green",
+      " blue"
+    ],
+    "demotes": [
+      "QMetaType",
+      " ujednoznacz",
+      " Referential",
+      " maternelle",
+      "loyment"
+    ]
+  },
+  {
+    "id": "21_13178_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.3010393977165222,
+    "top_activations": [
+      {
+        "trigger": " pretty",
+        "score": 75.5,
+        "context": " these directions. The eggs were easy to color\u2013and the dyed eggs are a pretty reddish-brown. I\u2019m amazed how the skins of yellow onions produce"
+      },
+      {
+        "trigger": ",",
+        "score": 69.0,
+        "context": " cluster galaxies can be seen at optical and near-infrared wavelengths, shown in red, yellow, and green colors. X-ray data (in purple) reveal"
+      },
+      {
+        "trigger": " light",
+        "score": 77.0,
+        "context": " to 10 live young every other year in August or September. Adults are light to dark gray or grayish brown, with two dark stripes edged in white along"
+      },
+      {
+        "trigger": " them",
+        "score": 79.0,
+        "context": " the whites (sclera) should stay pretty much white, although jaundice may turn them yellow and inflammation may make them look pink or red.\u23ceGray or Blue"
+      },
+      {
+        "trigger": " dark",
+        "score": 68.5,
+        "context": ", with variable light greyish \u201cveil\u201d, and finely streaked, mottled and dotted dark; white facial disc and under parts, sometimes with pale buff on sides of"
+      }
+    ],
+    "promotes": [
+      "CHEZ",
+      " muerta",
+      "ufen",
+      "\">\u2014",
+      " Karten"
+    ],
+    "demotes": [
+      " blue",
+      " color",
+      " yellow",
+      " purple",
+      " white"
+    ]
+  },
+  {
+    "id": "23_7817_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.37291020154953003,
+    "top_activations": [
+      {
+        "trigger": " have",
+        "score": 33.0,
+        "context": " thing you have to keep in mind is that most of your illustration is going to have to be on the sides of the pages... it's going to have"
+      },
+      {
+        "trigger": " sky",
+        "score": 25.0,
+        "context": " ash was thrown up into the air, affecting global weather systems and even painting the sky red1.\u23ceWhen it erupted, two-thirds of the island which"
+      },
+      {
+        "trigger": " as",
+        "score": 29.75,
+        "context": "-pound engine parts 200 times faster than traditional tests. Defects appear as colored nodules.\u23ceThe team harnessed the power of innovative high-speed"
+      },
+      {
+        "trigger": " to",
+        "score": 26.0,
+        "context": " plant you need. So play with the tutorial.\u23ceThe images can be transformed to some kind of abstract sceneries instead of adding objects to adjust colors or"
+      },
+      {
+        "trigger": " of",
+        "score": 29.25,
+        "context": " by its Creator.\u23ce- The Spanish dancer\u2019s flattened body is brightly colored in shades of red, pink, or orange.\u23ce- Some are a solid"
+      }
+    ],
+    "promotes": [
+      " orange",
+      " black",
+      " bright",
+      " yellow",
+      " white"
+    ],
+    "demotes": [
+      "richTextPanel",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "CppMethod",
+      "addContainerGap",
+      "principalTable"
+    ]
+  },
+  {
+    "id": "23_11400_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.3184961676597595,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 85.0,
+        "context": " as Macaws. Some Macaws are blue and yellow while the Scarlet Macaw is bright red with yellow and blue. The rainbow Lorikeet has several colors"
+      },
+      {
+        "trigger": " are",
+        "score": 65.0,
+        "context": " protects against prostate cancer, as well as heart and lung disease. The red foods are loaded with antioxidants thought to protect against heart disease by preventing blood clots, and"
+      },
+      {
+        "trigger": " dark",
+        "score": 75.0,
+        "context": "2009 and 2010. The berries are red to dark red, with a weak neck.\u23ceGlen Ample was early, large and"
+      },
+      {
+        "trigger": " or",
+        "score": 84.0,
+        "context": " Other shades have been given different names. A clear red chalcedony is known as carnelian or sard; a green variety colored by nickel oxide is called chrys"
+      },
+      {
+        "trigger": " bright",
+        "score": 95.0,
+        "context": " fluorescence but as time passes, the fluorophore undergoes additional changes that shift its fluorescence to longer wavelengths. When fully matured the protein is bright red. The protein\u2019"
+      }
+    ],
+    "promotes": [
+      " r",
+      " rote",
+      "Red",
+      " Red",
+      " red"
+    ],
+    "demotes": [
+      " green",
+      " Green",
+      " blue",
+      "KommentareTeilen",
+      "green"
+    ]
+  },
+  {
+    "id": "18_13160_14",
+    "layer": 18,
+    "ctx_idx": 14,
+    "influence_score": 0.395813912153244,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 78.0,
+        "context": ". According to the dictionary on my shelf, embarrass means \u201cto cause someone to feel awkward or self-conscious.\u201d Welcome to the motto of my adolescent life."
+      },
+      {
+        "trigger": " of",
+        "score": 76.0,
+        "context": " that eye) together with anhidrosis (lack of sweating) and flushing of the affected side of the face. Due to paralysis of certain nerves (specifically,"
+      },
+      {
+        "trigger": " flushed",
+        "score": 60.75,
+        "context": " I presumed to suggest, only half in jest, that it was time he bought a new Siddur.\u23ceHe turned to me, his face flushed with anger"
+      },
+      {
+        "trigger": " the",
+        "score": 72.0,
+        "context": " first appears as subtle reddening\u23ceon the face. It is usually focused on the center of the face.\u23ceRosacea commonly starts on the nose and spread"
+      },
+      {
+        "trigger": " the",
+        "score": 73.0,
+        "context": " painted features, such as the eyebrows, eyelashes, and lips, and blush on the cheeks, the backs of the hands, elbows, and knees. A layer"
+      }
+    ],
+    "promotes": [
+      "blush",
+      " red",
+      " blushed",
+      " blushing",
+      " blush"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      "UnknownFields",
+      "StoryboardSegue",
+      " Jefus",
+      "\ucc38\uace0"
+    ]
+  },
+  {
+    "id": "23_14463_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.3691691756248474,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 109.5,
+        "context": "3.5 inches (about 5 to 9 cm). Its color varies from tan to several shades of brown to green. The dorsum (back)"
+      },
+      {
+        "trigger": "parts",
+        "score": 103.5,
+        "context": "; color on head forms a distinct hood; note the broken white eyering. Throat and underparts are mostly yellow grading to white on vent and undertail cover"
+      },
+      {
+        "trigger": " from",
+        "score": 99.5,
+        "context": "A Plains Zebra has rather broad stripes, especially towards its rump, with colour ranging from black to dark brown. There may be a brown \u2018shadow stripe\u2019 between"
+      },
+      {
+        "trigger": " a",
+        "score": 104.0,
+        "context": " inches. Their dorsal pattern consists of brown or blackish-brown cross bands, on a tan, rust or dark brown background. The tail of these snakes are usually"
+      },
+      {
+        "trigger": " are",
+        "score": 94.0,
+        "context": " reddish orange cheeks, and dark throat; forehead is white in most birds. Rump is buffy and square-ended tail is dark. Underparts are mostly pale"
+      }
+    ],
+    "promotes": [
+      " LIGHT",
+      "light",
+      "Light",
+      " Light",
+      " light"
+    ],
+    "demotes": [
+      " b\u00edl\u00e1",
+      " \u010derven\u00e1",
+      " b\u00edl\u00e9",
+      " color",
+      " colore"
+    ]
+  },
+  {
+    "id": "24_13277_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3891551196575165,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "24_10662_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3901495039463043,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ]
+  },
+  {
+    "id": "18_8585_14",
+    "layer": 18,
+    "ctx_idx": 14,
+    "influence_score": 0.376548707485199,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 72.5,
+        "context": " long. What do these numbers mean?\u23ceComputer monitors emit color as RGB, or Red, Green, and Blue light. This is different from printing color that"
+      },
+      {
+        "trigger": " or",
+        "score": 59.5,
+        "context": " and blue or Cyan, Magenta, Yellow and Black.\u23ceWhy 3 or 4?\u23ceWell you might have said 3 colours because Red, green"
+      },
+      {
+        "trigger": " of",
+        "score": 79.0,
+        "context": " coding each of the three color components \u2013 red, green and blue \u2013 in the RGB mode and can display 224 color values or roughly 16"
+      },
+      {
+        "trigger": " the",
+        "score": 59.5,
+        "context": "\u23ceWell you might have said 3 colours because Red, green and blue are the (additive) primary colours that are output through your TV, mobile and computer"
+      },
+      {
+        "trigger": ",",
+        "score": 95.0,
+        "context": " and color.Color Television\u23ceExplore how a television uses R, G, and B pixels to produce ... millions of colors.PhET Simulation: Color Vision\u23ce"
+      }
+    ],
+    "promotes": [
+      "red",
+      "green",
+      " Red",
+      " red",
+      " green"
+    ],
+    "demotes": [
+      "DockStyle",
+      " typelib",
+      "tvguidetime",
+      "ConstraintMaker",
+      "RectangleBorder"
+    ]
+  },
+  {
+    "id": "25_4717_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.34430137276649475,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ]
+  },
+  {
+    "id": "22_11865_14",
+    "layer": 22,
+    "ctx_idx": 14,
+    "influence_score": 0.3567981421947479,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 78.0,
+        "context": " exhibit myriad cycles. Annually, the leaves of deciduous trees in the temperate zones turn brilliant hues of yellow, orange, and red as the days shorten and winter"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 68.5,
+        "context": ", friendly, emotional\u23ceOrange \u2014 Fun-loving, action-oriented, competent\u23cePeach \u2014 Gentle, charitable, enthusiastic\u23ceYellow \u2014 Optimistic, expressive,"
+      },
+      {
+        "trigger": ",",
+        "score": 68.0,
+        "context": "\u2019s Shuttle Radar Topography Mission. Low elevations are green, with yellow, pink, and white representing progressively higher elevations. Major geologic faults are marked with white lines"
+      },
+      {
+        "trigger": " and",
+        "score": 71.5,
+        "context": " associated with fire and sun, which suggest warmth. These are colors which contain red and yellow and appear on one side of the color wheel opposite the cool colors."
+      },
+      {
+        "trigger": ",",
+        "score": 67.5,
+        "context": " Spanish dancer\u2019s flattened body is brightly colored in shades of red, pink, or orange.\u23ce- Some are a solid color and some are patterned, depending"
+      }
+    ],
+    "promotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      " red",
+      "tionalit\u00e4t",
+      " Administrativna",
+      " '\\\\;'"
+    ],
+    "demotes": [
+      "ScopeManager",
+      " color",
+      " shade",
+      " colour",
+      " hue"
+    ]
+  },
+  {
+    "id": "18_8150_14",
+    "layer": 18,
+    "ctx_idx": 14,
+    "influence_score": 0.2859862744808197,
+    "top_activations": [
+      {
+        "trigger": " mainly",
+        "score": 66.0,
+        "context": " or search for suitable plants to eat. Its fur is soft, silky, and mainly brown, mottled with grey, fawn and black. It has a broad head"
+      },
+      {
+        "trigger": ",",
+        "score": 67.0,
+        "context": "- Paper plates, one per student\u23ce- Paint in black, white, brown, yellow, blue, red, and green\u23ce- Googly eyes\u23ceWhat"
+      },
+      {
+        "trigger": " deep",
+        "score": 61.75,
+        "context": " the San Jacinto mountains, the sun was high and the sky was a clear, deep blue. We lucked out. It was the perfect day to take our"
+      },
+      {
+        "trigger": " deep",
+        "score": 66.0,
+        "context": "green leaves add contrast to the perennial garden. In autumn, flowers change from a deep pink to pinkish-bronze, then finally to copper-red. To add"
+      },
+      {
+        "trigger": "from",
+        "score": 68.0,
+        "context": "pentine\u23ceoften incorporates inclusions, which give the stone its unique color variation,\u23cefrom black, brown or grey to olive green or yellow.\u23ceSerpentine usually"
+      }
+    ],
+    "promotes": [
+      " black",
+      " purple",
+      " blue",
+      " yellow",
+      " green"
+    ],
+    "demotes": [
+      " ModelExpression",
+      "hless",
+      " martie",
+      " t\u00f4t",
+      "Spot"
+    ]
+  },
+  {
+    "id": "25_9622_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.34662726521492004,
+    "top_activations": [
+      {
+        "trigger": " between",
+        "score": 36.5,
+        "context": " broad, white collar. Underparts are otherwise white. In flight, note contrast between white coverts and dark flight feathers on underwing, and white wing patch"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": " maximum text contrast, e.g., white or yellow text against dark blue background, black or dark blue text against light gray or yellow background.\u23ceAvoid ALL"
+      },
+      {
+        "trigger": " from",
+        "score": 39.0,
+        "context": " and red traffic lights may appear to be extinguished. They may learn to distinguish reds from yellows and from greens primarily on the basis of their apparent brightness or lightness,"
+      },
+      {
+        "trigger": " dense",
+        "score": 41.0,
+        "context": " the atoms condensed from less dense red, yellow and green areas into very dense blue to white areas. JILA is jointly operated by NIST and the University of Colorado"
+      },
+      {
+        "trigger": ",",
+        "score": 36.0,
+        "context": " each cell are labeled by rotated text above each of the areas. Each (red, dotted) grid line bisects the border between two cells.\u23ceThe table"
+      }
+    ],
+    "promotes": [
+      "HasAnnotation",
+      "RefNanny",
+      " onOptions",
+      "Geplaatst",
+      " kasarigan"
+    ],
+    "demotes": [
+      " blue",
+      " Blue",
+      "Blue",
+      "blue",
+      " BLUE"
+    ]
+  },
+  {
+    "id": "25_13416_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.39207953214645386,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ]
+  },
+  {
+    "id": "24_4064_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3648999333381653,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 73.0,
+        "context": " individuals, and with age. Calves are born grey, but turn darker grey to dark brown as they become juveniles. As they age, the skin tone light"
+      },
+      {
+        "trigger": " or",
+        "score": 94.0,
+        "context": ". Neutral tint, a bluish gray pigment, used in water colours, made by mixing indigo or other blue some warm colour. The shades vary greatly. Neutral vowel"
+      },
+      {
+        "trigger": " to",
+        "score": 76.0,
+        "context": ", vegetables, and annual flowers.\u23ceFourlined plant bug nymphs are bright red to orange in color with black wing pads and dots on their abdomen when they first"
+      },
+      {
+        "trigger": " deep",
+        "score": 90.0,
+        "context": " and soft, with a very dense underfur. The upper parts are rusty to deep chestnut, with a yellowish tinge, darkest along the middle of the back."
+      },
+      {
+        "trigger": " through",
+        "score": 84.0,
+        "context": "-spessartite that varies in color from red, through shades of orange and brownish orange to peach and pink.\u23ceRhodolite is a purplish red"
+      }
+    ],
+    "promotes": [
+      " remonter",
+      " color\u00e9s",
+      " moyens",
+      " russes",
+      " d\u00e9gust"
+    ],
+    "demotes": [
+      "WireFormatLite",
+      "SBATCH",
+      "awtextra",
+      " grey",
+      " white"
+    ]
+  },
+  {
+    "id": "15_4310_14",
+    "layer": 15,
+    "ctx_idx": 14,
+    "influence_score": 0.3488908112049103,
+    "top_activations": [
+      {
+        "trigger": "with",
+        "score": 31.62,
+        "context": " thick and soft undercoat. The recognized colors of the Continental Giant are white (with pink or blue eyes), agouti, black, dark steel, light steel"
+      },
+      {
+        "trigger": " with",
+        "score": 35.0,
+        "context": " as livefood. Adults measure up to 8cm and are a yellow colour with darker brown/purple patches. They are popular for their large gut content which"
+      },
+      {
+        "trigger": " with",
+        "score": 32.0,
+        "context": " stocky Waxbill with a sturdy beak.\u23ceis predominantly different shades of brown with a complex barred\u23ceand spotted pattern.\u23ceresembles a Mannikin"
+      },
+      {
+        "trigger": " light",
+        "score": 31.88,
+        "context": " caterpillars in their later instars obtain a relatively large size and are quite striking -- light green with orange dots. To defend themselves they use osmateria, fleshy orange"
+      },
+      {
+        "trigger": " their",
+        "score": 35.5,
+        "context": ".\u23ceSpitfires are a desert breed of dragon. Their dull brown bodies contrast with their brilliant turquoise markings, and they only blaze brighter when these dragons fight."
+      }
+    ],
+    "promotes": [
+      " colored",
+      "green",
+      " blue",
+      " color",
+      " green"
+    ],
+    "demotes": [
+      "ibouti",
+      "makeConstraints",
+      "\u0627\u0644\u0645\u0634\u0627\u0631\u0643\u0627\u062a",
+      "hoeddwyd",
+      "addGap"
+    ]
+  },
+  {
+    "id": "22_426_14",
+    "layer": 22,
+    "ctx_idx": 14,
+    "influence_score": 0.336259126663208,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 40.5,
+        "context": " colors include: gold, silver, silver brindle, black, black white, and partridge.Bantam Weight: 0.7 - 1."
+      },
+      {
+        "trigger": " appear",
+        "score": 48.5,
+        "context": "2008 election between Barack Obama and John McCain). Republican voting Alaskans appear to have much more power than Democratic leaning people from Massachusetts, simply because of"
+      },
+      {
+        "trigger": " appear",
+        "score": 55.5,
+        "context": " may be confused with black or dark gray, and red traffic lights may appear to be extinguished. They may learn to distinguish reds from yellows and from greens primarily on"
+      },
+      {
+        "trigger": " meant",
+        "score": 40.5,
+        "context": " sound and combined them to coin a new word. That article is saying that \u767d meant an acorn, and is a component of \u6cca, but that they have"
+      },
+      {
+        "trigger": " that",
+        "score": 40.5,
+        "context": " people there is hierarchy of Blackness depending on skin color. There is the assumption that the lighter your skin the easier time you will have in life.\u23ceWhen"
+      }
+    ],
+    "promotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "Diwedd",
+      "CompilerServices",
+      " AssemblyCompany",
+      "StoryboardSegue"
+    ],
+    "demotes": [
+      " color",
+      " colour",
+      " colors",
+      " Color",
+      "color"
+    ]
+  },
+  {
+    "id": "22_4702_14",
+    "layer": 22,
+    "ctx_idx": 14,
+    "influence_score": 0.3333335220813751,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 103.0,
+        "context": " Johannesburg, South Africa to the Museum of Islamic Art in Doha, Qatar, were illuminated with blue lights on Nov. 14, World Diabetes Day.\u23ce"
+      },
+      {
+        "trigger": " wear",
+        "score": 105.0,
+        "context": " for victims. The Month\u2019s \u201cBlue Ribbon Campaigns\u201d encourage community members to wear blue ribbons in memory of those who have died from abuse or neglect. President"
+      },
+      {
+        "trigger": " in",
+        "score": 96.0,
+        "context": " is a blue moon tonight, I wanted to find out just what that is. Would I actually see a moon, full and bright in the sky, and blue"
+      },
+      {
+        "trigger": " to",
+        "score": 132.0,
+        "context": " most turquoise is concentrated near the copper-aluminum end of this spectrum, making it typically closer to blue or blue-green than to green or green-blue."
+      },
+      {
+        "trigger": " to",
+        "score": 93.0,
+        "context": "arretia grows to be about six inches tall and has small, linear, lavender to white flowers that appear in dense clusters amid spine-tipped leaves. The fruit"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      " cer",
+      " Shade",
+      " shades",
+      " shade"
+    ],
+    "demotes": [
+      " red",
+      " orange",
+      "orange",
+      "red",
+      "Orange"
+    ]
+  },
+  {
+    "id": "24_14669_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.29410892724990845,
+    "top_activations": [
+      {
+        "trigger": " red",
+        "score": 53.0,
+        "context": " is made right, the resulting product is simply delicious! And like a fine, red wine, it gets better and better with age. Many companies supply basic wine"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 61.0,
+        "context": ": 6/14/2012\u23ceDrug Medical Dictionary of Terms by Letter\u23ceMedical Dictionary Term:\u23ceFind out what women really need."
+      },
+      {
+        "trigger": ",",
+        "score": 61.0,
+        "context": " as RBC's, red corpuscles or erythrocytes (literally, red hollow vessels).Source: MedTerms\u2122 Medical Dictionary\u23ceLast Editorial Review: 6/"
+      },
+      {
+        "trigger": " of",
+        "score": 59.0,
+        "context": " to increase his appreciation of colors. Dr. Zelzter investigated and narrowed down colors to a single bandwidth of red, and convinced a local contact lens manufacturer to produce"
+      },
+      {
+        "trigger": "9",
+        "score": 53.5,
+        "context": " and Red Crescent Day dates back to1922. At that time, the Czechoslovakia Red Cross National Society proclaimed a three-day truce at Easter to promote"
+      }
+    ],
+    "promotes": [
+      "ksis",
+      " doInBackground",
+      " /\\.",
+      "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+      "!(:"
+    ],
+    "demotes": [
+      " red",
+      " Red",
+      "Red",
+      " RED",
+      "red"
+    ]
+  },
+  {
+    "id": "24_13541_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.380965918302536,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ]
+  }
+]
