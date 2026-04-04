@@ -85,8 +85,8 @@ VALIDATION_MARKDOWN_FILE = VALIDATION_REPORT_FILE.with_suffix(".md")
 # ---------------------------------------------------------------------------
 
 VALIDATION_MODEL = GROUPING_MODEL
-CONCURRENCY_LIMIT = 500        # Kept conservative to avoid rate limits
-MIN_GROUP_SIZE = 2             # Groups with <2 features are skipped
+CONCURRENCY_LIMIT = 500      
+MIN_GROUP_SIZE = 2            # Groups with <2 features are skipped
 MAX_FEATURES_M1 = 5           # Test up to 5 features per group in Method 1
 N_NEG_FEATURES_M1 = 9         # 9 negatives per trial in Method 1 (1 + 9 = 10)
 N_POS_SNIPPETS_M2 = 5         # 5 positive snippets in Method 2

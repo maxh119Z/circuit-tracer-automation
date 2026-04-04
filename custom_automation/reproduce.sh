@@ -57,6 +57,7 @@ RUN_VARIANTS=false
 RUN_DESC_GROUP=false
 RUN_ALL_GROUPS=false
 RUN_COMPARE=false
+RUN_BATCH_SUMMARY=false
 
 case "$SUBCOMMAND" in
     fetch)
@@ -84,9 +85,12 @@ case "$SUBCOMMAND" in
     compare)
         RUN_COMPARE=true
         ;;
+    batch-summary)
+        RUN_BATCH_SUMMARY=true
+        ;;
     *)
         echo "Unknown subcommand: $SUBCOMMAND"
-        echo "Usage: ./reproduce.sh [fetch|fetch-desc|core|all|validate|all-variants|desc-group|all-groups|compare] [PRUNING_THRESHOLD]"
+        echo "Usage: ./reproduce.sh [fetch|fetch-desc|core|all|validate|all-variants|desc-group|all-groups|compare|batch-summary] [PRUNING_THRESHOLD]"
         echo ""
         echo "  fetch       — Steps 0-1 only (no OpenAI key needed)."
         echo "  fetch-desc  — Steps 0-2: fetch + descriptions."
@@ -421,6 +425,14 @@ fi
 if [ "$RUN_COMPARE" = true ]; then
     step_banner "Generating comparison.md"
     python compare_variants.py
+fi
+
+# ---------------------------------------------------------------------------
+# Batch summary (average scores across all prompts → artifacts/batch_summary.md)
+# ---------------------------------------------------------------------------
+if [ "$RUN_BATCH_SUMMARY" = true ]; then
+    step_banner "Generating batch_summary.md"
+    python aggregate_batch.py
 fi
 
 # ---------------------------------------------------------------------------

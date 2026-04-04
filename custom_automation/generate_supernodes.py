@@ -166,6 +166,7 @@ GRANULARITY & SPECIFICITY:
 - Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't merge a broad category with a narrower stable subtype.
 - Use the "Promotes" field as a tiebreaker: features that promote clearly different tokens should be split; features promoting the same or related tokens can stay together.
 - Distinctions that explain WHY the model chose one output over another should be preserved.
+- The prompt commits to one active sense of every word in it. Do not split features into separate groups for alternate senses of the same word that the prompt does not require — merge them into the contextually correct group or send them to Ungrouped.
 
 SEMANTIC ROLE — "SAY X" vs "X ITSELF" (highest-priority rule):
 - A feature that introduces or frames a concept is different from a feature that IS the concept. Keep them in separate groups.

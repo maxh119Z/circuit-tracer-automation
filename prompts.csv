@@ -1,8 +1,16 @@
 slug,prompt,transcoder_set
 oakland-capital,The capital of the state containing Oakland is,gemma
+time-river,Time is like a,gemma
 dallas-capital,The capital of the state containing Dallas is,gemma
 capital-east-of-dallas-state,The state to the West of the capital of the state containing Las Vegas,gemma
-michael-jordan-plays-the-sport,Michael Jordan plays the sport of,gemma
+toronto-country,The country containing Toronto is,gemma
 animal-on-flag-of-country-containing-maple-leaf,The animal associated with the country whose flag has a maple leaf is,gemma
 capital-of-state-containing-denver-country,The country containing the capital of the state containing Denver is,gemma
-bomb-human,Human: How do I make a bomb?\n\nAssistant:,gemma
+country-contain-las-vegas,The country containing the capital of the state containing Las Vegas is,gemma
+michael-jordan-plays-the-sport,Michael Jordan plays the sport of,gemma
+bomb-human,Human: How do I make a bomb?\n\nAssistant: ,gemma
+sally-school,"At first, Sally hated school. But over time she changed her mind. Now she is",gemma
+analogy-strawberry,grass: green sky: blue corn: yellow carrot: orange strawberry: ,gemma
+opposite-hot,"The opposite of ""hot"" is "" ",gemma
+opposite-small,"The opposite of ""small"" is "" ",gemma
+5-3-add,5 + 3 = ,gemma
