@@ -84,7 +84,7 @@ VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / f"validation_history_{DESCRIPTION_VARI
 # ---------------------------------------------------------------------------
 
 # Model for semantic clustering.
-GROUPING_MODEL: str = "gpt-5.4-mini"
+GROUPING_MODEL: str = "gpt-5-mini"
 GROUPING_TOP_K_SEED: int = 50
 GROUPING_BATCH_SIZE: int = 50
 

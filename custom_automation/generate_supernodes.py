@@ -47,7 +47,7 @@ GROUPING_TOP_K_SEED = 100
 
 # Top-p threshold for logit nodes: include output tokens until cumulative prob >= this
 LOGIT_TOP_P = 0.90
-LOGIT_MAX_NODES = 4
+LOGIT_MAX_NODES = 3
 
 # Tokens that are purely structural / function words — skip as embedding groups
 FUNCTION_WORDS = frozenset({
@@ -145,74 +145,91 @@ class Phase3Output(BaseModel):
 # ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
 #
-# All four variants are IDENTICAL except for one specificity-bias sentence
-# in the GRANULARITY section.  This isolates specificity as the single
-# variable so you can compare results across runs.
-#
-#   a0 — neutral  (use whichever granularity best explains the output)
-#   a1 — coarser  (lean toward merging; fewer, clearer groups)
-#   a2 — finer    (lean toward splitting; preserve distinctions)
-#   a3 — finest   (strongly prefer splitting; only merge if truly redundant)
+# All variants share the same say-X / X-itself strictness (hard constraint).
+# The single varying dimension is specificity bias — how willing to assign
+# borderline features vs Ungrouped, and how willing to merge similar groups:
+#   a0 — neutral baseline
+#   a1 — slightly more willing to assign borderline features (fewer Ungrouped)
+#   a2 — slightly more willing to merge same-role groups (fewer redundant groups)
+#   a3 — both: pull in borderline features and merge same-role groups
 # ---------------------------------------------------------------------------
 
+# Single shared strictness applied to all variants (previously a3 level).
+_SAY_X_STRICTNESS = (
+    "Treat say-X / X-itself separation as a hard constraint. Every say-X group must contain only framing features; "
+    "every concept group must contain only content features. A single misplaced feature is enough to split or reassign."
+)
+
+_SPECIFICITY_BIAS_BASE = (
+    "When in doubt between narrower and broader groups, use whichever granularity best explains the model's specific output and prompt. "
+    "Consider both the prompt and the predicted output together: a distinction is worth keeping depending on its relevancy to what was asked and what the model predicted. "
+)
+
 _SPECIFICITY_BIAS: dict[str, str] = {
-    # a0 — neutral baseline: no specificity preference.
-    "a0": "When in doubt between narrower and broader groups, use whichever granularity best explains the model's specific output.",
-    # a1 — inclusive smart: apply all specificity rules, then when still in doubt, preserve the distinction.
-    #   Rules: (1) match the prompt's grain — if the prompt names a specific entity, keep it specific;
-    #   (2) only one sense of each word is active in this prompt — never split on alternate senses the prompt doesn't require;
-    #   (3) named entities and proper nouns stay specific when the activations support it.
-    #   Tiebreaker: if a distinction is semantically real and supported by activations, keep it even if peripheral to the output.
-    "a1": "Be as specific as the prompt and activations support: keep named entities at their named grain, never split on senses the prompt doesn't activate, and when a distinction is semantically real and evidence-backed, preserve it — cleaner graphs can be achieved in Phase 3.",
-    # a2 — balanced smart: same rules, tiebreaker is the output prediction.
-    #   A distinction survives if it's on or near the causal path to the output; peripheral real distinctions get merged.
-    "a2": "Be as specific as the prompt and output require: keep named entities at their named grain, never split on senses the prompt doesn't activate, and only preserve a distinction between two groups if they relate differently to the predicted output token — if they converge on the same output, merge them.",
-    # a3 — tight smart: same rules, strictest output-relevance filter.
-    #   A distinction must clearly contribute to explaining why this specific output was chosen; anything else merges.
-    "a3": "Be as specific as the output path demands: keep named entities at their named grain, never split on senses the prompt doesn't activate, but merge any distinction you cannot directly connect to why the model chose this specific output — a tighter graph with fewer but causally clear groups is better than a complete one.",
+    "a0": _SPECIFICITY_BIAS_BASE + _SAY_X_STRICTNESS,
+    "a1": (
+        _SPECIFICITY_BIAS_BASE
+        + "Prefer all features within a group to truly represent the group name. Do not force-fit anything"
+        "Ungrouped should be reserved for features with no little connection to the prompt or output or do not fit well. Unrelated. This includes definitions of words that don't fit the context and can be merged. "
+        + _SAY_X_STRICTNESS
+    ),
+    "a2": (
+        _SPECIFICITY_BIAS_BASE
+        + "When two groups play the same role relative to the output and their separation does not help a reader understand the reasoning, prefer merging them. This is not often. "
+        + _SAY_X_STRICTNESS
+    ),
+    "a3": (
+        _SPECIFICITY_BIAS_BASE
+        + "Before finalising any group decision, ask: if a reader saw only this group name and its members, would they understand something specific about why the model predicted this output? "
+        "A group that passes this test is worth keeping at whatever granularity it needs. "
+        "A group that fails it should be merged into a neighbor or dropped — not kept for completeness. "
+        "For borderline features, ask whether the feature genuinely adds evidence to an existing group's story or just weakly resembles it — a weak match muddies the group and is better left Ungrouped. "
+        "For potential merges, ask whether the two groups tell the same part of the story or different parts — same part means merge, different parts means keep separate even if they are semantically close. "
+        + _SAY_X_STRICTNESS
+    ),
 }
 
-_bias = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
+_bias_phase1: str = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
+_bias_phase3: str = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
 if GROUPING_VARIANT not in _SPECIFICITY_BIAS:
     log.warning("Unknown GROUPING_VARIANT '%s' — falling back to a0 behaviour.", GROUPING_VARIANT)
 
-GROUPING_PHILOSOPHY = f"""
+# Shared rules for all phases — no specificity bias here; injected per-phase below.
+GROUPING_PHILOSOPHY = """
 GOAL: Produce a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 
 RELEVANCE & UNGROUPED:
-- Assign to "Ungrouped": weak, isolated, or noisy features; features not meaningfully connected to the main prompt semantics.
-- Purely grammatical tokens (prepositions, articles, conjunctions, punctuation, copulas) go to "Ungrouped" unless they clearly promote a semantically meaningful content token.
+- Assign to "Ungrouped": weak, isolated, or noisy features; features not meaningfully connected to the main prompt and output semantics.
+- Purely grammatical tokens (prepositions, articles, conjunctions, punctuation, copulas) go to "Ungrouped" unless they clearly promote a semantically meaningful role (this is very rare). Sentence structure-level grammar is mostly pointless, unless the prompt or output is about it.
 - "say X" groups are ONLY valid when X is a meaningful content word or category (e.g., "say a city", "say a state"). Do NOT create "say X" groups when X is a function word, grammatical structure, or syntactic role — e.g., "say 'is'", "say a relative clause", "say 'of'", "say a preposition" are never valid groups. These belong in Ungrouped.
 - A valid group should feel connected to at least one other group in the graph, not like an isolated curiosity.
-- "Ungrouped" is not a failure — use it freely.
+- "Ungrouped" is not a failure.
 
 GRANULARITY & SPECIFICITY:
 - Create only groups clearly supported by the data. Prefer the most specific name the evidence supports over broad buckets.
-- Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't merge a broad category with a narrower stable subtype.
-- Use the "Promotes" field as a tiebreaker: features that promote clearly different tokens should be split; features promoting the same or related tokens can stay together.
+- Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't blindly merge a broad category with a narrower stable subtype.
+- Use the "Promotes" field if clear: these tokens can guide decision making but are often noisy or polysemantic.
 - Distinctions that explain WHY the model chose one output over another should be preserved.
-- {_bias}
 - The prompt commits to one active sense of every word in it. Do not split features into separate groups for alternate senses of the same word that the prompt does not require — merge them into the contextually correct group or send them to Ungrouped.
 
-SEMANTIC ROLE — "SAY X" vs "X ITSELF" (highest-priority rule):
+SEMANTIC ROLE — "SAY X" vs "X ITSELF" (high-priority rule):
 - A feature that introduces or frames a concept is different from a feature that IS the concept. Keep them in separate groups.
   - Highlighted tokens are function/structural words → the feature sets up what follows; name it "say [what]".
   - Highlighted tokens are content words → the feature represents the concept directly; name the concept.
-- [SAY] / [CONCEPT] tags in descriptions are strong signals — respect them.
+- say tags in descriptions are strong signals — respect them.
 - "Say" is for genuine framing or introduction. Do not use it when features directly represent a concept.
 - Surface overlap is never enough reason to merge groups with different semantic roles.
 
-NAMING (STRICT — violating this is an error):
-- HARD LIMIT: 5 words maximum. No exceptions.
-- Natural, simple phrasing. If you need more than 5 words, the name is too specific — broaden it.
-- Prefer "say a city" over "city mention", "city reference", or "mentioned city".
+NAMING (STRICT):
+- LIMIT: 5 words maximum. No exceptions.
+- Natural, simple phrasing. If you need more than 5 words, the name is too specific.
+- For "SAY X" groups, prefer "say a city" over "city mention", "city reference", or "mentioned city".
 - Avoid parentheses and words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler phrase works.
 - Include a specific named entity in the group name when that entity is the clear shared referent — don't collapse "Oakland" into "a city" if the features are specifically about Oakland.
 - Prefer layman's vocabulary.
 
 SPLITTING vs MERGING:
 - Split when a group mixes semantic roles or abstraction levels.
-- Prefer two narrow groups over one vague bucket — Phase 3 can merge, but cannot recover lost distinctions.
 - Small groups are fine if they are interpretable and prompt-relevant.
 """
 
@@ -361,9 +378,14 @@ def build_group_summary(
         if len(members) > 15:
             lines.append(f"  ... and {len(members) - 15} more")
 
-    # Also report ungrouped count
-    ungrouped = sum(1 for g in final_assignments.values() if g == "Ungrouped")
-    lines.append(f"\n## Ungrouped: {ungrouped} features")
+    # Report ungrouped features with descriptions so Phase 3 can rescue misassigned ones
+    ungrouped_ids = [fid for fid, g in final_assignments.items() if g == "Ungrouped"]
+    lines.append(f"\n## Ungrouped ({len(ungrouped_ids)} features)")
+    for fid in ungrouped_ids[:20]:
+        desc = id_to_desc.get(fid, "no description")
+        lines.append(f"  - {fid}: {desc}")
+    if len(ungrouped_ids) > 20:
+        lines.append(f"  ... and {len(ungrouped_ids) - 20} more")
 
     return "\n".join(lines)
 
@@ -562,6 +584,8 @@ Cluster them into meaningful semantic groups ("supernodes").
 Additional guidance for this phase:
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
+- Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily.
+- {_bias_phase1}
 Features:
 {format_feature_list(seed_features)}
 """
@@ -636,24 +660,26 @@ The pipeline produced {num_groups} groups from {len(final_assignments)} features
 {GROUPING_PHILOSOPHY}
 
 OUTPUT-RELEVANCE PRINCIPLE:
-Before any merge or drop decision, ask: does this group help explain WHY the model predicted the specific output above?
-- A group is worth keeping if it plays a distinct role in the reasoning path to the output.
-- A distinction between two groups is worth keeping only if the two groups relate to the output differently — e.g., one frames the output class while the other is the concept itself, or one is directly causal while the other is supporting context.
-- If two groups are both relevant but play the same role relative to the output, merge them.
-- If a group is real but its existence does not help a reader understand why the model chose this output, drop it.
+You have the specific prompt and predicted output(s) above. Use them actively — every decision should be grounded in what this prompt was asking and what the model specifically predicted.
+Ask for each group: given that the prompt was "{prompt_text}" and the model predicted the output above, does this group explain something about HOW or WHY that prediction happened?
+- A group that describes a concept directly relevant to what was asked or predicted is worth keeping.
+- A group that describes a concept that happened to be in the context but has no bearing on why the model predicted this specific output should be dropped or merged.
+- A distinction between two groups is only worth keeping if the two groups play different roles in the reasoning — not just different topics, but different steps or angles on the path to the output. If both point toward the same output for the same reason, merge them.
+- Word sense matters: the prompt commits to one meaning of every word in it. A group representing the wrong sense of a word given this specific prompt and output is irrelevant and should go to Ungrouped.
 
 REVIEW CHECKLIST (work through in order):
-1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → Highest-priority issue. Split them.
-2. OVERLY BROAD: Does any group mix features with clearly different semantic roles or abstraction levels? → Split it.
-3. OVER-MERGED SUBTYPES: Does any group combine a broad category with a narrower stable subtype? → Keep separate or split.
-4. POLYSEMY / OFF-SENSE MEMBERS: Does any group contain features that activate on a different sense of the group's named concept than what this prompt requires? Features that belong to an irrelevant sense of the word should be reassigned to Ungrouped — they are real activations but not part of this prompt's reasoning. If the off-sense features are numerous and coherent, split them into their own group only if that group would itself pass the OUTPUT-RELEVANCE PRINCIPLE; otherwise Ungrouped.
-5. IRRELEVANT GROUPS: Apply the OUTPUT-RELEVANCE PRINCIPLE. Drop groups that cannot be connected to the model's output prediction. Real distinctions that are irrelevant to this specific output should be collapsed or dropped.
-6. SAME-ROLE MERGE: Two groups both pass relevance but play identical roles relative to the output? → Merge them.
-7. MISASSIGNED: Are any features obviously in the wrong group? → Reassign.
+1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → High-priority. Reassign the misplaced features.
+2. WRONG SENSE: Does any group represent a sense of a concept that this prompt and output do not require? → Move to Ungrouped or drop.
+3. IRRELEVANT GROUPS: Does a group describe something real in the context but unconnected to why the model predicted this output? → Drop or collapse into a relevant neighbor.
+4. OVERLY BROAD: Does a group mix features with clearly different roles relative to the output? → Split it.
+5. SAME-ROLE MERGE: Do two groups both pass relevance but describe the same step in the reasoning? → Merge them.
+6. UNGROUPED RESCUE: Review the Ungrouped features listed above — are any of them clearly relevant to the prompt and a good fit for an existing group? → Reassign them. Only rescue features with a clear, confident match; don't force weak connections.
+7. MISASSIGNED: Are any features obviously in the wrong group given the prompt and output? → Reassign.
 8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-9. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
+8. SPECIFICITY (high priority): Could a feature be in a more specific, existing group (named entity, thing, etc.)? Reassign them. Descriptions of features should best represent the supernode group name.
 
-Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
+Only make changes you are CONFIDENT about. If the grouping looks good, return empty lists for all actions.
+- {_bias_phase3}
 Current grouping:
 {group_summary}
 """
