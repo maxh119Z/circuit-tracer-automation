@@ -138,25 +138,22 @@ def write_comparison(entries: list[dict], output: Path, prompt: str = "") -> Non
         return
 
     # ── Summary table ────────────────────────────────────────────────────────
-    # Desc | Grouping | M1 Easy | M2 Easy | D1 | D2 | Coverage
-    # D1 and D2 only depend on descriptions, so identical across grouping variants —
-    # that pattern is visible naturally when rows share the same desc.
-
     L += [
         "## Summary",
         "",
-        "**Easy** negatives = other named groups (best case for the grouper).  ",
-        "**D1** and **D2** are description-only — they will be the same across grouping variants "
-        "that share the same description variant.",
+        "**Easy** negatives = other named groups. **Medium** negatives = Ungrouped features.  ",
+        "**D1** and **D2** are description-only — identical across grouping variants with the same description variant.",
         "",
-        "| Desc | Grouping | M1 Easy | M2 Easy | D1 | D2 | Coverage |",
-        "|:-----|:---------|--------:|--------:|---:|---:|---------:|",
+        "| Desc | Grouping | M1 Easy | M2 Easy | M1 Medium | M2 Medium | D1 | D2 | Coverage |",
+        "|:-----|:---------|--------:|--------:|----------:|----------:|---:|---:|---------:|",
     ]
 
     for e in entries:
         r = e["report"]
-        m1e = _mac(r, "auto", "easy", "method1")
-        m2e = _mac(r, "auto", "easy", "method2")
+        m1e = _mac(r, "auto", "easy",   "method1")
+        m2e = _mac(r, "auto", "easy",   "method2")
+        m1m = _mac(r, "auto", "medium", "method1")
+        m2m = _mac(r, "auto", "medium", "method2")
         d1  = r.get("description_accuracy", {}).get("macro_avg", {"mean_accuracy": 0.0, "stderr_accuracy": 0.0})
         d2  = r.get("description_snippet_accuracy", {}).get("macro_avg", {"mean_accuracy": 0.0, "stderr_accuracy": 0.0})
         cov = r.get("auto", {}).get("attribution_coverage")
@@ -164,6 +161,7 @@ def write_comparison(entries: list[dict], output: Path, prompt: str = "") -> Non
         L.append(
             f"| `{e['desc']}` | `{e['grouping']}` "
             f"| {_fmt(m1e)} | {_fmt(m2e)} "
+            f"| {_fmt(m1m)} | {_fmt(m2m)} "
             f"| {_fmt(d1)} | {_fmt(d2)} "
             f"| {cov_str} |"
         )
@@ -173,35 +171,6 @@ def write_comparison(entries: list[dict], output: Path, prompt: str = "") -> Non
         "*Chance baselines — M1: 10% | M2: 50% | D1: 10% | D2: 50%*",
         "",
     ]
-
-    # ── Harder difficulties ──────────────────────────────────────────────────
-    # Only include if at least one report has non-zero medium/hard scores
-    has_hard = any(
-        _mac(e["report"], "auto", "hard", "method1").get("mean_accuracy", 0) > 0
-        for e in entries
-    )
-    if has_hard:
-        L += [
-            "## Harder Difficulties",
-            "",
-            "**Medium** negatives = Ungrouped features. "
-            "**Hard** negatives = features outside the Phase 1 seed window.",
-            "",
-            "| Desc | Grouping | M1 Medium | M2 Medium | M1 Hard | M2 Hard |",
-            "|:-----|:---------|----------:|----------:|--------:|--------:|",
-        ]
-        for e in entries:
-            r = e["report"]
-            m1m = _mac(r, "auto", "medium", "method1")
-            m2m = _mac(r, "auto", "medium", "method2")
-            m1h = _mac(r, "auto", "hard",   "method1")
-            m2h = _mac(r, "auto", "hard",   "method2")
-            L.append(
-                f"| `{e['desc']}` | `{e['grouping']}` "
-                f"| {_fmt(m1m)} | {_fmt(m2m)} "
-                f"| {_fmt(m1h)} | {_fmt(m2h)} |"
-            )
-        L += ["", "*Chance baselines — M1: 10% | M2: 50%*", ""]
 
     # ── Random baseline ──────────────────────────────────────────────────────
     random_rows = [
