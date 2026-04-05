@@ -98,8 +98,6 @@ def aggregate(entries: list[dict]) -> dict[tuple[str, str], dict]:
         m2e  = _collect(lambda r: _mac(r, "auto", "easy",   "method2"))
         m1m  = _collect(lambda r: _mac(r, "auto", "medium", "method1"))
         m2m  = _collect(lambda r: _mac(r, "auto", "medium", "method2"))
-        m1h  = _collect(lambda r: _mac(r, "auto", "hard",   "method1"))
-        m2h  = _collect(lambda r: _mac(r, "auto", "hard",   "method2"))
         d1   = _collect(lambda r: r.get("description_accuracy", {}).get("macro_avg", {}).get("mean_accuracy", 0.0))
         d2   = _collect(lambda r: r.get("description_snippet_accuracy", {}).get("macro_avg", {}).get("mean_accuracy", 0.0))
         cov  = _collect(lambda r: r.get("auto", {}).get("attribution_coverage", 0.0))
@@ -118,8 +116,6 @@ def aggregate(entries: list[dict]) -> dict[tuple[str, str], dict]:
             "m2_easy":   _stat(m2e),
             "m1_medium": _stat(m1m),
             "m2_medium": _stat(m2m),
-            "m1_hard":   _stat(m1h),
-            "m2_hard":   _stat(m2h),
             "d1":        _stat(d1),
             "d2":        _stat(d2),
             "coverage":  _stat(cov),
@@ -153,37 +149,21 @@ def write_summary(results: dict, output: Path) -> None:
         "",
         "## Summary — Easy Difficulty",
         "",
-        "| Desc | Grouping | M1 Easy | M2 Easy | D1 | D2 | Coverage | N |",
-        "|:-----|:---------|--------:|--------:|---:|---:|---------:|--:|",
+        "| Desc | Grouping | M1 Easy | M2 Easy | M1 Medium | M2 Medium | D1 | D2 | Coverage | N |",
+        "|:-----|:---------|--------:|--------:|----------:|----------:|---:|---:|---------:|--:|",
     ]
 
     for (desc, grouping), r in results.items():
         L.append(
             f"| `{desc}` | `{grouping}` "
             f"| {_fmt(r['m1_easy'])} | {_fmt(r['m2_easy'])} "
+            f"| {_fmt(r['m1_medium'])} | {_fmt(r['m2_medium'])} "
             f"| {_fmt(r['d1'])} | {_fmt(r['d2'])} "
             f"| {_fmt(r['coverage'])} "
             f"| {r['n_prompts']} |"
         )
 
     L += ["", "*N = number of prompts averaged.*", ""]
-
-    # Harder difficulties
-    has_hard = any(r["m1_hard"]["mean"] > 0 for r in results.values())
-    if has_hard:
-        L += [
-            "## Harder Difficulties",
-            "",
-            "| Desc | Grouping | M1 Medium | M2 Medium | M1 Hard | M2 Hard |",
-            "|:-----|:---------|----------:|----------:|--------:|--------:|",
-        ]
-        for (desc, grouping), r in results.items():
-            L.append(
-                f"| `{desc}` | `{grouping}` "
-                f"| {_fmt(r['m1_medium'])} | {_fmt(r['m2_medium'])} "
-                f"| {_fmt(r['m1_hard'])} | {_fmt(r['m2_hard'])} |"
-            )
-        L += [""]
 
     # Per-prompt breakdown
     L += [
