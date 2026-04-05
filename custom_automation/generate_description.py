@@ -39,7 +39,7 @@ log = setup_logging()
 # Configuration
 # ---------------------------------------------------------------------------
 
-MODEL = DESCRIPTION_MODEL
+MODEL = "gpt-5-mini"
 CONCURRENCY_LIMIT = 167
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
 
@@ -64,8 +64,7 @@ _EVIDENCE_BLOCK = (
 
     "STYLE: Write in short, direct fragments — not full sentences. "
     "Get to the point immediately. No filler, no hedging, no grammatical padding. "
-    "'Capital of Texas' is better than 'This feature represents the capital of Texas.' "
-    "'Say a location' is better than 'This feature is used when a location is about to be mentioned.'\n\n"
+    "\n\n"
 )
 
 # ── V0 — original concise (1-4 words) ─────────────────────────────────────
@@ -111,24 +110,23 @@ _V2_CORE = (
     "FEATURE TYPES — use this to guide your description style:\n"
     "Features tend to fall into three types. Figure out which one fits, then describe accordingly.\n\n"
     "1. Input features — activate on a specific token or category of tokens.\n"
-    "   Describe what they activate on: ‘activates on X’ or just name the pattern directly.\n"
+    "   Describe what they activate on: ‘represents X’ or just name the pattern directly.\n"
     "   If they activate on a range of related things, describe the category.\n\n"
     "2. Output features — consistently promote a specific next token or category.\n"
-    "   Label as ‘say X’ when a clear next-token pattern exists.\n"
+    "   Label as ‘say X’ when a clear next-token pattern exists. Reference definitions below.\n"
     "   Prepositions may fall under this category, where the important words are subsequent to the thing it is referencing."
     "3. Abstract/middle features — neither cleanly input nor output.\n"
     "   Describe the context pattern: what kind of text, what situation, what role it plays.\n"
     "   These often need the surrounding context of activations, not just the highlighted token.\n\n"
 
     "’SAY X’ vs ‘X ITSELF’:\n"
-    "Features either represent a concept directly, or signal that a concept is about to appear "
+    "Features can represent a concept directly, or signal that a concept is about to appear "
     "(activating on structural words right before it — prepositions, articles, punctuation).\n"
     "- Highlighted tokens are content words → SHORT_LABEL is the concept itself.\n"
     "- Highlighted tokens are structural words setting up content → SHORT_LABEL is ‘say [what]’.\n"
-    "- Unsure? Ask: does the highlighted part carry meaning on its own?\n"
-    "- Also check what follows the trigger across activations: if a specific concept X (e.g. a proper noun, a method name) "
-    "consistently appears right after the trigger token, that supports ‘say X’. "
-    "When unclear, prefer naming the concept directly — ‘say X’ is a stronger claim and needs consistent evidence.\n\n"
+    "- Check what follows the trigger across activations: if a specific concept X (e.g. a proper noun, a method name) "
+    "CONSISTENTLY appears right after the trigger token, that supports ‘say X’. "
+    "When unclear, prefer naming the concept directly 'X' without the 'say' — ‘say X’ is a stronger claim and needs consistent evidence and should not be used lightly.\n\n"
 
     "PROPER NOUNS:\n"
     "If a specific name, place, or entity recurs across the activations — even in a minority of them — "
@@ -137,9 +135,9 @@ _V2_CORE = (
 
     "AVOID:\n"
     "- Linguistic or technical jargon: copula, lemma, morpheme, orthogonal, syntactic, "
-    "prepositional phrase, noun phrase, etc. Prefer layman's vocabulary.\n"
+    "prepositional phrase, noun phrase, etc. Prefer layman's vocabulary and casual tone.\n"
     "- Broad labels when something more specific is clearly supported.\n"
-    "- Full sentences. Filler. Hedging.\n\n"
+    "- Full sentences. Filler (grammar is not required).\n\n"
 )
 
 # ── V1 — v2 variant: concise, label-first ──────────────────────────────────

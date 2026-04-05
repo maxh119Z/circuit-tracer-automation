@@ -405,10 +405,12 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
         python update_metadata.py
         elapsed "$t"
 
-        step_banner "[desc=$DESC_VAR group=$gvar] Step 6 — Validating groups"
-        t=$(date +%s)
-        python validate_groups.py
-        elapsed "$t"
+        if [ "${RUN_VALIDATE:-true}" = true ]; then
+            step_banner "[desc=$DESC_VAR group=$gvar] Step 6 — Validating groups"
+            t=$(date +%s)
+            python validate_groups.py
+            elapsed "$t"
+        fi
 
         echo ""
         echo "  [$SLUG] Artifacts → artifacts/${SLUG}/"

@@ -23,7 +23,7 @@ circuit-tracer attribute --prompt "The capital of the state containing Dallas is
 ```bash
 cd custom_automation
 
-# Fetch activations only (no API key needed — do this first)
+# Fetch activations only (no API key needed — do this first or core.)
 ./reproduce.sh fetch
 
 # Fetch + generate descriptions (defaults to description variant 2: the best version)
@@ -31,6 +31,9 @@ cd custom_automation
 
 # Run all 4 grouping variants for comparison (reuses existing descriptions)
 ./reproduce.sh all-groups
+
+# Run all 4 grouping variants without validation.
+RUN_VALIDATE=false ./reproduce.sh all-group
 
 # Full pipeline in one shot; 1 grouping variant (a0), v2 description generation.
 ./reproduce.sh core
