@@ -55,7 +55,7 @@ HF_FEATURES_BASE = f"https://huggingface.co/{HF_REPO}/resolve/main/features"
 # Pruning: nodes with influence <= this threshold are kept.
 DEFAULT_PRUNING_THRESHOLD: float = 0.40
 
-# For Gemma-2B this excludes the final logit projection layer(s).
+# For Gemma-2B this excludes the final logit projection layer.
 MAX_LAYER_INDEX: int = 26
 MAX_WORKERS: int = 10
 CHECKPOINT_INTERVAL: int = 10

@@ -973,14 +973,12 @@ async def run_condition(
     client: AsyncOpenAI,
     sem: asyncio.Semaphore,
     medium_neg_pool: list[dict] | None = None,
-    hard_neg_pool: list[dict] | None = None,
 ) -> dict[str, Any]:
     """
-    Run N_RUNS of both methods for one condition across three negative-source difficulties.
+    Run N_RUNS of both methods for one condition across two negative-source difficulties.
 
     easy   — negatives from other named groups in the graph
     medium — negatives from Ungrouped features (in-distribution but unlabeled)
-    hard   — negatives from held-out features ranked 100–200 by influence score
 
     All tasks across all difficulties and runs are generated upfront and fired in one
     asyncio.gather. Results are tagged by (neg_source, run_idx) for aggregation.
@@ -989,12 +987,11 @@ async def run_condition(
     empty_method: dict[str, Any] = {"groups": [], "macro_avg": {"mean_accuracy": 0.0, "stderr_accuracy": 0.0}}
     if not valid_groups:
         log.warning("[%s] No valid groups for validation.", label)
-        return {src: {"method1": empty_method, "method2": empty_method} for src in ("easy", "medium", "hard")}
+        return {src: {"method1": empty_method, "method2": empty_method} for src in ("easy", "medium")}
 
     neg_sources: list[tuple[str, list[dict] | None]] = [
         ("easy",   None),
         ("medium", medium_neg_pool),
-        ("hard",   hard_neg_pool),
     ]
 
     all_m1_specs: list[tuple[str, int, dict]] = []  # (neg_source, run_idx, spec)
@@ -1012,7 +1009,7 @@ async def run_condition(
             for spec in generate_m2_tasks(valid_groups, seed, ext_pool):
                 all_m2_specs.append((neg_source, run_idx, spec))
 
-    log.info("[%s] Launching %d M1 + %d M2 tasks (easy/medium/hard × %d runs)…",
+    log.info("[%s] Launching %d M1 + %d M2 tasks (easy/medium × %d runs)…",
              label, len(all_m1_specs), len(all_m2_specs), N_RUNS)
 
     m1_coros = [
@@ -1036,7 +1033,7 @@ async def run_condition(
         m2_by_source[src].append((run_idx, spec["group_name"], score))
 
     results: dict[str, Any] = {}
-    for neg_source in ("easy", "medium", "hard"):
+    for neg_source in ("easy", "medium"):
         if neg_source not in m1_by_source and neg_source not in m2_by_source:
             results[neg_source] = {"method1": empty_method, "method2": empty_method}
             continue
@@ -1270,26 +1267,25 @@ def write_markdown_report(report: dict, path: Path) -> None:
         "",
         "Negative sources:  "
         "**easy** = other named groups  |  "
-        "**medium** = Ungrouped features  |  "
-        f"**hard** = features outside the top-{GROUPING_TOP_K_SEED} seed window",
+        "**medium** = Ungrouped features",
         "",
-        f"| | Easy | Medium | Hard | Chance |",
-        f"|:--|-----:|-------:|-----:|-------:|",
+        f"| | Easy | Medium | Chance |",
+        f"|:--|-----:|-------:|-------:|",
     ]
 
-    m1 = {s: _get_macro(report, "auto", s, "method1") for s in ("easy", "medium", "hard")}
-    m2 = {s: _get_macro(report, "auto", s, "method2") for s in ("easy", "medium", "hard")}
+    m1 = {s: _get_macro(report, "auto", s, "method1") for s in ("easy", "medium")}
+    m2 = {s: _get_macro(report, "auto", s, "method2") for s in ("easy", "medium")}
     rm1 = _get_macro(report, "random", "easy", "method1")
     rm2 = _get_macro(report, "random", "easy", "method2")
 
     L.append(f"| **M1** Feature ID (1-in-{1+N_NEG_FEATURES_M1}) "
-             f"| {_fmt_macro(m1['easy'])} | {_fmt_macro(m1['medium'])} | {_fmt_macro(m1['hard'])} "
+             f"| {_fmt_macro(m1['easy'])} | {_fmt_macro(m1['medium'])} "
              f"| {chance_m1:.0%} |")
     L.append(f"| **M2** Text Match ({N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2}) "
-             f"| {_fmt_macro(m2['easy'])} | {_fmt_macro(m2['medium'])} | {_fmt_macro(m2['hard'])} "
+             f"| {_fmt_macro(m2['easy'])} | {_fmt_macro(m2['medium'])} "
              f"| {chance_m2:.0%} |")
-    L.append(f"| *Random M1* | {_fmt_macro(rm1)} | — | — | {chance_m1:.0%} |")
-    L.append(f"| *Random M2* | {_fmt_macro(rm2)} | — | — | {chance_m2:.0%} |")
+    L.append(f"| *Random M1* | {_fmt_macro(rm1)} | — | {chance_m1:.0%} |")
+    L.append(f"| *Random M2* | {_fmt_macro(rm2)} | — | {chance_m2:.0%} |")
 
     m1_trials = report.get("auto", {}).get("easy", {}).get("method1", {}).get("total_trials", 0)
     m2_tasks  = report.get("auto", {}).get("easy", {}).get("method2", {}).get("total_tasks", 0)
@@ -1325,16 +1321,16 @@ def write_markdown_report(report: dict, path: Path) -> None:
             L.append(f"**Manual Attribution Coverage:** {man_cov:.1%}")
         L += [
             "",
-            f"| | Easy | Medium | Hard | Chance |",
-            f"|:--|-----:|-------:|-----:|-------:|",
+            f"| | Easy | Medium | Chance |",
+            f"|:--|-----:|-------:|-------:|",
         ]
-        mm1 = {s: _get_macro(report, "manual", s, "method1") for s in ("easy", "medium", "hard")}
-        mm2 = {s: _get_macro(report, "manual", s, "method2") for s in ("easy", "medium", "hard")}
+        mm1 = {s: _get_macro(report, "manual", s, "method1") for s in ("easy", "medium")}
+        mm2 = {s: _get_macro(report, "manual", s, "method2") for s in ("easy", "medium")}
         L.append(f"| **M1** Feature ID "
-                 f"| {_fmt_macro(mm1['easy'])} | {_fmt_macro(mm1['medium'])} | {_fmt_macro(mm1['hard'])} "
+                 f"| {_fmt_macro(mm1['easy'])} | {_fmt_macro(mm1['medium'])} "
                  f"| {chance_m1:.0%} |")
         L.append(f"| **M2** Text Match "
-                 f"| {_fmt_macro(mm2['easy'])} | {_fmt_macro(mm2['medium'])} | {_fmt_macro(mm2['hard'])} "
+                 f"| {_fmt_macro(mm2['easy'])} | {_fmt_macro(mm2['medium'])} "
                  f"| {chance_m2:.0%} |")
         L += [""]
 
@@ -1381,14 +1377,13 @@ def write_markdown_report(report: dict, path: Path) -> None:
                      f"| {s['total_trials']} |")
         L += [""]
 
-    # Medium and hard — macro only (not per-group, too verbose)
+    # Medium — macro only (not per-group, too verbose)
     L += [
-        "### Medium and Hard Difficulties (Auto — macro only)",
+        "### Medium Difficulty (Auto — macro only)",
         "",
         "| Difficulty | M1 | M2 |",
         "|:-----------|---:|---:|",
         f"| Medium | {_fmt_macro(m1['medium'])} | {_fmt_macro(m2['medium'])} |",
-        f"| Hard   | {_fmt_macro(m1['hard'])} | {_fmt_macro(m2['hard'])} |",
         "",
         "---",
         "",
@@ -1442,17 +1437,15 @@ async def main_async() -> None:
     auto_coverage = compute_attribution_coverage(features, groups)
     log.info("Auto attribution coverage: %.1f%%", auto_coverage * 100)
 
-    # Build medium and hard negative pools
+    # Build medium negative pool
     medium_neg_pool = build_medium_neg_pool(features, groups)
-    hard_neg_pool = build_hard_neg_pool(features)
-    log.info("Negative pools — medium: %d features, hard: %d features",
-             len(medium_neg_pool), len(hard_neg_pool))
+    log.info("Negative pool — medium: %d features", len(medium_neg_pool))
 
     # Read prompt text for D1 evidence formatting
     prompt_text = _read_prompt_from_graph()
 
     auto_result, random_result, d1_result, d2_result = await asyncio.gather(
-        run_condition("Auto", group_index, client, sem, medium_neg_pool, hard_neg_pool),
+        run_condition("Auto", group_index, client, sem, medium_neg_pool),
         run_random_condition(group_index, client, sem),
         run_description_accuracy(features, prompt_text, client, sem),
         run_description_snippet_accuracy(features, client, sem),
@@ -1471,7 +1464,7 @@ async def main_async() -> None:
 
         manual_medium = build_medium_neg_pool(features, manual_groups_raw)
         manual_group_index = await regenerate_group_names(manual_group_index, client, sem)
-        manual_result = await run_condition("Manual", manual_group_index, client, sem, manual_medium, hard_neg_pool)
+        manual_result = await run_condition("Manual", manual_group_index, client, sem, manual_medium)
 
     # ------------------------------------------------------------------
     # Build report
@@ -1489,7 +1482,7 @@ async def main_async() -> None:
             "method_d1": f"1-in-{1+N_NEG_DESCS_D1} description accuracy (chance={1/(1+N_NEG_DESCS_D1):.0%})",
             "method_d2": f"{N_POS_SNIPPETS_D2}-in-{N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2} description snippet match (chance={N_POS_SNIPPETS_D2/(N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2):.0%})",
             "aggregation": "per-group run-level means, then mean ± stderr across runs",
-            "neg_sources": "easy=other named groups, medium=Ungrouped features, hard=features ranked 100-200 by influence",
+            "neg_sources": "easy=other named groups, medium=Ungrouped features",
             "m2_output_validation": "response must contain exactly N_POS unique indices in [1,N]; discarded otherwise (score=0)",
             "label_regeneration": "manual only; auto uses pipeline names",
         },
@@ -1541,7 +1534,7 @@ async def main_async() -> None:
     print(f"  M2: {N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text match (chance={chance_m2:.0%})")
     print(f"  D1: 1-in-{1+N_NEG_DESCS_D1} description accuracy (chance={chance_d1:.0%})")
     print(f"  D2: {N_POS_SNIPPETS_D2}-in-{N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2} description snippet match (chance={chance_d2:.0%})")
-    print(f"  Neg sources: easy=other groups | medium=Ungrouped | hard=unseen features (beyond Phase 1 seed of {GROUPING_TOP_K_SEED})")
+    print(f"  Neg sources: easy=other groups | medium=Ungrouped features")
     print(f"{'='*80}")
 
     # Description-level methods — printed first
@@ -1563,7 +1556,7 @@ async def main_async() -> None:
     for cond_label, key in cond_keys:
         cov = report[key].get("attribution_coverage")
         cov_str = f"{cov:.1%}" if cov is not None else "    N/A"
-        sources = ("easy", "medium", "hard") if key != "random" else ("easy",)
+        sources = ("easy", "medium") if key != "random" else ("easy",)
         for src in sources:
             src_data = report[key].get(src, {})
             m1a = src_data.get("method1", {}).get("macro_avg", {"mean_accuracy": 0.0, "stderr_accuracy": 0.0})

@@ -143,15 +143,40 @@ class Phase3Output(BaseModel):
     dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve entirely (members become Ungrouped).")
 
 # ---------------------------------------------------------------------------
-# Shared prompt preamble
-# ---------------------------------------------------------------------------
-
-# ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
+#
+# All four variants are IDENTICAL except for one specificity-bias sentence
+# in the GRANULARITY section.  This isolates specificity as the single
+# variable so you can compare results across runs.
+#
+#   a0 — neutral  (use whichever granularity best explains the output)
+#   a1 — coarser  (lean toward merging; fewer, clearer groups)
+#   a2 — finer    (lean toward splitting; preserve distinctions)
+#   a3 — finest   (strongly prefer splitting; only merge if truly redundant)
 # ---------------------------------------------------------------------------
 
-# a0 — Original: balanced semantic-role-aware grouping (SAY vs CONCEPT focus)
-GROUPING_PHILOSOPHY_A0 = """
+_SPECIFICITY_BIAS: dict[str, str] = {
+    # a0 — neutral baseline: no specificity preference.
+    "a0": "When in doubt between narrower and broader groups, use whichever granularity best explains the model's specific output.",
+    # a1 — inclusive smart: apply all specificity rules, then when still in doubt, preserve the distinction.
+    #   Rules: (1) match the prompt's grain — if the prompt names a specific entity, keep it specific;
+    #   (2) only one sense of each word is active in this prompt — never split on alternate senses the prompt doesn't require;
+    #   (3) named entities and proper nouns stay specific when the activations support it.
+    #   Tiebreaker: if a distinction is semantically real and supported by activations, keep it even if peripheral to the output.
+    "a1": "Be as specific as the prompt and activations support: keep named entities at their named grain, never split on senses the prompt doesn't activate, and when a distinction is semantically real and evidence-backed, preserve it — cleaner graphs can be achieved in Phase 3.",
+    # a2 — balanced smart: same rules, tiebreaker is the output prediction.
+    #   A distinction survives if it's on or near the causal path to the output; peripheral real distinctions get merged.
+    "a2": "Be as specific as the prompt and output require: keep named entities at their named grain, never split on senses the prompt doesn't activate, and only preserve a distinction between two groups if they relate differently to the predicted output token — if they converge on the same output, merge them.",
+    # a3 — tight smart: same rules, strictest output-relevance filter.
+    #   A distinction must clearly contribute to explaining why this specific output was chosen; anything else merges.
+    "a3": "Be as specific as the output path demands: keep named entities at their named grain, never split on senses the prompt doesn't activate, but merge any distinction you cannot directly connect to why the model chose this specific output — a tighter graph with fewer but causally clear groups is better than a complete one.",
+}
+
+_bias = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
+if GROUPING_VARIANT not in _SPECIFICITY_BIAS:
+    log.warning("Unknown GROUPING_VARIANT '%s' — falling back to a0 behaviour.", GROUPING_VARIANT)
+
+GROUPING_PHILOSOPHY = f"""
 GOAL: Produce a cohesive attribution graph that highlights the main intent and meaning of the prompt.
 
 RELEVANCE & UNGROUPED:
@@ -166,6 +191,7 @@ GRANULARITY & SPECIFICITY:
 - Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't merge a broad category with a narrower stable subtype.
 - Use the "Promotes" field as a tiebreaker: features that promote clearly different tokens should be split; features promoting the same or related tokens can stay together.
 - Distinctions that explain WHY the model chose one output over another should be preserved.
+- {_bias}
 - The prompt commits to one active sense of every word in it. Do not split features into separate groups for alternate senses of the same word that the prompt does not require — merge them into the contextually correct group or send them to Ungrouped.
 
 SEMANTIC ROLE — "SAY X" vs "X ITSELF" (highest-priority rule):
@@ -189,62 +215,6 @@ SPLITTING vs MERGING:
 - Prefer two narrow groups over one vague bucket — Phase 3 can merge, but cannot recover lost distinctions.
 - Small groups are fine if they are interpretable and prompt-relevant.
 """
-
-# All variants use a0 as the base philosophy.
-# Per-phase extras are injected only into the specific phase each variant targets.
-GROUPING_PHILOSOPHY = GROUPING_PHILOSOPHY_A0
-
-# ---------------------------------------------------------------------------
-# Per-phase variant extras (a1 tweaks Phase 1, a2 tweaks Phase 2, a3 tweaks Phase 3)
-# ---------------------------------------------------------------------------
-
-# a1 — Phase 1 extra: push for completeness and specificity in group discovery
-PHASE1_EXTRAS: dict[str, str] = {
-    "a0": "",
-    "a1": """
-PHASE 1 COMPLETENESS (variant a1):
-Your primary goal is to surface EVERY meaningful semantic cluster, not just the most obvious ones.
-Phase 2 can only assign features to groups that already exist here — missing a group in Phase 1 means it is lost.
-- Actively look for groups you would expect to exist based on the prompt content and output, even if only 2–3 seed features represent them now.
-- Prefer two narrow groups over one broad bucket when the evidence supports a real distinction. Phase 3 can merge, but cannot recover a distinction that was never captured.
-- Be specific: a precise group name helps Phase 2 assign accurately. Vague bucket names produce wrong assignments.
-- Before finalising, ask: is there any concept clearly present in the prompt or output that has no group yet? If seed features support it, create it.
-""",
-    "a2": "",
-    "a3": "",
-}
-
-# a2 — Phase 2 extra: prioritise assignment accuracy over coverage
-PHASE2_EXTRAS: dict[str, str] = {
-    "a0": "",
-    "a1": "",
-    "a2": """
-PHASE 2 ASSIGNMENT ACCURACY (variant a2):
-Prioritise accuracy over coverage. A wrong assignment harms the graph more than leaving a feature Ungrouped.
-- Only assign a feature to a group if the semantic match is clear and strong — not just the closest available option.
-- When a feature fits two groups with equal confidence, choose Ungrouped over an arbitrary assignment.
-- Only create a new group if the feature is clearly relevant to the prompt and you are confident 2+ additional features from the broader set would belong there.
-""",
-    "a3": "",
-}
-
-# a3 — Phase 3 extra: be decisive about compression and output-relevance
-PHASE3_EXTRAS: dict[str, str] = {
-    "a0": "",
-    "a1": "",
-    "a2": "",
-    "a3": """
-PHASE 3 COMPRESSION (variant a3):
-Be decisive. The output-relevance principle above is not just a tiebreaker — apply it to every group.
-- Default to merging when two groups play the same role relative to the output. Only preserve a distinction if you can articulate how it changes a reader's understanding of WHY the model predicted this specific output.
-- Default to dropping when a group's connection to the output is indirect or unclear. Context that was present in the prompt but did not drive the prediction belongs in Ungrouped.
-- A graph with 5 clear, causally relevant groups is strictly better than one with 10 groups where 4 are marginal.
-- Drop any remaining "say X" groups where X is a function word, grammatical structure, or syntactic role (e.g., "say 'is'", "say a relative clause", "say 'of'"). These are never useful graph nodes.
-""",
-}
-
-if GROUPING_VARIANT not in PHASE1_EXTRAS:
-    log.warning("Unknown GROUPING_VARIANT '%s' — extras will be empty (a0 behaviour).", GROUPING_VARIANT)
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -342,11 +312,10 @@ Current groups and rationales:
 
 {GROUPING_PHILOSOPHY}
 
-Task: For each feature below, assign it to one of the existing groups if it strongly aligns.
-Assign it to "Ungrouped" if it is noisy, polysemantic, or not clearly relevant to the main prompt semantics.
-Only create a new group if the feature reflects a genuinely distinct semantic subgroup not covered by any existing group, is clearly relevant to the prompt, and would likely be shared by multiple related features.
-Do not force fit a feature into an existing group when the semantic role or abstraction level does not match.
-{PHASE2_EXTRAS.get(GROUPING_VARIANT, "")}
+Task: Assign each feature below to the best matching existing group.
+These are lower-influence features — they rarely introduce meaningfully new semantic concepts beyond what Phase 1 already captured. Default to an existing group or "Ungrouped".
+Do not force a match: if no group fits clearly, "Ungrouped" is correct.
+Only create a new group if the concept is genuinely absent from the existing groups, clearly relevant to the prompt, and specific enough that multiple features would share it — this should be rare.
 Features:
 {format_feature_list(batch)}
 """
@@ -591,10 +560,8 @@ Cluster them into meaningful semantic groups ("supernodes").
 {GROUPING_PHILOSOPHY}
 
 Additional guidance for this phase:
-- When in doubt between one broad group and two narrower groups, prefer the narrower ones — Phase 3 can merge, but cannot recover distinctions that were never captured.
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
-{PHASE1_EXTRAS.get(GROUPING_VARIANT, "")}
 Features:
 {format_feature_list(seed_features)}
 """
@@ -621,35 +588,34 @@ Features:
     # ==================================================================
     # PHASE 2 — Assign remaining features concurrently
     # ==================================================================
-    # TEMPORARILY DISABLED — comment back in to re-enable Phase 2
-    # remaining = features[GROUPING_TOP_K_SEED:]
+    remaining = features[GROUPING_TOP_K_SEED:]
 
-    # if remaining:
-    #     log.info("Phase 2: Assigning remaining %d features…", len(remaining))
-    #     groups_context = json.dumps(active_groups, indent=2)
+    if remaining:
+        log.info("Phase 2: Assigning remaining %d features…", len(remaining))
+        groups_context = json.dumps(active_groups, indent=2)
 
-    #     MAX_CONCURRENT_REQUESTS = 67
-    #     semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+        MAX_CONCURRENT_REQUESTS = 67
+        semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
-    #     tasks = [
-    #         process_batch(
-    #             remaining[i : i + GROUPING_BATCH_SIZE],
-    #             groups_context,
-    #             prompt_text,
-    #             output_context,
-    #             semaphore,
-    #         )
-    #         for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
-    #     ]
-    #
-    #     for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
-    #         p2: Phase2Output = await coro
-    #         for a in p2.assignments:
-    #             final_assignments[a.feature_id] = a.group_name
-    #         for g in p2.new_groups:
-    #             if g.group_name not in active_groups:
-    #                 active_groups[g.group_name] = g.rationale
-    #                 log.info("New group created mid-stream: %s", g.group_name)
+        tasks = [
+            process_batch(
+                remaining[i : i + GROUPING_BATCH_SIZE],
+                groups_context,
+                prompt_text,
+                output_context,
+                semaphore,
+            )
+            for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
+        ]
+
+        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
+            p2: Phase2Output = await coro
+            for a in p2.assignments:
+                final_assignments[a.feature_id] = a.group_name
+            for g in p2.new_groups:
+                if g.group_name not in active_groups:
+                    active_groups[g.group_name] = g.rationale
+                    log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
     # PHASE 3 — Reconciliation
@@ -688,7 +654,6 @@ REVIEW CHECKLIST (work through in order):
 9. DUPLICATES: Are any two groups identical in meaning with no useful distinction? → Merge (use sparingly).
 
 Only make changes you are confident about. If the grouping looks good, return empty lists for all actions.
-{PHASE3_EXTRAS.get(GROUPING_VARIANT, "")}
 Current grouping:
 {group_summary}
 """
