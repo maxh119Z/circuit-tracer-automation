@@ -25,6 +25,7 @@ from openai import AsyncOpenAI
 
 from config import (
     CHECKPOINT_INTERVAL,
+    DESCRIPTION_MODEL,
     DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
     PRUNED_ACTIVATIONS_FILE,
@@ -275,7 +276,7 @@ async def process_feature(
     async with sem:
         for attempt in range(1, max_retries + 1):
             log.info(
-                "[%d/%d] Requesting GPT-5-mini for %s (attempt %d/%d)...",
+                "[%d/%d] Requesting GPT-5.4-mini for %s (attempt %d/%d)...",
                 idx, total, fid, attempt, max_retries
             )
             try:
@@ -354,22 +355,8 @@ async def main_async() -> None:
     # Select description prompt variant
     system_prompt = _get_system_prompt()
 
-    # --- Checkpoint resume ---
-    existing = _load_existing_descriptions(FEATURE_DESCRIPTIONS_FILE)
-    if existing:
-        log.info("Resuming — %d features already described, skipping those.", len(existing))
-        for feat in features:
-            prev = existing.get(feat.get("id")) # type: ignore
-            if prev and "generated_description" in prev:
-                feat["generated_description"] = prev["generated_description"]
-
-    # Filter out features that already have descriptions
-    features_to_process = [f for f in features if "generated_description" not in f]
+    features_to_process = features
     remaining = len(features_to_process)
-
-    if remaining == 0:
-        log.info("All features already described. Exiting.")
-        return
 
     # Initialize Async Client and Semaphore
     client = AsyncOpenAI()
