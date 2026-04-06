@@ -650,6 +650,8 @@ Features:
     log.info("Phase 3: Reconciling groups…")
 
     group_summary = build_group_summary(final_assignments, features)
+    # Strip control characters that can corrupt the JSON payload
+    group_summary = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', ' ', group_summary)
     num_groups = len({g for g in final_assignments.values() if g != "Ungrouped"})
 
     phase3_prompt = f"""You are an expert AI interpretability researcher reviewing the output of an automated feature grouping pipeline.
@@ -687,13 +689,17 @@ Current grouping:
 {group_summary}
 """
 
-    response3 = await client.beta.chat.completions.parse(
-        model=GROUPING_MODEL,
-        messages=[{"role": "user", "content": phase3_prompt}],
-        response_format=Phase3Output,
-        max_completion_tokens=8192,
-    )
-    p3 = response3.choices[0].message.parsed
+    try:
+        response3 = await client.beta.chat.completions.parse(
+            model=GROUPING_MODEL,
+            messages=[{"role": "user", "content": phase3_prompt}],
+            response_format=Phase3Output,
+            max_completion_tokens=8192,
+        )
+        p3 = response3.choices[0].message.parsed
+    except Exception as e:
+        log.warning("Phase 3 API call failed (%s) — skipping reconciliation.", e)
+        p3 = None
 
     if p3 is None:
         log.warning("Phase 3 parsing returned None — skipping reconciliation.")

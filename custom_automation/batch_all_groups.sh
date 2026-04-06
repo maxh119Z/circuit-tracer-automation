@@ -180,11 +180,17 @@ while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
         export CURRENT_SLUG="$slug"
         mkdir -p "artifacts/$slug"
 
-        step_banner "[$ROW_NUM/$TOTAL] Step 1 — Fetch activations (shared)"
-        t=$(date +%s); python fetch_all_activation_text.py; elapsed "$t"
+        DESC_ARTIFACT="artifacts/${slug}/feature_descriptions_${DESCRIPTION_VARIANT}.json"
 
-        step_banner "[$ROW_NUM/$TOTAL] Step 2 — Generate descriptions [desc=$DESCRIPTION_VARIANT] (shared)"
-        t=$(date +%s); python generate_description.py; elapsed "$t"
+        if [[ -f "$DESC_ARTIFACT" ]]; then
+            echo "  SKIP Steps 1-2 for $slug — descriptions already exist"
+        else
+            step_banner "[$ROW_NUM/$TOTAL] Step 1 — Fetch activations (shared)"
+            t=$(date +%s); python fetch_all_activation_text.py; elapsed "$t"
+
+            step_banner "[$ROW_NUM/$TOTAL] Step 2 — Generate descriptions [desc=$DESCRIPTION_VARIANT] (shared)"
+            t=$(date +%s); python generate_description.py; elapsed "$t"
+        fi
 
         # ------------------------------------------------------------------
         # Inner loop: grouping variants
@@ -193,6 +199,12 @@ while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
             VARIANT_SLUG="${slug}-${DESCRIPTION_VARIANT}-${gvar}"
             export GROUPING_VARIANT="$gvar"
             export CURRENT_SLUG="$VARIANT_SLUG"
+
+            GROUPS_ARTIFACT="artifacts/${VARIANT_SLUG}/feature_groups_${DESCRIPTION_VARIANT}_${gvar}.json"
+            if [[ -f "$GROUPS_ARTIFACT" ]]; then
+                echo "  SKIP $VARIANT_SLUG — already processed"
+                continue
+            fi
 
             mkdir -p "artifacts/$VARIANT_SLUG"
 
