@@ -33,7 +33,7 @@ cd custom_automation
 ./reproduce.sh all-groups
 
 # Run all 4 grouping variants without validation.
-RUN_VALIDATE=false ./reproduce.sh all-group
+RUN_VALIDATE=false ./reproduce.sh all-groups
 
 # Full pipeline in one shot; 1 grouping variant (a0), v2 description generation.
 ./reproduce.sh core
@@ -47,14 +47,37 @@ circuit-tracer start-server --graph_file_dir ./test_graphs
 
 ## Batch Production
 
+### Single grouping variant across all prompts
 ```bash
 # Step 1: attribute all prompts
 circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
 
-# Step 2: run automation pipeline on all
+# Step 2: run automation pipeline on all (one grouping variant per prompt)
 cd custom_automation
 ./batch_reproduce.sh ../prompts.csv
 ```
+
+### Multiple grouping variants across all prompts
+```bash
+# Step 1: attribute all prompts
+circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
+
+# Step 2: run all prompts × all 4 grouping variants (default: a0–a3)
+cd custom_automation
+./batch_all_groups.sh ../prompts.csv
+
+# Specific variant range or list
+./batch_all_groups.sh ../prompts.csv a0-a3
+./batch_all_groups.sh ../prompts.csv a0,a3
+
+# With validation and a custom pruning threshold
+./batch_all_groups.sh ../prompts.csv a0-a3 all 0.40
+
+# Custom description variant
+DESCRIPTION_VARIANT=v1 ./batch_all_groups.sh ../prompts.csv a0,a2
+```
+
+Each (prompt × grouping variant) combo produces its own graph entry in the viewer dropdown, named `<slug>-<desc>-<grouping>` (e.g. `geography-v2-a1`).
 
 ## reproduce.sh subcommands
 
@@ -102,7 +125,8 @@ Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
 circuit-tracer-automation/
 ├── custom_automation/
 │   ├── reproduce.sh                   # Master pipeline script
-│   ├── batch_reproduce.sh             # Batch pipeline over a prompts CSV
+│   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 grouping variant
+│   ├── batch_all_groups.sh            # Batch pipeline: N prompts × M grouping variants
 │   ├── compare_variants.sh            # Compare description variants side-by-side
 │   ├── config.py                      # Paths, model names, variant settings
 │   ├── [step scripts...]
@@ -111,11 +135,13 @@ circuit-tracer-automation/
 │       ├── feature_descriptions_<desc>.json
 │       ├── feature_groups_<desc>_<group>.json
 │       ├── validation_report_<desc>_<group>.json
-│       └── <slug>/                    # Per-slug artifacts (batch mode)
+│       ├── <slug>/                    # Shared fetch+desc artifacts (batch_all_groups)
+│       └── <slug>-<desc>-<gvar>/      # Per-variant artifacts (batch_all_groups)
 ├── test_graphs/
 │   ├── test-run.json                  # Working copy
 │   ├── graph-metadata.json            # Viewer dropdown registry
-│   └── <slug>.json                    # Named graph copies
+│   ├── <slug>.json                    # Named graph copies (batch_reproduce)
+│   └── <slug>-<desc>-<gvar>.json      # Per-variant graph copies (batch_all_groups)
 └── circuit_tracer/                    # Original circuit-tracer library
 
 # circuit-tracer
