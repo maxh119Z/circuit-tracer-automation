@@ -1,0 +1,21 @@
+slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+dallas-capital,The capital of the state containing Dallas is,Texas,Austin,city→state→capital,
+detroit-capital,The capital of the state containing Detroit is,Michigan,Lansing,city→state→capital,
+miami-capital,The capital of the state containing Miami is,Florida,Tallahassee,city→state→capital,
+nba-state,The state containing the city where the Lakers play their home games is,Los Angeles,California,team→city→state,
+oakland-capital,The capital of the state containing Oakland is,California,Sacramento,city→state→capital,
+buffalo-capital,The capital of the state containing Buffalo is,New York,Albany,city→state→capital,Model may say New York City
+las-vegas-capital,The capital of the state containing Las Vegas is,Nevada,Carson City,city→state→capital,Carson City is obscure — model likely fails
+chicago-capital,The capital of the state containing Chicago is,Illinois,Springfield,city→state→capital,Model may confuse Chicago for capital
+east-california-capital,The capital of the state directly east of California is,Nevada,Carson City,geo→state→capital,Double hop with geographic reasoning
+east-oregon-capital,The capital of the state directly east of Oregon is,Idaho,Boise,geo→state→capital,Double hop with geographic reasoning
+yellowstone-capital,The capital of the state containing Yellowstone National Park is,Wyoming,Cheyenne,landmark→state→capital,Cheyenne is obscure
+mount-rushmore-capital,The capital of the state containing Mount Rushmore is,South Dakota,Pierre,landmark→state→capital,Pierre is very obscure — model likely fails
+grand-canyon-capital,The capital of the state containing the Grand Canyon is,Arizona,Phoenix,landmark→state→capital,
+niagara-falls-capital,The capital of the state containing Niagara Falls is,New York,Albany,landmark→state→capital,Model may say New York City
+lincoln-birthplace-capital,The capital of the state where Abraham Lincoln was born is,Kentucky,Frankfort,fact→state→capital,Frankfort is very obscure — model likely fails
+packers-capital,The capital of the state where the Green Bay Packers play their home games is,Wisconsin,Madison,team→state→capital,
+mississippi-source-capital,The capital of the state where the Mississippi River originates is,Minnesota,Saint Paul,geo→state→capital,Model may say Minneapolis
+hollywood-capital,The capital of the state containing Hollywood is,California,Sacramento,landmark→state→capital,Direct California association may shortcut to LA/SF
+saints-capital,The capital of the state where the New Orleans Saints play their home games is,Louisiana,Baton Rouge,team→state→capital,Baton Rouge is obscure
+west-nevada-capital,The capital of the state directly west of Nevada is,California,Sacramento,geo→state→capital,Double hop with geographic reasoning

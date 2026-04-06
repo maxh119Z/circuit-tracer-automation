@@ -169,13 +169,16 @@ _SPECIFICITY_BIAS: dict[str, str] = {
     "a0": _SPECIFICITY_BIAS_BASE + _SAY_X_STRICTNESS,
     "a1": (
         _SPECIFICITY_BIAS_BASE
-        + "Prefer all features within a group to truly represent the group name. Do not force-fit anything"
-        "Ungrouped should be reserved for features with no little connection to the prompt or output or do not fit well. Unrelated. This includes definitions of words that don't fit the context and can be merged. "
+        + "Prefer assigning borderline features to an existing group over leaving them Ungrouped — if a feature has a plausible fit, assign it. "
+        + "Every feature inside a group must genuinely represent the group name; if a feature is a weak or tangential match, reassign it to a better-fitting group rather than forcing it to stay. "
+        + "Reserve Ungrouped strictly for features with little connection to the prompt or output — features that are genuinely unrelated, or whose meaning does not fit any existing group clearly. "
         + _SAY_X_STRICTNESS
     ),
     "a2": (
         _SPECIFICITY_BIAS_BASE
-        + "When two groups play the same role relative to the output and their separation does not help a reader understand the reasoning, prefer merging them. This is not often. "
+        + "When two groups play the same semantic role relative to the output and keeping them separate does not help a reader understand the reasoning differently, prefer merging them. "
+        + "CRITICAL MERGE CONSTRAINT: Never merge a 'say X' group with a concept group even if they are topically related — framing and content always stay separate. "
+        + "Only merge groups that share the same semantic role (both 'say X', or both concept groups). "
         + _SAY_X_STRICTNESS
     ),
     "a3": (

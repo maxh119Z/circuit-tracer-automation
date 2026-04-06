@@ -50,20 +50,20 @@ circuit-tracer start-server --graph_file_dir ./test_graphs
 ### Single grouping variant across all prompts
 ```bash
 # Step 1: attribute all prompts
-circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
+cd custom_automation
+./attribute-batch.sh ../prompts.csv
 
 # Step 2: run automation pipeline on all (one grouping variant per prompt)
-cd custom_automation
 ./batch_reproduce.sh ../prompts.csv
 ```
 
 ### Multiple grouping variants across all prompts
 ```bash
 # Step 1: attribute all prompts
-circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
+cd custom_automation
+./attribute-batch.sh ../prompts.csv
 
 # Step 2: run all prompts × all 4 grouping variants (default: a0–a3)
-cd custom_automation
 ./batch_all_groups.sh ../prompts.csv
 
 # Specific variant range or list
