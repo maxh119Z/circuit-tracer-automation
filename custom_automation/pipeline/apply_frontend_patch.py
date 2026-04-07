@@ -22,7 +22,7 @@ from pathlib import Path
 
 # Locate the file relative to this script (custom_automation/ → repo root → circuit_tracer/)
 SCRIPT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = SCRIPT_DIR.parent
+REPO_ROOT = SCRIPT_DIR.parent.parent
 TARGET = REPO_ROOT / "circuit_tracer" / "frontend" / "assets" / "attribution_graph" / "init-cg.js"
 
 

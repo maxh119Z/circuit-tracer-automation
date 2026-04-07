@@ -22,7 +22,10 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 import shutil
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from config import (
     DEFAULT_PRUNING_THRESHOLD,
