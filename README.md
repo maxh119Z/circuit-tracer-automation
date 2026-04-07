@@ -48,10 +48,8 @@ circuit-tracer start-server --graph_file_dir ./test_graphs
 ## Batch Production
 
 ```bash
-cd custom_automation
-
 # Step 1: attribute all prompts (generates graph JSONs)
-./attribute-batch.sh ../prompts.csv
+circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
 ```
 
 ### Single grouping variant
@@ -141,7 +139,6 @@ circuit-tracer-automation/
 ├── custom_automation/
 │   ├── reproduce.sh                   # Master pipeline script (single prompt)
 │   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 or M grouping variants
-│   ├── attribute-batch.sh             # Run circuit-tracer attribute for every row in CSV
 │   ├── config.py                      # Paths, model names, variant settings
 │   ├── pipeline/                      # Core pipeline steps (run in order 0–6)
 │   │   ├── apply_frontend_patch.py
