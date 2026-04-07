@@ -176,11 +176,11 @@ fi
 if [ "$RUN_FETCH" = true ]; then
 
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     step_banner "Step 1 — Fetching pruned feature activations"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
 fi
@@ -192,16 +192,16 @@ if [ "$RUN_FETCH_DESC" = true ]; then
     export DESCRIPTION_VARIANT="${DESCRIPTION_VARIANT:-v2}"
 
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     step_banner "Step 1 — Fetching pruned feature activations"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
     step_banner "Step 2 — Generating descriptions [desc=$DESCRIPTION_VARIANT]"
     t=$(date +%s)
-    python generate_description.py
+    python pipeline/generate_description.py
     elapsed "$t"
 
 fi
@@ -213,18 +213,18 @@ if [ "$RUN_CORE" = true ]; then
 
     # Step 0
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     # Step 1
     step_banner "Step 1/5 — Fetching pruned feature activations"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
     # Step 2
     step_banner "Step 2/5 — Generating descriptions (OpenAI GPT-5-mini)"
     t=$(date +%s)
-    python generate_description.py
+    python pipeline/generate_description.py
     elapsed "$t"
 
     # Step 3
@@ -233,20 +233,20 @@ if [ "$RUN_CORE" = true ]; then
     else
         step_banner "Step 3/5 — Grouping features into supernodes (OpenAI)"
         t=$(date +%s)
-        python generate_supernodes.py
+        python pipeline/generate_supernodes.py
         elapsed "$t"
     fi
 
     # Step 4
     step_banner "Step 4/5 — Writing groups into graph JSON"
     t=$(date +%s)
-    python push_to_website.py
+    python pipeline/push_to_website.py
     elapsed "$t"
 
     # Step 5
     step_banner "Step 5/5 — Registering graph in viewer dropdown"
     t=$(date +%s)
-    python update_metadata.py
+    python pipeline/update_metadata.py
     elapsed "$t"
 
 fi
@@ -254,7 +254,7 @@ fi
 if [ "$RUN_VALIDATE" = true ]; then
     step_banner "Step 6 — Validating groups (M1: feature ID, M2: text match)"
     t=$(date +%s)
-    python validate_groups.py
+    python pipeline/validate_groups.py
     elapsed "$t"
 fi
 
@@ -266,12 +266,12 @@ if [ "$RUN_VARIANTS" = true ]; then
 
     # Step 0 — once
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     # Step 1 — once (pruned_activations.json is shared across all variants)
     step_banner "Step 1 — Fetching pruned feature activations (shared across variants)"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
     # Steps 2-6 per variant
@@ -280,27 +280,27 @@ if [ "$RUN_VARIANTS" = true ]; then
 
         step_banner "[$variant] Step 2 — Generating descriptions"
         t=$(date +%s)
-        python generate_description.py
+        python pipeline/generate_description.py
         elapsed "$t"
 
         step_banner "[$variant] Step 3 — Grouping features into supernodes"
         t=$(date +%s)
-        python generate_supernodes.py
+        python pipeline/generate_supernodes.py
         elapsed "$t"
 
         step_banner "[$variant] Step 4 — Writing groups into graph JSON"
         t=$(date +%s)
-        python push_to_website.py
+        python pipeline/push_to_website.py
         elapsed "$t"
 
         step_banner "[$variant] Step 5 — Registering graph in viewer dropdown"
         t=$(date +%s)
-        python update_metadata.py
+        python pipeline/update_metadata.py
         elapsed "$t"
 
         step_banner "[$variant] Step 6 — Validating groups"
         t=$(date +%s)
-        python validate_groups.py
+        python pipeline/validate_groups.py
         elapsed "$t"
     done
 fi
@@ -314,37 +314,37 @@ if [ "$RUN_DESC_GROUP" = true ]; then
 
     # Step 0 — once
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     # Step 1 — once (pruned_activations.json is shared)
     step_banner "Step 1 — Fetching pruned feature activations (shared)"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
     step_banner "[desc=$DESCRIPTION_VARIANT group=$GROUPING_VARIANT] Step 2 — Generating descriptions"
     t=$(date +%s)
-    python generate_description.py
+    python pipeline/generate_description.py
     elapsed "$t"
 
     step_banner "[desc=$DESCRIPTION_VARIANT group=$GROUPING_VARIANT] Step 3 — Grouping features into supernodes"
     t=$(date +%s)
-    python generate_supernodes.py
+    python pipeline/generate_supernodes.py
     elapsed "$t"
 
     step_banner "[desc=$DESCRIPTION_VARIANT group=$GROUPING_VARIANT] Step 4 — Writing groups into graph JSON"
     t=$(date +%s)
-    python push_to_website.py
+    python pipeline/push_to_website.py
     elapsed "$t"
 
     step_banner "[desc=$DESCRIPTION_VARIANT group=$GROUPING_VARIANT] Step 5 — Registering graph in viewer dropdown"
     t=$(date +%s)
-    python update_metadata.py
+    python pipeline/update_metadata.py
     elapsed "$t"
 
     step_banner "[desc=$DESCRIPTION_VARIANT group=$GROUPING_VARIANT] Step 6 — Validating groups"
     t=$(date +%s)
-    python validate_groups.py
+    python pipeline/validate_groups.py
     elapsed "$t"
 fi
 
@@ -363,19 +363,19 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
 
     # Step 0 — once
     step_banner "Step 0 — Applying frontend patch (if needed)"
-    python apply_frontend_patch.py
+    python pipeline/apply_frontend_patch.py
 
     # Step 1 — once (shared pruned activations)
     step_banner "Step 1 — Fetching pruned feature activations (shared)"
     t=$(date +%s)
-    python fetch_all_activation_text.py
+    python pipeline/fetch_all_activation_text.py
     elapsed "$t"
 
     # Step 2 — once (generate descriptions for chosen variant)
     export DESCRIPTION_VARIANT="$DESC_VAR"
     step_banner "Step 2 — Generating descriptions [desc=$DESC_VAR]"
     t=$(date +%s)
-    python generate_description.py
+    python pipeline/generate_description.py
     elapsed "$t"
 
     # Steps 3-6 for each grouping variant
@@ -392,23 +392,23 @@ if [ "$RUN_ALL_GROUPS" = true ]; then
 
         step_banner "[desc=$DESC_VAR group=$gvar] Step 3 — Grouping features into supernodes"
         t=$(date +%s)
-        python generate_supernodes.py
+        python pipeline/generate_supernodes.py
         elapsed "$t"
 
         step_banner "[desc=$DESC_VAR group=$gvar] Step 4 — Writing groups into graph JSON"
         t=$(date +%s)
-        python push_to_website.py
+        python pipeline/push_to_website.py
         elapsed "$t"
 
         step_banner "[desc=$DESC_VAR group=$gvar] Step 5 — Registering graph in viewer dropdown"
         t=$(date +%s)
-        python update_metadata.py
+        python pipeline/update_metadata.py
         elapsed "$t"
 
         if [ "${RUN_VALIDATE:-true}" = true ]; then
             step_banner "[desc=$DESC_VAR group=$gvar] Step 6 — Validating groups"
             t=$(date +%s)
-            python validate_groups.py
+            python pipeline/validate_groups.py
             elapsed "$t"
         fi
 
@@ -426,7 +426,7 @@ fi
 # ---------------------------------------------------------------------------
 if [ "$RUN_COMPARE" = true ]; then
     step_banner "Generating comparison.md"
-    python compare_variants.py
+    python analysis/compare_variants.py
 fi
 
 # ---------------------------------------------------------------------------
@@ -434,7 +434,7 @@ fi
 # ---------------------------------------------------------------------------
 if [ "$RUN_BATCH_SUMMARY" = true ]; then
     step_banner "Generating batch_summary.md"
-    python aggregate_batch.py
+    python analysis/aggregate_batch.py
 fi
 
 # ---------------------------------------------------------------------------

@@ -19,7 +19,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-ARTIFACTS_DIR = Path(__file__).resolve().parent / "artifacts"
+ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 OUTPUT_FILE = ARTIFACTS_DIR / "batch_summary.md"
 
 

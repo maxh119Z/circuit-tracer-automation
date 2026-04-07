@@ -47,37 +47,41 @@ circuit-tracer start-server --graph_file_dir ./test_graphs
 
 ## Batch Production
 
-### Single grouping variant across all prompts
 ```bash
-# Step 1: attribute all prompts
 cd custom_automation
-./attribute-batch.sh ../prompts.csv
 
-# Step 2: run automation pipeline on all (one grouping variant per prompt)
-./batch_reproduce.sh ../prompts.csv
+# Step 1: attribute all prompts (generates graph JSONs)
+./attribute-batch.sh ../prompts.csv
 ```
 
-### Multiple grouping variants across all prompts
+### Single grouping variant
 ```bash
-# Step 1: attribute all prompts
-cd custom_automation
-./attribute-batch.sh ../prompts.csv
+# Run pipeline for all prompts, one grouping variant
+./batch_reproduce.sh ../prompts.csv
 
-# Step 2: run all prompts × all 4 grouping variants (default: a0–a3)
-./batch_all_groups.sh ../prompts.csv
+# With validation
+./batch_reproduce.sh ../prompts.csv all
 
-# Specific variant range or list
-./batch_all_groups.sh ../prompts.csv a0-a3
-./batch_all_groups.sh ../prompts.csv a0,a3
+# Custom pruning threshold
+./batch_reproduce.sh ../prompts.csv all 0.40
+```
 
-# With validation and a custom pruning threshold
-./batch_all_groups.sh ../prompts.csv a0-a3 all 0.40
+### Multiple grouping variants
+```bash
+# All 4 variants (a0–a3) for every prompt
+GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv
+
+# Specific variants only
+GROUPING_VARIANTS=a0,a2,a3 ./batch_reproduce.sh ../prompts.csv
+
+# With validation
+GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv all
 
 # Custom description variant
-DESCRIPTION_VARIANT=v1 ./batch_all_groups.sh ../prompts.csv a0,a2
+DESCRIPTION_VARIANT=v2 GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv all
 ```
 
-Each (prompt × grouping variant) combo produces its own graph entry in the viewer dropdown, named `<slug>-<desc>-<grouping>` (e.g. `geography-v2-a1`).
+In multi-variant mode each (prompt × grouping variant) combo gets its own viewer entry named `<slug>-<desc>-<grouping>` (e.g. `dallas-capital-v2-a2`).
 
 ## reproduce.sh subcommands
 
@@ -100,10 +104,11 @@ Custom pruning threshold: `./reproduce.sh core 0.40`
 - `v2` *(default)* — label + elaboration, balanced specificity
 
 **Grouping variants** (`GROUPING_VARIANT`):
-- `a0` *(default)* — semantic-role grouping (SAY vs CONCEPT focus)
-- `a1` — a0 + Phase 1 completeness push (more specific group discovery)
-- `a2` — a0 + Phase 2 accuracy push (conservative assignment)
-- `a3` — a0 + Phase 3 compression push (aggressive output-relevance cleanup)
+All variants share the same say-X / X-itself hard constraint. They differ only in specificity bias:
+- `a0` *(default)* — neutral: use whatever granularity best explains the output
+- `a1` — pull-in: prefer assigning borderline features over Ungrouped
+- `a2` — merge-biased: prefer merging same-role groups
+- `a3` — experimental smart: reasons from first principles about whether each group helps explain the output
 
 Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
 
@@ -111,37 +116,57 @@ Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
 
 | Step | Script | Description |
 |---|---|---|
-| 0 | `apply_frontend_patch.py` | Patch `init-cg.js` for qParams parsing |
-| 1 | `fetch_all_activation_text.py` | Download feature activations from HuggingFace |
-| 2 | `generate_description.py` | Generate labels per feature via GPT-5-mini |
-| 3 | `generate_supernodes.py` | 3-phase semantic grouping (discover → assign → reconcile) |
-| 4 | `push_to_website.py` | Inject descriptions + groups into graph JSON |
-| 5 | `update_metadata.py` | Register graph in viewer dropdown |
-| 6 | `validate_groups.py` | M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + D1 (description accuracy) |
+| 0 | `pipeline/apply_frontend_patch.py` | Patch `init-cg.js` for qParams parsing |
+| 1 | `pipeline/fetch_all_activation_text.py` | Download feature activations from HuggingFace |
+| 2 | `pipeline/generate_description.py` | Generate labels per feature via GPT-5.4-mini |
+| 3 | `pipeline/generate_supernodes.py` | 3-phase semantic grouping (discover → assign → reconcile) |
+| 4 | `pipeline/push_to_website.py` | Inject descriptions + groups into graph JSON |
+| 5 | `pipeline/update_metadata.py` | Register graph in viewer dropdown |
+| 6 | `pipeline/validate_groups.py` | M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + D1/D2 (description accuracy) |
+
+## Analysis
+
+| Script | Description |
+|---|---|
+| `analysis/aggregate_batch.py` | Average validation scores across all prompts → `artifacts/batch_summary.md` |
+| `analysis/compare_variants.py` | Per-prompt comparison table across variants → `artifacts/comparison_<slug>.md` |
+| `analysis/analyze_hops.py` | Check whether intermediate-hop concepts appear in graphs → `artifacts/hop_analysis.md` |
+
+Run via `./reproduce.sh compare` or directly: `python analysis/aggregate_batch.py`
 
 ## File Structure
 
 ```
 circuit-tracer-automation/
 ├── custom_automation/
-│   ├── reproduce.sh                   # Master pipeline script
-│   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 grouping variant
-│   ├── batch_all_groups.sh            # Batch pipeline: N prompts × M grouping variants
-│   ├── compare_variants.sh            # Compare description variants side-by-side
+│   ├── reproduce.sh                   # Master pipeline script (single prompt)
+│   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 or M grouping variants
+│   ├── attribute-batch.sh             # Run circuit-tracer attribute for every row in CSV
 │   ├── config.py                      # Paths, model names, variant settings
-│   ├── [step scripts...]
+│   ├── pipeline/                      # Core pipeline steps (run in order 0–6)
+│   │   ├── apply_frontend_patch.py
+│   │   ├── fetch_all_activation_text.py
+│   │   ├── generate_description.py
+│   │   ├── generate_supernodes.py
+│   │   ├── push_to_website.py
+│   │   ├── update_metadata.py
+│   │   └── validate_groups.py
+│   ├── analysis/                      # Post-pipeline reporting & analysis
+│   │   ├── aggregate_batch.py
+│   │   ├── compare_variants.py
+│   │   └── analyze_hops.py
 │   └── artifacts/                     # Generated files (gitignored)
 │       ├── pruned_activations.json
 │       ├── feature_descriptions_<desc>.json
 │       ├── feature_groups_<desc>_<group>.json
 │       ├── validation_report_<desc>_<group>.json
-│       ├── <slug>/                    # Shared fetch+desc artifacts (batch_all_groups)
-│       └── <slug>-<desc>-<gvar>/      # Per-variant artifacts (batch_all_groups)
+│       ├── <slug>/                    # Shared fetch+desc artifacts (batch mode)
+│       └── <slug>-<desc>-<gvar>/      # Per-variant artifacts (multi-variant batch)
 ├── test_graphs/
 │   ├── test-run.json                  # Working copy
 │   ├── graph-metadata.json            # Viewer dropdown registry
-│   ├── <slug>.json                    # Named graph copies (batch_reproduce)
-│   └── <slug>-<desc>-<gvar>.json      # Per-variant graph copies (batch_all_groups)
+│   ├── <slug>.json                    # Named graph copies (single variant)
+│   └── <slug>-<desc>-<gvar>.json      # Per-variant graph copies (multi-variant)
 └── circuit_tracer/                    # Original circuit-tracer library
 
 # circuit-tracer
