@@ -2,7 +2,7 @@
 Step 3 — Semantically group features into supernodes using OpenAI.
 
 Three-phase approach:
-  Phase 1: Discover groups from the top-30 most influential features.
+  Phase 1: Discover groups from the top-50 most influential features.
   Phase 2: Assign remaining features to existing groups in concurrent batches.
   Phase 3: Reconciliation — merge duplicates, fix misassignments, split broad groups.
 
@@ -43,10 +43,12 @@ from config import (
 
 log = setup_logging()
 
-# Phase 1 seed size
-GROUPING_TOP_K_SEED = 100
+#Phase 1 seeds from features[:GROUPING_TOP_K_SEED];
+# Phase 2 assigns features[GROUPING_TOP_K_SEED:] (the remaining lower-influence ones).
+GROUPING_TOP_K_SEED = 50
 
-# Top-p threshold for logit nodes: include output tokens until cumulative prob >= this
+# Top-p threshold for logit nodes: include output tokens until cumulative prob >= this.
+# LOGIT_MAX_NODES caps the total even if top-p isn't reached.
 LOGIT_TOP_P = 0.90
 LOGIT_MAX_NODES = 3
 
@@ -146,16 +148,21 @@ class Phase3Output(BaseModel):
 # ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
 #
-# All variants share the same say-X / X-itself strictness (hard constraint).
-# The single varying dimension is specificity bias — how willing to assign
-# borderline features vs Ungrouped, and how willing to merge similar groups:
+# All variants share the same say-X / X-itself hard constraint.
+# a1–a3 each combine the same three properties at increasing smartness:
+#   - borderline pull (assign plausible features rather than leaving Ungrouped)
+#   - critical merge constraint (same-role groups that tell the same story → merge)
+#   - description reading (scan member descriptions for specific named entities
+#     before naming groups generically; never use a broad category when
+#     descriptions name a specific entity)
+#
 #   a0 — neutral baseline
-#   a1 — slightly more willing to assign borderline features (fewer Ungrouped)
-#   a2 — slightly more willing to merge same-role groups (fewer redundant groups)
-#   a3 — both: pull in borderline features and merge same-role groups
+#   a1 — structural rules: borderline pull + critical merge constraint
+#   a2 — a1 + description-aware: read descriptions for named entities before naming
+#   a3 — a2 + first-principles: reader test on every group decision
 # ---------------------------------------------------------------------------
 
-# Single shared strictness applied to all variants (previously a3 level).
+# Single shared strictness applied to all variants.
 _SAY_X_STRICTNESS = (
     "Treat say-X / X-itself separation as a hard constraint. Every say-X group must contain only framing features; "
     "every concept group must contain only content features. A single misplaced feature is enough to split or reassign."
@@ -163,37 +170,43 @@ _SAY_X_STRICTNESS = (
 
 _SPECIFICITY_BIAS_BASE = (
     "When in doubt between narrower and broader groups, use whichever granularity best explains the model's specific output and prompt. "
-    "Consider both the prompt and the predicted output together: a distinction is worth keeping depending on its relevancy to what was asked and what the model predicted. "
+    "Consider both the prompt and the predicted output together: a distinction is worth keeping only if it is relevant to what was asked and what the model predicted. "
+)
+
+_STRUCTURAL_RULES = (
+    "BORDERLINE FEATURES: prefer assigning a borderline feature to a plausible existing group over Ungrouped — "
+    "reserve Ungrouped for features with no meaningful connection to the prompt or output. "
+    "MERGE CONSTRAINT: when two same-role groups tell the same part of the story and their separation does not help a reader understand the reasoning differently, merge them. "
+    "Never merge a say-X group with a concept group — framing and content always stay separate. Prefer keeping more proper noun specificity when relevant to the prompt and output"
+)
+
+_DESCRIPTION_READING = (
+    "DESCRIPTION-AWARE NAMING: before naming any group, scan the member descriptions for recurring proper nouns or specific named entities. "
+    "If a specific entity (a place, person, concept) appears consistently across descriptions, use that specific name — "
+    "do not collapse to a generic category like 'a place' or 'a city' when the descriptions clearly name something specific. "
+    "Apply the same rule to say-X groups: if descriptions consistently name a specific entity after the trigger, prefer 'say California' over 'say a place'. "
+    "Also apply the prompt's active word sense: if the prompt makes one sense of a word obvious, features from alternate senses belong in Ungrouped. "
 )
 
 _SPECIFICITY_BIAS: dict[str, str] = {
     "a0": _SPECIFICITY_BIAS_BASE + _SAY_X_STRICTNESS,
-    "a1": (
-        _SPECIFICITY_BIAS_BASE
-        + "Prefer assigning borderline features to an existing group over leaving them Ungrouped — if a feature has a plausible fit, assign it. "
-        + "Every feature inside a group must genuinely represent the group name; if a feature is a weak or tangential match, reassign it to a better-fitting group rather than forcing it to stay. "
-        + "Reserve Ungrouped strictly for features with little connection to the prompt or output — features that are genuinely unrelated, or whose meaning does not fit any existing group clearly. "
-        + _SAY_X_STRICTNESS
-    ),
-    "a2": (
-        _SPECIFICITY_BIAS_BASE
-        + "When two groups play the same semantic role relative to the output and keeping them separate does not help a reader understand the reasoning differently, prefer merging them. "
-        + "CRITICAL MERGE CONSTRAINT: Never merge a 'say X' group with a concept group even if they are topically related — framing and content always stay separate. "
-        + "Only merge groups that share the same semantic role (both 'say X', or both concept groups). "
-        + _SAY_X_STRICTNESS
-    ),
+    "a1": _SPECIFICITY_BIAS_BASE + _STRUCTURAL_RULES + _SAY_X_STRICTNESS,
+    "a2": _SPECIFICITY_BIAS_BASE + _STRUCTURAL_RULES + _DESCRIPTION_READING + _SAY_X_STRICTNESS,
     "a3": (
         _SPECIFICITY_BIAS_BASE
-        + "Before finalising any group decision, ask: if a reader saw only this group name and its members, would they understand something specific about why the model predicted this output? "
-        "A group that passes this test is worth keeping at whatever granularity it needs. "
-        "A group that fails it should be merged into a neighbor or dropped — not kept for completeness. "
-        "For borderline features, ask whether the feature genuinely adds evidence to an existing group's story or just weakly resembles it — a weak match muddies the group and is better left Ungrouped. "
-        "For potential merges, ask whether the two groups tell the same part of the story or different parts — same part means merge, different parts means keep separate even if they are semantically close. "
+        + _STRUCTURAL_RULES
+        + _DESCRIPTION_READING
+        + "READER TEST: before finalising any group decision, ask — if a reader saw only this group name and its members, "
+        "would they understand something specific about why the model predicted this output? "
+        "A group that passes is worth keeping. A group that fails should be merged or dropped. "
+        "For merges specifically: two groups that tell the same part of the reasoning story should become one; "
+        "two groups that explain different steps or angles should stay separate even if semantically close. "
         + _SAY_X_STRICTNESS
     ),
 }
 
 _bias_phase1: str = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
+_bias_phase2: str = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
 _bias_phase3: str = _SPECIFICITY_BIAS.get(GROUPING_VARIANT, _SPECIFICITY_BIAS["a0"])
 if GROUPING_VARIANT not in _SPECIFICITY_BIAS:
     log.warning("Unknown GROUPING_VARIANT '%s' — falling back to a0 behaviour.", GROUPING_VARIANT)
@@ -212,7 +225,6 @@ RELEVANCE & UNGROUPED:
 GRANULARITY & SPECIFICITY:
 - Create only groups clearly supported by the data. Prefer the most specific name the evidence supports over broad buckets.
 - Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't blindly merge a broad category with a narrower stable subtype.
-- Use the "Promotes" field if clear: these tokens can guide decision making but are often noisy or polysemantic.
 - Distinctions that explain WHY the model chose one output over another should be preserved.
 - The prompt commits to one active sense of every word in it. Do not split features into separate groups for alternate senses of the same word that the prompt does not require — merge them into the contextually correct group or send them to Ungrouped.
 
@@ -227,9 +239,9 @@ SEMANTIC ROLE — "SAY X" vs "X ITSELF" (high-priority rule):
 NAMING (STRICT):
 - LIMIT: 5 words maximum. No exceptions.
 - Natural, simple phrasing. If you need more than 5 words, the name is too specific.
-- For "SAY X" groups, prefer "say a city" over "city mention", "city reference", or "mentioned city".
+- Before naming a group, read the member descriptions. If a specific named entity (place, person, concept) recurs across them, use that name — do not default to a generic category when the descriptions clearly point to something specific.
+- This applies to say-X groups too: "say California" is better than "say a place" when descriptions consistently name California.
 - Avoid parentheses and words like "mention", "reference", "entity", "concept", "topic", or "pattern" when a simpler phrase works.
-- Include a specific named entity in the group name when that entity is the clear shared referent — don't collapse "Oakland" into "a city" if the features are specifically about Oakland.
 - Prefer layman's vocabulary.
 
 SPLITTING vs MERGING:
@@ -260,15 +272,13 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
             "score": float(item.get("influence_score", 0.0)),
             "desc": item.get("generated_description", "No description"),
         }
-        promotes = item.get("promotes", [])
-        if promotes:
-            feat["promotes"] = promotes[:5]
         features.append(feat)
 
     features.sort(key=lambda x: x["score"], reverse=False)
 
-    # Extract prompt text from graph metadata (nested under "metadata", not top-level)
+    # Extract prompt text and output tokens from graph metadata (single read).
     prompt_text = "Unknown Prompt"
+    output_tokens_str = ""
     if GRAPH_FILE.exists():
         with open(GRAPH_FILE, "r") as f:
             graph = json.load(f)
@@ -281,10 +291,6 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
         if not prompt_text:
             prompt_text = "Unknown Prompt"
 
-    output_tokens_str = ""
-    if GRAPH_FILE.exists():
-        with open(GRAPH_FILE, "r") as f:
-            graph = json.load(f)
         logit_nodes = [
             n for n in graph.get("nodes", [])
             if n.get("feature_type") == "logit" or n.get("is_target_logit")
@@ -305,14 +311,7 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
 
 
 def format_feature_list(batch: list[dict]) -> str:
-    lines = []
-    for f in batch:
-        line = f"ID: {f['id']} | Desc: {f['desc']}"
-        promotes = f.get("promotes")
-        if promotes:
-            line += f" | Promotes: {', '.join(promotes)}"
-        lines.append(line)
-    return "\n".join(lines)
+    return "\n".join(f"ID: {f['id']} | Desc: {f['desc']}" for f in batch)
 
 
 async def process_batch(
@@ -337,6 +336,7 @@ Task: Assign each feature below to the best matching existing group.
 These are lower-influence features — they rarely introduce meaningfully new semantic concepts beyond what Phase 1 already captured. Default to an existing group or "Ungrouped".
 Do not force a match: if no group fits clearly, "Ungrouped" is correct.
 Only create a new group if the concept is genuinely absent from the existing groups, clearly relevant to the prompt, and specific enough that multiple features would share it — this should be rare.
+{_bias_phase2}
 Features:
 {format_feature_list(batch)}
 """
@@ -429,6 +429,10 @@ def apply_phase3(
         # Reassign features
         for a in split.reassignments:
             final_assignments[a.feature_id] = a.group_name
+        # Orphan cleanup: any features still pointing to the old group name → Ungrouped
+        for fid in list(final_assignments):
+            if final_assignments[fid] == split.group_to_split:
+                final_assignments[fid] = "Ungrouped"
         # Remove the old group
         active_groups.pop(split.group_to_split, None)
         log.info("Split: '%s' → %s", split.group_to_split,
@@ -589,7 +593,10 @@ Additional guidance for this phase:
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
 - Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily.
-- {_bias_phase1}
+
+SPECIFICITY GUIDANCE:
+{_bias_phase1}
+
 Features:
 {format_feature_list(seed_features)}
 """
@@ -682,10 +689,13 @@ REVIEW CHECKLIST (work through in order):
 6. UNGROUPED RESCUE: Review the Ungrouped features listed above — are any of them clearly relevant to the prompt and a good fit for an existing group? → Reassign them. Only rescue features with a clear, confident match; don't force weak connections.
 7. MISASSIGNED: Are any features obviously in the wrong group given the prompt and output? → Reassign.
 8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-8. SPECIFICITY (high priority): Could a feature be in a more specific, existing group (named entity, thing, etc.)? Reassign them. Descriptions of features should best represent the supernode group name.
+9. SPECIFICITY: Could any feature be better placed in a more specific existing group (named entity, place, etc.)? Reassign — descriptions should match the group name closely.
 
 Only make changes you are CONFIDENT about. If the grouping looks good, return empty lists for all actions.
-- {_bias_phase3}
+
+SPECIFICITY GUIDANCE:
+{_bias_phase3}
+
 Current grouping:
 {group_summary}
 """
