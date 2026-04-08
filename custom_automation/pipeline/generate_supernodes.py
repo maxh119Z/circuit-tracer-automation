@@ -32,14 +32,18 @@ from pydantic import BaseModel, Field
 from tqdm import tqdm
 
 from config import (
+    DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
     FEATURE_GROUPS_FILE,
     GRAPH_FILE,
     GROUPING_BATCH_SIZE,
     GROUPING_MODEL,
     GROUPING_VARIANT,
+    PACKAGE_DIR,
     setup_logging,
 )
+
+GROUPING_LOG_FILE = PACKAGE_DIR / "artifacts" / "grouping_log.md"
 
 log = setup_logging()
 
@@ -248,6 +252,63 @@ SPLITTING vs MERGING:
 - Split when a group mixes semantic roles or abstraction levels.
 - Small groups are fine if they are interpretable and prompt-relevant.
 """
+
+# ---------------------------------------------------------------------------
+# Grouping log
+# ---------------------------------------------------------------------------
+
+def append_grouping_log(
+    prompt_text: str,
+    phase1_groups: list[str],
+    phase3: "Phase3Output | None",
+    final_assignments: dict[str, str],
+) -> None:
+    """Append a human-readable entry to the shared grouping log."""
+    GROUPING_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    final_groups = sorted({g for g in final_assignments.values() if g != "Ungrouped"})
+    ungrouped_count = sum(1 for g in final_assignments.values() if g == "Ungrouped")
+
+    lines: list[str] = [
+        "---",
+        f"## {prompt_text} — {DESCRIPTION_VARIANT} — {GROUPING_VARIANT}",
+        "",
+        f"### Phase 1 ({len(phase1_groups)} groups)",
+        ", ".join(sorted(phase1_groups)) or "—",
+        "",
+        "### Phase 3 changes",
+    ]
+
+    if phase3 is None:
+        lines.append("Skipped (API error)")
+    else:
+        total = len(phase3.renames) + len(phase3.merges) + len(phase3.splits) + len(phase3.reassignments) + len(phase3.dropped_groups)
+        if total == 0:
+            lines.append("No changes")
+        else:
+            if phase3.renames:
+                lines.append("Renames (%d): %s" % (len(phase3.renames), ", ".join(f'"{r.old_name}" → "{r.new_name}"' for r in phase3.renames)))
+            if phase3.merges:
+                lines.append("Merges  (%d): %s" % (len(phase3.merges), ", ".join(f'[{", ".join(m.groups_to_merge)}] → "{m.merged_name}"' for m in phase3.merges)))
+            if phase3.splits:
+                lines.append("Splits  (%d): %s" % (len(phase3.splits), ", ".join(f'"{s.group_to_split}" → [{", ".join(sg.group_name for sg in s.new_subgroups)}]' for s in phase3.splits)))
+            if phase3.dropped_groups:
+                lines.append("Dropped (%d): %s" % (len(phase3.dropped_groups), ", ".join(f'"{g}"' for g in phase3.dropped_groups)))
+            if phase3.reassignments:
+                lines.append("Reassigned: %d features" % len(phase3.reassignments))
+
+    lines += [
+        "",
+        f"### Final ({len(final_groups)} groups, {ungrouped_count} ungrouped)",
+        ", ".join(final_groups) or "—",
+        "",
+    ]
+
+    with open(GROUPING_LOG_FILE, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    log.info("Grouping log appended → %s", GROUPING_LOG_FILE)
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -593,6 +654,7 @@ Additional guidance for this phase:
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
 - Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily.
+- HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, and where-clause framing. The test: if the group describes a syntactic role or function word rather than a concept, it must not exist.
 
 SPECIFICITY GUIDANCE:
 {_bias_phase1}
@@ -618,6 +680,7 @@ Features:
     for a in p1.assignments:
         final_assignments[a.feature_id] = a.group_name
 
+    phase1_group_names = list(active_groups.keys())
     log.info("Established %d initial supernodes.", len(active_groups))
 
     # ==================================================================
@@ -679,13 +742,14 @@ Ask for each group: given that the prompt was "{prompt_text}" and the model pred
 - A group that describes a concept that happened to be in the context but has no bearing on why the model predicted this specific output should be dropped or merged.
 - A distinction between two groups is only worth keeping if the two groups play different roles in the reasoning — not just different topics, but different steps or angles on the path to the output. If both point toward the same output for the same reason, merge them.
 - Word sense matters: the prompt commits to one meaning of every word in it. A group representing the wrong sense of a word given this specific prompt and output is irrelevant and should go to Ungrouped.
+- If the model predicted an incorrect answer, do not retroactively drop groups that explain why — stay faithful to the model's actual reasoning path.
 
 REVIEW CHECKLIST (work through in order):
 1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → High-priority. Reassign the misplaced features.
-2. WRONG SENSE: Does any group represent a sense of a concept that this prompt and output do not require? → Move to Ungrouped or drop.
-3. IRRELEVANT GROUPS: Does a group describe something real in the context but unconnected to why the model predicted this output? → Drop or collapse into a relevant neighbor.
+2. WRONG SENSE / ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt and output. For example: "capital (finance)" is an alternate sense of "capital" when the prompt asks about a state capital; "capital (letter case)" is another. The rule: if an alternate-sense group exists and a correct-sense group also exists, always merge the alternate-sense group into the correct-sense group — do not leave it standing, do not drop it. If no correct-sense group exists, then drop it. Apply this consistently — every alternate-sense group must be resolved.
+3. IRRELEVANT GROUPS: Does a group describe something real in the context but unconnected to why the model predicted this output? → Drop or collapse into a relevant neighbor. Also catch any grammatical or structural groups Phase 1 may have missed (prepositions, copulas, predicate framing, subword or token-prefix fragments, sentence-completion patterns) — move their members to Ungrouped and dissolve the group.
 4. OVERLY BROAD: Does a group mix features with clearly different roles relative to the output? → Split it.
-5. SAME-ROLE MERGE: Do two groups both pass relevance but describe the same step in the reasoning? → Merge them.
+5. SAME-ROLE MERGE: Do two groups both pass relevance but describe the same step in the reasoning? → Merge them. Default to merging only when both groups are at the same specificity level (both broad, or both naming the same entity). If one is specific and the other is broad, keep them separate — the named entity carries information. Only merge specific into broad if you are highly confident the specific group adds nothing beyond what the broad group already captures given this exact prompt and output.
 6. UNGROUPED RESCUE: Review the Ungrouped features listed above — are any of them clearly relevant to the prompt and a good fit for an existing group? → Reassign them. Only rescue features with a clear, confident match; don't force weak connections.
 7. MISASSIGNED: Are any features obviously in the wrong group given the prompt and output? → Reassign.
 8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
@@ -724,6 +788,8 @@ Current grouping:
         else:
             log.info("Phase 3: Applying %d actions…", total_actions)
             apply_phase3(p3, final_assignments, active_groups)
+
+    append_grouping_log(prompt_text, phase1_group_names, p3, final_assignments)
 
     # ==================================================================
     # POST-PROCESSING — Embedding & Logit nodes
