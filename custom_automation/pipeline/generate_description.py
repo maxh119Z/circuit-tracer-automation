@@ -127,7 +127,7 @@ _V2_CORE = (
     "- Highlighted tokens are structural words setting up content → SHORT_LABEL is ‘say [what]’.\n"
     "- Check what follows the trigger across activations: if a specific concept X (e.g. a proper noun, a method name) "
     "CONSISTENTLY appears right after the trigger token, that supports ‘say X’. "
-    "When unclear, prefer naming the concept directly 'X' without the 'say' — ‘say X’ is a stronger claim and needs consistent evidence and should not be used lightly.\n\n"
+    "When unclear, prefer naming the concept directly 'X' without the 'say' — ‘say X’ is a stronger claim and needs consistent evidence and should not be used lightly: be strict about including 'say' in any feature.\n\n"
 
     "PROPER NOUNS:\n"
     "If a specific name, place, or entity recurs across the activations — even in a minority of them — "
