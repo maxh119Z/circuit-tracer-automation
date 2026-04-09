@@ -146,7 +146,7 @@ echo "  ✓ Python and dependencies OK"
 echo "  ✓ artifacts/ directory ready"
 echo "  ✓ PRUNING_THRESHOLD=${PRUNING_THRESHOLD}"
 echo "  ✓ DESCRIPTION_VARIANT=${DESCRIPTION_VARIANT:-v2}"
-echo "  ✓ GROUPING_VARIANT=${GROUPING_VARIANT:-a0}"
+echo "  ✓ GROUPING_VARIANT=${GROUPING_VARIANT:-a2}"
 echo "  ✓ Mode: $SUBCOMMAND"
 if [ "$RUN_ALL_GROUPS" = true ]; then
     echo "  ✓ Description variant: ${DESCRIPTION_VARIANT:-v2} (all 4 grouping variants: a0 a1 a2 a3)"
@@ -310,7 +310,7 @@ fi
 # ---------------------------------------------------------------------------
 if [ "$RUN_DESC_GROUP" = true ]; then
     export DESCRIPTION_VARIANT="${DESCRIPTION_VARIANT:-v2}"
-    export GROUPING_VARIANT="${GROUPING_VARIANT:-a0}"
+    export GROUPING_VARIANT="${GROUPING_VARIANT:-a2}"
 
     # Step 0 — once
     step_banner "Step 0 — Applying frontend patch (if needed)"

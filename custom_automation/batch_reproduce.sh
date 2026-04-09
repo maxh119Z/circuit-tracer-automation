@@ -68,7 +68,7 @@ if [[ -n "${GROUPING_VARIANTS:-}" ]]; then
     read -ra VARIANT_LIST <<< "$(parse_variants "$GROUPING_VARIANTS")"
     MULTI_VARIANT=true
 else
-    VARIANT_LIST=("${GROUPING_VARIANT:-a0}")
+    VARIANT_LIST=("${GROUPING_VARIANT:-a2}")
     MULTI_VARIANT=false
 fi
 
