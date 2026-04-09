@@ -163,7 +163,7 @@ def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: di
 # Scaling factor for negative multiplicative steering, per the paper and tutorial.
 # -1 suppresses the feature to its negative (strong but not extreme).
 # The tutorial uses -2 for even stronger suppression.
-SCALING_FACTOR = -1.0
+SCALING_FACTOR = -2.0
 
 
 def build_scaled_interventions(hop_features: list[dict], activation_cache: torch.Tensor) -> list[tuple]:
