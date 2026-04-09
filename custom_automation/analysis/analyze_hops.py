@@ -92,6 +92,46 @@ def get_target_prediction(graph: dict) -> tuple[str, float]:
     return ("", 0.0)
 
 
+def get_top_k_predictions(graph: dict, k: int = 5) -> list[tuple[str, float]]:
+    """Return the top-k logit tokens sorted by probability (highest first)."""
+    logit_nodes = [
+        n for n in graph.get("nodes", [])
+        if n.get("feature_type") == "logit" or n.get("is_target_logit")
+    ]
+    logit_nodes.sort(key=lambda n: float(n.get("token_prob", 0.0)), reverse=True)
+    result = []
+    for n in logit_nodes[:k]:
+        clerp = n.get("clerp", "")
+        match = re.search(r'"([^"]+)"', clerp)
+        token = match.group(1).strip() if match else clerp.strip()
+        prob = float(n.get("token_prob", 0.0))
+        result.append((token, prob))
+    return result
+
+
+def find_correct_rank(top_k: list[tuple[str, float]], correct_answer: str) -> int | None:
+    """Return 1-indexed rank of correct_answer in top_k, or None if not found."""
+    for rank, (token, _) in enumerate(top_k, start=1):
+        if answer_matches(token, correct_answer):
+            return rank
+    return None
+
+
+def rank_to_score(rank: int | None, k: int = 5) -> float:
+    """
+    Convert a top-k rank to a 0.0–1.0 score.
+      rank 1 → 1.0  (top prediction)
+      rank 2 → 0.8
+      rank 3 → 0.6
+      rank 4 → 0.4
+      rank 5 → 0.2
+      None   → 0.0  (not in top k)
+    """
+    if rank is None or rank > k:
+        return 0.0
+    return (k + 1 - rank) / k
+
+
 def parse_supernodes(graph: dict) -> list[tuple[str, list[str]]]:
     """Parse qParams.supernodes → list of (group_name, [node_ids])."""
     raw = graph.get("qParams", {}).get("supernodes", "[]")
@@ -214,6 +254,11 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             predicted_prob = target_prob if target_token else top_prob
 
             correct = answer_matches(predicted, correct_answer)
+
+            top_k = get_top_k_predictions(graph, k=5)
+            correct_rank = find_correct_rank(top_k, correct_answer)
+            score = rank_to_score(correct_rank)
+
             hop_metrics = detect_intermediate_hop(graph, intermediate_concept)
 
             results.append({
@@ -225,6 +270,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 "predicted": predicted,
                 "predicted_prob": round(predicted_prob, 4),
                 "model_correct": correct,
+                "top_k_rank": correct_rank,
+                "rank_score": round(score, 2),
                 "notes": notes,
                 **hop_metrics,
             })
@@ -257,11 +304,13 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         # ---- aggregate stats ----
         n = len(results)
         n_correct = sum(1 for r in results if r["model_correct"])
+        n_top5    = sum(1 for r in results if r["top_k_rank"] is not None)
+        mean_score = sum(r["rank_score"] for r in results) / n if n else 0.0
         n_hop_found = sum(1 for r in results if r["hop_found"])
         n_hop_clerp = sum(1 for r in results if r["hop_found_in_clerp"])
         n_hop_group = sum(1 for r in results if r["hop_found_in_groups"])
 
-        # Correct + hop found vs wrong + hop found
+        # Correct + hop found vs wrong + hop found (binary top-1)
         correct_with_hop    = sum(1 for r in results if r["model_correct"] and r["hop_found"])
         correct_without_hop = sum(1 for r in results if r["model_correct"] and not r["hop_found"])
         wrong_with_hop      = sum(1 for r in results if not r["model_correct"] and r["hop_found"])
@@ -270,7 +319,9 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         f.write("## Aggregate Stats\n\n")
         f.write(f"| Metric | Count | Fraction |\n")
         f.write(f"|--------|-------|----------|\n")
-        f.write(f"| Model correct | {n_correct} | {n_correct/n:.1%} |\n")
+        f.write(f"| Model correct (top-1) | {n_correct} | {n_correct/n:.1%} |\n")
+        f.write(f"| Correct answer in top-5 | {n_top5} | {n_top5/n:.1%} |\n")
+        f.write(f"| Mean rank score (0–1) | — | {mean_score:.2f} |\n")
         f.write(f"| Intermediate hop found (any) | {n_hop_found} | {n_hop_found/n:.1%} |\n")
         f.write(f"| Hop found in feature clerps | {n_hop_clerp} | {n_hop_clerp/n:.1%} |\n")
         f.write(f"| Hop found in supernode groups | {n_hop_group} | {n_hop_group/n:.1%} |\n")
@@ -294,10 +345,11 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             if not vr:
                 continue
             f.write(f"## Per-Prompt Results — variant {variant}\n\n")
-            f.write("| Slug | Hop type | Intermediate | Predicted | Correct? | Hop found? | Hop features | Mean influence |\n")
-            f.write("|------|----------|--------------|-----------|----------|------------|--------------|----------------|\n")
+            f.write("Rank score: top-1 = 1.0, top-2 = 0.8, top-3 = 0.6, top-4 = 0.4, top-5 = 0.2, not found = 0.0\n\n")
+            f.write("| Slug | Hop type | Intermediate | Predicted | Rank | Score | Hop found? | Hop features | Mean influence |\n")
+            f.write("|------|----------|--------------|-----------|-----:|------:|------------|--------------|----------------|\n")
             for r in vr:
-                tick = "✓" if r["model_correct"] else "✗"
+                rank_str = str(r["top_k_rank"]) if r["top_k_rank"] is not None else "—"
                 hop_tick = "✓" if r["hop_found"] else "✗"
                 groups_str = ", ".join(r["hop_groups"]) if r["hop_groups"] else "—"
                 f.write(
@@ -305,7 +357,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                     f"| {r['hop_type']} "
                     f"| {r['intermediate_concept']} "
                     f"| {r['predicted']} ({r['predicted_prob']:.1%}) "
-                    f"| {tick} "
+                    f"| {rank_str} "
+                    f"| {r['rank_score']:.1f} "
                     f"| {hop_tick} ({r['hop_feature_count']} feat, groups: {groups_str}) "
                     f"| {r['hop_feature_count']} ({r['hop_feature_fraction']:.1%}) "
                     f"| {r['hop_mean_influence']:.4f} |\n"
@@ -336,7 +389,9 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     print()
     print("=" * 55)
     print(f"  Graphs analysed:       {n}")
-    print(f"  Model correct:         {n_correct}/{n} ({n_correct/n:.1%})")
+    print(f"  Model correct (top-1): {n_correct}/{n} ({n_correct/n:.1%})")
+    print(f"  Correct in top-5:      {n_top5}/{n} ({n_top5/n:.1%})")
+    print(f"  Mean rank score:       {mean_score:.2f} / 1.00")
     print(f"  Hop found (any):       {n_hop_found}/{n} ({n_hop_found/n:.1%})")
     print(f"  Correct + hop:         {correct_with_hop}")
     print(f"  Wrong + hop:           {wrong_with_hop}  <-- most interesting")
