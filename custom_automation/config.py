@@ -70,7 +70,7 @@ DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
 
 # Which grouping prompt variant to use (a0=original, a1=output-centric,
 # a2=coarse/hierarchical, a3=functional-role).  Override with env var.
-GROUPING_VARIANT: str = os.environ.get("GROUPING_VARIANT", "a0")
+GROUPING_VARIANT: str = os.environ.get("GROUPING_VARIANT", "a2")
 
 # Artifact filenames — namespaced by variant so multiple versions coexist.
 # """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""

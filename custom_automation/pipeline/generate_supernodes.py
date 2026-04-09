@@ -147,7 +147,7 @@ class Phase3Output(BaseModel):
     merges: list[MergeAction] = Field(default_factory=list, description="Groups to merge together.")
     splits: list[SplitAction] = Field(default_factory=list, description="Groups to split into subgroups.")
     reassignments: list[ReassignAction] = Field(default_factory=list, description="Individual features to move between groups.")
-    dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve entirely (members become Ungrouped).")
+    dropped_groups: list[str] = Field(default_factory=list, description="Grammar kill targets only — groups whose names describe syntactic roles, token patterns, or structural framing rather than semantic concepts (members become Ungrouped).")
 
 # ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
@@ -654,7 +654,8 @@ Additional guidance for this phase:
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
 - Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily.
-- HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, and where-clause framing. The test: if the group describes a syntactic role or function word rather than a concept, it must not exist.
+- HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, where-clause framing, structural/relational patterns derived from words in the prompt itself (containment verbs, prepositional structures, syntactic connectors), and typographic or capitalization patterns (title case, capitalized tokens, proper noun formatting). The test: does this group name a semantic concept, or does it describe a syntactic role or sentence structure? Concept = valid group. Sentence structure = Ungrouped.
+- Do not create "suppress X", "demote X", or "avoid X" groups. Features that suppress or down-weight a particular output belong in the relevant concept group or Ungrouped.
 
 SPECIFICITY GUIDANCE:
 {_bias_phase1}
@@ -731,29 +732,21 @@ Context: The model was given the prompt: {prompt_text}
 
 {output_context}
 
-The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to clean up the result — rename unclear groups, split groups that are too broad, and reassign misplaced features.
+The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to clean up the result — rename unclear groups, split groups that are too broad, reassign misplaced features, and drop irrelevant groups as defined below.
 
 {GROUPING_PHILOSOPHY}
 
-OUTPUT-RELEVANCE PRINCIPLE:
-You have the specific prompt and predicted output(s) above. Use them actively — every decision should be grounded in what this prompt was asking and what the model specifically predicted.
-Ask for each group: given that the prompt was "{prompt_text}" and the model predicted the output above, does this group explain something about HOW or WHY that prediction happened?
-- A group that describes a concept directly relevant to what was asked or predicted is worth keeping.
-- A group that describes a concept that happened to be in the context but has no bearing on why the model predicted this specific output should be dropped or merged.
-- A distinction between two groups is only worth keeping if the two groups play different roles in the reasoning — not just different topics, but different steps or angles on the path to the output. If both point toward the same output for the same reason, merge them.
-- Word sense matters: the prompt commits to one meaning of every word in it. A group representing the wrong sense of a word given this specific prompt and output is irrelevant and should go to Ungrouped.
-- If the model predicted an incorrect answer, do not retroactively drop groups that explain why — stay faithful to the model's actual reasoning path.
+Your job is limited to four things only:
 
-REVIEW CHECKLIST (work through in order):
-1. SAY vs CONCEPT MIXING: Does any group mix "say X" features with "X itself" features? → High-priority. Reassign the misplaced features.
-2. WRONG SENSE / ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt and output. For example: "capital (finance)" is an alternate sense of "capital" when the prompt asks about a state capital; "capital (letter case)" is another. The rule: if an alternate-sense group exists and a correct-sense group also exists, always merge the alternate-sense group into the correct-sense group — do not leave it standing, do not drop it. If no correct-sense group exists, then drop it. Apply this consistently — every alternate-sense group must be resolved.
-3. IRRELEVANT GROUPS: Does a group describe something real in the context but unconnected to why the model predicted this output? → Drop or collapse into a relevant neighbor. Also catch any grammatical or structural groups Phase 1 may have missed (prepositions, copulas, predicate framing, subword or token-prefix fragments, sentence-completion patterns) — move their members to Ungrouped and dissolve the group.
-4. OVERLY BROAD: Does a group mix features with clearly different roles relative to the output? → Split it.
-5. SAME-ROLE MERGE: Do two groups both pass relevance but describe the same step in the reasoning? → Merge them. Default to merging only when both groups are at the same specificity level (both broad, or both naming the same entity). If one is specific and the other is broad, keep them separate — the named entity carries information. Only merge specific into broad if you are highly confident the specific group adds nothing beyond what the broad group already captures given this exact prompt and output.
-6. UNGROUPED RESCUE: Review the Ungrouped features listed above — are any of them clearly relevant to the prompt and a good fit for an existing group? → Reassign them. Only rescue features with a clear, confident match; don't force weak connections.
-7. MISASSIGNED: Are any features obviously in the wrong group given the prompt and output? → Reassign.
-8. NAMING: Are group names clear, natural, and ≤5 words? → Rename if needed.
-9. SPECIFICITY: Could any feature be better placed in a more specific existing group (named entity, place, etc.)? Reassign — descriptions should match the group name closely.
+1. GRAMMAR KILL: Any group whose name describes a syntactic role, sentence structure, or token pattern rather than a semantic concept — move its members to Ungrouped and dissolve it. Examples: "containment verb", "prefix 'ill'", "say location after of", "fill-in-the-blank". The test: does this name a concept or describe sentence structure? Structure = dissolve. For borderline say-X groups, check the SPECIFICITY GUIDANCE below — if X is relevant to the prompt or output reasoning chain, keep the group.
+
+2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt. Example: "capital (finance)" when the prompt asks about a state capital. If an alternate-sense group exists and a correct-sense group also exists, merge the alternate into the correct — do not drop it. If no correct-sense group exists, leave it alone. When in doubt, err toward merging — alternate sense groups rarely add value. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group.
+
+3. RENAME: Are any group names unclear, longer than 5 words, or use jargon? Rename for clarity. A rename must not lose specificity, introduce a structural name, or flip a concept group to a say-X group or vice versa.
+
+4. REASSIGN: Are any individual features obviously in the wrong group given their description and the prompt? Move them. Only reassign with high confidence.
+
+SPECIFIC → BROAD PROTECTION: Before any merge or rename, check — is one group semantically more precise than the other (a named entity, specific concept, or something referenced in the prompt or output)? If yes, protect the specific group. "say capital" must not collapse into "say place name"; "say Texas" must not collapse into "say state". If the specific group is irrelevant to the reasoning chain, send it to Ungrouped — never collapse into a vaguer group.
 
 Only make changes you are CONFIDENT about. If the grouping looks good, return empty lists for all actions.
 
