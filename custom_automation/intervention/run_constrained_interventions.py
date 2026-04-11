@@ -113,7 +113,11 @@ def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: di
         concept_lower = intermediate_concept.lower()
         matching_groups = {
             g for g in set(feature_groups.values())
-            if g != "Ungrouped" and concept_lower in g.lower()
+            if g != "Ungrouped"
+            and concept_lower in g.lower()
+            and not g.startswith("Output:")
+            and not g.startswith("Emb:")
+            and not g.lower().startswith("say ")
         }
         if not matching_groups:
             print(f"    WARNING: no group matched '{intermediate_concept}' — falling back to clerp matching")
