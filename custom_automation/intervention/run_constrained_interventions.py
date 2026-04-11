@@ -1,5 +1,9 @@
 """
-run_interventions.py — Causal validation via negative multiplicative steering on intermediate-hop features.
+run_constrained_interventions.py — Causal validation via constrained patching on intermediate-hop features.
+
+Identical to run_interventions.py except the intervention pass uses
+constrained_layers=range(n_layers), matching the paper's primary validation
+method (direct effects / constrained patching) rather than iterative patching.
 
 For each (slug, grouping variant) in ground_truth.csv this script:
   1. Loads the processed attribution graph and the feature_groups artifact.
@@ -11,23 +15,33 @@ For each (slug, grouping variant) in ground_truth.csv this script:
   4. Steers those features negatively using scaling_factor * default_activation as
      the intervention value — matching the multiplicative approach from the paper
      and tutorial (NOT zero-ablation, which ignores baseline contributions).
-     freeze_attention=True is kept (default) per the paper.
-  5. Compares the correct-answer token's rank and probability before and after.
-     A significant drop indicates those features causally support the prediction.
+  5. The intervention pass uses constrained_layers=range(n_layers), which freezes
+     all attention patterns, LayerNorm denominators, and all other transcoder
+     outputs at their baseline values. Only the steered features' own decoder
+     vectors are allowed to affect the residual stream — no second-order knock-on
+     effects from downstream transcoders. This is the paper's primary method.
+  6. Compares the correct-answer token's rank and probability before and after.
+     A significant drop indicates those features directly support the prediction.
+
+Difference from run_interventions.py (iterative patching):
+  - Iterative: intervention effects propagate through all downstream transcoders,
+    conflating direct and indirect causal paths.
+  - Constrained (this file): only the steered features' decoder contributions reach
+    the output; all other model components are frozen at baseline.
 
 Methodology follows:
   https://transformer-circuits.pub/2025/attribution-graphs/methods.html
   https://github.com/decoderesearch/circuit-tracer/blob/main/demos/circuit_tracing_tutorial.ipynb
 
 Outputs:
-  - artifacts/intervention_results.csv — one row per (slug, variant)
-  - artifacts/intervention_results.md  — human-readable report
+  - artifacts/constrained_intervention_results.csv — one row per (slug, variant)
+  - artifacts/constrained_intervention_results.md  — human-readable report
 
 Usage:
-    python intervention/run_interventions.py
-    python intervention/run_interventions.py --variants a0,a3
-    python intervention/run_interventions.py --ground_truth ../ground_truth.csv
-    python intervention/run_interventions.py --dry_run   # skip model loading
+    python intervention/run_constrained_interventions.py
+    python intervention/run_constrained_interventions.py --variants a0,a3
+    python intervention/run_constrained_interventions.py --ground_truth ../ground_truth.csv
+    python intervention/run_constrained_interventions.py --dry_run   # skip model loading
 """
 
 from __future__ import annotations
@@ -250,24 +264,44 @@ def run_single(
     hop_features: list[dict],
 ) -> dict:
     """
-    Run a baseline forward pass then a negatively-steered intervention.
+    Run a baseline forward pass then a constrained-patching intervention.
 
     Baseline pass uses return_activations=True to get each feature's default
     activation value. Intervention tuples are then built as
-    (layer, ctx_idx, feature_idx, SCALING_FACTOR * default_activation),
-    matching the multiplicative steering approach from the paper and tutorial.
-    freeze_attention=True (default) is kept per the paper.
+    (layer, ctx_idx, feature_idx, SCALING_FACTOR * default_activation).
+
+    The intervention pass uses constrained_layers=range(n_layers), which:
+      - Freezes all attention patterns and LayerNorm denominators.
+      - Freezes all transcoder outputs at their baseline values, preventing
+        downstream transcoders from reacting to the intervention.
+      - Injects only the steered features' own decoder contributions into the
+        residual stream across all layers they write to (CLT multi-layer decode).
+
+    This matches the paper's primary validation method (constrained patching /
+    direct effects), isolating each feature's direct causal contribution to the
+    output logits without second-order knock-on effects.
+    https://transformer-circuits.pub/2025/attribution-graphs/methods.html
     """
     tok_id = correct_token_id(model.tokenizer, correct_answer)
+    n_layers = model.cfg.n_layers
 
     with torch.inference_mode():
-        # Baseline: empty interventions, collect activations for scaling
+        # Baseline: empty interventions, collect activations for scaling.
+        # constrained_layers is irrelevant here — empty interventions bypass
+        # the freeze setup entirely.
         baseline_logits, activation_cache = model.feature_intervention(
             prompt, [], return_activations=True
         )
         scaled_tuples = build_scaled_interventions(hop_features, activation_cache)
+        # Constrained patching: freeze all other model components so that only
+        # the steered features' own decoder vectors affect the output.
+        # Passing range(n_layers) also freezes LayerNorm denominators, giving
+        # true direct-effects computation per the paper.
         steered_logits, _ = model.feature_intervention(
-            prompt, scaled_tuples, return_activations=False
+            prompt,
+            scaled_tuples,
+            constrained_layers=range(n_layers),
+            return_activations=False,
         )
 
     base_last = next_token_logits(baseline_logits)
@@ -423,7 +457,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     # ------------------------------------------------------------------
     # Write CSV
     # ------------------------------------------------------------------
-    csv_path = ARTIFACTS_DIR / "intervention_results.csv"
+    csv_path = ARTIFACTS_DIR / "constrained_intervention_results.csv"
     fieldnames = list(results[0].keys())
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -437,14 +471,18 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
 
-    md_path = ARTIFACTS_DIR / "intervention_results.md"
+    md_path = ARTIFACTS_DIR / "constrained_intervention_results.md"
     with open(md_path, "w", encoding="utf-8") as f:
-        f.write("# Intervention Results\n\n")
+        f.write("# Constrained Intervention Results\n\n")
+        f.write("Method: constrained patching (direct effects only — paper's primary validation method)  \n")
         f.write(f"Variants: {', '.join(variants)}  \n")
         f.write(f"Prompts: {len(rows)}  \n")
         f.write(f"Graph runs total: {len(results)}  \n")
         f.write(f"Runs with hop features steered: {n}\n\n")
-        f.write(f"Steering: multiplicative, scaling_factor={SCALING_FACTOR} (paper methodology)\n\n")
+        f.write(
+            f"Steering: multiplicative, scaling_factor={SCALING_FACTOR}, "
+            f"constrained_layers=range(n_layers) (paper methodology)\n\n"
+        )
 
         if n > 0:
             n_top1_changed = sum(1 for r in valid if r.get("top1_changed"))
@@ -536,7 +574,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Zero-ablate intermediate-hop features and measure causal effect."
+        description="Constrained-patch intermediate-hop features and measure direct causal effect."
     )
     parser.add_argument(
         "--ground_truth",
@@ -553,7 +591,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dry_run",
         action="store_true",
-        help="Skip model loading — report which features would be ablated",
+        help="Skip model loading — report which features would be steered",
     )
     args = parser.parse_args()
 

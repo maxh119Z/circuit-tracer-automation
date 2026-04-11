@@ -1,0 +1,11 @@
+slug,prompt,transcoder_set
+dallas-capital,The capital of the state containing Dallas is,gemma
+miami-capital,The capital of the state containing Miami is,gemma
+grand-canyon-capital,The capital of the state containing the Grand Canyon is,gemma
+chicago-capital,The capital of the state containing Chicago is,gemma
+hollywood-capital,The capital of the state containing Hollywood is,gemma
+oakland-capital,The capital of the state containing Oakland is,gemma
+packers-capital,The capital of the state where the Green Bay Packers play their home games is,gemma
+niagara-falls-capital,The capital of the state containing Niagara Falls is,gemma
+east-california-capital,The capital of the state directly east of California is,gemma
+saints-capital,The capital of the state where the New Orleans Saints play their home games is,gemma

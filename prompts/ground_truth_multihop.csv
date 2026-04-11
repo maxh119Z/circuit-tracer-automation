@@ -1,0 +1,11 @@
+slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+dallas-capital,The capital of the state containing Dallas is,Texas,Austin,city→state→capital,
+miami-capital,The capital of the state containing Miami is,Florida,Tallahassee,city→state→capital,
+grand-canyon-capital,The capital of the state containing the Grand Canyon is,Arizona,Phoenix,landmark→state→capital,
+chicago-capital,The capital of the state containing Chicago is,Illinois,Springfield,city→state→capital,Model may confuse Chicago for capital
+hollywood-capital,The capital of the state containing Hollywood is,California,Sacramento,landmark→state→capital,Direct California association may shortcut to LA/SF
+oakland-capital,The capital of the state containing Oakland is,California,Sacramento,city→state→capital,
+packers-capital,The capital of the state where the Green Bay Packers play their home games is,Wisconsin,Madison,team→state→capital,
+niagara-falls-capital,The capital of the state containing Niagara Falls is,New York,Albany,landmark→state→capital,Model may say New York City
+east-california-capital,The capital of the state directly east of California is,Nevada,Carson City,geo→state→capital,Double hop with geographic reasoning
+saints-capital,The capital of the state where the New Orleans Saints play their home games is,Louisiana,Baton Rouge,team→state→capital,Baton Rouge is obscure

@@ -130,11 +130,6 @@ class MergeAction(BaseModel):
 
 
 
-class SplitAction(BaseModel):
-    group_to_split: str = Field(description="The group name to split.")
-    new_subgroups: list[GroupDef] = Field(description="The new subgroups to create.")
-    reassignments: list[Assignment] = Field(description="Feature reassignments into the new subgroups.")
-
 
 class ReassignAction(BaseModel):
     feature_id: str = Field(description="The feature ID to reassign.")
@@ -145,9 +140,8 @@ class ReassignAction(BaseModel):
 class Phase3Output(BaseModel):
     renames: list[RenameAction] = Field(default_factory=list, description="Groups to rename.")
     merges: list[MergeAction] = Field(default_factory=list, description="Groups to merge together.")
-    splits: list[SplitAction] = Field(default_factory=list, description="Groups to split into subgroups.")
     reassignments: list[ReassignAction] = Field(default_factory=list, description="Individual features to move between groups.")
-    dropped_groups: list[str] = Field(default_factory=list, description="Grammar kill targets only — groups whose names describe syntactic roles, token patterns, or structural framing rather than semantic concepts (members become Ungrouped).")
+    dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve (members become Ungrouped). Use for: (1) Grammar kill — names describing syntactic roles, token patterns, prefix fragments, or suppression. (2) Relevance drop — concepts with no connection to the prompt's reasoning chain or predicted output.")
 
 # ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
@@ -189,7 +183,8 @@ _DESCRIPTION_READING = (
     "If a specific entity (a place, person, concept) appears consistently across descriptions, use that specific name — "
     "do not collapse to a generic category like 'a place' or 'a city' when the descriptions clearly name something specific. "
     "Apply the same rule to say-X groups: if descriptions consistently name a specific entity after the trigger, prefer 'say California' over 'say a place'. "
-    "Also apply the prompt's active word sense: if the prompt makes one sense of a word obvious, features from alternate senses belong in Ungrouped. "
+    "If features clearly relate to an alternate sense of a key prompt word, name the group with a sense qualifier (e.g. 'X (general)') rather than a domain label that is not applicable given the prompt and output context (e.g. 'economic X' or 'X (music)'). "
+
 )
 
 _SPECIFICITY_BIAS: dict[str, str] = {
@@ -230,7 +225,7 @@ GRANULARITY & SPECIFICITY:
 - Create only groups clearly supported by the data. Prefer the most specific name the evidence supports over broad buckets.
 - Preserve meaningful distinctions in abstraction level when relevant to the prompt — don't blindly merge a broad category with a narrower stable subtype.
 - Distinctions that explain WHY the model chose one output over another should be preserved.
-- The prompt commits to one active sense of every word in it. Do not split features into separate groups for alternate senses of the same word that the prompt does not require — merge them into the contextually correct group or send them to Ungrouped.
+- The prompt commits to one active sense of every word in it. Features from alternate senses of a word (senses the prompt does not require) may form their own groups — Phase 3 will consolidate them.
 
 SEMANTIC ROLE — "SAY X" vs "X ITSELF" (high-priority rule):
 - A feature that introduces or frames a concept is different from a feature that IS the concept. Keep them in separate groups.
@@ -282,7 +277,7 @@ def append_grouping_log(
     if phase3 is None:
         lines.append("Skipped (API error)")
     else:
-        total = len(phase3.renames) + len(phase3.merges) + len(phase3.splits) + len(phase3.reassignments) + len(phase3.dropped_groups)
+        total = len(phase3.renames) + len(phase3.merges) + len(phase3.reassignments) + len(phase3.dropped_groups)
         if total == 0:
             lines.append("No changes")
         else:
@@ -290,8 +285,6 @@ def append_grouping_log(
                 lines.append("Renames (%d): %s" % (len(phase3.renames), ", ".join(f'"{r.old_name}" → "{r.new_name}"' for r in phase3.renames)))
             if phase3.merges:
                 lines.append("Merges  (%d): %s" % (len(phase3.merges), ", ".join(f'[{", ".join(m.groups_to_merge)}] → "{m.merged_name}"' for m in phase3.merges)))
-            if phase3.splits:
-                lines.append("Splits  (%d): %s" % (len(phase3.splits), ", ".join(f'"{s.group_to_split}" → [{", ".join(sg.group_name for sg in s.new_subgroups)}]' for s in phase3.splits)))
             if phase3.dropped_groups:
                 lines.append("Dropped (%d): %s" % (len(phase3.dropped_groups), ", ".join(f'"{g}"' for g in phase3.dropped_groups)))
             if phase3.reassignments:
@@ -482,30 +475,13 @@ def apply_phase3(
         active_groups[merge.merged_name] = f"Merged from: {', '.join(merge.groups_to_merge)}"
         log.info("Merged: %s → '%s'", merge.groups_to_merge, merge.merged_name)
 
-    # 3. Splits
-    for split in phase3.splits:
-        # Add new subgroups
-        for sg in split.new_subgroups:
-            active_groups[sg.group_name] = sg.rationale
-        # Reassign features
-        for a in split.reassignments:
-            final_assignments[a.feature_id] = a.group_name
-        # Orphan cleanup: any features still pointing to the old group name → Ungrouped
-        for fid in list(final_assignments):
-            if final_assignments[fid] == split.group_to_split:
-                final_assignments[fid] = "Ungrouped"
-        # Remove the old group
-        active_groups.pop(split.group_to_split, None)
-        log.info("Split: '%s' → %s", split.group_to_split,
-                 [sg.group_name for sg in split.new_subgroups])
-
-    # 4. Individual reassignments
+    # 3. Individual reassignments
     for ra in phase3.reassignments:
         if ra.feature_id in final_assignments:
             final_assignments[ra.feature_id] = ra.to_group
             log.info("Reassigned: %s from '%s' → '%s'", ra.feature_id, ra.from_group, ra.to_group)
 
-    # 5. Dropped groups
+    # 4. Dropped groups
     for gname in phase3.dropped_groups:
         for fid in list(final_assignments):
             if final_assignments[fid] == gname:
@@ -653,9 +629,9 @@ Cluster them into meaningful semantic groups ("supernodes").
 Additional guidance for this phase:
 - A single feature may form its own group only if it reflects a stable, reusable semantic pattern, not a one-off surface detail.
 - Prefer names that make the graph easy to read over taxonomically tidy labels.
-- Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily.
-- HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, where-clause framing, structural/relational patterns derived from words in the prompt itself (containment verbs, prepositional structures, syntactic connectors), and typographic or capitalization patterns (title case, capitalized tokens, proper noun formatting). The test: does this group name a semantic concept, or does it describe a syntactic role or sentence structure? Concept = valid group. Sentence structure = Ungrouped.
-- Do not create "suppress X", "demote X", or "avoid X" groups. Features that suppress or down-weight a particular output belong in the relevant concept group or Ungrouped.
+- Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily. When a concept is clearly relevant to the prompt or output, err toward creating a group rather than Ungrouped.
+- HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, where-clause framing, structural/relational patterns derived from words in the prompt itself (containment verbs, prepositional structures, syntactic connectors), typographic or capitalization patterns (title case, capitalized tokens, proper noun formatting), and word-onset or prefix fragments — these describe token shape or suppression, not meaning. The test: does this group name a semantic concept, or does it describe a syntactic role or sentence structure? Concept = valid group. Sentence structure = Ungrouped.
+- Do not create "suppress X", "demote X", "avoid X", or "anti-X" groups. Features that suppress or down-weight a particular output belong in the relevant concept group or Ungrouped.
 
 SPECIFICITY GUIDANCE:
 {_bias_phase1}
@@ -732,19 +708,21 @@ Context: The model was given the prompt: {prompt_text}
 
 {output_context}
 
-The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to clean up the result — rename unclear groups, split groups that are too broad, reassign misplaced features, and drop irrelevant groups as defined below.
+The pipeline produced {num_groups} groups from {len(final_assignments)} features. Your job is to clean up the result — rename unclear groups, reassign misplaced features, and drop irrelevant groups as defined below.
 
 {GROUPING_PHILOSOPHY}
 
-Your job is limited to four things only:
+Your job is limited to five things only:
 
-1. GRAMMAR KILL: Any group whose name describes a syntactic role, sentence structure, or token pattern rather than a semantic concept — move its members to Ungrouped and dissolve it. Examples: "containment verb", "prefix 'ill'", "say location after of", "fill-in-the-blank". The test: does this name a concept or describe sentence structure? Structure = dissolve. For borderline say-X groups, check the SPECIFICITY GUIDANCE below — if X is relevant to the prompt or output reasoning chain, keep the group.
+1. GRAMMAR KILL: Any group whose name describes a syntactic role, sentence structure, token pattern, word-prefix fragment, or suppression — move its members to Ungrouped and dissolve it. Examples: "containment verb", "prefix 'ill'", "say location after of", "fill-in-the-blank", "[concept] prefix", "anti-X", "[X] relation", "[X] clause", "location clause". The test: does this name a concept or describe sentence structure / token shape / suppression? Structure/shape/suppression = dissolve. For borderline say-X groups, judge by X: if X names a concept relevant to the prompt or output reasoning chain, keep the group — the "say" framing does not make it irrelevant.
 
-2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt. Example: "capital (finance)" when the prompt asks about a state capital. If an alternate-sense group exists and a correct-sense group also exists, merge the alternate into the correct — do not drop it. If no correct-sense group exists, leave it alone. When in doubt, err toward merging — alternate sense groups rarely add value. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group.
+2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt — this includes any domain (financial, architectural, political, etc.) that the prompt does not require. Example: "capital (finance)" or "economic capital" when the prompt asks about a state capital. If alternate-sense groups are present, merge them together into a single fallback group named "[concept] (general)" — do not touch the correct-sense group. Do not split the correct-sense group to create a (general) variant; only create "[concept] (general)" by merging existing alternate-sense groups. If no alternate-sense groups exist, take no action. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group.
 
-3. RENAME: Are any group names unclear, longer than 5 words, or use jargon? Rename for clarity. A rename must not lose specificity, introduce a structural name, or flip a concept group to a say-X group or vice versa.
+3. RENAME: Are any group names unclear, longer than 5 words, or use jargon? Rename for clarity. A rename must not lose specificity, introduce a structural name, or flip a concept group to a say-X group or vice versa. Do not drop intermediate reasoning steps from a group name.
 
 4. REASSIGN: Are any individual features obviously in the wrong group given their description and the prompt? Move them. Only reassign with high confidence.
+
+5. RELEVANCE DROP: If a group's concept has no clear connection to the prompt's reasoning chain or predicted output — it is not a named entity in the prompt, not an intermediate reasoning step, and not a framing pattern for the output — drop it (members to Ungrouped). Use the SPECIFICITY GUIDANCE to judge relevance.
 
 SPECIFIC → BROAD PROTECTION: Before any merge or rename, check — is one group semantically more precise than the other (a named entity, specific concept, or something referenced in the prompt or output)? If yes, protect the specific group. "say capital" must not collapse into "say place name"; "say Texas" must not collapse into "say state". If the specific group is irrelevant to the reasoning chain, send it to Ungrouped — never collapse into a vaguer group.
 
@@ -773,7 +751,7 @@ Current grouping:
         log.warning("Phase 3 parsing returned None — skipping reconciliation.")
     else:
         total_actions = (
-            len(p3.renames) + len(p3.merges) + len(p3.splits)
+            len(p3.renames) + len(p3.merges)
             + len(p3.reassignments) + len(p3.dropped_groups)
         )
         if total_actions == 0:

@@ -47,36 +47,54 @@ circuit-tracer start-server --graph_file_dir ./test_graphs
 
 ## Batch Production
 
+Prompt CSVs and their ground truth files live in `prompts/`:
+
+| File | Description |
+|---|---|
+| `prompts/prompts.csv` | 10-prompt iteration/test set |
+| `prompts/ground_truth.csv` | Ground truth for test set |
+| `prompts/prompts_multihop.csv` | 50-prompt simple multi-hop dataset (capitals, sports, etc.) |
+| `prompts/ground_truth_multihop.csv` | Ground truth for multihop set |
+| `prompts/prompts_anthropic.csv` | Prompts from the original Anthropic paper |
+| `prompts/ground_truth_anthropic.csv` | Ground truth for Anthropic set |
+| `prompts/prompts_max_hops.csv` | Prompts for finding max number of hops |
+| `prompts/ground_truth_max_hops.csv` | Ground truth for max hops set |
+| `prompts/prompts_wikipedia.csv` | Wikipedia-derived prompts |
+| `prompts/ground_truth_wikipedia.csv` | Ground truth for Wikipedia set |
+
 ```bash
 # Step 1: attribute all prompts (generates graph JSONs)
-circuit-tracer attribute-batch --csv prompts.csv --graph_file_dir ./test_graphs
+circuit-tracer attribute-batch --csv prompts/prompts.csv --graph_file_dir ./test_graphs
 ```
 
 ### Single grouping variant
 ```bash
 # Run pipeline for all prompts, one grouping variant
-./batch_reproduce.sh ../prompts.csv
+./batch_reproduce.sh ../prompts/prompts.csv
 
 # With validation
-./batch_reproduce.sh ../prompts.csv all
+./batch_reproduce.sh ../prompts/prompts.csv all
 
 # Custom pruning threshold
-./batch_reproduce.sh ../prompts.csv all 0.40
+./batch_reproduce.sh ../prompts/prompts.csv all 0.40
 ```
 
 ### Multiple grouping variants
 ```bash
 # All 4 variants (a0–a3) for every prompt
-GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv
+GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv
+
+# Best Variant 2 specifically
+GROUPING_VARIANTS=a2 ./batch_reproduce.sh ../prompts/prompts.csv
 
 # Specific variants only
-GROUPING_VARIANTS=a0,a2,a3 ./batch_reproduce.sh ../prompts.csv
+GROUPING_VARIANTS=a0,a2,a3 ./batch_reproduce.sh ../prompts/prompts.csv
 
 # With validation
-GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv all
+GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv all
 
 # Custom description variant
-DESCRIPTION_VARIANT=v2 GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts.csv all
+DESCRIPTION_VARIANT=v2 GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv all
 ```
 
 In multi-variant mode each (prompt × grouping variant) combo gets its own viewer entry named `<slug>-<desc>-<grouping>` (e.g. `dallas-capital-v2-a2`).
@@ -132,10 +150,23 @@ Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
 
 Run via `./reproduce.sh compare` or directly: `python analysis/aggregate_batch.py`
 
+python intervention/run_interventions.py --variants a2
+
 ## File Structure
 
 ```
 circuit-tracer-automation/
+├── prompts/                               # Prompt CSVs and ground truth files
+│   ├── prompts.csv               # 10-prompt iteration/test set
+│   ├── ground_truth.csv
+│   ├── prompts_multihop.csv               # 50-prompt simple multi-hop dataset
+│   ├── ground_truth_multihop.csv
+│   ├── prompts_anthropic.csv              # Anthropic paper prompts
+│   ├── ground_truth_anthropic.csv
+│   ├── prompts_max_hops.csv               # Max hop count exploration
+│   ├── ground_truth_max_hops.csv
+│   ├── prompts_wikipedia.csv              # Wikipedia-derived prompts
+│   └── ground_truth_wikipedia.csv
 ├── custom_automation/
 │   ├── reproduce.sh                   # Master pipeline script (single prompt)
 │   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 or M grouping variants
