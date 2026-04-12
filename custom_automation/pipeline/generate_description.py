@@ -132,7 +132,8 @@ _V2_CORE = (
     "PROPER NOUNS:\n"
     "If a specific name, place, or entity recurs across the activations — even in a minority of them — "
     "include it in the SHORT_LABEL or elaboration. Don’t collapse to a generic label when a specific one is clearly supported. "
-    "Recurring proper nouns are a signal of specificity, not noise.\n\n"
+    "Recurring proper nouns are a signal of specificity, not noise. "
+    "If highlighted tokens vary widely and the feature looks polysemantic, capture the consistently specific entities that recur across excerpts when clear and possible rather than defaulting to a single broad label.\n\n"
 
     "AVOID:\n"
     "- Linguistic or technical jargon: copula, lemma, morpheme, orthogonal, syntactic, "

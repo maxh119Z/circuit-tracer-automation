@@ -197,8 +197,8 @@ while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
             export CURRENT_SLUG="$VARIANT_SLUG"
 
             GROUPS_ARTIFACT="artifacts/${VARIANT_SLUG}/feature_groups_${DESCRIPTION_VARIANT}_${gvar}.json"
-            if [[ "$MULTI_VARIANT" = true && -f "$GROUPS_ARTIFACT" ]]; then
-                echo "  SKIP $VARIANT_SLUG — already processed"
+            if [[ -f "$GROUPS_ARTIFACT" ]]; then
+                echo "  SKIP $VARIANT_SLUG — groups already exist"
                 continue
             fi
 

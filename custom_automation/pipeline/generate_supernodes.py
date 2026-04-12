@@ -184,6 +184,8 @@ _DESCRIPTION_READING = (
     "do not collapse to a generic category like 'a place' or 'a city' when the descriptions clearly name something specific. "
     "Apply the same rule to say-X groups: if descriptions consistently name a specific entity after the trigger, prefer 'say California' over 'say a place'. "
     "If features clearly relate to an alternate sense of a key prompt word, name the group with a sense qualifier (e.g. 'X (general)') rather than a domain label that is not applicable given the prompt and output context (e.g. 'economic X' or 'X (music)'). "
+    "The last few words of a description often carry non-trivial specificity — use them as an additional signal when placing features into groups. "
+    "Group names must come from member descriptions, not from the prompt and output context. Be faithful to feature descriptions in naming. "
 
 )
 
@@ -233,6 +235,7 @@ SEMANTIC ROLE — "SAY X" vs "X ITSELF" (high-priority rule):
   - Highlighted tokens are content words → the feature represents the concept directly; name the concept.
 - say tags in descriptions are strong signals — respect them.
 - "Say" is for genuine framing or introduction. Do not use it when features directly represent a concept.
+- Only use 'say' in a group name when member descriptions themselves use it. Do not add 'say' by inference.
 - Surface overlap is never enough reason to merge groups with different semantic roles.
 
 NAMING (STRICT):
@@ -400,6 +403,7 @@ Features:
             messages=[{"role": "user", "content": prompt}],
             response_format=Phase2Output,
             max_completion_tokens=4096,
+            reasoning_effort="low",
         )
         parsed = response.choices[0].message.parsed
         if parsed is None:
@@ -632,6 +636,7 @@ Additional guidance for this phase:
 - Prefer two narrow groups over one vague bucket — Phase 3 later can merge, but cannot recover lost distinctions easily. When a concept is clearly relevant to the prompt or output, err toward creating a group rather than Ungrouped.
 - HARD RULE — do NOT create groups for grammatical or structural patterns under any circumstances. Assign those features directly to Ungrouped. This includes: prepositions and locational connectors (say 'of', say 'in', say 'after', say locational preposition), copulas and predicate framing (say 'is', predicate framing, copula, say noun after copula), sentence-completion or next-token patterns (say completion, say next noun), subword or token-prefix fragments, heading markers, where-clause framing, structural/relational patterns derived from words in the prompt itself (containment verbs, prepositional structures, syntactic connectors), typographic or capitalization patterns (title case, capitalized tokens, proper noun formatting), and word-onset or prefix fragments — these describe token shape or suppression, not meaning. The test: does this group name a semantic concept, or does it describe a syntactic role or sentence structure? Concept = valid group. Sentence structure = Ungrouped.
 - Do not create "suppress X", "demote X", "avoid X", or "anti-X" groups. Features that suppress or down-weight a particular output belong in the relevant concept group or Ungrouped.
+- Do not create groups named for prompt format or input structure (e.g. "fact prompt", "fill-in-the-blank") — these describe the wrapper, not the reasoning content. Assign to Ungrouped.
 
 SPECIFICITY GUIDANCE:
 {_bias_phase1}
@@ -714,9 +719,9 @@ The pipeline produced {num_groups} groups from {len(final_assignments)} features
 
 Your job is limited to five things only:
 
-1. GRAMMAR KILL: Any group whose name describes a syntactic role, sentence structure, token pattern, word-prefix fragment, or suppression — move its members to Ungrouped and dissolve it. Examples: "containment verb", "prefix 'ill'", "say location after of", "fill-in-the-blank", "[concept] prefix", "anti-X", "[X] relation", "[X] clause", "location clause". The test: does this name a concept or describe sentence structure / token shape / suppression? Structure/shape/suppression = dissolve. For borderline say-X groups, judge by X: if X names a concept relevant to the prompt or output reasoning chain, keep the group — the "say" framing does not make it irrelevant.
+1. GRAMMAR KILL: Any group whose name describes a syntactic role, sentence structure, token pattern, word-prefix fragment, or suppression — move its members to Ungrouped and dissolve it. Examples: "containment verb", "prefix 'ill'", "say location after of", "fill-in-the-blank", "[concept] prefix", "anti-X", "[X] relation", "[X] clause", "location clause". The test: does this name a concept or describe sentence structure / token shape / suppression? Structure/shape/suppression = dissolve. For borderline say-X groups, judge by X: if X names a concept relevant to the prompt or output reasoning chain, keep the group — the "say" framing does not make it irrelevant. Exception: if a word is clearly semantic and central to the prompt's reasoning chain, judge by its role in context rather than its word class alone.
 
-2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt — this includes any domain (financial, architectural, political, etc.) that the prompt does not require. Example: "capital (finance)" or "economic capital" when the prompt asks about a state capital. If alternate-sense groups are present, merge them together into a single fallback group named "[concept] (general)" — do not touch the correct-sense group. Do not split the correct-sense group to create a (general) variant; only create "[concept] (general)" by merging existing alternate-sense groups. If no alternate-sense groups exist, take no action. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group.
+2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt — this includes any domain (financial, architectural, political, etc.) that the prompt does not require. Example: "capital (finance)" or "economic capital" when the prompt asks about a state capital. If alternate-sense groups are present, merge them together into a single fallback group named "[concept] (general)" — do not touch the correct-sense group. Do not split the correct-sense group to create a (general) variant; only create "[concept] (general)" by merging existing alternate-sense groups. If no alternate-sense groups exist, take no action. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group. '[concept] (general)' is strictly for features activating on a genuinely different dictionary definition (e.g. 'bank' as a financial institution vs. a riverbank) — not the same concept in different contexts or positions.
 
 3. RENAME: Are any group names unclear, longer than 5 words, or use jargon? Rename for clarity. A rename must not lose specificity, introduce a structural name, or flip a concept group to a say-X group or vice versa. Do not drop intermediate reasoning steps from a group name.
 
