@@ -33,8 +33,8 @@ from transformer_lens import HookedTransformer
 # ---------------------------------------------------------------------------
 
 TARGET_N = 50
-CANDIDATES_TO_FETCH = 300       # how many article sentences to collect before scoring
-MAX_PER_ARTICLE = 2             # diversity cap per article
+CANDIDATES_TO_FETCH = 500       # how many article sentences to collect before scoring
+MAX_PER_ARTICLE = 3             # diversity cap per article
 MIN_WORDS = 8                   # minimum words in a truncated prefix
 MAX_WORDS = 15                  # maximum words in a truncated prefix
 MIN_CONF = 0.15                 # lower bound on top-1 softmax prob (filter boring/random)
@@ -44,7 +44,7 @@ TRANSCODER_SET = "gemma"
 BATCH_SIZE = 16                 # prompts scored at once (tune to your GPU VRAM)
 SCORE_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-OUT_FILE = Path(__file__).parent / "prompts_wikipedia.csv"
+OUT_FILE = Path(__file__).parent / "ground_truth_wikipedia.csv"
 
 # Diverse Wikipedia categories to seed article selection
 SEED_TOPICS = [
@@ -148,9 +148,9 @@ def fetch_candidates(n: int) -> list[dict]:
 # Scoring
 # ---------------------------------------------------------------------------
 
-def score_prompts(prompts: list[str], model: HookedTransformer) -> list[float]:
-    """Return top-1 softmax probability for the last token of each prompt."""
-    scores = []
+def score_prompts(prompts: list[str], model: HookedTransformer) -> list[dict]:
+    """Return top-1 softmax probability and predicted token for each prompt."""
+    results = []
     for i in range(0, len(prompts), BATCH_SIZE):
         batch = prompts[i : i + BATCH_SIZE]
         tokens = model.to_tokens(batch, prepend_bos=True)  # (B, L)
@@ -158,11 +158,13 @@ def score_prompts(prompts: list[str], model: HookedTransformer) -> list[float]:
             logits = model(tokens)  # (B, L, V)
         last_logits = logits[:, -1, :]  # (B, V)
         probs = F.softmax(last_logits, dim=-1)
-        top1 = probs.max(dim=-1).values  # (B,)
-        scores.extend(top1.tolist())
+        top1_probs, top1_indices = probs.max(dim=-1)  # (B,)
+        top1_tokens = model.to_str_tokens(top1_indices)
+        for prob, tok in zip(top1_probs.tolist(), top1_tokens):
+            results.append({"top1_prob": prob, "top1_token": tok.strip()})
         print(f"  scored {min(i + BATCH_SIZE, len(prompts))}/{len(prompts)}", end="\r")
     print()
-    return scores
+    return results
 
 
 # ---------------------------------------------------------------------------
@@ -185,10 +187,11 @@ def main():
 
     print(f"  Scoring {len(candidates)} prompts...")
     prompt_texts = [c["prompt"] for c in candidates]
-    scores = score_prompts(prompt_texts, model)
+    results = score_prompts(prompt_texts, model)
 
-    for cand, score in zip(candidates, scores):
-        cand["top1_prob"] = score
+    for cand, result in zip(candidates, results):
+        cand["top1_prob"] = result["top1_prob"]
+        cand["correct_answer"] = result["top1_token"]
 
     # --- Step 3: filter, deduplicate per article, select top 50 ---
     print(f"\n[3/3] Filtering and selecting {TARGET_N} prompts...")
@@ -221,16 +224,23 @@ def main():
         )
 
     # --- Write CSV ---
-    with OUT_FILE.open("w", newline="") as f:
+    with OUT_FILE.open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["slug", "prompt", "transcoder_set"])
+        writer.writerow(["slug", "prompt", "intermediate_concept", "correct_answer", "hop_type", "notes"])
         for cand in selected:
-            writer.writerow([cand["slug"], cand["prompt"], TRANSCODER_SET])
+            writer.writerow([
+                cand["slug"],
+                cand["prompt"],
+                "N/A",
+                cand["correct_answer"],
+                "next-token prediction",
+                f"wikipedia article: {cand['article']} | top1_prob: {cand['top1_prob']:.3f}",
+            ])
 
     print(f"\nWrote {len(selected)} prompts to {OUT_FILE}")
     print("\nSample prompts:")
     for cand in selected[:5]:
-        print(f"  [{cand['top1_prob']:.2f}] {cand['prompt']!r}")
+        print(f"  [{cand['top1_prob']:.2f}] {cand['prompt']!r} -> {cand['correct_answer']!r}")
 
 
 if __name__ == "__main__":
