@@ -37,7 +37,7 @@ TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_GROUND_TRUTH = REPO_ROOT / "ground_truth.csv"
+DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts/ground_truth_multihop.csv"
 DESCRIPTION_VARIANT = "v2"
 
 
@@ -240,10 +240,14 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         for variant in variants:
             graph_slug = f"{slug}-{DESCRIPTION_VARIANT}-{variant}"
             graph_path = TEST_GRAPHS_DIR / f"{graph_slug}.json"
+            if not graph_path.exists():
+                # Single-variant mode: graph saved as plain slug
+                graph_path = TEST_GRAPHS_DIR / f"{slug}.json"
+                graph_slug = slug
 
             graph = load_graph(graph_path)
             if graph is None:
-                print(f"  SKIP {graph_slug} — graph not found")
+                print(f"  SKIP {slug} — graph not found")
                 continue
 
             top_token, top_prob = get_model_prediction(graph)
