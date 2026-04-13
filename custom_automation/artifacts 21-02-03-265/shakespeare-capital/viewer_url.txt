@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/shakespeare-capital.json
-# Descriptions: 49, Groups: 15, Pinned: 26

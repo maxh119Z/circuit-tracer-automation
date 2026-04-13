@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/penicillin-country.json
-# Descriptions: 50, Groups: 14, Pinned: 31

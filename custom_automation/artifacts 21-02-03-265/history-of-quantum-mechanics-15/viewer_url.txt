@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/history-of-quantum-mechanics-15.json
-# Descriptions: 64, Groups: 18, Pinned: 51

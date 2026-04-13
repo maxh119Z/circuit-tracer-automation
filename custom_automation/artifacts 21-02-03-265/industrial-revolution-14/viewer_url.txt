@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/industrial-revolution-14.json
-# Descriptions: 82, Groups: 20, Pinned: 51

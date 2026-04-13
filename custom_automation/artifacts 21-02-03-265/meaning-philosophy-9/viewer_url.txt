@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/meaning-philosophy-9.json
-# Descriptions: 39, Groups: 11, Pinned: 38

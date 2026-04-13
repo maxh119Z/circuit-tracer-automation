@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/anthropic-small-opposite-fr.json
-# Descriptions: 43, Groups: 10, Pinned: 13

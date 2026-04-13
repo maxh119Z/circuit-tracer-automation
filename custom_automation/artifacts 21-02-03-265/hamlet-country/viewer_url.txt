@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/hamlet-country.json
-# Descriptions: 62, Groups: 12, Pinned: 30

@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/bebop-15.json
-# Descriptions: 86, Groups: 23, Pinned: 40

@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/anthropic-oakland-capital-fact.json
-# Descriptions: 52, Groups: 15, Pinned: 45

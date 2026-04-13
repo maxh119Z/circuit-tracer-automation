@@ -178,16 +178,11 @@ cython_debug/
 test_graphs/
 
 #CUSTOM CHANGES START: custom-automation
-custom_automation/artifacts/*
-!custom_automation/artifacts/.gitkeep
-custom_automation/artifacts
-custom_automation/artifacts_*/
-custom_automation/artifacts*
-custom_atuomation/artifacts_capital_reason/
+custom_automation/artifacts*/
+custom_automation/artifacts_capital_reason/
 myenv/
-test_graphs_200_4-12/
+test_graphs*/
 custom_automation/artifacts/
 custom_automation/analysis/results/*
 custom_automation/analysis/results/
 # CUSTOM EDITS END: custom-automation
-test_*

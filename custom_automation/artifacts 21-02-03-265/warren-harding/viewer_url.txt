@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/warren-harding.json
-# Descriptions: 61, Groups: 10, Pinned: 20

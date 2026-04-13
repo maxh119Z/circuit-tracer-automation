@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/albuquerque-capital.json
-# Descriptions: 45, Groups: 11, Pinned: 35

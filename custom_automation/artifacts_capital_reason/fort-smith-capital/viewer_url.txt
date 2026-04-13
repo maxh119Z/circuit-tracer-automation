@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/fort-smith-capital.json
-# Descriptions: 61, Groups: 17, Pinned: 41

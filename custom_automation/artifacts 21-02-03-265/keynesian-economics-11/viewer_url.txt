@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/keynesian-economics-11.json
-# Descriptions: 38, Groups: 20, Pinned: 42

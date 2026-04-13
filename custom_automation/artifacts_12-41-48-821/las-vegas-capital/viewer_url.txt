@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/las-vegas-capital.json
-# Descriptions: 43, Groups: 18, Pinned: 39

@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/rio-language.json
-# Descriptions: 30, Groups: 14, Pinned: 26

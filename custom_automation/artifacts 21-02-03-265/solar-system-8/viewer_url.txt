@@ -1,3 +1,0 @@
-# Pipeline output saved to graph JSON — just refresh the viewer.
-# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/solar-system-8.json
-# Descriptions: 51, Groups: 12, Pinned: 38
