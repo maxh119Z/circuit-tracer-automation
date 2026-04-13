@@ -8,14 +8,21 @@ For each prompt in ground_truth.csv, loads its processed graph JSON and checks:
      either in individual node clerp descriptions or in supernode group names.
   4. How strong those intermediate-hop features are (mean influence score).
 
+MQuAKE multi-hop validation (when using ground_truth_mquake.csv):
+  For each full multi-hop question, the attribution graph is used to predict
+  the longest sub-chain the model would get right (predicted_max_hop).  This
+  is compared against the actual deepest sub-question answered correctly
+  (ground_truth_max_hop), computed from the sub-question graphs.
+
 Outputs:
-  - artifacts/hop_analysis.csv   — one row per (slug, variant)
-  - artifacts/hop_analysis.md    — human-readable summary report
+  - artifacts/hop_analysis.csv          — one row per (slug, variant)
+  - artifacts/hop_analysis.md           — human-readable summary report
+  - artifacts/mquake_hop_accuracy.csv   — one row per MQuAKE case (if applicable)
 
 Usage:
     python analyze_hops.py
     python analyze_hops.py --variants a0,a3
-    python analyze_hops.py --ground_truth ../ground_truth.csv --variants a0
+    python analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a0
 """
 
 from __future__ import annotations
@@ -219,6 +226,131 @@ def answer_matches(predicted: str, correct: str) -> bool:
 
 
 # ---------------------------------------------------------------------------
+# Multi-hop helpers (MQuAKE)
+# ---------------------------------------------------------------------------
+
+_MQUAKE_FULL_RE = re.compile(r"^mquake-(\d+)$")
+_MQUAKE_HOP_RE = re.compile(r"^mquake-(\d+)-h(\d+)$")
+
+
+def parse_mquake_slug(slug: str) -> tuple[str, int | None] | None:
+    """
+    Return (case_id, hop_k) for MQuAKE slugs, or None if not a MQuAKE slug.
+    hop_k is None for full-question slugs (mquake-42),
+    an integer for sub-question slugs (mquake-42-h2 → hop_k=2).
+    """
+    m = _MQUAKE_FULL_RE.match(slug)
+    if m:
+        return (m.group(1), None)
+    m = _MQUAKE_HOP_RE.match(slug)
+    if m:
+        return (m.group(1), int(m.group(2)))
+    return None
+
+
+def detect_all_hops(graph: dict, intermediate_concept_str: str) -> dict:
+    """
+    For multi-hop questions whose intermediate_concept is ' | '-separated,
+    check each intermediate concept individually in the graph.
+
+    predicted_max_hop: highest *consecutive* hop (from hop 1) where the
+    concept is detected.  Stops at the first gap.
+
+    Example:
+      concepts = ["USA", "Donald Trump"]   (for a 3-hop question)
+      If "USA" found but "Donald Trump" not → predicted_max_hop = 1
+      If both found → predicted_max_hop = 2
+    """
+    concepts = [c.strip() for c in intermediate_concept_str.split("|")
+                if c.strip() and c.strip().upper() != "N/A"]
+
+    if not concepts:
+        return {
+            "num_intermediate_hops": 0,
+            "predicted_max_hop": None,
+            "hops_found_in_graph": "",
+        }
+
+    found_hops: list[int] = []
+    predicted_max_hop = 0
+
+    for k, concept in enumerate(concepts, start=1):
+        result = detect_intermediate_hop(graph, concept)
+        if result["hop_found"]:
+            found_hops.append(k)
+            predicted_max_hop = k   # only advances if consecutive from start
+        else:
+            break                   # stop at first gap
+
+    return {
+        "num_intermediate_hops": len(concepts),
+        "predicted_max_hop": predicted_max_hop,
+        "hops_found_in_graph": ",".join(str(h) for h in found_hops),
+    }
+
+
+def compute_mquake_validation(results: list[dict]) -> list[dict]:
+    """
+    Group MQuAKE results by case_id and compute hop-prediction accuracy.
+
+    For each case:
+      predicted_max_hop   — from the full-question attribution graph
+      ground_truth_max_hop — highest hop k where the model correctly answers
+                             sub-question mquake-{id}-hk  (None if not run)
+      hop_prediction_correct — True/False/None
+    """
+    from collections import defaultdict
+
+    by_case: dict[str, dict] = defaultdict(dict)
+
+    for r in results:
+        parsed = parse_mquake_slug(r["slug"])
+        if parsed is None:
+            continue
+        case_id, hop_k = parsed
+        if hop_k is None:
+            by_case[case_id]["full"] = r
+        else:
+            by_case[case_id].setdefault("hops", {})[hop_k] = r
+
+    case_results: list[dict] = []
+    for case_id, case_data in sorted(by_case.items(), key=lambda x: int(x[0])):
+        full = case_data.get("full")
+        if full is None:
+            continue
+        hops: dict[int, dict] = case_data.get("hops", {})
+
+        ground_truth_max_hop: int | None = None
+        if hops:
+            correct_hops = [k for k, r in hops.items() if r.get("model_correct")]
+            ground_truth_max_hop = max(correct_hops) if correct_hops else 0
+
+        predicted_max_hop = full.get("predicted_max_hop")
+        hop_prediction_correct: bool | None = None
+        if predicted_max_hop is not None and ground_truth_max_hop is not None:
+            hop_prediction_correct = (predicted_max_hop == ground_truth_max_hop)
+
+        case_results.append({
+            "case_id": case_id,
+            "full_slug": full["slug"],
+            "num_hops": full.get("num_hops", ""),
+            "full_model_correct": full.get("model_correct", False),
+            "correct_answer": full.get("correct_answer", ""),
+            "predicted": full.get("predicted", ""),
+            "predicted_max_hop": predicted_max_hop,
+            "hops_found_in_graph": full.get("hops_found_in_graph", ""),
+            "ground_truth_max_hop": ground_truth_max_hop,
+            "hop_prediction_correct": hop_prediction_correct,
+            "subhop_results": {
+                k: {"correct": r.get("model_correct"), "predicted": r.get("predicted")}
+                for k, r in hops.items()
+            },
+        })
+
+    return case_results
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -237,7 +369,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         hop_type = row.get("hop_type", "").strip()
         notes = row.get("notes", "").strip()
 
-        prompt_text = row.get("prompt", "").strip()
+        # Extra fields from ground_truth (e.g. num_hops from MQuAKE CSV)
+        num_hops_str = row.get("num_hops", "").strip()
 
         for variant in variants:
             graph_slug = f"{slug}-{DESCRIPTION_VARIANT}-{variant}"
@@ -268,11 +401,19 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             hop_metrics = detect_intermediate_hop(graph, intermediate_concept)
             all_supernodes = [name for name, _ in parse_supernodes(graph)]
 
+            # Multi-hop fields: populated for MQuAKE full questions (intermediate_concept has '|')
+            # and for any row whose intermediate_concept lists multiple pipe-separated concepts.
+            is_multihop_row = "|" in intermediate_concept
+            if is_multihop_row and parse_mquake_slug(slug) is not None:
+                mh = detect_all_hops(graph, intermediate_concept)
+            else:
+                mh = {"num_intermediate_hops": 0, "predicted_max_hop": None, "hops_found_in_graph": ""}
+
             results.append({
                 "slug": slug,
                 "variant": variant,
                 "hop_type": hop_type,
-                "prompt_text": prompt_text,
+                "num_hops": num_hops_str,
                 "intermediate_concept": intermediate_concept,
                 "correct_answer": correct_answer,
                 "predicted": predicted,
@@ -283,6 +424,7 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 "notes": notes,
                 "all_supernodes": all_supernodes,
                 **hop_metrics,
+                **mh,
             })
 
     if not results:
@@ -293,13 +435,37 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     # Write CSV
     # ------------------------------------------------------------------
     csv_path = ARTIFACTS_DIR / "hop_analysis.csv"
-    _exclude = {"prompt_text", "all_supernodes"}
-    fieldnames = [k for k in results[0].keys() if k not in _exclude]
+    # Collect all fieldnames across all result rows (MQuAKE rows add extra fields)
+    all_fieldnames: list[str] = []
+    seen: set[str] = set()
+    for r in results:
+        for k in r:
+            if k not in seen:
+                all_fieldnames.append(k)
+                seen.add(k)
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
+        writer = csv.DictWriter(f, fieldnames=all_fieldnames, extrasaction="ignore")
         writer.writeheader()
-        writer.writerows(results)
+        for r in results:
+            writer.writerow({k: r.get(k, "") for k in all_fieldnames})
     print(f"CSV -> {csv_path}")
+
+    # ------------------------------------------------------------------
+    # MQuAKE multi-hop validation (only when MQuAKE slugs are present)
+    # ------------------------------------------------------------------
+    mquake_cases = compute_mquake_validation(results)
+    if mquake_cases:
+        mq_csv_path = ARTIFACTS_DIR / "mquake_hop_accuracy.csv"
+        mq_fields = [
+            "case_id", "full_slug", "num_hops", "correct_answer", "predicted",
+            "full_model_correct", "hops_found_in_graph",
+            "predicted_max_hop", "ground_truth_max_hop", "hop_prediction_correct",
+        ]
+        with open(mq_csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=mq_fields, extrasaction="ignore")
+            writer.writeheader()
+            writer.writerows(mquake_cases)
+        print(f"MQuAKE CSV -> {mq_csv_path}")
 
     # ------------------------------------------------------------------
     # Write Markdown report
@@ -391,6 +557,43 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 f.write(f"- Hop in supernode groups: {r['hop_groups']}\n")
                 f.write(f"- Mean influence of hop features: {r['hop_mean_influence']:.4f}\n\n")
 
+        # ---- MQuAKE multi-hop validation ----
+        if mquake_cases:
+            f.write("## MQuAKE Multi-Hop Validation\n\n")
+            f.write(
+                "For each case: the attribution graph of the **full question** is used to "
+                "predict the longest hop the model can correctly resolve "
+                "(`predicted_max_hop`). This is compared against the actual deepest "
+                "sub-question the model answers correctly (`ground_truth_max_hop`).\n\n"
+            )
+
+            n_mq = len(mquake_cases)
+            with_gt = [c for c in mquake_cases if c["ground_truth_max_hop"] is not None]
+            n_correct_pred = sum(1 for c in with_gt if c["hop_prediction_correct"])
+            n_full_correct = sum(1 for c in mquake_cases if c["full_model_correct"])
+
+            f.write(f"| Metric | Value |\n|--------|-------|\n")
+            f.write(f"| Cases analysed | {n_mq} |\n")
+            f.write(f"| Full question correct (top-1) | {n_full_correct} / {n_mq} ({n_full_correct/n_mq:.1%}) |\n")
+            if with_gt:
+                f.write(f"| Cases with sub-question graphs | {len(with_gt)} |\n")
+                f.write(f"| Hop prediction accuracy | {n_correct_pred} / {len(with_gt)} ({n_correct_pred/len(with_gt):.1%}) |\n")
+            f.write("\n")
+
+            f.write("| Case | Hops | Full correct? | Predicted max hop | GT max hop | Prediction correct? | Hops in graph |\n")
+            f.write("|------|------|---------------|-------------------|------------|---------------------|---------------|\n")
+            for c in mquake_cases:
+                full_tick = "✓" if c["full_model_correct"] else "✗"
+                pred_hop = c["predicted_max_hop"] if c["predicted_max_hop"] is not None else "—"
+                gt_hop = c["ground_truth_max_hop"] if c["ground_truth_max_hop"] is not None else "—"
+                pred_tick = ("✓" if c["hop_prediction_correct"] else "✗") if c["hop_prediction_correct"] is not None else "—"
+                found_str = c["hops_found_in_graph"] or "—"
+                f.write(
+                    f"| {c['full_slug']} | {c['num_hops']} | {full_tick} "
+                    f"| {pred_hop} | {gt_hop} | {pred_tick} | {found_str} |\n"
+                )
+            f.write("\n")
+
     print(f"Report -> {md_path}")
 
     # ------------------------------------------------------------------
@@ -427,6 +630,11 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     print(f"  Hop found (any):       {n_hop_found}/{n} ({n_hop_found/n:.1%})")
     print(f"  Correct + hop:         {correct_with_hop}")
     print(f"  Wrong + hop:           {wrong_with_hop}  <-- most interesting")
+    if mquake_cases:
+        with_gt = [c for c in mquake_cases if c["ground_truth_max_hop"] is not None]
+        n_correct_pred = sum(1 for c in with_gt if c["hop_prediction_correct"])
+        print(f"  --- MQuAKE ({len(mquake_cases)} cases) ---")
+        print(f"  Hop prediction acc:    {n_correct_pred}/{len(with_gt)} ({n_correct_pred/len(with_gt):.1%})" if with_gt else "  Sub-question graphs not yet run")
     print("=" * 55)
 
 
