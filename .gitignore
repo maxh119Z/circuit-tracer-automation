@@ -184,4 +184,7 @@ custom_automation/artifacts
 myenv/
 test_graphs_200_4-12/
 custom_automation/artifacts/
+custom_automation/analysis/results/*
+custom_automation/analysis/results/
 # CUSTOM EDITS END: custom-automation
+test_*

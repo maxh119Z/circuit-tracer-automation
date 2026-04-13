@@ -1,0 +1,2023 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.35845908522605896,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.32502979040145874,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_11375_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.30700814723968506,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "0_1847_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3961840867996216,
+    "top_activations": [
+      {
+        "trigger": " dehydration",
+        "score": 14.38,
+        "context": " essential to any animal life. It regulates the water content of the body and avoids dehydration.\u23ceThe proper consumption of salt is beneficial to our immune and digestive systems"
+      },
+      {
+        "trigger": " nationalism",
+        "score": 15.19,
+        "context": " value of local customs and traditions, to the movements that would redraw the map of Europe and lead to calls for \"self-determination\" of nationalities, nationalism was"
+      },
+      {
+        "trigger": " pharmaceuticals",
+        "score": 14.88,
+        "context": " Unused prescription medications should not be flushed or washed down the drain because the residue from pharmaceuticals adversely affects fish and other aquatic species, according to a Penn State Extension water"
+      },
+      {
+        "trigger": " minerals",
+        "score": 14.62,
+        "context": "<bos>25 good health natural foods that provide all of your vitamins and minerals\u23ceHere are 25 basic good health natural foods to prioritize because they are the"
+      },
+      {
+        "trigger": " subsurface",
+        "score": 14.12,
+        "context": ".\u23ceMicrohole technology holds great promise for economically recovering a sizeable portion of the estimated remaining, bypassed shallow (less than 5,000 ft subsurface"
+      }
+    ],
+    "promotes": [
+      "\"];\r",
+      " '\\\\;'",
+      "')));",
+      "')):",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " Monfieur",
+      " purpo\u017fe",
+      " \u017ftate",
+      " \u017fmall",
+      " \u017feveral"
+    ]
+  },
+  {
+    "id": "0_13004_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.3504309058189392,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "0_108_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3553139269351959,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 17.25,
+        "context": "-window lending is the primary tool used to accommodate seasonal swings in the demand for currency and credit.\u23ce1920 The Bank begins construction of a building"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.75,
+        "context": ". Maybe your language doesn't support locale-specific date and time routines or currency representation, and you don't have the time to read the hundreds of"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.0,
+        "context": " rates refer to the prices of buying, selling, or converting money. Unless one currency is pegged to another, exchange rates are constantly in flux. Since these rates"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.75,
+        "context": " but it\u2019s not accurate. The Dollar fluctuates just like any other major currency, with things like inflation, deflation, economic standing versus other major currencies,"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.75,
+        "context": " and all socioeconomic levels \u2014 it does not discriminate. \"Personal information is the new currency,\" said U.S. Federal Trade Commissions (FTC) Chairman Deborah Platt"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      " '",
+      " ",
+      "ing",
+      " /"
+    ],
+    "demotes": [
+      " doubtnut",
+      " photolibrary",
+      "<bos>",
+      "\u092a\u092f\u093e",
+      " betweenstory"
+    ]
+  },
+  {
+    "id": "0_9026_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3729552924633026,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "1_10095_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3887261748313904,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 16.0,
+        "context": " the federal government, specifically the Treasury Department, the Constitutional power to create and issue currency - money - without going through the privately owned Federal Reserve Bank. President Kennedy"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.5,
+        "context": " is worth. Thus, monetary SUPPLY inflation (the increase in the amount of circulating currency) causes the devaluation of the monetary unit in the marketplace once the markets readjust"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.62,
+        "context": " environmentalists who believe that vigorous efforts to protect native rain forest should remain a top priority. But the notion has gained currency in mainstream organizations like the Smithsonian Institution and"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.25,
+        "context": "<bos>Ancient Times \u2013 Salt is the currency. That is cool because you need salt to live.\u23ce300 BC \u2013 Egypt used grain as currency.\u23ce"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.0,
+        "context": " IMF typically lends countries funds denominated in SDRs\u23ceWhile they are not a tangible currency, some economists argue that SDRs could be used as a less volatile alternative"
+      }
+    ],
+    "promotes": [
+      "\u017felf",
+      " cdti",
+      " \u043f\u0440\u0435\u043f\u0440\u0430\u0442\u043a\u0438",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " et",
+      "\u23ce",
+      " (",
+      " [",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "0_12299_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3520938456058502,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 14.88,
+        "context": " South Carolina silver. While silver is a precious metal that can quickly be converted to currency, it has a much more significant cultural value. From utilitarian flatware to"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.12,
+        "context": ", and I found myself asking, only seven months before the launch of the single currency: 'What is the euro area all about?'\"\u23ceToday, most"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.62,
+        "context": " of Eastern Europe. It was produced for West European countries who purchased it for hard currency that the Communist regimes desperately needed.\u23ceThe burning of large quantities of lign"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.25,
+        "context": " German crisis of 1931: evidence and tradition\u23ceAbstractThe German currency was controlled and German banks closed in July 1931. Does"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.5,
+        "context": " when formatting a currency type, the cultural setting specifies the characters to use for the currency symbol, group separator, and decimal separator.\u23ceThe .NET Framework allows"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " Majefty",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      "1",
+      "2",
+      "<b>",
+      "3"
+    ]
+  },
+  {
+    "id": "0_13089_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3674374520778656,
+    "top_activations": [
+      {
+        "trigger": " coin",
+        "score": 17.25,
+        "context": ".\u23ceHow many hands have touched a coin in your pocket or your purse? What eras and lands have the coin traversed on its journey into our possession? As"
+      },
+      {
+        "trigger": " coin",
+        "score": 17.25,
+        "context": " entity within the same 30-day release period.\u23ceEncapsulated coin: A coin graded and authenticated by a professional coin service, then sealed in"
+      },
+      {
+        "trigger": " coin",
+        "score": 17.25,
+        "context": " Our backyard off West Wesley Road in Buckhead yielded the occasional buried metal toy or coin, nothing of any historic significance. Our grandparents\u2019 backyard on Brighton Road in"
+      },
+      {
+        "trigger": " coin",
+        "score": 17.25,
+        "context": " .900 the Morgan Dollar contains over 24 grams of silver per coin.\u23ceThe coin was authorized by the Bland-Allison act of 1"
+      },
+      {
+        "trigger": " coin",
+        "score": 17.25,
+        "context": " her hand.\u23ce\u201cWe weren't amazed at all until we cleaned the coin and looked at it,\u201d says Rami Arav, the University of Nebraska at"
+      }
+    ],
+    "promotes": [
+      " I",
+      " A",
+      "<eos>",
+      "\u23ce",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      "AnchorStyles",
+      "enderror",
+      " protoimpl",
+      "ContentAsync",
+      "tvguidetime"
+    ]
+  },
+  {
+    "id": "0_14860_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3272329270839691,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 18.38,
+        "context": " after the war ended, as a result of Germany trying to pay reparations in foreign currency. This is what caused its exchange rate to plunge, raising import prices and"
+      },
+      {
+        "trigger": " currency",
+        "score": 18.38,
+        "context": "-window lending is the primary tool used to accommodate seasonal swings in the demand for currency and credit.\u23ce1920 The Bank begins construction of a building"
+      },
+      {
+        "trigger": " currency",
+        "score": 18.38,
+        "context": " B's currency should appreciate roughly 5% compared to country A's currency.\u23ceThe rational for the IFE is that a country with a higher"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.75,
+        "context": " and all socioeconomic levels \u2014 it does not discriminate. \"Personal information is the new currency,\" said U.S. Federal Trade Commissions (FTC) Chairman Deborah Platt"
+      },
+      {
+        "trigger": " currency",
+        "score": 18.12,
+        "context": "79 that Kiribati got independence and started minting its own coins. The currency is pegged with the Australian dollar in the ratio of 1:1."
+      }
+    ],
+    "promotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      " \u0f0b\u0f0b",
+      " my\u017felf",
+      " Monfieur",
+      " The\u017fe"
+    ],
+    "demotes": [
+      " or",
+      " and",
+      " in",
+      " (",
+      " "
+    ]
+  },
+  {
+    "id": "0_13278_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3742908537387848,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 14.06,
+        "context": " gold does not increase or decrease in its inherent value, only in value versus other currency measures. Back in the day, twenty U.S. Dollars would buy"
+      },
+      {
+        "trigger": " currency",
+        "score": 13.69,
+        "context": ". The ultimate question is who should decide which asset should be used to back whose currency.\u23ceThe real alternative is between central banking on the one hand and a"
+      },
+      {
+        "trigger": " currency",
+        "score": 13.44,
+        "context": " sincerity. No uniform but its determination, no arsenal, except its faith, no currency but its conscience. It was an army that would move but not maul"
+      },
+      {
+        "trigger": " currency",
+        "score": 13.31,
+        "context": " site and most importantly, employ North Korean workers and pay them with the precious foreign currency.\u23ceUntil this most recent flare-up of tensions between the Koreas"
+      },
+      {
+        "trigger": " currency",
+        "score": 13.44,
+        "context": "apocalypse\u201d investment. That means that if all the world\u2019s systems of currency had been to fail, gold would still be a valid factor to trade."
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      "<bos>",
+      " it\u017felf",
+      " becau\u017fe",
+      " Jefus"
+    ],
+    "demotes": [
+      "CloseOperation",
+      " \u0648\u064a\u0643\u064a\u0645\u064a\u062f\u064a\u0627",
+      "__\":",
+      " Wikispecies",
+      "amation"
+    ]
+  },
+  {
+    "id": "0_12167_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39720889925956726,
+    "top_activations": [
+      {
+        "trigger": " usually",
+        "score": 16.88,
+        "context": " fruit is ripe. When ripe, it can be eaten fresh, but it is usually cooked, boiled, or canned. There is a hypoglycine toxin in"
+      },
+      {
+        "trigger": " usually",
+        "score": 16.75,
+        "context": "ardrum, it will usually grow back, and any hearing loss you suffer is usually temporary. But the healing process is slow (it takes about two months)"
+      },
+      {
+        "trigger": " usually",
+        "score": 16.75,
+        "context": "opterus is an easily obtainable species that comes from the Pacific Ocean. It is usually brownish or yellowish, with large reddish eyes and a band that runs vertically along"
+      },
+      {
+        "trigger": " usually",
+        "score": 16.5,
+        "context": " of small holdings. Management and expenditures are minimal. Care of the family buffalo is usually entrusted to children, old people, or women not engaged in other farm duties"
+      },
+      {
+        "trigger": " usually",
+        "score": 16.62,
+        "context": " and a few birds that get their toxins from their diet, but the source is usually invertebrates such as insects.\u23ceThis Asian snake is the first vertebrate known to"
+      }
+    ],
+    "promotes": [
+      "CloseOperation",
+      "\ue315",
+      "LayoutStyle",
+      " }:",
+      " EconPapers"
+    ],
+    "demotes": [
+      " schia",
+      " Plutarch",
+      " propter",
+      " anh\u00e4nger",
+      " passione"
+    ]
+  },
+  {
+    "id": "1_15368_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3830738067626953,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 16.5,
+        "context": " in \"The Sims\" computer games.\u23ceAnother good \"s\" word for currency is spondulicks. That slang term originated in the mid-1"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.25,
+        "context": ".\u23ce- An example of retire is Germany stopping the use of the mark as currency.\u23ce- An example of retire is someone going to bed at ten o"
+      },
+      {
+        "trigger": " currency",
+        "score": 17.0,
+        "context": " from 1897. In 1930 followed a new currency called the Sol de Oro (Golden Sun). Due to high inflation the currency"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.25,
+        "context": " and said they were going to create a digital currency which would succeed. A digital currency that overcomes the many limitations and fatal flaws of all its predecessors. I wonder"
+      },
+      {
+        "trigger": " currency",
+        "score": 16.75,
+        "context": "-window lending is the primary tool used to accommodate seasonal swings in the demand for currency and credit.\u23ce1920 The Bank begins construction of a building"
+      }
+    ],
+    "promotes": [
+      " '\\\\;'",
+      "IsContent",
+      " <>\",",
+      " <=\",",
+      "<bos>"
+    ],
+    "demotes": [
+      "\u041a\u043b\u0438\u043c\u0430\u0442",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "Hauptartikel",
+      " fallu"
+    ]
+  },
+  {
+    "id": "0_10470_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.34164735674858093,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 14.0,
+        "context": " for synthesizing the molecule adenosine tri-phosphate (ATP), the cells\u2019 energy currency. ATP is depicted in Fig. 1 and used to power and sustain"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.12,
+        "context": " the Fund for gold. The Fund tends, whenever feasible, to change its local currency resources into gold in order to be able to buy with gold scarce currencies of"
+      },
+      {
+        "trigger": " currency",
+        "score": 14.62,
+        "context": "21 inches) occurred 125 years ago today.\u23ceUnited States currency went on Gold Standard 113 years ago today.\u23ceUS President"
+      },
+      {
+        "trigger": " currency",
+        "score": 15.25,
+        "context": "-window lending is the primary tool used to accommodate seasonal swings in the demand for currency and credit.\u23ce1920 The Bank begins construction of a building"
+      },
+      {
+        "trigger": " oh",
+        "score": 15.0,
+        "context": "<bos>Allium family stinks so good\u23ceBulbous, smelly, yet oh so good is one description of the Allium genus, or onions. These popular rhiz"
+      }
+    ],
+    "promotes": [
+      " indeed",
+      " the",
+      " also",
+      " most",
+      " only"
+    ],
+    "demotes": [
+      "ISupport",
+      "authorised",
+      "Organiser",
+      " hou\u017fe",
+      " modernisation"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3599921762943268,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "2_2151_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3919638991355896,
+    "top_activations": [
+      {
+        "trigger": " currency",
+        "score": 20.75,
+        "context": " by printing paper notes. A person exchanges one ounce of gold for its value in currency. She keeps the currency for one year, and then exchanges it all for"
+      },
+      {
+        "trigger": " currency",
+        "score": 21.0,
+        "context": " claimed that big data should be considered as a new class of economic asset, like currency or gold. People who are masters at harnessing the big data of the"
+      },
+      {
+        "trigger": " currency",
+        "score": 21.38,
+        "context": " known by its primary unit, the yuan. Renminbi is a decimalized currency system with subunits in tenths called jiao and subunits in hundredths called fen"
+      },
+      {
+        "trigger": " currency",
+        "score": 20.62,
+        "context": " will very likely cause hyperinflation. Hyperinflation will wipe out the value of a currency, and force a country to buy things in gold or with whatever foreign currency"
+      },
+      {
+        "trigger": " currency",
+        "score": 20.75,
+        "context": " new currency called the Sol de Oro (Golden Sun). Due to high inflation the currency of the era of Republican Peru was abandoned in 1985 and"
+      }
+    ],
+    "promotes": [
+      "oxo",
+      "RetentionPolicy",
+      " l\u00e9gales",
+      " consultato",
+      "__*/"
+    ],
+    "demotes": [
+      "<bos>",
+      " currency",
+      "currency",
+      "Currency",
+      " Currency"
+    ]
+  },
+  {
+    "id": "13_3610_10",
+    "layer": 13,
+    "ctx_idx": 10,
+    "influence_score": 0.34873342514038086,
+    "top_activations": [
+      {
+        "trigger": " Safety",
+        "score": 18.38,
+        "context": "<bos>Drinking Water Quality and Safety\u23ceWhen you turn on the tap for a glass of water, do you ever wonder about the quality or safety of that water?"
+      },
+      {
+        "trigger": " effects",
+        "score": 16.75,
+        "context": "<bos>Morphine short term effects:\u23ce- Pain relief\u23ce- Cough suppression\u23ce- Anxiety relief\u23ce- Unusual unpleasant feelings (dysphoria) or unusual pleasant feelings"
+      },
+      {
+        "trigger": ":",
+        "score": 19.25,
+        "context": "<bos>Enemy Aliens, Prisoners of War: Canada's First World War Internment Operations, 1914-1920\u23ceInternment in"
+      },
+      {
+        "trigger": "?",
+        "score": 16.5,
+        "context": "<bos>How energy efficient are new Canadian houses? That's not as easy a question to answer as you might think and something called EnerGuide for New Houses is"
+      },
+      {
+        "trigger": ")",
+        "score": 17.25,
+        "context": "<bos>National Front (East Germany)\u23ceThe National Front of the German Democratic Republic (German: Nationale Front der Deutschen Demokratischen Republik, NF) until 1"
+      }
+    ],
+    "promotes": [
+      " or",
+      ",",
+      " I",
+      " (",
+      " "
+    ],
+    "demotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "InjectAttribute",
+      " \u0f0b\u0f0b",
+      "UserScript",
+      " \u017find"
+    ]
+  },
+  {
+    "id": "18_10914_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.37694093585014343,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 100.5,
+        "context": " reason to match George Washington with the quarter, for example, or Thomas Jefferson with the nickel. Nor was John F. Kennedy closely identified with the half dollar,"
+      },
+      {
+        "trigger": " the",
+        "score": 82.0,
+        "context": " became an honorary member, and an original Gilbert Stuart painting of George Washington (the same picture you see on the dollar bill). These are just to name a few"
+      },
+      {
+        "trigger": " on",
+        "score": 107.5,
+        "context": "19th-century activist Susan B. Anthony became the first woman to appear on a circulating United States coin. Anthony is remembered for her work in fighting for"
+      },
+      {
+        "trigger": "1",
+        "score": 98.0,
+        "context": "uration Day, download the free lesson plans and resource materials related to the Presidential $1 Coin Program. It's a great way for students to learn more about"
+      },
+      {
+        "trigger": " of",
+        "score": 73.5,
+        "context": ", the Bland-Allison Act\u2014which provided for a return to the minting of silver coins\u2014becomes the law of the land.\u23ceThe strife and controversy"
+      }
+    ],
+    "promotes": [
+      "currency",
+      " coin",
+      " Currency",
+      " dollar",
+      " currency"
+    ],
+    "demotes": [
+      "\\{\\\\",
+      "EDEFAULT",
+      "PerformLayout",
+      "upat",
+      "anueva"
+    ]
+  },
+  {
+    "id": "17_8876_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.30980584025382996,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 29.5,
+        "context": ".\u23ceThere was one weakness to lightsabers in the droids' armor, discovered by Anakin Skywalker. A very precise overhead slash with a lightsaber targeting the"
+      },
+      {
+        "trigger": " -",
+        "score": 31.25,
+        "context": "\u23ceThe International Space Station will now have to wait for delivery of first science facility - the US laboratory 'Destiny' - after the launch of space shuttle Atlantis was"
+      },
+      {
+        "trigger": ",",
+        "score": 32.5,
+        "context": " the solution to global warming?\u23ceClimate models appear to be missing an atmospheric ingredient, a new study suggests.\u23ceDecember's issue of the International Journal of"
+      },
+      {
+        "trigger": " ,",
+        "score": 33.75,
+        "context": " , essentially , since we go short of surviving texts . The main source of evidence , beside the Palermo Stone , is the funerary equipments found in Abydos'"
+      },
+      {
+        "trigger": ",",
+        "score": 29.25,
+        "context": " quiet respect... This fact-filled book explores the history and significance of one holiday, observance, festival, or celebration with engaging photos, simple text, and a"
+      }
+    ],
+    "promotes": [
+      " this",
+      " are",
+      " a",
+      "the",
+      " the"
+    ],
+    "demotes": [
+      "Personensuche",
+      "WebVitals",
+      "errHandler",
+      " pinulongan",
+      "MLLoader"
+    ]
+  },
+  {
+    "id": "18_10102_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.3951539397239685,
+    "top_activations": [
+      {
+        "trigger": " exchange",
+        "score": 87.5,
+        "context": " per cent against the dollar in July 2005 and moved to an exchange-rate system that uses a basket of currencies.\u23ceFrom mid-2"
+      },
+      {
+        "trigger": " of",
+        "score": 97.5,
+        "context": " of business abroad, you might want to use the futures markets to hedge the fluctuation of the currencies of the countries with which you trade.\u23ceIf the only people"
+      },
+      {
+        "trigger": "/",
+        "score": 86.5,
+        "context": " retail chain in the US. Spot price of INR/US exchange rate is Rs 45/dollar.\u23ceAfter six months, the exporter will receive $"
+      },
+      {
+        "trigger": " exchange",
+        "score": 84.5,
+        "context": "Because of lower prices, converting a poor country's GDP into dollars at market exchange rates will significantly understate the true size of its economy as well as its"
+      },
+      {
+        "trigger": " of",
+        "score": 95.5,
+        "context": " per share. What is the value in $U.S. of her stock if: 0.90 = $1 Value of 100"
+      }
+    ],
+    "promotes": [
+      "Exchange",
+      " EXCHANGE",
+      "exchange",
+      " Exchange",
+      " exchange"
+    ],
+    "demotes": [
+      " beginnetje",
+      "\u041f\u043e\u043f\u0438\u0441",
+      "mybatisplus",
+      " atenta",
+      "GeneratedMessage"
+    ]
+  },
+  {
+    "id": "18_3536_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.34702205657958984,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " and post it, but the best way I know of to improve your typing skill is good old practice. That means that nearly everything you do on your computer can"
+      },
+      {
+        "trigger": " is",
+        "score": 42.25,
+        "context": ". But here\u2019s the problem: The Fed cannot protect the dollar. The Fed\u2019s best\u2014and only\u2014weapon for fighting financial collapse is printing money"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " over the life of the CFL, one report found.\u23ceOne of the simplest ways to upgrade your home in a green way is to purchase an energy-saving"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " electronic works using watermarks.\u23ceWatermarking your photographs can be done a number of ways. The most popular route is to create and add a watermark through a"
+      },
+      {
+        "trigger": " is",
+        "score": 36.5,
+        "context": " or greater are considered obese.\u23ceOne of the most obvious ways to lose weight is dieting. And while it can seem like a daunting task, small changes in"
+      }
+    ],
+    "promotes": [
+      "tiga",
+      "\u067e\u06cc\u0648\u0646\u062f",
+      " a",
+      "ImageContext",
+      " the"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " <<<<<<<<<<<<<<",
+      "\u043d\u0456\u0446\u0438\u043f\u0430"
+    ]
+  },
+  {
+    "id": "17_13983_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.3842313587665558,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 31.0,
+        "context": " in Siam. It also led to Korea developing East Asia's most famous warship: the legendary turtle ship, which is described for the first time in full technical"
+      },
+      {
+        "trigger": " designed",
+        "score": 33.5,
+        "context": " to Lockheed in 1927 as a chief engineer. At Lockheed he designed the Vega, a one-engine plane with an all-metal molded mono"
+      },
+      {
+        "trigger": " of",
+        "score": 25.0,
+        "context": " from the term TRIode for Alternating Current.\u23ceIt is effectively a development of the SCR or thyristor, but unlike the thyristor which is only able"
+      },
+      {
+        "trigger": " of",
+        "score": 32.0,
+        "context": " at the time.\u23ceOne of the more amusing cases of mistaken identity was that of the \"Madagascar Cat\" which won the Foreign class at Crystal Palace (around"
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "\u23ceBlood flows between different chambers through valves that connect the chambers. One of these is the mitral valve. The mitral valve opens so blood can flow from the left"
+      }
+    ],
+    "promotes": [
+      "kloped",
+      "CloseOperation",
+      " the",
+      "+#+#",
+      " resourceCulture"
+    ],
+    "demotes": [
+      "dymyr",
+      "Hochspringen",
+      "XmlAccessType",
+      "iastes",
+      " nonatomic"
+    ]
+  },
+  {
+    "id": "18_15734_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.3702498972415924,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " (d) family considerations.\u23ceWhen is Transfer Available?\u23ceThe transfer option is available to students who have begun their undergraduate coursework at a university, whether it"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": ", if left untreated the malady can become permanent.\u23ce- In men this ailment is known as androgenetic alopecia and teenager are very vulnerable to it."
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " restored.\u23ceThe settlement of the lawsuit defines legal requirements of the parties, and is often put in force by an order of the court after a joint stipulation by"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " 2030, according to the EIA. As a result, petroleum consumption is projected to only increase 20 percent by 2030"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": " cases, modifications to the existing rules for different eras of the Empire. This book is aimed at GMs looking for campaign ideas or fans wanting historical information in one"
+      }
+    ],
+    "promotes": [
+      " not",
+      " shown",
+      " done",
+      " taken",
+      " able"
+    ],
+    "demotes": [
+      "IContainer",
+      " Containing",
+      "containing",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " corresponded"
+    ]
+  },
+  {
+    "id": "20_14545_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.39822059869766235,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 48.25,
+        "context": " like $24,000.\u23ceThat's because the value of the yen has risen relative to the dollar. In 2007"
+      },
+      {
+        "trigger": " the",
+        "score": 48.25,
+        "context": "0.\u23ceThat's because the value of the yen has risen relative to the dollar. In 2007, $1 bought 12"
+      },
+      {
+        "trigger": " exchange",
+        "score": 44.5,
+        "context": " results can vary greatly from one year to another based on fluctuations in the exchange rates of the country\u2019s currency. Such fluctuations may change a country\u2019s ranking"
+      },
+      {
+        "trigger": " the",
+        "score": 52.25,
+        "context": "2005 to late 2008, the cumulative appreciation of the yuan against the dollar was more than 20 per cent, but the"
+      },
+      {
+        "trigger": " the",
+        "score": 43.5,
+        "context": " the currency into which the price of one unit of XXX currency is expressed. For instance, EUR/USD is the price of the euro expressed in US dollars,"
+      }
+    ],
+    "promotes": [
+      "OLPH",
+      "\u00ea\u0309",
+      "Point",
+      "<eos>",
+      " Point"
+    ],
+    "demotes": [
+      "AndEndTag",
+      "JspWriter",
+      "UnusedPrivate",
+      "StoryboardSegue",
+      "sidemargin"
+    ]
+  },
+  {
+    "id": "19_3905_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.38981521129608154,
+    "top_activations": [
+      {
+        "trigger": "/",
+        "score": 63.75,
+        "context": " the currency into which the price of one unit of XXX currency is expressed. For instance, EUR/USD is the price of the euro expressed in US dollars,"
+      },
+      {
+        "trigger": "/",
+        "score": 63.75,
+        "context": " the currency into which the price of one unit of XXX currency is expressed. For instance, EUR/USD is the price of the euro expressed in US dollars,"
+      },
+      {
+        "trigger": " for",
+        "score": 49.25,
+        "context": " 85 percent of foreign exchange transactions world-wide are trades of other currencies for dollars, even among trades among companies outside of the United States.\u23ce\u201c"
+      },
+      {
+        "trigger": " the",
+        "score": 50.75,
+        "context": " parity (PPP)\u2014that is, the relative over- and undervaluation of the world\u2019s currencies, observes Nicholas Vardy of The Global Guru.\u23ce"
+      },
+      {
+        "trigger": " the",
+        "score": 53.25,
+        "context": " for years, China revalued the yuan by 2.1 per cent against the dollar in July 2005 and moved to an exchange-rate"
+      }
+    ],
+    "promotes": [
+      "CAPTION",
+      " EUR",
+      "olus",
+      "igle",
+      "UnusedPrivate"
+    ],
+    "demotes": [
+      "zulegen",
+      "MigrationBuilder",
+      "pushFollow",
+      "D\u00e9f",
+      " Chwiliwch"
+    ]
+  },
+  {
+    "id": "21_5807_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.33777204155921936,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 29.0,
+        "context": " of the historical events which were to play a major role in Galois' life is surely the storming of the Bastille on 14 July 178"
+      },
+      {
+        "trigger": " is",
+        "score": 28.5,
+        "context": " brought it to its present humiliating state.\u23ceThe logical starting point in this examination is Bretton Woods. When the representatives of some forty nations met there in "
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "<bos>One of the greatest stories of explorationand discovery is the Europeanquest for a Northwest Passageanoceanic shortcut from the Atlantic to thePacific across the top of"
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " became a proponent for the hypothesis , which states that the prototype of the Armenian alphabet is a variety of combinations of resembling curves and horizontal elements. Subsequently these horizontal elements"
+      },
+      {
+        "trigger": " be",
+        "score": 28.75,
+        "context": ". Indeed, in the construction \u2018anosognosia for X\u2019, X might even be anosognosia for some Y.|\u23ce|Keywords||Amnesia Belief Del"
+      }
+    ],
+    "promotes": [
+      "supplied",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "applicable",
+      " MainAxisSize",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "Those",
+      " Those",
+      "ItemLayout",
+      "erweise",
+      "\u90a3\u5c31\u662f"
+    ]
+  },
+  {
+    "id": "19_12799_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3434823155403137,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 25.25,
+        "context": "<bos>Book of Philemon\u23ceThe Epistle to Philemon is a book of the Bible in the New Testament. Philemon is generally regarded as one"
+      },
+      {
+        "trigger": " along",
+        "score": 29.0,
+        "context": " north of St. Louis. The boy was first exposed to music on excursion boats along the Mississippi river, which featured saxophonist Frankie Trumbauer and cornetist"
+      },
+      {
+        "trigger": " to",
+        "score": 26.0,
+        "context": "00.\u23ceThat's because the value of the yen has risen relative to the dollar. In 2007, $1 bought 1"
+      },
+      {
+        "trigger": " of",
+        "score": 24.5,
+        "context": "<bos>The Ionian Sea is an arm of the Mediterranean Sea, south of the Adriatic Sea. It is bounded by southern Italy, including Calabria, Sicily and the"
+      },
+      {
+        "trigger": " of",
+        "score": 25.5,
+        "context": " well as doctrinal and ecclesiastical errors. He fled England with his family in 1563 and devoted himself to the translation of the Bible, as well as"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " my\u017felf",
+      " \u017ftate",
+      " Monfieur",
+      " \u017fche"
+    ],
+    "demotes": [
+      " Daily",
+      " B",
+      " National",
+      " Man",
+      " D"
+    ]
+  },
+  {
+    "id": "20_10118_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.3908936083316803,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 33.0,
+        "context": " to CPM: activity on arrow and activity on node. The most used representation nowadays is the activity on node. The activities are rendered as nodes and each node contains"
+      },
+      {
+        "trigger": " is",
+        "score": 30.5,
+        "context": " in the same direction, while taking into account national differences. The tool for this is the annual growth survey in which the European Commission sets out the priorities for the"
+      },
+      {
+        "trigger": " is",
+        "score": 31.75,
+        "context": " it is easy to overlook developments in China. The biggest piece of Chinese domestic news is the decision to give limited rights to land use to China\u2019s farmers."
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " Solubility Equilibria\u23ceOne the most important tools we have in environmental geochemistry is thermodynamics. Thisenables us to predict how chemical reactions will proceed. Using"
+      },
+      {
+        "trigger": " is",
+        "score": 31.5,
+        "context": " some help...\u23ceFor the Smart Grid, that \"knowledgeable expert\" is the Smart Grid Interoperability Panel (SGIP). The SGIP, a"
+      }
+    ],
+    "promotes": [
+      " pinulongan",
+      " Econ\u00f3mica",
+      "__(/*!",
+      "UserScript",
+      " Cient\u00ed"
+    ],
+    "demotes": [
+      " is",
+      " are",
+      "rinfo",
+      " l\u00e0",
+      "PRNewswire"
+    ]
+  },
+  {
+    "id": "21_6186_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.36598479747772217,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is so interesting to watch young children play with Legos. They make a plan, create a construction, and act out a play scenario with what they"
+      },
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is believed that Orest Kiprensky was an illegitimate son of the landowner Alexey Dyakonov and one of his serfs. Orest was born"
+      },
+      {
+        "trigger": " are",
+        "score": 41.0,
+        "context": "<bos>They are both nest-building social insects, but paper wasps and honey bees organize their colonies in very different ways. In a new study, researchers report that"
+      },
+      {
+        "trigger": " are",
+        "score": 41.0,
+        "context": "<bos>They are a type of feldspar, which is the most common mineral\u23ceon earth. so what makes them special?\u23ceFirst like most gemstones, they are"
+      },
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is always pleasing when you look below the surface and see real change in a market, city or organization. No more so than with the low-carbon"
+      }
+    ],
+    "promotes": [
+      " possible",
+      " important",
+      " a",
+      " not",
+      " difficult"
+    ],
+    "demotes": [
+      " Monfieur",
+      " The\u017fe",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.38538461923599243,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ]
+  },
+  {
+    "id": "23_5944_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.36885517835617065,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 50.5,
+        "context": "<bos>The Mandelbrot set is a set of points in the complex plane that forms a fractal. Mathematically, the Mandelbrot set can be defined as the set"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " most ambitious neuroscience project ever \u2013 to develop the technology that could create a computerized simulation of a person\u2019s mind. Called the Human Brain Project, scientists hope to"
+      },
+      {
+        "trigger": " of",
+        "score": 42.5,
+        "context": " well as doctrinal and ecclesiastical errors. He fled England with his family in 1563 and devoted himself to the translation of the Bible, as well as"
+      },
+      {
+        "trigger": " to",
+        "score": 43.5,
+        "context": "s degree in mathematics in 1848. He studied law and was called to the Bar, but decided not to practice, instead joining his father in"
+      },
+      {
+        "trigger": " around",
+        "score": 43.0,
+        "context": "s events are as predictable as night and day. But when Comet ISON swings around the sun in late November, amateurs and professionals alike will be watching in anticipation"
+      }
+    ],
+    "promotes": [
+      " \u03c4\u03b7\u03c2",
+      "OfThe",
+      " ofthe",
+      "ofthe",
+      " the"
+    ],
+    "demotes": [
+      " autorytatywna",
+      "NameInMap",
+      "setVerticalGroup",
+      "interopRequire",
+      "tagHelperRunner"
+    ]
+  },
+  {
+    "id": "19_9215_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3226814270019531,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": "s menu from 1988. Delmonico's current menu is online.\u23ceOne item that's on all three menus: filet mignon"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " significance. Now that the A/B system has been abandoned, the current signage is simpler, though it has yet to be installed systemwide. Below are explanations"
+      },
+      {
+        "trigger": " is",
+        "score": 34.0,
+        "context": " preferred behavior dictates that he not do so.\u23ceThe status of the kohein is to be preserved as a remembrance of their\u23cespecial role in the Temple services"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " condition, needs more care.\u23ceThe supply chain for producing US-trained physicians is expensive and restricted.\u23ceFederal health care reform will make prevention and early treatment"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " that the\u23ceturbines are quick to snap in.\u23ceWhile the system is extremely well designed and efficient, many will be drawn\u23ceto its style."
+      }
+    ],
+    "promotes": [
+      " an",
+      " not",
+      " far",
+      "NameInMap",
+      " based"
+    ],
+    "demotes": [
+      "Rhestr",
+      " odkazy",
+      " \u010dlanak",
+      " CHAPITRE",
+      " Osp"
+    ]
+  },
+  {
+    "id": "24_3865_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3630135655403137,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "24_13277_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.30130308866500854,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "24_12876_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.31521913409233093,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 43.5,
+        "context": ":\u23ceIt is important for patients to select doctors who are certified in plastic surgery by the American Board of Plastic Surgery. Generally, a surgeon who is board-"
+      },
+      {
+        "trigger": " call",
+        "score": 41.5,
+        "context": " old, Rapetosaurus roamed Madagascar during what we can look back at and call the waning days of the Cretaceous. And the record of this dinosaur is particularly"
+      },
+      {
+        "trigger": " from",
+        "score": 43.0,
+        "context": " spheres, the United States\u2019 racial makeup has changed considerably.\u23ceRecently released data from the U.S. Census Bureau shows that the Asian population is growing faster"
+      },
+      {
+        "trigger": " cross",
+        "score": 52.5,
+        "context": " active drug to treat HIV.\u23ceThey describe the advance, which allows medications to cross the so-called \"blood-brain barrier\" (BBB) and treat"
+      },
+      {
+        "trigger": " in",
+        "score": 40.5,
+        "context": "orius, the South African who will be the first double amputee to run in the Olympics. Pistorius was initially banned from the 2008"
+      }
+    ],
+    "promotes": [
+      " both",
+      " THE",
+      "The",
+      " The",
+      " the"
+    ],
+    "demotes": [
+      "WebVitals",
+      "webElementXpaths",
+      "AndEndTag",
+      "MigrationBuilder",
+      "Vidite"
+    ]
+  },
+  {
+    "id": "24_598_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3865318298339844,
+    "top_activations": [
+      {
+        "trigger": " cells",
+        "score": 59.5,
+        "context": " is necessary to understand how the skin gets it color. The body naturally produces a pigment known as melanin through specialized cells known as melanocytes. A person's"
+      },
+      {
+        "trigger": " organization",
+        "score": 55.0,
+        "context": " Training and Research (UNITAR), and the University of Geneva to create\u23cean organization dubbed \"Citizen Cyberscience\u23ceCentre\", which looks to test and deploy"
+      },
+      {
+        "trigger": " process",
+        "score": 56.5,
+        "context": " novelty plant in your neighbor's garden.\u23ceThe plants are created by a process called grafting, meaning they aren't hybrids of genetically modified organisms (not"
+      },
+      {
+        "trigger": "making",
+        "score": 65.5,
+        "context": "\u23ceConcept/Goal: To learn about still life drawings and a method of printmaking.\u23ceActivity: Students will use a still life to make a drawing and"
+      },
+      {
+        "trigger": " data",
+        "score": 69.5,
+        "context": " networking technologies are based on packet switching, which involves the creation of small chunks of data to be sent over a network. Even though the word packet appears in the"
+      }
+    ],
+    "promotes": [
+      "uginosa",
+      "expandindo",
+      " gener",
+      "SequentialGroup",
+      "<>());"
+    ],
+    "demotes": [
+      " known",
+      " Known",
+      "Known",
+      "known",
+      " KNOWN"
+    ]
+  },
+  {
+    "id": "24_12559_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.36150920391082764,
+    "top_activations": [
+      {
+        "trigger": "by",
+        "score": 113.0,
+        "context": " our Facebook fan page in May).\u23ceI was at Singing Beach in Manchester-by-the-Sea (MA, USA) on Saturday: here the sand"
+      },
+      {
+        "trigger": " to",
+        "score": 95.0,
+        "context": " from 1973 to the present.Legislative subject terms like those listed to the right thoroughly describe a measure's substance and effects. There are approximately"
+      },
+      {
+        "trigger": " of",
+        "score": 119.0,
+        "context": " at Syracuse University.\u23ce\"Because we live in a time when the 'battle of the sexes' is a hot topic, we have been taught that men and"
+      },
+      {
+        "trigger": " down",
+        "score": 113.0,
+        "context": " it can also help people who\u2019ve suffered heart attacks from experiencing further complications years down the road, Dr. Max Gomez reports.\u23ceMore than 1."
+      },
+      {
+        "trigger": " of",
+        "score": 115.0,
+        "context": "6, 2012\u23ceCholera is raging across the Democratic Republic of Congo. In the last year, more than 22,00"
+      }
+    ],
+    "promotes": [
+      " THE",
+      " tbe",
+      " The",
+      "The",
+      " the"
+    ],
+    "demotes": [
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      "Abitanti",
+      "rolid",
+      "mstyle",
+      "CppMethod"
+    ]
+  },
+  {
+    "id": "21_14004_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.3202471435070038,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 119.5,
+        "context": "1934 he had evaded paying 405,500 million Reichsmarks in tax (6.3 million USD in today\u2019s"
+      },
+      {
+        "trigger": "0",
+        "score": 124.5,
+        "context": " Among his awarded works were translatations of Horace and Virgil; and for a song about Gustav III he was awarded the high sum of 200 du"
+      },
+      {
+        "trigger": " unit",
+        "score": 129.0,
+        "context": ", Prime Minister\u23ceEconomy GNP per capita $80 per year\u23ceMonetary unit: kip\u23ceMain exports: timber, electricity, tin, coffee\u23cePeople"
+      },
+      {
+        "trigger": " Armenian",
+        "score": 125.5,
+        "context": " Sign\u23ceAfter proclamation of independence Armenia put into circulation own national currency \u2013 Armenian Dram (Armenian: \u0534\u0580\u0561\u0574; code: AMD), the usage of which"
+      },
+      {
+        "trigger": " of",
+        "score": 109.5,
+        "context": " minutes.\u23ceAccording to Toshiba officials, development costs came to several tens of millions of yen, half of which was covered by the Ministry of Economy, Trade and"
+      }
+    ],
+    "promotes": [
+      " won",
+      " kron",
+      " TRY",
+      " pes",
+      " \u0111\u1ed3ng"
+    ],
+    "demotes": [
+      "\ufeff//",
+      "argli",
+      "minecraftforge",
+      "illai",
+      "conci"
+    ]
+  },
+  {
+    "id": "22_1551_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.2768736183643341,
+    "top_activations": [
+      {
+        "trigger": " aboard",
+        "score": 39.25,
+        "context": " the journey of the English Separatists to Holland and then on to the Plymouth Colony aboard the Mayflower. It tells of their difficult arrival, in which half of"
+      },
+      {
+        "trigger": " named",
+        "score": 42.25,
+        "context": " was a major problem at the time (and the Brooklyn Dodgers were even once famously named the Brooklyn Trolley Dodgers). To avoid this problem, mostly to make sure his"
+      },
+      {
+        "trigger": ",",
+        "score": 44.25,
+        "context": " One family\u2019s name is well known: the Goldwaters. The other family, the Drachmans, is less well known, but in the early years"
+      },
+      {
+        "trigger": ",",
+        "score": 48.0,
+        "context": "anic woodpecker\u23ce, and 2 pine-seed eating parrots. A fascinating bird, the male Juan Fern\u00e1ndez firecrown\u23ce, an endemic species of hummingbird is found"
+      },
+      {
+        "trigger": ",",
+        "score": 36.5,
+        "context": " in the General Assembly encouraged another entrepreneur to spend three years building a rival toll road, a wagon trail on \"the old ridge roadbed\" from Salem, up"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " The\u017fe",
+      " An\u017f",
+      " Monfieur",
+      " the"
+    ],
+    "demotes": [
+      "\u0004",
+      "CppMethod",
+      "Abitanti",
+      "########.",
+      "Tikang"
+    ]
+  },
+  {
+    "id": "25_6925_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.2968599796295166,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 78.0,
+        "context": " are zero or more nodes representing the tops of any sub-trees defining the structure of the document. DocumentFragment nodes do not need to be well-formed XML"
+      },
+      {
+        "trigger": " attended",
+        "score": 82.5,
+        "context": "\u23ceEducators from Russia, Israel, Jordan, and Norway were among those who attended the session.\u23ceIn an effort to encourage teachers to use literature to teach"
+      },
+      {
+        "trigger": " focus",
+        "score": 93.5,
+        "context": "<bos>The present study is an enquiry into the SMCs success. It brings into focus the post-plague environmental cleanliness strategies and actions followed by the SMC,"
+      },
+      {
+        "trigger": " between",
+        "score": 82.0,
+        "context": " other differences developed between the breeds and it is no longer true that the only difference between the breeds is the ears.\u23ceIn 1979, the"
+      },
+      {
+        "trigger": " of",
+        "score": 81.0,
+        "context": " the most essential prerequisite, and upon this concept the universal system was founded.\u23ceIn order to verify the characteristics and capabilities of the universal system, certain tests were"
+      }
+    ],
+    "promotes": [
+      " tbe",
+      " \u03c4\u03b7\u03bd",
+      " \u03c4\u03b7",
+      "the",
+      " the"
+    ],
+    "demotes": [
+      " &___",
+      "CppMethod",
+      " kaarangay",
+      "Obr\u00e1zky",
+      "Abitanti"
+    ]
+  },
+  {
+    "id": "25_13416_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.375623881816864,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ]
+  },
+  {
+    "id": "25_9975_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.335731565952301,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ]
+  }
+]

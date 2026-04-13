@@ -1,0 +1,2399 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3637230694293976,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "0_13004_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.38097578287124634,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "1_4716_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.38501954078674316,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 23.5,
+        "context": " language usage; language change, maintenance and shifts; boundary markers and identity formation; language usage in multilingual communities; the nature of speech and discourse communities; and discourse"
+      },
+      {
+        "trigger": " language",
+        "score": 23.5,
+        "context": " of that target language is given.\u23ceThis could be based on the belief that language lessons should take on an input-output structure where teachers aim to teach a"
+      },
+      {
+        "trigger": " language",
+        "score": 24.25,
+        "context": " as Taiap, Doga, and Mamaa whose population figures could suggest potential language viability; however, upon closer examination, these vernaculars are in fact dying"
+      },
+      {
+        "trigger": " language",
+        "score": 23.75,
+        "context": " paired with linguicide, since a race can be killed off more thoroughly if their language follows them.\u23ceEven today, people in a linguistic minority can find themselves"
+      },
+      {
+        "trigger": " language",
+        "score": 23.25,
+        "context": " English measures the self-assessed proficiency in spoken English of people who speak a language other than English at home. The data, when viewed with other ethnic and"
+      }
+    ],
+    "promotes": [
+      "UnknownFieldSet",
+      "parsedMessage",
+      " defStyleAttr",
+      "transQ",
+      "DockStyle"
+    ],
+    "demotes": [
+      " language",
+      "Language",
+      " Language",
+      "language",
+      " LANGUAGE"
+    ]
+  },
+  {
+    "id": "0_9161_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3777956962585449,
+    "top_activations": [
+      {
+        "trigger": "Nice",
+        "score": 13.38,
+        "context": "A 'ssh' tunnel? So it's supposed to be quiet?\"\u23ceNice try. But this node is about helping you with a problem you didn'"
+      },
+      {
+        "trigger": " nice",
+        "score": 13.38,
+        "context": " 7 million years ago. Nicholas Wade\u2019s excellent Before the Dawn does a nice job of telling the story of using DNA evidence to reconstruct the past with precision"
+      },
+      {
+        "trigger": " sole",
+        "score": 13.0,
+        "context": " where one in five children grows up in a home where English isn't the sole language. To help them fill in the gaps, universities are adapting their foreign"
+      },
+      {
+        "trigger": " nice",
+        "score": 13.38,
+        "context": " Sulfur Dioxide Emissions from Coal Have Declined 54 Percent.\u201d He includes some nice government charts, which I\u2019m sure he won\u2019t mind my reproducing"
+      },
+      {
+        "trigger": " nice",
+        "score": 13.5,
+        "context": " quizzes, flashcards, and study guides and then sharing them w/ others. Another nice feature is the ability to create a study group or class and then share things"
+      }
+    ],
+    "promotes": [
+      "\u03c4\u03c9\u03c2",
+      "rungsseite",
+      " kasarigan",
+      "<bos>",
+      "ThroughAttribute"
+    ],
+    "demotes": [
+      " \u064a\u062a\u064a\u0645\u0647",
+      " Soyez",
+      "brengen",
+      " domestiques",
+      "\u1ec8"
+    ]
+  },
+  {
+    "id": "0_11375_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.35275906324386597,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "2_4638_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3699122369289398,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 24.5,
+        "context": " and they grew for themselves at least one kind of cereal grain. They spoke a language whose existence and nature we infer from the remnants of it which survive in the"
+      },
+      {
+        "trigger": " language",
+        "score": 24.5,
+        "context": " manner than anyone else.\u23ceIf you want your message heard you must speak the language of who your audience is. If it is one person, find the clues"
+      },
+      {
+        "trigger": " language",
+        "score": 25.38,
+        "context": " present. She has been particularly praised for her powerful yet sensitive use of multilayered language.\u23ceFun Fact: Elfriede Jelinek is a trained musician"
+      },
+      {
+        "trigger": " language",
+        "score": 25.12,
+        "context": " widely variant meanings, spellings, and pronunciations, and the general instability of the language was a barrier to clear communication. In the mishandling of the language"
+      },
+      {
+        "trigger": " language",
+        "score": 24.75,
+        "context": " the vernacular) written in Latin, Dante Alighieri tackles the historical evolution of language, which he thinks was born unitary and, at a later stage, was"
+      }
+    ],
+    "promotes": [
+      " \u0643\u0648\u0645\u0648\u0646\u0632",
+      " useDispatch",
+      "\"]=\"",
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628",
+      "SBATCH"
+    ],
+    "demotes": [
+      " language",
+      "language",
+      " Language",
+      "Language",
+      " LANGUAGE"
+    ]
+  },
+  {
+    "id": "0_245_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.34327149391174316,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": "2004) proved efficient in analysing the data due to its view of language as a mega-system of sub-systems, whereby items are selected and"
+      },
+      {
+        "trigger": " language",
+        "score": 17.75,
+        "context": " Mediterranean diet that they consumed offered artery protection in the brain. They were assessed for language skills, memory and abstract thinking.\u23ceBottom line: the Mediterranean-style"
+      },
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": "(c) He studied phrenology.\u23ce(d) He learned sign language.\u23ce3. How does King Ferdinand respond to the frightening sound?\u23ce"
+      },
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": " the bathtub.\u23ceYour child will begin to make the connection between spoken and written language.\u23ce6) Use repetition.\u23ceSome parents get frustrated when a child"
+      },
+      {
+        "trigger": " language",
+        "score": 17.5,
+        "context": "This printable wordsearch covers Thanksgiving vocabulary. This activity is a fun way to connect language arts, American history, and the holidays. Plus, students can increase their"
+      }
+    ],
+    "promotes": [
+      "\u2014",
+      "2",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "_"
+    ],
+    "demotes": [
+      ")\");\r",
+      " my\u017felf",
+      "\"]);\r",
+      ".\"));",
+      "'));\r"
+    ]
+  },
+  {
+    "id": "0_4066_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39992403984069824,
+    "top_activations": [
+      {
+        "trigger": " meeting",
+        "score": 15.44,
+        "context": " Fireman.\u23ce- More than 200 people attended the area Masonic meeting hosted by the Shamokin lodge, under the direction of Frank Clut"
+      },
+      {
+        "trigger": " meeting",
+        "score": 16.25,
+        "context": " has a population of one million or more and also has separate component areas (PMSAs - primary metropolitan statistical areas) meeting statistical criteria and supported by local opinion."
+      },
+      {
+        "trigger": " meeting",
+        "score": 15.56,
+        "context": "8.7 earthquake that struck Sumatra just one year later, in 2005, researchers reported at the meeting. [The 10 Biggest Earthquakes"
+      },
+      {
+        "trigger": " meeting",
+        "score": 15.56,
+        "context": ", Philippines from 13 to 15 March. The theme of the meeting was \"Securing Water for All\" and was divided under three main themes"
+      },
+      {
+        "trigger": " meeting",
+        "score": 15.69,
+        "context": "-11 DAN! conference in Baltimore to share their research and perspectives from the meeting with you here on the blog. The following piece is from Dr. Simon"
+      }
+    ],
+    "promotes": [
+      " $_\"",
+      " hou\u017fe",
+      " plea\u017fure",
+      " it\u017felf",
+      "NUMX"
+    ],
+    "demotes": [
+      "n",
+      ",",
+      ".",
+      " -",
+      " ("
+    ]
+  },
+  {
+    "id": "0_6152_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39903128147125244,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 12.12,
+        "context": " native language. Imagine a French student who speaks passable English. If your English language application has a specific appeal and no French language equivalent exists, he might well"
+      },
+      {
+        "trigger": " strength",
+        "score": 12.25,
+        "context": ". Advantages of rammed earth walls include flexibility in plan form, scope for adjusting strength and wall thickness, variety of textural finishes, lower embodied carbon and energy"
+      },
+      {
+        "trigger": " language",
+        "score": 12.0,
+        "context": " require a model (background knowledge) to be information \u2013 try reading in a foreign language or in an unknown theoretical field in your own language. Since natural language is"
+      },
+      {
+        "trigger": " language",
+        "score": 12.0,
+        "context": " denotes a voiced \u03b2ila\u03b2ial fricative, a sound that is not present in the English language, and is made similarly to making a v sound \u03b2ut"
+      },
+      {
+        "trigger": " language",
+        "score": 11.88,
+        "context": " we do exactly that as well as expect our\u23cecanines to understand the English language. I am sure some may\u23cedisagree with that statement, but hopefully"
+      }
+    ],
+    "promotes": [
+      " courants",
+      " r\u00eaver",
+      " boire",
+      " suministros",
+      " neutre"
+    ],
+    "demotes": [
+      "<bos>",
+      "os",
+      "XmlAccessType",
+      "makeConstraints",
+      "OS"
+    ]
+  },
+  {
+    "id": "0_11986_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3597843647003174,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": " Arabic abjad is the Arabic script as it is codified for writing the Arabic language. It is written from right to left, in a cursive style, and"
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": "-1 is the first part of the ISO 639 international-standard language-code family ISO 639-2 is the second part of"
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": "protocols\" (a cheat sheet of sentence starters) to build students' cognitive academic language proficiency.\u23ce\"Easing Shift to the U.S. is Goal\""
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": " according to a well-defined syntax, closely resembling the syntax of the C programming language. This is no coincidence. Since the C programming language is so central in"
+      },
+      {
+        "trigger": " language",
+        "score": 18.5,
+        "context": " colleges and universities expect incoming freshmen to have taken at least two years of a foreign language.\u23ceThis is true of the University of Minnesota and the Minnesota State Colleges"
+      }
+    ],
+    "promotes": [
+      "5",
+      " future",
+      "1",
+      "2",
+      "6"
+    ],
+    "demotes": [
+      "expandindo",
+      "aln\u0131z",
+      "]\")]",
+      "Autoritn\u00ed",
+      "Personensuche"
+    ]
+  },
+  {
+    "id": "0_13831_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.37670889496803284,
+    "top_activations": [
+      {
+        "trigger": " talking",
+        "score": 21.25,
+        "context": " eliminating the gender gap would have a significant impact on poverty so perhaps it's time they started talking about it.\u23ceThis story was first reported on IPS news"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " go beyond its continuous RMS power for a very short time period. We are not talking minutes or even seconds here. We are talking milliseconds or thousandths of a"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " mobile phones on their hearing, brain, and eyesight. Our Social Workers are also talking about the etiquette of Mobile Phone Usage. Some people become stressed due to anonymous"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.25,
+        "context": "alium, Librium and Diazepam were often involved.\u23ce- We're talking about benzodiazepines such as Valium, Normison and methadone"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " gardening and lawn care at our house. Since my diagnosis, we\u2019ve been talking about how to make our green space truly green \u2013 a healthy yard and garden"
+      }
+    ],
+    "promotes": [
+      " \u0635\u0648\u062a\u064a\u0647",
+      "IntoConstraints",
+      " CreateTagHelper",
+      " AssemblyCulture",
+      "rungsseite"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " it",
+      "the",
+      " "
+    ]
+  },
+  {
+    "id": "0_1295_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3327665328979492,
+    "top_activations": [
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " fungus that has been linked to global warming and rising global temperatures in the tropical countries where coffee grows has researchers scrambling to create new varieties of coffee plants that can keep"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": "2012. Small white arrows outline the area in Mars\u2019 southern hemisphere where the 2012 Martian dust storm was building. The storm was"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": "-infected with dengue serotype 4 and had not recently traveled to another area where chikungunya exists.\u23ceMeanwhile, health officials in the area are investigating"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " into cities, and lasted until recently. Before urbanization, people lived in small communities where everybody knew everything about everybody else--and Facebook is bringing it back :)\u23ce"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " figure is in line with research from elsewhere in the United States and in other countries where youth are known to play the choking game, according to Dr. Thomas Andrew"
+      }
+    ],
+    "promotes": [
+      "(",
+      "\u0431\u0430\u0440\u0438",
+      "\u23ce\u23ce",
+      "<em>",
+      "<strong>"
+    ],
+    "demotes": [
+      " where",
+      "where",
+      " donde",
+      " \u03cc\u03c0\u03bf\u03c5",
+      " o\u00f9"
+    ]
+  },
+  {
+    "id": "0_8061_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.37335529923439026,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ]
+  },
+  {
+    "id": "2_15756_10",
+    "layer": 2,
+    "ctx_idx": 10,
+    "influence_score": 0.39264553785324097,
+    "top_activations": [
+      {
+        "trigger": " Ben",
+        "score": 20.38,
+        "context": "17 in the main camp; most of whom were fatherless. However, Ben Helfgott was not one of the 904 orphan boys in the"
+      },
+      {
+        "trigger": " Ben",
+        "score": 21.75,
+        "context": " Wentworth, he was a great-grandson of \"Elder\" William Wentworth. Benning was born and died in Portsmouth, New Hampshire. Under his father'"
+      },
+      {
+        "trigger": " Ben",
+        "score": 20.62,
+        "context": "00 km across the breathtakingly contradictory landscape of China, seasoned art connoisseur Benoy K. Behl spent nearly two months this summer documenting the evolution of"
+      },
+      {
+        "trigger": " Ben",
+        "score": 20.12,
+        "context": " friend Benvolio, that Romeo has been depressed; Lord and Lady Montague ask Benvolio if he can try and find out what's been bothering their"
+      },
+      {
+        "trigger": "Ben",
+        "score": 20.75,
+        "context": " become one of the most prominent political and merchant families in the small colony.\u23ceBenning Wentworth graduated from Harvard College in 1715. He became"
+      }
+    ],
+    "promotes": [
+      "ftagPool",
+      "\u00e9rico",
+      "IFEST",
+      "byr",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " Ben",
+      "Ben",
+      " ben",
+      "ben",
+      " BEN"
+    ]
+  },
+  {
+    "id": "4_15380_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.36749267578125,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 20.62,
+        "context": "<bos>English is really the global language and we can say it is the only language that can help us to communicate with others when we go to any European country."
+      },
+      {
+        "trigger": " spoken",
+        "score": 25.12,
+        "context": "<bos>Mandarin Chinese is spoken by more than 1 billion people, making it the most widely spoken language in the world. It is the official language of Mainland"
+      },
+      {
+        "trigger": " Language",
+        "score": 20.62,
+        "context": " race with a unique understanding that is: \u2014\u23ce\u2022 Expressed in the Unique Language allowed by the shared beliefs about words, their meaning and use.\u23ce\u2022"
+      },
+      {
+        "trigger": " it",
+        "score": 22.88,
+        "context": " and online world but the fact remains that the majority of the global population speaks no English at all. Of those that do, many speak it as a second language"
+      },
+      {
+        "trigger": " a",
+        "score": 24.25,
+        "context": " slightly smaller than Indiana. Calling themselves Magyars, these people speak a unique language and maintain highly distinctive traditions in music, dance, costume, crafts, gast"
+      }
+    ],
+    "promotes": [
+      "Language",
+      " langues",
+      " Language",
+      " languages",
+      " language"
+    ],
+    "demotes": [
+      "batore",
+      "UnitTesting",
+      " createState",
+      "ganu",
+      "########."
+    ]
+  },
+  {
+    "id": "4_15380_13",
+    "layer": 4,
+    "ctx_idx": 13,
+    "influence_score": 0.3169006109237671,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 20.62,
+        "context": "<bos>English is really the global language and we can say it is the only language that can help us to communicate with others when we go to any European country."
+      },
+      {
+        "trigger": " spoken",
+        "score": 25.12,
+        "context": "<bos>Mandarin Chinese is spoken by more than 1 billion people, making it the most widely spoken language in the world. It is the official language of Mainland"
+      },
+      {
+        "trigger": " Language",
+        "score": 20.62,
+        "context": " race with a unique understanding that is: \u2014\u23ce\u2022 Expressed in the Unique Language allowed by the shared beliefs about words, their meaning and use.\u23ce\u2022"
+      },
+      {
+        "trigger": " it",
+        "score": 22.88,
+        "context": " and online world but the fact remains that the majority of the global population speaks no English at all. Of those that do, many speak it as a second language"
+      },
+      {
+        "trigger": " a",
+        "score": 24.25,
+        "context": " slightly smaller than Indiana. Calling themselves Magyars, these people speak a unique language and maintain highly distinctive traditions in music, dance, costume, crafts, gast"
+      }
+    ],
+    "promotes": [
+      "Language",
+      " langues",
+      " Language",
+      " languages",
+      " language"
+    ],
+    "demotes": [
+      "batore",
+      "UnitTesting",
+      " createState",
+      "ganu",
+      "########."
+    ]
+  },
+  {
+    "id": "15_6419_13",
+    "layer": 15,
+    "ctx_idx": 13,
+    "influence_score": 0.38696807622909546,
+    "top_activations": [
+      {
+        "trigger": "IC",
+        "score": 49.5,
+        "context": "<bos>HOST (IN AMHARIC):\u23ceThe Queen of Sheba was a legendary monarch of ancient Ethiopia who is referred to in just four sources: the history"
+      },
+      {
+        "trigger": " English",
+        "score": 49.5,
+        "context": "<bos>This part of the website is an English translation of the definitive hurdy-gurdy reference book Die Drehleier (The Hurdy-gurdy),"
+      },
+      {
+        "trigger": " languages",
+        "score": 49.0,
+        "context": " countries of South and Southeast Asia encompass a richly layered mix of cultures, religions, languages, racial and ethnic groups, and economic and political systems. Although South and"
+      },
+      {
+        "trigger": "alam",
+        "score": 50.5,
+        "context": "<bos>Foods of Kerala\u23ceThe cuisine of Kerala (Malayalam: \u0d15\u0d47\u0d30\u0d33\u0d40\u0d2f \u0d2a\u0d3e\u0d1a\u0d15\u0d36\u0d48\u0d32\u0d3f) is linked in all"
+      },
+      {
+        "trigger": " language",
+        "score": 58.0,
+        "context": " a translation for the fuller's earth definition in other languages:\u23ceSelect another language:\u23ceDiscuss these fuller's earth definitions with the community:\u23ceUse"
+      }
+    ],
+    "promotes": [
+      " Speaking",
+      " speakers",
+      " Language",
+      " speaking",
+      " language"
+    ],
+    "demotes": [
+      "RegressionTest",
+      " ModelExpression",
+      " createState",
+      "igshid",
+      "DockStyle"
+    ]
+  },
+  {
+    "id": "16_5014_13",
+    "layer": 16,
+    "ctx_idx": 13,
+    "influence_score": 0.3624144494533539,
+    "top_activations": [
+      {
+        "trigger": " speak",
+        "score": 32.0,
+        "context": " no telephone or only have a cell phone are not included. Those who do not speak English or Spanish are not included. Some people who have a disability may not"
+      },
+      {
+        "trigger": " speak",
+        "score": 32.75,
+        "context": " die Zeichenkette `%s'\"\u23ceA C programmer, even if he cannot speak German, will recognize that\u23cethere is something wrong here. The order of"
+      },
+      {
+        "trigger": " /",
+        "score": 34.75,
+        "context": "<bos>Diabetes - preventing heart attack and stroke\u23ceToggle: English / Spanish\u23ceLower Your Risk\u23cePeople with diabetes have a higher risk for heart attacks and strokes."
+      },
+      {
+        "trigger": " in",
+        "score": 31.75,
+        "context": " the population and the Arab ceased to hold a monopoly on long distance migration. Bilingual in Dari and Uzbeki, but speaking no Arabic, they continue to identify"
+      },
+      {
+        "trigger": ",",
+        "score": 31.25,
+        "context": " and Alexandrinus, with variants noted in the critical apparatus. This edition includes English, German, Latin and Modern Greek introductions, History of the Septuagint"
+      }
+    ],
+    "promotes": [
+      "\u043a\u043e\u0431\u0440\u0438\u0442\u0430",
+      "IContainer",
+      "awtextra",
+      "eningrad",
+      " OMITBAD"
+    ],
+    "demotes": [
+      "endrait",
+      "ThroughAttribute",
+      "language",
+      " language",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ]
+  },
+  {
+    "id": "12_10631_13",
+    "layer": 12,
+    "ctx_idx": 13,
+    "influence_score": 0.38982656598091125,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 25.88,
+        "context": " structures of complex materials with high accuracy. The questions these experiments are designed to answer are (1) can neutrons \"see\" the grain bond system and if so"
+      },
+      {
+        "trigger": " is",
+        "score": 24.62,
+        "context": " the notion of the banality of evil. What seems to lie behind this idea is that Eichmann was no more than a dim little man whose crimes were simply"
+      },
+      {
+        "trigger": " is",
+        "score": 23.88,
+        "context": " is common as well as threats.\u23ceThe difference between these two types of bullying is that it is witnessed by other people and cyberbullying is only witnessed by the"
+      },
+      {
+        "trigger": " is",
+        "score": 23.88,
+        "context": " loss in a space craft for a given size air leak?\u23ceThe quick approximation is that the air will flow out of the hole at the speed of sound."
+      },
+      {
+        "trigger": " was",
+        "score": 24.88,
+        "context": "avadra and the parliament were deposed.\u23ceThe long term consequence of the coup was a gradual migration of ethnic Indians, resulting in a loss of skilled labor and"
+      }
+    ],
+    "promotes": [
+      " onCreateView",
+      "WriteAttribute",
+      "ValueStyle",
+      "EDEFAULT",
+      "URLException"
+    ],
+    "demotes": [
+      "TabIndex",
+      "saraba",
+      " BOC",
+      "context",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986"
+    ]
+  },
+  {
+    "id": "8_150_13",
+    "layer": 8,
+    "ctx_idx": 13,
+    "influence_score": 0.3788701593875885,
+    "top_activations": [
+      {
+        "trigger": " English",
+        "score": 37.75,
+        "context": " Collaborative Council (WSSCC), is available in Nepali, complementing the English, French and Spanish versions available.\u23ceAs a tool, the compendium sheds light on"
+      },
+      {
+        "trigger": " English",
+        "score": 44.0,
+        "context": ". This is the Chinese version. This publication is also available in: Russian and EnglishMore information about human trafficking on the website of UNODC.\u23ce-"
+      },
+      {
+        "trigger": " English",
+        "score": 38.5,
+        "context": " clips, links for further research, and a message board. Languages: English, French, Spanish.\u23ceRyanMayde Creek High School, Katy, TX,"
+      },
+      {
+        "trigger": " Yiddish",
+        "score": 35.25,
+        "context": ", she also compiled the first curriculum for the study of natural sciences and geography in Yiddish schools (1918). In 1925, when"
+      },
+      {
+        "trigger": "English",
+        "score": 45.25,
+        "context": "03, 2008\u23ceSource:University of Hong Kong\u23ceEnglish Hardcopy Black & White\u23ceAlso Available in:\u23ce|English Hardcopy"
+      }
+    ],
+    "promotes": [
+      "roux",
+      " fluent",
+      "translation",
+      "\\{\\\\",
+      " translation"
+    ],
+    "demotes": [
+      "tagHelperRunner",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " ModelExpression",
+      " Hiros",
+      " nahilalakip"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3799304664134979,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "19_13366_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.2575831711292267,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 72.0,
+        "context": "in Finland have settled in the Helsinki region.\u23ceThe city is bilingual\u23ce, with majority being\u23ceand minority Swedish\u23ceSince early 2009,"
+      },
+      {
+        "trigger": " than",
+        "score": 72.5,
+        "context": "<bos>Census figures show that the percentage of Americans living in homes where languages other than English are spoken is on the rise. The country is becoming increasingly diverse, and"
+      },
+      {
+        "trigger": "),",
+        "score": 75.5,
+        "context": " Indians (Native Americans), and Alaska Natives. Languages: English (predominant), Spanish. Religions: Christianity (Protestant, Roman Catholic, other Christians,"
+      },
+      {
+        "trigger": " writing",
+        "score": 71.5,
+        "context": " important scripts of India, including Devanagari (the most common script used for writing Sanskrit since the 19th century), the Gurmukhi script"
+      },
+      {
+        "trigger": ":",
+        "score": 96.5,
+        "context": " the north and the Apennines running the length of the peninsula. Official language: Italian. Religion: Roman Catholic majority. Currency: euro. Capital: Rome"
+      }
+    ],
+    "promotes": [
+      " Hindi",
+      " bahasa",
+      " Arabic",
+      " English",
+      " Spanish"
+    ],
+    "demotes": [
+      " kasarigan",
+      "adpleegd",
+      "ParallelGroup",
+      "MediaStore",
+      "COUVER"
+    ]
+  },
+  {
+    "id": "19_2550_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.35842931270599365,
+    "top_activations": [
+      {
+        "trigger": " both",
+        "score": 31.0,
+        "context": " of Latin and Greek, as well as grammar and music. In addition to speaking both Latin and Greek fluently, Elena mastered Hebrew, Spanish, French, and"
+      },
+      {
+        "trigger": " sisters",
+        "score": 27.0,
+        "context": " has low resistence to electrical charge and is relatively abundant, compared to its elemental sisters, gold and silver, which is why it's used for wiring."
+      },
+      {
+        "trigger": " colors",
+        "score": 26.75,
+        "context": " and water = rain and the flashlight = the sun.\u23ceWe learned about the colors of the rainbow and made our own Roy G. Biv.\u23ceWe made"
+      },
+      {
+        "trigger": " element",
+        "score": 32.0,
+        "context": " Ong, a professor of physics at Princeton, has shown that electrons in the common element bismuth display a highly unusual pattern of behavior -- a dance, of sorts --"
+      },
+      {
+        "trigger": " sign",
+        "score": 31.5,
+        "context": " for \"the burning way\" and generally refers to the first fifteen degrees of the sign of Scorpio. Other astrologers have extended Via Combusta to include the"
+      }
+    ],
+    "promotes": [
+      " MySQL",
+      " Python",
+      " bitcoin",
+      " HTML",
+      " Bitcoin"
+    ],
+    "demotes": [
+      ":\u2728",
+      " AssemblyCulture",
+      "extAlignment",
+      "tvguidetime",
+      "AsUp"
+    ]
+  },
+  {
+    "id": "18_14080_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.2883716821670532,
+    "top_activations": [
+      {
+        "trigger": " Text",
+        "score": 56.0,
+        "context": " Case\u23ce- Aspect Ratio: Full Frame - 1.33\u23ce- Text/Photo Galleries:\u23ce- Photos - Explorers Buried at Arlington Cemetery\u23ceHousing"
+      },
+      {
+        "trigger": " the",
+        "score": 54.0,
+        "context": " include Indonesians, Chinese and so on. Residents are\u23ceCatholic. Filipino is the language, and English is also spoken. The\u23cecurrency is the peso."
+      },
+      {
+        "trigger": " not",
+        "score": 55.0,
+        "context": " fact, different. EFL is teaching or learning English in an environment where English is not spoken by the majority. So, teaching English in the US or the UK"
+      },
+      {
+        "trigger": "official",
+        "score": 59.5,
+        "context": "<bos>Malay is the\u23ceofficial language of Indonesia, Malaysia, Singapore and Brunei.\u23ceThe populations in each of\u23cethese countries speak a different dialect of Malay."
+      },
+      {
+        "trigger": "Second",
+        "score": 55.0,
+        "context": "<bos>Academic Language: Everyone's \"Second\" Language\u23ceBeing able to speak English fluently does not guarantee that a student will be able to use language effectively"
+      }
+    ],
+    "promotes": [
+      "Languages",
+      " tongues",
+      " language",
+      " Languages",
+      " languages"
+    ],
+    "demotes": [
+      " kasarigan",
+      "CardHeader",
+      " Permanent",
+      "Permanent",
+      "multer"
+    ]
+  },
+  {
+    "id": "19_9215_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.397236704826355,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": "s menu from 1988. Delmonico's current menu is online.\u23ceOne item that's on all three menus: filet mignon"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " significance. Now that the A/B system has been abandoned, the current signage is simpler, though it has yet to be installed systemwide. Below are explanations"
+      },
+      {
+        "trigger": " is",
+        "score": 34.0,
+        "context": " preferred behavior dictates that he not do so.\u23ceThe status of the kohein is to be preserved as a remembrance of their\u23cespecial role in the Temple services"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " condition, needs more care.\u23ceThe supply chain for producing US-trained physicians is expensive and restricted.\u23ceFederal health care reform will make prevention and early treatment"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " that the\u23ceturbines are quick to snap in.\u23ceWhile the system is extremely well designed and efficient, many will be drawn\u23ceto its style."
+      }
+    ],
+    "promotes": [
+      " an",
+      " not",
+      " far",
+      "NameInMap",
+      " based"
+    ],
+    "demotes": [
+      "Rhestr",
+      " odkazy",
+      " \u010dlanak",
+      " CHAPITRE",
+      " Osp"
+    ]
+  },
+  {
+    "id": "17_14947_13",
+    "layer": 17,
+    "ctx_idx": 13,
+    "influence_score": 0.37448325753211975,
+    "top_activations": [
+      {
+        "trigger": " different",
+        "score": 27.5,
+        "context": " to public companies and to the inherent complexity of large groups. Considering stock markets have different rules and regulations especially with regards to the content of reporting of financial information,"
+      },
+      {
+        "trigger": " not",
+        "score": 32.5,
+        "context": " fact, different. EFL is teaching or learning English in an environment where English is not spoken by the majority. So, teaching English in the US or the UK"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": " implementation in a new location comparatively earlier--it doesn't solve the fundamental differences in the way users in the other language think.\u23ceI've studied Japanese"
+      },
+      {
+        "trigger": " native",
+        "score": 27.5,
+        "context": " out at program start-up for one containing translations that match the user's native language. That's a good start, but insufficient. Maybe your language"
+      },
+      {
+        "trigger": " a",
+        "score": 30.0,
+        "context": " the corresponding \"le\" or \"les\".\u23ceIf you speak German, also a Germanic language like English, this case applies exactly in the same way:\u23ce"
+      }
+    ],
+    "promotes": [
+      " market",
+      " Galen",
+      "Affirmed",
+      " Tiber",
+      " lunch"
+    ],
+    "demotes": [
+      "DockStyle",
+      "ContentAsync",
+      " \u0430\u0440\u0445\u0438\u0432\u043b\u0430\u043d",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "migrationBuilder"
+    ]
+  },
+  {
+    "id": "19_15275_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.32705649733543396,
+    "top_activations": [
+      {
+        "trigger": " also",
+        "score": 74.0,
+        "context": "\u23ceHypolimnas Bolina, Female A female Hypolimnas bolina, also called the Blue Moon or Great Eggfly butterfly. The proportion of females in"
+      },
+      {
+        "trigger": " also",
+        "score": 77.5,
+        "context": "<bos>Louisiana Voodoo, also known as New Orleans Voodoo, describes a set of religious practices which originated from the traditions of the African diaspora. It is one of many"
+      },
+      {
+        "trigger": " also",
+        "score": 82.0,
+        "context": " color palette, text and other elements as opposed to photos.\u23ceJPG files, also known as JPEG files, are a common file format for digital photos and other"
+      },
+      {
+        "trigger": " so",
+        "score": 83.0,
+        "context": " methods to track changes in income distribution in America.\u23ceFirst, we used the so-called Gini index, named after the 20th-century"
+      },
+      {
+        "trigger": "also",
+        "score": 86.0,
+        "context": " a radiology department so the tissue can be seen with an ultrasound or CAT scan (also called a CT scan or computed axial tomography scan) to show exactly where to"
+      }
+    ],
+    "promotes": [
+      "Called",
+      "called",
+      " Called",
+      " known",
+      " called"
+    ],
+    "demotes": [
+      " Roskov",
+      "f\u00f8lgelig",
+      " Bioaccumulative",
+      "\\{\\\\",
+      "orsese"
+    ]
+  },
+  {
+    "id": "17_3531_13",
+    "layer": 17,
+    "ctx_idx": 13,
+    "influence_score": 0.32308632135391235,
+    "top_activations": [
+      {
+        "trigger": " Understand",
+        "score": 38.5,
+        "context": " Phase 1, Unit 16-20\u23ceLearn to Speak and Understand Punjabi with Pimsleur Language Programs\u23ceThis Edition: MP3\u23ceYour"
+      },
+      {
+        "trigger": " language",
+        "score": 39.0,
+        "context": " regular expression \\ba+.+vark\\b\u23ceRegular expressions consist of a simple language and are used by programmers and others who analyze large texts and datasets. And"
+      },
+      {
+        "trigger": " language",
+        "score": 41.0,
+        "context": " considered it a general language whose only legitimate concern could be to describe and criticize the language of the particular sciences. All propositions were held to be either tautological ("
+      },
+      {
+        "trigger": "language",
+        "score": 42.0,
+        "context": " statements into symbolic notation are\u23ce- We are going to set up an artificial \"language\" to avoid the\u23cedifficulties of vagueness, equivocation,"
+      },
+      {
+        "trigger": " a",
+        "score": 57.0,
+        "context": " like Java, or toiling in the catacombs of Cobol, programmers speak a variety of tongues in their intimate conversations with computers. And each has its own"
+      }
+    ],
+    "promotes": [
+      " languages",
+      "Language",
+      " Language",
+      "language",
+      " language"
+    ],
+    "demotes": [
+      "\ufeff#",
+      " disponibilit\u00e9s",
+      "\u21b9",
+      "writeFieldEnd",
+      "\u0447\u0435\u0441\u043a\u043e\u043c\u0443"
+    ]
+  },
+  {
+    "id": "4_1529_10",
+    "layer": 4,
+    "ctx_idx": 10,
+    "influence_score": 0.36110520362854004,
+    "top_activations": [
+      {
+        "trigger": " English",
+        "score": 23.12,
+        "context": "<bos>In 1968, the great English writer Rudyard Kipling published the short story \u201d The cat that walked by itself .\u201d Tale , in which he"
+      },
+      {
+        "trigger": " Britain",
+        "score": 22.88,
+        "context": " Japanese dominance in Korea in return for American freedom of action in the Philippines. Great Britain had the Anglo-Japanese treaty extended to cover all of E Asia and in"
+      },
+      {
+        "trigger": " Kingdom",
+        "score": 29.75,
+        "context": "80, Zimbabwe became a sovereign African nation, gaining its independence from the United Kingdom. At that time, their dollar was valued at a higher rate than the"
+      },
+      {
+        "trigger": "K",
+        "score": 28.0,
+        "context": ",\" says Jackie Thompson, a psychologist at the University of Oxford in the U.K.\u23ceSome studies suggest that up to 1 in 5 of us"
+      },
+      {
+        "trigger": " Kingdom",
+        "score": 25.0,
+        "context": "003). Hemorrhage was the major factor for maternal deaths in the United Kingdom reported in the Confidential Enquiry into Maternal and Child Health (2008"
+      }
+    ],
+    "promotes": [
+      " LONDON",
+      " Scotland",
+      " Britons",
+      "London",
+      " London"
+    ],
+    "demotes": [
+      " otomatig",
+      "extAlignment",
+      "\u0414\u0435\u0440\u0435\u043a\u043a\u04e9\u0437\u0434\u0435\u0440",
+      "\u00eacher",
+      "fvar"
+    ]
+  },
+  {
+    "id": "18_10922_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.301261305809021,
+    "top_activations": [
+      {
+        "trigger": " England",
+        "score": 33.5,
+        "context": " from widespread species loss according to a new study.\u23ceEcologist Carlos Peres with England\u2019s University of East Anglia and then University of Cambridge graduate student Gustavo Can"
+      },
+      {
+        "trigger": " British",
+        "score": 36.0,
+        "context": "0.\u23ceIn 1912, movie director Michelangelo Antonioni was born in Ferrara, Italy.\u23ceIn 1938, British,"
+      },
+      {
+        "trigger": " British",
+        "score": 33.0,
+        "context": " D-Day (June 6, 1944), the British 11th Armoured Division broke out of the Normandy beachhead and advanced"
+      },
+      {
+        "trigger": " England",
+        "score": 35.5,
+        "context": ". Without the United States the world would have to depend on countries like China, England, and France that go through a lot of political disruption.\u23ceMany countries"
+      },
+      {
+        "trigger": "ster",
+        "score": 32.0,
+        "context": " modern age.\u23ceWhittle's first engine, the Power Jet W.1, was fitted to the British aircraft Gloster Meteor G.40."
+      }
+    ],
+    "promotes": [
+      "England",
+      " Britain",
+      "British",
+      " British",
+      " England"
+    ],
+    "demotes": [
+      " pageContext",
+      "stateParams",
+      "\u4e07\u7f8e\u5143",
+      " Pauly",
+      "inigte"
+    ]
+  },
+  {
+    "id": "21_12621_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.29201918840408325,
+    "top_activations": [
+      {
+        "trigger": " British",
+        "score": 74.0,
+        "context": " English informalSE\u23cea student who never does anything except study [= swot British English]\u23cea movement in skateboarding or rollerblading, which involves moving"
+      },
+      {
+        "trigger": " distinguish",
+        "score": 61.25,
+        "context": " Gaeldom, and only after its collapse did writers regularly begin to use features that distinguish Scottish Gaelic dialects from Irish dialects. Increasing Anglicization, suppression of traditional"
+      },
+      {
+        "trigger": ",",
+        "score": 102.0,
+        "context": " Coast (for example, in Eastern New England and New York City), partly because these areas were in contact with England, and imitated prestigious varieties of English English at"
+      },
+      {
+        "trigger": " spoke",
+        "score": 102.0,
+        "context": " esteemed than others, and it is certainly well-documented that those who spoke these prestigious varieties were the authority figures. Sociolinguists have determined that one's"
+      },
+      {
+        "trigger": " recognising",
+        "score": 87.0,
+        "context": "0s in comparison with the language used today. Add this to the difficulties in recognising proper nouns and foreign words and you can see what the software is up against"
+      }
+    ],
+    "promotes": [
+      " British",
+      "American",
+      " Irish",
+      " English",
+      " American"
+    ],
+    "demotes": [
+      " Geraadpleegd",
+      "tvguidetime",
+      " propOrder",
+      "EditorBrowsable",
+      "J\u00een"
+    ]
+  },
+  {
+    "id": "20_14143_13",
+    "layer": 20,
+    "ctx_idx": 13,
+    "influence_score": 0.3917072117328644,
+    "top_activations": [
+      {
+        "trigger": " speak",
+        "score": 58.75,
+        "context": " Most of the refugees did not speak English. Most of the Unitarian committee members spoke only English. How could the Unitarians explain they were there to help? It"
+      },
+      {
+        "trigger": " speak",
+        "score": 55.75,
+        "context": " conference. Many classroom teachers do not know how to communicate with parents who do not speak English and who are not familiar with U.S. school practices. The"
+      },
+      {
+        "trigger": " speaking",
+        "score": 45.5,
+        "context": " are strengthening your visual spatial and visual memory skills. Foreign travel that involves learning and speaking a new language is a workout for the whole brain. And learning new information"
+      },
+      {
+        "trigger": " spoke",
+        "score": 45.75,
+        "context": " there were a couple of problems of the times. One, not all of them spoke or wrote in the same language. An alchemist in Florence may have problems discussing"
+      },
+      {
+        "trigger": " in",
+        "score": 46.25,
+        "context": "<bos>Lombardy (Lombardia in Italian) on the North of Italy is one of the Italian regions covering approximately the centre of the Po Valley, while"
+      }
+    ],
+    "promotes": [
+      "InputTagHelper",
+      "StoryboardSegue",
+      "\u0627\u0631\u06cc\u062e",
+      "GOTREF",
+      "SharedDtor"
+    ],
+    "demotes": [
+      " d\u016fm",
+      "Diagnosis",
+      " in",
+      " mortes",
+      " sout\u011b"
+    ]
+  },
+  {
+    "id": "21_5807_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.38888582587242126,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 29.0,
+        "context": " of the historical events which were to play a major role in Galois' life is surely the storming of the Bastille on 14 July 178"
+      },
+      {
+        "trigger": " is",
+        "score": 28.5,
+        "context": " brought it to its present humiliating state.\u23ceThe logical starting point in this examination is Bretton Woods. When the representatives of some forty nations met there in "
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "<bos>One of the greatest stories of explorationand discovery is the Europeanquest for a Northwest Passageanoceanic shortcut from the Atlantic to thePacific across the top of"
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " became a proponent for the hypothesis , which states that the prototype of the Armenian alphabet is a variety of combinations of resembling curves and horizontal elements. Subsequently these horizontal elements"
+      },
+      {
+        "trigger": " be",
+        "score": 28.75,
+        "context": ". Indeed, in the construction \u2018anosognosia for X\u2019, X might even be anosognosia for some Y.|\u23ce|Keywords||Amnesia Belief Del"
+      }
+    ],
+    "promotes": [
+      "supplied",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "applicable",
+      " MainAxisSize",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "Those",
+      " Those",
+      "ItemLayout",
+      "erweise",
+      "\u90a3\u5c31\u662f"
+    ]
+  },
+  {
+    "id": "22_14724_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.3710806369781494,
+    "top_activations": [
+      {
+        "trigger": " clients",
+        "score": 80.5,
+        "context": " know the language of the people with whom they would be trading, if their likely clients came from areas besides those that usually spoke Westron. Nobility or,"
+      },
+      {
+        "trigger": "-",
+        "score": 70.0,
+        "context": " English in the United States was inherited from British colonization. The first wave of English-speaking settlers arrived in North America in the 17th century. During"
+      },
+      {
+        "trigger": " a",
+        "score": 67.5,
+        "context": " aged from 12 to 15 years old, with Spanish as a common language, attended from Colombia, Chile, Croatia, Ecuador, France, Germany"
+      },
+      {
+        "trigger": " who",
+        "score": 69.0,
+        "context": " use symbols to represent ideas.\u23ceI have a number of students where I work who attend our school on I-20 visas. These kids are mostly from"
+      },
+      {
+        "trigger": " he",
+        "score": 71.0,
+        "context": " for the rest of his life and seemingly never wrote in the Russian language, which he must have known.\u23ceCantor's father had poor health and the"
+      }
+    ],
+    "promotes": [
+      "speak",
+      " Speak",
+      " speaking",
+      " speaks",
+      " speak"
+    ],
+    "demotes": [
+      "__':",
+      "\ufeff/**",
+      " FetchType",
+      " CascadeType",
+      "astify"
+    ]
+  },
+  {
+    "id": "23_7753_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.366245836019516,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 49.0,
+        "context": " Anthem: A Pirate Looks at 40|\u23ce|Official language||English, but with a West Country accent|\u23ce|Population (dead man's"
+      },
+      {
+        "trigger": " in",
+        "score": 49.5,
+        "context": "||Talk Like a Pirate Day|\u23ceTortuga (\u00cele de la Tortue in Parley) is a wee Carrr-ibbean island, says I"
+      },
+      {
+        "trigger": " in",
+        "score": 63.5,
+        "context": " on by Tropical Storm Isaac. It\u2019s one of several text messages originally written in Cr\u00e9ole sent out before and after the storm passed over Haiti. The messages"
+      },
+      {
+        "trigger": " speak",
+        "score": 55.0,
+        "context": " in English\u23ceIn Doncaster Hill, 141 people who were able to speak another language in 2011, reported difficulty speaking English.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 50.25,
+        "context": ", Anglo-Welsh, or Wenglish (see below) refers to the dialects of English spoken in Wales by Welsh people. The dialects are significantly influenced by Welsh"
+      }
+    ],
+    "promotes": [
+      " \u0627\u0644\u0627\u0637\u0644\u0627\u0639",
+      "PerformLayout",
+      " disponibilit\u00e9s",
+      "Personendaten",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      "LANGUAGE",
+      " language",
+      " nemici",
+      " Shakspeare",
+      "featureID"
+    ]
+  },
+  {
+    "id": "19_11872_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.3963322639465332,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 43.0,
+        "context": "<bos>Researchers at the University of Waterloo in Ontario, seemingly oblivious to the fact that technology is exponentially outpacing our ability to keep up with it, have created"
+      },
+      {
+        "trigger": ",",
+        "score": 34.25,
+        "context": "The Factor 9 Home is a single-family residence located in Regina, Saskatchewan, Canada. It was built in 2007 as a demonstration home"
+      },
+      {
+        "trigger": " in",
+        "score": 31.25,
+        "context": " Joann Fletcher, research fellow in the department of archaeology at the University of York in Britain, describes the history of tattoos and their cultural significance to people around the"
+      },
+      {
+        "trigger": " and",
+        "score": 32.75,
+        "context": "huth's play The Deputy (in German in 1963 and English in 1964), a drama that presented a critical,"
+      },
+      {
+        "trigger": " in",
+        "score": 31.5,
+        "context": "huanet) -- The genre of children's literature wasn't firmly established in China until the 1930s, when acclaimed writers like Ye"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      "XmlAccessorType",
+      " propOrder",
+      " Audiodateien",
+      " EconPapers"
+    ],
+    "demotes": [
+      " human",
+      " Human",
+      " Indian",
+      "Human",
+      " Our"
+    ]
+  },
+  {
+    "id": "23_7367_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.3907669484615326,
+    "top_activations": [
+      {
+        "trigger": " complete",
+        "score": 47.25,
+        "context": " balanced, considering spiciness, texture, temperature, and careful presentation.\u23ceA complete Korean meal is called Hanjoungshik and is composed of fish,"
+      },
+      {
+        "trigger": " the",
+        "score": 44.75,
+        "context": " prevalence of heart disease (3.4%). Smoking and obesity were more common in the white population while the South Asian and black populations had the highest levels of diabetes"
+      },
+      {
+        "trigger": " several",
+        "score": 46.5,
+        "context": " to Meet with Professor Gary Rowe\u23ceProfessor, lawyer and historian Gary Rowe gathered with several people from Haiti Tuesday, July 26, to discuss the U."
+      },
+      {
+        "trigger": " ten",
+        "score": 44.25,
+        "context": " their US counterparts, but the obesity epidemic has spread among them too. One in ten French kids will be obese by the age of 10 years, and"
+      },
+      {
+        "trigger": " some",
+        "score": 43.5,
+        "context": ", Nicoladis noted that some French Canadians also displayed anomalous differences from their Canadian or even their German counterparts.\u23ce\"They show a lot more variation in what they"
+      }
+    ],
+    "promotes": [
+      "tamide",
+      "UnknownFields",
+      "AddTagHelper",
+      " Bioaccumulative",
+      "SharedDtor"
+    ],
+    "demotes": [
+      " France",
+      " Italy",
+      " Greece",
+      " Germany",
+      " Ireland"
+    ]
+  },
+  {
+    "id": "21_8610_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.37222012877464294,
+    "top_activations": [
+      {
+        "trigger": " he",
+        "score": 105.5,
+        "context": " or oil-based substances, Truong and his team have been working on what he calls an \u201comniphobic coating.\u201d\u23ce\u201cWe really wanted to make"
+      },
+      {
+        "trigger": "ve",
+        "score": 71.0,
+        "context": " University, where he leads a team that has created a self-driving race car they\u2019ve dubbed \u201cShelley,\u201d short for Michelle, and not in reference to"
+      },
+      {
+        "trigger": "They",
+        "score": 65.5,
+        "context": " built a full-scale simulator to replicate the extreme conditions of galactic travel.\u23ceThey claim that their vacuum chamber (pictured above), housed at the Space Power Facility"
+      },
+      {
+        "trigger": " so",
+        "score": 71.0,
+        "context": " has cast doubts on a popular assumption that raising a person's HDL - the so-called 'good cholesterol' - will necessarily lower the risk of a heart"
+      },
+      {
+        "trigger": " she",
+        "score": 66.0,
+        "context": " biology, studies the relationships and interdependence of species in these webs\u2014or, as she puts it, \u201cwho eats whom.\u201d To understand these relationships, she and"
+      }
+    ],
+    "promotes": [
+      "Call",
+      " Call",
+      "call",
+      " calls",
+      " call"
+    ],
+    "demotes": [
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      "AsUp",
+      "PyExc",
+      "Obr\u00e1zky",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ]
+  },
+  {
+    "id": "22_9057_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.39450305700302124,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 43.75,
+        "context": "- Travel Tips\u23ce- Fodor's Choice\u23ceNewfoundland English is full of words brought to this rocky land centuries ago, when the fertile fishing grounds lured"
+      },
+      {
+        "trigger": " of",
+        "score": 55.25,
+        "context": " would have spoken, in terms of\u23ceformulating expressions, word order, degree of fluency and so on.\u23ceFrom what I\u2019ve read, a lot"
+      },
+      {
+        "trigger": " distinctive",
+        "score": 41.25,
+        "context": " don't have any crop unless we got irrigation,\" he says in his distinctive southern drawl. \"I'm worried we might lose the farm 'cause"
+      },
+      {
+        "trigger": " of",
+        "score": 43.5,
+        "context": " in a sentence? When do you really need \u201cwhom\u201d? Conscientious users of the English language keep the distinction in mind and, consequently, use both pronouns"
+      },
+      {
+        "trigger": " British",
+        "score": 41.75,
+        "context": "<bos>English language teaching theory has traditionally been based on native English forms, more specifically British and American English varieties. In today\u2019s international community however, where more"
+      }
+    ],
+    "promotes": [
+      " learned",
+      "FieldBuilder",
+      "CodedInputStream",
+      "PasswordField",
+      "CrossRef"
+    ],
+    "demotes": [
+      "ConstraintMaker",
+      "rungsseite",
+      "English",
+      " protoimpl",
+      "PRNewswire"
+    ]
+  },
+  {
+    "id": "22_5277_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.26343899965286255,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 77.5,
+        "context": " teaching has been widespread throughout modern Chinese history- it was made the country's main foreign language in 1982.\u23ceIn Beijing, in preparation"
+      },
+      {
+        "trigger": " their",
+        "score": 72.5,
+        "context": " under the \"Citizen Speak Turkish\" campaign, non-Muslims were threatened if they spoke their native languages in public. When the Wealth Tax (Varlik Vergisi"
+      },
+      {
+        "trigger": " their",
+        "score": 82.0,
+        "context": " increasingly diverse population of students in the schools, many of which English is not their first language.\u23ceBecause I have an Area of Concentration in Science, the Science"
+      },
+      {
+        "trigger": " speaking",
+        "score": 75.5,
+        "context": "60s \u2013 came from Pomerania, and therefore did not face the problem of mixing with other immigrants speaking often mutually unintelligible dialects; as ninety percent of the"
+      },
+      {
+        "trigger": " spoken",
+        "score": 92.0,
+        "context": ".1 % of the world population. Within Europe, German is the most widely spoken mother tongue.\u23ce- German is an important language for trade. Germany is"
+      }
+    ],
+    "promotes": [
+      " \"'\");",
+      " CascadeType",
+      " propOrder",
+      "astify",
+      " FetchType"
+    ],
+    "demotes": [
+      " speak",
+      " speaks",
+      " speaking",
+      " Speak",
+      " English"
+    ]
+  },
+  {
+    "id": "22_12284_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.2692939043045044,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 60.25,
+        "context": " to touch. The idea is to make visitors experiment with science and new technologies.\u23ceIn the complex you will also find the L'Espai dels Xiquets"
+      },
+      {
+        "trigger": " (",
+        "score": 66.0,
+        "context": "16, 2012\u23ce\u2013 Estadao \u2013 Original Article (Portuguese)\u23ceS\u00c3O PAULO: The Watergate case was so renowned"
+      },
+      {
+        "trigger": " in",
+        "score": 66.0,
+        "context": " Padellaro, Portrait of Pius XII (1956; originally published in Italian, 1949)were countered by the critical studies Gu"
+      },
+      {
+        "trigger": " learn",
+        "score": 59.75,
+        "context": " their communities. Many cities are establishing liaison offices, improving communication with, helping immigrants learn English, and creating programs and events that help all residents embrace cultural diversity."
+      },
+      {
+        "trigger": " and",
+        "score": 68.0,
+        "context": " have at least one bilingual teacher in every classroom. This exposes children to both Spanish and English very early, allowing for both language and cultural exchange.\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " Spanish",
+      " ENGLISH",
+      " english",
+      "English",
+      " English"
+    ],
+    "demotes": [
+      " $__",
+      " vil\u00e1",
+      "\u0627\u0648",
+      "ate",
+      ">"
+    ]
+  },
+  {
+    "id": "23_13607_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.34160116314888,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 61.0,
+        "context": ", Calif. About 75 percent of parents participating in PIQE programs are Spanish-speaking. During the classes, parents were made aware of and encouraged to"
+      },
+      {
+        "trigger": ",",
+        "score": 61.5,
+        "context": " up with the innovative solution of going underground with a design called the walipini, after the Aymara word for \"place of warmth.\" It's"
+      },
+      {
+        "trigger": " usually",
+        "score": 51.75,
+        "context": " the title of Chapter 5 (translated on my hyperlink as \"energy\") is usually translated in Tai Chi contexts as \"posture\" (e.g.,"
+      },
+      {
+        "trigger": " speaking",
+        "score": 53.5,
+        "context": " born: 17.3%\u23ce- Population (age 5+) speaking language other than English at home: 21.3%\u23ce-"
+      },
+      {
+        "trigger": " together",
+        "score": 60.5,
+        "context": " separated by \u201c\u1f41 \u1f38\u03b7\u03c3\u03bf\u1fe6\u03c2\u201d (\"Jesus\"), so together it is \u201c\u1f00\u03c0\u03bf\u03ba\u03c1\u03b9\u03b8\u03b5\u1f76\u03c2 \u1f41 \u1f38\u03b7\u03c3\u03bf\u1fe6\u03c2"
+      }
+    ],
+    "promotes": [
+      "yll",
+      " di\u1ec7n",
+      "misu",
+      "\u30b4\u30ea\u30fc",
+      "providedIn"
+    ],
+    "demotes": [
+      " translated",
+      " translation",
+      " translate",
+      " translating",
+      " translations"
+    ]
+  },
+  {
+    "id": "25_4717_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.3935789465904236,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ]
+  },
+  {
+    "id": "24_13277_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.2841295301914215,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "21_3435_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.33641067147254944,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 61.0,
+        "context": " also talk to other donor countries about the possibility of grants,\u201d the letter, signed by British Environment Minister Phil Woolas and his international aid counterpart Gareth Thomas, said"
+      },
+      {
+        "trigger": "1",
+        "score": 78.5,
+        "context": "12 Summer Olympics were supposed to be the \"first truly sustainable Olympic Games,\" according to organizers. Contrasting with Beijing's over-the-top production"
+      },
+      {
+        "trigger": " by",
+        "score": 52.5,
+        "context": "19th century, the Imperial British East Africa Company, the commercial company chartered by the British government to administer her sphere of influence in East Africa had its headquarters"
+      },
+      {
+        "trigger": " while",
+        "score": 56.5,
+        "context": " Mail is looking at immune systems as a way to highlight anomalies and detect fraud, while BT sees studying the behaviour of ants as a source of routing algorithms.\u23ce"
+      },
+      {
+        "trigger": "s",
+        "score": 56.5,
+        "context": ", food supply and healthcare. This domino effect has been described by the Government\u2019s Chief Scientific Advisor Professor John Beddington as a \u2018perfect storm\u2019, which could"
+      }
+    ],
+    "promotes": [
+      "London",
+      " UK",
+      " Britain",
+      " British",
+      " London"
+    ],
+    "demotes": [
+      " coleg",
+      "Hentet",
+      " \u0643\u0631\u0647",
+      "Scripting",
+      " ouvertes"
+    ]
+  },
+  {
+    "id": "25_13416_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.3981347978115082,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ]
+  },
+  {
+    "id": "24_598_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3481578528881073,
+    "top_activations": [
+      {
+        "trigger": " cells",
+        "score": 59.5,
+        "context": " is necessary to understand how the skin gets it color. The body naturally produces a pigment known as melanin through specialized cells known as melanocytes. A person's"
+      },
+      {
+        "trigger": " organization",
+        "score": 55.0,
+        "context": " Training and Research (UNITAR), and the University of Geneva to create\u23cean organization dubbed \"Citizen Cyberscience\u23ceCentre\", which looks to test and deploy"
+      },
+      {
+        "trigger": " process",
+        "score": 56.5,
+        "context": " novelty plant in your neighbor's garden.\u23ceThe plants are created by a process called grafting, meaning they aren't hybrids of genetically modified organisms (not"
+      },
+      {
+        "trigger": "making",
+        "score": 65.5,
+        "context": "\u23ceConcept/Goal: To learn about still life drawings and a method of printmaking.\u23ceActivity: Students will use a still life to make a drawing and"
+      },
+      {
+        "trigger": " data",
+        "score": 69.5,
+        "context": " networking technologies are based on packet switching, which involves the creation of small chunks of data to be sent over a network. Even though the word packet appears in the"
+      }
+    ],
+    "promotes": [
+      "uginosa",
+      "expandindo",
+      " gener",
+      "SequentialGroup",
+      "<>());"
+    ],
+    "demotes": [
+      " known",
+      " Known",
+      "Known",
+      "known",
+      " KNOWN"
+    ]
+  },
+  {
+    "id": "25_14538_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.38199907541275024,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 56.0,
+        "context": " rule. There he gave a series of talks on the Gita, in his native language Marathi, to his fellow prisoners. These highly inspiring talks were later published as"
+      },
+      {
+        "trigger": " as",
+        "score": 55.0,
+        "context": " annotations in more than one language, however; all instances of a language, such as Portuguese, can be located via the search box.\u23ceGeographic location arranges sources"
+      },
+      {
+        "trigger": " in",
+        "score": 64.5,
+        "context": " to some letters in certain words to denote something special about that word. For example in Spanish an accent symbol is added to the main vowel of a syllable to denote"
+      },
+      {
+        "trigger": " to",
+        "score": 56.5,
+        "context": " they are a distinctive and separate race and not Chinese. Their language bears no relation to those of India or China, although the\u23ceTibetan script has its origin"
+      },
+      {
+        "trigger": ",",
+        "score": 73.0,
+        "context": " from a broad range of languages \u2013 English, French, German, Spanish, Italian, Punjabi, Portuguese and English translations are provided. A wide variety of text types"
+      }
+    ],
+    "promotes": [
+      "tagHelper",
+      "WritableDatabase",
+      "Datuak",
+      " SwitchCompat",
+      "ositol"
+    ],
+    "demotes": [
+      "hs",
+      "ption",
+      "NameInMap",
+      "ize",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ]
+  },
+  {
+    "id": "25_12021_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.32507994771003723,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 32.25,
+        "context": "<bos>Word Origin & History\u23ce1884, Anglicized from Mod.L. aphides, pl. of aphis, coined by Linnaeus ("
+      },
+      {
+        "trigger": " the",
+        "score": 36.75,
+        "context": "\") and the Latin turbare (\"to disturb\"). A competing etymology based on the Latin manu stuprare (\"to defile with the hand\") is said by the"
+      },
+      {
+        "trigger": " the",
+        "score": 31.0,
+        "context": " the 19th century Valldemossa has been promoted internationally as a beautiful spot thanks to the affection of a distinguished traveller and cultural writer, the Austrian Arch"
+      },
+      {
+        "trigger": " the",
+        "score": 31.25,
+        "context": ", and victorious, cavalry charge on a European battlefield goes, I believe, to the Italian army on the Eastern Front in August 1942 during the"
+      },
+      {
+        "trigger": " and",
+        "score": 31.0,
+        "context": " A gifted and eager student, Lessing acquired a good knowledge of Greek, Hebrew, and Latin, while his admiration for the plays of the Latin dramatists Plautus"
+      }
+    ],
+    "promotes": [
+      " GetEnumerator",
+      "\u043a\u043b\u043e\u043f\u0435",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " @\"/",
+      "SourceChecksum"
+    ],
+    "demotes": [
+      " Japanese",
+      " Italian",
+      " Mexican",
+      " Canadian",
+      " Chinese"
+    ]
+  },
+  {
+    "id": "25_11647_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.36873921751976013,
+    "top_activations": [
+      {
+        "trigger": " young",
+        "score": 38.25,
+        "context": " of Singapore began in 1819 with Thomas Stamford Raffles, a young official who worked for the British East India Company. Raffles estimated that the"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 40.0,
+        "context": ", completing with traditional dishes with origins rooted back from the beginning of the country.\u23ceBritain first started out with a poor selection of food, mainly due to the"
+      },
+      {
+        "trigger": ",",
+        "score": 45.5,
+        "context": " of Europe under Hitler's thumb, and the United States still frustratingly neutral, Britain was left alone to fight Nazi Germany. The only hope lay in the"
+      },
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": " also visually striking and accessible. It offers a detailed study of both the chronological phases of expansion, and more focused analysis of the very different areas of colonization. It"
+      },
+      {
+        "trigger": " new",
+        "score": 36.25,
+        "context": " Peter Dearman, a garage inventor in Hertfordshire, to power vehicles.\u23ceA new firm, Highview Power Storage, was created to transfer Mr Dearman'"
+      }
+    ],
+    "promotes": [
+      " Bioaccumulative",
+      "harapkan",
+      "crollView",
+      "intios",
+      "apd"
+    ],
+    "demotes": [
+      " UK",
+      "UK",
+      " British",
+      " \u00a3",
+      "British"
+    ]
+  },
+  {
+    "id": "23_13359_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.2953108251094818,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 42.25,
+        "context": "s treasures. One of only two buildings of the original Palace of Westminster to survive the fire of 1834, the tower features a 14"
+      },
+      {
+        "trigger": " British",
+        "score": 38.5,
+        "context": " together using Battledores (paddles) to keep the shuttle in the air. British soldiers in India modified this game into an adult competitive sport in the 1"
+      },
+      {
+        "trigger": " UK",
+        "score": 45.25,
+        "context": " seen four such contests unroll. First, the Grand Challenge, held by the UK's Ministry of Defence. In many ways similar to the US DARPA"
+      },
+      {
+        "trigger": " British",
+        "score": 39.75,
+        "context": "5 mins 5 secs\u23ceAbout this item\u23ceLinda Colley explains about the British Charter.\u23ceBritain, it is often claimed, is the world's"
+      },
+      {
+        "trigger": " RAF",
+        "score": 42.25,
+        "context": " were lost, only 115 survived.\u23ceFive days earlier, an RAF reconnaissance plane flying low off the coast of Norway spotted four large warships in the"
+      }
+    ],
+    "promotes": [
+      " kayna\u011f\u0131ndan",
+      "addContainerGap",
+      "ThroughAttribute",
+      " \u0627\u0644\u0627\u0637\u0644\u0627\u0639",
+      "+#+#"
+    ],
+    "demotes": [
+      " British",
+      " UK",
+      " Britain",
+      " England",
+      "British"
+    ]
+  }
+]

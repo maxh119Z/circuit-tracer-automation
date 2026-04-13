@@ -1,0 +1,2450 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.37207821011543274,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 activates on sentence-initial preposition \"In\", signaling a topical/prepositional phrase intro (e.g., \"In medicine,\", \"In music,\")."
+  },
+  {
+    "id": "0_3639_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.38220998644828796,
+    "top_activations": [
+      {
+        "trigger": " System",
+        "score": 22.25,
+        "context": ", that have been improved upon, or conserved, on behalf of the Resource Recovery System. Here are some of the results of our wetlands mitigation efforts:\u23ce-"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": " civilians this summer.\u23ceThe Cape Ray now houses the Field Deployable Hydrolysis System, a transportable system designed to neutralize chemical warfare agents and their precursors by"
+      },
+      {
+        "trigger": " System",
+        "score": 22.0,
+        "context": "<bos>Indian Ocean Tsunami warning System activated following earthquake off Sumatra\u23ceA tsunami alert was issued in the Indian Ocean today following a strong earthquake off the west coast of Sumatra"
+      },
+      {
+        "trigger": " System",
+        "score": 21.5,
+        "context": " story time programs featuring the One Book Every Young Child selection at all Adams County Library System locations.\u23ceThe 2012 selection is Stop Snoring,"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": "<bos>The Andrew Project: What is Andrew?\u23ceThe Andrew System (Andrew) is a set of computer tools that enables the user to write and edit documents,"
+      }
+    ],
+    "promotes": [
+      "OGND",
+      " ModelExpression",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "findpost",
+      "Datuak"
+    ],
+    "demotes": [
+      " System",
+      "System",
+      " system",
+      "system",
+      " SYSTEM"
+    ],
+    "generated_description": "System (capitalized) \u2014 fires on the token \"System\" in names/titles; appears after named entities or modifiers (e.g., \"Andrew System\", \"Field Deployable Hydrolysis System\", \"Tsunami warning System\")."
+  },
+  {
+    "id": "0_5280_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3611224889755249,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 21.0,
+        "context": "<bos>High-performance insulation and an automatic control monitoring system further reduce energy use inside the building.\u23ceThe Welios Science Center is located in the Wels\u2019"
+      },
+      {
+        "trigger": " system",
+        "score": 20.75,
+        "context": " large centralized pumps to actuators for brakes, landing gear, and the nose wheel steering system. Ordinarily, large commercial jets have three sets of redundant hydraulics:"
+      },
+      {
+        "trigger": " system",
+        "score": 21.5,
+        "context": " \"If they used a cobalt oxide chemistry, then the battery should use a cooling system.\"\u23ceAn NTSB engineer examines the casing from the battery involved in the"
+      },
+      {
+        "trigger": " system",
+        "score": 22.0,
+        "context": " the utility.\u23ceRegardless of which approach is taken, each PV system uses similar components, including PV modules, a cooling system, an energy storage system or battery"
+      },
+      {
+        "trigger": " system",
+        "score": 21.25,
+        "context": " and $400 per year with proper upgrades to a high-efficiency heating system.\u23ceEliminating cold spots or overheated rooms makes a home comfortable."
+      }
+    ],
+    "promotes": [
+      " .",
+      " B",
+      "<i>",
+      " The",
+      " "
+    ],
+    "demotes": [
+      "tvguidetime",
+      " Monfieur",
+      " it\u017felf",
+      "\ue315",
+      " purpo\u017fe"
+    ],
+    "generated_description": "system \u2014 activates on the noun \"system\" in technical/mechanical contexts (cooling, heating, hydraulic, control, energy storage); marks componentized technical descriptions."
+  },
+  {
+    "id": "0_11375_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3522671163082123,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "copula \"is\" \u2014 activates on the present-tense linking verb \"is\" (3rd-person singular), typically when connecting a subject to a predicate in descriptive clauses."
+  },
+  {
+    "id": "0_6465_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.398911714553833,
+    "top_activations": [
+      {
+        "trigger": " band",
+        "score": 18.5,
+        "context": " as the Sun dips below the horizon. But the Surveyor landers saw a thin band of light that persisted well after the Sun had disappeared. Scientists have speculated that"
+      },
+      {
+        "trigger": " band",
+        "score": 19.0,
+        "context": "<bos>WHO\u2019S TO BLAME? A bus being vandalised during a bandh\u23ceHow many times have you cursed a bandh because it brings normal life"
+      },
+      {
+        "trigger": " band",
+        "score": 19.25,
+        "context": " led to the football field.\u23ce- He blew his whistle, signaling for the band to mark time.\u23ce- Still, some steps are better than just marking"
+      },
+      {
+        "trigger": " band",
+        "score": 18.75,
+        "context": " (2). The underparts are white with males developing a reddish-brown breast band that gets bigger with age (2) (5). The great bustard"
+      },
+      {
+        "trigger": " band",
+        "score": 19.0,
+        "context": " and into Brazil. This is the heart of the first climate zone, the green band that centred on the equator. With all that heat concentrated at the equator,"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " Re\u017f",
+      " C\u00e6sar",
+      " it\u017felf",
+      " The\u017fe"
+    ],
+    "demotes": [
+      " in",
+      " to",
+      " at",
+      " a",
+      " the"
+    ],
+    "generated_description": "band \u2014 activates on the noun \"band\": stripes/zones/groups/ensembles (band of light, marching band, color/green band, breast band)"
+  },
+  {
+    "id": "0_3639_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.334837943315506,
+    "top_activations": [
+      {
+        "trigger": " System",
+        "score": 22.25,
+        "context": ", that have been improved upon, or conserved, on behalf of the Resource Recovery System. Here are some of the results of our wetlands mitigation efforts:\u23ce-"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": " civilians this summer.\u23ceThe Cape Ray now houses the Field Deployable Hydrolysis System, a transportable system designed to neutralize chemical warfare agents and their precursors by"
+      },
+      {
+        "trigger": " System",
+        "score": 22.0,
+        "context": "<bos>Indian Ocean Tsunami warning System activated following earthquake off Sumatra\u23ceA tsunami alert was issued in the Indian Ocean today following a strong earthquake off the west coast of Sumatra"
+      },
+      {
+        "trigger": " System",
+        "score": 21.5,
+        "context": " story time programs featuring the One Book Every Young Child selection at all Adams County Library System locations.\u23ceThe 2012 selection is Stop Snoring,"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": "<bos>The Andrew Project: What is Andrew?\u23ceThe Andrew System (Andrew) is a set of computer tools that enables the user to write and edit documents,"
+      }
+    ],
+    "promotes": [
+      "OGND",
+      " ModelExpression",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "findpost",
+      "Datuak"
+    ],
+    "demotes": [
+      " System",
+      "System",
+      " system",
+      "system",
+      " SYSTEM"
+    ],
+    "generated_description": "System (capitalized) \u2014 activates on the token \"System\" in named systems (Library System, Andrew System, Field Deployable Hydrolysis System, tsunami warning System); tends to suppress emitting \"system\"/\"System\"."
+  },
+  {
+    "id": "0_899_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3509231507778168,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": " to stop. You don't take it over a long, long period of time because you can just stimulate the immune system so much and to continue to take"
+      },
+      {
+        "trigger": " system",
+        "score": 19.0,
+        "context": " programs to identify and to remove. They function a the base layer of the operating system or can get into the boot sector of the operating system and infect the bios"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " the mid-1970s has highlighted the distortions of the present voting system.\u23ceThe 1997 Labour government promised a referendum on the"
+      },
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": "\u201cHowever, if we are right, we have significantly broadened the diversity of solar system environments where we might possibly have conditions suitable for living organisms.\u201d\u23ceScientists have"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " (RAM) has been allocated to a given virtual page, in which case the MMU will signal a \"page fault\" to the CPU. The operating system"
+      }
+    ],
+    "promotes": [
+      "2",
+      "\u00e4nning",
+      ",",
+      ".",
+      " and"
+    ],
+    "demotes": [
+      "abestanden",
+      "ConstraintMaker",
+      "IsContent",
+      "+#+#",
+      "DockStyle"
+    ],
+    "generated_description": "system \u2014 activates on the token \"system\" across contexts (operating, immune, voting, solar); lexical detector for the word \"system\"."
+  },
+  {
+    "id": "0_7656_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3750085234642029,
+    "top_activations": [
+      {
+        "trigger": " mixture",
+        "score": 10.38,
+        "context": " the shale formations deep underground, then creating small explosions to splinter the shale. A mixture of water, sand and chemicals are then poured in to release the trapped gas"
+      },
+      {
+        "trigger": " mixture",
+        "score": 10.25,
+        "context": "5-7-354:\u23ce- (i)Any substance or mixture of substances intended for preventing, destroying, repelling, or mitigating any pests"
+      },
+      {
+        "trigger": " System",
+        "score": 10.06,
+        "context": ".\u23ce|Carnegie Mellon University|\u23ce|The Advanced Robotic Laser Coating Removal System is being deployed in a two-year demonstration project at Hill Air Force Base"
+      },
+      {
+        "trigger": " System",
+        "score": 10.0,
+        "context": "The video features high-resolution images from Arizona State University's Thermal Emission Imaging System multi-band camera on NASA's Mars Odyssey. The images, which"
+      },
+      {
+        "trigger": " mixture",
+        "score": 10.38,
+        "context": " than 7.5 hours a day, seven days a week with a potent mixture of digitally delivered music, television, computers and games. Legions of government"
+      }
+    ],
+    "promotes": [
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      " <=\",",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " propOrder",
+      "rungsseite"
+    ],
+    "demotes": [
+      " the",
+      "2",
+      "1",
+      "3",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "mixture/system nouns \u2014 activates on nouns for composed collections or assemblies (e.g. \"mixture\", \"System\"); often occurs before \"of\" or in product/name contexts."
+  },
+  {
+    "id": "0_10217_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.38734960556030273,
+    "top_activations": [
+      {
+        "trigger": " Functions",
+        "score": 10.69,
+        "context": " answers to common questions:\u23ceCompleting the square.\u23ce- Graphing Polynomial Functions in Factored Form [07/07/2004"
+      },
+      {
+        "trigger": " set",
+        "score": 11.31,
+        "context": " of x = .6 under is , because\u23ceIf the domain A of the function f is a set of real numbers, a calculator makes it easy to compute"
+      },
+      {
+        "trigger": " function",
+        "score": 12.69,
+        "context": " of all simple functions.\u23ceWe can use this to define the integral of a function over some range other than all of . If is an integrable simple function and"
+      },
+      {
+        "trigger": " systems",
+        "score": 11.06,
+        "context": "solve equations, simplify expressions, factor expressions, solve inequalities, solve matrices, solve systems of equations, graph equations, and much more.\u23ceHow to solve problems"
+      },
+      {
+        "trigger": " sets",
+        "score": 10.31,
+        "context": " that divides them. This Demonstration uses a combinatorial formula to compute the sizes of these sets. The first set is made up of the binomial coefficients not divisible by ."
+      }
+    ],
+    "promotes": [
+      " of",
+      ".",
+      " ",
+      "\u23ce",
+      "'"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "AddTagHelper",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "generated_description": "Math term \u2014 activates on tokens like \"function\", \"set\", \"functions\", \"systems\"; signals math-related concept nouns in instructional/mathematical text."
+  },
+  {
+    "id": "0_1241_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36792653799057007,
+    "top_activations": [
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " needs.\u23ceThe Saudi oil minister Ali-al-Naimi has very confidently stated that the country has the potential to produce enough solar power by 20"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " as polycrystalline solar cells.\u23ceThe monocrystalline as well as polycrystalline solar cells are produced around the clock in one of the most advanced solar cell production"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " energy. The remainder will go to research on thin-film solar technology that allows solar cells to be printed or sprayed onto surfaces like stainless steel, reducing solar panels"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.75,
+        "context": " expensive electricity, and reduces costs for all.\u23ceVote Solar is a non-profit grassroots organization working to fight climate change and foster economic opportunity by bringing solar energy"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " gigawatt of energy annually. In 2010 alone, new solar panel systems generated seventeen gigawatts, the same amount of energy as seventeen"
+      }
+    ],
+    "promotes": [
+      " ",
+      " The",
+      " All",
+      "  ",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      "Hentet",
+      " \u272d\u272d",
+      " auffi",
+      " iconFacebook",
+      "SequentialGroup"
+    ],
+    "generated_description": "solar \u2014 activates on the token \"solar\"; signals topics about solar energy, panels, cells, solar power/technology contexts."
+  },
+  {
+    "id": "0_12886_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.3865009546279907,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 18.0,
+        "context": " TRPV1 nociceptor (pain sensing) neurons in the central nervous system and peripheral nervous system. It may be related to thermal hyperalgesia"
+      },
+      {
+        "trigger": " system",
+        "score": 17.5,
+        "context": " treated with anticancer drugs. Some of these drugs are also used to treat immune system conditions.\u23ceLCH may occur at any age, but is most common"
+      },
+      {
+        "trigger": " system",
+        "score": 17.0,
+        "context": "Also known as allergic hypersensitivity, is the damage to normal tissues, the immune system response. It is the same on the mechanism of function of the body similar"
+      },
+      {
+        "trigger": " system",
+        "score": 17.0,
+        "context": " prevent the virus from infecting new cells and act as chemical messengers to alter the immune system. By injecting controlled quantities of interferon it is hoped to boost the bodies natural"
+      },
+      {
+        "trigger": " system",
+        "score": 17.38,
+        "context": " and even transplanted organs and tissues. Substances that can stimulate a response by the immune system are called antigens. Antigens are molecules that may be contained within cells or"
+      }
+    ],
+    "promotes": [
+      " The\u017fe",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " doubtnut",
+      " Monfieur",
+      " Efq"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      " ",
+      "\u23ce",
+      "'",
+      "."
+    ],
+    "generated_description": "biological system \u2014 activates on the token \"system\" in biomedical phrases (especially \"immune system\" and \"nervous system\"); flags biological-system mentions."
+  },
+  {
+    "id": "1_3756_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.39970511198043823,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " described in connection therewith.\u23ce2. Discussion of Related Art\u23ceA cellular communication system is a mobile telephone service wherein radio coverage is divided into 20 cells"
+      },
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " a C-like syntax.\u23ceXorg also brought with it a modular build system. While this separation into modules resulted in full control of the features available to"
+      },
+      {
+        "trigger": " system",
+        "score": 22.5,
+        "context": "\u23ceOn systems that do memory mapping, the process is slightly more complicated. The system loader has to create the segments, then arrange to map the file pages into"
+      },
+      {
+        "trigger": " system",
+        "score": 21.5,
+        "context": " would be very wary of looking purely at FLOPS (or BogoMIPS) as a measure of overall system speed since they don't account for other speed"
+      },
+      {
+        "trigger": " system",
+        "score": 22.25,
+        "context": " available meant that system designers could take advantage of these building blocks to truly design a system with features that they want.\u23ceHowever, that's not all there"
+      }
+    ],
+    "promotes": [
+      "\u0411\u0430\u0445\u0430\u0440",
+      " Leinwand",
+      "terase",
+      "pos\u00f3b",
+      "\u1ec5m"
+    ],
+    "demotes": [
+      " system",
+      "system",
+      " System",
+      "System",
+      " SYSTEM"
+    ],
+    "generated_description": "system \u2014 activates on the token \"system\" (lowercase noun) across contexts; often linked to suppressing/emitting negative weight for the token \"system\" in outputs."
+  },
+  {
+    "id": "1_6394_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.349569708108902,
+    "top_activations": [
+      {
+        "trigger": " Panels",
+        "score": 28.5,
+        "context": "<bos>Costs and Benefits of Solar Panels\u23ceTaking a closer look at the pros and cons of solar energy\u23ceSolar energy has received more credence over the last few years"
+      },
+      {
+        "trigger": " modules",
+        "score": 23.5,
+        "context": ". Germany could profit from this development and is working to build modern factories for solar modules.\u23ceMore than 6 percent of Germany's energy needs are covered"
+      },
+      {
+        "trigger": " cell",
+        "score": 20.5,
+        "context": " noon. Traveling through the atmosphere reduces the amount of sun that arrives at the solar cell. In figure 1, the light at solar noon travels through less atmosphere"
+      },
+      {
+        "trigger": " panels",
+        "score": 25.25,
+        "context": "-Max concept-car models (based on a commercially available vehicle) with solar panels on the roof, along with some sort of sun-tracking system. It"
+      },
+      {
+        "trigger": " cell",
+        "score": 21.5,
+        "context": " collect sunlight during the day, then store it for use at night. The solar cell can be mounted in a sunny place and wired to the lighting fixture it its"
+      }
+    ],
+    "promotes": [
+      " NDEBUG",
+      "ViewImports",
+      "Personensuche",
+      " ProtoMessage",
+      "<bos>"
+    ],
+    "demotes": [
+      "SuspendLayout",
+      "\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f",
+      " mezzo",
+      "ript",
+      " evening"
+    ],
+    "generated_description": "solar panel/module/cell \u2014 activates on tokens naming photovoltaic hardware (panel, module, cell); physical solar-energy components in technical/descriptive contexts."
+  },
+  {
+    "id": "1_3756_9",
+    "layer": 1,
+    "ctx_idx": 9,
+    "influence_score": 0.37104910612106323,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " described in connection therewith.\u23ce2. Discussion of Related Art\u23ceA cellular communication system is a mobile telephone service wherein radio coverage is divided into 20 cells"
+      },
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " a C-like syntax.\u23ceXorg also brought with it a modular build system. While this separation into modules resulted in full control of the features available to"
+      },
+      {
+        "trigger": " system",
+        "score": 22.5,
+        "context": "\u23ceOn systems that do memory mapping, the process is slightly more complicated. The system loader has to create the segments, then arrange to map the file pages into"
+      },
+      {
+        "trigger": " system",
+        "score": 21.5,
+        "context": " would be very wary of looking purely at FLOPS (or BogoMIPS) as a measure of overall system speed since they don't account for other speed"
+      },
+      {
+        "trigger": " system",
+        "score": 22.25,
+        "context": " available meant that system designers could take advantage of these building blocks to truly design a system with features that they want.\u23ceHowever, that's not all there"
+      }
+    ],
+    "promotes": [
+      "\u0411\u0430\u0445\u0430\u0440",
+      " Leinwand",
+      "terase",
+      "pos\u00f3b",
+      "\u1ec5m"
+    ],
+    "demotes": [
+      " system",
+      "system",
+      " System",
+      "System",
+      " SYSTEM"
+    ],
+    "generated_description": "system / systems \u2014 activates on the token \"system\" (and \"systems\"); consistently associated with suppressing/output-demotion of the word \"system\"."
+  },
+  {
+    "id": "4_170_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3382488191127777,
+    "top_activations": [
+      {
+        "trigger": "ENGER",
+        "score": 24.12,
+        "context": " This picture shows meteorite craters and huge cracks on Mercury's surface. The MESSENGER spacecraft took this pictures in January 2008. The area in"
+      },
+      {
+        "trigger": "Sat",
+        "score": 20.38,
+        "context": ".\u23ceThe selections announced on Tuesday represent the fourth round of NASA's CubeSat Launch Initiative. Those selected in the this round will be eligible for flight after"
+      },
+      {
+        "trigger": " satellite",
+        "score": 23.12,
+        "context": "<bos>There are several natural satellites or moons in our solar system that might harbor life. One such moon is called Titan. It is the largest natural satellite of the"
+      },
+      {
+        "trigger": " orbit",
+        "score": 21.0,
+        "context": "/AP:\u23ceWASHINGTON (AFP) \u2013 NASA on Sunday launched a probe into orbit high above earth to study the distant edge of the solar system where hot solar"
+      },
+      {
+        "trigger": "toid",
+        "score": 21.0,
+        "context": " I mean, asteroid mining is all fine and dandy, but even a small planetoid like Mars or Europa has hundreds of times more resources close the surface than min"
+      }
+    ],
+    "promotes": [
+      " MOON",
+      "Moon",
+      "bited",
+      " Moon",
+      " moon"
+    ],
+    "demotes": [
+      " \u0645\u0634\u064a\u0646",
+      " \u0111\u00e2u",
+      " HOG",
+      " StatefulWidget",
+      "\u05b2"
+    ],
+    "generated_description": "Moon/satellite \u2014 activates on satellites/spacecraft words (MESSENGER, CubeSat, satellite, orbit); consistently pushes output toward \u201cMoon\u201d/\u201cmoon\u201d tokens."
+  },
+  {
+    "id": "4_15288_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.38565054535865784,
+    "top_activations": [
+      {
+        "trigger": " sun",
+        "score": 20.5,
+        "context": "Zirconium is found in S-type stars, and has been identified in the sun and meteorites. Analyses of lunar rock samples show a surprisingly high zirconium oxide"
+      },
+      {
+        "trigger": " sun",
+        "score": 18.0,
+        "context": " pressure must be in balance between the region inside\u23ceand the region outside of the sunspot. David Dearborn elaborates on how\u23cemagnetic fields keep sunspots cooler"
+      },
+      {
+        "trigger": " Sun",
+        "score": 18.75,
+        "context": " and settles onto the surface.\u23ceThe discovery of over a dozen objects orbiting the Sun beyond Neptune's orbit makes Pluto less special. The observational status of Pluto"
+      },
+      {
+        "trigger": " sun",
+        "score": 17.75,
+        "context": " ship's wake or a comet's tail.\u23ceThe region of the sun's influence, in which the solar wind is dominant, is called the"
+      },
+      {
+        "trigger": " solar",
+        "score": 18.88,
+        "context": " the Loneliest Star. Its planet Fomalhaut b was the first beyond our solar system to be visible to the human eye.\u23ceDelta Cephei doubles in"
+      }
+    ],
+    "promotes": [
+      "ConstraintMaker",
+      "webElementXpaths",
+      "XmlAccessType",
+      "OGND",
+      " referenties"
+    ],
+    "demotes": [
+      "InitStruct",
+      " digital",
+      " ex",
+      "\u6c40",
+      "lebo"
+    ],
+    "generated_description": "Sun / solar \u2014 activates on mentions of the Sun and solar adjective forms (sun, Sun, sun's, solar); signals solar/Star-of-our-system references."
+  },
+  {
+    "id": "2_12144_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.37777402997016907,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 17.12,
+        "context": " WATER SAVINGS\u23ceHigh-efficiency toilets, water-efficient washing machines, rainwater harvesting systems, and water-efficient landscaping can all help reduce water use\u23ceWater-"
+      },
+      {
+        "trigger": " system",
+        "score": 19.5,
+        "context": ")\u23ceThis fact sheet can get you started with a seven-step action plan to analyze and improve your compressed air system. Source: North Carolina Department of En"
+      },
+      {
+        "trigger": " system",
+        "score": 19.5,
+        "context": "wide mobile home to investigate a problem with a 4- year-old duct system (the original duct system was no longer being used). Looking down the supply"
+      },
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": " water from the system by first locating the cooling tower as the highest element in the system. The tower should be elevated until all other system components are below the overflow"
+      },
+      {
+        "trigger": " system",
+        "score": 18.75,
+        "context": " commissioned the installation of a template-assisted-crystallization (TAC) central treatment system.\u23ceTAC falls into a category often referred to as \u201cphysical water treatment"
+      }
+    ],
+    "promotes": [
+      "}>;",
+      "ayage",
+      "F\u00f8",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0627\u0644\u0631\u062e\u0635\u0629"
+    ],
+    "demotes": [
+      " System",
+      "System",
+      " system",
+      " SYSTEM",
+      "system"
+    ],
+    "generated_description": "system \u2014 activates on the content word \"system\"/\"systems\" (technical contexts: HVAC, water, air, treatment); associated with demoting canonical \"system\" output tokens"
+  },
+  {
+    "id": "17_5272_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.33307844400405884,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 40.75,
+        "context": " solve the environmental crisis and raise significant tax income long term. This is because a system aimed at reducing what it is taxing, if successful, will eventually destroy its"
+      },
+      {
+        "trigger": " systems",
+        "score": 44.75,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " system",
+        "score": 40.75,
+        "context": "accountable concentration of economic power in the hands of the very few has fueled massive system-wide corruption and fraud and has allowed the system itself to be structured in"
+      },
+      {
+        "trigger": " system",
+        "score": 40.0,
+        "context": " beginning to talk photography. Pick your poison and make your pitch.\u23ceGenerally, system resolution is calculated by taking the reciprocal of the sum of the reciprocals of"
+      },
+      {
+        "trigger": " system",
+        "score": 40.5,
+        "context": " efficient wide area technology, but this increase is efficiency is countered by a more complex system of network management at the data link layer. When examining the operation of a"
+      }
+    ],
+    "promotes": [
+      " par",
+      " her",
+      "\u0e1a\u0e2d\u0e25",
+      "Traducci\u00f3n",
+      "\u0432\u0430\u0435\u043c\u044b\u0445"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " him\u017felf",
+      " \u017fche",
+      " Jefus",
+      " \u017feveral"
+    ],
+    "generated_description": "system(s) \u2014 activates on the noun \"system\"/\"systems\" across domains (political, biological, technical, economic); marks mention of organized structures, networks, or frameworks."
+  },
+  {
+    "id": "17_14757_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.32331404089927673,
+    "top_activations": [
+      {
+        "trigger": " around",
+        "score": 60.0,
+        "context": ".\u23ceThe mismatch occurs for two reasons.\u23ceFirst, Earth's orbit around the Sun is not a perfect circle. Instead, it's slightly elliptical"
+      },
+      {
+        "trigger": " orbiting",
+        "score": 73.5,
+        "context": " five planets orbiting a sun-like star, 55 Cancri, that is located 40 light years from Earth yet still visible to the naked eye"
+      },
+      {
+        "trigger": " the",
+        "score": 61.0,
+        "context": " directly for nearby stars by\u23cea technique called parallax - as the earth goes around the\u23cesun the star looks like its moving, and the extent of the motion"
+      },
+      {
+        "trigger": " their",
+        "score": 63.5,
+        "context": " quite close to their host stars, while this new technique will look for habitable planets orbiting stars at distances typically twice the Sun-Earth distance. But astronomers say they"
+      },
+      {
+        "trigger": " small",
+        "score": 60.0,
+        "context": "ating dust from the moon's surface.\u23ceThe finding is applicable to other small, air-less bodies, like asteroids.\u23ceFuture settlers may one day"
+      }
+    ],
+    "promotes": [
+      " transfieras",
+      "GraphicsUnit",
+      "\u51fa\u7248\u5e74",
+      " betweenstory",
+      "ThroughAttribute"
+    ],
+    "demotes": [
+      "\"><",
+      " \u0646\u0642",
+      "thoven",
+      " edit",
+      "]!='"
+    ],
+    "generated_description": "Orbit/around \u2014 activates on tokens marking orbital relation (around, orbiting, their [host stars], small bodies in orbit); signals mention of bodies moving around a central object."
+  },
+  {
+    "id": "18_16072_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.3890374004840851,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 42.25,
+        "context": " provides access by assigning one or more rights profiles to your account. A rights profile is a special collection of programs and security attributes. These security attributes enable successful use"
+      },
+      {
+        "trigger": " intricate",
+        "score": 32.5,
+        "context": " nervous system is our body's master controlling and communicating system. It is an intricate and complex system. Test your knowledge of the nervous system here.\u23ce-"
+      },
+      {
+        "trigger": " a",
+        "score": 36.0,
+        "context": "1776, America truly became a nation. Where before America had been a cluster of competing British colonies\u2014with differing origins, goals, and policies\u2014"
+      },
+      {
+        "trigger": " a",
+        "score": 43.25,
+        "context": "KLON-ik) seizures are brief, shock-like jerks of a muscle or a group of muscles. \"Myo\" means muscle and \"clonus"
+      },
+      {
+        "trigger": " a",
+        "score": 32.5,
+        "context": " with the letter \"A\". An AIRPLANE flies in the sky An alphabet is a complete standardized set of letters - basic written symbols - each of which. Other"
+      }
+    ],
+    "promotes": [
+      "Collection",
+      " collections",
+      "collection",
+      " Collection",
+      " collection"
+    ],
+    "demotes": [
+      "\u51fa\u7248\u5e74",
+      "QMetaType",
+      "pherals",
+      "migrationBuilder",
+      "Hentet"
+    ],
+    "generated_description": "\"a\" (subword) \u2014 activates on the single-letter token \"a\" appearing as a subword inside/at start of many words (access, are, alphabet, America, intricate)"
+  },
+  {
+    "id": "18_1908_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.2986704409122467,
+    "top_activations": [
+      {
+        "trigger": " series",
+        "score": 86.5,
+        "context": " the role of critical elements in and around the home, the research team conducted a series of experiments over several years. At the New South Wales Hot Fire Facility at"
+      },
+      {
+        "trigger": " number",
+        "score": 88.0,
+        "context": ", but diagnosing the condition is difficult and somewhat controversial.\u23ce\"There are a number of medical professionals who don't believe CFS exists in the first place,\""
+      },
+      {
+        "trigger": " variety",
+        "score": 85.5,
+        "context": " walking through each of them, you provide the chance to look at something from a variety of perspectives.\u23cePreparation: becoming curious after encountering a problem and beginning to"
+      },
+      {
+        "trigger": " series",
+        "score": 84.0,
+        "context": " and perhaps reversed.\u23ceThe flooding experienced across much of the UK because of a series of severe storms since Christmas could even benefit the species by washing juvenile eels over"
+      },
+      {
+        "trigger": " number",
+        "score": 90.5,
+        "context": ", planktonic life, etc. are of vital interest to oceanographers. A number of satellites dedicated to gathering oceanic data have notably increased our understanding of these great"
+      }
+    ],
+    "promotes": [
+      "setVerticalGroup",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      ".*\")]",
+      " mergeFrom",
+      " of"
+    ],
+    "demotes": [
+      " ujarnya",
+      "Continua",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      "UniformLocation",
+      "clerview"
+    ],
+    "generated_description": "collective quantifier \u2014 activates on nouns like \"series\", \"number\", \"variety\"; signals group/quantity markers (often followed by \"of\" + plural noun)"
+  },
+  {
+    "id": "18_2540_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.37685996294021606,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 48.0,
+        "context": ", and have positively identified ethane. This result makes Titan the only place in our solar system beyond Earth known to have liquid on its surface.\u23ceThe Cassini"
+      },
+      {
+        "trigger": " the",
+        "score": 48.0,
+        "context": " organisms would have found their way into comets and asteroids, and have been carried around the solar system, some making their way to Earth, administering a dose of \u201c"
+      },
+      {
+        "trigger": " around",
+        "score": 49.0,
+        "context": "Researchers suggested this bonanza of planets in the so-called Goldilocks zone around a star, a habitable zone in which conditions are liquid water to exist on"
+      },
+      {
+        "trigger": " in",
+        "score": 48.5,
+        "context": " the University of Arizona in Tucson.\u23ceTitan is one of the few bodies in the solar system with a significant atmosphere. Scientists believe methane gas breaks up in the"
+      },
+      {
+        "trigger": " the",
+        "score": 46.0,
+        "context": "6 arcseconds.\u23ceJupiter's mean sidereal period or one journey around the Sun is 11.9 years. The last opposition in December "
+      }
+    ],
+    "promotes": [
+      "ginfo",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "}\")]",
+      "(\"}\");",
+      " Fie"
+    ],
+    "demotes": [
+      " earth",
+      " Earth",
+      "Earth",
+      "earth",
+      " EARTH"
+    ],
+    "generated_description": "say LOCATION \u2014 activates on prepositions/articles ('in', 'around', 'the') that introduce places or celestial bodies; signals an upcoming location or solar-system body (Sun, Tucson, Titan)."
+  },
+  {
+    "id": "18_2415_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3562202751636505,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 86.0,
+        "context": " from the root word disciplinare\u2014to teach or instruct\u2014refers to the system of teaching and nurturing that prepares children to achieve competence, self-control,"
+      },
+      {
+        "trigger": " system",
+        "score": 84.5,
+        "context": " heard a South African clergyman \u2014 I can\u2019t recall his name \u2014 explain the system of apartheid in that country. He summed it up neatly: \u201cApartheid"
+      },
+      {
+        "trigger": " systems",
+        "score": 91.5,
+        "context": " get behind holographic storage. InPhase has spent 13 years developing materials, systems and processes. Its first products - marketed under the Tapestry brand - will"
+      },
+      {
+        "trigger": " system",
+        "score": 93.0,
+        "context": " the early seventies. In the approximately 16 years since the inception of the system, computers and the associated technology have undergone four generations of change. If the"
+      },
+      {
+        "trigger": " systems",
+        "score": 87.0,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      }
+    ],
+    "promotes": [
+      "ically",
+      "atization",
+      "atize",
+      "atical",
+      "atically"
+    ],
+    "demotes": [
+      " nahilalakip",
+      "ftagPool",
+      "\u7701\u5e02\u9547",
+      "Extern\u00e9",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc"
+    ],
+    "generated_description": "system(s) \u2014 activates on the noun \"system\"/\"systems\" across domains (education, apartheid, computing, biology, storage); lexical marker for organized sets or frameworks"
+  },
+  {
+    "id": "20_5426_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.3956769108772278,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 47.75,
+        "context": "-old\u23ceengine that his staff had built in a modern\u23ceThen he drew a recent newspaper clipping from his\u23cewallet. It told about the system the Germans"
+      },
+      {
+        "trigger": " system",
+        "score": 47.75,
+        "context": " 2012 | Article\u23ceThe announcement of the world\u2019s largest system of marine parks to circle Australia represents a turning point in the protection of the"
+      },
+      {
+        "trigger": " system",
+        "score": 54.5,
+        "context": "<bos>You are getting through the building as a system and now you need to know how the actual brains work.\u23ceWe\u2019ve gotten through the tools you need"
+      },
+      {
+        "trigger": " SYSTEM",
+        "score": 54.75,
+        "context": "<bos>Product Strategy Development:\u23ceIdea Generation and Screening\u23ce3.3 SYSTEMATIC FOCUSED IDEA GENERATION\u23ceIdeas come from both a 'technology push' and a"
+      },
+      {
+        "trigger": " system",
+        "score": 56.75,
+        "context": "<bos>We found that Coca-Cola\u2019s system of production and distribution is built very strongly around information and incentives. The medicine supply chain system, on the other"
+      }
+    ],
+    "promotes": [
+      " utili",
+      " Eberhard",
+      "ciling",
+      "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435",
+      " affaires"
+    ],
+    "demotes": [
+      "AndEndTag",
+      "TagMode",
+      "WriteTagHelper",
+      "Portale",
+      " pinulongan"
+    ],
+    "generated_description": "system \u2014 activates on the token \"system\"/\"SYSTEM\"; fires for mentions of organizational, technical, or biological systems and for phrases like \"system of...\""
+  },
+  {
+    "id": "0_3820_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3587017357349396,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on the token \"the\", i.e., definite-article occurrences introducing noun phrases; responsive to structural pre-article position."
+  },
+  {
+    "id": "13_14521_9",
+    "layer": 13,
+    "ctx_idx": 9,
+    "influence_score": 0.390712708234787,
+    "top_activations": [
+      {
+        "trigger": " set",
+        "score": 18.88,
+        "context": " allowable emissions for sets of unacceptable impacts or intolerable mitigation costs. They explore how the set of viable emissions pathways is constrained by parameters such as the starting date, the"
+      },
+      {
+        "trigger": " suite",
+        "score": 19.75,
+        "context": " NASA's Ames Research Center in Moffett Field, California, is developing a suite of planetary data processing tools that will be used to convert historic and current space"
+      },
+      {
+        "trigger": " series",
+        "score": 18.12,
+        "context": " ago, Timothy Egan, then a correspondent for The New York Times, wrote a series of articles about the demise of small-town America. Two-thirds of"
+      },
+      {
+        "trigger": " chain",
+        "score": 19.25,
+        "context": "<bos>Far north within the Arctic Circle off the northern coast of Norway lies a small chain of islands known as Svalbard. These craggy islands have been scoured"
+      },
+      {
+        "trigger": " series",
+        "score": 18.62,
+        "context": " of 36\u00ba 30'. Another measure to keep the peace, was the \"Compromise of 1850.\" This series of agreements"
+      }
+    ],
+    "promotes": [
+      "pkg",
+      " \u0634\u0627\u0645\u0644",
+      "angulaire",
+      " including",
+      " of"
+    ],
+    "demotes": [
+      "AsUp",
+      "endphp",
+      "SharedCtor",
+      " kasarigan",
+      "\u062a\u0642\u0627\u0648\u0649"
+    ],
+    "generated_description": "collection noun \u2014 activates on words naming groups/collections (set, series, suite, chain); often occurs right before \"of\" introducing members or descriptions."
+  },
+  {
+    "id": "20_15567_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.32095760107040405,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 68.5,
+        "context": " Origin, Nationality, & Ethnicity\u23ceNo one has submitted information on abad-sierra country of origin, nationality, or ethnicity. Add to this section\u23ceNo content"
+      },
+      {
+        "trigger": " country",
+        "score": 64.5,
+        "context": " of Origin, Nationality, & Ethnicity\u23ceNo one has submitted information on Miotia country of origin, nationality, or ethnicity. Add to this section\u23ceNo content"
+      },
+      {
+        "trigger": " kinds",
+        "score": 77.5,
+        "context": " bibliographic guide to the resources. The Russians produce particularly good guides to show you what kinds of reference books are available for a given topic. A guide will tell you"
+      },
+      {
+        "trigger": " millions",
+        "score": 64.0,
+        "context": " Napster may have had good intentions, the website ended up costing the music industry millions in lost royalties because the recording studios and artists were not giving permission for their"
+      },
+      {
+        "trigger": " School",
+        "score": 64.0,
+        "context": " conducted by Ellen Townsend and Nicola Pitchford, of the University of Nottingham's School of Psychology, looked at 155 children between 20 months"
+      }
+    ],
+    "promotes": [
+      "ofman",
+      "Of",
+      " Of",
+      "of",
+      " of"
+    ],
+    "demotes": [
+      "erals",
+      "chauen",
+      "icolon",
+      "hoga",
+      "\u00e9ril"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on nouns immediately before an \"of\" phrase (country, kinds, School, millions); promotes emitting the token \"of\"."
+  },
+  {
+    "id": "19_6851_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3740758001804352,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 46.25,
+        "context": "<bos>by Bruce Boyers,\u23ceOur system of factory agriculture is exacting a great toll on our planet: 40 percent of the land and 70"
+      },
+      {
+        "trigger": " System",
+        "score": 45.75,
+        "context": "ku, Tokyo 113-0033, JAPAN\u23ceCreate System Development Co. Ltd.\u23ceInstitute of Space and Astronautical Sciences\u23ce"
+      },
+      {
+        "trigger": " system",
+        "score": 52.25,
+        "context": "Despite advances in GIS and remote-sensing technology and software, to date most systematists and other botanists working on the Neotropical flora, particularly on"
+      },
+      {
+        "trigger": " systems",
+        "score": 51.5,
+        "context": " Bioorganic Basis for the Following Additional Senses\u23ce1. Receptors in the nose sensing systems that \"smell\" emotions, and that can identify motives, sexual receptivity"
+      },
+      {
+        "trigger": " system",
+        "score": 48.75,
+        "context": "ff is known for discovering exact cellular targets for steroid hormones in the brain. A system of hypothalamic and limbic forebrain neurons with sex hormone receptors, discovered"
+      }
+    ],
+    "promotes": [
+      " p\u00f6",
+      "zn\u0105",
+      "\u00e9valuateur",
+      "vician",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629"
+    ],
+    "demotes": [
+      "principalTable",
+      "\ud83c\udffe",
+      ":]:",
+      " onResponse",
+      " Sequelize"
+    ],
+    "generated_description": "system / systems \u2014 activates on the token \"system\" (case-insensitive) and variants/plurals (systems, System, systematists, System Development), across domains and contexts."
+  },
+  {
+    "id": "21_926_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.3830755650997162,
+    "top_activations": [
+      {
+        "trigger": " System",
+        "score": 38.75,
+        "context": "<bos>Ball & Beam: System Modeling\u23ceA ball is placed on a beam, see figure below, where it is allowed to roll with 1 degree of freedom"
+      },
+      {
+        "trigger": " system",
+        "score": 43.0,
+        "context": ", and, of course, televisions. I ask the cyborg anthropologist if a system of a person watching a TV might constitute a cyborg. (When I"
+      },
+      {
+        "trigger": " system",
+        "score": 38.75,
+        "context": " a prescribed increase in greenhouse gases. There is also a pressing need for a global system designed for monitoring climate. Climate projections will always be far from perfect. Confidence"
+      },
+      {
+        "trigger": " system",
+        "score": 38.25,
+        "context": " default the filesystem is used, but in high traffic websites hashed cookies provide a great system for small bits of session data. If you are storing lots of data in"
+      },
+      {
+        "trigger": " systems",
+        "score": 41.25,
+        "context": " all will be incremental impacts-- not transformative -- and can be dealt with using existing systems, institutions, and solutions.\u23ceNanomanufacturing is a term for"
+      }
+    ],
+    "promotes": [
+      "CodeAttribute",
+      " pinulongan",
+      " BoxFit",
+      "__*/",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "#+#",
+      " camp",
+      "nader",
+      "avajillas",
+      "nads"
+    ],
+    "generated_description": "system \u2014 activates on the common noun \"system\"; fires for generic system mentions across domains (technical, social, global, file, institutional), singular and plural contexts."
+  },
+  {
+    "id": "21_8674_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.29051411151885986,
+    "top_activations": [
+      {
+        "trigger": " lines",
+        "score": 54.5,
+        "context": "4, P6, P7)\u23ce- Scientists test their ideas using multiple lines of evidence.\u23ce- Scientific knowledge is open to question and revision as we"
+      },
+      {
+        "trigger": " pages",
+        "score": 62.5,
+        "context": " familiar position: out on a scientific limb. And after sifting through my many pages of notes from two days of immersion in climate issues, I\u2019m as"
+      },
+      {
+        "trigger": " pounds",
+        "score": 51.5,
+        "context": " by the largest camera ever created.\u23ceUsing over 1,200 pounds of black fabric, paint and rigging as well as 20 gallons of"
+      },
+      {
+        "trigger": " lines",
+        "score": 54.5,
+        "context": " only were they unable to replicate the results found by the other researchers, but additional lines of evidence failed to support an impact theory for the onset of the Younger Dry"
+      },
+      {
+        "trigger": " columns",
+        "score": 54.0,
+        "context": " to the Metropolitan Avenue Bridge, the Department of Environmental Protection has installed pipes that push columns of compressed air into the water for this purpose, said M. Elias Due"
+      }
+    ],
+    "promotes": [
+      " \u0e02\u0e2d\u0e07",
+      " ofthe",
+      "\u0e02\u0e2d\u0e07",
+      " c\u1ee7a",
+      " of"
+    ],
+    "demotes": [
+      "Rohy",
+      "ToBounds",
+      "LookAnd",
+      "\u00e9valuateur",
+      "windowFixed"
+    ],
+    "generated_description": "Plural count noun \u2014 activates on concrete plural nouns (lines, pages, pounds, columns); often appears where the plural noun is followed by \u201cof.\u201d"
+  },
+  {
+    "id": "21_13018_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.3881935477256775,
+    "top_activations": [
+      {
+        "trigger": " beyond",
+        "score": 70.0,
+        "context": " has made the most detailed examination yet of the atmosphere of a Jupiter-sized planet beyond our solar system.\u23ce\u201cWe have been able to observe this planet in"
+      },
+      {
+        "trigger": " of",
+        "score": 90.5,
+        "context": " but it was significant. Pioneer 10 took the first close-up pictures of Jupiter before leaving our solar system in 1983 and is being"
+      },
+      {
+        "trigger": " other",
+        "score": 75.5,
+        "context": " the Sun and planets some 4.5 billion years ago. Unlike other objects in the solar system, comets have barely changed with time and contain pristine material from"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " *\u23ceThe most volcanically active body in the solar system is a little moon of Jupiter named Io. This moon is pumping out the hottest lavas known,"
+      },
+      {
+        "trigger": " produces",
+        "score": 68.5,
+        "context": " orbits. A cascade of collisions\u23ceamong rapidly moving planetesimals produces a ring of dust grains,\u23cewhich slowly disappears as protoplanets grow into planets"
+      }
+    ],
+    "promotes": [
+      " space",
+      " stars",
+      " star",
+      " planet",
+      " planets"
+    ],
+    "demotes": [
+      "Personendaten",
+      "rhosis",
+      " \u0645\u0634\u064a\u0646",
+      "richTextPanel",
+      "ymce"
+    ],
+    "generated_description": "say celestial object \u2014 fires on prepositions/articles before astronomy nouns (of, beyond, other, produces); pushes tokens like space/stars/planet, signals upcoming celestial term."
+  },
+  {
+    "id": "15_205_9",
+    "layer": 15,
+    "ctx_idx": 9,
+    "influence_score": 0.3657245934009552,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 39.0,
+        "context": " a prescribed increase in greenhouse gases. There is also a pressing need for a global system designed for monitoring climate. Climate projections will always be far from perfect. Confidence"
+      },
+      {
+        "trigger": " system",
+        "score": 44.0,
+        "context": ". was a period of social complexity in this civilization, characterized by urbanization, a system of writing, standardized weights and measures, monumental architecture, and trade networks that"
+      },
+      {
+        "trigger": " system",
+        "score": 41.0,
+        "context": "ked. It also had small teeth toward the back of the jaws and an intricate system of nasal sinuses, the purpose of which is unclear. Ankylosaurus"
+      },
+      {
+        "trigger": " system",
+        "score": 41.0,
+        "context": "<bos>Extension researchers are working out the particulars of a system that could help flue-cured tobacco farmers reduce spiral roots in the greenhouse and ultimately get a better stand in"
+      },
+      {
+        "trigger": " systems",
+        "score": 39.5,
+        "context": " the emergence and evolution of the consumer culture, advertising, public relations, and advanced systems of propaganda; the development of the \u2018modern institutional society\u2019, with an examination"
+      }
+    ],
+    "promotes": [
+      " Olympedia",
+      "Referencies",
+      "MessageTagHelper",
+      "GraphicsUnit",
+      "classnames"
+    ],
+    "demotes": [
+      "\u51fa\u7248\u5e74",
+      "lasty",
+      " cherch\u00e9s",
+      "acji",
+      "OSIS"
+    ],
+    "generated_description": "\"system\" token \u2014 activates on the word \"system\" / \"systems\", especially in \"system(s) of ...\"/noun-of constructions (e.g., system of writing, systems of propaganda, monitoring system)."
+  },
+  {
+    "id": "22_4314_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.37309685349464417,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 79.5,
+        "context": " prevent cancer and heart disease.\u23ceCells - The \"building blocks\" of the body. A human is made of millions of cells, which are adapted for different"
+      },
+      {
+        "trigger": " is",
+        "score": 48.25,
+        "context": " in UK waters, in a formal agreement with DEFRA. The Fishery Protection Squadron is the largest front line squadron in the Royal Navy.\u23ce See also\u23ce|"
+      },
+      {
+        "trigger": " is",
+        "score": 48.0,
+        "context": " sector (such as health). [adapted from WHO]\u23ceA \u201ccluster\u201d is essentially a \u201csectoral group\u201d and there should be no differentiation between the"
+      },
+      {
+        "trigger": " is",
+        "score": 70.5,
+        "context": " quiz on bogus MS treatments.\u23ce- How the Nervous System Works The nervous system is our body's master controlling and communicating system. It is an intricate and"
+      },
+      {
+        "trigger": " is",
+        "score": 47.75,
+        "context": "\u23ceLife script is another major theoretical concept within transactional analysis. Basically, life script is the idea that we tend to have an unconscious life plan - like a story"
+      }
+    ],
+    "promotes": [
+      " composed",
+      "Made",
+      " Made",
+      "made",
+      " made"
+    ],
+    "demotes": [
+      "featureID",
+      "windowFixed",
+      "IntoConstraints",
+      "+#+#",
+      " ProtoMessage"
+    ],
+    "generated_description": "say definition \u2014 activates on the copula \"is\" when introducing definitions/descriptions; often precedes descriptive verbs (e.g., \"made\", \"composed\") or noun-definitions."
+  },
+  {
+    "id": "22_6006_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.24100717902183533,
+    "top_activations": [
+      {
+        "trigger": " panel",
+        "score": 45.75,
+        "context": "S. Forest Service. As part of the study, American Forests worked with a panel of urban forest experts to evaluate the nation's 50 most populous"
+      },
+      {
+        "trigger": " consortium",
+        "score": 47.25,
+        "context": "29.\u23ceThe school was formed in 1893 by a consortium of Missionary Baptist congregations. Brinkley Academy was one of three boarding schools for"
+      },
+      {
+        "trigger": "acy",
+        "score": 45.5,
+        "context": "\u23ceLacrosse may elicit thoughts of prep school, but the game is an ancient North American Indian sport. Its inventors included the Iroquois, a confederacy of six"
+      },
+      {
+        "trigger": " library",
+        "score": 40.5,
+        "context": "ced Carmelites in Mexico City, where she was free to pursue her intellectual and literary interests. She owned a library of some 4,000 ..."
+      },
+      {
+        "trigger": " network",
+        "score": 54.75,
+        "context": " its inception in 1998, IPEN has grown to a global network of over 700 public interest non-governmental organisations (NGOs"
+      }
+    ],
+    "promotes": [
+      "Of",
+      "\u0e02\u0e2d\u0e07",
+      " c\u1ee7a",
+      "of",
+      " of"
+    ],
+    "demotes": [
+      "windowFixed",
+      "menea",
+      "+#+#",
+      "chengladbach",
+      "\u017felf"
+    ],
+    "generated_description": "Collective noun \u2014 activates on group/collection words (panel, consortium, confederacy, network, library); often pushes the preposition \"of\" to follow."
+  },
+  {
+    "id": "22_16137_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3622991740703583,
+    "top_activations": [
+      {
+        "trigger": " patterns",
+        "score": 71.5,
+        "context": " Braddock Bay Raptor Research (BBRR) began asking questions about the migration patterns that they were observing during BBRR's annual hawk watch and banding"
+      },
+      {
+        "trigger": " extent",
+        "score": 71.0,
+        "context": "4). The five standards are:\u23ceThe information literate student determines the nature and extent of the information needed.\u23ceThe information literate student accesses needed information effectively and"
+      },
+      {
+        "trigger": " hands",
+        "score": 77.5,
+        "context": ", Manual Training and Stuyvesant high schools. With so many guns in the hands of youngsters, did we see today's level of youth violence?\u23ce"
+      },
+      {
+        "trigger": " needs",
+        "score": 72.5,
+        "context": " House and Senate and signed into law\u23ceNew law will safely and effectively meet the needs of more victims\u23ceThe Violence Against Women Act (VAWA) is the"
+      },
+      {
+        "trigger": " development",
+        "score": 71.5,
+        "context": " embrace also cultural and religious factors. What interests the Church is above all the integral development of the human person and of all peoples.(22) She notes with"
+      }
+    ],
+    "promotes": [
+      "MigrationBuilder",
+      " jScrollPane",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      "Ford\u00edt\u00e1s",
+      "IUrlHelper"
+    ],
+    "demotes": [
+      " como",
+      " untuk",
+      "that",
+      "foreach",
+      "for"
+    ],
+    "generated_description": "common noun head \u2014 activates on content nouns (patterns, extent, hands, needs, development); signals noun/participant concepts (concrete or abstract)."
+  },
+  {
+    "id": "22_5151_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.39402905106544495,
+    "top_activations": [
+      {
+        "trigger": " structure",
+        "score": 36.5,
+        "context": " the byte range to unlock.\u23ce[in] Pointer to an OVERLAPPED structure that is used with the unlock request. This structure contains the file offset of"
+      },
+      {
+        "trigger": " string",
+        "score": 33.0,
+        "context": ", _OS and _OSI. _OS is an ACPI object containing a string. This string is supposed to represent the operating system. Windows 98"
+      },
+      {
+        "trigger": " value",
+        "score": 31.25,
+        "context": "<bos>Gets or sets a value that indicates the distance that a Figure is offset from its baseline in the horizontal direction.\u23ceNamespace:System.Windows.Documents Assembly"
+      },
+      {
+        "trigger": ")",
+        "score": 31.5,
+        "context": " applied variables have the following meaning:\u23ce* Equations is a function name (string) or a handle defining a set of equations,\u23ce* X0 is vector"
+      },
+      {
+        "trigger": " vector",
+        "score": 38.75,
+        "context": ".\u23ceThe timeseries object that you want to resample.\u23ceThe time vector you want to use to resample the timeseries object.\u23ceWhen ts"
+      }
+    ],
+    "promotes": [
+      " to",
+      " used",
+      " of",
+      " for",
+      " "
+    ],
+    "demotes": [
+      " plea\u017fure",
+      " my\u017felf",
+      " autorytatywna",
+      "MigrationBuilder",
+      " fa\u017ft"
+    ],
+    "generated_description": "Type-name token \u2014 activates on data-type or parameter words (structure, string, value, vector) in API/docs and code/parameter lists."
+  },
+  {
+    "id": "17_4483_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.3646031320095062,
+    "top_activations": [
+      {
+        "trigger": " condition",
+        "score": 39.25,
+        "context": "<bos>Lateral epicondylitis is a painful condition that affects the tendons that attach to the bone on the lateral (outside) aspect of the elbow. Tendons are"
+      },
+      {
+        "trigger": " procedure",
+        "score": 38.0,
+        "context": "\u23ceA heart biopsy, also called myocardial biopsy or cardiac biopsy, is an invasive procedure to detect heart disease. It entails using a bioptome (a small"
+      },
+      {
+        "trigger": " aircraft",
+        "score": 41.0,
+        "context": "The Aero Spacelines Pregnant Guppy was a large, wide-bodied cargo aircraft built in the United States and used for ferrying outsized cargo items,"
+      },
+      {
+        "trigger": " condition",
+        "score": 38.25,
+        "context": "<bos>Acne is a skin condition caused by the excess production of oil from the sebaceous glands and the inflammation of the hair follicles. Acne typically appears on the face"
+      },
+      {
+        "trigger": " instrument",
+        "score": 43.75,
+        "context": "\u23ceThe hurdy gurdy or hurdy-gurdy is a stringed instrument that produces sound by a crank-turned, rosined wheel rubbing against the"
+      }
+    ],
+    "promotes": [
+      "loem",
+      "__':\r",
+      "AndroidJUnit",
+      "PreferredItem",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      "TargetException",
+      "twimg",
+      "IVIA",
+      "RectangleBorder",
+      " \u043d\u0430\u0437\u044b\u0432\u0430\u0435\u0442\u0441\u044f"
+    ],
+    "generated_description": "Is-a category noun \u2014 activates on category/class words in definitional openings (condition, procedure, aircraft, instrument); signals the taxonomy label in \"X is a Y\" descriptions."
+  },
+  {
+    "id": "0_899_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.33657515048980713,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": " to stop. You don't take it over a long, long period of time because you can just stimulate the immune system so much and to continue to take"
+      },
+      {
+        "trigger": " system",
+        "score": 19.0,
+        "context": " programs to identify and to remove. They function a the base layer of the operating system or can get into the boot sector of the operating system and infect the bios"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " the mid-1970s has highlighted the distortions of the present voting system.\u23ceThe 1997 Labour government promised a referendum on the"
+      },
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": "\u201cHowever, if we are right, we have significantly broadened the diversity of solar system environments where we might possibly have conditions suitable for living organisms.\u201d\u23ceScientists have"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " (RAM) has been allocated to a given virtual page, in which case the MMU will signal a \"page fault\" to the CPU. The operating system"
+      }
+    ],
+    "promotes": [
+      "2",
+      "\u00e4nning",
+      ",",
+      ".",
+      " and"
+    ],
+    "demotes": [
+      "abestanden",
+      "ConstraintMaker",
+      "IsContent",
+      "+#+#",
+      "DockStyle"
+    ],
+    "generated_description": "system \u2014 activates on the noun \"system\"; fires for varied domains (operating system, immune system, solar system, voting system, memory/OS contexts)"
+  },
+  {
+    "id": "24_7314_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3973125219345093,
+    "top_activations": [
+      {
+        "trigger": " front",
+        "score": 43.0,
+        "context": " blast wave encounters the relatively stationary interstellar medium it creates a very narrow, luminous shock front that appears as a faint nebula. Because the shock front is very convoluted the"
+      },
+      {
+        "trigger": " particles",
+        "score": 48.0,
+        "context": " more, in the form of collimated jets of fast moving particles. The fast jets slam into the surrounding interstellar gas, heating it and triggering an expansion. The"
+      },
+      {
+        "trigger": " plasma",
+        "score": 39.0,
+        "context": " later and impacted Earth's\u23cemagnetosphere, causing visible\u23ceLoops of plasma surrounding an\u23ceactive region can be seen above the erupting filament in\u23ce"
+      },
+      {
+        "trigger": " wind",
+        "score": 41.5,
+        "context": " the Sun blocked out) over a two-week observation shows\u23cethe streaming solar wind and over 10 coronal mass ejections heading out into space.\u23ce"
+      },
+      {
+        "trigger": " tubes",
+        "score": 55.0,
+        "context": " corona and accelerate the solar wind. It is still unknown to what extent the solar wind is fed by flux tubes that remain open (and are energized by footpoint"
+      }
+    ],
+    "promotes": [
+      " Deep",
+      "cadas",
+      " getInstance",
+      " responsible",
+      " dist"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "UnusedPrivate",
+      "GEBURTSDATUM",
+      " Jefus",
+      " vectorielles"
+    ],
+    "generated_description": "space plasma flows \u2014 activates on charged-particle/outflow terms: plasma, particles, solar wind, jets, flux tubes, shock front; signals space/solar wind phenomena."
+  },
+  {
+    "id": "23_11286_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.2706499397754669,
+    "top_activations": [
+      {
+        "trigger": " because",
+        "score": 61.5,
+        "context": " facilities into the environment and construction delays as a result of public opposition.\u23cePartly because of these concerns about radioactivity and the cost of containing it, the American public"
+      },
+      {
+        "trigger": " forms",
+        "score": 58.5,
+        "context": " to survive breast cancer is early detection and treatment. Here are the five most prevalent forms of breast cancer affecting women today.\u23ceIn-situ ductal carcinoma is"
+      },
+      {
+        "trigger": " part",
+        "score": 57.0,
+        "context": "in the ball park,\" clearly there is valid reason for urging candor on the part of our government. [Ralph E. Lapp, \"Atomic Candor,\""
+      },
+      {
+        "trigger": " name",
+        "score": 57.5,
+        "context": " bills, which the various state utility commissions are only too happy to approve in the name of saving the planet.\u23ceRPSs generally do not include hydroelectric power,"
+      },
+      {
+        "trigger": " part",
+        "score": 58.5,
+        "context": " of clue words like \"but\"\u2014where you can expect a contrast in the next part of a question; or \"moreover\"\u2014which tells you that a continuation"
+      }
+    ],
+    "promotes": [
+      " OF",
+      "Of",
+      "of",
+      " Of",
+      " of"
+    ],
+    "demotes": [
+      "yntaxException",
+      "\u017felves",
+      " The\u017fe",
+      "\u0421\u042f",
+      "\u017felf"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on words (because, part, forms, name) that are immediately followed by the preposition \"of\", signals/ promotes the token \"of\" next."
+  },
+  {
+    "id": "24_2563_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.2850280702114105,
+    "top_activations": [
+      {
+        "trigger": " number",
+        "score": 65.5,
+        "context": " a policy that prevented blacks from joining the military.\u23ceThe Union needed a large number of men to move supplies from the North to the battlefields of the South"
+      },
+      {
+        "trigger": " rest",
+        "score": 64.5,
+        "context": ", a few acrylic fish tanks are made with a substantially thicker acrylic bottom than the rest of the aquarium so that an aquarium stand is not necessary.\u23ceAn acrylic"
+      },
+      {
+        "trigger": " advantage",
+        "score": 64.5,
+        "context": " a longer signal range for connecting during data communication and transfers. NFC technology has taken advantage of this and can connect two devices quickly, then turn the signal over to"
+      },
+      {
+        "trigger": " part",
+        "score": 66.5,
+        "context": "<bos>Emotions: Their Origins and Definitions\u23ceEmotions are a vital part of our lives. They increase human interaction and allow us to express our feelings to those around us"
+      },
+      {
+        "trigger": " group",
+        "score": 68.0,
+        "context": "A recent study at Washington University School of Medicine in St. Louis followed a large group of older adults (60 years old or older) with painfree rot"
+      }
+    ],
+    "promotes": [
+      " If",
+      "\ufeff#",
+      "\uff2f",
+      " f",
+      "hoga"
+    ],
+    "demotes": [
+      " of",
+      " c\u1ee7a",
+      "\u0e02\u0e2d\u0e07",
+      " venons",
+      " d\u00e9finiti"
+    ],
+    "generated_description": "Noun after modifier \u2014 activates on common nouns occurring immediately after adjectives/determiners/comparatives (e.g., large number, the rest, take advantage, vital part, large group)."
+  },
+  {
+    "id": "24_8983_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3274499177932739,
+    "top_activations": [
+      {
+        "trigger": " top",
+        "score": 80.5,
+        "context": " keeping track of appointments and deadlines (and consistently checking them!) you can stay on top of all your tasks at work and home. Some software programs even have reminders"
+      },
+      {
+        "trigger": " types",
+        "score": 88.5,
+        "context": " individuals that form them, as well as to look for other forms of interactions between people and distinguish between these different types of interactions.\u23ceThese algorithms are going to"
+      },
+      {
+        "trigger": " size",
+        "score": 81.5,
+        "context": " protect it.\u23cePerhaps what saved Glasgow Cathedral more than anything else was simply the size of the city's population: when the crisis arose, enough collective sanity"
+      },
+      {
+        "trigger": " use",
+        "score": 85.0,
+        "context": ", and personalized. This conference and book volumes seek original research with respect to the use of Social Media and related technologies for education; the emerging applications of Web "
+      },
+      {
+        "trigger": " types",
+        "score": 97.5,
+        "context": " level overview of fat as a whole, then a lower level look at the various types of fat. I believe this is important, because fat, at its base"
+      }
+    ],
+    "promotes": [
+      "setdefault",
+      "\u062c\u063a\u0631\u0627\u0641\u064a\u0627",
+      " useRouter",
+      "Pyx",
+      " of"
+    ],
+    "demotes": [
+      "OF",
+      "Of",
+      " OF",
+      " Of",
+      "of"
+    ],
+    "generated_description": "noun before 'of' \u2014 activates on general head nouns (top, types, size, use) when they appear immediately before an \"of\" phrase"
+  },
+  {
+    "id": "25_2390_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3964977264404297,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 47.75,
+        "context": " they realized that it could be extended to microwave oscillators.\u23ceThe nanoscale structure is labeled as spin-transfer nano-oscillators (STNO). It comprises"
+      },
+      {
+        "trigger": " formed",
+        "score": 50.0,
+        "context": " 1990 and 2000.\u23ceOne group was formed by 23 monkeys living on the southern Japanese island of Yakushima,"
+      },
+      {
+        "trigger": " society",
+        "score": 57.0,
+        "context": "als solely, we should not forget the greater part of medieval society, the silent majority.\u23ceKnights and wizards aside, the period of the Middle Ages should include"
+      },
+      {
+        "trigger": " that",
+        "score": 66.5,
+        "context": " Currency: British pound (GBP)\u23ceScotland is one of the four constituent countries that make up the United Kingdom. It occupies the northern third of the island of"
+      },
+      {
+        "trigger": " made",
+        "score": 50.25,
+        "context": " imaging device.\u23ceThe major alternative used in nature is the compound eye. This is a dense mosaic made up of many tiny eyes. When you look at a"
+      }
+    ],
+    "promotes": [
+      "Con",
+      "Com",
+      " Com",
+      "com",
+      "con"
+    ],
+    "demotes": [
+      " composition",
+      " composed",
+      " Composition",
+      "Composition",
+      " compose"
+    ],
+    "generated_description": "made-of / composition \u2014 activates on verbs/pronouns that introduce parts or constitution (is, formed, made, that make up); pushes \"Con/Com\" prefixes, suppresses \"compose\" forms."
+  },
+  {
+    "id": "24_13277_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3440721929073334,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "introduce-next-noun \u2014 fires on function words/comma/verbs that set up a following noun phrase or name (preps, articles, commas, verbs before entities/NPs)"
+  },
+  {
+    "id": "24_16316_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.36346569657325745,
+    "top_activations": [
+      {
+        "trigger": " works",
+        "score": 37.5,
+        "context": " called copyright.Copyright, a form of intellectual property law, protects original works of authorship including literary, dramatic, musical, and artistic works, such as poetry,"
+      },
+      {
+        "trigger": " items",
+        "score": 32.75,
+        "context": " disabilities, of all ages, in all environments.\u23ceAssistive technology devices are items, pieces of equipment, or product systems that are used to increase, maintain"
+      },
+      {
+        "trigger": " institutions",
+        "score": 34.5,
+        "context": " \u201ca business cluster is a geographic concentration of interconnected businesses, suppliers, and associated institutions in a particular field. Clusters are considered to increase the productivity with which companies"
+      },
+      {
+        "trigger": " care",
+        "score": 39.25,
+        "context": " suitable for everyone and some people should never use it. Other people should only use it with special care. It is important that the person prescribing this medicine knows your"
+      },
+      {
+        "trigger": " value",
+        "score": 36.0,
+        "context": " animal, microbial or other origin containing functional units of heredity, of actual or potential value.\u23ceTechnical assistance and capacity building\u23ceThe Cultural Documentation and IP Management Training"
+      }
+    ],
+    "promotes": [
+      " hereof",
+      " del\u00e0",
+      " suivants",
+      " that",
+      "katapos"
+    ],
+    "demotes": [
+      "\u00c1G",
+      "IALES",
+      "ULUM",
+      "\u00c9R",
+      "\u00c1T"
+    ],
+    "generated_description": "Generic category noun \u2014 activates on general thing/entity nouns in definitional/listing contexts (works, items, institutions, care, value); signals head nouns naming categories."
+  },
+  {
+    "id": "25_4717_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.31604674458503723,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "'s (contraction/possessive) \u2014 activates on the clitic \"'s\" in contractions and possessives (what's, that's, it's); marks clitic attachment after words."
+  },
+  {
+    "id": "25_10746_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.2786571681499481,
+    "top_activations": [
+      {
+        "trigger": " part",
+        "score": 55.5,
+        "context": " brain, which may be due to:\u23ce- A clot that forms in another part of the body (eg, heart or neck) breaking off and blocking the"
+      },
+      {
+        "trigger": " parts",
+        "score": 58.0,
+        "context": " 70% accurate\u23ceWhen a person is telling the truth they use different parts of their brain than when people lie, the Temple University team said.\u23ce"
+      },
+      {
+        "trigger": " Code",
+        "score": 51.5,
+        "context": "<bos>Course Expectations, Guidelines, Grading Policy and Code of Conduct\u23ceText: Discovering French Bleu (1) Blanc(2 + 3) Rouge (4)"
+      },
+      {
+        "trigger": " world",
+        "score": 52.0,
+        "context": " the forgotten victims of the Holocaust. The Nazis, in their strive to rid the world of undesirables, targeted both Jews and Gypsies for extermination. Follow"
+      },
+      {
+        "trigger": " knowledge",
+        "score": 52.5,
+        "context": " Historical Background\u23ceIn order to get the most from this audiocast, a basic knowledge of symmetric key encryption, public and private key mechanisms, digital certificates and hashing"
+      }
+    ],
+    "promotes": [
+      "ophobia",
+      "esez",
+      "\u00e9valuateur",
+      " or",
+      "anthene"
+    ],
+    "demotes": [
+      " of",
+      "of",
+      " c\u1ee7a",
+      "\u0e02\u0e2d\u0e07",
+      "Of"
+    ],
+    "generated_description": "Topic noun \u2014 activates on content nouns (part/parts, Code, world, knowledge); signals a topical/head noun introducing a subject or domain."
+  },
+  {
+    "id": "0_1476_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.37001413106918335,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 17.12,
+        "context": " to climb, navigate intersections and at any given time know its location in the pipe system.\u23ceThe inspection robot will be able to move in pipes of various diameters"
+      },
+      {
+        "trigger": " system",
+        "score": 17.38,
+        "context": " social issues that shape education. The creation of the New York City public high school system was the culmination of the major educational reform movement in the United States in the"
+      },
+      {
+        "trigger": " system",
+        "score": 17.12,
+        "context": " service district, the city, the county and private residents are basically paying for the system that delivers the water and for the right to use the liquid.\u23ceThe"
+      },
+      {
+        "trigger": " system",
+        "score": 17.38,
+        "context": " who move to private schools as well as those who stay in the traditional public school system. To fully encourage these benefits, the constitutional amendment described in Section III establishes"
+      },
+      {
+        "trigger": " system",
+        "score": 17.12,
+        "context": " that's exactly what's been done to produce the Stringbike. The system features freewheel mechanisms on either side of the rear wheel connected by polyethylene rope"
+      }
+    ],
+    "promotes": [
+      " to",
+      " ",
+      " (",
+      ",",
+      " P"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Efq",
+      " my\u017felf",
+      "\u017felf",
+      " it\u017felf"
+    ],
+    "generated_description": "system \u2014 activates on the token \"system\"; fires on institutional/technical uses (school system, water delivery system, robot/bike system)"
+  },
+  {
+    "id": "20_6630_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.39154669642448425,
+    "top_activations": [
+      {
+        "trigger": " site",
+        "score": 35.5,
+        "context": " tools will become an increasingly useful business tool. IBM Many Eyes is a free public site created by Fernanda Vi\u00e9gas and Martin Wattenberg that allows anyone to create"
+      },
+      {
+        "trigger": " organization",
+        "score": 34.5,
+        "context": ".\"\u23ceThe IPNI is a not-for-profit, science-based organization with a focus on agronomic education and research support. Its database compares average"
+      },
+      {
+        "trigger": " program",
+        "score": 37.0,
+        "context": " web page.\u23ceThe Wildlife Habitat Incentive Program (WHIP) was a voluntary program for conservation-minded landowners who wanted to develop and improve wildlife habitat on agricultural"
+      },
+      {
+        "trigger": " program",
+        "score": 38.5,
+        "context": "<bos>The Adopt-A-Stream Program is a citizen's volunteer stream monitoring program that assesses the health of local waterways through chemical and biological parameters, including pH"
+      },
+      {
+        "trigger": " organization",
+        "score": 41.0,
+        "context": " Forum, Resources, and Partner Profiles.\u23ceDiabetes Coalition of California\u23ceAn independent organization consisting of individuals and agencies dedicated to the recognition and reduction of the adverse personal"
+      }
+    ],
+    "promotes": [
+      " who",
+      " whose",
+      " with",
+      "that",
+      " that"
+    ],
+    "demotes": [
+      " The\u017fe",
+      "epik",
+      " \u017feveral",
+      "Viitteet",
+      "FormState"
+    ],
+    "generated_description": "organization/program/site \u2014 fires on tokens naming organizations, programs, or websites (e.g., \"site\", \"organization\", \"program\"); civic/institutional context, entity-type marker."
+  },
+  {
+    "id": "24_13541_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.35491928458213806,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ],
+    "generated_description": "Digit / single-char token \u2014 activates on standalone digits and short punctuation (commas, colons); promotes numeral and newline tokens."
+  },
+  {
+    "id": "25_14744_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.34683874249458313,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 177.0,
+        "context": "content levels for purchasing traffic barricades as shown in the table below.\u23ceEPA's Recommended Recovered Materials Content Levels\u23cefor Traffic Barricades (Types"
+      },
+      {
+        "trigger": "6",
+        "score": 161.0,
+        "context": "diabetes is diagnosed when A1C levels are between 5.7 and 6.4 percent. People without diabetes usually have an A1C of "
+      },
+      {
+        "trigger": "0",
+        "score": 170.0,
+        "context": " a dishwasher, or a microwave oven. Today between 80 and 100 percent of American homes have all of these modern conveniences.\u23ceIndeed,"
+      },
+      {
+        "trigger": "'",
+        "score": 164.0,
+        "context": "- England Coast Path\u23ce- Glynd\u0175r's Way\u23ce- Hadrian's Wall Path\u23ce- North Downs Way\u23ce- Offa's Dyke"
+      },
+      {
+        "trigger": "'",
+        "score": 165.0,
+        "context": " The last guest just left, and you're going to bed. But there's something you don't know: One of your guests accidentally dropped a"
+      }
+    ],
+    "promotes": [
+      " getById",
+      " yks",
+      "<unused63>",
+      "<unused61>",
+      " tanul"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "RenderAtEndOf",
+      " autorytatywna",
+      " EconPapers",
+      " \u043c\u04d9\u043a\u0430\u043b"
+    ],
+    "generated_description": "Apostrophe (possessive/contraction) \u2014 activates on apostrophes in possessives and contractions ('s, 're, names like Glynd\u0175r's); marks clitic linking to following word."
+  }
+]

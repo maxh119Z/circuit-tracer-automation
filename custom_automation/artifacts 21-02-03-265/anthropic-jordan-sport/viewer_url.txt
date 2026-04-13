@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/anthropic-jordan-sport.json
+# Descriptions: 67, Groups: 15, Pinned: 29

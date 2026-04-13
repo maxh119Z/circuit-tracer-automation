@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.38192492723464966,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" topical opener \u2014 activates on sentence-initial \"In\" that introduces a domain/context (\"In music theory,\", \"In medicine,\", \"In my previous entries,\") and signals topic intro."
+  },
+  {
+    "id": "6_1071_9",
+    "layer": 6,
+    "ctx_idx": 9,
+    "influence_score": 0.36963126063346863,
+    "top_activations": [
+      {
+        "trigger": "French",
+        "score": 19.88,
+        "context": "zowi) - HBW 2, p. 407\u23ceFrench: G\u00e9linotte de Severtzov\u23ceGerman: Schwarzbrust H"
+      },
+      {
+        "trigger": "lie",
+        "score": 18.25,
+        "context": " majority of children's homes are closed to public scrutiny. Reimagining the Banlieue: Desolate housing developments, torched cars and angry youth - these"
+      },
+      {
+        "trigger": "ges",
+        "score": 16.38,
+        "context": " revocation (1461) of his father's pragmatic sanction of Bourges, he intervened freely in church affairs. He imposed heavy taxes, using much"
+      },
+      {
+        "trigger": " French",
+        "score": 17.0,
+        "context": ". To duck this unwelcome choice, heads of government like German Chancellor Angela Merkel and French President Nicolas Sarkozy have proposed a variety of legal mechanisms that sound new and enticing"
+      },
+      {
+        "trigger": " France",
+        "score": 16.62,
+        "context": ", of the philosophical and social context of the first half of the twentieth century in France. It is this framework that shaped the outlines of French urbanism between the"
+      }
+    ],
+    "promotes": [
+      " sir",
+      "tshire",
+      "homonymie",
+      "ponses",
+      "+#+"
+    ],
+    "demotes": [
+      " Vikipedi",
+      "IntoConstraints",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " \u8df3\u8f6c\u81f3",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986"
+    ],
+    "generated_description": "French / France \u2014 activates on mentions of \"French\" or \"France\", French people, places, and related proper nouns (e.g., Nicolas Sarkozy, Bourges)."
+  },
+  {
+    "id": "14_14575_9",
+    "layer": 14,
+    "ctx_idx": 9,
+    "influence_score": 0.3793077766895294,
+    "top_activations": [
+      {
+        "trigger": " French",
+        "score": 36.75,
+        "context": " better academically, according to newly published research.\u23ceThe results of three experiments by French researchers are not definitive but they are intuitive; kids who don\u2019t feel"
+      },
+      {
+        "trigger": " French",
+        "score": 32.0,
+        "context": "<bos>The French painter Nicolas de Sta\u00ebl (1914-1955) was a major painter of the School of Paris. His work is"
+      },
+      {
+        "trigger": " French",
+        "score": 31.75,
+        "context": " that there are infinitely many twin prime pairs. In 1849, French mathematician Alphonse de Polignac extended this conjecture to the idea that there should be"
+      },
+      {
+        "trigger": " French",
+        "score": 32.5,
+        "context": " of these mild-climate lilacs were created in 1876 by French nurseryman Victor Lemoine. He crossed common European lilacs with the"
+      },
+      {
+        "trigger": " French",
+        "score": 32.25,
+        "context": " prominent guests. These have included the Polish composer Fr\u00e9d\u00e9ric Chopin and his lover the pioneering French writer George Sand (who wrote a notable account of A Winter in Majorca"
+      }
+    ],
+    "promotes": [
+      "tanleria",
+      "Jereo",
+      "########.",
+      "ponses",
+      "#+#"
+    ],
+    "demotes": [
+      " feroit",
+      " avoient",
+      " auroit",
+      " pouvoit",
+      " \u00e9toit"
+    ],
+    "generated_description": "French (demonym) \u2014 activates on the token \u201cFrench\u201d used as a nationality/adjective (people, professions, descriptors: French researcher, French painter, French mathematician)."
+  },
+  {
+    "id": "17_3531_13",
+    "layer": 17,
+    "ctx_idx": 13,
+    "influence_score": 0.36663222312927246,
+    "top_activations": [
+      {
+        "trigger": " Understand",
+        "score": 38.5,
+        "context": " Phase 1, Unit 16-20\u23ceLearn to Speak and Understand Punjabi with Pimsleur Language Programs\u23ceThis Edition: MP3\u23ceYour"
+      },
+      {
+        "trigger": " language",
+        "score": 39.0,
+        "context": " regular expression \\ba+.+vark\\b\u23ceRegular expressions consist of a simple language and are used by programmers and others who analyze large texts and datasets. And"
+      },
+      {
+        "trigger": " language",
+        "score": 41.0,
+        "context": " considered it a general language whose only legitimate concern could be to describe and criticize the language of the particular sciences. All propositions were held to be either tautological ("
+      },
+      {
+        "trigger": "language",
+        "score": 42.0,
+        "context": " statements into symbolic notation are\u23ce- We are going to set up an artificial \"language\" to avoid the\u23cedifficulties of vagueness, equivocation,"
+      },
+      {
+        "trigger": " a",
+        "score": 57.0,
+        "context": " like Java, or toiling in the catacombs of Cobol, programmers speak a variety of tongues in their intimate conversations with computers. And each has its own"
+      }
+    ],
+    "promotes": [
+      " languages",
+      "Language",
+      " Language",
+      "language",
+      " language"
+    ],
+    "demotes": [
+      "\ufeff#",
+      " disponibilit\u00e9s",
+      "\u21b9",
+      "writeFieldEnd",
+      "\u0447\u0435\u0441\u043a\u043e\u043c\u0443"
+    ],
+    "generated_description": "language \u2014 activates on occurrences of \"language\" (and case variants); responds to related mentions (linguistic, programming tongues); promotes output tokens like language/Language/languages."
+  },
+  {
+    "id": "0_11375_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3602009415626526,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "'is' (linking verb) \u2014 activates on the token \"is\" in many contexts (copula/linking verb); often correlated with demoting \"is\" as a next-token in output."
+  },
+  {
+    "id": "0_245_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3618645668029785,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": "2004) proved efficient in analysing the data due to its view of language as a mega-system of sub-systems, whereby items are selected and"
+      },
+      {
+        "trigger": " language",
+        "score": 17.75,
+        "context": " Mediterranean diet that they consumed offered artery protection in the brain. They were assessed for language skills, memory and abstract thinking.\u23ceBottom line: the Mediterranean-style"
+      },
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": "(c) He studied phrenology.\u23ce(d) He learned sign language.\u23ce3. How does King Ferdinand respond to the frightening sound?\u23ce"
+      },
+      {
+        "trigger": " language",
+        "score": 17.62,
+        "context": " the bathtub.\u23ceYour child will begin to make the connection between spoken and written language.\u23ce6) Use repetition.\u23ceSome parents get frustrated when a child"
+      },
+      {
+        "trigger": " language",
+        "score": 17.5,
+        "context": "This printable wordsearch covers Thanksgiving vocabulary. This activity is a fun way to connect language arts, American history, and the holidays. Plus, students can increase their"
+      }
+    ],
+    "promotes": [
+      "\u2014",
+      "2",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "_"
+    ],
+    "demotes": [
+      ")\");\r",
+      " my\u017felf",
+      "\"]);\r",
+      ".\"));",
+      "'));\r"
+    ],
+    "generated_description": "language (word) \u2014 activates on the token \"language\"; noun contexts (spoken/written/sign/skills/arts), detection of discussion about language or language-related skills."
+  },
+  {
+    "id": "0_8061_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39940568804740906,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ],
+    "generated_description": "\"string 'in'\" \u2014 activates on the letter sequence \"in\" anywhere (standalone preposition or inside words: -in-, -ing-); often suppresses producing the token \"in\"."
+  },
+  {
+    "id": "4_15380_13",
+    "layer": 4,
+    "ctx_idx": 13,
+    "influence_score": 0.3533433675765991,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 20.62,
+        "context": "<bos>English is really the global language and we can say it is the only language that can help us to communicate with others when we go to any European country."
+      },
+      {
+        "trigger": " spoken",
+        "score": 25.12,
+        "context": "<bos>Mandarin Chinese is spoken by more than 1 billion people, making it the most widely spoken language in the world. It is the official language of Mainland"
+      },
+      {
+        "trigger": " Language",
+        "score": 20.62,
+        "context": " race with a unique understanding that is: \u2014\u23ce\u2022 Expressed in the Unique Language allowed by the shared beliefs about words, their meaning and use.\u23ce\u2022"
+      },
+      {
+        "trigger": " it",
+        "score": 22.88,
+        "context": " and online world but the fact remains that the majority of the global population speaks no English at all. Of those that do, many speak it as a second language"
+      },
+      {
+        "trigger": " a",
+        "score": 24.25,
+        "context": " slightly smaller than Indiana. Calling themselves Magyars, these people speak a unique language and maintain highly distinctive traditions in music, dance, costume, crafts, gast"
+      }
+    ],
+    "promotes": [
+      "Language",
+      " langues",
+      " Language",
+      " languages",
+      " language"
+    ],
+    "demotes": [
+      "batore",
+      "UnitTesting",
+      " createState",
+      "ganu",
+      "########."
+    ],
+    "generated_description": "say language \u2014 activates on language-related context tokens (spoken, language, is, it, a); consistently pushes output tokens like \"language\"/\"languages\"/\"Language\"."
+  },
+  {
+    "id": "5_6846_9",
+    "layer": 5,
+    "ctx_idx": 9,
+    "influence_score": 0.3858226239681244,
+    "top_activations": [
+      {
+        "trigger": "yes",
+        "score": 14.62,
+        "context": " from 1114 onwards.\u23ceThe main fairs were held at Troyes in the summer and five lesser fairs around it throughout the year. The goods"
+      },
+      {
+        "trigger": "hiti",
+        "score": 15.75,
+        "context": "3; steamer), and was\u23ceissued by the Oceanic Steamship Company-Tahiti Line. The document is affixed with a red wax stamp containing the ship name"
+      },
+      {
+        "trigger": " Overseas",
+        "score": 16.12,
+        "context": "othermal Country Notes\u23ceThe double-flash plant at La Bouillante in the French Overseas Department of Guadeloupe is at present the only example of the island's geothermal"
+      },
+      {
+        "trigger": "RS",
+        "score": 13.62,
+        "context": " Bacchus, lead researcher of the study at France's national AIDS research agency ANRS.\u23ce\"Six years after interruption of treatment, patients treated early on in"
+      },
+      {
+        "trigger": "Fr",
+        "score": 18.75,
+        "context": ", demeyne (modern spelling by late 15c.), from Anglo-Fr. demesne, demeine, O.Fr. demaine \""
+      }
+    ],
+    "promotes": [
+      "#+#",
+      "}\\]",
+      ":+:",
+      " franc\u00e8s",
+      " Rigby"
+    ],
+    "demotes": [
+      " propOrder",
+      "Hauptartikel",
+      "fjspx",
+      "Referencie",
+      "EndGlobalSection"
+    ],
+    "generated_description": "France / French \u2014 activates on tokens and abbreviations referring to France, French language, or French territories (Fr, France's, Overseas departments, Tahiti, Troyes); pushes French forms."
+  },
+  {
+    "id": "0_13831_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3982296288013458,
+    "top_activations": [
+      {
+        "trigger": " talking",
+        "score": 21.25,
+        "context": " eliminating the gender gap would have a significant impact on poverty so perhaps it's time they started talking about it.\u23ceThis story was first reported on IPS news"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " go beyond its continuous RMS power for a very short time period. We are not talking minutes or even seconds here. We are talking milliseconds or thousandths of a"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " mobile phones on their hearing, brain, and eyesight. Our Social Workers are also talking about the etiquette of Mobile Phone Usage. Some people become stressed due to anonymous"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.25,
+        "context": "alium, Librium and Diazepam were often involved.\u23ce- We're talking about benzodiazepines such as Valium, Normison and methadone"
+      },
+      {
+        "trigger": " talking",
+        "score": 21.0,
+        "context": " gardening and lawn care at our house. Since my diagnosis, we\u2019ve been talking about how to make our green space truly green \u2013 a healthy yard and garden"
+      }
+    ],
+    "promotes": [
+      " \u0635\u0648\u062a\u064a\u0647",
+      "IntoConstraints",
+      " CreateTagHelper",
+      " AssemblyCulture",
+      "rungsseite"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " it",
+      "the",
+      " "
+    ],
+    "generated_description": "talking \u2014 activates on the gerund \"talking\", especially in \"talking about\" constructions; marks introducing or discussing a topic."
+  },
+  {
+    "id": "18_14080_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.3093867301940918,
+    "top_activations": [
+      {
+        "trigger": " Text",
+        "score": 56.0,
+        "context": " Case\u23ce- Aspect Ratio: Full Frame - 1.33\u23ce- Text/Photo Galleries:\u23ce- Photos - Explorers Buried at Arlington Cemetery\u23ceHousing"
+      },
+      {
+        "trigger": " the",
+        "score": 54.0,
+        "context": " include Indonesians, Chinese and so on. Residents are\u23ceCatholic. Filipino is the language, and English is also spoken. The\u23cecurrency is the peso."
+      },
+      {
+        "trigger": " not",
+        "score": 55.0,
+        "context": " fact, different. EFL is teaching or learning English in an environment where English is not spoken by the majority. So, teaching English in the US or the UK"
+      },
+      {
+        "trigger": "official",
+        "score": 59.5,
+        "context": "<bos>Malay is the\u23ceofficial language of Indonesia, Malaysia, Singapore and Brunei.\u23ceThe populations in each of\u23cethese countries speak a different dialect of Malay."
+      },
+      {
+        "trigger": "Second",
+        "score": 55.0,
+        "context": "<bos>Academic Language: Everyone's \"Second\" Language\u23ceBeing able to speak English fluently does not guarantee that a student will be able to use language effectively"
+      }
+    ],
+    "promotes": [
+      "Languages",
+      " tongues",
+      " language",
+      " Languages",
+      " languages"
+    ],
+    "demotes": [
+      " kasarigan",
+      "CardHeader",
+      " Permanent",
+      "Permanent",
+      "multer"
+    ],
+    "generated_description": "say \"language(s)\" \u2014 triggers on articles/adjectives/markers before language mentions (the, official, second, etc.); promotes tokens like language / Languages / languages"
+  },
+  {
+    "id": "0_11986_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3883959650993347,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": " Arabic abjad is the Arabic script as it is codified for writing the Arabic language. It is written from right to left, in a cursive style, and"
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": "-1 is the first part of the ISO 639 international-standard language-code family ISO 639-2 is the second part of"
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": "protocols\" (a cheat sheet of sentence starters) to build students' cognitive academic language proficiency.\u23ce\"Easing Shift to the U.S. is Goal\""
+      },
+      {
+        "trigger": " language",
+        "score": 18.25,
+        "context": " according to a well-defined syntax, closely resembling the syntax of the C programming language. This is no coincidence. Since the C programming language is so central in"
+      },
+      {
+        "trigger": " language",
+        "score": 18.5,
+        "context": " colleges and universities expect incoming freshmen to have taken at least two years of a foreign language.\u23ceThis is true of the University of Minnesota and the Minnesota State Colleges"
+      }
+    ],
+    "promotes": [
+      "5",
+      " future",
+      "1",
+      "2",
+      "6"
+    ],
+    "demotes": [
+      "expandindo",
+      "aln\u0131z",
+      "]\")]",
+      "Autoritn\u00ed",
+      "Personensuche"
+    ],
+    "generated_description": "language \u2014 activates on mentions of a language concept/token (natural languages, programming languages, ISO codes, proficiency contexts)"
+  },
+  {
+    "id": "0_2800_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.38966691493988037,
+    "top_activations": [
+      {
+        "trigger": " French",
+        "score": 10.5,
+        "context": "<bos>- Vuillard, Edouard\u23ce- French, 1868 - 1940\u23ceVuillard's work straddles two centuries"
+      },
+      {
+        "trigger": " French",
+        "score": 10.62,
+        "context": " It may be regarded as a compromise between the English abbreviation \"CUT\" and the French abbreviation \"TUC\".\u23ceFor more, see time zone.\u23ceCo"
+      },
+      {
+        "trigger": " French",
+        "score": 10.88,
+        "context": " hundreds of miles to the east had driven rival Indian nations who were sympathetic to the French from New York, Ohio, Quebec, and Michigan. The fleeing tribes,"
+      },
+      {
+        "trigger": " French",
+        "score": 10.62,
+        "context": " Questions\u23ce- First major battle of the Hundred Year War. English archers defeated the French army and forced the French king to give up some of his kingdom.\u23ce"
+      },
+      {
+        "trigger": " French",
+        "score": 10.75,
+        "context": " Martin, which may signal an increasing risk to the US mainland.\u23ceOn the French part of the island, where most of the infections have been reported, the"
+      }
+    ],
+    "promotes": [
+      " Mante",
+      "Portail",
+      ":+:",
+      " snippetHide",
+      " Bri"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Parigi",
+      " M\u00e8re",
+      " Com\u00e9die",
+      " Gallimard"
+    ],
+    "generated_description": "French \u2014 activates on the token \"French\"; marks instances of the nationality/language adjective or noun (references to French people, language, or French-controlled places)."
+  },
+  {
+    "id": "17_14947_13",
+    "layer": 17,
+    "ctx_idx": 13,
+    "influence_score": 0.3946261703968048,
+    "top_activations": [
+      {
+        "trigger": " different",
+        "score": 27.5,
+        "context": " to public companies and to the inherent complexity of large groups. Considering stock markets have different rules and regulations especially with regards to the content of reporting of financial information,"
+      },
+      {
+        "trigger": " not",
+        "score": 32.5,
+        "context": " fact, different. EFL is teaching or learning English in an environment where English is not spoken by the majority. So, teaching English in the US or the UK"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": " implementation in a new location comparatively earlier--it doesn't solve the fundamental differences in the way users in the other language think.\u23ceI've studied Japanese"
+      },
+      {
+        "trigger": " native",
+        "score": 27.5,
+        "context": " out at program start-up for one containing translations that match the user's native language. That's a good start, but insufficient. Maybe your language"
+      },
+      {
+        "trigger": " a",
+        "score": 30.0,
+        "context": " the corresponding \"le\" or \"les\".\u23ceIf you speak German, also a Germanic language like English, this case applies exactly in the same way:\u23ce"
+      }
+    ],
+    "promotes": [
+      " market",
+      " Galen",
+      "Affirmed",
+      " Tiber",
+      " lunch"
+    ],
+    "demotes": [
+      "DockStyle",
+      "ContentAsync",
+      " \u0430\u0440\u0445\u0438\u0432\u043b\u0430\u043d",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "migrationBuilder"
+    ],
+    "generated_description": "different language \u2014 activates on tokens in contexts contrasting languages (native vs. non\u2011native, translations, \u201cnot spoken,\u201d language differences)"
+  },
+  {
+    "id": "0_1295_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3495461642742157,
+    "top_activations": [
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " fungus that has been linked to global warming and rising global temperatures in the tropical countries where coffee grows has researchers scrambling to create new varieties of coffee plants that can keep"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": "2012. Small white arrows outline the area in Mars\u2019 southern hemisphere where the 2012 Martian dust storm was building. The storm was"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": "-infected with dengue serotype 4 and had not recently traveled to another area where chikungunya exists.\u23ceMeanwhile, health officials in the area are investigating"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " into cities, and lasted until recently. Before urbanization, people lived in small communities where everybody knew everything about everybody else--and Facebook is bringing it back :)\u23ce"
+      },
+      {
+        "trigger": " where",
+        "score": 39.5,
+        "context": " figure is in line with research from elsewhere in the United States and in other countries where youth are known to play the choking game, according to Dr. Thomas Andrew"
+      }
+    ],
+    "promotes": [
+      "(",
+      "\u0431\u0430\u0440\u0438",
+      "\u23ce\u23ce",
+      "<em>",
+      "<strong>"
+    ],
+    "demotes": [
+      " where",
+      "where",
+      " donde",
+      " \u03cc\u03c0\u03bf\u03c5",
+      " o\u00f9"
+    ],
+    "generated_description": "where (location) \u2014 activates on the token \"where\" used to introduce locational/relative clauses, typically before place descriptions or situational locations."
+  },
+  {
+    "id": "18_402_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3650498390197754,
+    "top_activations": [
+      {
+        "trigger": " Jean",
+        "score": 32.75,
+        "context": " also true for the home's original owner, the painter and caricaturist, Jean Veber.\u23ceBorn in Paris in 1864,"
+      },
+      {
+        "trigger": " ",
+        "score": 36.25,
+        "context": "90 10 80\u23ceFax : +33 2 40 90 09 60\u23ce31 rue"
+      },
+      {
+        "trigger": " Pierre",
+        "score": 30.25,
+        "context": " States, and about half of those were from Canada. Even the Olympic founder, Pierre, baron de Coubertin, stayed away in 1904"
+      },
+      {
+        "trigger": " of",
+        "score": 34.5,
+        "context": " Paris in the 30s and got discovered in 1935 by Louis Leplee, the owner of a Parisian nightclub.\u23ceNicknamed \u201c"
+      },
+      {
+        "trigger": " agency",
+        "score": 30.0,
+        "context": "OT asteroid lander, which is being developed by DLR in collaboration with French space agency (Centre National d'Etudes Spatiales; CNES) and"
+      }
+    ],
+    "promotes": [
+      "WithIOException",
+      ":+:",
+      "AndEndTag",
+      "DockStyle",
+      "TagMode"
+    ],
+    "demotes": [
+      " ainfi",
+      " chr\u00e9",
+      " venons",
+      " asiatique",
+      " abstrait"
+    ],
+    "generated_description": "French names/places \u2014 activates on French personal names (Jean, Pierre), Paris/France references and institutions (Paris, CNES); marks France-related entities and context."
+  },
+  {
+    "id": "19_13366_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.21807117760181427,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 72.0,
+        "context": "in Finland have settled in the Helsinki region.\u23ceThe city is bilingual\u23ce, with majority being\u23ceand minority Swedish\u23ceSince early 2009,"
+      },
+      {
+        "trigger": " than",
+        "score": 72.5,
+        "context": "<bos>Census figures show that the percentage of Americans living in homes where languages other than English are spoken is on the rise. The country is becoming increasingly diverse, and"
+      },
+      {
+        "trigger": "),",
+        "score": 75.5,
+        "context": " Indians (Native Americans), and Alaska Natives. Languages: English (predominant), Spanish. Religions: Christianity (Protestant, Roman Catholic, other Christians,"
+      },
+      {
+        "trigger": " writing",
+        "score": 71.5,
+        "context": " important scripts of India, including Devanagari (the most common script used for writing Sanskrit since the 19th century), the Gurmukhi script"
+      },
+      {
+        "trigger": ":",
+        "score": 96.5,
+        "context": " the north and the Apennines running the length of the peninsula. Official language: Italian. Religion: Roman Catholic majority. Currency: euro. Capital: Rome"
+      }
+    ],
+    "promotes": [
+      " Hindi",
+      " bahasa",
+      " Arabic",
+      " English",
+      " Spanish"
+    ],
+    "demotes": [
+      " kasarigan",
+      "adpleegd",
+      "ParallelGroup",
+      "MediaStore",
+      "COUVER"
+    ],
+    "generated_description": "say language \u2014 fires on structural words introducing or preceding language names (with, than, :, writing, ) ); promotes language tokens (English, Spanish, Hindi, Arabic, bahasa)"
+  },
+  {
+    "id": "21_12621_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.32255271077156067,
+    "top_activations": [
+      {
+        "trigger": " British",
+        "score": 74.0,
+        "context": " English informalSE\u23cea student who never does anything except study [= swot British English]\u23cea movement in skateboarding or rollerblading, which involves moving"
+      },
+      {
+        "trigger": " distinguish",
+        "score": 61.25,
+        "context": " Gaeldom, and only after its collapse did writers regularly begin to use features that distinguish Scottish Gaelic dialects from Irish dialects. Increasing Anglicization, suppression of traditional"
+      },
+      {
+        "trigger": ",",
+        "score": 102.0,
+        "context": " Coast (for example, in Eastern New England and New York City), partly because these areas were in contact with England, and imitated prestigious varieties of English English at"
+      },
+      {
+        "trigger": " spoke",
+        "score": 102.0,
+        "context": " esteemed than others, and it is certainly well-documented that those who spoke these prestigious varieties were the authority figures. Sociolinguists have determined that one's"
+      },
+      {
+        "trigger": " recognising",
+        "score": 87.0,
+        "context": "0s in comparison with the language used today. Add this to the difficulties in recognising proper nouns and foreign words and you can see what the software is up against"
+      }
+    ],
+    "promotes": [
+      " British",
+      "American",
+      " Irish",
+      " English",
+      " American"
+    ],
+    "demotes": [
+      " Geraadpleegd",
+      "tvguidetime",
+      " propOrder",
+      "EditorBrowsable",
+      "J\u00een"
+    ],
+    "generated_description": "English dialect \u2014 activates on mentions of language varieties/national forms (British, American, Irish, English); triggers around words about speaking, distinguishing, recognizing dialects."
+  },
+  {
+    "id": "18_402_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.33856722712516785,
+    "top_activations": [
+      {
+        "trigger": " Jean",
+        "score": 32.75,
+        "context": " also true for the home's original owner, the painter and caricaturist, Jean Veber.\u23ceBorn in Paris in 1864,"
+      },
+      {
+        "trigger": " ",
+        "score": 36.25,
+        "context": "90 10 80\u23ceFax : +33 2 40 90 09 60\u23ce31 rue"
+      },
+      {
+        "trigger": " Pierre",
+        "score": 30.25,
+        "context": " States, and about half of those were from Canada. Even the Olympic founder, Pierre, baron de Coubertin, stayed away in 1904"
+      },
+      {
+        "trigger": " of",
+        "score": 34.5,
+        "context": " Paris in the 30s and got discovered in 1935 by Louis Leplee, the owner of a Parisian nightclub.\u23ceNicknamed \u201c"
+      },
+      {
+        "trigger": " agency",
+        "score": 30.0,
+        "context": "OT asteroid lander, which is being developed by DLR in collaboration with French space agency (Centre National d'Etudes Spatiales; CNES) and"
+      }
+    ],
+    "promotes": [
+      "WithIOException",
+      ":+:",
+      "AndEndTag",
+      "DockStyle",
+      "TagMode"
+    ],
+    "demotes": [
+      " ainfi",
+      " chr\u00e9",
+      " venons",
+      " asiatique",
+      " abstrait"
+    ],
+    "generated_description": "French names/terms \u2014 activates on French proper names and France-related nouns (Jean, Pierre, Parisian, French agency/CNES); signals France-related entities or terminology."
+  },
+  {
+    "id": "19_712_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.33097851276397705,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 76.0,
+        "context": " inspiration from the Art Institute of Chicago collection:\u23ceThe French Revolution that began in 1789 had long-term effects on the new country of the"
+      },
+      {
+        "trigger": " in",
+        "score": 67.0,
+        "context": " and many Caribbean and Pacific Islands. France has its main ideals expressed in the Declaration of the Rights of Man and of the Citizen. The French Republic is defined as"
+      },
+      {
+        "trigger": "1",
+        "score": 61.25,
+        "context": " harvested between 1903 and 1933. In 1895 it was decided to preserve this remarkable stand. In 1"
+      },
+      {
+        "trigger": " French",
+        "score": 69.0,
+        "context": " until a copy was brought here 200 years ago by refugees from the French Revolution. It has never been translated in full. Ironically it turned out to"
+      },
+      {
+        "trigger": " French",
+        "score": 67.0,
+        "context": ". To duck this unwelcome choice, heads of government like German Chancellor Angela Merkel and French President Nicolas Sarkozy have proposed a variety of legal mechanisms that sound new and enticing"
+      }
+    ],
+    "promotes": [
+      "Paris",
+      " french",
+      " France",
+      " Paris",
+      " French"
+    ],
+    "demotes": [
+      " TextInputType",
+      "\u0004",
+      " venons",
+      " n\u00f4tre",
+      "AutoScaleMode"
+    ],
+    "generated_description": "French / France topic \u2014 activates on 'French'/'France' and year tokens in French-history contexts (e.g. 1789, 1903); pushes Paris/France/French tokens"
+  },
+  {
+    "id": "22_11129_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.3710826635360718,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 47.5,
+        "context": " Latin mater, Old Irish mathir, Lithuanian mote, Sanskrit matar-, Greek meter, Old Church Slavonic mati), \"[b]ased ultimately on the baby-"
+      },
+      {
+        "trigger": ".",
+        "score": 47.5,
+        "context": " Old English hors, from Proto-Germanic *hursa- (cf. Old Norse hross, Old Frisian hors, Middle Dutch ors, Dutch ros"
+      },
+      {
+        "trigger": " and",
+        "score": 46.0,
+        "context": " \"the Iron Gate, or the Gate of Trajan.\"\u23ceIn languages of the region including Romanian, Hungarian, Slovak, Turkish, German and Bulgarian, names"
+      },
+      {
+        "trigger": " (",
+        "score": 48.0,
+        "context": "\u23ceBaby names that sound like Akill include Achil, Achill (English and German), Aakil (Urdu), Aashil, Acel"
+      },
+      {
+        "trigger": " and",
+        "score": 47.5,
+        "context": "lee, Ackleigh, Ackley (English), Acklie, Ahkeel (Arabic and English), Aislea, Aislee, Aisleigh, Aisley"
+      }
+    ],
+    "promotes": [
+      "AndroidJUnit",
+      "expandindo",
+      "R\u00fcyada",
+      " AssemblyCulture",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647"
+    ],
+    "demotes": [
+      "\u03bb\u03af\u03bf\u03c5",
+      " endwhile",
+      "WebElementEntity",
+      "](#",
+      "Hozz\u00e1f\u00e9r\u00e9s"
+    ],
+    "generated_description": "List separator \u2014 activates on commas, periods, \u201cand\u201d, \u201c(\u201d in enumerations, especially language/etymology or name-list contexts"
+  },
+  {
+    "id": "22_5277_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.2913282513618469,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 77.5,
+        "context": " teaching has been widespread throughout modern Chinese history- it was made the country's main foreign language in 1982.\u23ceIn Beijing, in preparation"
+      },
+      {
+        "trigger": " their",
+        "score": 72.5,
+        "context": " under the \"Citizen Speak Turkish\" campaign, non-Muslims were threatened if they spoke their native languages in public. When the Wealth Tax (Varlik Vergisi"
+      },
+      {
+        "trigger": " their",
+        "score": 82.0,
+        "context": " increasingly diverse population of students in the schools, many of which English is not their first language.\u23ceBecause I have an Area of Concentration in Science, the Science"
+      },
+      {
+        "trigger": " speaking",
+        "score": 75.5,
+        "context": "60s \u2013 came from Pomerania, and therefore did not face the problem of mixing with other immigrants speaking often mutually unintelligible dialects; as ninety percent of the"
+      },
+      {
+        "trigger": " spoken",
+        "score": 92.0,
+        "context": ".1 % of the world population. Within Europe, German is the most widely spoken mother tongue.\u23ce- German is an important language for trade. Germany is"
+      }
+    ],
+    "promotes": [
+      " \"'\");",
+      " CascadeType",
+      " propOrder",
+      "astify",
+      " FetchType"
+    ],
+    "demotes": [
+      " speak",
+      " speaks",
+      " speaking",
+      " Speak",
+      " English"
+    ],
+    "generated_description": "language mention \u2014 activates on tokens in phrases about languages (spoken, speaking, \u201ctheir\u201d in \u201ctheir native/first language\u201d); signals discussion of what language is used or known."
+  },
+  {
+    "id": "22_12284_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.2788943350315094,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 60.25,
+        "context": " to touch. The idea is to make visitors experiment with science and new technologies.\u23ceIn the complex you will also find the L'Espai dels Xiquets"
+      },
+      {
+        "trigger": " (",
+        "score": 66.0,
+        "context": "16, 2012\u23ce\u2013 Estadao \u2013 Original Article (Portuguese)\u23ceS\u00c3O PAULO: The Watergate case was so renowned"
+      },
+      {
+        "trigger": " in",
+        "score": 66.0,
+        "context": " Padellaro, Portrait of Pius XII (1956; originally published in Italian, 1949)were countered by the critical studies Gu"
+      },
+      {
+        "trigger": " learn",
+        "score": 59.75,
+        "context": " their communities. Many cities are establishing liaison offices, improving communication with, helping immigrants learn English, and creating programs and events that help all residents embrace cultural diversity."
+      },
+      {
+        "trigger": " and",
+        "score": 68.0,
+        "context": " have at least one bilingual teacher in every classroom. This exposes children to both Spanish and English very early, allowing for both language and cultural exchange.\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " Spanish",
+      " ENGLISH",
+      " english",
+      "English",
+      " English"
+    ],
+    "demotes": [
+      " $__",
+      " vil\u00e1",
+      "\u0627\u0648",
+      "ate",
+      ">"
+    ],
+    "generated_description": "Language mention (English/Spanish) \u2014 activates on text about languages or bilingualism (learn, and, in, parentheses listing languages); tends to promote \u201cEnglish\u201d/\u201cSpanish\u201d tokens."
+  },
+  {
+    "id": "22_14724_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.35684099793434143,
+    "top_activations": [
+      {
+        "trigger": " clients",
+        "score": 80.5,
+        "context": " know the language of the people with whom they would be trading, if their likely clients came from areas besides those that usually spoke Westron. Nobility or,"
+      },
+      {
+        "trigger": "-",
+        "score": 70.0,
+        "context": " English in the United States was inherited from British colonization. The first wave of English-speaking settlers arrived in North America in the 17th century. During"
+      },
+      {
+        "trigger": " a",
+        "score": 67.5,
+        "context": " aged from 12 to 15 years old, with Spanish as a common language, attended from Colombia, Chile, Croatia, Ecuador, France, Germany"
+      },
+      {
+        "trigger": " who",
+        "score": 69.0,
+        "context": " use symbols to represent ideas.\u23ceI have a number of students where I work who attend our school on I-20 visas. These kids are mostly from"
+      },
+      {
+        "trigger": " he",
+        "score": 71.0,
+        "context": " for the rest of his life and seemingly never wrote in the Russian language, which he must have known.\u23ceCantor's father had poor health and the"
+      }
+    ],
+    "promotes": [
+      "speak",
+      " Speak",
+      " speaking",
+      " speaks",
+      " speak"
+    ],
+    "demotes": [
+      "__':",
+      "\ufeff/**",
+      " FetchType",
+      " CascadeType",
+      "astify"
+    ],
+    "generated_description": "say \"speak\" \u2014 activates around mentions of languages/people groups; pushes tokens like speak, speaking, speaks (forms of \"speak\")."
+  },
+  {
+    "id": "23_7367_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.3254258930683136,
+    "top_activations": [
+      {
+        "trigger": " complete",
+        "score": 47.25,
+        "context": " balanced, considering spiciness, texture, temperature, and careful presentation.\u23ceA complete Korean meal is called Hanjoungshik and is composed of fish,"
+      },
+      {
+        "trigger": " the",
+        "score": 44.75,
+        "context": " prevalence of heart disease (3.4%). Smoking and obesity were more common in the white population while the South Asian and black populations had the highest levels of diabetes"
+      },
+      {
+        "trigger": " several",
+        "score": 46.5,
+        "context": " to Meet with Professor Gary Rowe\u23ceProfessor, lawyer and historian Gary Rowe gathered with several people from Haiti Tuesday, July 26, to discuss the U."
+      },
+      {
+        "trigger": " ten",
+        "score": 44.25,
+        "context": " their US counterparts, but the obesity epidemic has spread among them too. One in ten French kids will be obese by the age of 10 years, and"
+      },
+      {
+        "trigger": " some",
+        "score": 43.5,
+        "context": ", Nicoladis noted that some French Canadians also displayed anomalous differences from their Canadian or even their German counterparts.\u23ce\"They show a lot more variation in what they"
+      }
+    ],
+    "promotes": [
+      "tamide",
+      "UnknownFields",
+      "AddTagHelper",
+      " Bioaccumulative",
+      "SharedDtor"
+    ],
+    "demotes": [
+      " France",
+      " Italy",
+      " Greece",
+      " Germany",
+      " Ireland"
+    ],
+    "generated_description": "Pre-noun determiner \u2014 activates on articles/quantifiers/adjectives that introduce noun phrases (the, several, some, ten, complete)."
+  },
+  {
+    "id": "23_13607_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.3433835208415985,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 61.0,
+        "context": ", Calif. About 75 percent of parents participating in PIQE programs are Spanish-speaking. During the classes, parents were made aware of and encouraged to"
+      },
+      {
+        "trigger": ",",
+        "score": 61.5,
+        "context": " up with the innovative solution of going underground with a design called the walipini, after the Aymara word for \"place of warmth.\" It's"
+      },
+      {
+        "trigger": " usually",
+        "score": 51.75,
+        "context": " the title of Chapter 5 (translated on my hyperlink as \"energy\") is usually translated in Tai Chi contexts as \"posture\" (e.g.,"
+      },
+      {
+        "trigger": " speaking",
+        "score": 53.5,
+        "context": " born: 17.3%\u23ce- Population (age 5+) speaking language other than English at home: 21.3%\u23ce-"
+      },
+      {
+        "trigger": " together",
+        "score": 60.5,
+        "context": " separated by \u201c\u1f41 \u1f38\u03b7\u03c3\u03bf\u1fe6\u03c2\u201d (\"Jesus\"), so together it is \u201c\u1f00\u03c0\u03bf\u03ba\u03c1\u03b9\u03b8\u03b5\u1f76\u03c2 \u1f41 \u1f38\u03b7\u03c3\u03bf\u1fe6\u03c2"
+      }
+    ],
+    "promotes": [
+      "yll",
+      " di\u1ec7n",
+      "misu",
+      "\u30b4\u30ea\u30fc",
+      "providedIn"
+    ],
+    "demotes": [
+      " translated",
+      " translation",
+      " translate",
+      " translating",
+      " translations"
+    ],
+    "generated_description": "speaking (the word) \u2014 activates on the token \"speaking\", especially in compounds/phrases like \"Spanish-speaking\" or \"speaking language other than...\""
+  },
+  {
+    "id": "23_7753_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.39704132080078125,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 49.0,
+        "context": " Anthem: A Pirate Looks at 40|\u23ce|Official language||English, but with a West Country accent|\u23ce|Population (dead man's"
+      },
+      {
+        "trigger": " in",
+        "score": 49.5,
+        "context": "||Talk Like a Pirate Day|\u23ceTortuga (\u00cele de la Tortue in Parley) is a wee Carrr-ibbean island, says I"
+      },
+      {
+        "trigger": " in",
+        "score": 63.5,
+        "context": " on by Tropical Storm Isaac. It\u2019s one of several text messages originally written in Cr\u00e9ole sent out before and after the storm passed over Haiti. The messages"
+      },
+      {
+        "trigger": " speak",
+        "score": 55.0,
+        "context": " in English\u23ceIn Doncaster Hill, 141 people who were able to speak another language in 2011, reported difficulty speaking English.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 50.25,
+        "context": ", Anglo-Welsh, or Wenglish (see below) refers to the dialects of English spoken in Wales by Welsh people. The dialects are significantly influenced by Welsh"
+      }
+    ],
+    "promotes": [
+      " \u0627\u0644\u0627\u0637\u0644\u0627\u0639",
+      "PerformLayout",
+      " disponibilit\u00e9s",
+      "Personendaten",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      "LANGUAGE",
+      " language",
+      " nemici",
+      " Shakspeare",
+      "featureID"
+    ],
+    "generated_description": "say language \u2014 activates on prepositions/verbs that introduce language names (in, of, speak), signals upcoming language mentions (English, Cr\u00e9ole, Haitian, etc.)"
+  },
+  {
+    "id": "19_712_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.2856390178203583,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 76.0,
+        "context": " inspiration from the Art Institute of Chicago collection:\u23ceThe French Revolution that began in 1789 had long-term effects on the new country of the"
+      },
+      {
+        "trigger": " in",
+        "score": 67.0,
+        "context": " and many Caribbean and Pacific Islands. France has its main ideals expressed in the Declaration of the Rights of Man and of the Citizen. The French Republic is defined as"
+      },
+      {
+        "trigger": "1",
+        "score": 61.25,
+        "context": " harvested between 1903 and 1933. In 1895 it was decided to preserve this remarkable stand. In 1"
+      },
+      {
+        "trigger": " French",
+        "score": 69.0,
+        "context": " until a copy was brought here 200 years ago by refugees from the French Revolution. It has never been translated in full. Ironically it turned out to"
+      },
+      {
+        "trigger": " French",
+        "score": 67.0,
+        "context": ". To duck this unwelcome choice, heads of government like German Chancellor Angela Merkel and French President Nicolas Sarkozy have proposed a variety of legal mechanisms that sound new and enticing"
+      }
+    ],
+    "promotes": [
+      "Paris",
+      " french",
+      " France",
+      " Paris",
+      " French"
+    ],
+    "demotes": [
+      " TextInputType",
+      "\u0004",
+      " venons",
+      " n\u00f4tre",
+      "AutoScaleMode"
+    ],
+    "generated_description": "France / French \u2014 activates on France-related tokens and contexts (French, French Revolution, dates like 1789), pushes output toward \u201cParis\u201d, \u201cFrance\u201d, \u201cFrench\u201d."
+  },
+  {
+    "id": "21_14331_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.3766520619392395,
+    "top_activations": [
+      {
+        "trigger": " river",
+        "score": 75.5,
+        "context": "), who bestowed upon him a portion of his possessions lying upon both sides of the river Meuse. It received its name from the strong castle built by Count Wal"
+      },
+      {
+        "trigger": " of",
+        "score": 83.0,
+        "context": " Crown Prince Frederick William, launched a massive offensive against Verdun, an awkward salient in the French line. The outlying forts of Douaumont and Hardaumont soon"
+      },
+      {
+        "trigger": " and",
+        "score": 66.5,
+        "context": " the summer of\u23ce1918 in Cantigny, Chateau-Thierry, and Belleau Wood, France. More than\u23ce4,000"
+      },
+      {
+        "trigger": " in",
+        "score": 68.0,
+        "context": " particular - massing huge quantities of the vital Brussels sprouts just behind their frontlines in preparedness for their own massive push - and - of course - in time for"
+      },
+      {
+        "trigger": " of",
+        "score": 69.5,
+        "context": " had a record of thirteen victories before he was\u23ceshot down on the German side of the line on 28 September 1918,\u23ceand"
+      }
+    ],
+    "promotes": [
+      "CodedInputStream",
+      " menores",
+      "\">//",
+      "AsUp",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "\ue315",
+      "ystemet",
+      "\u0004",
+      " stadig",
+      "\u5e16\u6700\u540e\u7531"
+    ],
+    "generated_description": "prepositions/conjunctions \u2014 activates on short connector tokens like \"of\", \"in\", \"and\"; fires in running prose and list-like connective contexts."
+  },
+  {
+    "id": "24_410_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3196120858192444,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 84.5,
+        "context": " Fact Sheet covering a whole host of topics and African Elephant facts! Have Fun!\u23ceFacts about African Elephants !\u23ceDescription of African Elephants The African Elephant is described"
+      },
+      {
+        "trigger": " speak",
+        "score": 65.5,
+        "context": " facilities are non-existent.\u23ceIn Thailand, local youth who are able to speak a foreign language are volunteering their abilities to help foreigners who are desperately looking for"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 65.5,
+        "context": "<bos>The page you have requested does not exist or is no longer available.\u23ceIf the problem persists,\u23ceplease contact us.\u23ce(HealthDay News)"
+      },
+      {
+        "trigger": " as",
+        "score": 56.5,
+        "context": " the polite (Sie) or the familiar (Du)?\u23ceIn a language such as English, where there are no \"built-in\" (so to say"
+      },
+      {
+        "trigger": " and",
+        "score": 64.5,
+        "context": "<bos>In some Romance languages including Spanish and Catalan, the word for \"we\" (from Latin nos) is supplemented by the word for \"others\" (nosotros"
+      }
+    ],
+    "promotes": [
+      " Vietnamese",
+      "Korean",
+      " Indonesian",
+      " Japanese",
+      " Korean"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " intptr",
+      "KommentareTeilen",
+      "\ufeff//",
+      " GeoNames"
+    ],
+    "generated_description": "LINE_BREAK \u2014 activates on end-of-line/newline separators, headings and list/item breaks; often occurs before list entries (e.g., language names) or next-line content."
+  },
+  {
+    "id": "24_3772_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.27192938327789307,
+    "top_activations": [
+      {
+        "trigger": " Rivi\u00e8re",
+        "score": 84.0,
+        "context": "ay, in the former town of Chicoutimi on the east bank of the Rivi\u00e8re Chicoutimi, one kilometre [0.6miles] upstream from where"
+      },
+      {
+        "trigger": "Jacques",
+        "score": 104.0,
+        "context": "\u23ceJacques Lance, who has a 364-hectare farm on Grand Calumet Island, said hop cultivation could help Quebec cattle and cash crop farmers"
+      },
+      {
+        "trigger": " deuxi\u00e8me",
+        "score": 110.0,
+        "context": " Rien \u00bb are her most famous songs.\u23ceAfter the Second World War (la deuxi\u00e8me guerre mondiale) the Japanese were very fond of the French writers and the French"
+      },
+      {
+        "trigger": ",",
+        "score": 114.5,
+        "context": "<bos>LI\u00c9GEOIS, JEAN Jesuit friar. b. in 1600 (or 1599) in the diocese of Verdun"
+      },
+      {
+        "trigger": " de",
+        "score": 97.0,
+        "context": " Marquis de Ferriol's Recueil de cent estampes repr\u00e9sentant diff\u00e9rentes nations du Levant in 1714. A number of paintings of similar size in"
+      }
+    ],
+    "promotes": [
+      " Franse",
+      " franceses",
+      " Ligue",
+      " Frenchman",
+      " French"
+    ],
+    "demotes": [
+      " \u062e",
+      " stano",
+      "\u0442\u0440\u0430",
+      "\u0442",
+      " \u0444\u0430"
+    ],
+    "generated_description": "French word \u2014 activates on French-language words/names and particles (Jacques, Rivi\u00e8re, de, deuxi\u00e8me); signals French context and boosts French-related output tokens."
+  },
+  {
+    "id": "24_13277_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3164009749889374,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say Italian \u2014 fires on short structural tokens (preps, articles, commas) that precede content; consistently promotes Italian words/forms (Ogni, Tutto, Oggi, etc.)"
+  },
+  {
+    "id": "24_476_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.2963568866252899,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 81.5,
+        "context": "<bos>To get from the village of Goudiry to the regional hospital in Tambacoumba, Senegal, women in labour had to travel 70\u23ce"
+      },
+      {
+        "trigger": " in",
+        "score": 78.5,
+        "context": " watches, the vast majority of which were sold in France.\u23ceFrom small beginnings in the 1860s, Lip went on to become the biggest"
+      },
+      {
+        "trigger": " in",
+        "score": 85.0,
+        "context": " back room of a little converted shop on the Rue St. Jean in the town of Neufchateau, then used as the Field Press Headquarters of the A."
+      },
+      {
+        "trigger": " and",
+        "score": 76.5,
+        "context": " early thanks to mild winter temperatures froze at the outset of spring. Bourgogne, Alsace, Champagne and other northern areas were spared since vines mature later there because of a"
+      },
+      {
+        "trigger": ",",
+        "score": 85.5,
+        "context": " in the seventeenth century.\u23ceFrom the abbey of Moutiers-Saint-Jean, near Dijon, FranceMlle. Cambillarc , Moutiers-St"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " The\u017fe",
+      " Di\u017f",
+      " Shaksp",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " French",
+      " France",
+      "French",
+      " french",
+      " Franse"
+    ],
+    "generated_description": "say French place \u2014 activates on prepositions/commas/and that precede French locations (France, Dijon, Bourgogne, Neufchateau); signals an upcoming place-name in France."
+  },
+  {
+    "id": "25_12021_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.33351534605026245,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 32.25,
+        "context": "<bos>Word Origin & History\u23ce1884, Anglicized from Mod.L. aphides, pl. of aphis, coined by Linnaeus ("
+      },
+      {
+        "trigger": " the",
+        "score": 36.75,
+        "context": "\") and the Latin turbare (\"to disturb\"). A competing etymology based on the Latin manu stuprare (\"to defile with the hand\") is said by the"
+      },
+      {
+        "trigger": " the",
+        "score": 31.0,
+        "context": " the 19th century Valldemossa has been promoted internationally as a beautiful spot thanks to the affection of a distinguished traveller and cultural writer, the Austrian Arch"
+      },
+      {
+        "trigger": " the",
+        "score": 31.25,
+        "context": ", and victorious, cavalry charge on a European battlefield goes, I believe, to the Italian army on the Eastern Front in August 1942 during the"
+      },
+      {
+        "trigger": " and",
+        "score": 31.0,
+        "context": " A gifted and eager student, Lessing acquired a good knowledge of Greek, Hebrew, and Latin, while his admiration for the plays of the Latin dramatists Plautus"
+      }
+    ],
+    "promotes": [
+      " GetEnumerator",
+      "\u043a\u043b\u043e\u043f\u0435",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " @\"/",
+      "SourceChecksum"
+    ],
+    "demotes": [
+      " Japanese",
+      " Italian",
+      " Mexican",
+      " Canadian",
+      " Chinese"
+    ],
+    "generated_description": "the (definite article) \u2014 activates on \"the\" and other high-frequency function words (and, from); signals start of noun phrases/common English connective contexts."
+  },
+  {
+    "id": "25_13416_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.3871097266674042,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "say French adjectives \u2014 promotes French adjective/token forms (sauvages, sup\u00e9rieures, religieuses, d\u00e9mocr...), activates across varied preceding tokens."
+  },
+  {
+    "id": "24_15918_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3681458830833435,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 43.0,
+        "context": " social rights. A series of austerity budgets, drawn up in conjunction with the IMF and EU, have been characterized by harsh cuts in social spending and a pronounced aversion"
+      },
+      {
+        "trigger": " in",
+        "score": 41.25,
+        "context": " had a formative influence on the tradition of statute law that has extended to modern times in Central Europe, especially in the German states, France, Belgium, the Netherlands"
+      },
+      {
+        "trigger": " the",
+        "score": 52.5,
+        "context": " which were first introduced into Europe in 1948, have thrived in the parks of the northeastern region of Liguria since the 1960"
+      },
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": "1945, some 2.6 million U.S. troops occupied much of Western Europe, including the former Axis territories of Italy, the Federal"
+      },
+      {
+        "trigger": " across",
+        "score": 50.5,
+        "context": " study(*), scientists investigated 40 organic and 40 conventional agricultural holdings across Germany's four agricultural regions. They focused exclusively on crop and dairy farms"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " \u017feveral",
+      " my\u017felf",
+      " it\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " euro",
+      " European",
+      " Euro",
+      "euro",
+      " Europe"
+    ],
+    "generated_description": "before European place \u2014 activates on short prepositions/articles immediately preceding mentions of Europe or European places (EU, France, Germany, Liguria, \u201cWestern Europe\u201d)"
+  },
+  {
+    "id": "24_4036_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.35511234402656555,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 55.5,
+        "context": "mathematics in German is Mathematik, mathematische\u23cemathematics in Hungarian is matematika\u23cemathematics in Italian is matematica\u23cemathematics in Swedish is matematik\u23ceShare with your Friends"
+      },
+      {
+        "trigger": " in",
+        "score": 57.5,
+        "context": "'m sorry\" in spanish\u23ceHow to say \"I'm sorry\" in spanish?\u23ceIn traditional everyday Spanish, if you are sorry to someone,"
+      },
+      {
+        "trigger": " en",
+        "score": 51.75,
+        "context": "997 -- Update on Activities\u23ceLamentablemente, no hay versi\u00f3n en espa\u00f1ol de este documento\u23ceThis report on activities around the world held in observance"
+      },
+      {
+        "trigger": " as",
+        "score": 58.0,
+        "context": " Southeast Asian languages of Hmong, Lao, and Khmer (as well as Spanish and English) \u2014 about farming practices that reduce harmful air pollutants. Both events were"
+      },
+      {
+        "trigger": ".-",
+        "score": 56.5,
+        "context": " risk of exposure to hazardous waste, and ensuring emergency preparedness along the U.S.-Mexico border.\u23ceThe Border 2012 program closed this year"
+      }
+    ],
+    "promotes": [
+      "\u044c",
+      " Me",
+      "COL",
+      " English",
+      "English"
+    ],
+    "demotes": [
+      " Korean",
+      " korean",
+      "Korean",
+      " Chinese",
+      " Vietnamese"
+    ],
+    "generated_description": "say language \u2014 activates on prepositions/articles introducing a language name (in, en, as); signals upcoming tokens like \"Spanish\", \"German\", \"English\"."
+  },
+  {
+    "id": "25_8906_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.24631984531879425,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 56.25,
+        "context": "<bos>Edouard Vigneron, born in Nancy, joined the local police force in 1922 after five years in the French army, during which he"
+      },
+      {
+        "trigger": " first",
+        "score": 52.5,
+        "context": " departments created during the French Revolution\u23ceon March 4\u23ce. It was created from part of the province of Normandie\u23ceThe first capital was Coutances until "
+      },
+      {
+        "trigger": " time",
+        "score": 52.5,
+        "context": "4, aged ninety-three years. Philippe studied law, and at the time of the July revolution, 1830, was a practising advocate in"
+      },
+      {
+        "trigger": ",",
+        "score": 50.75,
+        "context": " it has to teach us is the cornerstone of this course. In a figurative sense, the term \"tour de France\" is a notion through which we can gain"
+      },
+      {
+        "trigger": " in",
+        "score": 64.0,
+        "context": " career in 1961 working for Premier Georges Pompidou. Elected to the National Assembly in 1967, he held several governmental posts ("
+      }
+    ],
+    "promotes": [
+      " \u00eele",
+      " chr\u00e9tienne",
+      " n\u00f4tre",
+      " scolaires",
+      " chr\u00e9tiens"
+    ],
+    "demotes": [
+      " French",
+      " french",
+      "French",
+      " FRENCH",
+      " France"
+    ],
+    "generated_description": "say French word \u2014 activates on structural tokens (in, first, time, ,) before names/phrases; promotes French-language tokens (accented forms) and suppresses English \"French\"."
+  }
+]

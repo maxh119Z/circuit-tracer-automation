@@ -1,0 +1,1553 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.36447572708129883,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.35267144441604614,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "0_11375_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.303613543510437,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "6_9865_7",
+    "layer": 6,
+    "ctx_idx": 7,
+    "influence_score": 0.39862921833992004,
+    "top_activations": [
+      {
+        "trigger": "zium",
+        "score": 19.38,
+        "context": "<bos>ABCD is a trapezium, AB and CD are parallel sides, M is the midpoint of AD. Prove that the area of the triangle BMC is half"
+      },
+      {
+        "trigger": " Place",
+        "score": 17.75,
+        "context": "<bos>Guide to Examples of Good Quality STEM Placements\u23ceProduced for the Department for Education, this resource from Sheffield Hallam University, is designed to help employers,"
+      },
+      {
+        "trigger": ",",
+        "score": 21.5,
+        "context": "<bos>PARIS, July 23, 2012 (AFP) - Resistance to AIDS drugs, a problem that has been widely feared over the last"
+      },
+      {
+        "trigger": " range",
+        "score": 17.38,
+        "context": " a (food) desert\u23ceHow do you make a food desert bloom? The range of solutions to these urban areas without ready access to fresh food has included full"
+      },
+      {
+        "trigger": " Gos",
+        "score": 18.75,
+        "context": ", and it poisons everything, she correctly pointed out. Moms are always right. Gossiping is a nasty habit, I know, but that phrase \u2018trash"
+      }
+    ],
+    "promotes": [
+      "\ufeff#",
+      "'",
+      "\ufeff/*",
+      " the",
+      "<bos>"
+    ],
+    "demotes": [
+      "ReusableCell",
+      "ertion",
+      " BrowserModule",
+      "disambiguation",
+      " Resonance"
+    ]
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.3769613206386566,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ]
+  },
+  {
+    "id": "15_1735_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.36259156465530396,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 33.75,
+        "context": " Center. But the future could collide with the past.\u23ceOne site being proposed is where a sugar plantation once stood in the 1700's"
+      },
+      {
+        "trigger": " is",
+        "score": 35.0,
+        "context": " how climate change is affecting biodiversity. Probably the biggest and most well-known project is the GLORIA-Europe initiative established by Prof. Dr. Georg Grabh"
+      },
+      {
+        "trigger": " is",
+        "score": 34.25,
+        "context": ", a particular model is referred to as a \"game.\" The most famous game is that of the prisoner's dilemma. However, there are as many games"
+      },
+      {
+        "trigger": " is",
+        "score": 35.0,
+        "context": " of these is the 354 MW SEGS power plant in the Mojave Desert. The world's largest geothermal power installation is The Geysers in"
+      },
+      {
+        "trigger": " is",
+        "score": 35.0,
+        "context": ". Coppedge *\u23ceThe most volcanically active body in the solar system is a little moon of Jupiter named Io. This moon is pumping out the hottest"
+      }
+    ],
+    "promotes": [
+      " OnInit",
+      "putBoolean",
+      " T",
+      " et",
+      "\u0645\u0635\u0627\u062f\u0631"
+    ],
+    "demotes": [
+      " Monfieur",
+      " him\u017felf",
+      " \u0f0b\u0f0b",
+      " Majefty",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "0_13004_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.37350988388061523,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "16_10202_7",
+    "layer": 16,
+    "ctx_idx": 7,
+    "influence_score": 0.39436912536621094,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 31.0,
+        "context": " with an analysis of Keynesian economics.\u23ceThe earliest organized school of economic thought is known as Classical. The father of this school is Adam Smith. Smith used"
+      },
+      {
+        "trigger": " is",
+        "score": 33.25,
+        "context": " use your ancestor's names to find information about them. The largest name index is Internet Family Finder, located at www.genealogy.com/ifftop"
+      },
+      {
+        "trigger": " is",
+        "score": 33.0,
+        "context": " many textbooks contain blatant historical inaccuracies, but the greatest purveyor of historical mistruth is the U.S. Army\u2019s Army JROTC Leadership Education and"
+      },
+      {
+        "trigger": " is",
+        "score": 34.75,
+        "context": " wiped out.\u23ceThe major piece of legislation governing the protection of animals in Turkey is Law No. 5199, the Animal Protection Law. Although"
+      },
+      {
+        "trigger": " was",
+        "score": 30.75,
+        "context": " chase rules were developed to stem public criticism of hunters. One of the earliest models was the \u201cFair Chase Principle\u201d established in the late 1800"
+      }
+    ],
+    "promotes": [
+      " AssemblyCulture",
+      " MainAxisSize",
+      "tvguidetime",
+      "rungsseite",
+      "AccessorTable"
+    ],
+    "demotes": [
+      "%;\r",
+      "errat",
+      " floor",
+      " solange",
+      " is"
+    ]
+  },
+  {
+    "id": "3_3669_2",
+    "layer": 3,
+    "ctx_idx": 2,
+    "influence_score": 0.3400045335292816,
+    "top_activations": [
+      {
+        "trigger": " largest",
+        "score": 21.88,
+        "context": ", which produce a third of global output. The country is the world's largest exporter of the red metal.\u23ceIts economy depends heavily on copper exports to"
+      },
+      {
+        "trigger": " largest",
+        "score": 22.0,
+        "context": " corn per acre as small farmers in Africa. While Africa has the world\u2019s largest concentration of below-potential agriculture, other areas also lag. They include parts"
+      },
+      {
+        "trigger": " largest",
+        "score": 23.12,
+        "context": " The United States is the world's third largest country in population and the fourth largest country in area. continue to demand increasing levels of literacy by all young children"
+      },
+      {
+        "trigger": " largest",
+        "score": 22.5,
+        "context": " The largest desert in China, the Taklamakan is also the world's largest shifting-sand desert, eighty-five percent of this ecoregion comprising sand"
+      },
+      {
+        "trigger": "largest",
+        "score": 22.0,
+        "context": " of I.G. Farben, which was once the world's fourth-largest industrial concern.\u23ceThe leading lights of the German chemical-makers that merged"
+      }
+    ],
+    "promotes": [
+      "\u0432\u0430\u0440\u0435",
+      "ndy",
+      "UnknownFieldSet",
+      " Good",
+      "ubio"
+    ],
+    "demotes": [
+      " largest",
+      " most",
+      "largest",
+      "most",
+      " highest"
+    ]
+  },
+  {
+    "id": "0_12005_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.33533260226249695,
+    "top_activations": [
+      {
+        "trigger": " river",
+        "score": 20.5,
+        "context": " woodchuck digs its den in loess (wind-deposited soils) along river valleys in the dry lowlands of eastcentral Alaska.\u23ceGeneral description: Large"
+      },
+      {
+        "trigger": " river",
+        "score": 21.0,
+        "context": " said \"I shall carry you across the river!\",\u23ceand proceeded to cross the river to fetch the porcupine.\u23ceThe porcupine, unsure for his\u23ce"
+      },
+      {
+        "trigger": " river",
+        "score": 20.75,
+        "context": "16 metres). The south or left bank is low and marshy and the river has sandbanks; the right bank is...\u23ceWhat made you want to"
+      },
+      {
+        "trigger": " river",
+        "score": 20.75,
+        "context": " to 350 mgd from the plant\u2019s effluent channel to the river.\u23ceThe city of Phoenix requested Godwin Pumps of America, Inc. to"
+      },
+      {
+        "trigger": " river",
+        "score": 20.75,
+        "context": " six new power stations by diverting two-thirds of the river through channel alongside the river.\u23ceCanterbury has 78,162 kilometres of rivers"
+      }
+    ],
+    "promotes": [
+      " StatefulWidget",
+      "ResumeLayout",
+      "ReusableCell",
+      " GenerationType",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "<bos>",
+      " the",
+      "as",
+      "in"
+    ]
+  },
+  {
+    "id": "0_7106_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38022860884666443,
+    "top_activations": [
+      {
+        "trigger": " river",
+        "score": 20.75,
+        "context": " the subject of Norman McLean\u2019s classic novel A River Runs Through It, the river has been transformed into a muddy concoction of heavy metals and silt flowing west"
+      },
+      {
+        "trigger": " river",
+        "score": 20.88,
+        "context": " montane sites. Native Americans certainly supplemented the natural fire regime by burning in the river valleys to promote agriculture and probably burned many dry mountain ridges. Moist coves"
+      },
+      {
+        "trigger": " river",
+        "score": 20.75,
+        "context": " lamps.\u23ceIn later life Armstrong described his moment of illumination that day in the river: 'I was lounging idly about, watching an old water-mill,"
+      },
+      {
+        "trigger": " river",
+        "score": 20.62,
+        "context": " while a resident of Washington County married Susan Hutchinson. Mr. Jewell became interested in river transportation, and when he moved to St. Louis, several years before the"
+      },
+      {
+        "trigger": " river",
+        "score": 21.75,
+        "context": " canoe and rowed away. The Stone Coat followed her to the bank of the river, but couldn't go farther for she had no canoe.\u23ceWhen"
+      }
+    ],
+    "promotes": [
+      "\u2019",
+      "\u23ce",
+      "'",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " BrowserModule",
+      " NSCoder",
+      " HasFactory",
+      " onOptions"
+    ]
+  },
+  {
+    "id": "2_16097_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.37527281045913696,
+    "top_activations": [
+      {
+        "trigger": "est",
+        "score": 28.0,
+        "context": "<bos>The satellite images displayed are infrared (IR) images. Warmest (lowest) clouds are shown in white; coldest (highest) clouds are displayed in shades"
+      },
+      {
+        "trigger": "est",
+        "score": 34.25,
+        "context": " the holidays. Personally, I\u2019m a fan of a book called The Hardest Word, which tells the story of a bird named the Ziz who can"
+      },
+      {
+        "trigger": "est",
+        "score": 29.75,
+        "context": " how their province or territory compares with the warmest, snowiest or the windiest. To settle arguments as to which jurisdiction can legitimately lay claim to being tops"
+      },
+      {
+        "trigger": "est",
+        "score": 36.75,
+        "context": " was calculated by femur (thigh bone) circumference, measuring the bone at the narrowest point. Forelimb muscle mass in males was found to be heavier than the"
+      },
+      {
+        "trigger": "est",
+        "score": 36.75,
+        "context": " new food before the rest of the meal, when your child is the hungriest.\u23ceDoes your child like plain foods? Try serving the ingredients of a"
+      }
+    ],
+    "promotes": [
+      "highest",
+      " broadest",
+      " largest",
+      " highest",
+      "niest"
+    ],
+    "demotes": [
+      "csharp",
+      " esternos",
+      "BeginContext",
+      "inalg",
+      " Somewhere"
+    ]
+  },
+  {
+    "id": "0_8061_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.37174615263938904,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ]
+  },
+  {
+    "id": "2_1474_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.39284631609916687,
+    "top_activations": [
+      {
+        "trigger": " River",
+        "score": 25.75,
+        "context": " Highlights: Possible fish predation of subadult Higgins eye was observed in the Upper Mississippi River, Pools 2 and 4.\u23ceSubadult Higgins eye pearlymus"
+      },
+      {
+        "trigger": " River",
+        "score": 25.0,
+        "context": " General, and his first assignment was to working to secure and fortify the Mississippi River. He crossed into Kentucky, finally breaking a neutrality that was never going to"
+      },
+      {
+        "trigger": " River",
+        "score": 25.12,
+        "context": " Kendra Lemke and Meredith Faulkner, in a live feed to their school in Fall River, Nova Scotia. And now, we finally have an answer to the age"
+      },
+      {
+        "trigger": " River",
+        "score": 24.88,
+        "context": " of Vicksburg. The surrender of Vicksburg by the Confederate Army gave control of the Mississippi River to the Union Army, and basically split the Confederacy in half. This event"
+      },
+      {
+        "trigger": " River",
+        "score": 25.38,
+        "context": " forests are teeming with both wildlife and controversy\u23ceAfter a tour of Arkansas' White River and Cache River National Wildlife Refuges last summer, Secretary of the Interior Bruce"
+      }
+    ],
+    "promotes": [
+      " \u201c",
+      " e",
+      "ik",
+      " \"",
+      "\u043c\u0443\u044e"
+    ],
+    "demotes": [
+      " River",
+      "River",
+      " RIVER",
+      " river",
+      "river"
+    ]
+  },
+  {
+    "id": "17_10747_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3485301434993744,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": "By John H. Essex.\u23ceONE OF THE GREATEST PROBLEMS facing all believers is that of evil. Why does God, Whose name is love, permit evil"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " most cost-effective, affordable renewable energy technology currently available for domestic and commercial applications is solar thermal water heating - the technology that allows to effectively collect and utilise solar"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " murdering kin or breaking oaths.\u23ce- A common Greek story featuring the Furies is \"Eumenides\" by Aeschylus. The Furies torment O"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " off by the tympanic membrane. The most obvious feature of the middle ear cavity is the auditory ossicles: malleus, incus, and stages (so"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": ".\u23ceWhat is probably an even greater discouragement to new investment and increased production is the present income tax rate of 52.8 per cent on corporations"
+      }
+    ],
+    "promotes": [
+      "seen",
+      " a",
+      " F",
+      " linh",
+      " the"
+    ],
+    "demotes": [
+      ":\u2728",
+      "Personendaten",
+      " henvisninger",
+      "\u064a\u0643\u0628",
+      "MemoryWarning"
+    ]
+  },
+  {
+    "id": "18_3536_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3547109067440033,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " and post it, but the best way I know of to improve your typing skill is good old practice. That means that nearly everything you do on your computer can"
+      },
+      {
+        "trigger": " is",
+        "score": 42.25,
+        "context": ". But here\u2019s the problem: The Fed cannot protect the dollar. The Fed\u2019s best\u2014and only\u2014weapon for fighting financial collapse is printing money"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " over the life of the CFL, one report found.\u23ceOne of the simplest ways to upgrade your home in a green way is to purchase an energy-saving"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " electronic works using watermarks.\u23ceWatermarking your photographs can be done a number of ways. The most popular route is to create and add a watermark through a"
+      },
+      {
+        "trigger": " is",
+        "score": 36.5,
+        "context": " or greater are considered obese.\u23ceOne of the most obvious ways to lose weight is dieting. And while it can seem like a daunting task, small changes in"
+      }
+    ],
+    "promotes": [
+      "tiga",
+      "\u067e\u06cc\u0648\u0646\u062f",
+      " a",
+      "ImageContext",
+      " the"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " <<<<<<<<<<<<<<",
+      "\u043d\u0456\u0446\u0438\u043f\u0430"
+    ]
+  },
+  {
+    "id": "21_5807_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.35674577951431274,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 29.0,
+        "context": " of the historical events which were to play a major role in Galois' life is surely the storming of the Bastille on 14 July 178"
+      },
+      {
+        "trigger": " is",
+        "score": 28.5,
+        "context": " brought it to its present humiliating state.\u23ceThe logical starting point in this examination is Bretton Woods. When the representatives of some forty nations met there in "
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "<bos>One of the greatest stories of explorationand discovery is the Europeanquest for a Northwest Passageanoceanic shortcut from the Atlantic to thePacific across the top of"
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " became a proponent for the hypothesis , which states that the prototype of the Armenian alphabet is a variety of combinations of resembling curves and horizontal elements. Subsequently these horizontal elements"
+      },
+      {
+        "trigger": " be",
+        "score": 28.75,
+        "context": ". Indeed, in the construction \u2018anosognosia for X\u2019, X might even be anosognosia for some Y.|\u23ce|Keywords||Amnesia Belief Del"
+      }
+    ],
+    "promotes": [
+      "supplied",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "applicable",
+      " MainAxisSize",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "Those",
+      " Those",
+      "ItemLayout",
+      "erweise",
+      "\u90a3\u5c31\u662f"
+    ]
+  },
+  {
+    "id": "22_1551_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.2553624212741852,
+    "top_activations": [
+      {
+        "trigger": " aboard",
+        "score": 39.25,
+        "context": " the journey of the English Separatists to Holland and then on to the Plymouth Colony aboard the Mayflower. It tells of their difficult arrival, in which half of"
+      },
+      {
+        "trigger": " named",
+        "score": 42.25,
+        "context": " was a major problem at the time (and the Brooklyn Dodgers were even once famously named the Brooklyn Trolley Dodgers). To avoid this problem, mostly to make sure his"
+      },
+      {
+        "trigger": ",",
+        "score": 44.25,
+        "context": " One family\u2019s name is well known: the Goldwaters. The other family, the Drachmans, is less well known, but in the early years"
+      },
+      {
+        "trigger": ",",
+        "score": 48.0,
+        "context": "anic woodpecker\u23ce, and 2 pine-seed eating parrots. A fascinating bird, the male Juan Fern\u00e1ndez firecrown\u23ce, an endemic species of hummingbird is found"
+      },
+      {
+        "trigger": ",",
+        "score": 36.5,
+        "context": " in the General Assembly encouraged another entrepreneur to spend three years building a rival toll road, a wagon trail on \"the old ridge roadbed\" from Salem, up"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " The\u017fe",
+      " An\u017f",
+      " Monfieur",
+      " the"
+    ],
+    "demotes": [
+      "\u0004",
+      "CppMethod",
+      "Abitanti",
+      "########.",
+      "Tikang"
+    ]
+  },
+  {
+    "id": "19_16267_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.3377189338207245,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 25.0,
+        "context": " villages on the lower Yazoo river, Mississippi, in alliance with the Yazoo and Ofogula, and numbering perhaps 700. Their tribal name"
+      },
+      {
+        "trigger": " the",
+        "score": 28.0,
+        "context": " known habitat of this linguistic group is thought to be within the southern drainage area of the Mississippi but some think possibly the southwestern parts of the United States. In any"
+      },
+      {
+        "trigger": " the",
+        "score": 26.75,
+        "context": "-branched tree of the willow family that is endemic to Pitcairn Island in the southern Pacific Ocean (3). This deciduous tree has small purple flowers that are"
+      },
+      {
+        "trigger": " the",
+        "score": 26.5,
+        "context": " testing facility. It is located in Hancock County, Mississippi, on the banks of the Pearl River (Mississippi\u2013Louisiana) at the Mississippi\u2013Louisiana border. As"
+      },
+      {
+        "trigger": " and",
+        "score": 29.5,
+        "context": " 1775\u201381 and respectively designated as the First Continental Congress and the Second Continental Congress.\u23ceIn the spring of 1774"
+      }
+    ],
+    "promotes": [
+      " latter",
+      " same",
+      " the",
+      " original",
+      " United"
+    ],
+    "demotes": [
+      "\u51fa\u7248\u5e74",
+      " gynhyrchwyd",
+      "onViewCreated",
+      " rai\u017f",
+      " \u0430\u0440\u0445\u0438\u0432\u043b\u0430\u043d"
+    ]
+  },
+  {
+    "id": "23_57_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3897596299648285,
+    "top_activations": [
+      {
+        "trigger": "This",
+        "score": 64.0,
+        "context": "<bos>This is the second book wrote by Lee Lehman and presents in a very detailed manner the astrological dignities. It was published in 1989"
+      },
+      {
+        "trigger": "There",
+        "score": 55.0,
+        "context": "<bos>There has never been anything like the Saturn V, the launch vehicle that powered the United States past the Soviet Union to a series of manned lunar landings in the"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The creation of dead zones begins when nitrogen and phosphorus from fertilizers used on land, and from raw or poorly treated sewage, wash into streams, into rivers,"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The first sea turtle hatchlings whose eggs were evacuated from the Gulf Coast oil spill to Florida's Kennedy Space Center have been released into the Atlantic Ocean."
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The school's playground consists of play structures and tetherball, volleyball, basketball and wall ball courts. For safety and supervision, students should remain within their"
+      }
+    ],
+    "promotes": [
+      "RenderAtEndOf",
+      "^(@)",
+      "\u4f8b\u6587\u5e33\u306b\u8ffd\u52a0",
+      " Saltar",
+      "saraba"
+    ],
+    "demotes": [
+      "<eos>",
+      "\u2003\u2003(",
+      "Port\u00e1ly",
+      " [\u2026]",
+      "\u5f88\u8d5e\u54e6"
+    ]
+  },
+  {
+    "id": "19_12799_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.2948240041732788,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 25.25,
+        "context": "<bos>Book of Philemon\u23ceThe Epistle to Philemon is a book of the Bible in the New Testament. Philemon is generally regarded as one"
+      },
+      {
+        "trigger": " along",
+        "score": 29.0,
+        "context": " north of St. Louis. The boy was first exposed to music on excursion boats along the Mississippi river, which featured saxophonist Frankie Trumbauer and cornetist"
+      },
+      {
+        "trigger": " to",
+        "score": 26.0,
+        "context": "00.\u23ceThat's because the value of the yen has risen relative to the dollar. In 2007, $1 bought 1"
+      },
+      {
+        "trigger": " of",
+        "score": 24.5,
+        "context": "<bos>The Ionian Sea is an arm of the Mediterranean Sea, south of the Adriatic Sea. It is bounded by southern Italy, including Calabria, Sicily and the"
+      },
+      {
+        "trigger": " of",
+        "score": 25.5,
+        "context": " well as doctrinal and ecclesiastical errors. He fled England with his family in 1563 and devoted himself to the translation of the Bible, as well as"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " my\u017felf",
+      " \u017ftate",
+      " Monfieur",
+      " \u017fche"
+    ],
+    "demotes": [
+      " Daily",
+      " B",
+      " National",
+      " Man",
+      " D"
+    ]
+  },
+  {
+    "id": "23_2792_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.38819342851638794,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 43.0,
+        "context": " base their results on almost 24,000 participants of one of the German arms of the European Prospective Investigation into Cancer and Nutrition (EPIC) study"
+      },
+      {
+        "trigger": " the",
+        "score": 59.5,
+        "context": " China has come economically in the last 60 years.\u23ceToday China is the world\u2019s third most powerful economy. China had practically no foreign currency reserves"
+      },
+      {
+        "trigger": " the",
+        "score": 52.0,
+        "context": " within our homes and offices can be more seriously polluted than the outdoor air in even the largest and most industrialized cities.\u23ceAdditional research has shown that people spend the"
+      },
+      {
+        "trigger": " the",
+        "score": 41.75,
+        "context": "ostationary\u23ce, planetary, and ocean surveillance missions. Baikonur is the only Russian site that has launched satellites into retrograde orbits.\u23ceAll Space Station"
+      },
+      {
+        "trigger": " the",
+        "score": 41.75,
+        "context": " future careers of 45,000 students at 28 of the nation's most selective schools.\u23ceBowen and Bok found that blacks"
+      }
+    ],
+    "promotes": [
+      " monde",
+      "\u4e16\u754c",
+      " mundo",
+      "world",
+      " world"
+    ],
+    "demotes": [
+      "ConstraintMaker",
+      " <=\",",
+      " aveug",
+      " russes",
+      " zijne"
+    ]
+  },
+  {
+    "id": "4_327_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.38661959767341614,
+    "top_activations": [
+      {
+        "trigger": "zha",
+        "score": 25.0,
+        "context": " collected from Canara in Karnataka and the Bharathapuzha and Chandragiri rivers in Kerala. It is considered endangered by many Indian authors but has not been"
+      },
+      {
+        "trigger": " the",
+        "score": 22.12,
+        "context": " the Mughal Empire during the reign of Aurangzeb. The city stands on the banks of the river Musi and is famous for the Hussain Sagar Lake. The city has"
+      },
+      {
+        "trigger": " of",
+        "score": 24.5,
+        "context": " for him.\u23ceThe planned Warm Springs dam, on a tributary of the Russian river in Sonoma County, is a classic boondoggle, a pork barrel item"
+      },
+      {
+        "trigger": "ust",
+        "score": 23.88,
+        "context": " superficial deposits).\u23ceThis area is underlain by thick sequences of alluvial, lacustrine, estuarine, beach, aeolian and marine deposits, locally concealed by"
+      },
+      {
+        "trigger": " stream",
+        "score": 19.62,
+        "context": ", climb to higher\u23ceground as fast as you can.\u23ceStay away from streambeds, and other drainage channels during and after rainstorms or when"
+      }
+    ],
+    "promotes": [
+      " River",
+      "River",
+      " river",
+      " rivers",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u064a\u0644\u064a",
+      "ulz",
+      "+#+",
+      " espal",
+      "[]"
+    ]
+  },
+  {
+    "id": "23_5944_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3606933653354645,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 50.5,
+        "context": "<bos>The Mandelbrot set is a set of points in the complex plane that forms a fractal. Mathematically, the Mandelbrot set can be defined as the set"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " most ambitious neuroscience project ever \u2013 to develop the technology that could create a computerized simulation of a person\u2019s mind. Called the Human Brain Project, scientists hope to"
+      },
+      {
+        "trigger": " of",
+        "score": 42.5,
+        "context": " well as doctrinal and ecclesiastical errors. He fled England with his family in 1563 and devoted himself to the translation of the Bible, as well as"
+      },
+      {
+        "trigger": " to",
+        "score": 43.5,
+        "context": "s degree in mathematics in 1848. He studied law and was called to the Bar, but decided not to practice, instead joining his father in"
+      },
+      {
+        "trigger": " around",
+        "score": 43.0,
+        "context": "s events are as predictable as night and day. But when Comet ISON swings around the sun in late November, amateurs and professionals alike will be watching in anticipation"
+      }
+    ],
+    "promotes": [
+      " \u03c4\u03b7\u03c2",
+      "OfThe",
+      " ofthe",
+      "ofthe",
+      " the"
+    ],
+    "demotes": [
+      " autorytatywna",
+      "NameInMap",
+      "setVerticalGroup",
+      "interopRequire",
+      "tagHelperRunner"
+    ]
+  },
+  {
+    "id": "24_11345_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.38344520330429077,
+    "top_activations": [
+      {
+        "trigger": " certainly",
+        "score": 42.5,
+        "context": ".S. is by far the world's oldest surviving democracy, and is certainly deserving of our recognition,\" Wales said. \"According to our database, that"
+      },
+      {
+        "trigger": " become",
+        "score": 40.0,
+        "context": " estimated to contain over 1 trillion cubic feet of natural gas, is poised to become the next boom for the oil and gas industry. Centrally located in Pennsylvania"
+      },
+      {
+        "trigger": " far",
+        "score": 39.0,
+        "context": " enterprise search. Google continued to operate the Google search engine, which itself remains by far the most popular search engine in the United States and in most countries around the"
+      },
+      {
+        "trigger": " Behavior",
+        "score": 39.25,
+        "context": "-encompassing attention to detail make The Sibley Guide to Bird Life and Behavior as spectacular and as useful as its brilliant predecessor.\u23ceIntroductory essays outline the"
+      },
+      {
+        "trigger": " is",
+        "score": 40.25,
+        "context": "5 percent of the nation's coal. The New River Gorge Bridge near Fayetteville is the longest steel arch bridge in the world. Every October, the town hosts"
+      }
+    ],
+    "promotes": [
+      "Number",
+      " n\u00famero",
+      "number",
+      " Number",
+      " number"
+    ],
+    "demotes": [
+      " co\u00fb",
+      " mondi",
+      " popoli",
+      " sicura",
+      " pi\u00fa"
+    ]
+  },
+  {
+    "id": "24_12876_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.2902899980545044,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 43.5,
+        "context": ":\u23ceIt is important for patients to select doctors who are certified in plastic surgery by the American Board of Plastic Surgery. Generally, a surgeon who is board-"
+      },
+      {
+        "trigger": " call",
+        "score": 41.5,
+        "context": " old, Rapetosaurus roamed Madagascar during what we can look back at and call the waning days of the Cretaceous. And the record of this dinosaur is particularly"
+      },
+      {
+        "trigger": " from",
+        "score": 43.0,
+        "context": " spheres, the United States\u2019 racial makeup has changed considerably.\u23ceRecently released data from the U.S. Census Bureau shows that the Asian population is growing faster"
+      },
+      {
+        "trigger": " cross",
+        "score": 52.5,
+        "context": " active drug to treat HIV.\u23ceThey describe the advance, which allows medications to cross the so-called \"blood-brain barrier\" (BBB) and treat"
+      },
+      {
+        "trigger": " in",
+        "score": 40.5,
+        "context": "orius, the South African who will be the first double amputee to run in the Olympics. Pistorius was initially banned from the 2008"
+      }
+    ],
+    "promotes": [
+      " both",
+      " THE",
+      "The",
+      " The",
+      " the"
+    ],
+    "demotes": [
+      "WebVitals",
+      "webElementXpaths",
+      "AndEndTag",
+      "MigrationBuilder",
+      "Vidite"
+    ]
+  },
+  {
+    "id": "24_3865_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3302111029624939,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "24_13277_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.28501805663108826,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "25_13416_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.3972131907939911,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ]
+  },
+  {
+    "id": "17_11818_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3786000609397888,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 70.0,
+        "context": " which is in the Gelderland province of the Netherlands, between the Ijssel and Ems rivers.\u23ce|This section does not cite any references or sources."
+      },
+      {
+        "trigger": " of",
+        "score": 72.5,
+        "context": " Empire during the reign of Aurangzeb. The city stands on the banks of the river Musi and is famous for the Hussain Sagar Lake. The city has a rich"
+      },
+      {
+        "trigger": " the",
+        "score": 68.5,
+        "context": " it is New Jersey\u2019s third-largest contributor to the Delaware River, behind the Musconetcong River and Maurice River. The Paulins Kill drains an"
+      },
+      {
+        "trigger": " the",
+        "score": 66.0,
+        "context": " discovered that the original survey had overlooked approximately 50 acres at the confluence of the Shenango River and Neshannock Creek. Stewart claimed this land for himself"
+      },
+      {
+        "trigger": " the",
+        "score": 81.0,
+        "context": " the most important center of Tatar culture. Kazan lies at the confluence of the Volga and Kazanka Rivers in central European Russia.\u23ceThere is a long-running"
+      }
+    ],
+    "promotes": [
+      " rivi\u00e8re",
+      " river",
+      " RIVER",
+      "River",
+      " River"
+    ],
+    "demotes": [
+      " disambiguazione",
+      " nakalista",
+      " referrerpolicy",
+      "expandindo",
+      " }}\"></"
+    ]
+  },
+  {
+    "id": "24_5999_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3913150131702423,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ]
+  },
+  {
+    "id": "25_13735_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.32756921648979187,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 39.0,
+        "context": "In other words, the jury is still out in terms of conclusively stating one way or another exactly how fracking affects water quality. While we might not know the"
+      },
+      {
+        "trigger": " on",
+        "score": 39.75,
+        "context": " had to decide how strongly they agreed with statements such as \"I tend to look on the bright side of whatever happens to me\". People who were born during the"
+      },
+      {
+        "trigger": " because",
+        "score": 42.25,
+        "context": " womb. 6Her rival used to provoke her severely, to irritate her, because the Lord had closed her womb. 7So it went on year after"
+      },
+      {
+        "trigger": " to",
+        "score": 36.75,
+        "context": " by National Aquarium CEO John Racanelli.\u23ceFrom the smallest plants and animals invisible to the human eye to entire ecosystems, every living thing depends on and is intric"
+      },
+      {
+        "trigger": " are",
+        "score": 37.5,
+        "context": " has a red one -- even though the bar, and the number of calories, are the same.\u23ce\"More and more, calorie labels are popping up on"
+      }
+    ],
+    "promotes": [
+      " t",
+      "ORETICAL",
+      "\u0004",
+      " referenties",
+      "findpost"
+    ],
+    "demotes": [
+      "The",
+      " The",
+      " the",
+      " THE",
+      "the"
+    ]
+  },
+  {
+    "id": "19_9215_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.38504189252853394,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": "s menu from 1988. Delmonico's current menu is online.\u23ceOne item that's on all three menus: filet mignon"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " significance. Now that the A/B system has been abandoned, the current signage is simpler, though it has yet to be installed systemwide. Below are explanations"
+      },
+      {
+        "trigger": " is",
+        "score": 34.0,
+        "context": " preferred behavior dictates that he not do so.\u23ceThe status of the kohein is to be preserved as a remembrance of their\u23cespecial role in the Temple services"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " condition, needs more care.\u23ceThe supply chain for producing US-trained physicians is expensive and restricted.\u23ceFederal health care reform will make prevention and early treatment"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " that the\u23ceturbines are quick to snap in.\u23ceWhile the system is extremely well designed and efficient, many will be drawn\u23ceto its style."
+      }
+    ],
+    "promotes": [
+      " an",
+      " not",
+      " far",
+      "NameInMap",
+      " based"
+    ],
+    "demotes": [
+      "Rhestr",
+      " odkazy",
+      " \u010dlanak",
+      " CHAPITRE",
+      " Osp"
+    ]
+  }
+]

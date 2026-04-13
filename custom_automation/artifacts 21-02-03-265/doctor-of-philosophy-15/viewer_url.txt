@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/doctor-of-philosophy-15.json
+# Descriptions: 70, Groups: 22, Pinned: 56

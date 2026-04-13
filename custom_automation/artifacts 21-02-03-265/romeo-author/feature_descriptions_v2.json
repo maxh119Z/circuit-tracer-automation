@@ -1,0 +1,2642 @@
+[
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3872387409210205,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ],
+    "generated_description": "say author name \u2014 activates on leading \"By\" in bylines; signals an author credit phrase, typically followed by person names or affiliations."
+  },
+  {
+    "id": "0_3512_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39483675360679626,
+    "top_activations": [
+      {
+        "trigger": " mythology",
+        "score": 8.44,
+        "context": " Apollo Thermios famous for the archaic terra cotta metopes decorated with painted scenes from mythology which are among the earliest examples of this art form in Greece.\u23ceTher"
+      },
+      {
+        "trigger": " Diony",
+        "score": 9.56,
+        "context": " alone, and perished in the waters. According to the chronicles which Livy and Dionysius followed, Horatius had two companions, swam safe to shore and was"
+      },
+      {
+        "trigger": " Medieval",
+        "score": 9.56,
+        "context": " extremely wealthy patron. This lapis pigment was a favorite of fresco painters during Medieval and Renaissance times, it can be seen in the fresco paintings of Giotto and the"
+      },
+      {
+        "trigger": " basilica",
+        "score": 9.75,
+        "context": ", church officials say, thanks to a rare cooperative venture already underway to repair the basilica\u2019s roof, leaky windows and old wooden beams, some 1,"
+      },
+      {
+        "trigger": " Divine",
+        "score": 8.75,
+        "context": "- for over 1,400 years!\u23ceHumanity has received Divine Guidance only through two channels:\u23ceThe Word of Almighty God (\"Allah\")"
+      }
+    ],
+    "promotes": [
+      "onViewCreated",
+      "MessageOf",
+      " bezeichneter",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      " ProtoMessage"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Shakspeare",
+      " Jefus",
+      " my\u017felf",
+      " C\u00e6sar"
+    ],
+    "generated_description": "Religious/mythical nouns \u2014 activates on religion-, myth-, and sacred-related words and names (mythology, Dionysius, Medieval, basilica, Divine)."
+  },
+  {
+    "id": "0_7532_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.38120710849761963,
+    "top_activations": [
+      {
+        "trigger": " Irene",
+        "score": 20.12,
+        "context": "<bos>Lewis, Ariane K.; Osborn, Irene P. MD; Roth, Ram MD\u23cePatients undergoing general anesthesia with paralysis are in an unconscious state but may"
+      },
+      {
+        "trigger": " Katie",
+        "score": 19.38,
+        "context": " have some balloons. Will's balloon burst at exactly\u23cethe same size as Katie's at the beginning of a puff. How many puffs\u23cehad Will"
+      },
+      {
+        "trigger": " Olivia",
+        "score": 19.5,
+        "context": "<bos>Birth Family John Marshall Clemens and Jane Lampton Clemens\u23ceMarriage/Spouse Olivia Langdon Clemens\u23ceChildren 4 children: Langdon, Susy, Clara, Jean"
+      },
+      {
+        "trigger": " Jacqueline",
+        "score": 20.25,
+        "context": " commander also gave him inspiration. Profiles in Courage, which Kennedy dedicated to his wife Jacqueline Kennedy, received the Pulitzer Prize for history in 1957."
+      },
+      {
+        "trigger": " Debbie",
+        "score": 18.38,
+        "context": " future of the wild tiger lies largely in the hands of the Chinese government,\u201d said Debbie Banks, EIA Head of Tiger Campaign. \u201cThere is much more they could"
+      }
+    ],
+    "promotes": [
+      "urator",
+      ").\u2014",
+      "Tetapi",
+      " Angele",
+      " who"
+    ],
+    "demotes": [
+      " Manuela",
+      " Karla",
+      " Kayla",
+      " Hayley",
+      " M\u00f3nica"
+    ],
+    "generated_description": "Female given name \u2014 activates on female first names (Irene, Katie, Olivia, Jacqueline, Debbie); shows up in lists, contacts, and person-entry contexts."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.32807058095932007,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 fires on sentence-initial \"In\" used to introduce a topical/prepositional intro (\"In medicine,\", \"In music theory,\", \"In my previous entries,\")"
+  },
+  {
+    "id": "0_11786_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.368272066116333,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 9.5,
+        "context": " and inside to come to equilibrium, according to Lynn Knipe, an associate professor of food and animal science at Ohio State University. The center temperature will rise by"
+      },
+      {
+        "trigger": " of",
+        "score": 9.25,
+        "context": "ich, professor of biochemistry, and Xiuzhi \"Susan\" Sun, professor of grain science and industry. Assisting in the research was Takeo Iwamoto"
+      },
+      {
+        "trigger": " of",
+        "score": 9.0,
+        "context": " the various systems. Gaetano also became a canon of the cathedral of Naples, professor of logic and metaphysics in the seminary, substitute professor of ethics in the university,"
+      },
+      {
+        "trigger": " of",
+        "score": 10.5,
+        "context": ".\u23ceOn December 16, 2002, the Minister of Fisheries and Oceans announced his decision to phase out the YPA. This decision"
+      },
+      {
+        "trigger": " of",
+        "score": 9.25,
+        "context": "<bos>The work of Carolyn Rouse, a professor of anthropology and African American studies, takes a wide-ranging approach to studying inequality and social justice. She focuses her"
+      }
+    ],
+    "promotes": [
+      " whom",
+      "LookAnd",
+      "GEBURTSDATUM",
+      " protoimpl",
+      " who"
+    ],
+    "demotes": [
+      " barbati",
+      " Phry",
+      " it\u017felf",
+      " Shakspeare",
+      " Hou\u017fe"
+    ],
+    "generated_description": "of \u2014 activates on preposition linking titles/affiliations/possessions (e.g., \"professor of\", \"Minister of\", \"canon of\", \"work of\")"
+  },
+  {
+    "id": "0_4408_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3543614149093628,
+    "top_activations": [
+      {
+        "trigger": " authors",
+        "score": 14.62,
+        "context": ". Francis Collins, director of the National Institutes of Health, is one of the authors.\u23ceAbout 30 years ago, Collins, then a young Yale"
+      },
+      {
+        "trigger": " authors",
+        "score": 14.88,
+        "context": " that measured distortions in the LCLS laser beam with \"unprecedented accuracy.\" The authors propose the installation of such a sensor, which is based on the principle of"
+      },
+      {
+        "trigger": " authors",
+        "score": 14.62,
+        "context": " 8.1 t CO2e/yr footprint for food consumption,\u201d the authors write.\u23ceIn total, 11% of the average U."
+      },
+      {
+        "trigger": " authors",
+        "score": 14.62,
+        "context": " a research affiliate in the department and an associateprofessor at Florida International University, are authors of an article onthe work in the September 27 issue of Science"
+      },
+      {
+        "trigger": " authors",
+        "score": 14.75,
+        "context": " a busy pediatric practice is like trying to repair a bicycle while riding it,\" the authors write. \"Even the most motivated practice finds change difficult to implement. Many"
+      }
+    ],
+    "promotes": [
+      " nahilalakip",
+      "Personendaten",
+      "complexContent",
+      "EDEFAULT",
+      " autorytatywna"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " hou\u017fe",
+      " Hou\u017fe",
+      " amount",
+      " Efq"
+    ],
+    "generated_description": "authors \u2014 activates on mentions of article/book/paper authorship; especially the phrase \"the authors\" in citations or reporting contexts"
+  },
+  {
+    "id": "0_13875_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39852139353752136,
+    "top_activations": [
+      {
+        "trigger": " author",
+        "score": 8.5,
+        "context": " they only yielded 75 responses. She had already served the organization as an author, translator, and editor, but now she would be a paid employee."
+      },
+      {
+        "trigger": " author",
+        "score": 8.38,
+        "context": "dioxide snow clouds,\" said Paul Hayne from the Jet Propulsion Laboratory, lead author of a new study published in the Journal of Geophysical Research. \"We firmly"
+      },
+      {
+        "trigger": " author",
+        "score": 8.38,
+        "context": ", M.D., Ph.D., a neuroscientist and a senior author of the study.\u23ce\u201cOn the other hand, both of these processes"
+      },
+      {
+        "trigger": " author",
+        "score": 8.38,
+        "context": " HOBBIT, as it became popularly known, emerged from the imagination of the revered author, poet, university professor and philologist as a bedtime story for his children"
+      },
+      {
+        "trigger": " author",
+        "score": 8.5,
+        "context": ".\u23ce\u201cThere are big drawbacks in the current therapies for depression,\u201d says senior author John Traynor, professor of pharmacology at the University of Michigan Medical School."
+      }
+    ],
+    "promotes": [
+      "RetentionPolicy",
+      " bont\u00e9",
+      "ioutil",
+      "bootstrapcdn",
+      "PostInfinity"
+    ],
+    "demotes": [
+      " spokesman",
+      " \u041d\u0430\u0434\u043e",
+      " understatement",
+      "\")==",
+      "cluye"
+    ],
+    "generated_description": "author (writer) \u2014 activates on the noun \"author\" referring to a writer; often appears with modifiers: lead/senior/revered, or paired roles (translator, editor, served as)."
+  },
+  {
+    "id": "0_753_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.326431006193161,
+    "top_activations": [
+      {
+        "trigger": " author",
+        "score": 15.44,
+        "context": " the Merrimack Valley School District in New Hampshire.\u23ceBruce Johnson is also the author of \"Involving Parents in Their Children's Reading Development: A Guide"
+      },
+      {
+        "trigger": " flavor",
+        "score": 15.19,
+        "context": " one to three hours throughout the day, as needed. Because it has a delicious flavor and a soothing, thick consistency, most children accept the mixture readily.\u23ce"
+      },
+      {
+        "trigger": " flavor",
+        "score": 15.69,
+        "context": " is burned to produce a smell for spiritual purposes. Smoke is sometimes used as a flavoring agent, and preservative for various foodstuffs. Smoke is also a component of"
+      },
+      {
+        "trigger": " author",
+        "score": 15.56,
+        "context": " a Ph.D. in anthropology and material culture from Boston University and is the author of two books, \u201cFashioning Society\u2019\u2019 and \u201cThe Design Process.\u2019\u2019"
+      },
+      {
+        "trigger": " author",
+        "score": 15.19,
+        "context": " we're seeing [varied] populations of circulating tumor cells,\" senior study author Dr. Stefanie Jeffrey, chief of surgical oncology research at the Stanford University School"
+      }
+    ],
+    "promotes": [
+      "ing",
+      "\u23ce",
+      "<eos>",
+      "\u23ce\u23ce",
+      " "
+    ],
+    "demotes": [
+      " it\u017felf",
+      "GEBURTSDATUM",
+      " my\u017felf",
+      " Efq",
+      " them\u017felves"
+    ],
+    "generated_description": "Words ending in -or \u2014 activates on nouns like \u201cauthor\u201d, \u201cflavor\u201d/\u201cflavoring\u201d; often pushes toward an \u201c-ing\u201d continuation (e.g., \u201cflavoring\u201d)."
+  },
+  {
+    "id": "0_14702_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38821935653686523,
+    "top_activations": [
+      {
+        "trigger": " non",
+        "score": 11.81,
+        "context": "] Five Days\u23ceThe Greco-Roman story of the creation of the extra five non-lunar days of the years, as told by Plutarch, shows Hermes beating"
+      },
+      {
+        "trigger": " non",
+        "score": 11.81,
+        "context": " down).\u23ceSome say that God invented the Computer Game, which appears to us non-gods as the universe, and that is how the universe came to exist"
+      },
+      {
+        "trigger": " books",
+        "score": 11.81,
+        "context": " kind of new so this may seem absurd but please help\u23ceeven any links or books explaining these concepts are also fine for me\u23ceand sorry if i posted in"
+      },
+      {
+        "trigger": " non",
+        "score": 11.69,
+        "context": "176) in Emacs buffers are displayed with their graphics. So are non-ASCII multibyte printing characters (octal codes above 040"
+      },
+      {
+        "trigger": " non",
+        "score": 11.94,
+        "context": "8, to the 2002 Giro, we now all know what non-negative means, and those accusations are that if you are winning in cycling"
+      }
+    ],
+    "promotes": [
+      " auroit",
+      " kasarigan",
+      "NameInMap",
+      "TagMode",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      " the",
+      " non",
+      "es",
+      " one",
+      " to"
+    ],
+    "generated_description": "non- prefix \u2014 activates on \"non\" used as negation prefix (non-lunar, non-gods, non-ASCII, non-negative); hyphenated/compound negation marker."
+  },
+  {
+    "id": "0_4011_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.393903911113739,
+    "top_activations": [
+      {
+        "trigger": " present",
+        "score": 7.06,
+        "context": " down. All four are valid means of cultivating a calm and clear mindfulness of the present moment. The most common meditation posture after sitting is walking. In meditation centers"
+      },
+      {
+        "trigger": "ori",
+        "score": 7.25,
+        "context": " by the demonstrators today.\u23ceV for Vendetta tells the story of a theorised future of Britain as a fascist state, where one person takes it upon"
+      },
+      {
+        "trigger": " above",
+        "score": 7.5,
+        "context": "iotto was able to go right up to the comet and photograph its nucleus. The above image is a composite of hundreds of these photographs. Although the most famous comet"
+      },
+      {
+        "trigger": " only",
+        "score": 7.12,
+        "context": ". In all the graphs the oxygen levels, illumination and temperature are constant. The only variation is the level of the enzyme rubisco carboxylase which is set at"
+      },
+      {
+        "trigger": " above",
+        "score": 7.0,
+        "context": "application server)\u23ce- Presentation layer = presentation tier\u23ceBut if we accept the above definition of \"layers\" and \"tiers\", it is obvious that the following"
+      }
+    ],
+    "promotes": [
+      " \u017ftate",
+      " The\u017fe",
+      " Be\u017f",
+      " mitos",
+      " Monfieur"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u24e7",
+      "ArgsConstructor",
+      "endphp",
+      "=\"#\"><"
+    ],
+    "generated_description": "Position/limiting words \u2014 activates on spatial, temporal, or restrictive tokens (e.g. \"above\", \"present\", \"only\"); signals location/extent or restriction in text."
+  },
+  {
+    "id": "0_3612_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.361461877822876,
+    "top_activations": [
+      {
+        "trigger": "author",
+        "score": 14.56,
+        "context": " the genetic keys to the difference in growth potential between them. According to co-author Peggy R. Biga, \"I don't think there will be"
+      },
+      {
+        "trigger": "author",
+        "score": 14.56,
+        "context": " poor and oppressed.\u23ceIn our book, The City of Man, my coauthor and I argue that capitalism has produced two things that for much of history were"
+      },
+      {
+        "trigger": "author",
+        "score": 14.56,
+        "context": " forest,\u201d says Lars Hedin, a professor at Princeton University and a co-author on the paper.\u23ce\u201cIt\u2019s super cool,\u201d he adds."
+      },
+      {
+        "trigger": "author",
+        "score": 14.69,
+        "context": " the region with data from past studies. Kr\u00f6pelin and study co-author Rudolph Kuper also collected geological climate data from countless ancient lakebeds, rain"
+      },
+      {
+        "trigger": "author",
+        "score": 14.81,
+        "context": " they interact with something else, often another protein or DNA,\" said study co-author Kathleen Matthews, Rice's Stewart Memorial Professor of Biochemistry and Cell Biology,"
+      }
+    ],
+    "promotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "Portail",
+      "PerformLayout",
+      "Personendaten",
+      "\ue315"
+    ],
+    "demotes": [
+      " author",
+      " authority",
+      " Author",
+      " ",
+      "Author"
+    ],
+    "generated_description": "co-author \u2014 activates on mentions of collaborators (\u201cco-author\u201d, \u201cco\u2011author on the paper\u201d); flags author-with-co prefix in news/science reporting contexts."
+  },
+  {
+    "id": "0_9026_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3842731714248657,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Concrete nouns / proper names \u2014 activates on content nouns and entity names (places, people, things, plants); examples: walks, Nucleus, Jewell, Nile, alfalfa"
+  },
+  {
+    "id": "0_9026_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.35797178745269775,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Content noun / entity \u2014 activates on contentful nouns and names: people (Jewell), places (Nile), species/terms (alfalfa), common noun heads (walks); signals entity/content tokens mid\u2011sentence."
+  },
+  {
+    "id": "0_11375_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.28579801321029663,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "copula \"is\" \u2014 activates on the present-tense linking verb \"is\" (third-person singular), in declarative contexts and simple factual statements."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.27724581956863403,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say noun phrase after \"of\" \u2014 activates on the preposition \"of\"; signals and represents the upcoming noun/place/proper name that follows."
+  },
+  {
+    "id": "0_3255_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.31446999311447144,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": ", many people are unaware of the history of the Transportation Security Administration (TSA) and the reasons for its creation.\u23ceThe truth is that TSA has been,"
+      },
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": "; Colletotrichum fragariae, C. gloeosporioides and Fusarium oxysporum, which have large affects on agriculture crops.\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23cetrees that can reach heights of over 114 meters (375 ft) and live for more than 3,000 years!"
+      },
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": "\u23ceAbout Website says: This page gives information about ozone at Halley, Rothera and Vernadsky/Faraday stations. Openness Not open. Permission required"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23ceESA\u2019s follow-up instruments aboard ERS-2, Envisat and CryoSat have ensured the continuity of radar altimetry measurements. ESA"
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq",
+      " Monfieur"
+    ],
+    "demotes": [
+      " and",
+      " ",
+      " (",
+      " or",
+      " in"
+    ],
+    "generated_description": "say next list item \u2014 activates on the conjunction \"and\" that continues lists/enumerations; signals a forthcoming additional item or phrase."
+  },
+  {
+    "id": "0_13004_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.37268638610839844,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "Subword/short token detector \u2014 activates on short or subword tokens: single-char punctuation '(', single digits (2), Roman numerals (I), subword fragments like 'is' in \"wisdom\"."
+  },
+  {
+    "id": "3_6697_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.31074655055999756,
+    "top_activations": [
+      {
+        "trigger": "thor",
+        "score": 17.12,
+        "context": " medical entomology?\u23ceWell, it's the study of relationships among arthorpods, microbial pathogens and human health, according to medical entomologist Thomas Scott"
+      },
+      {
+        "trigger": "s",
+        "score": 18.38,
+        "context": " Are the More Educated More Likely to Use New Drugs?\u23ceCoauthor(s): Adriana Lleras-Muney.\u23ceThere is a large"
+      },
+      {
+        "trigger": "s",
+        "score": 22.0,
+        "context": "5\u23ceNCTE Member Price: $23.95\u23ceAuthor(s): Katie Wood Ray, Lester Laminack\u23ceThis book is a practical,"
+      },
+      {
+        "trigger": "ore",
+        "score": 33.75,
+        "context": " portraits. D\u2019Albret was married to Marguerite\u2019s aunt, the authoress Marguerite d\u2019Angoul\u00eame. Marguerite\u2019s head is after a"
+      },
+      {
+        "trigger": " of",
+        "score": 16.75,
+        "context": " web server can be replaced by some other web server software. Though the original authors of these programs did not design them to work as a component of the LAMP stack"
+      }
+    ],
+    "promotes": [
+      "author",
+      "authors",
+      " Authors",
+      " author",
+      " authors"
+    ],
+    "demotes": [
+      " snippetHide",
+      "WithIOException",
+      "expandindo",
+      " Montag",
+      " &___"
+    ],
+    "generated_description": "author(s) \u2014 activates on author-related tokens and labels (author, authors, Author(s):, authoress, author substrings); pushes/encourages output tokens \"author\"/\"authors\"."
+  },
+  {
+    "id": "2_14801_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.35914430022239685,
+    "top_activations": [
+      {
+        "trigger": " author",
+        "score": 25.0,
+        "context": "such as philosophy\u2014especially political philosophy\u2014and history), articles almost only have one author. Technical and scientific reports usually have more authors than they do pages.\u23ce"
+      },
+      {
+        "trigger": " author",
+        "score": 24.0,
+        "context": " and the fiasco of the Bay of Pigs invasion certainly influenced the timing, in the author's interpretation the Kennedy decision manages to escape the narrow definition of a public"
+      },
+      {
+        "trigger": " author",
+        "score": 24.0,
+        "context": " in Fermat\u2019s mischievous conundrum set me on the path towards being an author and ignited an interest in mathematics that has continued ever since. As a physicist"
+      },
+      {
+        "trigger": " author",
+        "score": 24.25,
+        "context": " manifest the belief in the enormous power of literature to drive change, and in the author\u2019s moral duty to their readers, both social and artistic. Literature is"
+      },
+      {
+        "trigger": " author",
+        "score": 24.0,
+        "context": " Dawson: Inventions of the Mind. Bluhm isn\u2019t a historian or author; rather, she is an English professor from West Shore Community College who happened"
+      }
+    ],
+    "promotes": [
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " Dord",
+      "Locker",
+      "Cyfeiriadau",
+      "AddAttribute"
+    ],
+    "demotes": [
+      " author",
+      "Author",
+      " Author",
+      "author",
+      " authors"
+    ],
+    "generated_description": "author \u2014 activates on the token \"author\" (and \"author\u2019s\"); signals mentions of a writer/creator, often in possessive or descriptive contexts."
+  },
+  {
+    "id": "3_16217_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3328261077404022,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 16.5,
+        "context": " a bit of a mystery, even to Pharmacia & Upjohn, the manufacturers of the product. Company spokesman John Ruane admitted as much when he said,"
+      },
+      {
+        "trigger": " of",
+        "score": 19.88,
+        "context": " theory\u2014current terms in the field\u2014are postulated and countered by the originators of the conceptions and their contemporaries. Such in-depth discussion will be especially appreciated"
+      },
+      {
+        "trigger": " of",
+        "score": 16.12,
+        "context": " vision of zero new infections.\u201d\u23ceThe joint efforts by UNAIDS and the organizers of the Singapore Games are part of the agency\u2019s overall partnership with the International"
+      },
+      {
+        "trigger": " of",
+        "score": 16.88,
+        "context": ". The level gradually decreases for people born after nuclear testing ceased.\u23ceThe founders of Greenpeace won their campaign and helped stop nuclear testing. But now things are happening"
+      },
+      {
+        "trigger": " of",
+        "score": 21.88,
+        "context": ", vitamins, minerals, phytochemicals, and antioxidants are consumed.\u23ceThe creators of the Paleo diet adapted it for athletes, recognizing that athletes do need more carbohydrates"
+      }
+    ],
+    "promotes": [
+      "V",
+      "(",
+      "[",
+      " who",
+      " "
+    ],
+    "demotes": [
+      "Personendaten",
+      " Normdatei",
+      "archiviato",
+      "EndInit",
+      " CreateTagHelper"
+    ],
+    "generated_description": "of \u2014 activates on the preposition \"of\" in noun-of-noun phrases; often after creators/founders/manufacturers/vision indicating origin/possession/association."
+  },
+  {
+    "id": "1_5220_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.38918471336364746,
+    "top_activations": [
+      {
+        "trigger": " authors",
+        "score": 20.0,
+        "context": " as exercise physiology. \u201c[Generally] challenging your mind with a variety of intellectual activities will help keep your memory decline at a minimum,\u201d the authors write. But intellectual"
+      },
+      {
+        "trigger": " authors",
+        "score": 20.25,
+        "context": " the gene that controls this protein occurred in people with some types of autism. The authors found that varying the level of this protein affected other proteins responsible for communication between"
+      },
+      {
+        "trigger": " authors",
+        "score": 20.0,
+        "context": " size, one cannot look at the number of patients that relapsed alone. The authors calculated that the risk of requiring chemotherapy at some point during the 10"
+      },
+      {
+        "trigger": " authors",
+        "score": 20.0,
+        "context": ", or technical barriers to overcome; internet access is all that is needed. The authors retain their rights to their research work, while the public can freely utilise the"
+      },
+      {
+        "trigger": " authors",
+        "score": 21.25,
+        "context": " with real-world applications of research results to problems that confront us today. The authors apply the disc ...show moreovery method to take students inside the research"
+      }
+    ],
+    "promotes": [
+      " fain",
+      "ized",
+      "irsch",
+      " Grail",
+      " Damascus"
+    ],
+    "demotes": [
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u0915",
+      " \u0648\u064a\u0643\u064a\u067e\u064a\u062f\u064a\u0627",
+      " autorytatywna",
+      " authors",
+      " \u0635\u0648\u062a\u064a\u0647"
+    ],
+    "generated_description": "authors \u2014 activates on the token \"authors\" in academic/research contexts; often occurs with verbs like write, found, calculated, retain, apply."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3214453160762787,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "Sentence-start \"It\" / \"(\" \u2014 activates on sentence-initial tokens (expletive \"It\" and opening parenthesis), marking introductory clauses or parentheticals."
+  },
+  {
+    "id": "4_9484_6",
+    "layer": 4,
+    "ctx_idx": 6,
+    "influence_score": 0.34425482153892517,
+    "top_activations": [
+      {
+        "trigger": " eden",
+        "score": 19.62,
+        "context": "<bos>Positive Chronicles - East of eden\u23ceby Dr Kailash Vajpeyi\u23ce\"Man is no longer\u23ceto be the measure of all things, the center"
+      },
+      {
+        "trigger": " Find",
+        "score": 19.38,
+        "context": " roads would have been similar to those described in \"A Good Man is Hard to Find.\" At the EDSITEment-reviewed American Memory website's Farm Security"
+      },
+      {
+        "trigger": "ot",
+        "score": 21.0,
+        "context": " In this play, two vagrants pass the time while waiting for the unidentified Godot. But Godot never arrives. Godot is a thinly veiled characterization"
+      },
+      {
+        "trigger": " Lear",
+        "score": 23.0,
+        "context": "<bos>Shakespeare's King Lear: The Promised End\u23ce2012, Vol. 4 No. 09 | pg. 1/1"
+      },
+      {
+        "trigger": " Life",
+        "score": 19.0,
+        "context": " guessing most of you have seen the classic Christmas movie, It\u2019s a Wonderful Life with Jimmy Stewart. In the movie, Stewart plays George Bailey who has inherited"
+      }
+    ],
+    "promotes": [
+      " propOrder",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " Administrativna",
+      "formik",
+      "owulf"
+    ],
+    "demotes": [
+      " /\\.(",
+      "openzeppelin",
+      " f\u00f8dt",
+      " Burch",
+      " estudio"
+    ],
+    "generated_description": "Title-final word \u2014 activates on single capitalized words that are last words of book/play/movie titles (Eden, Find, Godot, Lear, Life)."
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.3494032621383667,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ],
+    "generated_description": "Sequence-start token \u2014 fires on the first token after <bos> (digits, #, pronouns like I/It); marks beginning of an input utterance."
+  },
+  {
+    "id": "7_5741_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.3994276225566864,
+    "top_activations": [
+      {
+        "trigger": "Overview",
+        "score": 28.38,
+        "context": "<bos>Overview of Gastritis\u23ceGastritis is a disorder characterized by irritation or inflammation of the stomach lining (mucosa). The condition often causes abdominal pain and tenderness"
+      },
+      {
+        "trigger": "Published",
+        "score": 28.75,
+        "context": "<bos>Published April 26, 2012\u23ceAnyone who\u2019s driven on a busy highway can attest that vehicles moving erratically and braking needlessly"
+      },
+      {
+        "trigger": "(",
+        "score": 28.12,
+        "context": "<bos>(Washington, D.C.-Dec. 15, 2005) EPA finalized two related drinking water protection rules today -- one that"
+      },
+      {
+        "trigger": "(",
+        "score": 28.12,
+        "context": "<bos>(PhysOrg.com) -- Technology developed at The University of Nottingham will be giving James Bond the edge over his enemies when the latest high octane 0"
+      },
+      {
+        "trigger": "(",
+        "score": 28.12,
+        "context": "<bos>(BPT) - - Everyone has a rare quality or a characteristic that sets him or her apart from others - a special talent, a unique interest or"
+      }
+    ],
+    "promotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "\ufeff/*",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "'",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "libft",
+      "heri",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "});*/",
+      ":\u2728"
+    ],
+    "generated_description": "Source/dateline header \u2014 activates on publication headings and parenthetical source or dateline markers (Published\u2026, Overview\u2026, (Washington, D.C.-Dec. 15, 2005), PhysOrg.com, BPT)"
+  },
+  {
+    "id": "9_2762_1",
+    "layer": 9,
+    "ctx_idx": 1,
+    "influence_score": 0.3957658112049103,
+    "top_activations": [
+      {
+        "trigger": "Mars",
+        "score": 43.0,
+        "context": "<bos>Mars One wants to send humans on a one-way trip to the Red Planet in 2022. Four individuals will be selected out of the"
+      },
+      {
+        "trigger": "Arctic",
+        "score": 42.0,
+        "context": "<bos>Arctic Ice Expands 1 Million Square Miles In 1 Year\u23ceNearly one-million square miles of more ice has frozen at the North Pole this year"
+      },
+      {
+        "trigger": "American",
+        "score": 41.25,
+        "context": "<bos>American Regionalist artist Thomas Hart Benton adapted this print from his mural Politics, Farming and Law in Missouri, which is located in the State Capitol in Jefferson City"
+      },
+      {
+        "trigger": "Marine",
+        "score": 41.5,
+        "context": "<bos>Marine Life Conservation Districts\u23ceHawai\u2018i's Marine Life Conservation Districts are designed to protect nearshore habitats and fish populations within them. Click on the image"
+      },
+      {
+        "trigger": "American",
+        "score": 41.25,
+        "context": "<bos>American Revolution Timeline\u23ceStudying the American Revolution is an excellent history project. To help organize your study, its always handy to let the child make their own timeline"
+      }
+    ],
+    "promotes": [
+      "Tradu",
+      "HEA",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "\u2019",
+      "'"
+    ],
+    "demotes": [
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      "featureID",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "LookAnd",
+      "SourceChecksum"
+    ],
+    "generated_description": "Place/Region Names \u2014 activates on capitalized geographic nouns: planets (Mars), regions (Arctic), nationalities/adjectives (American), marine/sea-related terms (Marine)."
+  },
+  {
+    "id": "18_15734_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3759237229824066,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " (d) family considerations.\u23ceWhen is Transfer Available?\u23ceThe transfer option is available to students who have begun their undergraduate coursework at a university, whether it"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": ", if left untreated the malady can become permanent.\u23ce- In men this ailment is known as androgenetic alopecia and teenager are very vulnerable to it."
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " restored.\u23ceThe settlement of the lawsuit defines legal requirements of the parties, and is often put in force by an order of the court after a joint stipulation by"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " 2030, according to the EIA. As a result, petroleum consumption is projected to only increase 20 percent by 2030"
+      },
+      {
+        "trigger": " is",
+        "score": 38.5,
+        "context": " cases, modifications to the existing rules for different eras of the Empire. This book is aimed at GMs looking for campaign ideas or fans wanting historical information in one"
+      }
+    ],
+    "promotes": [
+      " not",
+      " shown",
+      " done",
+      " taken",
+      " able"
+    ],
+    "demotes": [
+      "IContainer",
+      " Containing",
+      "containing",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " corresponded"
+    ],
+    "generated_description": "\"is\" (present copula) \u2014 activates on the linking verb \"is\"; responds to occurrences of the present-tense copula in varied contexts."
+  },
+  {
+    "id": "19_8598_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.32477647066116333,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 31.0,
+        "context": ".\u201d\u23ceWe carefully examine the application of Van Gogh\u2019s close and deliberate lines, Beethoven\u2019s ominous knock of fate\u2019s four notes at the door,"
+      },
+      {
+        "trigger": " boy",
+        "score": 25.5,
+        "context": " great vividness in the first and second books of Samuel and elsewhere. As a boy he killed the giant Philistine Goliath with his slingshot. As king of"
+      },
+      {
+        "trigger": ",",
+        "score": 25.25,
+        "context": " party.\u23ceearly 20th century: named after Lenin (see Lenin, Vladimir Ilich).\u23ceM\u00e1s definiciones de LeninismDefinici\u00f3n de Leninism en"
+      },
+      {
+        "trigger": ").",
+        "score": 24.75,
+        "context": " They are playing pin the tail on the donkey (Pluto).\u23ce2nd point: Mickey is blindbolding a clone. This is the focus of the scene"
+      },
+      {
+        "trigger": " helped",
+        "score": 24.75,
+        "context": " viewing the images/movies on this page, go here]\u23ceWendy Darling famously helped Peter Pan catch his shadow, and now Cassini captures the shadow of another Pan"
+      }
+    ],
+    "promotes": [
+      " Batman",
+      " ",
+      " Amazon",
+      " Disney",
+      " Google"
+    ],
+    "demotes": [
+      " nakalista",
+      "RenderAtEndOf",
+      " OFDb",
+      " betweenstory",
+      " TextInputType"
+    ],
+    "generated_description": "Proper names \u2014 activates on mentions of famous people, artists, fictional characters or nearby punctuation; signals named-entity contexts (Van Gogh, Lenin, Pluto, Peter Pan)."
+  },
+  {
+    "id": "19_792_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.38016775250434875,
+    "top_activations": [
+      {
+        "trigger": " New",
+        "score": 63.5,
+        "context": " or prospective brides for the male settlers. Women were always outnumbered by men. The women of Virginia enjoyed greater opportunities to improve their condition in the New World compared to"
+      },
+      {
+        "trigger": ",",
+        "score": 78.0,
+        "context": " names of the most famous characters \u2013 John Smith, Powhatan, Pocahontas, and John Rolfe. While the founding and subsequent struggles have assumed epic proportions,"
+      },
+      {
+        "trigger": " ",
+        "score": 66.5,
+        "context": " was commissioned by Parabola as part of Dead Reckoning, an exhibition commemorating the 250th anniversary of the birth of Capt William Bligh. Focus"
+      },
+      {
+        "trigger": " of",
+        "score": 65.0,
+        "context": "47 portraits\u23ceA poet, explorer, soldier, sailor, courtier and favourite of Elizabeth I, Ralegh was a true 'Renaissance Man'. Much of"
+      },
+      {
+        "trigger": " -",
+        "score": 70.5,
+        "context": " in Spanish, is presented to Queen Isabella.\u23ce- 1547 - Ivan the Terrible becomes Tsar of Russia.\u23ce- 1556"
+      }
+    ],
+    "promotes": [
+      " DUT",
+      " Jamestown",
+      " Huguen",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " propOrder"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "ftagPool",
+      "AddField",
+      "@",
+      "LabelTagHelper"
+    ],
+    "generated_description": "say historical name/date \u2014 fires on commas/prepositions/dashes or caps before proper nouns; predicts historical places/people/dates (Jamestown, Huguen, years, famous names)"
+  },
+  {
+    "id": "18_7229_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.39109137654304504,
+    "top_activations": [
+      {
+        "trigger": " called",
+        "score": 82.5,
+        "context": " a poem from the Shakespeare play As You Like It. This poem is an example of a type of figurative language called personification. When writers personify, they"
+      },
+      {
+        "trigger": " of",
+        "score": 86.0,
+        "context": "<bos>- A poem of eight lines, typically of eight syllables each, rhyming abaaabab and so structured that the first line recurs as the fourth and seventh"
+      },
+      {
+        "trigger": " of",
+        "score": 96.0,
+        "context": " in his poems. This poem has three stanzas, each consisting of a model in rhyme. The first verseABCCBAA, is the second ABAABAA"
+      },
+      {
+        "trigger": " poet",
+        "score": 75.0,
+        "context": " excavate a grave in southern Spain that is believed to contain the remains of the poet and dramatist Federico Garcia Lorca.\u23ceHe was murdered by supporters of General Franco"
+      },
+      {
+        "trigger": " first",
+        "score": 77.0,
+        "context": " hurt at the way his race has been treated. In so doing, in the first half of the poem, he upbraids the teacher who sees people of"
+      }
+    ],
+    "promotes": [
+      " rhyme",
+      " poetry",
+      " poet",
+      " poems",
+      " poem"
+    ],
+    "demotes": [
+      "CloseOperation",
+      " \u0648\u064a\u0643\u064a\u0645\u064a\u062f\u064a\u0627",
+      "EndInit",
+      "cyklopedia",
+      "webElementXpaths"
+    ],
+    "generated_description": "poetry/poem \u2014 activates on words about poems (poet, stanza, rhyme, poem); pushes output tokens like \"rhyme\", \"poem\", \"poet\""
+  },
+  {
+    "id": "4_8666_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3748455047607422,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 14.25,
+        "context": " first love was nature. She taught science in elementary school and is now the author of many nature books. She lives beside a deep, wild lake in Guilford,"
+      },
+      {
+        "trigger": " of",
+        "score": 14.75,
+        "context": ".\u23ceSusanna Visser, an epidemiologist at the CDC and the lead author of the report, says that factors including lead exposure, low birth weight, and"
+      },
+      {
+        "trigger": " author",
+        "score": 20.75,
+        "context": " the Hudson Institute's Center for Religious Freedom. He is the author and editor of over twenty books on religion and politics, especially religious freedom, including Radical Islam"
+      },
+      {
+        "trigger": " of",
+        "score": 18.12,
+        "context": ", have an instinctual tendency toward empathetic behavior. We asked de Waal, author of \"The Age of Empathy: Nature's Lessons for a Kinder Society"
+      },
+      {
+        "trigger": " of",
+        "score": 15.75,
+        "context": " not to exercise.\u201d -- Giles O. Einstein and Mark A. McDaniel, authors of Memory Fitness: A Guide to Successful Aging (Yale University Press, 2"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " responsible",
+      "extAlignment",
+      " whom",
+      " Majefty"
+    ],
+    "demotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "__\":\r",
+      "contentLoaded",
+      "Hentet",
+      "UnusedPrivate"
+    ],
+    "generated_description": "Author/of phrase \u2014 activates on mentions of authorship: \"author\", \"authors\", and the preposition \"of\" in \"author of\"/\"authors of\" constructions; flags mention of a work or report."
+  },
+  {
+    "id": "18_8341_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.31261304020881653,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": "<bos>Four centuries after he wrote them, the works of William Shakespeare continue to entertain and intrigue audiences around the world.\u23ceShakespeare\u2019s genius permanently shaped the English"
+      },
+      {
+        "trigger": " as",
+        "score": 51.75,
+        "context": " for most of his plays from specific literary genres or from the works of such writers as William Shakespeare (Rosencrantz and Guildenstern are Dead, first performed"
+      },
+      {
+        "trigger": " adapted",
+        "score": 50.25,
+        "context": ". Revolution was afoot. Mozart's\u23celibrettist adapted The Marriage from a\u23ceplay by a French clockmaker, born Pierre Caron.\u23ceWhen"
+      },
+      {
+        "trigger": " revived",
+        "score": 41.25,
+        "context": " had a huge influence on German musical life: in 1829 he revived Bach's St. Matthew Passion after almost 90 years (in"
+      },
+      {
+        "trigger": "(",
+        "score": 48.25,
+        "context": "<bos>1643 Emperor Moth Saturnia pavonia\u23ce(Linnaeus, 1758)Wingspan 40-60 mm.\u23ce"
+      }
+    ],
+    "promotes": [
+      " mergeFrom",
+      "\"]);\r",
+      "GeneratedMessage",
+      "IndentedString",
+      "GraphicsUnit"
+    ],
+    "demotes": [
+      "abestanden",
+      "lorette",
+      " paramString",
+      " l\u012b",
+      " PETERS"
+    ],
+    "generated_description": "say origin/attribution \u2014 activates on connectors introducing source or creator (of, as, adapted, revived, (author citations) before names or original works"
+  },
+  {
+    "id": "20_9065_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.3046463429927826,
+    "top_activations": [
+      {
+        "trigger": " later",
+        "score": 68.0,
+        "context": " 'most extraordinary piece of wit and wisdom that America has yet contributed'. A century later it is his judgement of this autobiographical vision of the vigour of the American"
+      },
+      {
+        "trigger": "-",
+        "score": 69.0,
+        "context": " be toilet trained to enter this program.\u23ce\"Only practical work and experience lead the young to maturity.\"\u23ce-Dr. Maria Montessori in The Absorbent Mind"
+      },
+      {
+        "trigger": ",",
+        "score": 71.0,
+        "context": " human cultures\u2014E.B. Tylor, Lewis Henry Morgan, Franz Boas, Emile Durkheim, Marcel Mauss, A.R. Radcliffe-Brown"
+      },
+      {
+        "trigger": " \u2014",
+        "score": 72.5,
+        "context": "915 \"I fear this means that there is some mischief afoot.\" \u2014 Sherlock Holmes in The Valley of Fear by Sir Arthur Conan Doyle.\u23ce-"
+      },
+      {
+        "trigger": "||",
+        "score": 69.0,
+        "context": "\u23ce|Alma mater||University of Adelaide\u23ceUniversity of Cambridge\u23ce|Doctoral advisor||J. J. Thomson\u23ce|Doctoral students||John Crank\u23ceRonald Wil"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "ThroughAttribute",
+      " Ralph",
+      " <=\",",
+      "WithIOException"
+    ],
+    "demotes": [
+      " betweenstory",
+      "adaptiveStyles",
+      " CreateTagHelper",
+      " s\u00f3lido",
+      "ytick"
+    ],
+    "generated_description": "clause-separator punctuation \u2014 activates on commas, em-dashes, arrows and wiki/table pipes; marks clause or entry boundaries and citation/metadata separators."
+  },
+  {
+    "id": "19_12352_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.3429420590400696,
+    "top_activations": [
+      {
+        "trigger": " before",
+        "score": 34.75,
+        "context": " Bishop Zebinus. Babylas is noted for his defense of Christianity before the Roman emperor Decius that led to his martyrdom. Various sources place the events differently."
+      },
+      {
+        "trigger": " rabbi",
+        "score": 37.0,
+        "context": " the province of Cilicia, not far from Galatia. Under the famous rabbi, Gamaliel, Paul received a thorough training in the OT Scriptures and in"
+      },
+      {
+        "trigger": "'",
+        "score": 39.5,
+        "context": "30), generally considered his finest work. It introduced Sam Spade, Hammett's fictional detective creation, played by Humphrey Bogart in the film version directed"
+      },
+      {
+        "trigger": " Emperor",
+        "score": 34.75,
+        "context": " Council as Arius returned to the favor of the Emperor. Only the unusual death of Arius, followed a year later by the death of Constantine, temporarily overshadowed"
+      },
+      {
+        "trigger": " by",
+        "score": 32.5,
+        "context": " and Popular Culture Encyclopedia\u23ceIn Greek mythology, Dana\u00eb was the mother of Perseus by Zeus. Disappointed by his lack of male heirs, her father asked an"
+      }
+    ],
+    "promotes": [
+      " W",
+      " P",
+      " and",
+      "[",
+      "-"
+    ],
+    "demotes": [
+      "\u24e7",
+      " greate\u017ft",
+      " purpo\u017fe",
+      " The\u017fe",
+      " plea\u017fure"
+    ],
+    "generated_description": "Precedes proper name \u2014 activates on words/titles/prepositions that immediately introduce a following named person or title (e.g., by, before, rabbi, Emperor, \u2019s)."
+  },
+  {
+    "id": "19_14710_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.37159737944602966,
+    "top_activations": [
+      {
+        "trigger": "5",
+        "score": 32.0,
+        "context": " christened, and brought up during that period.\u23ceIn 1865, the Austrian monk Johann Gregor Mendel proposed three laws governing heredity, which however"
+      },
+      {
+        "trigger": "especially",
+        "score": 42.0,
+        "context": " of the other major\u23ceBritish romantics and to the German romantic philosophers as well (especially Schelling).\u23ceFor Barfield, Romanticism represents a rebirth\u23ce"
+      },
+      {
+        "trigger": " principally",
+        "score": 37.75,
+        "context": " scrutinize carefully the history of the thinking of the canonical participants in these debates \u2014 principally Descartes, Newton, Leibniz, Mach and Einstein. Readers interested in following up"
+      },
+      {
+        "trigger": " of",
+        "score": 35.5,
+        "context": ", J\u00f3zsef De\u00e9r, and P\u00e9ter V\u00e1czy. Fully versed in the works of Ranke, Meinecke, Dilthey and Lamprecht, Gyula S"
+      },
+      {
+        "trigger": ",",
+        "score": 37.25,
+        "context": ", we're focusing only on the Western intellectual tradition brought about by people such as Aristotle, Descartes, and Nietzsche. But to understand the Western intellectual tradition is"
+      }
+    ],
+    "promotes": [
+      "ratic",
+      " Corbu",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      " prov",
+      " kasarigan"
+    ],
+    "demotes": [
+      " initComponents",
+      "AlterField",
+      "+#+#",
+      "abestanden",
+      "ImageContext"
+    ],
+    "generated_description": "say introduce-example \u2014 activates on connector words/punctuation that cue examples or lists (especially, principally, 'of', commas) and signals upcoming named items or elaboration"
+  },
+  {
+    "id": "21_6186_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.36030322313308716,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is so interesting to watch young children play with Legos. They make a plan, create a construction, and act out a play scenario with what they"
+      },
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is believed that Orest Kiprensky was an illegitimate son of the landowner Alexey Dyakonov and one of his serfs. Orest was born"
+      },
+      {
+        "trigger": " are",
+        "score": 41.0,
+        "context": "<bos>They are both nest-building social insects, but paper wasps and honey bees organize their colonies in very different ways. In a new study, researchers report that"
+      },
+      {
+        "trigger": " are",
+        "score": 41.0,
+        "context": "<bos>They are a type of feldspar, which is the most common mineral\u23ceon earth. so what makes them special?\u23ceFirst like most gemstones, they are"
+      },
+      {
+        "trigger": " is",
+        "score": 38.75,
+        "context": "<bos>It is always pleasing when you look below the surface and see real change in a market, city or organization. No more so than with the low-carbon"
+      }
+    ],
+    "promotes": [
+      " possible",
+      " important",
+      " a",
+      " not",
+      " difficult"
+    ],
+    "demotes": [
+      " Monfieur",
+      " The\u017fe",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "generated_description": "copula \"be\" (is/are) \u2014 activates on linking verbs \"is\"/\"are\" in declarative/introductory clauses; often in sentences starting descriptions, promoting generic continuations (possible, important, a)."
+  },
+  {
+    "id": "21_1621_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.32968825101852417,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 84.5,
+        "context": " actor, Browning began writing for the stage. Although not especially successful, he wrote eight verse plays during the next nine years, two of which were produced\u2014 Straf"
+      },
+      {
+        "trigger": " are",
+        "score": 79.5,
+        "context": "0th-century playwrights who have written what can be broadly termed naturalist dramas are Gerhart Hauptmann (German), John Galsworthy (English), John Mill"
+      },
+      {
+        "trigger": " by",
+        "score": 90.0,
+        "context": " performance. We will be practicing theatrical performance techniques mainly developed by Augusto Boal's work in Theatre of the Oppressed. We will be examining the process in"
+      },
+      {
+        "trigger": " the",
+        "score": 98.0,
+        "context": "\u23ce. It debuted September 23, 1980\u23ceand was the first production of the Field Day\u23ceTheater, a company started by Fri"
+      },
+      {
+        "trigger": " a",
+        "score": 72.5,
+        "context": "|\u23ce|2.||theatre a short dramatic piece played separately or as part of a longer entertainment, common in 16th-century England|\u23ce"
+      }
+    ],
+    "promotes": [
+      " Theatre",
+      "stage",
+      " theater",
+      " stage",
+      " theatre"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      " UnityEditor",
+      "RunAsync",
+      "Datuak",
+      "tocin"
+    ],
+    "generated_description": "say theatre \u2014 fires on prepositions/articles right before theatre/stage/drama words; promotes tokens like \"Theatre\", \"stage\", \"theater\""
+  },
+  {
+    "id": "21_4906_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.34812840819358826,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 66.5,
+        "context": "300,000 sq. ft.\u23ce- Falling Water, Western PA, residence designed with cork floors by architect Frank Lloyd Wright in 1"
+      },
+      {
+        "trigger": ",",
+        "score": 54.0,
+        "context": " Darwin, Mark Twain, Charles Dickens, Karl Kraus, Ernst Mach, John Muir, and William James, but also with countless other citizen-observers, many of"
+      },
+      {
+        "trigger": ",",
+        "score": 59.5,
+        "context": " when he wrote \u201cThe Evils of Deforestation\u201d in 1909, J.P. Grossmann obviously felt strongly about the issue. He"
+      },
+      {
+        "trigger": " of",
+        "score": 67.5,
+        "context": ". The book, Silent Spring by Rachel Carson, was directly influenced by the work of a Michigan State professor and his students, so the MSU Museum chose to honor"
+      },
+      {
+        "trigger": " physicist",
+        "score": 54.0,
+        "context": " and creating an entirely new state of matter predicted decades ago by Albert Einstein and Indian physicist Satyendra Nath Bose. Cooling rubidium atoms to less than 17"
+      }
+    ],
+    "promotes": [
+      " credit",
+      " father",
+      " \u0432\u044b\u0434\u0430",
+      " Father",
+      "SaveChangesAsync"
+    ],
+    "demotes": [
+      " nakalista",
+      "httphttps",
+      "kuuta",
+      " rel\u00e2che",
+      "PhysRevLett"
+    ],
+    "generated_description": "say PERSON name \u2014 activates on prepositions/commas/role words immediately before proper names (by, , , of, \"physicist\"); signals an upcoming person/place proper noun."
+  },
+  {
+    "id": "21_7005_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3769967555999756,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " received scant attention, centers on the\u23ceeconomic ideas of Joseph Smith, Jr. and the teachings of Jose Maria\u23ceArizmendiarrieta, the Catholic"
+      },
+      {
+        "trigger": " President",
+        "score": 44.5,
+        "context": ". In its place was Constellation, a program to return Americans to the moon. President Barack Obama, however, canceled that program and called on NASA to focus on"
+      },
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " of engaging in state terrorism in Iraq and demands the prosecution of George W. Bush and Tony Blair.\u23ceThis Week's News / Tomorrow's History ("
+      },
+      {
+        "trigger": " of",
+        "score": 47.5,
+        "context": "<bos>The administration of President George W. Bush had three major domestic goals: privatize Social Security, transfer federal work to private corporations, and shift the financing,"
+      },
+      {
+        "trigger": " President",
+        "score": 43.5,
+        "context": " When President Barack Obama took the podium on Tuesday night, he followed in the footsteps of generations of presidents before him: speaking to the American people about a critical issue"
+      }
+    ],
+    "promotes": [
+      "SystemColors",
+      "rawDesc",
+      " President",
+      " Lord",
+      " Prime"
+    ],
+    "demotes": [
+      "Personendaten",
+      "TagHelper",
+      " elkaar",
+      "anyahu",
+      " ig\u00e5ng"
+    ],
+    "generated_description": "Political-title (President) \u2014 activates on mentions of presidents and nearby function words; associated with honorifics (President, Prime, Lord) and promotes political-leader/title tokens."
+  },
+  {
+    "id": "19_3357_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.2802681624889374,
+    "top_activations": [
+      {
+        "trigger": "3",
+        "score": 111.0,
+        "context": " until 1623 that two of his closest companions published the First Folio, containing 36 of his 37 plays.\u23ceRead More \u00bb"
+      },
+      {
+        "trigger": " A",
+        "score": 102.0,
+        "context": " passages that seem to express the bard's own thoughts on the creative process. In Act V, Scene I of A Midsummer Night's Dream, for example"
+      },
+      {
+        "trigger": " |",
+        "score": 94.0,
+        "context": " New !The Merchant of Venice\u23ceHamlet | Macbeth | Othello | Romeo and Juliet | A Midsummer Night's Dream\u23ceIntroduction to William Shakespeare\u23ceHe took illustrated"
+      },
+      {
+        "trigger": ",",
+        "score": 96.5,
+        "context": " poet of the Sonnets and the creator of such dramatic masterpieces as Romeo and Juliet, Hamlet, and King Lear, is a playwright of paradigmatic originality. In"
+      },
+      {
+        "trigger": " The",
+        "score": 82.5,
+        "context": " Shakespeare Festival's web site. Did\u23ceyou know that their traveling company performed The Taming of the Shrew\u23ceon March 31st at Ogden"
+      }
+    ],
+    "promotes": [
+      " actors",
+      " theatrical",
+      " Actors",
+      " play",
+      " theatre"
+    ],
+    "demotes": [
+      " utafitiHapana",
+      "RenderAtEndOf",
+      "UnifiedTopology",
+      "\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u044f",
+      " \u0643\u0645\u0627\u0646"
+    ],
+    "generated_description": "Play/title boundary \u2014 activates on punctuation/articles/markers around play titles or act numbers (e.g., \u201cAct\u201d, \u201cThe\u201d, commas, separators); promotes theatrical words (actors, play, theatre)."
+  },
+  {
+    "id": "21_6480_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.2709396481513977,
+    "top_activations": [
+      {
+        "trigger": " read",
+        "score": 95.5,
+        "context": " as they read Romeo and Juliet, and then I created another ning to accompany the novel To Kill a Mockingbird. Before we began reading Romeo and Juliet, I"
+      },
+      {
+        "trigger": " as",
+        "score": 103.5,
+        "context": " as Yiddish and Creole.\"\u23ce- Classic Reader - Read, search, and annotate great works of literature by authors such as Dickens, Tolstoy, Shakespeare, and"
+      },
+      {
+        "trigger": " by",
+        "score": 66.0,
+        "context": " in high schools as it is required reading in others, a distinction almost certainly matched by few other books. That the book can have an impact on young minds is"
+      },
+      {
+        "trigger": " and",
+        "score": 73.5,
+        "context": "<bos>Social Issues in Chaucer\u2019s The Canterbury Tales and in The Metro Tales\u23ceCreative Writing Class Mrs. M. Marino\u23ceis a frame story? A frame"
+      },
+      {
+        "trigger": " to",
+        "score": 67.0,
+        "context": " more cosmopolitan residents of London, Oxford, and Cambridge. Relatively few literary works prior to the 1950\u2019s were set in the Midlands, and"
+      }
+    ],
+    "promotes": [
+      "bras",
+      " Shakespeare",
+      " Tol",
+      "Tol",
+      " Hemingway"
+    ],
+    "demotes": [
+      "parsedMessage",
+      "rungsseite",
+      " useStyles",
+      "CloseOperation",
+      "UnknownFieldSet"
+    ],
+    "generated_description": "say Shakespeare \u2014 fires on function words around book mentions (read, as, by, and, to); promotes author names (Shakespeare, Tolstoy, Hemingway) in outputs"
+  },
+  {
+    "id": "21_9396_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3648931682109833,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 107.0,
+        "context": " and breaks. It brings together exceptional ensembles by great artists, for example, paintings by the Master of Moulins, alias Jean Hey, the most famous French painter"
+      },
+      {
+        "trigger": " of",
+        "score": 141.0,
+        "context": " the reign of Henry VIII.\u23ceBishop Fox of Winchester had written to Lord Chancellor Cardinal Wolsey saying that \u2018if war were intended against England, the Isle of"
+      },
+      {
+        "trigger": " of",
+        "score": 109.0,
+        "context": "8, 1503, Garigliano River, Italy), son of Lorenzo the Magnificent who ruled in Florence for only two years (149"
+      },
+      {
+        "trigger": " of",
+        "score": 104.0,
+        "context": " illustrations. History of civilization in Italy from the birth of Petrarch to the death of Titian, 1304-1576. The"
+      },
+      {
+        "trigger": " the",
+        "score": 118.0,
+        "context": "- 1450 \u2013 Battle of Formigny: Toward the end of the Hundred Years' War, the French attack and nearly annihilate English forces,"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "varargin",
+      "])),",
+      "umenta",
+      "modelBuilder"
+    ],
+    "demotes": [
+      " correctes",
+      " protoimpl",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " TextEditing",
+      " Sonny"
+    ],
+    "generated_description": "say upcoming noun \u2014 activates on prepositions/articles (by, of, the) that introduce a following noun phrase or proper entity (agents, possessors, periods)"
+  },
+  {
+    "id": "22_9929_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.38223209977149963,
+    "top_activations": [
+      {
+        "trigger": "length",
+        "score": 83.5,
+        "context": " medicine in Moscow. While practicing as a doctor, he had his first full-length play, Ivanov (1887), produced, but it was not"
+      },
+      {
+        "trigger": " the",
+        "score": 79.0,
+        "context": " capacity to forgive himself. Unsurprisingly, his relationship with Elizabeth remains strained throughout the majority of the play. He resents Elizabeth because she cannot forgive him and"
+      },
+      {
+        "trigger": " include",
+        "score": 78.0,
+        "context": " characters portrayed as types rather than individuals. Notable playwrights who wrote expressionist dramas include Ernst Toller and Georg Kaiser (German), Karel \u010capek (Czech"
+      },
+      {
+        "trigger": " a",
+        "score": 96.0,
+        "context": " 1911 )\u23ceTHERE are three important elements involved in the writing of a play: the sense of situation, the sense of characterization, and"
+      },
+      {
+        "trigger": " by",
+        "score": 74.0,
+        "context": " The Sun\u23ceA Raisin In The Sun is an American play that was written by Lorraine Hansberry in 1959. It is about a poor"
+      }
+    ],
+    "promotes": [
+      " Play",
+      "Play",
+      " plays",
+      "play",
+      " play"
+    ],
+    "demotes": [
+      " &___",
+      "pushFollow",
+      "TagMode",
+      " esternos",
+      "Namara"
+    ],
+    "generated_description": "say play \u2014 activates on small function words introducing plays, playwrights, or play-titles (by, include, the, a); consistently promotes \"play\"/\"plays\" tokens."
+  },
+  {
+    "id": "22_15273_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.37050336599349976,
+    "top_activations": [
+      {
+        "trigger": " joined",
+        "score": 26.38,
+        "context": " opposed to helping Britain in the war.\u23ceIn 1915 he joined the Irish Republican Brotherhood.\u23ceHe helped organise the Easter Rising in 1"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " the 1940s. However, the primary focus of the novel is on Pecola Breedlove, another young black girl who lives in very different"
+      },
+      {
+        "trigger": " Jem",
+        "score": 34.0,
+        "context": " charged with the rape of a white girl. Through the young eyes of Scout and Jem Finch, Harper Lee explores with rich humor and unswerving honesty the irrational"
+      },
+      {
+        "trigger": ",",
+        "score": 36.5,
+        "context": " hurl a stone from his slingshot at the heavily armed giant, the braggart Goliath. Both of those figures, one Greek and the other Judaic,"
+      },
+      {
+        "trigger": " satellites",
+        "score": 28.12,
+        "context": " and Oberon, in 1787. (Uranus's satellites are the only ones in the solar system not named after figures in Greek and"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " it\u017felf",
+      " Monfieur",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      "H",
+      "L",
+      "N",
+      "Z",
+      "<eos>"
+    ],
+    "generated_description": "Mid-sentence token \u2014 activates on common tokens inside clauses (verbs, names, commas, plurals); suppresses sentence-end (<eos>) signals."
+  },
+  {
+    "id": "22_16039_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.35189250111579895,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 52.25,
+        "context": " at the start all highly ornamented, glittery, gilded frames such as adorn many of the oil paintings in our museums, in our homes, and in dealers'"
+      },
+      {
+        "trigger": ",",
+        "score": 54.25,
+        "context": " on C\u00e9zanne. Who else thought this was art? Dufy, Gauguin, Braque, Picasso, Matisse, and de Kooning. Matisse said,"
+      },
+      {
+        "trigger": " see",
+        "score": 76.0,
+        "context": " Jarves was a newspaper editor and art critic who was among the first Americans to see the value in collecting the paintings of the Italian Renaissance and the drawings of the"
+      },
+      {
+        "trigger": " of",
+        "score": 67.0,
+        "context": " recent evening, off the neatly manicured central plaza, the sonatas of Vivaldi and Haydn pour from the town's imposing cathedral. Even more unusual is who"
+      },
+      {
+        "trigger": " from",
+        "score": 57.25,
+        "context": " representations of change by making aural observations of the musical dynamics of a recorded excerpt from Beethoven's Fifth Symphony, first movement. They will record the data in"
+      }
+    ],
+    "promotes": [
+      " Baroque",
+      " Carav",
+      " works",
+      " classical",
+      " Handel"
+    ],
+    "demotes": [
+      "IVEREF",
+      "TagMode",
+      "Legende",
+      "\u064a\u0627\u0621",
+      " SwitchCompat"
+    ],
+    "generated_description": "say classical composer \u2014 fires on prepositions/commas that introduce object phrases; promotes tokens like Baroque, Handel, classical, works, composer names."
+  },
+  {
+    "id": "23_5188_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.36714836955070496,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ],
+    "generated_description": "comma / list separator \u2014 activates on commas and appositive commas; signals lists/continuations; promotes conjunctions/quotes/continuation tokens like \"and\", \"or\", '\"' and \"the\"."
+  },
+  {
+    "id": "23_4170_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3373667597770691,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 117.5,
+        "context": " his deathbed in 1492, Lorenzo de' Medici asked to see the other man, the preacher from Ferrara who had gripped the imagination of Florence"
+      },
+      {
+        "trigger": " in",
+        "score": 88.0,
+        "context": " (which saw a \u201crebirth\u201d of classical antiquity, which you can see in our Orpheus Clock) and the Neoclassical era (a perfect example is Hiram"
+      },
+      {
+        "trigger": " of",
+        "score": 104.0,
+        "context": " by Cosimo de Medici to stand beside fellow tyrant-slayer David (another of Dontaello's works) in the garden of the Medici palace."
+      },
+      {
+        "trigger": " of",
+        "score": 105.5,
+        "context": " part played in his work by landscape, in which he continues the romantic pastoral vein of Giorgione and Titian. The influence from these two artists is indeed so"
+      },
+      {
+        "trigger": " as",
+        "score": 110.5,
+        "context": " of the artist as tragic and transcendent genius and was viewed by some contemporaries (such as his first biographer, Giorgio Vasari) not only as the culmination of artistic"
+      }
+    ],
+    "promotes": [
+      "Dur\u00e9e",
+      " Da",
+      " Log",
+      "Autoritn\u00ed",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      "tagHelperRunner",
+      "MessageOf",
+      " referenties",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " disambiguazione"
+    ],
+    "generated_description": "say introduce modifier \u2014 activates on connective tokens (of, in, as, commas) that start attributive/locative/descriptive phrases before names or descriptors (e.g., \u201cof Donatello\u201d, \u201cin our\u2026\u201d, \u201cas tragic\u2026\u201d)"
+  },
+  {
+    "id": "24_9434_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3791191577911377,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 71.5,
+        "context": ", and Diana?\u23ce9. There is a good deal of sexual wordplay in the comedy; what are the reactions of Helena and the Countess?\u23ce1"
+      },
+      {
+        "trigger": " with",
+        "score": 99.5,
+        "context": ", was another vehicle of existentialism.\u23ceThe theater of the absurd gained prominence with Samuel Beckett\u2019s play, Waiting for Godot. In this play,"
+      },
+      {
+        "trigger": " the",
+        "score": 77.0,
+        "context": "03). (FYI \u2013 King James just so happened to attend a performance of the play at Whitehall on December 26, 1606.)"
+      },
+      {
+        "trigger": " include",
+        "score": 91.5,
+        "context": " detail, for example The Oresteia and Waiting for Godot. Genres covered include: burlesque, comedy, farce, historical drama, kabuki, masque,"
+      },
+      {
+        "trigger": " a",
+        "score": 76.0,
+        "context": " Revolution was afoot. Mozart's\u23celibrettist adapted The Marriage from a\u23ceplay by a French clockmaker, born Pierre Caron.\u23ceWhen he"
+      }
+    ],
+    "promotes": [
+      " }}}",
+      "IBarButtonItem",
+      "]]]",
+      "RenderAtEndOf",
+      "psack"
+    ],
+    "demotes": [
+      " play",
+      "play",
+      " Play",
+      "Play",
+      " plays"
+    ],
+    "generated_description": "say upcoming noun \u2014 fires on prepositions/articles (in, with, the, a, include) that mark the start of a noun phrase; often precedes theater nouns (play, comedy) in these excerpts."
+  },
+  {
+    "id": "24_13277_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.25016212463378906,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say noun phrase \u2014 activates on prepositions/articles/commas/verbs that introduce a following noun phrase or named entity (e.g., \"in\"\u2192Georgia, \"attended\"\u2192Rugby School, \"to\"\u2192the new...)"
+  },
+  {
+    "id": "20_15765_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.38526853919029236,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 86.0,
+        "context": "|Family||King Hamlet (father)\u23ceClaudius (uncle, stepfather)\u23ce|Role||Prince of Denmark|\u23ce|Quote||\"To be"
+      },
+      {
+        "trigger": " tell",
+        "score": 79.0,
+        "context": " him.\u23ce(d) Pays him.\u23ce3. What does Le Beau tell Rosalind and Celia that they have missed?\u23ce(a) Good wrestling matches"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 69.5,
+        "context": " the wellspring of life to all Nations\u201d (156). Shylock\u2019s remark that \u201cthe trade and profit of the city [of Venice]"
+      },
+      {
+        "trigger": " punish",
+        "score": 65.5,
+        "context": " drinks poison.\u23ced) She hangs herself.\u23ce3. How does Juno punish the servants living in Athamas and Ino's house?\u23cea)"
+      },
+      {
+        "trigger": "'",
+        "score": 62.0,
+        "context": " contradicts himself.\u23ceUlysses is an old man who wants to be young again; he is hopelessly attempting to transgress a boundary that can't be crossed."
+      }
+    ],
+    "promotes": [
+      " v\u1ecdng",
+      " Act",
+      " mouseClicked",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " PhpStorm"
+    ],
+    "demotes": [
+      " Marrow",
+      "Condol",
+      "gameserver",
+      "viron",
+      "root"
+    ],
+    "generated_description": "line/sentence-boundary \u2014 activates on newlines, apostrophes and clause-breaking punctuation; marks boundaries between entries or clauses (often before new table rows or contractions)"
+  },
+  {
+    "id": "24_11459_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3929685354232788,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 32.5,
+        "context": " state, the United Kingdom, on the island of Great Britain. The United Kingdom is the three countries of Great Britain plus the country of Northern Ireland.\u23ceThe"
+      },
+      {
+        "trigger": ",",
+        "score": 32.5,
+        "context": " any lost continents whatsoever.\u23ce- The most famous lost continent is Atlantis. Atlantis, like Hyperborea and Thule, is ultimately derived from ancient Greek geographic speculation"
+      },
+      {
+        "trigger": " is",
+        "score": 31.38,
+        "context": "8 Gya coincides with the negative excursion in the organic carbon isotope record, which is the first strong evidence for the presence of atmospheric methane. The existence of weathering"
+      },
+      {
+        "trigger": ",",
+        "score": 47.5,
+        "context": ". He is best known for his novel Don Quijote de la Mancha, which is considered by many to be the first modern novel, ...\u23ceTis said of"
+      },
+      {
+        "trigger": ",",
+        "score": 32.0,
+        "context": " says CO2 levels did not change?\u23ce- Why was the Medieval Warm Period, a thousand years ago, warmer than today even though the CO2 level was"
+      }
+    ],
+    "promotes": [
+      "often",
+      "Often",
+      " Often",
+      " sometimes",
+      " often"
+    ],
+    "demotes": [
+      "DockStyle",
+      "afficheront",
+      "AutoScaleMode",
+      "\u043a\u043b\u043e\u043f\u0435",
+      " FetchType"
+    ],
+    "generated_description": "is / comma trigger \u2014 activates on 'is' substrings and commas before appositives/relative clauses; tends to push adverb \"often\" in output"
+  },
+  {
+    "id": "24_14405_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3162364363670349,
+    "top_activations": [
+      {
+        "trigger": " historian",
+        "score": 71.5,
+        "context": "\u2019s payload capacity rendered the first two options largely moot, and these were never openly discussed with the world. In fact, wrote historian Asif Siddiqi in"
+      },
+      {
+        "trigger": ":",
+        "score": 78.5,
+        "context": "<bos>Johns Hopkins Medicine\u23ceOffice of Communications and Public Affairs\u23ceMedia Contact: Joanna Downer\u23ceApril 22, 2004\u23ceGENOME"
+      },
+      {
+        "trigger": ":",
+        "score": 67.5,
+        "context": "<bos>Name: Doug Forbes\u23cePh.D. from University of Victoria; one year post-doc and several years research and teaching at Trent University and Colby College"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 66.5,
+        "context": "<bos>(back) (next) (contents)\u23ceThe Role of Fathers\u23ceReprinted from Leep Network News, a newsletter from the LSUMC Department of"
+      },
+      {
+        "trigger": " researcher",
+        "score": 73.0,
+        "context": " of eggs that matured and increased the percentage of eggs that degenerated,\" said lead researcher Catherine Racowsky, director of the assisted reproductive technologies laboratory at Brigham and"
+      }
+    ],
+    "promotes": [
+      " Daniel",
+      " Sandra",
+      " Anna",
+      " Sarah",
+      " Laura"
+    ],
+    "demotes": [
+      " Exp\u00e9di\u00e9",
+      "setupUi",
+      " Wikispecies",
+      " africains",
+      " hjemmeside"
+    ],
+    "generated_description": "say person-name \u2014 activates on role/attribution tokens and header colons/newlines that introduce a person (historian, Name:, Media Contact, researcher); promotes common given names."
+  },
+  {
+    "id": "25_16302_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.3358973264694214,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ],
+    "generated_description": "clause introducer \u2014 activates on commas/prepositions/reporting words (in, said, during, that); marks starts of new clauses or phrase-level continuations"
+  },
+  {
+    "id": "25_9975_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.36602330207824707,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Clause-connective words \u2014 activates on function words that start clauses/transitions (while, following, removing, implement, the); signals subordinate/continuation context."
+  },
+  {
+    "id": "20_13158_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.38625368475914,
+    "top_activations": [
+      {
+        "trigger": " espress",
+        "score": 54.25,
+        "context": " the video above taste an olive for the first time.)\u23ceBut after a few espressos or IPAs, most of us warm up to bitter flavors and eventually"
+      },
+      {
+        "trigger": " (",
+        "score": 62.75,
+        "context": " (MCD), the world\u2019s\u23celargest restaurant chain, and Starbucks Corp. (SBUX) are among\u23cecompanies that have reduced the use of artificial"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 68.0,
+        "context": " confusing and terms can sometimes be counter-intuitive to a layman. So, I\u2019ve decided to put together a glossary of common terms to help you decipher the"
+      },
+      {
+        "trigger": " grande",
+        "score": 73.0,
+        "context": " For example, suppose we wanted to calculate a value proposition for a grande soy latte at Starbucks. We'd need to estimate each of the three numbers so that"
+      },
+      {
+        "trigger": " a",
+        "score": 73.0,
+        "context": "1.70. But, if you wanted a splash of foam, a shot of espresso, or a touch of flavor, the addition could be expensive."
+      }
+    ],
+    "promotes": [
+      "bar",
+      " bar",
+      "COUVER",
+      "PreferredItem",
+      " lat"
+    ],
+    "demotes": [
+      "})));",
+      " compl\u00e8tes",
+      " alimentaires",
+      "\u0e2a\u0e37\u0e2d",
+      "\u5e16\u6700\u540e\u7531"
+    ],
+    "generated_description": "Starbucks / coffee drinks \u2014 activates on coffee terms (espresso, latte, grande, soy latte, Starbucks); signals beverage/item context, promotes related tokens (latte, bar)"
+  }
+]

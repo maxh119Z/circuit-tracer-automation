@@ -1,0 +1,2540 @@
+[
+  {
+    "id": "0_16200_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.27298760414123535,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ]
+  },
+  {
+    "id": "2_9457_7",
+    "layer": 2,
+    "ctx_idx": 7,
+    "influence_score": 0.38776975870132446,
+    "top_activations": [
+      {
+        "trigger": " City",
+        "score": 21.75,
+        "context": " Vera Cruz. The forced commanded by Gen. Winfield Scott moved inland and occupied Mexico City (September 14, 1847). A peace treaty"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.12,
+        "context": " Colorado is the decade of drought.\u23ceSo says Brian Bledsoe, a Colorado Springs meteorologist who studies the history of ocean currents and uses what he learns to"
+      },
+      {
+        "trigger": " Francisco",
+        "score": 23.0,
+        "context": " at the annual Integrated Solid State\u23ceCircuits Conference (ISSCC) in San Francisco. At the forefront of Intel\u2019s announcements is its success in developing the"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.38,
+        "context": " Command (CONAD) have been tracking Santa. The tradition began after a Colorado Springs-based Sears Roebuck & Co. store advertisement for children to call Santa"
+      },
+      {
+        "trigger": "Seattle",
+        "score": 21.62,
+        "context": "<bos>The scientists, who are affiliated with the University of Washington (Seattle, WA), Case Western Reserve University (Cleveland, OH), the University of Bari (Bari"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " LUMP",
+      "ajuku",
+      "caloosa",
+      "pannt"
+    ],
+    "demotes": [
+      "TagMode",
+      "WithIOException",
+      "XmlAccessType",
+      "+:+",
+      "TextWatcher"
+    ]
+  },
+  {
+    "id": "0_10935_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.385375052690506,
+    "top_activations": [
+      {
+        "trigger": " mode",
+        "score": 13.12,
+        "context": " by a storm but something smellier, horse manure.\u23ceHorses, the primary mode of transportation, dropped more than a million pounds each day, causing a sanitation"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.25,
+        "context": " connections rather than directly connected terminals.\u23ceOne use for them is to connect many modems (or terminals) to a high speed network which connects to host computers"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.5,
+        "context": " foreign country. This key feature provide high flexibility and encourage the businesses to apply exporting mode of entry while initially enter into the foreign market.\u23ceExporting mode of"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.12,
+        "context": " can allow the user to select from several detents, each representing a different shooting mode. Another dial may control aperture or shutter speed when the user is on a"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.5,
+        "context": " in the same manner as the holes. This device enabled the performer to change the mode or key in which he was playing, just as did the crooks many"
+      }
+    ],
+    "promotes": [
+      " The\u017fe",
+      " it\u017felf",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      "-",
+      "/"
+    ]
+  },
+  {
+    "id": "0_5626_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.34477367997169495,
+    "top_activations": [
+      {
+        "trigger": " Croatia",
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia\u23ceCroatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.38,
+        "context": " diplomatic mission\u23ceAccording to the article 3 of the 1961 Vienna Convention, normal functions consist in:\u23ce- representing the sending State in the"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ]
+  },
+  {
+    "id": "2_3945_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.39013129472732544,
+    "top_activations": [
+      {
+        "trigger": "||",
+        "score": 18.75,
+        "context": "<bos>|Abstract:||During the period March 9-22, 1936, there occurred in close succession over the northeastern United States,"
+      },
+      {
+        "trigger": "||",
+        "score": 17.88,
+        "context": ")\u23ceAndroid 4.4.2 home screen\u23ce|Company / developer||Google\u23ceOpen Handset Alliance\u23ceAndroid Open Source Project (AOSP)"
+      },
+      {
+        "trigger": "||",
+        "score": 17.75,
+        "context": "<bos>|Part of Speech:||n|\u23ce|Definition:||a passion or compulsion for certain words or names and their supposed significance; also, a need"
+      },
+      {
+        "trigger": "||",
+        "score": 18.5,
+        "context": "<bos>|Content of information:||Description:|\u23ceInstruction providing information for fault-finding.\u23ceUsually, the fault location and diagnosis should be limited to those tasks"
+      },
+      {
+        "trigger": "||",
+        "score": 18.88,
+        "context": "<bos>|Data Source:||U.S. Census Bureau|\u23ceUniverse: Housing units\u23ce|H2.||Unweighted Sample Housing Units By Occupancy Status"
+      }
+    ],
+    "promotes": [
+      " bowels",
+      " betweenstory",
+      "rungsseite",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " initComponents",
+      "providedIn",
+      "findpost",
+      "uxxxx",
+      "EIF"
+    ]
+  },
+  {
+    "id": "0_5626_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3495420813560486,
+    "top_activations": [
+      {
+        "trigger": " Croatia",
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia\u23ceCroatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.38,
+        "context": " diplomatic mission\u23ceAccording to the article 3 of the 1961 Vienna Convention, normal functions consist in:\u23ce- representing the sending State in the"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ]
+  },
+  {
+    "id": "3_2681_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.32772985100746155,
+    "top_activations": [
+      {
+        "trigger": " Canada",
+        "score": 18.25,
+        "context": " 18\u201319, 2012, in Toronto, Canada. Building upon the 2011 successful dialogue \u2014 Securing the"
+      },
+      {
+        "trigger": ":",
+        "score": 21.5,
+        "context": "ak. Visual release hallucinations (Charles Bonnet syndrome). UpToDate. Waltham, MA: UpToDate; 2012.\u23ce- Bou Khalil R,"
+      },
+      {
+        "trigger": ":",
+        "score": 27.25,
+        "context": " and 1280 to 1780. Brooklyn, NY: Ditmas, C.A.. From the Quintin Publications Collection.\u23ce"
+      },
+      {
+        "trigger": ":",
+        "score": 23.75,
+        "context": " first used.\u23ceBrooks, Lake. The Science of Fishing. Columbus, OH: A.R. Harding, 1912. Print.\u23ce"
+      },
+      {
+        "trigger": ".:",
+        "score": 23.5,
+        "context": ". Williams Obstetrics. 23rd ed. New York, N.Y.: The McGraw-Hill Companies; 2010. http://www"
+      }
+    ],
+    "promotes": [
+      " zau",
+      " AttributeSet",
+      " \u2018",
+      ",",
+      "."
+    ],
+    "demotes": [
+      "Datuak",
+      "verwijspagina",
+      "oredCriteria",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " bezeichneter"
+    ]
+  },
+  {
+    "id": "4_6129_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.38293445110321045,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 39.25,
+        "context": " Bayard. Right to Work Laws: A Trap for America's\u23ceMinorities. New York: Philip Randolph Institute, Undated.\u23ceColes, Robert"
+      },
+      {
+        "trigger": ":",
+        "score": 41.0,
+        "context": " Holocaust. Trans. by Patsy Southgate, intro. by Saul Friedlander. London: Edward Arnold, 1994. 177 pp."
+      },
+      {
+        "trigger": ".:",
+        "score": 36.5,
+        "context": " A Comprehensive Study Guide. 7th ed. New York, N.Y.: The McGraw-Hill Companies; 2011. http://www"
+      },
+      {
+        "trigger": ":",
+        "score": 36.25,
+        "context": " The Mexico Reader: History, Culture, Politics. The Latin America readers. Durham: Duke University Press, 2002. ISBN: 08"
+      },
+      {
+        "trigger": ":",
+        "score": 39.0,
+        "context": " (1831). The Hunchback of Notre Dame. New York: Carey, Lea, and Blanchard.\u23ce- Flesch\u2013Kincaid"
+      }
+    ],
+    "promotes": [
+      "impresa",
+      " createSprite",
+      "\u043d\u0456\u0446\u0438\u043f\u0430",
+      "omalainen",
+      "<bos>"
+    ],
+    "demotes": [
+      "Boxscore",
+      "twimg",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      " PhpStorm",
+      " Exacts"
+    ]
+  },
+  {
+    "id": "0_12958_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38046619296073914,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 12.0,
+        "context": "Posted: Mon Jul 14, 2008 10:12 am Post subject: New nanotechnique producing small things in large"
+      },
+      {
+        "trigger": ":",
+        "score": 14.12,
+        "context": "<bos>Re: teaching relational basics to people, questions\u23ceDate: Sat, 28 Nov 2009 20:33:3"
+      },
+      {
+        "trigger": ":",
+        "score": 12.38,
+        "context": "<bos>Submitted to: North American Cranberry Research and Extension Workers Annual Meeting\u23cePublication Type: Abstract Only\u23cePublication Acceptance Date: October 20, 20"
+      },
+      {
+        "trigger": ":",
+        "score": 12.5,
+        "context": ": 09/26/1999 at 18:14:46 From: Andrew Subject: Algebra II with Trigonometry On"
+      },
+      {
+        "trigger": ":",
+        "score": 13.12,
+        "context": "<bos>103: Introduction to Logic\u23ceThe Language of Symbolic Logic\u23ceAbstract: Conventions for\u23cetranslating ordinary language statements into symbolic notation are\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      " ",
+      " in"
+    ]
+  },
+  {
+    "id": "2_9457_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.27929532527923584,
+    "top_activations": [
+      {
+        "trigger": " City",
+        "score": 21.75,
+        "context": " Vera Cruz. The forced commanded by Gen. Winfield Scott moved inland and occupied Mexico City (September 14, 1847). A peace treaty"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.12,
+        "context": " Colorado is the decade of drought.\u23ceSo says Brian Bledsoe, a Colorado Springs meteorologist who studies the history of ocean currents and uses what he learns to"
+      },
+      {
+        "trigger": " Francisco",
+        "score": 23.0,
+        "context": " at the annual Integrated Solid State\u23ceCircuits Conference (ISSCC) in San Francisco. At the forefront of Intel\u2019s announcements is its success in developing the"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.38,
+        "context": " Command (CONAD) have been tracking Santa. The tradition began after a Colorado Springs-based Sears Roebuck & Co. store advertisement for children to call Santa"
+      },
+      {
+        "trigger": "Seattle",
+        "score": 21.62,
+        "context": "<bos>The scientists, who are affiliated with the University of Washington (Seattle, WA), Case Western Reserve University (Cleveland, OH), the University of Bari (Bari"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " LUMP",
+      "ajuku",
+      "caloosa",
+      "pannt"
+    ],
+    "demotes": [
+      "TagMode",
+      "WithIOException",
+      "XmlAccessType",
+      "+:+",
+      "TextWatcher"
+    ]
+  },
+  {
+    "id": "0_9026_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3913020193576813,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "2_9805_5",
+    "layer": 2,
+    "ctx_idx": 5,
+    "influence_score": 0.36990293860435486,
+    "top_activations": [
+      {
+        "trigger": "::",
+        "score": 28.25,
+        "context": " the body object if its parent element is not positioned\u2014using the IHTMLStyle::top and IHTMLStyle::left properties. relative Object is positioned according to"
+      },
+      {
+        "trigger": "::",
+        "score": 27.25,
+        "context": "<bos>Text::UnicodeBox::Text - Objects to describe text rendering\u23ceThis module is part of the low level interface to Text::UnicodeBox; you probably don"
+      },
+      {
+        "trigger": "::",
+        "score": 27.75,
+        "context": " is positioned according to the normal flow, and then offset by the IHTMLStyle::top and IHTMLStyle::left properties. fixed Windows Internet Explorer 7"
+      },
+      {
+        "trigger": "::",
+        "score": 11.81,
+        "context": "');\u23ceCrypt::OpenPGP::Key provides base class functionality for all Crypt::OpenPGP public and secret keys. It functions as a factory class for"
+      },
+      {
+        "trigger": " ::",
+        "score": 9.38,
+        "context": " the official views of the Centers for Disease Control and Prevention.\u23ceIDPH Home :: A-Z Index :: What We Do :: News Archive :: Calendar :: Definitions"
+      }
+    ],
+    "promotes": [
+      "pannt",
+      " natuur",
+      "\uc561",
+      "\u0561\u0566",
+      "<bos>"
+    ],
+    "demotes": [
+      "\ue315",
+      "GEBURTSDATUM",
+      "abestanden",
+      "AndEndTag",
+      " snippetHide"
+    ]
+  },
+  {
+    "id": "0_214_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.39591899514198303,
+    "top_activations": [
+      {
+        "trigger": " Lord",
+        "score": 22.38,
+        "context": " begin to sweep the Nephites off the earth\u23ceHave you ever felt that the Lord wanted you to change something in your life? Do you think He has encouraged"
+      },
+      {
+        "trigger": " Lord",
+        "score": 22.38,
+        "context": " Cornerstone\".\u23ceThe reverent and worshipful fear (respect) of the Lord is the \"beginning\" of knowledge.(foundation)\u23ceHe \"lays\""
+      },
+      {
+        "trigger": " Lord",
+        "score": 22.38,
+        "context": " and discipleship \u2013 Who is worthy? Who dwells with, and in, the Lord? The account contains a momentous line: \u2018Jesus said to them, \u2018"
+      },
+      {
+        "trigger": " Lord",
+        "score": 22.25,
+        "context": ". \"And every wise-hearted among you shall come and make all that the Lord hath commanded\" (Exod. xxxv. 10);\" And"
+      },
+      {
+        "trigger": " Lord",
+        "score": 22.5,
+        "context": "8:2 to be holy: You shall be holy, for I, the Lord your God, am holy. Holiness--kedushah--is a theological"
+      }
+    ],
+    "promotes": [
+      "\u800c\u975e",
+      "AnchorStyles",
+      " '';\r",
+      "TypedDataSet",
+      "principalColumn"
+    ],
+    "demotes": [
+      "andExpect",
+      "ilitary",
+      " podjela",
+      "vited",
+      " calendriers"
+    ]
+  },
+  {
+    "id": "6_3840_7",
+    "layer": 6,
+    "ctx_idx": 7,
+    "influence_score": 0.3414837419986725,
+    "top_activations": [
+      {
+        "trigger": " Sweden",
+        "score": 21.88,
+        "context": "<bos>Who says wheelchairs have to be boring? A sweet new ride developed at Sweden's Lule\u00e5 University of Technology features a cutting edge navigational laser that lets"
+      },
+      {
+        "trigger": " Denmark",
+        "score": 19.38,
+        "context": " participation of 24 Member States including (Albania, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland,"
+      },
+      {
+        "trigger": " Sweden",
+        "score": 19.0,
+        "context": " been ranked 56 out of 81 countries in the annual Web Index. Sweden, Norway, UK & USA are in the top 4 positions."
+      },
+      {
+        "trigger": "son",
+        "score": 20.12,
+        "context": " the light and still get your Zs.\u201d\u23cePreviously: Can adjusting your mobile device\u2019s brightness help promote better sleep?\u23cePhoto by Johan Larrson"
+      },
+      {
+        "trigger": " Swedish",
+        "score": 21.62,
+        "context": " half of the Nobel Prize in Physics in 1986. The Royal Swedish Academy of Sciences bestowed the other half of the prestigious award to Ernst Ruska"
+      }
+    ],
+    "promotes": [
+      "L\u00e4hteet",
+      "\">'",
+      " tartalomaj\u00e1nl\u00f3",
+      "\">${",
+      "<bos>"
+    ],
+    "demotes": [
+      " onCancelled",
+      "borderSide",
+      " resourceCulture",
+      "versch",
+      "AISSEE"
+    ]
+  },
+  {
+    "id": "3_8236_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3220633566379547,
+    "top_activations": [
+      {
+        "trigger": " -",
+        "score": 40.0,
+        "context": " December 8, 2013\u23ceThe Associated Press\u23ceLOS ANGELES - In a Mars first, the Curiosity rover drilled into a rock and prepared to"
+      },
+      {
+        "trigger": "\u2014",
+        "score": 41.25,
+        "context": "rizo Plain National Monument's Plan Comes Up Short for Conservation\u23ceSAN FRANCISCO\u2014 The Interior Department has put in place a 20-year plan for"
+      },
+      {
+        "trigger": ".\u2014",
+        "score": 40.0,
+        "context": "4\u23ceThe iceman cometh to U-M\u23ceANN ARBOR, Mich.\u2014No air-conditioning, frozen or refrigerated foods, iced drinks or ice cream"
+      },
+      {
+        "trigger": " \u2014",
+        "score": 39.0,
+        "context": " to its name, malodorous bug invades many area homes\u23ceDOVER \u2014 A small insect notorious for generating big headaches around the Seacoast is once again"
+      },
+      {
+        "trigger": " \u2014",
+        "score": 43.75,
+        "context": "\u23ceExperts to Offer Advice on Urban Deer Overpopulation\u23ceSAN MARCOS, Texas \u2014 In many Texas communities, too much of a good thing can be a problem"
+      }
+    ],
+    "promotes": [
+      "A",
+      "U",
+      "S",
+      " The",
+      "The"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      "AndEndTag",
+      " betweenstory",
+      " '{@",
+      "IVEREF"
+    ]
+  },
+  {
+    "id": "18_14396_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3398168683052063,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 60.5,
+        "context": " have been published as a cover story in the highly esteemed journal Nature Geoscience.\u23ce\"We have managed to get an overview of the glacial evolution over a period"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 56.0,
+        "context": ".\u23ceWater in Denmark costs $6.70 per cubic meter. That\u2019s about 2.5 cents per gallon\u2013quite a bit more than"
+      },
+      {
+        "trigger": "gj",
+        "score": 57.0,
+        "context": " forunderlig Ilen med Alt, der lever i mig, og egentlig udgj\u00f8r min Grund-Characteer! jo interessantere en Bog er"
+      },
+      {
+        "trigger": " number",
+        "score": 59.0,
+        "context": " right help to the most vulnerable population groups.\u23ceTherefore Denmark cooperates with a number of humanitarian organisations to supply emergency aid that is swift and efficient.\u23ceDanish"
+      },
+      {
+        "trigger": " l\u00e6",
+        "score": 53.5,
+        "context": " noget Nyt, for atter at komme til et andet; hver Aften jeg l\u00e6gger mig til Hvile, higer jeg efter den n\u00e6ste Dag, \u00f8nsker"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      "\u043d\u043e\u0432\u043d\u0438\u0448",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "ksikon",
+      " onCancelled"
+    ],
+    "demotes": [
+      "kapet",
+      "WebVitals",
+      " estim\u00e9s",
+      "f\u00f8lgelig",
+      "}]);"
+    ]
+  },
+  {
+    "id": "18_1545_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.37395143508911133,
+    "top_activations": [
+      {
+        "trigger": " Dutch",
+        "score": 46.0,
+        "context": "<bos>Centuries after the Dutch Golden Age, the Netherlands was home to another painter who captured the world's imagination: Vincent Van Gough. In his early life"
+      },
+      {
+        "trigger": "5",
+        "score": 59.0,
+        "context": " in 1941, and first opened for public use in 1950. The Metro has since grown to incorporate more than one hundred stations"
+      },
+      {
+        "trigger": " at",
+        "score": 45.5,
+        "context": " at the age of 34, Linnaeus was appointed professor of medicine and botany at the University of Uppsala in Sweden. In this capacity he took over the university"
+      },
+      {
+        "trigger": " Norwe",
+        "score": 44.0,
+        "context": "g at Camp Randall, near Madison, Wisconsin. The majority of its members were Norwegians immigrants (some records state as many as 90%), with the"
+      },
+      {
+        "trigger": " Captain",
+        "score": 48.5,
+        "context": " Norway she was known as the Fjeld of T\u00f8nsberg and her master was Captain Herman Andersen. In Sweden her name was Gustav of Gothenburg.\u23ceThe"
+      }
+    ],
+    "promotes": [
+      "\u745e\u5178",
+      "Sweden",
+      " Swedish",
+      " unknownFields",
+      " Sweden"
+    ],
+    "demotes": [
+      ">{@",
+      " springfox",
+      "Portale",
+      "awtextra",
+      "keyDown"
+    ]
+  },
+  {
+    "id": "18_14630_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.250652939081192,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 60.0,
+        "context": " Writers\u23ceCopenhagen, denmark (SPX) Jun 04, 2012\u23ceThe glaciers in southeast Greenland are retreating rapidly with the"
+      },
+      {
+        "trigger": " ",
+        "score": 62.0,
+        "context": " officials planned to deport the Danish Jews while martial law was in place. On September 28, 1943, a German businessman warned Danish authorities"
+      },
+      {
+        "trigger": " ",
+        "score": 62.0,
+        "context": " the Danish Jews while martial law was in place. On September 28, 1943, a German businessman warned Danish authorities of the impending operation"
+      },
+      {
+        "trigger": " at",
+        "score": 60.0,
+        "context": " be enough to pass on the bugs.\u23ceNiels H\u00f8iby and his colleagues at the University of Copenhagen suggest that doctors might have to limit the use of the"
+      },
+      {
+        "trigger": "gaard",
+        "score": 59.5,
+        "context": " and the risk of developing it.\u23ceAndersen JH, Kaergaard A, Frost P, et al. Physical, psychosocial, and individual risk factors for"
+      }
+    ],
+    "promotes": [
+      "ksikon",
+      " Darum",
+      " Copenhagen",
+      " it\u017felf",
+      " Danemark"
+    ],
+    "demotes": [
+      "skapet",
+      " estim\u00e9s",
+      "kapet",
+      " brukt",
+      " extra"
+    ]
+  },
+  {
+    "id": "18_1545_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.2958439588546753,
+    "top_activations": [
+      {
+        "trigger": " Dutch",
+        "score": 46.0,
+        "context": "<bos>Centuries after the Dutch Golden Age, the Netherlands was home to another painter who captured the world's imagination: Vincent Van Gough. In his early life"
+      },
+      {
+        "trigger": "5",
+        "score": 59.0,
+        "context": " in 1941, and first opened for public use in 1950. The Metro has since grown to incorporate more than one hundred stations"
+      },
+      {
+        "trigger": " at",
+        "score": 45.5,
+        "context": " at the age of 34, Linnaeus was appointed professor of medicine and botany at the University of Uppsala in Sweden. In this capacity he took over the university"
+      },
+      {
+        "trigger": " Norwe",
+        "score": 44.0,
+        "context": "g at Camp Randall, near Madison, Wisconsin. The majority of its members were Norwegians immigrants (some records state as many as 90%), with the"
+      },
+      {
+        "trigger": " Captain",
+        "score": 48.5,
+        "context": " Norway she was known as the Fjeld of T\u00f8nsberg and her master was Captain Herman Andersen. In Sweden her name was Gustav of Gothenburg.\u23ceThe"
+      }
+    ],
+    "promotes": [
+      "\u745e\u5178",
+      "Sweden",
+      " Swedish",
+      " unknownFields",
+      " Sweden"
+    ],
+    "demotes": [
+      ">{@",
+      " springfox",
+      "Portale",
+      "awtextra",
+      "keyDown"
+    ]
+  },
+  {
+    "id": "18_7499_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.3381468951702118,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 43.5,
+        "context": " September, 1850), which restored a hierarchy to the Catholic church in England. It comprises the counties of Oxford, Stafford, Warwick, and Worcester"
+      },
+      {
+        "trigger": " throughout",
+        "score": 50.5,
+        "context": " as Lake Baikal and as far north as the Arctic coast. It is widespread throughout, with the exception of arid steppe and desert areas. In the Mediterranean,"
+      },
+      {
+        "trigger": " of",
+        "score": 50.0,
+        "context": " naturally produced large grains (seeds) that were tasty and nourishing. In other parts of the world, between 8000 BC and 300"
+      },
+      {
+        "trigger": " of",
+        "score": 44.5,
+        "context": ").\u23ce- Origin is too complex for it to be native to only certain parts of the world.\u23ce- Other violets are its relatives.\u23ce- Annual,"
+      },
+      {
+        "trigger": " in",
+        "score": 46.5,
+        "context": " been designated a nature preserve, are one of the premier birding places in all of the Balearics. The resident species are supplemented by hundreds of migrating birds"
+      }
+    ],
+    "promotes": [
+      "setVerticalGroup",
+      " Africa",
+      " India",
+      " England",
+      " Europe"
+    ],
+    "demotes": [
+      "MLLoader",
+      "\uc36c",
+      "BASEPATH",
+      " '<?",
+      " Danes"
+    ]
+  },
+  {
+    "id": "18_14396_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.31597456336021423,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 60.5,
+        "context": " have been published as a cover story in the highly esteemed journal Nature Geoscience.\u23ce\"We have managed to get an overview of the glacial evolution over a period"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 56.0,
+        "context": ".\u23ceWater in Denmark costs $6.70 per cubic meter. That\u2019s about 2.5 cents per gallon\u2013quite a bit more than"
+      },
+      {
+        "trigger": "gj",
+        "score": 57.0,
+        "context": " forunderlig Ilen med Alt, der lever i mig, og egentlig udgj\u00f8r min Grund-Characteer! jo interessantere en Bog er"
+      },
+      {
+        "trigger": " number",
+        "score": 59.0,
+        "context": " right help to the most vulnerable population groups.\u23ceTherefore Denmark cooperates with a number of humanitarian organisations to supply emergency aid that is swift and efficient.\u23ceDanish"
+      },
+      {
+        "trigger": " l\u00e6",
+        "score": 53.5,
+        "context": " noget Nyt, for atter at komme til et andet; hver Aften jeg l\u00e6gger mig til Hvile, higer jeg efter den n\u00e6ste Dag, \u00f8nsker"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      "\u043d\u043e\u0432\u043d\u0438\u0448",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "ksikon",
+      " onCancelled"
+    ],
+    "demotes": [
+      "kapet",
+      "WebVitals",
+      " estim\u00e9s",
+      "f\u00f8lgelig",
+      "}]);"
+    ]
+  },
+  {
+    "id": "18_14630_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.24647781252861023,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 60.0,
+        "context": " Writers\u23ceCopenhagen, denmark (SPX) Jun 04, 2012\u23ceThe glaciers in southeast Greenland are retreating rapidly with the"
+      },
+      {
+        "trigger": " ",
+        "score": 62.0,
+        "context": " officials planned to deport the Danish Jews while martial law was in place. On September 28, 1943, a German businessman warned Danish authorities"
+      },
+      {
+        "trigger": " ",
+        "score": 62.0,
+        "context": " the Danish Jews while martial law was in place. On September 28, 1943, a German businessman warned Danish authorities of the impending operation"
+      },
+      {
+        "trigger": " at",
+        "score": 60.0,
+        "context": " be enough to pass on the bugs.\u23ceNiels H\u00f8iby and his colleagues at the University of Copenhagen suggest that doctors might have to limit the use of the"
+      },
+      {
+        "trigger": "gaard",
+        "score": 59.5,
+        "context": " and the risk of developing it.\u23ceAndersen JH, Kaergaard A, Frost P, et al. Physical, psychosocial, and individual risk factors for"
+      }
+    ],
+    "promotes": [
+      "ksikon",
+      " Darum",
+      " Copenhagen",
+      " it\u017felf",
+      " Danemark"
+    ],
+    "demotes": [
+      "skapet",
+      " estim\u00e9s",
+      "kapet",
+      " brukt",
+      " extra"
+    ]
+  },
+  {
+    "id": "19_904_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.36426451802253723,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 29.25,
+        "context": " called `eurodemos' outside Europe, as most of the demoscene activity seems to have gathered in northern Europe and especially Scandinavia. See also intro, dentro."
+      },
+      {
+        "trigger": " in",
+        "score": 25.25,
+        "context": " the so-called Calibration Home Base (CHB). This is the only laboratory in Europe capable of precisely characterizing instruments weighing up to 350 kg:"
+      },
+      {
+        "trigger": " of",
+        "score": 27.0,
+        "context": " a significant trading city, besides it was a short distance away from the neighboring countries of Copenhagen, Denmark, Norway and Oslo. Gothenburg can be accessed by air,"
+      },
+      {
+        "trigger": " Dutch",
+        "score": 25.25,
+        "context": "<bos>|Zonation of macrofauna across sandy beaches and surf zones along the Dutch coast|\u23ce|Janssen, G.; Mulder, S. (20"
+      },
+      {
+        "trigger": " ",
+        "score": 25.75,
+        "context": "00, or 0.2 percent, out of a general population of 9 million. The\u23cemajority, approximately 10,000"
+      }
+    ],
+    "promotes": [
+      " propOrder",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "WillAppear",
+      " Audiodateien",
+      "AsUp"
+    ],
+    "demotes": [
+      "\u0642\u0627\u06cc\u0646\u0627\u0642\u0644\u0627\u0631",
+      " artikkelen",
+      "veras",
+      " m\u00e9dicas",
+      " \u751f\u547d\u5468\u671f"
+    ]
+  },
+  {
+    "id": "19_5699_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3671005666255951,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 39.0,
+        "context": " been ranked 56 out of 81 countries in the annual Web Index. Sweden, Norway, UK & USA are in the top 4 positions."
+      },
+      {
+        "trigger": " by",
+        "score": 34.5,
+        "context": " Zealand and Australia came at the top with 57% score followed by Ireland and Canada second equal and the United States and Switzerland third. It should be noted"
+      },
+      {
+        "trigger": ",",
+        "score": 38.5,
+        "context": ", Germany, Greece, Italy, Japan, Luxembourg, Netherlands, Norway, Portugal, Spain, Turkey, the United Kingdom and the United States.\u23ceLaws and"
+      },
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": " income inequality in the United States. Countries like Australia, Belgium, France, Ireland and New Zealand have both higher absolute minimum wages and minimum wages that fall closer to"
+      },
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": " still in effect.\u23ceToshiba Machine Company of Japan and Kongsberg Group of Norway supplied eight computer-guided propeller milling machines to the Soviet Union between "
+      }
+    ],
+    "promotes": [
+      "alipay",
+      "IsDeleted",
+      " United",
+      "FunctionFlags",
+      " localVar"
+    ],
+    "demotes": [
+      "FormTagHelper",
+      "ValueStyle",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " fadeIn",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641"
+    ]
+  },
+  {
+    "id": "20_15360_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.25853413343429565,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 41.5,
+        "context": " administration gets its act together. Along with Japan, Canada, New Zealand and Australia, the country has formally requested that the conference of parties to the un Framework Convention"
+      },
+      {
+        "trigger": " \u2013",
+        "score": 46.0,
+        "context": " for CO2 emissions per capita \u2013 the US (#1), China (#2), and India (#5) [UCSUSA].\u23ce- Unless we move quickly to"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": " army captured Mexico City, forcing Mexico to agree to the sale of its northern territories to the U.S.\u23ceTerritorial expansion of the United States to the"
+      },
+      {
+        "trigger": " between",
+        "score": 54.0,
+        "context": " the first time that blood was drawn in the Olympic Games. During the water polo game between the USSR and Hungary, the Russian athlete Valentin Propokov cried out"
+      },
+      {
+        "trigger": " by",
+        "score": 41.0,
+        "context": " American Independence|\u23ce|b. a treaty of 1763 signed by Britain, France, and Spain that ended their involvement in the Seven Years'"
+      }
+    ],
+    "promotes": [
+      " Italy",
+      " Ireland",
+      " France",
+      " Australia",
+      " Canada"
+    ],
+    "demotes": [
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "RegressionTest",
+      "ParallelGroup",
+      "tvguidetime",
+      " Audiodateien"
+    ]
+  },
+  {
+    "id": "8_13766_5",
+    "layer": 8,
+    "ctx_idx": 5,
+    "influence_score": 0.3792058229446411,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 34.75,
+        "context": " comparison is that Mitsubishi became in imperial Japan what the Krupp steel and armaments corporation was to Germany: a fascist war machine. But whereas Krupp chief Alfried"
+      },
+      {
+        "trigger": " as",
+        "score": 37.25,
+        "context": " the statistical instrument that measures inflation.\u23ceThe CPI is to inflation as a thermometer is to temperature, a barometer is to atmospheric pressure, and a speedometer is to"
+      },
+      {
+        "trigger": " a",
+        "score": 41.0,
+        "context": " countless times before: pipelining is to a CPU as the assembly line is to a car plant. A CPU's pipeline is not a physical pipe that"
+      },
+      {
+        "trigger": " to",
+        "score": 46.0,
+        "context": " will stir critical thinking in your classroom. Beaver is to build, as spider is to spin. I read this analogy and thought about other things that animals build."
+      },
+      {
+        "trigger": " in",
+        "score": 20.25,
+        "context": " D on your answer sheet to indicate the word or phrase that is OPPOSITE in meaning to the underlined part in each of the following questions.\u23ceQuestion "
+      }
+    ],
+    "promotes": [
+      "makeConstraints",
+      "rosoft",
+      "duled",
+      "########.",
+      "\"}\")"
+    ],
+    "demotes": [
+      "invokeLater",
+      "NOPQRST",
+      "peq",
+      ":\u2728",
+      " invokingState"
+    ]
+  },
+  {
+    "id": "21_10660_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.39477062225341797,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 57.25,
+        "context": " Croatia, the former Yugoslav Republic of Macedonia, Greece, Hungary, Serbia, Montenegro, Slovakia, Slovenia and Republic of Moldova. In 2 countries only certain regions"
+      },
+      {
+        "trigger": ",",
+        "score": 60.25,
+        "context": " 14 countries of the EU which included Belgium, Bulgaria, Croatia, England, Estonia, France, Greece, Malta, Netherlands, Poland, Portugal, Slovenia"
+      },
+      {
+        "trigger": ",",
+        "score": 63.25,
+        "context": " Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Luxembourg, the Netherlands, Norway, Poland, Portugal,"
+      },
+      {
+        "trigger": ",",
+        "score": 60.25,
+        "context": " included Belgium, Bulgaria, Croatia, England, Estonia, France, Greece, Malta, Netherlands, Poland, Portugal, Slovenia, Spain and Sweden.\u23ceAlmost "
+      },
+      {
+        "trigger": ",",
+        "score": 60.25,
+        "context": ", Croatia, England, Estonia, France, Greece, Malta, Netherlands, Poland, Portugal, Slovenia, Spain and Sweden.\u23ceAlmost 9/10"
+      }
+    ],
+    "promotes": [
+      "#+#",
+      "Personensuche",
+      "^(@)",
+      "={({",
+      "HtmlAttribute"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "J\u00een",
+      "readdir",
+      "back",
+      " c"
+    ]
+  },
+  {
+    "id": "15_10550_4",
+    "layer": 15,
+    "ctx_idx": 4,
+    "influence_score": 0.3347364068031311,
+    "top_activations": [
+      {
+        "trigger": "Canadian",
+        "score": 39.5,
+        "context": "11 at 8:39 am, by Strathcona Park Lodge\u23ceCanadian youngsters should spend no more than two hours daily in front of computer and TV"
+      },
+      {
+        "trigger": " Mexico",
+        "score": 37.5,
+        "context": " migratory range.\u23ceTwo-thirds of the Chihuahuan Desert lies in Mexico. Less than 15 percent is grassland and less than half of that"
+      },
+      {
+        "trigger": " Australian",
+        "score": 37.5,
+        "context": " bone structure. Find out why your entire skeleton is wired for sound.\u23ceAn Australian artist decided to make an audio art exhibit that could have been part of the"
+      },
+      {
+        "trigger": " Australia",
+        "score": 39.0,
+        "context": "per is the largest of all coral reef dwelling bony fishes in the world.In Australia it is recorded from the southern coast of Western Australia, around the tropical north"
+      },
+      {
+        "trigger": " Australian",
+        "score": 39.5,
+        "context": " to worry too much about exercise. However according to Professor Dick Telford of the Australian National University, findings show that a lack of fitness has an effect on death"
+      }
+    ],
+    "promotes": [
+      " bidra",
+      "IsContent",
+      " flag",
+      "orsz\u00e1",
+      " \u064a\u062a\u064a\u0645\u0647"
+    ],
+    "demotes": [
+      "InjectAttribute",
+      "cerely",
+      "Xna",
+      " \"$@\"",
+      "enciales"
+    ]
+  },
+  {
+    "id": "14_11187_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.241384819149971,
+    "top_activations": [
+      {
+        "trigger": " Stockholm",
+        "score": 36.5,
+        "context": ", United Nations Development Program, Stimson Center, Global Environment Facility, and Stockholm International Water Institute described the opportunities and challenges surrounding international water cooperation.\u23ceNot"
+      },
+      {
+        "trigger": " Swedish",
+        "score": 35.0,
+        "context": "\u23ceEnglish, , 1,254kb\u23ceCompared to their native Swedish peers, immigrant students, on average, have weaker education outcomes at all levels"
+      },
+      {
+        "trigger": " Swedish",
+        "score": 38.5,
+        "context": "<bos>17 October 1984\u23ceRoyal Swedish Academy of Sciences has decided to award the\u23ce1984 Nobel Prize in chemistry to\u23ceProfessor"
+      },
+      {
+        "trigger": " Norwegian",
+        "score": 37.0,
+        "context": " reduce, reuse, recycle ... repair\u23ceIn 2004, the Norwegian Nobel committee made a revolutionary decision. In awarding the Nobel Peace Prize to an"
+      },
+      {
+        "trigger": " Norwegian",
+        "score": 35.0,
+        "context": " two years.\u23ceAsked about the impact of the U.S. election, Norwegian Prime Minister Jens Stoltenberg, co-chair of the U.N."
+      }
+    ],
+    "promotes": [
+      "Referanser",
+      " ainfi",
+      " kasarigan",
+      " lenker",
+      "enumii"
+    ],
+    "demotes": [
+      "Personendaten",
+      " \u0434",
+      " seier",
+      "\u30eb\u306e",
+      " m\u00e5ned"
+    ]
+  },
+  {
+    "id": "7_12172_7",
+    "layer": 7,
+    "ctx_idx": 7,
+    "influence_score": 0.3656853437423706,
+    "top_activations": [
+      {
+        "trigger": "ke",
+        "score": 14.44,
+        "context": " Prize 1990\u23ceAward Ceremony Speech\u23cePresentation Speech by Gidske Anderson, Chairperson of the Norwegian Nobel Committee\u23ceYour Royal Highnesses, Your"
+      },
+      {
+        "trigger": "FOLK",
+        "score": 13.31,
+        "context": "<bos>NORFOLK - Earlier this month the fourth-grade K-Kids service organization from Norwood-Norfolk Central School took part in a tobacco use prevention activity.\u23ce"
+      },
+      {
+        "trigger": "utoff",
+        "score": 15.56,
+        "context": " Greenville Loop Road, is very different from Military Cutoff Road, which passes Mayfaire and Landfall. That highway dates from World War II.\u23ceFonvi"
+      },
+      {
+        "trigger": "kov",
+        "score": 22.25,
+        "context": " they might be expected to risk contact with drug resistant bacteria\", says Professor Robert Skov from the Statens Serum Institut in Copenhagen, Denmark.\u23ce\"The spread"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 14.69,
+        "context": " survive the harsh conditions of the northern winter. A new study from the University of Copenhagen has hammered the point home even further. It stated that some Scandinavian evergreens"
+      }
+    ],
+    "promotes": [
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      " kasarigan",
+      "Gambas",
+      "Anhalt",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      "(\");",
+      "\u0642\u0627\u06cc\u0646\u0627\u0642\u0644\u0627\u0631",
+      " fleste",
+      "englanniksi",
+      "\u0446\u0443"
+    ]
+  },
+  {
+    "id": "8_16086_7",
+    "layer": 8,
+    "ctx_idx": 7,
+    "influence_score": 0.35106125473976135,
+    "top_activations": [
+      {
+        "trigger": " Copenhagen",
+        "score": 10.38,
+        "context": " farming family, Jens Haven was in his youth apprenticed to a joiner in Copenhagen who belonged to the Moravian Church. In June 1748"
+      },
+      {
+        "trigger": " Denmark",
+        "score": 10.38,
+        "context": " and his questioning of Christianity - in particular, its role and set-up in Denmark and the rest of the world. He is also acclaimed for his emphasis on"
+      },
+      {
+        "trigger": " sore",
+        "score": 11.25,
+        "context": " Becoming sexually active at a young age.\u23ce- If your partner has a cold sore and performs oral sex, you can get genital herpes.\u23ceWomen are more"
+      },
+      {
+        "trigger": " Danish",
+        "score": 12.12,
+        "context": " modelling;\u23ce- fen hydrology;\u23ceHydrological effects of groundwater abstraction near a Danish river valley have been assessed by integrated hydrological modelling. The study site contains groundwater"
+      },
+      {
+        "trigger": " Danish",
+        "score": 11.38,
+        "context": " from?\u23ceGillian Butler and colleagues of School of Agriculture and Institute for Research on Environment and Sustainability, Newcastle University and the Danish Institute for Agricultural Science, carried"
+      }
+    ],
+    "promotes": [
+      "\ue315",
+      " mu\u017ft",
+      "Virginia",
+      "memoized",
+      "marle"
+    ],
+    "demotes": [
+      " jScrollPane",
+      "+:+",
+      "GEBURTSDATUM",
+      "complexContent",
+      "Demografie"
+    ]
+  },
+  {
+    "id": "23_2040_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.36284083127975464,
+    "top_activations": [
+      {
+        "trigger": " Old",
+        "score": 30.25,
+        "context": "\" (compare German Kurzweil \"pastime,\" literally \"a short time;\" Old Norse skemta \"to amuse, entertain, amuse oneself,\" from sk"
+      },
+      {
+        "trigger": " favoured",
+        "score": 29.25,
+        "context": "<bos>The fortunes of war favoured Hrothgar. . . .\u23ceSo his mind turned to hall-building: he handed down orders\u23cefor men to work"
+      },
+      {
+        "trigger": ",",
+        "score": 39.75,
+        "context": " 2000 - 2014\u23ceOrigins Available: Dutch, English, German, Irish, Scottish\u23ceWhere did the Scottish Smith family come"
+      },
+      {
+        "trigger": " and",
+        "score": 39.75,
+        "context": " of the Name Alceste\u23ceMiscellaneous Info for Alceste\u23ceUsed in:English and French speaking countries\u23ceAdditional Info:French cognate of Alkes"
+      },
+      {
+        "trigger": " of",
+        "score": 39.0,
+        "context": "<bos>The First Large Emigration of the Armenians\u23ceThe fall of the city of Ani and the conquest of Armenia by the Seljuk Turks during the 11"
+      }
+    ],
+    "promotes": [
+      " Ireland",
+      " France",
+      " Germany",
+      " Greece",
+      " Italy"
+    ],
+    "demotes": [
+      "SharedDtor",
+      " ProtoMessage",
+      "ReusableCell",
+      "BagLayout",
+      " The\u017fe"
+    ]
+  },
+  {
+    "id": "23_10151_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3117995262145996,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 98.5,
+        "context": " in Denmark\u23ceThe ancient See of Viborg, in Denmark, comprised the Province of Viborg, the town of Aalborg, and the hundreds of Fles"
+      },
+      {
+        "trigger": " of",
+        "score": 89.5,
+        "context": ", a professional singer/songwriter-turned-neuroscientist at the University of Gothenburg in Sweden.\u23ceVickhoff is fascinated by music's effect"
+      },
+      {
+        "trigger": " of",
+        "score": 125.0,
+        "context": ". Skagerrak means in Dutch approximately 'Skagen Channel'. The Danish town of Skagen (The Skaw) lies at the northern tip of the Danish"
+      },
+      {
+        "trigger": " of",
+        "score": 153.0,
+        "context": "<bos>The Danish city of Elsinore is located on the northern coast of Sealand opposite the city of Helsingborg in Sweden. Two ferry lines link the two"
+      },
+      {
+        "trigger": " near",
+        "score": 157.0,
+        "context": " Trelleborg fortresses include Trelleborg near Slagelse, Fyrkat near Hobro, Aggersborg near L\u00f8gst\u00f8r and Nonnebakken in"
+      }
+    ],
+    "promotes": [
+      "\u00fcrtel",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "uscular",
+      "withIdentifier",
+      " gratuites"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " \u0627\u0633\u062a\u0646\u0627\u062f\u0649",
+      "P\u00e9ri",
+      " AssemblyCulture",
+      "ResumeLayout"
+    ]
+  },
+  {
+    "id": "23_11328_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3970649540424347,
+    "top_activations": [
+      {
+        "trigger": "in",
+        "score": 41.0,
+        "context": "\u23ceand six technology parks. Some 70% of foreign companies operating\u23cein Finland have settled in the Helsinki region.\u23ceThe city is bilingual\u23ce,"
+      },
+      {
+        "trigger": " in",
+        "score": 42.0,
+        "context": " needed.\u201d\u23ceIn Thailand\u2019s cities, people commonly use Facebook or LINE, the fast-growing social network developed in Japan in 2011."
+      },
+      {
+        "trigger": ",",
+        "score": 41.0,
+        "context": " of Friends of the Earth International, Nnimmo Bassey.\u23ceDURBAN, South Africa, Dec 5 (Tierram\u00e9rica).- Science tells us that"
+      },
+      {
+        "trigger": " in",
+        "score": 42.75,
+        "context": " in Kenya, the Ningaloo Coast in Australia and the Ogasawara Islands in Japan have been inscribed on the World Heritage List, following the recommendations of IUCN"
+      },
+      {
+        "trigger": " of",
+        "score": 43.0,
+        "context": " Barrier Reef is the largest coral reef in the world, roughly parallel to the coast of Queensland, Australia, stretching over 2000 km. Australia has"
+      }
+    ],
+    "promotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "PerformLayout",
+      " @\"/",
+      " propOrder",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " Jefus",
+      " poffe",
+      " plea\u017fure",
+      " the",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "23_14350_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3007405400276184,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": ". I don't\u23cesee any signs of gum infection and none of them\u23ceare loose as nearly as I can tell, so what is this\u23cebrown"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": " person access to a secure area. This tutorial will shows you how to build a\u23ceface recognition program using Matlab.\u23ceMotivation and Audience\u23ceThis tutorial has been"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 114.0,
+        "context": "traveled on it. It had not many comforts; several days and nights were\u23cerequired for the New York trip; yet it was a wonderful and beautiful\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": "ged north-northwestward late on 26 October, followed by a\u23cenorth-northeastward turn and acceleration on the 27th. During"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": " left\u23cefor about 300,000 light-years from\u23ceNGC 3628's warped, edge-on disk."
+      }
+    ],
+    "promotes": [
+      "P",
+      "p",
+      "I",
+      "in",
+      "to"
+    ],
+    "demotes": [
+      "\u00e6us",
+      "ine\u017fs",
+      "ratulations",
+      "BibitemShut",
+      "iffance"
+    ]
+  },
+  {
+    "id": "24_289_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.33299875259399414,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 81.5,
+        "context": "KPs\", \"panics\" or compared to a BSOD - Blue Screen of Death on Windows operating systems. To recover from a kernel panic you will need"
+      },
+      {
+        "trigger": "lau",
+        "score": 68.5,
+        "context": " Claudio (Italian), Klaudijs (Latvian), Klaudia, Klaudiusz (Polish), Cl\u00e1udia, Cl\u00e1udio (Portuguese),"
+      },
+      {
+        "trigger": "atin",
+        "score": 70.5,
+        "context": " is measured in MCUs (milk clotting units) or GDUs (gelatin dissolving units). One GDU equals approximately 1.5 MCU. Strong"
+      },
+      {
+        "trigger": "-",
+        "score": 94.5,
+        "context": "one or growth-regulating weedkillers (such as 2,4-D from lawn weedkillers or rough grassland weedkillers like Vitax"
+      },
+      {
+        "trigger": " care",
+        "score": 80.0,
+        "context": " MD, developed a program called COPE-D (the Collaborative Oncology Program to Enhance Depression care). Their work was motivated by the evidence that cancer patients who also"
+      }
+    ],
+    "promotes": [
+      "Delivered",
+      " Delay",
+      " Dessert",
+      " Dilution",
+      " Deposition"
+    ],
+    "demotes": [
+      "TestingModule",
+      "nativeElement",
+      "PrototypeOf",
+      "webElementGuid",
+      "apimachinery"
+    ]
+  },
+  {
+    "id": "17_11087_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.37660983204841614,
+    "top_activations": [
+      {
+        "trigger": " eruption",
+        "score": 29.25,
+        "context": " years, rivaling that of the famous 1783 Laki eruption in Iceland. All these climatic effects have been attributed to an eruption in the New"
+      },
+      {
+        "trigger": " in",
+        "score": 23.75,
+        "context": " help from modern-day religious, like the Medical Sisters of St. Joseph working in Kerala. These sisters work to provide care and comfort, often under difficult circumstances"
+      },
+      {
+        "trigger": " Bogor",
+        "score": 23.75,
+        "context": " the Center for International Forestry Research (CIFOR), a Future Harvest Center based in Bogor, Indonesia-suggests that the jump in the worldwide demand for Brazilian beef"
+      },
+      {
+        "trigger": ",",
+        "score": 24.0,
+        "context": " a suicidal, drug-addled ex-hacker residing without work in Chiba City, Japan. Almost from the outset, we see Case as a world-we"
+      },
+      {
+        "trigger": " eruption",
+        "score": 29.25,
+        "context": " thousand years, rivaling that of the famous 1783 Laki eruption in Iceland. All these climatic effects have been attributed to an eruption in the"
+      }
+    ],
+    "promotes": [
+      " Malaysian",
+      " Philippines",
+      " Philippine",
+      " Indian",
+      " India"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      "RTDA",
+      "ConstraintMaker",
+      "WindowConstants",
+      "tagHelperRunner"
+    ]
+  },
+  {
+    "id": "24_318_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.29061159491539,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 116.5,
+        "context": " theories. The author later wrote a Dr.-phil.-thesis on this subject: \"Die Methode des Gedankenexperiments. Untersuchung zur Rationalit\u00e4t naturwissenschaftlicher Theori"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 118.5,
+        "context": " made of Baroque-style architecture and also sometimes called as Elbflorenz.\u23ceCold-moderate and continental climatic conditions surfaces the city of Dresden Germany . The"
+      },
+      {
+        "trigger": " (\u201c",
+        "score": 119.5,
+        "context": "falfa, clover, etc.) grown, harvested and dried as food for livestock. (\u201cStraw\u201d is the stalks of grain left after threshing, and, being"
+      },
+      {
+        "trigger": "\"",
+        "score": 122.5,
+        "context": " For more information or to reserve a space, call (800) 963-7070.\u23ce\"I will talk about what"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 121.5,
+        "context": "Education for and about Indigenous Peoples\u23ceThe Baiga People\u23ceCountries inhabited: India\u23ceLanguage family: Indo-European\u23ceLanguage branch: Eastern Hindi, Chhattis"
+      }
+    ],
+    "promotes": [
+      "Expedition",
+      "Fitment",
+      "Motorcycle",
+      "Groundwater",
+      "Surgery"
+    ],
+    "demotes": [
+      " Theodo",
+      " C\u00e6sar",
+      " Pseud",
+      " Ruf",
+      " Fiz"
+    ]
+  },
+  {
+    "id": "24_749_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3138958513736725,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 55.75,
+        "context": "\u23ceDr. Math Home ||\u23ceMiddle School ||\u23ceHigh School ||\u23ceDr. Math FAQ\u23ceSee also the\u23ceDr. Math FAQ:\u23ceBrowse High"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 48.25,
+        "context": " the connection between\u23ceCossa\u2019s Ferrarese works or Ercole de\u2019 Roberti\u2019s later Ferrarese\u23cepaintings and Crevalcore"
+      },
+      {
+        "trigger": ",",
+        "score": 46.75,
+        "context": "<bos>|Location||Atlanta, Georgia, USA|\u23ce|Land area||40 acres (16 ha)|\u23ce|Number of animals||1,5"
+      },
+      {
+        "trigger": " -",
+        "score": 39.25,
+        "context": " is the foundation of Share a Story - Shape a Future.\u23ceShare a Story - Shape a Future is a blog event for literacy. Throughout the week, blogging"
+      },
+      {
+        "trigger": ".",
+        "score": 55.25,
+        "context": " Hyde will break free from Dr. Jekyll's control puts all of London in grave peril.\u23ceRobert Louis Stevenson originally wrote Dr. Jekyll And Mr Hyde as"
+      }
+    ],
+    "promotes": [
+      " ainfi",
+      " automatiques",
+      " auroit",
+      " \u00e9toient",
+      " avoient"
+    ],
+    "demotes": [
+      "<bos>",
+      " Train",
+      " Dro",
+      "dale",
+      " FishBase"
+    ]
+  },
+  {
+    "id": "24_4707_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.28503504395484924,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 203.0,
+        "context": " fruit, Spondias dulcis\u23ceGNU Webster's 1913\u23ce- The fruit of a Polynesian anacardiaceous tree (Spondias"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 204.0,
+        "context": "lemie, colmey, coal whiting, etc. See pollock.\u23ce- n. The beshow or candlefish of Alaska.\u23ce- n"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 194.0,
+        "context": " Math FAQ:\u23cecalendar & days\u23ceof the week\u23ce3D and higher\u23ceBrowse Middle School Measurement\u23ceStars indicate particularly interesting answers or\u23cegood places to"
+      },
+      {
+        "trigger": "-",
+        "score": 189.0,
+        "context": " world file.\u23ceWhen this file is present, ArcView performs the image-to-world\u23cetransformation. The image-to-world transformation is a six"
+      },
+      {
+        "trigger": " \u201c",
+        "score": 189.0,
+        "context": " in warding off mosquito bites.\u23ceThe efficacy of the isolated compound\u2014called \u201ccallicarpenal\u201d\u2014was affirmed through tests simulating human skin. But these"
+      }
+    ],
+    "promotes": [
+      "e\u017f",
+      " d\u00e9tru",
+      "CHREIB",
+      "f\u00f6ren",
+      "\u2003\u2003("
+    ],
+    "demotes": [
+      " C\u00e6sar",
+      " Sopho",
+      " Phoen",
+      " Athenians",
+      " Confucian"
+    ]
+  },
+  {
+    "id": "24_6629_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3936220109462738,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 42.75,
+        "context": " personal cultural experiences. The program is based at the University of Ghana, Legon-Accra.\u23ceThe courses are taught by Dr. Abu Shardow Abar"
+      },
+      {
+        "trigger": "-",
+        "score": 42.75,
+        "context": " to one historical interpretation from this Civil War fact book) means south of the Mason-Dixon Line. One could also argue that because it fought for the North in"
+      },
+      {
+        "trigger": "-",
+        "score": 51.0,
+        "context": " seismic waves.\u23ceBoock put this together with the help of Josh Newsome-White, Brooke Bowers, Hannah Warren, George Redmond, Richie Stewart and Philip"
+      },
+      {
+        "trigger": "-",
+        "score": 47.5,
+        "context": ", allow me to follow up yesterday\u2019s post with more information about the Childs-Ripley incident at Charleston Arsenal in late November 1862."
+      },
+      {
+        "trigger": "-",
+        "score": 44.0,
+        "context": " Shower is caused by the Earth moving through the debris path left from the comet Swift-Tuttle. The source of the meteors appears to be the constellation Perseus"
+      }
+    ],
+    "promotes": [
+      "\"],\r",
+      "P",
+      "S",
+      "orgon",
+      "sikker"
+    ],
+    "demotes": [
+      "DockStyle",
+      "webElementXpaths",
+      "ValueStyle",
+      "RegressionTest",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902"
+    ]
+  },
+  {
+    "id": "24_15918_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.33644765615463257,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 43.0,
+        "context": " social rights. A series of austerity budgets, drawn up in conjunction with the IMF and EU, have been characterized by harsh cuts in social spending and a pronounced aversion"
+      },
+      {
+        "trigger": " in",
+        "score": 41.25,
+        "context": " had a formative influence on the tradition of statute law that has extended to modern times in Central Europe, especially in the German states, France, Belgium, the Netherlands"
+      },
+      {
+        "trigger": " the",
+        "score": 52.5,
+        "context": " which were first introduced into Europe in 1948, have thrived in the parks of the northeastern region of Liguria since the 1960"
+      },
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": "1945, some 2.6 million U.S. troops occupied much of Western Europe, including the former Axis territories of Italy, the Federal"
+      },
+      {
+        "trigger": " across",
+        "score": 50.5,
+        "context": " study(*), scientists investigated 40 organic and 40 conventional agricultural holdings across Germany's four agricultural regions. They focused exclusively on crop and dairy farms"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " \u017feveral",
+      " my\u017felf",
+      " it\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " euro",
+      " European",
+      " Euro",
+      "euro",
+      " Europe"
+    ]
+  },
+  {
+    "id": "25_286_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.2622348666191101,
+    "top_activations": [
+      {
+        "trigger": " In",
+        "score": 36.25,
+        "context": " U.S., hookworms and roundworms take top spot for dog parasites. In humans, roundworms transmitted from dog fur can cause ocular larva migrans ("
+      },
+      {
+        "trigger": " in",
+        "score": 33.75,
+        "context": "etal abnormalities, find experts\u23ceResearchers from University of Leeds, England together with colleagues in Paris, Rome, and San Diego established that a defective gene TMEM2"
+      },
+      {
+        "trigger": " medieval",
+        "score": 43.0,
+        "context": " was still in\u23ceuse in the 1950's. In medieval Japan building roads and\u23cebridges as an act of piety became almost an obsession"
+      },
+      {
+        "trigger": " expects",
+        "score": 39.5,
+        "context": " in The Hague on Wednesday.\u23ceAustralian Attorney General Mark Dreyfus said on Sunday he expects to win before the next southern hemisphere summer. The whaling fleet generally leaves"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": "tenberg??\u23ceDo you know where our Reher and Stoltenberg ancestors came from in Germany??\u23ceJohann Reher came from the town of Bebensee.\u23ce"
+      }
+    ],
+    "promotes": [
+      " @\"/",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "PerformLayout",
+      "makeConstraints",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      " Australia",
+      " Italy",
+      " Canada",
+      " France",
+      " Ireland"
+    ]
+  },
+  {
+    "id": "20_8290_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3431420922279358,
+    "top_activations": [
+      {
+        "trigger": " Swedish",
+        "score": 32.75,
+        "context": " social interaction and for identifying immediate emotional threats. In a new study scientists at the Swedish medical university Karolinska Institutet and the Welcome Trust Functional Imaging Laboratory in London"
+      },
+      {
+        "trigger": " at",
+        "score": 31.75,
+        "context": " many more people. This is shown by the Swedish Obese Subjects study carried out at the Sahlgrenska Academy, University of Gothenburg, Sweden, involving"
+      },
+      {
+        "trigger": " at",
+        "score": 32.0,
+        "context": " of a prominent Jewish banker. His father, Christian, became a professor of physiology at the University of Copenhagen and was nominated twice for the Nobel Prize.\u23ceEn"
+      },
+      {
+        "trigger": " in",
+        "score": 32.0,
+        "context": " Trelleborg fortresses include Trelleborg near Slagelse, Fyrkat near Hobro, Aggersborg near L\u00f8gst\u00f8r and Nonnebakken in"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": "3 and 2005. They were drawn from the cancer registries of Denmark, Finland, Iceland, Norway and Sweden.\u23ceIn all, they"
+      }
+    ],
+    "promotes": [
+      " Swedes",
+      " Brutus",
+      "TRIBUN",
+      " Apel",
+      "rrggbb"
+    ],
+    "demotes": [
+      "\ud83e\udd5e",
+      "orteur",
+      "Geographie",
+      "ERT",
+      " stesso"
+    ]
+  },
+  {
+    "id": "25_1104_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.37528130412101746,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 45.0,
+        "context": " Da'i Abu I-Qasim b. Hawshab Mansur al-Yaman sent his nephew al-Haytham as da'i (mission"
+      },
+      {
+        "trigger": ".",
+        "score": 42.5,
+        "context": " for various types and stages of cancer.\u23ceJeanet W. Blom, M.D., of the Leiden University Medical Center, Leiden, the Netherlands, and"
+      },
+      {
+        "trigger": ".",
+        "score": 45.5,
+        "context": " have difficulty solving them. I have found exactly what I was hoping for at G. Sarcone\u2019s website! In fact, most color blind people can easily"
+      },
+      {
+        "trigger": " Rachel",
+        "score": 51.0,
+        "context": " Or do you have a video you'd like to see featured in one of our deployments? Email me at Rachel.Immel@advantagemedia.com."
+      },
+      {
+        "trigger": "-",
+        "score": 46.0,
+        "context": " Home]\u23ce[German Genealogy Home]\u23ce|Coat of Arms of Schaumburg-Lippe\u23ce||Flag of Schaumburg-Lippe|\u23ce|\u00a9"
+      }
+    ],
+    "promotes": [
+      "+:+",
+      "Jeanne",
+      " surla",
+      "Harvey",
+      "Angelina"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "sphase",
+      "+)/",
+      "ricated",
+      "\u00e4mpfung"
+    ]
+  },
+  {
+    "id": "25_6667_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.2658819854259491,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 151.0,
+        "context": "Snapshot - Take pictures of the right objects to help George build a photo album. (Grades PreK-2)\u23ceDesign Squad \u2013 design & invention, motion"
+      },
+      {
+        "trigger": " \"",
+        "score": 157.0,
+        "context": "<bos>What Is It?\u23ceEnd-stage renal disease is a condition in which the kidneys no longer function normally. \"Renal\" describes anything having to do with"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 160.0,
+        "context": " nutrients to leach out. It also robs delicate produce of its raw taste.\u23ceHeat-shocking works differently. When the water is warm but not scal"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 155.0,
+        "context": " encouraged to dip into the wonderful blog that accompanies the book!\u23cePaul Dirac quotes\u23ceMolecular Modeling Basics\u23ceThe \"how to\" of molecular modeling in education and"
+      },
+      {
+        "trigger": "gr",
+        "score": 180.0,
+        "context": " edges meet at any vertex.\u23ceTessellation is useful because the IDLgrPolygon object accepts only convex polygons. Using the IDLgrTessellator object,"
+      }
+    ],
+    "promotes": [
+      "Battery",
+      "Train",
+      " quelcon",
+      "Parking",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      " respective",
+      "!(\"{}\",",
+      " non",
+      " longterm",
+      " second"
+    ]
+  },
+  {
+    "id": "25_2366_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.28783154487609863,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 72.5,
+        "context": " in service-learning activities as a condition of graduation. Each of the 24 school districts in Maryland implements the service-learning graduation requirement differently, because they"
+      },
+      {
+        "trigger": " the",
+        "score": 75.5,
+        "context": " influenza virus was geographically widespread according to the last report, meaning there is flu activity throughout different regions, said David Blythe, a medical epidemiologist with the state."
+      },
+      {
+        "trigger": " of",
+        "score": 67.5,
+        "context": " preservation, and interpretation of manuscripts, archives, and objects that together form the fabric of Maryland History.\u23ceUnlike many other states, Maryland has a bit of a"
+      },
+      {
+        "trigger": " of",
+        "score": 66.0,
+        "context": " going back almost 10,000 years. That makes this one of the region\u2019s oldest uncovered sites.\u23ceThe accepted wisdom has always been"
+      },
+      {
+        "trigger": ",",
+        "score": 82.5,
+        "context": " expected to meet.\u23ceTo comply with these requirements, the Title III office of the Maryland State Department of Education works with local school districts to ensure that quality,"
+      }
+    ],
+    "promotes": [
+      "Susie",
+      "in\u012f",
+      "\u0917\u094d",
+      "Izvori",
+      " Kell"
+    ],
+    "demotes": [
+      " Maryland",
+      " Virginia",
+      "Maryland",
+      "Virginia",
+      " Md"
+    ]
+  },
+  {
+    "id": "25_7302_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3540385067462921,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 61.5,
+        "context": ", Ohio.\u23ceMannheimer has published: \"Die Wahrheit \u00fcber den Talmud\" (Basel, 1858; translated from the French of T."
+      },
+      {
+        "trigger": "\u2014",
+        "score": 76.0,
+        "context": "wind turbines, represent new environment-friendly technology.\u23ce\"Wir sind ein Volk\u2014We are one people,\" sang crowds on November 9,\u23ce19"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 55.5,
+        "context": "<bos>A transfert from Westerbock\u23ceThe camp of Westerbork was situated about 15 km from the village of Westerbork. This camp had been"
+      },
+      {
+        "trigger": " (",
+        "score": 59.5,
+        "context": "897), there are to be noticed the equestrian statue of William I. (1897) at Magdeburg, and in Berlin the heroic statue of"
+      },
+      {
+        "trigger": " (",
+        "score": 65.5,
+        "context": "<bos>(Redirected from Engels)\u23ceFriedrich Engels (November 28, 1820 \u2013 August 5, 1895)"
+      }
+    ],
+    "promotes": [
+      "Feuer",
+      "K\u00f6ln",
+      "Liebe",
+      "Stadt",
+      "Nieder"
+    ],
+    "demotes": [
+      "rachtet",
+      " himo",
+      ":\u2728",
+      " gezicht",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc"
+    ]
+  },
+  {
+    "id": "25_9893_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3180162012577057,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 64.0,
+        "context": " and Northern Ireland and Yugoslavia. The following countries provided civilian police: Austria, Bangladesh, Barbados, Belgium, Canada, Egypt, Fiji, FRG, GDR,"
+      },
+      {
+        "trigger": ",",
+        "score": 69.5,
+        "context": " Herzegovina, Bulgaria, Romania, Croatia, the former Yugoslav Republic of Macedonia, Greece, Hungary, Serbia, Montenegro, Slovakia, Slovenia and Republic of Moldova. In"
+      },
+      {
+        "trigger": ",",
+        "score": 57.25,
+        "context": " was carried out in 14 countries of the EU which included Belgium, Bulgaria, Croatia, England, Estonia, France, Greece, Malta, Netherlands, Poland"
+      },
+      {
+        "trigger": ",",
+        "score": 65.0,
+        "context": " by NASA World Wind.\u23ce|Countries||Algeria, Chad, Egypt, Eritrea, Libya, Mali, Mauritania, Morocco, Niger, Sudan, Tunisia, Western"
+      },
+      {
+        "trigger": ",",
+        "score": 60.25,
+        "context": " of Bahrain, Iran, Iraq, Syria, Jordan, Palestine, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, UAE, and Yemen.\u23ceIUCN ROW"
+      }
+    ],
+    "promotes": [
+      " Romanian",
+      "Slovakia",
+      "Latvia",
+      "Bolivia",
+      "Romania"
+    ],
+    "demotes": [
+      "ulously",
+      "pull",
+      "\u0445\u044c",
+      "Pull",
+      " m\u1eafn"
+    ]
+  },
+  {
+    "id": "25_10389_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.23622174561023712,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 72.0,
+        "context": " area that now uses biomass to generate all of its heat and some of its electricity. That city pioneered use of this renewable technology, and gradually biomass evolved from a"
+      },
+      {
+        "trigger": ",",
+        "score": 87.0,
+        "context": " as well as foreign visitors.\u23ceIn the early 1980's, an outbreak of graffiti and vandalism threatened the beauty and the safety of the"
+      },
+      {
+        "trigger": ".",
+        "score": 67.5,
+        "context": " for the feared illness by studying the molecular structure in the toxin in the cholera bacteria.\u23ceThree to five million people are infected by cholera ever year. The mortality"
+      },
+      {
+        "trigger": "The",
+        "score": 71.0,
+        "context": " on an animal detection system to help make its cars safer in rural areas.\u23ceThe new system uses the same radar and camera technology as Volvo's Pedestrian Detection"
+      },
+      {
+        "trigger": " the",
+        "score": 83.0,
+        "context": "The Ridge Dividing Street\") is a 650 metres long street in central Stockholm, Sweden. It stretches northward from the Brunkebergstorg square"
+      }
+    ],
+    "promotes": [
+      "adaptiveStyles",
+      "ftagPool",
+      " @\"/",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "HtmlAttribute"
+    ],
+    "demotes": [
+      " Dutch",
+      " Swedish",
+      "Dutch",
+      " dutch",
+      " Danish"
+    ]
+  },
+  {
+    "id": "21_861_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.28222936391830444,
+    "top_activations": [
+      {
+        "trigger": "berg",
+        "score": 56.5,
+        "context": " which are still in effect.\u23ceToshiba Machine Company of Japan and Kongsberg Group of Norway supplied eight computer-guided propeller milling machines to the Soviet Union"
+      },
+      {
+        "trigger": " organisation",
+        "score": 56.5,
+        "context": "Research co-funded by ESA and the Microsystems and Nanotechnology Lab of Norwegian research organisation SINTEF has produced the simplest gas detector possible,\u201d said Benedikt Guldi"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 56.5,
+        "context": " trees, dead for nearly 500 years yet without decomposition.\u23ceNorway\u2019s wet climate seems perfect for encouraging organic matter to rot \u2013 particularly in Sog"
+      },
+      {
+        "trigger": " at",
+        "score": 58.0,
+        "context": "orn Vickhoff, a professional singer/songwriter-turned-neuroscientist at the University of Gothenburg in Sweden.\u23ceVickhoff is fascinated by music"
+      },
+      {
+        "trigger": " were",
+        "score": 83.5,
+        "context": " Run Township. Prominent names among the settlers were the Olsons, Andersons, Knudsons and Eversons. According to the \"History of Stephenson County"
+      }
+    ],
+    "promotes": [
+      "skjaer",
+      " \u00c5",
+      " S\u00f8",
+      " \u00d8",
+      " Hj"
+    ],
+    "demotes": [
+      "f\u00f8lgelig",
+      " n\u00f8d",
+      " samarbeid",
+      " sp\u00f8rsm\u00e5l",
+      " varandra"
+    ]
+  },
+  {
+    "id": "25_11188_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3480075001716614,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 52.75,
+        "context": " the sturgeons' natural reproduction, said John Lindgren, a fisheries specialist with the Minnesota Department of Natural Resources.\u23ceMore on sturgeon season: More headlines"
+      },
+      {
+        "trigger": " [",
+        "score": 48.5,
+        "context": "-bullying, have put the issue on center stage. \u201cWe have a mandate from the state [to address bullying],\u201d Randy Ellsbree said. E"
+      },
+      {
+        "trigger": " many",
+        "score": 55.0,
+        "context": " Native villages. A widely used test that detects blood in stool isn't effective because many Alaska Natives have a stomach bacterium called H. pylori that also causes bleeding"
+      },
+      {
+        "trigger": " of",
+        "score": 60.5,
+        "context": " a greedy and unscrupulous lawyer, a power-monger whose ambition led to the end of Iceland\u2019s independence and to its becoming a colony of Norway.\u23ceBut"
+      },
+      {
+        "trigger": " many",
+        "score": 55.0,
+        "context": " villages. A widely used test that detects blood in stool isn't effective because many Alaska Natives have a stomach bacterium called H. pylori that also causes bleeding."
+      }
+    ],
+    "promotes": [
+      "ough",
+      "campo",
+      " Replay",
+      " HttpResponse",
+      "ponses"
+    ],
+    "demotes": [
+      " Minnesota",
+      "Minnesota",
+      " MINNESOTA",
+      " Norwegian",
+      " Alaska"
+    ]
+  },
+  {
+    "id": "21_861_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3240014612674713,
+    "top_activations": [
+      {
+        "trigger": "berg",
+        "score": 56.5,
+        "context": " which are still in effect.\u23ceToshiba Machine Company of Japan and Kongsberg Group of Norway supplied eight computer-guided propeller milling machines to the Soviet Union"
+      },
+      {
+        "trigger": " organisation",
+        "score": 56.5,
+        "context": "Research co-funded by ESA and the Microsystems and Nanotechnology Lab of Norwegian research organisation SINTEF has produced the simplest gas detector possible,\u201d said Benedikt Guldi"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 56.5,
+        "context": " trees, dead for nearly 500 years yet without decomposition.\u23ceNorway\u2019s wet climate seems perfect for encouraging organic matter to rot \u2013 particularly in Sog"
+      },
+      {
+        "trigger": " at",
+        "score": 58.0,
+        "context": "orn Vickhoff, a professional singer/songwriter-turned-neuroscientist at the University of Gothenburg in Sweden.\u23ceVickhoff is fascinated by music"
+      },
+      {
+        "trigger": " were",
+        "score": 83.5,
+        "context": " Run Township. Prominent names among the settlers were the Olsons, Andersons, Knudsons and Eversons. According to the \"History of Stephenson County"
+      }
+    ],
+    "promotes": [
+      "skjaer",
+      " \u00c5",
+      " S\u00f8",
+      " \u00d8",
+      " Hj"
+    ],
+    "demotes": [
+      "f\u00f8lgelig",
+      " n\u00f8d",
+      " samarbeid",
+      " sp\u00f8rsm\u00e5l",
+      " varandra"
+    ]
+  },
+  {
+    "id": "25_13762_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.34639573097229004,
+    "top_activations": [
+      {
+        "trigger": "noma",
+        "score": 67.5,
+        "context": " antelope that moved through the surrounding area.\u23ceAnd later came the trekboer (nomadic farmer) who, with livestock herds, was in constant search of new"
+      },
+      {
+        "trigger": " foo",
+        "score": 67.0,
+        "context": "7\u00baC). Above this temperature, the natural enzymes in foods are destroyed. Raw foodists contend that these enzymes improve digestion and fight many chronic diseases.\u23ceThis"
+      },
+      {
+        "trigger": " Jag",
+        "score": 60.5,
+        "context": " mechanisms that influence soil carbon stability and its impact on future climate change. Sindhu Jagadamma, a post doc in ORNL\u2019s Environmental Science Division and"
+      },
+      {
+        "trigger": ".",
+        "score": 61.0,
+        "context": ". Anthony Lewis, director of Arizona's Robotics and Neural Systems Laboratory, and Theresa Klein, a Ph.D. student at the lab.\u23ceDr Theresa"
+      },
+      {
+        "trigger": "\u00ed",
+        "score": 60.5,
+        "context": "<bos>Revista de estudios hist\u00f3rico-jur\u00eddicos\u23ceversi\u00f3n impresa ISSN 0716-5455\u23ceDIAZ ARAYA, Alberto;"
+      }
+    ],
+    "promotes": [
+      " DW",
+      "DA",
+      " DS",
+      " DD",
+      "DW"
+    ],
+    "demotes": [
+      "UnsafeEnabled",
+      "SequentialGroup",
+      " resourceCulture",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "\u043a\u043b\u043e\u043f\u0435"
+    ]
+  }
+]

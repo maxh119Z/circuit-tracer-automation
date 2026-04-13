@@ -1,0 +1,2023 @@
+[
+  {
+    "id": "0_4229_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37301623821258545,
+    "top_activations": [
+      {
+        "trigger": " world",
+        "score": 7.22,
+        "context": " graphically, and verbally. Contains many ...show moreworked examples and problems using real world data. Can be used with any technology for graphing functions.\u23ceFrom the"
+      },
+      {
+        "trigger": " physics",
+        "score": 7.09,
+        "context": " 1)\u23ceMax Planck, who shook the world with his discovery of quantum physics, also offered a warning.\u23ce\u201cOne must be careful,\u201d he said"
+      },
+      {
+        "trigger": " fields",
+        "score": 6.66,
+        "context": " providing a possible explanation for anomalies observed in certain 3D materials in high magnetic fields.\u23cePhysics2, 24 (2009) \u2013"
+      },
+      {
+        "trigger": " field",
+        "score": 7.34,
+        "context": " 2012)|\u23ceIn vector calculus, the gradient of a scalar field is a vector field which points in the direction of the greatest rate of increase"
+      },
+      {
+        "trigger": " world",
+        "score": 7.59,
+        "context": " should of course say what the conjecture states, and explain its importance in the real world. This, however, is easier said than done, as those of us"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "'",
+      "\u23ce\u23ce",
+      "\u2019",
+      "<bos>"
+    ],
+    "demotes": [
+      "AutoScaleMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " betweenstory",
+      " ArrayAdapter",
+      "moiselle"
+    ]
+  },
+  {
+    "id": "1_5325_13",
+    "layer": 1,
+    "ctx_idx": 13,
+    "influence_score": 0.3853490352630615,
+    "top_activations": [
+      {
+        "trigger": " matter",
+        "score": 25.75,
+        "context": ". Environment is everything that isn\u2019t genetics. It includes soil type, organic matter, fertilizers, diseases, planting date, population and row width.\u23ceWe"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.25,
+        "context": " explains his hypothesis in the above TED talk that it is surely worth viewing. For a greater philosophical inquiry inspired by his ideas, is our matter all that matters?"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.0,
+        "context": " lively manner. That we often derive sorrow from the sorrow of others, is a matter of fact too obvious to require any instances to prove it; for this sentiment"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.5,
+        "context": "\u23ceThe Lifestock Section contains scientific information about living organism that feeds on organic matter. Because of this feeding habit, all animals can be called \"heterotro"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.25,
+        "context": "ting nations stop pumping carbon into the atmosphere, no single country\u2019s efforts will matter much. That is why, despite the many unmet deadlines, petty squab"
+      }
+    ],
+    "promotes": [
+      " artikkelen",
+      "Geplaatst",
+      "\u03c1\u03bf\u03c5\u03c2",
+      "tagHelperRunner",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " matter",
+      "matter",
+      " Matter",
+      " MATTER",
+      "Matter"
+    ]
+  },
+  {
+    "id": "2_1809_13",
+    "layer": 2,
+    "ctx_idx": 13,
+    "influence_score": 0.38820749521255493,
+    "top_activations": [
+      {
+        "trigger": " matter",
+        "score": 26.75,
+        "context": " being tossed out as if they were just another foam cup or dirty diaper, they become beautiful soil within a matter of weeks or months. And while few city apartments"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.5,
+        "context": " the Holocaust. A Jewish friend of hers said he perfectly understood her sensitivity in the matter; in fact, he had the same sense of repetitiousness and fatigue"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.5,
+        "context": " \u201cIt chills the blood.\u201d\u23ceThe chill creeps in thanks in part to the matter-of-fact, often understated prose that Northup and his amane"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.25,
+        "context": " 1623\u2013'5, but his relationship to John Madison is matter of doubt. John's son, named also John, was father of"
+      },
+      {
+        "trigger": " matter",
+        "score": 27.25,
+        "context": " does seem, however, that another stopgap measure may be forthcoming in a matter of weeks. It was instructive what President Obama said after this last meeting before"
+      }
+    ],
+    "promotes": [
+      "\ue315",
+      "+:+",
+      " snippetHide",
+      " intptr",
+      " numberWith"
+    ],
+    "demotes": [
+      " matter",
+      "matter",
+      " Matter",
+      "Matter",
+      " MATTER"
+    ]
+  },
+  {
+    "id": "4_1897_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3910169005393982,
+    "top_activations": [
+      {
+        "trigger": "anglement",
+        "score": 19.12,
+        "context": "<bos>Entanglement of Large Whales\u23ceA new area of work for the IWC is to assist countries and properly trained individuals in responding to large whales that have become"
+      },
+      {
+        "trigger": " function",
+        "score": 23.12,
+        "context": " physical chemistry, Electron Phases describe the sign (positive or negative) of the wave function, which is a solution to the Schr\u00f6dinger equation. When two wave functions describing"
+      },
+      {
+        "trigger": "quantum",
+        "score": 19.62,
+        "context": " significantly different than when QM effects kick in, whereby we get the fractional charge/quantum hall effect. It is interesting to note that we always think that to get"
+      },
+      {
+        "trigger": " quantum",
+        "score": 25.5,
+        "context": " there to explain how a quantum eraser works in general: You send particles through two slits so that they can interfere, but individual photons bounce off them near the slits"
+      },
+      {
+        "trigger": "Quantum",
+        "score": 19.75,
+        "context": " area would correspond to having a single detector closer to one of the slits.\u23ceQuantum mechanics tells us (or at least quantum mechanicists tell us, or write"
+      }
+    ],
+    "promotes": [
+      "NotFoundError",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " estekak",
+      "<bos>",
+      " lenker"
+    ],
+    "demotes": [
+      "FXMLLoader",
+      "WaitGroup",
+      "Portale",
+      " NACIONAL",
+      "\u0627\u062f\u06af\u06cc"
+    ]
+  },
+  {
+    "id": "0_11375_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36347895860671997,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "0_3820_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3998732566833496,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ]
+  },
+  {
+    "id": "0_9026_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3551202416419983,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "0_11211_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3872624635696411,
+    "top_activations": [
+      {
+        "trigger": " Chairman",
+        "score": 13.31,
+        "context": " not needing to build as many coal-fired plants.\u23ceHouse Energy and Technology Chairman Frank Accavitti said the three-bill package will be \"a"
+      },
+      {
+        "trigger": " matters",
+        "score": 15.31,
+        "context": " new book and the e-publication of crucial document further undercut the narrative. This matters, because the stories people tell about 1967 affect political positions"
+      },
+      {
+        "trigger": " matters",
+        "score": 15.56,
+        "context": "0|\u23ce|An Act to provide for preventive detention in certain cases and for matters connected therewith.|\u23ce|Citation||Act No. 65 of "
+      },
+      {
+        "trigger": " matters",
+        "score": 15.44,
+        "context": " policy have not been stable over the last seventy years, and both have switched on matters related to taxes and debts. A brief review of the history of the modern"
+      },
+      {
+        "trigger": " matters",
+        "score": 15.06,
+        "context": "1854 the Commission which had prepared the Bull on the Immaculate Conception took matters in hand. It is not known how far the preparation had advanced when Ger"
+      }
+    ],
+    "promotes": [
+      "_",
+      "</strong>",
+      "3",
+      "\u23ce",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " bezeichneter",
+      "amemnon",
+      " JpaRepository",
+      " snippetHide",
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a"
+    ]
+  },
+  {
+    "id": "0_13172_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39466971158981323,
+    "top_activations": [
+      {
+        "trigger": " Mechanics",
+        "score": 8.81,
+        "context": "Key words: Electron, Physical Laws, Cosmology, Particles, Space, Quantum Mechanics.\u23ceThe apparent inconsistencies between the point particle theory and the observed wave behavior"
+      },
+      {
+        "trigger": " consumption",
+        "score": 9.19,
+        "context": ", the consumption of power among Brazilians has increased significantly. Today per capita power consumption among Brazilians is about 2,235 kilowatts per"
+      },
+      {
+        "trigger": " School",
+        "score": 9.19,
+        "context": "-Chatham Middle School, Georgia\u23ceTrina Knox, Hernderson Middle School, Georgia\u23ceKay Emde, Heritage Hall, Oklahoma\u23ceCharles Randazzo"
+      },
+      {
+        "trigger": " definition",
+        "score": 10.69,
+        "context": " vectors will lead to new and improved standards for visual fidelity.\u23ceOur current high definition world is built around the pixel. This is true for our resolution standards such"
+      },
+      {
+        "trigger": "profile",
+        "score": 12.25,
+        "context": " neutral campuses.\u23ceYet borders between society and academia are dissolving. Many high-profile universities across the world are reaching out past campus boundaries to form ambitious partnerships with"
+      }
+    ],
+    "promotes": [
+      "Javadoc",
+      " Agamemnon",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "OGND",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " et",
+      " ",
+      "\u043d\u043e\u043b\u043e\u0433\u0438",
+      " U",
+      " \u200b\u200b"
+    ]
+  },
+  {
+    "id": "0_9176_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.3964426815509796,
+    "top_activations": [
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " its \u201cbehavioristic\u201d neglect of inward experience.\u23ceThe enduring philosophical interest of behaviorism concerns this methodological challenge to the scientific bona fides of consciousness (on behalf"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " for health problems. However, cell phone use does not have to be a sedentary behavior as these devices are portable. It can occur while standing or during mild-"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": "Rice and Long examined the mating habits of the fruit fly. For males, this behavior entails \u201csinging\u201d and \u201cdancing\u201d by vibrating their wings together. As"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " be combined to train dogs with scientifically sound methods using rewards.\u23ceClassical conditioning affects behavior by changing the underlying stimulus associated with a natural response, while operant conditioning"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.38,
+        "context": " features in the communication process of a sensory neuron that control distinct motor aspects of escape behavior \u201c\u201c firing rate threshold, peak firing time and spike count.\u23ce\u201c"
+      }
+    ],
+    "promotes": [
+      " prior",
+      " other",
+      " be",
+      " in",
+      " not"
+    ],
+    "demotes": [
+      " Shakspeare",
+      " Shaksp",
+      " Pliocene",
+      " C\u00e6sar",
+      " behaviour"
+    ]
+  },
+  {
+    "id": "0_5287_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38144251704216003,
+    "top_activations": [
+      {
+        "trigger": " plants",
+        "score": 7.88,
+        "context": " reduce heating costs in buildings.\u23ceThe project will look at three experimental biomass power plants, one of which will be built by The University of Greenwich. The Greenwich"
+      },
+      {
+        "trigger": " distribution",
+        "score": 8.5,
+        "context": " about 2,235 kilowatts per year.\u23ceThe power distribution in Brazil can be classified as follows: Nuclear energy accounts for about 3"
+      },
+      {
+        "trigger": "plant",
+        "score": 8.19,
+        "context": " of the equipment and high operating costs resulting from full-attended operation, the powerplant was placed in ready reserve status in 1982. The plant"
+      },
+      {
+        "trigger": " plant",
+        "score": 9.0,
+        "context": "|Power Plant Threat in Yellowstone||The government blessed a new coal-fired power plant planned for central Montana that would pollute the air over Yellowstone and other clean"
+      },
+      {
+        "trigger": " plants",
+        "score": 8.81,
+        "context": " to about half of the global warming power of all U.S. coal power plants emissions. That is the same climate impact of a quarter billion cars.\u23ce"
+      }
+    ],
+    "promotes": [
+      " IOError",
+      "\u041f\u043e\u0440\u0442\u0430\u043b",
+      "rungsseite",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      "Portale"
+    ],
+    "demotes": [
+      "onViewCreated",
+      " contamos",
+      "\u05d5\u05d9\u05d5\u05ea",
+      "__(/*!",
+      "---|"
+    ]
+  },
+  {
+    "id": "0_4442_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.35182398557662964,
+    "top_activations": [
+      {
+        "trigger": " optical",
+        "score": 9.0,
+        "context": " 0.77 \u03bcm to 1.65 \u03bcm after optical pumping by an intense, 0.5 ps pulse at 0."
+      },
+      {
+        "trigger": " Quantum",
+        "score": 8.38,
+        "context": "\u23ceAsking questions that lead to brilliant ideas is at the root of scientific discovery. Quantum leaps in science are made by this type of innovative thinking, but funding for"
+      },
+      {
+        "trigger": " Bose",
+        "score": 7.94,
+        "context": " a gas are outlined. Starting with Heisenberg's uncertainty principle, the formation of Bose-Einstein condensate (BEC) is explained as occurring when the interatomic spacing"
+      },
+      {
+        "trigger": " quantum",
+        "score": 9.31,
+        "context": " no ordinary words to describe them because they come from another world -- the world of quantum mechanics.\u23ceAlthough quantum rules are counter-intuitive, they underlie the macroscopic"
+      },
+      {
+        "trigger": " spin",
+        "score": 9.88,
+        "context": "\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle called the photon. Electromagnetic forces occur when electrically charged particles emit"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " phonon",
+      "\u23ce\u23ce",
+      "\u017byciorys",
+      "'"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "InputBorder",
+      "numerusform",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ]
+  },
+  {
+    "id": "0_12730_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3990246057510376,
+    "top_activations": [
+      {
+        "trigger": " matter",
+        "score": 14.25,
+        "context": " used by 17 European countries. And when it does, perhaps within a matter of months, there will be a damaging domino effect throughout much of Europe."
+      },
+      {
+        "trigger": "ler",
+        "score": 14.38,
+        "context": ", tough, rioter, adversary, opponent, bruiser, warrior, quarreler, bully, battler, antagonist, soldier, swordsman, militant,"
+      },
+      {
+        "trigger": " matter",
+        "score": 14.38,
+        "context": " (MHA) calls on the federal and state governments to ensure, as a matter of law, that public and private health plans afford people access to needed behavioral"
+      },
+      {
+        "trigger": "ler",
+        "score": 14.38,
+        "context": " cull the herd. She states that she does not want anyone to shoot the antlered deer just the does. She gives you four special non-antler"
+      },
+      {
+        "trigger": "ler",
+        "score": 14.62,
+        "context": " Grant Programs.\u23ceTim Alley, captain of the 72-foot trawler Bay Flyer, is accustomed to long, rough days at sea. But earlier"
+      }
+    ],
+    "promotes": [
+      ",",
+      " e",
+      "ta",
+      " or",
+      "\u23ce"
+    ],
+    "demotes": [
+      "rungsseite",
+      "########.",
+      " ++)",
+      "EDEFAULT",
+      " i\u017ft"
+    ]
+  },
+  {
+    "id": "18_5513_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.34010446071624756,
+    "top_activations": [
+      {
+        "trigger": " fruits",
+        "score": 27.5,
+        "context": " plan a colorful palette for your plate, the Produce for Better Health Foundation has grouped fruits and vegetables into five color groups. Through its \"Eat Five a Day the"
+      },
+      {
+        "trigger": " RPM",
+        "score": 27.5,
+        "context": " and as the need for frequent and even automated updates has grown, the limitations of RPM and Debian packages have become apparent.\u23ceTo fill this void, distribution maintain"
+      },
+      {
+        "trigger": " glasses",
+        "score": 29.0,
+        "context": " is a relatively new procedure used to reduce or eliminate a person's dependence on glasses and contact lenses. The procedure is performed on an outpatient basis and is effective"
+      },
+      {
+        "trigger": "allo",
+        "score": 26.75,
+        "context": "014 for a ground-up, multi-year renovation, so Metallo and Rossi, dubbed the \u201cLaser Cowboys\u201d by their colleagues, were brought"
+      },
+      {
+        "trigger": " checkbox",
+        "score": 28.25,
+        "context": " have label tags on them. This allows users to click the label to toggle the checkbox or radio button. This is easier for users to do because the label is"
+      }
+    ],
+    "promotes": [
+      " \"..\\..\\",
+      "ONTO",
+      "\u6027\u548c",
+      " or",
+      " and"
+    ],
+    "demotes": [
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      "Personensuche",
+      " resultCode",
+      "WindowConstants",
+      " doInBackground"
+    ]
+  },
+  {
+    "id": "17_10585_13",
+    "layer": 17,
+    "ctx_idx": 13,
+    "influence_score": 0.3271124064922333,
+    "top_activations": [
+      {
+        "trigger": " fruits",
+        "score": 34.5,
+        "context": " its own benefits and nutritional content. Find out the benefits of each color found in fruits and certain vegetables.\u23ceFruits and Vegetables Color Wheel and the Health Benefits List"
+      },
+      {
+        "trigger": "lets",
+        "score": 37.5,
+        "context": "RE does not contain tools and utilities such as compilers or debuggers for developing applets and applications.\u23ceJava Development Kit (JDK)\u23ceThe JDK is a"
+      },
+      {
+        "trigger": " low",
+        "score": 30.75,
+        "context": " on medicine prices is still scarce. This study, conducted in 52 selected low- and middle-income countries, investigated the availability, pricing and affordability of"
+      },
+      {
+        "trigger": " Greek",
+        "score": 35.25,
+        "context": " zooarchaeological fieldwork across the ancient Mediterranean context provide vivid and interesting case studies of Greek and Roman cult in practice.\u23ceShort bibliography and/or website on lecture"
+      },
+      {
+        "trigger": " fruits",
+        "score": 32.5,
+        "context": "No doubt one reason so many of us eat too many convenience foods and too few fruits and vegetables is that it can be hard to get our busy schedules in sync"
+      }
+    ],
+    "promotes": [
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+      " atque",
+      " doInBackground",
+      "WebElementEntity",
+      " and"
+    ],
+    "demotes": [
+      "ifrance",
+      "createTextNode",
+      "jectures",
+      "mentar",
+      "\u0441\u0442\u043e\u044f"
+    ]
+  },
+  {
+    "id": "18_6118_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.3718864917755127,
+    "top_activations": [
+      {
+        "trigger": " material",
+        "score": 105.0,
+        "context": " bacon|\u23ce|a. to achieve success|\u23ce|b. to provide material support|\u23ce|3.||informal (Brit) save someone'"
+      },
+      {
+        "trigger": " materials",
+        "score": 103.0,
+        "context": "s California NanoSystems Institute and is also a distinguished professor of chemistry and biochemistry & materials science and engineering.\u23ceThe team, which also includes theoretical chemist Mark Rat"
+      },
+      {
+        "trigger": " material",
+        "score": 114.5,
+        "context": " Guttate Psoriasis: this cultivates in children and young adults following a Strep infection. It materializes as small dot sized red spots on the chest"
+      },
+      {
+        "trigger": " Material",
+        "score": 114.5,
+        "context": " Yaqui and the Mexican Indians still use ear coning as a healing modality. Material variations such as rolled up newspapers are used for ear infections in South America,"
+      },
+      {
+        "trigger": " material",
+        "score": 123.5,
+        "context": " technologies. These fields are being radically transformed through advances in informatics, genomics, material sciences and nanotechnology.\u23ceFocusing on economic renewal would allow \u00e9migr\u00e9s"
+      }
+    ],
+    "promotes": [
+      " utafitiHapana",
+      "MATER",
+      " roule",
+      "RenderAtEndOf",
+      " ModelExpression"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      " mer",
+      "hensw\u00fcrdigkeiten",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "HIND"
+    ]
+  },
+  {
+    "id": "20_2742_13",
+    "layer": 20,
+    "ctx_idx": 13,
+    "influence_score": 0.3671959638595581,
+    "top_activations": [
+      {
+        "trigger": " wrong",
+        "score": 31.5,
+        "context": " what he is trying to do is right and important to himself and others (not wrong and selfish), communicate what is needed effectively (not push and shove), and"
+      },
+      {
+        "trigger": " healthy",
+        "score": 30.0,
+        "context": " antibiotics that you will find anywhere.\u23ceWe could go on and on talking about the practices dairy farmers large and small follow to keep their animals healthy and produce a"
+      },
+      {
+        "trigger": " English",
+        "score": 30.5,
+        "context": " their bulletin board site. You can also download promotional materials (posters and booklets) in English and Spanish and articles and newsletters, and other information.\u23ceI will"
+      },
+      {
+        "trigger": "5",
+        "score": 30.0,
+        "context": " for Mobility, \u201cwhich outlines what transportation will look like in 2025 and beyond, along with the technologies, business models and partnerships needed to get"
+      },
+      {
+        "trigger": " levels",
+        "score": 34.5,
+        "context": "poor.\"\u23ceThe study's authors adjusted for factors, like parents' education levels and the type of housing \u2014 two markers of socioeconomic status that could also affect"
+      }
+    ],
+    "promotes": [
+      " propOrder",
+      "localctx",
+      " defaultstate",
+      "InitVars",
+      "GEBURTSDATUM"
+    ],
+    "demotes": [
+      "\u6216",
+      "\u0418\u043b\u0438",
+      "\u2009:",
+      " oder",
+      "\u53c8"
+    ]
+  },
+  {
+    "id": "19_9437_13",
+    "layer": 19,
+    "ctx_idx": 13,
+    "influence_score": 0.3928675353527069,
+    "top_activations": [
+      {
+        "trigger": " about",
+        "score": 25.25,
+        "context": "What is the definition of research?\u23ceResearch using human participants is a systematic investigation that obtains data from or about living people. The investigation is a key part of"
+      },
+      {
+        "trigger": " seem",
+        "score": 21.62,
+        "context": " apples: there were 12\u2033\u23ceb-To make sense : to seem to be logical or true.\u23ceExample: \u201cHer story didn\u2019t"
+      },
+      {
+        "trigger": " procedure",
+        "score": 25.25,
+        "context": " or to complete a computer process\u23ceFull Definition of ALGORITHM\u23ce: a procedure for solving a mathematical problem (as of finding the greatest common divisor) in a"
+      },
+      {
+        "trigger": " something",
+        "score": 28.5,
+        "context": "<bos>Imitate is defined as to copy or use something as a model.(verb)\u23ceAn example of imitate is for a child to copy his older sibling'"
+      },
+      {
+        "trigger": " information",
+        "score": 27.5,
+        "context": " this term refers to a portable item.\u23ceData: information, especially information organized for analysis.\u23ceHypothesis: a proposed explanation or interpretation that can be tested by"
+      }
+    ],
+    "promotes": [
+      ",",
+      ".",
+      " under",
+      "/",
+      " $\\"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "rungsseite",
+      "TintMode",
+      " GeoNames"
+    ]
+  },
+  {
+    "id": "15_16326_13",
+    "layer": 15,
+    "ctx_idx": 13,
+    "influence_score": 0.3608185648918152,
+    "top_activations": [
+      {
+        "trigger": " meat",
+        "score": 22.75,
+        "context": "<bos>Despite the important role of goats for meat and milk production in Ethiopia, little information is available on the epidemiology of caprine tuberculosis (TB). Caprine TB"
+      },
+      {
+        "trigger": " possession",
+        "score": 27.25,
+        "context": "1 is an Act of Parliament, by which the United Kingdom aims to control the possession and supply of numerous drugs and drug-like substances, as listed under the"
+      },
+      {
+        "trigger": " vegetables",
+        "score": 23.5,
+        "context": " with the Dietary Approaches to Stop Hypertension (DASH) diet, which is rich in vegetables, ..\u23ce- Effects of dietary sodium reduction on blood pressure in subjects with"
+      },
+      {
+        "trigger": " brain",
+        "score": 23.38,
+        "context": " processed tomography to view medical images. A CT scan can create detailed pictures of the brain, spine, chest and abdomen.\u23ceWhat is CT scan used for?"
+      },
+      {
+        "trigger": " goods",
+        "score": 25.5,
+        "context": " gross domestic product of the United States and measures the total output of the economy in goods and services.\u23ceThese tax provisions were recently renewed for two years by Public"
+      }
+    ],
+    "promotes": [
+      " referenties",
+      ",",
+      " Poitiers",
+      " \u0412\u0456\u043a\u0456",
+      "tvguidetime"
+    ],
+    "demotes": [
+      " \u064a\u062a\u064a\u0645\u0647",
+      " XNUMX",
+      "/>\";",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      "NUMX"
+    ]
+  },
+  {
+    "id": "20_7732_13",
+    "layer": 20,
+    "ctx_idx": 13,
+    "influence_score": 0.3442205786705017,
+    "top_activations": [
+      {
+        "trigger": " hear",
+        "score": 37.0,
+        "context": " lessons learned.\u23ce- Thoughts or feelings or sensory details about what you hear, see, taste, smell, and touch.\u23ce- Figurative language (such"
+      },
+      {
+        "trigger": " sight",
+        "score": 31.25,
+        "context": " Sanctuary to keep her safe. The pair have been getting to know one another through sight, sound, smell and other ways in which only rhinos can ascertain,"
+      },
+      {
+        "trigger": " plants",
+        "score": 36.75,
+        "context": " is through a narrow forested corridor to the north. Maintaining ecological connectivity allows populations of plants and animals to move through a broader landscape, ensuring better genetic health, and"
+      },
+      {
+        "trigger": " friends",
+        "score": 39.0,
+        "context": " Use this month to increase awareness of the risks of radon in your home, and as a great learning opportunity for your friends and family. January will also be used"
+      },
+      {
+        "trigger": " workers",
+        "score": 36.0,
+        "context": " access to all information on fracking chemicals in order to do their jobs and protect workers and other members of the community.\u23ceA state can require more than the"
+      }
+    ],
+    "promotes": [
+      "\u30fb",
+      "VIAF",
+      "\ufe51",
+      " \u3001",
+      "\u3001"
+    ],
+    "demotes": [
+      "}{*}{",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      "NUMX",
+      "hatic",
+      ")_/\u00af"
+    ]
+  },
+  {
+    "id": "20_12823_13",
+    "layer": 20,
+    "ctx_idx": 13,
+    "influence_score": 0.3973071277141571,
+    "top_activations": [
+      {
+        "trigger": " on",
+        "score": 56.5,
+        "context": " go on or off? Does pressing the num lock make the num lock light go on or off? If there's no visible change, then chances are you"
+      },
+      {
+        "trigger": " pros",
+        "score": 65.0,
+        "context": " (ASICs). In past years, a lot has been published about the pros and con of using ASICs. These reports always speak about power consumption,"
+      },
+      {
+        "trigger": " intents",
+        "score": 61.5,
+        "context": " has the power of perception and volition, and that the actions performed are to all intents and purposes as perfect of their kind as they would be were the brain in"
+      },
+      {
+        "trigger": " back",
+        "score": 72.0,
+        "context": ", it would shut.\u23ceThe spray was hoisted onto a wooden construction which moved back and forth along the wall.\u23ceIt reacted to the dark and light points"
+      },
+      {
+        "trigger": " Control",
+        "score": 56.5,
+        "context": " Center for Immunization and Respiratory Diseases at the U.S. Centers for Disease Control and Prevention, said during a noon news conference. Pertussis has already caused"
+      }
+    ],
+    "promotes": [
+      "\u0414\u0435\u0440\u0435\u043a\u043a\u04e9\u0437\u0434\u0435\u0440",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      " \u0645\u0634\u064a\u0646",
+      " jScrollPane",
+      " AssemblyCulture"
+    ],
+    "demotes": [
+      "ImageContext",
+      "liferay",
+      " defStyleAttr",
+      " \u043f\u0440\u0435\u043f\u0440\u0430\u0442\u043a\u0438",
+      " Eton"
+    ]
+  },
+  {
+    "id": "12_3443_13",
+    "layer": 12,
+    "ctx_idx": 13,
+    "influence_score": 0.377368301153183,
+    "top_activations": [
+      {
+        "trigger": " light",
+        "score": 21.75,
+        "context": " at any time of day.\u23ceMigraine headaches usually affect only one side of the head and often occur with nausea, vomiting and sensitivity to light and/or"
+      },
+      {
+        "trigger": " blind",
+        "score": 16.75,
+        "context": " Individuals with a low-income who are over the age of 65, blind, or have a disability are eligible for assistance. SSI beneficiaries typically also receive"
+      },
+      {
+        "trigger": " thirst",
+        "score": 17.0,
+        "context": " signs that one is diabetic as well. The symptoms of diabetes include an increase in thirst; feeling tired all the time, headaches, and weight loss and in some"
+      },
+      {
+        "trigger": " sleeping",
+        "score": 19.0,
+        "context": " toys, clothing or lunch money - Child may appear withdrawn or anxious -Change in sleeping and/or eating habits - Complaints of headache and/or stomach ache -"
+      },
+      {
+        "trigger": " thirst",
+        "score": 19.25,
+        "context": " up glucose as an energy source from the blood. Symptoms of diabetes can include increased thirst, frequent urination, fatigue, and unusual hunger accompanied by weight loss, blurred"
+      }
+    ],
+    "promotes": [
+      "IUrlHelper",
+      "oredCriteria",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "NameInMap",
+      " HasFactory"
+    ],
+    "demotes": [
+      "uxxxx",
+      "tonode",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " onBackPressed",
+      "pcb"
+    ]
+  },
+  {
+    "id": "16_1496_13",
+    "layer": 16,
+    "ctx_idx": 13,
+    "influence_score": 0.3824366331100464,
+    "top_activations": [
+      {
+        "trigger": " plant",
+        "score": 21.75,
+        "context": " learn more about these beautiful open spaces, their geologic and evolutionary history, and their plant and animal inhabitants will find this well-written book a useful guide.\u23ce"
+      },
+      {
+        "trigger": " books",
+        "score": 24.12,
+        "context": " Paper?\u23ceAlthough a research paper depends upon accurate explanations of information you read in books, a short research paper is neither a book report nor an encyclopedia entry."
+      },
+      {
+        "trigger": " fruits",
+        "score": 22.75,
+        "context": " lifestyle.\u23ceDespite ingrained habits, participants increased their physical activity and also ate more fruits and vegetables. With the help of a handheld computer and the promise of financial"
+      },
+      {
+        "trigger": "Fruits",
+        "score": 24.75,
+        "context": "0,000 for each violation.\u23ceWhat does organic mean?\u23ceFruits, vegetables, grains, dairy products, and meat can all be certified as"
+      },
+      {
+        "trigger": " viruses",
+        "score": 21.88,
+        "context": " wrong with your immune system, which is the part of the body that fights off viruses, bacteria, and germs (\"foreign invaders,\" like the flu). Normally our"
+      }
+    ],
+    "promotes": [
+      " and",
+      " autorytatywna",
+      "ResumeLayout",
+      " propOrder",
+      "IBOutlet"
+    ],
+    "demotes": [
+      "</tfoot>",
+      "ifflin",
+      "WebVitals",
+      "serviceWorker",
+      ".)}"
+    ]
+  },
+  {
+    "id": "21_12060_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.33778318762779236,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 70.0,
+        "context": "01 districts are required to have strategies. Based on its experience with facilitating planning processes at all levels and its local engagement, IUCN has assisted eleven districts in developing"
+      },
+      {
+        "trigger": " it",
+        "score": 59.5,
+        "context": ". \u201cWe are taking what we\u2019ve learned from green building and applying it at a neighborhood scale.\u201d\u23ceThe approach connects with Portland's Climate Action Plan"
+      },
+      {
+        "trigger": " at",
+        "score": 64.0,
+        "context": "1990. These were mainly annual snapshots of vulnerability overlaid with common hazards at the country level. At this level, it has long been possible to capitalize"
+      },
+      {
+        "trigger": " at",
+        "score": 72.5,
+        "context": " Corrections is\u23ceprimarily a function of State governments. Most justice personnel are\u23ceemployed at the local level.\u23ceDiscretion is \"an authority conferred by law to"
+      },
+      {
+        "trigger": " matter",
+        "score": 57.5,
+        "context": "<bos>The word Nanoscience refers to the study, manipulation and engineering of matter, particles and structures on the nanometer scale (one millionth of a millimeter,"
+      }
+    ],
+    "promotes": [
+      " t\u1ea1i",
+      "at",
+      "At",
+      " At",
+      " at"
+    ],
+    "demotes": [
+      "MethodManager",
+      "xFFFFFF",
+      "ysacchar",
+      "StructEnd",
+      "COUVER"
+    ]
+  },
+  {
+    "id": "20_14610_13",
+    "layer": 20,
+    "ctx_idx": 13,
+    "influence_score": 0.3481858968734741,
+    "top_activations": [
+      {
+        "trigger": " mercy",
+        "score": 36.0,
+        "context": " her concept of Judaism. She often commented that her religion taught that \"justice, mercy, goodness were not to be held in a vacuum, but practiced in our"
+      },
+      {
+        "trigger": " age",
+        "score": 30.5,
+        "context": " made them.\"\u23ce- \"The kuvah'magh is younger than old age and stronger than sickness.\"\u23ce- \"You will find me after two warring"
+      },
+      {
+        "trigger": " justice",
+        "score": 31.5,
+        "context": " it back, this century.\u23ceThe overriding issue for Martin Luther King was always justice. He would fret over the continuing divide of wealth between white Americans and those"
+      },
+      {
+        "trigger": " mass",
+        "score": 34.25,
+        "context": ". Seven months after its scientists made a landmark discovery that may explain the mysteries of mass, Europe's top physics lab will take a break from smashing invisible particles"
+      },
+      {
+        "trigger": "Justice",
+        "score": 32.75,
+        "context": " dignity of every person)\u23ce2. be kind in all you do\u23ce(Justice, equity and compassion in human relations)\u23ce3. we're free"
+      }
+    ],
+    "promotes": [
+      " in",
+      " &",
+      ".",
+      ",",
+      " and"
+    ],
+    "demotes": [
+      "\ue315",
+      "StoryboardSegue",
+      "ArrowToggle",
+      "ConstraintMaker",
+      " ModelExpression"
+    ]
+  },
+  {
+    "id": "15_12472_13",
+    "layer": 15,
+    "ctx_idx": 13,
+    "influence_score": 0.3900882601737976,
+    "top_activations": [
+      {
+        "trigger": " cancer",
+        "score": 74.5,
+        "context": " Magee\u23ceRadiation therapy is the use of high-energy x-rays to kill cancer cells.\u23ceRadiation may be used alone or with other treatments to effectively treat"
+      },
+      {
+        "trigger": " media",
+        "score": 66.0,
+        "context": "940s were dominated by World War II This was as true for the media as it was for other areas of American life. From 194"
+      },
+      {
+        "trigger": " End",
+        "score": 64.5,
+        "context": " will fly over Houston, Galveston and Clearlake. The 747 carrying Endeavour will touch down at Ellington Field near the Johnson Space Center. Endeavour"
+      },
+      {
+        "trigger": " comet",
+        "score": 64.5,
+        "context": "SOHO) spacecraft is expected to discover its 1,000TH comet this summer.\u23ceThe SOHO spacecraft is a joint effort between NASA and"
+      },
+      {
+        "trigger": " contract",
+        "score": 67.5,
+        "context": " in exchange for something of value.\u23ceWhat are the key elements of a binding contract?\u23ceThe elements of a contract are: (i) an agreement;"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " my\u017felf",
+      " purpo\u017fe",
+      " Efq",
+      " Majefty"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u2019",
+      "<eos>",
+      "is",
+      "ito"
+    ]
+  },
+  {
+    "id": "13_8787_13",
+    "layer": 13,
+    "ctx_idx": 13,
+    "influence_score": 0.39816734194755554,
+    "top_activations": [
+      {
+        "trigger": " physical",
+        "score": 19.25,
+        "context": " their first sexual experience as being forced.\u23ceSexual violence has a profound impact on physical and mental health. As well as causing physical injury, it is associated with"
+      },
+      {
+        "trigger": " acute",
+        "score": 25.88,
+        "context": "<bos>Exercise physiology is the study of the function of the human body in response to acute and chronic physical activity. The mission of the Cardiopulmonary Exercise Physiology Lab at"
+      },
+      {
+        "trigger": " personal",
+        "score": 22.62,
+        "context": " of influence tactics, so that you can expand your personal spheres of influence to accomplish personal and/or organizational goals, to enhance your confidence for tackling leadership challenges as"
+      },
+      {
+        "trigger": " individual",
+        "score": 19.5,
+        "context": " with technology and how technology can be used productively to help people learn, through individual use and/or through collaborations mediated by technology;\u23ce- better use technology"
+      },
+      {
+        "trigger": " individuals",
+        "score": 21.5,
+        "context": " activism and organized promotion of the rights of people with disabilities to bring about change for individuals and the systems in which they live.\u23ceAmericans with Disabilities Act (ADA"
+      }
+    ],
+    "promotes": [
+      "\u00f6tzlich",
+      "AddTagHelper",
+      " i\u017ft",
+      "\u51fa\u7248\u5e74",
+      "ftagPool"
+    ],
+    "demotes": [
+      "agram",
+      " He",
+      "omencl",
+      "ougou",
+      "MathML"
+    ]
+  },
+  {
+    "id": "24_3591_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3003111779689789,
+    "top_activations": [
+      {
+        "trigger": " Mathematics",
+        "score": 81.0,
+        "context": " broadly with reading curricula in the participating countries. more info\u23ceThe Trends in International Mathematics and Science Study (TIMSS) 2011 is the fifth"
+      },
+      {
+        "trigger": " Diagnostic",
+        "score": 78.0,
+        "context": " type of bipolar disorder one has. As defined by the American Psychiatric Association's Diagnostic and Statistical Manual IV, a diagnosis of bipolar I disorder \u2013the \u201cclassic"
+      },
+      {
+        "trigger": " Food",
+        "score": 84.0,
+        "context": " prevent infection in all groups at risk of getting the virus. A year ago the Food and Drug Administration approved PrEP to prevent sexual transmission.\u23ce\"We now"
+      },
+      {
+        "trigger": " Walter",
+        "score": 79.0,
+        "context": " study, published recently in the journal Cell Reports, was conducted by researchers from the Walter and Eliza Hall Institute of Medical Research in Melbourne, Australia.\u23ceHere,"
+      },
+      {
+        "trigger": " Knowledge",
+        "score": 88.0,
+        "context": " Knowledge and Skills (TAKS) Study Guides to help students strengthen the Texas Essential Knowledge and Skills (TEKS) that are taught in class and tested on TAK"
+      }
+    ],
+    "promotes": [
+      "\u6027\u548c",
+      " \u0438",
+      " v\u00e0",
+      "and",
+      " and"
+    ],
+    "demotes": [
+      "Personensuche",
+      " ExecuteAsync",
+      "\u306f\u3058\u3081\u306b",
+      " protoimpl",
+      " oder"
+    ]
+  },
+  {
+    "id": "23_15999_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.3647635281085968,
+    "top_activations": [
+      {
+        "trigger": " year",
+        "score": 114.0,
+        "context": " huge.\u23ceA new report from the Overseas Development Institute in London pegs these subsidies worldwide each year at more than half a trillion dollars. The argument is there'"
+      },
+      {
+        "trigger": " look",
+        "score": 103.5,
+        "context": " So it would have a higher Average True Range. Let's take a closer look at the formula for the Average True Range. We start by focusing on the"
+      },
+      {
+        "trigger": " them",
+        "score": 100.5,
+        "context": "Having arrived at a conclusion, the King took up his bow and arrow and aimed them at the earth, exactly like Lord \u015aiva, who destroys the whole world"
+      },
+      {
+        "trigger": " hand",
+        "score": 107.0,
+        "context": " involved normative ethics - there are few philosophers out there who haven't tried their hand at explaining what they think people should do and why.\u23ceThis process involves"
+      },
+      {
+        "trigger": " shot",
+        "score": 99.0,
+        "context": "25 percent.\u23ceFor some reason, female siblings seem to have a better shot at survival than their male counterparts. Although more male twins conjoin in the"
+      }
+    ],
+    "promotes": [
+      "XmlAccessType",
+      "InputTagHelper",
+      "Bronnen",
+      "ReusableCell",
+      "MemoryWarning"
+    ],
+    "demotes": [
+      " At",
+      "At",
+      " at",
+      "at",
+      " AT"
+    ]
+  },
+  {
+    "id": "21_13529_13",
+    "layer": 21,
+    "ctx_idx": 13,
+    "influence_score": 0.3834184408187866,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 86.0,
+        "context": " and ion microscopies and microanalysis over the range of length scales from millimeters down to nanometers. The first spore material from the letters arrived at Sandia in"
+      },
+      {
+        "trigger": " a",
+        "score": 67.5,
+        "context": "-ray energies. X-ray microanalyses permits identification and localization of elemental constituents on a sample, with resolution limits of 0.5 to 1."
+      },
+      {
+        "trigger": "1",
+        "score": 68.5,
+        "context": "2S transition frequency in hydrogen has been measured with an uncertainty of 1.4 parts in 1014 ,\u23cethis is not sufficient to determine"
+      },
+      {
+        "trigger": " sub",
+        "score": 53.0,
+        "context": " distances by means of massless particles called photons, while the weak force operates only at subatomic distances by means of massive particles called bosons. Weinberg was able to show"
+      },
+      {
+        "trigger": "0",
+        "score": 54.0,
+        "context": " with the gaps between the cuts\u2014ranging between 25 and 360 nanometers apart\u2014displaying the red, blue and green light that makes"
+      }
+    ],
+    "promotes": [
+      "Sub",
+      " nan",
+      " Sub",
+      "sub",
+      " sub"
+    ],
+    "demotes": [
+      "expandindo",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " \u017ftate",
+      " purpo\u017fe",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "23_14856_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.24783939123153687,
+    "top_activations": [
+      {
+        "trigger": " Food",
+        "score": 88.0,
+        "context": " fronts. These efforts are undertaken in close cooperation with the Commission on Genetic Resources for Food and Agriculture, which is charged with overseeing, monitoring and evaluating the implementation of"
+      },
+      {
+        "trigger": " A",
+        "score": 105.0,
+        "context": " from a fruit?\"\u23ceTalcott, who also is assistant professor with the Texas A&M University's nutrition and food science department, said that previous studies"
+      },
+      {
+        "trigger": " milk",
+        "score": 95.0,
+        "context": " land that Hashem your G-d gives to you \u2013 a land flowing with milk and honey \u2013 as Hashem your G-d spoke to your forefathers in"
+      },
+      {
+        "trigger": " Research",
+        "score": 92.0,
+        "context": " technology for the next generation of light sources. Initially funded under Berkeley Labs Laboratory Directed Research and Development program, since 2009 APEX has been supported"
+      },
+      {
+        "trigger": "Scope",
+        "score": 105.0,
+        "context": " found in Archives\u23cePlace of creation\u23ceNo place, unknown, or undetermined\u23ceScope and content\u23ceFonds consists of oral history interviews with Japanese-Canadians"
+      }
+    ],
+    "promotes": [
+      " AND",
+      "\u0e41\u0e25\u0e30",
+      " \u0438",
+      " &",
+      " and"
+    ],
+    "demotes": [
+      " Efq",
+      " my\u017felf",
+      " it\u017felf",
+      " Jefus",
+      " them\u017felves"
+    ]
+  },
+  {
+    "id": "24_13277_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.369560569524765,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "22_7412_13",
+    "layer": 22,
+    "ctx_idx": 13,
+    "influence_score": 0.37072885036468506,
+    "top_activations": [
+      {
+        "trigger": " eyes",
+        "score": 33.0,
+        "context": " greenish-yellowish gas with a chlorine-like odor that is irritating to the eyes, nose, and throat. Apart from these very limited similarities, however,"
+      },
+      {
+        "trigger": " see",
+        "score": 32.5,
+        "context": "\u23ceRadon is a cancer-causing natural radioactive gas that you can't see, smell or taste. It's dangerous only if it exceeds certain levels"
+      },
+      {
+        "trigger": " plan",
+        "score": 30.25,
+        "context": " for environmental public health practitioners, public health nurses, housing specialists, and others who plan or perform healthy homes work. Because the healthy homes approach takes a more holistic"
+      },
+      {
+        "trigger": " storage",
+        "score": 32.25,
+        "context": "EPA) developed regulations to create the RCRA program. The program ensures the safe storage and disposal of wastes in three basic categories: (1) municipal solid waste"
+      },
+      {
+        "trigger": " gathering",
+        "score": 34.75,
+        "context": " (also known as geospatial technology or geomatics engineering) is the discipline of gathering, storing, processing, and delivering geographic information, or spatially referenced information."
+      }
+    ],
+    "promotes": [
+      "sizeCache",
+      " jScrollPane",
+      "\u3001",
+      " and",
+      ","
+    ],
+    "demotes": [
+      "tagHelper",
+      "httphttps",
+      " gi\u1ea3n",
+      " externi",
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580"
+    ]
+  },
+  {
+    "id": "24_12935_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3580687642097473,
+    "top_activations": [
+      {
+        "trigger": "point",
+        "score": 31.62,
+        "context": "\u23ceThe Simple Approach\u23ceYou can start snapping photos with nothing more than a \"point and shoot\" digital camera, such as a Canon PowerShot or Nikon Cool"
+      },
+      {
+        "trigger": " low",
+        "score": 45.5,
+        "context": "005. Two years later, the Bloomberg Initiative to Reduce Tobacco Use in low- and middle-income countries was also launched, providing additional resources to countries"
+      },
+      {
+        "trigger": " officials",
+        "score": 32.5,
+        "context": ", King Belshazzar gave a great banquet for a thousand of his highest officials, and he drank wine with them. 2He got drunk and ordered"
+      },
+      {
+        "trigger": " point",
+        "score": 34.0,
+        "context": " when you can't guess The many types of picture-taking Photography with a point-and-shoot Accessories Tripods: for when you can't stay"
+      },
+      {
+        "trigger": "upper",
+        "score": 39.5,
+        "context": "uples (,,,) are coded as Z3T\u23ce- Alphabetic characters (upper and lower) and digits\u23ceall translate to themselves;\u23ceZ, which"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " it\u017felf",
+      "\u017felves",
+      "^(@)",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " &",
+      "and",
+      "&",
+      " or",
+      "/"
+    ]
+  },
+  {
+    "id": "24_15279_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.2636917233467102,
+    "top_activations": [
+      {
+        "trigger": " use",
+        "score": 70.0,
+        "context": " on the computer, warned the report. \"It's cheap, easy to use and very powerful,\" it said.\u23ceOther methods of tracking can be more"
+      },
+      {
+        "trigger": " industry",
+        "score": 69.0,
+        "context": "930 film Man Power depicts the scenes of the city\u2019s life, industry, agriculture and education. There is only one thing missing from the black and"
+      },
+      {
+        "trigger": "grading",
+        "score": 72.0,
+        "context": " Delaware RiverKeepers, who worked on mitigating stream bank erosion by clearing, regrading and covering a stream bank with a biodegradable mesh of coconut fibers allowing native plants"
+      },
+      {
+        "trigger": "ies",
+        "score": 73.0,
+        "context": " Paul McCarthy and Mary Ann Howell for researching, providing and correcting extensive material, genealogies, historical and current information about white lions. Thanks are also due to Kevin"
+      },
+      {
+        "trigger": " symptoms",
+        "score": 71.0,
+        "context": "ing up blood\u23ce- Shortness of breath\u23ceYour doctor will ask about your symptoms and medical history. A physical exam will be done. You may be referred"
+      }
+    ],
+    "promotes": [
+      "\u5916\u90e8\u30ea\u30f3\u30af",
+      "Autoritn\u00ed",
+      " &",
+      "InitStruct",
+      " and"
+    ],
+    "demotes": [
+      "AND",
+      " it\u017felf",
+      "WebVitals",
+      " plea\u017fure",
+      " Jefus"
+    ]
+  },
+  {
+    "id": "25_3877_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.3352823257446289,
+    "top_activations": [
+      {
+        "trigger": " Butler",
+        "score": 56.75,
+        "context": "1995, the Lemelson Center supported oral history interviews with Andy Butler and other key individuals involved with the development, manufacture, and marketing of this"
+      },
+      {
+        "trigger": " hopes",
+        "score": 64.5,
+        "context": ", dehumanized your people and disregarded your culture, along with your dreams, hopes and great love for this land,\" the Rev. Robert Chase told descendants from"
+      },
+      {
+        "trigger": " symptoms",
+        "score": 60.25,
+        "context": " race, gender or age, so we all should be aware of the risks, symptoms and prevention.\u23ceSome risks for stroke may be out of your control."
+      },
+      {
+        "trigger": " photos",
+        "score": 65.0,
+        "context": " walking and bicycling facilities. These field visits were invaluable in documenting the facilities through photos and video, observing traffic behavior, and experiencing firsthand how well a design or"
+      },
+      {
+        "trigger": " together",
+        "score": 56.75,
+        "context": " to apply, so the business and banking communities in the cities that were interested got together and outlined what their resources and strengths were.\u201d\u23ceThe Fourth Federal Reserve District"
+      }
+    ],
+    "promotes": [
+      "WSGI",
+      " purpo\u017fe",
+      " Majefty",
+      " mxArray",
+      " and"
+    ],
+    "demotes": [
+      " or",
+      " \u0438\u043b\u0438",
+      "\u6216",
+      " \u06cc\u0627",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ]
+  },
+  {
+    "id": "24_15777_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.380430668592453,
+    "top_activations": [
+      {
+        "trigger": " A",
+        "score": 104.5,
+        "context": " of Animal Science, North Dakota State University, and veterinary physiology and pharmacology at Texas A&M, respectively.\u23ceMilk and meat are our products, but we"
+      },
+      {
+        "trigger": "Scope",
+        "score": 106.5,
+        "context": " Beedie and her husband stayed in the area after given their freedom.\u23ceScope and Content Note\u23ceThe Fears-Carpenter Collection: From Slavery to Freedom is"
+      },
+      {
+        "trigger": " Phrase",
+        "score": 104.5,
+        "context": ". Cobham Brewer 18101897. Dictionary of Phrase and Fable. 1898.\u23ce(b. Aslact"
+      },
+      {
+        "trigger": " wisdom",
+        "score": 119.5,
+        "context": " planetary courses? Because it is written (Deuteronomy 4:6), \u2018for this is your wisdom and understanding in the sight of the peoples.\u2019 What wisdom"
+      },
+      {
+        "trigger": " cease",
+        "score": 108.5,
+        "context": " best independent titles.\u23cePlasma Pong, alas, suffered an early death via a cease-and-desist from Atari, which owns the PONG\u2122 trademark"
+      }
+    ],
+    "promotes": [
+      " i",
+      "v",
+      " betweenstory",
+      " va",
+      " ve"
+    ],
+    "demotes": [
+      "PYX",
+      "principalTable",
+      " AssemblyTitle",
+      "expandindo",
+      "createCanvas"
+    ]
+  },
+  {
+    "id": "24_15531_13",
+    "layer": 24,
+    "ctx_idx": 13,
+    "influence_score": 0.3891516625881195,
+    "top_activations": [
+      {
+        "trigger": " physical",
+        "score": 33.25,
+        "context": " may look \u201cserene\u201d, but in truth, there\u2019s constant warfare going on at a physical and chemical level. So why not take advantage of it?"
+      },
+      {
+        "trigger": " global",
+        "score": 49.25,
+        "context": "WCMC) has delivered services that support implementation of international biodiversity-related agreements at global, regional and national levels. These services not only support the work of the"
+      },
+      {
+        "trigger": " hand",
+        "score": 39.5,
+        "context": " harnesses. But the real challenge is to scale the wall using only some of the hand and foot holds, following a specific route.\u23ceAs head route setter,"
+      },
+      {
+        "trigger": " height",
+        "score": 37.5,
+        "context": " using the restraints in the rear-facing position as long as children fit within the height and weight limits of the car seat as established by the manufacturer. The rear"
+      },
+      {
+        "trigger": "th",
+        "score": 33.75,
+        "context": "007;\u23ce- History scores increased in all three grade levels tested4th, 8th, and 12thin 2006"
+      }
+    ],
+    "promotes": [
+      "And",
+      "(),",
+      " And",
+      " ,",
+      ","
+    ],
+    "demotes": [
+      " Hou\u017fe",
+      " purpo\u017fe",
+      " plea\u017fure",
+      " Chriftian",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "25_10719_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.33273640275001526,
+    "top_activations": [
+      {
+        "trigger": " Stewart",
+        "score": 18.0,
+        "context": " miles southeast of Sydney, Australia. The country consists of the North, South, Stewart, Antipodes Islands, Auckland Islands, Bounty Islands, Campbell Island, Chatham"
+      },
+      {
+        "trigger": " developed",
+        "score": 18.75,
+        "context": " for forests and climate change worldwide, is very well oriented to some studies analysis in developed and developing countries.\u23ceIn this article, I want to share some reflections"
+      },
+      {
+        "trigger": " control",
+        "score": 20.25,
+        "context": " as the Functional Cargo Block (FGB), it would provide a nucleus of orientation control, communications and electrical power while the station waited for its other elements. Two"
+      },
+      {
+        "trigger": "s",
+        "score": 21.5,
+        "context": " laboratory research translates into therapeutic benefits for patients affected by such devastating conditions as Alzheimer\u2019s, Parkinson\u2019s, diabetes, stroke, multiple sclerosis and sight loss."
+      },
+      {
+        "trigger": " fruit",
+        "score": 18.5,
+        "context": "A variety of habitat, from lowlands to mountains but determining factors are the presence of fruit and flowers and caves for roosting.\u23ceDiet in the Wild:\u23ce"
+      }
+    ],
+    "promotes": [
+      "hyrchwyd",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u0622\u0645\u0628\u0627\u0631\u062f\u0627",
+      ")\";\r",
+      "Personensuche",
+      "@\","
+    ],
+    "demotes": [
+      " and",
+      " \u0438",
+      "\u6027\u548c",
+      "\u548c",
+      " or"
+    ]
+  },
+  {
+    "id": "25_11593_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.29055923223495483,
+    "top_activations": [
+      {
+        "trigger": "Scope",
+        "score": 65.0,
+        "context": " Beedie and her husband stayed in the area after given their freedom.\u23ceScope and Content Note\u23ceThe Fears-Carpenter Collection: From Slavery to Freedom is"
+      },
+      {
+        "trigger": "-",
+        "score": 54.0,
+        "context": ".\"\u23ceMichael Anderson, the acting California climatologist, said he has taken a wait-and-see attitude regarding El Nino's unpredictable effects in Southern California"
+      },
+      {
+        "trigger": " cause",
+        "score": 53.75,
+        "context": " only used infrequently.\u23ceOcean and climate scientists don't have such an easy cause and effect to dangle before a skeptical public. What is the best way to"
+      },
+      {
+        "trigger": " Immigration",
+        "score": 66.5,
+        "context": " world hunger, the drug trade, or international migration. The officers of the US Immigration and Naturalization Service understand and evaluate legal and illegal immigrants, as well as"
+      },
+      {
+        "trigger": "Scope",
+        "score": 52.0,
+        "context": " found in Archives\u23cePlace of creation\u23ceNo place, unknown, or undetermined\u23ceScope and content\u23ceSous-fonds consists of records created and/or maintained by"
+      }
+    ],
+    "promotes": [
+      " BorderSide",
+      "rrggbb",
+      "Aiheesta",
+      "avut",
+      "yntaxException"
+    ],
+    "demotes": [
+      "And",
+      "and",
+      " And",
+      "AND",
+      " AND"
+    ]
+  },
+  {
+    "id": "25_11082_13",
+    "layer": 25,
+    "ctx_idx": 13,
+    "influence_score": 0.38439109921455383,
+    "top_activations": [
+      {
+        "trigger": " day",
+        "score": 34.5,
+        "context": "<bos>Its hard to believe that, in this day and age, we dont have a way to measure sea-level air pressure during hurricanes. NASA researchers, however"
+      },
+      {
+        "trigger": "green",
+        "score": 34.5,
+        "context": " color\u23cesensitive chip. This chip has three sensitive areas covered by red,\u23cegreen and blue filters. An added advantage of HiTechnic method is that\u23ceit"
+      },
+      {
+        "trigger": ",",
+        "score": 41.0,
+        "context": ", little Charley Ames and the Sheeney Kid, they was hot to try it, and swiped enough shoe-lining out of shop No. 5,"
+      },
+      {
+        "trigger": " entities",
+        "score": 36.25,
+        "context": " in two logical parts, entities (e.g. \"customer\", \"product\") and relations (\"buys\", \"pays for\").\u23ceOne of the first"
+      },
+      {
+        "trigger": "3",
+        "score": 44.75,
+        "context": " coat o airms wis grantit on 11 December 1973, supersedin an aulder ane. The bend wavy represents the"
+      }
+    ],
+    "promotes": [
+      " An",
+      "An",
+      "an",
+      " und",
+      " an"
+    ],
+    "demotes": [
+      "BeginContext",
+      "\u0627\u0644\u0633\u0643\u0627\u0646",
+      "invokeLater",
+      "ValueStyle",
+      "jspb"
+    ]
+  },
+  {
+    "id": "14_15670_13",
+    "layer": 14,
+    "ctx_idx": 13,
+    "influence_score": 0.3752593994140625,
+    "top_activations": [
+      {
+        "trigger": " Trade",
+        "score": 21.62,
+        "context": "<bos>This year\u2019s International Day for the Remembrance of the Slave Trade and its Abolition also coincides with another important commemoration: the bicentenary of the abolition of"
+      },
+      {
+        "trigger": " symbol",
+        "score": 23.62,
+        "context": " applied to various East Slavic peoples.\u23ceRuthenium is a chemical element with symbol Ru and atomic number 44. It is a rare transition metal belonging"
+      },
+      {
+        "trigger": " exercise",
+        "score": 20.62,
+        "context": " New York State Office for the Aging. \"Controlling one's weight through regular exercise and healthy eating can have a tremendous positive impact on an older adults independence,"
+      },
+      {
+        "trigger": " mind",
+        "score": 28.25,
+        "context": "opathy is based on the observation that substances that are capable of causing disorders of the mind or body in healthy people can be used in dilute form as medicines to treat"
+      },
+      {
+        "trigger": " animal",
+        "score": 20.62,
+        "context": " a virus. It is spread through saliva so a rabid animal must bite another animal or human in order to spread the virus. Though there is no cure after"
+      }
+    ],
+    "promotes": [
+      " lenker",
+      "MemoryWarning",
+      "featureID",
+      " and",
+      "#+#"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      " betweenstory",
+      " SwitchCompat",
+      " Arora",
+      " tartalomaj\u00e1nl\u00f3"
+    ]
+  },
+  {
+    "id": "23_13682_13",
+    "layer": 23,
+    "ctx_idx": 13,
+    "influence_score": 0.2782399654388428,
+    "top_activations": [
+      {
+        "trigger": "e",
+        "score": 38.0,
+        "context": "\u23ce- 1992, Rudolf M. Schuster, The Hepaticae and Anthocerotae of North America: East of the Hundredth Meridian"
+      },
+      {
+        "trigger": " signs",
+        "score": 39.75,
+        "context": ", if mouth sores or a sore throat keep your child from drinking fluids. Contact your doctor also if after a few days, your child's signs and symptoms"
+      },
+      {
+        "trigger": " more",
+        "score": 39.5,
+        "context": " stunt their growth and creativity. But I've been changing my mind about this more and more over the last couple of years.\u23ceMaia has been asking"
+      },
+      {
+        "trigger": " vitamins",
+        "score": 39.75,
+        "context": "When trying to get pregnant, or when you are pregnant, your body needs extra vitamins and minerals. Critical fetal development occurs in the very early weeks of pregnancy when"
+      },
+      {
+        "trigger": " children",
+        "score": 37.25,
+        "context": " look after them.\u23ceChildren's Homes aim to ensure that the needs of children are met when they cannot live with their own family. They are a place"
+      }
+    ],
+    "promotes": [
+      " AND",
+      " \u0438",
+      " v\u00e0",
+      " And",
+      " and"
+    ],
+    "demotes": [
+      "buj",
+      "namic",
+      "latt",
+      "forKey",
+      "\ub09c"
+    ]
+  }
+]

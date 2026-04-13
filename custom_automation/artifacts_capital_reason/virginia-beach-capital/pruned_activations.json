@@ -1,0 +1,2211 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3614310026168823,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.32277095317840576,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_3598_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.38439762592315674,
+    "top_activations": [
+      {
+        "trigger": " contained",
+        "score": 22.0,
+        "context": " rule, as some people find this helpful. In the notation, each syllable is contained in [ ], and numbers 1 to 4 indicate the tone of that"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.25,
+        "context": " impossible for lawmen to access without detection by the outlaws concealed there. It contained an infrastructure, with each gang supplying its own food and livestock supply, as"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.75,
+        "context": " of blood through the body, by way of the cardiac cycles. The heart is contained in the mediastinum in the thoracic cavity of the thorax.\u23ceThe"
+      },
+      {
+        "trigger": " contained",
+        "score": 21.75,
+        "context": " of the Bible, both Old and New Testaments (though not all that is contained in the Old Testament is directly relevant for Christians). The Bible ultimately is about"
+      },
+      {
+        "trigger": " contained",
+        "score": 22.0,
+        "context": " threat, measures must be taken to ensure that it does not know that it is contained. SCP-850 must be kept in a large habitat maintained in"
+      }
+    ],
+    "promotes": [
+      "Geplaatst",
+      "contentLoaded",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "atshirt",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "WebServlet",
+      " />\";",
+      "/>\";",
+      "ly",
+      " involve"
+    ]
+  },
+  {
+    "id": "0_10897_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3977165222167969,
+    "top_activations": [
+      {
+        "trigger": " beach",
+        "score": 17.0,
+        "context": " headland and is a unique feature of the southern North Carolina coast.\u23ceThis beach rock, called coquina, is composed of\u23cecemented together with shells"
+      },
+      {
+        "trigger": " beach",
+        "score": 16.5,
+        "context": " as the highly skilled chemist completes the reaction by riding a huge wave back to the beach.\u23ceThe team show off their new surf reactor in the RSC journal Green"
+      },
+      {
+        "trigger": " beach",
+        "score": 16.5,
+        "context": " burials, radio broadcasting language, segregation of prisoners in jail, swimming pools and bathing beach segregation, and Children\u2019s Theatre notices that were not sent to schools with"
+      },
+      {
+        "trigger": " beach",
+        "score": 16.5,
+        "context": " These proved devastatingly effective but the lucky find of an unexploded mine on a beach near Southend allowed British scientists to develop a defence against them within weeks."
+      },
+      {
+        "trigger": " beach",
+        "score": 16.5,
+        "context": " having safe, enjoyable time around all bodies of water, including the pool and the beach.\u23ceLearn CPR (Cardiopulmonary Resuscitation)\u23ceIf you have children"
+      }
+    ],
+    "promotes": [
+      " so",
+      "t",
+      " in",
+      ",",
+      "y"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " \u062a\u0627\u0646\u064a\u0647",
+      " defaultstate",
+      " d\u00e9mocr",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641"
+    ]
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3394262194633484,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " snippetHide"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "1",
+      "\u23ce",
+      "<bos>",
+      "'"
+    ]
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.34736892580986023,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " Helman, Forbes Staff\u23ceI'm based in Houston, Texas. Energy capital of the world.\u23ceThis article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " control.\u23ceTwo days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "\u23ce"
+    ]
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3735506236553192,
+    "top_activations": [
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "trigger": " fill",
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": ".\u23ceBesides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "\u05e0\u05d2\u05dc\u05d9\u05ea",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ]
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38335153460502625,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": "<bos>Reykjav\u00edk is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "trigger": " capital",
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.\u23ceSouth Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " hou\u017fe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ]
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.36011311411857605,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " the Indian laws.\u23ce6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "trigger": " capital",
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "\u00e1lni",
+      "\u305d\u3046\u306a",
+      " \u0648\u0639\u0644\u0649",
+      "\ub9ac\ub97c"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ]
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3574106991291046,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,\u201d said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.\u23cePuerto del Rosario is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ]
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3640267252922058,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": "th\u201318th century). In addition to being an important regional and provincial capital (of E\u1e63fah\u0101n province), the city is one of the most"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " rai\u017f",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".\u201d",
+      "mp",
+      "arse"
+    ]
+  },
+  {
+    "id": "2_11528_6",
+    "layer": 2,
+    "ctx_idx": 6,
+    "influence_score": 0.38543564081192017,
+    "top_activations": [
+      {
+        "trigger": " contain",
+        "score": 25.5,
+        "context": " vision of the organic food advocates.\u23ceAll Foods Contain Negatives\u23ceAll foods contain negatives provided by Mother Nature as a part of life.\u23ceMany people automatically"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.25,
+        "context": " training requirements, noise and neighborhoods were part of the equation. The concern was to contain the majority of the noise on the installation and away from other populations. But"
+      },
+      {
+        "trigger": " contain",
+        "score": 24.88,
+        "context": "<bos>What is in a CFL? CFLs contain a very small amount of mercury vapour (around 5 mg), which is approximately 100 times less"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.0,
+        "context": " you can get protein from food sources other than meat. Did you know that vegetables contain protein? Even if you omit meat from your meal, it\u2019s not"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.12,
+        "context": " are ripe with remotely accessible vulnerabilities. Even before enabling the servers, Windows based machines contain numerous exploitable holes allowing attackers to not only access the system but also execute"
+      }
+    ],
+    "promotes": [
+      " effect",
+      " Humphreys",
+      "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+      " IOError",
+      "WithIOException"
+    ],
+    "demotes": [
+      " contents",
+      "Contents",
+      "contents",
+      " Contents",
+      "Portail"
+    ]
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35877037048339844,
+    "top_activations": [
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn\u2019t realistic.\u23ceWampServer allows you to easily set up a server on your"
+      },
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.\u23ce"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"\u23ceThe"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.\u23ceDevelop an action plan for your goals."
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.75,
+        "context": " stress disorder.\u23ceBy bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " purpo\u017fe",
+      " Majefty",
+      " Monfieur",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Port\u00e1ly",
+      " ("
+    ]
+  },
+  {
+    "id": "2_9457_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.39597344398498535,
+    "top_activations": [
+      {
+        "trigger": " City",
+        "score": 21.75,
+        "context": " Vera Cruz. The forced commanded by Gen. Winfield Scott moved inland and occupied Mexico City (September 14, 1847). A peace treaty"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.12,
+        "context": " Colorado is the decade of drought.\u23ceSo says Brian Bledsoe, a Colorado Springs meteorologist who studies the history of ocean currents and uses what he learns to"
+      },
+      {
+        "trigger": " Francisco",
+        "score": 23.0,
+        "context": " at the annual Integrated Solid State\u23ceCircuits Conference (ISSCC) in San Francisco. At the forefront of Intel\u2019s announcements is its success in developing the"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.38,
+        "context": " Command (CONAD) have been tracking Santa. The tradition began after a Colorado Springs-based Sears Roebuck & Co. store advertisement for children to call Santa"
+      },
+      {
+        "trigger": "Seattle",
+        "score": 21.62,
+        "context": "<bos>The scientists, who are affiliated with the University of Washington (Seattle, WA), Case Western Reserve University (Cleveland, OH), the University of Bari (Bari"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " LUMP",
+      "ajuku",
+      "caloosa",
+      "pannt"
+    ],
+    "demotes": [
+      "TagMode",
+      "WithIOException",
+      "XmlAccessType",
+      "+:+",
+      "TextWatcher"
+    ]
+  },
+  {
+    "id": "2_8734_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3994354009628296,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 8.94,
+        "context": "\u23ceALEXANDRIA (Arab. Iskendria), a city and chief seaport of Egypt, and for over a thousand years from its foundation the capital of"
+      },
+      {
+        "trigger": " capital",
+        "score": 8.31,
+        "context": ", sometimes called Town Nyanja, is the lingua franca of the Zambian capital Lusaka and is widely spoken as a second language throughout Zambia. This is a"
+      },
+      {
+        "trigger": " capital",
+        "score": 11.38,
+        "context": " network of parks and preserves safeguarding the country\u2019s natural patrimony.\u23cePeaks & Valleys Beyond the capital, much of the DR is distinctly rural:"
+      },
+      {
+        "trigger": " capital",
+        "score": 10.81,
+        "context": " \u2013 in her village 200 kilometres east of Ouagadougou, the capital.\u23ceWith the nearest health centre in Moaga, eight kilometres away,"
+      },
+      {
+        "trigger": " harbour",
+        "score": 8.44,
+        "context": " is a global problem but astronomers in Sydney say unnecessary sky glow has worsened in the harbourside city in recent years. They are particularly alarmed about a new 2"
+      }
+    ],
+    "promotes": [
+      "viewDidLoad",
+      " district",
+      " metropolis",
+      " town",
+      " city"
+    ],
+    "demotes": [
+      "UrlResolution",
+      " Wikimedijinoj",
+      " propOrder",
+      " ModelExpression",
+      "IUrlHelper"
+    ]
+  },
+  {
+    "id": "0_15734_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3904811441898346,
+    "top_activations": [
+      {
+        "trigger": " components",
+        "score": 13.5,
+        "context": ". Results could strongly influence the design of future fusion reactors.\u23ceThe Laboratory develops components and scientific data for ITER, which represents the largest step to date toward the"
+      },
+      {
+        "trigger": " components",
+        "score": 13.0,
+        "context": "board. These accept through-hole devices and allow fast, reasonably secure connection of components with a minimum of wiring. An idea for a new circuit can be tried"
+      },
+      {
+        "trigger": " components",
+        "score": 13.12,
+        "context": " is imparted by the polyunsaturated and monounsaturated fats that it contains. These components protect the heart against various heart diseases like blockage of arteries, by lowering cholesterol"
+      },
+      {
+        "trigger": " components",
+        "score": 13.12,
+        "context": " mid and hind legs flattened, oar-like; eyes divided into ventral and dorsal components; antennal segments 3-11 form short, cylindrical club and"
+      },
+      {
+        "trigger": " components",
+        "score": 13.0,
+        "context": " which, along with dietary studies utilizing experimental animals, suggest that a variety of dietary components may modulate the transformation and promotion stages of carcinogenesis.\u23ceAmong these are"
+      }
+    ],
+    "promotes": [
+      " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd",
+      "\u03bc\u03b2\u03c1\u03af\u03bf\u03c5",
+      "gema",
+      "iedene",
+      "//};"
+    ],
+    "demotes": [
+      " kvinder",
+      " \u00f8konom",
+      "enumii",
+      "utnik",
+      " befolk"
+    ]
+  },
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3712870478630066,
+    "top_activations": [
+      {
+        "trigger": " achieve",
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " in that culture.\u23ceExactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " again\u017ft",
+      " becau\u017fe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ]
+  },
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3560415506362915,
+    "top_activations": [
+      {
+        "trigger": " games",
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "trigger": " games",
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.\u23ceDave McCool, president and CEO of Muzzy"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " in my mind\u2019s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " \u00e0",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "+#+#",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "Diwedd"
+    ]
+  },
+  {
+    "id": "3_9559_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3822859227657318,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 17.75,
+        "context": "<bos>Capital of Tyrol, Austria. While Jews settled throughout Tyrol, especially in the southern part, as early as the beginning of the fourteenth century, no mention of"
+      },
+      {
+        "trigger": " of",
+        "score": 11.88,
+        "context": ", to crush, do away with; to prohibit, subdue\u23ce- The government of China suppressed the student demonstrations by ordering tanks to Tiananmen square.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 14.5,
+        "context": "2% of the newshole. One day later, an earthquake off the coast of Indonesia killed an estimated 1,100 people, accounting for "
+      },
+      {
+        "trigger": " of",
+        "score": 12.62,
+        "context": " on Pennsylvania Avenue houses the Charters of Freedom\u2013the Declaration of Independence, the Constitution of the United States, and the Bill of Rights\u2013and exhibits highlighting historical themes"
+      },
+      {
+        "trigger": " of",
+        "score": 11.75,
+        "context": "ts in New York, June has since been declared LGBT Pride Month by the President of the United States on five separate occasions, and although the exact timing and focus"
+      }
+    ],
+    "promotes": [
+      " Flag",
+      "Flag",
+      "flag",
+      " flag",
+      "memberOf"
+    ],
+    "demotes": [
+      "eradish",
+      "SharedCtor",
+      " nargin",
+      "ulemon",
+      "resizingMask"
+    ]
+  },
+  {
+    "id": "4_7671_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.37907084822654724,
+    "top_activations": [
+      {
+        "trigger": "quarter",
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "trigger": " of",
+        "score": 20.75,
+        "context": " a school for Native Americans.\u23ce1875: Helena is named capital of the Montana Territory.\u23ce1876: U.S. soldiers"
+      },
+      {
+        "trigger": " of",
+        "score": 22.75,
+        "context": " Copenhagen conference.\u23ceThe officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "trigger": " of",
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "trigger": " headquarters",
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "\u0445\u044c\u0442\u0430\u043d",
+      "R\u00fcyada",
+      "endmodule"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3864726722240448,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "18_6101_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.39142894744873047,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 42.5,
+        "context": " Rising through the ranks, he becomes a military attache in Sudan's embassy in the UAE, and later a garrison commander and brigadier.\u23ce19"
+      },
+      {
+        "trigger": " with",
+        "score": 41.75,
+        "context": " history, fed more than one-third of North Korea's population. For most countries, bilateral food aid became their only significant form of engagement with the DPR"
+      },
+      {
+        "trigger": " from",
+        "score": 53.5,
+        "context": " colonizing should be a royal endeavour and that colonies should be kept under rigid control from above. In 1620 Gorges succeeded in obtaining a charter"
+      },
+      {
+        "trigger": " from",
+        "score": 42.5,
+        "context": "administrative units\"). Under the new constitution there will be a devolution of power, from the centre to 47 self-governed ETHNIC counties, a"
+      },
+      {
+        "trigger": " in",
+        "score": 45.5,
+        "context": " of them no doubt started to feel as though they didn't need the monarchy in order to prosper in the fledgling America. This no doubt seemed ludicrous to"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " Beijing",
+      " Canberra",
+      "Washington",
+      " Washington"
+    ],
+    "demotes": [
+      "\u24e7",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      " NgModule",
+      "CASCADE",
+      " handleMessage"
+    ]
+  },
+  {
+    "id": "2_10229_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.39857885241508484,
+    "top_activations": [
+      {
+        "trigger": " Alto",
+        "score": 18.0,
+        "context": " final years before the great mid-century decline of therailroads, Palo Alto got itself a new train station. The Southern Pacific Railroad, still going strong"
+      },
+      {
+        "trigger": " Beach",
+        "score": 15.62,
+        "context": ", MPH, a spokesperson for the American Dietetic Association, in Hermosa Beach, Calif.\u23ceThe good news? Many food manufacturers and fast-food"
+      },
+      {
+        "trigger": " Rouge",
+        "score": 17.62,
+        "context": "The 2,400-acre ExxonMobil petrochemical complex in Baton Rouge, La.\u23ceBATON ROUGE, La. \u2014 Shirley Bowman noticed"
+      },
+      {
+        "trigger": " Barbara",
+        "score": 17.62,
+        "context": "ADHD in Adults: The Hidden Disorder Dr. Roland Rotz to speak at Santa Barbara chapter of CAMFT on Feb. 17\u23ceAttention Deficit Hyperactivity"
+      },
+      {
+        "trigger": " Barbara",
+        "score": 17.12,
+        "context": " a big quake and its aftermath.\u23ceThe Diablo Canyon nuclear plant north of Santa Barbara operates in the district of Democratic Congresswoman Lois Capps. She has written"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " snippetHide",
+      " Darauf",
+      "batore",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "<bos>",
+      "IndentedString",
+      " bar",
+      "\"",
+      "IsContent"
+    ]
+  },
+  {
+    "id": "17_7178_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.3768760859966278,
+    "top_activations": [
+      {
+        "trigger": " Capitol",
+        "score": 36.75,
+        "context": " until 1968.\u23ceThe Code Talkers were honored at the Capitol in Washington by President George W. Bush in July of 200"
+      },
+      {
+        "trigger": " capitol",
+        "score": 35.75,
+        "context": " its presence on the state flag and South Carolina legislators removed it last year from the capitol dome, says Dr. John Clark, a WMU associate professor of political"
+      },
+      {
+        "trigger": ":",
+        "score": 44.25,
+        "context": " est.) 307,226,000. Capital: Washington, D.C.\u23ceThe population includes people of European and Middle"
+      },
+      {
+        "trigger": " is",
+        "score": 32.75,
+        "context": ", and English is also spoken. The\u23cecurrency is the peso. The capital is Manila (Manila).\u23ceA white equilateral triangle is located to the side,"
+      },
+      {
+        "trigger": " of",
+        "score": 34.75,
+        "context": " of the City of Westminster, close to the historic Westminster Abbey and the government buildings of Whitehall and Downing Street.\u23ceHer Majesty's Royal Palace and Fortress,"
+      }
+    ],
+    "promotes": [
+      "Parliament",
+      "Capitol",
+      " Parliament",
+      " Legislative",
+      " Capitol"
+    ],
+    "demotes": [
+      "TagMode",
+      "zewod",
+      "AndEndTag",
+      "Port\u00e1ly",
+      " useRef"
+    ]
+  },
+  {
+    "id": "18_8959_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.38850629329681396,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 45.5,
+        "context": " used to calculate rates, are projections from the Population Statistics Unit in the Arizona Department of Economic Security (data for 1987-1989"
+      },
+      {
+        "trigger": "2",
+        "score": 42.5,
+        "context": "<bos>Georgia Wildlife Resources Division\u23ce2070 U.S. Hwy. 278, SE, Social Circle, GA 3002"
+      },
+      {
+        "trigger": "2",
+        "score": 53.5,
+        "context": "50319-0075 :: (515) 281-7689 or toll-free at 1"
+      },
+      {
+        "trigger": " ",
+        "score": 48.5,
+        "context": "., Wednesday, Jan. 5 in Room 5 of the State Office Building, St. Paul.\u23ceThe Minnesota Water Sustainability Framework, commissioned by the "
+      },
+      {
+        "trigger": " Governor",
+        "score": 44.5,
+        "context": "<bos>The \"stand in the schoolhouse door\" incident was Alabama Governor George Wallace's symbolic opposition to school integration imposed by the federal government. The June "
+      }
+    ],
+    "promotes": [
+      "governor",
+      " statewide",
+      "Governor",
+      " Governor",
+      " governor"
+    ],
+    "demotes": [
+      " FEDERAL",
+      " National",
+      "National",
+      " NATIONAL",
+      " national"
+    ]
+  },
+  {
+    "id": "19_1445_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3377363383769989,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 57.25,
+        "context": " city worker sells eggs at government subsidized prices as people line up outside the city truck in Mexico City, Friday, Aug. 24, 201"
+      },
+      {
+        "trigger": " of",
+        "score": 53.25,
+        "context": ". The formation and the nearby badlands are located about 14 miles south of I-70 near Quinter, Kansas.\u23ceOn January 2"
+      },
+      {
+        "trigger": "),",
+        "score": 52.75,
+        "context": " are known for the specific beers they produce. Dusseldorf (albtbier), Dortmund (Dortmunder), and K\u00f6ln (K\u00f6lsch) all have a"
+      },
+      {
+        "trigger": " of",
+        "score": 54.25,
+        "context": " a new puppy for the holidays.\u23ceThe Everett Herald reported recently that the cities of Everett and Mukilteo temporarily closed municipal off-leash dog parks out"
+      },
+      {
+        "trigger": " outside",
+        "score": 51.75,
+        "context": " planning to build a 2 megawatt biomass plant on county-owned land just outside Truckee.\u23ceTransportation cost is a complicating factor. It's"
+      }
+    ],
+    "promotes": [
+      "raisals",
+      "effect",
+      "STRUCTOR",
+      "\u66d6\u6627\u3055\u56de\u907f",
+      " El"
+    ],
+    "demotes": [
+      "bootstrapcdn",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+      "DrawerToggle",
+      "istoitu",
+      " ar\u015fivlendi"
+    ]
+  },
+  {
+    "id": "19_9509_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.31585177779197693,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 76.5,
+        "context": " part of Isle of wight County, but was moved to its present location in Historic Downtown Smithfield in 2008. The museum has been lovingly restored"
+      },
+      {
+        "trigger": " into",
+        "score": 63.5,
+        "context": "27), the collector of the York River, lists the ships that imported liquor into Virginia and the taxes they paid between July 10, 16"
+      },
+      {
+        "trigger": "'",
+        "score": 90.0,
+        "context": "1680 to 1691, a member of the governor's Council from 1691 to 1726,"
+      },
+      {
+        "trigger": "1",
+        "score": 71.0,
+        "context": " people were killed on the night of 10 and 11 January 1941. Portsmouth was chosen as a target that night as the rest"
+      },
+      {
+        "trigger": "'",
+        "score": 67.0,
+        "context": " important to know how to communicate it? Nikos Chrisochoides, ODU's Richard T. Cheng Professor of computer science, decided last year to develop"
+      }
+    ],
+    "promotes": [
+      "SupportActionBar",
+      " religieuses",
+      "AsUp",
+      "\\{\\\\",
+      "Hauptartikel"
+    ],
+    "demotes": [
+      " protoimpl",
+      "\u0004",
+      " pinulongan",
+      " EconPapers",
+      "awaiter"
+    ]
+  },
+  {
+    "id": "21_5943_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.3104153573513031,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:\u23ce- Capital City = Freetown\u23ce- Population = 5,245,695\u23ce- Official and Recognized Languages"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.\u23ceIsrael's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "trigger": " capital",
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.\u23ceAs presented here, in"
+      },
+      {
+        "trigger": " in",
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "trigger": " in",
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in\u23ceOctober 1998 in a national launch by then Deputy President Thabo\u23ceMbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ]
+  },
+  {
+    "id": "21_11630_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.37797728180885315,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 37.5,
+        "context": " close proximity to public transit and service stations. Drayton Tower is the first Modern building in Savannah, GA and is the first apartment building in Georgia to have air conditioning"
+      },
+      {
+        "trigger": " of",
+        "score": 42.5,
+        "context": ". Moncie Daniels, from Dare County, introduced legislation to name the Scotch Bonnet as the official seashell of North Carolina. Living up to his reputation, the"
+      },
+      {
+        "trigger": " in",
+        "score": 37.0,
+        "context": " children 6 years of age and younger living in or near the Omaha Lead site in Douglas County, Neb., is a public health hazard, says the public health"
+      },
+      {
+        "trigger": " in",
+        "score": 48.5,
+        "context": " from Mississippi State University can help vegetable gardeners learn more about maximizing the three growing seasons in Mississippi.\u23ceLandscape architect and vegetable gardener Pete Melby has developed a food"
+      },
+      {
+        "trigger": " throughout",
+        "score": 41.0,
+        "context": " is open to any agency representative, family advocate and/or parent throughout the state of Hawai\u2018i who are committed to the prevention of child abuse and neglect."
+      }
+    ],
+    "promotes": [
+      " Kugel",
+      " '{@",
+      " requestCode",
+      " FileWriter",
+      "\u0928\u0932\u093f\u0916\u093f\u0924"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      "Personensuche",
+      " Shreveport",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "LANTA"
+    ]
+  },
+  {
+    "id": "22_4999_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3205375373363495,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 55.0,
+        "context": " the New York Sun.\u23ceCities as large as New York, Boston, Chicago, St. Louis, and Denver have adopted living wages, as well as towns"
+      },
+      {
+        "trigger": " in",
+        "score": 46.0,
+        "context": ", called the Central Jurisdiction. The first General Conference of the new Central Jurisdiction met in St. Louis, Missouri from June 18 to 23,"
+      },
+      {
+        "trigger": "-",
+        "score": 56.0,
+        "context": " out market entry by holding monopolies over routes like New York-Los Angeles or Miami-Chicago. While airports tried to charm the CAB into approving new services and routes"
+      },
+      {
+        "trigger": " in",
+        "score": 47.0,
+        "context": " Info During a Hurricane Impact\u201d at the 2010 National Hurricane Conference in Orlando, Fla. on March 30, 2010"
+      },
+      {
+        "trigger": " and",
+        "score": 48.75,
+        "context": "Mex cuisine and a distinctly Latino atmosphere.\u23ceThe urban cities of Austin, Dallas, and Houston host technological corporations and oil companies, while Fort Worth and San Antonio"
+      }
+    ],
+    "promotes": [
+      "nocache",
+      "WebMethod",
+      "EDEFAULT",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "GEBURTSDATUM"
+    ],
+    "demotes": [
+      " SafeMath",
+      " onOptions",
+      "le\u017e",
+      "awtextra",
+      " sumpay"
+    ]
+  },
+  {
+    "id": "21_754_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.34109488129615784,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 59.25,
+        "context": " a Bachelor's Degree in Technology Education. After college Adam began his teaching career at the Thomas Jefferson High School for Science and Technology. Adam currently teaches courses in"
+      },
+      {
+        "trigger": "1",
+        "score": 58.75,
+        "context": "-created Powhatan Indian village, replicas of the three ships that landed in 1607, a representation of the colonial fort, and a riverfront"
+      },
+      {
+        "trigger": ".",
+        "score": 63.25,
+        "context": " kills an average of 170 people in homes and businesses in the U.S. each year from combustion sources other than motor vehicles. These include furnaces"
+      },
+      {
+        "trigger": " neighboring",
+        "score": 76.0,
+        "context": ", coal-fired power plant\u2014the Cypress Creek Power Station\u2014in Dendron in Surry County, Va., or on an alternative site in neighboring Sussex County"
+      },
+      {
+        "trigger": ":",
+        "score": 69.0,
+        "context": "1950s under Massive Resistance: Norfolk, Prince Edward County, Charlottesville and Arlington/Front Royal.\u23ceThe DOVE project was created in 2"
+      }
+    ],
+    "promotes": [
+      " ban",
+      "koi",
+      "Erreferentziak",
+      "flich",
+      "FOOTNOTES"
+    ],
+    "demotes": [
+      "ValueStyle",
+      "QMetaType",
+      "IntoConstraints",
+      " isInitialized",
+      "SharedCtor"
+    ]
+  },
+  {
+    "id": "23_6460_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3442786931991577,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 84.5,
+        "context": "1:51 p.m. local time about five miles south-southwest of Mineral, Virginia, and 85 miles southwest of Washington, DC."
+      },
+      {
+        "trigger": " ,",
+        "score": 90.0,
+        "context": "fic woodlands are documented in Virginia : three in the Piedmont (Amherst , Franklin , and Nelson Counties) and two in The Glades region of the southern Blue"
+      },
+      {
+        "trigger": "-",
+        "score": 76.0,
+        "context": " withdrawn from Petersburg numbered about 12,500, from the Richmond-Petersburg line between 28,000 and 30"
+      },
+      {
+        "trigger": "1",
+        "score": 69.5,
+        "context": "the emigrant\u201d, the largest Virginia landowner at the time of his death in 1640, received a modest inheritance. Thomas Lee, Richard Henry Lee"
+      },
+      {
+        "trigger": " ,",
+        "score": 90.0,
+        "context": "Amherst , Franklin , and Nelson Counties) and two in The Glades region of the southern Blue Ridge plateau (Grayson County). Ultramafic barrens"
+      }
+    ],
+    "promotes": [
+      "ViewImports",
+      " HasFactory",
+      "VideoCapture",
+      "uxxxx",
+      "Diwedd"
+    ],
+    "demotes": [
+      "assertRaises",
+      "ov",
+      " Eri\u015fim",
+      "Ljava",
+      "oc"
+    ]
+  },
+  {
+    "id": "22_13084_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.34884166717529297,
+    "top_activations": [
+      {
+        "trigger": " toward",
+        "score": 97.0,
+        "context": " moved quickly to engage them. The Union forces, though consistently repelled, continued south toward Richmond and Petersburg. Confederate troops mirrored the Union descent, meeting them in some"
+      },
+      {
+        "trigger": " bordering",
+        "score": 114.0,
+        "context": " in the United States.\u23ceIn 1778 a small triangular area bordering the James River was given to Cumberland County. In 1845"
+      },
+      {
+        "trigger": "1",
+        "score": 104.0,
+        "context": " of establishing a town on the hill overlooking the ferry site, and in late 1784 petitioned the General Assembly of Virginia for a town charter. In"
+      },
+      {
+        "trigger": "1",
+        "score": 132.0,
+        "context": " was established on May 1, 1761 from the southeastern portion of Albemarle County. The origin of the county name probably comes from the Duke"
+      },
+      {
+        "trigger": "1",
+        "score": 96.0,
+        "context": ", the other 45 acres patented to Alexander 5th June, 1765, which he devised by will dated 1st May,"
+      }
+    ],
+    "promotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      "expandindo",
+      "verwijspagina",
+      "\u0414\u0435\u0440\u0435\u043a\u043a\u04e9\u0437\u0434\u0435\u0440"
+    ],
+    "demotes": [
+      "AddWithValue",
+      "tabular",
+      " newBuilder",
+      " Crowns",
+      " obstante"
+    ]
+  },
+  {
+    "id": "22_13164_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3427143096923828,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 91.5,
+        "context": " was between the cemetery that is still there and what would have been tidal water leading to Breton Bay, an area that is now silted in.\u23ceThe Archaeological"
+      },
+      {
+        "trigger": " in",
+        "score": 88.0,
+        "context": " largemouth bass, tracking the species and monitoring the state\u2019s two sanctuaries in order to gather the knowledge needed to keep the fishery sustainable. Established in "
+      },
+      {
+        "trigger": " off",
+        "score": 115.5,
+        "context": ", after eluding several smaller British ships, the six-gun schooner Lottery out of Baltimore found itself becalmed off Old Point and beset by a swarm of"
+      },
+      {
+        "trigger": " in",
+        "score": 134.0,
+        "context": ", coal-fired power plant\u2014the Cypress Creek Power Station\u2014in Dendron in Surry County, Va., or on an alternative site in neighboring Sussex County"
+      },
+      {
+        "trigger": ",",
+        "score": 97.5,
+        "context": " of the Chesapeake Bay flowing through Virginia are the James, York, Rappahannock, and Potomac rivers.\u23ceThe names of the rivers in the basin reflect the"
+      }
+    ],
+    "promotes": [
+      "$_['",
+      "djangoproject",
+      " onOptions",
+      " EconPapers",
+      "+#+#"
+    ],
+    "demotes": [
+      "ValueGeneration",
+      "VersionUID",
+      " requ",
+      "Requ",
+      " relu"
+    ]
+  },
+  {
+    "id": "23_12237_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.29106342792510986,
+    "top_activations": [
+      {
+        "trigger": " downtown",
+        "score": 58.75,
+        "context": "<bos>The next time you pass the former Capitol department store on Hay Street in downtown Fayetteville, imagine the U.S. Army gleefully burning down The Fayetteville Observer"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 82.0,
+        "context": " funding from the Presidential Initiative for Expanding Education\u23ce3040 Cornwallis Road\u23cePost Office Box 12194\u23ceResearch Triangle Park, NC"
+      },
+      {
+        "trigger": " of",
+        "score": 71.0,
+        "context": " Escarpment, about 80 miles (130 km) southwest of Austin. The second most populous city in Texas, it is the focus of"
+      },
+      {
+        "trigger": " in",
+        "score": 61.75,
+        "context": " P. King, Jr.\u23ceEdward Postell King, Jr. was born in Atlanta, Georgia on July 4, 1884. He"
+      },
+      {
+        "trigger": "),",
+        "score": 72.0,
+        "context": " by New London-Norwich, Connecticut-Rhode Island (-1.9 points), and Decatur, Illinois (-1.8 points). Thirty-seven additional areas"
+      }
+    ],
+    "promotes": [
+      " Austin",
+      "__':",
+      "__':\r",
+      "webElementXpaths",
+      "ModelAdmin"
+    ],
+    "demotes": [
+      " propOrder",
+      " disponibilit\u00e9s",
+      "quam",
+      " k\u00e4mp",
+      " boucles"
+    ]
+  },
+  {
+    "id": "24_5859_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.2876955568790436,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 77.0,
+        "context": ", photographs, postcards, programs, and yearbooks documenting a prominent African American family in New Kent County, Virginia. While much of the collection consists of Jones and"
+      },
+      {
+        "trigger": " and",
+        "score": 83.0,
+        "context": "s, Virginia's Governor William Gooch granted William Beverly more than 118,000 acres in Augusta and Rockingham Counties known as the"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 76.0,
+        "context": "<bos>History of the Henrico Sheriff\u2019s Office\u23ceThe Henrico County Sheriff\u2019s Office is one\u23ceof the oldest sheriff\u2019s offices in the United"
+      },
+      {
+        "trigger": " at",
+        "score": 95.0,
+        "context": " in the United States.\u23ceThe \u201cOld Jail\u201d at 22nd and Main in Richmond was built in 1880. It remained in"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the mid-1750's, the colonial village of New London in central Virginia was an important trading center, however, it was difficult to reach"
+      }
+    ],
+    "promotes": [
+      "JMenu",
+      "ngths",
+      "OGND",
+      " HttpNotFound",
+      "EndContext"
+    ],
+    "demotes": [
+      "WebElementEntity",
+      " photolibrary",
+      "SourceChecksum",
+      "ValueStyle",
+      " onPostExecute"
+    ]
+  },
+  {
+    "id": "24_6394_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.307468444108963,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 57.0,
+        "context": ".\u23ceCREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder\u23ceSuperman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "trigger": " capital",
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "trigger": " in",
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "trigger": " in",
+        "score": 48.0,
+        "context": " \u2013 cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.\u23ceBut now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 47.0,
+        "context": " Federal Waters\u23ceNew Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean\u23ceSAN FRANCISCO\u2014 The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$\u200b",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ]
+  },
+  {
+    "id": "24_13277_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.2944186329841614,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "25_2366_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.31325769424438477,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 72.5,
+        "context": " in service-learning activities as a condition of graduation. Each of the 24 school districts in Maryland implements the service-learning graduation requirement differently, because they"
+      },
+      {
+        "trigger": " the",
+        "score": 75.5,
+        "context": " influenza virus was geographically widespread according to the last report, meaning there is flu activity throughout different regions, said David Blythe, a medical epidemiologist with the state."
+      },
+      {
+        "trigger": " of",
+        "score": 67.5,
+        "context": " preservation, and interpretation of manuscripts, archives, and objects that together form the fabric of Maryland History.\u23ceUnlike many other states, Maryland has a bit of a"
+      },
+      {
+        "trigger": " of",
+        "score": 66.0,
+        "context": " going back almost 10,000 years. That makes this one of the region\u2019s oldest uncovered sites.\u23ceThe accepted wisdom has always been"
+      },
+      {
+        "trigger": ",",
+        "score": 82.5,
+        "context": " expected to meet.\u23ceTo comply with these requirements, the Title III office of the Maryland State Department of Education works with local school districts to ensure that quality,"
+      }
+    ],
+    "promotes": [
+      "Susie",
+      "in\u012f",
+      "\u0917\u094d",
+      "Izvori",
+      " Kell"
+    ],
+    "demotes": [
+      " Maryland",
+      " Virginia",
+      "Maryland",
+      "Virginia",
+      " Md"
+    ]
+  },
+  {
+    "id": "24_15694_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.35462260246276855,
+    "top_activations": [
+      {
+        "trigger": " between",
+        "score": 36.5,
+        "context": " 27, 1953, was fought on the Korean Peninsula between North Korea and South Korea. North Korea was aided by China, and South"
+      },
+      {
+        "trigger": " from",
+        "score": 37.0,
+        "context": " Northumberland Strait is located on the east coast of Canada. It separates Prince Edward Island from New Brunswick and Nova Scotia.\u23ceThe 12.7 kilometer ("
+      },
+      {
+        "trigger": " of",
+        "score": 40.75,
+        "context": " 450,000 square kilometers in the Saharan Algeria Region in the extreme south of the country. The closest populated area near the park,"
+      },
+      {
+        "trigger": " in",
+        "score": 35.5,
+        "context": ".\u23ceCurrently Emery County, one of the 16 counties reporting Pertussis in Utah, has families dealing with the effects of this bacterial disease.\u23cePert"
+      },
+      {
+        "trigger": "2",
+        "score": 37.5,
+        "context": " Morse recalls living through Quantrill's raid of LawrenceJuly 1, 2001\u23ceAbigail Prentice Barber graduated from Wheaton Seminary in Massachusetts in July"
+      }
+    ],
+    "promotes": [
+      " Louisiana",
+      " Pennsylvania",
+      " Kerala",
+      " Arizona",
+      " Michigan"
+    ],
+    "demotes": [
+      "Datuak",
+      "FieldBuilder",
+      "ensement",
+      "DoubleQuotes",
+      "CodeAttribute"
+    ]
+  },
+  {
+    "id": "25_4679_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.38121697306632996,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 41.25,
+        "context": " (NIJ) provided funding to five communities (Los Angeles, Topeka, Denver, Phoenix, and California\u2019s Orange County) to take part in a study"
+      },
+      {
+        "trigger": " the",
+        "score": 38.75,
+        "context": " in a close second, with a population of approximately 6.1 million, the Houston-Sugar Land-Baytown metro area is located along the Gulf of"
+      },
+      {
+        "trigger": " and",
+        "score": 41.0,
+        "context": " vital link between the Shenandoah Valley - \"The Breadbasket of the Confederacy\" - and Richmond, the Capital of the Confederate States, and other points east. In"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 47.5,
+        "context": "2 Convention\u23ceJuly 3 \u2013 July 9, 2002\u23ceGalt House Hotel, Louisville, Kentucky\u23ceThe average person might find this"
+      },
+      {
+        "trigger": " In",
+        "score": 45.75,
+        "context": ", the ratio was between 4 and 5 to 1. In Philadelphia, Lancaster, and Syracuse, the ratio was between 3 and 4 to"
+      }
+    ],
+    "promotes": [
+      "XmlAccessorType",
+      " st",
+      "UIControlState",
+      "St",
+      " St"
+    ],
+    "demotes": [
+      " Dublin",
+      " Melbourne",
+      " Sydney",
+      " Montreal",
+      " Berlin"
+    ]
+  },
+  {
+    "id": "25_2761_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.39419814944267273,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 69.0,
+        "context": " work back then,\u201d said Shaw, who was born in 1923 in Burnsville.\u23ceWhen Shaw was hauling a load of hot tar one day"
+      },
+      {
+        "trigger": " in",
+        "score": 58.25,
+        "context": " E. Jones was born on February 19, 1872 in Greensboro, North Carolina. His parents were Sidney Dallas and Jane (Holley"
+      },
+      {
+        "trigger": " in",
+        "score": 57.25,
+        "context": " (Herbers, \u2018\u2018Dr. King Urges\u2019\u2019).\u23ceClark was born in Alabama in 1922. Prior to serving as sheriff, he"
+      },
+      {
+        "trigger": " in",
+        "score": 63.25,
+        "context": " was originally located in north Georgia and was \u201cfound near Mt. Tabor Baptist Church in the Northwestern part of Forsyth County.\u201d[ii] It was first described in"
+      },
+      {
+        "trigger": ",",
+        "score": 72.0,
+        "context": "64 campaign to regain control of the state.\u23ceNew sites in Greeneville, Charleston, Cleveland, Gallatin, Jackson, Denmark, Granville, Summerton"
+      }
+    ],
+    "promotes": [
+      " Damascus",
+      "villa",
+      " Allegheny",
+      " Buffalo",
+      "\u0c32\u0c3e\u0c32\u0c41"
+    ],
+    "demotes": [
+      "enterOuterAlt",
+      "brities",
+      " dAtA",
+      "AddHtmlAttribute",
+      ")\");\r"
+    ]
+  },
+  {
+    "id": "25_4717_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3627367317676544,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ]
+  },
+  {
+    "id": "25_16302_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.36779895424842834,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ]
+  },
+  {
+    "id": "22_14800_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3360387980937958,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "s talents as a general made significant contributions to the Confederate victories at Second Bull Run, Fredericksburg, and Chickamauga, in both offensive and defensive roles."
+      },
+      {
+        "trigger": ",",
+        "score": 118.5,
+        "context": "1862 and fought in 26 battles, mostly in Virginia, including Fredericksburg, Chancellorsville, and Spotsylvania. McCarter documented"
+      },
+      {
+        "trigger": " in",
+        "score": 95.5,
+        "context": " made it to New Orleans.\u23ceFarmer later became a professor at Mary Washington College in Fredericksburg and, in 1998, President Clinton presented him"
+      },
+      {
+        "trigger": " from",
+        "score": 91.0,
+        "context": " Major General Ambrose Powell Hill's \"Light Division\" arrived after a hurried march from Harper's Ferry, and the Federal advance was halted. Federal losses were"
+      },
+      {
+        "trigger": " at",
+        "score": 96.0,
+        "context": "\u23ceCornelia Hancock was a nurse for the Union Army whose work at the Battle of Gettysburg where her work was exemplary. The ground was littered with dead and wounded"
+      }
+    ],
+    "promotes": [
+      "ApiRequest",
+      " MyBatis",
+      "\u0639\u0646\u06cc",
+      "pecu",
+      "\u05d5\u05d5\u05d9\u05e7"
+    ],
+    "demotes": [
+      "HasForeignKey",
+      "RegistryLite",
+      "usercontent",
+      "MLLoader",
+      "\u7701\u5e02\u9547"
+    ]
+  },
+  {
+    "id": "20_313_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.25127559900283813,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 119.0,
+        "context": " a Bachelor's Degree in Technology Education. After college Adam began his teaching career at the Thomas Jefferson High School for Science and Technology. Adam currently teaches courses in"
+      },
+      {
+        "trigger": ".",
+        "score": 149.0,
+        "context": " get a better picture of agriculture in the state.\u23ceThe Virginia Department of Agriculture and Consumer Services says Gov. Bob McDonnell has declared January as Virginia Agriculture Census Month"
+      },
+      {
+        "trigger": " in",
+        "score": 117.0,
+        "context": " the collection is also significant for its connection to the struggle for school desegregation in Virginia.\u23ceDr. George Washington Watkins (1898-1"
+      },
+      {
+        "trigger": " ,",
+        "score": 147.0,
+        "context": "Amherst , Franklin , and Nelson Counties) and two in The Glades region of the southern Blue Ridge plateau (Grayson County). Ultramafic barrens"
+      },
+      {
+        "trigger": " of",
+        "score": 123.0,
+        "context": " North and South began calling a \"monster.\"\u23ceWhen it emerged from the mouth of the Elizabeth River on March 8, 1862, the"
+      }
+    ],
+    "promotes": [
+      " virginia",
+      " Roanoke",
+      " VIRGINIA",
+      "Virginia",
+      " Virginia"
+    ],
+    "demotes": [
+      " ExecuteAsync",
+      "ContentAsync",
+      "Datuak",
+      " \u0430\u0440\u0445\u0438\u0432\u043b\u0430\u043d",
+      " referrerpolicy"
+    ]
+  },
+  {
+    "id": "0_11375_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.31821727752685547,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  }
+]

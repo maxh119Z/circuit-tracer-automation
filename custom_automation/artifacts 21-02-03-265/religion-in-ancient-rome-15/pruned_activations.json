@@ -1,0 +1,2023 @@
+[
+  {
+    "id": "0_3512_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.39677056670188904,
+    "top_activations": [
+      {
+        "trigger": " mythology",
+        "score": 8.44,
+        "context": " Apollo Thermios famous for the archaic terra cotta metopes decorated with painted scenes from mythology which are among the earliest examples of this art form in Greece.\u23ceTher"
+      },
+      {
+        "trigger": " Diony",
+        "score": 9.56,
+        "context": " alone, and perished in the waters. According to the chronicles which Livy and Dionysius followed, Horatius had two companions, swam safe to shore and was"
+      },
+      {
+        "trigger": " Medieval",
+        "score": 9.56,
+        "context": " extremely wealthy patron. This lapis pigment was a favorite of fresco painters during Medieval and Renaissance times, it can be seen in the fresco paintings of Giotto and the"
+      },
+      {
+        "trigger": " basilica",
+        "score": 9.75,
+        "context": ", church officials say, thanks to a rare cooperative venture already underway to repair the basilica\u2019s roof, leaky windows and old wooden beams, some 1,"
+      },
+      {
+        "trigger": " Divine",
+        "score": 8.75,
+        "context": "- for over 1,400 years!\u23ceHumanity has received Divine Guidance only through two channels:\u23ceThe Word of Almighty God (\"Allah\")"
+      }
+    ],
+    "promotes": [
+      "onViewCreated",
+      "MessageOf",
+      " bezeichneter",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      " ProtoMessage"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Shakspeare",
+      " Jefus",
+      " my\u017felf",
+      " C\u00e6sar"
+    ]
+  },
+  {
+    "id": "0_7108_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.39237773418426514,
+    "top_activations": [
+      {
+        "trigger": " entry",
+        "score": 17.5,
+        "context": " the society has merged the names in one record type index available here.\u23ceEach entry has a code referring to the book that contains information about that person.\u23ce"
+      },
+      {
+        "trigger": " entry",
+        "score": 17.75,
+        "context": " woman over the age of twenty-one years has the right to make a homestead entry.\u23ce5. A single woman does not forfeit her homestead entry by marriage"
+      },
+      {
+        "trigger": " entry",
+        "score": 18.0,
+        "context": " are various methods of gaining an entrance into Houses.\u23ceBesides those described, an entry is frequently obtained by getting\u23ceinto an empty house nearest adjoining the one intended"
+      },
+      {
+        "trigger": " followed",
+        "score": 16.88,
+        "context": " the omission comes at the end of a sentence, the period is often used, followed by three more points, for a total of four dots.\u23ceThe only"
+      },
+      {
+        "trigger": " entry",
+        "score": 17.5,
+        "context": " Static.\u23ceWhat is main method in Java?\u23ceMain method in Java is entry point for any core Java program. Remember we are not talking about Servlet,"
+      }
+    ],
+    "promotes": [
+      "i",
+      " a",
+      " $",
+      " ",
+      " I"
+    ],
+    "demotes": [
+      " Efq",
+      " Monfieur",
+      " plea\u017fure",
+      " Majefty",
+      " Re\u017f"
+    ]
+  },
+  {
+    "id": "0_9026_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.3310004770755768,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "0_10450_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.36164045333862305,
+    "top_activations": [
+      {
+        "trigger": " followed",
+        "score": 22.38,
+        "context": " groups in the Yukon. The strong public reaction against the Minister's decision was followed by a Record of Agreement (RoA) between the Yukon Government, Fisheries"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.12,
+        "context": " codes, the basic ASCII characters appear on the next page.\u23ceThe ASCII number is followed by the character that appears in .HLP files and other Windows files"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.38,
+        "context": " the weaving of the valuable cocoon (mounting of the branches and harvesting). This is followed by the cocoons' cleaning and sorting. The silkworm's"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.12,
+        "context": " The First Blast of the Trumpet Against the Monstrous Regiment of Women, was followed in print by a series of pamphlets that echoed and expanded his argument that female"
+      },
+      {
+        "trigger": " followed",
+        "score": 21.62,
+        "context": " the highest footprint with 11.85 hectares per person was Qatar, followed by Kuwait with 9.72 hectares and the United Arab Emirates with"
+      }
+    ],
+    "promotes": [
+      "cipar",
+      "eabouts",
+      ".\",\r",
+      "`,\r",
+      "enderror"
+    ],
+    "demotes": [
+      " magique",
+      " ruines",
+      " \u00e9conomiques",
+      " origini",
+      " japonais"
+    ]
+  },
+  {
+    "id": "0_5981_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3578072488307953,
+    "top_activations": [
+      {
+        "trigger": " consists",
+        "score": 31.88,
+        "context": " for scientific literacy for non-scientists. The quantitative analysis component of the requirement consists of courses that teach the logical structures of quantitative reasoning, the concept of probability"
+      },
+      {
+        "trigger": " consist",
+        "score": 31.12,
+        "context": "vark\u2019? Use the regular expression \\ba+.+vark\\b\u23ceRegular expressions consist of a simple language and are used by programmers and others who analyze large texts"
+      },
+      {
+        "trigger": " consists",
+        "score": 31.88,
+        "context": " of California, Los Angeles (UCLA). A scientific method to learning, the technique consists of an intensive behavioral intervention which is carried out early in the development of autistic"
+      },
+      {
+        "trigger": " consists",
+        "score": 31.62,
+        "context": "100 pm).|\u23ceThe atom is a basic unit of matter that consists of a dense central nucleus surrounded by a cloud of negatively charged electrons. The"
+      },
+      {
+        "trigger": " consists",
+        "score": 31.12,
+        "context": " normal hearing children because the learning process of oral language is essentially auditory. Child development consists in gradually acquiring motor and psychocognitive abilities. Entering the symbolic world is decisive"
+      }
+    ],
+    "promotes": [
+      " none",
+      "Stacy",
+      "BeginContext",
+      "erenc",
+      "HasForeignKey"
+    ],
+    "demotes": [
+      "PMailer",
+      " Tableau",
+      "Jeografia",
+      " Doubleday",
+      "blos"
+    ]
+  },
+  {
+    "id": "0_12414_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.39416423439979553,
+    "top_activations": [
+      {
+        "trigger": " were",
+        "score": 40.0,
+        "context": " 11, 1919, when the Germans and White Russians were finally driven off from R\u012bga by the newly formed Latvian army, despite the"
+      },
+      {
+        "trigger": " were",
+        "score": 40.0,
+        "context": " of all English settlements in New England were either destroyed or abandoned. Hundreds of colonists were killed. Thousands of Indians died; those who survived, including Philip\u2019s"
+      },
+      {
+        "trigger": " were",
+        "score": 40.0,
+        "context": "glers and legitimate traders alike had some tangles now and then, but freighters were often armed and shielded so that they could resist attempts on their cargo.\u23ce"
+      },
+      {
+        "trigger": " were",
+        "score": 40.0,
+        "context": " thresholds were applied to all families; the thresholds for families headed by women and men were averaged; and the largest family size category for the thresholds was raised from families"
+      },
+      {
+        "trigger": " were",
+        "score": 40.0,
+        "context": ". Sigmodon adults were most abundant in the winter; juveniles and old adults were most numerous in the spring and fall. The survivorship curves were greater"
+      }
+    ],
+    "promotes": [
+      ",",
+      "\u23ce\u23ce",
+      "<eos>",
+      "\u23ce",
+      " "
+    ],
+    "demotes": [
+      " were",
+      "Were",
+      "were",
+      " Were",
+      " WERE"
+    ]
+  },
+  {
+    "id": "0_10739_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.36040040850639343,
+    "top_activations": [
+      {
+        "trigger": " religion",
+        "score": 23.38,
+        "context": " upon beliefs, behaviors and both mental and physical health. Psychology approaches the study of religion from an empirical, not a philosophical or theological, perspective.\u23cePlease note"
+      },
+      {
+        "trigger": " religion",
+        "score": 23.25,
+        "context": " contractors against any employee or applicant for employment on the basis of race, color, religion, sex, or national origin. Requires the employer to take affirmative action to"
+      },
+      {
+        "trigger": " religion",
+        "score": 23.12,
+        "context": " influential thinkers and creative types have come from the ranks of these intellectual revolutionaries. Organized religion tends to reward people not for thinking creatively or critically, but for reciting and"
+      },
+      {
+        "trigger": " religion",
+        "score": 23.0,
+        "context": "ism, and its secular cathedrals, shopping malls?\u23ceAt first glance, religion is in decline. In Britain, the results of the 201"
+      },
+      {
+        "trigger": " religion",
+        "score": 23.12,
+        "context": " which this book remedies. Its contributors cover social and political issues, legal questions, religion, language, and the modern history of Kurds in Turkey, Iraq, Iran"
+      }
+    ],
+    "promotes": [
+      " greate\u017ft",
+      " Monfieur",
+      " hou\u017fe",
+      " Hou\u017fe",
+      " Majefty"
+    ],
+    "demotes": [
+      " li",
+      " il",
+      "']}",
+      " []).",
+      " Il"
+    ]
+  },
+  {
+    "id": "0_4470_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3914603888988495,
+    "top_activations": [
+      {
+        "trigger": " rabbi",
+        "score": 9.5,
+        "context": " Russian rate of exchange it amounted to 1,200 rubles. The rabbi and the business owners chose Pinkhas, the rabbi's son, as"
+      },
+      {
+        "trigger": " Talmud",
+        "score": 8.38,
+        "context": " step is to begin appreciating each person, including oneself. In this spirit, the Talmud states:\u23ce\"Each human being is obligated to say: For my sake"
+      },
+      {
+        "trigger": " prophets",
+        "score": 8.5,
+        "context": " the New Testament certainly rekindle the Hebrew poetry of the post-exilic prophets, particularly Jeremiah, Isaiah, and Ezekiel; but ~e role of the"
+      },
+      {
+        "trigger": " God",
+        "score": 8.62,
+        "context": " shared by Matthew Stoll\u23ceSummary: If Christmas never happened we would never fully understand God and his love for us. Evangelistic message for Christmas Eve.\u23ceAudience"
+      },
+      {
+        "trigger": " Christianity",
+        "score": 8.62,
+        "context": " worldview intact at the beginning, Americans have naturally recognized Islam\u2019s inherent hostility toward Christianity and its fundamental threat to the American way of life. For example, Elias"
+      }
+    ],
+    "promotes": [
+      " pie",
+      " gi",
+      " AttributeSet",
+      "onAttach",
+      " Sab"
+    ],
+    "demotes": [
+      " Jefus",
+      " Monfieur",
+      " purpo\u017fe",
+      " Shakspeare",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "0_13564_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.39591968059539795,
+    "top_activations": [
+      {
+        "trigger": " which",
+        "score": 37.25,
+        "context": " to spoil the food. The proverb signifies that something has been\u23celet out inadvertently which will cause a \u201cregular flare up.\u201d\u23ceAlfonzo II. of"
+      },
+      {
+        "trigger": " which",
+        "score": 37.25,
+        "context": " on the body, which have been looked at by the specialists who can then estimate which weapons might have been used.\"\u23ceDNA taken from the body matched that of"
+      },
+      {
+        "trigger": " which",
+        "score": 37.25,
+        "context": " religion, a term which may include modern or old architecture practised in these countries and which may not be necessarily Islamic nor display any known features of Islamic architecture such as"
+      },
+      {
+        "trigger": " which",
+        "score": 37.0,
+        "context": ", when, according to Darwin, they become serviceable for defence in the frequent fights which take place during the rutting season At the same time, the canines"
+      },
+      {
+        "trigger": " which",
+        "score": 37.25,
+        "context": "% of their populations during the famine, while Carlow and south Wicklow, which have received less attention from famine scholars, also suffered higher than average population loss"
+      }
+    ],
+    "promotes": [
+      "<strong>",
+      " ",
+      "9",
+      "\u2019",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " which",
+      "which",
+      " WHICH",
+      "Which",
+      " Which"
+    ]
+  },
+  {
+    "id": "0_5424_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.3628535270690918,
+    "top_activations": [
+      {
+        "trigger": " operating",
+        "score": 21.0,
+        "context": " U.S. Secretary of Transportation Ray LaHood has issued regulations banning texting while operating a commercial vehicle.\u23ceDo these steps go too far? Are we painting"
+      },
+      {
+        "trigger": " followed",
+        "score": 20.0,
+        "context": "usts over 2,000 years ago, and the Koreans soon followed with their Ondol method (hot air) of flue ducts and chimneys."
+      },
+      {
+        "trigger": " operating",
+        "score": 20.62,
+        "context": " loud noise, mimicked the actions of tourists, researchers and noises from machines when operating on the outskirts of the colony. One high intensity stressor, a capture"
+      },
+      {
+        "trigger": " operating",
+        "score": 20.12,
+        "context": " Efficiency Ratio. The higher the SEER, the less electricity the unit uses when operating. All SEER units of the same cooling capacity (size, measured in"
+      },
+      {
+        "trigger": " operating",
+        "score": 21.12,
+        "context": "The MOSE Project, or Experimental Electromechanical Module Project, is scheduled to begin operating next year. MOSE, named after Moses and the parting of the Red"
+      }
+    ],
+    "promotes": [
+      "endphp",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " them\u017felves",
+      " nahilalakip",
+      " Efq"
+    ],
+    "demotes": [
+      "Esp\u00e8ce",
+      "odymium",
+      " TestBed",
+      "phosa",
+      " \u062a\u0643\u0628\u0631\u0647\u0627"
+    ]
+  },
+  {
+    "id": "0_8061_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3564974367618561,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ]
+  },
+  {
+    "id": "0_1395_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.3976077735424042,
+    "top_activations": [
+      {
+        "trigger": " subsequent",
+        "score": 16.75,
+        "context": " on mortality among children aged less than 5 years. In the following decades, subsequent reviews updated these initial estimates using similar methods of assessment.4,5 These"
+      },
+      {
+        "trigger": " subsequent",
+        "score": 17.0,
+        "context": ". The government derives its governing authority from the 1971 constitution and subsequent amendments. Executive authority resides with the president and the cabinet. In 2"
+      },
+      {
+        "trigger": " subsequent",
+        "score": 16.75,
+        "context": " of women is positive, negative, or somewhere in between?\u23ce- Why do you think Ovid's Metamorphoses has had such a powerful impact on subsequent"
+      },
+      {
+        "trigger": " subsequent",
+        "score": 16.88,
+        "context": "ize Board of Trustees and Trustee as a title before a name. Use caps on subsequent references to the Board.\u23ceRight: The Board of Trustees will meet in"
+      },
+      {
+        "trigger": " subsequent",
+        "score": 17.12,
+        "context": " Rewritten\u23ce- The Indian civilisation, considered to be the product of clash and subsequent inter mixture of the white-skinned civilised invaders and the dark savages native to"
+      }
+    ],
+    "promotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "\u00farese",
+      "PhysRevD",
+      "fjspx",
+      "SequentialGroup"
+    ],
+    "demotes": [
+      "<bos>",
+      " subsequent",
+      "\u305d\u308c\u304b\u3089",
+      " \u043f\u043e\u0442\u0456\u043c",
+      "then"
+    ]
+  },
+  {
+    "id": "0_11726_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.372109591960907,
+    "top_activations": [
+      {
+        "trigger": " religion",
+        "score": 21.25,
+        "context": " to religious beliefs and practices.\u23ce- adj. Describing a conscious rejection of religion.\u23ce- adj. Having no relation to religion; non-religious."
+      },
+      {
+        "trigger": " religion",
+        "score": 20.75,
+        "context": ".\u23ce\"We found that kids who go to church regularly or who say that religion is important in their lives are much less likely to be involved in various forms"
+      },
+      {
+        "trigger": " religion",
+        "score": 20.75,
+        "context": " one shall be discriminated against on grounds of race, color, gender, language, religion, political or other opinion, national or social origin, relation to any community"
+      },
+      {
+        "trigger": " religion",
+        "score": 21.0,
+        "context": " time..., Time passed, and still Ma did not appear..., The social significance of religion has changed over time.\u23ce2 n-sing You use time to ask"
+      },
+      {
+        "trigger": " religion",
+        "score": 20.75,
+        "context": "1900) was a German philosopher, whose critiques of contemporary culture, religion, and philosophy centered around a basic question regarding the foundation of values and morality"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " The\u017fe",
+      " my\u017felf",
+      " An\u017f",
+      " Monfieur"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " \u2013",
+      "-",
+      "\u2026"
+    ]
+  },
+  {
+    "id": "0_13708_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.3664100468158722,
+    "top_activations": [
+      {
+        "trigger": " followed",
+        "score": 22.0,
+        "context": " TB. Diagnosis may be made by skin test, which if positive should will be followed by a chest X-ray to determine the status (active or dormant)"
+      },
+      {
+        "trigger": " followed",
+        "score": 21.88,
+        "context": " man with glowing red eyes. The wings had a ten-foot span and it followed their car as they drove outside of town, according to their report.\u23ce"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.12,
+        "context": ", Three, and Four Square Theorems we reach Gauss's famous Law of Quadratic Reciprocity. This is followed by a discussion of Eudoxus' Theory of"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.0,
+        "context": ",\u201d he said in an e-mail message.\u23ceThe companies that have not followed the guidelines will be warned, Courtney said, and they will be barred from"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.25,
+        "context": " unity government with Labor.\u23ceSahmir's leadership of the Likud was followed by the first tenure of Benjamin Netanyahu,\u23cewho was elected Israeli prime minister"
+      }
+    ],
+    "promotes": [
+      " d\u00e9mocratique",
+      " pa\u017f\u017f",
+      " coel",
+      "cessive",
+      " automatica"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "'),\r",
+      " disambiguazione",
+      ")\");\r",
+      ")',"
+    ]
+  },
+  {
+    "id": "1_10264_16",
+    "layer": 1,
+    "ctx_idx": 16,
+    "influence_score": 0.3687205910682678,
+    "top_activations": [
+      {
+        "trigger": " followed",
+        "score": 19.38,
+        "context": "(3)\u23ce. EMSA involves binding protein to a radiolabeled DNA probe followed by resolution on a polyacrylamide gel. Due to the increase in mass,"
+      },
+      {
+        "trigger": " followed",
+        "score": 18.5,
+        "context": " abdomen: abdominal painMore example sentences\u23ce- The most common complaint is headache, followed by recurrent abdominal pain and musculoskeletal pain.\u23ce- If perforation occurs in the"
+      },
+      {
+        "trigger": " followed",
+        "score": 18.75,
+        "context": " base class\u23ceB. The vbase pointer\u23cename is \u2018$vb\u2019 followed by a type reference to the virtual base class.\u23ceSince the type id"
+      },
+      {
+        "trigger": " followed",
+        "score": 18.75,
+        "context": "uns. One proposes that the planets formed from slowly growing ice and rock cores, followed by rapid accretion of gas from the surrounding disk. The other theory proposes that"
+      },
+      {
+        "trigger": " followed",
+        "score": 18.5,
+        "context": " have been gathered and checked. If the steps described in the Check stage have been followed, those involved in designing the program can take needed action.\u23ceAt both"
+      }
+    ],
+    "promotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      "}>;",
+      "principalTable",
+      " distanciation",
+      " betweenstory"
+    ],
+    "demotes": [
+      "<bos>",
+      "'",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "\u2019"
+    ]
+  },
+  {
+    "id": "0_12515_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.3786238133907318,
+    "top_activations": [
+      {
+        "trigger": " outstanding",
+        "score": 15.81,
+        "context": ". The prestigious \"R&D 100\" awards honor the most outstanding technology developments of the year that have commercial potential. Of the 29"
+      },
+      {
+        "trigger": " outstanding",
+        "score": 16.5,
+        "context": " of research on the use of social media in emergency management), and there are many outstanding questions about how they can be used most effectively by emergency managers and other public"
+      },
+      {
+        "trigger": " outstanding",
+        "score": 16.25,
+        "context": "CHNOLOGY ?\u23ceNanoscience and nanotechnology are at the forefront of modern research. The fast growing economy in this area requires experts who have an outstanding knowledge of"
+      },
+      {
+        "trigger": " outstanding",
+        "score": 16.0,
+        "context": " the eastern Sierra Nevada Mountains was designated as a Watchable Wildlife site because it offers outstanding opportunities to view a portion of the East Monache mule deer herd. As"
+      },
+      {
+        "trigger": " outstanding",
+        "score": 16.5,
+        "context": " very musical. Certainly Georg inherited considerable musical and artistic talents from his parents being an outstanding violinist. Georg was brought up a Protestant, this being the religion of his"
+      }
+    ],
+    "promotes": [
+      "<b>",
+      "</i>",
+      ".",
+      "/",
+      ","
+    ],
+    "demotes": [
+      " E\u017f",
+      " Efq",
+      " purpo\u017fe",
+      " hou\u017fe",
+      " The\u017fe"
+    ]
+  },
+  {
+    "id": "18_8974_16",
+    "layer": 18,
+    "ctx_idx": 16,
+    "influence_score": 0.33356451988220215,
+    "top_activations": [
+      {
+        "trigger": " overseen",
+        "score": 70.5,
+        "context": " US Department of Education recognizes 6 distinct higher educational regions, each of which is overseen by a different accrediting body. This is the type of accreditation most commonly"
+      },
+      {
+        "trigger": " caused",
+        "score": 75.5,
+        "context": " cases and just under a million people die from it every year. The disease is caused by an infection of the red blood cells with a tiny parasite called a Plas"
+      },
+      {
+        "trigger": " caused",
+        "score": 69.0,
+        "context": " rice canopy more favorable for disease development,\u201d Street says.\u23ceSheath blight is caused by the fungus Rhizoctonia solani, and is identifiable by the"
+      },
+      {
+        "trigger": " led",
+        "score": 71.0,
+        "context": " at \u00a3250,000 and will be funded by a consortium led by Hermann Hauser, the founder of Acorn Computers.\u23ceThe EDSAC computer"
+      },
+      {
+        "trigger": " caused",
+        "score": 66.5,
+        "context": "sporidiosis, sometimes referred to as \"Crypto,\" is a diarrheal infection caused by the parasite Cryptosporidium. The parasite is most commonly acquired after drinking"
+      }
+    ],
+    "promotes": [
+      ".*\")]",
+      " kasarigan",
+      " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      " ujednoznacz"
+    ],
+    "demotes": [
+      "withIdentifier",
+      " henvis",
+      " Bessel",
+      " makeStyles",
+      " AdapterView"
+    ]
+  },
+  {
+    "id": "3_13649_16",
+    "layer": 3,
+    "ctx_idx": 16,
+    "influence_score": 0.34779036045074463,
+    "top_activations": [
+      {
+        "trigger": " fought",
+        "score": 16.5,
+        "context": " Monte Cassino - Conflict & Dates:\u23ceThe Battle of Monte Cassino was fought January 17 to May 18, 1944"
+      },
+      {
+        "trigger": " made",
+        "score": 15.56,
+        "context": " for grades K-5, students will use BrainPOP resources to explore the sounds made by various instruments, and use a free online music game to create their own"
+      },
+      {
+        "trigger": " learned",
+        "score": 14.44,
+        "context": " such as dramatic events.\u23ce- End is about solutions found as well as lessons learned.\u23ce- Thoughts or feelings or sensory details about what you hear, see"
+      },
+      {
+        "trigger": " spoken",
+        "score": 16.5,
+        "context": " parcel of the Southwest\u2019s Occitan identity\u2014the langue d\u2019oc was spoken throughout the southwest, except in the Basque and Catalan regions.\u23ceCassou"
+      },
+      {
+        "trigger": " played",
+        "score": 15.19,
+        "context": " somewhat trivially non-zero sum; there aren't any interesting decisions that affect how much the total payoff is. Poker played at a casino, likewise,"
+      }
+    ],
+    "promotes": [
+      "httphttps",
+      "COUVER",
+      ")_/\u00af",
+      "\u272d\u272d",
+      "<bos>"
+    ],
+    "demotes": [
+      "igshid",
+      "DoubleQuotes",
+      " separados",
+      "apollo",
+      "PositiveButton"
+    ]
+  },
+  {
+    "id": "4_10657_16",
+    "layer": 4,
+    "ctx_idx": 16,
+    "influence_score": 0.39053839445114136,
+    "top_activations": [
+      {
+        "trigger": " fuelled",
+        "score": 13.88,
+        "context": " report.\u23ceThe sharp increase in poaching of endangered species in recent years is being fuelled by organised crime and is helping fund insurgencies, especially in Africa, said"
+      },
+      {
+        "trigger": " caused",
+        "score": 12.25,
+        "context": "<bos>Strange behavior may be a possible sign of a virus, such behavior maybe caused by software bugs, user errors, or hardware failures. The only way to be"
+      },
+      {
+        "trigger": " possible",
+        "score": 14.12,
+        "context": "Sculptress: Antoinette Schultze\u23ceFunding for this public art project was made possible by gifts from:\u23ceNorwin S. and Elizabeth N. Bean Foundation"
+      },
+      {
+        "trigger": " prompted",
+        "score": 12.0,
+        "context": " and damaged thousands of homes on the Gulf Coast.\u23ceThe Corps\u2019 study was prompted by the suggestion that Isaac\u2019s surge bounced off the levees and flood"
+      },
+      {
+        "trigger": " triggered",
+        "score": 12.62,
+        "context": ", reptiles, and a few smaller mammal species. The millennium-long shift was triggered by rapid global warming, and once this warming pushed the planet past its tipping"
+      }
+    ],
+    "promotes": [
+      " h\u1eefu",
+      " durch",
+      "belea",
+      "deburg",
+      " by"
+    ],
+    "demotes": [
+      "WithIOException",
+      " AssemblyProduct",
+      " utafitiHapana",
+      "transQ",
+      " Pyle"
+    ]
+  },
+  {
+    "id": "2_2561_16",
+    "layer": 2,
+    "ctx_idx": 16,
+    "influence_score": 0.34136149287223816,
+    "top_activations": [
+      {
+        "trigger": " reduced",
+        "score": 17.5,
+        "context": "By Ben H. Tongue\u23ceQuick Summary: Diode detector insertion power loss can be reduced below the value achieved under impedance matched conditions provided it is operating below its L"
+      },
+      {
+        "trigger": " revived",
+        "score": 17.38,
+        "context": " matters and resolving disputes. Now the spirit of \u2018KaGogo\u2019 is being revived as a way of mobilizing communities in the response to HIV.\u23ceH"
+      },
+      {
+        "trigger": " produced",
+        "score": 18.75,
+        "context": ").\u23ce- * Mise en Scene*. See separate entry and also lighting.\u23ce- * Mobile framing*. This effect can be produced by different camera movements and can"
+      },
+      {
+        "trigger": " sued",
+        "score": 18.5,
+        "context": " will enforce the settlement: if it is breached, the party in default could be sued for breach of that contract. In some jurisdictions, the party in default could"
+      },
+      {
+        "trigger": " installed",
+        "score": 17.5,
+        "context": " ever improving results down the road. Even better, these add on devices could be installed on trucks currently on the road, not just on new trucks meaning the results"
+      }
+    ],
+    "promotes": [
+      " resourceCulture",
+      "IUrlHelper",
+      " defaultstate",
+      "<bos>",
+      " by"
+    ],
+    "demotes": [
+      "PickerController",
+      "stral",
+      "deviantart",
+      "estyle",
+      "\u03bf\u03bd\u03c4\u03b1\u03c2"
+    ]
+  },
+  {
+    "id": "14_795_16",
+    "layer": 14,
+    "ctx_idx": 16,
+    "influence_score": 0.38174617290496826,
+    "top_activations": [
+      {
+        "trigger": " bought",
+        "score": 28.75,
+        "context": " when Allen moves to the area of New Hampshire that became Vermont. This section was bought and settled by families from Connecticut at the same time that New Yorkers were buying"
+      },
+      {
+        "trigger": " reached",
+        "score": 24.5,
+        "context": ";\u23ceThe old that is strong does not wither,\u23ceDeep roots are not reached by the frost.\u23ceFrom the ashes a fire shall be woken,\u23ce"
+      },
+      {
+        "trigger": " given",
+        "score": 26.5,
+        "context": " guidelines for what schools must serve their students.\u23ceThough government mandates tend to be given an extraordinarily bad reputation (with good reason, a lot of the time)"
+      },
+      {
+        "trigger": " brought",
+        "score": 22.0,
+        "context": " of pacifist tradition, should they now go to war?\u23ceThe controversy is brought to life as brothers Ted and John Friesen reflects on their choices. Ted"
+      },
+      {
+        "trigger": " run",
+        "score": 26.75,
+        "context": " of a series of farm bills that were passed. The Steagall Amendment was run through the banking committees.\u23ceThe main policy mechanisms behind this stimulus were farm"
+      }
+    ],
+    "promotes": [
+      "jac",
+      " \u0936",
+      " \u0448\u043e",
+      " by",
+      "by"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " Waray",
+      "ISupport",
+      "\u0012",
+      "\u043d\u043e\u0432\u043d\u0438\u0448\u0442\u0432\u043e"
+    ]
+  },
+  {
+    "id": "19_15743_16",
+    "layer": 19,
+    "ctx_idx": 16,
+    "influence_score": 0.39327123761177063,
+    "top_activations": [
+      {
+        "trigger": "books",
+        "score": 39.75,
+        "context": " use the e-book and prevents resale.\u23ceA library generally accesses e-books through a distributor, who aggregates e-book offerings from various publishers and provides"
+      },
+      {
+        "trigger": " develops",
+        "score": 39.5,
+        "context": " Most babies develop a diaper rash at some time during infancy.\u23ceA diaper rash develops when your baby\u2019s skin is irritated. Irritation can be caused by"
+      },
+      {
+        "trigger": " possible",
+        "score": 32.5,
+        "context": " climate conditions of the past 10,000 years. This became possible because the Dead Sea level has sunk drastically over the past years, mostly because"
+      },
+      {
+        "trigger": " occurs",
+        "score": 35.75,
+        "context": " relief that natural remedies can bring.\u23ceWhat is an allergy?\u23ceAn allergy occurs when an individual breathes in certain triggers (such as pollen). The body sees"
+      },
+      {
+        "trigger": " occurs",
+        "score": 34.75,
+        "context": "'t get the water that it needs, you may undergo dizzy spells. This occurs because your body is beginning to overheat and your internal temperature is rising too quickly"
+      }
+    ],
+    "promotes": [
+      "AndEndTag",
+      "mybatisplus",
+      "FormTagHelper",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "RefNanny"
+    ],
+    "demotes": [
+      ".",
+      ";",
+      " ;",
+      "\uff1b",
+      "!"
+    ]
+  },
+  {
+    "id": "18_9811_16",
+    "layer": 18,
+    "ctx_idx": 16,
+    "influence_score": 0.35510486364364624,
+    "top_activations": [
+      {
+        "trigger": " delivered",
+        "score": 33.75,
+        "context": " instituted a similar ban on wireless cramming.\u23ceCrammed charges are often delivered through an opt-out delivery model. Here\u2019s one example of how"
+      },
+      {
+        "trigger": " done",
+        "score": 36.25,
+        "context": " red bone marrow to be sent to the lab for microscopic examination. The biopsy is done using a small needle inserted into an age appropriate area (long bone for children"
+      },
+      {
+        "trigger": " done",
+        "score": 33.0,
+        "context": ".\u23ceThere are a number of offset variations:\u23ce- Web offset printing is done at speeds of up to 3,000 feet per minute."
+      },
+      {
+        "trigger": " installed",
+        "score": 31.25,
+        "context": "\u23ceOften, the cameras have been torn down and trampled. Because the traps are installed in pairs to capture each side of a passing tiger, Ahmed has photographic evidence"
+      },
+      {
+        "trigger": " administered",
+        "score": 30.5,
+        "context": " the sperm, thereby increasing the chance of pregnancy.\u23ceClomiphene is normally administered for five days during the follicular part of the cycle (the portion of the"
+      }
+    ],
+    "promotes": [
+      "Dimens\u00f5es",
+      "ValueStyle",
+      "########.",
+      "mybatisplus",
+      "CppMethod"
+    ],
+    "demotes": [
+      "argout",
+      "saraba",
+      "Initializable",
+      " BrowserModule",
+      "ReusableCell"
+    ]
+  },
+  {
+    "id": "21_1921_16",
+    "layer": 21,
+    "ctx_idx": 16,
+    "influence_score": 0.3591066002845764,
+    "top_activations": [
+      {
+        "trigger": " heated",
+        "score": 39.0,
+        "context": " they are not locked in, asbestosfibers can get into the air and be inhaled when thepatching compounds are sanded or the ashes andembers are heated"
+      },
+      {
+        "trigger": " edited",
+        "score": 36.5,
+        "context": ".\u23ceUnlike CDs or MP3 files, MIDI files are specifically designed to be edited and are intended to be used for performance or as a learning tool, rather"
+      },
+      {
+        "trigger": " approved",
+        "score": 36.0,
+        "context": ", or act as an accessory to an already approved device, will need to be approved by the agency.\u23cefor example, one app performs an e-c"
+      },
+      {
+        "trigger": " mapped",
+        "score": 37.5,
+        "context": "s third and final flyby of Mercury are finally in and cover ground never before mapped. But they leave scientists wanting more.\u23ceNASA's orbiter swung"
+      },
+      {
+        "trigger": " replaced",
+        "score": 40.75,
+        "context": " no appreciable sense of smell, and parents will readily accept and raise their young when replaced in the nest. Altricial birds like robins, grackles and mocking"
+      }
+    ],
+    "promotes": [
+      " numerically",
+      " visually",
+      " competitively",
+      " experimentally",
+      " by"
+    ],
+    "demotes": [
+      "kh\u00e1u",
+      "ConstraintMaker",
+      "NewUrlParser",
+      "setupUi",
+      " actionMode"
+    ]
+  },
+  {
+    "id": "21_5992_16",
+    "layer": 21,
+    "ctx_idx": 16,
+    "influence_score": 0.28387904167175293,
+    "top_activations": [
+      {
+        "trigger": " headed",
+        "score": 80.0,
+        "context": " sister Lavinia and older brother Austin, she experienced a quiet and reserved family life headed by her father Edward Dickinson. In a letter to Austin at law school,"
+      },
+      {
+        "trigger": " attended",
+        "score": 87.0,
+        "context": " \u2013 which has recently taken over the Presidency of the European Council. The meeting was attended by the Ministers or Heads of Delegations and delegates from all EU Member States"
+      },
+      {
+        "trigger": " led",
+        "score": 80.0,
+        "context": " with the AIDS virus.\u23ceDr. Levy's research group and another team led by Dr. Jay Nelson of the Research Institute of Scripps Clinic in La Jolla"
+      },
+      {
+        "trigger": "Led",
+        "score": 82.0,
+        "context": "ths decided that being Rome\u2019s enemy would be more fulfilling and lucrative.\u23ceLed by Alaric, the Visigoths rampaged through Greece, the Balkans"
+      },
+      {
+        "trigger": " held",
+        "score": 77.0,
+        "context": " Friday that it will consider a legal challenge to a patent on a breast cancer gene held by the firm Myriad Genetics. The case could have broad implications for the"
+      }
+    ],
+    "promotes": [
+      "By",
+      "by",
+      " By",
+      " oleh",
+      " by"
+    ],
+    "demotes": [
+      "\u3082\u3057\u308c\u307e\u305b\u3093",
+      " kanssa",
+      "hdess\u00e4",
+      "\u00e4ss\u00e4",
+      "\u3044\u3057\u3044"
+    ]
+  },
+  {
+    "id": "21_3974_16",
+    "layer": 21,
+    "ctx_idx": 16,
+    "influence_score": 0.3796747326850891,
+    "top_activations": [
+      {
+        "trigger": " follow",
+        "score": 59.75,
+        "context": " just wait for my son to move on to the next stage of development and then follow his lead. He toilet-trained himself when he was four because he wanted"
+      },
+      {
+        "trigger": " follow",
+        "score": 56.5,
+        "context": "little-known Qiaowanlong last week, it\u2019s only natural to follow up with Rapetosaurus krausei \u2013 another recently-named Mesozoic herbivore"
+      },
+      {
+        "trigger": " follow",
+        "score": 61.75,
+        "context": ". Though environmentalists worry about desert sprawl, water experts say it may be only a matter of time\u2014and thirst\u2014before other cities follow Santa Fe."
+      },
+      {
+        "trigger": " followed",
+        "score": 55.25,
+        "context": " lint, and other articles of indispensable necessity for the wounded.\" Women across the North followed their lead by gathering in homes and churches to fulfill the Unions urgent need for"
+      },
+      {
+        "trigger": " follows",
+        "score": 57.75,
+        "context": "0 apples to its owner. Shortly thereafter, Abraham\u2019s tree dies and Abraham follows suit. In Year Two, Isaac\u2019s tree delivers him another 1"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      "ImageContext",
+      "PyExc",
+      "\ufeff//",
+      " who\u017fe"
+    ],
+    "demotes": [
+      "Personendaten",
+      "webElementXpaths",
+      "ftagPool",
+      " Follows",
+      "UserScript"
+    ]
+  },
+  {
+    "id": "22_4649_16",
+    "layer": 22,
+    "ctx_idx": 16,
+    "influence_score": 0.3950560390949249,
+    "top_activations": [
+      {
+        "trigger": " afflicted",
+        "score": 38.75,
+        "context": " to assist the refugees emerging from the\u23ceconflict in Darfur, Sudan, another region afflicted by water shortage,\u23ceadopting three Sudanese orphans.\u23ceGlen Pearson \u2013"
+      },
+      {
+        "trigger": "tered",
+        "score": 38.0,
+        "context": ". The reasons for this neglect are well known. European history has long been fettered by an overly teleological conception of history, in which the \"modern\""
+      },
+      {
+        "trigger": " tempered",
+        "score": 38.0,
+        "context": " a time.\u201d\u23ceMandela\u2019s legacy is a lifelong quest for justice, tempered by messages of reconciliation and forgiveness. The world will remember him alongside other extraordinary"
+      },
+      {
+        "trigger": " Driven",
+        "score": 42.0,
+        "context": " and promoting optimal health. Driven by the knowledge and demand of health conscious consumers and backed up by technical advances in the food industry, functional foods have become a powerful"
+      },
+      {
+        "trigger": "bled",
+        "score": 38.25,
+        "context": " and manganese exports. Despite the abundance of\u23cenatural wealth, the economy is hobbled by poor fiscal management. In\u23ce1992, the fiscal deficit"
+      }
+    ],
+    "promotes": [
+      ",",
+      "\u23ce\u23ce",
+      " (",
+      " with",
+      " by"
+    ],
+    "demotes": [
+      " my\u017felf",
+      "expandindo",
+      " The\u017fe",
+      " Efq",
+      " Monfieur"
+    ]
+  },
+  {
+    "id": "20_14809_16",
+    "layer": 20,
+    "ctx_idx": 16,
+    "influence_score": 0.3044135570526123,
+    "top_activations": [
+      {
+        "trigger": " needed",
+        "score": 54.5,
+        "context": " and the ability to establish, develop, and manage B2B environments are skills needed in this 21st century spirit of e-Business. This paper"
+      },
+      {
+        "trigger": " received",
+        "score": 50.0,
+        "context": " time during the previous year\u23ce2) Any compensation or other payment due to or received by any person in connection with a business or profession\u23ce3) Income derived"
+      },
+      {
+        "trigger": " understood",
+        "score": 61.0,
+        "context": " a bar code reader must first be translated into alphanumeric characters in order to be understood by the person interfacing with the database since humans do not read bar codes"
+      },
+      {
+        "trigger": " faced",
+        "score": 56.0,
+        "context": " National Committee on Carved Stones in Scotland was formed in 1993 to co-ordinate responses to the threats of damage and destruction faced by Scotland'"
+      },
+      {
+        "trigger": " held",
+        "score": 55.5,
+        "context": " and the same series of hands was replayed, each player holding the hand previously held by an opponent.\u23ceThere's another interesting theory that proposes that the"
+      }
+    ],
+    "promotes": [
+      " \u062a\u0648\u0633\u0637",
+      " By",
+      "by",
+      " oleh",
+      " by"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      "ThroughAttribute",
+      "GEBURTS",
+      "DockStyle",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438"
+    ]
+  },
+  {
+    "id": "20_8979_16",
+    "layer": 20,
+    "ctx_idx": 16,
+    "influence_score": 0.3857455253601074,
+    "top_activations": [
+      {
+        "trigger": " follow",
+        "score": 64.0,
+        "context": " a wine had been chaptalized (legally permissible) but failed to follow up with the lab report. He or she also suggested that a tasting of"
+      },
+      {
+        "trigger": " Follow",
+        "score": 65.5,
+        "context": " star, black hole, pulsar, galaxy, or other never before seen object. Followup observations with the X-ray Telescope (XRT) on the Swift"
+      },
+      {
+        "trigger": " follow",
+        "score": 63.5,
+        "context": "ily obese. And if you try to lose the weight, your future children will follow in your footsteps. Does this sound harsh? Don't shoot the messenger"
+      },
+      {
+        "trigger": " follow",
+        "score": 64.0,
+        "context": " future generations. A Wellness Policy will benefit our children only when we are able to follow through with successful implementation, monitoring and evaluation activities. This guide was developed to"
+      },
+      {
+        "trigger": " followed",
+        "score": 64.0,
+        "context": " than once every three years. Other groups, including the American Cancer Society, have followed with similar recommendations.\u23ceThe appropriate frequency of Pap smears \u2013 and screenings for"
+      }
+    ],
+    "promotes": [
+      "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+      " up",
+      "\u0004",
+      "Brainz",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u090f\u0902"
+    ],
+    "demotes": [
+      " }</",
+      " colspan",
+      " \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f\u0924\u093e",
+      "\u0627\u0644\u062d\u064a\u0627\u0647",
+      "creativecommons"
+    ]
+  },
+  {
+    "id": "22_8286_16",
+    "layer": 22,
+    "ctx_idx": 16,
+    "influence_score": 0.38071802258491516,
+    "top_activations": [
+      {
+        "trigger": " found",
+        "score": 32.5,
+        "context": "HIV). There are 2 different types of HIV:\u23cethe most common type found worldwide, and\u23ceThese cells carry\u23cethe CD4 antigen on their surface"
+      },
+      {
+        "trigger": " true",
+        "score": 30.62,
+        "context": " population is growing faster than any other group in the country, a trend which holds true in Iowa as well.\u23ceAs the state\u2019s demographics continue to diversify"
+      },
+      {
+        "trigger": " seen",
+        "score": 35.0,
+        "context": ", Iraq, Southern Lebanon and Bahrain. Processional forms of this drama are also seen in India, Pakistan and even places far removed from Asia where Shi'a"
+      },
+      {
+        "trigger": " found",
+        "score": 32.0,
+        "context": "544 pages\u23ceChildhood anxiety disorders represent one of the most common psychological disorders found among the general population. They can be serious, distressful, and functionally"
+      },
+      {
+        "trigger": " found",
+        "score": 30.88,
+        "context": " a companion is a mark of either great patience or luck.\u23ceScarabs are found in the far deserts of Etain, where they burrow deep into the sand"
+      }
+    ],
+    "promotes": [
+      " with",
+      "afficheront",
+      " on",
+      "\u24d8",
+      " in"
+    ],
+    "demotes": [
+      " le\u00e7on",
+      "GEBURTSDATUM",
+      " photolibrary",
+      " yoox",
+      " nucl\u00e9aire"
+    ]
+  },
+  {
+    "id": "22_4801_16",
+    "layer": 22,
+    "ctx_idx": 16,
+    "influence_score": 0.36986422538757324,
+    "top_activations": [
+      {
+        "trigger": " modified",
+        "score": 25.12,
+        "context": " sensor is incapable of finding the subject, unless, of course, the Kinect was modified with a night-vision lens. MIT researchers have recently solved that problem with"
+      },
+      {
+        "trigger": "ated",
+        "score": 25.62,
+        "context": "algae grows and then we separate them and produce oil and vegetable biomass which is recuperated. This oil can can be used as a fuel as we\u2019re doing"
+      },
+      {
+        "trigger": " tracked",
+        "score": 25.88,
+        "context": " University. They are set up at various locations so common events that overlap can be tracked.\u23ce\"The information from the cameras allows the laboratory to track where it"
+      },
+      {
+        "trigger": " learned",
+        "score": 24.62,
+        "context": " \"Palestine.\" The dowry - the cost of liberating Palestine - is yet to be learned.\u23ceLast week, Palestinian Media Watch reported that the Minister of Social Affairs"
+      },
+      {
+        "trigger": " checked",
+        "score": 27.88,
+        "context": " At Oehmen\u2019s request the original post was checked for technical accuracy, revised and moved to mitnse.com. The revised essay serves as a general"
+      }
+    ],
+    "promotes": [
+      " to",
+      " in",
+      " by",
+      ",",
+      "."
+    ],
+    "demotes": [
+      " my\u017felf",
+      " auffi",
+      " \u017find",
+      " Efq",
+      " purpo\u017fe"
+    ]
+  },
+  {
+    "id": "17_6355_16",
+    "layer": 17,
+    "ctx_idx": 16,
+    "influence_score": 0.34305891394615173,
+    "top_activations": [
+      {
+        "trigger": " released",
+        "score": 23.75,
+        "context": "z has details on The News Hub. Photo: AP.\u23ceThe stomach gas released each year by a group of long-necked, plant-eating dinosaurs,"
+      },
+      {
+        "trigger": " submitted",
+        "score": 30.5,
+        "context": " mainly, if not solely, determined by enforcement agencies through the review of the reports submitted by the dischargers. Occasionally, staffs of the state agencies collect samples of"
+      },
+      {
+        "trigger": " on",
+        "score": 23.5,
+        "context": "onicotinoids are present in the pollen and nectar of flowers, which are fed on by honeybees. One of the most potent neonicotinoids is cloth"
+      },
+      {
+        "trigger": " experiences",
+        "score": 25.25,
+        "context": " information about:\u23ce\u2022The basics of clinical trial participation\u23ce\u2022First-hand experiences from actual clinical trial volunteers\u23ce\u2022Explanations from researchers\u23ce\u2022Links on"
+      },
+      {
+        "trigger": " stories",
+        "score": 23.75,
+        "context": "\u23ce- DNAandU.org is a Web site and blog that collects firsthand stories from people facing issues, making tough decisions, and using genomic (DNA)"
+      }
+    ],
+    "promotes": [
+      " \u05d9\u05d3\u05d9",
+      " przez",
+      " \u062a\u0648\u0633\u0637",
+      " by",
+      " oleh"
+    ],
+    "demotes": [
+      "\ucc38\uace0",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u0642\u0627\u06cc\u0646\u0627\u0642\u200c\u0644\u0627\u0631",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      " Winaray"
+    ]
+  },
+  {
+    "id": "17_11694_16",
+    "layer": 17,
+    "ctx_idx": 16,
+    "influence_score": 0.32843273878097534,
+    "top_activations": [
+      {
+        "trigger": " valued",
+        "score": 31.25,
+        "context": " plan might be to pump water in.\u23ceThe city of Venice has long been valued for its unique character. Built in a lagoon along the coast of Italy,"
+      },
+      {
+        "trigger": " coveted",
+        "score": 32.75,
+        "context": " Tuna: Overview\u23ceBluefin tuna are the most valuable fish in the world, coveted for their fatty belly meat, used in sushi as toro or maguro."
+      },
+      {
+        "trigger": " respected",
+        "score": 34.5,
+        "context": " swoop and soar from the earthy to the transcendent.\u23ce\u201cHe is respected, admired and, obviously to win the Nobel Prize, he is important, but he"
+      },
+      {
+        "trigger": " revered",
+        "score": 33.5,
+        "context": "year-old royal murder.\u23ceForensic technology suggests Ramses III, a king revered as a god, met his death at the hand of a killer, or"
+      },
+      {
+        "trigger": " sought",
+        "score": 34.25,
+        "context": " the silkworm, spread through China making silk a highly valued commodity much sought after by other countries. In 139 BC the world's longest"
+      }
+    ],
+    "promotes": [
+      "ArgumentParser",
+      "SerializedName",
+      "ValueStyle",
+      "\u0425\u0440\u043e",
+      " by"
+    ],
+    "demotes": [
+      "SharedDtor",
+      "ThroughAttribute",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "ictus",
+      " uVar"
+    ]
+  },
+  {
+    "id": "24_6361_16",
+    "layer": 24,
+    "ctx_idx": 16,
+    "influence_score": 0.38671597838401794,
+    "top_activations": [
+      {
+        "trigger": " occurred",
+        "score": 35.75,
+        "context": " both part of the theme, as industrialization is not a static process but has occurred in a combined and uneven way in almost all parts of the globe. Industrial"
+      },
+      {
+        "trigger": " taken",
+        "score": 33.5,
+        "context": " you always know what medicines you are taking and why.|\u23ceThe medicines might be taken for the same illness, such as quinsy (an abscess in the"
+      },
+      {
+        "trigger": " happen",
+        "score": 31.25,
+        "context": " a disease, but it's a sign of an underlying problem. Although it occurs most often in women, galactorrhea can happen in men and even"
+      },
+      {
+        "trigger": " posted",
+        "score": 33.75,
+        "context": " be useful for engineers.\u23ceIt was proposed that any information found useful should be posted to this page. Eventually, it should have several sections, taking the form"
+      },
+      {
+        "trigger": " accelerate",
+        "score": 33.75,
+        "context": " can outsource.\u23ceAt the same time, vehicles leaving the jams are made to accelerate away quickly using automated cruise control.\u23ceAnd then there's adaptive cruise"
+      }
+    ],
+    "promotes": [
+      " mid",
+      " live",
+      " monthly",
+      " weekly",
+      " daily"
+    ],
+    "demotes": [
+      " Efq",
+      " An\u017f",
+      " The\u017fe",
+      " StatefulWidget",
+      " photolibrary"
+    ]
+  },
+  {
+    "id": "14_6559_16",
+    "layer": 14,
+    "ctx_idx": 16,
+    "influence_score": 0.3847678005695343,
+    "top_activations": [
+      {
+        "trigger": " incurred",
+        "score": 22.0,
+        "context": " the commonplace that the greater part of the expenditure incurred by all classes for apparel is incurred for the sake of a respectable appearance rather than for the protection of the person"
+      },
+      {
+        "trigger": " delivered",
+        "score": 23.75,
+        "context": " the availability of Smart Grid-ready products for commercial buildings.\u23ceElectrical power is delivered from power generation plants to our homes and businesses through a nationwide network of electrical"
+      },
+      {
+        "trigger": " grown",
+        "score": 22.25,
+        "context": ", there was green wheat.\u23ceIn fact, unlike rice, green wheat is grown and processed locally. When I go to the market, the barrel of green"
+      },
+      {
+        "trigger": " administered",
+        "score": 22.0,
+        "context": " An injection is generally made up of a syringe and a needle. Injections are administered to ones muscles, veins, etc as per the need and are used in"
+      },
+      {
+        "trigger": " given",
+        "score": 25.75,
+        "context": " minimize normal tissue effect. Maximizing tumor effect is one reason that radiation treatments are given as a series of many small doses, rather than a few large doses."
+      }
+    ],
+    "promotes": [
+      "iecie",
+      " d\u00e9partements",
+      " p\u00f3\u017a",
+      " waarop",
+      " nakalista"
+    ],
+    "demotes": [
+      "hamel",
+      "GeneratedMessage",
+      "\u1eab",
+      " Inf\u00f3rmanos",
+      "KELEY"
+    ]
+  },
+  {
+    "id": "24_13277_16",
+    "layer": 24,
+    "ctx_idx": 16,
+    "influence_score": 0.33782362937927246,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "22_11317_16",
+    "layer": 22,
+    "ctx_idx": 16,
+    "influence_score": 0.33962687849998474,
+    "top_activations": [
+      {
+        "trigger": " obtained",
+        "score": 105.5,
+        "context": "):\u23ce*The value was obtained by adding and .\u23ce*The value was obtained by subtracting and from .\u23ceTherefore, the height of the tower is ."
+      },
+      {
+        "trigger": " posed",
+        "score": 105.0,
+        "context": " from the body cavity of interest to the surgeon. It has been suggested that constraints posed by this arrangement, in particular the lack of direct haptic feedback to the"
+      },
+      {
+        "trigger": " viewing",
+        "score": 106.0,
+        "context": "den Lane?\u23ceTeachers and students talk about the impact of the book. For viewing by teachers and students.\u23ce3. What Is Facing History and Ourselves"
+      },
+      {
+        "trigger": " sides",
+        "score": 103.5,
+        "context": " is part of the region of Basse-Normandie\u23ceand is surrounded on three sides by the English Channel, with 350km of coastline, and"
+      },
+      {
+        "trigger": " limited",
+        "score": 115.0,
+        "context": "ierre Warp Drive. So far, our ability to exploit these propulsion techniques is only limited by our level of technology or our concern for safety, but soon, one"
+      }
+    ],
+    "promotes": [
+      "')\")",
+      "]\");",
+      "\u041f\u043e\u043f\u0438\u0441",
+      " \")\");",
+      "}');"
+    ],
+    "demotes": [
+      "BY",
+      "By",
+      "by",
+      " By",
+      "FROM"
+    ]
+  },
+  {
+    "id": "25_9975_16",
+    "layer": 25,
+    "ctx_idx": 16,
+    "influence_score": 0.34930258989334106,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ]
+  },
+  {
+    "id": "25_11800_16",
+    "layer": 25,
+    "ctx_idx": 16,
+    "influence_score": 0.35370323061943054,
+    "top_activations": [
+      {
+        "trigger": " organized",
+        "score": 45.0,
+        "context": ", contaminating nectar and pollen.\u00c2 \u00c2\u23ceThe recent September meeting that was organized by the Florida Agriculture Commissioner Adam Putman, a former U.S."
+      },
+      {
+        "trigger": " prepared",
+        "score": 44.5,
+        "context": "/26.\u23ce- The draft guidelines on labeling and claims for medical foods prepared by the United States were discussed at the 1982 meeting."
+      },
+      {
+        "trigger": " intimidated",
+        "score": 45.5,
+        "context": " novel. Joey Dowdel grows from a nine-year-old child who is intimidated by Grandma Dowdel to a young man of fifteen who has gained respect and"
+      },
+      {
+        "trigger": " endorsed",
+        "score": 44.0,
+        "context": "4 won their races. One of them was Ruth Shack, who had also been endorsed by singer Anita Bryant as a favor to her agent, who was Shack\u2019"
+      },
+      {
+        "trigger": " provided",
+        "score": 46.0,
+        "context": " attempt to solve specific problems; the use of conceptual, analytical, and material resources provided by the cognitive-social-cultural context of the problem; and dynamic processes"
+      }
+    ],
+    "promotes": [
+      " estekak",
+      ":\u2728",
+      "\u05d5\u05da",
+      "\u0627\u0646\u064a\u0641",
+      "__*/"
+    ],
+    "demotes": [
+      "BY",
+      "By",
+      " BQ",
+      " By",
+      " Efq"
+    ]
+  },
+  {
+    "id": "24_10861_16",
+    "layer": 24,
+    "ctx_idx": 16,
+    "influence_score": 0.23019471764564514,
+    "top_activations": [
+      {
+        "trigger": " attacked",
+        "score": 85.0,
+        "context": " the first time in the episode \"Baby's First Demon\", when he was attacked by a demon for the first time. Paige developed this power when being attacked"
+      },
+      {
+        "trigger": " affected",
+        "score": 81.0,
+        "context": " have celiac disease and an estimated 2 million people remain unaware that they are affected by it.\u23ceCeliac disease relates to gluten, a protein compound found"
+      },
+      {
+        "trigger": " owned",
+        "score": 81.0,
+        "context": " 22 students in the class.\u23ceThe course contextualizes objects and documents owned and written by James Monroe and examines the social norms of the early Republic through"
+      },
+      {
+        "trigger": "ed",
+        "score": 86.0,
+        "context": " premature deaths a year, according to a new study from Stuttgart University.\u23ceCommissioned by Greenpeace International, the report found another 2,700 people"
+      },
+      {
+        "trigger": " used",
+        "score": 81.0,
+        "context": " managed to escape after their raids because their ships were much faster than the heavy warships used by the Dutch. To solve the problem, the Dutch began building smaller,"
+      }
+    ],
+    "promotes": [
+      " przez",
+      " \u05d9\u05d3\u05d9",
+      " \u062a\u0648\u0633\u0637",
+      " oleh",
+      " by"
+    ],
+    "demotes": [
+      "yelitis",
+      " transfieras",
+      "UnusedPrivate",
+      " Chwiliwch",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627"
+    ]
+  },
+  {
+    "id": "23_14264_16",
+    "layer": 23,
+    "ctx_idx": 16,
+    "influence_score": 0.3142065405845642,
+    "top_activations": [
+      {
+        "trigger": " faced",
+        "score": 66.0,
+        "context": "05984 at checkout.\u23ceUsing Health Data addresses the enduring problem faced by most healthcare workers: the transformation and presentation of data into meaningful and accessible"
+      },
+      {
+        "trigger": " posed",
+        "score": 61.5,
+        "context": " learn of the dangers associated with cold, snow and ice, as well as threats posed by the use of heat sources such as wood burning stoves, fireplaces and space"
+      },
+      {
+        "trigger": " hosted",
+        "score": 59.0,
+        "context": " called \u201cAsperger Syndrome and Adolescence: Building Skills for the Real World\u201d hosted by The Gray Center in Grand Rapids, Michigan last week. It consisted of"
+      },
+      {
+        "trigger": " offered",
+        "score": 55.5,
+        "context": " scholars to gain access to often obscure and rare texts. The unfettered access offered by these digital galleries can be an indispensable tool for researchers. One such website"
+      },
+      {
+        "trigger": " administered",
+        "score": 54.0,
+        "context": "-mail: SchoolHealth@vdh.state.vt.us\u23ceFor questions about statewide programs or policies administered at the local level, contact the Health Department"
+      }
+    ],
+    "promotes": [
+      "saraba",
+      " BY",
+      "\">//",
+      "by",
+      " by"
+    ],
+    "demotes": [
+      " nakalista",
+      " aufge",
+      " aufzu",
+      "flashdata",
+      "standers"
+    ]
+  },
+  {
+    "id": "17_5463_16",
+    "layer": 17,
+    "ctx_idx": 16,
+    "influence_score": 0.3743237853050232,
+    "top_activations": [
+      {
+        "trigger": " follow",
+        "score": 75.5,
+        "context": " of the top 20 emitting countries in Monterrey, Mexico this week, a follow-up on the work at the G8 summit in Gleneagles in"
+      },
+      {
+        "trigger": " follow",
+        "score": 84.0,
+        "context": " on the tweets I've ready, more are coming! There should always be follow up learning opportunities in our classrooms. Students and adults need time to process."
+      },
+      {
+        "trigger": " follows",
+        "score": 74.5,
+        "context": " change of magnitude (speed) or by a change of direction or both. It follows that acceleration is also a directed, or vector, quantity. If the magnitude"
+      },
+      {
+        "trigger": " follow",
+        "score": 79.5,
+        "context": "001 and 2008, respectively.\u23ceESA\u2019s follow-up instruments aboard ERS-2, Envisat and CryoSat"
+      },
+      {
+        "trigger": " follow",
+        "score": 81.5,
+        "context": " to reside for retirement or health purposes.\u23ceProvince-Territory Weather Winners is a follow-up to the highly popular Canadian Cities Are Weather Winners site released in "
+      }
+    ],
+    "promotes": [
+      "\ucc38\uace0",
+      " \u0645\u0634\u064a\u0646",
+      "GraphicsUnit",
+      " Waray",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "%\");",
+      "sbericht",
+      "repor",
+      "includegraphics",
+      " enn"
+    ]
+  },
+  {
+    "id": "16_12331_16",
+    "layer": 16,
+    "ctx_idx": 16,
+    "influence_score": 0.3886488974094391,
+    "top_activations": [
+      {
+        "trigger": "eded",
+        "score": 25.25,
+        "context": ", he expressed the view that his instruction \u2014 halting the printing press \u2014 was heeded too late:\u23ceAustria's currency did not collapse \u2014 as did Germany"
+      },
+      {
+        "trigger": " ignored",
+        "score": 25.75,
+        "context": " damage occasioned by war and preparation for war is routinely underestimated, underreported, even ignored. The environment remains war's \"silent casualty.\" Activities that do such"
+      },
+      {
+        "trigger": " understood",
+        "score": 24.5,
+        "context": " the United States is a \"technological revolution, which won't be completely understood for some time.\" And that \"in a tectonic shift, energy independence is"
+      },
+      {
+        "trigger": "ignored",
+        "score": 26.0,
+        "context": " ever have owned paternity.\u23ceThe situation was an open secret which was either\u23ceignored or regarded as a common occurrence so long as\u23cethe prevalent social structure was"
+      },
+      {
+        "trigger": " understood",
+        "score": 29.75,
+        "context": " is also a clear sign usually associated with happiness and alertness. These gestures are immediately understood by other dogs and humans because they are so demonstrative and \u2018in your"
+      }
+    ],
+    "promotes": [
+      " \u901a\u8ca9",
+      "l\u00e2",
+      "uccess",
+      "assung",
+      " \u0433\u0433"
+    ],
+    "demotes": [
+      "ViewFeatures",
+      "GEBURTSDATUM",
+      "SBATCH",
+      "########.",
+      "RegressionTest"
+    ]
+  }
+]

@@ -1,0 +1,3010 @@
+[
+  {
+    "id": "0_9503_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3831069767475128,
+    "top_activations": [
+      {
+        "trigger": " major",
+        "score": 14.31,
+        "context": " holding back these reservoirs held firm in 1906 and are not considered major hazards. Beyond them, the fault begins to take a slight leftward bend"
+      },
+      {
+        "trigger": " major",
+        "score": 13.94,
+        "context": " on site would have been a substantially sized wood store.\u23ceFirewood was a major \u2018crop\u2019 from the woods of the Weald. There are records of"
+      },
+      {
+        "trigger": " major",
+        "score": 13.94,
+        "context": " [Hagiographa] is more miscellaneous in content (than the other two major sections of the Bible, the Torah and the Prophets). It is the part"
+      },
+      {
+        "trigger": " Yes",
+        "score": 13.94,
+        "context": " trimmed them off at ground level? B.D., Dallas.\u23ceA: Yes, the knees are part of the root system. Change the area to mulch"
+      },
+      {
+        "trigger": " major",
+        "score": 13.94,
+        "context": " all but eight or nine states and still win the election. It is absurd that major population hubs like Chicago and New York and Los Angeles are ignored because the states"
+      }
+    ],
+    "promotes": [
+      " M",
+      " -",
+      " (",
+      " O",
+      " R"
+    ],
+    "demotes": [
+      " it\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " my\u017felf",
+      " \u0f0b\u0f0b",
+      " The\u017fe"
+    ]
+  },
+  {
+    "id": "0_2158_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3584417402744293,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 33.75,
+        "context": " and international crises, both natural and political, is something that Mashable has followed with great interest over the past few years.\u23ceAs a culture, we started"
+      },
+      {
+        "trigger": " with",
+        "score": 33.75,
+        "context": " disease mainly affects poor people in Africa, Asia and Latin America, and is associated with malnutrition, population displacement, poor housing, weak immune system and lack of resources"
+      },
+      {
+        "trigger": " with",
+        "score": 34.0,
+        "context": " uses of the land before it was incorporated into the park. The trail is marked with pink blazes. Signs on posts along the trail will identify the sites."
+      },
+      {
+        "trigger": " with",
+        "score": 33.75,
+        "context": ", and the residues of the history to which they bear witness, particularly those associated with the War of 1812, the Battle of Fort George,"
+      },
+      {
+        "trigger": " with",
+        "score": 34.0,
+        "context": " portrait busts and statuettes derived from his public monuments. These unparalleled holdings are supplemented with loans from private collections and public institutions in the exhibition Augustus Saint-Gaud"
+      }
+    ],
+    "promotes": [
+      " \"]\";",
+      "()]);",
+      "]++;",
+      " \"}\";",
+      "]--;"
+    ],
+    "demotes": [
+      " with",
+      " avec",
+      "with",
+      " dengan",
+      " v\u1edbi"
+    ]
+  },
+  {
+    "id": "0_2848_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.38636156916618347,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_4442_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3685520589351654,
+    "top_activations": [
+      {
+        "trigger": " optical",
+        "score": 9.0,
+        "context": " 0.77 \u03bcm to 1.65 \u03bcm after optical pumping by an intense, 0.5 ps pulse at 0."
+      },
+      {
+        "trigger": " Quantum",
+        "score": 8.38,
+        "context": "\u23ceAsking questions that lead to brilliant ideas is at the root of scientific discovery. Quantum leaps in science are made by this type of innovative thinking, but funding for"
+      },
+      {
+        "trigger": " Bose",
+        "score": 7.94,
+        "context": " a gas are outlined. Starting with Heisenberg's uncertainty principle, the formation of Bose-Einstein condensate (BEC) is explained as occurring when the interatomic spacing"
+      },
+      {
+        "trigger": " quantum",
+        "score": 9.31,
+        "context": " no ordinary words to describe them because they come from another world -- the world of quantum mechanics.\u23ceAlthough quantum rules are counter-intuitive, they underlie the macroscopic"
+      },
+      {
+        "trigger": " spin",
+        "score": 9.88,
+        "context": "\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle called the photon. Electromagnetic forces occur when electrically charged particles emit"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " phonon",
+      "\u23ce\u23ce",
+      "\u017byciorys",
+      "'"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "InputBorder",
+      "numerusform",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ]
+  },
+  {
+    "id": "0_14266_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3604999780654907,
+    "top_activations": [
+      {
+        "trigger": " major",
+        "score": 15.44,
+        "context": " If you're looking to pinpoint the first major instance of this trend among the major icons of American history, look back in New York City history exactly one hundred"
+      },
+      {
+        "trigger": " major",
+        "score": 15.31,
+        "context": " expand and develop into a condition called xerophthalmia. Xerophthalmia is a major cause of blindness in children in Africa and Latin America, and usually occurs between"
+      },
+      {
+        "trigger": " major",
+        "score": 15.19,
+        "context": " Henry Jones IXL (1953, now McCain Foods) is a major vegetable processor. Tasmanian Seafoods is Australia's biggest producer of abalone"
+      },
+      {
+        "trigger": " major",
+        "score": 15.56,
+        "context": " the Blog section of this website.\u23ceMigration and global environmental change is the first major study by the UK government into the topic of climate change and migration. One"
+      },
+      {
+        "trigger": " major",
+        "score": 15.31,
+        "context": "ist\u23ceHard to say. I guess it would be that Aristotle was the first major humanist. Not a wonderful thing, but it is interesting that he came up"
+      }
+    ],
+    "promotes": [
+      " sahiptir",
+      " esclavos",
+      " modernity",
+      " earthly",
+      " riuscito"
+    ],
+    "demotes": [
+      " and",
+      "\u017felf",
+      "canestro",
+      "ne\u017fs",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "0_10004_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3903330862522125,
+    "top_activations": [
+      {
+        "trigger": " plastic",
+        "score": 11.94,
+        "context": "0 percent weight cellulosic fibers;\u23ce(d) preparing a homogeneous, plastically formable material by adding to the suspension sufficient hydrocolloid to bind"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.94,
+        "context": " properties of laser printer toner.\u23ceToner is a mix of a very fine plastic powder and black pigment.\u23ceWhen paper is being heated by fuser inside"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.69,
+        "context": " Now get ready for Plastics Power.\u23cesolar technologies use advanced materials, including conductive plastic, to\u23ceachieve acceptable efficiencies and design capabilities not possible with\u23ceTwo of"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.81,
+        "context": " of the waste they handle. It is clear that attempts to decrease the amount of plastic that people throw away in the garbage are failing.\u23ceWhich one of the"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.81,
+        "context": " from the picture, a tub of water with a Wiimote pointing at a plastic boat is a simple and cost-effective way to achieve the same\u2014or"
+      }
+    ],
+    "promotes": [
+      "intenance",
+      "ctober",
+      " \"",
+      " i\u017ft",
+      "Continue"
+    ],
+    "demotes": [
+      "WebVitals",
+      "IntoConstraints",
+      " firent",
+      "]\")]",
+      "endphp"
+    ]
+  },
+  {
+    "id": "0_7943_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3949742913246155,
+    "top_activations": [
+      {
+        "trigger": " chapter",
+        "score": 12.25,
+        "context": " Status and Challenges\u23ceSuman Sengupta and Deloar Hossain*\u23ceThis chapter uses a child protection and child rights lens to assess the progress on development of"
+      },
+      {
+        "trigger": " chapter",
+        "score": 11.38,
+        "context": " to the necessity of the NAACP today, it was the NAACP's New York chapter president, Hazel Dukes, who led the fight for justice in the case of"
+      },
+      {
+        "trigger": " chapter",
+        "score": 12.0,
+        "context": ".\u23ceLeading experts address a wide range of topics, including:\u23ceThe final chapter outlines the challenges to biomimetic-related innovation and offers a vision for"
+      },
+      {
+        "trigger": " chapter",
+        "score": 11.5,
+        "context": " about the \u201cProverbs 31 Man?\u201d On an openminded review of the chapter, it occurred to me that verses 1-9, 23"
+      },
+      {
+        "trigger": " leverage",
+        "score": 11.75,
+        "context": " even heavier emphasis on data and\u23cerelations, but is not OOP.\u23ceTo leverage your knowledge on relations - you can pretend sql queries are\u23cefunctions, i"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " my\u017felf",
+      "\u017felf",
+      " again\u017ft",
+      "<bos>"
+    ],
+    "demotes": [
+      " Neighbors",
+      "setVerticalGroup",
+      "();?>",
+      "Xna",
+      " Recognizing"
+    ]
+  },
+  {
+    "id": "0_4907_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.39190781116485596,
+    "top_activations": [
+      {
+        "trigger": " manufacturing",
+        "score": 19.25,
+        "context": " earlier in this chapter.\u23ceManufacturing price indexes\u23cePrice indexes of articles produced by manufacturing industries\u23ceThese indexes measure movements in the prices of articles produced by establishments classified"
+      },
+      {
+        "trigger": " manufacturing",
+        "score": 19.25,
+        "context": " to prevent seasonal influenza in people ages 18 years and older.\u23ceThe manufacturing process for Flucelvax is similar to the egg-based production method,"
+      },
+      {
+        "trigger": " manufacturing",
+        "score": 19.5,
+        "context": " a USB port.\u23ceThe foundation discussed its manufacturing plans in a statement published on its official blog. The organization had originally hoped to have all of the manufacturing done"
+      },
+      {
+        "trigger": " manufacturing",
+        "score": 19.0,
+        "context": "s Center for Biologics Evaluation and Research.\u23ceCell culture technology is another manufacturing alternative to conventional egg-based influenza vaccine production. Advantages of cell culture technology"
+      },
+      {
+        "trigger": " manufacturing",
+        "score": 19.25,
+        "context": " Whitford is \u201cscaling out\u201d instead of scaling up, also known as distributed manufacturing. Instead of running one 10,000 L batch,"
+      }
+    ],
+    "promotes": [
+      " auroit",
+      " entanto",
+      " feroit",
+      " abstrato",
+      ":\u2728"
+    ],
+    "demotes": [
+      " ",
+      " the",
+      "ting",
+      " to",
+      " a"
+    ]
+  },
+  {
+    "id": "0_15252_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.35740554332733154,
+    "top_activations": [
+      {
+        "trigger": " this",
+        "score": 36.0,
+        "context": " not tell him the dream, as well as the interpretation. When they cannot do this, the king then orders the destruction of all wise men in his kingdom."
+      },
+      {
+        "trigger": " this",
+        "score": 36.0,
+        "context": " by singlehandedly sailing the smallest boat in history through the Northwest Passage. Once through this northern passage, Rutherford sailed around the entire state of Alaska, then south through"
+      },
+      {
+        "trigger": " this",
+        "score": 36.25,
+        "context": "ets into the magma chamber of the volcano. National Geographic went with them to record this amazing phenomenon.\u23ceFollowing their mapping of the cave a group of volcano scientist"
+      },
+      {
+        "trigger": " this",
+        "score": 36.25,
+        "context": ", also called IPv4, will be exhausted in approximately three years. To head this off, a new proposal is in the final stages of approval. Known as"
+      },
+      {
+        "trigger": " this",
+        "score": 36.0,
+        "context": " 44 is less than 66. If the sign is the other way and the mouth is pointing this way > then the kids know that the first"
+      }
+    ],
+    "promotes": [
+      "zo",
+      "isa",
+      " \u00ab",
+      "\u00ab",
+      " Here"
+    ],
+    "demotes": [
+      " this",
+      "this",
+      " questa",
+      " \u044d\u0442\u043e\u0433\u043e",
+      " questo"
+    ]
+  },
+  {
+    "id": "0_7393_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.37529802322387695,
+    "top_activations": [
+      {
+        "trigger": " Commission",
+        "score": 22.25,
+        "context": "<bos>The European Commission has been urged to state whether it will allow so-called 'megatrucks' onto European roads.\u23ceLeading a debate on 1"
+      },
+      {
+        "trigger": " Commission",
+        "score": 22.25,
+        "context": " equivalent to the yearly fuel consumption of more than a million passenger cars, the European Commission, the bloc\u2019s executive, said in a statement. The aim is"
+      },
+      {
+        "trigger": " Commission",
+        "score": 21.62,
+        "context": " engineers and scientists at The University of Texas at Austin, Boston College and the France Commission for Atomic Energy report graphene withstood another major test along its path to proven"
+      },
+      {
+        "trigger": " Commission",
+        "score": 22.38,
+        "context": " under pressure. With a view to increasing Europe's own production, the European Commission has proposed today to set up a European Innovation Partnership on raw materials.\u23ce"
+      },
+      {
+        "trigger": " Commission",
+        "score": 22.25,
+        "context": " with a ratio of 212 percent, according to calculations based on European Commission figures.\u23ceDebt figures are usually calculated as a ratio of national income and"
+      }
+    ],
+    "promotes": [
+      " nearly",
+      " a",
+      " so",
+      "rinfo",
+      " the"
+    ],
+    "demotes": [
+      " Efq",
+      "setVerticalGroup",
+      " Monfieur",
+      "RenderAtEndOf",
+      " Jefus"
+    ]
+  },
+  {
+    "id": "0_2848_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3788602650165558,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_8444_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.3019130825996399,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 41.5,
+        "context": " it is. There are two kinds or grades of actuality, one that is akin to the possession of knowledge, and another to the exercise of knowledge. The first"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " dark eyes, and white feathers on the outer tail. Female Juncos are similar to males in the same race, but are usually paler and duller. The"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " of 100. Fractions can also be expressed as decimals: is equivalent to 0.05 (five-hundredths). Therefore, 5"
+      },
+      {
+        "trigger": " to",
+        "score": 41.0,
+        "context": " you get a room full of moms and dads together with their babies, they love to admire each other\u2019s babies and discuss what is best for their babies from"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " popularity\u23ceIs often mispronounced Mal-ah-chee\u23ceWe gave this name to our beautiful son and we love it! Sometimes we call him Kai.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " to",
+      " in",
+      " for",
+      " ",
+      " and"
+    ]
+  },
+  {
+    "id": "0_1773_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.32788506150245667,
+    "top_activations": [
+      {
+        "trigger": " history",
+        "score": 24.0,
+        "context": " the search for life beyond Earth.\u23ce\"This is the first time in human history we have the technological reach to find life on other planets,\" Sara Seager"
+      },
+      {
+        "trigger": " history",
+        "score": 23.62,
+        "context": " as first and foremost access to knowledge, to the storehouse of learning gathered throughout history, growing exponentially over time. Contact with such content is certainly important, and"
+      },
+      {
+        "trigger": " history",
+        "score": 23.5,
+        "context": " histories along with astronomical data and a variety of calendars to calculate the beginning of human history that he also took to represent the beginning of the physical world. His work"
+      },
+      {
+        "trigger": " history",
+        "score": 23.62,
+        "context": " essays for the teacher with detailed information about four periods in North Carolina\u2019s ancient history.\u23ce- Native Carolinians\u23ce- Readings for students on the archaeology and"
+      },
+      {
+        "trigger": " history",
+        "score": 23.5,
+        "context": " Army Secretary John McHugh recently told Congress that, for perhaps the first time in history, there are more than 50,000 soldiers in uniform"
+      }
+    ],
+    "promotes": [
+      " E\u017f",
+      " becau\u017fe",
+      "Xna",
+      " Monfieur",
+      " Efq"
+    ],
+    "demotes": [
+      " history",
+      "history",
+      " History",
+      "History",
+      " HISTORY"
+    ]
+  },
+  {
+    "id": "0_6962_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38058027625083923,
+    "top_activations": [
+      {
+        "trigger": " Chapter",
+        "score": 13.38,
+        "context": " Chapter 6 Chapter 7 Chapter 8 Chapter 9 Chapter 10 Chapter 11 Chapter 12 Chapter 13 Chapter 14"
+      },
+      {
+        "trigger": " Chapter",
+        "score": 13.25,
+        "context": " the great, century-old debates of philosophy and science.\u23ceAs outlined in Chapter 5 of The DNA of Collaboration, failure to take care in choosing and"
+      },
+      {
+        "trigger": " Chapter",
+        "score": 13.25,
+        "context": " contrasts.\u23ceCustomer Reviews for PAC English 1: Language Skills Activities Booklet, Chapter 1\u23ceThis product has not yet been reviewed. Click here to continue"
+      },
+      {
+        "trigger": " Chapter",
+        "score": 13.12,
+        "context": "weaverunleashed.com. You'll want to save the files for Chapter 7 in an easy-to-find location. I'll place"
+      },
+      {
+        "trigger": " Chapter",
+        "score": 13.25,
+        "context": ", a Foreigner (17). Arsames (21).\u23ce- Chapter II: PERSIANS AND GREEKS INVADE EGYPT 30\u23ce"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u23ce\u23ce",
+      "  ",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "########.",
+      "expandindo",
+      " utafitiHapana",
+      "'},\r",
+      " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd"
+    ]
+  },
+  {
+    "id": "0_2561_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.39646562933921814,
+    "top_activations": [
+      {
+        "trigger": " regulate",
+        "score": 13.62,
+        "context": " babies also enjoy added benefits of sleeping in physiological harmony with their moms which helps to regulate the infant's breathing, sleep state, arousal patterns, heart rates and"
+      },
+      {
+        "trigger": " expand",
+        "score": 12.88,
+        "context": " order to keep this article as simple as possible, we're not going to expand on the relationship of accrued items to balance sheets, profit and loss sheets,"
+      },
+      {
+        "trigger": " satisfy",
+        "score": 12.75,
+        "context": " in use of the controversial technique of hydraulic fracturing but struck a compromise that failed to satisfy industry and most environmentalists.\u23ceBoth sides focused on the contentious issue of"
+      },
+      {
+        "trigger": " celebrate",
+        "score": 13.88,
+        "context": " sees for the first time this great feat of mankind.\u23ceWe are here to celebrate the completion of the greatest dam in the world, rising 726"
+      },
+      {
+        "trigger": " celebrate",
+        "score": 13.12,
+        "context": " prohibited.\u23ceDuring the turn of the century Anna Jarvis picked up the fight to celebrate Mothers in the United States and dedicated her life to writing letters and influencing people"
+      }
+    ],
+    "promotes": [
+      " re",
+      " for",
+      "\u23ce\u23ce",
+      "'",
+      " "
+    ],
+    "demotes": [
+      " localize",
+      "rungsseite",
+      " evacuate",
+      " erode",
+      " ratify"
+    ]
+  },
+  {
+    "id": "0_9026_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.31474539637565613,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "0_14777_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.38393282890319824,
+    "top_activations": [
+      {
+        "trigger": " explain",
+        "score": 9.62,
+        "context": " Simple Random Numbers\u23ceLiam O\u2019Connor got me thinking about the best way to explain the idea of a pseudo-random number generator to new programmers. This post"
+      },
+      {
+        "trigger": " explain",
+        "score": 9.62,
+        "context": " yields a 10 percent wage premium.\"\u23ceTwo theories were then drawn to explain the observation. Researchers first thought that \"connections established in high school are maintained"
+      },
+      {
+        "trigger": " explain",
+        "score": 9.44,
+        "context": " for the Higgs boson. Seven months after its scientists made a landmark discovery that may explain the mysteries of mass, Europe's top physics lab will take a break"
+      },
+      {
+        "trigger": " explain",
+        "score": 9.44,
+        "context": "\u23ce- 2. Learn the Leave No Trace principles and Outdoor Code, and explain what they mean.\u23ce- 3. Present yourself properly dressed for bel"
+      },
+      {
+        "trigger": " explain",
+        "score": 9.62,
+        "context": " frequently, both over Greenland and across the Arctic, being present around 30\u201350 per cent of the time. Our results may help to explain the"
+      }
+    ],
+    "promotes": [
+      " \u00e9",
+      "\u200b",
+      " ",
+      " original",
+      " in"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " Monfieur",
+      " Shakspeare",
+      " it\u017felf",
+      " Efq"
+    ]
+  },
+  {
+    "id": "0_11835_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.3464244604110718,
+    "top_activations": [
+      {
+        "trigger": " asymmetrical",
+        "score": 12.25,
+        "context": "), that blade is symmetrical. If the two sides are different, the blade is asymmetrical.\u23ceThe two blades indicated above are fairly typical shapes. There are lots"
+      },
+      {
+        "trigger": " pediatrician",
+        "score": 13.88,
+        "context": "in his mouth, chances are you have a teether, says Dr. Ken Haller, MD, pediatrician at SSM Cardinal Glennon Children's Medical Center and"
+      },
+      {
+        "trigger": " photon",
+        "score": 11.75,
+        "context": " me to take a deeper look at the technology challenges we\u2019re facing with silicon photonics as we scale switching networks from 10G to 10"
+      },
+      {
+        "trigger": " rains",
+        "score": 11.88,
+        "context": "0 concrete alleyways were originally built without drainage and are a nightmare every time it rains. Storm water pours off the hard surfaces and routinely floods basements and renders"
+      },
+      {
+        "trigger": "orestation",
+        "score": 11.75,
+        "context": " gas emissions from forests while boosting local livelihoods.\u23ceThe UN Reduced Emissions from Deforestation and Forest Degradation (UN-REDD) was launched last September by Secretary"
+      }
+    ],
+    "promotes": [
+      ",",
+      "\u23ce\u23ce",
+      "'",
+      " ",
+      "<bos>"
+    ],
+    "demotes": [
+      " betweenstory",
+      "WithIOException",
+      "RegressionTest",
+      "\u044c\u0430\u0436",
+      " propOrder"
+    ]
+  },
+  {
+    "id": "0_11738_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.3487281799316406,
+    "top_activations": [
+      {
+        "trigger": " provide",
+        "score": 12.88,
+        "context": "<bos>\u2190 Introduction to Tensors \u2191 \u2192\u23ceare built from vectors. They provide the mathematical structure used to describe states of many particles in quantum mechanics, as well"
+      },
+      {
+        "trigger": " provide",
+        "score": 14.62,
+        "context": " marine life, protect the coral reef and sea grasses from sedimentation and pollution runoff, provide impoortant habitat for migratory birds, sea turtles and manatees,"
+      },
+      {
+        "trigger": " provide",
+        "score": 13.75,
+        "context": " be taken to ensure the information is medically sound . Several of the external links below provide information about diabetes and its management, including self-management.\u23ceIn September"
+      },
+      {
+        "trigger": " provide",
+        "score": 14.38,
+        "context": " but necessary under some conditions to compensate for past wrongs, realize equal opportunity, and provide for racial reconciliation. To radicals, they cohere with the recognition of racial"
+      },
+      {
+        "trigger": " provide",
+        "score": 13.75,
+        "context": " work to provide clean drinking water, preserve water quality, clean up public spaces and provide recycling programs.\u23ceOn World Environment Day and beyond, I believe Lions will"
+      }
+    ],
+    "promotes": [
+      " vast",
+      " a",
+      " one",
+      " the",
+      "<bos>"
+    ],
+    "demotes": [
+      " simulate",
+      " imitate",
+      " motivate",
+      " optimise",
+      " simplify"
+    ]
+  },
+  {
+    "id": "1_5324_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3934541642665863,
+    "top_activations": [
+      {
+        "trigger": " chapter",
+        "score": 21.75,
+        "context": " engines with highly rich, chapter-representative searchable text on the opening pages of each chapter. Because it is UNCORRECTED material, please consider the following text as"
+      },
+      {
+        "trigger": " chapter",
+        "score": 21.62,
+        "context": " parallelograms, triangles, and then for composite shapes of those figures. The chapter then branches into perimeter and area for other special geometric figures, namely trapezoids"
+      },
+      {
+        "trigger": " chapter",
+        "score": 22.0,
+        "context": " using regional bodies as agents of agricultural innovation through measures such as regional specialization. The chapter will examine ways to strengthen the role of the RECs in promoting innovation."
+      },
+      {
+        "trigger": " chapter",
+        "score": 21.88,
+        "context": " some\u23ceaspect of the Earth system. Step-by-step instructions in each chapter\u23cewalk users through a case study in which they access data\u23ceand use"
+      },
+      {
+        "trigger": " chapter",
+        "score": 21.88,
+        "context": " and applications are taken from a wide variety of subfields in sociology, and each chapter is organized around one or more general ideas that are explained at its beginning and"
+      }
+    ],
+    "promotes": [
+      "MemoryWarning",
+      " typelib",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " Normdatei",
+      "<bos>"
+    ],
+    "demotes": [
+      "Chapter",
+      " Chapter",
+      "CHAPTER",
+      " CHAPTER",
+      " chapter"
+    ]
+  },
+  {
+    "id": "1_9577_15",
+    "layer": 1,
+    "ctx_idx": 15,
+    "influence_score": 0.3879593312740326,
+    "top_activations": [
+      {
+        "trigger": " explain",
+        "score": 15.88,
+        "context": ". The goal of science (in both the broad and narrow senses) is to explain, and to explain is to discover causes. Aristotle observed that four general categories"
+      },
+      {
+        "trigger": " explain",
+        "score": 15.0,
+        "context": "\u23ce\u2022 Word Partnerships highlight important collocations\u23ce\u2022 Word Links increase language awareness and explain origins of words\u23ce\u2022 Thesaurus entries offer synonyms and antonyms for common words"
+      },
+      {
+        "trigger": " explained",
+        "score": 14.88,
+        "context": "ING ZAKAATUL MAAL\u23ceThe Prophet (Peace be upon him) explained that Islam is built upon five pillars:\u23ce1. Testifying that no"
+      },
+      {
+        "trigger": " explain",
+        "score": 15.0,
+        "context": " autism. Additional variables, such as diet and lifestyle habits will be examined to help explain this relationship. What this means for people with autism: Twenty years ago scientists"
+      },
+      {
+        "trigger": " explain",
+        "score": 14.88,
+        "context": " more commonly understood repository of reference terms. Every metaphor will break in its attempt to explain the actual paradigm as it is only a shadow of the actual matter at hand"
+      }
+    ],
+    "promotes": [
+      " trasmissione",
+      " parall\u00e8le",
+      " v\u00f4tre",
+      " religieux",
+      " polvere"
+    ],
+    "demotes": [
+      "windowFixed",
+      " \u0645\u0634\u064a\u0646",
+      "#+#",
+      "LookAnd",
+      "aarrggbb"
+    ]
+  },
+  {
+    "id": "2_14029_13",
+    "layer": 2,
+    "ctx_idx": 13,
+    "influence_score": 0.3971947133541107,
+    "top_activations": [
+      {
+        "trigger": " concepts",
+        "score": 15.62,
+        "context": " part of Cutting Edge:Introductory Courses:Activities\u23ceStudents are introduced to cartographic concepts and learn how to use GIS to make a proper map with scale information,"
+      },
+      {
+        "trigger": " concepts",
+        "score": 15.5,
+        "context": "1. Employ plenty of concrete nouns and active verbs, especially when writing about abstract concepts.\u23ce2. Keep the nouns and verbs close together in your sentences,"
+      },
+      {
+        "trigger": " concepts",
+        "score": 15.62,
+        "context": ", I thought I\u2019d round up some of the best lists about teaching anthropological concepts with videos.\u23ceAs S. Elizabeth Bird and Jonathan Godwin compellingly illustrate"
+      },
+      {
+        "trigger": " concepts",
+        "score": 15.5,
+        "context": " state, the theory of justice, an \"option for the poor,\" and the concepts of subsidiarity and solidarity.\u23ceCampus Ministry | Swartz Center for Spiritual Life"
+      },
+      {
+        "trigger": " concepts",
+        "score": 15.75,
+        "context": " also have improved their management of natural vegetation and water runoff. These new urbanism concepts help counter the environmental challenges of traditional suburbs:\u23ceInefficient land use:"
+      }
+    ],
+    "promotes": [
+      "athione",
+      "erweise",
+      "CROSSTALK",
+      " idea",
+      "mogat"
+    ],
+    "demotes": [
+      " concepts",
+      " Concepts",
+      "concepts",
+      "Concepts",
+      " CONCEPTS"
+    ]
+  },
+  {
+    "id": "2_11080_15",
+    "layer": 2,
+    "ctx_idx": 15,
+    "influence_score": 0.3531661033630371,
+    "top_activations": [
+      {
+        "trigger": "<bos>",
+        "score": 43.0,
+        "context": "<bos>WebMD\u2014November 23, 2010\u23ceFor those reasons and more, researchers are working to develop oral biologics -- biologics"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 43.0,
+        "context": "<bos>In 1930, Henri Matisse sailed from Le Havre to New York. After a train trip across the United States of America, he embarked from"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 43.0,
+        "context": "<bos>Tulip poplar trees grow to heights of 150 feet or more. The tulip shaped leaves flutter in even the slightest breeze. Tulip poplar trees produce"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 43.0,
+        "context": "<bos>The Paracas Candelabra, also called the Candelabra of the Andes, is a well-known prehistoric geoglyph found on the northern face"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 43.0,
+        "context": "<bos><networking> (CMIS) Part of the OSI body of network standards.\u23ceNetwork management information services are used by peer processes to exchange information and commands"
+      }
+    ],
+    "promotes": [
+      "minist",
+      "ophone",
+      "oire",
+      "ertion",
+      "(\":\");"
+    ],
+    "demotes": [
+      "<bos>",
+      "\ufeff/*",
+      " the",
+      "\ufeff//",
+      "\ufeff#"
+    ]
+  },
+  {
+    "id": "3_10200_15",
+    "layer": 3,
+    "ctx_idx": 15,
+    "influence_score": 0.37052854895591736,
+    "top_activations": [
+      {
+        "trigger": " explain",
+        "score": 15.06,
+        "context": "ulus raose up against the british but were defeated in battles such as Rorke's drift.\u23ce- OK, need to explain a bit more. ("
+      },
+      {
+        "trigger": " explain",
+        "score": 14.94,
+        "context": " California, during one week in 1967. Jones, unable to explain to his students why the German citizens (particularly non-Nazis) allowed"
+      },
+      {
+        "trigger": " explain",
+        "score": 15.06,
+        "context": " Simple Random Numbers\u23ceLiam O\u2019Connor got me thinking about the best way to explain the idea of a pseudo-random number generator to new programmers. This post"
+      },
+      {
+        "trigger": " explain",
+        "score": 14.94,
+        "context": " reducing pain, most often the treatments actually increased pain.\u23cePerhaps those figures help explain some other disconcerting figures about cancer treatment in the United States. For example"
+      },
+      {
+        "trigger": " explain",
+        "score": 15.06,
+        "context": " and unwillingness to become embroiled in Europe's problems, one that later helped explain initial US reluctance to intervene in the two World Wars.\u23ceBedouin camp"
+      }
+    ],
+    "promotes": [
+      "Favorites",
+      "protoc",
+      "CloseOperation",
+      "kesan",
+      " Roskov"
+    ],
+    "demotes": [
+      " explain",
+      " explained",
+      " explanation",
+      " explaining",
+      " explains"
+    ]
+  },
+  {
+    "id": "3_16174_8",
+    "layer": 3,
+    "ctx_idx": 8,
+    "influence_score": 0.36655929684638977,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 32.75,
+        "context": " guitar players think of when a major pentatonic sale shape comes to mind. Start with your middle finger on the G note on the 3rd fret of the"
+      },
+      {
+        "trigger": " with",
+        "score": 33.0,
+        "context": "-up. This all-sport routine, designed by Dr. Allen, starts with a fun way for kids to loosen their muscles and get their heart rate up"
+      },
+      {
+        "trigger": " with",
+        "score": 35.0,
+        "context": "ung maladies that are more common than you'd think. Let's start with Venus's health issue.\u23ceTypical symptoms are pain, fatigue, dry"
+      },
+      {
+        "trigger": " with",
+        "score": 34.5,
+        "context": " will initiate discussion. The following discussion starters are simple examples to help you generate ideas.\u23ceStart with a(n)...\u23ceAction. Use verbs to bring a"
+      },
+      {
+        "trigger": " with",
+        "score": 32.75,
+        "context": "<bos>This page is a brief introduction to plate tectonics. It starts with a discussion of the evolution of the theory of plate tectonics and the arguments supporting it"
+      }
+    ],
+    "promotes": [
+      "\ud5cc",
+      "\u5148",
+      "{\\",
+      "\u5148\u662f",
+      "<bos>"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "RectangleBorder",
+      "Activit\u00e9s",
+      "\u6700\u5feb\u66f4\u65b0",
+      "IntoConstraints"
+    ]
+  },
+  {
+    "id": "4_8364_15",
+    "layer": 4,
+    "ctx_idx": 15,
+    "influence_score": 0.3498484790325165,
+    "top_activations": [
+      {
+        "trigger": "kes",
+        "score": 24.12,
+        "context": " has determined that when skin is damaged by the sun\u2019s UVB rays it provokes \u201chealthy, neighboring cells to start a process that results in an inflammatory response"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 22.88,
+        "context": "<bos>Deforestation continues to be one of the world\u2019s biggest environmental problems, especially in fast developing regions like South America, Southeast Asia and Africa. Cutting down"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 22.88,
+        "context": "<bos>Remington, Frederic, 1861\u20131909, American painter, sculptor, illustrator, and writer, b. Canton, N"
+      },
+      {
+        "trigger": " indicates",
+        "score": 25.38,
+        "context": " other examples in biblical Greek in which \u1f10\u03bd + the dative after \u03c0\u03bb\u03b7\u03c1\u03cc\u03c9 indicates content. Further, the parallel with \u03bf\u1f34\u03bd\u1ff3 as well as the"
+      },
+      {
+        "trigger": "gle",
+        "score": 23.38,
+        "context": " Institute of Technology in Zurich, whose researchers had previously taught these flying machines to juggle ping-pong balls.\u23ceUsing motion capture technology, these autonomous flying robots"
+      }
+    ],
+    "promotes": [
+      " Intelligen",
+      "disambiguation",
+      " Exceptions",
+      "xffffffff",
+      "orative"
+    ],
+    "demotes": [
+      "<bos>",
+      "'",
+      "\u2019",
+      "The",
+      "<h2>"
+    ]
+  },
+  {
+    "id": "4_1897_12",
+    "layer": 4,
+    "ctx_idx": 12,
+    "influence_score": 0.3625392019748688,
+    "top_activations": [
+      {
+        "trigger": "anglement",
+        "score": 19.12,
+        "context": "<bos>Entanglement of Large Whales\u23ceA new area of work for the IWC is to assist countries and properly trained individuals in responding to large whales that have become"
+      },
+      {
+        "trigger": " function",
+        "score": 23.12,
+        "context": " physical chemistry, Electron Phases describe the sign (positive or negative) of the wave function, which is a solution to the Schr\u00f6dinger equation. When two wave functions describing"
+      },
+      {
+        "trigger": "quantum",
+        "score": 19.62,
+        "context": " significantly different than when QM effects kick in, whereby we get the fractional charge/quantum hall effect. It is interesting to note that we always think that to get"
+      },
+      {
+        "trigger": " quantum",
+        "score": 25.5,
+        "context": " there to explain how a quantum eraser works in general: You send particles through two slits so that they can interfere, but individual photons bounce off them near the slits"
+      },
+      {
+        "trigger": "Quantum",
+        "score": 19.75,
+        "context": " area would correspond to having a single detector closer to one of the slits.\u23ceQuantum mechanics tells us (or at least quantum mechanicists tell us, or write"
+      }
+    ],
+    "promotes": [
+      "NotFoundError",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " estekak",
+      "<bos>",
+      " lenker"
+    ],
+    "demotes": [
+      "FXMLLoader",
+      "WaitGroup",
+      "Portale",
+      " NACIONAL",
+      "\u0627\u062f\u06af\u06cc"
+    ]
+  },
+  {
+    "id": "3_1182_15",
+    "layer": 3,
+    "ctx_idx": 15,
+    "influence_score": 0.3233658969402313,
+    "top_activations": [
+      {
+        "trigger": "<bos>",
+        "score": 35.75,
+        "context": "<bos>A mechanical device that, when engaged, should prevent a firearm from firing by stopping the firing pin from striking the primer.\u23ceWhile featured in various styles according"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 35.75,
+        "context": "<bos>Omega-3 refers to a family of polyunsaturated fatty acids and is sometimes written as n-3 or w-3. This family includes alpha- lin"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 35.75,
+        "context": "<bos>Black Knot of Prunus\u23ceI remember as a kid exploring the woods around my home and seeing what looked like black poop on some twigs of an occasional large"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 35.75,
+        "context": "<bos>Introduction What is photography? The history of photography What this site will do for you Light: The most important element Why light is important to a photograph The many"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 35.75,
+        "context": "<bos>, Rosdiana (1997) A Morphological study of Malang reversion usage. Bachelor thesis, Petra Christian University.Full text not available from this"
+      }
+    ],
+    "promotes": [
+      " Riches",
+      " Tent",
+      "\u04bd",
+      "minist",
+      "ophone"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      "'",
+      "\ufeff/*",
+      "\ufeff#"
+    ]
+  },
+  {
+    "id": "6_10872_12",
+    "layer": 6,
+    "ctx_idx": 12,
+    "influence_score": 0.3926835358142853,
+    "top_activations": [
+      {
+        "trigger": " relativity",
+        "score": 14.12,
+        "context": " us brightness in the dark. We know Albert Einstein for being the discoverer of relativity. We admire Hawking for his knowledge of black holes. All of them are"
+      },
+      {
+        "trigger": " relativity",
+        "score": 15.5,
+        "context": "), and the most general formulation of the Lorentz transformation from special relativity.\u23ceGeneral relativity also makes use of tensors, which are a generalization of the sorts of objects"
+      },
+      {
+        "trigger": " gravity",
+        "score": 15.12,
+        "context": " centuries, physicists have made their living by illuminating the secrets of our universe, from gravity to electricity to black holes. But among the search for Higgs bosons and the"
+      },
+      {
+        "trigger": " light",
+        "score": 13.38,
+        "context": "hypervelocity propulsion drive' for accelerating spacecraft to a good fraction of the speed of light. The idea is that the repulsion allows the relativistic particle to deliver a specific"
+      },
+      {
+        "trigger": " Einstein",
+        "score": 15.62,
+        "context": " Earth. They're using the observations to test Albert Einstein's theory of gravity, and to measure the structure of the Moon's interior.\u23ceBut"
+      }
+    ],
+    "promotes": [
+      "Disliked",
+      " Lorde",
+      "AutoScaleMode",
+      " SSD",
+      " cu\u00e1n"
+    ],
+    "demotes": [
+      "<bos>",
+      "webElementXpaths",
+      "enderror",
+      "GeoNames",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430"
+    ]
+  },
+  {
+    "id": "0_8507_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.3403218686580658,
+    "top_activations": [
+      {
+        "trigger": " explain",
+        "score": 23.62,
+        "context": " of the atmosphere, ocean, and land surface. As climate system research seeks to explain the behavior of climate over time scales of years to millennia, focus necessarily turns"
+      },
+      {
+        "trigger": " explain",
+        "score": 23.62,
+        "context": " science (in both the broad and narrow senses) is to explain, and to explain is to discover causes. Aristotle observed that four general categories of cause are present"
+      },
+      {
+        "trigger": " explain",
+        "score": 23.62,
+        "context": " of vernacular buildings;\u23ce4. Encourages the State Party to compile an accessible history of the colonisation process drawing on contemporary documentation to explain the political,"
+      },
+      {
+        "trigger": " explained",
+        "score": 23.5,
+        "context": " in use on Web sites seem arbitrary, or bereft of context.\u23ceShe explained that even the common use of left- and right arrows on Web sites to"
+      },
+      {
+        "trigger": " explain",
+        "score": 23.5,
+        "context": " JDK Directory Structure\u23ceThe JDK Directory Structure, in this tutorial we are going to explain you the correct directory structure of JDK..\u23ceCompiling and Interpreting Applications in"
+      }
+    ],
+    "promotes": [
+      "rra",
+      " d\u00e5",
+      "AndUpdate",
+      " transfieras",
+      "<bos>"
+    ],
+    "demotes": [
+      " explained",
+      " explanation",
+      "\"';",
+      " explain",
+      ")');"
+    ]
+  },
+  {
+    "id": "6_1489_15",
+    "layer": 6,
+    "ctx_idx": 15,
+    "influence_score": 0.3563533425331116,
+    "top_activations": [
+      {
+        "trigger": "ban",
+        "score": 21.12,
+        "context": " accidents was people slamming on the brakes to avoid going through a yellow light. Orban claims drivers would normally go through a yellow light at uncontrolled intersections.\u23ceRed"
+      },
+      {
+        "trigger": "ard",
+        "score": 25.88,
+        "context": " abnormal proteins in the blood, called cryoglobulins, that are activated by exposure to the cold, says Slankard, who's also in clinical"
+      },
+      {
+        "trigger": "ates",
+        "score": 20.62,
+        "context": " named after car companies and global banks; our food is genetically altered by multinational conglomerates, our drinking water is brought to us by Coca-Cola, our news"
+      },
+      {
+        "trigger": " triumph",
+        "score": 24.12,
+        "context": " in an Allied retreat in December. Anzac Day does not therefore commemorate a military triumph, and it was a tragic waste of human life for all involved. Far"
+      },
+      {
+        "trigger": " recording",
+        "score": 21.88,
+        "context": " based on 397 children in Finland whose parents made diary entries each week recording the state of their child's health during the infant's first year"
+      }
+    ],
+    "promotes": [
+      " Resonance",
+      "ertion",
+      "disambiguation",
+      "ReusableCell",
+      " BrowserModule"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      "\ufeff/*",
+      "'",
+      "\ufeff#"
+    ]
+  },
+  {
+    "id": "17_15315_15",
+    "layer": 17,
+    "ctx_idx": 15,
+    "influence_score": 0.3779839277267456,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 33.25,
+        "context": " unravelling the complexities of human behaviour as well.\u23ceAn ethological model of motivation is used to knit together some of the concepts introduced in the lecture."
+      },
+      {
+        "trigger": " of",
+        "score": 35.0,
+        "context": " and Insight 4. Functionalism as Metatheory 5. The Analysis of Conflict as a Metatheoretical Orientation 6. Anomie and the Theory"
+      },
+      {
+        "trigger": " of",
+        "score": 31.75,
+        "context": " the 20th century. He was a significant contributor to the wave theory of matter, a form of quantum physics, and he devised the mathematical equation of"
+      },
+      {
+        "trigger": " of",
+        "score": 31.25,
+        "context": "<bos>In Warrant: The CurrentDebate, Alvin Plantinga examined various proposed accounts of warrant (that which turns true belief into knowledge) and found them all wanting."
+      },
+      {
+        "trigger": " of",
+        "score": 32.25,
+        "context": "<bos>The Difference between History and Philosophy of History\u23ceBefore the 18th century, most dissertations dealing with human history in general (and not merely with"
+      }
+    ],
+    "promotes": [
+      "eneuve",
+      " \u1ea5y",
+      " Ado",
+      "\u1eeda",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627"
+    ],
+    "demotes": [
+      " theory",
+      "ResumeLayout",
+      " Theory",
+      "theory",
+      " consultato"
+    ]
+  },
+  {
+    "id": "18_8688_15",
+    "layer": 18,
+    "ctx_idx": 15,
+    "influence_score": 0.3986298143863678,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 52.75,
+        "context": " known for many years that it is not complete: the SM predicted massless neutrinos, and has no place for dark matter. A new result from the BaBar experiment"
+      },
+      {
+        "trigger": " and",
+        "score": 42.5,
+        "context": "to the physical processes of current sources like black holes, both from\u23cea theoretical and experimental standpoint,\u201d said Steve Kahn, deputy\u23cedirector of KIPAC.\u23ce"
+      },
+      {
+        "trigger": " explain",
+        "score": 39.25,
+        "context": " the expected distribution of the mysterious dark matter, which was first introduced by astronomers to explain the rotation properties of the galaxy and is now also an essential ingredient in current"
+      },
+      {
+        "trigger": " collecting",
+        "score": 38.25,
+        "context": " argues there\u2019s been too much focus on building computer models of climate, and not enough emphasis on collecting actual data to see if the models hold up.)\u23ce"
+      },
+      {
+        "trigger": " with",
+        "score": 52.25,
+        "context": " from human activities in the three megalopolises, and compared the numerical outcomes with what was actually recorded.\u23ceThe urban heat islands accounted for rises of about "
+      }
+    ],
+    "promotes": [
+      " Experimental",
+      " experimentally",
+      "experimental",
+      "Experimental",
+      " experimental"
+    ],
+    "demotes": [
+      "borderBottom",
+      "beit",
+      " LUMP",
+      " contextLoads",
+      "utilisons"
+    ]
+  },
+  {
+    "id": "18_12683_15",
+    "layer": 18,
+    "ctx_idx": 15,
+    "influence_score": 0.32938653230667114,
+    "top_activations": [
+      {
+        "trigger": " simulating",
+        "score": 23.25,
+        "context": " to the SiC tube. A number of samples were irradiated in a test loop simulating pressurized water reactor coolant and neutronic conditions at the Massachusetts Institute of Technology research"
+      },
+      {
+        "trigger": " suits",
+        "score": 23.0,
+        "context": " is a great option for people who want to avoid driving but need an option that suits their abilities or preferences for getting around. Fewer people driving, even if that"
+      },
+      {
+        "trigger": " characterized",
+        "score": 26.25,
+        "context": " first was done in 1978 and described the pattern of abuses that characterized those times in Paraguay. The second was released on September 28 of"
+      },
+      {
+        "trigger": " support",
+        "score": 23.25,
+        "context": "Middleware includes Web servers, application servers, content management systems, and similar tools that support application development and delivery. It is especially integral to information technology based on Ext"
+      },
+      {
+        "trigger": " power",
+        "score": 25.0,
+        "context": ", quite dirty. It takes a lot of carbon to run all the servers that power it. And since more carbon means more money, these companies are doing everything"
+      }
+    ],
+    "promotes": [
+      " ",
+      " a",
+      " this",
+      "\u0131n",
+      " the"
+    ],
+    "demotes": [
+      "RectangleBorder",
+      "enumi",
+      "enumii",
+      " BorderRadius",
+      "WriteTagHelper"
+    ]
+  },
+  {
+    "id": "19_15953_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.3363897502422333,
+    "top_activations": [
+      {
+        "trigger": " study",
+        "score": 43.5,
+        "context": " strongest ties to the metabolic abnormalities of overweight/obesity, it is important to study the effects of weight loss on body fat distribution and on the amount of intra"
+      },
+      {
+        "trigger": " investigate",
+        "score": 44.0,
+        "context": " kefir use in ruminants is rather limited. The aim of this study was to investigate the effect of kefir as a probiotic on the performance of goat kids during the"
+      },
+      {
+        "trigger": " investigate",
+        "score": 42.5,
+        "context": " and aragonite, a form of calcium carbonate.\u23ce\"We wish to investigate whether there is an effect of larger otoliths on fish behaviour, growth"
+      },
+      {
+        "trigger": " explore",
+        "score": 43.5,
+        "context": " the physical and biogeochemical aspects of the global climate system. To explore and quantify these contributions, the Antarctic Cooperative Research Centre ... (CRC) organised the S"
+      },
+      {
+        "trigger": " tested",
+        "score": 38.75,
+        "context": " animals communities, or soil food-webs, on ecosystem properties. Here, we tested the hypothesis that varying the diversity and composition of soil animals within a trophic group"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " inter",
+      " some",
+      "hasMoreElements",
+      " the"
+    ],
+    "demotes": [
+      " rai\u017f",
+      " plea\u017fure",
+      " becau\u017fe",
+      " Efq",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "17_5883_15",
+    "layer": 17,
+    "ctx_idx": 15,
+    "influence_score": 0.37709930539131165,
+    "top_activations": [
+      {
+        "trigger": " explains",
+        "score": 50.0,
+        "context": ". The friends keep saying it is a ghost and are so frightened until a farmer explains it to them. It is the sound of the wind over the well."
+      },
+      {
+        "trigger": " explain",
+        "score": 52.0,
+        "context": " under water and made to believe he might drown.\"\u23ceThe article took pains to explain why, according to U.S. officials, such techniques do not constitute"
+      },
+      {
+        "trigger": "laining",
+        "score": 49.75,
+        "context": "<bos>Explaining The U.S. Federal Budget Deficit [GRAPHIC]\u23ceshare this story\u23ceSince as early as August, it's been clear that the"
+      },
+      {
+        "trigger": " explain",
+        "score": 48.75,
+        "context": " (in my early days in the teaching profession, I actually had a collague explain it to me this way) or by where everyone else is in their curriculum"
+      },
+      {
+        "trigger": " explain",
+        "score": 50.75,
+        "context": " all the problems Linux has both on desktop and server side, someone should now please explain to me why is migrating to clang such an important and high priority task."
+      }
+    ],
+    "promotes": [
+      "getActiveSheet",
+      " mourut",
+      "expandindo",
+      " cottura",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "nitus",
+      "FTA",
+      " Lightboxes",
+      "preter",
+      "LookAnd"
+    ]
+  },
+  {
+    "id": "16_15156_15",
+    "layer": 16,
+    "ctx_idx": 15,
+    "influence_score": 0.3762093484401703,
+    "top_activations": [
+      {
+        "trigger": " explained",
+        "score": 41.75,
+        "context": " angelfish, for example, I might be still working at it. I explained in the article why I chose the \"Percula\" clownfish for the"
+      },
+      {
+        "trigger": " explained",
+        "score": 40.5,
+        "context": "<bos>A visual example\u23ceThere was a tweet today that explained that you could save 20% (and more) on your printing charges if you choose to"
+      },
+      {
+        "trigger": " explains",
+        "score": 39.75,
+        "context": " Rosita pushes Baby Bear as she makes her way to the blackboard. Telly explains that it was not okay for her to push Baby Bear. Rosita helps"
+      },
+      {
+        "trigger": " explain",
+        "score": 40.75,
+        "context": "540 miles northeast of the South Pole.\u201d\u23cePlease correct your error and explain to your readers that there is no \u201cnortheast\u201d from the South Pole."
+      },
+      {
+        "trigger": " explaining",
+        "score": 39.75,
+        "context": " of shame; many Latino parents see this as a direct reflection of their parenting skills.\u23ceIt is not easy explaining to Latino parents that their child would benefit from"
+      }
+    ],
+    "promotes": [
+      " \u043c\u04d9\u043a\u0430\u043b",
+      " \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f\u0924\u093e",
+      "principalColumn",
+      "Datuak",
+      "Gambas"
+    ],
+    "demotes": [
+      "AddColumn",
+      "makeText",
+      " argumenta",
+      "pro",
+      "amaz"
+    ]
+  },
+  {
+    "id": "0_15278_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38875284790992737,
+    "top_activations": [
+      {
+        "trigger": " opinion",
+        "score": 17.25,
+        "context": ", different activities constitute cheating and it is either a matter of game policy or consensus opinion as to whether a particular activity is considered to be cheating. Johan Huizing"
+      },
+      {
+        "trigger": " opinion",
+        "score": 17.25,
+        "context": "ing the King's power.\u23ce2. What is King Ferdinand's opinion of Goya after reading the letter?\u23cea) He is a genius or"
+      },
+      {
+        "trigger": " opinion",
+        "score": 19.25,
+        "context": " the other person.\u23ceT F (Silence) At times rather than share my honest view, I use sarcasm to make my point, hold back my opinion altogether"
+      },
+      {
+        "trigger": " opinion",
+        "score": 18.75,
+        "context": " with rather unusual physical abilities.\u23ceThe best of the lot (in my subjective opinion) is the featured-on-the-cover mantis shrimp. Not because"
+      },
+      {
+        "trigger": " opinion",
+        "score": 18.75,
+        "context": " content with our students. I say \"passionately\" because, in my humble opinion, there can be no other way to use those tools, if not with"
+      }
+    ],
+    "promotes": [
+      " (",
+      " la",
+      " di",
+      ",",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " Re\u017f",
+      " greate\u017ft",
+      " \u017ftate",
+      " plea\u017fure"
+    ]
+  },
+  {
+    "id": "21_1148_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.33366823196411133,
+    "top_activations": [
+      {
+        "trigger": " emulate",
+        "score": 29.38,
+        "context": " Perception Laboratory in Temple\u2019s College of Engineering. \u201cWe\u2019re trying to emulate this tactile sensation with a device that will actually quantify this by giving us the"
+      },
+      {
+        "trigger": " correct",
+        "score": 29.88,
+        "context": " consequences for Indian and Alaska Native Tribes.\u23ceNative leaders have for generations struggled to correct the enormous problems created by these unfair legal rules. This framework of law has"
+      },
+      {
+        "trigger": " overlook",
+        "score": 29.88,
+        "context": " Albany Social History Project\u23ceis making a special effort to look for and\u23cenot overlook Afro Albanians in the historical record. This initiative is ongoing\u23ceand has"
+      },
+      {
+        "trigger": " greeted",
+        "score": 29.62,
+        "context": "=_AcqARlzSvk.\u23ceIn her book, May discusses the political climate that greeted the pill, as well as the myths and realities that continue"
+      },
+      {
+        "trigger": " adapted",
+        "score": 29.88,
+        "context": " exquisite house remaining from the Colonial period in America.\u23ceArchitect William Buckland cleverly adapted Palladio's Villa Pisani design to satisfy the tastes of colonial Annapolis"
+      }
+    ],
+    "promotes": [
+      " these",
+      " propOrder",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      " the",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " of",
+      "-",
+      " \u043e\u043d\u0430",
+      " \u043e\u043d",
+      "she"
+    ]
+  },
+  {
+    "id": "15_15520_15",
+    "layer": 15,
+    "ctx_idx": 15,
+    "influence_score": 0.3993358016014099,
+    "top_activations": [
+      {
+        "trigger": " show",
+        "score": 16.25,
+        "context": " 9 of Corn College TV Season 2, Missy Bauer walks a demonstration to show the importance for planting at the proper speed.\u23ce\"We try to push"
+      },
+      {
+        "trigger": " conduct",
+        "score": 17.38,
+        "context": "ness and Surprise. They explored digitized books in Google\u2019s Ngram database to conduct the research. Here\u2019s more:\u23ceOur second finding is a clear"
+      },
+      {
+        "trigger": " provide",
+        "score": 16.75,
+        "context": " post-surgery, but the other half won't have their pacemakers turned on until a full year after the surgery to provide comparison data for the study.\""
+      },
+      {
+        "trigger": " evaluate",
+        "score": 18.25,
+        "context": " resonant cavity. The output power from the\u23cemicrowave stimulated emission was measured to evaluate its use as a frequency\u23cestandard. Two ammonia maser assemblies were constructed"
+      },
+      {
+        "trigger": " supply",
+        "score": 16.25,
+        "context": " them at the table. Carbohydrates also protect against wasteful breakdown of body protein to supply energy, and carbohydrates also provide flavor and sweetness to foods. The body needs"
+      }
+    ],
+    "promotes": [
+      "lehre",
+      " Walkover",
+      " handelt",
+      "unnitel",
+      " Kue"
+    ],
+    "demotes": [
+      " gynnwys",
+      "sidemargin",
+      " Insee",
+      " \u091a\u0940\u095b\u094b\u0902",
+      " s\u1ebb"
+    ]
+  },
+  {
+    "id": "20_12154_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.3847510814666748,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 65.0,
+        "context": "8, 2012), Mark Liberman denounced our study, calling the reliability of the results into question. This is our reply.\u23ceIs the"
+      },
+      {
+        "trigger": " belief",
+        "score": 62.0,
+        "context": " is an emphatic no. This phenomenon, which we refer to as the prior belief effect, has important implications. Given two people, or groups, with opposing beliefs"
+      },
+      {
+        "trigger": " This",
+        "score": 41.75,
+        "context": " a doorway.\u23ceThe participants were more likely to experience forgetfulness\u23ceafter passing through a doorway compared to moving the same\u23cedistance across a room. This suggests"
+      },
+      {
+        "trigger": " Similar",
+        "score": 40.75,
+        "context": "-born girls were 70 percent more likely to have an ADHD diagnosis. Similar patterns existed for rates of ADHD prescriptions. The cut-off date of birth"
+      },
+      {
+        "trigger": " an",
+        "score": 40.25,
+        "context": " University of Vermont, has consistently found women lose less fat and weight than men, an understandably important biological attribute for preserving fertility and the survival of the species. \u201c"
+      }
+    ],
+    "promotes": [
+      "Effect",
+      " Effect",
+      " effects",
+      "effect",
+      " effect"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "ValueStyle",
+      "WritableDatabase",
+      " initComponents",
+      "\uccad"
+    ]
+  },
+  {
+    "id": "5_11296_15",
+    "layer": 5,
+    "ctx_idx": 15,
+    "influence_score": 0.3979165852069855,
+    "top_activations": [
+      {
+        "trigger": " help",
+        "score": 13.62,
+        "context": ", some states' CWSRF programs began providing loans for agricultural pollution projects. These programs use federal money to provide subsidized loans to help farmers and landowners fund conservation"
+      },
+      {
+        "trigger": " indicate",
+        "score": 13.5,
+        "context": " in goldfish is difficult because more often than not, little or no symptoms occur to indicate infection. It is one of the fish diseases that causes harm from within."
+      },
+      {
+        "trigger": " test",
+        "score": 12.75,
+        "context": " office supplies to\u23ceexercises - easy, medium, and difficult. With questions to test your\u23ceunderstanding. Or try\u23cewhere you can test your listening skills by"
+      },
+      {
+        "trigger": " help",
+        "score": 13.0,
+        "context": " and citing your work. You'll find materials, databases, and websites to help you get the job done.\u23ceThese online guides provide quick access to a"
+      },
+      {
+        "trigger": "meet",
+        "score": 13.12,
+        "context": ".\u23ceIt is hoped that readers will form themselves into little clubs, to\u23cemeet once or twice a month to discuss the problems raised by the\u23ceThose who"
+      }
+    ],
+    "promotes": [
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627",
+      "ditor",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+      " Automata",
+      "ni\u0161t"
+    ],
+    "demotes": [
+      "ProgressHUD",
+      "IContainer",
+      "numerusform",
+      " vectorielle",
+      "AxisAlignment"
+    ]
+  },
+  {
+    "id": "21_8159_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.37437906861305237,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 37.5,
+        "context": " Big Bang. The theory holds that during its first moments, the universe, fueled by an antigravitational field, underwent a violent growth spurt, ballooning from"
+      },
+      {
+        "trigger": " about",
+        "score": 40.0,
+        "context": " kindly sent us the post below and the following analogy, comparing the journey for answers about the origin of the universe to sewing a tapestry: \u201cThe quest is like"
+      },
+      {
+        "trigger": " of",
+        "score": 41.5,
+        "context": " then we can assume it has left our dimension, we will be much closer to solving the mystery of the universe. But then what about other universes...\u23ce1"
+      },
+      {
+        "trigger": " simulating",
+        "score": 33.5,
+        "context": "install a client on their computers, which will apply their spare computing\u23cepower towards simulating high-energy collisions between protons. The\u23ceresults will then be compared with"
+      },
+      {
+        "trigger": " of",
+        "score": 35.0,
+        "context": "000 Richard C. Lord lecture May 2 on \"One Hundred Years of Quantum Physics.\" Professor Kleppner is widely recognized for his contributions to atomic"
+      }
+    ],
+    "promotes": [
+      "\u00fcyada",
+      " QCD",
+      " quantum",
+      " astro",
+      " physics"
+    ],
+    "demotes": [
+      "AnimationsModule",
+      " voisins",
+      " jug\u00e9",
+      " intptr",
+      " normaux"
+    ]
+  },
+  {
+    "id": "20_8917_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.3263821303844452,
+    "top_activations": [
+      {
+        "trigger": " assess",
+        "score": 43.25,
+        "context": " Hasegawa et al. employed free-air CO2 enrichment or FACE technology to assess the effects of atmospheric CO2 enrichment to approximately 200 ppm above"
+      },
+      {
+        "trigger": " examine",
+        "score": 42.0,
+        "context": " this hypothesis, the project is developing a network of postglacial vegetation and fire records from lake sites on different substrates in the Klamath Mountain region in order to examine"
+      },
+      {
+        "trigger": " predict",
+        "score": 36.75,
+        "context": " heat requirements and ensuring the safety of ready-to-eat food products. Also, models to predict growth from surviving spores of Clostridium perfringens and C"
+      },
+      {
+        "trigger": " investigating",
+        "score": 42.5,
+        "context": " solvent extractions to the use of biota. Many studies have been carried out investigating the use of chemical techniques to describe bioavailability, which could be used in the"
+      },
+      {
+        "trigger": "ize",
+        "score": 36.25,
+        "context": " Groundwater and Surface-Water Interactions in White Bear Lake, Minnesota\u23ceObjective: Characterize groundwater and surface-water interactions in White Bear Lake and the response of lake"
+      }
+    ],
+    "promotes": [
+      " change",
+      " this",
+      " changes",
+      " a",
+      " the"
+    ],
+    "demotes": [
+      "Diwedd",
+      "EDEFAULT",
+      " IRIS",
+      "\ufeff<?",
+      " Shakspeare"
+    ]
+  },
+  {
+    "id": "17_2873_15",
+    "layer": 17,
+    "ctx_idx": 15,
+    "influence_score": 0.36755847930908203,
+    "top_activations": [
+      {
+        "trigger": " documenting",
+        "score": 29.25,
+        "context": " essential source for studying the interaction between Western traders and Asian society. As well as documenting business activities, these files provide an insight into the character of English and foreign"
+      },
+      {
+        "trigger": " symbolizes",
+        "score": 35.75,
+        "context": "<bos>Moon Light World Map\u23ceThe map below shows where the Moon is visible from the Earth, depending on weather conditions and moon phases.\u23ceThe white dot symbolizes"
+      },
+      {
+        "trigger": " describes",
+        "score": 31.25,
+        "context": " point in including \"mean anomaly\" in the chart on the right. This quantity describes the position of Mars around its orbit and changes continuously. It would be rather"
+      },
+      {
+        "trigger": " defines",
+        "score": 29.0,
+        "context": " to send out incremental changes to the articles in a publication.\u23ceA replication topology defines the relationship between servers and copies of data and clarifies the logic that determines how"
+      },
+      {
+        "trigger": " symbolizes",
+        "score": 35.75,
+        "context": "<bos>Moon Light World Map\u23ceThe map below shows where the Moon is visible from the Earth, depending on weather conditions and moon phases.\u23ceThe white dot symbolizes"
+      }
+    ],
+    "promotes": [
+      ",",
+      " ",
+      " an",
+      " a",
+      " the"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " Euphrates",
+      " EconPapers",
+      "RenderAtEndOf",
+      " INTERESAR"
+    ]
+  },
+  {
+    "id": "22_8433_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.36152389645576477,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 92.0,
+        "context": "bombs every second. It is interesting to note that the energy released is described by Albert Einstein\u2019s famous equation E=mc2 where E is energy, m"
+      },
+      {
+        "trigger": " about",
+        "score": 90.5,
+        "context": " example, physicists thought they knew almost all there was to know about matter, but the recent Nobel Prize winners for physics has upset many of those assumptions.\u23ceWhen"
+      },
+      {
+        "trigger": " to",
+        "score": 99.0,
+        "context": " that the great physicist was not a natural mathematician. After making the enormous conceptual leap that connected the phenomenon of gravitation to the fact that space-time is curved,"
+      },
+      {
+        "trigger": " between",
+        "score": 98.0,
+        "context": ", Space, Quantum Mechanics.\u23ceThe apparent inconsistencies between the point particle theory and the observed wave behavior of the electron are reconciled by an electron structure, the Space"
+      },
+      {
+        "trigger": " of",
+        "score": 90.5,
+        "context": " real, our whole physical world, is \u2013 in fact \u2013 an illusion being proved by the holographic universe, one of the most remarkable theories of 20th"
+      }
+    ],
+    "promotes": [
+      "rel",
+      "particle",
+      "ArrowToggle",
+      " relativity",
+      " particle"
+    ],
+    "demotes": [
+      " Casey",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " Juneau",
+      "AutoScaleMode",
+      "Geplaatst"
+    ]
+  },
+  {
+    "id": "21_9278_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.352071076631546,
+    "top_activations": [
+      {
+        "trigger": " control",
+        "score": 29.88,
+        "context": " said the researchers.\u23ceThey added that by systematically varying reaction parameters, processors can control the cross-linking process of gelatin \u2013 thus altering gel strengths, setting and"
+      },
+      {
+        "trigger": " describe",
+        "score": 28.62,
+        "context": " vegetation. These basic data, combined with soil microclimate information, are required to describe the milieu for geochemical weathering and soil formation. Data from watersheds that include significant"
+      },
+      {
+        "trigger": " influence",
+        "score": 29.12,
+        "context": " (2001) How changes in animal diversity within a soil trophic group influence ecosystem processes. Soil Biology and Biochemistry, 33 (15)."
+      },
+      {
+        "trigger": " on",
+        "score": 28.38,
+        "context": " initiative, which examines the influence of prenatal exposure to a number of ambient air pollutants on the growth of lung function during childhood and teen years in a high pollution area"
+      },
+      {
+        "trigger": " in",
+        "score": 28.38,
+        "context": " indicate that ionospheric disturbances produced by powerful HF heaters can generate readily measurable changes in the amplitude and the phase of subionospheric VLF signals propagating near"
+      }
+    ],
+    "promotes": [
+      "phemy",
+      "^(@)",
+      "yntaxException",
+      "oine",
+      " the"
+    ],
+    "demotes": [
+      " pinulongan",
+      "RTCK",
+      " pesco\u00e7o",
+      " ordinaires",
+      " \u064a\u062a\u064a\u0645\u0647"
+    ]
+  },
+  {
+    "id": "23_5509_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.3552958071231842,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 52.5,
+        "context": " in a uniform and she's off and running. Some people are naturals at playing an instrument; it's like they were born knowing how to count"
+      },
+      {
+        "trigger": " construction",
+        "score": 40.5,
+        "context": " flooding by determining the elevation of your property.\u23ceEvaluate your insurance coverage; as construction grows around areas, floodplains change. If you are in a flood area"
+      },
+      {
+        "trigger": " food",
+        "score": 50.0,
+        "context": " an emergency, you may need to survive on your own, which means you need food, water, and other supplies to last you around 72 hours."
+      },
+      {
+        "trigger": "s",
+        "score": 51.0,
+        "context": " cottages still stand in Saranac Lake, the most visible reminders of the village's days as America's \"Pioneer Health Resort.\"\u23ceThe incorporated Village of"
+      },
+      {
+        "trigger": " are",
+        "score": 39.5,
+        "context": ". Most of the cases are adults and more than 60% of them are women. Health experts are trying to figure out how these 172"
+      }
+    ],
+    "promotes": [
+      "\u20da",
+      "DockStyle",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      " ",
+      " the",
+      " or",
+      " and",
+      " \""
+    ]
+  },
+  {
+    "id": "23_5944_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.37343668937683105,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 50.5,
+        "context": "<bos>The Mandelbrot set is a set of points in the complex plane that forms a fractal. Mathematically, the Mandelbrot set can be defined as the set"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " most ambitious neuroscience project ever \u2013 to develop the technology that could create a computerized simulation of a person\u2019s mind. Called the Human Brain Project, scientists hope to"
+      },
+      {
+        "trigger": " of",
+        "score": 42.5,
+        "context": " well as doctrinal and ecclesiastical errors. He fled England with his family in 1563 and devoted himself to the translation of the Bible, as well as"
+      },
+      {
+        "trigger": " to",
+        "score": 43.5,
+        "context": "s degree in mathematics in 1848. He studied law and was called to the Bar, but decided not to practice, instead joining his father in"
+      },
+      {
+        "trigger": " around",
+        "score": 43.0,
+        "context": "s events are as predictable as night and day. But when Comet ISON swings around the sun in late November, amateurs and professionals alike will be watching in anticipation"
+      }
+    ],
+    "promotes": [
+      " \u03c4\u03b7\u03c2",
+      "OfThe",
+      " ofthe",
+      "ofthe",
+      " the"
+    ],
+    "demotes": [
+      " autorytatywna",
+      "NameInMap",
+      "setVerticalGroup",
+      "interopRequire",
+      "tagHelperRunner"
+    ]
+  },
+  {
+    "id": "15_2980_15",
+    "layer": 15,
+    "ctx_idx": 15,
+    "influence_score": 0.39112210273742676,
+    "top_activations": [
+      {
+        "trigger": " explains",
+        "score": 42.25,
+        "context": " need a global carbon tax. Q.E.D.\u23ceMankiw explains why a carbon tax is preferable to fuel economy regulations and cap-and-"
+      },
+      {
+        "trigger": " explain",
+        "score": 42.5,
+        "context": "<bos>For this challenge, you'll need to play Got It! Can you explain the\u23cestrategy for winning this game with any target?\u23ceDraw a square"
+      },
+      {
+        "trigger": " Explain",
+        "score": 42.0,
+        "context": "\u2019s checkpoint. This has been a crazy week!\u23ceTomorrow, I will be expecting you to do the following things:\u23ce- Explain which key concepts you"
+      },
+      {
+        "trigger": "laining",
+        "score": 44.75,
+        "context": ", on April 19, 1012 AD.\u23ceExplaining its history, London Gardens Online provides the following description: \u201cWhen the original"
+      },
+      {
+        "trigger": " explained",
+        "score": 41.5,
+        "context": " Kings.\u201d Makeda\uff0c whose name means \u201cGreatness\uff0c\u201d is said to have explained to her subjects why she was departing the land in order to seek out the"
+      }
+    ],
+    "promotes": [
+      " varf\u00f6r",
+      " Why",
+      "Why",
+      "why",
+      " why"
+    ],
+    "demotes": [
+      "enumii",
+      " Normdatei",
+      "ient\u00f4t",
+      "twimg",
+      " hou\u017fe"
+    ]
+  },
+  {
+    "id": "23_8357_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.3308235704898834,
+    "top_activations": [
+      {
+        "trigger": " called",
+        "score": 53.0,
+        "context": " and what space-time is.\u23ceEssentially, space is what we refer to as 3 of the 4 dimensions to a more comprehensive entity called the space"
+      },
+      {
+        "trigger": " of",
+        "score": 74.5,
+        "context": " the quantum field theory of elementary particle physics (viz., the lack of renormalizability and the occurrance of quantization anomalies) . The second is its apparent uniqueness:"
+      },
+      {
+        "trigger": " of",
+        "score": 52.0,
+        "context": " of quantum physics (as well as relativity theory), pointed the way to the discovery of the photoelectric effect and the development of lasers by relating the frequency of light"
+      },
+      {
+        "trigger": " that",
+        "score": 56.5,
+        "context": " same) in all inertial frames of reference\".\u23ceFirst of all, SR declares that all motions are relative. Mass, length, space & time, etc."
+      },
+      {
+        "trigger": " with",
+        "score": 67.0,
+        "context": " model that posits the existence of a heavier partner to all known subatomic particles in order to solve certain problems with the Standard Model.\u23ceThe most familiar lepton"
+      }
+    ],
+    "promotes": [
+      " \u0645\u0631\u0626\u064a\u0647",
+      "RegressionTest",
+      " EconPapers",
+      " initComponents",
+      " resourceCulture"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " peau",
+      " Kennel",
+      " fibroblast",
+      "File"
+    ]
+  },
+  {
+    "id": "20_10871_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.37972745299339294,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 29.62,
+        "context": ", Zoroaster and Jesus. His philosophy was that Evil was not a perversion of Good, but rather an alternative form of matter to Good. The two matters"
+      },
+      {
+        "trigger": " of",
+        "score": 43.5,
+        "context": " as\u23cethe existence of God,\u23cethe meaning of life,\u23cethe nature of truth and reality,\u23cethe organization of government and society,\u23cethe significance"
+      },
+      {
+        "trigger": " of",
+        "score": 31.12,
+        "context": " unique than we once believed.\u23ceSuch a revelation reaches beyond science to our concept of who we are. Our sense of identity may soon be changed in the same"
+      },
+      {
+        "trigger": " of",
+        "score": 30.12,
+        "context": " 2001).\u23ce- Stephen Buckle, Natural Law and the Theory of Property:\u23ceGrotius to Hume (Oxford: Claredon Press,"
+      },
+      {
+        "trigger": " of",
+        "score": 28.88,
+        "context": "\u23ceWhat kind of seeing is it, though, that reveals not only the surfaces of things, but also their within?\u23ceThis question forms the axis around which"
+      }
+    ],
+    "promotes": [
+      "\u093e\u0930\u094d",
+      "\u590f",
+      "amo",
+      " \u043d\u0430\u0447\u0438",
+      "Parameterized"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "DockStyle",
+      " actionMode",
+      " <>\",",
+      "createServer"
+    ]
+  },
+  {
+    "id": "24_2605_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.36954161524772644,
+    "top_activations": [
+      {
+        "trigger": " determine",
+        "score": 41.5,
+        "context": " GIS technology provides the capability to map and analyze hazards of all types. You can determine potential impacts by fusing incident data with critical infrastructure, population densities, and other"
+      },
+      {
+        "trigger": " investigate",
+        "score": 33.5,
+        "context": " cell, possibly leading to a longer usable\u23ceThe computational model is being used to investigate how\u23cethe particle size of a material relates to the overall stability of\u23ce"
+      },
+      {
+        "trigger": " Understanding",
+        "score": 33.5,
+        "context": " wintering occur together during migration along the northern coast of the Gulf of Mexico. Understanding the factors that affect the timing and condition of birds during migration can inform managers"
+      },
+      {
+        "trigger": " assess",
+        "score": 33.5,
+        "context": " are accessible to patients and can easily be integrated into computer systems. This could help assess people's risk of having serious blood clots and consequently developing venous thromboem"
+      },
+      {
+        "trigger": " assess",
+        "score": 35.75,
+        "context": "s broad mandates enable its investigators to conduct research that enhances our ability to assess or predict the damage that hazardous substances can cause to ecosystems. More so, SRP research"
+      }
+    ],
+    "promotes": [
+      " doInBackground",
+      " wenn",
+      " when",
+      " the",
+      " if"
+    ],
+    "demotes": [
+      "Enllaces",
+      " \u062a\u0627\u0646\u064a\u0647",
+      " devenue",
+      " referenties",
+      "Datuak"
+    ]
+  },
+  {
+    "id": "24_8027_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.38143301010131836,
+    "top_activations": [
+      {
+        "trigger": " because",
+        "score": 31.25,
+        "context": "3 THz) and 30 THz in the electromagnetic spectrum, exists because the frequencies generated by semiconductor-based transistors and lasers dont overlap. Generation of"
+      },
+      {
+        "trigger": " account",
+        "score": 27.25,
+        "context": ", another is the observed mass, and the third mass is determined without taking into account the energy of macroscopic fields. It is shown that the action function has the"
+      },
+      {
+        "trigger": " only",
+        "score": 35.25,
+        "context": " the precession frequency of the protons by nuclear induction. Measurements are made so that only small differences in frequency have to be measured in terms of a constant but otherwise"
+      },
+      {
+        "trigger": ".",
+        "score": 28.5,
+        "context": " wavelength and wavevector magnitude, is conserved in the scattering process (i.e. the scattering is elastic). The question is, from what directions will we see"
+      },
+      {
+        "trigger": " of",
+        "score": 27.75,
+        "context": " gas and DM is puzzling and if real, has no easy explanation in the light of present CDM models. Not only is there a general trend, but several individual"
+      }
+    ],
+    "promotes": [
+      " rosette",
+      " photolibrary",
+      " Jefus",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " rangs",
+      " abusos",
+      " peines",
+      "occuper",
+      " entornos"
+    ]
+  },
+  {
+    "id": "23_13401_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.37247589230537415,
+    "top_activations": [
+      {
+        "trigger": " play",
+        "score": 25.25,
+        "context": " electrical reproduction and modern styli (such as Stanton or Shure cartridges) to play back any of the varieties of cylinders made including 2 and 4 minute"
+      },
+      {
+        "trigger": " operates",
+        "score": 24.0,
+        "context": " who steers with a set of handlebars that controls the front two tires. The rider operates the vehicle in a similar fashion to that of a motorcycle, with the extra"
+      },
+      {
+        "trigger": " mapped",
+        "score": 27.25,
+        "context": "2 Global Ocean Sampling expedition. He converted a luxury yacht into a research vessel and mapped out a project over two years circumnavigating the globe, traveling 2"
+      },
+      {
+        "trigger": "ing",
+        "score": 25.75,
+        "context": " want your VLAN to span a lot of switches or if you will only be segmenting one switch. If you have just one switch, this means that you can"
+      },
+      {
+        "trigger": " configure",
+        "score": 24.75,
+        "context": "- You understand basic crossover, filters (LT, Notch, Shelves), able to configure MiniDSP\u23ce- You have and understand basic acoustic measurement tools\u23ceBlue ="
+      }
+    ],
+    "promotes": [
+      " a",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "ovna",
+      "tvguidetime",
+      " the"
+    ],
+    "demotes": [
+      " d\u00e9mocr",
+      " aveug",
+      "of",
+      " flesta",
+      " st\u00e4llet"
+    ]
+  },
+  {
+    "id": "21_11996_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.33505862951278687,
+    "top_activations": [
+      {
+        "trigger": ",\"",
+        "score": 76.0,
+        "context": " de prima philosophia, or Meditations on First Philosophy (1641), \"I think therefore I am,\" philosopher and mathematician Rene Descartes also devoted much"
+      },
+      {
+        "trigger": " William",
+        "score": 52.5,
+        "context": " studies regarding contact with \"dead\" people were performed by two outstanding scientists, Sir William Crookes  and Sir Oliver Lodge , over one hundred years ago. Similar"
+      },
+      {
+        "trigger": " psychologist",
+        "score": 77.0,
+        "context": "<bos>What's the Latest Development?\u23ceIn his new book on consciousness, The Self Illusion, University of Bristol psychologist Bruce Hood says the idea that each individual"
+      },
+      {
+        "trigger": ",",
+        "score": 78.5,
+        "context": " most introductory texts, we have chosen to scrutinize carefully the history of the thinking of the canonical participants in these debates \u2014 principally Descartes, Newton, Leibniz, Mach"
+      },
+      {
+        "trigger": " of",
+        "score": 77.5,
+        "context": " how well they reduce to the biological level. Other versions entail the non-existence of conscious mental states such as pain and visual perceptions.\u23ceEliminativism stands"
+      }
+    ],
+    "promotes": [
+      " Soul",
+      " conscious",
+      " consciousness",
+      " soul",
+      " mind"
+    ],
+    "demotes": [
+      " AssemblyCulture",
+      " nahilalakip",
+      " <=\",",
+      "]--;",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ]
+  },
+  {
+    "id": "24_13277_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.2982441186904907,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "24_15226_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.34523284435272217,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 61.75,
+        "context": " part of a general kinematic description, capable of verification by refined astronomical observations. Moreover, Einstein\u2019s recognition of the equivalence of mass and energy should prove an invaluable"
+      },
+      {
+        "trigger": " of",
+        "score": 59.25,
+        "context": "5, Bohr\u2019s younger associate Werner Heisenberg had a flash of insight that transformed the seemingly paradoxical nature of the new physics and with it called into question the nature"
+      },
+      {
+        "trigger": " developing",
+        "score": 52.75,
+        "context": ", through his own work and that of his students, played a major role in developing British physics after the Second World War.\u23ce|This scientist article is a"
+      },
+      {
+        "trigger": " formulated",
+        "score": 58.25,
+        "context": " the second son of immigrant families from Russia. Back then, Albert Einstein had just formulated his theory of relativity, the 40-hour workweek had just"
+      },
+      {
+        "trigger": " for",
+        "score": 55.25,
+        "context": " Mertens for arithmetic and algebra, Weiss for astronomy, Stefan's student Boltzmann for physics.\u23ceOn May 1898 Plemelj presented his"
+      }
+    ],
+    "promotes": [
+      "anguardia",
+      "buttonStyle",
+      "Philosop",
+      "\u306f\u3058\u3081\u306b",
+      "B"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " nakalista",
+      "adaptiveStyles",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "writeFieldEnd"
+    ]
+  },
+  {
+    "id": "25_9975_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.31656768918037415,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ]
+  },
+  {
+    "id": "23_6264_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.33771538734436035,
+    "top_activations": [
+      {
+        "trigger": " measuring",
+        "score": 33.75,
+        "context": " measuring tractions applied by cells to synthetic two-dimensional substrates, which do not mimic in vivo conditions. This talk will describe the development and application of an experimental"
+      },
+      {
+        "trigger": " predict",
+        "score": 32.25,
+        "context": " open-access journal PLoS Computational Biology.\u23ceModels of virus infection often fail to predict how many animals will become infected and which virus variants will be present in the"
+      },
+      {
+        "trigger": "understanding",
+        "score": 34.25,
+        "context": " versus autochthonous sources (produced in-stream by primary production;\u23ceunderstanding the importance of surface water sources of carbon to regional carbon balances.\u23ceThis"
+      },
+      {
+        "trigger": " of",
+        "score": 33.25,
+        "context": " data during the winter field campaign (FFC-W) to improve the understanding of winter processes within the boreal forest. Snow surveys were conducted at special snow courses"
+      },
+      {
+        "trigger": " determine",
+        "score": 33.25,
+        "context": " of an instrument to determine the frazzle ice density in the water column further adds to an understanding of the role of this type of ice on sea ice growth."
+      }
+    ],
+    "promotes": [
+      " vessel",
+      " basin",
+      " that",
+      " VPC",
+      " the"
+    ],
+    "demotes": [
+      " color\u00e9s",
+      " d\u00e9mocr",
+      " faibles",
+      " ig\u00e5ng",
+      " d\u00e9tru"
+    ]
+  },
+  {
+    "id": "0_12655_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.38954323530197144,
+    "top_activations": [
+      {
+        "trigger": " experts",
+        "score": 15.0,
+        "context": " about museums for leftover equipment to fulfill President Bush's mandate, but many outside experts expect the space agency to turn away from sleek, winged, reusable designs like"
+      },
+      {
+        "trigger": " ideas",
+        "score": 15.0,
+        "context": " to his junior year and those events and people that inspire Emerson in his life and ideas.\u23ceThe book rewinds still further back to his childhood and family life"
+      },
+      {
+        "trigger": " experts",
+        "score": 15.38,
+        "context": "<bos>We've talked about the arsenic scare lately, and as health experts are finding that the toxic compound is seeping into our food supply, here's"
+      },
+      {
+        "trigger": " ideas",
+        "score": 15.12,
+        "context": " B that is Thinking Interdependently. We learn from and extend upon each others ideas and thoughts. We think together, not just work together.\u23ceThere are"
+      },
+      {
+        "trigger": " experts",
+        "score": 14.88,
+        "context": " the United States, and it\u2019s really had a tremendous growth that many industry experts thought was impossible,\u201d said Jim Benton, executive director of the New Jersey Petroleum"
+      }
+    ],
+    "promotes": [
+      "tempts",
+      "UTELY",
+      "\ufeff/**",
+      " $",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      "tvguidetime",
+      "GraphicsUnit",
+      "ReusableCell",
+      "Sucesor",
+      " snippetHide"
+    ]
+  },
+  {
+    "id": "25_11867_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.344016969203949,
+    "top_activations": [
+      {
+        "trigger": " identify",
+        "score": 176.0,
+        "context": " discrimination).\u23ceConducting research to provide evidence-based insights and recommendations, we identify small to large scale successful interventions, while examining the impact of closing gender gaps"
+      },
+      {
+        "trigger": ",",
+        "score": 186.0,
+        "context": " affected include family relationships, roles of women and men, communication skills, physical hygiene, role of religion, importance of education and careers and clothing/manner of dress"
+      },
+      {
+        "trigger": "s",
+        "score": 165.0,
+        "context": " ponds in north Wellfleet to its mouth at Wellfleet Harbor. The river's floodplain encompasses more than 1,100 acres of degraded wetlands occupying"
+      },
+      {
+        "trigger": " a",
+        "score": 169.0,
+        "context": ", as I was driving along the highway, I looked to my left and saw a bird flying. Can you tell me what kind of a bird it was?"
+      },
+      {
+        "trigger": " of",
+        "score": 163.0,
+        "context": " (a small piece of protein), linked to a light-responsive dye, capable of switching 'on' death pathways in cancer cells. The peptide remains inactive until"
+      }
+    ],
+    "promotes": [
+      " r\u00e9guli",
+      " sup\u00e9rieurs",
+      " avoient",
+      " varandra",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      " \u0f0b\u0f0b",
+      " ECR",
+      " PDC",
+      " photolibrary",
+      " [?]"
+    ]
+  },
+  {
+    "id": "25_15903_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.3218440115451813,
+    "top_activations": [
+      {
+        "trigger": "Download",
+        "score": 19.0,
+        "context": "6-161. Boston: Birkhauser, 1993.)\u23ceDownload an Adobe Acrobat (.pdf) version of the image for printing."
+      },
+      {
+        "trigger": " being",
+        "score": 19.62,
+        "context": " up to 25,000 larger mammals. Nearly half of those being zebra and wildebeest while other species found are buffalo, gazelle, el"
+      },
+      {
+        "trigger": " in",
+        "score": 20.25,
+        "context": "<bos>The first Inaugurations weren't in D.C.?\u23ceCredit: MPI/Getty Images\u23ceGeorge Washington was sworn in for the first time in New"
+      },
+      {
+        "trigger": " for",
+        "score": 20.5,
+        "context": " get people to eat more veggies,\u201d said Harry Balzer, the chief industry analyst for the NPD Group, a market research company. \u2026\u201cBefore we want health"
+      },
+      {
+        "trigger": " downloading",
+        "score": 19.25,
+        "context": " the conditions for a sculpture to exist outdoors.\u23ceDownload InfoIf you experience problems downloading a file, check if you have the proper application to view it first."
+      }
+    ],
+    "promotes": [
+      " oameni",
+      "\u0301s",
+      "\u306a\u3057",
+      "\u00e9se",
+      " yhte"
+    ],
+    "demotes": [
+      " the",
+      "the",
+      "AddTagHelper",
+      "DockStyle",
+      " tbe"
+    ]
+  },
+  {
+    "id": "24_12064_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.3415657877922058,
+    "top_activations": [
+      {
+        "trigger": " unique",
+        "score": 71.5,
+        "context": " to the public as the first exhibit of its kind in the world.\u23ceThe unique museum ship continues to serve as a dramatic link in both Cold War-era"
+      },
+      {
+        "trigger": " but",
+        "score": 74.0,
+        "context": " might be hard to imagine that anyone could add to what has already been said, but I am going to try. It might also come as a surprise, to"
+      },
+      {
+        "trigger": " involves",
+        "score": 84.0,
+        "context": " involves criticisms of biblical literalism and the rise of modern biblical studies in general, the Enlightenment idea being that faith and revelation doesn\u2019t trump reason.\u23ceAn"
+      },
+      {
+        "trigger": " Interactive",
+        "score": 84.0,
+        "context": "6. Ability to ON / OFF the Speech/Sound.\u23ce7. Interactive Graphics - Kids will love to play and learn at the same time.\u23ceTo"
+      },
+      {
+        "trigger": " said",
+        "score": 74.0,
+        "context": " educated farmers on new seed varieties resistant to striga.\u23ceDr Kanampiu, said more than 6,000 farmers in western Kenya had access"
+      }
+    ],
+    "promotes": [
+      " FRP",
+      " PDC",
+      " OCS",
+      " FEC",
+      " AFS"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " iconFacebook",
+      "BibitemShut",
+      "e\u017ft",
+      " E\u017f"
+    ]
+  }
+]

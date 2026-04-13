@@ -1,0 +1,3480 @@
+[
+  {
+    "id": "0_12763_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3455018997192383,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " abstract] [hide abstract]\u23ceABSTRACT: The introduction of the photonic crystal (PhC) wavelength-scale cavity as a laser cavity enables us to obtain"
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " game.jar *.class\u23ce- The Java compiler and JVM can find the jar (when resolving/finding class names) if the jar is in the same directory"
+      },
+      {
+        "trigger": " (",
+        "score": 28.75,
+        "context": ",000 lb).\u23ceHeight: 83.00 m (272.00 ft).\u23ceDiameter: 22."
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " allowing arbitrary interconnections to be made.\u23ceFor example, the Main Distribution Frame (MDF) located at a telephone central office terminates the cables leading to subscribers"
+      },
+      {
+        "trigger": " (",
+        "score": 29.0,
+        "context": " Integer partition x = if x < 0 then 0 else foldl p (fromList [(0,1)]) [1..x] ! x where"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " (",
+      " ",
+      " [",
+      " A",
+      " I"
+    ]
+  },
+  {
+    "id": "0_15658_17",
+    "layer": 0,
+    "ctx_idx": 17,
+    "influence_score": 0.370939165353775,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ".' He marks off 'grace,' i.e., sanctifying grace, from 'original justice.' ' Original justice then implies freedom from concupiscence,"
+      },
+      {
+        "trigger": " '",
+        "score": 33.0,
+        "context": "\u23ce- Use up to 20 simple words, such as 'cup', 'daddy' and 'dog'. These words may not always be easily recognised by"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " 'Three Great Potters'; 'Application and Perseverance'; 'Helps and Opportunities'; 'Workers in Art'; 'Industry and the Peerage'; 'Energy and Courage"
+      },
+      {
+        "trigger": " '",
+        "score": 32.75,
+        "context": " the Robert Burns poem 'Tam O'Shanter', where a beautiful witch called 'Nannie', chases Tam while riding his grey mare home one night. She"
+      },
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ": Seeds of the Individual and Collective Identity for Hispanics in Schools'; (6) 'Educational Approaches \u2014 What Works for Hispanics: General Constructs and the Early Years';"
+      }
+    ],
+    "promotes": [
+      ".",
+      ",",
+      "(\"",
+      " \u201c",
+      " ("
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      " \u201a",
+      "='';\r",
+      " '\r"
+    ]
+  },
+  {
+    "id": "0_11943_25",
+    "layer": 0,
+    "ctx_idx": 25,
+    "influence_score": 0.3736971318721771,
+    "top_activations": [
+      {
+        "trigger": " writing",
+        "score": 20.38,
+        "context": "effect relationships, understanding multiple points of view, performing original research, debating and persuasive writing and help students develop and strengthen map-reading skills, identify issues and problems"
+      },
+      {
+        "trigger": " writing",
+        "score": 20.12,
+        "context": ". Techniques include the reading of many \"little\" books to build confidence, daily writing, the re-reading of favorite books, and learning to hear sounds in"
+      },
+      {
+        "trigger": " writing",
+        "score": 20.62,
+        "context": "<bos>Content Covered by the ACT English Test\u23ceSix elements of effective writing are included in the English Test: punctuation, grammar and usage, sentence structure, strategy,"
+      },
+      {
+        "trigger": " writing",
+        "score": 20.5,
+        "context": " Graduate programs provide students with a more advanced study of plant science fundamentals, emphasizing technical writing and research. Additional training is offered in the areas of soils and irrigation,"
+      },
+      {
+        "trigger": " writing",
+        "score": 20.5,
+        "context": " at some level. A significant subset of the broader field of technical communication, technical writing involves communicating complex information to those who need it to accomplish some task or goal"
+      }
+    ],
+    "promotes": [
+      "<em>",
+      "\u0436\u0438",
+      " \"",
+      "\u23ce",
+      "\u043b\u044c\u043d\u0438"
+    ],
+    "demotes": [
+      " Jefus",
+      " my\u017felf",
+      " Efq",
+      "\u017felves",
+      " The\u017fe"
+    ]
+  },
+  {
+    "id": "0_15658_28",
+    "layer": 0,
+    "ctx_idx": 28,
+    "influence_score": 0.3688051402568817,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ".' He marks off 'grace,' i.e., sanctifying grace, from 'original justice.' ' Original justice then implies freedom from concupiscence,"
+      },
+      {
+        "trigger": " '",
+        "score": 33.0,
+        "context": "\u23ce- Use up to 20 simple words, such as 'cup', 'daddy' and 'dog'. These words may not always be easily recognised by"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " 'Three Great Potters'; 'Application and Perseverance'; 'Helps and Opportunities'; 'Workers in Art'; 'Industry and the Peerage'; 'Energy and Courage"
+      },
+      {
+        "trigger": " '",
+        "score": 32.75,
+        "context": " the Robert Burns poem 'Tam O'Shanter', where a beautiful witch called 'Nannie', chases Tam while riding his grey mare home one night. She"
+      },
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ": Seeds of the Individual and Collective Identity for Hispanics in Schools'; (6) 'Educational Approaches \u2014 What Works for Hispanics: General Constructs and the Early Years';"
+      }
+    ],
+    "promotes": [
+      ".",
+      ",",
+      "(\"",
+      " \u201c",
+      " ("
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      " \u201a",
+      "='';\r",
+      " '\r"
+    ]
+  },
+  {
+    "id": "0_8974_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38283222913742065,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": ") came into use, carrying with it the implication that all Jews would be removed from Nazi Germany.\u23ce6.62 Hitler's attitude at this time"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": "One part of the hoax, \"fluoride helps with tooth formation,\" was removed from the \"American Fluoride Campaign\" early on. Realizing this might expose"
+      },
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": " while it placed an added burden of wages on the former owner.\u23ceTransition away from slavery\u23ceCompensated emancipation was typically enacted as part of an act that"
+      },
+      {
+        "trigger": " from",
+        "score": 37.75,
+        "context": " 40-45 \u00b0C to facilitate pumping\u23cewhen unloaded, leaked from the tanks. The Polmar plan was triggered.\u23ceThe vast oil slick"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": " retina.\u23ce\"As you get older, the vitreous collapses and may shrink away from the retina. This may happen earlier if you are short-sighted or have"
+      }
+    ],
+    "promotes": [
+      "ob",
+      "s",
+      "\u2026",
+      "ma",
+      "\u0445\u0435"
+    ],
+    "demotes": [
+      " from",
+      "from",
+      " fr\u00e5n",
+      "\u0e08\u0e32\u0e01",
+      " desde"
+    ]
+  },
+  {
+    "id": "0_9483_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3651382327079773,
+    "top_activations": [
+      {
+        "trigger": " Greek",
+        "score": 17.5,
+        "context": ", has received the attention of many scholars, very little has been written about early Greek accounting. The purpose of the present study is to demonstrate that the socio-"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": " version of an original Greek statue made around 350 BC. The original Greek figure would probably have stood in a temple or sanctuary, where it would have"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.12,
+        "context": "\u23ce- Although the scrolls are written in three languages, Hebrew, Aramaic and Greek, the most common script among all of them is known as the \u201cAss"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": "\u03bc\u03b5\u03bb\u03b1\u03bd\u03cc\u03bc\u03bf\u03c1\u03c6\u03b1, melanomorpha ) technique is a style of ancient Greek pottery painting in which the decoration appears as black silhouettes on a red background."
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": " by Greek-speaking, educated, rhetorically-trained writers who were skilled in Greek composition (but who never called themselves disciples) - they were not written by"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " ftate",
+      " perfons",
+      " blest",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " Hein",
+      "er",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " Mur",
+      "lyk"
+    ]
+  },
+  {
+    "id": "0_10950_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.3859237730503082,
+    "top_activations": [
+      {
+        "trigger": " combine",
+        "score": 27.88,
+        "context": "'s submerged cultural resources. During this process, Middle Range Theory was used to combine historical, environmental, and prior archaeological data into a series of multiple hypotheses concerning"
+      },
+      {
+        "trigger": " combine",
+        "score": 28.88,
+        "context": " best.\u23ceAnti-Aliasing & Transparency\u23ceDiscussion of anti-aliasing and transparency for Web graphics, and what to do when you combine the two."
+      },
+      {
+        "trigger": " combination",
+        "score": 28.12,
+        "context": ", you can select a highlight color, add notes, add tags, or any combination.\u23ceIf you've purchased the All Access Pass, you can print"
+      },
+      {
+        "trigger": " combination",
+        "score": 28.38,
+        "context": " humours in a person's body.\u23ce- n. A mixture or combination.\u23ce- n. The contraction of a vowel or diphthong at the"
+      },
+      {
+        "trigger": " combination",
+        "score": 27.88,
+        "context": " large herds that are not organized in any way. Herds may consist of any combination of sexes or ages.\u23ceGiraffes have small \"horns\" or"
+      }
+    ],
+    "promotes": [
+      " COB",
+      "HtmlAttribute",
+      "minecraftforge",
+      "TypedDataSet",
+      "\u00e9valuateur"
+    ],
+    "demotes": [
+      " combination",
+      " combined",
+      " combinatie",
+      " kombinasi",
+      "combination"
+    ]
+  },
+  {
+    "id": "0_7344_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.39479517936706543,
+    "top_activations": [
+      {
+        "trigger": "News",
+        "score": 13.5,
+        "context": "<bos>News>Archaeologists tour Luke's 5,000 year old site\u23ceRobert Wegener, Statistical Research Inc. principal investigator, briefs visitors"
+      },
+      {
+        "trigger": "Congress",
+        "score": 13.62,
+        "context": "<bos>Congress is currently deciding whether or not to minimize programs that help poor people buy food. There are public health experts, however, that say food stamp cuts could"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 8, 2013\u23ce- Centers for Disease Control and Prevention\u23ce- American Association for the Study of Liver Diseases\u23ce- Hepatitis Foundation"
+      },
+      {
+        "trigger": "Outdoor",
+        "score": 12.88,
+        "context": "<bos>Outdoor play time can enhance children's sleep\u23ceUpdated On: Jul 26 2013 03:03:58"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 18, 2012\u23ceCould 3D printing be a climate revolution?\u23ceAdditive manufacturing has five key attributes that could help"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " autorytatywna",
+      ":\u2728",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "<bos>",
+      "The",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<strong>"
+    ]
+  },
+  {
+    "id": "0_13459_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3964858651161194,
+    "top_activations": [
+      {
+        "trigger": "see",
+        "score": 15.0,
+        "context": "\u23ceAlthough Sinclair subsequently left the relationship to concentrate on his Formula 1 career (see right) the world would never be the same again...\u23ceKeith Kenneth Know"
+      },
+      {
+        "trigger": "and",
+        "score": 15.12,
+        "context": " scarf. He keeps doing it until there's nothing left of the jacket (and he still makes something out of nothing!).\u23ceA nice lesson in our consumer"
+      },
+      {
+        "trigger": "and",
+        "score": 14.88,
+        "context": ". They'll create projects inspired by classic arcade games that can be programmed (and played!) in an afternoon. The book's patient, step-by"
+      },
+      {
+        "trigger": "and",
+        "score": 15.0,
+        "context": " a web server at my university. You may like to check that this page (and others on the site) start with \"http://www.st-and"
+      },
+      {
+        "trigger": "see",
+        "score": 14.88,
+        "context": " example being that developed by the Institute for Sustainable Energy Policies (ISEP) (see related articles in the column to the right). These tend to suggest a gradual"
+      }
+    ],
+    "promotes": [
+      "Alas",
+      "FYI",
+      "FWIW",
+      " via",
+      " alas"
+    ],
+    "demotes": [
+      "RegressionTest",
+      " kasarigan",
+      " betweenstory",
+      " Efq",
+      "ViewImports"
+    ]
+  },
+  {
+    "id": "1_15229_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.37438035011291504,
+    "top_activations": [
+      {
+        "trigger": " Greek",
+        "score": 23.88,
+        "context": " AND HELL\u23ceNEXT to the Old Testament Hebrew word SHEOL, this New Testament Greek word,\u23ceHADES, is one of the most important.\u23ceOur"
+      },
+      {
+        "trigger": " Greek",
+        "score": 23.25,
+        "context": " the 1790s German physician Samuel Hahnemann developed the ancient Greek medic Hippocrates\u2019 idea of curing \u2018like with like\u2019. He rejected the"
+      },
+      {
+        "trigger": " Greek",
+        "score": 24.0,
+        "context": "\u0113, meaning \"pure\" or \"holy\". The Latinized form of the Greek name is Hagnes, the feminine form of \u0391\u03b3\u03bd\u03cc\u03c2 Hagnos,"
+      },
+      {
+        "trigger": " Greek",
+        "score": 25.88,
+        "context": " Palestine, then under the rule of the high priests, seems to have steered clear of any participation. Nevertheless, the internal distractions of the Greek world enabled him to"
+      },
+      {
+        "trigger": " Greek",
+        "score": 23.38,
+        "context": "96 BCE-406 BCE) was the second of the three ancient Greek tragedians whose work has survived. His first plays were written later than those"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "'",
+      " ",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " Roskov",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " betweenstory",
+      " purpo\u017fe",
+      "\u00e9valuateur"
+    ]
+  },
+  {
+    "id": "0_9026_29",
+    "layer": 0,
+    "ctx_idx": 29,
+    "influence_score": 0.32500407099723816,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "0_13200_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3815738558769226,
+    "top_activations": [
+      {
+        "trigger": " dyn",
+        "score": 6.41,
+        "context": " and highly stratified chiefdoms.\u23ceThe first states of sorts were those of early dynastic Sumer and early dynastic Egypt, which arose from the Uruk period"
+      },
+      {
+        "trigger": " times",
+        "score": 7.59,
+        "context": ", and has been used for a wide range of medicinal purposes in Europe since ancient times (Pothmann 2005). Butterbur extracts possess analgesic"
+      },
+      {
+        "trigger": " times",
+        "score": 7.59,
+        "context": " - Children's Encyclopedia (Ages 8-11)\u23ceIn ancient times people in the region surrounding the Mediterranean Sea buried their dead in underground tunnels and"
+      },
+      {
+        "trigger": " Roman",
+        "score": 6.91,
+        "context": "us. He was one of the great Roman emperors. Coming to power when the empire was experiencing civil war and in a state of financial collapse, Diocletian"
+      },
+      {
+        "trigger": " associated",
+        "score": 6.03,
+        "context": " the direct male ancestors of all Kohanim\u23ceThe burial site of Ithamar is associated with the Hill of Phinehas as related in the Bible and is attributed"
+      }
+    ],
+    "promotes": [
+      " modern",
+      " tradizione",
+      "istocene",
+      " zemi",
+      "quit\u00e9"
+    ],
+    "demotes": [
+      " Majefty",
+      " plea\u017fure",
+      " \u017fche",
+      " my\u017felf",
+      " An\u017f"
+    ]
+  },
+  {
+    "id": "0_8548_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3992258310317993,
+    "top_activations": [
+      {
+        "trigger": " eligible",
+        "score": 16.62,
+        "context": " each of the 16 elementary schools that took part in the study, most of the students (80-90%) were eligible for free- or"
+      },
+      {
+        "trigger": " always",
+        "score": 12.62,
+        "context": ". Livemocha is a social network applied to a useful purpose\u2014your exercises will always be reviewed by another user of the site who is a native speaker of the"
+      },
+      {
+        "trigger": " always",
+        "score": 12.88,
+        "context": " method may be either plain or reinforced, but piles constructed by the second method are always reinforced to strengthen them for handling and driving. Concrete piers for foundation work are"
+      },
+      {
+        "trigger": " eligible",
+        "score": 15.88,
+        "context": " three years of education in an accredited pediatric residency program. A pediatric doctor is then eligible for board certification by the American Board of Pediatrics, and recertification is required"
+      },
+      {
+        "trigger": " Greek",
+        "score": 12.75,
+        "context": " appeared to be a peace gift. Within the Trojan horse lay an elite group of Greek warriors, unbeknownst to the City of Troy. Once inside the City"
+      }
+    ],
+    "promotes": [
+      "\u2500\u2500",
+      "jda",
+      " gol",
+      "gdx",
+      " d\u00e9"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " \u017feveral",
+      "\u00f1ora",
+      " fubject",
+      " chofe"
+    ]
+  },
+  {
+    "id": "0_6659_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.384084016084671,
+    "top_activations": [
+      {
+        "trigger": " illness",
+        "score": 19.12,
+        "context": " mentally retarded and most cannot live on their own\u23ceUnfortunately, the incidence of this illness appears to be on the rise. Some experts think autism is diagnosed more often"
+      },
+      {
+        "trigger": " illness",
+        "score": 18.75,
+        "context": " You Should Feel Happy All the Time\u23ceSadness is not necessarily a sign of illness\u2014it's a normal part of being human and can even be beneficial"
+      },
+      {
+        "trigger": " illness",
+        "score": 18.88,
+        "context": " There are numerous treatments and forms of support that make it possible for those with mental illness to hold down jobs and lead a normal life.\u23ceFiction: There\u2019"
+      },
+      {
+        "trigger": " illness",
+        "score": 19.0,
+        "context": "APA) decided in 1973 that homosexuality was no longer a mental illness. It\u2019s about both the power of a family story and a social"
+      },
+      {
+        "trigger": " illness",
+        "score": 19.38,
+        "context": " extreme lows of\u23cedepression. It is also called manic-depressive\u23ceThis illness can cause behavior so extreme that you\u23cecannot function at work, in family"
+      }
+    ],
+    "promotes": [
+      "\"]);\r",
+      ".}~\\",
+      "ient\u00f4t",
+      "\".\r",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "  ",
+      " and"
+    ]
+  },
+  {
+    "id": "1_15800_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3889496326446533,
+    "top_activations": [
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": ": \u201cThe end tests the validity of the means\u201d? To this statement, no one could object. For only by the actual outcome of a course of action can"
+      },
+      {
+        "trigger": " one",
+        "score": 26.0,
+        "context": " I want to be a part of it.\u23ceChallenge by Choice\u23ce\u2013 No one is forced to participate\u23ceThis means that every person may choose his or her"
+      },
+      {
+        "trigger": " one",
+        "score": 26.0,
+        "context": ". But the story began with a chemical waste pond near Quincy High School. No one knew exactly what was in it\u2014perhaps not even the company responsible for it"
+      },
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": " locations, like the car, or reserving a time, like dinner, when no one in the family can use their cell phones. \u201cDifferent families will have different"
+      },
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": " any color film at the time that Technicolor was making its big splash. No one had figured out how to create a film stock that would record color. They"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      "ViewFeatures",
+      "RectangleBorder",
+      "AddTagHelper",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      " to",
+      "'",
+      "<eos>"
+    ]
+  },
+  {
+    "id": "4_10015_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.350812703371048,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 24.25,
+        "context": "<bos>What is Geography?While the word geography is derived from Greek and literally means \"to write about the earth,\" the subject of geography is much more than describing"
+      },
+      {
+        "trigger": " English",
+        "score": 24.5,
+        "context": " nickname, most likely for a tall, thin man with long legs, from Middle English cran \u2018crane\u2019 (the bird), Old English cran, cron. The"
+      },
+      {
+        "trigger": " Latin",
+        "score": 27.0,
+        "context": " marine protozoan\u23ceNew Latin Noctil\u016bca, genus name, from Latin noctil\u016bca, lantern, moon : nocti-, nocti-"
+      },
+      {
+        "trigger": " of",
+        "score": 32.25,
+        "context": " Some think the word is a corruption of costerel, which they derive from the Latin coterellus (a peasant); but if not a corruption of kestrel"
+      },
+      {
+        "trigger": " Latin",
+        "score": 29.25,
+        "context": "<bos>Definition of Genu\u23ceGenu: The Latin word for the knee. When the knee is referred to in medicine, it is just called the knee. However"
+      }
+    ],
+    "promotes": [
+      " words",
+      " \u0441\u043b\u043e\u0432\u0430",
+      " word",
+      "AddHtmlAttribute",
+      "<bos>"
+    ],
+    "demotes": [
+      "etna",
+      " createState",
+      "unhofer",
+      "soka",
+      "izophren"
+    ]
+  },
+  {
+    "id": "6_1489_29",
+    "layer": 6,
+    "ctx_idx": 29,
+    "influence_score": 0.35269850492477417,
+    "top_activations": [
+      {
+        "trigger": "ban",
+        "score": 21.12,
+        "context": " accidents was people slamming on the brakes to avoid going through a yellow light. Orban claims drivers would normally go through a yellow light at uncontrolled intersections.\u23ceRed"
+      },
+      {
+        "trigger": "ard",
+        "score": 25.88,
+        "context": " abnormal proteins in the blood, called cryoglobulins, that are activated by exposure to the cold, says Slankard, who's also in clinical"
+      },
+      {
+        "trigger": "ates",
+        "score": 20.62,
+        "context": " named after car companies and global banks; our food is genetically altered by multinational conglomerates, our drinking water is brought to us by Coca-Cola, our news"
+      },
+      {
+        "trigger": " triumph",
+        "score": 24.12,
+        "context": " in an Allied retreat in December. Anzac Day does not therefore commemorate a military triumph, and it was a tragic waste of human life for all involved. Far"
+      },
+      {
+        "trigger": " recording",
+        "score": 21.88,
+        "context": " based on 397 children in Finland whose parents made diary entries each week recording the state of their child's health during the infant's first year"
+      }
+    ],
+    "promotes": [
+      " Resonance",
+      "ertion",
+      "disambiguation",
+      "ReusableCell",
+      " BrowserModule"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      "\ufeff/*",
+      "'",
+      "\ufeff#"
+    ]
+  },
+  {
+    "id": "15_10668_25",
+    "layer": 15,
+    "ctx_idx": 25,
+    "influence_score": 0.3045290410518646,
+    "top_activations": [
+      {
+        "trigger": " write",
+        "score": 63.5,
+        "context": "<bos>We write in support of the Fracking Emergency Medical Right-to-Know Act to ensure that doctors, nurses, emergency planners and first responders have timely,"
+      },
+      {
+        "trigger": "Write",
+        "score": 62.0,
+        "context": " to ripen on plants; then collect seeds. Clean and dry the seeds before storage in cool dry conditions.\u23ceWrite a review | No reviews for this product."
+      },
+      {
+        "trigger": " Write",
+        "score": 67.0,
+        "context": "<bos>What to do\u23ce- Write the letter t on the board; make it at least a foot tall. Alternatively, use a letter card large enough for the"
+      },
+      {
+        "trigger": " write",
+        "score": 59.5,
+        "context": " Monitor the students to see if they are counting correctly.\u23ce4. Students can write their name on and decorate the blank shapes in their collection.\u23ce5."
+      },
+      {
+        "trigger": " writing",
+        "score": 60.5,
+        "context": " creature's back end, but it's close,\u201d how can you resist writing about it?\u23ceThe creatures he\u2019s talking about? Dinosaurs.\u23ce"
+      }
+    ],
+    "promotes": [
+      "Writing",
+      " Write",
+      " writing",
+      " Writing",
+      " write"
+    ],
+    "demotes": [
+      "StoryboardSegue",
+      "XXIV",
+      " Rela",
+      "rager",
+      " MenuView"
+    ]
+  },
+  {
+    "id": "14_14081_28",
+    "layer": 14,
+    "ctx_idx": 28,
+    "influence_score": 0.3730125427246094,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 76.5,
+        "context": "<bos>Map Courtesy CIA World Factbook\u23ceJapan (literally \"the origin of the sun\" or less literally \"Land of the Rising Sun\" ) is an island country"
+      },
+      {
+        "trigger": " has",
+        "score": 74.0,
+        "context": " Hebrew name Yohanan, in full Y\u2019hohanan, literally, Jehovah has favoured, from hanan meaning he was gracious.\u23ceThe name E\u00f3"
+      },
+      {
+        "trigger": " (\"",
+        "score": 67.0,
+        "context": " called Shahru Al-Bariyah. Legend states that he renamed the city Singapura (\"lion city\") after sighting a strange beast that he took to be a lion"
+      },
+      {
+        "trigger": "little",
+        "score": 67.5,
+        "context": " the family Chinchillidae.\u23ceThe animal (whose name literally means \"little chincha\") is named after the Chincha people of the Andes, who"
+      },
+      {
+        "trigger": " the",
+        "score": 76.0,
+        "context": " Tajikistan in the north, and China in the far northeast. The name Afghanistan means the \"Land of Afghans.\"\u23ceAfghanistan is a culturally mixed nation, a crossroads"
+      }
+    ],
+    "promotes": [
+      " ones",
+      "(!__",
+      " surla",
+      "bulos",
+      "bedaan"
+    ],
+    "demotes": [
+      " Vikipedi",
+      "+#+#",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      "findpost"
+    ]
+  },
+  {
+    "id": "14_14081_29",
+    "layer": 14,
+    "ctx_idx": 29,
+    "influence_score": 0.3432597815990448,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 76.5,
+        "context": "<bos>Map Courtesy CIA World Factbook\u23ceJapan (literally \"the origin of the sun\" or less literally \"Land of the Rising Sun\" ) is an island country"
+      },
+      {
+        "trigger": " has",
+        "score": 74.0,
+        "context": " Hebrew name Yohanan, in full Y\u2019hohanan, literally, Jehovah has favoured, from hanan meaning he was gracious.\u23ceThe name E\u00f3"
+      },
+      {
+        "trigger": " (\"",
+        "score": 67.0,
+        "context": " called Shahru Al-Bariyah. Legend states that he renamed the city Singapura (\"lion city\") after sighting a strange beast that he took to be a lion"
+      },
+      {
+        "trigger": "little",
+        "score": 67.5,
+        "context": " the family Chinchillidae.\u23ceThe animal (whose name literally means \"little chincha\") is named after the Chincha people of the Andes, who"
+      },
+      {
+        "trigger": " the",
+        "score": 76.0,
+        "context": " Tajikistan in the north, and China in the far northeast. The name Afghanistan means the \"Land of Afghans.\"\u23ceAfghanistan is a culturally mixed nation, a crossroads"
+      }
+    ],
+    "promotes": [
+      " ones",
+      "(!__",
+      " surla",
+      "bulos",
+      "bedaan"
+    ],
+    "demotes": [
+      " Vikipedi",
+      "+#+#",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      "findpost"
+    ]
+  },
+  {
+    "id": "15_10668_8",
+    "layer": 15,
+    "ctx_idx": 8,
+    "influence_score": 0.38713589310646057,
+    "top_activations": [
+      {
+        "trigger": " write",
+        "score": 63.5,
+        "context": "<bos>We write in support of the Fracking Emergency Medical Right-to-Know Act to ensure that doctors, nurses, emergency planners and first responders have timely,"
+      },
+      {
+        "trigger": "Write",
+        "score": 62.0,
+        "context": " to ripen on plants; then collect seeds. Clean and dry the seeds before storage in cool dry conditions.\u23ceWrite a review | No reviews for this product."
+      },
+      {
+        "trigger": " Write",
+        "score": 67.0,
+        "context": "<bos>What to do\u23ce- Write the letter t on the board; make it at least a foot tall. Alternatively, use a letter card large enough for the"
+      },
+      {
+        "trigger": " write",
+        "score": 59.5,
+        "context": " Monitor the students to see if they are counting correctly.\u23ce4. Students can write their name on and decorate the blank shapes in their collection.\u23ce5."
+      },
+      {
+        "trigger": " writing",
+        "score": 60.5,
+        "context": " creature's back end, but it's close,\u201d how can you resist writing about it?\u23ceThe creatures he\u2019s talking about? Dinosaurs.\u23ce"
+      }
+    ],
+    "promotes": [
+      "Writing",
+      " Write",
+      " writing",
+      " Writing",
+      " write"
+    ],
+    "demotes": [
+      "StoryboardSegue",
+      "XXIV",
+      " Rela",
+      "rager",
+      " MenuView"
+    ]
+  },
+  {
+    "id": "17_739_29",
+    "layer": 17,
+    "ctx_idx": 29,
+    "influence_score": 0.37771177291870117,
+    "top_activations": [
+      {
+        "trigger": " means",
+        "score": 65.0,
+        "context": ", cleft at stem, with shallow teeth. Also known as Cowslip; toxic to livestock. The species name palustris means ?of a swamp or bog.?"
+      },
+      {
+        "trigger": " means",
+        "score": 64.0,
+        "context": " Country is Hong Kong in?\u23ce- The city\u2019s name, Hong Kong means Fragrant Harbor\u23ce- Hong Kong is the most densely populated city in the"
+      },
+      {
+        "trigger": " means",
+        "score": 72.5,
+        "context": " bruise, or black and blue mark. The \"hema\" part of the word means blood, which is what you see under your skin if you get a bad"
+      },
+      {
+        "trigger": " for",
+        "score": 71.0,
+        "context": " made of tiny bits. He called these bits atoms, from the Greek word for \"not cuttable.\" He believed the bits were put together in different ways to"
+      },
+      {
+        "trigger": " means",
+        "score": 68.5,
+        "context": " 'sciuridae' rats belong to 'muridae'.\u23ceSciuridae means 'shade-tail', and refers to the bushy appendage possessed by many"
+      }
+    ],
+    "promotes": [
+      " ris",
+      "\u51fa\u7248\u5e74",
+      " light",
+      "intellij",
+      " AssemblyCulture"
+    ],
+    "demotes": [
+      " Bayard",
+      "FTFY",
+      " asunder",
+      " \u0148",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ]
+  },
+  {
+    "id": "18_4309_25",
+    "layer": 18,
+    "ctx_idx": 25,
+    "influence_score": 0.24882860481739044,
+    "top_activations": [
+      {
+        "trigger": "Write",
+        "score": 83.0,
+        "context": " doing maths the hard way!!\u23ceWork \"out\" (a problem)\u23ceWrite \"out\" (an answer)\u23ce= possibly originated with maths - doing"
+      },
+      {
+        "trigger": " write",
+        "score": 91.0,
+        "context": " Space Station are powered by Nexus S smartphones.\u23ceArs Technica has a lengthy writeup on how the space agency hacked smartphones to power its SPHERE (Synchronized"
+      },
+      {
+        "trigger": "Write",
+        "score": 86.0,
+        "context": " hold data that is pre-programmed at the factory and cannot be changed.\u23ceWriteable Tags \u2013 these tags allow users to program, erase and rewrite data many"
+      },
+      {
+        "trigger": " write",
+        "score": 77.5,
+        "context": "Links: FOTW homepage | search | random flag | disclaimer and copyright | write us | mirrors\u23ceimage by \u017deljko Heimer\u23ceThe current flag"
+      },
+      {
+        "trigger": " Writing",
+        "score": 91.0,
+        "context": "<bos>George Bickham and the Writing Book\u23ceThe Bickham family was most energetic in all forms of engraving for sale. The most ambitious item in their catalogue was"
+      }
+    ],
+    "promotes": [
+      " NSCoder",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "ValueStyle",
+      " ujednoznacz"
+    ],
+    "demotes": [
+      "ObjectContext",
+      "ctools",
+      "\ufdfa",
+      " Meister",
+      "Sdk"
+    ]
+  },
+  {
+    "id": "19_983_29",
+    "layer": 19,
+    "ctx_idx": 29,
+    "influence_score": 0.34771716594696045,
+    "top_activations": [
+      {
+        "trigger": "y",
+        "score": 60.25,
+        "context": " in Utah's Uinta Mountains.\u23ceThe difficulty of exploring the Black Rosy-Finch breeding habitat has severely limited scientific study of the birds and made"
+      },
+      {
+        "trigger": " far",
+        "score": 53.0,
+        "context": " earthquake (magnitude over 8.0) to generate a damaging tsunami in the far-field. The earthquake faults that lie off of Washington\u2019s coast are"
+      },
+      {
+        "trigger": "gel",
+        "score": 71.5,
+        "context": "gel-Hackett, watch this short video that was filmed while Dr. Gergel-Hackett was a researcher at the National Institute of Standards and Technology,"
+      },
+      {
+        "trigger": "by",
+        "score": 53.5,
+        "context": " South as a whole to\u23cethe territory of the individual states, a state-by-state focus being espe-\u23cecially pronounced in chapters 2, "
+      },
+      {
+        "trigger": " Bell",
+        "score": 57.25,
+        "context": "LESS OF INCOME AND EDUCATION) RELATED TO THE POLICIES IN THIS COUNTRY\u23ceBy Diane Bell-McKoy, President, www.ABC-MD.org\u23ce"
+      }
+    ],
+    "promotes": [
+      "\u2010",
+      "-<",
+      "\u2011",
+      "-%",
+      "-"
+    ],
+    "demotes": [
+      " []:",
+      " \u041f\u0435\u0440\u0435\u0439\u0442\u0438",
+      " \u043d\u0430\u0441\u0435\u0459\u0435",
+      "$_['",
+      "gmail"
+    ]
+  },
+  {
+    "id": "18_2377_29",
+    "layer": 18,
+    "ctx_idx": 29,
+    "influence_score": 0.3579666018486023,
+    "top_activations": [
+      {
+        "trigger": " Earth",
+        "score": 96.0,
+        "context": " has ruled that these companies will not be allowed to continue wasting public resources,\" said Earthjustice attorney Michael LeVine. \"This case deals with a few large vessels"
+      },
+      {
+        "trigger": " Earth",
+        "score": 95.0,
+        "context": " for the environment has been a trend for some time \u2013 at least going back to Earth Shoe-wearing hippies of the 1960s. Sustainability"
+      },
+      {
+        "trigger": "Earth",
+        "score": 103.0,
+        "context": "<bos>Wed August 26, 2009\u23ceEarth Notes - Puye Cliffs\u23ceFlagstaff, AZ \u2013 For more than three centuries, the"
+      },
+      {
+        "trigger": " Earth",
+        "score": 94.5,
+        "context": "<bos>Cross-posted from the Natural Resources Defense Council.\u23ceFor Earth Day, Steve Hayward of the American Enterprise Institute posted this shocker: \u201cEnergy Fact of"
+      },
+      {
+        "trigger": " Earth",
+        "score": 98.5,
+        "context": "<bos>Solar to Chemical Energy Conversion with Photocatalytic Heterostructures made of Earth Abundant Materials\u23ceCu2ZnSnS4 (CZTS) is one of the"
+      }
+    ],
+    "promotes": [
+      " SqlParameter",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " tetto",
+      "ScopeManager",
+      "\u51fa\u7248\u5e74"
+    ],
+    "demotes": [
+      "twimg",
+      "veau",
+      "Portale",
+      " reproducible",
+      " Trafalgar"
+    ]
+  },
+  {
+    "id": "3_12195_25",
+    "layer": 3,
+    "ctx_idx": 25,
+    "influence_score": 0.37506067752838135,
+    "top_activations": [
+      {
+        "trigger": " writing",
+        "score": 16.62,
+        "context": " learning activities. This week, we offer a series of prompts designed to provide authentic writing experiences in any content area.\u23ceThis Week's Tips\u23cePause To"
+      },
+      {
+        "trigger": " writing",
+        "score": 17.12,
+        "context": ", and more.\u23ceThis gallery shows you all the steps of the research paper writing process including brainstorming, researching, and citing your work. You'll find"
+      },
+      {
+        "trigger": " writing",
+        "score": 17.25,
+        "context": ". At one point, she argued, \u201cwe were all basic writers.\u201d Basic writing is not a clean and easy label; it is a complex and multi-"
+      },
+      {
+        "trigger": " writing",
+        "score": 17.12,
+        "context": " document should be exactly what the professor requires. If a student wants a research paper writing guide that specifically discusses the proper formatting of a particular style, the student should"
+      },
+      {
+        "trigger": " writing",
+        "score": 17.25,
+        "context": ", get your name out there, and drive readers to your website.\u23ceArticle writing is an especially good place for beginner writers to start their career because all one"
+      }
+    ],
+    "promotes": [
+      "Vitals",
+      "modelBuilder",
+      "migrationBuilder",
+      "sprogramm",
+      "RemoveField"
+    ],
+    "demotes": [
+      " writing",
+      " Writing",
+      "Writing",
+      "writing",
+      " write"
+    ]
+  },
+  {
+    "id": "20_12896_29",
+    "layer": 20,
+    "ctx_idx": 29,
+    "influence_score": 0.3643868863582611,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 72.0,
+        "context": " a person\u2019s reputation constitute defamation. Oral defamation is known as slander; defamation in writing or other permanent forms such as film is libel. In some instances,"
+      },
+      {
+        "trigger": " and",
+        "score": 61.25,
+        "context": " skills to communicate their own ideas and feelings fully, precisely, and creatively in speech and writing\u23ce- in upper-level work, acquire conceptual vocabularies,"
+      },
+      {
+        "trigger": " in",
+        "score": 92.0,
+        "context": " to constitute a partnership :-\u23ce- There must be an agreement entered into orally or in writing by the persons who desire to form a partnership.\u23ce- The object"
+      },
+      {
+        "trigger": " in",
+        "score": 59.75,
+        "context": " Air Force Research Laboratory at the Wright-Patterson Air Force Base in Ohio, said in a statement.\u23ceThe Waverider successfully detached from the B-5"
+      },
+      {
+        "trigger": " in",
+        "score": 61.25,
+        "context": "cary and dire wolf remains from this cave, but nothing this complete,\" Richards said in a news release. \"Every summer, we spend two weeks at this site"
+      }
+    ],
+    "promotes": [
+      " Writing",
+      "Writing",
+      "writing",
+      " writing",
+      " in"
+    ],
+    "demotes": [
+      "RegressionTest",
+      "Autoritn\u00ed",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " estekak",
+      ":\u2728"
+    ]
+  },
+  {
+    "id": "20_913_29",
+    "layer": 20,
+    "ctx_idx": 29,
+    "influence_score": 0.3757297098636627,
+    "top_activations": [
+      {
+        "trigger": "Earth",
+        "score": 78.0,
+        "context": "<bos>Earthquakes in the Eagle Ford Shale region \u2014 including a 2011 quake felt in San Antonio \u2014 are likely being triggered by increased oil extraction,"
+      },
+      {
+        "trigger": " Earth",
+        "score": 82.5,
+        "context": "<bos>Lights Out During Earth Hour March 23\u23ceNorthwestern to participate in worldwide initiative to protect the planetMarch 21, 2013"
+      },
+      {
+        "trigger": " Earth",
+        "score": 78.5,
+        "context": " \u201cClimate Change: Addressing the Major Skeptic Arguments,\u201d is big news. In Earth Preservers\u2019 opinion, the report has the potential to be a game"
+      },
+      {
+        "trigger": "Earth",
+        "score": 78.0,
+        "context": "<bos>EarthBox Accessory: Staking System\u23ceEarthBox staking accessory. Give your taller plants all the support they'll need. Assembly required. 3'"
+      },
+      {
+        "trigger": "Earth",
+        "score": 78.0,
+        "context": "<bos>Earth from Space: The Tibesti Mountains\u23ceAbout this Image\u23ceThe Tibesti Mountains, located mostly in Chad with the northern slopes extending into Libya, are"
+      }
+    ],
+    "promotes": [
+      " duele",
+      " OFDb",
+      "ableness",
+      " Triassic",
+      " Galilee"
+    ],
+    "demotes": [
+      "enumi",
+      " &___",
+      " \u064a\u062a\u064a\u0645\u0647",
+      "\u0440\u0438\u0442\u043e\u0440\u0438",
+      "+#+"
+    ]
+  },
+  {
+    "id": "20_10611_29",
+    "layer": 20,
+    "ctx_idx": 29,
+    "influence_score": 0.37901443243026733,
+    "top_activations": [
+      {
+        "trigger": " practical",
+        "score": 27.62,
+        "context": " policy innovation with a call for dramatic advances in energy-related sciences and in their practical applications. And so she came upon the Solar Decathlon.\u23ceThe brain"
+      },
+      {
+        "trigger": " physical",
+        "score": 23.75,
+        "context": " an app that will allow one to take the temperature of a sick person, without physical contact.\u23ceThe process is quick, and eliminates the frustration many parents experience"
+      },
+      {
+        "trigger": " continuous",
+        "score": 23.38,
+        "context": " soil. The health risks associated with radon are not immediate but rather a result of continuous exposure over a long period of time.\u23ceIf you have any technical difficulties"
+      },
+      {
+        "trigger": " successful",
+        "score": 22.38,
+        "context": "generational discussions about charitable giving plans and priorities can go a long way toward ensuring the successful transfer of wealth and the continuity of values.\u23ceThe families I work with"
+      },
+      {
+        "trigger": " of",
+        "score": 24.25,
+        "context": " creature was unidentifiable to beachgoers who made the discovery because of its state of decay.\u23ceA YouTube video described the carcass on Pukehina Beach in"
+      }
+    ],
+    "promotes": [
+      "Tracce",
+      ":+:",
+      " s\u1ef1",
+      " d\u00e9sol\u00e9s",
+      "\u0e01\u0e32\u0e23"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Jefus",
+      " him\u017felf",
+      " it\u017felf",
+      "GEBURTSDATUM"
+    ]
+  },
+  {
+    "id": "21_7584_29",
+    "layer": 21,
+    "ctx_idx": 29,
+    "influence_score": 0.342134028673172,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 30.75,
+        "context": " that time it had near it a wilderness (i,e, a waste pasture-ground) and a wood. The latter has disappeared but the former remains."
+      },
+      {
+        "trigger": " stage",
+        "score": 35.0,
+        "context": "ough the medium of electricity, however, but as soon as sailing vessels and stage-coaches could carry it. Many philosophers repeated the experiments and at least one"
+      },
+      {
+        "trigger": "-",
+        "score": 28.25,
+        "context": " Sutler\u2019s store, and a sentinel\u2019s beat was constructed near the powder-house. The platform of the sentinel\u2019s beat was about three feet"
+      },
+      {
+        "trigger": " feu",
+        "score": 28.25,
+        "context": " submission to the will of Providence; contented submission.\u23ce- n. In Scots law, the form by which a vassal returns the feu into the hands of a"
+      },
+      {
+        "trigger": "-",
+        "score": 28.5,
+        "context": " separated from the history and knowledge of the following ages by a veil, or partition-wall of fables, interposing between the things that are lost and those that"
+      }
+    ],
+    "promotes": [
+      " [",
+      " (",
+      " \"",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " Monfieur",
+      " my\u017felf",
+      " Efq",
+      " plea\u017fure",
+      "^(@)"
+    ]
+  },
+  {
+    "id": "21_10668_29",
+    "layer": 21,
+    "ctx_idx": 29,
+    "influence_score": 0.3770524561405182,
+    "top_activations": [
+      {
+        "trigger": " lead",
+        "score": 63.75,
+        "context": "stad, a senior scientist at the Woods Hole Research Center and the study's lead author, \"market forces and Brazil's political will are converging in an"
+      },
+      {
+        "trigger": " to",
+        "score": 57.75,
+        "context": " and other important reading skills start during this time and help lay the foundation for learning to read, so these books will keep your preschooler busy.\u23ceHelp your"
+      },
+      {
+        "trigger": " cannot",
+        "score": 57.75,
+        "context": "100 words, maximum of 350 words.\u23ceChildren who cannot write may dictate their story to be printed, written legibly or typed."
+      },
+      {
+        "trigger": " and",
+        "score": 58.75,
+        "context": " Atlantic White Cedar Swamps to life. Through the use of antrhopomorphism, students develop oral and illustrated short stories dedicated to enhancing awareness of these organisms."
+      },
+      {
+        "trigger": " to",
+        "score": 72.0,
+        "context": " no laptops and no text-messaging, people used a little thing called a pen to write on a flat surface known as paper. Chirography is a word"
+      }
+    ],
+    "promotes": [
+      "ChildScrollView",
+      "RegressionTest",
+      "########.",
+      "IndentedString",
+      " AssemblyCompany"
+    ],
+    "demotes": [
+      " joining",
+      " Douglas",
+      " Bed",
+      "Messages",
+      " say"
+    ]
+  },
+  {
+    "id": "16_15462_29",
+    "layer": 16,
+    "ctx_idx": 29,
+    "influence_score": 0.3981400728225708,
+    "top_activations": [
+      {
+        "trigger": "2",
+        "score": 20.0,
+        "context": " have to change it like this ex : 2^-3 = 1/2^3 = 1/8\u23ce-A store sells 28"
+      },
+      {
+        "trigger": "0",
+        "score": 19.75,
+        "context": " to the\u23cenearest 10, 100 and then 1000; thus:\u23ce14 489 to the nearest"
+      },
+      {
+        "trigger": "PV",
+        "score": 18.25,
+        "context": "-poliovirus type 1 (PV1), type 2, (PV2), and type 3 (PV3) - each with a slightly"
+      },
+      {
+        "trigger": " D",
+        "score": 20.0,
+        "context": " result, some foods are fortified with vitamin D. Fortification is usually with vitamin D2, as this is not derived from animals. However this new research,"
+      },
+      {
+        "trigger": "0",
+        "score": 17.5,
+        "context": " and production. Frontiers in Chemistry. 1:40.1-40.17. Interpretive Summary: Dietary supplements containing chicoric acid ("
+      }
+    ],
+    "promotes": [
+      "enumi",
+      "\u0117jas",
+      " jerawat",
+      "AnchorStyles",
+      "abestanden"
+    ],
+    "demotes": [
+      "}))\r",
+      "UserScript",
+      " AssemblyProduct",
+      "}}}\r",
+      " ')\r"
+    ]
+  },
+  {
+    "id": "21_8873_29",
+    "layer": 21,
+    "ctx_idx": 29,
+    "influence_score": 0.3936518728733063,
+    "top_activations": [
+      {
+        "trigger": "Earth",
+        "score": 86.0,
+        "context": "<bos>Earth Day lessons\u23ceby Kathleen Rogers\u23ceIf you have any sense of wonder or faith in humanity, you would have to agree that Earth Day is an extraordinary"
+      },
+      {
+        "trigger": "Earth",
+        "score": 86.0,
+        "context": "<bos>Earth Day was officially on 22 April, but in many communities and countries around the world it\u2019s celebrated for the entire week or month. Earth"
+      },
+      {
+        "trigger": " Earth",
+        "score": 88.5,
+        "context": "<bos>This study promotes the value of Earth Observations, Science and Services (Earth OSS) in informing and guiding the activities of virtually all economic sectors and innumerable institutions underlying"
+      },
+      {
+        "trigger": "Earth",
+        "score": 86.0,
+        "context": "<bos>Earth system science\u23ceEarth system science seeks to integrate various fields of academic study to understand the Earth as a system. It considers interaction between the atmosphere, hydro"
+      },
+      {
+        "trigger": "Earth",
+        "score": 88.0,
+        "context": " it did. And here it is in all of its zany glory:\u23ceEarthquakes in the nation\u2019s capitol are as rare as hen\u2019s teeth"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "messageInfo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " \u064a\u062a\u064a\u0645\u0647",
+      "GeoNames"
+    ],
+    "demotes": [
+      " AssemblyTitle",
+      "ariato",
+      "anti",
+      "awtextra",
+      "Paired"
+    ]
+  },
+  {
+    "id": "21_5327_29",
+    "layer": 21,
+    "ctx_idx": 29,
+    "influence_score": 0.3970436155796051,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 24.0,
+        "context": " be extracted\u23ce3) a member of a royal family (6 letters) & (delete 4th letter) cost or charge\u23ce4) a marsh or"
+      },
+      {
+        "trigger": " ON",
+        "score": 23.0,
+        "context": " PAPER PRESENTATION ON DETECTION AND PREVENTION OF PHISHING ATTACKS: A PAPER PRESENTATION ON DETECTION AND PREVENTION OF PHISHING ATTACKS BY MAHMOOD HASS"
+      },
+      {
+        "trigger": " be",
+        "score": 20.12,
+        "context": "0)\u23ceLog In/Connect with:\u23ceWill be displayed\u23ceWill not be displayed\u23ceFind this comment offensive?\u23ceChoose your reason below and click on"
+      },
+      {
+        "trigger": " and",
+        "score": 19.12,
+        "context": " HIV-associated morbidity and prolong the duration and quality of survival,\u23ce- restore and preserve immunologic function,\u23ce- maximally and durably suppress plasma HIV"
+      },
+      {
+        "trigger": " or",
+        "score": 21.0,
+        "context": " mean for your health -- and to provide tips on what you can do to get or keep your blood pressure in a healthy zone.\u23ceNOTE: This information isn"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " Efq",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      " Monfieur",
+      " The\u017fe"
+    ],
+    "demotes": [
+      " ",
+      " (",
+      " M",
+      " B",
+      "."
+    ]
+  },
+  {
+    "id": "5_1364_29",
+    "layer": 5,
+    "ctx_idx": 29,
+    "influence_score": 0.37965768575668335,
+    "top_activations": [
+      {
+        "trigger": " name",
+        "score": 26.5,
+        "context": ". We call these names nouns.'\u23ceNoun comes from the Latin nomen which means name. The name of something is a noun (person, place or thing)"
+      },
+      {
+        "trigger": " in",
+        "score": 26.5,
+        "context": " ordinary dictionary. From dardledumdue, which means day-dreamer in East Anglia, through forkin robbins, the Yorkshire term for ear"
+      },
+      {
+        "trigger": "knowledge",
+        "score": 28.88,
+        "context": " \u201cknowledge\u201d, and which itself comes from \u201csciens\u201d that means to discern, to separate one thing from another. In the earlier centuries the word \u201cscience"
+      },
+      {
+        "trigger": ",",
+        "score": 27.12,
+        "context": "psophila and eucalyptus.\u23cemodern Latin, from Greek gupsos 'chalk, gypsum' + philos 'loving'.\u23ceMore definitions of gypsophila"
+      },
+      {
+        "trigger": " shine",
+        "score": 31.12,
+        "context": " from Latin noctil\u016bca, lantern, moon : nocti-, nocti- + l\u016bc\u0113re, to shine; see leuk- in Indo"
+      }
+    ],
+    "promotes": [
+      "FormTagHelper",
+      "ANOS",
+      "UrlResolution",
+      "SourceChecksum",
+      "classnames"
+    ],
+    "demotes": [
+      "\u0642\u0627\u06cc\u0646\u0627\u0642\u200c\u0644\u0627\u0631",
+      "Demograf\u00eda",
+      "Portail",
+      " bezeichneter",
+      " poveznice"
+    ]
+  },
+  {
+    "id": "22_1927_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.3517569303512573,
+    "top_activations": [
+      {
+        "trigger": " continent",
+        "score": 91.5,
+        "context": "\u23ceHer team took data from small-scale local studies and compiled them on a continent-wide scale to produce the map. So now, instead of generalities"
+      },
+      {
+        "trigger": " peer",
+        "score": 78.5,
+        "context": "mayri, who recently published her findings online in a series of international conferences and peer-reviewed journals.\u23ceAmayri explains that new spam messages often employ"
+      },
+      {
+        "trigger": " state",
+        "score": 78.0,
+        "context": " practices release steady plumes of toxic pollution and yield very low metal recovery rates compared to state-of-the-art industrial facilities.\u23ceWhile such grossly inadequate recycling"
+      },
+      {
+        "trigger": " far",
+        "score": 72.5,
+        "context": " rights, be an entire book: the consequences of agricultural commoditization are profound and far-reaching. By necessity, I am concentrating on a few key points."
+      },
+      {
+        "trigger": " daughter",
+        "score": 79.0,
+        "context": " ten years the father and both of the sons died. Naomi was left with two daughter-in-laws and no menfolk to support them.\u23ceNaomi decided"
+      }
+    ],
+    "promotes": [
+      "}-",
+      "'-",
+      "\u2013",
+      ")-",
+      "\"-"
+    ],
+    "demotes": [
+      "StoryboardSegue",
+      "\\{\\\\",
+      "$\r",
+      "tvguidetime",
+      "$',"
+    ]
+  },
+  {
+    "id": "21_14580_29",
+    "layer": 21,
+    "ctx_idx": 29,
+    "influence_score": 0.33302584290504456,
+    "top_activations": [
+      {
+        "trigger": " pre",
+        "score": 70.0,
+        "context": " the absence of water column stratification. Fisheries resources occupied the entire water column, unlike pre-restoration conditions where finfish tended to avoid the lower water column."
+      },
+      {
+        "trigger": " mid",
+        "score": 84.0,
+        "context": " ensuing flight of populations which started in northern and eastern France, spread to Paris by mid-June and took on biblical proportions as the entire country \u2018folded over on"
+      },
+      {
+        "trigger": " mid",
+        "score": 70.0,
+        "context": " by successive technological transformations. The printing press transformed communication and education, beginning in the mid 15th century. Sailing and navigation technology of the late 1"
+      },
+      {
+        "trigger": " mid",
+        "score": 91.0,
+        "context": " the EU and others to scale back their commitments.\u23ceIn fact, as of mid-September, the only nationwide election monitoring is to be conducted by the Free"
+      },
+      {
+        "trigger": " anti",
+        "score": 73.0,
+        "context": " their struggle by combining\u23ceseveral basic elements:\u23ce- Increasing anti-American and anti-Western sentiments.\u23ce- Advocating a violent struggle against most Arab national"
+      }
+    ],
+    "promotes": [
+      "-'",
+      "-\u00a3",
+      "-#",
+      "-$",
+      "-"
+    ],
+    "demotes": [
+      "verh\u00e4lt",
+      "\u0103r\u0103",
+      "vaar",
+      "losigkeit",
+      "kammer"
+    ]
+  },
+  {
+    "id": "22_3695_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.33851170539855957,
+    "top_activations": [
+      {
+        "trigger": " wrote",
+        "score": 44.5,
+        "context": " the space program, Ride became involved in encouraging young women to study science. She wrote five children's books about science and founded the company Sally Ride Science in"
+      },
+      {
+        "trigger": " a",
+        "score": 44.0,
+        "context": " main character of your story somewhere within the first two paragraphs.\u23ce3. Write a short story based on a memorable event from your childhood. Write it as a"
+      },
+      {
+        "trigger": "2",
+        "score": 43.0,
+        "context": "<bos>I have written 2 implementation of bubble sort algorithm in C and Haskell. Haskell implementation:\u23cemodule Main where main = do contents <- readFile \"./data\""
+      },
+      {
+        "trigger": " song",
+        "score": 45.0,
+        "context": " categories:\u23ce- literary works including text like emails, training manuals, novels and song lyrics; tables and compilations including multimedia works, and computer programs\u23ce- dramatic"
+      },
+      {
+        "trigger": " writing",
+        "score": 52.75,
+        "context": "<bos>After an idle youth, Alexandre Dumas went to Paris and spent some years writing. A volume of short stories and some farces were his only productions until "
+      }
+    ],
+    "promotes": [
+      "Ikus",
+      " ligiloj",
+      "awtextra",
+      " \u0645\u0648\u0627\u0644\u064a\u062f",
+      "IonicModule"
+    ],
+    "demotes": [
+      " writing",
+      " written",
+      " write",
+      " wrote",
+      " Writing"
+    ]
+  },
+  {
+    "id": "22_5357_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.25813522934913635,
+    "top_activations": [
+      {
+        "trigger": " starting",
+        "score": 54.0,
+        "context": " whose episcopal residence was at Wolverhampton (Staffordshire), this vicariate became the starting-point and then the centre of the Catholic Movement, or Revival, in"
+      },
+      {
+        "trigger": " war",
+        "score": 42.5,
+        "context": " making the \"proud Forth quake at his bellying sails,\" and capturing two British war-vessels off Flamborough Head; he died in Paris, where he"
+      },
+      {
+        "trigger": " life",
+        "score": 38.5,
+        "context": " the affected countries, especially in the developing world. All the different phases in the life cycle of a locust require ideal meteorological conditions for it to evolve from the solitary"
+      },
+      {
+        "trigger": " buzz",
+        "score": 44.5,
+        "context": " by both educationalists and professional programmers alike, and leads me to another fashionable computer buzz-word; portability.\u23cePortability is an important conception in micro-"
+      },
+      {
+        "trigger": " life",
+        "score": 39.25,
+        "context": "virals have made AIDS manageable in many cases, greatly increasing quality of life and life expectancy of the infected. But limited access to these drugs, largely a result"
+      }
+    ],
+    "promotes": [
+      "-(",
+      "-\\",
+      "\u2010",
+      "\u2011",
+      "-"
+    ],
+    "demotes": [
+      " doInBackground",
+      "tagext",
+      "mobileqq",
+      "^(@)",
+      "\ud83c\udffb\u200d\u2640\ufe0f"
+    ]
+  },
+  {
+    "id": "22_7773_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.36203280091285706,
+    "top_activations": [
+      {
+        "trigger": " self",
+        "score": 29.88,
+        "context": " metaphors. Perhaps the child\u2019s adaptive or protective mechanisms have become counterproductive or self-defeating in the adult. Perhaps childhood abuse has arrested psychosocial development,"
+      },
+      {
+        "trigger": "deck",
+        "score": 30.12,
+        "context": " Waldeck-Rousseau, in full Pierre-marie-ren\u00e9 Waldeck-rousseau (born Dec. 2, 1846"
+      },
+      {
+        "trigger": " self",
+        "score": 29.38,
+        "context": " head pain receptors, which consequently send a message back to the brain that \u2018there\u2019s pain out here.\u2019 This to-and-fro, self-rein"
+      },
+      {
+        "trigger": " naked",
+        "score": 29.88,
+        "context": "STARRS makes its first trip through the inner solar system, it could brighten to naked-eye visibility late in February for observers in the Southern Hemisphere. // Astronomy"
+      },
+      {
+        "trigger": "no",
+        "score": 29.12,
+        "context": " cool during the summer. Marvelously inefficient, the effort presaged the spare-no-cost attitude behind our modern-day central air-conditioning systems. Even"
+      }
+    ],
+    "promotes": [
+      " Diretto",
+      " Offisielt",
+      " Efq",
+      " The\u017fe",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " D",
+      " j",
+      " das",
+      " d",
+      " A"
+    ]
+  },
+  {
+    "id": "22_12968_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.3372110426425934,
+    "top_activations": [
+      {
+        "trigger": "Earth",
+        "score": 103.5,
+        "context": ". 24, 2014\u23ce57 \u00b0 Fair\u23ceEarth and environmental sciences is a multi-disciplinary field that addresses the interactions between humans"
+      },
+      {
+        "trigger": " Earth",
+        "score": 97.0,
+        "context": " that\u2019s right for you \u2013 and has the smallest impact on our planet \u2013 Earth911 ranked common means of travel based on carbon emissions. You may"
+      },
+      {
+        "trigger": " Earth",
+        "score": 94.0,
+        "context": " of global climate change.\u23ceComprised of HSBC, the Climate Group, the Earthwatch Institute, the Smithsonian Tropical Research Institute, and the World Wildlife Fund,"
+      },
+      {
+        "trigger": " Earth",
+        "score": 102.0,
+        "context": " the American Society of Civil Engineers, was held at the 2008 Earth and Space Conference. The four electrical engineering students -- Bill Hogan, Kevin H"
+      },
+      {
+        "trigger": " Earth",
+        "score": 95.5,
+        "context": " employees to adopt personal sustainability goals. I spoke at the FritoLay headquarters for Earth Day, and was impressed at the many steps being taken to save energy and"
+      }
+    ],
+    "promotes": [
+      "rics",
+      "\u4e0b\u4e00\u7bc7",
+      " artific",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u090f\u0902",
+      " care"
+    ],
+    "demotes": [
+      "nativeElement",
+      " ferm\u00e9s",
+      "loroethene",
+      "LookAnd",
+      " r\u00e9pon"
+    ]
+  },
+  {
+    "id": "22_14717_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.34985846281051636,
+    "top_activations": [
+      {
+        "trigger": " shoe",
+        "score": 38.5,
+        "context": "\u23ceGeoffrey Chaucer was born in London. His name was of French origin and meant shoemaker. Chaucer was the son of a prosperous wine merchant and deputy to the"
+      },
+      {
+        "trigger": " wind",
+        "score": 34.0,
+        "context": " Whistle means a pipe (Latin, fistula; Saxon, hwistle), hence the wind-pipe.\u23ceSo was hir joly whistal well y-wet"
+      },
+      {
+        "trigger": " store",
+        "score": 28.75,
+        "context": " by a party of their men and shot down. The assassins then rushed to the storehouses, got drunk, and set to killing one another, to such effect"
+      },
+      {
+        "trigger": "snake",
+        "score": 28.75,
+        "context": " #6\u23ceStands now behind the dear war-band\u23ceThe \"snake-shapes\" carved on the wall behind the fallen men remind us of the beasts"
+      },
+      {
+        "trigger": " quarter",
+        "score": 31.75,
+        "context": " his officers to manhandle that atrocious scoundrel, and smoke him along to the quarter-deck. [Melville, \"The Town-Ho's Story"
+      }
+    ],
+    "promotes": [
+      "NameInMap",
+      "setViewName",
+      "IsContent",
+      "parsedMessage",
+      "-"
+    ],
+    "demotes": [
+      " Paglinawan",
+      "\">@",
+      " Signalez",
+      "eseorang",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9"
+    ]
+  },
+  {
+    "id": "23_3280_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.38834524154663086,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 28.5,
+        "context": " other products. The diversity of stream habitats also makes the watershed exceptionally rich in mussels, insects and other aquatic life.\u23ceBut water quality is poor in portions of"
+      },
+      {
+        "trigger": ",",
+        "score": 39.0,
+        "context": " -\u23ceTom's family (is, are) considering whether there (are,is) any affordable places to go on vacation in Europe.\u23ceTom'"
+      },
+      {
+        "trigger": " gets",
+        "score": 26.75,
+        "context": " As summer approaches, the Sun climbs higher in the sky each day and the weather gets a little warmer. Warmer temperatures melt the snow, exposing the bare sea"
+      },
+      {
+        "trigger": " even",
+        "score": 26.25,
+        "context": "t an intelligence the world is likely to recognize. In fact, the world may even call them idealistic or foolish or even a little insane. As a people of"
+      },
+      {
+        "trigger": ",",
+        "score": 36.75,
+        "context": " on diagnosing disease by analyzing blood, tissues or urine. Clinical pathologists use chemistry, microbiology, hematology (study of blood) and molecular pathology in a clinical"
+      }
+    ],
+    "promotes": [
+      ",",
+      " (",
+      "  ",
+      ".",
+      " "
+    ],
+    "demotes": [
+      " Monfieur",
+      " it\u017felf",
+      " my\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " The\u017fe"
+    ]
+  },
+  {
+    "id": "23_3531_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3666209280490875,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 22.62,
+        "context": "Genes are inherited from our biological parents in specific ways. One of the basic patterns of inheritance of our genes is called autosomal dominant inheritance.\u23ceWhat is autos"
+      },
+      {
+        "trigger": " facilitates",
+        "score": 25.62,
+        "context": " and trade for what they don't have.\u23ceThe use of money greatly facilitates this process.\u23ceAll else being equal, restrictions on trade can only serve"
+      },
+      {
+        "trigger": " level",
+        "score": 33.0,
+        "context": " people interested in learning the fundamentals of Java programming or for people considering returning to third level education in the area of Information Technology and /or computer Science. This course"
+      },
+      {
+        "trigger": " tapestry",
+        "score": 22.62,
+        "context": " Chapel. These cartoons were sent for weaving to Brussels, the preeminent center for tapestry manufacture in the late fifteenth and sixteenth centuries, and they provided Flemish artists with"
+      },
+      {
+        "trigger": " disrupted",
+        "score": 23.62,
+        "context": " overstimulated during the day. Nightmares and night-time fears can result in disrupted sleep. Toddlers who snore or breathe through their mouths when asleep ("
+      }
+    ],
+    "promotes": [
+      " betting",
+      " voting",
+      " shopping",
+      " cooking",
+      " fishing"
+    ],
+    "demotes": [
+      "IVEREF",
+      "LookAnd",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "enumii",
+      " HasFactory"
+    ]
+  },
+  {
+    "id": "22_4871_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.399762898683548,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 31.12,
+        "context": " pronunciation of the political double-standard uttered in the course of this scandal.Synonyms: declaration, assertion, statement; announcement, affirmation; proclamation, promulgation,"
+      },
+      {
+        "trigger": "-",
+        "score": 28.62,
+        "context": " the old class president.\u23cetransitive verbsuperseded, superseding\u23ce- to cause to be set aside or dropped from use as inferior or obsolete and"
+      },
+      {
+        "trigger": " See",
+        "score": 26.62,
+        "context": " and effort.\u23ceOrigin: L. Neutralis, fr. Neuter. See Neuter.\u23ce(01 Mar 1998)\u23ce"
+      },
+      {
+        "trigger": " see",
+        "score": 26.38,
+        "context": ", participle)\u23ceOrigin: , from particeps, particip-, partaker; see participate. Usage Note: Participial phrases such as walking down the street or"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 30.62,
+        "context": " definition.\u23ceFrom The Collaborative International Dictionary of English v.0.48:\u23ceVertigo \\Ver\"ti*go\\ (?; 27"
+      }
+    ],
+    "promotes": [
+      " (",
+      " S",
+      " to",
+      " un",
+      " "
+    ],
+    "demotes": [
+      " ainfi",
+      " Efq",
+      " Monfieur",
+      " my\u017felf",
+      " \u017feveral"
+    ]
+  },
+  {
+    "id": "0_11748_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3853151500225067,
+    "top_activations": [
+      {
+        "trigger": ";",
+        "score": 22.12,
+        "context": " was a big concern during the 2009 H1N1 pandemic; anecdotal reports of fetal deaths caused many pregnant women to avoid getting vaccinated despite health"
+      },
+      {
+        "trigger": ";",
+        "score": 22.5,
+        "context": " work\u23ceThat points at him amazed.\u23ceFrieda is Ted Hughes' daughter; she is the \"you\" who is \"listening\" in line 2"
+      },
+      {
+        "trigger": ";",
+        "score": 23.5,
+        "context": "3 November 2009\u23ceI spent yesterday afternoon working on this forecast; now comes the real-time validation\u23ceEditor's note: Last month"
+      },
+      {
+        "trigger": ";",
+        "score": 22.38,
+        "context": " was the last survivor from the Bronze Age of man.\u23ceFrom Greek \u03bb\u03c9\u03c2; Lat. Talus There are suppositions that the name \"Talos\""
+      },
+      {
+        "trigger": ";",
+        "score": 22.38,
+        "context": " sane people were sometimes admitted, but were not allowed to leave.\u23ceBut relax; it wasn\u2019t in the recent past. It was more like 7"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " The\u017fe",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      ";",
+      ":",
+      "-"
+    ]
+  },
+  {
+    "id": "22_12535_29",
+    "layer": 22,
+    "ctx_idx": 29,
+    "influence_score": 0.33582738041877747,
+    "top_activations": [
+      {
+        "trigger": " heavy",
+        "score": 32.5,
+        "context": ". In fact, early spotting is quite common. If you are having moderate to heavy brown or bright red bleeding with or without cramps, this can sometimes signal a"
+      },
+      {
+        "trigger": "resh",
+        "score": 35.5,
+        "context": "th century. In his use of dynamic composition, illusionistic perspective and dramatic foreshortening, Correggio prefigured the Rococo art of the 1"
+      },
+      {
+        "trigger": " severe",
+        "score": 34.5,
+        "context": " (e.g. 5\u00d75 squares) can be used for more severe smoothing. (Note that a small kernel can be applied more than once in"
+      },
+      {
+        "trigger": " interesting",
+        "score": 35.5,
+        "context": "'s look at Stanza 2, where there's a lot of interesting rhyming going on:\u23ce\"Forward, the Light Brigade!\" (A)"
+      },
+      {
+        "trigger": "-",
+        "score": 34.0,
+        "context": "\u23ceHe soon gained the title of Count Beaumarchais. He\u23cemoved from mechanics to music to social climbing.\u23ceThen he took up play-writing"
+      }
+    ],
+    "promotes": [
+      "testing",
+      " blogging",
+      " sketching",
+      " typing",
+      " voting"
+    ],
+    "demotes": [
+      " axons",
+      " SqlCommand",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "masalah",
+      "netbeans"
+    ]
+  },
+  {
+    "id": "23_3748_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3571189045906067,
+    "top_activations": [
+      {
+        "trigger": "occ",
+        "score": 53.0,
+        "context": " have been done without ill effects for centuries\u2014genetic engineering forcefully breaches the naturally-occuring barriers between species.\u23ceExample: Corn + DNA from soil bacteria that"
+      },
+      {
+        "trigger": " spear",
+        "score": 59.5,
+        "context": " severe throat burns and possibly death.\u23ceHurley and Safe Kids Greater Flint are spearheading local efforts for \u201cThe Battery Controlled,\u201d a national partnership between Safe Kids"
+      },
+      {
+        "trigger": " plumme",
+        "score": 52.5,
+        "context": " are a friendly, playful breed and enjoy dancing in wind currents near their homes or plummeting down into valleys from great heights. Their wings, by far their most"
+      },
+      {
+        "trigger": "stret",
+        "score": 86.5,
+        "context": " dressing gown of rather a rich purple shade. Propped up by pillows, he was gazing out on a far-stretching scene of woods and cornfields,"
+      },
+      {
+        "trigger": " bar",
+        "score": 53.0,
+        "context": " and awards ceremony took place at the Museum last week. Using a technique called DNA barcoding to find unique genetic identifiers in DNA samples, students from all five boroughs"
+      }
+    ],
+    "promotes": [
+      " casting",
+      " ringing",
+      " kissing",
+      " reading",
+      " singing"
+    ],
+    "demotes": [
+      " \u0645\u0634\u064a\u0646",
+      "MigrationBuilder",
+      "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+      "tvguidetime",
+      "Bibliograf"
+    ]
+  },
+  {
+    "id": "15_7288_29",
+    "layer": 15,
+    "ctx_idx": 29,
+    "influence_score": 0.36735764145851135,
+    "top_activations": [
+      {
+        "trigger": " earth",
+        "score": 50.5,
+        "context": "4-39.\u23ceTHE KEY TO THE TWENTIETH CENTURY\u23ceThe earth, in common with the other planets of the solar system and the sun itself"
+      },
+      {
+        "trigger": " Earth",
+        "score": 50.5,
+        "context": "<bos>The analysis of magnetic data commonly aids geologic investigations of Earth's upper crust. In particular, Precambrian crystalline rocks and igneous rocks generally contain sufficient magnetic minerals to"
+      },
+      {
+        "trigger": " Earth",
+        "score": 53.5,
+        "context": "<bos>Lesson 4: Earth Materials\u23ceThis is the second of three lessons that introduce key geologic topics and provide essential background for the discussions of specific hazards and resources"
+      },
+      {
+        "trigger": " Earth",
+        "score": 51.75,
+        "context": ":\u23ceExplore More Topics in Science: \u2014 Astronomy\u23ce\u2014 Scientific Method\u23ce\u2014 Earth Science\u23ce\u2014 Medicine & Psychiatry\u23ce\u2014 Technology & Applied Science\u23ceFull Length"
+      },
+      {
+        "trigger": " Earth",
+        "score": 49.0,
+        "context": "If the temperature of the water increases, as\u23cehas happened in some of the Earth's oceans\u23ceover the last thirty years, theoretically,\u23cecarbon dioxide"
+      }
+    ],
+    "promotes": [
+      " biais",
+      "Were",
+      "bi\u00f3ticos",
+      " trit",
+      " nonUne"
+    ],
+    "demotes": [
+      " propOrder",
+      "setVerticalGroup",
+      "FormTagHelper",
+      "saraba",
+      "SharedDtor"
+    ]
+  },
+  {
+    "id": "23_8449_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3545452356338501,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 34.5,
+        "context": " that have the same sound (like prince and prints; allowed and aloud), whilst oronyms are normally strings of words (phrases) such as iced ink and I"
+      },
+      {
+        "trigger": " will",
+        "score": 33.0,
+        "context": " dismay,\u23ceAnd made them fly from Mafeking without delay,\u23ceWhich will be handed down to posterity for many a day.\u23ceColonel Baden-Powell"
+      },
+      {
+        "trigger": " Sp",
+        "score": 30.0,
+        "context": " the medical experiments during the D2 mission. The 10-day German Spacelab mission was launched into space 20 years ago.\u23ceIn"
+      },
+      {
+        "trigger": " age",
+        "score": 34.75,
+        "context": " education curriculum. It meets the requirements of HB 2509 to provide age-appropriate sexuality education as an integral part of the health education curriculum.\u23ce"
+      },
+      {
+        "trigger": ":",
+        "score": 35.75,
+        "context": " School (6-8), High School (9-12)|\u23ce|Math Topics:||Golden Ratio/Fibonacci, Euclidean Plane Geometry, Fibonacci Sequence,"
+      }
+    ],
+    "promotes": [
+      "NUMX",
+      " it\u017felf",
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "demotes": [
+      ".",
+      "\u23ce",
+      " (",
+      " ",
+      ","
+    ]
+  },
+  {
+    "id": "23_5188_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3344290554523468,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ]
+  },
+  {
+    "id": "23_8903_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3315436542034149,
+    "top_activations": [
+      {
+        "trigger": " stall",
+        "score": 35.75,
+        "context": ".\u23ce- n. A person, in a city or town, who keeps stall-fed cows and retails the milk.\u23ce\u201cIs not the ant"
+      },
+      {
+        "trigger": "shoe",
+        "score": 33.75,
+        "context": " Temple.\u23ceThe common professions of the inhabitants of Jerusalem were bakers, butchers,\u23ceshoemakers, moneychangers, farmers, perfumers and artisans who sold"
+      },
+      {
+        "trigger": " alms",
+        "score": 34.75,
+        "context": " molds and the backs were somewhat crudely finished by hand. The shape was based on metal alms dishes, and they were likely used as commemorative and decorative objects."
+      },
+      {
+        "trigger": " lamp",
+        "score": 33.0,
+        "context": " seven contributes to the overall unity of Revelation. There are seven churches symbolized by seven lampstands (1:20); the churches have seven angels symbolized by seven"
+      },
+      {
+        "trigger": " apple",
+        "score": 35.25,
+        "context": " consequence of his being ever engaged in gathering and planting appleseed and cultivating nurseries of apple trees.\u23cefamiliar name for a person\u23cesobriquet m (plural"
+      }
+    ],
+    "promotes": [
+      " maniere",
+      "DispatchToProps",
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580",
+      "\u0645\u0635\u0627\u062f\u0631",
+      "-"
+    ],
+    "demotes": [
+      "spyOn",
+      "\u2003\u2003(",
+      "BeginContext",
+      "bootstrapcdn",
+      " AssemblyCulture"
+    ]
+  },
+  {
+    "id": "23_3912_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3231692910194397,
+    "top_activations": [
+      {
+        "trigger": " hoped",
+        "score": 42.0,
+        "context": " George Vancouver would return in 1792 to continue the search for the hoped-for passage. He and his crew sailed through the Strait of Juan de"
+      },
+      {
+        "trigger": " low",
+        "score": 34.0,
+        "context": ", could be an effective alternative for people looking to lower their blood pressure with a low-salt diet.The project is still only in its research phase, so"
+      },
+      {
+        "trigger": " double",
+        "score": 35.5,
+        "context": " Charleston Belle exhibited minimal root galling from nematode attack. Charleston Belle also helped the double-cropped cucumber and squash plants produce bigger yields and heavier fruit than when the"
+      },
+      {
+        "trigger": " ill",
+        "score": 34.5,
+        "context": "and interacting with its indigenous peoples. Theclimax of this great quest was the ill-fated expeditionof Sir John Franklin in 184548"
+      },
+      {
+        "trigger": " mild",
+        "score": 37.0,
+        "context": " flowers reminded Lemoine of hyacinth -- hence the name.\u23ceMany more mild-weather lilacs have arisen from Lemoine's hybrids. There"
+      }
+    ],
+    "promotes": [
+      "odyne",
+      "veless",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "ScopeManager",
+      "-"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " becau\u017fe",
+      " my\u017felf",
+      " them\u017felves",
+      " \u017feveral"
+    ]
+  },
+  {
+    "id": "23_12200_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.348797082901001,
+    "top_activations": [
+      {
+        "trigger": " date",
+        "score": 41.5,
+        "context": "-drink orange juice, buy it 3 to 4 weeks before the expiration date, and drink it within one week of opening.\u23ceHistorically, vitamin C"
+      },
+      {
+        "trigger": " school",
+        "score": 31.12,
+        "context": " painted children running around in a park, each child having the name of a local school on his or her T-shirt. The one student in the painting,"
+      },
+      {
+        "trigger": " titles",
+        "score": 34.0,
+        "context": " tombstones of Zoar. Each examines the host of names, occupations and religious titles found within the communities, as well as the unique symbols and dating formulas that"
+      },
+      {
+        "trigger": " is",
+        "score": 57.0,
+        "context": " of the gospel of Jesus Christ, the Son of God; 2 As it is written in the prophets, Behold, I send my messenger before thy face,"
+      },
+      {
+        "trigger": " are",
+        "score": 34.0,
+        "context": " \u201cCome and measure the temple of God and the altar, and count those who are worshiping in it. 2But exclude the outer court* of the"
+      }
+    ],
+    "promotes": [
+      " Written",
+      " write",
+      " writing",
+      "written",
+      " written"
+    ],
+    "demotes": [
+      "Bioaccumulative",
+      "mergeFrom",
+      "putExtra",
+      " tr\u1ee5",
+      "ikala"
+    ]
+  },
+  {
+    "id": "23_10032_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3716316819190979,
+    "top_activations": [
+      {
+        "trigger": " civil",
+        "score": 31.88,
+        "context": " to capital companies, which are viewed rather as a concentration of capital.1 Many civil law jurisdictions also make a distinction between a civil law partnership and a commercial law"
+      },
+      {
+        "trigger": " fiesta",
+        "score": 31.62,
+        "context": " in multiple colors). The pahiyas and Lucban fairly explodes with colors on fiesta day.\u23ceThe patron saint is San Isidro Labrador, patron saint of farmers"
+      },
+      {
+        "trigger": " magnetic",
+        "score": 37.0,
+        "context": " a uniform magnetic field and non-uniform magnetic field?\" I know in a uniform magnetic field the magnetic dipole material will tend to align with the field lines of the"
+      },
+      {
+        "trigger": " portable",
+        "score": 31.62,
+        "context": " accidents, the investigators report.\u23ce\u201cWe found that the risk posed by these portable devices is higher than previously believed,\u201d said Bill Strauss, who recently completed his"
+      },
+      {
+        "trigger": " these",
+        "score": 31.62,
+        "context": " these laws) documented?\u23ce- Were there lawyers?\u23ce- How effective were these courts? (less being outright civil violence and highly being close to the standards"
+      }
+    ],
+    "promotes": [
+      ".",
+      "\u23ce\u23ce",
+      "\u23ce",
+      " (",
+      " "
+    ],
+    "demotes": [
+      " Efq",
+      " my\u017felf",
+      " it\u017felf",
+      " The\u017fe",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "24_1135_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3111608326435089,
+    "top_activations": [
+      {
+        "trigger": " life",
+        "score": 63.75,
+        "context": " Diseases: Food Poisoning\u23ceFood poisoning is a common, yet distressing and sometimes life-threatening problem for millions of people in the U.S., and throughout"
+      },
+      {
+        "trigger": " two",
+        "score": 63.75,
+        "context": " (Feb/15/2005 )\u23ceI am doing yeast two-hybrid now. I picked up a colony from my plate and grow it"
+      },
+      {
+        "trigger": " age",
+        "score": 56.75,
+        "context": " way to learn more about a culture.\u23cePottery in any culture is an age-old practice that was originally practical and eventually became seen as an art form"
+      },
+      {
+        "trigger": " up",
+        "score": 58.25,
+        "context": " has been substantially revised to incorporate the great volume of new literature and to provide an up-to-date analysis of this increasingly important topic. The basic outline has"
+      },
+      {
+        "trigger": " hands",
+        "score": 62.25,
+        "context": " you through the basics of PHP with an experiential approach, filled with numerous examples and hands-on exercises, including substantial practice in coding a functional application. All of"
+      }
+    ],
+    "promotes": [
+      " \u2014",
+      " \u2013",
+      "\u2013",
+      "--",
+      "\u2014"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " referenties",
+      " AssemblyTitle",
+      " Chwiliwch",
+      " CommonModule"
+    ]
+  },
+  {
+    "id": "24_1891_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3822031319141388,
+    "top_activations": [
+      {
+        "trigger": " non",
+        "score": 67.0,
+        "context": " express a spiritually grounded moral posture of respect and fairness toward all creation, human and nonhuman. E-J ethics are shaped by religious insights and scientific knowledge,"
+      },
+      {
+        "trigger": " pre",
+        "score": 61.25,
+        "context": " food can change the body\u2019s physiology to the point it resembles that of a prediabetic. In other words, the body\u2019s insulin resistance and glucose tolerance"
+      },
+      {
+        "trigger": " non",
+        "score": 65.0,
+        "context": " runoff and habitat loss. Although relatively\u23ceabundant resources, clay and sand are nonrenewable. Tile manufacturing\u23ceis energy-intensive, but the industry is making"
+      },
+      {
+        "trigger": " non",
+        "score": 60.25,
+        "context": " process called puberty. Humans are among the few animals to engage in both reproductive and nonreproductive sex, and sexuality becomes a fundamental aspect of our personalities and social"
+      },
+      {
+        "trigger": " pre",
+        "score": 65.0,
+        "context": " was a necessary evil, was still an evil. The last of Israel\u2019s pre-monarchical Judges, Samuel foresaw the many misfortunes that would enter Israel"
+      }
+    ],
+    "promotes": [
+      " varandra",
+      " feroit",
+      " st\u00e4llet",
+      " avoient",
+      "rungsseite"
+    ],
+    "demotes": [
+      " graded",
+      " consort",
+      "nants",
+      " ministry",
+      " spin"
+    ]
+  },
+  {
+    "id": "23_4399_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.3925026059150696,
+    "top_activations": [
+      {
+        "trigger": "Ground",
+        "score": 82.0,
+        "context": "<bos>Ground-Water Resources for the Future -- Desert Basins of the Southwest\u23ceU.S. Geological Survey Fact Sheet 086-00\u23ce"
+      },
+      {
+        "trigger": " ground",
+        "score": 86.5,
+        "context": " action\u23ce24 August 2012 | News story\u23ceThe ground-breaking work of IUCN\u2019s six commissions is highlighted in the latest issue of"
+      },
+      {
+        "trigger": " ground",
+        "score": 74.0,
+        "context": " By Scott D. Trostel for the Bellefontaine Examiner\u23ceLogan County was ground zero for the collision of the three storm fronts on March 23,"
+      },
+      {
+        "trigger": " ground",
+        "score": 75.5,
+        "context": " the first uranium bomb on Hiroshima.\u23ceWhat can an American think while standing at ground zero at Nagasaki? Some years ago I toured the city\u2019s memorial museum"
+      },
+      {
+        "trigger": " ground",
+        "score": 83.0,
+        "context": "<bos>The City of Oakland will be ground zero for the first urban sensor network to provide real-time, neighborhood-by-neighborhood measurements of carbon dioxide \u2013 a"
+      }
+    ],
+    "promotes": [
+      "ks",
+      " Paglinawan",
+      "sel",
+      "wood",
+      "he"
+    ],
+    "demotes": [
+      "aarrggbb",
+      "NUMX",
+      " Ground",
+      "Ground",
+      " ground"
+    ]
+  },
+  {
+    "id": "24_8463_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.34099075198173523,
+    "top_activations": [
+      {
+        "trigger": " guide",
+        "score": 50.0,
+        "context": ". Offering wise (and delicious!) advice on every page, Cheese For Dummies is a guide for anyone interested in making every mealtime with cheese a special occasion."
+      },
+      {
+        "trigger": " house",
+        "score": 62.5,
+        "context": "choe that is used as a pot plant, the panda plant is a reliable houseplant.\u23ceOne of my favorite kalanchoes happens to be the panda"
+      },
+      {
+        "trigger": " snow",
+        "score": 52.5,
+        "context": " it melts. As a class, look at your newspaper\u2019s weather section for snow and rain reports around the country. Together, color in a blank U."
+      },
+      {
+        "trigger": " Heart",
+        "score": 49.0,
+        "context": " Write\u23ceOn Shapes | Alphabet |\u23ceA Kid's Photo | A Kids Heart | A Kid's Math\u23ce|Stories to Read, Stories to Write"
+      },
+      {
+        "trigger": " house",
+        "score": 51.0,
+        "context": " the center of the universe. His investigations gave evidence to the contrary, and for them he was forced to live the rest of his life under house arrest. But"
+      }
+    ],
+    "promotes": [
+      "points",
+      "books",
+      "work",
+      "point",
+      "board"
+    ],
+    "demotes": [
+      "v\u0173",
+      "binaan",
+      "haltens",
+      "weichen",
+      "ofman"
+    ]
+  },
+  {
+    "id": "23_12573_29",
+    "layer": 23,
+    "ctx_idx": 29,
+    "influence_score": 0.39592650532722473,
+    "top_activations": [
+      {
+        "trigger": " Congress",
+        "score": 33.75,
+        "context": " it enacted by the Senate and House of Representatives of the United States of America in Congress\u23ceassembled, That the Yellowstone National Park, as its boundaries are now defined"
+      },
+      {
+        "trigger": " low",
+        "score": 32.5,
+        "context": " So if you pour a cup of milk on your cereal, eat a cup of low-fat yogurt at lunch, and use about 1\u00bd ounces of low"
+      },
+      {
+        "trigger": "non",
+        "score": 37.5,
+        "context": "displaced\u201d if the two ends no longer line up well. It is \u201cnon-displaced\u201d if the two ends remain in a good position for healing"
+      },
+      {
+        "trigger": ",",
+        "score": 38.5,
+        "context": "\u23ceDrink to me only with thine eyes,\u23ceAnd I will pledge with mine;\u23ceOr leave a kiss but in the cup,\u23ceAnd I'll"
+      },
+      {
+        "trigger": "\u012b",
+        "score": 32.25,
+        "context": " or closes an orifice or lumen of an organ.\u23ce|pylorus (p\u012b-l\u00f4r'\u0259s, p\u012d-) Pronunciation Key\u23cePlural"
+      }
+    ],
+    "promotes": [
+      ".",
+      " (",
+      "\u23ce\u23ce",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " The\u017fe",
+      " avoient",
+      " st\u00e4llet",
+      " varandra",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "24_5999_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3680821359157562,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ]
+  },
+  {
+    "id": "24_1633_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.24399858713150024,
+    "top_activations": [
+      {
+        "trigger": " you",
+        "score": 45.75,
+        "context": " a paragraph on each one.\u23ceDon\u2019t worry about spelling or grammar as you write. Just focus on writing to keep your creative juices flowing. If you"
+      },
+      {
+        "trigger": " the",
+        "score": 46.25,
+        "context": " the Gateses had a certain status in Cumberland. After Pop\u2019s burial, the writer\u2019s father took him back to the Gates family home and went upstairs"
+      },
+      {
+        "trigger": " researchers",
+        "score": 50.0,
+        "context": "Thus, sleep following exposure therapy may promote retention and generalization of extinction learning,\u201d the researchers wrote in the study.\u23ceThe researchers added that REM sleep in particular could"
+      },
+      {
+        "trigger": " and",
+        "score": 47.75,
+        "context": "cgi or .pl.\u23ceWriting a CGI program\u23ceThere are two main differences between \u201cregular\u201d programming, and CGI programming.\u23ceFirst, all output from"
+      },
+      {
+        "trigger": " have",
+        "score": 57.25,
+        "context": " of his origins and education, he could not have had the knowledge or ability, to write as he did. You can almost hear the naysayers m"
+      }
+    ],
+    "promotes": [
+      " vacuum",
+      " '{@",
+      "ESTA",
+      "\u0442\u043e\u0447\u043d\u043e",
+      " defStyleAttr"
+    ],
+    "demotes": [
+      " writing",
+      " Writing",
+      " written",
+      "Writing",
+      "writing"
+    ]
+  },
+  {
+    "id": "24_10662_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.38029834628105164,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ]
+  },
+  {
+    "id": "24_9648_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3300255835056305,
+    "top_activations": [
+      {
+        "trigger": " barn",
+        "score": 32.5,
+        "context": " have, most of you, seen a decapitated chicken staggering and fluttering about the barn-yard. Whence comes the force by which its movements are made, unless"
+      },
+      {
+        "trigger": " starting",
+        "score": 62.0,
+        "context": " whose episcopal residence was at Wolverhampton (Staffordshire), this vicariate became the starting-point and then the centre of the Catholic Movement, or Revival, in"
+      },
+      {
+        "trigger": " resting",
+        "score": 35.0,
+        "context": " run?' No indeed! There will be no safe place. That Day the only resting place will be your Lord. (Surat al-Qiyama: 5"
+      },
+      {
+        "trigger": " tight",
+        "score": 34.0,
+        "context": " in balance is. For instance, an acrobat who tries to walk on a steel tightrope has to use a long stick made up of special substances in order to"
+      },
+      {
+        "trigger": " peace",
+        "score": 32.0,
+        "context": ".\u23celev 3:1And if his oblation be a sacrifice of peace offering,.... The Targums of Onkelos and Jonathan render it, the"
+      }
+    ],
+    "promotes": [
+      "\ue011",
+      "-\u200b",
+      "\u2010",
+      "\u2011",
+      "-"
+    ],
+    "demotes": [
+      " alertDialog",
+      "\u041f\u043e\u043f\u0438\u0441",
+      " unknownFields",
+      "oa\u030dt",
+      "\u0391\u03a3"
+    ]
+  },
+  {
+    "id": "25_4770_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.3285038471221924,
+    "top_activations": [
+      {
+        "trigger": " steel",
+        "score": 45.75,
+        "context": " quakes. Newspaper archives, worldwide, are full of innumerable photos of multistory steel-reinforced concrete buildings in which their occupants were crashed to death, in the"
+      },
+      {
+        "trigger": "anga",
+        "score": 47.0,
+        "context": " for one moment and perishes, (ii, iii) arresting the bhavanga stream. Subsequently the five-door apprehending consciousness (iv) arises and"
+      },
+      {
+        "trigger": " Yamamoto",
+        "score": 46.75,
+        "context": "1th, 2011 at 2:26 PM, Yamamoto-cho was hit by a huge earthquake with a magnitude of 9."
+      },
+      {
+        "trigger": " anti",
+        "score": 50.25,
+        "context": " administration, EVERY SINGLE Presidential candidate for the next 20 YEARS ran on an anti-corruption theme. For the most part, the successful bidders were republicans and"
+      },
+      {
+        "trigger": " non",
+        "score": 44.5,
+        "context": "dynamics\u23ce\u2022 Neurophysiology of voiding\u23ceThe worldwide state of the art in non-invasive urodynamics has been summarized in a special issue of \"Urod"
+      }
+    ],
+    "promotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "OGND",
+      "GraphicsUnit",
+      "Enllaces",
+      "-"
+    ],
+    "demotes": [
+      "--\"",
+      "--",
+      "\u0417\u043d\u043e\u0441\u043a\u0456",
+      "--$",
+      " \u2212"
+    ]
+  },
+  {
+    "id": "24_13785_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3919164836406708,
+    "top_activations": [
+      {
+        "trigger": "ca",
+        "score": 143.0,
+        "context": "Rafflesia Blooms: The world's largest individual flower blooms in Barangay Igcabugao, Igbaras\u23cePeople around the world make special pilgrimages"
+      },
+      {
+        "trigger": "tak",
+        "score": 146.0,
+        "context": " meaning of his Cherokee name along with a reference to his physical stature.\u23ceAttakullakulla was a powerful and influential 18th-century Over"
+      },
+      {
+        "trigger": "del",
+        "score": 125.5,
+        "context": " fact, the word \"poodle\" comes from the German word \"pfudel,\" which means \"puddle\" or \"to splash,\" a reference to"
+      },
+      {
+        "trigger": " Boc",
+        "score": 129.0,
+        "context": " The church was burnt down in around 1605 \u2013 during the Bocskai revolt \u2013 by Hungarian rebels rampaging through Prekmurje under the"
+      },
+      {
+        "trigger": " Jud",
+        "score": 134.0,
+        "context": " had already spread that the Germans planned to put the Jews in an enclosed area-- Judischer Wohnbezirk, or Jewish Quarter.\u23ceGovernor Dr. Hans Frank had"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " Efq",
+      " Monfieur",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " salvaci\u00f3n",
+      "\u23ce",
+      "C",
+      "R",
+      "S"
+    ]
+  },
+  {
+    "id": "25_9155_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.36588042974472046,
+    "top_activations": [
+      {
+        "trigger": " melting",
+        "score": 40.5,
+        "context": " some of the heat absorbed during the day.\u23ceIcicles grow longer by melting a bit. The water runs down them and freezes again at the bottom."
+      },
+      {
+        "trigger": " of",
+        "score": 39.0,
+        "context": " informal means of handling the often problematic aftermath of suicide. Topics covered include the law of forfeiture, its geography, how violent suicide was, and the financial effects on"
+      },
+      {
+        "trigger": "ing",
+        "score": 44.0,
+        "context": "- n. An oral or written statement that one is resigning a position or an office.\u23ce- n. Unresisting acceptance of something as inescapable; submission"
+      },
+      {
+        "trigger": " same",
+        "score": 47.5,
+        "context": "- 1Remaining the same in all cases and at all times; unchanging in form or character: blocks of stone of uniform sizeM\u00e1s ejemplos en oraciones\u23ceconstant"
+      },
+      {
+        "trigger": "the",
+        "score": 52.0,
+        "context": " even to the Greeks, who knew the figure simply as Engonasin, literally meaning \u2018the kneeling one\u2019. The Greek poet Aratus described him as being worn"
+      }
+    ],
+    "promotes": [
+      " Underlying",
+      " Restra",
+      " Tells",
+      " Exhaus",
+      " Dressed"
+    ],
+    "demotes": [
+      "cdnjs",
+      "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+      " Michelangelo",
+      "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+      " Jimin"
+    ]
+  },
+  {
+    "id": "25_6348_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.3466143310070038,
+    "top_activations": [
+      {
+        "trigger": " child",
+        "score": 55.75,
+        "context": " than grouper. The Food and Drug Administration recommends that pregnant women, women of child bearing age, and children avoid eating tilefish because of high levels of mercury"
+      },
+      {
+        "trigger": " record",
+        "score": 52.25,
+        "context": "10: extremes and monthly summary\u23ceThe globe recorded its fourth warmest January since record keeping began in 1880, according to NOAA's National"
+      },
+      {
+        "trigger": " decision",
+        "score": 46.75,
+        "context": ", to promote child participation in civil rights which include rights to information, expression and decision making.\u23ceThrough this partnership, children and adolescents are trained to be facilitators"
+      },
+      {
+        "trigger": " back",
+        "score": 45.0,
+        "context": " so it can be used for building materials. It\u2019s dusty, sweaty, back-breaking work \u2013 and can be extremely dangerous too. Recently, a mother"
+      },
+      {
+        "trigger": " treaty",
+        "score": 47.75,
+        "context": " Wendell Holmes's denial in Missouri v. Holland that the Tenth Amendment limits the treaty power, erroneous claims for presidential authority in the Curtiss-Wright case,"
+      }
+    ],
+    "promotes": [
+      "-<",
+      "\u2010",
+      "-\u200b",
+      "\u2011",
+      "-"
+    ],
+    "demotes": [
+      "st\u00e4nden",
+      "itados",
+      " BoxFit",
+      "\\{\\\\",
+      "ONS"
+    ]
+  },
+  {
+    "id": "24_16335_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.31325602531433105,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 43.5,
+        "context": ".\u23ceIt's not all that surprising that people would be more comfortable lying in a text message, but if you're conducting important business, you should"
+      },
+      {
+        "trigger": " German",
+        "score": 33.0,
+        "context": " Schmidt showed off a smart-phone feature that allows a user to take a picture of German text and have it quickly translated into English using optical character recognition software and"
+      },
+      {
+        "trigger": " in",
+        "score": 32.75,
+        "context": " fasting, vigils and prayer, and cleansing themselves by bathing.\u23ceThe earliest mention in an official document, after the crowning of William I, of the ceremony"
+      },
+      {
+        "trigger": " in",
+        "score": 34.5,
+        "context": "s Plan Comes Up Short for Conservation\u23ceSAN FRANCISCO\u2014 The Interior Department has put in place a 20-year plan for California\u2019s Serengeti \u2013"
+      },
+      {
+        "trigger": " in",
+        "score": 37.75,
+        "context": " as a course syllabus. Both documents must be made available either electronically via Blackboard or in hardcopy paper form to students on the first day of class.\u23ceA"
+      }
+    ],
+    "promotes": [
+      " WRITING",
+      "Writing",
+      " Writing",
+      "writing",
+      " writing"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      "PhysRev",
+      "LabelTagHelper",
+      "MigrationBuilder",
+      " \u0628\u0631\u0627\u0646\u064a\u0647"
+    ]
+  },
+  {
+    "id": "25_138_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.35961201786994934,
+    "top_activations": [
+      {
+        "trigger": " organic",
+        "score": 31.5,
+        "context": "<bos>What is organic farming?\u23ceOur definition of organic farming recognises the direct connection between our health and how the food we eat is produced. Artificial fertilisers are"
+      },
+      {
+        "trigger": " game",
+        "score": 33.5,
+        "context": " Oklahoma to Colorado to Mexico, moving between buffalo-hunting on the Plains to small game hunting in the mountains.\u23ceHopi: The Hopi, whose name"
+      },
+      {
+        "trigger": " this",
+        "score": 30.0,
+        "context": "drake\u2019 is semantically marked as masculineMore example sentences\u23ce- Clearly, all this is explainable in terms of our M-principle: to convey a marked"
+      },
+      {
+        "trigger": "related",
+        "score": 34.25,
+        "context": " children's weight outcomes in prior research.\u23ceThey examined associations between food-related parenting and adolescent weight in a cross-sectional analysis of data from two population"
+      },
+      {
+        "trigger": ",",
+        "score": 36.75,
+        "context": " \"Parents need to be aware that sports, which require a substantial amount of running, turning, and contact, can translate to injuries. Protecting children's feet"
+      }
+    ],
+    "promotes": [
+      "AccessorTable",
+      " beginnetje",
+      "IsContent",
+      " AssemblyTitle",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      " voting",
+      "Cooking",
+      " cooking",
+      " Printing",
+      "Trading"
+    ]
+  },
+  {
+    "id": "24_10047_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.36042752861976624,
+    "top_activations": [
+      {
+        "trigger": " particle",
+        "score": 37.25,
+        "context": ", a heaving beast that inhaled frequent shovelfuls of coal and exhaled warm, particle-filled air through upstairs vents. The ton of coal I bought each fall"
+      },
+      {
+        "trigger": " coal",
+        "score": 36.5,
+        "context": " the Tennessee Valley Authority will result in nearly 1 percent of the nation's coal-fired power capacity going offline by the end of 2018"
+      },
+      {
+        "trigger": " sugar",
+        "score": 36.5,
+        "context": " the disease.\u23ceIn contrast, there was a relationship between increased pancreatic cancer risk and higher intakes of sugar, candy, honey and jam. This suggests that sugary"
+      },
+      {
+        "trigger": " technology",
+        "score": 39.75,
+        "context": " anything, especially when that means pushing uphill against the slope of our culture's technology-assisted passivity?\u23ceA parent confronted with this situation will have discovered"
+      },
+      {
+        "trigger": " inquiry",
+        "score": 40.25,
+        "context": " frameworks enable teachers to explore concepts in depth through the use of hands-on, inquiry-based instructional strategies that cultivate critical thinking. These strategies promote enduring understandings that"
+      }
+    ],
+    "promotes": [
+      "TextHelper",
+      "\u21a9",
+      "ukone",
+      "AutoresizingMask",
+      "-"
+    ],
+    "demotes": [
+      " based",
+      " related",
+      " driven",
+      " induced",
+      " fuelled"
+    ]
+  },
+  {
+    "id": "24_13277_29",
+    "layer": 24,
+    "ctx_idx": 29,
+    "influence_score": 0.3783692717552185,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "25_14076_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.36282965540885925,
+    "top_activations": [
+      {
+        "trigger": "pay",
+        "score": 56.0,
+        "context": "<bos>Researchers at the University of Rochester and the Eastman Kodak Compay report in Nature they've created a nanocrystal that constantly emits light.\u23ceThe breakthrough"
+      },
+      {
+        "trigger": " over",
+        "score": 65.5,
+        "context": "<bos>News Flash! Our \u201cpeak\u201d for American fitness AND health was over 100 years ago, so let\u2019s learn from history and get to"
+      },
+      {
+        "trigger": " out",
+        "score": 57.5,
+        "context": "<bos>I hate it! I\u2019m always finding out that, while I think that I remember the password into this or that account, I am wrong again."
+      },
+      {
+        "trigger": " fold",
+        "score": 69.0,
+        "context": " School, in Seattle, who helped develop the system. This is achieved with two foldout cameras that sit above the display on either side, detecting and tracking motion"
+      },
+      {
+        "trigger": " code",
+        "score": 63.0,
+        "context": "base easily, or to completely replace portions of the codebase with functionally-equivalent code.\u23ce- database-layer code providing basic page storage and revision management\u23ce"
+      }
+    ],
+    "promotes": [
+      "book",
+      "head",
+      "shots",
+      "shot",
+      "space"
+    ],
+    "demotes": [
+      "sstream",
+      "marginHorizontal",
+      "alignSelf",
+      "onCancel",
+      "beforeSend"
+    ]
+  },
+  {
+    "id": "25_16302_29",
+    "layer": 25,
+    "ctx_idx": 29,
+    "influence_score": 0.38954755663871765,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ]
+  }
+]

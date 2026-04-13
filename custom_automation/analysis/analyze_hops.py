@@ -37,7 +37,7 @@ TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts/ground_truth_multihop.csv"
+DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts/ground_truth_capital.csv"
 DESCRIPTION_VARIANT = "v2"
 
 
@@ -237,6 +237,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         hop_type = row.get("hop_type", "").strip()
         notes = row.get("notes", "").strip()
 
+        prompt_text = row.get("prompt", "").strip()
+
         for variant in variants:
             graph_slug = f"{slug}-{DESCRIPTION_VARIANT}-{variant}"
             graph_path = TEST_GRAPHS_DIR / f"{graph_slug}.json"
@@ -264,11 +266,13 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             score = rank_to_score(correct_rank)
 
             hop_metrics = detect_intermediate_hop(graph, intermediate_concept)
+            all_supernodes = [name for name, _ in parse_supernodes(graph)]
 
             results.append({
                 "slug": slug,
                 "variant": variant,
                 "hop_type": hop_type,
+                "prompt_text": prompt_text,
                 "intermediate_concept": intermediate_concept,
                 "correct_answer": correct_answer,
                 "predicted": predicted,
@@ -277,6 +281,7 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 "top_k_rank": correct_rank,
                 "rank_score": round(score, 2),
                 "notes": notes,
+                "all_supernodes": all_supernodes,
                 **hop_metrics,
             })
 
@@ -288,9 +293,10 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     # Write CSV
     # ------------------------------------------------------------------
     csv_path = ARTIFACTS_DIR / "hop_analysis.csv"
-    fieldnames = list(results[0].keys())
+    _exclude = {"prompt_text", "all_supernodes"}
+    fieldnames = [k for k in results[0].keys() if k not in _exclude]
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(results)
     print(f"CSV -> {csv_path}")
@@ -386,6 +392,28 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 f.write(f"- Mean influence of hop features: {r['hop_mean_influence']:.4f}\n\n")
 
     print(f"Report -> {md_path}")
+
+    # ------------------------------------------------------------------
+    # Write correct-but-no-hop results file
+    # ------------------------------------------------------------------
+    results_dir = PACKAGE_DIR / "analysis" / "results"
+    results_dir.mkdir(parents=True, exist_ok=True)
+    correct_no_hop = [r for r in results if r["model_correct"] and not r["hop_found"]]
+    results_path = results_dir / "correct_no_hop.md"
+    with open(results_path, "w", encoding="utf-8") as f:
+        f.write("# Correct Prediction — Intermediate Hop Not Found\n\n")
+        f.write(f"Cases: {len(correct_no_hop)}\n\n")
+        for r in correct_no_hop:
+            f.write("---\n")
+            f.write(f"## {r['prompt_text']} — {r['slug']}\n\n")
+            f.write(f"**Predicted:** {r['predicted']} ({r['predicted_prob']:.1%})  \n")
+            f.write(f"**Correct answer:** {r['correct_answer']}  \n")
+            f.write(f"**Missing hop:** {r['intermediate_concept']}\n\n")
+            f.write("### Supernodes\n")
+            groups = [g for g in r["all_supernodes"] if not g.startswith("Emb:") and not g.startswith("Output:")]
+            f.write(", ".join(groups) if groups else "—")
+            f.write("\n\n")
+    print(f"Results -> {results_path}")
 
     # ------------------------------------------------------------------
     # Terminal summary

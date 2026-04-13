@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/sf-capital.json
+# Descriptions: 48, Groups: 16, Pinned: 35

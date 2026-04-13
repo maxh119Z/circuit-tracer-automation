@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/cedar-rapids-capital.json
+# Descriptions: 43, Groups: 13, Pinned: 34

@@ -1,0 +1,3410 @@
+[
+  {
+    "id": "0_4442_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3243326246738434,
+    "top_activations": [
+      {
+        "trigger": " optical",
+        "score": 9.0,
+        "context": " 0.77 \u03bcm to 1.65 \u03bcm after optical pumping by an intense, 0.5 ps pulse at 0."
+      },
+      {
+        "trigger": " Quantum",
+        "score": 8.38,
+        "context": "\u23ceAsking questions that lead to brilliant ideas is at the root of scientific discovery. Quantum leaps in science are made by this type of innovative thinking, but funding for"
+      },
+      {
+        "trigger": " Bose",
+        "score": 7.94,
+        "context": " a gas are outlined. Starting with Heisenberg's uncertainty principle, the formation of Bose-Einstein condensate (BEC) is explained as occurring when the interatomic spacing"
+      },
+      {
+        "trigger": " quantum",
+        "score": 9.31,
+        "context": " no ordinary words to describe them because they come from another world -- the world of quantum mechanics.\u23ceAlthough quantum rules are counter-intuitive, they underlie the macroscopic"
+      },
+      {
+        "trigger": " spin",
+        "score": 9.88,
+        "context": "\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle called the photon. Electromagnetic forces occur when electrically charged particles emit"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " phonon",
+      "\u23ce\u23ce",
+      "\u017byciorys",
+      "'"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "InputBorder",
+      "numerusform",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "generated_description": "Quantum/physics terms \u2014 activates on physics vocabulary (quantum, Bose, spin, optical, photon); signals quantum-mechanics or condensed-matter contexts."
+  },
+  {
+    "id": "0_3635_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.39237865805625916,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": "warm waters along the shore, particularly in the south, and cooler waters in the center\u2014develops.\u23ceOn August 2, it was clear that westerly"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " I miss the arcade version\u2019s rollerball).\u23ceAnyway, it turns out that Egyptian vending machine wasn\u2019t such a stretch after all. Ancient machines that"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " her family get?\u23ceBefore they throw, everyone chooses some of the scores so that if\u23ceone of their numbers comes up, they get the last slice of"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " workers murdered by the SS guards near Namering, Germany, and displayed here so that townspeople could view the work of their Nazi leaders. American soldiers of the"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " were surprised, confused, resistant. The violence in their communities has become so normalized that they literally could not believe that this does not happen everywhere, that this is"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u2018",
+      "<strong>",
+      "1",
+      "\u201c"
+    ],
+    "demotes": [
+      " that",
+      "that",
+      " r\u1eb1ng",
+      " bahwa",
+      " kwamba"
+    ],
+    "generated_description": "that (complementizer) \u2014 activates on the English word \"that\" when it introduces a subordinate clause (before verbs/clauses), e.g., \"that westerly\", \"that Egyptian\", \"that this is\""
+  },
+  {
+    "id": "0_9176_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.3737800121307373,
+    "top_activations": [
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " its \u201cbehavioristic\u201d neglect of inward experience.\u23ceThe enduring philosophical interest of behaviorism concerns this methodological challenge to the scientific bona fides of consciousness (on behalf"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " for health problems. However, cell phone use does not have to be a sedentary behavior as these devices are portable. It can occur while standing or during mild-"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": "Rice and Long examined the mating habits of the fruit fly. For males, this behavior entails \u201csinging\u201d and \u201cdancing\u201d by vibrating their wings together. As"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.12,
+        "context": " be combined to train dogs with scientifically sound methods using rewards.\u23ceClassical conditioning affects behavior by changing the underlying stimulus associated with a natural response, while operant conditioning"
+      },
+      {
+        "trigger": " behavior",
+        "score": 29.38,
+        "context": " features in the communication process of a sensory neuron that control distinct motor aspects of escape behavior \u201c\u201c firing rate threshold, peak firing time and spike count.\u23ce\u201c"
+      }
+    ],
+    "promotes": [
+      " prior",
+      " other",
+      " be",
+      " in",
+      " not"
+    ],
+    "demotes": [
+      " Shakspeare",
+      " Shaksp",
+      " Pliocene",
+      " C\u00e6sar",
+      " behaviour"
+    ],
+    "generated_description": "behavior \u2014 activates on the noun \u201cbehavior\u201d; signals discussion of actions/habits/responses (psychology, animal/conditioning, health contexts); matches American spelling."
+  },
+  {
+    "id": "0_1847_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38078588247299194,
+    "top_activations": [
+      {
+        "trigger": " dehydration",
+        "score": 14.38,
+        "context": " essential to any animal life. It regulates the water content of the body and avoids dehydration.\u23ceThe proper consumption of salt is beneficial to our immune and digestive systems"
+      },
+      {
+        "trigger": " nationalism",
+        "score": 15.19,
+        "context": " value of local customs and traditions, to the movements that would redraw the map of Europe and lead to calls for \"self-determination\" of nationalities, nationalism was"
+      },
+      {
+        "trigger": " pharmaceuticals",
+        "score": 14.88,
+        "context": " Unused prescription medications should not be flushed or washed down the drain because the residue from pharmaceuticals adversely affects fish and other aquatic species, according to a Penn State Extension water"
+      },
+      {
+        "trigger": " minerals",
+        "score": 14.62,
+        "context": "<bos>25 good health natural foods that provide all of your vitamins and minerals\u23ceHere are 25 basic good health natural foods to prioritize because they are the"
+      },
+      {
+        "trigger": " subsurface",
+        "score": 14.12,
+        "context": ".\u23ceMicrohole technology holds great promise for economically recovering a sizeable portion of the estimated remaining, bypassed shallow (less than 5,000 ft subsurface"
+      }
+    ],
+    "promotes": [
+      "\"];\r",
+      " '\\\\;'",
+      "')));",
+      "')):",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " Monfieur",
+      " purpo\u017fe",
+      " \u017ftate",
+      " \u017fmall",
+      " \u017feveral"
+    ],
+    "generated_description": "Topic noun \u2014 activates on domain/subject nouns (health, politics, science): dehydration; nationalism; pharmaceuticals; minerals; subsurface."
+  },
+  {
+    "id": "0_5287_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3433062732219696,
+    "top_activations": [
+      {
+        "trigger": " plants",
+        "score": 7.88,
+        "context": " reduce heating costs in buildings.\u23ceThe project will look at three experimental biomass power plants, one of which will be built by The University of Greenwich. The Greenwich"
+      },
+      {
+        "trigger": " distribution",
+        "score": 8.5,
+        "context": " about 2,235 kilowatts per year.\u23ceThe power distribution in Brazil can be classified as follows: Nuclear energy accounts for about 3"
+      },
+      {
+        "trigger": "plant",
+        "score": 8.19,
+        "context": " of the equipment and high operating costs resulting from full-attended operation, the powerplant was placed in ready reserve status in 1982. The plant"
+      },
+      {
+        "trigger": " plant",
+        "score": 9.0,
+        "context": "|Power Plant Threat in Yellowstone||The government blessed a new coal-fired power plant planned for central Montana that would pollute the air over Yellowstone and other clean"
+      },
+      {
+        "trigger": " plants",
+        "score": 8.81,
+        "context": " to about half of the global warming power of all U.S. coal power plants emissions. That is the same climate impact of a quarter billion cars.\u23ce"
+      }
+    ],
+    "promotes": [
+      " IOError",
+      "\u041f\u043e\u0440\u0442\u0430\u043b",
+      "rungsseite",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      "Portale"
+    ],
+    "demotes": [
+      "onViewCreated",
+      " contamos",
+      "\u05d5\u05d9\u05d5\u05ea",
+      "__(/*!",
+      "---|"
+    ],
+    "generated_description": "Power plant \u2014 activates on mentions of power plants/power distribution and related energy infrastructure (coal/biomass plants, emissions, generation capacity)."
+  },
+  {
+    "id": "0_3820_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.38777807354927063,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on the token \"the\" (word-before-noun contexts); correlates with pushing down/article tokens in output."
+  },
+  {
+    "id": "0_4442_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38642776012420654,
+    "top_activations": [
+      {
+        "trigger": " optical",
+        "score": 9.0,
+        "context": " 0.77 \u03bcm to 1.65 \u03bcm after optical pumping by an intense, 0.5 ps pulse at 0."
+      },
+      {
+        "trigger": " Quantum",
+        "score": 8.38,
+        "context": "\u23ceAsking questions that lead to brilliant ideas is at the root of scientific discovery. Quantum leaps in science are made by this type of innovative thinking, but funding for"
+      },
+      {
+        "trigger": " Bose",
+        "score": 7.94,
+        "context": " a gas are outlined. Starting with Heisenberg's uncertainty principle, the formation of Bose-Einstein condensate (BEC) is explained as occurring when the interatomic spacing"
+      },
+      {
+        "trigger": " quantum",
+        "score": 9.31,
+        "context": " no ordinary words to describe them because they come from another world -- the world of quantum mechanics.\u23ceAlthough quantum rules are counter-intuitive, they underlie the macroscopic"
+      },
+      {
+        "trigger": " spin",
+        "score": 9.88,
+        "context": "\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle called the photon. Electromagnetic forces occur when electrically charged particles emit"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " phonon",
+      "\u23ce\u23ce",
+      "\u017byciorys",
+      "'"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "InputBorder",
+      "numerusform",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "generated_description": "quantum-physics terms \u2014 activates on physics jargon: \u201cquantum\u201d, \u201cBose\u201d, \u201cspin\u201d, \u201coptical\u201d, photon/phonon-related vocabulary; signals quantum mechanics / condensed-matter contexts."
+  },
+  {
+    "id": "0_4229_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3605741262435913,
+    "top_activations": [
+      {
+        "trigger": " world",
+        "score": 7.22,
+        "context": " graphically, and verbally. Contains many ...show moreworked examples and problems using real world data. Can be used with any technology for graphing functions.\u23ceFrom the"
+      },
+      {
+        "trigger": " physics",
+        "score": 7.09,
+        "context": " 1)\u23ceMax Planck, who shook the world with his discovery of quantum physics, also offered a warning.\u23ce\u201cOne must be careful,\u201d he said"
+      },
+      {
+        "trigger": " fields",
+        "score": 6.66,
+        "context": " providing a possible explanation for anomalies observed in certain 3D materials in high magnetic fields.\u23cePhysics2, 24 (2009) \u2013"
+      },
+      {
+        "trigger": " field",
+        "score": 7.34,
+        "context": " 2012)|\u23ceIn vector calculus, the gradient of a scalar field is a vector field which points in the direction of the greatest rate of increase"
+      },
+      {
+        "trigger": " world",
+        "score": 7.59,
+        "context": " should of course say what the conjecture states, and explain its importance in the real world. This, however, is easier said than done, as those of us"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "'",
+      "\u23ce\u23ce",
+      "\u2019",
+      "<bos>"
+    ],
+    "demotes": [
+      "AutoScaleMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " betweenstory",
+      " ArrayAdapter",
+      "moiselle"
+    ],
+    "generated_description": "Field/Domain noun \u2014 activates on domain words like \"field\"/\"fields\", \"physics\", \"world\"; signals topical/physical-domain concepts or references to a domain of study."
+  },
+  {
+    "id": "0_2848_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3516435921192169,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say \"of\" \u2192 noun phrase \u2014 activates on the preposition \"of\" that introduces origin/possession/location; fires before proper nouns or noun phrases (e.g., \"of St George's\", \"of Tennessee\")."
+  },
+  {
+    "id": "0_7344_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.37459203600883484,
+    "top_activations": [
+      {
+        "trigger": "News",
+        "score": 13.5,
+        "context": "<bos>News>Archaeologists tour Luke's 5,000 year old site\u23ceRobert Wegener, Statistical Research Inc. principal investigator, briefs visitors"
+      },
+      {
+        "trigger": "Congress",
+        "score": 13.62,
+        "context": "<bos>Congress is currently deciding whether or not to minimize programs that help poor people buy food. There are public health experts, however, that say food stamp cuts could"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 8, 2013\u23ce- Centers for Disease Control and Prevention\u23ce- American Association for the Study of Liver Diseases\u23ce- Hepatitis Foundation"
+      },
+      {
+        "trigger": "Outdoor",
+        "score": 12.88,
+        "context": "<bos>Outdoor play time can enhance children's sleep\u23ceUpdated On: Jul 26 2013 03:03:58"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 18, 2012\u23ceCould 3D printing be a climate revolution?\u23ceAdditive manufacturing has five key attributes that could help"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " autorytatywna",
+      ":\u2728",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "<bos>",
+      "The",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<strong>"
+    ],
+    "generated_description": "Section header token \u2014 activates on short article/category headers at doc start (e.g., \"News\", \"Congress\", \"December\", \"Outdoor\"); often precedes newline and headline."
+  },
+  {
+    "id": "0_4766_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3961503505706787,
+    "top_activations": [
+      {
+        "trigger": " holy",
+        "score": 15.88,
+        "context": " Catholic churches and some Anglican churches as well.\u23cePeople dip their fingers in the holy water and make the sign of the cross when entering the church. This is"
+      },
+      {
+        "trigger": " faith",
+        "score": 15.88,
+        "context": " do and understand\u201d, to the ignominy of the Golden Calf.\u23ceClearly, wondrous events are no guarantee for long term faith. Indeed, much of Jewish"
+      },
+      {
+        "trigger": " holy",
+        "score": 15.75,
+        "context": " here her own dear country,\u23ceHere our queen was born, in sacred, holy Kashi.\u23ceA little later Begam Urdu speaks on her own behalf before"
+      },
+      {
+        "trigger": " holy",
+        "score": 16.12,
+        "context": "9 The chosen people was constituted by God as \"a kingdom of priests and a holy nation.\"6 But within the people of Israel, God chose one of the"
+      },
+      {
+        "trigger": " faith",
+        "score": 15.62,
+        "context": "The main goal of the Jesuits was to ____________, ____________, and __________ the Catholic faith.\u23ceGreek and Roman\u23ceOne of the dominant features of Renaissance though was"
+      }
+    ],
+    "promotes": [
+      " \\",
+      "ggio",
+      "\u0012",
+      " I",
+      " kasarigan"
+    ],
+    "demotes": [
+      " it\u017felf",
+      " \u017fche",
+      "LayoutStyle",
+      " rai\u017f",
+      " \u017ftate"
+    ],
+    "generated_description": "religious/sacred concepts \u2014 activates on words like \"holy\", \"faith\", \"sacred\"; fires for mentions of religions/groups (Catholic, Jewish, holy nation, sacred places)"
+  },
+  {
+    "id": "0_3255_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.35464832186698914,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": ", many people are unaware of the history of the Transportation Security Administration (TSA) and the reasons for its creation.\u23ceThe truth is that TSA has been,"
+      },
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": "; Colletotrichum fragariae, C. gloeosporioides and Fusarium oxysporum, which have large affects on agriculture crops.\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23cetrees that can reach heights of over 114 meters (375 ft) and live for more than 3,000 years!"
+      },
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": "\u23ceAbout Website says: This page gives information about ozone at Halley, Rothera and Vernadsky/Faraday stations. Openness Not open. Permission required"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23ceESA\u2019s follow-up instruments aboard ERS-2, Envisat and CryoSat have ensured the continuity of radar altimetry measurements. ESA"
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq",
+      " Monfieur"
+    ],
+    "demotes": [
+      " and",
+      " ",
+      " (",
+      " or",
+      " in"
+    ],
+    "generated_description": "say and (list continuation) \u2014 activates on the conjunction \"and\" linking list items or clauses; signals continuation/addition of another item or phrase."
+  },
+  {
+    "id": "0_2848_15",
+    "layer": 0,
+    "ctx_idx": 15,
+    "influence_score": 0.3192288875579834,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of \u2014 activates on the preposition \"of\", especially linking names/places/institutions (e.g., \"of Tennessee\", \"of San Miniato\", \"of St George's\")"
+  },
+  {
+    "id": "1_5343_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3884464204311371,
+    "top_activations": [
+      {
+        "trigger": " uncertainty",
+        "score": 13.31,
+        "context": " the 1S-2S transition frequency in hydrogen has been measured with an uncertainty of 1.4 parts in 1014 ,\u23cethis"
+      },
+      {
+        "trigger": " wave",
+        "score": 14.69,
+        "context": "ing in the Alps, Schr\u00f6dinger formulated a wave-equation that accurately gave the energy levels of atoms. It formed the basis of the work that would earn him the"
+      },
+      {
+        "trigger": " wave",
+        "score": 14.44,
+        "context": " are of the same sign) or destructive (opposite signs). The phases of a wave function can be represented as a simple sine curve, y=sinx, in"
+      },
+      {
+        "trigger": " momentum",
+        "score": 13.81,
+        "context": " the product of its mass times its velocity. It is a vector quantity. The momentum of a system is the vector sum of the momenta of the objects which make"
+      },
+      {
+        "trigger": " energy",
+        "score": 18.25,
+        "context": " jumping from the nth orbit to the mth emitted radiation at frequency equal to the energy difference of the orbits divided by h. Presumably, it began radiating as soon"
+      }
+    ],
+    "promotes": [
+      "\u5e16\u6700\u540e\u7531",
+      "XmlEnum",
+      " TextAppearance",
+      "TemporalType",
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628"
+    ],
+    "demotes": [
+      "colazione",
+      "TypedDataSet",
+      " nakalista",
+      "<bos>",
+      " LoginComponent"
+    ],
+    "generated_description": "Quantum observable \u2014 activates on physics quantity words: energy, momentum, wave/wavefunction, uncertainty (QM-related nouns signaling observables/concepts)."
+  },
+  {
+    "id": "1_5325_13",
+    "layer": 1,
+    "ctx_idx": 13,
+    "influence_score": 0.3785797953605652,
+    "top_activations": [
+      {
+        "trigger": " matter",
+        "score": 25.75,
+        "context": ". Environment is everything that isn\u2019t genetics. It includes soil type, organic matter, fertilizers, diseases, planting date, population and row width.\u23ceWe"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.25,
+        "context": " explains his hypothesis in the above TED talk that it is surely worth viewing. For a greater philosophical inquiry inspired by his ideas, is our matter all that matters?"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.0,
+        "context": " lively manner. That we often derive sorrow from the sorrow of others, is a matter of fact too obvious to require any instances to prove it; for this sentiment"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.5,
+        "context": "\u23ceThe Lifestock Section contains scientific information about living organism that feeds on organic matter. Because of this feeding habit, all animals can be called \"heterotro"
+      },
+      {
+        "trigger": " matter",
+        "score": 25.25,
+        "context": "ting nations stop pumping carbon into the atmosphere, no single country\u2019s efforts will matter much. That is why, despite the many unmet deadlines, petty squab"
+      }
+    ],
+    "promotes": [
+      " artikkelen",
+      "Geplaatst",
+      "\u03c1\u03bf\u03c5\u03c2",
+      "tagHelperRunner",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " matter",
+      "matter",
+      " Matter",
+      " MATTER",
+      "Matter"
+    ],
+    "generated_description": "matter \u2014 activates on the word \"matter\" across senses (physical substance, importance, abstract phrase); tends to suppress/output-demote literal \"matter\" tokens."
+  },
+  {
+    "id": "2_1809_13",
+    "layer": 2,
+    "ctx_idx": 13,
+    "influence_score": 0.3815029263496399,
+    "top_activations": [
+      {
+        "trigger": " matter",
+        "score": 26.75,
+        "context": " being tossed out as if they were just another foam cup or dirty diaper, they become beautiful soil within a matter of weeks or months. And while few city apartments"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.5,
+        "context": " the Holocaust. A Jewish friend of hers said he perfectly understood her sensitivity in the matter; in fact, he had the same sense of repetitiousness and fatigue"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.5,
+        "context": " \u201cIt chills the blood.\u201d\u23ceThe chill creeps in thanks in part to the matter-of-fact, often understated prose that Northup and his amane"
+      },
+      {
+        "trigger": " matter",
+        "score": 26.25,
+        "context": " 1623\u2013'5, but his relationship to John Madison is matter of doubt. John's son, named also John, was father of"
+      },
+      {
+        "trigger": " matter",
+        "score": 27.25,
+        "context": " does seem, however, that another stopgap measure may be forthcoming in a matter of weeks. It was instructive what President Obama said after this last meeting before"
+      }
+    ],
+    "promotes": [
+      "\ue315",
+      "+:+",
+      " snippetHide",
+      " intptr",
+      " numberWith"
+    ],
+    "demotes": [
+      " matter",
+      "matter",
+      " Matter",
+      "Matter",
+      " MATTER"
+    ],
+    "generated_description": "matter \u2014 activates on the token \"matter\" (incl. \"in a matter of\", \"matter-of-fact\", noun uses); marks occurrences of that word across contexts."
+  },
+  {
+    "id": "2_1963_15",
+    "layer": 2,
+    "ctx_idx": 15,
+    "influence_score": 0.38292568922042847,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 12.12,
+        "context": "-served in society, posing a major health risk not only to themselves but also to the broader community into which they are eventually released.\u23ceHampden County"
+      },
+      {
+        "trigger": " for",
+        "score": 11.94,
+        "context": " Wesleyan become a pre-eminent institution. He chose much of the first material equipment for classrooms and for laboratories. In 1849 his textbook, An"
+      },
+      {
+        "trigger": " to",
+        "score": 11.06,
+        "context": " of the State to manage the site, notably due to the deterioration of law and to the presence of drug traffickers.\u23ceThe request by Honduras comes in recognition"
+      },
+      {
+        "trigger": " with",
+        "score": 11.69,
+        "context": "\u23ceWhat is the prognosis?For many children, autism symptoms improve with treatment and with age. Some children with autism grow up to lead normal or near-normal"
+      },
+      {
+        "trigger": " about",
+        "score": 11.06,
+        "context": " worried about your body's development, about what causes breast soreness, and even about cancer.\u23ceIf you're a girl, you may have noticed a"
+      }
+    ],
+    "promotes": [
+      "VersionUID",
+      "oa\u030dt",
+      "WriteTagHelper",
+      "HasBeenSet",
+      "WithMany"
+    ],
+    "demotes": [
+      "anmoins",
+      " mergeFrom",
+      "\u4f8b\u53e5",
+      "UrlResolution",
+      "\u51fa\u7248\u5e74"
+    ],
+    "generated_description": "say preposition \u2014 activates on common short prepositions introducing complements (to, for, with, about); signals upcoming noun/phrase rather than content token."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.39738187193870544,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "Expletive \"It\" \u2014 activates on sentence-initial/dummy \"It\" (e.g., \"It is well known...\", \"It was...\"); often fires at introductory tokens like opening parenthesis too."
+  },
+  {
+    "id": "0_11375_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.367817223072052,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "copula \"is\" \u2014 activates on the linking verb \"is\" in present-tense declarative descriptions and factual statements; signals simple predication."
+  },
+  {
+    "id": "6_10872_2",
+    "layer": 6,
+    "ctx_idx": 2,
+    "influence_score": 0.39301684498786926,
+    "top_activations": [
+      {
+        "trigger": " relativity",
+        "score": 14.12,
+        "context": " us brightness in the dark. We know Albert Einstein for being the discoverer of relativity. We admire Hawking for his knowledge of black holes. All of them are"
+      },
+      {
+        "trigger": " relativity",
+        "score": 15.5,
+        "context": "), and the most general formulation of the Lorentz transformation from special relativity.\u23ceGeneral relativity also makes use of tensors, which are a generalization of the sorts of objects"
+      },
+      {
+        "trigger": " gravity",
+        "score": 15.12,
+        "context": " centuries, physicists have made their living by illuminating the secrets of our universe, from gravity to electricity to black holes. But among the search for Higgs bosons and the"
+      },
+      {
+        "trigger": " light",
+        "score": 13.38,
+        "context": "hypervelocity propulsion drive' for accelerating spacecraft to a good fraction of the speed of light. The idea is that the repulsion allows the relativistic particle to deliver a specific"
+      },
+      {
+        "trigger": " Einstein",
+        "score": 15.62,
+        "context": " Earth. They're using the observations to test Albert Einstein's theory of gravity, and to measure the structure of the Moon's interior.\u23ceBut"
+      }
+    ],
+    "promotes": [
+      "Disliked",
+      " Lorde",
+      "AutoScaleMode",
+      " SSD",
+      " cu\u00e1n"
+    ],
+    "demotes": [
+      "<bos>",
+      "webElementXpaths",
+      "enderror",
+      "GeoNames",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430"
+    ],
+    "generated_description": "core physics concept \u2014 activates on tokens naming fundamental physics topics or notable physicists (relativity, gravity, light, Einstein)."
+  },
+  {
+    "id": "4_1897_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3556440770626068,
+    "top_activations": [
+      {
+        "trigger": "anglement",
+        "score": 19.12,
+        "context": "<bos>Entanglement of Large Whales\u23ceA new area of work for the IWC is to assist countries and properly trained individuals in responding to large whales that have become"
+      },
+      {
+        "trigger": " function",
+        "score": 23.12,
+        "context": " physical chemistry, Electron Phases describe the sign (positive or negative) of the wave function, which is a solution to the Schr\u00f6dinger equation. When two wave functions describing"
+      },
+      {
+        "trigger": "quantum",
+        "score": 19.62,
+        "context": " significantly different than when QM effects kick in, whereby we get the fractional charge/quantum hall effect. It is interesting to note that we always think that to get"
+      },
+      {
+        "trigger": " quantum",
+        "score": 25.5,
+        "context": " there to explain how a quantum eraser works in general: You send particles through two slits so that they can interfere, but individual photons bounce off them near the slits"
+      },
+      {
+        "trigger": "Quantum",
+        "score": 19.75,
+        "context": " area would correspond to having a single detector closer to one of the slits.\u23ceQuantum mechanics tells us (or at least quantum mechanicists tell us, or write"
+      }
+    ],
+    "promotes": [
+      "NotFoundError",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " estekak",
+      "<bos>",
+      " lenker"
+    ],
+    "demotes": [
+      "FXMLLoader",
+      "WaitGroup",
+      "Portale",
+      " NACIONAL",
+      "\u0627\u062f\u06af\u06cc"
+    ],
+    "generated_description": "Quantum physics term \u2014 activates on tokens naming quantum concepts (quantum, entanglement, wave function, quantum eraser); signals discussion of quantum mechanics topics."
+  },
+  {
+    "id": "4_1264_15",
+    "layer": 4,
+    "ctx_idx": 15,
+    "influence_score": 0.3942774534225464,
+    "top_activations": [
+      {
+        "trigger": "orum",
+        "score": 18.38,
+        "context": " rule themselves with a leader called a \"magistratus\u23ceJudaeorum.\" The Jews enjoyed economic\u23ceprosperity and peaceful relations with the\u23cenon"
+      },
+      {
+        "trigger": " of",
+        "score": 16.12,
+        "context": ", Don Juan, priest, touring pianist, inventor of the solo piano recital and of the master class, and teacher of three generations of golden-age pianists"
+      },
+      {
+        "trigger": " of",
+        "score": 16.88,
+        "context": " prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and"
+      },
+      {
+        "trigger": " of",
+        "score": 16.0,
+        "context": " the independent Armenian republic. It remained the capital during the periods of Soviet rule and of renewed independence.\u23ce\u00a9 TSM/Bill Wassman, 199"
+      },
+      {
+        "trigger": " of",
+        "score": 17.25,
+        "context": " Declaration makes clear that its argument involves an appeal to \u201cthe laws of nature and of nature\u2019s God.\u201d\u23ceContemporary secularists will observe that this God is"
+      }
+    ],
+    "promotes": [
+      "glDelete",
+      "Nuorodos",
+      "steamcommunity",
+      " ISNI",
+      "\ufeff/**"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      " gynhyrchwyd",
+      "+#+#",
+      "PerformLayout",
+      "RegistryLite"
+    ],
+    "generated_description": "say \"of\" \u2014 preposition trigger; activates on genitive/possession or noun-phrase links (\"of\", \"thereof\", \"of the\") before content nouns."
+  },
+  {
+    "id": "17_16222_15",
+    "layer": 17,
+    "ctx_idx": 15,
+    "influence_score": 0.3595944344997406,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 37.0,
+        "context": " restriction provided that it is not used to misrepresent our agency nor used to suggest we endorse any private organization, product, or service.\u23ceNIH Radio is a"
+      },
+      {
+        "trigger": " and",
+        "score": 47.25,
+        "context": " will apply technological knowledge and skills to design, construct, use, and evaluate products and systems to satisfy human and environmental needs.\u23ceKey idea: Engineering design is"
+      },
+      {
+        "trigger": " and",
+        "score": 36.0,
+        "context": " forms of community. Hence in distributive justice the mean is observed, not according to equality between thing and thing, but according to proportion between things and persons: in"
+      },
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " 2013. GDP refers to the total market value of all goods and services that are produced within a country per year. It is an important indicator"
+      },
+      {
+        "trigger": " and",
+        "score": 47.25,
+        "context": "\u23ceAs the nation\u2019s largest landlord, fleet operator, and purchaser of goods and services, the federal government has both the opportunity and the responsibility to lead by"
+      }
+    ],
+    "promotes": [
+      "__\":\r",
+      " \u017fche",
+      "__':\r",
+      "MethodManager",
+      "StoryboardSegue"
+    ],
+    "demotes": [
+      " product",
+      "Product",
+      " products",
+      "Products",
+      " Product"
+    ],
+    "generated_description": "\"and\" (coordinating conjunction) \u2014 activates on the token \"and\" joining nouns/phrases; signals coordination (e.g., \"goods and services\", \"thing and thing\", lists/paired items."
+  },
+  {
+    "id": "17_14144_15",
+    "layer": 17,
+    "ctx_idx": 15,
+    "influence_score": 0.33731937408447266,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 64.0,
+        "context": " questions.\u23ceUse the user input box to modify the speed of the spaceship; use values between 0 and 97.4 % the speed of light"
+      },
+      {
+        "trigger": " of",
+        "score": 57.0,
+        "context": " for mass can never travel at the speed of light because of Einstein's theory of relativity. As a consequence of this theory, as a objects velocity increases its"
+      },
+      {
+        "trigger": " into",
+        "score": 55.0,
+        "context": " mass in a bit of matter, say the hydrogen in a glowing star, into pure energy, you\u2019d get an enormous amount of it. A kilogram of"
+      },
+      {
+        "trigger": " =",
+        "score": 56.5,
+        "context": "(9.1E-28 grams) times the speed of light squared (E = m c2) is\u23ce8.12E-0"
+      },
+      {
+        "trigger": " than",
+        "score": 46.25,
+        "context": " Italian physicists who announced two months ago that they had detected particles called neutrinos traveling faster than light now say they've done it again \u2014 and using an improved experimental"
+      }
+    ],
+    "promotes": [
+      " emite",
+      " emission",
+      "\u03b3",
+      "leuth",
+      " \u03b3"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "AndroidJUnit",
+      " JpaRepository",
+      "AccessorTable",
+      " \u0635\u0648\u062a\u064a\u0647"
+    ],
+    "generated_description": "say relation connector \u2014 activates on prepositions/equality tokens (of, into, =, than); marks comparisons, transformations, or quantity relations in physics/math text"
+  },
+  {
+    "id": "5_5232_15",
+    "layer": 5,
+    "ctx_idx": 15,
+    "influence_score": 0.39173629879951477,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 19.62,
+        "context": ".\u23cealso aims to encourage learners to develop their ability to communicate their reasoning and to frame and ask questions. This task requires learners to make sense of their own"
+      },
+      {
+        "trigger": " to",
+        "score": 18.5,
+        "context": " and develop the design of a system, component or process to meet specified needs and to contribute to the assessment of the technical performance of a mechanical system.\u23ceCompet"
+      },
+      {
+        "trigger": " to",
+        "score": 19.12,
+        "context": ", effective early warning systems need a people-centred approach tailored to local conditions and to involve a wide range of stakeholders.\u23ceBest practice systems have strong linkages and"
+      },
+      {
+        "trigger": " to",
+        "score": 22.25,
+        "context": "5, Oceana has worked to draw attention and recognition to this bank, and to bring its spectacular seamount ranges into the network of marine protected areas.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 19.75,
+        "context": " emperor finally consented in 1714 to the treaties of Rastatt and of Baden, which complemented the general settlement (see Utrecht, Peace of). With"
+      }
+    ],
+    "promotes": [
+      "complexContent",
+      "lapsingToolbar",
+      "th\u00e2u",
+      "QMetaType",
+      "windowFixed"
+    ],
+    "demotes": [
+      " it\u017felf",
+      "zegor",
+      " i\u017ft",
+      "Portail",
+      " kring"
+    ],
+    "generated_description": "say infinitive \"to\" \u2014 activates on the particle \"to\" introducing an infinitive; signals an upcoming verb/action phrase (e.g., to encourage, to meet, to involve, to draw)"
+  },
+  {
+    "id": "18_3457_15",
+    "layer": 18,
+    "ctx_idx": 15,
+    "influence_score": 0.3306240737438202,
+    "top_activations": [
+      {
+        "trigger": " whose",
+        "score": 42.5,
+        "context": " gamma rays are other DNA mutagens. These are forms of high-energy radiation whose energy level is used as a catalyst for conformation changes.\u23ceTobacco and pesticides"
+      },
+      {
+        "trigger": " emit",
+        "score": 52.5,
+        "context": "\u23ce- How does quantum theory explain the fact that atoms emit and\u23ceabsorb light of only certain discrete wavelengths?\u23ce- Describe two ways a molecule can emit radiation"
+      },
+      {
+        "trigger": ",",
+        "score": 42.0,
+        "context": " matter particle.\u23ceIn some models, dark matter particles may collide and annihilate, just as ordinary matter and antimatter do. If these models are correct,"
+      },
+      {
+        "trigger": " of",
+        "score": 51.5,
+        "context": " resulting lighter nuclei is less than the original heavy nucleus. The missing mass is converted to energy, mostly in the form of heat.\u23ceUranium-23"
+      },
+      {
+        "trigger": " of",
+        "score": 71.0,
+        "context": " to fall down to a lower orbital, it must get rid of energy, often in the form of radiation. When this occurs in a comet this excess energy can"
+      }
+    ],
+    "promotes": [
+      " heat",
+      " ENERGY",
+      "energy",
+      " energy",
+      " mad"
+    ],
+    "demotes": [
+      "Port\u00e1ly",
+      "Personendaten",
+      "\u00fcyada",
+      "#+#",
+      "findpost"
+    ],
+    "generated_description": "energy emission \u2014 activates on phrases about giving off or converting energy (emit/emit light, radiation, heat, \u201cof\u201d/\u201cwhose\u201d in energy-release contexts)"
+  },
+  {
+    "id": "4_5314_15",
+    "layer": 4,
+    "ctx_idx": 15,
+    "influence_score": 0.34657275676727295,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 25.5,
+        "context": " are laughing with the gods at a finite metaphor\u2019s cuckoo relationship to wealth, to love, and to life (not to say money, sex, and death"
+      },
+      {
+        "trigger": " for",
+        "score": 18.5,
+        "context": " that that is an absolutely disgusting combination. Regardless of my appreciation for the food, for a long time, I did not know much about it. Sure, it"
+      },
+      {
+        "trigger": " by",
+        "score": 28.5,
+        "context": ", presses to the snow line of the possible, and every form of life, of instinct, thought and action is fixed and determined by conditions, by countless antecedent"
+      },
+      {
+        "trigger": " to",
+        "score": 17.75,
+        "context": " also be serious enough to cause great disruption to the person\u2019s family and sometimes to society.\u23ceThese disorders can affect thought, emotion, interpersonal relationships and impulse"
+      },
+      {
+        "trigger": " of",
+        "score": 18.5,
+        "context": " instruments. It was used as an accompaniment to songs of cheerfulness as well as of praise to God (Gen. 31:27; 1"
+      }
+    ],
+    "promotes": [
+      " de",
+      " di",
+      " or",
+      " (",
+      " un"
+    ],
+    "demotes": [
+      " doubtnut",
+      "adaptiveStyles",
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      "^(@)",
+      "oredCriteria"
+    ],
+    "generated_description": "say relational preposition \u2014 activates on tokens like \"to\", \"for\", \"by\", \"of\"; marks relation/argument introducers before noun phrases or clauses."
+  },
+  {
+    "id": "3_4855_15",
+    "layer": 3,
+    "ctx_idx": 15,
+    "influence_score": 0.3992159366607666,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 18.0,
+        "context": ". All rights reserved. Reproduction by any means, physical or electronic, in part or in full, without the express permission of the authors, is strictly prohibited."
+      },
+      {
+        "trigger": " between",
+        "score": 17.12,
+        "context": " finger.\u23ceIf you want to copy and paste between editor buffers (but not between instances of vim), or if you want to maintain multiple \"clipboards\""
+      },
+      {
+        "trigger": " in",
+        "score": 16.25,
+        "context": " just... there. You can access your stuff from anywhere\u2014on the web, in your home, at the office, while running errands and from all of your"
+      },
+      {
+        "trigger": " with",
+        "score": 15.12,
+        "context": ".\u23ceRampart Hydro recovers and controls water in one of two ways, either with:\u23ce- Vacuum equipment or\u23ce- Gravity-based retention streams and pools"
+      },
+      {
+        "trigger": " to",
+        "score": 15.75,
+        "context": " long-term sustainability of the bushmeat harvest - both to protect threatened biodiversity and to secure the trade\u2019s social and economic values.\u23ceThe Bushmeat Research"
+      }
+    ],
+    "promotes": [
+      "webElementXpaths",
+      ")]=",
+      " it\u017felf",
+      " them\u017felves",
+      "<bos>"
+    ],
+    "demotes": [
+      " TestBed",
+      " utafitiHapana",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " makeStyles",
+      "dom"
+    ],
+    "generated_description": "Short prepositions \u2014 activates on small relation words (in, between, with, to, etc.); marks tokens that introduce locations/relations before noun phrases."
+  },
+  {
+    "id": "0_13172_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36153343319892883,
+    "top_activations": [
+      {
+        "trigger": " Mechanics",
+        "score": 8.81,
+        "context": "Key words: Electron, Physical Laws, Cosmology, Particles, Space, Quantum Mechanics.\u23ceThe apparent inconsistencies between the point particle theory and the observed wave behavior"
+      },
+      {
+        "trigger": " consumption",
+        "score": 9.19,
+        "context": ", the consumption of power among Brazilians has increased significantly. Today per capita power consumption among Brazilians is about 2,235 kilowatts per"
+      },
+      {
+        "trigger": " School",
+        "score": 9.19,
+        "context": "-Chatham Middle School, Georgia\u23ceTrina Knox, Hernderson Middle School, Georgia\u23ceKay Emde, Heritage Hall, Oklahoma\u23ceCharles Randazzo"
+      },
+      {
+        "trigger": " definition",
+        "score": 10.69,
+        "context": " vectors will lead to new and improved standards for visual fidelity.\u23ceOur current high definition world is built around the pixel. This is true for our resolution standards such"
+      },
+      {
+        "trigger": "profile",
+        "score": 12.25,
+        "context": " neutral campuses.\u23ceYet borders between society and academia are dissolving. Many high-profile universities across the world are reaching out past campus boundaries to form ambitious partnerships with"
+      }
+    ],
+    "promotes": [
+      "Javadoc",
+      " Agamemnon",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "OGND",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " et",
+      " ",
+      "\u043d\u043e\u043b\u043e\u0433\u0438",
+      " U",
+      " \u200b\u200b"
+    ],
+    "generated_description": "Topic noun \u2014 activates on content nouns naming subjects/fields or headings (Mechanics, consumption, School, definition, profile)."
+  },
+  {
+    "id": "13_1500_15",
+    "layer": 13,
+    "ctx_idx": 15,
+    "influence_score": 0.33981776237487793,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 25.75,
+        "context": " improving their service to citizens, and foster greater participation by under-represented groups and by citizens generally in the political process.\u23ceIRI sponsors public opinion research in many"
+      },
+      {
+        "trigger": " from",
+        "score": 26.25,
+        "context": " zooplankton. The study was based on samples from the Western Scheldt estuary and from the Belgian part of the North Sea. Everything caught in a net with a"
+      },
+      {
+        "trigger": " by",
+        "score": 26.25,
+        "context": " as the catacombs. These were primarily subterranean burial sites, used by Jews and by Christians during the period of the Roman Empire from about the 1st century"
+      },
+      {
+        "trigger": " from",
+        "score": 26.75,
+        "context": " becomes available.\u23ceThe agriculture sector includes on-farm GHG emissions from animals and from crop management. On-farm sources include GHGs from animal wastes, energy"
+      },
+      {
+        "trigger": " in",
+        "score": 26.25,
+        "context": ", and you\u2019ll find shelves of books on courtship and marriage in history and in literature, and even more books about sex. But scholarly books about love?"
+      }
+    ],
+    "promotes": [
+      "thenes",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "Bibliographie",
+      "=$?",
+      " snippetHide"
+    ],
+    "demotes": [
+      "contentLoaded",
+      " intptr",
+      "withstanding",
+      "RuleContext",
+      "styleType"
+    ],
+    "generated_description": "say source preposition \u2014 activates on prepositions like \"by\", \"from\", \"in\" that introduce sources/agents or parallel items (e.g., \"by X and by Y\", \"from A and from B\")."
+  },
+  {
+    "id": "14_13147_15",
+    "layer": 14,
+    "ctx_idx": 15,
+    "influence_score": 0.38434281945228577,
+    "top_activations": [
+      {
+        "trigger": " on",
+        "score": 28.25,
+        "context": " firewood stored indoors. House centipedes feed on small insects, insect larvae, and on spiders. Thus they are beneficial, though most homeowners take a different point-"
+      },
+      {
+        "trigger": " different",
+        "score": 30.25,
+        "context": "\u23ceThere are a few types of mining programs available, each with different focuses or different levels of training. These include:\u23ce- Mining Techniques. Mining techniques programs"
+      },
+      {
+        "trigger": " by",
+        "score": 25.75,
+        "context": " when the opening to the appendix becomes obstructed, or blocked, usually by stool or by swollen lymph tissue. In older people, cancer can sometimes cause the obstruction."
+      },
+      {
+        "trigger": " in",
+        "score": 30.0,
+        "context": " form than in others. Its importance is particularly great in China, Japan, and in Arabia (see Islamic art).\u23ceIn Japan, shodo is \"the"
+      },
+      {
+        "trigger": " in",
+        "score": 26.75,
+        "context": " medium, these paintings still retain a painterly quality in their subtle brushwork and in the ragged edges of the forms.\u23ceIn Rothko's oeuvre color"
+      }
+    ],
+    "promotes": [
+      "uvo",
+      "Abitanti",
+      "cals",
+      "asam",
+      "obel"
+    ],
+    "demotes": [
+      "ItemBackground",
+      "IndentedString",
+      " CreateTagHelper",
+      "JAKARTA",
+      "ControllerAdvice"
+    ],
+    "generated_description": "common function words \u2014 activates on short high-frequency words (prepositions/articles/adjectives) like in, on, by, different; signals structural/connective tokens."
+  },
+  {
+    "id": "19_12881_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.38006603717803955,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 51.0,
+        "context": " multiple scales, looking at different resolutions of time, space, and even different levels of organism classification, like phylogenetic or taxonomic attributes. Biodiversity patterns can be explained by"
+      },
+      {
+        "trigger": " political",
+        "score": 58.5,
+        "context": "You can log in using Facebook.)\u23ceDefinition of PHYLE\u23ce: the largest political subdivision among the ancient Athenians\u23ceOrigin of PHYLE\u23ceGreek phyl\u0113"
+      },
+      {
+        "trigger": " are",
+        "score": 59.0,
+        "context": " six boroughs are further divided into 36 quartiers (\"neighbourhoods\"), which are numbered instead of named.\u23ceUntil October 31, 20"
+      },
+      {
+        "trigger": " other",
+        "score": 55.5,
+        "context": ", who has coined the term (note the inspiration in biological analogy to cells or other living objects).\u23ceThere are following ways to approach the task:\u23ce-"
+      },
+      {
+        "trigger": " other",
+        "score": 71.5,
+        "context": " | World psychology |\u23ceAn economy is the realized economic system of a country or other area, the human, capital and land resources, and the economic agents that"
+      }
+    ],
+    "promotes": [
+      "Unit",
+      " Unit",
+      " units",
+      "unit",
+      " unit"
+    ],
+    "demotes": [
+      "MessageTagHelper",
+      "ReusableCell",
+      "IVEREF",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "InjectAttribute"
+    ],
+    "generated_description": "say unit \u2014 activates on linking words introducing groups/divisions (of, are, other, political); pushes next-token toward \"unit\"/\"units\" in encyclopedic descriptions"
+  },
+  {
+    "id": "12_12684_15",
+    "layer": 12,
+    "ctx_idx": 15,
+    "influence_score": 0.3704169988632202,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 31.38,
+        "context": " the delight of modern day florists, rose\u23cegrowers and card companies and of course the loved ones\u23ceBy EVGENIYA DONCHENKO\u23cefrom"
+      },
+      {
+        "trigger": " to",
+        "score": 29.88,
+        "context": " received their awards for making fundamental contributions to our understanding of the outer solar system, to the differences in material properties at nano- and larger scales, and to how"
+      },
+      {
+        "trigger": " of",
+        "score": 36.0,
+        "context": " national projections is to provide an estimate of the future population of the UK (and of its constituent countries) which is used as a common framework for national planning in"
+      },
+      {
+        "trigger": " of",
+        "score": 29.62,
+        "context": " already knew that some of the operations of the U.S. military (and of the military of other countries) could be harmful to marine life, including very"
+      },
+      {
+        "trigger": " to",
+        "score": 30.12,
+        "context": " Pineda sketch gave representation to the Mississippi River (called R\u00edo del Esp\u00edritu Santo) and to the R\u00edo P\u00e1nuco, which enters the Gulf at the site of present"
+      }
+    ],
+    "promotes": [
+      " continuaci\u00f3n",
+      "MemoryWarning",
+      "\u0004",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "glClear"
+    ],
+    "demotes": [
+      " betweenstory",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "Datuak",
+      " AssemblyVersion",
+      "MigrationBuilder"
+    ],
+    "generated_description": "say of/to \u2014 activates on prepositions \"of\" or \"to\" that set up an upcoming noun phrase or target (possession, argument, recipient)"
+  },
+  {
+    "id": "19_6614_14",
+    "layer": 19,
+    "ctx_idx": 14,
+    "influence_score": 0.34861016273498535,
+    "top_activations": [
+      {
+        "trigger": " Electromagnetic",
+        "score": 84.0,
+        "context": " increased levels of Electromagnetic Fields (EMFs) of Extremely Low Frequency (ELF) Electromagnetic Radiation (EMR), Radio Frequency (RF) Electromagnetic Radiation (EMR"
+      },
+      {
+        "trigger": " electromagnetic",
+        "score": 81.0,
+        "context": " glue our phones to our ears anyway. Cell phones emit radio frequency-modulated electromagnetic fields (RF-EMFs) that are questioned for their potential danger when"
+      },
+      {
+        "trigger": " other",
+        "score": 73.0,
+        "context": " cancer using one of the following:\u23ceRadiation therapy uses X-rays or other high-energy rays to kill cancer cells and shrink tumors. Radiation may come from"
+      },
+      {
+        "trigger": " the",
+        "score": 73.0,
+        "context": " three sets of visiting astronauts. These instruments observed the sun in a broad range of the spectrum from the visual through the x-ray regions. ATM also included a"
+      },
+      {
+        "trigger": " electromagnetic",
+        "score": 78.0,
+        "context": " on the super high energy end of the electromagnetic spectrum. They're more powerful than X-rays, and while they can come from lots of places (including"
+      }
+    ],
+    "promotes": [
+      " Radio",
+      "radio",
+      " rays",
+      " radiation",
+      " radio"
+    ],
+    "demotes": [
+      " StatelessWidget",
+      "PCP",
+      " PCP",
+      "rungsseite",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902"
+    ],
+    "generated_description": "Electromagnetic radiation \u2014 activates on mentions of EM/EMF/EM spectrum (radio, X\u2011rays, fields); promotes next tokens like \"radio\", \"rays\", \"radiation\"."
+  },
+  {
+    "id": "6_7137_15",
+    "layer": 6,
+    "ctx_idx": 15,
+    "influence_score": 0.3904394209384918,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 21.0,
+        "context": " and elected representatives to the European Parliament. The judiciary is independent.\u23ceThe Police Corps is responsible for internal security, for maintaining law and order and for enforcing the"
+      },
+      {
+        "trigger": " to",
+        "score": 19.38,
+        "context": " mine. We\u2019re not going to let ourselves be moved on to Bogot\u00e1 or to Cali. Who knows what we\u2019d do there?\u2019\u23ceLa Toma is"
+      },
+      {
+        "trigger": " of",
+        "score": 19.25,
+        "context": " and other medieval battles; and the profession of a writer of letters of news or of intelligence dates from the establishment of regular postal services.\u23ceLong before this,"
+      },
+      {
+        "trigger": " with",
+        "score": 26.5,
+        "context": " of the Southern Negro. They were sure that the Negro was satisfied with segregation and with his subordinate role in American life. If only the Communists, the Yankees,"
+      },
+      {
+        "trigger": " in",
+        "score": 20.25,
+        "context": " a disputed section of the Odyssey, through the use of torches in foot races and in rites of passage, images of fire held by various deities in art, and"
+      }
+    ],
+    "promotes": [
+      "ArrowToggle",
+      "<bos>",
+      "parsedMessage",
+      " CreateTagHelper",
+      "DockStyle"
+    ],
+    "demotes": [
+      " contin\u00faas",
+      " vertes",
+      "djangoproject",
+      " trekken",
+      " grado"
+    ],
+    "generated_description": "say preposition \u2014 activates on relational/prepositional tokens (for, to, of, with, in), signals an upcoming noun phrase or modifier."
+  },
+  {
+    "id": "19_11233_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.38221433758735657,
+    "top_activations": [
+      {
+        "trigger": " by",
+        "score": 46.0,
+        "context": ", and this problem was actually tackled by a series of experiments by famous physicists, particularly by the American physicist, Michelson. Then there are a whole series of"
+      },
+      {
+        "trigger": " of",
+        "score": 39.25,
+        "context": " German Univ., Prague, and in 1912 he accepted the chair of theoretical physics at the Federal Institute of Technology, Z\u00fcrich.\u23ceBy 1"
+      },
+      {
+        "trigger": " for",
+        "score": 43.5,
+        "context": " in the same magnetic field. The measurement could lead to a new reference stand for the kilogram (Phys. Rev. Lett. 81 240"
+      },
+      {
+        "trigger": " a",
+        "score": 39.75,
+        "context": "ially as Le Grand K, and it is the last remaining physical object to define a unit of measure. It\u2019s a quaint throwback to a time when people"
+      },
+      {
+        "trigger": " conducts",
+        "score": 36.0,
+        "context": " material, and a gray crystalline metallike form called metallic selenium. This last form conducts electricity better in the light than in the dark and is used in photocells"
+      }
+    ],
+    "promotes": [
+      "physical",
+      "\u7269\u7406",
+      "Physical",
+      " Physical",
+      " physical"
+    ],
+    "demotes": [
+      "WithIOException",
+      " kasarigan",
+      " calldata",
+      "\u043d\u043e\u0432\u043d\u0438\u0448",
+      " gyhoeddwyd"
+    ],
+    "generated_description": "Relation preposition \u2014 activates on 'by/of/for/a' when introducing attribution, roles, units, or properties in scientific descriptions; nudges tokens like \"physical\"."
+  },
+  {
+    "id": "19_15111_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.3979946970939636,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 42.25,
+        "context": " biotic decomposition (biodegradation). The former means \"degradation of a substance by chemical or physical processes, e.g. hydrolysis. The latter one means \"the"
+      },
+      {
+        "trigger": "atomic",
+        "score": 44.25,
+        "context": " approaching that of light and has been accurately confirmed by the apparent increased lifetime of unstable subatomic particles traveling at nearly the speed of light and by the precise timing of"
+      },
+      {
+        "trigger": " occur",
+        "score": 51.0,
+        "context": " existence of atoms. They have since identified about 90 different kinds of atoms that occur naturally. Atoms are the building blocks of all matter. Matter can be"
+      },
+      {
+        "trigger": " organic",
+        "score": 51.5,
+        "context": " properties and chemical reactions of all chemical elements and chemical compounds other than the vast number of organic compounds (compounds containing at least one carbon-hydrogen covalent bond)."
+      },
+      {
+        "trigger": ",",
+        "score": 42.5,
+        "context": " of the structure, properties, composition, reactions, and preparation (by synthesis or by other means) of chemical compounds consisting primarily of carbon and hydrogen, which may"
+      }
+    ],
+    "promotes": [
+      "chemical",
+      " compounds",
+      " chemistry",
+      " chemical",
+      "DockStyle"
+    ],
+    "demotes": [
+      " Freien",
+      " cargador",
+      "konos",
+      " \u0111\u00e0n",
+      "ij\u0173"
+    ],
+    "generated_description": "say \"chemical\"/\"compounds\" \u2014 fires in scientific/chemistry contexts (atoms, organic, subatomic, occurrences); consistently pushes chemistry-related next tokens: chemical, compounds, chemistry."
+  },
+  {
+    "id": "18_6118_13",
+    "layer": 18,
+    "ctx_idx": 13,
+    "influence_score": 0.35663700103759766,
+    "top_activations": [
+      {
+        "trigger": " material",
+        "score": 105.0,
+        "context": " bacon|\u23ce|a. to achieve success|\u23ce|b. to provide material support|\u23ce|3.||informal (Brit) save someone'"
+      },
+      {
+        "trigger": " materials",
+        "score": 103.0,
+        "context": "s California NanoSystems Institute and is also a distinguished professor of chemistry and biochemistry & materials science and engineering.\u23ceThe team, which also includes theoretical chemist Mark Rat"
+      },
+      {
+        "trigger": " material",
+        "score": 114.5,
+        "context": " Guttate Psoriasis: this cultivates in children and young adults following a Strep infection. It materializes as small dot sized red spots on the chest"
+      },
+      {
+        "trigger": " Material",
+        "score": 114.5,
+        "context": " Yaqui and the Mexican Indians still use ear coning as a healing modality. Material variations such as rolled up newspapers are used for ear infections in South America,"
+      },
+      {
+        "trigger": " material",
+        "score": 123.5,
+        "context": " technologies. These fields are being radically transformed through advances in informatics, genomics, material sciences and nanotechnology.\u23ceFocusing on economic renewal would allow \u00e9migr\u00e9s"
+      }
+    ],
+    "promotes": [
+      " utafitiHapana",
+      "MATER",
+      " roule",
+      "RenderAtEndOf",
+      " ModelExpression"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      " mer",
+      "hensw\u00fcrdigkeiten",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "HIND"
+    ],
+    "generated_description": "material (root) \u2014 activates on \"material\"/\"materials\" and derivatives (materializes, Material, material variations); occurs in phrases like \"materials science\", \"material support\", noun/verb forms."
+  },
+  {
+    "id": "19_6614_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.28193679451942444,
+    "top_activations": [
+      {
+        "trigger": " Electromagnetic",
+        "score": 84.0,
+        "context": " increased levels of Electromagnetic Fields (EMFs) of Extremely Low Frequency (ELF) Electromagnetic Radiation (EMR), Radio Frequency (RF) Electromagnetic Radiation (EMR"
+      },
+      {
+        "trigger": " electromagnetic",
+        "score": 81.0,
+        "context": " glue our phones to our ears anyway. Cell phones emit radio frequency-modulated electromagnetic fields (RF-EMFs) that are questioned for their potential danger when"
+      },
+      {
+        "trigger": " other",
+        "score": 73.0,
+        "context": " cancer using one of the following:\u23ceRadiation therapy uses X-rays or other high-energy rays to kill cancer cells and shrink tumors. Radiation may come from"
+      },
+      {
+        "trigger": " the",
+        "score": 73.0,
+        "context": " three sets of visiting astronauts. These instruments observed the sun in a broad range of the spectrum from the visual through the x-ray regions. ATM also included a"
+      },
+      {
+        "trigger": " electromagnetic",
+        "score": 78.0,
+        "context": " on the super high energy end of the electromagnetic spectrum. They're more powerful than X-rays, and while they can come from lots of places (including"
+      }
+    ],
+    "promotes": [
+      " Radio",
+      "radio",
+      " rays",
+      " radiation",
+      " radio"
+    ],
+    "demotes": [
+      " StatelessWidget",
+      "PCP",
+      " PCP",
+      "rungsseite",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902"
+    ],
+    "generated_description": "Electromagnetic radiation \u2014 activates on \u201celectromagnetic\u201d, \u201cEMF/EMR\u201d, \u201cRF\u201d, \u201cradiation\u201d, \u201cspectrum\u201d; tends to push related tokens like \u201cradio\u201d, \u201crays\u201d, \u201cradiation\u201d."
+  },
+  {
+    "id": "20_7491_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.3536478281021118,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 34.5,
+        "context": " 1904. This patient showed an almost complete loss of the sense of pain and temperature in the legs, with preservation of tactile sensibility. He was"
+      },
+      {
+        "trigger": " dimension",
+        "score": 49.5,
+        "context": "2, where it should be noted that the symbol 1 for quantities of dimension 1 such as mass fraction is generally omitted.\u23ceease of understanding and convenience"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": " of the senses extends far beyond the five basic modes of sight, hearing, touch, taste and smell. The mammalian brain also is wired for the senses of balance"
+      },
+      {
+        "trigger": " of",
+        "score": 35.5,
+        "context": "Taste - impairedDefinition:\u23ceTaste impairment means there is a problem with your sense of taste. Problems range from distorted taste to a complete loss of the sense of"
+      },
+      {
+        "trigger": " to",
+        "score": 46.5,
+        "context": "gery \u2013 is the descriptive language used in literature to recreate sensory experiences relating to sight, taste, touch, hearing and smell. Imagery enriches writing by making it"
+      }
+    ],
+    "promotes": [
+      "distance",
+      " space",
+      " distance",
+      "money",
+      " money"
+    ],
+    "demotes": [
+      "mobileqq",
+      "bootstrapcdn",
+      "ftagPool",
+      "twimg",
+      " \u062a\u0627\u0646\u064a\u0647"
+    ],
+    "generated_description": "say sensory modality \u2014 activates on structural tokens ('of', commas, 'to') immediately before mentions of senses or sensory experiences (sense of taste, pain, touch; lists of senses)"
+  },
+  {
+    "id": "20_15617_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.3850453794002533,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 38.0,
+        "context": "Time travel into the past, however, is an entirely different matter. Einstein's general theory of relativity postulates that space can be curved by the gravitational force exerted"
+      },
+      {
+        "trigger": " of",
+        "score": 43.25,
+        "context": "tious 1935 thought experiment that brought a paradox of the Copenhagen Interpretation of quantum mechanics into the flesh-and-blood world. In it, a"
+      },
+      {
+        "trigger": " for",
+        "score": 37.0,
+        "context": " together.\u23ceCurrent theories consider the electron as a point particle, as no evidence for internal structure has been observed.\u23ceAs a theoretical construct, electrons have been"
+      },
+      {
+        "trigger": " quantum",
+        "score": 42.75,
+        "context": " a mistake to think of any physical vacuum as some absolutely empty void.\" According to quantum mechanics, the vacuum state is not truly empty but instead contains fleeting electromagnetic waves"
+      },
+      {
+        "trigger": ",",
+        "score": 45.25,
+        "context": " their work developing this theory. Sometimes abbreviated as QED.\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle"
+      }
+    ],
+    "promotes": [
+      " gustar\u00eda",
+      " INTER",
+      " Pen",
+      "glLoadIdentity",
+      "stato"
+    ],
+    "demotes": [
+      " Exactos",
+      " Waray",
+      " AssemblyProduct",
+      " Chwiliwch",
+      "principalColumn"
+    ],
+    "generated_description": "Connective token \u2014 activates on short function words and punctuation (of, for, commas, other linking tokens that introduce or join noun phrases)"
+  },
+  {
+    "id": "20_2536_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.36518365144729614,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 61.5,
+        "context": " is the Java basin, located south of the island of Java. Its depth is of 7450 m. It is int...\u23ce|4||"
+      },
+      {
+        "trigger": "Of",
+        "score": 69.0,
+        "context": " implausibly alleges, it might still be possible to save the world.\u23ceOf course, it will not be easy. Or cheap. Individual liberty, self"
+      },
+      {
+        "trigger": " of",
+        "score": 63.5,
+        "context": "--two and a half million jobs since Barack Obama's been president. And of that two and a half million jobs, almost 45 percent of those"
+      },
+      {
+        "trigger": " of",
+        "score": 60.0,
+        "context": "<bos>Writing has always been a passion of mine\u2014from scribbling pretend news stories when I was a child to penning blog posts and bylines as a communications"
+      },
+      {
+        "trigger": " of",
+        "score": 63.0,
+        "context": " them to purchase medication produced and marketed by the Brinkley Pharmaceutical Association. Kansas pharmacists of the time reported taking in more money from the sale of Brinkley's"
+      }
+    ],
+    "promotes": [
+      " Course",
+      "COURSE",
+      " COURSE",
+      "course",
+      " course"
+    ],
+    "demotes": [
+      " laik\u0101",
+      "\u0e04\u0e38\u0e13",
+      "newtheorem",
+      "\u00fdchod",
+      " dalamnya"
+    ],
+    "generated_description": "say \"of course\" \u2014 activates on the preposition \"of\" when setting up the idiom; strongly promotes the next-token \"course\"/\"Course\" (capitalizations included)"
+  },
+  {
+    "id": "19_15586_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.3444487452507019,
+    "top_activations": [
+      {
+        "trigger": " produce",
+        "score": 47.5,
+        "context": ". Thus, ions are separated from electrons, and flow into an ion collector to produce DC power. A normal cusp magnetic field enables us to separate electrons and ions"
+      },
+      {
+        "trigger": "frequency",
+        "score": 63.0,
+        "context": " practitioners use ultrasound machines to help diagnose a number of physical abnormalities. An ultrasound machine generates high-frequency sound waves, which echo an image back to the machine."
+      },
+      {
+        "trigger": " produce",
+        "score": 52.0,
+        "context": " to power sailing ships and drive wind mills. Today we can use wind energy to produce electricity from wind turbines. About 2% of solar energy reaching earth is"
+      },
+      {
+        "trigger": " emitting",
+        "score": 52.5,
+        "context": " the lead author and a PhD student in the audiovisual communication laboratory of the Ecole Polytechnique Federal de Lausanne, in Switzerland.\u23ceBy emitting sounds with a speaker and"
+      },
+      {
+        "trigger": " releasing",
+        "score": 46.5,
+        "context": " shouldn\u2019t be able to find. They hunt with sonar, releasing high-pitched squeaks and visualising the world in the returning echoes. Normally, the"
+      }
+    ],
+    "promotes": [
+      " sinus",
+      "signals",
+      " signal",
+      " waves",
+      " signals"
+    ],
+    "demotes": [
+      "mybatisplus",
+      " saites",
+      "TagMode",
+      "\u4f8b\u53e5",
+      " \u0645\u062d\u0641\u0648\u0638\u0629"
+    ],
+    "generated_description": "Emit waves/signals \u2014 activates on verbs/nouns about producing or emitting energy (produce, emitting, releasing, frequency); promotes tokens like \"signals\" and \"waves\""
+  },
+  {
+    "id": "22_4670_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.3857443332672119,
+    "top_activations": [
+      {
+        "trigger": " magnetic",
+        "score": 50.25,
+        "context": " called the heliosphere where it recently discovered strange 100 million mile magnetic field bubbles produced by the spin of the sun.\u23ceLast month, scientists"
+      },
+      {
+        "trigger": " magnetic",
+        "score": 55.75,
+        "context": " gas or an electrically heated element, induction ranges use the energy created by two opposing magnetic fields driven by an electric current to make the metal in the cookware itself become"
+      },
+      {
+        "trigger": " magnetic",
+        "score": 58.75,
+        "context": " explained thusly: the connection betwixt the sun\u2019s magnetic field lines and interstellar magnetic field lines lets high energy particles from beyond our heliopsphere \u201czoom in"
+      },
+      {
+        "trigger": " gravity",
+        "score": 50.0,
+        "context": " measurement to fundamental and unchanging phenomena, scientists have paved the way for GPS satellites, gravity-wave detectors, and many other precision technologies that simply wouldn\u2019t have"
+      },
+      {
+        "trigger": " gravity",
+        "score": 58.75,
+        "context": " us on the conditions that gave rise to all of us omnivores prowling a gravity-assisted, ozone-protected, floating rock. The first mapping run took"
+      }
+    ],
+    "promotes": [
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      " Meksiku",
+      " fields",
+      "ChildScrollView",
+      " field"
+    ],
+    "demotes": [
+      "DockStyle",
+      "ister",
+      "PendingIntent",
+      "ljiv",
+      "ISTER"
+    ],
+    "generated_description": "Physical field \u2014 activates on physical field words (magnetic, gravity); signals or promotes continuation about \"field\"/\"fields\" in physics contexts."
+  },
+  {
+    "id": "22_727_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.398605614900589,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 37.75,
+        "context": ".\u23ce- The state or quality of being aware of something\u23ce- The awareness of one type of idea naturally fosters an awareness of another idea\u23ce- (state"
+      },
+      {
+        "trigger": " of",
+        "score": 29.5,
+        "context": " is impossible to tell where one word ends and the next begins. The seamlessness of speech is... apparent in \"oronyms,\" strings of sound that can be"
+      },
+      {
+        "trigger": " separates",
+        "score": 35.75,
+        "context": " one loses one\u2019s ordinary state of mind, when one no longer separates oneself from one\u2019s surroundings and objects from one another, one may be able to"
+      },
+      {
+        "trigger": "experience",
+        "score": 36.25,
+        "context": "\u23ce\"Based on this approach, we have determined that animals do re-experience the day's events during sleep in a way that includes visual imagery (what"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " change. If children paint naturally, we can actually document the evolution of their perceptions of the world. Their visual expressions of the sensations of the human body, for"
+      }
+    ],
+    "promotes": [
+      "pr\u00fcche",
+      "\ud69f",
+      " reality",
+      "BeginContext",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " eslint",
+      " illustrazione",
+      "UserScript",
+      "ModelAdmin"
+    ],
+    "generated_description": "say \"of\" \u2014 fires on prepositional linkers introducing noun/abstract relations (\u201cawareness of\u201d, \u201cseamlessness of speech\u201d, \u201cevolution of \u2026\u201d), signals upcoming noun phrase."
+  },
+  {
+    "id": "19_5124_15",
+    "layer": 19,
+    "ctx_idx": 15,
+    "influence_score": 0.35063937306404114,
+    "top_activations": [
+      {
+        "trigger": " familiar",
+        "score": 27.62,
+        "context": " a foundational component of modern mathematics, involving the study of spacial properties and invariants of familiar objects such as manifolds and complexes. This volume, which is intended both"
+      },
+      {
+        "trigger": "ful",
+        "score": 24.12,
+        "context": " is that vector spaces are free modules.\u23ceThat is, there is a forgetful functor from to , sending a vector space to its underlying set. This functor"
+      },
+      {
+        "trigger": " and",
+        "score": 25.88,
+        "context": "<bos>This Guide offers a concise overview of the theory of groups, rings, and fields at the graduate level, emphasizing those aspects that are useful in other parts of"
+      },
+      {
+        "trigger": " simple",
+        "score": 29.12,
+        "context": " a fractal.\u23ceThe Mandelbrot set has become popular outside mathematics both for its aesthetic appeal and for being a complicated structure arising from a simple definition. __Wikipedia"
+      },
+      {
+        "trigger": " ordinary",
+        "score": 23.62,
+        "context": " the time, the idea was shown to be feasible even with gates comprised of just ordinary spacetime paths. (see reference below)\u23ceModern application of hyperspatial"
+      }
+    ],
+    "promotes": [
+      " rub",
+      " Mac",
+      " vector",
+      " numbers",
+      " text"
+    ],
+    "demotes": [
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " tartalomaj\u00e1nl\u00f3",
+      "findpost",
+      "ReusableCell"
+    ],
+    "generated_description": "common descriptive adjectives \u2014 activates on plain descriptors (simple, ordinary, familiar, -ful adjectives); often near content nouns (vector, numbers, text) in English prose"
+  },
+  {
+    "id": "22_8433_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.3065895736217499,
+    "top_activations": [
+      {
+        "trigger": "s",
+        "score": 92.0,
+        "context": "bombs every second. It is interesting to note that the energy released is described by Albert Einstein\u2019s famous equation E=mc2 where E is energy, m"
+      },
+      {
+        "trigger": " about",
+        "score": 90.5,
+        "context": " example, physicists thought they knew almost all there was to know about matter, but the recent Nobel Prize winners for physics has upset many of those assumptions.\u23ceWhen"
+      },
+      {
+        "trigger": " to",
+        "score": 99.0,
+        "context": " that the great physicist was not a natural mathematician. After making the enormous conceptual leap that connected the phenomenon of gravitation to the fact that space-time is curved,"
+      },
+      {
+        "trigger": " between",
+        "score": 98.0,
+        "context": ", Space, Quantum Mechanics.\u23ceThe apparent inconsistencies between the point particle theory and the observed wave behavior of the electron are reconciled by an electron structure, the Space"
+      },
+      {
+        "trigger": " of",
+        "score": 90.5,
+        "context": " real, our whole physical world, is \u2013 in fact \u2013 an illusion being proved by the holographic universe, one of the most remarkable theories of 20th"
+      }
+    ],
+    "promotes": [
+      "rel",
+      "particle",
+      "ArrowToggle",
+      " relativity",
+      " particle"
+    ],
+    "demotes": [
+      " Casey",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " Juneau",
+      "AutoScaleMode",
+      "Geplaatst"
+    ],
+    "generated_description": "relational prepositions \u2014 activates on short linking tokens (of, to, between, about, \u2019s); marks relational/connecting phrases and upcoming noun or phrase."
+  },
+  {
+    "id": "22_10843_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.32907581329345703,
+    "top_activations": [
+      {
+        "trigger": "est",
+        "score": 68.5,
+        "context": ", the second-heaviest such particle. This decay process produces leptons, the class of particles including electrons, neutrinos, muons (a common product"
+      },
+      {
+        "trigger": " one",
+        "score": 61.75,
+        "context": " operates the LHC, told BBC News.\u23ce\"Our famous Standard Model contains only one Higgs. That would be the Higgs boson. But there are extensions to the"
+      },
+      {
+        "trigger": " are",
+        "score": 68.0,
+        "context": " protons and neutrons into smaller bits. For this reason we say that the electron is a fundamental particle and that protons and neutrons are not fundamental.\u23ceThe electron belongs"
+      },
+      {
+        "trigger": " no",
+        "score": 75.5,
+        "context": " the vacuum) is the quantum state with the lowest possible energy. Generally, it contains no physical particles. Zero-point field is sometimes used[by whom?]"
+      },
+      {
+        "trigger": "neutral",
+        "score": 95.0,
+        "context": "neutral hadrons, a process called hadronisation that leads to a collimated spray of hadrons called a jet.\u23ceAs these jets of particles propagate through the"
+      }
+    ],
+    "promotes": [
+      "\u043a\u0435\u0442",
+      " Ph",
+      " body",
+      " Fo",
+      " k"
+    ],
+    "demotes": [
+      "IntoConstraints",
+      "IsContent",
+      " ddelweddau",
+      "addPreferredGap",
+      "DoubleQuotes"
+    ],
+    "generated_description": "Pre-noun modifier \u2014 fires on words that introduce noun/adjective phrases (adjectives, numerals, determiners, negation, linking verbs before nouns/adj)."
+  },
+  {
+    "id": "22_11728_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.36694347858428955,
+    "top_activations": [
+      {
+        "trigger": " less",
+        "score": 31.88,
+        "context": " draws down the water in the aquifer and eventually causes a well to yield less and less water and even run dry.\u23ceGround water is an important natural resource,"
+      },
+      {
+        "trigger": " controlling",
+        "score": 30.88,
+        "context": " blood glucose to occur (conventional or \u2018usual\u2019 management) to the effects of controlling the rise using insulin to maintain normal glucose levels (tight glycaemic control"
+      },
+      {
+        "trigger": " pump",
+        "score": 38.5,
+        "context": " tight pair of pants, then you know how hard it is for the heart to pump blood through narrowed blood vessels.)\u23ceWhen the heart works harder, it beats"
+      },
+      {
+        "trigger": " lose",
+        "score": 37.75,
+        "context": " is also misunderstood. One of the most common myths is that the best way to lose fat is to build the muscle in the area you want to lose the fat"
+      },
+      {
+        "trigger": " of",
+        "score": 33.25,
+        "context": ". In East Asia, Japan is the leading country in technology and higher education and is also the second largest economy in the region. Viewing the importance of education and"
+      }
+    ],
+    "promotes": [
+      "RenderAtEndOf",
+      "TagMode",
+      "########.",
+      " AssemblyCulture",
+      "tagHelperRunner"
+    ],
+    "demotes": [
+      " Horse",
+      " Waters",
+      " Wines",
+      " Hair",
+      " Water"
+    ],
+    "generated_description": "say noun phrase \u2014 activates on transitive verbs/prepositions (less, controlling, pump, lose, of) that set up a following concrete object; signals/encourages noun-centered continuations."
+  },
+  {
+    "id": "21_8159_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.332085520029068,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 37.5,
+        "context": " Big Bang. The theory holds that during its first moments, the universe, fueled by an antigravitational field, underwent a violent growth spurt, ballooning from"
+      },
+      {
+        "trigger": " about",
+        "score": 40.0,
+        "context": " kindly sent us the post below and the following analogy, comparing the journey for answers about the origin of the universe to sewing a tapestry: \u201cThe quest is like"
+      },
+      {
+        "trigger": " of",
+        "score": 41.5,
+        "context": " then we can assume it has left our dimension, we will be much closer to solving the mystery of the universe. But then what about other universes...\u23ce1"
+      },
+      {
+        "trigger": " simulating",
+        "score": 33.5,
+        "context": "install a client on their computers, which will apply their spare computing\u23cepower towards simulating high-energy collisions between protons. The\u23ceresults will then be compared with"
+      },
+      {
+        "trigger": " of",
+        "score": 35.0,
+        "context": "000 Richard C. Lord lecture May 2 on \"One Hundred Years of Quantum Physics.\" Professor Kleppner is widely recognized for his contributions to atomic"
+      }
+    ],
+    "promotes": [
+      "\u00fcyada",
+      " QCD",
+      " quantum",
+      " astro",
+      " physics"
+    ],
+    "demotes": [
+      "AnimationsModule",
+      " voisins",
+      " jug\u00e9",
+      " intptr",
+      " normaux"
+    ],
+    "generated_description": "say topic (physics/universe) \u2014 activates on prepositions/intro words (that/about/of/simulating) introducing noun phrases about physics/cosmology; pushes tokens like \u201cquantum\u201d, \u201cphysics\u201d, \u201cQCD\u201d."
+  },
+  {
+    "id": "22_14036_15",
+    "layer": 22,
+    "ctx_idx": 15,
+    "influence_score": 0.3998259902000427,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 65.0,
+        "context": "ometry to accurately measure changes in the distance between two points.\u23ceLaser interferometry involves splitting a single laser beam so that it travels down two paths, bounces off"
+      },
+      {
+        "trigger": " of",
+        "score": 83.5,
+        "context": " do not interact with one another.\u23ceThat's most easily seen by shining two beams of light at each other cross-wise -- the beams pass through one"
+      },
+      {
+        "trigger": " to",
+        "score": 60.75,
+        "context": " With the use of electronic devices like that, researchers are finding that the \"exposure to light from computer tablets significantly lowered levels of the hormone melatonin, which regulates our"
+      },
+      {
+        "trigger": " of",
+        "score": 65.0,
+        "context": " radiation as they are guided by magnets around a storage ring.\u23ce- The intensity of the electromagnetic radiation emitted by a source varies as a function of both frequency and"
+      },
+      {
+        "trigger": " with",
+        "score": 65.0,
+        "context": " technique called laser melting where layers of a metallic powder are built up and fused together with a laser.\u23ceIn this case, the powder is titanium. Once built"
+      }
+    ],
+    "promotes": [
+      " soft",
+      "phology",
+      "\u0443\u0437\u0430",
+      " mor",
+      "ubri"
+    ],
+    "demotes": [
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628",
+      "ConstraintMaker",
+      "Portail",
+      " el\u00e9trico",
+      "Jeografia"
+    ],
+    "generated_description": "Function word (prep/article) \u2014 activates on 'a', 'of', 'to', 'with' before noun phrases; signals common prepositions/articles in scientific/expository sentences."
+  },
+  {
+    "id": "23_12202_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.3793336749076843,
+    "top_activations": [
+      {
+        "trigger": " million",
+        "score": 67.5,
+        "context": " M81 and M82 face-off, a mere 12 million light-years away.\u23ceLocked in a gravitational struggle for the\u23cepast"
+      },
+      {
+        "trigger": " million",
+        "score": 72.0,
+        "context": " quasar. He noted a huge problem with this find--the galaxy's redshift indicated a distance of 107 million light years away, while its"
+      },
+      {
+        "trigger": " shed",
+        "score": 78.5,
+        "context": " has made it easy for researchers to avoid such pitfalls. Even so, two studies shed light on the problem of plagiarism in higher education research.\u23ceCheema,"
+      },
+      {
+        "trigger": " billion",
+        "score": 80.0,
+        "context": " Rudnick believes that the void, which is 6 billion to 10 billion light-years away, imprinted its form on the microwave background by the simple"
+      },
+      {
+        "trigger": " new",
+        "score": 85.0,
+        "context": " Painful Memories Forever\u23ceBy: Jonah Lehrer\u23ceNeuroscience is shedding a new light on the way that memories are formed and remembered in the human brain."
+      }
+    ],
+    "promotes": [
+      " LIGHT",
+      "Light",
+      " Light",
+      "light",
+      " light"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      "AutoScaleMode",
+      "Notae",
+      "\u00e9valuateur",
+      "\u0627\u0644\u062d\u064a\u0627\u0647"
+    ],
+    "generated_description": "say LIGHT \u2014 activates on tokens that precede \u201clight\u201d (e.g., million, billion, shed, new); consistently promotes the next-token LIGHT in output."
+  },
+  {
+    "id": "23_3532_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.3154414892196655,
+    "top_activations": [
+      {
+        "trigger": " negative",
+        "score": 39.25,
+        "context": "or the entire sign of Scorpio.\u23ceModern astrologers have speculated that the negative influence of the signs of Libra and Scorpio, specified as Via Combusta,"
+      },
+      {
+        "trigger": "'",
+        "score": 39.25,
+        "context": "0, 2008\u23ceFrom Barbara Walker's \"The Woman's Encyclopedia of Myths and Secrets.\" Lily The flower of Lilith, Sumero"
+      },
+      {
+        "trigger": " invisible",
+        "score": 58.75,
+        "context": " the paths are navigational aids to extraterrestrial spacecraft.|\u23ceAlignments and patterns of powerful, invisible earth energy said to connect various sacred sites, such as churches,"
+      },
+      {
+        "trigger": " evil",
+        "score": 46.25,
+        "context": " of Songkran is the process of cleansing and purification - purging ills, misfortune and evil and starting the New Year fresh. Water is symbolic of the cleaning process and"
+      },
+      {
+        "trigger": " transmitting",
+        "score": 45.0,
+        "context": " constituting the seven major chakras of the body. These major chakras focus on receiving and transmitting energy to and fro the cosmos or the universe influencing the spiritual, mystical,"
+      }
+    ],
+    "promotes": [
+      " ENERGY",
+      "Energy",
+      "energy",
+      " Energy",
+      " energy"
+    ],
+    "demotes": [
+      "ItemBackground",
+      " referenties",
+      " lenker",
+      "RTLD",
+      " %>%"
+    ],
+    "generated_description": "Mystical energy \u2014 activates on unseen/spiritual-force language (negative/invisible/evil influence, transmitting energy, sacred/occult contexts); pushes the token \"energy\" and variants."
+  },
+  {
+    "id": "21_545_15",
+    "layer": 21,
+    "ctx_idx": 15,
+    "influence_score": 0.3754023611545563,
+    "top_activations": [
+      {
+        "trigger": " charged",
+        "score": 67.0,
+        "context": " of the physics at the edge of the heliosphere, the bubble created by charged particles flowing outward from the Sun.\u23ceA new study looks at magnetic field"
+      },
+      {
+        "trigger": " of",
+        "score": 79.0,
+        "context": "<bos>Radiation therapy is the use of beams of high-energy waves or streams of particles called radiation to treat disease. Radiation therapy destroys the ability of cancer cells to"
+      },
+      {
+        "trigger": " the",
+        "score": 74.5,
+        "context": "stadter indicate that the neutron, like the proton, is surrounded by a cloud of pions; protons and neutrons are bound together in nuclei by the exchange of"
+      },
+      {
+        "trigger": " with",
+        "score": 68.5,
+        "context": " on something called the \"Bohr model\" of the atom, where you imagine the atom as a nucleus with electrons orbiting around it - kind of like a tiny"
+      },
+      {
+        "trigger": " the",
+        "score": 75.5,
+        "context": ") of this model are:\u23ce- The atom is made of protons, neutrons and electrons\u23ce- Most of the space is taken up by the area where the"
+      }
+    ],
+    "promotes": [
+      "rang",
+      " particulate",
+      " positively",
+      "\u00e1stico",
+      " positive"
+    ],
+    "demotes": [
+      "TypedDataSet",
+      " EconPapers",
+      " \u0643\u0648\u0645\u0648\u0646\u0632",
+      "enumi",
+      " />);"
+    ],
+    "generated_description": "Prep/article before physics noun \u2014 activates on short function words (the, of, with) immediately before scientific/physics noun phrases (particles, atom, space, fields)."
+  },
+  {
+    "id": "23_12202_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.2337159961462021,
+    "top_activations": [
+      {
+        "trigger": " million",
+        "score": 67.5,
+        "context": " M81 and M82 face-off, a mere 12 million light-years away.\u23ceLocked in a gravitational struggle for the\u23cepast"
+      },
+      {
+        "trigger": " million",
+        "score": 72.0,
+        "context": " quasar. He noted a huge problem with this find--the galaxy's redshift indicated a distance of 107 million light years away, while its"
+      },
+      {
+        "trigger": " shed",
+        "score": 78.5,
+        "context": " has made it easy for researchers to avoid such pitfalls. Even so, two studies shed light on the problem of plagiarism in higher education research.\u23ceCheema,"
+      },
+      {
+        "trigger": " billion",
+        "score": 80.0,
+        "context": " Rudnick believes that the void, which is 6 billion to 10 billion light-years away, imprinted its form on the microwave background by the simple"
+      },
+      {
+        "trigger": " new",
+        "score": 85.0,
+        "context": " Painful Memories Forever\u23ceBy: Jonah Lehrer\u23ceNeuroscience is shedding a new light on the way that memories are formed and remembered in the human brain."
+      }
+    ],
+    "promotes": [
+      " LIGHT",
+      "Light",
+      " Light",
+      "light",
+      " light"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      "AutoScaleMode",
+      "Notae",
+      "\u00e9valuateur",
+      "\u0627\u0644\u062d\u064a\u0627\u0647"
+    ],
+    "generated_description": "Light (word) \u2014 activates on contexts mentioning \"light\" (e.g. \"light\u2011years\" after million/billion, \"shed/new light\"); promotes the token \"light\"."
+  },
+  {
+    "id": "23_4615_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.33603566884994507,
+    "top_activations": [
+      {
+        "trigger": " ultraviolet",
+        "score": 58.0,
+        "context": " topical sunscreens is considered to be an important intervention to reduce skin damage induced by ultraviolet radiation from sunlight. The sun protection factor (SPF) of a sunscreen is"
+      },
+      {
+        "trigger": " the",
+        "score": 52.5,
+        "context": "sen, it was known that the emission spectrum of atomic hydrogen contains four lines in the visible region: a red line at 656.21 nm"
+      },
+      {
+        "trigger": " visible",
+        "score": 59.5,
+        "context": " gas and interstellar dust. Interstellar dust grains - composed predominantly of carbon - absorb visible starlight and reradiate much of it in the infrared. This absorption"
+      },
+      {
+        "trigger": " ultraviolet",
+        "score": 51.5,
+        "context": " of melanomas involves interplay between genetic and environmental factors. It is generally agreed that ultraviolet-light-induced mutations in melanocytes is the single most important environmental factor"
+      },
+      {
+        "trigger": " visible",
+        "score": 52.75,
+        "context": " highest frequency and red light has the lowest. The term blueshift is used when visible light is shifted toward higher frequencies or toward the blue end of the spectrum,"
+      }
+    ],
+    "promotes": [
+      "Light",
+      " lights",
+      " TextInputType",
+      " Light",
+      " light"
+    ],
+    "demotes": [
+      "ftagPool",
+      " initComponents",
+      "atri\u00e8me",
+      "SuspendLayout",
+      "Autoritn\u00ed"
+    ],
+    "generated_description": "Visible/UV light \u2014 activates on mentions of visible or ultraviolet radiation, sunlight, spectra; tends to promote the token \"light.\""
+  },
+  {
+    "id": "24_2334_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.285530149936676,
+    "top_activations": [
+      {
+        "trigger": " new",
+        "score": 94.0,
+        "context": " cress genome serves as a useful tool for exploring mechanisms of adaptive evolution and sheds new lights on understanding the genetic characteristics underlying plant abiotic stress tolerance.\u23ceThe"
+      },
+      {
+        "trigger": " of",
+        "score": 69.0,
+        "context": "\u23ce10 September 2004\u23ceIs this newly discovered feeble point of light the long-sought bona-fide image of an exoplanet"
+      },
+      {
+        "trigger": ",",
+        "score": 71.5,
+        "context": " for Ultracold Atoms say.\u23ceTo oversimplify things, we'll say that photons are subatomic particles that make up light. They have no detectable mass"
+      },
+      {
+        "trigger": " is",
+        "score": 100.5,
+        "context": " connecting light weight and durability requires more design effort.\u23ceLIGHT ALONE IS NOT ENOUGH\u23ceBuilding a frame that is merely light is no feat. But constructing a light"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " a tool to physically record. This simple photograph by Gordon Gahan shows the power of light to ignite even the most mundane scene\u2014a concrete tunnel\u2014and render"
+      }
+    ],
+    "promotes": [
+      " la",
+      " disposizione",
+      "\u0631\u0648\u0627\u0628\u0637",
+      "\u0e32\u0e25",
+      "airbnb"
+    ],
+    "demotes": [
+      " Light",
+      "Light",
+      " light",
+      "light",
+      " LIGHT"
+    ],
+    "generated_description": "say \"light\" \u2014 activates on punctuation/short function words immediately before occurrences of \u201clight\u201d/\u201clights\u201d; consistently pushes down/gates generating the token \u201clight.\u201d"
+  },
+  {
+    "id": "23_14654_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.3910922706127167,
+    "top_activations": [
+      {
+        "trigger": " certain",
+        "score": 37.75,
+        "context": "<bos>A flagellum (plural: flagella) is a tail-like structure that projects from the cell body of certain prokaryotic and eukaryotic cells, and it"
+      },
+      {
+        "trigger": " all",
+        "score": 38.25,
+        "context": ", the product is a functional RNA. The process of gene expression is used by all known life - eukaryotes (including multicellular organisms),prokaryotes ("
+      },
+      {
+        "trigger": " most",
+        "score": 39.0,
+        "context": "<bos>Chromosomes are cell structures made up of genetic material (DNA). They are a part of most types of cells in the body.\u23ceHumans have 4"
+      },
+      {
+        "trigger": " major",
+        "score": 35.75,
+        "context": " in the blood. Glucose, which comes from the foods we eat, is the major source of energy needed to fuel the body's functions. To use glucose"
+      },
+      {
+        "trigger": " other",
+        "score": 38.75,
+        "context": " substances through the blood, and perform other functions. Blood plasma also contains glucose and other dissolved nutrients.\u23ceAbout half of blood volume is composed of blood cells:"
+      }
+    ],
+    "promotes": [
+      " :",
+      " ",
+      " in",
+      "(",
+      ":"
+    ],
+    "demotes": [
+      "UnusedPrivate",
+      "TestingModule",
+      "LookAnd",
+      " EconPapers",
+      "parsedMessage"
+    ],
+    "generated_description": "General quantifier \u2014 activates on quantifying words/adjectives (certain, all, most, major, other); marks generality or scope statements in factual descriptions."
+  },
+  {
+    "id": "23_5399_15",
+    "layer": 23,
+    "ctx_idx": 15,
+    "influence_score": 0.37699857354164124,
+    "top_activations": [
+      {
+        "trigger": " artistic",
+        "score": 25.0,
+        "context": " artistic work) is called copyright.Copyright, a form of intellectual property law, protects original works of authorship including literary, dramatic, musical, and artistic works,"
+      },
+      {
+        "trigger": "the",
+        "score": 25.88,
+        "context": " accepted definition of serendipity is \u201cthe occurrence and development of events by chance in a happy or beneficial way.\u201d Well then, if events are by chance, how"
+      },
+      {
+        "trigger": " a",
+        "score": 25.12,
+        "context": "PTSD) is a type of anxiety disorder associated with the direct or indirect experience of a traumatic event, and often involves memory disturbances, emotional detachment, hypervigilance"
+      },
+      {
+        "trigger": " the",
+        "score": 25.75,
+        "context": " of the models, systems, and elements of nature for the purpose of solving complex human problems.  The terms biomimicry and biomimetics come from"
+      },
+      {
+        "trigger": " to",
+        "score": 23.0,
+        "context": " goods and services are \"Outputs of ecological functions or processes that directly or indirectly contribute to social welfare or have the potential to do so in the future.\" Examples include"
+      }
+    ],
+    "promotes": [
+      "ImageContext",
+      " flesta",
+      " fleste",
+      " rai\u017f",
+      " \u0633\u0643\u0627\u0646\u064a\u0629"
+    ],
+    "demotes": [
+      "stacle",
+      "FTFY",
+      "terday",
+      "(@\"%@\",",
+      " CURIAM"
+    ],
+    "generated_description": "definition sentence \u2014 fires in encyclopedia/Wikipedia-style definitional or expository lines; peaks around articles/prepositions near phrases like \u201cis a\u201d, \u201cthe\u201d, \u201cto\u201d introducing descriptions"
+  },
+  {
+    "id": "24_10662_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.34962552785873413,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ],
+    "generated_description": "Expository technical \u2014 activates in factual/instructional passages (devices, materials, procedures); often fires on content words inside noun compounds or technical descriptions."
+  },
+  {
+    "id": "24_4610_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.3576265573501587,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 60.5,
+        "context": " ask what they thought about it.\u23ceThe tale of this unlikely collaboration unfolded at the American Association for the Advancement of Science meeting, where the introductory remarks described just"
+      },
+      {
+        "trigger": " in",
+        "score": 67.5,
+        "context": " the LHC. A recent conference in Kyoto, Japan, ruled out another broad class of supersymmetry models, finding nothing unexpected in the rates of particle decays.\u23ce"
+      },
+      {
+        "trigger": " for",
+        "score": 61.0,
+        "context": " largest -- the Large Hadron Collider, built on the French-Swiss border by the European Center for Nuclear Research (CERN), a consortium of 20 member"
+      },
+      {
+        "trigger": " in",
+        "score": 102.0,
+        "context": " most powerful \"atom smasher\" ever built, has nailed the most coveted prize in physics. Right?\u23ceWell, not quite.\u23ceScientists at Cern"
+      },
+      {
+        "trigger": " particle",
+        "score": 56.0,
+        "context": ", who described the new data May 15 during a symposium in Madison on particle astrophysics. \u201cWe\u2019re not totally certain right now that it\u2019"
+      }
+    ],
+    "promotes": [
+      "ins",
+      " high",
+      "Sub",
+      " Sub",
+      " sub"
+    ],
+    "demotes": [
+      "AddTagHelper",
+      "\ue315",
+      " resourceCulture",
+      "DockStyle",
+      "CodeAttribute"
+    ],
+    "generated_description": "say location/institution \u2014 activates on prepositions/articles before place, institution, or field names (e.g., \"in\" Kyoto, \"for\" Nuclear Research, \"in\" physics, \"particle\" astrophysics)"
+  },
+  {
+    "id": "24_13277_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.29225045442581177,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "Function-word / comma detector \u2014 activates on short high-frequency tokens (to, in, a, ,), often at clause boundaries or just before nouns/proper names."
+  },
+  {
+    "id": "24_15226_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.38911470770835876,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 61.75,
+        "context": " part of a general kinematic description, capable of verification by refined astronomical observations. Moreover, Einstein\u2019s recognition of the equivalence of mass and energy should prove an invaluable"
+      },
+      {
+        "trigger": " of",
+        "score": 59.25,
+        "context": "5, Bohr\u2019s younger associate Werner Heisenberg had a flash of insight that transformed the seemingly paradoxical nature of the new physics and with it called into question the nature"
+      },
+      {
+        "trigger": " developing",
+        "score": 52.75,
+        "context": ", through his own work and that of his students, played a major role in developing British physics after the Second World War.\u23ce|This scientist article is a"
+      },
+      {
+        "trigger": " formulated",
+        "score": 58.25,
+        "context": " the second son of immigrant families from Russia. Back then, Albert Einstein had just formulated his theory of relativity, the 40-hour workweek had just"
+      },
+      {
+        "trigger": " for",
+        "score": 55.25,
+        "context": " Mertens for arithmetic and algebra, Weiss for astronomy, Stefan's student Boltzmann for physics.\u23ceOn May 1898 Plemelj presented his"
+      }
+    ],
+    "promotes": [
+      "anguardia",
+      "buttonStyle",
+      "Philosop",
+      "\u306f\u3058\u3081\u306b",
+      "B"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " nakalista",
+      "adaptiveStyles",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "writeFieldEnd"
+    ],
+    "generated_description": "say next noun/concept \u2014 activates on prepositions/verbs (of, for, developed, formulated) that introduce a following noun phrase naming a concept, field, object, or role"
+  },
+  {
+    "id": "25_785_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.31733617186546326,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 45.0,
+        "context": " science, philosophy, or any other system of analysis. Reality in this sense may include both being and nothingness, whereas existence is often restricted to being (compare with"
+      },
+      {
+        "trigger": " in",
+        "score": 46.0,
+        "context": ". Hull and his associates stated the matter as follows: \"Since it appears probable that everything which exists at all in nature exists in some amount, it would seem"
+      },
+      {
+        "trigger": " all",
+        "score": 38.5,
+        "context": " single episode of Genesis that scientifically happened 1-5 billion years ago from which all other accounts have originated?\u23ceGenesis to Revelation is the first and last corpus"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " fundamental-first steps that all people must take on the path to understanding the laws of science.\"\u23ceThese are the words of Zak Zych, the illustrator behind"
+      },
+      {
+        "trigger": " created",
+        "score": 52.5,
+        "context": "uries again wavered from the doctrine of special creation by teaching\u23ceextreme fixity in created kinds. Close study of the Old Testament today\u23cebrings out the"
+      }
+    ],
+    "promotes": [
+      " graines",
+      "AnimationsModule",
+      "yntaxException",
+      "Autoritn\u00ed",
+      "principalTable"
+    ],
+    "demotes": [
+      " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902",
+      " Himo",
+      "hyrchwyd",
+      " \u05e9\u05d5\u05dc\u05d9\u05d9\u05dd"
+    ],
+    "generated_description": "Function-word connector \u2014 activates on short prepositions/articles (to, in, of, all); marks connecting tokens that introduce following content words."
+  },
+  {
+    "id": "25_2335_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.34215885400772095,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 43.0,
+        "context": "?\u201d A lot of hands will shoot up. Virtually all of them will proudly proclaim that gravity makes things fall. If I ask the same question of a group of"
+      },
+      {
+        "trigger": ",",
+        "score": 39.5,
+        "context": " mechanism through which elementary particles gain mass. Without the Higgs field, or something similar, atoms would not form, and there would be no chemistry, no biology and"
+      },
+      {
+        "trigger": " including",
+        "score": 60.0,
+        "context": " of this structure is supported by the physical laws which originate from this wave structure, including quantum theory, special relativity, electric force, gravity, and magnetism. This"
+      },
+      {
+        "trigger": " and",
+        "score": 40.25,
+        "context": " basics, electromagnets, magnetic fields, superconductors, magnetic levitation, and applications of magnetic properties. It is organized sequentially, with a concept-building"
+      },
+      {
+        "trigger": ",",
+        "score": 49.25,
+        "context": " falls back down to\u23ce2. Yes, you sure could do that. In fact, that is essentially\u23cethe way some experiments on fiber optics work (and"
+      }
+    ],
+    "promotes": [
+      "MemoryWarning",
+      "AutoScale",
+      "Diwedd",
+      "Datuak",
+      "AddAttribute"
+    ],
+    "demotes": [
+      " physics",
+      " f\u00edsica",
+      "physics",
+      " Physics",
+      " physical"
+    ],
+    "generated_description": "discourse continuation marker \u2014 activates on commas and coordinating/introductory words (\"and\", \"including\", \"that\") that link clauses or start lists and continuations"
+  },
+  {
+    "id": "24_6767_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.38978224992752075,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 59.5,
+        "context": " of an increased number of gamma ray sources, possibly even the indirect detection of the mysterious dark matter in the universe,\" said Karen Byrum, Argonne physicist.\u23ce"
+      },
+      {
+        "trigger": " when",
+        "score": 59.0,
+        "context": " Telescope, has turned up a mass of previously-undiscovered black holes from when the universe was around 800 to 950 million years"
+      },
+      {
+        "trigger": " of",
+        "score": 62.5,
+        "context": " a key prediction of the speculative but popular cosmic theory known as inflation about the distribution of matter and energy in the Big Bang. The theory holds that during its first"
+      },
+      {
+        "trigger": " which",
+        "score": 65.5,
+        "context": " predictions of the Big Bang theory, the clouds provide a unique insight into the materials from which the first stars and galaxies were born.\"\u23ceSee the full announcement\u23ce"
+      },
+      {
+        "trigger": " in",
+        "score": 74.0,
+        "context": ".\u23ceThe atoms around you have existed for billions of years \u2014 and most originated in the flaming, gaseous core of a star. Dennis Wildfogel tells the"
+      }
+    ],
+    "promotes": [
+      " gak",
+      " jegy",
+      " echip",
+      "HttpDelete",
+      " r\u00e9guli"
+    ],
+    "demotes": [
+      "Datuak",
+      " nahilalakip",
+      "ContentAsync",
+      "atko",
+      "antiate"
+    ],
+    "generated_description": "say source/time preposition \u2014 activates on prepositions/relatives (of, when, which, in) that introduce sources, origins, or time epochs and set up ensuing noun/clause about origin/time"
+  },
+  {
+    "id": "25_4717_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.29550638794898987,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "Clause-linker tokens \u2014 activates on contractions ('s), prepositions and discourse starters (in, according), tokens that introduce or link clauses or explanations."
+  },
+  {
+    "id": "24_16039_15",
+    "layer": 24,
+    "ctx_idx": 15,
+    "influence_score": 0.274334192276001,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.75,
+        "context": "\u23ce\"Mind you,\" says Cooke, \"these are estimates based on a flash of light seen 400,000 km away. There'"
+      },
+      {
+        "trigger": " spring",
+        "score": 35.75,
+        "context": " straightforward: \"Farnsworth loved sitting on the back porch in the soft, spring evenings, listening to the frogs quark in the millpond, while feasting on"
+      },
+      {
+        "trigger": " way",
+        "score": 45.75,
+        "context": "4th century craftsmen refined cutting and polishing techniques to take full advantage of the extraordinary way in which diamonds split light into a rainbow of colours. See the process of"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " in the form of photons. This effect is called electroluminescence and the color of the light (corresponding to the energy of the photon) is determined by the"
+      },
+      {
+        "trigger": " excess",
+        "score": 37.0,
+        "context": "|a screen or mat covered with a dark material for shielding a camera lens from excess light or glare.|\u23ce|a scrap or morsel of food left at"
+      }
+    ],
+    "promotes": [
+      " LIGHT",
+      "Light",
+      " Light",
+      "light",
+      " light"
+    ],
+    "demotes": [
+      "__':\r",
+      "complexContent",
+      "UnusedPrivate",
+      "Suara",
+      "Diweddarwch"
+    ],
+    "generated_description": "say \"light\" \u2014 activates on words/phrases preceding mentions of light (e.g., \"of\", \"way\", \"excess\", contexts about illumination); strongly promotes the token \"light\" in output"
+  },
+  {
+    "id": "25_12404_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.3226439356803894,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 54.5,
+        "context": " to look for effects predicted by theories beyond the standard model. They look for the transitions of, for example, muons into electrons, B mesons into their"
+      },
+      {
+        "trigger": " by",
+        "score": 48.0,
+        "context": " detailed image of our planet radiating\u23ceThe image portrays how the Earth is constantly bombarded by particles\u23cefrom space. These particles, called cosmic rays, hit our atmosphere"
+      },
+      {
+        "trigger": "called",
+        "score": 51.5,
+        "context": "44F, is being inflated by a torrent of fast-moving particles (called a \"stellar wind\") from an exceptionally hot star once buried inside a cold"
+      },
+      {
+        "trigger": " like",
+        "score": 61.5,
+        "context": " linear dispersion relationship at low energies, electrons and holes near these six points behave like relativistic particles described by the Dirac equation for spin 1/2 particles.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 63.5,
+        "context": " all sorts of breakthroughs, such as the creation of an unusual state of matter known as a Bose\u2013Einstein condensate in which all of the constituent particles exist in a"
+      }
+    ],
+    "promotes": [
+      "\u0445\u044c\u0442\u0430\u043d",
+      " MonoBehaviour",
+      "ValueStyle",
+      "invokeLater",
+      "tvguidetime"
+    ],
+    "demotes": [
+      " SwitchCompat",
+      " calldata",
+      "GrantedAuthority",
+      "InSection",
+      " \u043a\u04c0"
+    ],
+    "generated_description": "say introduce-definition \u2014 activates on structural tokens (',', 'by', 'called', 'like', 'of') that set up examples, definitions, or comparisons before a content phrase."
+  },
+  {
+    "id": "25_15920_15",
+    "layer": 25,
+    "ctx_idx": 15,
+    "influence_score": 0.38363534212112427,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 186.0,
+        "context": ", forced labour, disease or execution during the Khmer Rouge \"killing fields,\" from 1975 to 1979.\u23ceBut to date"
+      },
+      {
+        "trigger": " ",
+        "score": 192.0,
+        "context": " paint the wooden face.\u201d\u23cePinocchio hit movie theaters the following year, in 1940.\u23ceToday, December 5, is Walt Disney"
+      },
+      {
+        "trigger": " ",
+        "score": 198.0,
+        "context": " utilities, savings bank life insurance, and anti-monopoly legislation.\u23ceIn 1908 Brandeis argued a case in front of the Supreme Court"
+      },
+      {
+        "trigger": " ",
+        "score": 216.0,
+        "context": "1984.\u23ceA settlement was founded on the site of Mobile in 1710 by the sieur de Bienville, and it was"
+      },
+      {
+        "trigger": "2",
+        "score": 186.0,
+        "context": "\u23ceWhile use of influenza antivirals in the United States has increased during the 2009-2010 flu season, there are still"
+      }
+    ],
+    "promotes": [
+      " enfans",
+      " sup\u00e9rieurs",
+      " europ\u00e9ennes",
+      " automatiques",
+      " varandra"
+    ],
+    "demotes": [
+      " DAF",
+      " Realt",
+      " IFT",
+      " Ruger",
+      " Sandman"
+    ],
+    "generated_description": "say temporal intro \u2014 activates on sentence-start connectors (Today, In, During, But, and), signals upcoming date/time or transitional clause."
+  },
+  {
+    "id": "20_9890_15",
+    "layer": 20,
+    "ctx_idx": 15,
+    "influence_score": 0.34554508328437805,
+    "top_activations": [
+      {
+        "trigger": "x",
+        "score": 58.5,
+        "context": "in hanging hardware.|\u23ce|Package Includes:||1x 300w LED grow light 2w, 1x Power Cord, 1"
+      },
+      {
+        "trigger": " shine",
+        "score": 65.0,
+        "context": " local coordinators and groups in communities across America will hold simultaneous rallies throughout the day to shine light on the numerous problems associated with toxic fracking waste and its disposal,"
+      },
+      {
+        "trigger": " using",
+        "score": 55.0,
+        "context": " developed a unique photocatalytic cell that splits water to produce hydrogen and oxygen in water using sunlight and the power of a nanostructured catalyst.\u23ceThe group is"
+      },
+      {
+        "trigger": " of",
+        "score": 58.5,
+        "context": "you may need to wait several hours until all the germs are killed.\u23ceUltraviolet (UV) Light\u23cePortable units that deliver a measured dose of UV light"
+      },
+      {
+        "trigger": " than",
+        "score": 56.5,
+        "context": " wavelength range 10 to 400 nm. It has wavelengths shorter than visible light but longer than x-rays and is invisible to the human eye"
+      }
+    ],
+    "promotes": [
+      " lights",
+      " LEDs",
+      " lamp",
+      " beams",
+      " LED"
+    ],
+    "demotes": [
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u0915",
+      "SourceChecksum",
+      "G\u00f6n",
+      "__(/*!",
+      "hoea"
+    ],
+    "generated_description": "Light \u2014 activates on tokens introducing or modifying mentions of illumination (shine, using, of, than, product 'x' before specs); promotes output tokens like lights, LEDs, lamp"
+  }
+]

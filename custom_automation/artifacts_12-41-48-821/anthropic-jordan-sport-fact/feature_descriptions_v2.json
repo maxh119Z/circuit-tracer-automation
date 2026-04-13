@@ -1,0 +1,2258 @@
+[
+  {
+    "id": "0_16200_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.33056962490081787,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ],
+    "generated_description": "say heading/label \u2014 activates on colons that introduce section titles, tags, or list labels; signals a following short label or heading token"
+  },
+  {
+    "id": "4_13022_4",
+    "layer": 4,
+    "ctx_idx": 4,
+    "influence_score": 0.37011396884918213,
+    "top_activations": [
+      {
+        "trigger": " Dickerson",
+        "score": 19.0,
+        "context": " play as well\u2014or look as cool\u2014with eye protection? Tell them basketball greats Kareem Abdul Jabbar and James Worthy, along with football star Eric Dickerson"
+      },
+      {
+        "trigger": "ona",
+        "score": 17.5,
+        "context": " is because their characteristics may be different when not playing sports. For example, Eric Cantona may only be aggressive when on the football pitch and not in his everyday"
+      },
+      {
+        "trigger": " Gray",
+        "score": 15.25,
+        "context": "<bos>Setting standards for essential children\u2019s medicines\u23ceSuzanne R Hill a, Andy Gray b, Martin Weber a\u23ceThe WHO Model List of Essential Medicines, used"
+      },
+      {
+        "trigger": " Button",
+        "score": 15.25,
+        "context": " men's singles title at Wimbledon in 1954.\u23ceDick Button of Englewood, N.J., became the first American to win a figure"
+      },
+      {
+        "trigger": " Tend",
+        "score": 19.0,
+        "context": "<bos>In India, cricket star Sachin Tendulkar will be leading the campaign that will see children across South Asia simultaneously washing their hands.Leave it to the Be"
+      }
+    ],
+    "promotes": [
+      "OGND",
+      "Position",
+      " sav",
+      " betweenstory",
+      "<bos>"
+    ],
+    "demotes": [
+      "+:+",
+      "igurumi",
+      "esteld",
+      "Santis",
+      "gypti"
+    ],
+    "generated_description": "athlete surname \u2014 activates on proper last names of sports figures (Dickerson, Cantona, Gray, Button, Tendulkar)"
+  },
+  {
+    "id": "2_13198_4",
+    "layer": 2,
+    "ctx_idx": 4,
+    "influence_score": 0.3923203647136688,
+    "top_activations": [
+      {
+        "trigger": " crowd",
+        "score": 27.25,
+        "context": " train young people about non-violence.\u23ceHe spoke to an over-flow crowd at the Malcolm X Institute over lunch hour sharing stories and answering questions.\u23ce"
+      },
+      {
+        "trigger": " crowd",
+        "score": 26.75,
+        "context": " coast and a local television broadcast showed it ascending into the sky.\u23ceAs a crowd of onlookers near the site applauded and waved national flags, South Korean Science Minister"
+      },
+      {
+        "trigger": " crowd",
+        "score": 27.5,
+        "context": ". That\u2019s the way climate change is,\u201d he said this morning as a crowd gathered for a rainy rally in front of the White House.\u23ceHurricanes"
+      },
+      {
+        "trigger": " crowd",
+        "score": 28.75,
+        "context": ", who also appeared at the event, came upon the Eureka Brass Band leading a crowd of second-line revelers through the Festival grounds. George Wein, producer"
+      },
+      {
+        "trigger": " crowd",
+        "score": 27.5,
+        "context": " style won them a good measure of popular admiration. Once Jesse stopped to tell a crowd of townspeople gathered for a political speech that he thought something might be wrong"
+      }
+    ],
+    "promotes": [
+      "NewLabel",
+      "principalColumn",
+      "Hauptartikel",
+      "manteau",
+      "ConstraintMaker"
+    ],
+    "demotes": [
+      "<bos>",
+      " Jordan",
+      " crowd",
+      "Jordan",
+      " crowds"
+    ],
+    "generated_description": "crowd / gatherings \u2014 activates on \"crowd\" and \"crowd of...\" phrases; marks scenes with onlookers, rallies, audiences, people gathered for events."
+  },
+  {
+    "id": "4_1742_4",
+    "layer": 4,
+    "ctx_idx": 4,
+    "influence_score": 0.2501980662345886,
+    "top_activations": [
+      {
+        "trigger": " hoops",
+        "score": 15.62,
+        "context": "\u2019s an 18 year old all-American guy who likes Starbucks, hoops, and robotics. He\u2019s a student, an older brother, and"
+      },
+      {
+        "trigger": " Jordan",
+        "score": 16.62,
+        "context": " Schoenfeld\u2019s basketball analogy points out:\u23ceAnd that brings us to Michael Jordan, who starred for the Chicago Bulls from 1984 to "
+      },
+      {
+        "trigger": " Jordan",
+        "score": 19.12,
+        "context": " peace and equality.\u23ceJimmy Carter, national leader and peacemaker.\u23ceMichael Jordan, a hero who plays basketball with all his heart for his team, his"
+      },
+      {
+        "trigger": "ishes",
+        "score": 15.5,
+        "context": ", a teen in a light-blue jersey. Moments later, the ball swishes gracefully through the net. \u201cThat-a-boy!\u201d\u23ceA whistle"
+      },
+      {
+        "trigger": "Basketball",
+        "score": 14.0,
+        "context": "<bos>Basketball might not be the most dangerous sport, but it\u2019s still a sport that can cause some pain for those who aren\u2019t careful. There are"
+      }
+    ],
+    "promotes": [
+      " Basketball",
+      "NBA",
+      " basketball",
+      " NBA",
+      "<bos>"
+    ],
+    "demotes": [
+      "\u00e9co",
+      " InputDecoration",
+      "ciens",
+      "__\":\r",
+      "camino"
+    ],
+    "generated_description": "Basketball \u2014 activates on basketball-related words (hoops, swishes, Basketball) and players (Michael Jordan); pushes output tokens like \u201cBasketball\u201d/\u201cNBA.\u201d"
+  },
+  {
+    "id": "1_1173_4",
+    "layer": 1,
+    "ctx_idx": 4,
+    "influence_score": 0.30929869413375854,
+    "top_activations": [
+      {
+        "trigger": "dri",
+        "score": 15.38,
+        "context": " the game wins. The ball can be advanced on the court by bouncing it (dribbling) or passing it between teammates. Disruptive physical contact (fouls"
+      },
+      {
+        "trigger": " net",
+        "score": 16.75,
+        "context": " is done?\u23ceFinally, what about materials, such as net of a basketball net, or a soccer goal net for example? Effects of ball hitting it can"
+      },
+      {
+        "trigger": " dri",
+        "score": 15.12,
+        "context": " called \u201cbasket ball.\u201d The rule, which refers to what we now know as dribbling and traveling, is third on the 1891 document called"
+      },
+      {
+        "trigger": " basket",
+        "score": 19.62,
+        "context": " dimensions. Calculate the distance, bounce of the ball and basket area before making a shot.\u23ce- Prepare in advance before catching the ball. Make sure to see"
+      },
+      {
+        "trigger": " rim",
+        "score": 17.88,
+        "context": ", the margin of error is that you can actually fit two basketballs inside the rim, and that produces a \"margin of error\" that enables a non-"
+      }
+    ],
+    "promotes": [
+      " ModelExpression",
+      " >=\",",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      " snippetHide"
+    ],
+    "demotes": [
+      "cuerdo",
+      "removeChild",
+      " gire",
+      "ejo",
+      " avanti"
+    ],
+    "generated_description": "basketball terms \u2014 activates on basketball words (dribble, rim, net, basket); signals basketball-related content or topic."
+  },
+  {
+    "id": "0_1607_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3881882131099701,
+    "top_activations": [
+      {
+        "trigger": " Williams",
+        "score": 13.38,
+        "context": "?\u23cePart one of a three-part series by Daniel Zwerdling and Margot Williams.\u23ceRebecca Weel pushes a baby stroller with her 18-"
+      },
+      {
+        "trigger": " Jan",
+        "score": 12.12,
+        "context": " Ambassadors featuring their own stories about using DNA to dig into ancestry.\u23ceBy Tim Janzen, M.D.\u23ceMy father, Robert Janzen, comes"
+      },
+      {
+        "trigger": " Harvey",
+        "score": 11.25,
+        "context": "\u23ceJoin us on Facebook to get the latest news and updates.\u23ceReGina Harvey's Story\u23ceSparking Imagination and Engagement With Fractured Fairy Tales\u23ce"
+      },
+      {
+        "trigger": " B",
+        "score": 11.88,
+        "context": " \u00bb Literacy\u23ceHandbook of Adolescent Literacy Research\u23ceEdited by Leila Christenbury, Randy Bomer, and Peter Smagorinsky\u23ceWinner\u2014Literacy Research Association'"
+      },
+      {
+        "trigger": " Gill",
+        "score": 11.88,
+        "context": "<bos>According to Kevin Gill, like this. Created using elevation data from NASA's Mars Reconnaissance Orbiter, this rendering shows what Mars would have looked like if"
+      }
+    ],
+    "promotes": [
+      "b\u00e9co",
+      " analyst",
+      "abetes",
+      "tvguidetime",
+      "providedIn"
+    ],
+    "demotes": [
+      "<bos>",
+      "berdayakan",
+      "Autoritn\u00ed",
+      "Personensuche",
+      "Geplaatst"
+    ],
+    "generated_description": "Person surname \u2014 fires on capitalized family names in bylines/credits and author or individual last names (Williams, Janzen, Harvey, Bomer, Gill)"
+  },
+  {
+    "id": "0_2848_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.37797367572784424,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say of \u2014 activates on the preposition \u201cof\u201d; triggers when linking to names/places/institutions or noun phrases (appears before proper nouns, titles, locations)"
+  },
+  {
+    "id": "0_411_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.33682310581207275,
+    "top_activations": [
+      {
+        "trigger": " Stevens",
+        "score": 11.75,
+        "context": "\u23ce\"The past is never dead; it's not even\u23ce- Gavin Stevens to Temple Drake Stevens, Requiem for a Nun, Act I Scene iii\u23ce"
+      },
+      {
+        "trigger": " Gray",
+        "score": 11.88,
+        "context": "<bos>By Sharon Gray\u23ceResearchers at the Faculty of Medicine are major collaborators\u23cein the discovery of a novel gene relating to peripheral neuropathy.\u23ceA study published in"
+      },
+      {
+        "trigger": " Rhodes",
+        "score": 12.38,
+        "context": " see an actual scale model of Orion finally being tested in the water,\u201d said Alan Rhodes, a NASA engineer who was observing the testing. \u201cThe NBL is"
+      },
+      {
+        "trigger": " Butler",
+        "score": 12.81,
+        "context": " Marie Long, East to the Dawn: The Life of Amelia Earhart by Susan Butler, or some of the other 50 books about or by Earhart"
+      },
+      {
+        "trigger": " Anderson",
+        "score": 12.12,
+        "context": " thwart even the best enviropreneurs; they see solutions as problems.\u23ceTerry Anderson 11/01/2011\u23ceIf you are"
+      }
+    ],
+    "promotes": [
+      "1",
+      "I",
+      "V",
+      "D",
+      "A"
+    ],
+    "demotes": [
+      "Geplaatst",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "GraphicsUnit",
+      "adaptiveStyles",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "generated_description": "Person surname \u2014 activates on proper last names in bylines/attributions and citations (e.g. Stevens, Gray, Rhodes, Butler, Anderson)."
+  },
+  {
+    "id": "0_7532_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3585483133792877,
+    "top_activations": [
+      {
+        "trigger": " Irene",
+        "score": 20.12,
+        "context": "<bos>Lewis, Ariane K.; Osborn, Irene P. MD; Roth, Ram MD\u23cePatients undergoing general anesthesia with paralysis are in an unconscious state but may"
+      },
+      {
+        "trigger": " Katie",
+        "score": 19.38,
+        "context": " have some balloons. Will's balloon burst at exactly\u23cethe same size as Katie's at the beginning of a puff. How many puffs\u23cehad Will"
+      },
+      {
+        "trigger": " Olivia",
+        "score": 19.5,
+        "context": "<bos>Birth Family John Marshall Clemens and Jane Lampton Clemens\u23ceMarriage/Spouse Olivia Langdon Clemens\u23ceChildren 4 children: Langdon, Susy, Clara, Jean"
+      },
+      {
+        "trigger": " Jacqueline",
+        "score": 20.25,
+        "context": " commander also gave him inspiration. Profiles in Courage, which Kennedy dedicated to his wife Jacqueline Kennedy, received the Pulitzer Prize for history in 1957."
+      },
+      {
+        "trigger": " Debbie",
+        "score": 18.38,
+        "context": " future of the wild tiger lies largely in the hands of the Chinese government,\u201d said Debbie Banks, EIA Head of Tiger Campaign. \u201cThere is much more they could"
+      }
+    ],
+    "promotes": [
+      "urator",
+      ").\u2014",
+      "Tetapi",
+      " Angele",
+      " who"
+    ],
+    "demotes": [
+      " Manuela",
+      " Karla",
+      " Kayla",
+      " Hayley",
+      " M\u00f3nica"
+    ],
+    "generated_description": "Female given name \u2014 activates on female first names (Olivia, Jacqueline, Katie, Irene, Debbie); detects person-name tokens."
+  },
+  {
+    "id": "6_10585_4",
+    "layer": 6,
+    "ctx_idx": 4,
+    "influence_score": 0.35384348034858704,
+    "top_activations": [
+      {
+        "trigger": " sports",
+        "score": 15.12,
+        "context": "<bos>Singing together can be an emotional experience. As churchgoers, choir singers or sports fans raise their voices as one, they feel connected.\u23ceTurns out,"
+      },
+      {
+        "trigger": " sports",
+        "score": 15.75,
+        "context": " competitor.\u23ceThe story that Upset was responsible for the use of upset in sports was, for a time, a plausible one. When the sporting sense was"
+      },
+      {
+        "trigger": " sports",
+        "score": 18.38,
+        "context": "<bos>This study on the adolescent sports programme \"International Inspiration\" in Jordan discusses its focus on using physical education (PE), sport, and play to provide better education"
+      },
+      {
+        "trigger": "Sports",
+        "score": 18.38,
+        "context": " technology is often voted by TV crews to be the Fingerworks Studio Version.\u23ceSportscaster John Madden made the telestrator famous for diagramming and analyzing"
+      },
+      {
+        "trigger": " Sports",
+        "score": 16.62,
+        "context": " Disease Control and Prevention and one of the experts featured in the video Play Smarter: Sports and Concussions.\u23ceEach year, U.S. emergency departments treat"
+      }
+    ],
+    "promotes": [
+      "sports",
+      " ESPN",
+      " athletic",
+      " Sports",
+      "Sports"
+    ],
+    "demotes": [
+      "findpost",
+      "andidaten",
+      "Datuak",
+      "webElement",
+      "\ue315"
+    ],
+    "generated_description": "sports \u2014 activates on the token \"sports\" and sports-related contexts; promotes sports-related outputs (sports, ESPN, athletic)"
+  },
+  {
+    "id": "0_8003_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3982961177825928,
+    "top_activations": [
+      {
+        "trigger": "sson",
+        "score": 12.56,
+        "context": "<bos>Scientists at UCLA's Jonsson Comprehensive Cancer Center and at top institutions in Los Angeles received a $1.8 million grant from the W.M."
+      },
+      {
+        "trigger": " Chou",
+        "score": 12.94,
+        "context": " tools to test the software for bugs and overly complex coding.\u23ceAccording to Andy Chou, co-founder and chief technology officer at Coverity, static code analysis"
+      },
+      {
+        "trigger": " Smith",
+        "score": 13.94,
+        "context": " had a chance to talk with the CEO of Swiss Re Americas, J. Eric Smith. Smith was in New York City to speak at an event for the Climate"
+      },
+      {
+        "trigger": " James",
+        "score": 12.44,
+        "context": "<bos>John James Ingalls\u23cePolitician, attorney. Republican. Born: December 29, 1833, Middleton, Massachusetts. Married:"
+      },
+      {
+        "trigger": "aling",
+        "score": 13.31,
+        "context": "The source code zip archive contains an EJS-XML representation of the Simulated Annealing Method for the Traveling Salesman Model. Unzip this archive in your E"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " '\\\\;'",
+      "GraphicsUnit",
+      "<bos>"
+    ],
+    "demotes": [
+      "\u2014",
+      " McC",
+      "grained",
+      " Uniti",
+      " Learned"
+    ],
+    "generated_description": "Capitalized names \u2014 activates on capitalized tokens/proper nouns (surnames, personal names, and other capitalized words like titles/terms)."
+  },
+  {
+    "id": "7_852_4",
+    "layer": 7,
+    "ctx_idx": 4,
+    "influence_score": 0.3193584680557251,
+    "top_activations": [
+      {
+        "trigger": " basketball",
+        "score": 23.0,
+        "context": " It is analogous with the play clock used in American and Canadian football.\u23ceIn basketball, the shot clock is a timer designed to increase the game's pace"
+      },
+      {
+        "trigger": " shot",
+        "score": 24.0,
+        "context": " stress are called stressors, and they cover a whole range of situations \u2014 everything from outright danger to stepping up to take the foul shot that could win the game."
+      },
+      {
+        "trigger": " basketball",
+        "score": 22.88,
+        "context": " way that they take up a large portion of City Arena's regulation-size basketball court. What design will you make with the dominoes? How many domino"
+      },
+      {
+        "trigger": " Shot",
+        "score": 22.38,
+        "context": " Axel: An Ice Skating Alphabet\u201d by Kurt Browning, \u201cJ is for Jump Shot: A Basketball Alphabet\u201d by Mike Ulmer, and \u201cZ is for"
+      },
+      {
+        "trigger": " hoops",
+        "score": 23.25,
+        "context": "\u2019s an 18 year old all-American guy who likes Starbucks, hoops, and robotics. He\u2019s a student, an older brother, and"
+      }
+    ],
+    "promotes": [
+      "lapi",
+      " NBA",
+      "\u7c43",
+      " Basketball",
+      " basketball"
+    ],
+    "demotes": [
+      "RectangleBorder",
+      "\u51fa\u7248\u5e74",
+      "MigrationBuilder",
+      " \u0645\u062d\u0641\u0648\u0638\u0629",
+      "awaiter"
+    ],
+    "generated_description": "Basketball \u2014 activates on basketball-related words (basketball, shot, hoops, shot clock); pushes basketball/NBA tokens in output."
+  },
+  {
+    "id": "14_14510_4",
+    "layer": 14,
+    "ctx_idx": 4,
+    "influence_score": 0.37146711349487305,
+    "top_activations": [
+      {
+        "trigger": " sports",
+        "score": 30.25,
+        "context": " full moon for increasing just about everything from the birth rate to the aggression of professional sports athletes.\u23ceNo scientific study has conclusively proved that child births go up around"
+      },
+      {
+        "trigger": " Football",
+        "score": 30.75,
+        "context": "ilistica, a syndrome caused by repeated head trauma in boxers, leads to a clinical picture of dementia and ataxia. A study of retired National Football League players"
+      },
+      {
+        "trigger": " level",
+        "score": 29.25,
+        "context": " is not uncommon. When young children\u2013who often differ in physical size, skill level, and family experience\u2013get together, patterns of hurtful behavior often emerge."
+      },
+      {
+        "trigger": " sporting",
+        "score": 29.25,
+        "context": " to foods sold at after-school fundraisers, bake sales or concession stands at sporting events and other after-school activities. They also don't affect the"
+      },
+      {
+        "trigger": " athletes",
+        "score": 30.75,
+        "context": ", \u201chave so many actors, singers, writers, poets, artists, professional athletes and assorted other celebrities signed up, given out and turned on for the candidates"
+      }
+    ],
+    "promotes": [
+      " sport",
+      "Sports",
+      " Sports",
+      " football",
+      " sports"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "########.",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "RenderAtEndOf",
+      "MigrationBuilder"
+    ],
+    "generated_description": "Sports/athletics \u2014 activates on sports-related words (sport, football, athletes, sporting, level); tends to promote output tokens like \"sport\"/\"sports\"/\"football\""
+  },
+  {
+    "id": "14_14510_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.3803882598876953,
+    "top_activations": [
+      {
+        "trigger": " sports",
+        "score": 30.25,
+        "context": " full moon for increasing just about everything from the birth rate to the aggression of professional sports athletes.\u23ceNo scientific study has conclusively proved that child births go up around"
+      },
+      {
+        "trigger": " Football",
+        "score": 30.75,
+        "context": "ilistica, a syndrome caused by repeated head trauma in boxers, leads to a clinical picture of dementia and ataxia. A study of retired National Football League players"
+      },
+      {
+        "trigger": " level",
+        "score": 29.25,
+        "context": " is not uncommon. When young children\u2013who often differ in physical size, skill level, and family experience\u2013get together, patterns of hurtful behavior often emerge."
+      },
+      {
+        "trigger": " sporting",
+        "score": 29.25,
+        "context": " to foods sold at after-school fundraisers, bake sales or concession stands at sporting events and other after-school activities. They also don't affect the"
+      },
+      {
+        "trigger": " athletes",
+        "score": 30.75,
+        "context": ", \u201chave so many actors, singers, writers, poets, artists, professional athletes and assorted other celebrities signed up, given out and turned on for the candidates"
+      }
+    ],
+    "promotes": [
+      " sport",
+      "Sports",
+      " Sports",
+      " football",
+      " sports"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "########.",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "RenderAtEndOf",
+      "MigrationBuilder"
+    ],
+    "generated_description": "Sports/athletes \u2014 activates on sports-related tokens (sports, football, athletes, sporting, level), tends to push output tokens like \"sport\"/\"sports\""
+  },
+  {
+    "id": "3_14480_7",
+    "layer": 3,
+    "ctx_idx": 7,
+    "influence_score": 0.39333292841911316,
+    "top_activations": [
+      {
+        "trigger": " Sports",
+        "score": 19.38,
+        "context": "<bos>American College of Sports Medicine honors Brett Wong's research as nation's best\u23ceEUGENE, Ore. -- Brett Wong is on a mission to"
+      },
+      {
+        "trigger": " Sports",
+        "score": 18.0,
+        "context": "\u23ceCeud Mile Failte (A Hundred Thousand Welcomes)\u23ceCanadian Winter Sports, Curling\u23ceThe history of curling in Canada extends back to the origins of"
+      },
+      {
+        "trigger": " sports",
+        "score": 18.5,
+        "context": " operating heavy machinery\u23ceParticipating in Strenuous or Contact Sports\u23ceInjuries from contact sports or falls can result in back pain.\u23ceSmoking may contribute to degeneration of"
+      },
+      {
+        "trigger": " sports",
+        "score": 19.12,
+        "context": " of Pediatrics (AAP) about how to choose a racquet and prevent racquet sports injuries. Also included is an overview of common injuries and treatment.\u23ceHow"
+      },
+      {
+        "trigger": " sports",
+        "score": 18.38,
+        "context": " or are the result of accidental falls. The risk for injury is higher in contact sports such as wrestling, football, or soccer, or high-speed sports such"
+      }
+    ],
+    "promotes": [
+      "v\u00e1bb",
+      " \u043d\u0430\u0441\u0435\u0459\u0435",
+      " ferons",
+      "BeNil",
+      "modb"
+    ],
+    "demotes": [
+      " sports",
+      " sport",
+      " Sports",
+      "Sports",
+      "sports"
+    ],
+    "generated_description": "sports \u2014 responds to the token \u201csports\u201d/\u201cSports\u201d (plural athletic activities); fires in contexts about types, injuries, events; tends to demote the literal token \u201csports.\u201d"
+  },
+  {
+    "id": "18_3724_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.31695878505706787,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 33.75,
+        "context": " of a full-sized playing area are defined in Section 1 of the Laws of the Game. These Laws are the agreed upon and maintained by the Rugby League"
+      },
+      {
+        "trigger": " of",
+        "score": 33.0,
+        "context": " American Art Museum\u23ceLacrosse was created by Native Americans, who played a version of the game much different than the one played today across the country. This painting"
+      },
+      {
+        "trigger": " of",
+        "score": 33.75,
+        "context": ". China bars its citizens' access to sites created by, among others, practitioners of Falun Gong. What results is the fragmentation of the Internet. The network that"
+      },
+      {
+        "trigger": ",",
+        "score": 37.0,
+        "context": "<bos>Nur Khan rendered colossal services for the uplift of national sports of hockey, cricket and squash and enabled Pakistan to reach the pinnacle. Under his tenure as hockey chief"
+      },
+      {
+        "trigger": " be",
+        "score": 34.0,
+        "context": " life. The national constitution states, \u201cThe religion of Brunei Darussalam shall be the Muslim religion.\u201d Life is difficult for Christians in Brunei. Some have lost"
+      }
+    ],
+    "promotes": [
+      "MEDI",
+      " Buddhism",
+      " art",
+      " sport",
+      "QH"
+    ],
+    "demotes": [
+      " >=\",",
+      "GraphicsUnit",
+      "OGND",
+      "saraba",
+      " \u0c38\u0c4c\u0c15\u0c30\u0c4d\u0c2f"
+    ],
+    "generated_description": "say category after 'of' \u2014 activates on prepositions like \"of\"/\"be\"/comma that introduce a noun phrase; pushes following category or proper-noun labels (sport, art, Buddhism, specific groups)"
+  },
+  {
+    "id": "18_12672_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.35043150186538696,
+    "top_activations": [
+      {
+        "trigger": "9",
+        "score": 47.75,
+        "context": " we now know as dribbling and traveling, is third on the 1891 document called the \u201cOriginal Rules of Basket Ball,\u201d now on display at"
+      },
+      {
+        "trigger": " the",
+        "score": 50.25,
+        "context": " basketball, the margin of error is that you can actually fit two basketballs inside the rim, and that produces a \"margin of error\" that enables a non"
+      },
+      {
+        "trigger": " ",
+        "score": 52.25,
+        "context": " men's college basketball has a 35-second limit; and women's basketball has a 30-second limit.\u23ceThe National Basketball"
+      },
+      {
+        "trigger": "5",
+        "score": 60.75,
+        "context": " 24-second limit since first introducing the clock in the 1950s; men's college basketball has a 35-second"
+      },
+      {
+        "trigger": " the",
+        "score": 46.75,
+        "context": "s orbit in concentric circles around him.\u23ce\u201cShoot to the back half of the rim,\u201d Coach Joe calls to Dusabe Nkua Daniel, a teen"
+      }
+    ],
+    "promotes": [
+      " basketball",
+      "basket",
+      " Basket",
+      " baskets",
+      " basket"
+    ],
+    "demotes": [
+      " Futebol",
+      "Football",
+      " Football",
+      "football",
+      " football"
+    ],
+    "generated_description": "basketball \u2014 activates on basketball-related text (rules, rim, shot clock) and promotes output tokens like \u201cbasketball\u201d/\u201cbasket\u201d"
+  },
+  {
+    "id": "19_2550_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3871226906776428,
+    "top_activations": [
+      {
+        "trigger": " both",
+        "score": 31.0,
+        "context": " of Latin and Greek, as well as grammar and music. In addition to speaking both Latin and Greek fluently, Elena mastered Hebrew, Spanish, French, and"
+      },
+      {
+        "trigger": " sisters",
+        "score": 27.0,
+        "context": " has low resistence to electrical charge and is relatively abundant, compared to its elemental sisters, gold and silver, which is why it's used for wiring."
+      },
+      {
+        "trigger": " colors",
+        "score": 26.75,
+        "context": " and water = rain and the flashlight = the sun.\u23ceWe learned about the colors of the rainbow and made our own Roy G. Biv.\u23ceWe made"
+      },
+      {
+        "trigger": " element",
+        "score": 32.0,
+        "context": " Ong, a professor of physics at Princeton, has shown that electrons in the common element bismuth display a highly unusual pattern of behavior -- a dance, of sorts --"
+      },
+      {
+        "trigger": " sign",
+        "score": 31.5,
+        "context": " for \"the burning way\" and generally refers to the first fifteen degrees of the sign of Scorpio. Other astrologers have extended Via Combusta to include the"
+      }
+    ],
+    "promotes": [
+      " MySQL",
+      " Python",
+      " bitcoin",
+      " HTML",
+      " Bitcoin"
+    ],
+    "demotes": [
+      ":\u2728",
+      " AssemblyCulture",
+      "extAlignment",
+      "tvguidetime",
+      "AsUp"
+    ],
+    "generated_description": "category-word (of/and) \u2014 activates on tokens that introduce a class or group (both, sisters, colors, element, sign); often precedes \"of\" phrases or paired lists."
+  },
+  {
+    "id": "19_7590_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.34090352058410645,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 57.25,
+        "context": "<bos>The school's playground consists of play structures and tetherball, volleyball, basketball and wall ball courts. For safety and supervision, students should remain within their"
+      },
+      {
+        "trigger": " of",
+        "score": 72.5,
+        "context": ", whom he accused of having cheated him of \u00a3300 in a game of cards and to whom he now owed, by the standards of the day,"
+      },
+      {
+        "trigger": " play",
+        "score": 59.75,
+        "context": " to exchange small gifts and food with one another. They also became friendly enough to play football matches with each other. In all, about 100,"
+      },
+      {
+        "trigger": " playing",
+        "score": 73.0,
+        "context": ", playing cards with his great-grandfather, my Dad. I believe they are playing a game called \"Go Fish\". Sam showing his card, asking Dad if"
+      },
+      {
+        "trigger": " play",
+        "score": 55.75,
+        "context": ":\u23ceA principal unlocks the school gate after hours so neighbors can shoot hoops or play ball on evenings and weekends.\u23ceA school and swim team share a pool"
+      }
+    ],
+    "promotes": [
+      " card",
+      " tennis",
+      " checkers",
+      " Scrabble",
+      " badminton"
+    ],
+    "demotes": [
+      " realism",
+      " realist",
+      " Realism",
+      " realistas",
+      "real"
+    ],
+    "generated_description": "Playing / games \u2014 activates on \"play\"/\"playing\" contexts; marks recreational activities and promotes game/sport nouns (card, tennis, checkers, Scrabble, badminton)."
+  },
+  {
+    "id": "19_5566_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.29594686627388,
+    "top_activations": [
+      {
+        "trigger": " boys",
+        "score": 62.0,
+        "context": " team to three titles and two sectional championships, and also served as assistant coach for boys' basketball and football.\u23ce- The sectional championship program will provide a niche"
+      },
+      {
+        "trigger": ",",
+        "score": 47.5,
+        "context": " that he won 14 varsity letters in different sports in college, including baseball, shot put, and javelin? And that he lived in England for "
+      },
+      {
+        "trigger": "\u2019",
+        "score": 68.0,
+        "context": " suffered by athletes in what are called collision sports \u2014 football, boys\u2019 and girls\u2019 lacrosse, boys\u2019 and girls\u2019 hockey and wrestling. The bill makes explicit"
+      },
+      {
+        "trigger": " boys",
+        "score": 62.0,
+        "context": " to three titles and two sectional championships, and also served as assistant coach for boys' basketball and football.\u23ce- The sectional championship program will provide a niche and"
+      },
+      {
+        "trigger": " boys",
+        "score": 62.0,
+        "context": " basketball team to three titles and two sectional championships, and also served as assistant coach for boys' basketball and football.\u23ce- The sectional championship program will provide a"
+      }
+    ],
+    "promotes": [
+      " volleyball",
+      " soccer",
+      " basketball",
+      " baseball",
+      " football"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      "izr",
+      "ynb",
+      "\u0441\u043f\u0435\u0440\u0438",
+      "psies"
+    ],
+    "generated_description": "boys' sports \u2014 activates on \"boys'\" possessive before sport names (boys' basketball, boys' football); signals male/youth team context, often high-school sports vocabulary."
+  },
+  {
+    "id": "6_2181_4",
+    "layer": 6,
+    "ctx_idx": 4,
+    "influence_score": 0.37282004952430725,
+    "top_activations": [
+      {
+        "trigger": " Basketball",
+        "score": 17.12,
+        "context": " men's college basketball has a 35-second limit; and women's basketball has a 30-second limit.\u23ceThe National Basketball"
+      },
+      {
+        "trigger": " basketball",
+        "score": 15.12,
+        "context": " more than 1 million children in 40 countries. Programs have included joint basketball games for members of the Crips and Bloods in Virginia and soccer games"
+      },
+      {
+        "trigger": " throw",
+        "score": 13.38,
+        "context": " successful athletes have routines: bouncing the ball three times and pausing before shooting a free throw, having a warm-up routine before every game, or chanting together in"
+      },
+      {
+        "trigger": " basketball",
+        "score": 16.0,
+        "context": " That distance allows the shoe to wrap around the pin without being exactly centered. In basketball, the margin of error is that you can actually fit two basketballs inside"
+      },
+      {
+        "trigger": " basketball",
+        "score": 14.38,
+        "context": " of Sesame Street Jon Stone, boxing champion Ezzard Charles, NBA Hall of Fame basketball player George Yardley, pro football player Glenn Montgomery, golfer Jeff Julian,"
+      }
+    ],
+    "promotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      " therewith",
+      "aarrggbb",
+      " betweenstory",
+      "AndEndTag"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "ANTLR",
+      "rigkeit",
+      " m\u00e9",
+      " feeling"
+    ],
+    "generated_description": "basketball \u2014 activates on mentions of \u201cbasketball\u201d; sports context tokens about the game, shots, rules, players, leagues (NBA, college), related terms like throw."
+  },
+  {
+    "id": "8_9732_4",
+    "layer": 8,
+    "ctx_idx": 4,
+    "influence_score": 0.3659804165363312,
+    "top_activations": [
+      {
+        "trigger": " football",
+        "score": 11.5,
+        "context": " than baseball, supposedly \"America's pastime.\" It's second only to football, with 75 million dedicated fans who tune in (or show up"
+      },
+      {
+        "trigger": " team",
+        "score": 10.88,
+        "context": " changed names away from Native American epithets like the \u201cRedmen.\u201d The NFL team, however, had this decision reversed after the court ruled that these plaintiffs waited"
+      },
+      {
+        "trigger": " they",
+        "score": 13.75,
+        "context": "<bos>Football players do not only need physical fitness, powerful technique and perfect mental ability, but they also need to develop psycho-motor skills. This means that they"
+      },
+      {
+        "trigger": " out",
+        "score": 11.0,
+        "context": " be touching the line by a hair\u2019s breadth and called in might actually be out and vice-versa.\u23ceFew people realised that there was an issue with"
+      },
+      {
+        "trigger": " sporting",
+        "score": 12.12,
+        "context": " each participant states how likely she thinks it is that a team will win a particular sporting event. For example, one contestant may give the Steelers a 62"
+      }
+    ],
+    "promotes": [
+      "\u041f\u0440\u0435\u043c\u0430",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " Roskov",
+      "SharedDtor",
+      "Tracce"
+    ],
+    "demotes": [
+      " players",
+      "Sports",
+      " sports",
+      " football",
+      " athletes"
+    ],
+    "generated_description": "Football / sports \u2014 activates on sports-related tokens (football, team, sporting, players/they); marks a sports/team context, often before mentions of teams or game outcomes."
+  },
+  {
+    "id": "19_13522_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.34289172291755676,
+    "top_activations": [
+      {
+        "trigger": " entering",
+        "score": 78.0,
+        "context": "defined as the ball leaving the player's hand and either touching the rim or entering the basket) before the shot clock expires. If the offensive team fails to"
+      },
+      {
+        "trigger": " a",
+        "score": 106.0,
+        "context": " which two teams of five active players each try to score points against one another by throwing a ball through a 10 feet (3 m) high hoop ("
+      },
+      {
+        "trigger": " the",
+        "score": 97.0,
+        "context": " popular and widely viewed sports in the world.\u23cePoints are scored by shooting the ball through the basket from above; the team with more points at the end of"
+      },
+      {
+        "trigger": " a",
+        "score": 106.0,
+        "context": " active players each try to score points against one another by throwing a ball through a 10 feet (3 m) high hoop (the goal) under organized"
+      },
+      {
+        "trigger": " and",
+        "score": 78.0,
+        "context": ", but is mounted two inches lower. The game is played with a hard paddle and a polymer smaller version of a wiffle ball.\u23cePickleball is similar"
+      }
+    ],
+    "promotes": [
+      "balls",
+      "Ball",
+      " Ball",
+      "ball",
+      " ball"
+    ],
+    "demotes": [
+      " license",
+      " Stock",
+      "stock",
+      "Stock",
+      "license"
+    ],
+    "generated_description": "say ball \u2014 fires on articles/short function words right before mentions of the ball (sports context); strongly promotes output token \"ball\"/\"Ball\"."
+  },
+  {
+    "id": "16_3680_8",
+    "layer": 16,
+    "ctx_idx": 8,
+    "influence_score": 0.39927181601524353,
+    "top_activations": [
+      {
+        "trigger": " outside",
+        "score": 18.0,
+        "context": ". This qualifies it as a fractal.\u23ceThe Mandelbrot set has become popular outside mathematics both for its aesthetic appeal and for being a complicated structure arising from a"
+      },
+      {
+        "trigger": " of",
+        "score": 16.5,
+        "context": " was one of the ways my teachers ensured that I remained engaged and enjoyed the process of learning.\u23ceWorking on a model of the solar system was a sure way"
+      },
+      {
+        "trigger": " the",
+        "score": 21.75,
+        "context": "s three-fold mission to preserve history, honor excellence and connect the different generations of players and fans. Perhaps no era of the game is more shrouded in mystery"
+      },
+      {
+        "trigger": " about",
+        "score": 23.0,
+        "context": " liking to me, and he taught me to wind up, taught me everything I knew about baseball,\" Newcombe said. \"I began to learn and began to"
+      },
+      {
+        "trigger": " enjoyment",
+        "score": 24.5,
+        "context": " who teach by being negative or intimidating can really hurt your kids\u2019 confidence and enjoyment of sports. No, these coaches do NOT toughen up your young athletes,"
+      }
+    ],
+    "promotes": [
+      " cricket",
+      " sportiva",
+      " disambiguazione",
+      "TypedDataSet",
+      " snippetHide"
+    ],
+    "demotes": [
+      "OwnProperty",
+      " posti",
+      " r\u00e9s",
+      "\u05d5\u05d9\u05d9\u05dd",
+      "\u05d1\u05d9\u05d5\u05d2\u05e8\u05e4\u05d9\u05d4"
+    ],
+    "generated_description": "say topic noun \u2014 activates on prepositions/articles (of, about, the, outside) that introduce a following topic/object; often precedes domains like sports, math, activities"
+  },
+  {
+    "id": "19_14803_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3973127007484436,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 26.5,
+        "context": "square-foot permanent exhibit.\u23ce\"We want to use sport to inspire children to think of the science in everything,\" said Janet Yamaguchi, the museum's"
+      },
+      {
+        "trigger": " thought",
+        "score": 25.5,
+        "context": " third-year student at Mount Sinai School of Medicine in New York. \u201cI thought about going into research, but it didn\u2019t give me the immediate satisfaction"
+      },
+      {
+        "trigger": " make",
+        "score": 25.5,
+        "context": " cleaning on a regular basis.\u23ce\"It's also important for parents to make sure that children are taking care of their teeth,\" Yineman said,"
+      },
+      {
+        "trigger": " use",
+        "score": 27.25,
+        "context": "OSNO) program at the Erie Museum of Art creates opportunities for refugee women to use traditional skills and cultural assets from their home countries to begin to build a career"
+      },
+      {
+        "trigger": " see",
+        "score": 27.25,
+        "context": " how to run or how to pitch. But, because of law school, I see the game playing out in front of me on the field in a very different"
+      }
+    ],
+    "promotes": [
+      " music",
+      " soccer",
+      " photography",
+      " basketball",
+      " football"
+    ],
+    "demotes": [
+      "SequentialGroup",
+      "ScopeManager",
+      " OnInit",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "AndEndTag"
+    ],
+    "generated_description": "say activity/sport \u2014 activates on verbs/prep that introduce activities (of, thought, make, use, see); promotes activity/sport nouns like soccer, basketball, music, photography."
+  },
+  {
+    "id": "19_15763_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.299715131521225,
+    "top_activations": [
+      {
+        "trigger": " soccer",
+        "score": 29.38,
+        "context": " Mile, Jamaica. He was buried in a mausoleum with his guitar, a soccer ball, a marijuana bud and a Bible. His funeral was an official state"
+      },
+      {
+        "trigger": "ball",
+        "score": 27.88,
+        "context": " furnished; and through the efforts of the Athletic Association, outdoor sports, basket-ball, base-ball, tennis, and croquet have been provided for."
+      },
+      {
+        "trigger": " kicking",
+        "score": 28.88,
+        "context": " reap health benefits from almost any activity they enjoy, from skateboarding, in-line skating, yoga, swimming, dancing, or kicking a footbag in the driveway"
+      },
+      {
+        "trigger": ".",
+        "score": 26.62,
+        "context": " meeting, two men, a changed world\u23ceIntegration of baseball took root on Aug. 28, 1945\u23ceBranch Rickey III thinks"
+      },
+      {
+        "trigger": " football",
+        "score": 31.38,
+        "context": " universe is made of rules. Nations, religions, Monopoly, Scrabble, Clue, football--they all have 'em. There are rules on the highway, in"
+      }
+    ],
+    "promotes": [
+      "Football",
+      "football",
+      " soccer",
+      " Football",
+      " football"
+    ],
+    "demotes": [
+      "eradish",
+      " Zacks",
+      "gatan",
+      "terase",
+      "\u03c1\u03bf\u03c2"
+    ],
+    "generated_description": "Football/soccer \u2014 activates on football-related words (soccer, football, ball, kicking); consistently pushes output tokens like \"football\"/\"soccer\" as next-word choices."
+  },
+  {
+    "id": "20_9090_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.28321266174316406,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 47.75,
+        "context": " Koufax (baseball); Sid Luckman (football); and Dolph Schayes (basketball). The list is vast. But the focus here is on those who"
+      },
+      {
+        "trigger": " as",
+        "score": 50.25,
+        "context": " sport participation has decreased, the amount of concussions have increased in popular sports such as football, basketball, and soccer.\u23ce\u201cThe incidence of sports-related"
+      },
+      {
+        "trigger": " in",
+        "score": 47.25,
+        "context": " feet, and head. A sporting example of circumduction occurs when performing a serve in tennis or bowling a cricket ball.\u23ce- \u2191 Saladin, Kenneth S"
+      },
+      {
+        "trigger": ",",
+        "score": 48.75,
+        "context": " sports with jumping, such as basketball, or sports with quick direction change, such as soccer or football. Any bone injury near a joint may injure the growth plate"
+      },
+      {
+        "trigger": " or",
+        "score": 48.0,
+        "context": ". The amount of equipment required for baseball isn't on a par with football or hockey, but it is every bit as important. Players need to be sure"
+      }
+    ],
+    "promotes": [
+      " Basketball",
+      " baseball",
+      " soccer",
+      " football",
+      " basketball"
+    ],
+    "demotes": [
+      "=\"@+",
+      "PrivateRoute",
+      "didReceive",
+      "XmlAccessType",
+      " memoized"
+    ],
+    "generated_description": "say sport name \u2014 activates on prepositions/punctuation before sports (e.g. \"(\", \"as\", \"in\", \",\", \"for\"); promotes tokens like basketball, baseball, soccer, football"
+  },
+  {
+    "id": "15_15208_5",
+    "layer": 15,
+    "ctx_idx": 5,
+    "influence_score": 0.374116986989975,
+    "top_activations": [
+      {
+        "trigger": " playing",
+        "score": 74.0,
+        "context": " in works of art and what is downright unacceptable. Contemporary European politics appears to be playing a role in this debate.\u23ceGermany\u2019s decisive part in the ongoing"
+      },
+      {
+        "trigger": " playing",
+        "score": 74.5,
+        "context": " public safety and confidence has not been forthcoming from the government, which itself is still playing catch-up: proper radiation monitoring, timely and clear advice, adequate protective"
+      },
+      {
+        "trigger": " playing",
+        "score": 86.5,
+        "context": "-grade West Virginia History teacher at Poca Middle, credits the NIE program for playing a role in a six-point increase in WESTEST scores from 2"
+      },
+      {
+        "trigger": " played",
+        "score": 76.5,
+        "context": "'ll have to finish the job without the advice of a man who\u2019s played a central role in Delta science.\u23ceJeffrey Mount, the scientist dubbed \u201c"
+      },
+      {
+        "trigger": " played",
+        "score": 77.5,
+        "context": " imagined the telephone.\u23ceBell is an example of the elite class of innovators who played an integral role in elevating the potential of society through their technological advancements. Below"
+      }
+    ],
+    "promotes": [
+      "play",
+      " play",
+      "PLAY",
+      "played",
+      " played"
+    ],
+    "demotes": [
+      "extAlignment",
+      " Normdatei",
+      "setVerticalGroup",
+      "PreferredItem",
+      "closedir"
+    ],
+    "generated_description": "play (verb) \u2014 activates on tokens play/playing/played, especially in the idiom \u201cplay a role\u201d; tends to promote output tokens like play / played."
+  },
+  {
+    "id": "20_16235_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.287889301776886,
+    "top_activations": [
+      {
+        "trigger": " executive",
+        "score": 38.5,
+        "context": " is often the case, you're stronger collectively than individually,'' US Lacrosse chief executive Steve Stenersen said Sunday. ''There is understandable concern about this injury nationally"
+      },
+      {
+        "trigger": " member",
+        "score": 39.75,
+        "context": " On this basis it ensures the regular celebration of the Olympic Games, supports all affiliated member organisations of the Olympic Movement and strongly encourages, by appropriate means, the promotion"
+      },
+      {
+        "trigger": "2",
+        "score": 35.0,
+        "context": " The first winter games were held in Chamonix, France, in 1924. The United States has hosted the Games four times; France has been"
+      },
+      {
+        "trigger": " International",
+        "score": 38.25,
+        "context": "OGs), to the TOP partners, broadcast partners and United Nations agencies, the International Olympic Committee (IOC) shepherds success through a wide range of programmes and projects"
+      },
+      {
+        "trigger": " International",
+        "score": 37.0,
+        "context": " dazzling displays of athleticism and sportsmanship\u2014that is, if they meet the International Olympic Committee\u2019s (IOC) sex criteria.\u23ceOn June 2"
+      }
+    ],
+    "promotes": [
+      "tagHelperRunner",
+      "expandindo",
+      "XMLSchema",
+      "MigrationBuilder",
+      " resourceCulture"
+    ],
+    "demotes": [
+      " sports",
+      " sport",
+      " Sports",
+      " Sport",
+      "sports"
+    ],
+    "generated_description": "Organizational/IOC \u2014 activates on organizational words (executive, member, International, committee contexts); tends to suppress next-token sport/sports choices."
+  },
+  {
+    "id": "7_1844_4",
+    "layer": 7,
+    "ctx_idx": 4,
+    "influence_score": 0.348616361618042,
+    "top_activations": [
+      {
+        "trigger": " basketball",
+        "score": 15.81,
+        "context": " examines each component of the graph or chart separately.\u23ce\"Imagine a bar graph showing the number of ACC championships won by each school's basketball team,\" Gill"
+      },
+      {
+        "trigger": " basketball",
+        "score": 15.06,
+        "context": " way that they take up a large portion of City Arena's regulation-size basketball court. What design will you make with the dominoes? How many domino"
+      },
+      {
+        "trigger": " basketball",
+        "score": 15.81,
+        "context": " if he tries to stop.\u201d\u23ceLong before The University of Texas even had a basketball program, Massachusetts Y.M.C.A. instructor James Naism"
+      },
+      {
+        "trigger": " Basketball",
+        "score": 14.81,
+        "context": " men's college basketball has a 35-second limit; and women's basketball has a 30-second limit.\u23ceThe National Basketball"
+      },
+      {
+        "trigger": " basketball",
+        "score": 14.44,
+        "context": " court says as much about you as an athlete as how well you can shoot a basketball or kick a soccerball. Whether your team's winning big or getting"
+      }
+    ],
+    "promotes": [
+      " Accu",
+      "+:+",
+      "Geographie",
+      " cohomology",
+      "jsxFileName"
+    ],
+    "demotes": [
+      " basketball",
+      " NBA",
+      " Basketball",
+      " FIBA",
+      "\ud83c\udfc0"
+    ],
+    "generated_description": "Basketball \u2014 activates on the explicit word \u201cbasketball\u201d and close contexts (court, team, NCAA); tends to push away/output-demote basketball-related tokens."
+  },
+  {
+    "id": "21_4818_5",
+    "layer": 21,
+    "ctx_idx": 5,
+    "influence_score": 0.3615986704826355,
+    "top_activations": [
+      {
+        "trigger": " best",
+        "score": 85.5,
+        "context": " to become an exceptional basketball player. You have to be the top scorer, the best ball handler and the best defender to knock down opponents. You may not have"
+      },
+      {
+        "trigger": "\u2013",
+        "score": 90.5,
+        "context": " along with the Yankees\u2013Red Sox rivalry, Bears\u2013Packers rivalry and Celtics\u2013Lakers rivalry.\u23ceBruin is a borough in Butler County, Pennsylvania"
+      },
+      {
+        "trigger": " best",
+        "score": 85.5,
+        "context": " player. You have to be the top scorer, the best ball handler and the best defender to knock down opponents. You may not have all this skills at one"
+      },
+      {
+        "trigger": " the",
+        "score": 87.0,
+        "context": " pin without being exactly centered. In basketball, the margin of error is that you can actually fit two basketballs inside the rim, and that produces a \"margin"
+      },
+      {
+        "trigger": " player",
+        "score": 104.5,
+        "context": " the Keystone XL pipeline and the strategic questions it raises for environmentalists.\u23ceNBA player Jason Collins recently became the first openly gay athete in a major American team"
+      }
+    ],
+    "promotes": [
+      " baskets",
+      " basket",
+      "basket",
+      "court",
+      " court"
+    ],
+    "demotes": [
+      " football",
+      " Football",
+      "football",
+      "Football",
+      " f\u00fatbol"
+    ],
+    "generated_description": "basketball \u2014 activates on basketball-context words (player, best, rim, rivalries); promotes \u201cbasket\u201d, \u201cbaskets\u201d, \u201ccourt\u201d; suppresses football-related tokens."
+  },
+  {
+    "id": "21_9324_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.25624021887779236,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 68.0,
+        "context": " a bent knee during sports. In athletes, PCL injuries are most common among those who play football, basketball, soccer and rugby.\u23ce- Medial collateral ligament"
+      },
+      {
+        "trigger": ",",
+        "score": 77.5,
+        "context": " has decreased, the amount of concussions have increased in popular sports such as football, basketball, and soccer.\u23ce\u201cThe incidence of sports-related concussions"
+      },
+      {
+        "trigger": ",",
+        "score": 90.5,
+        "context": " game. It is normally associated with basketball, but is also used in snooker, pro lacrosse, water polo, korfball, and ten-pin bowling"
+      },
+      {
+        "trigger": ",",
+        "score": 78.5,
+        "context": " designed to give students the opportunity to learn complex terminology, rules and strategies in basketball, hockey, flag football and soccer. Students will refine their personal skill levels in"
+      },
+      {
+        "trigger": ",",
+        "score": 69.5,
+        "context": " the joint are common in athletes who play contact sports, such as football, rugby, and hockey. People who participate in activities where they may fall from a height"
+      }
+    ],
+    "promotes": [
+      " volleyball",
+      " soccer",
+      " Ice",
+      " hockey",
+      " ice"
+    ],
+    "demotes": [
+      " bride",
+      ":\u2728",
+      "Mojo",
+      "########.",
+      " Saxons"
+    ],
+    "generated_description": "say sport name \u2014 activates on commas in lists of sports; pushes next-word sports (football, basketball, soccer, hockey, volleyball)"
+  },
+  {
+    "id": "17_5253_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.36736172437667847,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 66.0,
+        "context": "<bos>NASA scientist Bill Cooke is shooting marbles and he's playing \"keepsies.\" The prize won't be another player's marbles, but knowledge that"
+      },
+      {
+        "trigger": " \"",
+        "score": 60.5,
+        "context": ", put all the pieces together to solve the problem.\u23ceLet's play \"experienced programmer\" with the first exercise.\u23ceYou need to get the turtle"
+      },
+      {
+        "trigger": " playing",
+        "score": 69.0,
+        "context": " Tables; Card games; Games; Board games\u23ceSoldiers sit at a narrow table playing cards and checkers in a rocky ravine or trench in the Balkans during World War"
+      },
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": " by solving addition and subtraction problems. The Balloon Matching Game is a variation of the classic \"concentration\" game. Behind each balloon is a number, an equation,"
+      },
+      {
+        "trigger": " doesn",
+        "score": 63.0,
+        "context": " for \u201cchariot,\u201d and the knight now represented by a horse was once in more majestic command of an elephant.\u23ceWho doesn\u2019t play cards? Thanks"
+      }
+    ],
+    "promotes": [
+      "Game",
+      " Games",
+      "games",
+      " game",
+      " games"
+    ],
+    "demotes": [
+      "onViewCreated",
+      "InitVars",
+      "ContentAsync",
+      "tableFuture",
+      "setupUi"
+    ],
+    "generated_description": "Games / playing \u2014 activates on mentions of play, playing, game contexts (cards, board games, \u201cplay\u201d verbs); tends to push output tokens like \u201cgame\u201d / \u201cgames.\u201d"
+  },
+  {
+    "id": "21_4818_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.27298614382743835,
+    "top_activations": [
+      {
+        "trigger": " best",
+        "score": 85.5,
+        "context": " to become an exceptional basketball player. You have to be the top scorer, the best ball handler and the best defender to knock down opponents. You may not have"
+      },
+      {
+        "trigger": "\u2013",
+        "score": 90.5,
+        "context": " along with the Yankees\u2013Red Sox rivalry, Bears\u2013Packers rivalry and Celtics\u2013Lakers rivalry.\u23ceBruin is a borough in Butler County, Pennsylvania"
+      },
+      {
+        "trigger": " best",
+        "score": 85.5,
+        "context": " player. You have to be the top scorer, the best ball handler and the best defender to knock down opponents. You may not have all this skills at one"
+      },
+      {
+        "trigger": " the",
+        "score": 87.0,
+        "context": " pin without being exactly centered. In basketball, the margin of error is that you can actually fit two basketballs inside the rim, and that produces a \"margin"
+      },
+      {
+        "trigger": " player",
+        "score": 104.5,
+        "context": " the Keystone XL pipeline and the strategic questions it raises for environmentalists.\u23ceNBA player Jason Collins recently became the first openly gay athete in a major American team"
+      }
+    ],
+    "promotes": [
+      " baskets",
+      " basket",
+      "basket",
+      "court",
+      " court"
+    ],
+    "demotes": [
+      " football",
+      " Football",
+      "football",
+      "Football",
+      " f\u00fatbol"
+    ],
+    "generated_description": "say basketball \u2014 activates in basketball-related text; promotes words like \u201cbasket\u201d/\u201ccourt\u201d, suppresses \u201cfootball\u201d tokens."
+  },
+  {
+    "id": "23_3604_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.31204167008399963,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 68.5,
+        "context": " playing pool and I am a good pool player. One day I saw some students playing pool in the student lounge. I watched them for a while and they asked"
+      },
+      {
+        "trigger": " like",
+        "score": 60.0,
+        "context": " allows you to reach. The lunge is used during continuing movements, especially in sports like tennis (look at Roger Federer). Be sure to point your spine as you"
+      },
+      {
+        "trigger": " and",
+        "score": 81.5,
+        "context": "dle. The ball moves in slow motion, and becomes clearer. Players of baseball, tennis and other ball sports have described this dilation of time. But why does"
+      },
+      {
+        "trigger": " In",
+        "score": 77.0,
+        "context": ". That distance allows the shoe to wrap around the pin without being exactly centered. In basketball, the margin of error is that you can actually fit two basketballs"
+      },
+      {
+        "trigger": " a",
+        "score": 59.0,
+        "context": " S: (n) guard (the person who plays the position of guard on a basketball team)\u23ce- S: (n) guard (a military unit"
+      }
+    ],
+    "promotes": [
+      "table",
+      " bridge",
+      "Table",
+      " Table",
+      " table"
+    ],
+    "demotes": [
+      " NSCoder",
+      "GraphicsUnit",
+      "LookAnd",
+      " deportivos",
+      " ostavi"
+    ],
+    "generated_description": "say SPORT \u2014 activates on connectors (and/like/in/a) immediately before sport names; signals upcoming sport token (tennis, basketball, baseball, pool)"
+  },
+  {
+    "id": "23_8855_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.29206421971321106,
+    "top_activations": [
+      {
+        "trigger": " professional",
+        "score": 36.5,
+        "context": ", the other all white. It was a game that would alter the future of professional basketball.\u23ceIn 1948, the United States remained a"
+      },
+      {
+        "trigger": " in",
+        "score": 27.25,
+        "context": " in South Africa. He said he has studied Mandela's writings throughout his career in government.\u23ce\"Like so many around the globe, I cannot fully imagine"
+      },
+      {
+        "trigger": " of",
+        "score": 54.0,
+        "context": " still playing our usual high velocity, high testosterone;\u23cego-for-goal type of game, when we had the game won with minutes left on the clock"
+      },
+      {
+        "trigger": " with",
+        "score": 29.25,
+        "context": " Each of these books is written with a short verse about something that has to do with the sport beginning with each letter of the alphabet as well as more detailed information"
+      },
+      {
+        "trigger": " of",
+        "score": 26.75,
+        "context": " negro and white person to play together or in company with each other at any game of pool or billiards.\" This selection is an example of a Jim Crow law"
+      }
+    ],
+    "promotes": [
+      " baseball",
+      " hockey",
+      " cricket",
+      " rugby",
+      " football"
+    ],
+    "demotes": [
+      "adpleegd",
+      "kloped",
+      "}=[",
+      "}:\\",
+      " numberWith"
+    ],
+    "generated_description": "say SPORT name \u2014 activates on structural tokens (of, in, with, professional) that precede sport mentions; pushes sport words (baseball, hockey, cricket, rugby, football)."
+  },
+  {
+    "id": "17_12431_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.3145558536052704,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 38.0,
+        "context": " basketball, racquet sports, and baseball. Other high-risk sports: hockey, football, lacrosse, boxing, and soccer.\u23ceAlthough eye protection can'"
+      },
+      {
+        "trigger": " at",
+        "score": 34.5,
+        "context": ".S. Grant.\u23ceAs a student at the Naval Academy, he excelled at optics and other sciences, and clearly had an aptitude for precision instruments and measurements"
+      },
+      {
+        "trigger": ",",
+        "score": 33.25,
+        "context": " recommends a child should participate in some form of aerobic activity, like cycling, hiking, or swimming daily, to keep the heart strong.\u23ceAlso, try to"
+      },
+      {
+        "trigger": " accomplished",
+        "score": 35.5,
+        "context": " his body and grow stronger, he took up several different sports, eventually becoming an accomplished athlete. As a nurse in Great Britain during World War I, he designed"
+      },
+      {
+        "trigger": ":",
+        "score": 38.0,
+        "context": " sports.\u23ceSports-related injuries in all age groups occur most frequently in basketball, racquet sports, and baseball. Other high-risk sports: hockey,"
+      }
+    ],
+    "promotes": [
+      " snowboarding",
+      " sportsman",
+      " sport",
+      "sports",
+      " sports"
+    ],
+    "demotes": [
+      "partiet",
+      " jegy",
+      " D",
+      "Sklici",
+      "GARET"
+    ],
+    "generated_description": "Sports topic \u2014 activates in sports-related contexts (lists, examples, sporting adjectives); tends to promote tokens like \"sport\", \"sports\", \"sportsman\"."
+  },
+  {
+    "id": "24_7753_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.32175514101982117,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 56.0,
+        "context": " make sure you have the equipment you need, like your glove for baseball, cleats for soccer, and high-top sneakers for basketball. You couldn't play"
+      },
+      {
+        "trigger": " professional",
+        "score": 58.5,
+        "context": " time he reached 40, he had established a reputation as a college and professional football star, lawyer, film and Broadway actor, concert singer, and powerful"
+      },
+      {
+        "trigger": " for",
+        "score": 53.5,
+        "context": "'s older brother, Matthew Robinson, inspired Jackie to pursue his talent and love for athletics. Matthew won a silver medal in the 200-meter"
+      },
+      {
+        "trigger": " as",
+        "score": 64.0,
+        "context": "ins. Injuries to the joint are common in athletes who play contact sports, such as football, rugby, and hockey. People who participate in activities where they may"
+      },
+      {
+        "trigger": " as",
+        "score": 61.5,
+        "context": "Obviously, some sports are more dangerous than others. For example, contact sports such as football can be expected to result in a higher number of injuries than a non"
+      }
+    ],
+    "promotes": [
+      " cal",
+      " AssemblyCulture",
+      " American",
+      "cal",
+      " foot"
+    ],
+    "demotes": [
+      " hockey",
+      " basketball",
+      "Hockey",
+      "basketball",
+      " cricket"
+    ],
+    "generated_description": "say sport \u2014 activates on prepositions like \"for\"/\"as\" that introduce a sport; signals/encourages a sports noun to follow (e.g., baseball, football)."
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.30328425765037537,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say next noun/entity \u2014 activates on small function words (in, to, a, comma, verbs like attended) that introduce an upcoming noun or proper name"
+  },
+  {
+    "id": "23_15317_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3467344641685486,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 70.5,
+        "context": " Sports Injuries:\u23ce1. Repetitive Motion: Summer sports including softball, baseball, tennis and golf can all cause repetitive motion injuries like \u201ctennis elbow\u201d. Re"
+      },
+      {
+        "trigger": " the",
+        "score": 64.0,
+        "context": " talking and hand up when signal is on.\u23ce- No kicking the balls on the playground.\u23ce- No playing in or around bathroom areas.\u23ce- No"
+      },
+      {
+        "trigger": ",",
+        "score": 70.5,
+        "context": "Common Summer Sports Injuries:\u23ce1. Repetitive Motion: Summer sports including softball, baseball, tennis and golf can all cause repetitive motion injuries like \u201ctennis elbow"
+      },
+      {
+        "trigger": "/",
+        "score": 80.5,
+        "context": " units are covered: football, basketball, soccer, kickball/ baseball, volleyball and dodge ball. They also participate in cooperative and teambuilding activities where there"
+      },
+      {
+        "trigger": ",",
+        "score": 59.5,
+        "context": "<bos>Racquet sports (tennis, racquetball, squash, badminton, and paddle tennis) are sports of speed and agility and involve athletes of all ages."
+      }
+    ],
+    "promotes": [
+      " hand",
+      " pickup",
+      " net",
+      "hand",
+      " pick"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "\u0633\u0637\u0633",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "findpost"
+    ],
+    "generated_description": "list comma \u2014 activates on commas separating enumerated items (e.g., \"tennis, baseball, ...\"); marks continuation within lists and itemized sequences."
+  },
+  {
+    "id": "20_12061_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.37919285893440247,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 70.0,
+        "context": ", whom he accused of having cheated him of \u00a3300 in a game of cards and to whom he now owed, by the standards of the day,"
+      },
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": "c. Noun is attested by early 14c.; meaning \"counter used in a game of chance\"\u23ceis first recorded 1840;"
+      },
+      {
+        "trigger": " play",
+        "score": 48.0,
+        "context": ". I remember the days when even house phones were a luxury. We used to play games outdoors (not video games), and actually knew every kid in the neighborhood"
+      },
+      {
+        "trigger": " playing",
+        "score": 53.5,
+        "context": " you can still find fun ways to be active. Some people have a tradition of playing football on Thanksgiving Day not just watching it. When it snows, there are"
+      },
+      {
+        "trigger": " like",
+        "score": 69.5,
+        "context": ", and a draw 0.5 for each player. In some games, like poker, that constant payoff to split is 0; in order for one"
+      }
+    ],
+    "promotes": [
+      " Card",
+      "cards",
+      " cards",
+      " deck",
+      " card"
+    ],
+    "demotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "JspWriter",
+      "V\u00e9xase",
+      "\ufeff/*",
+      "spesies"
+    ],
+    "generated_description": "say cards \u2014 fires on preps/verbs introducing games (of, play, playing, like) in game contexts; consistently pushes output tokens like card / cards / deck."
+  },
+  {
+    "id": "25_4717_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.35220101475715637,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "Contracted 's \u2014 activates on the clitic \"'s\" (it's, that's, what's); marks contractions/quick sentence links and other small function words."
+  },
+  {
+    "id": "25_9069_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.24329471588134766,
+    "top_activations": [
+      {
+        "trigger": " counting",
+        "score": 59.5,
+        "context": " through the video\u2014but most subjects don't see the gorilla because they are counting passes! With the rise of the Internet, we're in a li"
+      },
+      {
+        "trigger": " actually",
+        "score": 60.5,
+        "context": " without being exactly centered. In basketball, the margin of error is that you can actually fit two basketballs inside the rim, and that produces a \"margin of"
+      },
+      {
+        "trigger": ";",
+        "score": 60.0,
+        "context": "-second limit since first introducing the clock in the 1950s; men's college basketball has a 35-second limit; and"
+      },
+      {
+        "trigger": " While",
+        "score": 67.5,
+        "context": " defensive structures. While competitive basketball is carefully regulated, numerous variations of basketball have developed for casual play. In some countries, basketball is also a popular spectator sport."
+      },
+      {
+        "trigger": " of",
+        "score": 67.5,
+        "context": " more.\u23ceThe cure for jumper\u2019s knee\u23cePeople who play a lot of basketball will often get a tremendous pain in the front of their knee. This"
+      }
+    ],
+    "promotes": [
+      " ::=",
+      "AutoField",
+      "MigrationBuilder",
+      "eneuve",
+      " resourceCulture"
+    ],
+    "demotes": [
+      " BASKET",
+      " basketball",
+      " court",
+      " Basketball",
+      "Basketball"
+    ],
+    "generated_description": "Suppress \"basketball\" \u2014 activates on function/connector tokens in basketball paragraphs (of, while, ;, actually, counting); consistently pushes down the token \"basketball\"/variants."
+  },
+  {
+    "id": "25_15148_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3569970428943634,
+    "top_activations": [
+      {
+        "trigger": " sanctioned",
+        "score": 47.0,
+        "context": " city hosted the first national organized wrestling tournament in 1888 and the modern Olympic games sanctioned the first wrestling matches at the St Louis games in 1"
+      },
+      {
+        "trigger": " of",
+        "score": 43.5,
+        "context": " might have a lot to do with it \u2014 especially in the bruise-laden sport of Rugby.\u23ceFor those of you who don't follow Rugby Football \u2014"
+      },
+      {
+        "trigger": " former",
+        "score": 55.0,
+        "context": ", the former CEO and president of Battlecade named as Mixed Martial Arts which later became the identity of this sport.\u23ceLearn Mixed Martial Arts to build self confidence"
+      },
+      {
+        "trigger": ",",
+        "score": 47.25,
+        "context": " in sportive or self-defense applications are seen in Kung Fu, Yoga, Judo, Brazilian jiu jitsu, Capoeira, mixed martial arts, and"
+      },
+      {
+        "trigger": "day",
+        "score": 65.0,
+        "context": " Babylonian relief\u2019s depict wrestling bouts where wrestlers are using most of the holds known to the modern-day sport.\u23ceWrestling was a big part of ancient Greek"
+      }
+    ],
+    "promotes": [
+      "professional",
+      " PROFESSIONAL",
+      "Professional",
+      " Professional",
+      " professional"
+    ],
+    "demotes": [
+      " InputDecoration",
+      " StatelessWidget",
+      " wrestler",
+      " Wrestling",
+      " wrestling"
+    ],
+    "generated_description": "sports mention marker \u2014 activates on tokens introducing or adjacent to sport names/listings (of, sanctioned, former, day, commas); tends to promote \u201cprofessional.\u201d"
+  },
+  {
+    "id": "21_10414_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.3913056254386902,
+    "top_activations": [
+      {
+        "trigger": " like",
+        "score": 47.5,
+        "context": " It is less popular among adults, who are more commonly known to play similar games like softball and baseball.\u23ce\"The game seems to afford equal enjoyment to the"
+      },
+      {
+        "trigger": " play",
+        "score": 40.5,
+        "context": ":\u23ceA principal unlocks the school gate after hours so neighbors can shoot hoops or play ball on evenings and weekends.\u23ceA school and swim team share a pool"
+      },
+      {
+        "trigger": " of",
+        "score": 49.0,
+        "context": "54; A fake robot it was controlled by a man and won many games of Chess even defeating Ben Franklin.\u23ce2009; In October parents"
+      },
+      {
+        "trigger": " a",
+        "score": 57.5,
+        "context": ", the first thing they will do is make two goals, select sides and have a game. Football is fun, the concept of using simplified small sided games as"
+      },
+      {
+        "trigger": " play",
+        "score": 51.5,
+        "context": " to exchange small gifts and food with one another. They also became friendly enough to play football matches with each other. In all, about 100,"
+      }
+    ],
+    "promotes": [
+      " wager",
+      "ConstraintMaker",
+      " ISNI",
+      "postIndex",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "lgari",
+      "ustain",
+      " dovrebbe",
+      "queur",
+      " miras"
+    ],
+    "generated_description": "say SPORT/GAME \u2014 activates on connectors ('play', 'like', 'of', articles) immediately before sport or game names; signals an upcoming mention of a sport or game"
+  },
+  {
+    "id": "20_4759_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.368742436170578,
+    "top_activations": [
+      {
+        "trigger": " improve",
+        "score": 62.5,
+        "context": "<bos>Crossing and finishing with build up play\u23ceAim - To improve understanding of build up play. To improve runs into the box. To improve finishing from crossing situations"
+      },
+      {
+        "trigger": " and",
+        "score": 54.0,
+        "context": " such as three to five mile runs, and soccer players should include both sprinting and sustained running such as 100 yard dashes and half-mile repeats"
+      },
+      {
+        "trigger": " a",
+        "score": 54.0,
+        "context": ", the first thing they will do is make two goals, select sides and have a game. Football is fun, the concept of using simplified small sided games as"
+      },
+      {
+        "trigger": " receiving",
+        "score": 65.5,
+        "context": " nerveless when they kick for goal.\u23cePractices should include:\u23ceRunning \u2013 receiving passes from different angles and distances, while static and on the move\u23ceRunning"
+      },
+      {
+        "trigger": " (",
+        "score": 59.0,
+        "context": "ls) is not permitted and there are restrictions on how the ball can be handled (violations).\u23ceThrough time, basketball has developed to involve common techniques of"
+      }
+    ],
+    "promotes": [
+      "Pass",
+      " Passes",
+      " passing",
+      " pass",
+      " passes"
+    ],
+    "demotes": [
+      "IsMutable",
+      " MainAxisSize",
+      "SBATCH",
+      " TextAlign",
+      "MethodManager"
+    ],
+    "generated_description": "Pass/passing \u2014 activates on passing/receiving/crossing contexts in sports (soccer/football); consistently pushes output tokens like \"pass\", \"passes\", \"passing\"."
+  },
+  {
+    "id": "21_14489_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.3892488479614258,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 40.0,
+        "context": " by talking to them!\u23ceMuch of recent progress in science, especially in biology and medicine related fields, has been courtesy of bugs like E. coli and T"
+      },
+      {
+        "trigger": ",",
+        "score": 45.0,
+        "context": " but in fields such as law, psychology, social work, education, public administration, and health care. Philosophy courses develop reading comprehension and logical reasoning skills which are"
+      },
+      {
+        "trigger": " studied",
+        "score": 43.5,
+        "context": ") was a United States Representative from Kentucky.\u23ceEducation and early career\u23ceDavis studied law and in 1789 was admitted to the Kentucky bar."
+      },
+      {
+        "trigger": " from",
+        "score": 46.0,
+        "context": " today.\u23ceAdditionally, all his life he took active part in different fields, from photography to ornithology. His personal qualities are remembered highly by the people of"
+      },
+      {
+        "trigger": " of",
+        "score": 39.5,
+        "context": " first class syphilologic centers, that of the Johns Hopkins Hospital and the School of Hygiene and Public Health, and the Peiping Union Medical College. The junior"
+      }
+    ],
+    "promotes": [
+      " astronomy",
+      " biology",
+      " theology",
+      " economics",
+      " medicine"
+    ],
+    "demotes": [
+      " fallait",
+      " \u00e9preuve",
+      " r\u00e9sze",
+      "httphttps",
+      " cumplido"
+    ],
+    "generated_description": "say field/discipline \u2014 activates on conjunctions/prepositions/comma that introduce domains (and/of/from/, studied); promotes academic disciplines (biology, medicine, economics, astronomy)"
+  }
+]

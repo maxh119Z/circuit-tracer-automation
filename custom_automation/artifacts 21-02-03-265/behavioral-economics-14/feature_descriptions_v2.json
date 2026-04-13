@@ -1,0 +1,2594 @@
+[
+  {
+    "id": "0_3916_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.38793373107910156,
+    "top_activations": [
+      {
+        "trigger": "indonesia",
+        "score": 9.44,
+        "context": "<bos>indonesia: raising public awareness of environmental damage\u23ceDeforestation rates have reached about two million ha a day, with illegal logging and conversion to oil palm plantations the"
+      },
+      {
+        "trigger": "freight",
+        "score": 9.69,
+        "context": "<bos>freight train composed of cars carrying a single type of commodity that are all bound for the same destination. By hauling only one kind of freight for one destination,"
+      },
+      {
+        "trigger": "only",
+        "score": 9.44,
+        "context": " coach, who tracked their progress. they also attended nutrition and exercise classes.\u23ceonly using the app, without educational support, did not lead to weight loss."
+      },
+      {
+        "trigger": "cruise",
+        "score": 9.12,
+        "context": "<bos>cruise control in a sentence\u23ceExample sentences for cruise control\u23ceCruise control-which keeps a vehicle at a constant speed-has been around for decades.\u23ce"
+      },
+      {
+        "trigger": "published",
+        "score": 9.75,
+        "context": "<bos>published on 30 October 2013\u23ceThe Indus valley Civilization was an ancient civilization located in what today is Pakistan and northwest India, on"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u2019",
+      "'",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      "^(@)",
+      " Efq",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " my\u017felf",
+      "BibitemShut"
+    ],
+    "generated_description": "sentence-start token \u2014 activates on content words appearing at sentence/document start (proper nouns or topical words like \"Indonesia\", \"freight\", \"cruise\", \"published\"); promotes line breaks/new sentence tokens."
+  },
+  {
+    "id": "0_4677_19",
+    "layer": 0,
+    "ctx_idx": 19,
+    "influence_score": 0.3663575053215027,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 13.94,
+        "context": " kidney function. The relationship between kidney function and large dietary protein loads is intricate, and I will review it below so that you can understand it and make your own"
+      },
+      {
+        "trigger": " and",
+        "score": 13.94,
+        "context": " many aquarists acquire one of these animals without fully understanding its husbandry requirements, and the result, more often than not, is a slow decline in health and"
+      },
+      {
+        "trigger": " and",
+        "score": 13.94,
+        "context": " practices of banks, the politicians that allowed them to get aways with it, and the members of our society who knowingly chose to participate in poorly constructed loans for"
+      },
+      {
+        "trigger": " and",
+        "score": 14.06,
+        "context": " numbers. Within a few years, over fifty million bison had been wiped out, and by the end of the nineteenth century there were just a few thousand left."
+      },
+      {
+        "trigger": " and",
+        "score": 14.06,
+        "context": " be famous as a place of opportunity where people with a wide assortment of skills, and from many regions of both Britain and the rest of the world, could make"
+      }
+    ],
+    "promotes": [
+      "]));\r",
+      "Glej",
+      "\"]);\r",
+      "\"]];",
+      "\"];\r"
+    ],
+    "demotes": [
+      " Efq",
+      " Ibidem",
+      "\u5e02\u9547",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "generated_description": "and \u2014 activates on the coordinating conjunction \"and\"; signals clause or list continuation, commonly preceding noun phrases or subordinate clauses."
+  },
+  {
+    "id": "2_2414_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.3417973816394806,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 20.5,
+        "context": " concept.\u23cePollination is the process of transferring pollen from the anthers (male reproductive organ) to the stigma female reproductive organ) of flowers to ensure the"
+      },
+      {
+        "trigger": ")",
+        "score": 20.62,
+        "context": "ywarp\u23ce, a name echoed in other Germanic languages\u23cesuch as Norwegian\u23ce) and German\u23ceA mole's diet primarily consists of earthworms\u23ceand"
+      },
+      {
+        "trigger": " )",
+        "score": 24.0,
+        "context": " of\u23cepupils in a school etc.\u23ceAn empty set\u23cedesignation is )\u23cedoesn't contain any elements, for instance, the set of winged"
+      },
+      {
+        "trigger": ")",
+        "score": 26.5,
+        "context": " to determine when words, phrases, or clauses should be joined by and, or, or but.\u23cethe Reading/Language Arts Framework for California Public Schools)"
+      },
+      {
+        "trigger": ");",
+        "score": 21.62,
+        "context": "<bos>associated transcriptional regulators); (2) conserved molecular-stress and checkpoint pathways; and (3) conserved toxicokinetic components such as those involved in the transport"
+      }
+    ],
+    "promotes": [
+      "HtmlAttribute",
+      " kaarangay",
+      "oredCriteria",
+      " ModelExpression",
+      "GEBURTSDATUM"
+    ],
+    "demotes": [
+      "Sud",
+      "hende",
+      "cstring",
+      " JpaRepository",
+      "CAT"
+    ],
+    "generated_description": "closing parenthesis \u2014 activates on \u201c)\u201d, \u201c);\u201d, \u201c>>)\u201d tokens ending parentheticals, citations, or clause closures; signals close-of-parenthetical punctuation."
+  },
+  {
+    "id": "0_4870_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37077033519744873,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " Longshot rifle and spots an enemy. He puts his cross hairs on his head, pulls the trigger and is rewarded with a gush of blood on his screen"
+      },
+      {
+        "trigger": ",",
+        "score": 28.88,
+        "context": " of your own voice.\u201d\u23ce\u201cHe's also probably a great conversationalist, which is the only reason I chose him over Neil Young, who would probably"
+      },
+      {
+        "trigger": ",",
+        "score": 28.12,
+        "context": ")\u23ce- The word \"palindrome\" is derived from the Greek pal\u00edndromos, meaning \"running back\" (pal\u00edn = back + dromos = running"
+      },
+      {
+        "trigger": ",",
+        "score": 28.0,
+        "context": " part of the inflammatory immune reaction. It\u2019s this inflammation that gives you puffy, swollen eyes or a blistery skin rash. As well as being produced"
+      },
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " this is the module for you. You can either study it on its own or, if you wish to embark on a programme of study, it will provide the"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      "^(@)",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      "-",
+      " (",
+      ";"
+    ],
+    "generated_description": "comma (clause-continuation) \u2014 activates on commas linking clauses/appositives; signals upcoming continuation or subordinate phrase, often mid-sentence list/expansion commas"
+  },
+  {
+    "id": "0_16314_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.340268075466156,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 23.5,
+        "context": " Canada: BC USDA Native Status: L48(N), CAN(N)\u23ceGrowing ConditionsWater Use: Medium\u23ceLight Requirement: Part Shade\u23ceCa"
+      },
+      {
+        "trigger": ")",
+        "score": 23.5,
+        "context": " that very form,\u23ce(vi) recipient consciousness receiving it,\u23ce(vii) investigating consciousness investigating it,\u23ce(viii) determining consciousness determining it.\u23ce"
+      },
+      {
+        "trigger": ")",
+        "score": 24.25,
+        "context": " of the binary operation, an identity element, and inverses.\u23ce(a) The set is closed under this operation. (Squaring a real number and"
+      },
+      {
+        "trigger": ")",
+        "score": 23.75,
+        "context": " scratchy, sore)|\u23ceRecognizing your child's allergy trigger(s)\u23ceThe best way to cope with your child's allergy is to find"
+      },
+      {
+        "trigger": ")",
+        "score": 24.0,
+        "context": "A)P(A) + P(R|B)P(B)\u23ceP(R) = 0.4 x 0.3"
+      }
+    ],
+    "promotes": [
+      " \u201c",
+      " -",
+      " (",
+      " \"",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      ")",
+      "}",
+      "]",
+      "\"",
+      " it\u017felf"
+    ],
+    "generated_description": "closing parenthesis ) \u2014 activates on \u201c)\u201d tokens (after list labels, parenthetical markers, citations); tends to suppress closing-bracket-like output."
+  },
+  {
+    "id": "0_8061_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.38380342721939087,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ],
+    "generated_description": "\"in\" token \u2014 activates on the sequence \"in\" as a standalone preposition and as the substring in words (e.g., \"in\", \"-ing\", \"susta[in]able\"); tends to push away producing \"in\"."
+  },
+  {
+    "id": "0_3850_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39573773741722107,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 22.75,
+        "context": ":11\u23ceIgbo terms that indicate people, beings, things, places, phenomena, qualities or ideas.\u23ce- Category:Igbo proper nouns:"
+      },
+      {
+        "trigger": ",",
+        "score": 22.0,
+        "context": " in competing and acquiring market share with some commercial software equivalents such as Microsoft, Sun, BEA systems and IBM. Companies such as RedHat, have coupled open source"
+      },
+      {
+        "trigger": ",",
+        "score": 22.12,
+        "context": " the equivalent of approximately 500 MCU taken four times per day. However, most of the bromelain used in the studies was enteric-coated in"
+      },
+      {
+        "trigger": ",",
+        "score": 22.75,
+        "context": " from a variety of occupations - kings, fishermen, tax collectors, shepherds, prophets, even a physician - their writings dovetail with one another intricately. Still"
+      },
+      {
+        "trigger": ",",
+        "score": 23.25,
+        "context": " direction, experience, fatherhood, good, government, honor, observation, people, politics, preparation, purity, and tyranny\u23ceThe Founding Fathers were careful to"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      " I",
+      " a"
+    ],
+    "generated_description": "list-comma \u2014 activates on commas used as list/appositive separators; strong on enumerations and serialized items."
+  },
+  {
+    "id": "0_2115_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3863021433353424,
+    "top_activations": [
+      {
+        "trigger": "combat",
+        "score": 17.5,
+        "context": "1930s. Hoping that it would allow self-simulative\u23cecombat. However powerfully applied techniques still\u23cecause concussions through the thickest protections"
+      },
+      {
+        "trigger": "athery",
+        "score": 13.88,
+        "context": "cts persistent, broadly ovate or triangular-ovate, flat, large, leathery, base cordate, margin irregularly and finely serrulate, apex long ac"
+      },
+      {
+        "trigger": "biological",
+        "score": 13.88,
+        "context": " insects, weeds and plant diseases is referred to as \u201cbiocontrol\u201d or \u201cbiological control\u201d.\u23ceAs part of the greenhouse installation at Agriculture in the City visitors"
+      },
+      {
+        "trigger": "sustainable",
+        "score": 15.62,
+        "context": " World Commission on Environment and Development, which produced the now-familiar concept of \u201csustainable development\u201d. She was addressing a discussion on population and reproductive health on 1"
+      },
+      {
+        "trigger": "glitter",
+        "score": 19.62,
+        "context": " others. A spectacular desirable effect of metal halide lighting in your aquarium is the \"glitter effect,\" which replicates the effect of surface waves reflecting on a reef in a"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " Shakspeare",
+      " \u017fche",
+      " plea\u017fure",
+      " Monfieur"
+    ],
+    "demotes": [
+      " \u201c",
+      " a",
+      "ratulations",
+      " an",
+      " co"
+    ],
+    "generated_description": "Descriptive modifier \u2014 activates on adjectives/nouns that label properties or qualities (biological, sustainable, leathery, glitter, combat), often appearing right before a noun."
+  },
+  {
+    "id": "0_3766_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.38873571157455444,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 13.81,
+        "context": "; 2) have muscles that enable them to change shape; and 3) secrete digestive juices from glands in the endoderm. The mouth is surrounded by"
+      },
+      {
+        "trigger": ").",
+        "score": 13.81,
+        "context": " is the meteor, and the solid chunks that hit the ground are the meteorites).\u23ceOver the past few months there\u2019s been some progress studying the meteor"
+      },
+      {
+        "trigger": ")",
+        "score": 14.31,
+        "context": " and friends who might join as Volunteer Voices to assist with the choir), 3) increase public awareness of the impairments or disorders represented by the choir, and "
+      },
+      {
+        "trigger": ")",
+        "score": 13.31,
+        "context": ".\u23ceLet's Begin with the Basics\u23ceButtons to hear Example of Sounds)\u23ceCheck Fetish - Always check the fetish on your flute to make sure"
+      },
+      {
+        "trigger": ")",
+        "score": 13.81,
+        "context": " that \u201cthey\u201d felt that they often knew better what to do than the citizens) really wanted. This was just part of a larger discussion and Maryland wasn\u2019"
+      }
+    ],
+    "promotes": [
+      "();",
+      "\uff08",
+      "(",
+      "</h4>",
+      " ("
+    ],
+    "demotes": [
+      ")",
+      ")\uff0c",
+      ")\u00bb.",
+      "),",
+      "),\u201d"
+    ],
+    "generated_description": "closing parenthesis (')') \u2014 activates on ')' tokens (enumerations/parentheticals, before punctuation/newlines); often co-occurs with parentheses/formatting and pushes toward opening-paren-like tokens."
+  },
+  {
+    "id": "0_3255_19",
+    "layer": 0,
+    "ctx_idx": 19,
+    "influence_score": 0.28323230147361755,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": ", many people are unaware of the history of the Transportation Security Administration (TSA) and the reasons for its creation.\u23ceThe truth is that TSA has been,"
+      },
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": "; Colletotrichum fragariae, C. gloeosporioides and Fusarium oxysporum, which have large affects on agriculture crops.\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23cetrees that can reach heights of over 114 meters (375 ft) and live for more than 3,000 years!"
+      },
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": "\u23ceAbout Website says: This page gives information about ozone at Halley, Rothera and Vernadsky/Faraday stations. Openness Not open. Permission required"
+      },
+      {
+        "trigger": " and",
+        "score": 37.25,
+        "context": "\u23ceESA\u2019s follow-up instruments aboard ERS-2, Envisat and CryoSat have ensured the continuity of radar altimetry measurements. ESA"
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq",
+      " Monfieur"
+    ],
+    "demotes": [
+      " and",
+      " ",
+      " (",
+      " or",
+      " in"
+    ],
+    "generated_description": "List-and \u2014 activates on \"and\" joining items in a list/enumeration; common between proper nouns or noun phrases (e.g., X and Y)."
+  },
+  {
+    "id": "0_253_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3674902021884918,
+    "top_activations": [
+      {
+        "trigger": "you",
+        "score": 13.5,
+        "context": "<bos>you know what plants need to live?....come and find out!\u23ceyou wanna know how plants grow?\u23ceLearn the parts of a plant?\u23ce"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Browse by Issue:\u23ceOne of the oldest conflicts in the American system of government is that between Congress and the President over the right to formulate and implement"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- BC Games\u23ceMeasles cases rise in the eastern Fraser Valley\u23ceFraser Health's chief medical health officer is warning about the rise in measles cases in"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Draft SEPUP to CC Grades 6-8\u23ceCC & Storytown\u23ce- StoryTown CC Brochure information on purchasing additional curriculum resources to align with"
+      },
+      {
+        "trigger": "research",
+        "score": 14.12,
+        "context": "<bos>researchers have claimed that giant heat waves caused by global\u23cewarming will kill\u23ceoff desert bird communities over the next one hundred years,\u23ceand even believe"
+      }
+    ],
+    "promotes": [
+      " it",
+      " the",
+      " a",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " NDEBUG",
+      " Efq",
+      "ArgsConstructor",
+      " Shakspeare",
+      " ARXIV"
+    ],
+    "generated_description": "start-of-line marker \u2014 activates on line or list starts (bullets like \"->\", sentence openings like \"you\"); promotes newlines and common lead words/articles (the, a, it)."
+  },
+  {
+    "id": "3_373_1",
+    "layer": 3,
+    "ctx_idx": 1,
+    "influence_score": 0.3697039484977722,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 29.62,
+        "context": "<bos>: to cover (something) by winding or folding a piece of material around it\u23ce: to wind or fold (something) around something else\u23ce: to"
+      },
+      {
+        "trigger": "ver",
+        "score": 33.0,
+        "context": "<bos>verbo (posits, positing, posited)\u23ce- 1 [with object] Put forward as fact or as a basis for argument: the"
+      },
+      {
+        "trigger": "2",
+        "score": 28.12,
+        "context": "<bos>2nd ed. - Cold Spring Harbor, N.Y. : Cold Spring Harbor Laboratory Press, c2007.\u23ceviii, 1"
+      },
+      {
+        "trigger": "uus",
+        "score": 29.62,
+        "context": "<bos>uus in the news\u23ceInventor of World Wide Web is knighted by queen\u23ceMassachusetts Unitarian Universalist Tim Berners-Lee, the inventor of the"
+      },
+      {
+        "trigger": "1",
+        "score": 22.12,
+        "context": "<bos>11.2 Appraisal Methods\u23ce- Be able to describe the various appraisal methods.\u23ceIt probably goes without saying that different industries and jobs need different kinds"
+      }
+    ],
+    "promotes": [
+      " i",
+      " Guess",
+      " guess",
+      " direct",
+      "."
+    ],
+    "demotes": [
+      ")++;",
+      " Efq",
+      "]:\r",
+      "...');",
+      " my\u017felf"
+    ],
+    "generated_description": "line-start marker \u2014 fires on tokens beginning a new segment/line (colons, numerals, headings, sentence-start fragments like \u201cver\u201d, \u201cuus\u201d); signals segment/heading boundaries."
+  },
+  {
+    "id": "4_7669_19",
+    "layer": 4,
+    "ctx_idx": 19,
+    "influence_score": 0.36284878849983215,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 14.5,
+        "context": "<bos>disorders. They will need to sequence the entire genomes of patients and their families.\u23ceOn the second Tuesday of every month, Lupski meets with"
+      },
+      {
+        "trigger": ".",
+        "score": 12.5,
+        "context": " thinking that they had eaten sugar.\u201d\u23cedrug companies hiding the results of clinical trials.\u23ceWinterton, a senior entomologist at the California Department of Food and"
+      },
+      {
+        "trigger": ".",
+        "score": 15.25,
+        "context": "<bos>2011. Compel Media, 36 min.\u23ceThe eruption of Mt. St. Helens has provided a veritable \u2018living laboratory\u2019"
+      },
+      {
+        "trigger": " for",
+        "score": 13.62,
+        "context": " better or worse\u23ce...tive \"R01\" (Research Project Grant) for health-related research and development.\u23ceJust after joining the FSU faculty in"
+      },
+      {
+        "trigger": ").",
+        "score": 16.5,
+        "context": "<bos>50 (Crevels 2007). No monolinguals. Ethnic population: 350\u2013400 (Crevels"
+      }
+    ],
+    "promotes": [
+      "<h1>",
+      "\u24e7",
+      "  ",
+      " AssemblyTitle",
+      "<bos>"
+    ],
+    "demotes": [
+      "UnknownFieldSet",
+      "contentLoaded",
+      "SEGUIR",
+      "inderella",
+      "Hintergrund"
+    ],
+    "generated_description": "Sentence-final period \u2014 fires on full stops/closing punctuation at sentence ends; marks sentence boundary, often before start-of-sentence/header tokens like <bos> or <h1>."
+  },
+  {
+    "id": "4_14857_19",
+    "layer": 4,
+    "ctx_idx": 19,
+    "influence_score": 0.35538554191589355,
+    "top_activations": [
+      {
+        "trigger": " world",
+        "score": 22.75,
+        "context": "<bos>The world has always been full of diseases. With the world becoming a global village, competition between different people, races and countries have also increased. The fast"
+      },
+      {
+        "trigger": "n",
+        "score": 28.0,
+        "context": "<bos>n today\u2019s era of short attention spans we\u2019ve become\u23cetrained to look for \u2013 and to buy \u2013 the latest model.\u23ceWhether it\u2019"
+      },
+      {
+        "trigger": "9",
+        "score": 22.25,
+        "context": "<bos>1799- President Adams authorized by Congress to place revenue cutters in the naval establishment.\u23ce1825- Congress empowered the Revenue Marine to"
+      },
+      {
+        "trigger": " Daniel",
+        "score": 21.25,
+        "context": " since they particularly deal with issues of interest to Muslims.\u23ceThe first narrative is found in Daniel 1:1-20.\u23ce1 \u00b6 In the"
+      },
+      {
+        "trigger": " Nass",
+        "score": 28.5,
+        "context": " making the talking-car technology a reality. The lead on this team, Clifford Nass, says that a more intelligent car that knows about the driver and communicates with"
+      }
+    ],
+    "promotes": [
+      "<h2>",
+      "The",
+      "\u2019",
+      "'",
+      "<bos>"
+    ],
+    "demotes": [
+      "disambiguation",
+      "orative",
+      " Exceptions",
+      " Intelligen",
+      "xffffffff"
+    ],
+    "generated_description": "Topic noun/token \u2014 activates on content-bearing tokens (nouns, proper names, digits) often near sentence starts; signals main topic words and promotes sentence-start caps/headings."
+  },
+  {
+    "id": "6_10672_19",
+    "layer": 6,
+    "ctx_idx": 19,
+    "influence_score": 0.3846445083618164,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 13.25,
+        "context": "\u23ce\u201cThese children and adults are no different than anyone else. They all have feelings, and just because they may not react to negative comments, the pain that"
+      },
+      {
+        "trigger": " and",
+        "score": 13.25,
+        "context": " added, and a plant. Fairbanks recognized that there might be multisensory inputs, and implemented auditory, tactile and proproceptive inputs. This is a modern idea"
+      },
+      {
+        "trigger": " and",
+        "score": 14.38,
+        "context": " moderately analogous fashion: they began as minute, nanoscale structures that duplicated themselves, and whose successors then differentiated off into specialized organs and other components. Those growing ranks"
+      },
+      {
+        "trigger": " and",
+        "score": 13.25,
+        "context": " the narrator\u2019s attention is drawn to a previously unnoticed mark on the wall, and the story follows her thought process as she tries to figure out why it is"
+      },
+      {
+        "trigger": " and",
+        "score": 13.62,
+        "context": " it is being used, this \"R\" word commands a sense of authority, and causes us to stop and think and listen. After all, what could be"
+      }
+    ],
+    "promotes": [
+      " he",
+      " that",
+      " the",
+      " a",
+      "<bos>"
+    ],
+    "demotes": [
+      "InputBorder",
+      " ComVisible",
+      " Normdatei",
+      " betweenstory",
+      " >=\","
+    ],
+    "generated_description": "coordinating \"and\" \u2014 activates on the conjunction \"and\", esp. joining clauses/lists or narrative continuations, signals clause linkage and continuation."
+  },
+  {
+    "id": "3_3487_8",
+    "layer": 3,
+    "ctx_idx": 8,
+    "influence_score": 0.3987358510494232,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 29.12,
+        "context": " of the various map unit are labeled and a binary compressed image lone bit per pixel) is extracted for each map unit for additional processing. Logical operations between binary images"
+      },
+      {
+        "trigger": ")",
+        "score": 28.12,
+        "context": " groups: East is in the modeled zone in Europe\u23cethe Finnish-Russian border) where the largest influence (4-6 \u00baC)\u23ceshould be seen in"
+      },
+      {
+        "trigger": ")",
+        "score": 26.25,
+        "context": " reserves are beneath icecaps or permafrost layers; methane's not very soluble) And a warm winter could precipitate a positive feedback effect (at least no-"
+      },
+      {
+        "trigger": ")",
+        "score": 26.25,
+        "context": " comprehensively.\u23cethe publisher and\u23cethis one for 64-bit systems) and\u23cefilesystem (80M, uncompressing to 1."
+      },
+      {
+        "trigger": ")",
+        "score": 24.62,
+        "context": " hw, you get a quadratic function (you could just as well solve for w in terms of h) Find the maximum of quadratic using one of three techniques)"
+      }
+    ],
+    "promotes": [
+      "SupportActionBar",
+      "setContentView",
+      " BrowserModule",
+      " Force",
+      " AttributeSet"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654",
+      ")\"),",
+      "']))",
+      "')\")"
+    ],
+    "generated_description": "right parenthesis \u201c)\u201d \u2014 activates on closing parentheses in technical/parenthetical fragments; often at ends of units, citations, code snippets, ranges (e.g., \u201c4-6 \u00baC)\u201d, \u201c64-bit systems)\u201d)."
+  },
+  {
+    "id": "14_13117_19",
+    "layer": 14,
+    "ctx_idx": 19,
+    "influence_score": 0.3651961088180542,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 36.5,
+        "context": "<bos>water rice-based systems and wetlands to mangrove and coastal strips used primarily for fishing.\u23ceMuch irrigation (mainly rice) is practised in the coastal low-"
+      },
+      {
+        "trigger": ",",
+        "score": 38.0,
+        "context": "<bos>social and economic problems, but an understanding of the biological functioning of the system is a prerequisite to amelioration of such problems.\u23ceThe slash-and-"
+      },
+      {
+        "trigger": ",",
+        "score": 34.5,
+        "context": "<bos>ies with the Army or in China, and what we have come to find out now is that if we optimize our sensitivity in a mitogen-induced whole"
+      },
+      {
+        "trigger": ",",
+        "score": 35.5,
+        "context": "<bos>by ticks, causes\u23cein cats. Relatively\u23cenew to the\u23ceC. felis was first\u23cerecognized as a\u23cepathogen in 19"
+      },
+      {
+        "trigger": ",",
+        "score": 34.0,
+        "context": "<bos>als of warfare or the growth of institutions, but the psychology of the great man. He was an ardent lover of freedom, both political and intellectual, and"
+      }
+    ],
+    "promotes": [
+      " finnas",
+      " cancel",
+      "meyen",
+      " pinulongan",
+      "ExtendWith"
+    ],
+    "demotes": [
+      "MigrationBuilder",
+      "\u51fa\u7248\u5e74",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      "GEBURTSDATUM",
+      "SourceChecksum"
+    ],
+    "generated_description": "Coordinating connector \u2014 activates on commas and coordinating conjunctions (and, but) joining clauses or list items; signals continuation/coordination of phrases."
+  },
+  {
+    "id": "12_9691_19",
+    "layer": 12,
+    "ctx_idx": 19,
+    "influence_score": 0.3475506901741028,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 26.75,
+        "context": "<bos>specialty mental health care, and the relative cost and effectiveness of mental health care rendered by clinicians within these different systems.\u23ceI will be speaking of mental health"
+      },
+      {
+        "trigger": " or",
+        "score": 26.25,
+        "context": "<bos>post-mortem examination or autopsy, systematic examination of a cadaver for study or for determining the cause of death. Post-mortems use many methodical procedures"
+      },
+      {
+        "trigger": " and",
+        "score": 28.25,
+        "context": "<bos>of its organs and so helps define the architecture of both the root and shoot systems. In fact, diverse aspects of plant development can be altered by gravity;"
+      },
+      {
+        "trigger": " and",
+        "score": 30.0,
+        "context": "<bos>water rice-based systems and wetlands to mangrove and coastal strips used primarily for fishing.\u23ceMuch irrigation (mainly rice) is practised in the coastal low-"
+      },
+      {
+        "trigger": " and",
+        "score": 26.5,
+        "context": "<bos>estates and trusts: an overview\u23ceDuring the early 1500's in England landowners found it advantageous to convey the legal title of their"
+      }
+    ],
+    "promotes": [
+      " human",
+      " ",
+      " other",
+      " -",
+      ","
+    ],
+    "demotes": [
+      "KommentareTeilen",
+      "MLLoader",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580",
+      "AsUp"
+    ],
+    "generated_description": "Coordinating conjunction (and/or) \u2014 activates on linking words like \"and\" or \"or\" joining clauses, lists, or phrases; signals continuation or addition in sentences."
+  },
+  {
+    "id": "0_16180_16",
+    "layer": 0,
+    "ctx_idx": 16,
+    "influence_score": 0.38711827993392944,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 36.0,
+        "context": " bracteoles, solitary or aggregated in cymes. Inflorescences elongated or condensed spikes (heads), racemes, or thyrsoid structures of"
+      },
+      {
+        "trigger": " or",
+        "score": 35.5,
+        "context": " education, and multivitamin use, the researchers observed increased odds of spina bifida or anencephaly neural tube defects in the babies of women who experienced the"
+      },
+      {
+        "trigger": " or",
+        "score": 35.75,
+        "context": " for all inputs and outputs. The methods used to calculate or estimate emission debits or credits include displacement, allocation and process energy use, recognizing that you will get"
+      },
+      {
+        "trigger": " or",
+        "score": 35.25,
+        "context": ", M.D., and colleagues had shown that knocking out HIF-1\u03b1 or HIF2\u03b1 in mice implanted with human breast cancer cells (BCCs)"
+      },
+      {
+        "trigger": " or",
+        "score": 35.75,
+        "context": " caducous or persistent. Inflorescences axillary or terminal, pseudoracemes or umbels or panicles of pseudoracemes or umbels, the flowers"
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      " The\u017fe",
+      " Jefus",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " or",
+      " \u0438\u043b\u0438",
+      " atau",
+      " eller",
+      " oder"
+    ],
+    "generated_description": "or (alternation) \u2014 activates on the coordinating conjunction \"or\"; marks alternatives/choices in lists, comparisons, technical descriptions, and paired terms."
+  },
+  {
+    "id": "16_10510_19",
+    "layer": 16,
+    "ctx_idx": 19,
+    "influence_score": 0.3785552382469177,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 34.5,
+        "context": "<bos>ies with the Army or in China, and what we have come to find out now is that if we optimize our sensitivity in a mitogen-induced whole"
+      },
+      {
+        "trigger": ",",
+        "score": 30.5,
+        "context": "<bos>backbone of their families and their communities, providers on whom both young children and elderly parents rely for support. Consequently, the illness and death of these economically active"
+      },
+      {
+        "trigger": ",",
+        "score": 29.75,
+        "context": "diets, set national nutrition policy, and estab\u23ce...diet with few resources, and the USDA produced\u23ceHighlight any text in the article to look up more"
+      },
+      {
+        "trigger": ",",
+        "score": 30.25,
+        "context": "<bos>always in getting the capacity of this standard skull exactly, he is considered competent to measure the capacity of real crania. In drawing skulls most German workers use"
+      },
+      {
+        "trigger": ",",
+        "score": 29.75,
+        "context": " supplements in the United States catapu\u23ceDietary Reference Intakes\u23ce...diets, set national nutrition policy, and estab\u23ce...diet with few resources, and"
+      }
+    ],
+    "promotes": [
+      "}+(",
+      " you",
+      " then",
+      "setLayoutManager",
+      " I"
+    ],
+    "demotes": [
+      "ThroughAttribute",
+      "\uf0f1",
+      "saraba",
+      "jgl",
+      "__*/"
+    ],
+    "generated_description": "Comma \u2014 activates on punctuation commas (clause separators, list commas); signals continuation of sentence/next-clause tokens (e.g., you, then, I)."
+  },
+  {
+    "id": "17_545_19",
+    "layer": 17,
+    "ctx_idx": 19,
+    "influence_score": 0.3979988992214203,
+    "top_activations": [
+      {
+        "trigger": " but",
+        "score": 37.0,
+        "context": " exclude the natural suspects, researchers have been looking not just at the average global temperature but at the geographic pattern. The idea is that if we are warming the planet"
+      },
+      {
+        "trigger": "or",
+        "score": 33.75,
+        "context": "atus clouds might be related to\u23celenticular clouds that form near mountains,\u23ceor mammatus clouds associated with thunderstorms,\u23ceor perhaps a foehn wind"
+      },
+      {
+        "trigger": " and",
+        "score": 36.0,
+        "context": " summary of the Buddhas teachings both from the point of view of doctrine or theory and also from the point of view of practice. So here in the Four Noble"
+      },
+      {
+        "trigger": " also",
+        "score": 35.75,
+        "context": " form religiously distinctive intellectual communities is protected not only by the principle of religious freedom but also by long-established principles of academic freedom. (Both the American Association of"
+      },
+      {
+        "trigger": " than",
+        "score": 44.0,
+        "context": " children solved addition and subtraction problems, they were similarly more successful in the active method than in the passive method.\u23ceOne explanation for these differences is that the active"
+      }
+    ],
+    "promotes": [
+      " ",
+      " by",
+      "\u4e8e",
+      " for",
+      " of"
+    ],
+    "demotes": [
+      ":\u2728",
+      " \u091a\u0940\u095b\u094b\u0902",
+      "parsedMessage",
+      "\ue2ea",
+      "tagHelperRunner"
+    ],
+    "generated_description": "coordinating conjunction \u2014 activates on linking words (but, and, also, for, than); signals clause coordination, contrast, comparison, or addition."
+  },
+  {
+    "id": "17_6579_19",
+    "layer": 17,
+    "ctx_idx": 19,
+    "influence_score": 0.3489157259464264,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 45.5,
+        "context": "s in a Cell?\u23ceThis Catalyst article explores the complex structure of cells, and numerous theories of how they were formed.\u23ceThis article looks at how Califor"
+      },
+      {
+        "trigger": " and",
+        "score": 39.25,
+        "context": " achieve a positive impact on mankind.\u23ceThis course seeks to review current technological development and to evaluate its impact on the world on we live in. The relationship between"
+      },
+      {
+        "trigger": " and",
+        "score": 42.0,
+        "context": " faced by health workers in getting larger numbers of poor Africans to use bednets, and describes methods that have proved effective.\u23ceIn 1897,"
+      },
+      {
+        "trigger": " and",
+        "score": 43.25,
+        "context": " the Higgs boson. An anniversary conference looks at the past milestones of cosmic ray research and at future experiments.\u23ceWhen Hess landed his hydrogen balloon at Bad Saarow"
+      },
+      {
+        "trigger": " and",
+        "score": 41.25,
+        "context": " of the Founders and their successors, Lofgren offers a wide ranging evaluation of the American constitutional experiment and makes a vital contribution to informed public debate in the present."
+      }
+    ],
+    "promotes": [
+      " klaar",
+      " FetchType",
+      "CppMethod",
+      "tvguidetime",
+      " figyel"
+    ],
+    "demotes": [
+      "abetes",
+      "ftagPool",
+      "rrggbb",
+      "=\"@+",
+      "principalTable"
+    ],
+    "generated_description": "coordinating \"and\" \u2014 activates on sentence-level conjunctions \"and\" linking clauses or list items; signals continuation/parallel clause structure."
+  },
+  {
+    "id": "17_12493_19",
+    "layer": 17,
+    "ctx_idx": 19,
+    "influence_score": 0.3461589813232422,
+    "top_activations": [
+      {
+        "trigger": "scale",
+        "score": 34.0,
+        "context": " made the scales relative to the type of building techniques\u23ceand materials used.\u23cescale is an absolute one, based on the amplitude of the waves produced\u23ceby"
+      },
+      {
+        "trigger": ")",
+        "score": 40.0,
+        "context": "<bos>called Dimensional Analysis)\u23ceproblems use multiplication of the labels to convert from one label to another.\u23ce2 years into seconds.\u23cewriting down the given information"
+      },
+      {
+        "trigger": " status",
+        "score": 38.0,
+        "context": "<bos>health status of the U.S. population and to monitor trends over time. Nutritional status is evaluated through interviews and direct physician examinations. During interviews a "
+      },
+      {
+        "trigger": " )",
+        "score": 36.0,
+        "context": " input to alter the synaptic activity.\u23ceThe structure and branching of ...\u23ce... ) is a process of passive transport ( diffusion ) via which molecules diffuse across membranes"
+      },
+      {
+        "trigger": "screens",
+        "score": 44.0,
+        "context": "-4 Mammographic sensitivity increases with a woman\u2019s age.\u23cescreens, but a higher percentage of abnormal mammograms, biopsies, and false-positive"
+      }
+    ],
+    "promotes": [
+      ".",
+      " because",
+      " than",
+      " but",
+      " to"
+    ],
+    "demotes": [
+      "\u00edncia",
+      " Athenian",
+      "nezeu",
+      " Babylonian",
+      " MZ"
+    ],
+    "generated_description": "Measurement/diagnosis terms \u2014 activates on scientific/technical nouns naming measures/processes/diagnostics (scale, status, screens, diffusion); often appears before explanatory connectors (because, but, to)."
+  },
+  {
+    "id": "17_11259_19",
+    "layer": 17,
+    "ctx_idx": 19,
+    "influence_score": 0.3718179762363434,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 26.88,
+        "context": " The charts showed a precipitous decline of Yellowstone cutthroats in Yellowstone Lake, and he made a powerful request for private funds to help eradicate the culprits. Afterward"
+      },
+      {
+        "trigger": " and",
+        "score": 27.62,
+        "context": " is a natural consequence of Judaism\u2019s worldview that only God has absolute authority, and that human leaders, however powerful, can never be above the law.\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 26.62,
+        "context": "<bos>Functions break large computing tasks into smaller ones, and enable people to build on what others have done instead of starting over from scratch. Appropriate functions hide details of"
+      },
+      {
+        "trigger": " and",
+        "score": 28.62,
+        "context": " of new areas. Thus, their comings and goings provide firm dates, and a frame of reference for various facts. If this or that official came on"
+      },
+      {
+        "trigger": " and",
+        "score": 29.62,
+        "context": ". These societies and their members work together through ABET to develop the standards, and they provide the professionals who evaluate the programs to make sure they meet those standards"
+      }
+    ],
+    "promotes": [
+      " or",
+      " if",
+      ".",
+      " in",
+      " from"
+    ],
+    "demotes": [
+      "]\")]",
+      " esternos",
+      " EconPapers",
+      "rrggbb",
+      "uxxxx"
+    ],
+    "generated_description": "and (coordinating conjunction) \u2014 activates on the token \"and\" when linking clauses or items; signals continuation/coordination between phrases."
+  },
+  {
+    "id": "12_7495_19",
+    "layer": 12,
+    "ctx_idx": 19,
+    "influence_score": 0.37674659490585327,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 38.5,
+        "context": ". Since then the Russian-based security firm has been investigating this complex malware, and through analysis of registration data used to purchase the command and control (C&"
+      },
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": " regime. In single machine elements, these differences will result in lower friction losses, and for complete systems (such as cars, trucks, hydraulic circuits, industrial gear"
+      },
+      {
+        "trigger": " and",
+        "score": 40.0,
+        "context": " components. The technology would enable cooling solutions as small as 4mm tall, and is also very efficient, consuming less than half the energy of a fan with"
+      },
+      {
+        "trigger": " and",
+        "score": 41.75,
+        "context": " world. A personal worldview is a combination of all you believe to be true, and what you believe becomes the driving force behind every emotion, decision, and action"
+      },
+      {
+        "trigger": " and",
+        "score": 37.75,
+        "context": " Audiology and Hearing Aid Services can perform to test the state of your hearing, and to help determine whether you have suffered any hearing loss. The test is painless"
+      }
+    ],
+    "promotes": [
+      "DoubleQuotes",
+      " \u062a\u0643\u0628\u0631\u0647\u0627",
+      "ficulties",
+      " \u0627\u0644\u062f\u0648\u0644\u0649",
+      " Wicidata"
+    ],
+    "demotes": [
+      "ngrx",
+      "<bos>",
+      "NamedQueries",
+      "mobili",
+      "__*/"
+    ],
+    "generated_description": "and \u2014 activates on the coordinating \u201cand\u201d joining clauses or phrases; signals continuation or connection to a following clause."
+  },
+  {
+    "id": "18_11017_19",
+    "layer": 18,
+    "ctx_idx": 19,
+    "influence_score": 0.3370181620121002,
+    "top_activations": [
+      {
+        "trigger": " see",
+        "score": 34.5,
+        "context": " by Georg Cantor. We will look at the problem Cantor was attempting to solve and see how the now familiar concepts of a point-set and derived set are natural"
+      },
+      {
+        "trigger": " discover",
+        "score": 35.75,
+        "context": " lesson, you will explore the history and workings\u23ceof the European Union, and discover how else EU membership benefits\u23cethese nations and their people.\u23ceBegin your"
+      },
+      {
+        "trigger": " quantify",
+        "score": 33.5,
+        "context": " electricity that hydropower projects in the area can produce. The study is the first to quantify the impact of regional rainforest cover on energy production. Its findings reveal that rain"
+      },
+      {
+        "trigger": " see",
+        "score": 32.5,
+        "context": " This exercise will allow you to add and remove three depth cues in any combination to see what effect they have on the perceived size of two of the people from the"
+      },
+      {
+        "trigger": " showed",
+        "score": 37.5,
+        "context": "ivet\u00e9.\u23ceUsing his famous \u201clemons\u201d market example , Akerlof showed that, instead of there being no equilibrium, na\u00efve buyers will in equilibrium buy"
+      }
+    ],
+    "promotes": [
+      " How",
+      "How",
+      " ways",
+      "how",
+      " how"
+    ],
+    "demotes": [
+      "SequentialGroup",
+      "bootstrapcdn",
+      "TypedDataSet",
+      "aarrggbb",
+      " \u064a\u062a\u064a\u0645\u0647"
+    ],
+    "generated_description": "show/discover/quantify \u2014 activates on verbs that introduce demonstrations, findings, or explanations; signals explanatory \"how\"/\"ways\" constructions in following text."
+  },
+  {
+    "id": "15_9680_19",
+    "layer": 15,
+    "ctx_idx": 19,
+    "influence_score": 0.3566629886627197,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 42.5,
+        "context": "<bos>water rice-based systems and wetlands to mangrove and coastal strips used primarily for fishing.\u23ceMuch irrigation (mainly rice) is practised in the coastal low-"
+      },
+      {
+        "trigger": " and",
+        "score": 37.75,
+        "context": "<bos>carrying around heavy loads of coins, and started as simple IOUs, but with sometimes dubious worth. Perhaps one of the least desirable earlier systems of exchange"
+      },
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": "ets, set national nutrition policy, and estab\u23ce...diet with few resources, and the USDA produced\u23ceHighlight any text in the article to look up more information"
+      },
+      {
+        "trigger": " and",
+        "score": 42.25,
+        "context": "magnesium and calcium foods, not supplements, had on\u23ce...magnesium, and phosphorus are all important for the\u23ce...magnesium, Trace minerals that can"
+      },
+      {
+        "trigger": " and",
+        "score": 37.5,
+        "context": "<bos>p technology used in various military and NASA flight programs) and the Singer- Kearfott SKC-2000 (then a candidate for the"
+      }
+    ],
+    "promotes": [
+      "esez",
+      " Clor",
+      "CPtr",
+      "CardModule",
+      "BufferException"
+    ],
+    "demotes": [
+      "\u51fa\u7248\u5e74",
+      " >=\",",
+      "tagHelperRunner",
+      "\u03bc\u03b5\u03bd",
+      "adaptiveStyles"
+    ],
+    "generated_description": "say list continuation \u2014 activates on the conjunction \"and\" before another noun/clause; signals continuation of a list or coordinated phrase."
+  },
+  {
+    "id": "18_5409_19",
+    "layer": 18,
+    "ctx_idx": 19,
+    "influence_score": 0.35793161392211914,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 36.75,
+        "context": " Science Reporter explains what geoengineering is, why you need to know about it, and why the CIA is involved.\u23ceOver the next year, a team of"
+      },
+      {
+        "trigger": " and",
+        "score": 32.5,
+        "context": "5 years), I\u2019d like to give a brief explanation of this holiday, and why it\u2019s a meaningful opportunity to help me worship the Lord.\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 34.5,
+        "context": " valves, and heart muscle. View this video to learn what happens during this procedure and various treatment options.\u23ceCoronary Artery Bypass Surgery\u23ceThis procedure"
+      },
+      {
+        "trigger": " and",
+        "score": 32.5,
+        "context": " to better help you understand what makes shocks an important aspect of your trail rig, and hopefully arm you with enough knowledge to take the edge off of your next shock"
+      },
+      {
+        "trigger": " and",
+        "score": 38.0,
+        "context": "\u23ceThis lesson utilizes a case study to help you to understand what a census is and identify the types of information censuses contain. You will also learn ways to"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      "AndEndTag",
+      "enterOuterAlt",
+      " how",
+      " BoxDecoration"
+    ],
+    "demotes": [
+      "esse",
+      "olol",
+      "asarray",
+      " ogen",
+      "file"
+    ],
+    "generated_description": "say \"and\"\u2192explanation \u2014 fires on conjunction \"and\" when it precedes explanatory clauses (often \"why\" or \"what\"); signals continuation introducing reasons or definitions."
+  },
+  {
+    "id": "18_16206_19",
+    "layer": 18,
+    "ctx_idx": 19,
+    "influence_score": 0.39265796542167664,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 50.75,
+        "context": " curriculum in computer science \u2013 rather than trying to do something they don't understand and repeat the mistakes of the past.\u23ceWe're going to ask for"
+      },
+      {
+        "trigger": " and",
+        "score": 51.25,
+        "context": " just as a religious-studies professor whose field is the 16th century and who isn\u2019t Jewish is an unlikely Holocaust-library director. But that"
+      },
+      {
+        "trigger": " and",
+        "score": 57.25,
+        "context": " pose a significant threat to armored vehicles, which the Syrian military has utilized extensively, and quite effectively, in its campaign against Syrian rebel groups.\u23ceStudying the IED"
+      },
+      {
+        "trigger": " and",
+        "score": 54.75,
+        "context": "linde posits that gravity results from objects that had been stretched apart from one another and are just relaxing back into more \"comfortable\" positions. In this view,"
+      },
+      {
+        "trigger": " and",
+        "score": 51.25,
+        "context": ", who \u201chas worked with the US government since 1950\u2033 and was on the \u201cRumsfeld Commission to Assess the Ballistic Missile Threat"
+      }
+    ],
+    "promotes": [
+      " WHICH",
+      "whose",
+      "which",
+      " whose",
+      " which"
+    ],
+    "demotes": [
+      "WriteTagHelper",
+      " kasarigan",
+      "arschijnlijk",
+      "ni\u0161tvo",
+      "\u041f\u043e\u043f\u0438\u0441"
+    ],
+    "generated_description": "say which/whose \u2014 fires on coordinating \"and\" that starts or links clauses/appositives; pushes relative pronouns (which, whose) as the next-token choice."
+  },
+  {
+    "id": "18_14254_19",
+    "layer": 18,
+    "ctx_idx": 19,
+    "influence_score": 0.3895268440246582,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 23.75,
+        "context": " bits are combined with lower order address bits from the CPU for CPU access cycles, and the CRT page bits are combined with lower order address bits from CRT controller for"
+      },
+      {
+        "trigger": " and",
+        "score": 22.25,
+        "context": " of a plurality of SAR sensor images obtained at differing viewing directions onto the object, and the backscatter contributions of volume targets are separated in elevation and analyzed each independent"
+      },
+      {
+        "trigger": " and",
+        "score": 24.25,
+        "context": "-axis would be from 0 to 360 (right ascension) and the y-axis from about -35 to 90 (decl"
+      },
+      {
+        "trigger": " and",
+        "score": 21.25,
+        "context": " the numerator is calculated using data from the Period Linked Birth/Infant Death File, and the denominator is calculated using the Live Birth Denominator File that accompanies the"
+      },
+      {
+        "trigger": " and",
+        "score": 24.0,
+        "context": " this conclusion,\u23cefinding no increase in bipolar disorder in family members of schizophrenics and\u23ceIn an effort to help settle the question, researchers in Sweden linked a"
+      }
+    ],
+    "promotes": [
+      " more",
+      " in",
+      " an",
+      " did",
+      " a"
+    ],
+    "demotes": [
+      " An\u017f",
+      " it\u017felf",
+      " them\u017felves",
+      " Shakspeare",
+      " my\u017felf"
+    ],
+    "generated_description": "say \"and\" \u2014 activates on the coordinating conjunction \"and\"; fires when joining clauses/lists, especially in formal/technical prose before a new clause or item."
+  },
+  {
+    "id": "15_16186_19",
+    "layer": 15,
+    "ctx_idx": 19,
+    "influence_score": 0.3918803036212921,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 36.5,
+        "context": "Dr. Terdiman describes and explains the connection between environmental discourse and regional political challenges, and how they are all intertwined with each other. According to him there are"
+      },
+      {
+        "trigger": " and",
+        "score": 35.5,
+        "context": " spills that may affect local wildlife.\u23ceThe participants learnt about the properties of oil and how to find, identify, capture, clean and rehabilitate oiled seabirds likely"
+      },
+      {
+        "trigger": " and",
+        "score": 34.0,
+        "context": " 30 percent remains in suspension or floats.\u23ceThe report also provides details on the Global Declaration itself, and the six commitments made under it by the plastics"
+      },
+      {
+        "trigger": " and",
+        "score": 39.0,
+        "context": " Dennis Hancock from the University of Georgia will discuss the status of this new invasive pest and provide research-based information on what is known about its biology and management."
+      },
+      {
+        "trigger": " and",
+        "score": 36.5,
+        "context": " and social protection.\u23ceA report looking at the transport problems in the UK, and at one potential solution to it.\u23ceMichael Forsyth provides the solutions for the"
+      }
+    ],
+    "promotes": [
+      " jspb",
+      "Personendaten",
+      " autorytatywna",
+      " */;",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      " Bruch",
+      " phare",
+      "enfance",
+      "setopt",
+      " m\u00fal"
+    ],
+    "generated_description": "coordinating \"and\" \u2014 activates on the conjunction \"and\" linking clauses/lists; signals compound phrases and joins noun/verb clauses or list items."
+  },
+  {
+    "id": "19_2220_19",
+    "layer": 19,
+    "ctx_idx": 19,
+    "influence_score": 0.351539671421051,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 40.0,
+        "context": " paper also analyzes some of the factors that keep innovation from taking hold in education, and uses that analysis as an entry point for describing the current opportunity.\u23ceThe"
+      },
+      {
+        "trigger": " and",
+        "score": 35.5,
+        "context": " depression and ADHD, we'll look at the current scientific understanding of these disorders and compare methods of treatment.\u23ceKeywords: psychotherapy, psychoanalysis, diagnosis, medication"
+      },
+      {
+        "trigger": " and",
+        "score": 41.5,
+        "context": " exposure to nitrates in drinking water in relation to possible adverse reproductive and developmental effects, and discuss nitrates in drinking water in the United States. The current standard for nitrates"
+      },
+      {
+        "trigger": " and",
+        "score": 33.25,
+        "context": " treatment of horses in veterinary\u23cepractices. This paper defines what constitutes a medical device and the associated approval/registration requirements and\u23cethe use of these products by practitioners"
+      },
+      {
+        "trigger": " and",
+        "score": 39.0,
+        "context": " a range of techniques that various complex television series use to launch their storyworlds, and highlight how these techniques might be taken up by viewers, both within the media"
+      }
+    ],
+    "promotes": [
+      " What",
+      "AddTagHelper",
+      " how",
+      "BASEPATH",
+      " what"
+    ],
+    "demotes": [
+      "quelize",
+      "$.}",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " fid\u00e9lit\u00e9",
+      " }}\"></"
+    ],
+    "generated_description": "and (coordinator) \u2014 activates on the token \"and\"; marks coordination between clauses/lists, often joining phrases or items in academic prose."
+  },
+  {
+    "id": "13_6848_19",
+    "layer": 13,
+    "ctx_idx": 19,
+    "influence_score": 0.3949722349643707,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 25.12,
+        "context": " severe\u23ce...magnesium supplementation may improve bone mineral d\u23ce...magnesium, and sodium BrainAnxiety Depressio\u23ce...magnesium. A good nutrition plan"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 23.25,
+        "context": " spread of illness:\u23ce- Wash your hands often!\u23ce- drinking, and\u23ce- touching your face,\u23ce- going to the bathroom.\u23ce- When"
+      },
+      {
+        "trigger": " and",
+        "score": 23.12,
+        "context": " Estate Essentials ... Financial Analysis and Management Course Objectives ... short-term cash-flow management, and the management of international taxation\u23ceCompanies operating in international markets should establish"
+      },
+      {
+        "trigger": " and",
+        "score": 27.0,
+        "context": "<bos>, and are three points in space with coordinates , and respectively. Find angle in the triangle .\u23ceIm not sure how!\u23ceThere are three coordinates here"
+      },
+      {
+        "trigger": " and",
+        "score": 24.5,
+        "context": "<bos>specialty mental health care, and the relative cost and effectiveness of mental health care rendered by clinicians within these different systems.\u23ceI will be speaking of mental health"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "gaja",
+      " `",
+      " mag\u00e1t",
+      " "
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " ExecuteAsync",
+      "WebVitals",
+      " IBOutlet",
+      "PostExecute"
+    ],
+    "generated_description": "and (conjunction) \u2014 activates on the conjunction \"and\" (joining list items/clauses); often at boundaries between items, after commas or newlines."
+  },
+  {
+    "id": "13_6859_19",
+    "layer": 13,
+    "ctx_idx": 19,
+    "influence_score": 0.35024434328079224,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 31.25,
+        "context": "<bos>by ticks, causes\u23cein cats. Relatively\u23cenew to the\u23ceC. felis was first\u23cerecognized as a\u23cepathogen in 19"
+      },
+      {
+        "trigger": " and",
+        "score": 29.5,
+        "context": "<bos>health status of the U.S. population and to monitor trends over time. Nutritional status is evaluated through interviews and direct physician examinations. During interviews a "
+      },
+      {
+        "trigger": ",",
+        "score": 30.75,
+        "context": "<bos>anniversary of Joseph Smith\u2019s birth, commemorated in 2005, brought renewed\u23ceinterest and inquiry among scholars into the theological ideas espoused"
+      },
+      {
+        "trigger": ",",
+        "score": 33.5,
+        "context": "<bos>of existing programs for ecosystem mitigation, Master Manual revisions, and Biological Opinion compliance, has led to confusion regarding relationships and boundaries among these new initiatives and the older"
+      },
+      {
+        "trigger": ",",
+        "score": 30.25,
+        "context": "<bos>constructing of roads and bridges, the building of rest-houses\u23ceand the making of provisions for travellers has always\u23cebeen an important and popular expression of"
+      }
+    ],
+    "promotes": [
+      " I",
+      " and",
+      " in",
+      " or",
+      " "
+    ],
+    "demotes": [
+      "UserScript",
+      "WebVitals",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " \u017find",
+      "GEBURTSDATUM"
+    ],
+    "generated_description": "comma/and separator \u2014 activates on commas and coordinating \"and\" joining clauses or list items; marks clause boundaries and promotes common conjunctions."
+  },
+  {
+    "id": "6_9865_19",
+    "layer": 6,
+    "ctx_idx": 19,
+    "influence_score": 0.37284189462661743,
+    "top_activations": [
+      {
+        "trigger": "zium",
+        "score": 19.38,
+        "context": "<bos>ABCD is a trapezium, AB and CD are parallel sides, M is the midpoint of AD. Prove that the area of the triangle BMC is half"
+      },
+      {
+        "trigger": " Place",
+        "score": 17.75,
+        "context": "<bos>Guide to Examples of Good Quality STEM Placements\u23ceProduced for the Department for Education, this resource from Sheffield Hallam University, is designed to help employers,"
+      },
+      {
+        "trigger": ",",
+        "score": 21.5,
+        "context": "<bos>PARIS, July 23, 2012 (AFP) - Resistance to AIDS drugs, a problem that has been widely feared over the last"
+      },
+      {
+        "trigger": " range",
+        "score": 17.38,
+        "context": " a (food) desert\u23ceHow do you make a food desert bloom? The range of solutions to these urban areas without ready access to fresh food has included full"
+      },
+      {
+        "trigger": " Gos",
+        "score": 18.75,
+        "context": ", and it poisons everything, she correctly pointed out. Moms are always right. Gossiping is a nasty habit, I know, but that phrase \u2018trash"
+      }
+    ],
+    "promotes": [
+      "\ufeff#",
+      "'",
+      "\ufeff/*",
+      " the",
+      "<bos>"
+    ],
+    "demotes": [
+      "ReusableCell",
+      "ertion",
+      " BrowserModule",
+      "disambiguation",
+      " Resonance"
+    ],
+    "generated_description": "Subword fragment \u2014 activates on tokenized word pieces (prefixes/suffixes like \"zium\", \"Place\", \"Gos\", \"range\" and punctuation tokens); signals subword/boundary contexts, promotes punctuation/BOS."
+  },
+  {
+    "id": "20_11537_19",
+    "layer": 20,
+    "ctx_idx": 19,
+    "influence_score": 0.3336031138896942,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 47.5,
+        "context": ". For your health.\u23ceMany standard construction materials contain chemicals that off-gas and contribute to poor indoor air quality. This can contribute to respiratory illnesses. Don"
+      },
+      {
+        "trigger": " and",
+        "score": 48.0,
+        "context": " are the parent of a teen(s) you've heard them grumbling and complaining and dragging themselves out of bed, with true suffering... Read more \u00bb"
+      },
+      {
+        "trigger": " and",
+        "score": 53.0,
+        "context": ".1 degrees. A classmate told me that I need to find some complementary angles and make some expressions in terms of the incoming and refractive angles, but I am"
+      },
+      {
+        "trigger": " and",
+        "score": 51.5,
+        "context": " anti-diabetic medicines that is found in the marshy lands, is becoming scarce and so is Sidacordisolia that is used for arthritis and rheumatic disorders and"
+      },
+      {
+        "trigger": " and",
+        "score": 50.5,
+        "context": " and bacteria's to blame? You could use an alcohol-based mouthwash and risk drying out your mouth and leaving your halitosis intact, or you"
+      }
+    ],
+    "promotes": [
+      " therefore",
+      "rog",
+      " hence",
+      " then",
+      "/"
+    ],
+    "demotes": [
+      "ResumeLayout",
+      "OOTDTY",
+      "awakeFromNib",
+      "'},\r",
+      "\ufeff<?"
+    ],
+    "generated_description": "and \u2014 activates on the coordinating conjunction \"and\"; triggers at clause/phrase joins across varied contexts (lists, continuations, clauses linking thoughts)"
+  },
+  {
+    "id": "20_14815_19",
+    "layer": 20,
+    "ctx_idx": 19,
+    "influence_score": 0.3447272777557373,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 29.0,
+        "context": " for flutes, soprano, and harp considers the unique advantages and challenges of this instrumentation and offers specific suggestions for performance. Attention to various compositional elements of Federico's"
+      },
+      {
+        "trigger": " and",
+        "score": 32.5,
+        "context": " Dr. Watson retraces those events in a very personal reminiscence of the period and the people involved. This is an account of one of the great dramas of"
+      },
+      {
+        "trigger": " and",
+        "score": 28.25,
+        "context": ".\u23ceSociology professor Karen McCormack studies the impact of the home foreclosure crisis on families and the way in which it has deepened inequality in our society.\u23ceIn her"
+      },
+      {
+        "trigger": " and",
+        "score": 28.5,
+        "context": " Canada, Alfred Pitkanen learns the dramatic story of his father's Canadian family and of \"Karelia Fever,\" the enthusiasm that gripped so many Finnish Canadians in"
+      },
+      {
+        "trigger": "and",
+        "score": 34.5,
+        "context": " role higher education has played in granting women political, economic, and social agency\u2013and the biases, stereotypes, and pseudoscience women have faced to be educated equally"
+      }
+    ],
+    "promotes": [
+      "catus",
+      "indicates",
+      " indicates",
+      "indicated",
+      "__*/"
+    ],
+    "demotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "CompilerServices",
+      "complexContent",
+      "DockStyle",
+      " AssemblyProduct"
+    ],
+    "generated_description": "say and \u2014 fires on the coordinating conjunction \"and\"; marks lists/compound phrases, signals continuation of a noun/phrase or next item in enumerations."
+  },
+  {
+    "id": "22_4456_19",
+    "layer": 22,
+    "ctx_idx": 19,
+    "influence_score": 0.31843897700309753,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 33.75,
+        "context": "ve got to know how the board is set up, what the rules are, and what the forces are that govern the action.\u23ceThis, I think,"
+      },
+      {
+        "trigger": " and",
+        "score": 34.5,
+        "context": " question is how changes expected in climate will translate into changes in the hydrological cycle, and what trends may be expected in the future. We require a much better understanding"
+      },
+      {
+        "trigger": " and",
+        "score": 37.75,
+        "context": " it, how we move around it, how we integrate with the natural environment, and so on.\u23ceI always had the idea of an egg in my head"
+      },
+      {
+        "trigger": " and",
+        "score": 35.5,
+        "context": " of conduct\u23ceexpected of Members in discharging their parliamentary and public\u23ceduties, and in so doing\u23ceb) Providing the openness and accountability\u23cenecessary to reinforce"
+      },
+      {
+        "trigger": " and",
+        "score": 34.75,
+        "context": " young people understand energy, how it's produced, how it gets to us and how to use it wisely. That's why we've developed this"
+      }
+    ],
+    "promotes": [
+      "LabelTagHelper",
+      "AutoScaleMode",
+      " al\u017fo",
+      " also",
+      "StoryboardSegue"
+    ],
+    "demotes": [
+      " and",
+      "and",
+      " And",
+      " v\u00e0",
+      "And"
+    ],
+    "generated_description": "say \"and\" \u2014 activates on the coordinating conjunction \"and\" linking clauses or list items; signals continuation or addition before phrases."
+  },
+  {
+    "id": "21_15562_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.36860981583595276,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 50.0,
+        "context": " to go to bed or wake up anxious, hungry,\u23cecold or fearful, and yet every day many do.\u23ceDenial of, or failure to recognize"
+      },
+      {
+        "trigger": " and",
+        "score": 45.0,
+        "context": ".\u23ceShe grinned at me and nodded. We talked for a little while, and then she caught up with her parents.\u23ce\u201cYou\u2019re one of"
+      },
+      {
+        "trigger": " and",
+        "score": 44.75,
+        "context": " March.\u23ce\u201cWe know that the flu season has started here in Georgia, and there has been sporadic reporting of influenza-like viruses throughout the country,\u201d including"
+      },
+      {
+        "trigger": "and",
+        "score": 49.5,
+        "context": " mouth and makes utterly meaningless sounds\u2013you know, ga ga, goo goo\u2013and my friend actually thinks that all that babbling nonsense is a precursor to language"
+      },
+      {
+        "trigger": " and",
+        "score": 44.75,
+        "context": " one of three countries in the world to pass legislation mandating CO2 reduction, and the issue dominated the media agenda between 2006 and the Copenhagen"
+      }
+    ],
+    "promotes": [
+      "\u0e08\u0e36\u0e07",
+      " they",
+      " the\u017fe",
+      "awtextra",
+      "FormTagHelper"
+    ],
+    "demotes": [
+      " and",
+      "but",
+      "and",
+      " but",
+      "But"
+    ],
+    "generated_description": "and \u2014 activates on the coordinating conjunction \"and\", especially when linking clauses or lists; often at clause boundaries (after commas or line breaks)."
+  },
+  {
+    "id": "21_1414_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.31581273674964905,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 38.5,
+        "context": " energy resources. We gauge the extent of ground water or soil pollution and devise strategies for remediation using sophisticated hydrologic, geochemical, or geophysical computer models. We use knowledge"
+      },
+      {
+        "trigger": " probes",
+        "score": 37.5,
+        "context": "<bos>This volume explores the expression of the concepts count and mass in human language and probes the complex relation between seemingly incontrovertible aspects of meaning and their varied grammatical realiz"
+      },
+      {
+        "trigger": " and",
+        "score": 45.5,
+        "context": " Objects and Arrays - at the same\u23cetime as solving a few simple problems, this chapter discusses arrays\u23ceand objects, and examines some related techniques\u23ce- Error"
+      },
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " sun breaking through, after the rain. Our attention is drawn to the natural forces and meteorological phenomena that shape these environments. Clearly, it was the changing atmospheric conditions"
+      },
+      {
+        "trigger": " and",
+        "score": 48.5,
+        "context": " by 1905 a new Antiquities Law was enacted which regulated the distribution of finds and set the basis for the protection of cultural heritage on the island."
+      }
+    ],
+    "promotes": [
+      " THEIR",
+      " Their",
+      "their",
+      "Their",
+      " their"
+    ],
+    "demotes": [
+      " ones",
+      " Ones",
+      " JAXBElement",
+      " mwenye",
+      " niit\u00e4"
+    ],
+    "generated_description": "AND (coordination) \u2014 activates on the conjunction \"and\"; linking items/clauses, list continuation, compound phrases."
+  },
+  {
+    "id": "21_359_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.3591935634613037,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 34.0,
+        "context": " controlling emissions to the atmosphere,\" Fisher said.\u23ce\"More work is needed now to measure the mercury discharged by rivers and to determine its origin.\"\u23ceVideo of"
+      },
+      {
+        "trigger": " and",
+        "score": 30.25,
+        "context": " to information as tool to draw attention\u23ceto the underpayment of daily wage earners and farmers on government\u23ceprojects, and more generally, to expose corruption in government"
+      },
+      {
+        "trigger": " and",
+        "score": 30.0,
+        "context": " identification of all fusaria. These data allow the identification of strains to known taxa and also assist in the identification of new taxa. Specific examples of how these tools"
+      },
+      {
+        "trigger": " and",
+        "score": 31.0,
+        "context": " the Central Intelligence Agency (CIA) to develop a plan for the invasion of Cuba and overthrow of the Castro regime. The CIA organized an operation in which it trained"
+      },
+      {
+        "trigger": " and",
+        "score": 29.75,
+        "context": " regime was pleased when German Jews emigrated, since this facilitated the seizure of their property and the stripping of their citizenship. Jews who had been arrested for various reasons were"
+      }
+    ],
+    "promotes": [
+      " onCreateView",
+      "tagext",
+      "\")->",
+      "IntoConstraints",
+      " its"
+    ],
+    "demotes": [
+      " and",
+      "and",
+      " And",
+      " valamint",
+      "\u3068\u3044\u3051\u306a\u3044"
+    ],
+    "generated_description": "coordinating \"and\" \u2014 activates on the conjunction \"and\" joining clauses, phrases, lists; marks additions or continuations between coordinated segments."
+  },
+  {
+    "id": "24_433_19",
+    "layer": 24,
+    "ctx_idx": 19,
+    "influence_score": 0.38208726048469543,
+    "top_activations": [
+      {
+        "trigger": " it",
+        "score": 48.75,
+        "context": " be able to demonstrate things and I also want my students to be able to learn things from Kalzium and to use it as a reference,\" he says.\u23ce"
+      },
+      {
+        "trigger": " present",
+        "score": 49.75,
+        "context": " openly and honestly about his personal experiences. He offered insight into all the challenges that present themselves to him on a daily basis. The second speaker was Teresa Bolick"
+      },
+      {
+        "trigger": " perceive",
+        "score": 63.75,
+        "context": " among many teachers of science, and many pop-science writers, and many who perceive themselves to be science literate - who believe they need look no farther than the"
+      },
+      {
+        "trigger": " for",
+        "score": 48.0,
+        "context": " pursued their enemies in the air over Europe and the Pacific, they earned a place for themselves and their airplane in the annals of military and aviation history. Designed by"
+      },
+      {
+        "trigger": " created",
+        "score": 57.25,
+        "context": ". Some regard as a sad disability this limitation of their knowledge to what they have created; they are humble, and almost ashamed to be human, and to possess"
+      }
+    ],
+    "promotes": [
+      "rxjs",
+      " {:.",
+      "ROIT",
+      "garh",
+      " \u044d\u043d\u0446\u0438\u043a\u043b\u043e\u043f\u0435\u0434\u0438\u044f"
+    ],
+    "demotes": [
+      "Their",
+      " their",
+      "their",
+      " Their",
+      " THEIR"
+    ],
+    "generated_description": "say themselves \u2014 activates on verbs/prepositions that are immediately followed by the reflexive pronoun \"themselves\"; signals/refers to reflexive constructions."
+  },
+  {
+    "id": "24_2424_19",
+    "layer": 24,
+    "ctx_idx": 19,
+    "influence_score": 0.29705461859703064,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 64.5,
+        "context": " savings need to be conveyed to all stakeholders.\u23ceGovernments need to be aware of the importance and the benefits of sustainable sanitation. So as to show leadership,"
+      },
+      {
+        "trigger": " been",
+        "score": 62.0,
+        "context": " what they may do in extreme or calamitous situations. Complicating this effort has been the fact that large groups cannot be tested empirically. No right-minded scientist"
+      },
+      {
+        "trigger": " stronger",
+        "score": 63.0,
+        "context": " were functionally more weakly connected in anorexic women than in healthy women. The stronger this \"connection error\" was, the more overweight the respondents considered themselves."
+      },
+      {
+        "trigger": " by",
+        "score": 61.0,
+        "context": " \u2013 social, environmental and economic.\u23ce\"The importance of this challenge is reflected by ISO's response. Out of a current total of nearly 19"
+      },
+      {
+        "trigger": " recreate",
+        "score": 55.0,
+        "context": "<bos>This album is my attempt to recreate the lost sound of the archaic arched harp \u2013 the harp played over 4500 years ago in ancient Egypt,"
+      }
+    ],
+    "promotes": [
+      "y",
+      " The",
+      "\u3012",
+      "ofthe",
+      " the"
+    ],
+    "demotes": [
+      "########.",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " kasarigan",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "DockStyle"
+    ],
+    "generated_description": "Formal academic tone \u2014 activates on formal/informational prose: connective and emphasis words and content verbs (of, been, stronger, by, recreate); signals authoritative, research-style sentences."
+  },
+  {
+    "id": "15_386_19",
+    "layer": 15,
+    "ctx_idx": 19,
+    "influence_score": 0.38121461868286133,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 28.75,
+        "context": ",\" in that it did not arise from illicit behavior but from human population growth, and as \"bedevilling the community of the world at all levels for the"
+      },
+      {
+        "trigger": " and",
+        "score": 27.75,
+        "context": ", prices of charcoal were largely determined by the fluctuations in the cost of transport, and, also, the expected scarcity of biofuels did not occur. The above"
+      },
+      {
+        "trigger": " and",
+        "score": 27.25,
+        "context": " dwelling on their differences. Families on both sides shared the same Revolutionary War heritage, and that heritage became a subject which could reunite the country. Former Union Army General"
+      },
+      {
+        "trigger": " and",
+        "score": 27.5,
+        "context": " assumed little sand would exist at the moon because of a lack of erosion processes, and that Titan?s winds lacked the strength to create dune patterns.\u23ce\""
+      },
+      {
+        "trigger": " and",
+        "score": 27.5,
+        "context": " researchers can record about 300 profiles from one float. The devices are limited by battery life, and once the batteries die, it\u2019s not possible"
+      }
+    ],
+    "promotes": [
+      "istoitu",
+      "\u0413\u0435\u043e\u0433\u0440\u0430\u0444\u0438",
+      "chers",
+      " hers",
+      "\u0004"
+    ],
+    "demotes": [
+      " calendriers",
+      "PYX",
+      " betweenstory",
+      "Demograf\u00eda",
+      "LayoutStyle"
+    ],
+    "generated_description": "coordinating \"and\" \u2014 activates on the conjunction \"and\" linking clauses or list items; marks continuation/coordination between phrases or sentences"
+  },
+  {
+    "id": "23_8948_19",
+    "layer": 23,
+    "ctx_idx": 19,
+    "influence_score": 0.3317386507987976,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 40.0,
+        "context": " mysteries (things we do not yet know) about stuttering in bilingual children and adults and some of the myths associated with these gaps in our current knowledge.\u23ceTo"
+      },
+      {
+        "trigger": " and",
+        "score": 42.0,
+        "context": " I have been asked to speak about the standards partnership that exists between NIST and ASTM and how that partnership has produced standards for the public benefit. Without doubt, this"
+      },
+      {
+        "trigger": " and",
+        "score": 34.0,
+        "context": " says the week aims \"to raise awareness of the occurrence of breast cancer in men and to encourage regular testing for breast cancer amongst all citizens of the Commonwealth.\"\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 33.5,
+        "context": " Theirs is the first study to document the different characteristics that students bring to campus and to trace out the influence of these differences on later academic performance. They show"
+      },
+      {
+        "trigger": " and",
+        "score": 35.0,
+        "context": " have already been made to present an overall view of the results of the Uruguay Round and their significance. In general, however, reports on the Round have described the"
+      }
+    ],
+    "promotes": [
+      " \u017ftate",
+      " hou\u017fe",
+      " la\u017ft",
+      " \u017ftand",
+      " u\u017fe"
+    ],
+    "demotes": [
+      " \u00e9c",
+      "Its",
+      " MainAxisSize",
+      "voorbeeld",
+      "dientemente"
+    ],
+    "generated_description": "and (clause coordinator) \u2014 activates on the conjunction \"and\" linking clauses or verb phrases, often immediately before infinitives (\"and to\") or clause continuations indicating continuation/coordination."
+  },
+  {
+    "id": "21_15144_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.352828711271286,
+    "top_activations": [
+      {
+        "trigger": " just",
+        "score": 64.0,
+        "context": " Monnica Williams at the University of Pennsylvania, \"Most people don't realize just how devastating OCD can be. Many people with OCD are disabled by obsessions"
+      },
+      {
+        "trigger": " just",
+        "score": 48.5,
+        "context": " research universities, but not to anyone else.\u23ceA paragraph from the report shows just how blinkered much literacy research is:\u23ceResearch in early literacy, however"
+      },
+      {
+        "trigger": " see",
+        "score": 49.0,
+        "context": " regulator, ( 3 ) Idc = p fCE.\u23ceLet us see what a bit of simple arithmetic produces; I\u00edm going to ignore things like"
+      },
+      {
+        "trigger": " and",
+        "score": 43.0,
+        "context": " he berates his child and reminds him how much he has done for him, and then he ends with the instruction that the child should read this will regularly."
+      },
+      {
+        "trigger": " and",
+        "score": 46.5,
+        "context": ") as a basis for discussing how strong a Space Elevator tether really has to be and I wrote this; \u201cThe answer to this question relates to how strong the"
+      }
+    ],
+    "promotes": [
+      " How",
+      "How",
+      " why",
+      "how",
+      " how"
+    ],
+    "demotes": [
+      "fromCharCode",
+      "mander",
+      "rifft",
+      "reff",
+      "\u2766"
+    ],
+    "generated_description": "introduce-explanation \u2014 activates on discourse/setup words ('just', 'see', 'and') that lead into elaboration or emphasis; tends to push explanatory token \"how\"."
+  },
+  {
+    "id": "24_12064_19",
+    "layer": 24,
+    "ctx_idx": 19,
+    "influence_score": 0.39343351125717163,
+    "top_activations": [
+      {
+        "trigger": " unique",
+        "score": 71.5,
+        "context": " to the public as the first exhibit of its kind in the world.\u23ceThe unique museum ship continues to serve as a dramatic link in both Cold War-era"
+      },
+      {
+        "trigger": " but",
+        "score": 74.0,
+        "context": " might be hard to imagine that anyone could add to what has already been said, but I am going to try. It might also come as a surprise, to"
+      },
+      {
+        "trigger": " involves",
+        "score": 84.0,
+        "context": " involves criticisms of biblical literalism and the rise of modern biblical studies in general, the Enlightenment idea being that faith and revelation doesn\u2019t trump reason.\u23ceAn"
+      },
+      {
+        "trigger": " Interactive",
+        "score": 84.0,
+        "context": "6. Ability to ON / OFF the Speech/Sound.\u23ce7. Interactive Graphics - Kids will love to play and learn at the same time.\u23ceTo"
+      },
+      {
+        "trigger": " said",
+        "score": 74.0,
+        "context": " educated farmers on new seed varieties resistant to striga.\u23ceDr Kanampiu, said more than 6,000 farmers in western Kenya had access"
+      }
+    ],
+    "promotes": [
+      " FRP",
+      " PDC",
+      " OCS",
+      " FEC",
+      " AFS"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " iconFacebook",
+      "BibitemShut",
+      "e\u017ft",
+      " E\u017f"
+    ],
+    "generated_description": "Content word (verb/adj/conj) \u2014 activates on mid-frequency verbs, adjectives and discourse/connective tokens (examples: but, said, involves, unique, Interactive); signals general clause-level content."
+  },
+  {
+    "id": "24_12052_19",
+    "layer": 24,
+    "ctx_idx": 19,
+    "influence_score": 0.3616633117198944,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 27.25,
+        "context": " work on activating anisotropic CZTS nanostructures toward photocatalysis via metal deposition, and on using the resulting hybrids in sunlight-driven conversion of CO2 and biomass"
+      },
+      {
+        "trigger": " and",
+        "score": 27.5,
+        "context": " look at ways to reduce air pollutants, including black carbon emissions, within each continent and across continental boundaries with the goal to minimize both climate change and public health impacts"
+      },
+      {
+        "trigger": " and",
+        "score": 27.25,
+        "context": " build and link computer models to understand the consumer and industry response to policy decisions, and how the state of the market impacts the environment. The software program will enable"
+      },
+      {
+        "trigger": " and",
+        "score": 32.75,
+        "context": ", more accurate test - of the blood or urine - to detect prostate cancer, and possibly more effective methods of treatment.\u23ceThe finding also suggests similar gene activity"
+      },
+      {
+        "trigger": " and",
+        "score": 30.0,
+        "context": " You should rely on the information and instructions given specifically to you by your PH specialist and/or the nurses at your PH Center. This information is general in nature"
+      }
+    ],
+    "promotes": [
+      " if",
+      " Jefus",
+      " l\u00f6ytyy",
+      " there",
+      "/"
+    ],
+    "demotes": [
+      " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438",
+      " and",
+      " StatefulWidget",
+      "fromnode",
+      "__\":"
+    ],
+    "generated_description": "say \"and\" \u2014 activates on the coordinating conjunction \"and\"; signals clause/phrase continuation, linking coordinated items or clauses (joins verbs, nouns, clauses across contexts)."
+  },
+  {
+    "id": "19_6302_19",
+    "layer": 19,
+    "ctx_idx": 19,
+    "influence_score": 0.354107528924942,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 25.12,
+        "context": ", trawl net or sponging vessel in Turkey in the Aegean and Mediterranean shores, and as a freight vessel in the Black Sea; or it originates from the fishing"
+      },
+      {
+        "trigger": " and",
+        "score": 24.88,
+        "context": " show a 23% increase over data gathered in 2006 and a 78% increase from 2002. About five"
+      },
+      {
+        "trigger": " and",
+        "score": 24.88,
+        "context": "ihelion of Mercury and the gravitational deflection of light gives results which agree with observations and are identical to those of GR. This approach could be used to determine the"
+      },
+      {
+        "trigger": " and",
+        "score": 24.88,
+        "context": " root of the current tree connects the organisms featured in this tree to their containing group and the rest of the Tree of Life. The basal branching point in the tree"
+      },
+      {
+        "trigger": " and",
+        "score": 26.38,
+        "context": " Jet Propulsion Laboratory in Pasadena, Calif., where the rover was designed and built, and the mission is managed.\u23ce\"The purpose of the pattern is to create"
+      }
+    ],
+    "promotes": [
+      "AndEndTag",
+      " uska",
+      "setVerticalGroup",
+      " therefore",
+      " this"
+    ],
+    "demotes": [
+      ".",
+      "\u201d.",
+      "\u201c.",
+      "\".",
+      " \\%$."
+    ],
+    "generated_description": "say \"and\" \u2014 activates on the coordinating conjunction \"and\"; signals clause continuation or list coordination, often before nouns/clauses rather than sentence-final punctuation."
+  },
+  {
+    "id": "24_13277_19",
+    "layer": 24,
+    "ctx_idx": 19,
+    "influence_score": 0.31016579270362854,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "introduce noun phrase \u2014 activates on prepositions/articles/commas/verbs that immediately precede a following noun phrase (signals start of an NP or prepositional phrase)"
+  },
+  {
+    "id": "25_9975_19",
+    "layer": 25,
+    "ctx_idx": 19,
+    "influence_score": 0.3071347773075104,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Clause-opener \u2014 activates on words that start subordinate clauses or phrase transitions (removing, following, while, to implement, the at clause boundaries)."
+  },
+  {
+    "id": "25_6925_19",
+    "layer": 25,
+    "ctx_idx": 19,
+    "influence_score": 0.2584625482559204,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 78.0,
+        "context": " are zero or more nodes representing the tops of any sub-trees defining the structure of the document. DocumentFragment nodes do not need to be well-formed XML"
+      },
+      {
+        "trigger": " attended",
+        "score": 82.5,
+        "context": "\u23ceEducators from Russia, Israel, Jordan, and Norway were among those who attended the session.\u23ceIn an effort to encourage teachers to use literature to teach"
+      },
+      {
+        "trigger": " focus",
+        "score": 93.5,
+        "context": "<bos>The present study is an enquiry into the SMCs success. It brings into focus the post-plague environmental cleanliness strategies and actions followed by the SMC,"
+      },
+      {
+        "trigger": " between",
+        "score": 82.0,
+        "context": " other differences developed between the breeds and it is no longer true that the only difference between the breeds is the ears.\u23ceIn 1979, the"
+      },
+      {
+        "trigger": " of",
+        "score": 81.0,
+        "context": " the most essential prerequisite, and upon this concept the universal system was founded.\u23ceIn order to verify the characteristics and capabilities of the universal system, certain tests were"
+      }
+    ],
+    "promotes": [
+      " tbe",
+      " \u03c4\u03b7\u03bd",
+      " \u03c4\u03b7",
+      "the",
+      " the"
+    ],
+    "demotes": [
+      " &___",
+      "CppMethod",
+      " kaarangay",
+      "Obr\u00e1zky",
+      "Abitanti"
+    ],
+    "generated_description": "say \"the\" \u2014 activates on structural words that introduce a definite noun phrase (prepositions/verbs like of, between, attended, focus) and promotes following \"the\""
+  },
+  {
+    "id": "25_11867_19",
+    "layer": 25,
+    "ctx_idx": 19,
+    "influence_score": 0.3738524317741394,
+    "top_activations": [
+      {
+        "trigger": " identify",
+        "score": 176.0,
+        "context": " discrimination).\u23ceConducting research to provide evidence-based insights and recommendations, we identify small to large scale successful interventions, while examining the impact of closing gender gaps"
+      },
+      {
+        "trigger": ",",
+        "score": 186.0,
+        "context": " affected include family relationships, roles of women and men, communication skills, physical hygiene, role of religion, importance of education and careers and clothing/manner of dress"
+      },
+      {
+        "trigger": "s",
+        "score": 165.0,
+        "context": " ponds in north Wellfleet to its mouth at Wellfleet Harbor. The river's floodplain encompasses more than 1,100 acres of degraded wetlands occupying"
+      },
+      {
+        "trigger": " a",
+        "score": 169.0,
+        "context": ", as I was driving along the highway, I looked to my left and saw a bird flying. Can you tell me what kind of a bird it was?"
+      },
+      {
+        "trigger": " of",
+        "score": 163.0,
+        "context": " (a small piece of protein), linked to a light-responsive dye, capable of switching 'on' death pathways in cancer cells. The peptide remains inactive until"
+      }
+    ],
+    "promotes": [
+      " r\u00e9guli",
+      " sup\u00e9rieurs",
+      " avoient",
+      " varandra",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      " \u0f0b\u0f0b",
+      " ECR",
+      " PDC",
+      " photolibrary",
+      " [?]"
+    ],
+    "generated_description": "Common frequent-token detector \u2014 activates on short, high-frequency English words and punctuation (a, of, comma, plural 's', common verbs like \"identify\")."
+  },
+  {
+    "id": "25_15311_19",
+    "layer": 25,
+    "ctx_idx": 19,
+    "influence_score": 0.38547682762145996,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 43.5,
+        "context": " chapter in The Green Songbook focuses on an important aspect of greening our planet and our lives- supporting us in our efforts to learn about and bring about real"
+      },
+      {
+        "trigger": " and",
+        "score": 48.5,
+        "context": " have, for one reason or the other, been forcibly displaced from their home regions and thereby their individual homes. It is indeed a natural task for human rights NGOs"
+      },
+      {
+        "trigger": " and",
+        "score": 43.5,
+        "context": " use instead? This little trick will let you make a homemade version of evaporated milk and it\u2019s easy on the budget too!\u23ceWhat Is Evaporated Milk"
+      },
+      {
+        "trigger": " and",
+        "score": 45.0,
+        "context": " to protect their devices from cyber attacks, believing their devices are somehow immune from attacks and that a firewall is not needed.\u23ceThe majority of control system devices,"
+      },
+      {
+        "trigger": " and",
+        "score": 44.0,
+        "context": "<bos>If you are like me, a member of the Baby Boomer generation and someone who did not grow up with phones in our pockets and e-Readers and tablets"
+      }
+    ],
+    "promotes": [
+      "nya",
+      "genossen",
+      "thereum",
+      " $/",
+      " /"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " EconPapers",
+      " \u0645\u0634\u064a\u0646",
+      "LookAnd",
+      "hence"
+    ],
+    "generated_description": "and \u2014 activates on the token \"and\"; marks clause coordination/addition; typically appears before noun phrases or clauses connecting ideas"
+  }
+]

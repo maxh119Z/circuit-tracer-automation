@@ -1,0 +1,2114 @@
+[
+  {
+    "id": "0_7056_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3353821933269501,
+    "top_activations": [
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " collisions. Recently, the AMS-02 research team announced the results of its first 18 months of data collection. These results are frustratingly ambiguous:"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " sediments, and bogs follows after. The downward slopes mirror the upward slopes in the first millennium BCE shown in 250. By then everyone was feeling the"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " 16\u23ce- Q = 8\u23cePlugging this back into the first equation gives P:\u23ce- P = $20 \u2212 Q = $"
+      },
+      {
+        "trigger": " first",
+        "score": 29.62,
+        "context": "\u201cForest Trees of Florida\u201d has been a standard handbook for tree identification since its first printing in 1925. The original book was prepared by Wilbur"
+      },
+      {
+        "trigger": " first",
+        "score": 29.88,
+        "context": " that the prehistoric plant-eater sprouted its strange headgear before it celebrated its first birthday.\u23ceThe fossil skeleton was discovered in 2009 by"
+      }
+    ],
+    "promotes": [
+      " \u0938\u0924\u094d\u092f\u093e\u092a\u093f\u0924",
+      "Predecesor",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "BeginInit",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448"
+    ],
+    "demotes": [
+      " first",
+      "first",
+      " fir\u017ft",
+      " eerste",
+      " firft"
+    ],
+    "generated_description": "ordinal \"first\" \u2014 activates on the token \"first\" used as an ordinal (first printing, first birthday, first equation, first 18 months), signals mention of the initial occurrence/order"
+  },
+  {
+    "id": "0_14934_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3531174063682556,
+    "top_activations": [
+      {
+        "trigger": " president",
+        "score": 15.75,
+        "context": " are plagued by four main issues:\u23ce- The first year or two of a president\u2019s first term are spent building political power. And then right about the"
+      },
+      {
+        "trigger": " president",
+        "score": 15.62,
+        "context": ",000 peanut butter sandwiches.\u23ce- Two peanut farmers have been elected president of the US: Thomas Jefferson and Jimmy Carter.\u23ce- A peanut made"
+      },
+      {
+        "trigger": " president",
+        "score": 16.25,
+        "context": " 2005, when former Halliburton CEO Dick Cheney was vice president, Congress passed the Halliburton Loophole\u2014a law exempting oil"
+      },
+      {
+        "trigger": " president",
+        "score": 16.12,
+        "context": " website. You can also discover more about The Ninety-Nines International Organization of Women Pilots, of which Amelia Earhart was a founding member and first president."
+      },
+      {
+        "trigger": " president",
+        "score": 15.62,
+        "context": " fascinating picture book that explains how George Washington was actively involved in the construction of the president\u2019s D.C. home.\u23ceActivity to try: Take an"
+      }
+    ],
+    "promotes": [
+      "StoreMessageInfo",
+      "########.",
+      " pinulongan",
+      "bootstrapcdn",
+      " \u091a\u0940\u095b\u094b\u0902"
+    ],
+    "demotes": [
+      "IsPostBack",
+      "THE",
+      " \")\r",
+      " useRouter",
+      " normaux"
+    ],
+    "generated_description": "president \u2014 activates on mentions of the office/title (US presidents, vice\u2011president contexts, named presidents like George Washington/Jefferson/Carter), signals discussion of an officeholder role."
+  },
+  {
+    "id": "0_2848_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.34271180629730225,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of (preposition) \u2014 activates on the token \"of\" introducing possession/association/locations; often appears before proper nouns or noun phrases."
+  },
+  {
+    "id": "0_9797_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.38228651881217957,
+    "top_activations": [
+      {
+        "trigger": " manual",
+        "score": 32.5,
+        "context": " reserved words and are reserved for special significance in the language. For readability of this manual, the reserved words appear in lower case boldface.\u23ceabort declare generic"
+      },
+      {
+        "trigger": " manual",
+        "score": 32.25,
+        "context": "0830-01\u23ceThis chapter contains the following:\u23ceThis manual is a comprehensive user's guide and on-the-job reference to"
+      },
+      {
+        "trigger": " manual",
+        "score": 32.5,
+        "context": " succeeds in playing Civilization II using the official game manual as a strategy guide. This manual uses a large vocabulary of 3638 words, and is composed"
+      },
+      {
+        "trigger": " manual",
+        "score": 32.75,
+        "context": " is the climax of the story. The story itself may be found in such a manual as this, or in some volume of wit and humor.\u23ceThere is"
+      },
+      {
+        "trigger": " manual",
+        "score": 32.5,
+        "context": "\u23ceComplexity is driven by the inexorable demand for better capabilities, the digitisation of manual and mechanical functions, and the interconnection of our world. While this growth in"
+      }
+    ],
+    "promotes": [
+      " autorytatywna",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      "\u0442\u0430\u0440\u0430\u0442\u0443\u0440\u0430",
+      "AndEndTag",
+      "<bos>"
+    ],
+    "demotes": [
+      " Monfieur",
+      " greate\u017ft",
+      " my\u017felf",
+      " An\u017f",
+      " poffible"
+    ],
+    "generated_description": "manual \u2014 activates on the token \"manual\" (user's guide/handbook contexts); fires for \"this manual\", \"game manual\", \"such a manual\", \"manual and mechanical\""
+  },
+  {
+    "id": "0_12154_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3949054181575775,
+    "top_activations": [
+      {
+        "trigger": " immediately",
+        "score": 15.12,
+        "context": " into contact with medical help \u2013 namely, the evacuation chain. Wounded soldiers were treated immediately by their Regimental Medical Officer, aided by a team of stretcher bearers."
+      },
+      {
+        "trigger": " immediately",
+        "score": 14.88,
+        "context": ", cryptophytes and chlorophytes. These groups increased in the spring EisenEx experiment immediately after iron fertilisation, while in the fall EIFEX experiment most other phytoplankton"
+      },
+      {
+        "trigger": " immediately",
+        "score": 15.0,
+        "context": " and from Brazil to Bolivia.\u23ceSparked by unemployment\u23ceThese revolts have immediately performed a kind of ideological house\u2014cleaning, sweeping away the racist conceptions of"
+      },
+      {
+        "trigger": " immediately",
+        "score": 14.75,
+        "context": " injured athlete. You should be familiar with anatomy and biomechanics and be able to immediately recognize injuries and how to treat them. Care may include splinting broken bones"
+      },
+      {
+        "trigger": " immediately",
+        "score": 14.75,
+        "context": " both knew the plant very well from old herbarium samples and knew what it was immediately. The plant is exquisite with its curvy trunk, dense branches, small pointed"
+      }
+    ],
+    "promotes": [
+      " I",
+      ".",
+      " ",
+      "<eos>",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " Hou\u017fe",
+      " Efq",
+      "\u017felf",
+      " Jefus",
+      " The\u017fe"
+    ],
+    "generated_description": "immediately \u2014 activates on the adverb \"immediately\"; represents instant/urgent timing, triggers contexts of immediate action or response, typically before action verbs."
+  },
+  {
+    "id": "0_6172_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3462255895137787,
+    "top_activations": [
+      {
+        "trigger": " measure",
+        "score": 19.5,
+        "context": "-Area\u23cemethods. Stereographic projection plots are commonly used in Structural Geology to measure and understand the relationships\u23cebetween elements such as bedding attitude, fold axes,"
+      },
+      {
+        "trigger": " measure",
+        "score": 19.12,
+        "context": "s more complicated than you may realize. Environmental impact is hard for any business to measure in meaningful terms, but it\u2019s a particularly fiendish task for print"
+      },
+      {
+        "trigger": " measure",
+        "score": 19.25,
+        "context": " the negative x-axis toward the next peak (resp. trough) you will measure a wavelength of\u23ce. Now you can formally substitute N/x for k"
+      },
+      {
+        "trigger": " measure",
+        "score": 19.5,
+        "context": ". Vested interests have never been known to have willingly divested themselves unless there was sufficient force to compel them.\u23ce- I measure the progress of a community"
+      },
+      {
+        "trigger": " measure",
+        "score": 19.25,
+        "context": " database of greenhouse-gas emissions from the construction supply chain. The idea is to measure and catalog carbon footprints created when producing building materials, from glass and drywall to"
+      }
+    ],
+    "promotes": [
+      "He",
+      " \"",
+      "\u23ce\u23ce",
+      "1",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Monfieur",
+      " RIPRODUZIONE",
+      " purpo\u017fe"
+    ],
+    "generated_description": "measure (verb) \u2014 activates on the verb \u201cmeasure\u201d and measurement contexts; signals discussion of quantifying or assessing something."
+  },
+  {
+    "id": "0_13640_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3981252908706665,
+    "top_activations": [
+      {
+        "trigger": " independence",
+        "score": 16.62,
+        "context": "son and J\u00f3n Jensson, were the most radical fighters for Iceland's independence of that time.\u23ce- \u00cdslenska Alfr\u00e6\u00f0ior\u00f0"
+      },
+      {
+        "trigger": " independence",
+        "score": 16.5,
+        "context": "ese politics for the past 30 years. By the time the country gained independence in 1962, 120,000"
+      },
+      {
+        "trigger": " independence",
+        "score": 17.12,
+        "context": " real problem for farmers and ranchers in the United States. Farmers are proud of their independence, but millions of growers bartering separately put them at a real disadvantage in"
+      },
+      {
+        "trigger": " independence",
+        "score": 17.12,
+        "context": "6 years of age or older\u23ceApplicant must have:\u23ceA disability that prevents independence on a standard phone\u23ceAn individual gross income of less than 20"
+      },
+      {
+        "trigger": " independence",
+        "score": 16.5,
+        "context": " Mountains to the sea, and petitioned for statehood as a way to secure local independence.\u23ceFinally, members of Congress made a deal called the Compromise of "
+      }
+    ],
+    "promotes": [
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      " StatefulWidget",
+      ")\";\r",
+      "liferay",
+      " \u201c"
+    ],
+    "demotes": [
+      "TypedDataSet",
+      " Roskov",
+      " surla",
+      "hdys",
+      "MLLoader"
+    ],
+    "generated_description": "independence \u2014 activates on the noun \"independence\"; typically political/statehood or personal/self-sufficiency contexts."
+  },
+  {
+    "id": "0_8440_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3629915118217468,
+    "top_activations": [
+      {
+        "trigger": " president",
+        "score": 14.38,
+        "context": ", 1890, in Denison, Texas... Eisenhower was the first president to work with three sessions of Congress controlled by an opposing political party...Dwight"
+      },
+      {
+        "trigger": " president",
+        "score": 14.75,
+        "context": " and black, Latino and Asian-American voters powered the nation\u2019s first black president to re-election last year.\u23ceDespite those tectonic, ground-shaking"
+      },
+      {
+        "trigger": " president",
+        "score": 14.38,
+        "context": " arts, as well as in law, medicine, and the ministry. The first president of New York University\u2019s governing council was Albert Gallatin, secretary of"
+      },
+      {
+        "trigger": " president",
+        "score": 14.75,
+        "context": " in his historic inaugural address\u23ceIt was glorious to watch Barack Obama became the first president in US history to call for equality for gays and lesbians in an inaugural speech"
+      },
+      {
+        "trigger": " president",
+        "score": 14.62,
+        "context": "C\u0153ur. Brown traces the careers of significant leaders on both sides, including provisional president Louis-Adolphe Thiers, Marshal Patrice de MacMahon, who served"
+      }
+    ],
+    "promotes": [
+      " I",
+      " (",
+      "\u23ce\u23ce",
+      " A",
+      "  "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " Efq",
+      " Monfieur",
+      " him\u017felf",
+      " Jefus"
+    ],
+    "generated_description": "president \u2014 activates on mentions of presidents/heads of state, often in \"first president\" constructions; frequently appears with specific names (Dwight, Barack, Gallatin, Thiers)."
+  },
+  {
+    "id": "0_7168_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.37343868613243103,
+    "top_activations": [
+      {
+        "trigger": " individual",
+        "score": 13.69,
+        "context": " whether or not to participate.\u23ceThe Informed Consent process should be tailored to each individual project; what is appropriate and approved for one project may not be appropriate or"
+      },
+      {
+        "trigger": " individual",
+        "score": 13.56,
+        "context": " labour determined by these, conditions which were common to them all and independent of each individual. The burghers had created the conditions insofar as they had torn themselves"
+      },
+      {
+        "trigger": " individual",
+        "score": 13.56,
+        "context": " from the earlier Sumerian culture, counting not by the whole finger but by each individual knuckle. That is, if you open your left hand and use the tip"
+      },
+      {
+        "trigger": " individual",
+        "score": 13.56,
+        "context": " a problem for sparse samples across the set]\u23ce- some evaluation to score each individual/ fitness function.s\u23ce- kill the ones underscore certain threshold;\u23ce"
+      },
+      {
+        "trigger": " individual",
+        "score": 13.69,
+        "context": " compelling.\u23ceThere are occasionally extreme examples that demonstrate this latter principle \u2013 that no individual, not matter what their scientific history, should be relied upon as a sole"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " The\u017fe",
+      " my\u017felf",
+      " it\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " ",
+      " a",
+      " the",
+      ",",
+      " ("
+    ],
+    "generated_description": "individual \u2014 activates on the noun \"individual\" (single person/entity); appears in contrasts with groups, selection/evaluation contexts, lists and procedural text."
+  },
+  {
+    "id": "0_4639_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.29819613695144653,
+    "top_activations": [
+      {
+        "trigger": " States",
+        "score": 41.75,
+        "context": " [newly on-line] power production,\" the report said.\u23ceThe United States and China are at the top of the lists in large part because they'"
+      },
+      {
+        "trigger": " States",
+        "score": 42.0,
+        "context": ": September 27, 1943\u23ceCreator: [United States.] Army Orientation Course\u23ceDescription: Front: Text describes action on various war"
+      },
+      {
+        "trigger": " States",
+        "score": 41.5,
+        "context": "<bos>U.S. security interests also dictate that the United States consider Chinese reactions to its missile defense plans. Although not a party to the ABM Treaty,"
+      },
+      {
+        "trigger": " States",
+        "score": 43.0,
+        "context": " work is licensed under a Creative Commons Attribution-ShareAlike 3.0 United States License.\u23ceAn XML version of this text is available for download, with"
+      },
+      {
+        "trigger": " States",
+        "score": 42.5,
+        "context": " high schools, and it helps them get used to life in [the] United States. And the students think learning in these programs makes them help each other.\""
+      }
+    ],
+    "promotes": [
+      ",",
+      "UN",
+      "US",
+      " UN",
+      " US"
+    ],
+    "demotes": [
+      " The\u017fe",
+      " purpo\u017fe",
+      " newState",
+      " STATES",
+      "IsContent"
+    ],
+    "generated_description": "United States \u2014 activates on \"States\" token in the phrase \"United States\"; detects the country-name bigram (usually follows \"United\")."
+  },
+  {
+    "id": "0_7008_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3128416836261749,
+    "top_activations": [
+      {
+        "trigger": " States",
+        "score": 33.0,
+        "context": " Centers for Disease Control and Prevention, one out of every three people in the United States will develop shingles. Typically, these people will only experience one episode of shingles"
+      },
+      {
+        "trigger": " States",
+        "score": 32.75,
+        "context": " amid a major demographic shift as the number of working-age adults in the United States, Europe and China drops and the number of people past retirement age swells."
+      },
+      {
+        "trigger": " States",
+        "score": 32.75,
+        "context": " understood when this work comes to be read an hundred years hence, that the United States, having incurred debts during the war with Great Britain, and being unable at"
+      },
+      {
+        "trigger": " Kingdom",
+        "score": 33.5,
+        "context": " be found mostly in continental Europe, especially in public buildings, than in the United Kingdom.\u23ce- Moving at a slow speed of about 0.3 metres"
+      },
+      {
+        "trigger": " States",
+        "score": 33.0,
+        "context": " than 1 million (over one-fourth of all children born in the United States) annually are delivered by Cesarean section, according to a new report by"
+      }
+    ],
+    "promotes": [
+      " Canada",
+      "UK",
+      " UK",
+      " US",
+      "US"
+    ],
+    "demotes": [
+      "uxxxx",
+      " BorderRadius",
+      "MemoryWarning",
+      "abestanden",
+      " kaarangay"
+    ],
+    "generated_description": "United (country name) \u2014 activates on the token \"United\" in proper names (United States, United Kingdom); signals an upcoming country-name token."
+  },
+  {
+    "id": "0_4359_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3870323896408081,
+    "top_activations": [
+      {
+        "trigger": " boost",
+        "score": 15.38,
+        "context": " economic slowdown and recession.\u23ceThis month Greece has received news that may give a boost to its economic and energy ambitions. Of the competing pipelines planned to transport natural"
+      },
+      {
+        "trigger": " boost",
+        "score": 16.0,
+        "context": " both the state and federal levels, saying it could create thousands of jobs and help boost the bottom lines of farmers.\u23ceThe UK study says hemp could be a"
+      },
+      {
+        "trigger": " boost",
+        "score": 15.88,
+        "context": " enough CT scans, you get exposed to a significant amount of radiation and can potentially boost your risk for cancer.\u23ceCORNISH: So this is the first study"
+      },
+      {
+        "trigger": " boost",
+        "score": 16.12,
+        "context": " to mixed-income neighborhoods with the help of vouchers.\u23ceThe program aimed to boost education and income, by giving mothers and their children access to better housing and"
+      },
+      {
+        "trigger": " boost",
+        "score": 15.88,
+        "context": ".\u23ceInvestors queasy over whether there's anything that can be done to boost the flagging US economy could get a trillion-dollar answer this week from"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015",
+      " Majefty",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " ",
+      "  ",
+      "\u23ce\u23ce",
+      " -",
+      "."
+    ],
+    "generated_description": "boost \u2014 activates on the verb \u201cboost\u201d (increase/improve); fires in newsy contexts (economy, jobs, health, education) indicating upward change or support."
+  },
+  {
+    "id": "0_2458_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3225131034851074,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 38.0,
+        "context": ", and not be distracted by a desire to attain absolute accuracy, which he believed was ultimately untruthful. A year after this was painted it was reproduced as"
+      },
+      {
+        "trigger": " was",
+        "score": 38.25,
+        "context": " was linked to that of the transmigration of souls. The great chain of being was one of a number of philosophical or theological arguments put forward, from the "
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " from controlling the approaches to the Middle East and Persia. The city state of Tyre was situated on an island 1/2 mile off the coast of today\u2019"
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " were\u23cefifteen miles removed from others. The British force before New-York was\u23ceincreasing by frequent successive arrivals from Halifax, South-Carolina,\u23ceFlorida"
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " from Gibeah, the royal residence, and stumbling in her haste, the child was thrown to the ground and maimed in both his feet, and ever after"
+      }
+    ],
+    "promotes": [
+      " Are",
+      "are",
+      " ARE",
+      " aren",
+      "Are"
+    ],
+    "demotes": [
+      " was",
+      "was",
+      "Was",
+      " wasn",
+      " Was"
+    ],
+    "generated_description": "was \u2014 activates on occurrences of the past-tense token \"was\"; consistently pushes output toward \"are\" (demotes \"was\"), i.e., nudges present-tense substitution."
+  },
+  {
+    "id": "0_11954_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36920443177223206,
+    "top_activations": [
+      {
+        "trigger": " presidential",
+        "score": 14.0,
+        "context": " President, making it for the first time a high visibility platform and base for a presidential candidacy. He is the only person to have been elected twice to the Vice"
+      },
+      {
+        "trigger": " presidential",
+        "score": 14.0,
+        "context": " Romney has publicly walked back his onetime position that humans contribute to warming. Vice presidential nominee Paul Ryan has also questioned the science.\u23ceBut stronger hurricanes are among"
+      },
+      {
+        "trigger": " president",
+        "score": 14.25,
+        "context": " says Robert Kvavik, who recently retired as the University's associate vice president for planning.\u23ce\"The new teaching paradigms will emerge faster than we can"
+      },
+      {
+        "trigger": " president",
+        "score": 14.38,
+        "context": " they are to people,\" said Hugh Lewis, Banfield Pet Hospitals' senior vice president of practice development. Banfield Pet Hospitals is a U.S. national"
+      },
+      {
+        "trigger": " presidential",
+        "score": 14.25,
+        "context": "pton. Then-Sen. Barack Obama, during the 2008 presidential campaign, said it, too. Blacks and whites, said Obama, \""
+      }
+    ],
+    "promotes": [
+      "\\",
+      "$",
+      "to",
+      "@",
+      "_"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " contextLoads",
+      "queryInterface",
+      "tonode",
+      "principalColumn"
+    ],
+    "generated_description": "president / presidential \u2014 activates on tokens referring to the presidential office (president, presidential, vice president, presidential nominee)"
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.367735892534256,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 sentence-initial topical preposition; marks \"In <domain>,\" frames a domain/topic intro at the start of a sentence."
+  },
+  {
+    "id": "1_16055_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3514076769351959,
+    "top_activations": [
+      {
+        "trigger": " President",
+        "score": 25.38,
+        "context": " was not empowered to dissolve Parliament|\u23ce|EXECUTIVE||Executive power lies with the President, two Vice-Presidents and the members of the government.\u23ceThe Vice"
+      },
+      {
+        "trigger": " president",
+        "score": 23.88,
+        "context": "romata, AFP/Getty\u23ceLONDON \u00e2?? Cristina Fernandez de Kirchner, the president of Argentina, has written a forceful open letter to British Prime Minister David Cameron"
+      },
+      {
+        "trigger": " President",
+        "score": 24.75,
+        "context": ". Its function is mostly ceremonial in nature and it convenes only occasionally, such as to witness the inauguration of the President. Under exceptional circumstances, the constitution end"
+      },
+      {
+        "trigger": " President",
+        "score": 23.62,
+        "context": " Security Advisor Sandy Berger, Secretary of State Madeleine Albright and other close collaborators of the President, including the person who was ordered by Berger not to take notes when Cuba"
+      },
+      {
+        "trigger": " President",
+        "score": 24.0,
+        "context": " but this is far more directly than in the British system. It is because the President is electedseparately that one party might be incontrolof thelegislativebranch"
+      }
+    ],
+    "promotes": [
+      " active",
+      "micamente",
+      "fand",
+      " multiple",
+      "esModule"
+    ],
+    "demotes": [
+      "President",
+      " President",
+      " president",
+      "president",
+      " PRESIDENT"
+    ],
+    "generated_description": "President (title) \u2014 activates on occurrences of \u201cPresident\u201d/\u201cpresident\u201d and nearby political/constitutional context; marks mentions of the office, heads of state/government, and inaugurations."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3597562909126282,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "Expletive \"It\" \u2014 activates on sentence\u2011starting dummy subject \"It\" (introductory/cleft constructions: \"It is/It's no secret\", \"It was X who...\"), signals general-starter clause."
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.38819262385368347,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ],
+    "generated_description": "sentence opener \u2014 activates on tokens right after <bos>; especially sentence-start tokens like \u201cI\u201d, \u201cIt\u201d, digits or \u201c#\u201d (starts of replies, lines, or numbered items)"
+  },
+  {
+    "id": "2_2279_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.34797027707099915,
+    "top_activations": [
+      {
+        "trigger": " President",
+        "score": 24.25,
+        "context": " chief of state (President) is appointed by the unicameral Parliament. The President appoints as Prime Minister the leader of the party that gains a plurality of seats"
+      },
+      {
+        "trigger": " President",
+        "score": 23.75,
+        "context": ". Its function is mostly ceremonial in nature and it convenes only occasionally, such as to witness the inauguration of the President. Under exceptional circumstances, the constitution end"
+      },
+      {
+        "trigger": " President",
+        "score": 24.0,
+        "context": "\" of hot gas streaming out of the plane of our Galaxy.\u23ceReceived the President's Award for Outstanding Research (MUN, 1993)"
+      },
+      {
+        "trigger": " President",
+        "score": 24.5,
+        "context": "anduga* is Advocate of the High Court of Tanzania, and had been the President of the East Africa Law Society between October 2004 - October"
+      },
+      {
+        "trigger": " President",
+        "score": 23.25,
+        "context": " of volunteer service each year.\u23ce* Every U.S. President and Vice President, except two in each office, born since the first social fraternity was founded"
+      }
+    ],
+    "promotes": [
+      "Parcelize",
+      "AutoScale",
+      " LEYENDO",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\udb40\udc62"
+    ],
+    "demotes": [
+      " president",
+      " President",
+      "President",
+      "president",
+      " PRESIDENT"
+    ],
+    "generated_description": "President (title) \u2014 activates on capitalized \"President\" tokens across contexts (U.S. presidents, organizational presidents, \"President's\" possessive/awards)."
+  },
+  {
+    "id": "17_5682_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.37206003069877625,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 37.5,
+        "context": " or spurious.\u23ce[After watchmaker Christopher Pinchbeck (1670-1732), who invented it. It's ironic that today"
+      },
+      {
+        "trigger": " William",
+        "score": 40.0,
+        "context": "-1770\u23ceHISTORY. The hard paste porcelain factory was established by William Cookworthy at Plymouth in 1768. Cookworthy was a"
+      },
+      {
+        "trigger": " the",
+        "score": 40.0,
+        "context": ", Frederick had thwarted Joseph\u2019s plan to annex Bavaria (in the War of the Bavarian Succession, 1778\u201379), but in the"
+      },
+      {
+        "trigger": "1",
+        "score": 38.5,
+        "context": " United States Senate.\u23ceFederalist Rufus King had been re-elected in 1795 to a second term in the U.S. Senate ("
+      },
+      {
+        "trigger": " Lord",
+        "score": 34.5,
+        "context": " refused to encounter the three-thousand men strong Hanoverian army lying at Finchley to defend London. The Highlanders went back to Scotland on behalf of Lord George Murray"
+      }
+    ],
+    "promotes": [
+      "izh",
+      " \u0627\u062a\u062d\u0627\u062f",
+      " recevrez",
+      "formaci\u00f3n",
+      "OPIN"
+    ],
+    "demotes": [
+      "IsMutable",
+      "parsedMessage",
+      " betweenstory",
+      "+#+#",
+      " \u0418\u0442\u0430\u043b\u0438\u0458\u0430\u043d\u0438"
+    ],
+    "generated_description": "Word-start token \u2014 fires on tokens that begin names/titles or split numbers (e.g., \"William\", \"Lord\", articles before proper nouns, leading \"1\" of \"1795\")."
+  },
+  {
+    "id": "17_2398_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.37729892134666443,
+    "top_activations": [
+      {
+        "trigger": " early",
+        "score": 33.0,
+        "context": "939\u2014has dedicated itself to collecting and preserving significant materials relating to the early history and culture of Texas and the region, as well as promoting the appreciation"
+      },
+      {
+        "trigger": " with",
+        "score": 33.5,
+        "context": " in company with his two brothers. It took a team of horses to haul his 340 pound frame! But he was a man among men!\u23ce"
+      },
+      {
+        "trigger": "8",
+        "score": 37.0,
+        "context": " Mich., on Thunder Bay, an arm of Lake Huron; inc. 1871. Limestone quarried nearby is used to make cement, Alpena"
+      },
+      {
+        "trigger": " by",
+        "score": 34.5,
+        "context": " the Hatteras, Core, Neuse, and Tuscarora Indians, followed by French Huguenot, English, Scotch-Irish, and German settlers. The"
+      },
+      {
+        "trigger": "8",
+        "score": 35.0,
+        "context": "3,451) of the province of Manitoba, incorporated in 1873 with a population of 1,869, is situated"
+      }
+    ],
+    "promotes": [
+      "fillRect",
+      " tayo",
+      " blancos",
+      "\u6b66",
+      " call"
+    ],
+    "demotes": [
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "%\");",
+      "%\")",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "\"}\")"
+    ],
+    "generated_description": "Common short tokens \u2014 activates on high-frequency short words and tokens: prepositions/adverbs and short numerals (e.g., with, by, early, '8' in 18xx)."
+  },
+  {
+    "id": "17_11320_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.37063470482826233,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 49.5,
+        "context": " of the United States, serving from 1969 to 1974. He was also the 36th Vice President (19"
+      },
+      {
+        "trigger": " White",
+        "score": 54.25,
+        "context": " Mitt Romney are vying for the 270 votes that will grant them the White House. It's a curious system where things can and have gone aw"
+      },
+      {
+        "trigger": "Presidential",
+        "score": 47.5,
+        "context": "<bos>Part 1 | Middle-class families\u23cePresidential candidates' stand on health issues\u23ceWhere the candidates, Sen. John McCain, the Republican, and Sen"
+      },
+      {
+        "trigger": " president",
+        "score": 46.5,
+        "context": ", Americans will once again cast their ballots for whom they think should be the next president of the United States. Throughout most of our nation's history, we"
+      },
+      {
+        "trigger": " presidential",
+        "score": 50.0,
+        "context": "<bos>WASHINGTON (CNN) -- At its essence, the presidential inaugural symbolizes American democracy's peaceful transition or extension of power.\u23ceEvery four years, the winner"
+      }
+    ],
+    "promotes": [
+      " PRESIDENT",
+      " Presiden",
+      " president",
+      "President",
+      " President"
+    ],
+    "demotes": [
+      " disambiguazione",
+      " getActivity",
+      "+++++",
+      " AAA",
+      "\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3"
+    ],
+    "generated_description": "U.S. president \u2014 activates on \u201cpresident/presidential\u201d, \u201cWhite House\u201d, U.S. presidency context; promotes output tokens like PRESIDENT/President."
+  },
+  {
+    "id": "19_12352_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3747318685054779,
+    "top_activations": [
+      {
+        "trigger": " before",
+        "score": 34.75,
+        "context": " Bishop Zebinus. Babylas is noted for his defense of Christianity before the Roman emperor Decius that led to his martyrdom. Various sources place the events differently."
+      },
+      {
+        "trigger": " rabbi",
+        "score": 37.0,
+        "context": " the province of Cilicia, not far from Galatia. Under the famous rabbi, Gamaliel, Paul received a thorough training in the OT Scriptures and in"
+      },
+      {
+        "trigger": "'",
+        "score": 39.5,
+        "context": "30), generally considered his finest work. It introduced Sam Spade, Hammett's fictional detective creation, played by Humphrey Bogart in the film version directed"
+      },
+      {
+        "trigger": " Emperor",
+        "score": 34.75,
+        "context": " Council as Arius returned to the favor of the Emperor. Only the unusual death of Arius, followed a year later by the death of Constantine, temporarily overshadowed"
+      },
+      {
+        "trigger": " by",
+        "score": 32.5,
+        "context": " and Popular Culture Encyclopedia\u23ceIn Greek mythology, Dana\u00eb was the mother of Perseus by Zeus. Disappointed by his lack of male heirs, her father asked an"
+      }
+    ],
+    "promotes": [
+      " W",
+      " P",
+      " and",
+      "[",
+      "-"
+    ],
+    "demotes": [
+      "\u24e7",
+      " greate\u017ft",
+      " purpo\u017fe",
+      " The\u017fe",
+      " plea\u017fure"
+    ],
+    "generated_description": "say named person \u2014 activates on words/titles that introduce an upcoming named agent/entity (by, before, rabbi, Emperor, \u2019s), signals a following proper name."
+  },
+  {
+    "id": "18_12575_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.30746009945869446,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 70.5,
+        "context": "\u23cethe document recording the proclamation of the second Continental Congress (4 July 1776) asserting the independence of the colonies from Great Britain\u23cethe notion"
+      },
+      {
+        "trigger": "7",
+        "score": 63.0,
+        "context": " Patrick Henry, a hero of the Revolutionary War (1775\u20131783) and Virginia's first governor. Early on, students worked"
+      },
+      {
+        "trigger": "7",
+        "score": 69.5,
+        "context": " fact that the men who came together to confront a common enemy in 1775 and to craft an enduring alliance in 1789 were not"
+      },
+      {
+        "trigger": "7",
+        "score": 57.5,
+        "context": " Plan and then declining to sign the Constitution of September 17, 1787. His explanation was that the \"Republican propositions\" of the Virginia"
+      },
+      {
+        "trigger": " the",
+        "score": 63.5,
+        "context": " against the imposition of taxes. He penned the petitions which brought forth the rallying cry \u201cNo taxation without representation!\u201d While avoiding violence he led the effort to organize resistance"
+      }
+    ],
+    "promotes": [
+      " <<<<<<<<<<<<<<",
+      "UnitTesting",
+      "AnchorStyles",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "@[+]["
+    ],
+    "demotes": [
+      "WriteBarrier",
+      " }{@",
+      "Sucesor",
+      "XmlAccessType",
+      " Harms"
+    ],
+    "generated_description": "'7' in 1700s dates \u2014 activates on the digit 7 inside year tokens like 1776, 1775, 1787; marks 18th-century date occurrences."
+  },
+  {
+    "id": "20_7384_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.38933998346328735,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 80.0,
+        "context": " becoming the first African-American graduate nurse in the United States.\u23ceMary Mahoney was born on May 7, 1845 in the Dorchester section"
+      },
+      {
+        "trigger": " was",
+        "score": 113.0,
+        "context": " of processes hy means of which we are able to create organic compounds by the direct combination of their constituent radicals.\u23cePierre Eugene Marcellin Berthelot was born in"
+      },
+      {
+        "trigger": " after",
+        "score": 81.5,
+        "context": "<bos>Biliary atresia is a chronic, progressive liver problem that becomes evident shortly after birth. Tubes in the liver, called bile ducts, normally allow a liquid"
+      },
+      {
+        "trigger": "1",
+        "score": 72.0,
+        "context": " Down syndrome is the most commonly occurring genetic condition. One in every 691 live births is a child with Down syndrome, representing approximately 6,0"
+      },
+      {
+        "trigger": " are",
+        "score": 135.0,
+        "context": "\u23ceHeart abnormalities can result in extra blood in the lungs. Some are conditions people are born with. Others may develop over time. Some of these conditions are:"
+      }
+    ],
+    "promotes": [
+      " Born",
+      " Birth",
+      "birth",
+      " born",
+      " birth"
+    ],
+    "demotes": [
+      " teens",
+      "SequentialGroup",
+      "+#+#",
+      "IntoConstraints",
+      "RegistryLite"
+    ],
+    "generated_description": "Birth/born \u2014 activates on birth-related contexts: \"was born\", \"after birth\", \"live births\", \"are born with\"; promotes tokens like \"born\"/\"birth\"."
+  },
+  {
+    "id": "20_10092_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3613813519477844,
+    "top_activations": [
+      {
+        "trigger": " President",
+        "score": 117.0,
+        "context": " 10 years.\u23ceTwo decades later, as U.S. President Barack Obama meets in Moscow with Russian President Dmitry Medvedev and Prime Minister Vladimir Putin,"
+      },
+      {
+        "trigger": " President",
+        "score": 92.5,
+        "context": " Americans with Disabilities Act (ADA) was passed by Congress and signed into law by President George Bush in 1990 amid much congratulatory hoopla."
+      },
+      {
+        "trigger": " President",
+        "score": 93.5,
+        "context": "<bos>White House to host science fair\u23ceU.S. President Barack Obama is set to honor scientific achievements of students Monday as part of a push to strengthen science"
+      },
+      {
+        "trigger": " President",
+        "score": 110.0,
+        "context": " Under Secretary Jane Lubchenco. Dr. Lubchenco was appointed by President Barack Obama and confirmed on March 19, 2010."
+      },
+      {
+        "trigger": " President",
+        "score": 84.5,
+        "context": " of his speech announcing the end of the combat mission in Iraq.\u23ce\"From this desk, seven-and-a-half years ago, President Bush announced"
+      }
+    ],
+    "promotes": [
+      " Bush",
+      "Trump",
+      " Barack",
+      " Obama",
+      " Trump"
+    ],
+    "demotes": [
+      "setupUi",
+      "verifyException",
+      "\u1ee9c",
+      "heta",
+      ":+:"
+    ],
+    "generated_description": "U.S. President title \u2014 activates on \"President\" when followed by U.S. leader names; pushes specific presidents (Bush, Obama, Trump) as likely next tokens."
+  },
+  {
+    "id": "20_9065_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3409394919872284,
+    "top_activations": [
+      {
+        "trigger": " later",
+        "score": 68.0,
+        "context": " 'most extraordinary piece of wit and wisdom that America has yet contributed'. A century later it is his judgement of this autobiographical vision of the vigour of the American"
+      },
+      {
+        "trigger": "-",
+        "score": 69.0,
+        "context": " be toilet trained to enter this program.\u23ce\"Only practical work and experience lead the young to maturity.\"\u23ce-Dr. Maria Montessori in The Absorbent Mind"
+      },
+      {
+        "trigger": ",",
+        "score": 71.0,
+        "context": " human cultures\u2014E.B. Tylor, Lewis Henry Morgan, Franz Boas, Emile Durkheim, Marcel Mauss, A.R. Radcliffe-Brown"
+      },
+      {
+        "trigger": " \u2014",
+        "score": 72.5,
+        "context": "915 \"I fear this means that there is some mischief afoot.\" \u2014 Sherlock Holmes in The Valley of Fear by Sir Arthur Conan Doyle.\u23ce-"
+      },
+      {
+        "trigger": "||",
+        "score": 69.0,
+        "context": "\u23ce|Alma mater||University of Adelaide\u23ceUniversity of Cambridge\u23ce|Doctoral advisor||J. J. Thomson\u23ce|Doctoral students||John Crank\u23ceRonald Wil"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "ThroughAttribute",
+      " Ralph",
+      " <=\",",
+      "WithIOException"
+    ],
+    "demotes": [
+      " betweenstory",
+      "adaptiveStyles",
+      " CreateTagHelper",
+      " s\u00f3lido",
+      "ytick"
+    ],
+    "generated_description": "Clause delimiter \u2014 activates on punctuation delimiters (commas, em-dash, arrows \"->\", double pipes \"||\", table separators); marks clause/field boundaries."
+  },
+  {
+    "id": "21_7005_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.3581278920173645,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " received scant attention, centers on the\u23ceeconomic ideas of Joseph Smith, Jr. and the teachings of Jose Maria\u23ceArizmendiarrieta, the Catholic"
+      },
+      {
+        "trigger": " President",
+        "score": 44.5,
+        "context": ". In its place was Constellation, a program to return Americans to the moon. President Barack Obama, however, canceled that program and called on NASA to focus on"
+      },
+      {
+        "trigger": " and",
+        "score": 44.5,
+        "context": " of engaging in state terrorism in Iraq and demands the prosecution of George W. Bush and Tony Blair.\u23ceThis Week's News / Tomorrow's History ("
+      },
+      {
+        "trigger": " of",
+        "score": 47.5,
+        "context": "<bos>The administration of President George W. Bush had three major domestic goals: privatize Social Security, transfer federal work to private corporations, and shift the financing,"
+      },
+      {
+        "trigger": " President",
+        "score": 43.5,
+        "context": " When President Barack Obama took the podium on Tuesday night, he followed in the footsteps of generations of presidents before him: speaking to the American people about a critical issue"
+      }
+    ],
+    "promotes": [
+      "SystemColors",
+      "rawDesc",
+      " President",
+      " Lord",
+      " Prime"
+    ],
+    "demotes": [
+      "Personendaten",
+      "TagHelper",
+      " elkaar",
+      "anyahu",
+      " ig\u00e5ng"
+    ],
+    "generated_description": "President title \u2014 activates on the token \"President\" and title phrases; often co-occurs with US presidents' names (Barack Obama, George W. Bush) and leadership/contextual mentions."
+  },
+  {
+    "id": "22_8982_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3798133134841919,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 58.0,
+        "context": " only controlled federal law. The state constitutions controlled state law. After the passage of the 14th Amendment, courts began considering state laws through its prism --"
+      },
+      {
+        "trigger": " the",
+        "score": 58.0,
+        "context": " Jefferson wrote that foreshadowed the Declaration of Independence was a draft of a Constitution for the State of Virginia. After the Virginia Convention voted for the independence resolution on May"
+      },
+      {
+        "trigger": " the",
+        "score": 65.0,
+        "context": " the U.S. Constitution is quite simple. It states: \u00e2\u20ac\u0153The powers not delegated to the United States by the Constitution, nor prohibited by it"
+      },
+      {
+        "trigger": " the",
+        "score": 57.0,
+        "context": " continually seeking answers to the nation's ills through remedies which were not authorized by the Constitution, and in most cases by methods which had been strictly forbidden by historical"
+      },
+      {
+        "trigger": " ratified",
+        "score": 80.0,
+        "context": "9, the First Federal Congress of the United States approved 12 amendments to the recently ratified Constitution. Ten of them would eventually become the Bill of Rights that"
+      }
+    ],
+    "promotes": [
+      "ast\u00e9ro\u00efdes",
+      "enumi",
+      "platt",
+      "enderror",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "aternion",
+      "Aiheesta",
+      "mybatisplus",
+      "asgi",
+      "ompi"
+    ],
+    "generated_description": "the (definite article) \u2014 activates on \"the\" introducing noun phrases, especially formal/institutional nouns (Constitution, Declaration, passage, nation)"
+  },
+  {
+    "id": "3_5177_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.39705735445022583,
+    "top_activations": [
+      {
+        "trigger": " President",
+        "score": 19.0,
+        "context": "<bos>Welcome to our debate between the current President and the first President of the United States. The subject is, \"Should The United States promote Democracy In Every Land"
+      },
+      {
+        "trigger": " President",
+        "score": 20.25,
+        "context": " the coral reef where they'll be safer.\u23ceTake note, Mr. President. Preventative action before hurricanes = good. Still in the \"beginning\""
+      },
+      {
+        "trigger": " President",
+        "score": 21.62,
+        "context": " 26, 2008\u23ceAs our 44th President prepares to enter the Oval Office, bank lending has seized up, some of"
+      },
+      {
+        "trigger": " President",
+        "score": 21.5,
+        "context": "\u2019s life in Kentucky as well as how the state has commemorated the Sixteenth President after April 1865. The Treasures section allows visitors to explore"
+      },
+      {
+        "trigger": " President",
+        "score": 20.0,
+        "context": "<bos>Theodore Roosevelt, 26th President of the United States (1901\u20131909), was the youngest and arguably most energetic man"
+      }
+    ],
+    "promotes": [
+      "EDEFAULT",
+      "IntoConstraints",
+      "GEBURTSDATUM",
+      " pinulongan",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      " President",
+      " president",
+      "President",
+      "president",
+      " PRESIDENT"
+    ],
+    "generated_description": "President (title) \u2014 activates on capitalized \"President\" tokens, often adjacent to ordinals/names referencing U.S. presidents (e.g., 16th, 26th, 44th, Theodore Roosevelt)."
+  },
+  {
+    "id": "16_10434_8",
+    "layer": 16,
+    "ctx_idx": 8,
+    "influence_score": 0.3810510039329529,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 35.75,
+        "context": " proposed to arrest and hang after he presided over the Continental Congress in 1775. Upon his return to Williamsburg, the volunteer company of militia of the"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 52.0,
+        "context": ". These two events, Gen. Arthur St. Clair\u2019s defeat in 1791 and Gen. Anthony Wayne\u2019s resounding victory at the Battle"
+      },
+      {
+        "trigger": "8",
+        "score": 34.25,
+        "context": "<bos>The American Revolutionary War began in 1775 and ended in 1783. The British ruled the American colonists and they had become increasingly"
+      },
+      {
+        "trigger": "7",
+        "score": 34.5,
+        "context": " The location of the East and West Cross Timbers was well known by these early travelers who used them as points of reference for travel. In 177"
+      },
+      {
+        "trigger": " ",
+        "score": 37.5,
+        "context": " problems persisted.\u23ceCongress Can Not Improve Poor Attendance by Delegates\u23ceIn November 1783, American diplomats sent Congress the final version of the Treaty of"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " spesa",
+      " Monfieur",
+      " The\u017fe",
+      " gyhoeddwyd"
+    ],
+    "demotes": [
+      " dog",
+      " Dog",
+      " K",
+      "newArrayList",
+      " ship"
+    ],
+    "generated_description": "17xx year token \u2014 activates on 1700s date numerals (1775, 1777, 1783, 1791); signals 18th-century year mentions in historical prose."
+  },
+  {
+    "id": "21_3486_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.2915480136871338,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 51.0,
+        "context": "8-44 B.C.\u23ceCaesar was busy the last three years of his life, yet there is mystery embedded in his activities. What was he"
+      },
+      {
+        "trigger": " President",
+        "score": 54.0,
+        "context": " other significant public or private endeavors.\u201d\u23ceThe medal for the posthumous award to President Kennedy is received on behalf of the family by Attorney General Robert F. Kennedy"
+      },
+      {
+        "trigger": " President",
+        "score": 51.5,
+        "context": " for meritorious, war-connected acts or services.\u23ceThrough an executive order, President Kennedy renamed the award the \u2018Presidential Medal of Freedom,\u2019 broadening its scope to"
+      },
+      {
+        "trigger": ",",
+        "score": 83.5,
+        "context": " is through the efforts of America\u2019s great leaders like George Washington, Abraham Lincoln, Ulysses S. Grant, Frederick Delano Roosevelt, John F.\u23ceKennedy,"
+      },
+      {
+        "trigger": " of",
+        "score": 49.0,
+        "context": "<bos>Two Nation Theory: In the Light of the Speeches of Quaid-i-Azam Muhammad Ali Jinnah\u23ceMunir Ahmad Mughal\u23cePunjab University Law"
+      }
+    ],
+    "promotes": [
+      " Eisenhower",
+      " Lincoln",
+      " FDR",
+      " Hitler",
+      " Roosevelt"
+    ],
+    "demotes": [
+      "XmlAccessType",
+      " fronte",
+      " Moya",
+      " laude",
+      "lanie"
+    ],
+    "generated_description": "say president/leader name \u2014 activates on titles/lists or connective words ('President', commas, 'of'); pushes specific leader names (Lincoln, FDR, Eisenhower, Roosevelt, Hitler)"
+  },
+  {
+    "id": "20_13777_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3372667133808136,
+    "top_activations": [
+      {
+        "trigger": " Fort",
+        "score": 69.5,
+        "context": "l\u0259r) [key]. 1 Name given during the American Revolution to the rebuilt Fort Stanwix, on the site of Rome, N.Y. "
+      },
+      {
+        "trigger": " ",
+        "score": 67.5,
+        "context": " doubled the size of the United States when his Administration successfully completed the Louisiana Purchase in 1803 and commissioned the Lewis & Clark Expedition to explore the new"
+      },
+      {
+        "trigger": " former",
+        "score": 73.0,
+        "context": " portion of Louisiana lying east of the Mississippi river to which title had recently been acquired by England.\u23ceBy the terms of the royal edict Florida and the former French"
+      },
+      {
+        "trigger": " The",
+        "score": 78.0,
+        "context": " your studies.\u23cePre-Revolutionary Events of Note:\u23ceMarch 5, 1770 - The Boston Massacre took place\u23ceDecember 16"
+      },
+      {
+        "trigger": " and",
+        "score": 74.0,
+        "context": " meeting brought together prominent men from a number of colonies to plan a united colonial response to the imminent threat posed to the English by French and American Indian fighters in the"
+      }
+    ],
+    "promotes": [
+      " Tip",
+      " Briton",
+      " Brits",
+      "British",
+      " British"
+    ],
+    "demotes": [
+      " nahilalakip",
+      " Administrativna",
+      " AssemblyCulture",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "romycin"
+    ],
+    "generated_description": "British / Britain \u2014 activates on colonial-era context words (Fort, The, former, and) and passages about British presence/colonial events; promotes \u201cBritish\u201d-related tokens."
+  },
+  {
+    "id": "17_9606_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.3991917669773102,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 48.5,
+        "context": "<bos>The Magdalen Society of Philadelphia was founded in 1800 to help reform \u201cfallen\u201d women. White-Williams Scholars is a funding organization in Philadelphia"
+      },
+      {
+        "trigger": " was",
+        "score": 45.5,
+        "context": " Survey, the Idaho Geological Survey and UNAVCO, Inc.\u23ceYVO was founded in 2001, originally as a three-way partnership"
+      },
+      {
+        "trigger": " was",
+        "score": 46.5,
+        "context": "<bos>The Sanctuary Movement was a religious and political campaign that began\u23cein the early 1980s to provide safe haven for Central American refugees\u23cef"
+      },
+      {
+        "trigger": " was",
+        "score": 51.0,
+        "context": "<bos>Information by Country\u23ceThis was particularly the case for kindergarten. Enrolment went up from about 500,000 students in 20"
+      },
+      {
+        "trigger": " was",
+        "score": 47.5,
+        "context": "<bos>Meditations on an Apple\u23ceMeditations on an Apple\u23ceThis essay was first presented during a Bioneers conference workshop. Before the meditation, each participant was"
+      }
+    ],
+    "promotes": [
+      "afficheront",
+      "WebServlet",
+      "ValueGeneration",
+      " autrefois",
+      "MigrationBuilder"
+    ],
+    "demotes": [
+      " Jefus",
+      " deoxy",
+      " Chrift",
+      " lasted",
+      " Chri\u017ft"
+    ],
+    "generated_description": "was (past auxiliary) \u2014 activates on the auxiliary \u201cwas\u201d in past descriptions/passive clauses; often sentence-initial or preceding past-participial/descriptive phrases."
+  },
+  {
+    "id": "22_15240_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.28468582034111023,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 88.5,
+        "context": "90, through the influence of Tarbes politician Bertrand Bar\u00e8re, a member of the Convention.\u23ceHautes-Pyr\u00e9n\u00e9es consists of several distinct geographical areas"
+      },
+      {
+        "trigger": "1",
+        "score": 108.5,
+        "context": " with the deteriorating economy set the stage for a revolution in France in the late 1700\u2019s. A freed slave once said that the limits of"
+      },
+      {
+        "trigger": ",",
+        "score": 81.0,
+        "context": " his community.\u23ceIn 1776, in the Declaration of Independence, and again in 1789, in the Constitution of the United"
+      },
+      {
+        "trigger": " ",
+        "score": 82.5,
+        "context": " letter, Roth says that the Second Amendment should apply only to the arms available in 1791 when the amendment was adopted, which is his opinion protected"
+      },
+      {
+        "trigger": " the",
+        "score": 95.5,
+        "context": " making the first ten amendments to the Constitution law and completing the revolutionary reforms begun by the Declaration of Independence. Before the Massachusetts ratifying convention would accept the Constitution,"
+      }
+    ],
+    "promotes": [
+      " Founding",
+      " Marat",
+      "__(/*!",
+      "motive",
+      "iph"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " propOrder",
+      "findpost",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "HomeAsUpEnabled"
+    ],
+    "generated_description": "say 18th\u2011century date \u2014 activates on structural tokens just before 1700s/1776/1791 and founding-era phrases (e.g., \u201cthe\u201d before \u201cfirst ten amendments\u201d), signals Revolutionary-era date mention."
+  },
+  {
+    "id": "24_14405_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3334936499595642,
+    "top_activations": [
+      {
+        "trigger": " historian",
+        "score": 71.5,
+        "context": "\u2019s payload capacity rendered the first two options largely moot, and these were never openly discussed with the world. In fact, wrote historian Asif Siddiqi in"
+      },
+      {
+        "trigger": ":",
+        "score": 78.5,
+        "context": "<bos>Johns Hopkins Medicine\u23ceOffice of Communications and Public Affairs\u23ceMedia Contact: Joanna Downer\u23ceApril 22, 2004\u23ceGENOME"
+      },
+      {
+        "trigger": ":",
+        "score": 67.5,
+        "context": "<bos>Name: Doug Forbes\u23cePh.D. from University of Victoria; one year post-doc and several years research and teaching at Trent University and Colby College"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 66.5,
+        "context": "<bos>(back) (next) (contents)\u23ceThe Role of Fathers\u23ceReprinted from Leep Network News, a newsletter from the LSUMC Department of"
+      },
+      {
+        "trigger": " researcher",
+        "score": 73.0,
+        "context": " of eggs that matured and increased the percentage of eggs that degenerated,\" said lead researcher Catherine Racowsky, director of the assisted reproductive technologies laboratory at Brigham and"
+      }
+    ],
+    "promotes": [
+      " Daniel",
+      " Sandra",
+      " Anna",
+      " Sarah",
+      " Laura"
+    ],
+    "demotes": [
+      " Exp\u00e9di\u00e9",
+      "setupUi",
+      " Wikispecies",
+      " africains",
+      " hjemmeside"
+    ],
+    "generated_description": "say person name \u2014 activates on role/title labels and contact headings (historian, Media Contact:, Name:, lead researcher, heading line breaks) that introduce a following person\u2019s name"
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.28066423535346985,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say upcoming noun phrase \u2014 activates on prepositions, articles, commas that introduce a following noun or named entity; signals an upcoming content word."
+  },
+  {
+    "id": "24_4172_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3916183412075043,
+    "top_activations": [
+      {
+        "trigger": " editor",
+        "score": 53.75,
+        "context": " scientific considerations in cleaning up contamination at historic mines on public lands.\u23ceAccording to editor Jerry DeGraff, U.S. Department of Agriculture Forest Service,"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 60.75,
+        "context": " held office. Also included are pictures of most of the governors, so that these men and women may be more vividly brought to life.\u23ceABOUT THE AUTHOR\u23ce"
+      },
+      {
+        "trigger": " and",
+        "score": 51.25,
+        "context": " amidst Trauma and Loss: Recognizing and Honoring Differences among Cultures, Nancy Dubrow and Kathleen Nader. Part I: The Cultures of the United States. Lifting Our"
+      },
+      {
+        "trigger": ",",
+        "score": 53.25,
+        "context": ": November 14, 1983\u23ceCreator: Fraas, Charlotte Jones\u23ceDescription: Federal involvement in the education of the handicapped increased significantly"
+      },
+      {
+        "trigger": " and",
+        "score": 60.25,
+        "context": "151\u23ceLewy Body Dementia\u23ceCarrie Hill, Ph.D. and Natalie Reiss, Ph.D.\u23ceUpdated: Jul 3rd "
+      }
+    ],
+    "promotes": [
+      "tad\u0131r",
+      " r\u00e9glable",
+      "setupUi",
+      "NullCheck",
+      "ueltos"
+    ],
+    "demotes": [
+      " Andrew",
+      " George",
+      " Carlos",
+      " Paul",
+      " V\u00edctor"
+    ],
+    "generated_description": "Metadata/list separator \u2014 activates on commas, \"and\", line breaks, \"editor\"; marks bibliographic or list structure and suppresses person-name tokens."
+  },
+  {
+    "id": "23_8746_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.38348308205604553,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 74.0,
+        "context": " Chase, secretary of treasury and Bates as attorney general. His cabinet was rounded out with three former Democrats, Gideon Welles, Montgomery Blair and Edwin M. Stanton."
+      },
+      {
+        "trigger": "1",
+        "score": 69.0,
+        "context": "ilers have not enjoyed positive evaluations in recent decades. Scholars, beginning in the 1960s and 1970s, typically pictured them"
+      },
+      {
+        "trigger": "1",
+        "score": 87.0,
+        "context": "\u23ceJohn Brown was born at Torrington, Connecticut, on May 4, 1800, to Owen Brown and Ruth Mills Brown. His father"
+      },
+      {
+        "trigger": " Aunt",
+        "score": 66.0,
+        "context": " and family life, describing his family and Emerson's relationship with them. His Aunt Mary Moody Emerson was a large...\u23ceEmerson: The Mind on Fire:"
+      },
+      {
+        "trigger": " and",
+        "score": 64.0,
+        "context": " with them.\u23ceAnderson includes the usual, Abigail Adams, Phillis Wheatley, and Sybil Ludington. Also included are the unfamiliar Ann Bailey who enlisted under"
+      }
+    ],
+    "promotes": [
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628",
+      " ControllerBase",
+      "AndEndTag",
+      " Normdatei",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641"
+    ],
+    "demotes": [
+      " Civil",
+      "Civil",
+      " civil",
+      "civil",
+      " CIVIL"
+    ],
+    "generated_description": "Short function token \u2014 activates on short/common tokens: conjunction \"and\", digit piece \"1\" (in years/decades), short capitalized titles like \"Aunt\". Predicts connective/fragment positions."
+  },
+  {
+    "id": "24_8487_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3444784879684448,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 68.0,
+        "context": " while most quizzed could identify a photo of Abraham Lincoln, hardly any could say why he was an important president.\u23ceIf there\u2019s anywhere students would be"
+      },
+      {
+        "trigger": " than",
+        "score": 56.5,
+        "context": " Free-Market Agriculture\u23ceAgrarian roots run deep in American society. None other than George Washington called for a board of agriculture to disseminate educational information to the public"
+      },
+      {
+        "trigger": " with",
+        "score": 65.5,
+        "context": " the same footing with the civil rights milestones of Seneca Falls for women's rights and the Selma March for African-American rights.\u23ceYet, as historic and"
+      },
+      {
+        "trigger": "-",
+        "score": 50.0,
+        "context": " at them through the mists of time. Whenever we watch a movie set in pre-Modern times, my wife will turn to me and say the same thing every"
+      },
+      {
+        "trigger": "ates",
+        "score": 47.75,
+        "context": ",\" a famous full-page illustration by John T. McCutcheon, commemorates the sacrifices of soldiers in four cells. Pictured is a gold and green"
+      }
+    ],
+    "promotes": [
+      "sez",
+      " trajets",
+      "use",
+      "uus",
+      " Hamm"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "extAlignment",
+      " my\u017felf",
+      "intios",
+      " \u017fever"
+    ],
+    "generated_description": "say named entity \u2014 fires on prepositions/connectors (of, than, with, pre-) that introduce proper names or places (Abraham Lincoln, George Washington, Seneca Falls)"
+  },
+  {
+    "id": "22_15273_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3760223388671875,
+    "top_activations": [
+      {
+        "trigger": " joined",
+        "score": 26.38,
+        "context": " opposed to helping Britain in the war.\u23ceIn 1915 he joined the Irish Republican Brotherhood.\u23ceHe helped organise the Easter Rising in 1"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " the 1940s. However, the primary focus of the novel is on Pecola Breedlove, another young black girl who lives in very different"
+      },
+      {
+        "trigger": " Jem",
+        "score": 34.0,
+        "context": " charged with the rape of a white girl. Through the young eyes of Scout and Jem Finch, Harper Lee explores with rich humor and unswerving honesty the irrational"
+      },
+      {
+        "trigger": ",",
+        "score": 36.5,
+        "context": " hurl a stone from his slingshot at the heavily armed giant, the braggart Goliath. Both of those figures, one Greek and the other Judaic,"
+      },
+      {
+        "trigger": " satellites",
+        "score": 28.12,
+        "context": " and Oberon, in 1787. (Uranus's satellites are the only ones in the solar system not named after figures in Greek and"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " it\u017felf",
+      " Monfieur",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      "H",
+      "L",
+      "N",
+      "Z",
+      "<eos>"
+    ],
+    "generated_description": "Mid-sentence content \u2014 activates on central tokens inside clauses (verbs, nouns, proper names, commas); signals non-boundary, in-clause words."
+  },
+  {
+    "id": "25_16302_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.39598771929740906,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ],
+    "generated_description": "Introduce clause \u2014 activates on commas, prepositions and discourse verbs (in, at, during, said); marks start of a subordinate phrase or continuation."
+  },
+  {
+    "id": "23_4259_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.32929396629333496,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 73.0,
+        "context": " Gump, he seemed all his life to be surrounded by history. He was descended from a line of notorious Puritans, including a judge at the Salem witch trials."
+      },
+      {
+        "trigger": " war",
+        "score": 59.5,
+        "context": "05th Street).\u23ce1811: Jacob Russell, a Revolutionary war veteran, purchased 475 acres of land in the upper Doan"
+      },
+      {
+        "trigger": " after",
+        "score": 59.5,
+        "context": " investigate business prospects around the mouth of the Saint John River (N.B.), and also by the closing to New England of the back-country trade after the"
+      },
+      {
+        "trigger": " American",
+        "score": 67.0,
+        "context": " 1751. They were followed two years later by native-born American settlers who came mainly from the Carolinas and Virginia. In 17"
+      },
+      {
+        "trigger": " the",
+        "score": 76.5,
+        "context": " the area in and around Robinson Township, Allegheny Co, Pennsylvania just before and after the Revolutionary War.For a summary descendancy chart for these settlers click here."
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " CIVIL",
+      "civil",
+      "Civil",
+      " Civil"
+    ],
+    "demotes": [
+      " GenerationType",
+      " faveur",
+      "izr",
+      " sup\u00e9rieures",
+      "\u062f\u0627\u0646\u0634\u0646\u0627\u0645\u0647\u0654"
+    ],
+    "generated_description": "American Revolutionary context \u2014 activates on mentions of Revolutionary War, post\u2011Revolutionary settlers/period, and US historical locality/time references."
+  },
+  {
+    "id": "20_3495_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.3101957142353058,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 90.0,
+        "context": "<bos>Franz Joseph Haydn (1732-1809)\u23ceFranz Joseph Haydn was an Austrian composer and a great master of classical music. His"
+      },
+      {
+        "trigger": " late",
+        "score": 106.0,
+        "context": "5\u201d\u23ceThis article examines the perceptions of Russians within American newspaper articles spanning the late eighteenth to mid-nineteenth centuries. From 1789 to"
+      },
+      {
+        "trigger": " President",
+        "score": 92.0,
+        "context": " approximately three hundred American ships.\u23ceAs a result of the undeclared war, President Adams in 1797 created the Navy Department. In North Carolina"
+      },
+      {
+        "trigger": "1",
+        "score": 109.0,
+        "context": "68.15q, Essai sur la Physiognomonie (1781-1803), and Essays on Physiognomy"
+      },
+      {
+        "trigger": " ",
+        "score": 82.0,
+        "context": " royal botanist, visiting museums and collecting material for the museum of the academy. From 1793 he was professor of zoology at the Museum of Natural"
+      }
+    ],
+    "promotes": [
+      "fi\u00e9es",
+      " pr\u00eate",
+      " Aufkl\u00e4rung",
+      "arques",
+      " Rocha"
+    ],
+    "demotes": [
+      "SequentialGroup",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "\u65e5\u95b2\u89a7",
+      " BoxFit",
+      "RegressionTest"
+    ],
+    "generated_description": "biographical-detail marker \u2014 activates on tokens that introduce life facts: years/era words (e.g., \u201clate\u201d, digits in dates), titles/positions (e.g., \u201cPresident\u201d, professorships)"
+  }
+]

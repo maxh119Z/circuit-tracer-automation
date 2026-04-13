@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "0_437_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.394768625497818,
+    "top_activations": [
+      {
+        "trigger": "Expectations",
+        "score": 10.88,
+        "context": "The type and stage of the cancer\u23ceYour tolerance for specific medications and procedures\u23ceExpectations for the course of the disease\u23ceYour opinion or preference\u23ceThe oncologist"
+      },
+      {
+        "trigger": "Studying",
+        "score": 11.31,
+        "context": " on record. But 1998 still holds the record.\u23ce\"Studying these annual temperature data, one gets the feeling that temperature is rising and that"
+      },
+      {
+        "trigger": "Accreditation",
+        "score": 11.62,
+        "context": "<bos>Accreditation is a form of independent, professional certification that focuses on schools and programs in a particular field. Accreditation of universities in the USA therefore assures you and your"
+      },
+      {
+        "trigger": "Overhead",
+        "score": 11.5,
+        "context": " still being injured and killed by overhead doors.\u23ceHistory of the Overhead Door\u23ceOverhead doors are a by-product of the industrial revolution and the onset of automotive"
+      },
+      {
+        "trigger": "Groundwater",
+        "score": 12.31,
+        "context": " resource evaluation\u23ce- sustainable groundwater development\u23ce- groundwater protection\u23ce- groundwater monitoring\u23ceGroundwater Resource Evaluation\u23ceThe goal of groundwater resource evaluation is to provide an inventory of"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Con\u017f",
+      " Re\u017f",
+      " Per\u017f",
+      " Di\u017f"
+    ],
+    "demotes": [
+      "Refunds",
+      "FTFY",
+      "Histology",
+      "]\")]",
+      "URLException"
+    ],
+    "generated_description": "Section-heading word \u2014 activates on title-case tokens at line starts (nouns/gerunds in headings like Expectations, Accreditation, Overhead, Groundwater)."
+  },
+  {
+    "id": "0_13200_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3645968437194824,
+    "top_activations": [
+      {
+        "trigger": " dyn",
+        "score": 6.41,
+        "context": " and highly stratified chiefdoms.\u23ceThe first states of sorts were those of early dynastic Sumer and early dynastic Egypt, which arose from the Uruk period"
+      },
+      {
+        "trigger": " times",
+        "score": 7.59,
+        "context": ", and has been used for a wide range of medicinal purposes in Europe since ancient times (Pothmann 2005). Butterbur extracts possess analgesic"
+      },
+      {
+        "trigger": " times",
+        "score": 7.59,
+        "context": " - Children's Encyclopedia (Ages 8-11)\u23ceIn ancient times people in the region surrounding the Mediterranean Sea buried their dead in underground tunnels and"
+      },
+      {
+        "trigger": " Roman",
+        "score": 6.91,
+        "context": "us. He was one of the great Roman emperors. Coming to power when the empire was experiencing civil war and in a state of financial collapse, Diocletian"
+      },
+      {
+        "trigger": " associated",
+        "score": 6.03,
+        "context": " the direct male ancestors of all Kohanim\u23ceThe burial site of Ithamar is associated with the Hill of Phinehas as related in the Bible and is attributed"
+      }
+    ],
+    "promotes": [
+      " modern",
+      " tradizione",
+      "istocene",
+      " zemi",
+      "quit\u00e9"
+    ],
+    "demotes": [
+      " Majefty",
+      " plea\u017fure",
+      " \u017fche",
+      " my\u017felf",
+      " An\u017f"
+    ],
+    "generated_description": "historical-period marker \u2014 activates on era/time words (dynastic, times, Roman, associated with historical periods); signals temporal framing, often pushing contrastive token like \u201cmodern.\u201d"
+  },
+  {
+    "id": "0_236_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.39880892634391785,
+    "top_activations": [
+      {
+        "trigger": ";",
+        "score": 22.0,
+        "context": " dress\u2014it was only through the use of physics that more microscopic clues were uncovered; clues that, decades earlier, might have remained hidden. The strontium-"
+      },
+      {
+        "trigger": ";",
+        "score": 22.0,
+        "context": " of weekly exercised each participant accumulated. The participants were then grouped by levels of activity; starting at low (15 minutes per day), medium, high or very"
+      },
+      {
+        "trigger": ";",
+        "score": 22.25,
+        "context": " Moroccan law and regulation in the approximately 85 percent of the territory it controls; however, Morocco and the Polisario Front (Popular Front for the Liberation of"
+      },
+      {
+        "trigger": ";",
+        "score": 22.0,
+        "context": " (Figure 1). The only tools required are a pencil, paper and binoculars; and the process can be as simple as recording the number and sex of deer"
+      },
+      {
+        "trigger": ";",
+        "score": 23.0,
+        "context": " in:\u23ce- quantifying fluxes of organic carbon in surface waters at regional scales;\u23ce- partitioning how much of the organic carbon that is stored in lakes,"
+      }
+    ],
+    "promotes": [
+      ".,",
+      ":",
+      "\u0101ci",
+      " via",
+      ".:"
+    ],
+    "demotes": [
+      ";\");",
+      "\"]];",
+      " ?\";",
+      "`;\r",
+      "*/;"
+    ],
+    "generated_description": "Semicolon \u2014 activates on \u201c;\u201d punctuation connecting clauses; signals clause-continuation contexts (often before coordinating/contrastive phrases)."
+  },
+  {
+    "id": "0_9695_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.3976580798625946,
+    "top_activations": [
+      {
+        "trigger": ";",
+        "score": 19.38,
+        "context": ". - Not refined; rough; rude; unpolished; gross; indelicate; as, coarse manners; coarse language. 2\u23ceThe word \"coarse"
+      },
+      {
+        "trigger": ";",
+        "score": 19.62,
+        "context": "; Environmental Economics & Policies; Governance Indicators; Poverty Assessment; Health Economics & Finance; Community Development and Empowerment; Decentralization; Agricultural Knowledge and Information Systems\u23ceSummary"
+      },
+      {
+        "trigger": ";",
+        "score": 18.88,
+        "context": "ase.\u23ce7. a bringing or coming to an end; disintegration; decay; termination.\u23ce8. legal termination, esp. of business activity, with"
+      },
+      {
+        "trigger": ";",
+        "score": 19.62,
+        "context": ", netiquette, privacy, and user responsibility.\u23ceBooks & Booklets; Internet Resources\u23ceAdministration & Leadership\u23ceAdministrator, Teacher, Board Member / Trustee"
+      },
+      {
+        "trigger": ";",
+        "score": 18.38,
+        "context": "; sound-producing devices; visual-distress signals; dock lines and rope; first aid kit; anchors and anchor lines; other boating safety equipment.\u23ce"
+      }
+    ],
+    "promotes": [
+      " I",
+      "\u23ce",
+      " is",
+      " \"",
+      " "
+    ],
+    "demotes": [
+      ";",
+      ";\\\\",
+      ";\r",
+      "\u00b0;",
+      " my\u017felf"
+    ],
+    "generated_description": "Semicolon / list separator \u2014 activates on \u201c;\u201d tokens, especially in lists or itemized headings and clause boundaries separating list entries or related phrases."
+  },
+  {
+    "id": "0_7344_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.39592641592025757,
+    "top_activations": [
+      {
+        "trigger": "News",
+        "score": 13.5,
+        "context": "<bos>News>Archaeologists tour Luke's 5,000 year old site\u23ceRobert Wegener, Statistical Research Inc. principal investigator, briefs visitors"
+      },
+      {
+        "trigger": "Congress",
+        "score": 13.62,
+        "context": "<bos>Congress is currently deciding whether or not to minimize programs that help poor people buy food. There are public health experts, however, that say food stamp cuts could"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 8, 2013\u23ce- Centers for Disease Control and Prevention\u23ce- American Association for the Study of Liver Diseases\u23ce- Hepatitis Foundation"
+      },
+      {
+        "trigger": "Outdoor",
+        "score": 12.88,
+        "context": "<bos>Outdoor play time can enhance children's sleep\u23ceUpdated On: Jul 26 2013 03:03:58"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 18, 2012\u23ceCould 3D printing be a climate revolution?\u23ceAdditive manufacturing has five key attributes that could help"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " autorytatywna",
+      ":\u2728",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "<bos>",
+      "The",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<strong>"
+    ],
+    "generated_description": "Section header token \u2014 activates on single-word capitalized document/headline sections at start of text (e.g. News, Congress, December, Outdoor)."
+  },
+  {
+    "id": "0_12763_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.30860042572021484,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " abstract] [hide abstract]\u23ceABSTRACT: The introduction of the photonic crystal (PhC) wavelength-scale cavity as a laser cavity enables us to obtain"
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " game.jar *.class\u23ce- The Java compiler and JVM can find the jar (when resolving/finding class names) if the jar is in the same directory"
+      },
+      {
+        "trigger": " (",
+        "score": 28.75,
+        "context": ",000 lb).\u23ceHeight: 83.00 m (272.00 ft).\u23ceDiameter: 22."
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " allowing arbitrary interconnections to be made.\u23ceFor example, the Main Distribution Frame (MDF) located at a telephone central office terminates the cables leading to subscribers"
+      },
+      {
+        "trigger": " (",
+        "score": 29.0,
+        "context": " Integer partition x = if x < 0 then 0 else foldl p (fromList [(0,1)]) [1..x] ! x where"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " (",
+      " ",
+      " [",
+      " A",
+      " I"
+    ],
+    "generated_description": "opening parenthesis \u2014 activates on '(' starting parentheticals: abbreviations/acronyms (PhC, MDF), unit conversions (272.00 ft), code/math groupings (fromList, conditional), inline clauses."
+  },
+  {
+    "id": "0_9483_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.34997203946113586,
+    "top_activations": [
+      {
+        "trigger": " Greek",
+        "score": 17.5,
+        "context": ", has received the attention of many scholars, very little has been written about early Greek accounting. The purpose of the present study is to demonstrate that the socio-"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": " version of an original Greek statue made around 350 BC. The original Greek figure would probably have stood in a temple or sanctuary, where it would have"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.12,
+        "context": "\u23ce- Although the scrolls are written in three languages, Hebrew, Aramaic and Greek, the most common script among all of them is known as the \u201cAss"
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": "\u03bc\u03b5\u03bb\u03b1\u03bd\u03cc\u03bc\u03bf\u03c1\u03c6\u03b1, melanomorpha ) technique is a style of ancient Greek pottery painting in which the decoration appears as black silhouettes on a red background."
+      },
+      {
+        "trigger": " Greek",
+        "score": 17.25,
+        "context": " by Greek-speaking, educated, rhetorically-trained writers who were skilled in Greek composition (but who never called themselves disciples) - they were not written by"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " ftate",
+      " perfons",
+      " blest",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " Hein",
+      "er",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " Mur",
+      "lyk"
+    ],
+    "generated_description": "Greek (ancient/language) \u2014 activates on the adjective \"Greek\" marking ancient Greek language, culture, texts, art, artifacts, or people (e.g., Greek statue, Greek pottery, Greek writings)."
+  },
+  {
+    "id": "0_14562_17",
+    "layer": 0,
+    "ctx_idx": 17,
+    "influence_score": 0.3489217162132263,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 26.5,
+        "context": " spacecraft \"has been sleeping in a polar orbit around Earth for two years\" and \"will be turned back on next month to hunt for more potentially hazardous asteroids,"
+      },
+      {
+        "trigger": " \"",
+        "score": 26.25,
+        "context": " moons as well, you should also make two additional layers, \"Moons\" and \"Moon Shadows.\" Keeping them all on separate layers will be useful later on."
+      },
+      {
+        "trigger": " \"",
+        "score": 26.5,
+        "context": "0 and in service 30 years after that.\u23ceYou may be thinking \"zero emissions and a rocket plane does not compute\" but here's why"
+      },
+      {
+        "trigger": " \"",
+        "score": 26.75,
+        "context": " his foot makes contact with the ball, and point out how far he's \"kicked\" it.\u23ceThis makes a great game when you get your"
+      },
+      {
+        "trigger": " \"",
+        "score": 27.0,
+        "context": " She gently released the little girl's grip and said comfortingly to Jack, \"There, there. She didn't mean it. She doesn't"
+      }
+    ],
+    "promotes": [
+      "\u2019\u201d",
+      ",\u201d",
+      "\u2019",
+      ".\u201d",
+      "\u201d"
+    ],
+    "demotes": [
+      " \"",
+      " '",
+      "\u3002\"",
+      " \"'",
+      "\uff1a\""
+    ],
+    "generated_description": "Opening quotation mark \u2014 activates on the start of quoted text/dialogue (opening \u201c); linked to typographic closing quotes and punctuation in outputs."
+  },
+  {
+    "id": "0_12777_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.37769049406051636,
+    "top_activations": [
+      {
+        "trigger": " programs",
+        "score": 10.56,
+        "context": " to scan the specified generations. This can be of use in obtaining consistent timings of programs that require memory allocation. Alternatively, performance can sometimes be improved by forcing a"
+      },
+      {
+        "trigger": " programs",
+        "score": 10.31,
+        "context": "-enabled devices.\u23ceA Java virtual machine is a program which executes certain other programs, namely those containing Java bytecode instructions. JVMs are most often implemented"
+      },
+      {
+        "trigger": " programs",
+        "score": 10.44,
+        "context": " screen--for example, the Emacs editor enhances the cursor on entry. Such programs should always restore the cursor to normal on exit.\u23ceIf you define either"
+      },
+      {
+        "trigger": " programs",
+        "score": 10.38,
+        "context": " for effectively determining FOT have been developed.\u23ceA number of propagation prediction computer programs are available. One such widely used and effective program is Ionospheric Communications"
+      },
+      {
+        "trigger": " programs",
+        "score": 10.44,
+        "context": " more instruction sequences;\u23ceprogram memory means for storing one or more of said instruction sequences of said stimulus programs, means for interpreting said stored instruction sequences to produce a"
+      }
+    ],
+    "promotes": [
+      "y",
+      "  ",
+      "ig",
+      "an",
+      "il"
+    ],
+    "demotes": [
+      " Hou\u017fe",
+      " Efq",
+      " Jefus",
+      " The\u017fe",
+      " Chriftian"
+    ],
+    "generated_description": "programs \u2014 activates on the token \"programs\" (computer/software contexts); plural noun, often in phrases about execution, memory, availability or specific software tools."
+  },
+  {
+    "id": "0_75_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.37060242891311646,
+    "top_activations": [
+      {
+        "trigger": " alive",
+        "score": 19.75,
+        "context": "\u23cescientists studying plants, animals, or inanimate objects (=things that are not alive)\u23cethe purpose of a plan, action, or activity [\u21aa goal"
+      },
+      {
+        "trigger": " alive",
+        "score": 19.75,
+        "context": " Anyway, to cut a long story short, you and I wouldn\u2019t be alive without them!\u23ceCheckout the video Seven Wonders of the Microbial World if you"
+      },
+      {
+        "trigger": " ready",
+        "score": 19.75,
+        "context": " when they are only 3 weeks old.\u23ce- By the time they are ready to go to a new home at 6-8 weeks of\u23cethey"
+      },
+      {
+        "trigger": " ready",
+        "score": 19.75,
+        "context": " lizards and mongooses,. After around 70 days when the hatchlings are ready to emerge, they call out from inside the eggs, alerting the mother to"
+      },
+      {
+        "trigger": " ready",
+        "score": 19.75,
+        "context": "<bos>Are you ready for MOOCs? A MOOC is a massive open online course. That's a course where the participants and materials are distributed across"
+      }
+    ],
+    "promotes": [
+      "webElementXpaths",
+      "bitField",
+      " ujednoznacz",
+      "Personendaten",
+      "complexContent"
+    ],
+    "demotes": [
+      " Shakspeare",
+      " Platon",
+      " Moslem",
+      " serpents",
+      " reformation"
+    ],
+    "generated_description": "state adjective \u2014 activates on predicate adjectives denoting condition/readiness (alive, ready); often appears after \"are\" or before infinitival \"to\" contexts"
+  },
+  {
+    "id": "0_15658_17",
+    "layer": 0,
+    "ctx_idx": 17,
+    "influence_score": 0.2813875079154968,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ".' He marks off 'grace,' i.e., sanctifying grace, from 'original justice.' ' Original justice then implies freedom from concupiscence,"
+      },
+      {
+        "trigger": " '",
+        "score": 33.0,
+        "context": "\u23ce- Use up to 20 simple words, such as 'cup', 'daddy' and 'dog'. These words may not always be easily recognised by"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " 'Three Great Potters'; 'Application and Perseverance'; 'Helps and Opportunities'; 'Workers in Art'; 'Industry and the Peerage'; 'Energy and Courage"
+      },
+      {
+        "trigger": " '",
+        "score": 32.75,
+        "context": " the Robert Burns poem 'Tam O'Shanter', where a beautiful witch called 'Nannie', chases Tam while riding his grey mare home one night. She"
+      },
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ": Seeds of the Individual and Collective Identity for Hispanics in Schools'; (6) 'Educational Approaches \u2014 What Works for Hispanics: General Constructs and the Early Years';"
+      }
+    ],
+    "promotes": [
+      ".",
+      ",",
+      "(\"",
+      " \u201c",
+      " ("
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      " \u201a",
+      "='';\r",
+      " '\r"
+    ],
+    "generated_description": "say open single-quote \u2014 fires on leading apostrophe/\u2019 used as opening quote before titles/words (\u2019Tam O'Shanter', 'Three Great Potters'); signals start of a quotation, favors punctuation/double-quote tokens"
+  },
+  {
+    "id": "0_8974_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3556382358074188,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": ") came into use, carrying with it the implication that all Jews would be removed from Nazi Germany.\u23ce6.62 Hitler's attitude at this time"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": "One part of the hoax, \"fluoride helps with tooth formation,\" was removed from the \"American Fluoride Campaign\" early on. Realizing this might expose"
+      },
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": " while it placed an added burden of wages on the former owner.\u23ceTransition away from slavery\u23ceCompensated emancipation was typically enacted as part of an act that"
+      },
+      {
+        "trigger": " from",
+        "score": 37.75,
+        "context": " 40-45 \u00b0C to facilitate pumping\u23cewhen unloaded, leaked from the tanks. The Polmar plan was triggered.\u23ceThe vast oil slick"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": " retina.\u23ce\"As you get older, the vitreous collapses and may shrink away from the retina. This may happen earlier if you are short-sighted or have"
+      }
+    ],
+    "promotes": [
+      "ob",
+      "s",
+      "\u2026",
+      "ma",
+      "\u0445\u0435"
+    ],
+    "demotes": [
+      " from",
+      "from",
+      " fr\u00e5n",
+      "\u0e08\u0e32\u0e01",
+      " desde"
+    ],
+    "generated_description": "from (preposition) \u2014 activates on the English token \"from\"; consistently pushes against/negates producing \"from\" (demotes that token, including multilingual variants)"
+  },
+  {
+    "id": "0_8548_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3881801664829254,
+    "top_activations": [
+      {
+        "trigger": " eligible",
+        "score": 16.62,
+        "context": " each of the 16 elementary schools that took part in the study, most of the students (80-90%) were eligible for free- or"
+      },
+      {
+        "trigger": " always",
+        "score": 12.62,
+        "context": ". Livemocha is a social network applied to a useful purpose\u2014your exercises will always be reviewed by another user of the site who is a native speaker of the"
+      },
+      {
+        "trigger": " always",
+        "score": 12.88,
+        "context": " method may be either plain or reinforced, but piles constructed by the second method are always reinforced to strengthen them for handling and driving. Concrete piers for foundation work are"
+      },
+      {
+        "trigger": " eligible",
+        "score": 15.88,
+        "context": " three years of education in an accredited pediatric residency program. A pediatric doctor is then eligible for board certification by the American Board of Pediatrics, and recertification is required"
+      },
+      {
+        "trigger": " Greek",
+        "score": 12.75,
+        "context": " appeared to be a peace gift. Within the Trojan horse lay an elite group of Greek warriors, unbeknownst to the City of Troy. Once inside the City"
+      }
+    ],
+    "promotes": [
+      "\u2500\u2500",
+      "jda",
+      " gol",
+      "gdx",
+      " d\u00e9"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " \u017feveral",
+      "\u00f1ora",
+      " fubject",
+      " chofe"
+    ],
+    "generated_description": "status/identity adjective \u2014 activates on adjectives/adverbs stating status, eligibility, permanence or identity (eligible, always, reinforced, Greek); often before a noun or preposition."
+  },
+  {
+    "id": "0_15007_26",
+    "layer": 0,
+    "ctx_idx": 26,
+    "influence_score": 0.37837356328964233,
+    "top_activations": [
+      {
+        "trigger": ".',",
+        "score": 20.75,
+        "context": ". (2003) 'Sharp shift in diet at onset of Neolithic.', Nature., 425 (6956). p. "
+      },
+      {
+        "trigger": "');",
+        "score": 21.5,
+        "context": " we expected'); is($result->stderr, '', 'nothing sent to sderr'); is($result->error, undef, 'threw no exceptions'); my $"
+      },
+      {
+        "trigger": "');",
+        "score": 21.5,
+        "context": " lock($filename, undef, 'nonblocking'); lock($filename, 'shared', 'nonblocking'); unlock($filename); lock_rename($oldfilename,"
+      },
+      {
+        "trigger": "',",
+        "score": 20.88,
+        "context": "\u23ceThe giant otter, known through much of its range as the 'river wolf', is one of South America's top carnivores and is the largest of"
+      },
+      {
+        "trigger": "',",
+        "score": 20.75,
+        "context": " and landscapers for this reason. One popular strain is 'McCurtain', named after McCurtain County, Oklahoma where they are native and tend to"
+      }
+    ],
+    "promotes": [
+      ".\u201d)",
+      "\u201d)",
+      "\u3002\u201d",
+      "\u201d]",
+      "</u>"
+    ],
+    "demotes": [
+      "</h3>",
+      "';",
+      "';\r",
+      "'.",
+      "',"
+    ],
+    "generated_description": "Quote-close punctuation \u2014 activates on a closing quote/apostrophe followed immediately by punctuation (., ,; ), etc.; signals quoted word/token immediately followed by punctuation."
+  },
+  {
+    "id": "0_15658_24",
+    "layer": 0,
+    "ctx_idx": 24,
+    "influence_score": 0.3457241356372833,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ".' He marks off 'grace,' i.e., sanctifying grace, from 'original justice.' ' Original justice then implies freedom from concupiscence,"
+      },
+      {
+        "trigger": " '",
+        "score": 33.0,
+        "context": "\u23ce- Use up to 20 simple words, such as 'cup', 'daddy' and 'dog'. These words may not always be easily recognised by"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " 'Three Great Potters'; 'Application and Perseverance'; 'Helps and Opportunities'; 'Workers in Art'; 'Industry and the Peerage'; 'Energy and Courage"
+      },
+      {
+        "trigger": " '",
+        "score": 32.75,
+        "context": " the Robert Burns poem 'Tam O'Shanter', where a beautiful witch called 'Nannie', chases Tam while riding his grey mare home one night. She"
+      },
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ": Seeds of the Individual and Collective Identity for Hispanics in Schools'; (6) 'Educational Approaches \u2014 What Works for Hispanics: General Constructs and the Early Years';"
+      }
+    ],
+    "promotes": [
+      ".",
+      ",",
+      "(\"",
+      " \u201c",
+      " ("
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      " \u201a",
+      "='';\r",
+      " '\r"
+    ],
+    "generated_description": "opening straight single-quote \u2014 fires on ASCII single-quote used as opening quote before words/titles (e.g. 'grace', 'cup', 'Tam O'Shanter'); prefers straight quote usage, suppresses typographic quotes."
+  },
+  {
+    "id": "0_11748_13",
+    "layer": 0,
+    "ctx_idx": 13,
+    "influence_score": 0.36612266302108765,
+    "top_activations": [
+      {
+        "trigger": ";",
+        "score": 22.12,
+        "context": " was a big concern during the 2009 H1N1 pandemic; anecdotal reports of fetal deaths caused many pregnant women to avoid getting vaccinated despite health"
+      },
+      {
+        "trigger": ";",
+        "score": 22.5,
+        "context": " work\u23ceThat points at him amazed.\u23ceFrieda is Ted Hughes' daughter; she is the \"you\" who is \"listening\" in line 2"
+      },
+      {
+        "trigger": ";",
+        "score": 23.5,
+        "context": "3 November 2009\u23ceI spent yesterday afternoon working on this forecast; now comes the real-time validation\u23ceEditor's note: Last month"
+      },
+      {
+        "trigger": ";",
+        "score": 22.38,
+        "context": " was the last survivor from the Bronze Age of man.\u23ceFrom Greek \u03bb\u03c9\u03c2; Lat. Talus There are suppositions that the name \"Talos\""
+      },
+      {
+        "trigger": ";",
+        "score": 22.38,
+        "context": " sane people were sometimes admitted, but were not allowed to leave.\u23ceBut relax; it wasn\u2019t in the recent past. It was more like 7"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " The\u017fe",
+      " it\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      ";",
+      ":",
+      "-"
+    ],
+    "generated_description": "Semicolon token \u2014 activates on ';' characters; marks clause breaks before new clause/capitalized word; associated with promoting archaic/formal next words and demoting punctuation."
+  },
+  {
+    "id": "0_13459_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3691249489784241,
+    "top_activations": [
+      {
+        "trigger": "see",
+        "score": 15.0,
+        "context": "\u23ceAlthough Sinclair subsequently left the relationship to concentrate on his Formula 1 career (see right) the world would never be the same again...\u23ceKeith Kenneth Know"
+      },
+      {
+        "trigger": "and",
+        "score": 15.12,
+        "context": " scarf. He keeps doing it until there's nothing left of the jacket (and he still makes something out of nothing!).\u23ceA nice lesson in our consumer"
+      },
+      {
+        "trigger": "and",
+        "score": 14.88,
+        "context": ". They'll create projects inspired by classic arcade games that can be programmed (and played!) in an afternoon. The book's patient, step-by"
+      },
+      {
+        "trigger": "and",
+        "score": 15.0,
+        "context": " a web server at my university. You may like to check that this page (and others on the site) start with \"http://www.st-and"
+      },
+      {
+        "trigger": "see",
+        "score": 14.88,
+        "context": " example being that developed by the Institute for Sustainable Energy Policies (ISEP) (see related articles in the column to the right). These tend to suggest a gradual"
+      }
+    ],
+    "promotes": [
+      "Alas",
+      "FYI",
+      "FWIW",
+      " via",
+      " alas"
+    ],
+    "demotes": [
+      "RegressionTest",
+      " kasarigan",
+      " betweenstory",
+      " Efq",
+      "ViewImports"
+    ],
+    "generated_description": "Additive connector \u2014 activates on parenthetical/inline linking words like \"and\" and \"see\"; marks continuation, addition, lists, or cross-references within clauses."
+  },
+  {
+    "id": "0_6659_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.3720536231994629,
+    "top_activations": [
+      {
+        "trigger": " illness",
+        "score": 19.12,
+        "context": " mentally retarded and most cannot live on their own\u23ceUnfortunately, the incidence of this illness appears to be on the rise. Some experts think autism is diagnosed more often"
+      },
+      {
+        "trigger": " illness",
+        "score": 18.75,
+        "context": " You Should Feel Happy All the Time\u23ceSadness is not necessarily a sign of illness\u2014it's a normal part of being human and can even be beneficial"
+      },
+      {
+        "trigger": " illness",
+        "score": 18.88,
+        "context": " There are numerous treatments and forms of support that make it possible for those with mental illness to hold down jobs and lead a normal life.\u23ceFiction: There\u2019"
+      },
+      {
+        "trigger": " illness",
+        "score": 19.0,
+        "context": "APA) decided in 1973 that homosexuality was no longer a mental illness. It\u2019s about both the power of a family story and a social"
+      },
+      {
+        "trigger": " illness",
+        "score": 19.38,
+        "context": " extreme lows of\u23cedepression. It is also called manic-depressive\u23ceThis illness can cause behavior so extreme that you\u23cecannot function at work, in family"
+      }
+    ],
+    "promotes": [
+      "\"]);\r",
+      ".}~\\",
+      "ient\u00f4t",
+      "\".\r",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "  ",
+      " and"
+    ],
+    "generated_description": "mental illness \u2014 activates on \"illness\" in mental-health contexts; signals discussion of psychiatric conditions (depression, autism, homosexuality reclassification)"
+  },
+  {
+    "id": "0_15658_26",
+    "layer": 0,
+    "ctx_idx": 26,
+    "influence_score": 0.3668766915798187,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ".' He marks off 'grace,' i.e., sanctifying grace, from 'original justice.' ' Original justice then implies freedom from concupiscence,"
+      },
+      {
+        "trigger": " '",
+        "score": 33.0,
+        "context": "\u23ce- Use up to 20 simple words, such as 'cup', 'daddy' and 'dog'. These words may not always be easily recognised by"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " 'Three Great Potters'; 'Application and Perseverance'; 'Helps and Opportunities'; 'Workers in Art'; 'Industry and the Peerage'; 'Energy and Courage"
+      },
+      {
+        "trigger": " '",
+        "score": 32.75,
+        "context": " the Robert Burns poem 'Tam O'Shanter', where a beautiful witch called 'Nannie', chases Tam while riding his grey mare home one night. She"
+      },
+      {
+        "trigger": " '",
+        "score": 32.25,
+        "context": ": Seeds of the Individual and Collective Identity for Hispanics in Schools'; (6) 'Educational Approaches \u2014 What Works for Hispanics: General Constructs and the Early Years';"
+      }
+    ],
+    "promotes": [
+      ".",
+      ",",
+      "(\"",
+      " \u201c",
+      " ("
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      " \u201a",
+      "='';\r",
+      " '\r"
+    ],
+    "generated_description": "straight single-quote \u2014 activates on ASCII apostrophe/quote characters surrounding quoted words/titles; often appears before or after short quoted items like 'grace', 'Tam O'Shanter' and list entries."
+  },
+  {
+    "id": "0_10950_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.36536136269569397,
+    "top_activations": [
+      {
+        "trigger": " combine",
+        "score": 27.88,
+        "context": "'s submerged cultural resources. During this process, Middle Range Theory was used to combine historical, environmental, and prior archaeological data into a series of multiple hypotheses concerning"
+      },
+      {
+        "trigger": " combine",
+        "score": 28.88,
+        "context": " best.\u23ceAnti-Aliasing & Transparency\u23ceDiscussion of anti-aliasing and transparency for Web graphics, and what to do when you combine the two."
+      },
+      {
+        "trigger": " combination",
+        "score": 28.12,
+        "context": ", you can select a highlight color, add notes, add tags, or any combination.\u23ceIf you've purchased the All Access Pass, you can print"
+      },
+      {
+        "trigger": " combination",
+        "score": 28.38,
+        "context": " humours in a person's body.\u23ce- n. A mixture or combination.\u23ce- n. The contraction of a vowel or diphthong at the"
+      },
+      {
+        "trigger": " combination",
+        "score": 27.88,
+        "context": " large herds that are not organized in any way. Herds may consist of any combination of sexes or ages.\u23ceGiraffes have small \"horns\" or"
+      }
+    ],
+    "promotes": [
+      " COB",
+      "HtmlAttribute",
+      "minecraftforge",
+      "TypedDataSet",
+      "\u00e9valuateur"
+    ],
+    "demotes": [
+      " combination",
+      " combined",
+      " combinatie",
+      " kombinasi",
+      "combination"
+    ],
+    "generated_description": "combine / combination \u2014 activates on lexical forms like \"combine\", \"combination\", \"combination(s)\"; appears in phrases \"combine the two\", \"any combination\", \"a mixture or combination\"."
+  },
+  {
+    "id": "0_12591_27",
+    "layer": 0,
+    "ctx_idx": 27,
+    "influence_score": 0.3810465931892395,
+    "top_activations": [
+      {
+        "trigger": " large",
+        "score": 18.25,
+        "context": " cap may make a difference, as about 23 percent of the men had large bones and experienced similar success rates to those who underwent total hip replacement, according"
+      },
+      {
+        "trigger": " large",
+        "score": 18.12,
+        "context": " an important part of federal policy, particularly in Oklahoma where there were not only a large number of Indians that had been relocated there, but also many distinct tribes."
+      },
+      {
+        "trigger": " large",
+        "score": 18.0,
+        "context": " experts on that task force are currently being implemented.\u23ceUSEPA has committed a large amount of funding to research scientists to investigate why the lake has changed in recent"
+      },
+      {
+        "trigger": " large",
+        "score": 18.12,
+        "context": " in a week or two. Check with your doctor or dentist if you have unusually large or painful canker sores or canker sores that don't seem to"
+      },
+      {
+        "trigger": " large",
+        "score": 18.12,
+        "context": " to Scotland, but have now become a consistent breeding species, mostly due to the large number of nesting boxes that are provided by enthusiasts.\u23ceUnfortunately the boxes,"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " \u0f0b\u0f0b",
+      " Shakspeare",
+      " Shaksp",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " ",
+      " an",
+      " some"
+    ],
+    "generated_description": "large \u2014 activates on the adjective \"large\" marking big size/quantity; appears before nouns (large number/amount/bones/canker sores)"
+  },
+  {
+    "id": "1_15229_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3683761656284332,
+    "top_activations": [
+      {
+        "trigger": " Greek",
+        "score": 23.88,
+        "context": " AND HELL\u23ceNEXT to the Old Testament Hebrew word SHEOL, this New Testament Greek word,\u23ceHADES, is one of the most important.\u23ceOur"
+      },
+      {
+        "trigger": " Greek",
+        "score": 23.25,
+        "context": " the 1790s German physician Samuel Hahnemann developed the ancient Greek medic Hippocrates\u2019 idea of curing \u2018like with like\u2019. He rejected the"
+      },
+      {
+        "trigger": " Greek",
+        "score": 24.0,
+        "context": "\u0113, meaning \"pure\" or \"holy\". The Latinized form of the Greek name is Hagnes, the feminine form of \u0391\u03b3\u03bd\u03cc\u03c2 Hagnos,"
+      },
+      {
+        "trigger": " Greek",
+        "score": 25.88,
+        "context": " Palestine, then under the rule of the high priests, seems to have steered clear of any participation. Nevertheless, the internal distractions of the Greek world enabled him to"
+      },
+      {
+        "trigger": " Greek",
+        "score": 23.38,
+        "context": "96 BCE-406 BCE) was the second of the three ancient Greek tragedians whose work has survived. His first plays were written later than those"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "'",
+      " ",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " Roskov",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " betweenstory",
+      " purpo\u017fe",
+      "\u00e9valuateur"
+    ],
+    "generated_description": "Greek (the word) \u2014 activates on the token \"Greek\" used as a language/cultural qualifier, especially in phrases like \"the Greek ___\" before nouns."
+  },
+  {
+    "id": "3_9846_17",
+    "layer": 3,
+    "ctx_idx": 17,
+    "influence_score": 0.372773140668869,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 17.25,
+        "context": " English cipp \"piece of wood,\" perhaps from PIE root *keipo- \"sharp post\" (cf. Dutch kip \"small strip of wood,\" Old"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 18.0,
+        "context": " both Latin and English:\u23ceNunc omnes quoque musicum, et poetam\u23ceAgnoscunt, medicumque Campianum.\u23ce(Now they all recognize"
+      },
+      {
+        "trigger": " \u2014",
+        "score": 17.0,
+        "context": " the darkness; bh\u0101nti \u2014 shine; na \u2014 not; grah\u0101\u1e25 \u2014 the planets; yath\u0101 \u2014 as; p\u0101pena \u2014 because of sinful"
+      },
+      {
+        "trigger": " (\u201c",
+        "score": 22.38,
+        "context": " (\u201celder\u201d). Cognate with Dutch heer, Swedish herre, compare also herrschen (\u201cto rule\u201d). The Old High German word originally meant \"grey, grey-"
+      },
+      {
+        "trigger": " (\"",
+        "score": 20.88,
+        "context": "\u03ba\u03c1\u03b9\u03b8\u03b5\u1f76\u03c2 \u1f41 \u1f38\u03b7\u03c3\u03bf\u1fe6\u03c2 \u03b5\u1f36\u03c0\u03b5\u03bd\u201d (\"answering Jesus said\").\u23ceThere are quite a few places with \u201c\u1f00"
+      }
+    ],
+    "promotes": [
+      " Calder",
+      " Col",
+      " apl",
+      "ps",
+      "sa"
+    ],
+    "demotes": [
+      " \u0645\u0631\u0626\u064a\u0647",
+      "webElementXpaths",
+      " mergeFrom",
+      "\\{\\\\",
+      " contextLoads"
+    ],
+    "generated_description": "open-quote marker \u2014 activates on opening quote punctuation (\", \u201c, (\u201c , em-dash or linebreak) that begins a quoted or parenthetical fragment."
+  },
+  {
+    "id": "1_15800_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.35904547572135925,
+    "top_activations": [
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": ": \u201cThe end tests the validity of the means\u201d? To this statement, no one could object. For only by the actual outcome of a course of action can"
+      },
+      {
+        "trigger": " one",
+        "score": 26.0,
+        "context": " I want to be a part of it.\u23ceChallenge by Choice\u23ce\u2013 No one is forced to participate\u23ceThis means that every person may choose his or her"
+      },
+      {
+        "trigger": " one",
+        "score": 26.0,
+        "context": ". But the story began with a chemical waste pond near Quincy High School. No one knew exactly what was in it\u2014perhaps not even the company responsible for it"
+      },
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": " locations, like the car, or reserving a time, like dinner, when no one in the family can use their cell phones. \u201cDifferent families will have different"
+      },
+      {
+        "trigger": " one",
+        "score": 26.25,
+        "context": " any color film at the time that Technicolor was making its big splash. No one had figured out how to create a film stock that would record color. They"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      "ViewFeatures",
+      "RectangleBorder",
+      "AddTagHelper",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      " to",
+      "'",
+      "<eos>"
+    ],
+    "generated_description": "No one \u2014 activates on \"one\" in the phrase \"No one\"; marks negated indefinite person (negated human subject) contexts."
+  },
+  {
+    "id": "0_9026_27",
+    "layer": 0,
+    "ctx_idx": 27,
+    "influence_score": 0.33446434140205383,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Content noun \u2014 activates on nouns and names (walks, Jewell, Nile, alfalfa); associated with promoting sentence-continuation punctuation/newline."
+  },
+  {
+    "id": "6_3478_17",
+    "layer": 6,
+    "ctx_idx": 17,
+    "influence_score": 0.35649988055229187,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 19.25,
+        "context": " look at the costs you will incur.\u23ceThe first and possibly the most important 'cost' to you should include the Direct Costs of attending a college. These"
+      },
+      {
+        "trigger": " '",
+        "score": 18.62,
+        "context": " only other American writer who has utilized his knowledge of Indian life and character is the 'historian Parkman, whose sketches of the adventures of Pontiac and other chiefs"
+      },
+      {
+        "trigger": "\u2018",
+        "score": 20.12,
+        "context": "<bos>\u2018Once the youngest of the Cubists \u2026 today he is a patriarch of modern sculpture, who delights in collecting the statues and artefacts of man\u2019s ancient"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 20.88,
+        "context": " General/Israeli Statesman Moshe Dayan said in 1969 during a \u2018Ha\u2019aretz\u2019 interview, \u201cThere is not a single place built"
+      },
+      {
+        "trigger": "\u2018",
+        "score": 20.12,
+        "context": "<bos>\u2018Electronic skin\u2019 patch will do many thingsAugust 12th, 2011 - 7:05 pm ICT by IANS\u23ce"
+      }
+    ],
+    "promotes": [
+      "\u3001\u300e",
+      " '",
+      " propOrder",
+      " \u2018",
+      " (\u2018"
+    ],
+    "demotes": [
+      " nahilalakip",
+      "bewerken",
+      "]\").",
+      " chi\u030dt",
+      "\u0577"
+    ],
+    "generated_description": "opening single-quote \u2014 activates on opening single-quote characters (\u2018 or ') before a word (start of quotations, quoted titles); correlates with curly/open-quote punctuation promotion"
+  },
+  {
+    "id": "4_10015_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.3275551199913025,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 24.25,
+        "context": "<bos>What is Geography?While the word geography is derived from Greek and literally means \"to write about the earth,\" the subject of geography is much more than describing"
+      },
+      {
+        "trigger": " English",
+        "score": 24.5,
+        "context": " nickname, most likely for a tall, thin man with long legs, from Middle English cran \u2018crane\u2019 (the bird), Old English cran, cron. The"
+      },
+      {
+        "trigger": " Latin",
+        "score": 27.0,
+        "context": " marine protozoan\u23ceNew Latin Noctil\u016bca, genus name, from Latin noctil\u016bca, lantern, moon : nocti-, nocti-"
+      },
+      {
+        "trigger": " of",
+        "score": 32.25,
+        "context": " Some think the word is a corruption of costerel, which they derive from the Latin coterellus (a peasant); but if not a corruption of kestrel"
+      },
+      {
+        "trigger": " Latin",
+        "score": 29.25,
+        "context": "<bos>Definition of Genu\u23ceGenu: The Latin word for the knee. When the knee is referred to in medicine, it is just called the knee. However"
+      }
+    ],
+    "promotes": [
+      " words",
+      " \u0441\u043b\u043e\u0432\u0430",
+      " word",
+      "AddHtmlAttribute",
+      "<bos>"
+    ],
+    "demotes": [
+      "etna",
+      " createState",
+      "unhofer",
+      "soka",
+      "izophren"
+    ],
+    "generated_description": "say language of origin \u2014 activates on markers introducing etymology: \"from\"/\"of\" and language names (Latin, English) that signal word-origin phrases."
+  },
+  {
+    "id": "16_3001_17",
+    "layer": 16,
+    "ctx_idx": 17,
+    "influence_score": 0.3982340395450592,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 56.5,
+        "context": " break along a particular cleavage; thus the word schist is derived from the Greek word meaning \u2018to split\u2019. Manhattan schist, otherwise known as Cambrian Manhattan Formation, is"
+      },
+      {
+        "trigger": " (",
+        "score": 54.0,
+        "context": " term panax is derived from the Greek words pan (all) and akos (cure), which means \u201ccure-all\u201d. In addition to its adapto"
+      },
+      {
+        "trigger": " meaning",
+        "score": 58.5,
+        "context": "ceae). The genus name is derived from the Latin root penicillum, meaning \"painter's brush\", and refers to the chains of conidia that"
+      },
+      {
+        "trigger": " meaning",
+        "score": 54.75,
+        "context": "\u23ce- The word \"palindrome\" is derived from the Greek pal\u00edndromos, meaning \"running back\" (pal\u00edn = back + dromos = running)."
+      },
+      {
+        "trigger": " \u2018",
+        "score": 52.5,
+        "context": "<bos>Feminine form of the Late Latin male name Laurus \u2018laurel\u2019. St Laura was a 9th-century Spanish nun who met her death in"
+      }
+    ],
+    "promotes": [
+      "\u043a\u043b\u043e\u043f\u0435",
+      " defaultstate",
+      "\u51fa\u7248\u5e74",
+      " }}\"></",
+      "Geplaatst"
+    ],
+    "demotes": [
+      " kasarigan",
+      "J\u00een",
+      " tartalomaj\u00e1nl\u00f3",
+      " pouce",
+      " teck"
+    ],
+    "generated_description": "etymology gloss marker \u2014 activates on tokens introducing a gloss/translation in etymologies (e.g. \"meaning\", \"(\" or \"\u2018\"), precedes short translations like \"to split\", \"all\", \"running back\"."
+  },
+  {
+    "id": "16_3001_27",
+    "layer": 16,
+    "ctx_idx": 27,
+    "influence_score": 0.35388413071632385,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 56.5,
+        "context": " break along a particular cleavage; thus the word schist is derived from the Greek word meaning \u2018to split\u2019. Manhattan schist, otherwise known as Cambrian Manhattan Formation, is"
+      },
+      {
+        "trigger": " (",
+        "score": 54.0,
+        "context": " term panax is derived from the Greek words pan (all) and akos (cure), which means \u201ccure-all\u201d. In addition to its adapto"
+      },
+      {
+        "trigger": " meaning",
+        "score": 58.5,
+        "context": "ceae). The genus name is derived from the Latin root penicillum, meaning \"painter's brush\", and refers to the chains of conidia that"
+      },
+      {
+        "trigger": " meaning",
+        "score": 54.75,
+        "context": "\u23ce- The word \"palindrome\" is derived from the Greek pal\u00edndromos, meaning \"running back\" (pal\u00edn = back + dromos = running)."
+      },
+      {
+        "trigger": " \u2018",
+        "score": 52.5,
+        "context": "<bos>Feminine form of the Late Latin male name Laurus \u2018laurel\u2019. St Laura was a 9th-century Spanish nun who met her death in"
+      }
+    ],
+    "promotes": [
+      "\u043a\u043b\u043e\u043f\u0435",
+      " defaultstate",
+      "\u51fa\u7248\u5e74",
+      " }}\"></",
+      "Geplaatst"
+    ],
+    "demotes": [
+      " kasarigan",
+      "J\u00een",
+      " tartalomaj\u00e1nl\u00f3",
+      " pouce",
+      " teck"
+    ],
+    "generated_description": "gloss/meaning marker \u2014 activates on tokens that introduce translations or definitions (e.g. \"meaning\", opening parenthesis or quote before an etymological gloss)"
+  },
+  {
+    "id": "5_12329_27",
+    "layer": 5,
+    "ctx_idx": 27,
+    "influence_score": 0.362274706363678,
+    "top_activations": [
+      {
+        "trigger": " literally",
+        "score": 26.38,
+        "context": " was set (kaqisantov), following Tyndale. Rev., more literally, when he had sat down (compare Wyc., when he had set"
+      },
+      {
+        "trigger": " literally",
+        "score": 24.25,
+        "context": " \"Mistle\" means dung and \"tan\" means twig. Mistletoe is literally dung on a twig. This came from the observation that the plant was propagated"
+      },
+      {
+        "trigger": " literally",
+        "score": 25.75,
+        "context": " Buddha-nature. According to the main version, the reply is \u201cMu\u201d: literally, \u201cNo,\u201d but implying the philosophical notion of nothingness. This case is"
+      },
+      {
+        "trigger": " Literally",
+        "score": 24.0,
+        "context": " Book, the Passover Haggadah is the most popular Jewish book in existence. Literally hundreds of editions have even printed, with almost as many different commentaries. Still"
+      },
+      {
+        "trigger": " literally",
+        "score": 24.5,
+        "context": ".\u23ce1985 saw the publication of the patent for what is quite literally a flying car, which I believe I have actually seen being flown in a"
+      }
+    ],
+    "promotes": [
+      "sizeCache",
+      " Roskov",
+      "Geplaatst",
+      "rungsseite",
+      " HasFactory"
+    ],
+    "demotes": [
+      "<bos>",
+      " capacity",
+      " viel",
+      " garantit",
+      " h\u1eb3n"
+    ],
+    "generated_description": "literally \u2014 activates on the adverb \"literally\"; fires for emphatic/explanatory or ironic uses, marking literal-vs-figurative commentary."
+  },
+  {
+    "id": "18_14288_17",
+    "layer": 18,
+    "ctx_idx": 17,
+    "influence_score": 0.2733319103717804,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 48.25,
+        "context": "<bos>Definition: 'Louping-ill Virus'\u23celouping-ill virusType: Term\u23ce1. a virus of the genus Flavivirus that causes"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Innocent until proven guilty; using forensic geoscience to solve the crime'? This activity can be included in any lesson where problem-solving skills are required"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Cow power' lighting up Maine homes\u23ceFarm converts cow manure into electricity\u23ceA Maine farm is using manure to create what is being called cow power,"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Skype in the Classroom' Connects Kids to NASA and Global Experts\u23ceIn the year since Skype launched its global community for educators, Skype in the Classroom"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Wolf Man' Lives With Pack in the Wild\u23ceHe Even Pretends to Eat From Animal Carcasses\u23ce(April 6) - When Shaun"
+      }
+    ],
+    "promotes": [
+      " ';",
+      "...'",
+      " '.",
+      " \u2018",
+      " '"
+    ],
+    "demotes": [
+      "glBindBuffer",
+      "}}\"",
+      "BeginInit",
+      "{}\".",
+      "==\","
+    ],
+    "generated_description": "opening single-quote \u2014 activates on a leading single-quote character that begins quoted titles/headlines/news phrases (often before proper nouns or short article headlines)"
+  },
+  {
+    "id": "15_2838_27",
+    "layer": 15,
+    "ctx_idx": 27,
+    "influence_score": 0.38880446553230286,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 50.5,
+        "context": " etymologists in the familly: volutator comes from the Latin volutare, meaning \"to wallow\". Seems apt for these mud loving creatures!"
+      },
+      {
+        "trigger": " means",
+        "score": 48.0,
+        "context": ". The word \u201cdeontological\u201d comes from the root \u201cdeon\u201d which means duty or obligation in Latin. In some countries, codes or medical ethics have"
+      },
+      {
+        "trigger": " means",
+        "score": 53.0,
+        "context": " \"Bahasa Malaysia\", and \"Bahasa Melayu\".\u23ceThe word \"bahasa\" simply means language\u23ceIt is not uncommon for Indonesian children, such as these, to"
+      },
+      {
+        "trigger": " meaning",
+        "score": 46.0,
+        "context": " physiological study of laughter. The word is from the Greek gelos, geloto meaning laugh, laughter, laughing. A gelotologist is a person who specializes"
+      },
+      {
+        "trigger": " means",
+        "score": 57.5,
+        "context": "\" is likely derived from the lower German word \"b\u00f6rnen\" which means something like \"to burn\". This is closely linked to the fact that amber can easily"
+      }
+    ],
+    "promotes": [
+      "ksikon",
+      "__(/*!",
+      "principalTable",
+      "ResumeLayout",
+      " GenerationType"
+    ],
+    "demotes": [
+      " betweenstory",
+      " africains",
+      " uintptr",
+      " vectoriales",
+      " aikaa"
+    ],
+    "generated_description": "meaning/means \u2014 activates on the token \u201cmean(s)/meaning\u201d when introducing a definition or etymology; marks definitional explanatory phrases."
+  },
+  {
+    "id": "18_14288_19",
+    "layer": 18,
+    "ctx_idx": 19,
+    "influence_score": 0.3478679955005646,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 48.25,
+        "context": "<bos>Definition: 'Louping-ill Virus'\u23celouping-ill virusType: Term\u23ce1. a virus of the genus Flavivirus that causes"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Innocent until proven guilty; using forensic geoscience to solve the crime'? This activity can be included in any lesson where problem-solving skills are required"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Cow power' lighting up Maine homes\u23ceFarm converts cow manure into electricity\u23ceA Maine farm is using manure to create what is being called cow power,"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Skype in the Classroom' Connects Kids to NASA and Global Experts\u23ceIn the year since Skype launched its global community for educators, Skype in the Classroom"
+      },
+      {
+        "trigger": "'",
+        "score": 41.75,
+        "context": "<bos>'Wolf Man' Lives With Pack in the Wild\u23ceHe Even Pretends to Eat From Animal Carcasses\u23ce(April 6) - When Shaun"
+      }
+    ],
+    "promotes": [
+      " ';",
+      "...'",
+      " '.",
+      " \u2018",
+      " '"
+    ],
+    "demotes": [
+      "glBindBuffer",
+      "}}\"",
+      "BeginInit",
+      "{}\".",
+      "==\","
+    ],
+    "generated_description": "say opening single-quote \u2014 activates on leading apostrophe/quote before headlines or quoted titles (e.g., 'Louping-ill Virus', 'Cow power', 'Wolf Man')."
+  },
+  {
+    "id": "8_15059_5",
+    "layer": 8,
+    "ctx_idx": 5,
+    "influence_score": 0.38171014189720154,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 53.0,
+        "context": "<bos>- capital (adj.)\u23ce- early 13c., \"of or pertaining to the head,\" from Old French capital, from Latin capitalis \""
+      },
+      {
+        "trigger": " from",
+        "score": 53.5,
+        "context": "locare \"put out of place,\" from L. dis- \"away\" + locare \"to place\" (see locate). Related: Dislocated."
+      },
+      {
+        "trigger": " from",
+        "score": 50.25,
+        "context": " of Aristotle,\" from O.Fr. perypatetique (14c.), from L. peripateticus \"pertaining to the disciples or philosophy"
+      },
+      {
+        "trigger": " from",
+        "score": 46.25,
+        "context": "ality: a mania for mushrooms|\u23ce|[C14: via Late Latin from Greek: madness]|\u23cemania ma\u00b7ni\u00b7a (m\u0101'n"
+      },
+      {
+        "trigger": " <",
+        "score": 38.75,
+        "context": " will.\u23ceOrigin of volition:\u23ce1605\u201315; < ML voliti\u014d, der. of L vol-, var. s."
+      }
+    ],
+    "promotes": [
+      "UMENTS",
+      " dipendenti",
+      " l\u00e4ra",
+      "quit\u00e9",
+      "ArgsConstructor"
+    ],
+    "demotes": [
+      " OFDb",
+      "webElementXpaths",
+      "N\u00e9pess\u00e9g",
+      "peq",
+      " >=\","
+    ],
+    "generated_description": "say \"from\" (etymology) \u2014 activates on the etymology marker \"from\" introducing source/origin (L., O.Fr., Greek, etc.); predicts a language/source name next."
+  },
+  {
+    "id": "18_6124_26",
+    "layer": 18,
+    "ctx_idx": 26,
+    "influence_score": 0.3965040445327759,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 30.0,
+        "context": " to describe the 2D mesh because (\"W\" when using quaternions, which is standard,) \"X\", \"Y\" and \"Z\" are"
+      },
+      {
+        "trigger": ",",
+        "score": 36.25,
+        "context": " from 2.2 AU (1 AU\u23ceis 93 million miles, or the average\u23cedistance between Earth and the Sun) to\u23ce3."
+      },
+      {
+        "trigger": ",",
+        "score": 35.5,
+        "context": " your engine (or your gas tank and engine if your setup uses a gravity feed, like many older motorcycles). It's job is to atomize fuel and"
+      },
+      {
+        "trigger": ",",
+        "score": 33.75,
+        "context": " French writer George Sand (who wrote a notable account of A Winter in Majorca, describing their 1838\u201339 visit and praising the island"
+      },
+      {
+        "trigger": ",",
+        "score": 31.5,
+        "context": " constant expansion velocity, which is\u23cenot correct in the early phase of the supernova, but is roughly correct\u23ceover most of the 1,000"
+      }
+    ],
+    "promotes": [
+      " ModelExpression",
+      " JpaRepository",
+      "IndentedString",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647"
+    ],
+    "demotes": [
+      ".]",
+      "\u3002\uff09",
+      "\u3002\u3011",
+      "\"]];",
+      ".\"));"
+    ],
+    "generated_description": "Comma \u2014 nonrestrictive/parenthetical clause trigger; activates on commas introducing appositives, \"which\"/participial phrases, examples or parenthetical asides."
+  },
+  {
+    "id": "7_10984_27",
+    "layer": 7,
+    "ctx_idx": 27,
+    "influence_score": 0.37630635499954224,
+    "top_activations": [
+      {
+        "trigger": " language",
+        "score": 22.25,
+        "context": " known as north-south bears or nanuq-depressive bears in the Inuit language, are a bear species native to both the Arctic and Antarctic. Bipolar bears"
+      },
+      {
+        "trigger": " translates",
+        "score": 22.88,
+        "context": " might assume, an alternate spelling, but rather it is a Latin root that roughly translates into \u201cfeathers\u201d and describes the elongated shape of this insect\u2019s"
+      },
+      {
+        "trigger": " from",
+        "score": 21.88,
+        "context": "200 known species of aloe exist. The term \"aloe vera\" translates from Arabic and Hebrew to mean a \"true shining, bitter substance.\" The succulent"
+      },
+      {
+        "trigger": " Dutch",
+        "score": 22.38,
+        "context": ".\u23ceBruin is an Old English word used for brown bears (from the Dutch bruin meaning brown). It is often mistakenly said to mean a pregnant bear."
+      },
+      {
+        "trigger": " as",
+        "score": 27.0,
+        "context": "), were the earliest filmmakers in history. Appropriately, \"lumi\u00e8re\" translates as \"light\" in English.\u23ceThe Lumi\u00e8re brothers were born in Besan\u00e7on"
+      }
+    ],
+    "promotes": [
+      " spr\u00e5k",
+      " retraite",
+      "UserScript",
+      " gynhyrchwyd",
+      " pinulongan"
+    ],
+    "demotes": [
+      " estekak",
+      "aarrggbb",
+      "P\u00e9ri",
+      "brada",
+      " aco"
+    ],
+    "generated_description": "say language/translation \u2014 activates on tokens introducing etymology/translation (language, translates, from, Dutch, as); signals a following source language or translated meaning."
+  },
+  {
+    "id": "14_14081_27",
+    "layer": 14,
+    "ctx_idx": 27,
+    "influence_score": 0.37419769167900085,
+    "top_activations": [
+      {
+        "trigger": " \"",
+        "score": 76.5,
+        "context": "<bos>Map Courtesy CIA World Factbook\u23ceJapan (literally \"the origin of the sun\" or less literally \"Land of the Rising Sun\" ) is an island country"
+      },
+      {
+        "trigger": " has",
+        "score": 74.0,
+        "context": " Hebrew name Yohanan, in full Y\u2019hohanan, literally, Jehovah has favoured, from hanan meaning he was gracious.\u23ceThe name E\u00f3"
+      },
+      {
+        "trigger": " (\"",
+        "score": 67.0,
+        "context": " called Shahru Al-Bariyah. Legend states that he renamed the city Singapura (\"lion city\") after sighting a strange beast that he took to be a lion"
+      },
+      {
+        "trigger": "little",
+        "score": 67.5,
+        "context": " the family Chinchillidae.\u23ceThe animal (whose name literally means \"little chincha\") is named after the Chincha people of the Andes, who"
+      },
+      {
+        "trigger": " the",
+        "score": 76.0,
+        "context": " Tajikistan in the north, and China in the far northeast. The name Afghanistan means the \"Land of Afghans.\"\u23ceAfghanistan is a culturally mixed nation, a crossroads"
+      }
+    ],
+    "promotes": [
+      " ones",
+      "(!__",
+      " surla",
+      "bulos",
+      "bedaan"
+    ],
+    "demotes": [
+      " Vikipedi",
+      "+#+#",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd",
+      "findpost"
+    ],
+    "generated_description": "literal-translation start \u2014 activates at openings of literal-meaning or translated phrases (opening quotes/parentheses or just after \u201cliterally\u201d), e.g. \"lion city\", \"little chincha\", \"the origin of the sun\""
+  },
+  {
+    "id": "13_2709_27",
+    "layer": 13,
+    "ctx_idx": 27,
+    "influence_score": 0.35735321044921875,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 47.25,
+        "context": "\u23ce\"The Wolf People\"\u23ce|Motto: \"Mundu Wigo\" (Mohegan)\u23ce\"The Creator is Good\"\u23ce|-||Tribal"
+      },
+      {
+        "trigger": " (",
+        "score": 49.75,
+        "context": " ensuring the living and the deceased remained connected. The contemporary D\u00eda de los Muertos (Day of the Dead) in Mexico and Central America, when families visit cemeteries"
+      },
+      {
+        "trigger": " (",
+        "score": 45.0,
+        "context": "'s apprentice work from this time was a puppet opera Die Fee Urgele, (1776) performed in the marionette theater at the palace of"
+      },
+      {
+        "trigger": " or",
+        "score": 52.75,
+        "context": " and blue eyes were born into a Nazi-run programme called \"Lebensborn\" or \"Fountain of Life\".\u23ceBy Kate Bissell\u23ceAll Out Productions"
+      },
+      {
+        "trigger": ";",
+        "score": 45.75,
+        "context": " the philosophy of science. In Logische Syntax der Sprache (1934; tr. The Logical Syntax of Language, 1937) he"
+      }
+    ],
+    "promotes": [
+      " onAnimation",
+      "\u062a\u0642\u0627\u0648\u0649",
+      "thing",
+      "archiviato",
+      ":\u2728"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      " oprot",
+      "WithIOException",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "InitVars"
+    ],
+    "generated_description": "Left parenthesis \"(\" \u2014 activates on opening \"(\" tokens, especially before names, dates, translations or parenthetical phrases (e.g., (Mohegan), (Day of the Dead), (1776), (1934; ...)."
+  },
+  {
+    "id": "19_5084_27",
+    "layer": 19,
+    "ctx_idx": 27,
+    "influence_score": 0.3009510338306427,
+    "top_activations": [
+      {
+        "trigger": " words",
+        "score": 26.12,
+        "context": " right in the sight of God\" (21:9). From its opening words to its concluding phrases, this parashah is about righteousness and justice."
+      },
+      {
+        "trigger": " adage",
+        "score": 27.38,
+        "context": "<bos>As an MBA student, I quickly learnt the adage - \"What gets measured gets managed\" which essentially means that if you're not tracking your progress,"
+      },
+      {
+        "trigger": " story",
+        "score": 25.38,
+        "context": " Saint Anthony Falls Bridge (subject of the May 2008 PM cover story) was open to traffic 13 months after its predecessors collapse, three"
+      },
+      {
+        "trigger": " saying",
+        "score": 28.88,
+        "context": " teams of the Dominican Baseball League. As a matter of fact, we have a saying here. Dominicans talk about two things: the \u00ecballitic,"
+      },
+      {
+        "trigger": " quote",
+        "score": 30.12,
+        "context": " and defensive about his fatness (a psychological trait).\u23ce2. Remember this quote: \"Characters are at their best when they're doing something...but"
+      }
+    ],
+    "promotes": [
+      " \u00ab",
+      " \u201e",
+      " \u2018",
+      " \"",
+      " \u201c"
+    ],
+    "demotes": [
+      "StoryboardSegue",
+      "OGND",
+      "ItemBackground",
+      " AssemblyCulture",
+      " hierogly"
+    ],
+    "generated_description": "quote/saying marker \u2014 activates on tokens that introduce quoted phrases or short sayings (words, adage, saying, quote, story); promotes quote punctuation characters."
+  },
+  {
+    "id": "18_11068_27",
+    "layer": 18,
+    "ctx_idx": 27,
+    "influence_score": 0.292799711227417,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 40.5,
+        "context": " into a relatively fixed way of interacting with the world is something we take for granted.\u23ceHe said that some people are outgoing and open, others are more quiet"
+      },
+      {
+        "trigger": ".",
+        "score": 46.75,
+        "context": " say Baton Rouge is a better place but there's still work to be done.\u23ce\"You couldn't ride on the front seats,\" Clovis Hayes,"
+      },
+      {
+        "trigger": ".",
+        "score": 39.75,
+        "context": " the importance of the Conservancy\u2019s work to improve water quality in the Blue River.\u23ce\u201cThe release of the Blue River\u2019s poster child\u2014the hell"
+      },
+      {
+        "trigger": ".",
+        "score": 42.0,
+        "context": " Kelly Mcbee from Shady Cove.\u23ceOthers said they're a bit nervous.\u23ce\"It's a little nerve-wracking,\" began Medford resident"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 40.25,
+        "context": " a little work.\u23ceDodge said a bird bath is the most important thing.\u23ce\"We're in such a dry, arid climate that the birds desperately"
+      }
+    ],
+    "promotes": [
+      " \u300c",
+      " \u00ab",
+      ":@\"",
+      "(\u2018",
+      "\u300c"
+    ],
+    "demotes": [
+      "mapStateToProps",
+      "schlag",
+      " nh\u00e2n",
+      "me",
+      "led"
+    ],
+    "generated_description": "sentence-final period \u2014 activates on periods/newlines marking sentence boundaries, especially just before a new sentence or opening quote; nudges opening punctuation/quote tokens."
+  },
+  {
+    "id": "17_9507_27",
+    "layer": 17,
+    "ctx_idx": 27,
+    "influence_score": 0.31545692682266235,
+    "top_activations": [
+      {
+        "trigger": " word",
+        "score": 54.5,
+        "context": " this purpose (as well as several other purposes). \"Meta\" is a Greek word for \"over,\" and META tag was intended to carry all sorts of meta"
+      },
+      {
+        "trigger": "\"",
+        "score": 62.5,
+        "context": " the angel as a messenger of God. (The word \"angelos\" in Greek means messanger.) Angels were believed to be celestial beings who controlled certain spheres"
+      },
+      {
+        "trigger": ",",
+        "score": 56.0,
+        "context": "peace.com/Qur...\u23ceIslam (Arabic: \u0627\u0644\u0625\u0633\u0644\u0627\u0645 al-'isl\u0101m, pronounced [\u0294isl\u00e6\u02d0m] is the monotheistic religion articulated"
+      },
+      {
+        "trigger": " word",
+        "score": 55.5,
+        "context": " potential benefits of the aptly named \u2018Ngara\u2019 wireless access system, an Aboriginal word of the Darug people meaning to \u2018listen, hear and think\u2019.\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 54.5,
+        "context": " and put them on top. The word jenga\u23ceis derived from kujenga\u23ce, the Swahili\u23ceverb \"to build\"; jenga!\u23ceis"
+      }
+    ],
+    "promotes": [
+      " means",
+      "meaning",
+      " mean",
+      " meaning",
+      "means"
+    ],
+    "demotes": [
+      " parentheses",
+      " brackets",
+      " quotations",
+      " parenthesis",
+      " quotation"
+    ],
+    "generated_description": "say \"means\" \u2014 fires on \"word\" in definitional/etymology contexts (e.g., \"the word X ...\"), promotes tokens like means/meaning, disfavors nearby punctuation."
+  },
+  {
+    "id": "21_14288_17",
+    "layer": 21,
+    "ctx_idx": 17,
+    "influence_score": 0.3676266372203827,
+    "top_activations": [
+      {
+        "trigger": ",\u2019",
+        "score": 55.75,
+        "context": " not complete until our gay brothers and sisters are treated like anyone else under the law,\u2019 Obama said during a 19-minute speech. \u2018If we are"
+      },
+      {
+        "trigger": "'",
+        "score": 53.75,
+        "context": " collecting and interpreting data, of which a fundamental aspect is extreme skepticism. 'Scientist' is the word used to describe anyone who contributes to science, professional or merely"
+      },
+      {
+        "trigger": "'",
+        "score": 61.25,
+        "context": ", in Wellington's own words:\u23ce'Scarcely\u2026a private quarrel'\u23ceInstead, Wellington chose to interpret the event as a test of the right"
+      },
+      {
+        "trigger": "'",
+        "score": 62.25,
+        "context": " about education we ought to 'question the very political framework within which we are operating' (p. 3).\u23ceWe do not currently sell titles online."
+      },
+      {
+        "trigger": ",'",
+        "score": 60.75,
+        "context": " 'Planting, harvesting and preserving food are\u23ceskills that can be practiced almost anywhere,' Hunt says.\u23ceIn fact, many aspects of homesteading work as well"
+      }
+    ],
+    "promotes": [
+      " \u201a",
+      "\u3001\u300e",
+      "\u300e",
+      " '",
+      " \u2018"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      "[\"",
+      "(\"",
+      "{\""
+    ],
+    "generated_description": "say single-quote \u2014 activates on/applies to apostrophes and single-quote marks (\u2019/') and possessives; promotes single-quote punctuation, demotes double-quote characters."
+  },
+  {
+    "id": "20_5559_27",
+    "layer": 20,
+    "ctx_idx": 27,
+    "influence_score": 0.33708855509757996,
+    "top_activations": [
+      {
+        "trigger": " PROVIDED",
+        "score": 70.5,
+        "context": " CONTENT THAT APPEARS ON THIS SITE COMES FROM AMAZON SERVICES LLC. THIS CONTENT IS PROVIDED \u2018AS IS\u2019 AND IS SUBJECT TO CHANGE OR REMOVAL AT ANY TIME"
+      },
+      {
+        "trigger": "name",
+        "score": 62.5,
+        "context": " a column\u23ce- SELECT SUM( LENGTH(name) - LENGTH(REPLACE(name, ' ', ''))+1)\u23ce- FROM table\u23ceIf you want"
+      },
+      {
+        "trigger": "-",
+        "score": 50.5,
+        "context": "army\" (from PIE root *koro- \"war\") + *wald- \"to command, rule\" (see wield\u23ce). The form fits,"
+      },
+      {
+        "trigger": "-",
+        "score": 50.0,
+        "context": " string,\" from L. filum \"thread,\" from PIE base *gwhis-lom (cf. Armenian jil \"sinew, string, line,\" Lith"
+      },
+      {
+        "trigger": " anda",
+        "score": 49.5,
+        "context": "directional) words can be used either as adverbs, prepositions or preverbs: anda (into), appa (away), arha (outward), katta"
+      }
+    ],
+    "promotes": [
+      " \u2018\u2018",
+      " \u201c",
+      "\u300c",
+      " \u00ab",
+      " \""
+    ],
+    "demotes": [
+      "rungsseite",
+      "enumi",
+      "})*/",
+      "StoryboardSegue",
+      "?}\","
+    ],
+    "generated_description": "say \u201c \u2014 activates on tokens immediately before quoted glosses/translations or parenthetical quotes; promotes inserting an opening quotation mark (\u201c, \u2018, \u300c, \u00ab)."
+  },
+  {
+    "id": "19_2014_19",
+    "layer": 19,
+    "ctx_idx": 19,
+    "influence_score": 0.3970816433429718,
+    "top_activations": [
+      {
+        "trigger": ",\u2019",
+        "score": 21.0,
+        "context": ".\u23ce\u2018The effect of measles on people who are immune compromised is truly horrible,\u2019 he says. \u2018Like children receiving cancer treatment, people who are severely mal"
+      },
+      {
+        "trigger": ".\u2019",
+        "score": 21.0,
+        "context": " across the haven. Here there is a mighty chain of iron from tower to tower.\u2019\u23ceIt must have reassured local people, for France believed she could take the"
+      },
+      {
+        "trigger": "'",
+        "score": 20.25,
+        "context": " about 377 000 sq km.\u23ce'Algae bloom' is the term used to describe the rapid multiplying of phytoplankton, microscopic marine plants"
+      },
+      {
+        "trigger": " '",
+        "score": 21.5,
+        "context": " wildly on the western coast of the Antarctic peninsula where the Faraday station is situated. 'It would ...\u23ceTo continue reading this article, subscribe to receive access to"
+      },
+      {
+        "trigger": " '",
+        "score": 21.5,
+        "context": " is unclear. As Dr Woodley disarmingly tells us in his preface, 'John Tucke is hardly a name which springs immediately to the lips of many"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      "\u3001\u300e",
+      "RenderAtEndOf",
+      " autorytatywna",
+      "SuspendLayout"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      "\"",
+      "\u201c",
+      "(\""
+    ],
+    "generated_description": "closing-single-quote punctuation \u2014 activates on end-of-quote tokens (\u2019 or ') when followed by punctuation (comma, period); signals closing quoted clause or quoted phrase boundary."
+  },
+  {
+    "id": "19_14164_26",
+    "layer": 19,
+    "ctx_idx": 26,
+    "influence_score": 0.3698723614215851,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 52.25,
+        "context": " C15 thwittle large knife, from Old English thwitel, from thw\u012btan to cut; related to Old Norse thveitr cut"
+      },
+      {
+        "trigger": " from",
+        "score": 51.0,
+        "context": " of conduct) from one's conscious mind|\u23ce|[C14: from Latin reprimere to press back, from |\u23cerepress re\u00b7press"
+      },
+      {
+        "trigger": " from",
+        "score": 49.0,
+        "context": "indle, esp. by overcharging\u23ceOrigin of clipMiddle English clippen ; from Old Norse klippa\u23ce- to clip something\u23ce- to move rapidly\u23ce"
+      },
+      {
+        "trigger": " comes",
+        "score": 56.75,
+        "context": "<bos>1. The word \u201cgeology\u201d comes from the Greek word \u201cge\u201d meaning rocks and \u201clogos\u201d meaning knowledge.\u23ce2. Geology is the study"
+      },
+      {
+        "trigger": ",",
+        "score": 53.0,
+        "context": "of modern usage, from the name of the season.\u23ceOrigin: From automne, from autumnus.\u23cethe third season of the year, or the season"
+      }
+    ],
+    "promotes": [
+      "\u6e0a",
+      " argento",
+      " t\u012b",
+      "SharedCtor",
+      " from"
+    ],
+    "demotes": [
+      " kasarigan",
+      " AttributeSet",
+      "encodeWith",
+      "#+#",
+      "onets"
+    ],
+    "generated_description": "say \"from\" \u2014 activates on etymology/origin phrases; token that introduces source/parent word or language (preposition signaling \"origin\")."
+  },
+  {
+    "id": "21_14288_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.27048659324645996,
+    "top_activations": [
+      {
+        "trigger": ",\u2019",
+        "score": 55.75,
+        "context": " not complete until our gay brothers and sisters are treated like anyone else under the law,\u2019 Obama said during a 19-minute speech. \u2018If we are"
+      },
+      {
+        "trigger": "'",
+        "score": 53.75,
+        "context": " collecting and interpreting data, of which a fundamental aspect is extreme skepticism. 'Scientist' is the word used to describe anyone who contributes to science, professional or merely"
+      },
+      {
+        "trigger": "'",
+        "score": 61.25,
+        "context": ", in Wellington's own words:\u23ce'Scarcely\u2026a private quarrel'\u23ceInstead, Wellington chose to interpret the event as a test of the right"
+      },
+      {
+        "trigger": "'",
+        "score": 62.25,
+        "context": " about education we ought to 'question the very political framework within which we are operating' (p. 3).\u23ceWe do not currently sell titles online."
+      },
+      {
+        "trigger": ",'",
+        "score": 60.75,
+        "context": " 'Planting, harvesting and preserving food are\u23ceskills that can be practiced almost anywhere,' Hunt says.\u23ceIn fact, many aspects of homesteading work as well"
+      }
+    ],
+    "promotes": [
+      " \u201a",
+      "\u3001\u300e",
+      "\u300e",
+      " '",
+      " \u2018"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      "[\"",
+      "(\"",
+      "{\""
+    ],
+    "generated_description": "single-quote/apostrophe \u2014 activates on single quotation marks or apostrophes (closing/opening, possessive \u2019s), promotes single-quote variants and demotes double quotes"
+  },
+  {
+    "id": "18_7715_27",
+    "layer": 18,
+    "ctx_idx": 27,
+    "influence_score": 0.3261360824108124,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 69.5,
+        "context": " second year of marriage.\u23ceGarnet derived its name from the Latin word granatus, meaning like a grain, which refers to the mode of occurrence wherein crystals"
+      },
+      {
+        "trigger": " Moi",
+        "score": 58.25,
+        "context": " and collective agriculture. It was replaced by a program of market socialism, called Doi Moi. After ten years Vietnam had become the world's third largest exporter of"
+      },
+      {
+        "trigger": " which",
+        "score": 79.5,
+        "context": ", Ngwenya\u23ce> Crocodylus is derived from the Greek krokodeilos which means literally \"pebble worm\" (kroko = pebble; de"
+      },
+      {
+        "trigger": " which",
+        "score": 65.0,
+        "context": ", is our continued suffering.\u23ceThe first yama is known as ahimsa, which is typically translated as \u201cnonviolence\u201d or the avoidance of violence. Ahi"
+      },
+      {
+        "trigger": "ala",
+        "score": 61.25,
+        "context": " honor of the experiment\u2019s two central components,\u201d explains Knutson. \u201cQala means \u2018stone\u2019 and yampu means \u2018boat\u2019 in the local A"
+      }
+    ],
+    "promotes": [
+      " Means",
+      "means",
+      " mean",
+      " meaning",
+      " means"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      "HtmlAttribute",
+      "Rhestr",
+      "GraphicsUnit",
+      "disposing"
+    ],
+    "generated_description": "say \"means/meaning\" \u2014 activates on commas and tokens like \"which\" or after foreign terms that introduce glosses/translations; pushes explanatory \"means/meaning\" wording."
+  },
+  {
+    "id": "21_13227_27",
+    "layer": 21,
+    "ctx_idx": 27,
+    "influence_score": 0.30292460322380066,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 59.0,
+        "context": " by the damage and atrocities. On person who was present at the time recalled,\u23ce\"If Ireland as a whole could of got hold of Tom Clarke and his"
+      },
+      {
+        "trigger": ":",
+        "score": 59.0,
+        "context": ", tomato, meat and spices.\u23ceAlmahdi Al Ansari, the Presidium coordinator, reports: \u201cCurrently in Timbuktu the women cannot go out"
+      },
+      {
+        "trigger": ",",
+        "score": 52.0,
+        "context": " that the tutor and students discuss.\u23ce\u2018When properly led\u2019, Gagne continues, \u2018such discussions, where the knowledge itself has been initially mastered\u2019, not only"
+      },
+      {
+        "trigger": " as",
+        "score": 52.5,
+        "context": " Messenger\u2019, which is described in David Kahn's history \u2018The Codebreakers\u2019 as \u2018the first book in English on cryptography\u2019. It is much more than that"
+      },
+      {
+        "trigger": ",",
+        "score": 53.5,
+        "context": " devices into a surge protector that can be clicked on and off. Real Simple states, \u201cSixty to 80 percent of the electricity [TVs and DVDs"
+      }
+    ],
+    "promotes": [
+      " \u201d",
+      " \u00ab",
+      " `",
+      "<i>",
+      "<em>"
+    ],
+    "demotes": [
+      " \\%$\\\\",
+      " \\#:",
+      ").\\\\",
+      "tvguidetime",
+      "</tfoot>"
+    ],
+    "generated_description": "say quoted speech \u2014 fires on reporting verbs + colon/comma before an open quote; signals start of quoted/reported text, promotes quotation marks (\u201d, \u00ab, `, <i>)."
+  },
+  {
+    "id": "21_14288_26",
+    "layer": 21,
+    "ctx_idx": 26,
+    "influence_score": 0.28848081827163696,
+    "top_activations": [
+      {
+        "trigger": ",\u2019",
+        "score": 55.75,
+        "context": " not complete until our gay brothers and sisters are treated like anyone else under the law,\u2019 Obama said during a 19-minute speech. \u2018If we are"
+      },
+      {
+        "trigger": "'",
+        "score": 53.75,
+        "context": " collecting and interpreting data, of which a fundamental aspect is extreme skepticism. 'Scientist' is the word used to describe anyone who contributes to science, professional or merely"
+      },
+      {
+        "trigger": "'",
+        "score": 61.25,
+        "context": ", in Wellington's own words:\u23ce'Scarcely\u2026a private quarrel'\u23ceInstead, Wellington chose to interpret the event as a test of the right"
+      },
+      {
+        "trigger": "'",
+        "score": 62.25,
+        "context": " about education we ought to 'question the very political framework within which we are operating' (p. 3).\u23ceWe do not currently sell titles online."
+      },
+      {
+        "trigger": ",'",
+        "score": 60.75,
+        "context": " 'Planting, harvesting and preserving food are\u23ceskills that can be practiced almost anywhere,' Hunt says.\u23ceIn fact, many aspects of homesteading work as well"
+      }
+    ],
+    "promotes": [
+      " \u201a",
+      "\u3001\u300e",
+      "\u300e",
+      " '",
+      " \u2018"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      "[\"",
+      "(\"",
+      "{\""
+    ],
+    "generated_description": "curly single quote (\u2019) \u2014 activates on apostrophes/closing single-quote in possessives or single quotes; promotes single-quote glyphs and disfavors double-quote characters."
+  },
+  {
+    "id": "22_11028_19",
+    "layer": 22,
+    "ctx_idx": 19,
+    "influence_score": 0.3289504051208496,
+    "top_activations": [
+      {
+        "trigger": "\u2019",
+        "score": 54.75,
+        "context": "awareness of or failure to acknowledge one\u2019s hemi- plegia or other disability\u2019 (OED). Etymology would suggest the meaning \u2018lack of knowledge of"
+      },
+      {
+        "trigger": " Telegraph",
+        "score": 61.25,
+        "context": ",\" lead researcher Prof Amrita Ahluwalia was quoted by 'The Daily Telegraph'.\u23ceFourteen healthy volunteers were recruited for the study and asked to drink"
+      },
+      {
+        "trigger": " ago",
+        "score": 56.25,
+        "context": ", particularly in Europe between 35\u201340,000 years ago,\u2019 says Stringer.\u23ce\u2018However, around 30,00"
+      },
+      {
+        "trigger": " peace",
+        "score": 70.0,
+        "context": " darkenss and the shadow of death, to guide our feet into the way of peace' (Luke 1,78-79). In his famous"
+      },
+      {
+        "trigger": " Working",
+        "score": 54.75,
+        "context": "\u23ceThe DfE uses the term \u2018Multi-Agency working' or \u2018Integrated Working' which is taken to mean different services, agencies, teams of professionals and"
+      }
+    ],
+    "promotes": [
+      " \"\"}",
+      "\"\"}",
+      ">{\"",
+      " \u201c",
+      "WriteTagHelper"
+    ],
+    "demotes": [
+      " '",
+      " \u2018",
+      "\u300e",
+      "\u3001\u300e",
+      "='"
+    ],
+    "generated_description": "say \u201c (double-quote) \u2014 activates on tokens inside or ending quoted phrases/proper nouns (Telegraph, peace, ago, Working); promotes curly/open double quotes, suppresses single quotes."
+  },
+  {
+    "id": "17_739_27",
+    "layer": 17,
+    "ctx_idx": 27,
+    "influence_score": 0.39995449781417847,
+    "top_activations": [
+      {
+        "trigger": " means",
+        "score": 65.0,
+        "context": ", cleft at stem, with shallow teeth. Also known as Cowslip; toxic to livestock. The species name palustris means ?of a swamp or bog.?"
+      },
+      {
+        "trigger": " means",
+        "score": 64.0,
+        "context": " Country is Hong Kong in?\u23ce- The city\u2019s name, Hong Kong means Fragrant Harbor\u23ce- Hong Kong is the most densely populated city in the"
+      },
+      {
+        "trigger": " means",
+        "score": 72.5,
+        "context": " bruise, or black and blue mark. The \"hema\" part of the word means blood, which is what you see under your skin if you get a bad"
+      },
+      {
+        "trigger": " for",
+        "score": 71.0,
+        "context": " made of tiny bits. He called these bits atoms, from the Greek word for \"not cuttable.\" He believed the bits were put together in different ways to"
+      },
+      {
+        "trigger": " means",
+        "score": 68.5,
+        "context": " 'sciuridae' rats belong to 'muridae'.\u23ceSciuridae means 'shade-tail', and refers to the bushy appendage possessed by many"
+      }
+    ],
+    "promotes": [
+      " ris",
+      "\u51fa\u7248\u5e74",
+      " light",
+      "intellij",
+      " AssemblyCulture"
+    ],
+    "demotes": [
+      " Bayard",
+      "FTFY",
+      " asunder",
+      " \u0148",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ],
+    "generated_description": "Definition marker \u2014 activates on tokens introducing a word\u2019s meaning/etymology (\"means\", \"for\"); signals an immediate gloss, translation, or semantic explanation follows."
+  },
+  {
+    "id": "16_13305_27",
+    "layer": 16,
+    "ctx_idx": 27,
+    "influence_score": 0.39185214042663574,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 51.0,
+        "context": " to fear.\u23cefrom the GNU version of the Collaborative International Dictionary of English\u23ce- transitive v. To take or seize; to take hold of.\u23ce-"
+      },
+      {
+        "trigger": "-",
+        "score": 50.0,
+        "context": "0 Copyright 2006 by Princeton University. All rights reserved.\u23ce- n. a rider of a hang glider\u23ce- n. a glider resembling"
+      },
+      {
+        "trigger": "-",
+        "score": 49.5,
+        "context": "0 Copyright 2006 by Princeton University. All rights reserved.\u23ce- n. included seven times in every 19 years\u23ceWhen the season"
+      },
+      {
+        "trigger": ".",
+        "score": 57.25,
+        "context": " owl. --W. Browne. [1913 Webster] 2. To cough or breathe with a sonorous inspiration, as in whooping cough"
+      },
+      {
+        "trigger": "-",
+        "score": 53.75,
+        "context": " others.\u23ce- To divide into smaller parts; to divide into compartments.\u23ce- To arrange or lay out according to a plan, with due distribution and disposition"
+      }
+    ],
+    "promotes": [
+      " someone",
+      "\u0153",
+      " non",
+      "aben",
+      " simple"
+    ],
+    "demotes": [
+      "AddTagHelper",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " AssemblyCulture",
+      "SharedDtor",
+      " ModelExpression"
+    ],
+    "generated_description": "dictionary definition \u2014 activates on lexicographic glosses: sense labels (n., v., numbered senses), short definitional phrases and dictionary-entry formatting."
+  },
+  {
+    "id": "22_5317_27",
+    "layer": 22,
+    "ctx_idx": 27,
+    "influence_score": 0.25778281688690186,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 86.0,
+        "context": " stream, from the insects to also the fish that live in there,\u201d she explains. \u201cBut it also helps clean the water, prevents pollution from getting into the"
+      },
+      {
+        "trigger": " labelled",
+        "score": 74.5,
+        "context": "st, with the trophectoderm labelled \"T\" and inner cell mass labelled \"I\"|\u23ceImage: Wikimedia commons, User: Ecto\u23ce\""
+      },
+      {
+        "trigger": ".",
+        "score": 84.0,
+        "context": " the former president\u2019s letter.\u23ce\u201cIt was very exciting,\u201d Hines said. \u201cI was wondering whether anyone knew this existed, and when the last time"
+      },
+      {
+        "trigger": ",",
+        "score": 77.0,
+        "context": ", the moderately drinking twin scored higher. \"No evidence was found,\" writes Christian, \"for negative effects on cognitive function related to the consumption of moderate amounts of"
+      },
+      {
+        "trigger": ".",
+        "score": 82.5,
+        "context": "0/20 special and many of my students did as well,\u201d says Heather. \u201cThen we watched the video in class and had a discussion about \u2018single"
+      }
+    ],
+    "promotes": [
+      " \u2018",
+      " \u201c",
+      " \u2018\u2018",
+      " '",
+      " \""
+    ],
+    "demotes": [
+      "nar",
+      "(",
+      "$",
+      "($",
+      "__\":"
+    ],
+    "generated_description": "sentence-boundary punctuation \u2014 activates on periods, commas, and closing quotes; pushes commas and quotation-mark tokens in output."
+  },
+  {
+    "id": "21_11386_27",
+    "layer": 21,
+    "ctx_idx": 27,
+    "influence_score": 0.31040826439857483,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 28.75,
+        "context": " look like this:\u23ceINSERT INTO TABLE2 SELECT * FROM TABLE1 WHERE COL1 = 'A'\u23ceSee how simple it is to copy data from one"
+      },
+      {
+        "trigger": " Meaning",
+        "score": 29.25,
+        "context": " re- \"again\" + videre \"to see\" (see vision\u23ce). Meaning \"to look over again with intent to improve or amend\" is recorded from"
+      },
+      {
+        "trigger": " author",
+        "score": 30.5,
+        "context": "s now an assistant professor of history at North Carolina A&T State University and author of the book, \"There's Always Work at the Post Office:"
+      },
+      {
+        "trigger": "3",
+        "score": 31.75,
+        "context": " Haney, \u201cExposures: Photography and Africa\u201d\u23ceIn Chapter 3 of Erin Haney\u2019s excellent book Photography and Africa (Reaktion Books"
+      },
+      {
+        "trigger": "am",
+        "score": 28.0,
+        "context": "ped- (cf. Avestan pad-; Sanskrit pad-, accusative padam \"foot;\" Greek pos, Attic pous, genitive podos; Latin"
+      }
+    ],
+    "promotes": [
+      " \u017fche",
+      " it\u017felf",
+      " $_\"",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      " \u2018",
+      " '",
+      " \u00ab"
+    ],
+    "generated_description": "angle-bracket tags \u2014 activates on inline editorial/annotation tokens inside <<<...>>> (e.g. <<<Meaning>>>, <<<author>>>, numeric chapter markers like <<<1>>>, <<<3>>>)."
+  },
+  {
+    "id": "23_770_27",
+    "layer": 23,
+    "ctx_idx": 27,
+    "influence_score": 0.27885642647743225,
+    "top_activations": [
+      {
+        "trigger": ")",
+        "score": 59.25,
+        "context": " occur, pass, fall out, come about, take place (come to pass) \"What is happening?\"; \"The meeting took place off without an incidence\";"
+      },
+      {
+        "trigger": " print",
+        "score": 49.75,
+        "context": " 'nudge', 'nudge'\u23ce>> ... else:\u23ce>> ... print 'whatever'\u23ce>> nudge nudge\u23ce> The above is just what the"
+      },
+      {
+        "trigger": ":",
+        "score": 61.75,
+        "context": " man of a solitary disposition\"\u23ce- adjective: lacking companions or companionship\u23ceExample: \"A solitary traveler\"\u23ceSearch for solitary at other dictionaries: OneLook"
+      },
+      {
+        "trigger": ":",
+        "score": 57.75,
+        "context": ". Bart Remes, project manager at the Micro Aerial Vehicle Laboratory at TU Delft: \u201cWe programmed new software, Superbitrf, that keeps the autopilot connected"
+      },
+      {
+        "trigger": "\";",
+        "score": 51.75,
+        "context": " distributed or spread over a considerable extent; \"has ties with many widely dispersed friends\"; \"eleven million Jews are spread throughout Europe\"\u23ceThe only site you need"
+      }
+    ],
+    "promotes": [
+      " Wikimedijinoj",
+      "\u20ac\u201c",
+      "\u20ac\u00a6",
+      "__':",
+      "rungsseite"
+    ],
+    "demotes": [
+      " \"",
+      " \u201c",
+      " \u00ab",
+      " \u201e",
+      " '"
+    ],
+    "generated_description": "closing punctuation \u2014 activates on closing markers (colon, semicolon, closing quote, right parenthesis) in dictionary/example/citation contexts, often after example labels or metadata"
+  },
+  {
+    "id": "22_15227_26",
+    "layer": 22,
+    "ctx_idx": 26,
+    "influence_score": 0.31707823276519775,
+    "top_activations": [
+      {
+        "trigger": "\"",
+        "score": 28.0,
+        "context": " dent in these numbers and boost the industry's environmental street-cred.\u23ce\"We are making our airports greener, while balancing the tremendous economic impacts they deliver"
+      },
+      {
+        "trigger": "'",
+        "score": 32.0,
+        "context": "- \u2026\u23ceDid they say that?\u23ce\"a 'large house and garden' can comfortably roll out 1,000 doormats\"\u23ceSeems"
+      },
+      {
+        "trigger": ".\"",
+        "score": 29.5,
+        "context": " reduction on nitrous oxides, and considerable percentrage on carbon monoxide and volatile organic compounds.\"\u23ceChristoff says independent studies showed this would lead to demonstrable health benefits"
+      },
+      {
+        "trigger": ".\"",
+        "score": 30.0,
+        "context": " for installation on the Museum's Burnelli CBY-3 \"Loadmaster.\" It is currently located in the Civilian Hangar on the wall near the DC"
+      },
+      {
+        "trigger": ".\"",
+        "score": 37.0,
+        "context": "'s deformity, which is referred to as a \"retrocalcaneal spur.\" This spur is at the Achilles tendon behind the heel bone. This is different"
+      }
+    ],
+    "promotes": [
+      "\u201d",
+      "\u2019.",
+      " \u2018",
+      "\u2019)",
+      "\u2019\u201d"
+    ],
+    "demotes": [
+      "'",
+      " \"",
+      "\u3002\"",
+      "\"",
+      " '"
+    ],
+    "generated_description": "closing quotation mark \u2014 activates on end-of-quote punctuation (period/quote or apostrophe/quote sequences); promotes typographic/curly closing quotes and related end punctuation."
+  },
+  {
+    "id": "22_12991_27",
+    "layer": 22,
+    "ctx_idx": 27,
+    "influence_score": 0.39126089215278625,
+    "top_activations": [
+      {
+        "trigger": " as",
+        "score": 22.25,
+        "context": " fire was devastating, the Peshtigo fire (referred to by locals and historians as \u201cThe Forgotten Fire\u201d) actually caused wider property destruction and greater loss of life"
+      },
+      {
+        "trigger": " called",
+        "score": 26.75,
+        "context": "!\u201d\u23ce\"The 'Beetus\" is an advanced form of Diabetes, commonly called Type 17. It originated around Northern England and is transferred via infectious"
+      },
+      {
+        "trigger": " word",
+        "score": 22.25,
+        "context": " today's descendants still struggling to free their minds of trauma. Originally, the word \"Trauma\" (Greek for wound) referred to the wounds, impairment,"
+      },
+      {
+        "trigger": " called",
+        "score": 24.0,
+        "context": " by Leanne Guenther\u23ceI think the template for the police person can be called a girl or a boy\u23cedepending on which your child might like. Don"
+      },
+      {
+        "trigger": " it",
+        "score": 23.0,
+        "context": "<bos>In my part of the world, we call it the \u201cmonies.\u201d It\u2019s that feeling you get when you see something so unutterably cute that"
+      }
+    ],
+    "promotes": [
+      ":",
+      "?",
+      ",",
+      " \u201c",
+      " \""
+    ],
+    "demotes": [
+      " hou\u017fe",
+      " \u017ftate",
+      " An\u017f",
+      " Majefty",
+      " Re\u017f"
+    ],
+    "generated_description": "say term \u2014 activates on tokens that introduce names/definitions ('called', 'we call it', 'the word', 'as'); signals an upcoming label or quoted term, often before quotes/punctuation."
+  },
+  {
+    "id": "22_5581_27",
+    "layer": 22,
+    "ctx_idx": 27,
+    "influence_score": 0.34455105662345886,
+    "top_activations": [
+      {
+        "trigger": "ica",
+        "score": 34.25,
+        "context": ", Citrus australasica \u2018Judy\u2019s Everbearing\u2019 and Citrus australasica \u2018Pink Ice'.\u23ceCitrus australasica can be grown on a wide"
+      },
+      {
+        "trigger": " string",
+        "score": 39.0,
+        "context": " 'INF' is converted to positive infinity.\u23ceo The incase-sensitive string '-INF' is converted to negative identity.\u23ceo The incase-"
+      },
+      {
+        "trigger": "ina",
+        "score": 39.5,
+        "context": " with broad-spectrum insecticides, which are likely to wipe out these beneficial predators.Fraxinus velutina\u23ceNative to southwestern U.S. and Mexico"
+      },
+      {
+        "trigger": "DATE",
+        "score": 32.5,
+        "context": " converts a character string into a date. The syntax is:\u23ceselect TO_DATE('01/03/2001','DD/MM"
+      },
+      {
+        "trigger": "ica",
+        "score": 36.5,
+        "context": " finger lime cultivars including Citrus australasica \u2018Alstonville\u2019, Citrus australasica \u2018Blunobia Pink Crystal\u2019, Citrus australasica \u2018Durhams Emerald"
+      }
+    ],
+    "promotes": [
+      "\u3001\u300e",
+      " (\u2018",
+      "\u300e",
+      " '",
+      " \u2018"
+    ],
+    "demotes": [
+      "TagHelper",
+      " Signalez",
+      "mybatisplus",
+      "BASEPATH",
+      "ContextHolder"
+    ],
+    "generated_description": "scientific name ending \u2014 activates on Latin species epithets and other technical tokens (e.g., australasica, velutina, DATE, string); pushes quote/comma/opening-punctuation output."
+  },
+  {
+    "id": "23_5188_27",
+    "layer": 23,
+    "ctx_idx": 27,
+    "influence_score": 0.34680408239364624,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ],
+    "generated_description": "comma \u2014 activates on commas used as list separators or clause/clause boundaries (after dates, names, clauses; signals punctuation separating items)"
+  },
+  {
+    "id": "23_7585_27",
+    "layer": 23,
+    "ctx_idx": 27,
+    "influence_score": 0.3941883146762848,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 64.5,
+        "context": " finished the book, sensing I was listening along, she turned to me and said, \u201cYou know, I had forgotten what a wonderful book that is.\u201d\u23ce"
+      },
+      {
+        "trigger": ",",
+        "score": 71.0,
+        "context": " each other, so that everybody\u2019s real close.\u201d Senior Katie McKinzey adds, \u201cI love the closeness of it \u2014 how we\u2019re all like a"
+      },
+      {
+        "trigger": ",",
+        "score": 69.0,
+        "context": " Redwood City,California, but he embraces the sensor\u2019s futuristic appeal, saying, \u201cIt\u2019s like big brother watching you take your medicine.\u201d\u23ceThe"
+      },
+      {
+        "trigger": ",",
+        "score": 63.5,
+        "context": " implied in slurs like \u201chillbilly\u201d and \u201credneck.\u201d Towers said, \u201cStereotypes are unfair and inaccurate. I think they are wrong, but"
+      },
+      {
+        "trigger": ",",
+        "score": 63.5,
+        "context": "ums in the underbrush of some woods. One of my students raised her hand and said, \"It looks like she's hiding from somebody.\" Another said"
+      }
+    ],
+    "promotes": [
+      "and",
+      "  ",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<eos>"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " Efq",
+      " it\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " purpo\u017fe"
+    ],
+    "generated_description": "comma (clause continuation) \u2014 activates on commas introducing continuations, attributions, appositives, or parentheticals (e.g., \"said,\", \"City, California,\"); marks clause continuation and promotes continued text."
+  },
+  {
+    "id": "24_2708_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.29894885420799255,
+    "top_activations": [
+      {
+        "trigger": "',",
+        "score": 36.25,
+        "context": " point for discussion. It suggests\u23ceduality, as in 'rights and wrongs', 'warm hearts cold hands', 'sense\u23ceand sensibility', and 'the"
+      },
+      {
+        "trigger": " or",
+        "score": 40.5,
+        "context": " enough to have a good idea of the opinions and help that you receive. *The 'good' or the 'bad' are not just exclusive to certain '"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 42.5,
+        "context": " we may have already seen the best vintages of Cabernet Sauvignon?\u2019 he said.\u23ceHe added that he hoped fellow conference speaker Michel Rolland would elaborate on regions"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 43.25,
+        "context": " (CPOM) at University College London, a member of the research team.\u23ceThe map shows clear agreement with data gathered from aircraft during a recent Arctic campaign"
+      },
+      {
+        "trigger": ".",
+        "score": 34.75,
+        "context": " defects, and cross-linking between the DNA bases and the nanoparticles makes them stronger.\u23ceVictor Chechik, an expert in functionalised nanoparticles from the University of"
+      }
+    ],
+    "promotes": [
+      "\u2018",
+      " \u201a",
+      "\u300e",
+      " '",
+      " \u2018"
+    ],
+    "demotes": [
+      " \"",
+      "\uff0c\u201c",
+      " \u201c",
+      "\u2014\u201c",
+      " (\""
+    ],
+    "generated_description": "End-of-clause marker \u2014 activates on punctuation/newline (period, comma, line break, closing quote); encourages single-quote/comma style tokens, signals sentence/clause boundaries."
+  },
+  {
+    "id": "21_10898_19",
+    "layer": 21,
+    "ctx_idx": 19,
+    "influence_score": 0.3582010269165039,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 103.5,
+        "context": " flows, which deliver large amounts of nutrients,\u201d Rabalais said. \u201cBut nature's wind-mixing events and winds forcing the mass of low-oxygen water"
+      },
+      {
+        "trigger": "'",
+        "score": 105.0,
+        "context": " disregard for civilian life shown by both warring parties in the recent escalation of Sri Lanka's conflict. Over the past 5 months, the Sri Lankan Government has"
+      },
+      {
+        "trigger": "'",
+        "score": 75.0,
+        "context": " court system to the fore. This period saw numerous proposals for reform to the colony's laws and legal system, some effected and others not. Here we examine"
+      },
+      {
+        "trigger": "'",
+        "score": 84.5,
+        "context": " the perfect level of literary aspects to get his young students interested.\u23ce\u201cI'm not a big sci-fi and fantasy reader and I never was but"
+      },
+      {
+        "trigger": "'",
+        "score": 101.5,
+        "context": " priceless nugget of ancient civilization in the palm of her hand.\u23ce\u201cWe weren't amazed at all until we cleaned the coin and looked at it,\u201d says"
+      }
+    ],
+    "promotes": [
+      ".\u2019\u201d",
+      ")\u2019",
+      ",\u2019\u201d",
+      "\u201d\u2026",
+      "\u2019\u201d"
+    ],
+    "demotes": [
+      "\"",
+      "'",
+      " '",
+      " \"",
+      ",\""
+    ],
+    "generated_description": "Apostrophe clitic \u2014 activates on word-final apostrophes: possessive \u2019s and contractions (\u2019m, n't); ties to curly/typographic apostrophe punctuation in output."
+  },
+  {
+    "id": "24_2407_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.323236346244812,
+    "top_activations": [
+      {
+        "trigger": " so",
+        "score": 33.5,
+        "context": " phrase \"kith and kin.\" Over the\u23ceyears, usage commentators have complained that \"kith\" means the same thing as \"kin,\" so \"k"
+      },
+      {
+        "trigger": " and",
+        "score": 34.5,
+        "context": "\u23ce- Presentation layer = presentation tier\u23ceBut if we accept the above definition of \"layers\" and \"tiers\", it is obvious that the following is a valid"
+      },
+      {
+        "trigger": ",\u201d",
+        "score": 37.75,
+        "context": " language. We say, \u201ca bed of moss,\u201d a \u201cstream of consciousness,\u201d and a \u201cflood of insight.\u201d We say, \u201cMy mind meanders"
+      },
+      {
+        "trigger": ".\")",
+        "score": 33.5,
+        "context": " difficult to interpret correctly. (\"What she meant by her last remark was an enigma.\") \"Puzzle\" refers to a tricky problem that challenges a person to provide a"
+      },
+      {
+        "trigger": " and",
+        "score": 35.5,
+        "context": " tragedy of child poverty in this country. Calling child labor laws \u201ctragic\u201d and \u201cstupid\u201d, Gingrich explained that America\u2019s child labor laws have \u201c"
+      }
+    ],
+    "promotes": [
+      "SBATCH",
+      "StoryboardSegue",
+      " i\u017ft",
+      " nahilalakip",
+      " Efq"
+    ],
+    "demotes": [
+      " \u2018",
+      " '",
+      " \u201e",
+      " (\u2018",
+      " \""
+    ],
+    "generated_description": "Coordinating conjunctions \u2014 activates on \"and\", \"so\" and similar clause-linkers; often sees them at clause boundaries, near commas or closing quotes."
+  },
+  {
+    "id": "24_7181_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.37348756194114685,
+    "top_activations": [
+      {
+        "trigger": " It",
+        "score": 53.5,
+        "context": " occur here, when the products into which these oils will be refined are consumed. It is also condescending toward the sovereign responsibility of our NAFTA neighbor for managing their national"
+      },
+      {
+        "trigger": " I",
+        "score": 61.0,
+        "context": " fun. Now that's why I based our project on Alice in Wonderland. It's one of my favorite books and it's something that lately I"
+      },
+      {
+        "trigger": " it",
+        "score": 51.0,
+        "context": " from the National Institutes of Health, which released the results last week.\u23ceNow it's up to school districts to run with the strategies, which are available"
+      },
+      {
+        "trigger": " it",
+        "score": 72.0,
+        "context": "\u201cThere is a huge misperception with the public that it's OK if they are using a hands-free phone,\u201d said Janet Froetscher, the"
+      },
+      {
+        "trigger": " it",
+        "score": 53.0,
+        "context": " big new discovery that's ushered in this new era of exoplanets. It was charging forward before that, but now it's almost overwhelming.\"\u23ce"
+      }
+    ],
+    "promotes": [
+      " '",
+      "\u3002\"",
+      "\"",
+      " \"",
+      "'"
+    ],
+    "demotes": [
+      "\u2019\u201d",
+      ".\u2019\u201d",
+      ",\u2019\u201d",
+      "\u2019.\u201d",
+      "\u2019."
+    ],
+    "generated_description": "single-letter pronoun (it / I) \u2014 activates on single-letter pronouns \"it\" and \"I\"; often at clause/sentence starts and before contractions or punctuation."
+  },
+  {
+    "id": "22_5317_26",
+    "layer": 22,
+    "ctx_idx": 26,
+    "influence_score": 0.3875558078289032,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 86.0,
+        "context": " stream, from the insects to also the fish that live in there,\u201d she explains. \u201cBut it also helps clean the water, prevents pollution from getting into the"
+      },
+      {
+        "trigger": " labelled",
+        "score": 74.5,
+        "context": "st, with the trophectoderm labelled \"T\" and inner cell mass labelled \"I\"|\u23ceImage: Wikimedia commons, User: Ecto\u23ce\""
+      },
+      {
+        "trigger": ".",
+        "score": 84.0,
+        "context": " the former president\u2019s letter.\u23ce\u201cIt was very exciting,\u201d Hines said. \u201cI was wondering whether anyone knew this existed, and when the last time"
+      },
+      {
+        "trigger": ",",
+        "score": 77.0,
+        "context": ", the moderately drinking twin scored higher. \"No evidence was found,\" writes Christian, \"for negative effects on cognitive function related to the consumption of moderate amounts of"
+      },
+      {
+        "trigger": ".",
+        "score": 82.5,
+        "context": "0/20 special and many of my students did as well,\u201d says Heather. \u201cThen we watched the video in class and had a discussion about \u2018single"
+      }
+    ],
+    "promotes": [
+      " \u2018",
+      " \u201c",
+      " \u2018\u2018",
+      " '",
+      " \""
+    ],
+    "demotes": [
+      "nar",
+      "(",
+      "$",
+      "($",
+      "__\":"
+    ],
+    "generated_description": "say punctuation \u2014 promotes commas, periods and quotation marks; activates at sentence boundaries and before quoted or parenthetical text."
+  },
+  {
+    "id": "24_13277_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.3303406536579132,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say next noun/entity \u2014 activates on prepositions/articles/commas that introduce a following noun phrase; often before places, institutions, people, or other named entities."
+  },
+  {
+    "id": "24_3865_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.380382776260376,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "Comma/period punctuation \u2014 activates on commas and periods (including after abbreviations and inside numbers), signals inline punctuation; tends to suppress sentence breaks/newlines."
+  },
+  {
+    "id": "23_11361_27",
+    "layer": 23,
+    "ctx_idx": 27,
+    "influence_score": 0.3607005476951599,
+    "top_activations": [
+      {
+        "trigger": " early",
+        "score": 100.5,
+        "context": " to the U.S. as children in the late \u201980s and early \u201990s. This generation uniquely absorbed several worlds of influence during its"
+      },
+      {
+        "trigger": " about",
+        "score": 62.25,
+        "context": "<bos>Ask a question about 'Gri\u00e8ges'\u23ceStart a new discussion about 'Gri\u00e8ges'\u23ceAnswer questions from other users\u23ceis a commune\u23ceThe commune"
+      },
+      {
+        "trigger": ",",
+        "score": 90.0,
+        "context": "mlin on the Charles.\u201d Yet throughout the many turns of the \u201930s, \u201940s, and \u201950s, Harvard fought to balance"
+      },
+      {
+        "trigger": "\u201c",
+        "score": 72.5,
+        "context": " \u2014\u2018I could not call you by name, as you have me.\u2019\u23ce\u201c\u2018I am Joseph, the Prophet,\u2019 said the stranger, smiling, \u2018"
+      },
+      {
+        "trigger": " and",
+        "score": 82.5,
+        "context": " Their studies in the 1950s, '60s, and '70s, on top of previous work by Alfred Kinsey,"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " himo",
+      "Filmographie",
+      " Efq",
+      " transfieras"
+    ],
+    "demotes": [
+      "'.",
+      "',",
+      "\u2019,",
+      "\u2019.",
+      "''"
+    ],
+    "generated_description": "Phrase-start marker \u2014 activates on structural tokens (commas, open quotes, and, about, early) that mark clause/list/dialogue boundaries and the upcoming content token."
+  },
+  {
+    "id": "24_975_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.3331080675125122,
+    "top_activations": [
+      {
+        "trigger": "\u2019,",
+        "score": 64.5,
+        "context": " multiple\u2019, \u2018Select one\u2019, \u2018[Apply Form]\u2019, and \u2018[Reset Form]\u2019. There are basically two things the user can do within a form,"
+      },
+      {
+        "trigger": ",",
+        "score": 68.5,
+        "context": " or die \"failed to open '$ARGV $!\";\u23ceopen my $file2, '<', $ARGV or die \"failed to open '$ARGV $!\";\u23ce"
+      },
+      {
+        "trigger": "3",
+        "score": 62.5,
+        "context": "\u23cetry using the sql worksheet:\u23ceselect '234'||chr(9)||'234' from dual;\u23ceyou'll get a"
+      },
+      {
+        "trigger": " with",
+        "score": 69.5,
+        "context": " - for example user 'ravi' - replace shell '/bin/bash' with '/sbin/nologin'.\u23ce#FILE: /etc/passwd ..."
+      },
+      {
+        "trigger": "0",
+        "score": 61.0,
+        "context": "[x,ssq,cnt] = LMFsolve(Equations,X0,Options) % .\u23ceIn all cases, the applied variables have the"
+      }
+    ],
+    "promotes": [
+      "\u017felf",
+      " him\u017felf",
+      " it\u017felf",
+      " plea\u017fure",
+      " Jefus"
+    ],
+    "demotes": [
+      " \u201c",
+      ",\u201d",
+      " \u2018",
+      " \"\"",
+      ".\u201d"
+    ],
+    "generated_description": "code delimiter \u2014 activates on tiny inline tokens within code/examples: commas, single digits/indices, separators (e.g., ',', '3' in 2|3|4, '0' in X[0], punctuation between args)"
+  },
+  {
+    "id": "24_13541_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.3869239091873169,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ],
+    "generated_description": "digit token \u2014 activates on single-digit tokens in DOIs, dates, times and numeric strings (e.g., 0, 6, 4); often within citations/timestamps"
+  },
+  {
+    "id": "24_14082_27",
+    "layer": 24,
+    "ctx_idx": 27,
+    "influence_score": 0.2838912606239319,
+    "top_activations": [
+      {
+        "trigger": " '",
+        "score": 45.5,
+        "context": ", by the very nature of EfS, is that it is influenced by other 'adjectival educations', such as peace, health, political,"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 42.0,
+        "context": " an industrial system that is restorative or regenerative by intention and design.. It replaces the \u2018end-of-life\u2019 concept with restoration, shifts towards the use of"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 52.0,
+        "context": " staff and will be an increasingly large proportion of your client base too.\u23ceGood \u2018accessible\u2019 Information and Communication Technology (ICT) systems can open up new possibilities"
+      },
+      {
+        "trigger": " \u2018",
+        "score": 40.0,
+        "context": " to navigate and view propellers and other complex structures.\u23ceMechanical engineers develop an \u2018intelligent co-pilot\u2019 for cars\u23ceJuly 12, 2"
+      },
+      {
+        "trigger": " '",
+        "score": 46.0,
+        "context": " to about 5,000 years ago ... Other psychoactive drugs are 'chemical' (pharmacological, 17 ); they require modern chemistry to"
+      }
+    ],
+    "promotes": [
+      "{\"",
+      "(\"",
+      "\uff0c\u201c",
+      "\u201c",
+      " \u201c"
+    ],
+    "demotes": [
+      " \u2018",
+      " '",
+      " \u201a",
+      "\u300e",
+      " (\u2018"
+    ],
+    "generated_description": "single-curly-quote \u2014 activates on single \u201ccurly\u201d quote characters ( \u2018 or \u2019 ) before/around words; tends to push double-quote output (promotes \" , demotes single-quote)."
+  },
+  {
+    "id": "25_4717_27",
+    "layer": 25,
+    "ctx_idx": 27,
+    "influence_score": 0.3383874297142029,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "\"'s (clitic)\" \u2014 activates on apostrophe-s in contractions/possessives (what's, that's, it's); signals clitic ending for 'is/has/possive' or contracted verb phrase."
+  },
+  {
+    "id": "25_15473_27",
+    "layer": 25,
+    "ctx_idx": 27,
+    "influence_score": 0.3770023286342621,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 48.0,
+        "context": " formed,\" says Dr. Kevin P. Furlong, professor of geosciences. \"We know the San Andreas boundary is getting longer as the Mendocino Triple"
+      },
+      {
+        "trigger": ".",
+        "score": 48.5,
+        "context": " some constructive criticism. \u201cI wrote him to say that I wasn\u2019t happy about what he was doing,\u201d Moffat recalls. There was nothing unusual about this."
+      },
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " items that must be covered in a children's literature course,\" Halko explains, \"but instead of choosing the material randomly, I decided to develop the course"
+      },
+      {
+        "trigger": ".",
+        "score": 47.0,
+        "context": " geology and engineering students,\u201d said Sally Sutton, associate professor and geosciences department chair.\u23ce\u201cIt\u2019s exciting to have so many different professors with different backgrounds"
+      },
+      {
+        "trigger": ".",
+        "score": 48.5,
+        "context": "This could be precancerous,\" she said, lightly rubbing the tiny rough spot. It's a common mistake: I worried more about an ugly (but"
+      }
+    ],
+    "promotes": [
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      "Personensuche",
+      "OGND",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      " ModelExpression"
+    ],
+    "demotes": [
+      "('",
+      "/'",
+      "['",
+      "'(",
+      "*'"
+    ],
+    "generated_description": "Period token (.) \u2014 activates on sentence-ending/abbreviation periods and commas before or inside quotations; marks punctuation boundaries (e.g., \"Dr.\", clause ends, quote closures)."
+  },
+  {
+    "id": "25_13416_27",
+    "layer": 25,
+    "ctx_idx": 27,
+    "influence_score": 0.35199281573295593,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "Non-English / loanword \u2014 activates on foreign proper names and loanwords (e.g., Miguel, Don Quixote, daikon, parafia, technical units like Mhz); often appears before inline explanations or slashes; pushes French lexicon."
+  },
+  {
+    "id": "25_11320_27",
+    "layer": 25,
+    "ctx_idx": 27,
+    "influence_score": 0.2644801139831543,
+    "top_activations": [
+      {
+        "trigger": " The",
+        "score": 31.75,
+        "context": "A terrible accident occured at the limeworks in 1873. The locomotive 'Minera' became derailed whilst it crossed the 'crusher bridge"
+      },
+      {
+        "trigger": " word",
+        "score": 31.0,
+        "context": " poorest characters; for they combine more vices than one. Therefore the application of the word to them is not its proper use; for a 'prodigal' means"
+      },
+      {
+        "trigger": ",",
+        "score": 37.75,
+        "context": " the Choni [Jone Tibetans].' A more recent source explains that although the Chinese government officially considers them part of the Tibetan nationality, 'the people"
+      },
+      {
+        "trigger": "But",
+        "score": 50.5,
+        "context": " like 'ha'\u23ce(harsh sound) while 'ga'\u23cesounds like 'gah'\u23ce(soft sound). Same with 'o'\u23ceBut"
+      },
+      {
+        "trigger": " and",
+        "score": 30.0,
+        "context": "\u23ceThe expression 'raze to the ground', like 'bated breath' and 'just deserts', is often spelled incorrectly. The sources of these misunderstandings"
+      }
+    ],
+    "promotes": [
+      "__':",
+      "\u20ac\u00a6",
+      " kasarigan",
+      "\u0627\u0646\u062c\u0644\u064a\u0632",
+      " nahilalakip"
+    ],
+    "demotes": [
+      " \u201c",
+      " \"",
+      " \u2018",
+      "\u201c",
+      " \u201e"
+    ],
+    "generated_description": "Coordinating connector \u2014 activates on connectors (and, but, commas, articles before quoted/listed words); tied to non-quote punctuation, links clauses/items."
+  }
+]

@@ -1,0 +1,3198 @@
+[
+  {
+    "id": "0_6548_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3825063109397888,
+    "top_activations": [
+      {
+        "trigger": " national",
+        "score": 25.38,
+        "context": "-makers evaluate the sustainability of infrastructure, set realistic national priorities, and conduct a national discourse on infrastructure investment.\u23ceEnvision rates all types and sizes of civil"
+      },
+      {
+        "trigger": " national",
+        "score": 25.5,
+        "context": ".\"\u23ceFor if every purchase from a foreign country is a tribute paid and a national loss, it follows, of course, that it is right to restrain,"
+      },
+      {
+        "trigger": " national",
+        "score": 25.38,
+        "context": ", since UNGEI co-operation has proven most effective at the regional and national levels. UNESCO annually hosts an UNGEI meeting immediately before each EFA"
+      },
+      {
+        "trigger": " national",
+        "score": 25.38,
+        "context": " calls for a phasing-out of fossil-fuels subsidies, the creation of a national green climate fund, and the creation of a National Ecology and Climate Change Institute"
+      },
+      {
+        "trigger": " national",
+        "score": 25.38,
+        "context": "1,000 in 1999.\u23cePakistan\u2019s national mammal, markhor are known for their spectacular, corkscrew horns that can"
+      }
+    ],
+    "promotes": [
+      ".",
+      " ",
+      "\u23ce\u23ce",
+      " The",
+      " and"
+    ],
+    "demotes": [
+      "]));\r",
+      "__(/*!",
+      " */\r\r",
+      "\u24e7",
+      " Forumite"
+    ]
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3591713309288025,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "2_15709_7",
+    "layer": 2,
+    "ctx_idx": 7,
+    "influence_score": 0.3605419099330902,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 16.12,
+        "context": "February 1993\u23ceSPECIAL SECTION ON REFRIGERATORS\u23ceMAINTENANCE DOESN'T NECESSARILY LOWER ENERGY USE\u23ceUtility bill stuffers direct customers"
+      },
+      {
+        "trigger": " N",
+        "score": 14.88,
+        "context": " an IIR filter implementation to compute a single complex DFT spectral bin value based upon N input time samples.\u23ceThe most common application of this process is to detect"
+      },
+      {
+        "trigger": "N",
+        "score": 16.25,
+        "context": " NOT baptism, \"And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption.\" Baptism DOESN'T \"apply\" anything"
+      },
+      {
+        "trigger": " N",
+        "score": 15.25,
+        "context": "000, says CFR Senior Fellow Thomas Bollyky, in part because NCDs have been presented as an \"impossibly large and complex\" problem."
+      },
+      {
+        "trigger": " N",
+        "score": 15.25,
+        "context": "\" problem. Bollyky hopes that more progress can be made once concensus NCD indictators are identified and the global monitoring system is established. He offers"
+      }
+    ],
+    "promotes": [
+      "-------\f",
+      "RepeatedField",
+      " betweenstory",
+      "EDEFAULT",
+      "RegressionTest"
+    ],
+    "demotes": [
+      "N",
+      " N",
+      "\uff2e",
+      "<bos>",
+      "getN"
+    ]
+  },
+  {
+    "id": "3_4791_6",
+    "layer": 3,
+    "ctx_idx": 6,
+    "influence_score": 0.3111938238143921,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 30.75,
+        "context": " or even averted through Demand Response. The U.S. Federal Energy Regulatory Commission (www.ferc.gov) defines DR as \u201cchanges in electric use"
+      },
+      {
+        "trigger": " (",
+        "score": 28.75,
+        "context": " to consider the environmental impacts of their proposed actions.\u23ceNational Pollutant Discharge Elimination System (NPDES)\u2014\u23ceA federal permit program under the CWA pertaining to discharges"
+      },
+      {
+        "trigger": " (",
+        "score": 28.75,
+        "context": ". The agencies stressing the urban dimension of climate change included the United Nations Environment Programme (UNEP), the United Nations Population Fund (UNFPA), and the UN Economic"
+      },
+      {
+        "trigger": " (",
+        "score": 31.0,
+        "context": " to identify and strategize recovery issues. She also assisted the Earthquake Engineering Research Institute (EERI) in collecting scientific data. Comerio\u2019s research over the"
+      },
+      {
+        "trigger": " (",
+        "score": 28.25,
+        "context": "\u23ceNearly 46 million Americans currently receive benefits from the Supplemental Nutrition Assistance Program (SNAP), otherwise known as food stamps. More than half of SNAP recipients are"
+      }
+    ],
+    "promotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " protoimpl",
+      "featureID",
+      "principalTable",
+      "Odkazy"
+    ],
+    "demotes": [
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      "jeno",
+      "amata",
+      " Island",
+      "\ucc29"
+    ]
+  },
+  {
+    "id": "0_1326_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3884662389755249,
+    "top_activations": [
+      {
+        "trigger": " Park",
+        "score": 21.25,
+        "context": "<bos>NCCOS and the National Park Service Launch a Gap Analysis of Marine Ecosystem Data for Ten U.S. Tropical Parks which Include Coral Reef Ecosystems\u23ceIn September"
+      },
+      {
+        "trigger": " Association",
+        "score": 21.25,
+        "context": " Gay Men\u2019s HIV/AIDS Awareness Day, an observance founded by the National Association of People with AIDS to raise awareness of the HIV/AIDS epidemic among gay"
+      },
+      {
+        "trigger": " Institute",
+        "score": 21.5,
+        "context": " were oversimplified and not correct,\" said Dr. Marshall Plaut of the National Institute of Allergy and Infection Diseases. But, he said, \"we don'"
+      },
+      {
+        "trigger": " Institute",
+        "score": 21.25,
+        "context": "-Champaign examined data from 708 children who originally participated in a National Institute on Child Health and Human Development study.\u23ceBased on the parents' answers"
+      },
+      {
+        "trigger": " Institute",
+        "score": 21.25,
+        "context": " Structures [online], Paul E. Black, ed., U.S. National Institute of Standards and Technology. 17 December 2004."
+      }
+    ],
+    "promotes": [
+      "\u00f4nicos",
+      " chofe",
+      " rai\u017f",
+      " econ\u00f4mica",
+      " Monfieur"
+    ],
+    "demotes": [
+      " \u00a3",
+      "Whilst",
+      "labour",
+      " colour",
+      "neighbour"
+    ]
+  },
+  {
+    "id": "0_14394_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3686075508594513,
+    "top_activations": [
+      {
+        "trigger": "BS",
+        "score": 16.0,
+        "context": " is being presented at the conference of the British Society for Research on Ageing (BSRA) in Newcastle, U.K. This research sheds new light on"
+      },
+      {
+        "trigger": "IC",
+        "score": 15.0,
+        "context": " of an enabling environment for the implementation of the International Conference on Population and Development (ICPD) Programme of Action (Cairo, Egypt, 1994"
+      },
+      {
+        "trigger": "NS",
+        "score": 15.25,
+        "context": " on a broad range of national\u23ceand local issues. Within its Strategic Plan (NSB-98-215), the National Science Board\u23ceidentified"
+      },
+      {
+        "trigger": "LE",
+        "score": 14.88,
+        "context": " analysing assessment information to inform evidence-based teaching. The Literacy Engagement Assessment Process (LEAP) was implemented in two Kindergarten classrooms over twelve months. The aim was"
+      },
+      {
+        "trigger": "DB",
+        "score": 14.88,
+        "context": " National Center for Infectious and Respiratory Disease (NCIRD), Division of Bacterial Disease (DBD), Meningitis and Vaccine Preventable Diseases Branch (MVPD).\u23ce"
+      }
+    ],
+    "promotes": [
+      " pngtree",
+      " $_\"",
+      " greate\u017ft",
+      " plea\u017fure",
+      "giveness"
+    ],
+    "demotes": [
+      "<bos>",
+      "'",
+      "\u23ce\u23ce",
+      "<eos>",
+      "("
+    ]
+  },
+  {
+    "id": "0_13708_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35359683632850647,
+    "top_activations": [
+      {
+        "trigger": " followed",
+        "score": 22.0,
+        "context": " TB. Diagnosis may be made by skin test, which if positive should will be followed by a chest X-ray to determine the status (active or dormant)"
+      },
+      {
+        "trigger": " followed",
+        "score": 21.88,
+        "context": " man with glowing red eyes. The wings had a ten-foot span and it followed their car as they drove outside of town, according to their report.\u23ce"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.12,
+        "context": ", Three, and Four Square Theorems we reach Gauss's famous Law of Quadratic Reciprocity. This is followed by a discussion of Eudoxus' Theory of"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.0,
+        "context": ",\u201d he said in an e-mail message.\u23ceThe companies that have not followed the guidelines will be warned, Courtney said, and they will be barred from"
+      },
+      {
+        "trigger": " followed",
+        "score": 22.25,
+        "context": " unity government with Labor.\u23ceSahmir's leadership of the Likud was followed by the first tenure of Benjamin Netanyahu,\u23cewho was elected Israeli prime minister"
+      }
+    ],
+    "promotes": [
+      " d\u00e9mocratique",
+      " pa\u017f\u017f",
+      " coel",
+      "cessive",
+      " automatica"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "'),\r",
+      " disambiguazione",
+      ")\");\r",
+      ")',"
+    ]
+  },
+  {
+    "id": "0_12763_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.361907958984375,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " abstract] [hide abstract]\u23ceABSTRACT: The introduction of the photonic crystal (PhC) wavelength-scale cavity as a laser cavity enables us to obtain"
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " game.jar *.class\u23ce- The Java compiler and JVM can find the jar (when resolving/finding class names) if the jar is in the same directory"
+      },
+      {
+        "trigger": " (",
+        "score": 28.75,
+        "context": ",000 lb).\u23ceHeight: 83.00 m (272.00 ft).\u23ceDiameter: 22."
+      },
+      {
+        "trigger": " (",
+        "score": 28.5,
+        "context": " allowing arbitrary interconnections to be made.\u23ceFor example, the Main Distribution Frame (MDF) located at a telephone central office terminates the cables leading to subscribers"
+      },
+      {
+        "trigger": " (",
+        "score": 29.0,
+        "context": " Integer partition x = if x < 0 then 0 else foldl p (fromList [(0,1)]) [1..x] ! x where"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " (",
+      " ",
+      " [",
+      " A",
+      " I"
+    ]
+  },
+  {
+    "id": "0_14329_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3776107132434845,
+    "top_activations": [
+      {
+        "trigger": " Center",
+        "score": 19.75,
+        "context": " replace a circuit board before HAL's predicted date of its failure? Now National Center for Atmospheric Research researchers claim to have invented such an algorithm that can predict failures"
+      },
+      {
+        "trigger": " Institute",
+        "score": 19.75,
+        "context": " new lab facilities that had just been constructed for the bureau now known as the National Institute of Standards and Technology. He delivered a dedication speech to an estimated 1"
+      },
+      {
+        "trigger": " Center",
+        "score": 19.75,
+        "context": " was made possible through Grant MT-2210-09-NC-08 from the National Center for Preservation Technology and Training (NCPTT)."
+      },
+      {
+        "trigger": " Center",
+        "score": 19.88,
+        "context": "2003\u23ceNone at this time. HSLDA's National Center is tracking this legislation.\u23ceOfficial purpose: A bill to provide for the"
+      },
+      {
+        "trigger": " Center",
+        "score": 19.12,
+        "context": " disabilities who choose to join traditional sports teams by making \u201creasonable modifications.\u201d The National Center for Health, Physical Activity, and Disability has information and examples of sports adaptation"
+      }
+    ],
+    "promotes": [
+      " whilst",
+      "-\u00a3",
+      "Whilst",
+      " (\u00a3",
+      " \u00a3"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      " kaarangay",
+      "taminophen",
+      "\u00eamios",
+      "<bos>"
+    ]
+  },
+  {
+    "id": "4_12467_7",
+    "layer": 4,
+    "ctx_idx": 7,
+    "influence_score": 0.31302371621131897,
+    "top_activations": [
+      {
+        "trigger": "H",
+        "score": 14.75,
+        "context": " cause a rare, but often fatal, disease called Hantavirus pulmonary syndrome (HPS).\u23ceHumans are most often exposed to the virus by breathing in contaminated"
+      },
+      {
+        "trigger": "\u6e21",
+        "score": 14.62,
+        "context": "hi. One of the places Hirafu went to was called Watarishima (\u6e21\u5cf6), which is often believed to be present-day Hokkaid\u014d"
+      },
+      {
+        "trigger": "JD",
+        "score": 15.25,
+        "context": "<bos>Jigme Dorji National Park (JDNP)\u23ceBhutan National Commisson for UNESCO\u23cePunakha, Gasa, Wangdiphodrang"
+      },
+      {
+        "trigger": "BC",
+        "score": 16.0,
+        "context": "s own ability to fight cancer using Baculillus Calmette-Guerin (BCG) -- the germ commonly used to inoculate against tuberculosis (TB)."
+      },
+      {
+        "trigger": "Y",
+        "score": 14.38,
+        "context": " (Shiry\u014d) meaning dead spirit, or the more encompassing \u5996\u602a (Y\u014dkai) or \u304a\u5316\u3051 (Obake).\u23ceAccording to traditional"
+      }
+    ],
+    "promotes": [
+      "glGen",
+      " likely",
+      "rao",
+      "roga",
+      " nod"
+    ],
+    "demotes": [
+      "########.",
+      "\u062d\u0648\u0627\u0644\u06c1",
+      "ArrowToggle",
+      "pagestyle",
+      "ngrx"
+    ]
+  },
+  {
+    "id": "4_2918_7",
+    "layer": 4,
+    "ctx_idx": 7,
+    "influence_score": 0.27215340733528137,
+    "top_activations": [
+      {
+        "trigger": "RW",
+        "score": 27.88,
+        "context": "/ \u2014 Honeywell Aerospace (NYSE: HON) announced that its Reaction Wheel Assemblies (RWAs) for satellites, which are designed to control the momentum of satellites in"
+      },
+      {
+        "trigger": "IM",
+        "score": 29.62,
+        "context": " nation's national security and economic competitiveness.\u23ceThe Integrated Materials Research Laboratory (IMRL) enables Sandia to develop new and superior materials that meet government and"
+      },
+      {
+        "trigger": "IC",
+        "score": 28.62,
+        "context": " of an enabling environment for the implementation of the International Conference on Population and Development (ICPD) Programme of Action (Cairo, Egypt, 1994"
+      },
+      {
+        "trigger": "AS",
+        "score": 28.62,
+        "context": " ASCO annual meeting addressed the collaborative response from the American Society of Clinical Oncology (ASCO) and the Oncology Nursing Society (ONS). Presenting the collaborative plans were"
+      },
+      {
+        "trigger": "NCS",
+        "score": 33.0,
+        "context": "<bos>The National Center for Soybean Biotechnology (NCSB) at the University of Missouri has begun a project to sequence the DNA of 1,008 commercially"
+      }
+    ],
+    "promotes": [
+      "AndEndTag",
+      "aarrggbb",
+      "DoubleQuotes",
+      "NameInMap",
+      "CopyWith"
+    ],
+    "demotes": [
+      "<bos>",
+      " Fakult",
+      " pesante",
+      "entuan",
+      " profundas"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.39075636863708496,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "14_861_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.3564043641090393,
+    "top_activations": [
+      {
+        "trigger": " W",
+        "score": 45.25,
+        "context": " goes in for an hour and comes out as good as he went in.\u201d The WCTU and the ministerial organizations were effective, not only in making prohibition a"
+      },
+      {
+        "trigger": " TS",
+        "score": 49.0,
+        "context": " May 2010. Images and stories of Tennessee's past from TSLA\u2019s extensive collection of photographs, records, and manuscripts illustrate the multitude"
+      },
+      {
+        "trigger": "E",
+        "score": 49.0,
+        "context": " approach include electrodermal testing (EDT) and electroacupuncture according to Voll (EAV). The method, which has many variations, generally involves measuring the body"
+      },
+      {
+        "trigger": "R",
+        "score": 48.75,
+        "context": " treatments are available.\u23ceRhizomelic chondrodysplasia punctata (RCDP) is caused by an abnormal protein in a part of the cell called"
+      },
+      {
+        "trigger": " R",
+        "score": 48.25,
+        "context": " and gives individuals the right to seek legal redress for acts of racial discrimination. The RRA makes it unlawful to discriminate against a person directly or indirectly on racial grounds"
+      }
+    ],
+    "promotes": [
+      " chained",
+      "R\u00fcyada",
+      " Paradiso",
+      "nib",
+      " CSP"
+    ],
+    "demotes": [
+      "IVEREF",
+      "UrlResolution",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      "Personendaten",
+      "ficult"
+    ]
+  },
+  {
+    "id": "3_11585_7",
+    "layer": 3,
+    "ctx_idx": 7,
+    "influence_score": 0.33062461018562317,
+    "top_activations": [
+      {
+        "trigger": " L",
+        "score": 27.75,
+        "context": " joining edges AD and BC. To support the structure, a wire of fixed length L is placed along the diagonal of the rectangle. Find the angle that will result"
+      },
+      {
+        "trigger": "C",
+        "score": 18.75,
+        "context": " of the application.\u23ceModel(M), View(V) and Controller(C) is one step forward towards improving the application design.\u23ce- Model handles"
+      },
+      {
+        "trigger": "H",
+        "score": 20.5,
+        "context": ". One example of this transformation would be where the sulfur atom in hydrogen sulfide (H2S, oxidation number of -2) is washed out as a sulfate"
+      },
+      {
+        "trigger": " f",
+        "score": 23.25,
+        "context": "<bos>The Fourier transform takes an input function f (in red) in the \u201ctime domain\u201d and converts it into a new function f-hat (in blue"
+      },
+      {
+        "trigger": "I",
+        "score": 20.25,
+        "context": " En/vironmental Programme (UNEP) and the International Union of Soil Sciences (IUSS).\u23ceWRB aims to establish an international reference base for soil classification"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      "migrationBuilder",
+      "<bos>",
+      "]--;",
+      ".*\")]"
+    ],
+    "demotes": [
+      " \u201c",
+      "assertNotNull",
+      "\u00e7oit",
+      " transfert",
+      " latar"
+    ]
+  },
+  {
+    "id": "7_15088_7",
+    "layer": 7,
+    "ctx_idx": 7,
+    "influence_score": 0.36462196707725525,
+    "top_activations": [
+      {
+        "trigger": "NY",
+        "score": 19.12,
+        "context": " they can have more time having fun.\u23ceIn the National Youth Leader Training (NYLT), we discuss what a leader must BE, KNOW, and DO."
+      },
+      {
+        "trigger": "NH",
+        "score": 18.62,
+        "context": " National AIDS Policy (ONAP) to develop a National HIV/AIDS Strategy (NHAS) to realize his vision that \u201c[t]he United States will become"
+      },
+      {
+        "trigger": "I",
+        "score": 21.12,
+        "context": ", dating, sex and bullying. Published by the nonprofit Institute for Healthcare Advancement (IHA), it is the latest in the \"What To Do For Health\""
+      },
+      {
+        "trigger": "ND",
+        "score": 20.12,
+        "context": "\u23ceSHRP2 is carrying out the largest, most comprehensive naturalistic driving study (NDS) ever conducted to monitor how drivers interact with their vehicles and the highway"
+      },
+      {
+        "trigger": "EE",
+        "score": 19.38,
+        "context": " Circus, is being treated (again) for elephant endotheliotropic herpes virus (EEHV). The scientific literature recognizes that stress is strongly associated with EEHV."
+      }
+    ],
+    "promotes": [
+      " devriez",
+      " riuscito",
+      " essenziale",
+      " sostener",
+      " ortak"
+    ],
+    "demotes": [
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "AnchorStyles",
+      "OrNil",
+      "kh\u00e1u",
+      "Esp\u00e8ce"
+    ]
+  },
+  {
+    "id": "12_2497_7",
+    "layer": 12,
+    "ctx_idx": 7,
+    "influence_score": 0.34338870644569397,
+    "top_activations": [
+      {
+        "trigger": "PC",
+        "score": 34.25,
+        "context": " was recently awarded nearly two million dollars from the Patient-Centered Outcomes Research Institute (PCORI) to lead a study examining whether oral antibiotics are as effective at treating"
+      },
+      {
+        "trigger": "NS",
+        "score": 34.25,
+        "context": " the world.\u23ceThe U.S. National Snow and Ice Data Center (NSIDC) in Boulder, Colorado, had reported similar findings for the short term"
+      },
+      {
+        "trigger": "COS",
+        "score": 33.75,
+        "context": ".\u23ce\"Antarctica Melting\" is a Centers for Ocean Sciences Education Excellence (COSEE) Networked Ocean World four act story. Each act is accompanied by"
+      },
+      {
+        "trigger": "N",
+        "score": 33.25,
+        "context": " Pradesh) a few years ago, the National Commission for Protection of Child Rights (NCPCR) had strongly urged that schools be identified as 'zones of peace"
+      },
+      {
+        "trigger": "NW",
+        "score": 34.25,
+        "context": "<bos>National Water Management Center (NWMC)\u23ceThe National Water Management Center (NWMC) serves as a focal point for water resources information exchange. It is"
+      }
+    ],
+    "promotes": [
+      " sup\u00e9rieurs",
+      " hoofd",
+      " enfans",
+      " s\u0153urs",
+      " dieux"
+    ],
+    "demotes": [
+      " Wikispecies",
+      "CppMethod",
+      "TestBed",
+      "/>\";",
+      "ADVERTISEMENT"
+    ]
+  },
+  {
+    "id": "15_5076_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.39739957451820374,
+    "top_activations": [
+      {
+        "trigger": "ML",
+        "score": 47.0,
+        "context": " we choose is quite complex.\u23ceUnderstanding the differences between modified-live virus (MLV) vaccines and killed vaccines allows veterinarians and producers to use them properly and"
+      },
+      {
+        "trigger": "WS",
+        "score": 47.25,
+        "context": " as the Received Signal Strength Indication (RSSI) in the wireless sensor networks (WSN) community. While many protocols directly use the measurements that the radios provide"
+      },
+      {
+        "trigger": "ED",
+        "score": 48.0,
+        "context": ": Entry, Descent, and Landing\u23ceThe entry, descent, and landing (EDL) phase begins when the spacecraft reaches the Mars atmospheric entry interface point ("
+      },
+      {
+        "trigger": "NI",
+        "score": 44.25,
+        "context": ". This type of hearing loss is usually permanent. Noise-induced hearing loss (NIHL) is sensorineural and is usually permanent. Fortunately, workplace NI"
+      },
+      {
+        "trigger": "ET",
+        "score": 49.5,
+        "context": " section of the river near the George Washington Bridge known as the Estuarine Turbidity Maximum (ETM). A small amount of silt is also being washed out to"
+      }
+    ],
+    "promotes": [
+      "\u0445\u044c\u0442\u0430\u043d",
+      "\u03c4\u03c3\u03b9",
+      " NUKAT",
+      "<bos>",
+      " externi"
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "WithMany",
+      " Waray",
+      "GraphicsUnit",
+      " Audiodateien"
+    ]
+  },
+  {
+    "id": "6_8381_7",
+    "layer": 6,
+    "ctx_idx": 7,
+    "influence_score": 0.3272102177143097,
+    "top_activations": [
+      {
+        "trigger": "Z",
+        "score": 34.25,
+        "context": " are following California\u2019s lead in requiring automakers to produce zero emission vehicles (ZEVs) to improve local air quality and reduce the emissions contributing to climate"
+      },
+      {
+        "trigger": "OP",
+        "score": 35.75,
+        "context": " systems described below. Use the analyses to inform the owner\u2019s project requirements (OPR), basis of design (BOD), design documents, and construction documents."
+      },
+      {
+        "trigger": "ER",
+        "score": 37.25,
+        "context": " prompted by research undertaken by the European Ramazzini Foundation of Oncology and Environmental Sciences (ERF) in Bologna, Italy, which looked at the incidence of tumours found"
+      },
+      {
+        "trigger": "U",
+        "score": 36.0,
+        "context": " space and galaxies. These phenomena, which are collectively called Unidentified Infrared Emission (UIE) features, have been known for 30 years, but the"
+      },
+      {
+        "trigger": "M",
+        "score": 33.25,
+        "context": " Optical Microscope, a part of the Microscopy, Electrochemistry, and Conductivity Analyzer (MECA) instrument suite on NASA's Phoenix Mars Lander.\u23ceThe image"
+      }
+    ],
+    "promotes": [
+      "AnchorStyles",
+      "ValueStyle",
+      "MENAFN",
+      " StatelessWidget",
+      "SBATCH"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "ac\u00e1n",
+      "<bos>",
+      "***",
+      "CAR"
+    ]
+  },
+  {
+    "id": "14_922_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.38371509313583374,
+    "top_activations": [
+      {
+        "trigger": "NS",
+        "score": 41.0,
+        "context": " permits will come under U.S. EPA's New Source Review Program (NSR) and the operating permits will come under its Title V Program (Title"
+      },
+      {
+        "trigger": "NC",
+        "score": 41.25,
+        "context": " from a library's service area, and US National Center for Education Statistics (NCES).\u23ce- Libraries and Library Use Statistical analyses prepared by Douglas A."
+      },
+      {
+        "trigger": "PS",
+        "score": 39.5,
+        "context": " ASCA archival investigators,\u23ceAs you may know, the point spread function (PSF) of ASCA's X-ray\u23cetelescopes (X"
+      },
+      {
+        "trigger": "CC",
+        "score": 39.25,
+        "context": "\u23ce|Thousands of downloadable math worksheets, aligned to the Common Core State Standards (CCSS) and with solutions, by a retired teacher: addition, algebra,"
+      },
+      {
+        "trigger": "V",
+        "score": 39.25,
+        "context": " efficiency of vehicles\u23ce- The carbon content of fuels\u23ce- Vehicle miles traveled (VMT)\u23ceWhat does this really mean in practice? Well, if we"
+      }
+    ],
+    "promotes": [
+      "__*/",
+      "Datuak",
+      " snippetHide",
+      "\u0431\u0438\u044f\u0442",
+      " Vikipedi"
+    ],
+    "demotes": [
+      " '",
+      "vy\u0161",
+      " ch\u1ec9",
+      " \u2018",
+      "messageInfo"
+    ]
+  },
+  {
+    "id": "13_5661_7",
+    "layer": 13,
+    "ctx_idx": 7,
+    "influence_score": 0.363267183303833,
+    "top_activations": [
+      {
+        "trigger": "MIR",
+        "score": 36.5,
+        "context": " to the SMOS single payload, the Microwave Imaging Radiometer using Aperture Synthesis (MIRAS), including the Payload Operations Centre and the Data Processing Ground Segment. ESA"
+      },
+      {
+        "trigger": " CIC",
+        "score": 44.25,
+        "context": " against Impunity in Guatemala (Comisi\u00f3n Internacional Contra la Impunidad en Guatemala, CICIG) investigated the case and in September facilitated the arrest of nine people,"
+      },
+      {
+        "trigger": "EF",
+        "score": 37.75,
+        "context": "\u23ceThe building was also home to the Ecole Francaise d'Extreme Orient (EFEO), during which time it became a museum to exhibit EFEO finds."
+      },
+      {
+        "trigger": "INA",
+        "score": 40.25,
+        "context": " National Institute of the AOC (Institut National des Appellations d\u2019Origine) (INAO) was confirmed by the then Minister for Agriculture, Mr Capus,"
+      },
+      {
+        "trigger": "OR",
+        "score": 38.5,
+        "context": " regarding the reality of LGBTIQ refugees and their particular needs. These are examples of the contexts in which the Organization for Refuge, Asylum, and Migration (OR"
+      }
+    ],
+    "promotes": [
+      " useStyles",
+      "Demografie",
+      "orianCalendar",
+      "enterOuterAlt",
+      "\u0012"
+    ],
+    "demotes": [
+      "Rhestr",
+      "\u0418\u0441\u043a\u04d9\u0440\u043c\u04d9\u043b\u04d9\u0440",
+      "none",
+      " broadly",
+      "None"
+    ]
+  },
+  {
+    "id": "8_828_7",
+    "layer": 8,
+    "ctx_idx": 7,
+    "influence_score": 0.3418571352958679,
+    "top_activations": [
+      {
+        "trigger": "VE",
+        "score": 27.88,
+        "context": " PDF - 2MB)\u23ceThe Victorian Early Years Learning and Development Framework (VEYLDF) has been developed by the Department of Education and Early Childhood Development"
+      },
+      {
+        "trigger": "FS",
+        "score": 29.62,
+        "context": " government. The cornerstone to this approach is Canada's Federal Sustainable Development Strategy (FSDS), which is an integrated, whole-of-government, results-"
+      },
+      {
+        "trigger": "SO",
+        "score": 25.62,
+        "context": " leap for droidkind.\u23ceThe Space Oriented Higashiosaka Leading Association (SOHLA), a satellite-manufacturing consortium in the Osaka area, has vowed to"
+      },
+      {
+        "trigger": "IF",
+        "score": 26.62,
+        "context": " agricultural growth, augmenting income of small farm holders and promoting exports.\u23cepatterns, determinants, and policy implications\u23ceInternational Food Policy Research Institute (IFPRI)"
+      },
+      {
+        "trigger": "UM",
+        "score": 25.62,
+        "context": " Center (FXBC) at the University of Medicine and Dentistry of New Jersey (UMDNJ) and the UCSF Center for HIV Information (CHI.)\u23ce"
+      }
+    ],
+    "promotes": [
+      " HttpNotFound",
+      "\")));\r",
+      "writeFieldEnd",
+      "principalColumn",
+      "\u51fa\u7248\u5e74"
+    ],
+    "demotes": [
+      " P\u00fablicas",
+      " con",
+      "arguments",
+      " nervosa",
+      "verwijspagina"
+    ]
+  },
+  {
+    "id": "15_7089_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.3872975707054138,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 56.75,
+        "context": " (typescript), and support for printing multi-media documents.\u23ceThe Andrew Toolkit (ATK) is a portable user-interface toolkit. It provides a dynamically-"
+      },
+      {
+        "trigger": " (",
+        "score": 60.25,
+        "context": " approaches that can handle the complexity of natural objects and materials.\u23ceDigital Materialization (DM) can loosely be defined as two-way direct communication or conversion between"
+      },
+      {
+        "trigger": " (",
+        "score": 54.25,
+        "context": " Classification for Pilot Geologic Sequestration Projects\u23ce- What is Geologic Sequestration (GS)?\u23ce- Why is EPA issuing guidance on CO2 injection?\u23ce"
+      },
+      {
+        "trigger": " (",
+        "score": 56.25,
+        "context": " fighter jets, commercial planes, and cars. Research is underway to develop additive manufacturing (AM) techniques for making end-use parts for cars and planes from aluminum"
+      },
+      {
+        "trigger": " (",
+        "score": 56.25,
+        "context": " used here as shorthand for the entire field of traditional knowledge (TK), genetic resources (GRs) and traditional cultural expressions (TCEs).\u23ceNegotiations"
+      }
+    ],
+    "promotes": [
+      " wireType",
+      "AlterField",
+      "queryInterface",
+      "^(@)",
+      " \u0641\u0631\u064a\u0628\u064a\u0633"
+    ],
+    "demotes": [
+      "LayoutStyle",
+      "\u30ea\u30c6\u30a3",
+      " pu",
+      " thuy\u1ebft",
+      "ularis"
+    ]
+  },
+  {
+    "id": "14_13599_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.2979910373687744,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 61.25,
+        "context": "ALPR)\u23ce- Automatic vehicle identification (AVI)\u23ce- Car plate recognition (CPR)\u23ce- License-plate recognition (LPR)\u23ce- Lecture"
+      },
+      {
+        "trigger": " (",
+        "score": 66.0,
+        "context": " tile mural project was completed under the supervision of our full-time Learning Through Art (LTA) teacher, Denise Gaudiano, so I asked for her"
+      },
+      {
+        "trigger": " (",
+        "score": 63.75,
+        "context": " (SICSA), Center for Advanced Materials (CAM), Institute for Space Systems Operations (ISSO), and the UH Space Physics Group.\u23ceExperts from each of"
+      },
+      {
+        "trigger": " (",
+        "score": 62.75,
+        "context": "<bos>Global Virtual Classroom\u23ceThe Global Virtual Classroom (GVC) is a collection of free, online educational activities and resources. It aims to complement the efforts of"
+      },
+      {
+        "trigger": " (",
+        "score": 63.75,
+        "context": " Street has always excelled. Now, SFC and Bank Street\u2019s Professional Development Office (PDO) are unveiling an online curriculum guide as a free resource for teachers everywhere"
+      }
+    ],
+    "promotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      ")++;",
+      ":\u2728",
+      " onCancelled",
+      " BoxFit"
+    ],
+    "demotes": [
+      "HtmlAttribute",
+      "StoryboardSegue",
+      "\u0ba9\u0bcd\u0ba9",
+      "mobileqq",
+      " $"
+    ]
+  },
+  {
+    "id": "15_7876_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.2612238824367523,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 65.0,
+        "context": "ment of Invention\" Award she received from the New Jersey Inventors Hall of Fame (NJIHoF) in \"October.\u23ceShe was one of only "
+      },
+      {
+        "trigger": "R",
+        "score": 58.0,
+        "context": "25\u23cebought from Sweden in 1952) and by the Royal Canadian Air Force (RCAF, 1\u23ceunit). The aircraf"
+      },
+      {
+        "trigger": "S",
+        "score": 54.5,
+        "context": ", Biswas says.\u23ceCalled a soft X-ray electrostatic precipitator (SXC ESP), the device used in the study is cylindrical with a 1"
+      },
+      {
+        "trigger": " F",
+        "score": 57.0,
+        "context": " were specifically designed to undergo a chemical reaction known as fluorescence resonance energy transfer, or FRET. Upon absorption of light, the system is predisposed to transfer that"
+      },
+      {
+        "trigger": "N",
+        "score": 78.0,
+        "context": "90 and Malaysia\u2019s formulation of the National Plan of Action for Children (NPA), the Social Welfare Department and UNICEF work, hand-in-hand"
+      }
+    ],
+    "promotes": [
+      "StoryboardSegue",
+      " \u0645\u0634\u064a\u0646",
+      "rungsseite",
+      " autorytatywna",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641"
+    ],
+    "demotes": [
+      "PhysRev",
+      "PhysRevD",
+      "BGP",
+      " Preguntas",
+      "isEnabled"
+    ]
+  },
+  {
+    "id": "18_5076_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.37884071469306946,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 61.0,
+        "context": " like a microphone and gustducin like its cord,\" Mosinger told ABC News.\u23ceNipura Chaudhari, a professor of biophysics and physiology"
+      },
+      {
+        "trigger": " N",
+        "score": 64.5,
+        "context": "<bos>orodrim is the Noldorin word for \"mountain range\".\u23ceAs the word was used in the compound name Thangorodrim (which survived in"
+      },
+      {
+        "trigger": " N",
+        "score": 61.0,
+        "context": "<bos>War and Peace\u23ceDuring the Second World War, NFB documentaries informed and inspired Canadians and audiences around the world. These documentaries offer a unique vantage point on"
+      },
+      {
+        "trigger": " N",
+        "score": 61.0,
+        "context": " Research Projects Agency (DARPA), developers of major technological advancements including computer networking and NLS, will be putting technology stemming from its High Energy Liquid Laser Area Defense"
+      },
+      {
+        "trigger": " N",
+        "score": 64.5,
+        "context": "10\u23ceCost, convenience, and cosmetics. These were the major concerns facing NRG Systems, Hinesburg, Vt., when the company decided to do something"
+      }
+    ],
+    "promotes": [
+      "ISupport",
+      " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+      " calendriers",
+      "ValueStyle",
+      "+#+#"
+    ],
+    "demotes": [
+      "UIControlState",
+      " />\\",
+      " og\u00f3le",
+      "jins",
+      "m\u00eame"
+    ]
+  },
+  {
+    "id": "19_1733_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.37508779764175415,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 66.0,
+        "context": "moop\u23ceCite This Page\u23ceiOS Learning Guide\u23ceKindle: Learning Guide\u23ceNook: Learning Guide\u23ceSony Reader: Learning Guide\u23ceThe House of the"
+      },
+      {
+        "trigger": " N",
+        "score": 68.0,
+        "context": "<bos>Adapted from the NCI Cancer Bulletin.Since they were first licensed nearly 50 years ago, birth control pills containing estrogen have prevented some 20"
+      },
+      {
+        "trigger": "N",
+        "score": 66.5,
+        "context": " Learning Guide\u23ceKindle: Learning Guide\u23ceKindle: Full Text + Learning Guide\u23ceNook: Learning Guide\u23ceSony Reader: Learning Guide\u23ceBest of the Web"
+      },
+      {
+        "trigger": " N",
+        "score": 68.5,
+        "context": " swift death\u2026 at least for a housefly. In a German cowshed, Natterer\u2019s bats eavesdrop on mating flies, homing in on"
+      },
+      {
+        "trigger": " N",
+        "score": 66.5,
+        "context": " while processing this directive] [an error occurred while processing this directive]\u23ceThe NCAR climate modeling groups propose an immediate focus on a climate system model (CSM"
+      }
+    ],
+    "promotes": [
+      " Cliquez",
+      " Liban",
+      "ielder",
+      " labios",
+      "PhysRevLett"
+    ],
+    "demotes": [
+      "IsPostBack",
+      "SharedDtor",
+      "\u4e0b\u8f7d\u9644\u4ef6",
+      "complexContent",
+      "RegressionTest"
+    ]
+  },
+  {
+    "id": "18_13950_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3984659016132355,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 34.25,
+        "context": " become keratinized\u23ceto form the hair cortex (Co) and surrounding hair cuticle (Hc) of\u23cethe hair shaft at the center of which is situated the"
+      },
+      {
+        "trigger": "J",
+        "score": 35.25,
+        "context": " in meeting its energy needs.\u23ceEngineer Al Ta'ani is also General Manager of Jordanian Renewable Energy Society (JRES).\u23ceEng. M. Al Ta"
+      },
+      {
+        "trigger": "D",
+        "score": 34.25,
+        "context": " and H-35 tanks, and two divisions cuirasses de r\u00e9serve (DCR), with B tanks and R-35 and FCM-3"
+      },
+      {
+        "trigger": " (",
+        "score": 39.25,
+        "context": " behind Black Mountain (BM) and through the notch directly beyond. Loma Prieta (LP) gave its name to the 1989 earthquake because the"
+      },
+      {
+        "trigger": " (",
+        "score": 41.75,
+        "context": " to explain ways work contributes to individuals and the community.\u23ceLife and Work Plan (LW)\u23ce- LW6.1 Examine effective practices such as responsible decision"
+      }
+    ],
+    "promotes": [
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902",
+      " OFDb",
+      "\ufeff<?",
+      "\ufeff#"
+    ],
+    "demotes": [
+      "dataflow",
+      " plea\u017fure",
+      "SOUNDBITE",
+      "ImageContext",
+      " handleMessage"
+    ]
+  },
+  {
+    "id": "19_3595_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.34029191732406616,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 56.5,
+        "context": " evidence about the crisis of learning. The establishment has tried to deny, deflect, and dismiss the evidence on learning. Eventually the Government of India agreed to participate in"
+      },
+      {
+        "trigger": " and",
+        "score": 44.0,
+        "context": " had already done for Christmas, Thanksgiving, and Halloween \u2014 and the results are delectable and ingenious\u23ce\"Cheers for Prelutsky, ingenious rhymster beloved by"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 44.5,
+        "context": " that they are positioned next to each other on the drive, improving performance speed.\u23cedesktop: A type of computer made up of a PC console, monitor,"
+      },
+      {
+        "trigger": "\u2022",
+        "score": 59.0,
+        "context": " use Insect repellents that contain DEET\u23ce\u2022 Drain any standing water\u23ce\u2022 Dress in long, loose and light-colored clothing and\u23ce\u2022 take extra"
+      },
+      {
+        "trigger": " Deccan",
+        "score": 55.0,
+        "context": "zeb authority Babayan become belief Bezels Bijapur century Chishti Chittick commentary Corbin Deccan Delhi dhikr disciple discussion divine doctrine Eckhart emanation Essence"
+      }
+    ],
+    "promotes": [
+      "DllImport",
+      " dehydrogenase",
+      " Dorsal",
+      "DC",
+      " dorsal"
+    ],
+    "demotes": [
+      "\u092a\u092f\u093e",
+      "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u044f",
+      " viewType",
+      "gop",
+      "Carreira"
+    ]
+  },
+  {
+    "id": "15_14938_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.269557386636734,
+    "top_activations": [
+      {
+        "trigger": "C",
+        "score": 48.75,
+        "context": " lying on the seabed by Jasmine Santana, an instructor for Catalina Island Marine Institute (CIMI). As she was snorkeling, she was startled by the fish until she"
+      },
+      {
+        "trigger": "N",
+        "score": 53.5,
+        "context": "<bos>The National Institute of General Medical Sciences (NIGMS) and the Indian Health Service (IHS) are collaborating on a new program designed to promote,"
+      },
+      {
+        "trigger": "P",
+        "score": 48.75,
+        "context": ").\u23ceUsing brain scans of human volunteers, researchers at the Princeton Neuroscience Institute (PNI) found that updating goals takes place in a region known as the prefrontal"
+      },
+      {
+        "trigger": "G",
+        "score": 48.0,
+        "context": " accomplish this the body first converted chromium into a large chemical called glucose tolerance factor (GTF). Intact GTF was thought to be present in certain foods,"
+      },
+      {
+        "trigger": "P",
+        "score": 49.75,
+        "context": " beds make Saba Bank a prime candidate for designation as a Particularly Sensitive Sea Area (PSSA) under the International Maritime Organization (IMO).\u23ceMark Littler,"
+      }
+    ],
+    "promotes": [
+      "ZING",
+      " CreateTagHelper",
+      " Lilly",
+      "NameInMap",
+      "PhysRevD"
+    ],
+    "demotes": [
+      "rungsseite",
+      " Wiktionnaire",
+      " kasarigan",
+      "codecs",
+      "ftagPool"
+    ]
+  },
+  {
+    "id": "20_1555_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.3861222267150879,
+    "top_activations": [
+      {
+        "trigger": "tern",
+        "score": 62.75,
+        "context": " to learn more about the differences between RGB and CYMK, I suggest reading Printernational\u2019s explanation, it is brief, but to the point.\u23ce"
+      },
+      {
+        "trigger": "Den",
+        "score": 54.75,
+        "context": "by Ben Kiernan\u23ceGenocide and Resistance in Southeast Asia: Documentation,\u23ceDenial and Justice in Cambodia and East Timor (Transaction, 200"
+      },
+      {
+        "trigger": " micron",
+        "score": 56.75,
+        "context": " in food which can affect this conversion (i.e., fat, fiber, micronutrients) and hopefully how to maximize it. Five different cell lines available in"
+      },
+      {
+        "trigger": "ton",
+        "score": 54.75,
+        "context": " fruit and vegetable every day, because each color contains different plant nutrients, or phytonutrients, which act as antioxidants to protect your cells and also have specific health"
+      },
+      {
+        "trigger": "yn",
+        "score": 56.75,
+        "context": " of living cells. Many viruses are little more than organized agglomerations of deoxynucleoproteins. Many specific RNA nucleoproteins are also known; they"
+      }
+    ],
+    "promotes": [
+      "ews",
+      "bsp",
+      "atural",
+      "uevo",
+      "ew"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      "ValueStyle",
+      "QMetaType",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+      " oprot"
+    ]
+  },
+  {
+    "id": "19_4997_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.3037530779838562,
+    "top_activations": [
+      {
+        "trigger": "K",
+        "score": 42.5,
+        "context": "=68) to assess their Knowledge, Attitudes, Beliefs, and Behaviors (KABB) as they relate to fetal alcohol syndrome (FAS). By the end"
+      },
+      {
+        "trigger": "M",
+        "score": 43.75,
+        "context": "Professional Development Opportunities:\u23ce- Middle-School Students in Texas: Algebra Ready (MSTAR): An Introduction (5-8)\u23ce- Elementary Students in Texas"
+      },
+      {
+        "trigger": "D",
+        "score": 40.75,
+        "context": "<bos>The Desegregation of Virginia Education (DOVE) project, hosted by Old Dominion University Libraries, recently received a $2,000 grant from"
+      },
+      {
+        "trigger": "R",
+        "score": 36.75,
+        "context": "<bos>Consensus-driven predictions and outlooks\u23ceRegional Climate Outlook Forums (RCOFs)\u23ceCreating a climate forecast is not an easy task, and not all"
+      },
+      {
+        "trigger": "F",
+        "score": 46.75,
+        "context": " use to make smart financial decisions as adults.\u23ceF.E.T.C.H. is set in a dog park where students manage the finances of"
+      }
+    ],
+    "promotes": [
+      "__':",
+      "featureID",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+      "########.",
+      " estekak"
+    ],
+    "demotes": [
+      " CTS",
+      " TextStyle",
+      " referenties",
+      " Cs",
+      "iastes"
+    ]
+  },
+  {
+    "id": "20_7740_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.35500839352607727,
+    "top_activations": [
+      {
+        "trigger": "C",
+        "score": 41.75,
+        "context": "<bos>[Sca-cooks] The purpose of SCA-Cooks from Isabella de la Gryffin and a Culinary Question\u23cet.d.decker at world"
+      },
+      {
+        "trigger": "C",
+        "score": 38.5,
+        "context": " both ecological and human communities.\u23ceHomepage for Upper Midwest Environmental Science Center, LaCrosse, Wisconsin, with links to data library, geographical search, science programs"
+      },
+      {
+        "trigger": "Z",
+        "score": 56.5,
+        "context": " foozhzh foo##1 foozhzh1 fooZ fooZZ :+ ZCzp () Z0T 0-tuple (,,,,) Z5"
+      },
+      {
+        "trigger": "X",
+        "score": 39.75,
+        "context": "26 are the prices of XC and XR units, repsectively.\u23ceX is the multiplication factor that tells us the real numbers of units sold, in"
+      },
+      {
+        "trigger": " S",
+        "score": 39.0,
+        "context": "\u23ceDisplay options for sense: (gloss) \"an example sentence\"\u23ce- S: (n) burning, combustion (the act of burning something) \""
+      }
+    ],
+    "promotes": [
+      "Quo",
+      "\u0430\u0440\u0430\u043a",
+      "tus",
+      "styleType",
+      "stination"
+    ],
+    "demotes": [
+      "T",
+      "S",
+      "R",
+      "D",
+      "L"
+    ]
+  },
+  {
+    "id": "17_14853_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.33557426929473877,
+    "top_activations": [
+      {
+        "trigger": "CM",
+        "score": 47.0,
+        "context": "<bos>Researchers at the University of Minnesota\u2019s Center for Magnetic Resonance Research (CMRR) have found a small population of neurons that is involved in measuring time,"
+      },
+      {
+        "trigger": "YP",
+        "score": 46.75,
+        "context": " these fatalities represented 10 percent of the total years of potential life lost (YPLL) during this period (figure 63). YPLL, which"
+      },
+      {
+        "trigger": "DV",
+        "score": 47.5,
+        "context": "<bos>The Division of Vector-Borne Diseases (DVBD) strives to protect the nation from bacterial and viral diseases transmitted by mosquitoes, ticks and fleas. Some"
+      },
+      {
+        "trigger": "CH",
+        "score": 47.75,
+        "context": " from local, national to global scales.\u23ceCoupled Human and Natural Systems(CHANS) are integrated systems in which humans and natural components interact. CHANS"
+      },
+      {
+        "trigger": "MR",
+        "score": 48.5,
+        "context": " Vietnamese Mekong Delta.\u201d The workshop was part of the Mekong Region Water Dialogues (MRWD), a project supported by the Ministry of Foreign Affairs of Finland to address"
+      }
+    ],
+    "promotes": [
+      "\u00e9valuateur",
+      "OGND",
+      " nahilalakip",
+      "ThroughAttribute",
+      "Hochspringen"
+    ],
+    "demotes": [
+      "expandindo",
+      "}),\r",
+      "}}/>",
+      "]`",
+      "ochim"
+    ]
+  },
+  {
+    "id": "21_5066_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.29602116346359253,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 125.0,
+        "context": " and will likely continue to do so into the foreseeable future.\u23ceThe Green Grid (www.thegreengrid.org) is an organization dedicated to helping"
+      },
+      {
+        "trigger": " (",
+        "score": 100.0,
+        "context": "The Canadian Space Agency (CSA) is providing the Webb's Fine Guidance Sensor (FGS), as well as one of the telescope's four science instruments"
+      },
+      {
+        "trigger": " (",
+        "score": 110.0,
+        "context": " diabetes stay as healthy as possible.\u23ceThis month the American Geriatrics Society (AGS) published a new guideline (The American Geriatrics Society Guidelines for"
+      },
+      {
+        "trigger": "'",
+        "score": 97.0,
+        "context": " I\u23ceprobably wouldn't be able to do it as fast.\"\u23ceBen's second grade teacher wasn't ready to let him explore algebra because he"
+      },
+      {
+        "trigger": " (",
+        "score": 105.0,
+        "context": "\u23ceInterior Versus Exterior Routing Protocols\u23ceRouting protocols can be categorized as interior gateway protocols (IGP) or exterior gateway protocols (EGP). IGPs are meant"
+      }
+    ],
+    "promotes": [
+      " EG",
+      " mg",
+      " AG",
+      "MG",
+      "PMG"
+    ],
+    "demotes": [
+      "UnsafeEnabled",
+      "cookieParser",
+      ".\")\r",
+      " GenerationType",
+      " GMC"
+    ]
+  },
+  {
+    "id": "16_8045_7",
+    "layer": 16,
+    "ctx_idx": 7,
+    "influence_score": 0.3371589779853821,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 72.0,
+        "context": "s (WHO) FluNet, part of its Global Influenza Surveillance and Response System (GISRS), and the National Infrastructure Simulation and Analysis Center\u2019s (NIS"
+      },
+      {
+        "trigger": " (",
+        "score": 83.5,
+        "context": ", The Wall Street Journal reports. Research on the Driver Alcohol Detection System for Safety (DADSS) is progressing more quickly than expected, and could be available within"
+      },
+      {
+        "trigger": " (",
+        "score": 77.0,
+        "context": " included participants from the Museum\u2019s after-school programs and Science Research Mentoring Program (SRMP). Their projects shed new light on the rich biodiversity of even the"
+      },
+      {
+        "trigger": " (",
+        "score": 76.5,
+        "context": " conjunction with other physiological instruments, in particular the Muscle Atrophy Research and Exercise System (MARES). PEMS will be checked out and commissioned in the US Laboratory"
+      },
+      {
+        "trigger": " (",
+        "score": 73.0,
+        "context": " attended this conference through the support of CJS and the Center for International Business Education (CIBE) at the University of Michigan.\u23ceBuddhism in Book of"
+      }
+    ],
+    "promotes": [
+      "rags",
+      " estekak",
+      " Eld",
+      " Centrale",
+      "<>(\""
+    ],
+    "demotes": [
+      "PropertyChanging",
+      "parsedMessage",
+      "SerializedSize",
+      "VIAF",
+      " Italijanski"
+    ]
+  },
+  {
+    "id": "17_7767_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3849186599254608,
+    "top_activations": [
+      {
+        "trigger": "mur",
+        "score": 45.0,
+        "context": ", Cynarctoides lemur, and Cormocyon cf. C. copei. Coombs et al. (2001) referred the"
+      },
+      {
+        "trigger": " Rand",
+        "score": 38.5,
+        "context": ". Norris and his brother William designed and built several houses in early Charleston, including Rand House, which stood next door to the Hubbard House for more than one hundred"
+      },
+      {
+        "trigger": "dsk",
+        "score": 43.5,
+        "context": "<bos>Tydskrif vir Letterkunde\u23ceversi\u00f3n impresa ISSN 0041-476X\u23ceDEDEREN, Jean-Marie. Between women"
+      },
+      {
+        "trigger": " Krom",
+        "score": 48.0,
+        "context": " of the Prince-Bishop of Olomouc who maintained an excellent Kapelle at his KromY\u00ed\u017e castle.\u23ce1672 - He composed new music for large"
+      },
+      {
+        "trigger": " Ata",
+        "score": 46.25,
+        "context": " the Andes running close to the coast create a natural air conditioner that has made the Atacama desert of Northern Chile the driest place in the world, and deserts"
+      }
+    ],
+    "promotes": [
+      " \u017feveral",
+      " my\u017felf",
+      "\u24e7",
+      " Majefty",
+      " Efq"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "<eos>",
+      ".",
+      "zo"
+    ]
+  },
+  {
+    "id": "22_14263_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.27975958585739136,
+    "top_activations": [
+      {
+        "trigger": "c",
+        "score": 54.5,
+        "context": " ?)\u23ceb) a change: become, get or grow, turn;\u23cec) an attitude: stay, remain, stand, keep ?\u23ceAnd what"
+      },
+      {
+        "trigger": "(",
+        "score": 55.5,
+        "context": " of livestock, sold for commercial profit, or used for other purposes; and\u23ce(D)other marketable or traditionally used materials authorized for removal from Indian agricultural lands"
+      },
+      {
+        "trigger": " c",
+        "score": 78.5,
+        "context": "\u23ce3. Spined soldier bugs c) Aphids\u23ce4. Cabbage loopers d) Flowers, fruit and vegetables\u23ceAnswers: 1-c ("
+      },
+      {
+        "trigger": "c",
+        "score": 55.0,
+        "context": " to have a family.\u23ce(b) When she leave college.\u23ce(c) When she stops being a carer.\u23ce(d) When she retires"
+      },
+      {
+        "trigger": "C",
+        "score": 53.0,
+        "context": "s ability to think analytically in the discipline.\u23ceB. American federalism\u23ceC. State constitutions\u23ceD. Parties and elections in the states\u23ceE."
+      }
+    ],
+    "promotes": [
+      " DD",
+      "DP",
+      " d",
+      " DP",
+      " D"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "SequentialGroup",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "+#+#",
+      " >=\","
+    ]
+  },
+  {
+    "id": "17_2413_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3464125692844391,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 74.0,
+        "context": "<bos>Mammoth Furnace/ Iron made in Kentucky\u23ceN 36\u00b0 59.654 W 088\u00b0 05."
+      },
+      {
+        "trigger": "N",
+        "score": 73.5,
+        "context": "<bos>Lodes of Gold in Hatcher Pass, Alaska\u23ceN 61\u00b0 38.000 W 140\u00b0 0"
+      },
+      {
+        "trigger": "N",
+        "score": 71.5,
+        "context": "moop\u23ceCite This Page\u23ceiOS Learning Guide\u23ceKindle: Learning Guide\u23ceNook: Learning Guide\u23ceSony Reader: Learning Guide\u23ceBest of the Web"
+      },
+      {
+        "trigger": "N",
+        "score": 72.0,
+        "context": " Learning Guide\u23ceKindle: Learning Guide\u23ceKindle: Full Text + Learning Guide\u23ceNook: Learning Guide\u23ceSony Reader: Learning Guide\u23ceBest of the Web"
+      },
+      {
+        "trigger": "N",
+        "score": 76.0,
+        "context": ". (Ms. 7).\u23ceAlbrecht Durer. Apocalypse.\u23ceNuremberg: A. Durer, 1511.\u23ceThe"
+      }
+    ],
+    "promotes": [
+      "R\u00e8",
+      "ohjel",
+      "\u24e7",
+      "mergeFrom",
+      "ThroughAttribute"
+    ],
+    "demotes": [
+      "itability",
+      "ab",
+      " odkazy",
+      "ich",
+      " comuni"
+    ]
+  },
+  {
+    "id": "20_5368_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.3220127820968628,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 40.75,
+        "context": " parasitic diseases. In 1999, some four million people in Australia's largest city, Sydney, were ordered not to drink tap water for more"
+      },
+      {
+        "trigger": " (",
+        "score": 47.5,
+        "context": " and for his PhD. He also won the Western Area Association of Grad Studies Award (an association of American and Canadian Universities from the prairies) and the University of"
+      },
+      {
+        "trigger": " (",
+        "score": 42.5,
+        "context": " numbness, tingling, and loss of nerve sensitivity. The hand-arm vibration syndrome (HAVS) is a painful and potentially disabling condition of the fingers, hands"
+      },
+      {
+        "trigger": " (",
+        "score": 45.5,
+        "context": " flew Thursday and used the 50-channel MODIS/ASTER Airborne Simulator (MASTER) digital imaging system. We are working to create images from the IR"
+      },
+      {
+        "trigger": " (",
+        "score": 47.5,
+        "context": " pollution or other human interference. This is carried out through the Ramsar Advisory Missions (RAM), a technical assistance mechanism formally adopted by Recommendation 4.7 of"
+      }
+    ],
+    "promotes": [
+      "EAS",
+      "FA",
+      " DAC",
+      " IAC",
+      " DA"
+    ],
+    "demotes": [
+      "URLException",
+      " Kirchner",
+      " Bumi",
+      " typelib",
+      "phemy"
+    ]
+  },
+  {
+    "id": "21_16017_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3763503134250641,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 52.75,
+        "context": " a single step process. It is based on a simple, inexpensive flame aerosol reactor (FLAR) and consists of four mass flow controllers to regulate process gases,"
+      },
+      {
+        "trigger": " (",
+        "score": 54.0,
+        "context": "<bos>Child and Adolescent Research and Education\u23ceThe Child and Adolescent Research and Education (CARE) Program is dedicated to work with children and families involved with protective services."
+      },
+      {
+        "trigger": "(",
+        "score": 54.5,
+        "context": " Documentazione Archeologica\u23cevai al contenuto\u23ceThe Carta Archeologica di Roma( Archaeological Map of Rome)was born in the context of the publication of the"
+      },
+      {
+        "trigger": " (",
+        "score": 58.0,
+        "context": " onto the addresses of the underlying network. The mechanism used is the Address Resolution Protocol (ARP). In fact, ARP is not confined to Ethernet or Token Ring,"
+      },
+      {
+        "trigger": " (",
+        "score": 51.0,
+        "context": " erosion research will begin publication in 2009.\u23ceAgricultural Research Service (ARS) soil scientist Ted M. Zobeck is the president-elect"
+      }
+    ],
+    "promotes": [
+      " ba\u011flant\u0131lar",
+      " RA",
+      "ara",
+      " hablaba",
+      " snippetHide"
+    ],
+    "demotes": [
+      "AddTagHelper",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "XmlSchema",
+      " createState",
+      "ATUS"
+    ]
+  },
+  {
+    "id": "21_7216_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.29388493299484253,
+    "top_activations": [
+      {
+        "trigger": " n",
+        "score": 102.0,
+        "context": " that it has not been pierced at all.\u23ceHe forced his neck into a noose, To show his play at fast and loose; And when he chanced"
+      },
+      {
+        "trigger": " n",
+        "score": 116.0,
+        "context": " one has ever proved, for example, that pi does not turn into nothing but nines and zeros, spattered to infinity in some peculiar arrangement. If we"
+      },
+      {
+        "trigger": " n",
+        "score": 100.0,
+        "context": " launce lea lean lear learn leu luce lucern lucre luna lunar lune lure na nacre nae narc ne near neural nu nurl race rale ran r"
+      },
+      {
+        "trigger": " n",
+        "score": 103.0,
+        "context": "<bos>Muddy Creek is nondescript, a narrow stream trickling through the sagebrush steppe of southern Wyoming. But like many Western waterways, it carries selenium"
+      },
+      {
+        "trigger": " n",
+        "score": 102.0,
+        "context": " of the United Kingdom in doormats. In this illuminating piece on just how may noughts a trillion has, Auntie notes that Blighty's 2"
+      }
+    ],
+    "promotes": [
+      "ill",
+      "enn",
+      "ti",
+      "ri",
+      "n"
+    ],
+    "demotes": [
+      " disambiguazione",
+      " Roskov",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      " CiNii",
+      " BoxFit"
+    ]
+  },
+  {
+    "id": "23_10674_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3184731602668762,
+    "top_activations": [
+      {
+        "trigger": "n",
+        "score": 57.75,
+        "context": " questions that require the use of a calculator. However, an online scientific calculator (nongraphing) is available to candidates during the examination as part of the"
+      },
+      {
+        "trigger": "n",
+        "score": 70.0,
+        "context": "|[This is a MPIWG MPDL language technology service]|\u23ceIntroduction (n.) The act of introducing, or bringing to notice.\u23ceIntroduction (n"
+      },
+      {
+        "trigger": " n",
+        "score": 63.25,
+        "context": "t *kd, uintptr_t addr, void *buf, size_t nbytes);\u23cessize_t kvm_write(kvm_t *kd"
+      },
+      {
+        "trigger": "n",
+        "score": 59.25,
+        "context": ". All rights reserved.\u23ce'Arrow Arithmetic 2' printed from http://nrich.maths.org/\u23ceOne good way to realise a twizzle"
+      },
+      {
+        "trigger": "n",
+        "score": 54.75,
+        "context": ",W] = tfestimate(x,y,window,noverlap,nfft)\u23ce[Txy,F] = tfestimate(x,"
+      }
+    ],
+    "promotes": [
+      "lo",
+      "find",
+      "hu",
+      "ho",
+      "reg"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      "rrggbb",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " NSCoder",
+      "SharedDtor"
+    ]
+  },
+  {
+    "id": "22_5863_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.3018568158149719,
+    "top_activations": [
+      {
+        "trigger": " N",
+        "score": 110.5,
+        "context": "10\u23ceCost, convenience, and cosmetics. These were the major concerns facing NRG Systems, Hinesburg, Vt., when the company decided to do something"
+      },
+      {
+        "trigger": " N",
+        "score": 111.0,
+        "context": " their power comes from? Make them earn the electricity with their legs.\u23ceRecent NAU environmental engineering graduate Marilla Lamb and a group of other engineering students had"
+      },
+      {
+        "trigger": " N",
+        "score": 110.5,
+        "context": "<bos>Bill Scanlon, NREL\u23ceJanuary 02, 2013 | 3 Comments\u23ceIt takes outside-the-box thinking to"
+      },
+      {
+        "trigger": " N",
+        "score": 109.0,
+        "context": "<bos>Garden Talk: August 25, 2011\u23ceFrom NGA Editors\u23ceNative Bee Basics\u23ceNative bees are important and often under-"
+      },
+      {
+        "trigger": " N",
+        "score": 108.0,
+        "context": "<bos>Wildlife Damage Management\u23ceBrown Treesnake Research at NWRC\u23ceTrapping is central to the control activities carried out\u23ceon Guam, yet it is only"
+      }
+    ],
+    "promotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " Efq",
+      " autorytatywna",
+      "Personensuche",
+      " \u0643\u0648\u0645\u0648\u0646\u0632"
+    ],
+    "demotes": [
+      " ",
+      " po",
+      " var",
+      " \u201c",
+      " \""
+    ]
+  },
+  {
+    "id": "23_972_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.2669580280780792,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 56.75,
+        "context": "- Play rhyming word games with your child.\u23ce(bat, rat, hat, sat)\u23ce- Sing songs and mother goose rhymes with your child.\u23ce"
+      },
+      {
+        "trigger": "ho",
+        "score": 57.25,
+        "context": ", its MetroHealth Service Point or register online at http://www.cuyahogalibrary.org.\u23ceHow to Play: Children, teens and adults"
+      },
+      {
+        "trigger": "2",
+        "score": 69.0,
+        "context": " the White House's support for this program. The total allocation for FY 2009 is $250 million.\u23ceThe single most important"
+      },
+      {
+        "trigger": " (",
+        "score": 66.5,
+        "context": "<bos>Child and Adolescent Research and Education\u23ceThe Child and Adolescent Research and Education (CARE) Program is dedicated to work with children and families involved with protective services."
+      },
+      {
+        "trigger": " to",
+        "score": 52.75,
+        "context": "ing to go out again,\u2019\u23ceThese boys with old, scared faces, learning to walk,\u23ceThey'll soon forget their haunted nights; their cowed"
+      }
+    ],
+    "promotes": [
+      " Bann",
+      "dafx",
+      " createState",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "mybatisplus"
+    ],
+    "demotes": [
+      " Sok",
+      "addCriterion",
+      " Xiu",
+      " Az",
+      "\uff21"
+    ]
+  },
+  {
+    "id": "23_8141_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3289196193218231,
+    "top_activations": [
+      {
+        "trigger": "SIC",
+        "score": 65.5,
+        "context": " colonization. The UH programs include the Sasakawa International Center for Space Architecture (SICSA), Center for Advanced Materials (CAM), Institute for Space Systems Operations ("
+      },
+      {
+        "trigger": " (",
+        "score": 59.0,
+        "context": " blood pressure in the lungs is called pulmonary hypertension (PH) or pulmonary arterial hypertension (PAH). PAH is a chronic and life-changing disease that can lead to"
+      },
+      {
+        "trigger": "SP",
+        "score": 61.0,
+        "context": " by the use of a multi-element Sparsely Populated Volumetric Array (SPVA). The SPVA uses interferometric processing to provide spatial gain,source"
+      },
+      {
+        "trigger": " (",
+        "score": 63.5,
+        "context": "<bos>Lightning Mapping Array (LMA)\u23ceThe SPoRT program works with three total lightning networks. These include the Lightning Mapping Arrays in North Alabama and Washington,"
+      },
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": "04 the Association changed its name to the School Nutrition Association.\u23ceSixty years later the 55,000 members of the School Nutrition Association remain"
+      }
+    ],
+    "promotes": [
+      " SAA",
+      "JA",
+      "GA",
+      "HA",
+      "FA"
+    ],
+    "demotes": [
+      "PostExecute",
+      " Signalez",
+      "\u0418\u0437\u0442\u043e\u0447\u043d\u0438\u0446\u0438",
+      "mitives",
+      " Bel\u00e9n"
+    ]
+  },
+  {
+    "id": "24_289_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3075034022331238,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 81.5,
+        "context": "KPs\", \"panics\" or compared to a BSOD - Blue Screen of Death on Windows operating systems. To recover from a kernel panic you will need"
+      },
+      {
+        "trigger": "lau",
+        "score": 68.5,
+        "context": " Claudio (Italian), Klaudijs (Latvian), Klaudia, Klaudiusz (Polish), Cl\u00e1udia, Cl\u00e1udio (Portuguese),"
+      },
+      {
+        "trigger": "atin",
+        "score": 70.5,
+        "context": " is measured in MCUs (milk clotting units) or GDUs (gelatin dissolving units). One GDU equals approximately 1.5 MCU. Strong"
+      },
+      {
+        "trigger": "-",
+        "score": 94.5,
+        "context": "one or growth-regulating weedkillers (such as 2,4-D from lawn weedkillers or rough grassland weedkillers like Vitax"
+      },
+      {
+        "trigger": " care",
+        "score": 80.0,
+        "context": " MD, developed a program called COPE-D (the Collaborative Oncology Program to Enhance Depression care). Their work was motivated by the evidence that cancer patients who also"
+      }
+    ],
+    "promotes": [
+      "Delivered",
+      " Delay",
+      " Dessert",
+      " Dilution",
+      " Deposition"
+    ],
+    "demotes": [
+      "TestingModule",
+      "nativeElement",
+      "PrototypeOf",
+      "webElementGuid",
+      "apimachinery"
+    ]
+  },
+  {
+    "id": "23_1586_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.35218220949172974,
+    "top_activations": [
+      {
+        "trigger": " O",
+        "score": 49.75,
+        "context": " for a digital preservation program. TDR embraces OAIS and demonstrates what adhering to OAIS will mean for an institution.\u23ceThe second document is the Reference Model"
+      },
+      {
+        "trigger": " L",
+        "score": 49.75,
+        "context": "-time daily rainfall and temperature observations and forecasts at a centralized location to provide easy access for the LCCs, regional organizations and international agencies such as FAO."
+      },
+      {
+        "trigger": " I",
+        "score": 48.75,
+        "context": " The guidance expands upon earlier guidance for these settings by providing a menu of tools that IHE and health officials can choose from based on conditions in their area. It"
+      },
+      {
+        "trigger": " C",
+        "score": 50.25,
+        "context": " water-quality improvement projects. In 1992, some states' CWSRF programs began providing loans for agricultural pollution projects. These programs use federal"
+      },
+      {
+        "trigger": " H",
+        "score": 47.75,
+        "context": ") vitamin A program that began with an evaluation in 1973. HKI-Indonesia has since continued to work in close collaboration with the GOI"
+      }
+    ],
+    "promotes": [
+      " ",
+      "x",
+      "<bos>",
+      "b",
+      "\u23ce"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "AddTagHelper",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " my\u017felf",
+      "BibitemShut"
+    ]
+  },
+  {
+    "id": "24_406_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.350764662027359,
+    "top_activations": [
+      {
+        "trigger": " kab",
+        "score": 74.0,
+        "context": " to fix Mexican salsa or guacamole, or a Middle Eastern yogurt sauce for your lamb kabobs, there the lacy, sweetly pungent leaves would be, ready to"
+      },
+      {
+        "trigger": "sc",
+        "score": 105.0,
+        "context": "1-855. 10.1016/j.scitotenv.2009.10.04"
+      },
+      {
+        "trigger": "\u0633\u0628",
+        "score": 114.0,
+        "context": "<bos>\u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0628\u0627\u0644\u0627\u0646\u062c\u0644\u064a\u0632\u064a , \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0639\u0646 \u0634\u0643\u0633\u0628\u064a\u0631 \u0628\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0627\u0646\u062c\u0644\u064a\u0632\u064a\u0629 , \u0645\u062c\u0645\u0648\u0639\u0629 \u0645\u0639\u0644\u0648\u0645\u0627\u0646 \u0639\u0646\u0647 \u0634\u0643\u0633\u0628\u064a\u0631 \u0628\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0627\u0646\u062c\u0644\u064a\u0632\u064a\u0629"
+      },
+      {
+        "trigger": " paink",
+        "score": 75.0,
+        "context": " stark new warning for people who have had a heart attack and continue to use popular painkillers like Advil (ibuprofen) or Celebrex (celecox"
+      },
+      {
+        "trigger": "ab",
+        "score": 84.0,
+        "context": " are easier and more efficient.\u23ceBetter fuel efficiency and air quality\u23ceWhere roundabouts replace signals, idling decreases which reduces vehicle emissions and fuel consumption by "
+      }
+    ],
+    "promotes": [
+      ".",
+      "\u23ce\u23ce",
+      " ",
+      "\u23ce",
+      "<eos>"
+    ],
+    "demotes": [
+      " Efq",
+      " it\u017felf",
+      "^(@)",
+      " my\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ]
+  },
+  {
+    "id": "24_3170_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3725220263004303,
+    "top_activations": [
+      {
+        "trigger": "\u2019",
+        "score": 46.0,
+        "context": " \\\u2019re-tr\u00f4-\u2019fit, \u2018re-tr\u00f4-\u2019fit\\\u23ceFunction: transitive verb\u23ce1 : to furnish (as a"
+      },
+      {
+        "trigger": ",",
+        "score": 55.25,
+        "context": " Clean, COLLABORATION, Comfortable, Commitment, Common-sense, Communicative, Community, COMPASSION, Compliments, Compromising, Confidence, Conf"
+      },
+      {
+        "trigger": "\u00b7",
+        "score": 59.25,
+        "context": " glue]|\u23ceagglutinate ag\u00b7glu\u00b7ti\u00b7nate (\u0259-gl\u014d\u014dt'n-\u0101t')\u23cev. ag\u00b7glu"
+      },
+      {
+        "trigger": " to",
+        "score": 52.25,
+        "context": ", i.e. if I type begni, Word will change it to \u201cbegin\u201d as soon as I hit a trigger (space bar, period,"
+      },
+      {
+        "trigger": " peak",
+        "score": 52.25,
+        "context": " knee na nae nan nap nape ne neap nee neep nene pa pan pane panne pe pea peak pean pee peek peen pekan peke pen penna"
+      }
+    ],
+    "promotes": [
+      "seamn\u0103",
+      " femininos",
+      " avoient",
+      " r\u00e9centes",
+      " r\u00e9cents"
+    ],
+    "demotes": [
+      " Rey",
+      " Bes",
+      " Lei",
+      " Adu",
+      " Aron"
+    ]
+  },
+  {
+    "id": "24_4707_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.2871321737766266,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 203.0,
+        "context": " fruit, Spondias dulcis\u23ceGNU Webster's 1913\u23ce- The fruit of a Polynesian anacardiaceous tree (Spondias"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 204.0,
+        "context": "lemie, colmey, coal whiting, etc. See pollock.\u23ce- n. The beshow or candlefish of Alaska.\u23ce- n"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 194.0,
+        "context": " Math FAQ:\u23cecalendar & days\u23ceof the week\u23ce3D and higher\u23ceBrowse Middle School Measurement\u23ceStars indicate particularly interesting answers or\u23cegood places to"
+      },
+      {
+        "trigger": "-",
+        "score": 189.0,
+        "context": " world file.\u23ceWhen this file is present, ArcView performs the image-to-world\u23cetransformation. The image-to-world transformation is a six"
+      },
+      {
+        "trigger": " \u201c",
+        "score": 189.0,
+        "context": " in warding off mosquito bites.\u23ceThe efficacy of the isolated compound\u2014called \u201ccallicarpenal\u201d\u2014was affirmed through tests simulating human skin. But these"
+      }
+    ],
+    "promotes": [
+      "e\u017f",
+      " d\u00e9tru",
+      "CHREIB",
+      "f\u00f6ren",
+      "\u2003\u2003("
+    ],
+    "demotes": [
+      " C\u00e6sar",
+      " Sopho",
+      " Phoen",
+      " Athenians",
+      " Confucian"
+    ]
+  },
+  {
+    "id": "23_4519_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.30934959650039673,
+    "top_activations": [
+      {
+        "trigger": " Gra",
+        "score": 65.0,
+        "context": "Before the presence of Roman leader there is conflagration.\u23ceThe son of Gradd, of fluent speech, retaliated,\u23ceCymry burning:"
+      },
+      {
+        "trigger": "ib",
+        "score": 65.0,
+        "context": " Pass\u23ceEssay on the Calendar\u201d (Hebrew title: Ma\u02beamar ha\u02bfibur).\u23ceThe first of Maimonides\u2019 major works, begun at"
+      },
+      {
+        "trigger": " Cre",
+        "score": 72.0,
+        "context": " a high-risk group, or who have a family history of Ellis-van Creveld syndrome.\u23ceChad Haldeman-Englert, MD, Wake Forest"
+      },
+      {
+        "trigger": "au",
+        "score": 66.5,
+        "context": ", if he did know it, that he did\u23cenot know what he was doing was wrong.\"\u23ceThe McNaughton rule became the standard for insanity in"
+      },
+      {
+        "trigger": " cot",
+        "score": 68.0,
+        "context": "eland: Let's talk about the difference between a recession and a cotnraciton. Because this is what your article was about and I think a"
+      }
+    ],
+    "promotes": [
+      " VizieR",
+      "\u00f1ores",
+      " TextAppearance",
+      "\u00f1ora",
+      " \u0633\u0643\u0627\u0646\u064a\u0629"
+    ],
+    "demotes": [
+      "\u00e6a",
+      "hematical",
+      "igenous",
+      "ine\u017fs",
+      "nicity"
+    ]
+  },
+  {
+    "id": "24_5209_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3952300548553467,
+    "top_activations": [
+      {
+        "trigger": " N",
+        "score": 103.0,
+        "context": "<bos>Push for No New Nukes\u23ceNuclear power is neither safe nor clean. There is no such thing as a \"safe\" dose of radiation and just because"
+      },
+      {
+        "trigger": " N",
+        "score": 106.0,
+        "context": " in a warm fuzzy blanket. And the same goes for that first mouthful of a Natchitoches meat pie, or of that tamale pie recipe that\u2019"
+      },
+      {
+        "trigger": "N",
+        "score": 106.0,
+        "context": " Learning Guide\u23ceKindle: Learning Guide\u23ceKindle: Full Text + Learning Guide\u23ceNook: Learning Guide\u23ceBest of the Web\u23ceTable of Contents\u23ceAP"
+      },
+      {
+        "trigger": "n",
+        "score": 111.0,
+        "context": "\"Web 2.0\" met that test this week, as did \"n00b\" (word 999,998)."
+      },
+      {
+        "trigger": " N",
+        "score": 109.0,
+        "context": " its weight with the grace of a cat as it lifts each foot in turn. Nearing a small group of people, it leans toward them, then sways"
+      }
+    ],
+    "promotes": [
+      "ISCO",
+      "ividu",
+      "Od",
+      "TagMode",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      "OOTDTY",
+      "CppCodeGen",
+      " EClass",
+      "insee",
+      "kloped"
+    ]
+  },
+  {
+    "id": "24_5668_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.31484881043434143,
+    "top_activations": [
+      {
+        "trigger": " YOU",
+        "score": 246.0,
+        "context": ", as well web resource links such as online dictionaries are featured as well.\u23ceBEFORE YOU BEGIN: The following plug-ins are required to access the audio and"
+      },
+      {
+        "trigger": "AN",
+        "score": 233.0,
+        "context": "<bos>FAUZIAH, CATUR KHUROTUL (2007) HUBUNGAN ANTARA RELIGIUSITAS DENGAN KEPUASAN"
+      },
+      {
+        "trigger": " HIGH",
+        "score": 222.0,
+        "context": "<bos>NORMAN HIGH SCHOOL HISTORY\u23ceBy Shirley Manning\u23ceWhen the town of Womble, Arkansas, had its beginning it was little more than a crossroads in"
+      },
+      {
+        "trigger": ",",
+        "score": 185.0,
+        "context": " 8th or 9th grade, PLAN as 10th graders, and the ACT as juniors or seniors.\u23ceAll three test you in English"
+      },
+      {
+        "trigger": " AFTER",
+        "score": 254.0,
+        "context": "<bos>THE THOMASITES, BEFORE AND AFTER\u23ceGuillermo G\u00f3mez Rivera\u23ceThey were called thus not due to St. Thomas of Aquinas but because they came in a cattle"
+      }
+    ],
+    "promotes": [
+      " COMPONENT",
+      " PLAYER",
+      " STREAM",
+      " BAND",
+      " CHANNEL"
+    ],
+    "demotes": [
+      "<b>",
+      "\u062a\u0645",
+      "<em>",
+      "<strong>",
+      "L"
+    ]
+  },
+  {
+    "id": "24_483_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.28472089767456055,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 288.0,
+        "context": "<bos>Mar 24, 2004 (12:03 PM EST)\u23ceHelp For Tackling Global Supply-Chain Issues\u23ceRead"
+      },
+      {
+        "trigger": " interested",
+        "score": 248.0,
+        "context": " contain. Learning how to make a wooden box is often the first effort for individuals interested in woodworking.\u23ce1Decide on the type of wood you're going"
+      },
+      {
+        "trigger": " admiration",
+        "score": 245.0,
+        "context": " outstanding outdoor laboratory and classroom.\u23ceCrater Lake has long attracted the wonder and admiration of people all over the world. Its depth of 1,94"
+      },
+      {
+        "trigger": " auspices",
+        "score": 282.0,
+        "context": " mid-1980s and have continued to the present day under the auspices of the High Brown Fritillary Action Group which comprises 11 partner"
+      },
+      {
+        "trigger": " two",
+        "score": 246.0,
+        "context": " Halpert:\u23ceSustainable innovation: an interdisciplinary workshop and case competition\u23ceThis two-day workshop brought graduate students from chemistry and management together to work collaboratively on"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\uff08",
+      " ",
+      "...",
+      "<eos>"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Monfieur",
+      " Efq",
+      " Jefus"
+    ]
+  },
+  {
+    "id": "24_13422_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3800707161426544,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 75.5,
+        "context": "video)\u23ceSubscribe Today to the Monitor\u23ceThe development of advanced driver assistance systems (ADAS) will first see some seemingly innocuous changes in the way we drive"
+      },
+      {
+        "trigger": " (",
+        "score": 69.0,
+        "context": " attitudes towards discrimination and positive action. Based on data from the Scottish Social Attitudes survey (SSA), the study aimed to:\u23ce\u2022 Measure the extent and character of"
+      },
+      {
+        "trigger": " (",
+        "score": 64.5,
+        "context": " child\u2019s development. He or she will likely offer an Ages and Stages Questionnaire (ASQ) to complete at regularly scheduled well-child visits. This parent"
+      },
+      {
+        "trigger": "P",
+        "score": 78.0,
+        "context": " historic data to project future demographic patterns for 11 Pan African Sanctuary Alliance (PASA) member facilities. The research helped individual sanctuaries\u2014as well as"
+      },
+      {
+        "trigger": " (",
+        "score": 71.0,
+        "context": " Treatment 2012:6 pages.\u23ceAbstract: Autism spectrum disorders (ASDs) are neurodevelopmental and behavioural syndromes affecting social orientation, behaviour,"
+      }
+    ],
+    "promotes": [
+      "TagHelper",
+      "AccessorTable",
+      " GIPHY",
+      "troppo",
+      "\udb40\udc62"
+    ],
+    "demotes": [
+      "OCCURRED",
+      " initComponents",
+      "hofen",
+      "tak",
+      " ap"
+    ]
+  },
+  {
+    "id": "24_11067_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3930222690105438,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 118.0,
+        "context": "0 Theory Best Practice Teaching\u23ceLead Faculty: Dr. Linda Ventriglia-Nava\u23ceCovers theories and research on Best Practices in education. Best Practice research"
+      },
+      {
+        "trigger": "N",
+        "score": 107.0,
+        "context": "<bos>Nedarim 33 - 39\u23ce\"Tovat Hana'ah\" describes a hardly discernible monetary value belonging to the owner of something he"
+      },
+      {
+        "trigger": "N",
+        "score": 107.0,
+        "context": "<bos>Nausea and Vomiting\u2014Adult\u23cePronounced: nah-zhuh and vah-meh-tingEn Espa\u00f1ol (Spanish Version)\u23ceNausea is that"
+      },
+      {
+        "trigger": "N",
+        "score": 107.0,
+        "context": "<bos>Nasa may miss Curiosity Mars rover's landing signal\u23ceNasa might not be able to follow the progress of its big Mars rover all the way to"
+      },
+      {
+        "trigger": "N",
+        "score": 107.0,
+        "context": "<bos>Nurses impact lives every day. But once in a while, a nurse comes along who touches the lives of the world, and not just her patients."
+      }
+    ],
+    "promotes": [
+      " ExecuteAsync",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      " JpaRepository",
+      " \u03c3\u03c5\u03bc\u03b2",
+      "posedge"
+    ],
+    "demotes": [
+      " ModelExpression",
+      "InvalidProtocol",
+      "Referencie",
+      "nologue",
+      "ValueStyle"
+    ]
+  },
+  {
+    "id": "22_6434_7",
+    "layer": 22,
+    "ctx_idx": 7,
+    "influence_score": 0.399528443813324,
+    "top_activations": [
+      {
+        "trigger": "l",
+        "score": 46.5,
+        "context": "3rd edition, are excerpted below.\u23ce- Last year, Miniplenty announced that chocolate rations were 30 grams per week. This year"
+      },
+      {
+        "trigger": "m",
+        "score": 48.0,
+        "context": "611:\u23ceThis satisfaction, The by-gone-day proclaym'd, say this to him.\u23ceAs time progressed, 'byg"
+      },
+      {
+        "trigger": "g",
+        "score": 50.75,
+        "context": " rites and sacred burial cave sites guarded by effigies, has fascinated anthropolgists for many years.\u23ceWe were fortunate to be in Toraja at"
+      },
+      {
+        "trigger": "occ",
+        "score": 45.25,
+        "context": " will return EOF\u23cewhen the first transformation reached the file end or some error\u23ceoccured. Otherwise it will return the number of transformed arguments.\u23ceformat can"
+      },
+      {
+        "trigger": "k",
+        "score": 46.5,
+        "context": "You can log in using Facebook.)\u23cenoun\\\u02ccep-i-\u02c8k\u00e4n-\u02ccd\u012bl also -d\u0259l\\\u23ceDefinition of EPIC"
+      }
+    ],
+    "promotes": [
+      " Bioaccumulative",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "tvguidetime",
+      "IVEREF",
+      " surla"
+    ],
+    "demotes": [
+      "y",
+      "t",
+      "u",
+      "l",
+      "c"
+    ]
+  },
+  {
+    "id": "24_13541_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3812936842441559,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ]
+  },
+  {
+    "id": "23_14507_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3166673481464386,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 34.0,
+        "context": " to have a background knowledge. On short it all started with the Critical Path Method (CPM) an algorithm for scheduling activities within a project. This method is best"
+      },
+      {
+        "trigger": " (",
+        "score": 35.0,
+        "context": " clean-burning alternative to petroleum.\u23ceRichard Jackson, president of Capital Technologies International (CTI), said the new process, which causes no harm to the environment"
+      },
+      {
+        "trigger": " (",
+        "score": 33.0,
+        "context": " behind Black Mountain (BM) and through the notch directly beyond. Loma Prieta (LP) gave its name to the 1989 earthquake because the"
+      },
+      {
+        "trigger": " (",
+        "score": 36.0,
+        "context": " trying\u23ceBig things can happen in unlikely places--such as Solar Cells Inc. (SCI), in the nondescript engineering building on the campus of the University"
+      },
+      {
+        "trigger": " (",
+        "score": 36.5,
+        "context": "ID with capabilities beyond simple electrical connection, such as diagnostics. An Optical Network Terminal (ONT) is a type of NID used with fiber-to-the"
+      }
+    ],
+    "promotes": [
+      " v\u00e4li",
+      " kyse",
+      " el\u00e4m\u00e4",
+      " termica",
+      " aikaa"
+    ],
+    "demotes": [
+      " CCC",
+      " JJ",
+      " BBB",
+      " SSS",
+      " NN"
+    ]
+  },
+  {
+    "id": "23_15012_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.3056359887123108,
+    "top_activations": [
+      {
+        "trigger": " N",
+        "score": 108.5,
+        "context": "<bos>What is N-Acetyl L-Cysteine?\u23ceN-Acetyl L-Cysteine, also named NAC, is a chemically altered version of"
+      },
+      {
+        "trigger": " N",
+        "score": 122.0,
+        "context": "<bos>When we last checked in to the Nansen Sea Ice Graphs, it looked like they were heading towards the \u201cnormal\u201d line in a hurry. Ice area"
+      },
+      {
+        "trigger": " N",
+        "score": 115.0,
+        "context": "<bos>Amazing Minds: The Science of Nurturing Your Child's Developing Mind with Games, Activites andMore : Drawing on the latest fascinating research in child"
+      },
+      {
+        "trigger": " N",
+        "score": 114.5,
+        "context": "<bos>At NIDA's last Drug Facts Chat Day, Razorfang asked this question:\u23ce\"can you get viruses from drugs?\"\u23ceThe answer to this"
+      },
+      {
+        "trigger": " N",
+        "score": 109.5,
+        "context": "10\u23ceCost, convenience, and cosmetics. These were the major concerns facing NRG Systems, Hinesburg, Vt., when the company decided to do something"
+      }
+    ],
+    "promotes": [
+      "Low",
+      "tel",
+      "all",
+      " Low",
+      "ura"
+    ],
+    "demotes": [
+      "AndEndTag",
+      "principalTable",
+      "lapsingToolbar",
+      " kasarigan",
+      "\u0437\u0443\u043b\u0442\u0430"
+    ]
+  },
+  {
+    "id": "25_3204_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.29992786049842834,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 217.0,
+        "context": " and vigils|\u23ce|Related to||Samhain, Hop-tu-Naa, Calan Gaeaf, Kalan Gwav, Day of the"
+      },
+      {
+        "trigger": " ",
+        "score": 213.0,
+        "context": "<bos>The 2014 Winter Olympics in Sochi could see a world record or two broken, as the planet\u2019s top athletes push each other to greater"
+      },
+      {
+        "trigger": " for",
+        "score": 230.0,
+        "context": " of a book published this week by Tim Jackson called Prosperity Without Growth: Economics for a Finite Planet.\u23ce\"Governments are locked into defending growth in a system"
+      },
+      {
+        "trigger": " is",
+        "score": 206.0,
+        "context": "\u23ceAnd a bribe corrupts the heart.\u23ce8The end of a matter is better than its beginning;\u23cePatience of spirit is better than haughtiness"
+      },
+      {
+        "trigger": " R",
+        "score": 210.0,
+        "context": "The Holy Cave).\u23ceIt is still a beautiful sanctuary for pilgrims. Among them was Joseph Cardinal Ratzinger before he became Pope Benedict XVI. Just before his"
+      }
+    ],
+    "promotes": [
+      " Efq",
+      " rai\u017f",
+      " Monfieur",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " estekak",
+      "tagHelperRunner",
+      "GEBURTSDATUM",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "ValueStyle"
+    ]
+  },
+  {
+    "id": "24_12120_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3712221384048462,
+    "top_activations": [
+      {
+        "trigger": "ENN",
+        "score": 77.0,
+        "context": " the committee that took on that task. She says simply defining sustainable in this context is a challenge.\u23ceJENNIE HUNTER-CEVERA: You can"
+      },
+      {
+        "trigger": "ITI",
+        "score": 78.0,
+        "context": "<bos>Mises Made Easier\u23cePercy L. Greaves Jr.\u23ceA CRITIQUE OF\u23ceIN SUPPORT OF\u23ceHIS TIME PREFERENCE THEORY\u23ceLudwig von"
+      },
+      {
+        "trigger": " NB",
+        "score": 71.0,
+        "context": " the seconds, minutes, days, and years left till the deadline.\u23ceThe NBCC, located in Washington, D.C., is a breast cancer advocacy"
+      },
+      {
+        "trigger": "NM",
+        "score": 73.0,
+        "context": " desert locusts and the important role for the National Meteorological and Hydrological Services (NMHSs) in this task, WMO organized an Expert Meeting on Meteorological"
+      },
+      {
+        "trigger": "ESC",
+        "score": 74.0,
+        "context": "<bos>SKY & TELESCOPE NEWS BULLETIN\u23ceMAY 2, 1997\u23ceLast week more than 300 scientists met in Williamsburg,"
+      }
+    ],
+    "promotes": [
+      "enumi",
+      "ade",
+      "########.",
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      "Referanser"
+    ],
+    "demotes": [
+      "S",
+      "C",
+      "R",
+      "D",
+      "E"
+    ]
+  },
+  {
+    "id": "25_13762_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.27724650502204895,
+    "top_activations": [
+      {
+        "trigger": "noma",
+        "score": 67.5,
+        "context": " antelope that moved through the surrounding area.\u23ceAnd later came the trekboer (nomadic farmer) who, with livestock herds, was in constant search of new"
+      },
+      {
+        "trigger": " foo",
+        "score": 67.0,
+        "context": "7\u00baC). Above this temperature, the natural enzymes in foods are destroyed. Raw foodists contend that these enzymes improve digestion and fight many chronic diseases.\u23ceThis"
+      },
+      {
+        "trigger": " Jag",
+        "score": 60.5,
+        "context": " mechanisms that influence soil carbon stability and its impact on future climate change. Sindhu Jagadamma, a post doc in ORNL\u2019s Environmental Science Division and"
+      },
+      {
+        "trigger": ".",
+        "score": 61.0,
+        "context": ". Anthony Lewis, director of Arizona's Robotics and Neural Systems Laboratory, and Theresa Klein, a Ph.D. student at the lab.\u23ceDr Theresa"
+      },
+      {
+        "trigger": "\u00ed",
+        "score": 60.5,
+        "context": "<bos>Revista de estudios hist\u00f3rico-jur\u00eddicos\u23ceversi\u00f3n impresa ISSN 0716-5455\u23ceDIAZ ARAYA, Alberto;"
+      }
+    ],
+    "promotes": [
+      " DW",
+      "DA",
+      " DS",
+      " DD",
+      "DW"
+    ],
+    "demotes": [
+      "UnsafeEnabled",
+      "SequentialGroup",
+      " resourceCulture",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "\u043a\u043b\u043e\u043f\u0435"
+    ]
+  },
+  {
+    "id": "25_5770_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.389620840549469,
+    "top_activations": [
+      {
+        "trigger": "Tok",
+        "score": 118.0,
+        "context": " extensive damage.\u23ce\u00a9 William Rafti of the William Rafti Institute.\u23ceTokuda believes these findings will be of interest to the US Department of Energy,"
+      },
+      {
+        "trigger": " Kof",
+        "score": 118.0,
+        "context": "<bos>The Rise of the Praetorian Classby Pete Kofod\u23ceMuch attention has been paid to the \u201cdisappearing middle class\u201d and the \u201cvanishing"
+      },
+      {
+        "trigger": "Ema",
+        "score": 146.0,
+        "context": "green dots in the map) corresponding respectively to four present ranges:\u23ce- Southern Imeon (\u2018Emavon\u2019 in Armenian): Hindu Kush;\u23ce- Southeastern"
+      },
+      {
+        "trigger": " r",
+        "score": 120.0,
+        "context": "<bos>Origin: Ger < dial. form of r\u00fccken, the back (see ridge) + sack < OHG sac (see sack)\u23ceSee rucksack in"
+      },
+      {
+        "trigger": "am",
+        "score": 161.0,
+        "context": "<bos>Het dorp Rincon, Te Rincon, Rinc\u00f3n: Rinon (Papamientu)\u23ceMeaning of Rinc\u00f3n, Spanish for corner/n"
+      }
+    ],
+    "promotes": [
+      "maier",
+      "\u00e6us",
+      "uzzi",
+      "huber",
+      "ianum"
+    ],
+    "demotes": [
+      "});*/",
+      "tvguidetime",
+      "(\");",
+      "%</",
+      "();*/"
+    ]
+  },
+  {
+    "id": "25_14991_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.33395448327064514,
+    "top_activations": [
+      {
+        "trigger": " Mein",
+        "score": 51.75,
+        "context": " G\u00e1bor (1929), Szekf\u00fb expressly models his approach on Meinecke's, and tells the entire story from the vantage point of raison"
+      },
+      {
+        "trigger": " (",
+        "score": 49.25,
+        "context": " of the day. Acting through joint business organizations such as the Committee for Economic Development (CED), they advocated full employment, accepted Keynesian economic policies (including increases"
+      },
+      {
+        "trigger": "ha",
+        "score": 60.75,
+        "context": " country for animals, some of whom, according to his Web site (fritzhaeg.com), \u201chave been displaced or unwelcome by humans.\u201d He kicked"
+      },
+      {
+        "trigger": " S",
+        "score": 49.5,
+        "context": "reek...pip, reek...pip...pip' sound of the male Eastern Sedgefrog calling for a mate.\u23ceThe Eastern Sedgefrog sometimes appears"
+      },
+      {
+        "trigger": "4",
+        "score": 55.25,
+        "context": ", available at: http://www.refworld.org/docid/4aba3ed937.html [accessed 26 May "
+      }
+    ],
+    "promotes": [
+      " m\u00edo",
+      "edade",
+      " ced",
+      "\u043d\u043e\u0434\u043e\u0440\u043e",
+      " anteced"
+    ],
+    "demotes": [
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      "WaitGroup",
+      " fVar",
+      "IEN",
+      "ContentAsync"
+    ]
+  },
+  {
+    "id": "25_444_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.2917127311229706,
+    "top_activations": [
+      {
+        "trigger": " V",
+        "score": 37.75,
+        "context": " a major in electrical and computer engineering. Sruti has been involved in FIRST and VEX robotics since 7th grade, and with her teams has participated in"
+      },
+      {
+        "trigger": " B",
+        "score": 41.0,
+        "context": " manufacturing and production, but the term has been used more loosely recently. According to Bjoern Falke,\u23cesenior product marketing specialist for the Automation Group at"
+      },
+      {
+        "trigger": " G",
+        "score": 48.75,
+        "context": "arching issue here is medical treatment,\" said Ivan Diamond, vice president of neuroscience at Gilead Science, Professor Emeritus of neurology, cellular and molecular pharmacology and neuroscience"
+      },
+      {
+        "trigger": " C",
+        "score": 42.75,
+        "context": "<bos>This project is just one of several that CIDA is supporting in a wide-ranging effort to improve primary education in Mozambique. CIDA is contributing to Mozambique"
+      },
+      {
+        "trigger": " E",
+        "score": 39.5,
+        "context": " as \u201coffsetting\u201d, taking out one ton of carbon annually.\u23ceAs one company, Ecotricity, points out, removing 50kg of"
+      }
+    ],
+    "promotes": [
+      "IBA",
+      "ICS",
+      "OTA",
+      "APK",
+      "IBO"
+    ],
+    "demotes": [
+      " betweenstory",
+      "%\";",
+      "########.",
+      " transfieras",
+      " Lordships"
+    ]
+  },
+  {
+    "id": "25_2596_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.320252925157547,
+    "top_activations": [
+      {
+        "trigger": "N",
+        "score": 140.0,
+        "context": "<bos>Nausea and Vomiting\u2014Adult\u23cePronounced: nah-zhuh and vah-meh-tingEn Espa\u00f1ol (Spanish Version)\u23ceNausea is that"
+      },
+      {
+        "trigger": "N",
+        "score": 140.0,
+        "context": "<bos>N & Central America\u23ceTools & Resources\u23ceRelated Web Sites\u23ceRepublic of Korea\u23ceMeteorological Information for Locust Control\u23ceThe Desert Locust plague in 2"
+      },
+      {
+        "trigger": "N",
+        "score": 140.0,
+        "context": "<bos>Nausea can be caused by many factors, including stomach flu, viral infections of the inner ear (labyrinthitis), motion sickness, pregnancy , and"
+      },
+      {
+        "trigger": "N",
+        "score": 140.0,
+        "context": "<bos>Nanolubricants Research Project\u23ceThe U.S. Department of Energy (DOE) is currently conducting research into nanolubricants. This"
+      },
+      {
+        "trigger": "N",
+        "score": 140.0,
+        "context": "<bos>Nests and Chick Rearing | Answers\u23ce1. How long does it take to hatch the egg after it is laid?\u23ceMost eggs take about "
+      }
+    ],
+    "promotes": [
+      "izr",
+      " normalement",
+      "rable",
+      "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+      "icoot"
+    ],
+    "demotes": [
+      "ScopeManager",
+      "NgModule",
+      "fromnode",
+      "bootstrapcdn",
+      "RectangleBorder"
+    ]
+  },
+  {
+    "id": "25_9404_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.36991849541664124,
+    "top_activations": [
+      {
+        "trigger": " disaster",
+        "score": 89.0,
+        "context": "-making communication community community building conflict conflict resolution constructivism constructivist control core values crisis curriculum dialogue journaling differentiation disaster early childhood early elementary elementary emotional literacy emotional regulation emotions"
+      },
+      {
+        "trigger": " dos",
+        "score": 61.5,
+        "context": " dhobis dib dibs dis dish do dos dub dubs duh dui duo duos hi hid his ho hob hobs hod hods hub hubs id ids"
+      },
+      {
+        "trigger": " and",
+        "score": 59.0,
+        "context": "\u23ceSystematics is the science of classifying species and identifying the evolutionary relationships between them and is at the basis of many other important topics such as understanding species diversity and"
+      },
+      {
+        "trigger": " who",
+        "score": 59.0,
+        "context": ", discover clues and conduct real chemical and forensic tests in their attempt to unravel the whodunit mystery.\u23ceAs part of the exhibit, visitors perform chromatography tests"
+      },
+      {
+        "trigger": "apo",
+        "score": 79.0,
+        "context": " legs after another.\u23ceUC Berkeley's DASH (Dynamic Autonomous Sprawled Hexapod) embraces these advantages. Made partly from cardboard, it's a"
+      }
+    ],
+    "promotes": [
+      "ArrowToggle",
+      "MLLoader",
+      " resourceCulture",
+      "SequentialGroup",
+      "UnsafeEnabled"
+    ],
+    "demotes": [
+      " DS",
+      " DP",
+      " DA",
+      " DD",
+      " DW"
+    ]
+  }
+]

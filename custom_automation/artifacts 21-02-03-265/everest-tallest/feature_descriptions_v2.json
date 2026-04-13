@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "0_2671_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3982614278793335,
+    "top_activations": [
+      {
+        "trigger": " closest",
+        "score": 20.5,
+        "context": " high resolution and comparing photographs from different cameras to see which retained the center detail the closest.\u23ceIn the field of video production, where it is often called a"
+      },
+      {
+        "trigger": " closest",
+        "score": 20.75,
+        "context": "? Is it all the animals in a group? Or just the one that is closest to you? Is it the whole souvenir market or just one exceptional stand?"
+      },
+      {
+        "trigger": " oldest",
+        "score": 13.25,
+        "context": " pan out, but they were able to come up with some neat ideas. My oldest daughter made two different bath salts and compared them. She did the scientific method"
+      },
+      {
+        "trigger": " fastest",
+        "score": 12.75,
+        "context": " placed inside the carvings making the faces glow. The Halloween lanterns were placed on doorsteps to ward off evil spirits.\u23ce- The world's fastest time to"
+      },
+      {
+        "trigger": " oldest",
+        "score": 13.88,
+        "context": " all kinds of other layers that can be up to 200,000 years. The oldest are 400,000 years"
+      }
+    ],
+    "promotes": [
+      " A",
+      " a",
+      " more",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "tagHelperRunner",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "RenderAtEndOf",
+      "abestanden",
+      "mybatisplus"
+    ],
+    "generated_description": "Superlative adjective \u2014 activates on absolute/comparative extremes (closest, oldest, fastest, -est forms); marks superlative degree or \"most\" constructions."
+  },
+  {
+    "id": "2_3565_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3788512051105499,
+    "top_activations": [
+      {
+        "trigger": " common",
+        "score": 18.25,
+        "context": " counterparts to various normal inhabitant cells of the central nervous system (CNS). The most common form of glioma is astrocytoma, representing approximately one third of all"
+      },
+      {
+        "trigger": " one",
+        "score": 15.69,
+        "context": " to cut your footprint if you have to drive (and driving less is the number one best way to cut the carbon).\u23ceBut every car company tells you theirs"
+      },
+      {
+        "trigger": " frequently",
+        "score": 18.25,
+        "context": "<bos>Breast Cancer Risk Factors\u23ceBreast cancer is the most frequently diagnosed cancer in women. Experts don\u2019t know the exact causes of breast cancer, but research has"
+      },
+      {
+        "trigger": " leading",
+        "score": 15.44,
+        "context": ".\u23ceCopyright \u00a9 Nucleus Medical Media, Inc.\u23ceMacular degeneration is the leading cause of blindness in the United States. The frequency of this disorder increases with"
+      },
+      {
+        "trigger": " one",
+        "score": 21.5,
+        "context": "<bos>Heart disease is the number one killer\u23ceof both men and women in the United States. If you are worried about heart\u23cedisease, one of the most"
+      }
+    ],
+    "promotes": [
+      " greatest",
+      " strongest",
+      "best",
+      " best",
+      "<bos>"
+    ],
+    "demotes": [
+      "DllImport",
+      "expandindo",
+      "ViewFeatures",
+      " ELSE",
+      "parsedMessage"
+    ],
+    "generated_description": "Most/Number\u2011one \u2014 activates on superlative/frequency words: \"most\", \"number one\", \"leading\", \"frequently\"; signals highest-ranking or most-common concept, promotes \"greatest\"/\"best\"."
+  },
+  {
+    "id": "2_16097_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3386147916316986,
+    "top_activations": [
+      {
+        "trigger": "est",
+        "score": 28.0,
+        "context": "<bos>The satellite images displayed are infrared (IR) images. Warmest (lowest) clouds are shown in white; coldest (highest) clouds are displayed in shades"
+      },
+      {
+        "trigger": "est",
+        "score": 34.25,
+        "context": " the holidays. Personally, I\u2019m a fan of a book called The Hardest Word, which tells the story of a bird named the Ziz who can"
+      },
+      {
+        "trigger": "est",
+        "score": 29.75,
+        "context": " how their province or territory compares with the warmest, snowiest or the windiest. To settle arguments as to which jurisdiction can legitimately lay claim to being tops"
+      },
+      {
+        "trigger": "est",
+        "score": 36.75,
+        "context": " was calculated by femur (thigh bone) circumference, measuring the bone at the narrowest point. Forelimb muscle mass in males was found to be heavier than the"
+      },
+      {
+        "trigger": "est",
+        "score": 36.75,
+        "context": " new food before the rest of the meal, when your child is the hungriest.\u23ceDoes your child like plain foods? Try serving the ingredients of a"
+      }
+    ],
+    "promotes": [
+      "highest",
+      " broadest",
+      " largest",
+      " highest",
+      "niest"
+    ],
+    "demotes": [
+      "csharp",
+      " esternos",
+      "BeginContext",
+      "inalg",
+      " Somewhere"
+    ],
+    "generated_description": "Superlative \u201c-est\u201d \u2014 activates on words/endings with \u201c-est\u201d (warmest, narrowest, hardest, rest-as-\u201c-est\u201d); promotes superlative outputs (highest, largest)."
+  },
+  {
+    "id": "2_11587_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.3606501519680023,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 18.5,
+        "context": " surrounding region better than the European moniker \u201cRainier\u201d, a name bestowed on the mountain by Captain Vancouver in 1792 in honor of his friend and"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.88,
+        "context": " and Montserrat, have been airlifted to three European zoos when news spread that the mountain chicken frog population was succumbing to a deadly fungal disease called chytrid"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.75,
+        "context": "1826, young Kit took off for Santa Fe and soon became a mountain man and fur trapper. He eventually found employment as a hunter at Bent"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.5,
+        "context": " time to early days in the history of the Vietnamese nation when Au Co, a mountain fairy got married to a dragon, Lac Long Quan, and gave birth to"
+      },
+      {
+        "trigger": " mountain",
+        "score": 19.12,
+        "context": " it is the steady barrage of winter season storms that brings the heaviest rains (and mountain snows). In the southeastern United States, strong storms and cold fronts bring rains"
+      }
+    ],
+    "promotes": [
+      " \u00e9glises",
+      " \u0648\u064a\u0643\u064a\u0645\u064a\u062f\u064a\u0627",
+      " r\u00e9unions",
+      " b\u00e9n\u00e9voles",
+      " tartalomaj\u00e1nl\u00f3"
+    ],
+    "demotes": [
+      " Mountain",
+      " mountain",
+      "Mountain",
+      " MOUNTAIN",
+      "mountain"
+    ],
+    "generated_description": "mountain \u2014 activates on the token \u201cmountain\u201d in varied contexts (proper names, compounds like \u201cmountain man,\u201d \u201cmountain snows,\u201d and species/place mentions)."
+  },
+  {
+    "id": "1_4788_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.38759005069732666,
+    "top_activations": [
+      {
+        "trigger": " mountains",
+        "score": 14.5,
+        "context": ", at sea level from February to November, but rarely seen before June in the mountains where it does not appear able to overwinter. It does not show up"
+      },
+      {
+        "trigger": " mountain",
+        "score": 14.5,
+        "context": "looking view, the seemingly pyramidal shape of the 8848-meter mountain dominates the center of the scene. The northeast side of this majestic mountain rises"
+      },
+      {
+        "trigger": " mountains",
+        "score": 15.0,
+        "context": " mounds and Kazakh cemeteries.\u23ceA stunning landscape of high glaciated snow capped mountains, alpine and sup-alpine forests, large lakes, rivers and streams,"
+      },
+      {
+        "trigger": " mountains",
+        "score": 14.38,
+        "context": " equivalent, temperature, precipitation\u23ceat 60 locations in the Cascades and Olympic mountains.\u23ceMountain Snow Depth Plotting: create plots of seasonal and\u23cemonthly snow"
+      },
+      {
+        "trigger": " mountains",
+        "score": 14.88,
+        "context": " to winter floods, when water is a hazard. Understanding how temperature varies in the mountains would enable us to estimate the fractions of precipitation falling as rain and snow."
+      }
+    ],
+    "promotes": [
+      " pulsa",
+      "httphttps",
+      " conosco",
+      " toalha",
+      "<bos>"
+    ],
+    "demotes": [
+      " mountains",
+      "mountains",
+      " Mountains",
+      " Wikimedijinoj",
+      "AndEndTag"
+    ],
+    "generated_description": "mountain(s) \u2014 activates on the token \u201cmountain\u201d/\u201cmountains\u201d; fires in geographic/mountainous contexts (elevation, snow, ranges, Cascades/peaks)."
+  },
+  {
+    "id": "0_10633_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.35881325602531433,
+    "top_activations": [
+      {
+        "trigger": " hill",
+        "score": 21.0,
+        "context": " content.\u23ceConstructed from yellow sandstone, Jaisalmer Fort sprawls across a hilltop in the Thar desert. More than 2,000 people"
+      },
+      {
+        "trigger": " hill",
+        "score": 20.88,
+        "context": " Association of the Peloponnese, said on a visit to the site on a hill overlooking the small town.\u23ceBelow lie the huge open-air mine where"
+      },
+      {
+        "trigger": " hill",
+        "score": 20.62,
+        "context": " (May to September).\u23ceVatican City sits on a low hill. The hill has been called the Vatican Hill (in Latin, Mons Vaticanus) since"
+      },
+      {
+        "trigger": " hill",
+        "score": 20.62,
+        "context": " set of legends and traditions since long before European settlement in the area. Though little more than a hill at less than 1,000 ft above the"
+      },
+      {
+        "trigger": " hill",
+        "score": 20.5,
+        "context": ".\u23ceOn Friday more than two dozen county officials and business representatives strolled down the hill from the pavilion where the dedication ceremony had been held. Numerous families were setting"
+      }
+    ],
+    "promotes": [
+      " for",
+      " a",
+      " ",
+      " of",
+      " the"
+    ],
+    "demotes": [
+      " MainAxisSize",
+      " AttributeSet",
+      "parsedMessage",
+      "expandindo",
+      " it\u017felf"
+    ],
+    "generated_description": "hill \u2014 activates on mentions of hills/small elevations; often in contexts like \"on a hill\", \"hilltop\", \"low hill\" or under 1,000 ft references"
+  },
+  {
+    "id": "3_3669_2",
+    "layer": 3,
+    "ctx_idx": 2,
+    "influence_score": 0.32727521657943726,
+    "top_activations": [
+      {
+        "trigger": " largest",
+        "score": 21.88,
+        "context": ", which produce a third of global output. The country is the world's largest exporter of the red metal.\u23ceIts economy depends heavily on copper exports to"
+      },
+      {
+        "trigger": " largest",
+        "score": 22.0,
+        "context": " corn per acre as small farmers in Africa. While Africa has the world\u2019s largest concentration of below-potential agriculture, other areas also lag. They include parts"
+      },
+      {
+        "trigger": " largest",
+        "score": 23.12,
+        "context": " The United States is the world's third largest country in population and the fourth largest country in area. continue to demand increasing levels of literacy by all young children"
+      },
+      {
+        "trigger": " largest",
+        "score": 22.5,
+        "context": " The largest desert in China, the Taklamakan is also the world's largest shifting-sand desert, eighty-five percent of this ecoregion comprising sand"
+      },
+      {
+        "trigger": "largest",
+        "score": 22.0,
+        "context": " of I.G. Farben, which was once the world's fourth-largest industrial concern.\u23ceThe leading lights of the German chemical-makers that merged"
+      }
+    ],
+    "promotes": [
+      "\u0432\u0430\u0440\u0435",
+      "ndy",
+      "UnknownFieldSet",
+      " Good",
+      "ubio"
+    ],
+    "demotes": [
+      " largest",
+      " most",
+      "largest",
+      "most",
+      " highest"
+    ],
+    "generated_description": "largest (superlative) \u2014 activates on \"largest\" and compounds (world's largest, fourth-largest); signals size/rank descriptors in noun phrases."
+  },
+  {
+    "id": "0_6678_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3930138945579529,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 14.88,
+        "context": " end. Then we are told:\u23ce(33) They marched from the mountain of YHWH [God] a journey of three days, the coffer"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.25,
+        "context": " populations in this mountain paradise have rallied and today large troops of baboons roam the mountainside and there are regular sightings of blesbok, oribi, duiker"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.38,
+        "context": " Reduction Project Assistants (MMRPA). MMRPAs provide women living in rural mountain villages with access to comprehensive services including HIV testing, counseling, and treatment;"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.12,
+        "context": "\u201d from Herob by the way of Mount Seir#Literally \u201cby the mountain of Seir\u201d up to Kadesh Barnea.\u23ce3And"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.0,
+        "context": "<bos>Phoenix mountain is located in subtropical climate in southern China, lowest temperature does not exceed 5 degrees C. Most plants in the region are not dormant during winter"
+      }
+    ],
+    "promotes": [
+      "abestanden",
+      "_",
+      "\u23ce\u23ce",
+      ",",
+      "\u23ce"
+    ],
+    "demotes": [
+      "\"):\r",
+      ")\";\r",
+      "\"])\r",
+      ":\");\r",
+      "\"),\r"
+    ],
+    "generated_description": "Mountain \u2014 represents the token \"mountain\"; fires on geographical/place contexts and mountain-related phrases (Mount Seir, mountain village, mountainside, habitat/descriptive uses)"
+  },
+  {
+    "id": "0_11375_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.32962149381637573,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "is (copula) \u2014 activates on the token \"is\" in definitional/descriptive contexts; consistently suppresses/pushes away producing the simple copula \"is\" in outputs."
+  },
+  {
+    "id": "0_8061_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3818431496620178,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ],
+    "generated_description": "say location after \"in\" \u2014 activates on the token \"in\" (including line-break splits), signals/prepares for a locative noun or place name immediately after."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3757944107055664,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In [domain]\" \u2014 sentence-initial \"In\" token; signals an upcoming domain/topic phrase (medicine, music theory, word processing, etc.)."
+  },
+  {
+    "id": "0_4411_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3847748041152954,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 15.25,
+        "context": ". Alpine Club, formed in 1891, was the first organised mountain club in New Zealand. Several more were formed early last century, particularly after"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.38,
+        "context": " hybrid trees were created and now are growing in an orchard on Berry College\u2019s mountain campus.\u23ceBut next year, Cipollini plans to kill them."
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.25,
+        "context": " state played in helping ensure the mountain plover remained a viable species.\u23ceThe mountain plover is a small shorebird found in the western Great Plains that was"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.25,
+        "context": ", providing arguably the most nuanced view of Appalachian slavery ever put forth.\u23ceThe mountain South, in some respects, proved to be an economically productive region prior to"
+      },
+      {
+        "trigger": " mountain",
+        "score": 15.25,
+        "context": " on about 628 square kilometers. The city nestles\u23cebetween two mountain ranges. The Han River flows west\u23ceto the Yellow Sea and divides the"
+      }
+    ],
+    "promotes": [
+      " Forumite",
+      ".\"));",
+      " doubtnut",
+      " $_\"",
+      " photolibrary"
+    ],
+    "demotes": [
+      " ",
+      " B",
+      " I",
+      " \"",
+      " H"
+    ],
+    "generated_description": "mountain \u2014 activates on the content word \"mountain\"; geographic contexts (ranges, regions), species/place names, noun uses across texts."
+  },
+  {
+    "id": "0_9026_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3469654321670532,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Concrete nouns / names \u2014 activates on content nouns and proper names (places, people, plants, object nouns); signals content-word tokens rather than function words."
+  },
+  {
+    "id": "1_3578_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.33192920684814453,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 18.75,
+        "context": " can change drastically, even during the course of one day.\u23ceThe great Andes mountain range in Colombia has peaks that top 18,000 feet"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.75,
+        "context": " Texas on their way south. In massive butterfly clouds, they sweep up into the mountain ranges of central Mexico. In 1975 the scientific community finally"
+      },
+      {
+        "trigger": " mountain",
+        "score": 19.0,
+        "context": " Craig Chesner of Michigan Technological University estimate that volcanic materials spewed out of the mountain as much as 2800 km \u00b3, with 80"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.75,
+        "context": " and Society, and a team of world-renowned ecologists, analysed Victorias mountain ash forests after the 2009 Black Saturday bushfires as well"
+      },
+      {
+        "trigger": " mountain",
+        "score": 18.5,
+        "context": "adasdy was ordered to advance along the Elbe and one Bavarian column moved across the mountain chain into South-West Saxony near Leipzig while Hohenzollern marched to join"
+      }
+    ],
+    "promotes": [
+      "GHIJKLM",
+      "Tembelea",
+      "}$\\",
+      "AndEndTag",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      "Mount",
+      " Mount",
+      " mountain",
+      " mount",
+      "Mountain"
+    ],
+    "generated_description": "mountain \u2014 activates on the word \"mountain\"; strong on geographic contexts: ranges, chains, volcanic peaks, mountain ash/forests, places (Andes, Mexico, Saxony)"
+  },
+  {
+    "id": "4_13681_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.30495086312294006,
+    "top_activations": [
+      {
+        "trigger": "cano",
+        "score": 25.75,
+        "context": "80-meter (4,199-foot)-high stratovolcano located on the northwest end of the lake. Two water-filled volcanic craters"
+      },
+      {
+        "trigger": "UN",
+        "score": 23.38,
+        "context": "<bos>MOUNIER, FRAN\u00c7OIS, merchant, member of James Murray*\u2019s council, judge; b. at La Rochelle, France; d."
+      },
+      {
+        "trigger": ".",
+        "score": 25.25,
+        "context": "<bos>Could it be true that Thoreau was only seeking the adventure of Mt. Katahdin for poetic \u201craw material\u201d? Did he traverse the range solely for a"
+      },
+      {
+        "trigger": " peaks",
+        "score": 22.5,
+        "context": " Andean region is subject to occasional volcanic eruptions and earthquakes. The region\u2019s highest peaks, Pico Cristobal Colon and Pico Simon Bol\u00edvar, tower at 18"
+      },
+      {
+        "trigger": ".",
+        "score": 23.62,
+        "context": " Basin have observed and reported a persistent, white cloud streaming from the summit of Mt. Sanford and extending for up to several tens of miles to the south. The"
+      }
+    ],
+    "promotes": [
+      "mountains",
+      " Mountains",
+      " Mountain",
+      " mountains",
+      " mountain"
+    ],
+    "demotes": [
+      "coroutines",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "+#+#",
+      "iprot",
+      "ByEmail"
+    ],
+    "generated_description": "Mountain/peak words \u2014 activates on \"Mt.\", \"peaks\", \"volcano\" and similar tokens; pushes mountain/mountains/Mountain in output."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3773467540740967,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "anticipatory \"It\" \u2014 activates on sentence-initial dummy subject (It is/It was/It\u2019s), signals expletive/introductory constructions introducing a clause."
+  },
+  {
+    "id": "4_13681_6",
+    "layer": 4,
+    "ctx_idx": 6,
+    "influence_score": 0.3677176237106323,
+    "top_activations": [
+      {
+        "trigger": "cano",
+        "score": 25.75,
+        "context": "80-meter (4,199-foot)-high stratovolcano located on the northwest end of the lake. Two water-filled volcanic craters"
+      },
+      {
+        "trigger": "UN",
+        "score": 23.38,
+        "context": "<bos>MOUNIER, FRAN\u00c7OIS, merchant, member of James Murray*\u2019s council, judge; b. at La Rochelle, France; d."
+      },
+      {
+        "trigger": ".",
+        "score": 25.25,
+        "context": "<bos>Could it be true that Thoreau was only seeking the adventure of Mt. Katahdin for poetic \u201craw material\u201d? Did he traverse the range solely for a"
+      },
+      {
+        "trigger": " peaks",
+        "score": 22.5,
+        "context": " Andean region is subject to occasional volcanic eruptions and earthquakes. The region\u2019s highest peaks, Pico Cristobal Colon and Pico Simon Bol\u00edvar, tower at 18"
+      },
+      {
+        "trigger": ".",
+        "score": 23.62,
+        "context": " Basin have observed and reported a persistent, white cloud streaming from the summit of Mt. Sanford and extending for up to several tens of miles to the south. The"
+      }
+    ],
+    "promotes": [
+      "mountains",
+      " Mountains",
+      " Mountain",
+      " mountains",
+      " mountain"
+    ],
+    "demotes": [
+      "coroutines",
+      " \u0645\u0631\u0626\u064a\u0647",
+      "+#+#",
+      "iprot",
+      "ByEmail"
+    ],
+    "generated_description": "Mountains/peaks \u2014 activates on mountain-related tokens: 'Mt.' (period), 'peaks', 'volcano' endings, mountain names; tends to promote output tokens like \"mountain(s)/Mountains\"."
+  },
+  {
+    "id": "5_12215_3",
+    "layer": 5,
+    "ctx_idx": 3,
+    "influence_score": 0.39566394686698914,
+    "top_activations": [
+      {
+        "trigger": " level",
+        "score": 15.38,
+        "context": " line above the\u23cevalley. Some of the warmest locations on Earth are below sea level, for\u23cethis reason (if they are inland and not near a sea"
+      },
+      {
+        "trigger": " upper",
+        "score": 14.12,
+        "context": " offering prime retail space. The second floor was originally designated for a bank, with upper floors rented out as commercial office space. A selling point of the design was"
+      },
+      {
+        "trigger": "level",
+        "score": 17.75,
+        "context": " evidence of this, Cedartown, 900 feet above the sea\u23celevel, has a water supply from a natural spring that furnishes a volume of "
+      },
+      {
+        "trigger": " bottom",
+        "score": 18.75,
+        "context": ". The operator continued to monitor the vehicle and provided commands to raise or lower it to keep the camera just above the bottom.\u23ceEquipment Description: The TOAD"
+      },
+      {
+        "trigger": " level",
+        "score": 15.25,
+        "context": " the Wabash River bed. Land elevations range from 324 feet above sea level at the mouth of the Wabash River in the southwest corner of the state to"
+      }
+    ],
+    "promotes": [
+      " BitmapFactory",
+      " saites",
+      "LEncoder",
+      "AndEndTag",
+      " \"..\\..\\..\\"
+    ],
+    "demotes": [
+      " vertically",
+      " bottom",
+      " top",
+      " height",
+      " vertical"
+    ],
+    "generated_description": "Vertical-position words \u2014 activates on elevation/vertical tokens (level, upper, bottom); signals mentions of height, elevation, or vertical location in text."
+  },
+  {
+    "id": "17_16204_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3142479956150055,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 46.25,
+        "context": "PT\u23ceRelated Tools & Resources\u23ceThis program explores the natural wonder that is nearly 300 miles long and over a mile deep.\u23ceCompanion website to"
+      },
+      {
+        "trigger": "0",
+        "score": 53.5,
+        "context": " called the world\u2019s highest as there is a drop of 7,000m, from peak to river. Nanga Parbat sits at the"
+      },
+      {
+        "trigger": " ",
+        "score": 66.5,
+        "context": " had dreamed of the day he would reach the top of Mount Everest. On May 29, 1953, Sir Edmund Hillary and Tenzing"
+      },
+      {
+        "trigger": " ",
+        "score": 45.0,
+        "context": "ager operation on 21 August when the highest peak of the Caucasus, the 5,600-metre high Elbrus, was scaled in order"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 75.5,
+        "context": "\u2019s response to low oxygen levels suggest that drugs or procedures that promote the body\u2019s production of a chemical compound called nitric oxide (NO) could improve the"
+      }
+    ],
+    "promotes": [
+      "\u0411\u0430\u0445\u0430\u0440",
+      "]\")]",
+      "WebMethod",
+      "Hauptartikel",
+      "ContentLoaded"
+    ],
+    "demotes": [
+      "DeleteBehavior",
+      " \u0430\u0440\u0445\u0438\u0432\u043b\u0430\u043d",
+      "Portale",
+      " enslaved",
+      " ExecuteAsync"
+    ],
+    "generated_description": "possessive/apostrophe marker \u2014 activates on \u2019s and nearby punctuation tokens (apostrophes, commas) marking possession or clause boundary before continuing text"
+  },
+  {
+    "id": "3_14577_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.33645734190940857,
+    "top_activations": [
+      {
+        "trigger": " Mountain",
+        "score": 16.12,
+        "context": "1,752 m)), and the highest point in the range, Peak Mountain (5,843 feet (1,781 m))."
+      },
+      {
+        "trigger": " Mountain",
+        "score": 15.88,
+        "context": " to play with squirrels.\"\u23ceA squirrel trapped at Cedar Grove Campground on Palomar Mountain was the first reported case of plague in San Diego County this year.\u23ce"
+      },
+      {
+        "trigger": " mountain",
+        "score": 13.62,
+        "context": " the cities and suburbs, to the maritime forests along the coast, to the dry mountain forests of central and eastern Washington, and finally to the open landscapes of the"
+      },
+      {
+        "trigger": " Mountain",
+        "score": 15.38,
+        "context": " The Saddleback, 129 metres; and Wild Horse Mountain or Round Mountain, 123 metres.\u23ceIn one of the Aboriginal Dreamtime"
+      },
+      {
+        "trigger": " Mountain",
+        "score": 14.75,
+        "context": " as Actun Tunichil Muknal (or ATM), in the Tapir Mountain Nature Reserve in Belize. Excavations at ATM over the next decade revealed an"
+      }
+    ],
+    "promotes": [
+      "\u1ef9",
+      "pubsub",
+      "Dane",
+      " p\u00e2te",
+      "enumi"
+    ],
+    "demotes": [
+      " Mountain",
+      " mountain",
+      "Mountain",
+      "mountain",
+      " MOUNTAIN"
+    ],
+    "generated_description": "\"Mountain\" token \u2014 activates on the word \"Mountain\"/\"mountain\" in place names or geographic mentions (e.g., Palomar Mountain, Round Mountain, mountain forests)."
+  },
+  {
+    "id": "4_3987_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.36423593759536743,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 30.5,
+        "context": " Micah 4:1-2 speaks of peoples and nations streaming to \u201cthe mountain of the Lord.\u201d Even in the judgment scene from Matthew 25:"
+      },
+      {
+        "trigger": " Mountain",
+        "score": 29.25,
+        "context": "The documentary explores Taino history & the Contemporary Indigenous Caribbean Identity\u23ceDance of the Mountain People: Indigenous Taino Music\u23ceBy Roberto Mukaro Borrero\u23ceTraditional"
+      },
+      {
+        "trigger": " Mountain",
+        "score": 28.5,
+        "context": "-3 aircraft on one eight-hour flight from the NASA Ames Research Center, Mountain View, Calif., and an ER-2 from NASA Dryden to fly over"
+      },
+      {
+        "trigger": " Mountain",
+        "score": 29.5,
+        "context": " cultures, motifs, and symbolism. To prepare the students, Peter Koch from the Mountain Heritage Center (MHC) provided insight into the cultural meaning of quilting and illustrated"
+      },
+      {
+        "trigger": " mountain",
+        "score": 29.25,
+        "context": " mouth of Bighorn Canyon. This inaugurated the era of first contact between whites and Crows. This period is best defined by the mountain men using the Bad Pass Trail"
+      }
+    ],
+    "promotes": [
+      "apunov",
+      "etcode",
+      "MemoryWarning",
+      "JNIEnv",
+      "Viki"
+    ],
+    "demotes": [
+      " betweenstory",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " doPost",
+      " CURLOPT",
+      " cy"
+    ],
+    "generated_description": "mountain \u2014 activates on the token \u201cmountain\u201d/\u201cMountain\u201d; fires for standalone noun and in proper names (Mountain View, Mountain Heritage Center, Mountain People, mountain men)."
+  },
+  {
+    "id": "18_8881_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.38333413004875183,
+    "top_activations": [
+      {
+        "trigger": "vol",
+        "score": 97.0,
+        "context": " south east of the Indonesian capital Jakarta. Papandayan\u23ceis a complex stratovolcano with four large summit craters, the youngest\u23ceof which has breached to"
+      },
+      {
+        "trigger": " of",
+        "score": 92.0,
+        "context": " supposedly 1.8 times as large as the 1815 eruption of Tambora, but no candidate volcano has been conclusively identified as the source."
+      },
+      {
+        "trigger": " volcanic",
+        "score": 92.0,
+        "context": " national advisory or warning would be issued, GNS Science said.\u23ceSigns of volcanic activity settled overnight but experts continue to monitor the mountain for changes.\u23ceThick"
+      },
+      {
+        "trigger": "7",
+        "score": 91.0,
+        "context": " in 1770 AD on the southern flank of Santa Ana volcano. Frequent strombolian eruptions from the volcano known as the \"Lighthouse of Central"
+      },
+      {
+        "trigger": " a",
+        "score": 102.5,
+        "context": " of Europe came to a halt for six days because of the huge cloud of ash from a volcano in Iceland. Now the economic costs are still being counted as airlines"
+      }
+    ],
+    "promotes": [
+      " volume",
+      " crater",
+      " eruption",
+      " volc\u00e1n",
+      " volcano"
+    ],
+    "demotes": [
+      "ValueStyle",
+      " Appraisal",
+      "Geplaatst",
+      " assessors",
+      " assessor"
+    ],
+    "generated_description": "volcano \u2014 fires on \"volcan\"/\"volcano\"/\"volcanic\" contexts; signals eruption/crater/volcano vocabulary (eruption, crater, volume)"
+  },
+  {
+    "id": "14_10287_6",
+    "layer": 14,
+    "ctx_idx": 6,
+    "influence_score": 0.35104966163635254,
+    "top_activations": [
+      {
+        "trigger": " mountains",
+        "score": 31.5,
+        "context": "0-450 B.C.). In later centuries, Lebanon's mountains were a refuge for Christians, and Crusaders established several strongholds there."
+      },
+      {
+        "trigger": " mountainous",
+        "score": 30.5,
+        "context": "<bos>Wolverines live in harsh conditions; they range over large areas of cold mountainous low-productivity habitat with persistent snow. The paper suggests wolverines take"
+      },
+      {
+        "trigger": " mountainous",
+        "score": 33.25,
+        "context": "ic green. The Purple-throated carib is a hummingbird species native to the mountainous islands of the Eastern Caribbean where John Kress and Ethan Temeles,"
+      },
+      {
+        "trigger": " mountainous",
+        "score": 29.0,
+        "context": ". On the coast winter lasts from June to September. During this period, the mountainous areas are often sunny during the day but cold at night. This is high"
+      },
+      {
+        "trigger": " peak",
+        "score": 29.25,
+        "context": " months before the actual event learning communications skills like ham radio and signaling. Reaching the peak can also be a challenge, requiring the boys to practice hiking, camping,"
+      }
+    ],
+    "promotes": [
+      "\ud83d\uddfb",
+      " ascent",
+      "\ud83c\udfd4",
+      " mountain",
+      "\u26f0"
+    ],
+    "demotes": [
+      "\u0445\u044c\u0442\u0430\u043d",
+      " AssemblyCulture",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "\u041f\u043e\u043f\u0438\u0441",
+      "LookAnd"
+    ],
+    "generated_description": "mountainous terrain \u2014 activates on \"mountain(s)\", \"mountainous\", \"peak\"; signals mountains/peaks, promotes words/emojis like mountain, ascent, \ud83d\uddfb, \ud83c\udfd4"
+  },
+  {
+    "id": "14_10287_3",
+    "layer": 14,
+    "ctx_idx": 3,
+    "influence_score": 0.36599379777908325,
+    "top_activations": [
+      {
+        "trigger": " mountains",
+        "score": 31.5,
+        "context": "0-450 B.C.). In later centuries, Lebanon's mountains were a refuge for Christians, and Crusaders established several strongholds there."
+      },
+      {
+        "trigger": " mountainous",
+        "score": 30.5,
+        "context": "<bos>Wolverines live in harsh conditions; they range over large areas of cold mountainous low-productivity habitat with persistent snow. The paper suggests wolverines take"
+      },
+      {
+        "trigger": " mountainous",
+        "score": 33.25,
+        "context": "ic green. The Purple-throated carib is a hummingbird species native to the mountainous islands of the Eastern Caribbean where John Kress and Ethan Temeles,"
+      },
+      {
+        "trigger": " mountainous",
+        "score": 29.0,
+        "context": ". On the coast winter lasts from June to September. During this period, the mountainous areas are often sunny during the day but cold at night. This is high"
+      },
+      {
+        "trigger": " peak",
+        "score": 29.25,
+        "context": " months before the actual event learning communications skills like ham radio and signaling. Reaching the peak can also be a challenge, requiring the boys to practice hiking, camping,"
+      }
+    ],
+    "promotes": [
+      "\ud83d\uddfb",
+      " ascent",
+      "\ud83c\udfd4",
+      " mountain",
+      "\u26f0"
+    ],
+    "demotes": [
+      "\u0445\u044c\u0442\u0430\u043d",
+      " AssemblyCulture",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "\u041f\u043e\u043f\u0438\u0441",
+      "LookAnd"
+    ],
+    "generated_description": "Mountain / peak \u2014 activates on tokens like \"mountain\", \"mountainous\", \"peak\"; promotes mountain-related outputs (mountain, ascent, \ud83c\udfd4, \ud83d\uddfb)."
+  },
+  {
+    "id": "18_12646_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.29398420453071594,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 60.5,
+        "context": " west. The country lies in a highly active tectonic belt. The tallest mountains reach 4,884 meters and nearby ocean trenches reach depths of 4"
+      },
+      {
+        "trigger": " highest",
+        "score": 57.0,
+        "context": " Mont Perdito in Aragonese, all three meaning lost mountain) is the third highest mountain in the Pyrenees. The summit of Monte Perdido (335"
+      },
+      {
+        "trigger": " (",
+        "score": 64.0,
+        "context": "7,455 m) to the south; and Karl Marx (6,723 m) and Engels (6,507 m)"
+      },
+      {
+        "trigger": " ",
+        "score": 66.5,
+        "context": " reaching the all-time record set at the summit of the 6,288 foot mountain peak.\u23ceDuring a wild April storm in 19"
+      },
+      {
+        "trigger": ",",
+        "score": 68.5,
+        "context": "8,000m in height. It\u2019s summit is a mere 25km from the Indus, a major river flowing off the Tibetan Plateau"
+      }
+    ],
+    "promotes": [
+      "boss",
+      " defaultstate",
+      " boss",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "EndProject"
+    ],
+    "demotes": [
+      " Wellen",
+      "softc",
+      "XmlType",
+      " Oat",
+      " underv"
+    ],
+    "generated_description": "Numeric/measurement token \u2014 activates on digits, commas, parentheses and nearby words like \u201chighest,\u201d marking numeric heights/measurements (mountain heights, years, magnitudes)."
+  },
+  {
+    "id": "4_5084_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.342824250459671,
+    "top_activations": [
+      {
+        "trigger": " mountain",
+        "score": 23.75,
+        "context": "\u23ceBecause hellbenders grow more quickly in captivity than they do in their native mountain waters, Williams expects that the young animals will reach sexual maturity by 2"
+      },
+      {
+        "trigger": " mountain",
+        "score": 23.62,
+        "context": " spectacular 800 to 1200 feet deep gorge through the mountain. Erosion has worked on the mountains east and west flanks, exposing colorful rocky"
+      },
+      {
+        "trigger": " mountain",
+        "score": 25.75,
+        "context": " timber products, and safeguarding the communities at risk from wildfires.\u23ceContains hundreds of mountain lakes, and 1,900 miles of streams including the Sacramento"
+      },
+      {
+        "trigger": " though",
+        "score": 26.88,
+        "context": " discovering tag or attribute names which they do not\u23ceunderstand should be to behave as though, in the case of\u23cea tag, the whole tag had not been"
+      },
+      {
+        "trigger": " mountain",
+        "score": 24.12,
+        "context": "\u23ceThe book's central premise is that millions of monarch butterflies appear on a mountainside in eastern Tennessee. They have been displaced from their historic wintering site"
+      }
+    ],
+    "promotes": [
+      "ExecuteNonQuery",
+      " doPost",
+      " CURLOPT",
+      " betweenstory",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430"
+    ],
+    "demotes": [
+      " hills",
+      " hilly",
+      " hill",
+      "mountains",
+      " hillside"
+    ],
+    "generated_description": "mountain \u2014 activates on the token \u201cmountain\u201d and compound uses (mountainside, mountain waters); detects mentions of a mountain (singular/compound) rather than hills or plural forms"
+  },
+  {
+    "id": "19_15391_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.36247682571411133,
+    "top_activations": [
+      {
+        "trigger": "foot",
+        "score": 57.75,
+        "context": " mirrored heliostats focus on the facility's three 459-foot power towers, also known as \"solar flux.\"\u23ceThe Ivanpah Solar"
+      },
+      {
+        "trigger": " than",
+        "score": 55.75,
+        "context": " and ice fall in a small inlet in Alaska in 1958. Yikes. That's taller than the Empire State Building in New York."
+      },
+      {
+        "trigger": " ",
+        "score": 46.75,
+        "context": "ot flaunts a beautiful pyramid-like symmetry that conveys \u201cprominence.\u201d This 13,370-ft mountain surrounds itself with good camping,"
+      },
+      {
+        "trigger": " tower",
+        "score": 49.5,
+        "context": " tower with white central column on top of white tank house, light 55 feet high.\u23ceThis light is not operational\u23ceDate Established: 18"
+      },
+      {
+        "trigger": " high",
+        "score": 48.25,
+        "context": " dusk hundreds can be seen going to roost in either the USD smokestack or the high school chimney.\u23ceThese remarkable birds leave in early September to fly to the"
+      }
+    ],
+    "promotes": [
+      "Height",
+      "height",
+      " Height",
+      " heights",
+      " height"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "routeProvider",
+      "principalTable",
+      " culturelle",
+      "setScene"
+    ],
+    "generated_description": "Height/size words \u2014 activates on tokens about vertical extent or measurement (foot, high, tower, than); drives mentions of \"height\"/height-related outputs."
+  },
+  {
+    "id": "20_8314_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.28109854459762573,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 69.5,
+        "context": " The river which originates from the southern slope of the Dhauladhar range of the Himalayas\u23ce, is fed by snow melt waters. All along the river bank"
+      },
+      {
+        "trigger": " of",
+        "score": 68.0,
+        "context": " m), located in Spain, lies hidden from France by the seemingly impenetrable peaks of the Cirques of Gavarnie and Estaub\u00e9. It is in the"
+      },
+      {
+        "trigger": " the",
+        "score": 94.5,
+        "context": "er who first came to Nepal in the early 1990s to climb the Himalayas, Ragan saw first-hand how much had changed when he"
+      },
+      {
+        "trigger": " isolated",
+        "score": 65.5,
+        "context": "), (see names of mont Saint-Hilaire for other names) is an isolated hill, 414 m (1,358 ft)"
+      },
+      {
+        "trigger": " the",
+        "score": 73.0,
+        "context": " Pyrenees set to be ice-free by mid-century and three-quarters of the glaciers in the Alps gone by the same date. As you climb higher,"
+      }
+    ],
+    "promotes": [
+      "peak",
+      " peak",
+      " Ranges",
+      " ranges",
+      " peaks"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "awtextra",
+      "EndInit",
+      " propOrder",
+      "contentLoaded"
+    ],
+    "generated_description": "Mountain/peak \u2014 fires on tokens around mountain descriptors (the/of/isolated, slopes, glaciers); represents mountainous geography and pushes output toward \"peak/peaks/ranges\""
+  },
+  {
+    "id": "16_1249_7",
+    "layer": 16,
+    "ctx_idx": 7,
+    "influence_score": 0.3568814694881439,
+    "top_activations": [
+      {
+        "trigger": "2",
+        "score": 29.25,
+        "context": "<bos>Moxham Mountain Exfoliation\u23ceApril 23, 2003\u23ceThe above photo shows the snow-covered face of an exfoli"
+      },
+      {
+        "trigger": " mountains",
+        "score": 32.25,
+        "context": " acres and encompasses a series of estuaries created by the numerous streams originating in the surrounding mountains. As the tides ebb and flow, the wetlands alternates from grassland to shallow"
+      },
+      {
+        "trigger": " mountain",
+        "score": 26.75,
+        "context": " hybrid trees were created and now are growing in an orchard on Berry College\u2019s mountain campus.\u23ceBut next year, Cipollini plans to kill them."
+      },
+      {
+        "trigger": " mountainous",
+        "score": 26.5,
+        "context": "'s squirrel is also know as the tassel-eared squirrel.\u23ce- Abert's squirrel can be found in the mountainous areas of New Mexico, Colorado"
+      },
+      {
+        "trigger": "ener",
+        "score": 27.25,
+        "context": " land rising at the toe of the long, gentle southeastern ridge of of Fourteener Mount Bross . There are wonderful views to be had from this timberline"
+      }
+    ],
+    "promotes": [
+      " BorderRadius",
+      "UIControlState",
+      " Referenzen",
+      " \u0628\u0631\u0627\u0646\u064a\u0647",
+      " referenties"
+    ],
+    "demotes": [
+      " mountain",
+      "matchCondition",
+      "Climb",
+      " ascent",
+      "AndEndTag"
+    ],
+    "generated_description": "mountain / mountainous \u2014 activates on mentions of mountain-related words and names (mountain, mountains, mountainous, Mount Bross, fourteener); appears in geographic/descriptive contexts."
+  },
+  {
+    "id": "7_1817_3",
+    "layer": 7,
+    "ctx_idx": 3,
+    "influence_score": 0.3916764259338379,
+    "top_activations": [
+      {
+        "trigger": " point",
+        "score": 25.75,
+        "context": "Countries||Bhutan, China, India, Nepal, Pakistan|\u23ce|Highest point||Mount Everest|\u23ce|- elevation||8,874 m ("
+      },
+      {
+        "trigger": " point",
+        "score": 32.75,
+        "context": " and the highest point in the range, Peak Mountain (5,843 feet (1,781 m)). To the southeast, the range merges"
+      },
+      {
+        "trigger": " above",
+        "score": 24.25,
+        "context": " turnout off Angeles Crest Highway near Mount Waterman, 7,000 feet above sea level.\u23ce\"It's the first naked-eye sighting to"
+      },
+      {
+        "trigger": " rise",
+        "score": 25.0,
+        "context": " and by the Bunya Highway. The nearby Bunya Mountains, which rise to 3,727 feet (1,136 metres) at"
+      },
+      {
+        "trigger": " feet",
+        "score": 30.25,
+        "context": "0 km) long. High peaks in the range include MacPherson Peak (5,747 feet (1,752 m)), and the highest"
+      }
+    ],
+    "promotes": [
+      "UnusedPrivate",
+      " \u0644\u0644\u062a\u0648",
+      " tartalomaj\u00e1nl\u00f3",
+      "MemoryWarning",
+      "AutoScaleMode"
+    ],
+    "demotes": [
+      "meier",
+      "hashCode",
+      " raison",
+      " Atl\u00e1ntico",
+      " base"
+    ],
+    "generated_description": "Altitude/peak indicator \u2014 activates on tokens introducing elevation or high-point info (point, above, rise, feet); signals mountain/highest\u2011point / elevation context."
+  },
+  {
+    "id": "18_15536_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3530072867870331,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 38.25,
+        "context": ", an Oregon trustee in the 1960s, grew up hiking and camping along the Sandy River. Hear what he has to say about the Conservancy"
+      },
+      {
+        "trigger": " outdoor",
+        "score": 38.75,
+        "context": "0s, three young employees\u2014an archaeologist, a wildlife biologist, and an outdoor recreation planner\u2014started on paths that led them to become border specialists for the"
+      },
+      {
+        "trigger": " expedition",
+        "score": 37.75,
+        "context": "<bos>Everest Expedition Suggests Nitric Oxide Benefits For Intensive Care Patients\u23ceThe latest results from an expedition to Mount Everest that looked at the body\u2019s response"
+      },
+      {
+        "trigger": " outdoor",
+        "score": 46.75,
+        "context": " offers outdoor enthusiasts achance to enjoy a wilderness-like experience and a variety of outdoor recreation opportunities within easy reach of a major metropolitan area. On the upper St"
+      },
+      {
+        "trigger": " outdoor",
+        "score": 54.5,
+        "context": " can be built on it. These areas contain land that is used for many outdoor recreation activities and include climbing areas such as Mt. Borah.\u23ceIn "
+      }
+    ],
+    "promotes": [
+      "outdoor",
+      "Outdoor",
+      " climbing",
+      " outdoors",
+      " outdoor"
+    ],
+    "demotes": [
+      " kasarigan",
+      " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+      "D\u00e9mographie",
+      "ysuckle",
+      " \u0648\u064a\u0643\u064a\u067e\u064a\u062f\u064a\u0627"
+    ],
+    "generated_description": "Outdoor recreation \u2014 activates on words like outdoor, expedition, camping, climbing; promotes the token \"outdoor\"/\"outdoors\" and outdoorsy activity context."
+  },
+  {
+    "id": "18_10051_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.28569498658180237,
+    "top_activations": [
+      {
+        "trigger": " Andean",
+        "score": 41.0,
+        "context": " America, it should be warm and humid, but due to the presence of the Andean Mountain Range, to a complex system of marine currents and the movement of the"
+      },
+      {
+        "trigger": " the",
+        "score": 43.75,
+        "context": " exposure ages for the Nepal Himalaya, complementing earlier soil geographic studies in the Langtang Valley and the Macha Khola Valley; and finally 5) provided"
+      },
+      {
+        "trigger": " ",
+        "score": 48.25,
+        "context": " mountain, called Mont Cervin in French and Monte Cervino in Italian, is 14,691 feet (4,478 meters)"
+      },
+      {
+        "trigger": " ",
+        "score": 47.75,
+        "context": " is bordered by the Graslitzen, a 2.044 m high summit of the mountain chain Gailtaler Alpen. In the north it is limited"
+      },
+      {
+        "trigger": " of",
+        "score": 43.25,
+        "context": "3 railroad\u23ceworkers stumbled across a series of hot springs\u23ceon the lower shoulder of the present-day Sulphur\u23ceMountain. After various heated ownership\u23cedisputes"
+      }
+    ],
+    "promotes": [
+      "R\u00fcyada",
+      " False",
+      "enegal",
+      "\u2557",
+      "']>"
+    ],
+    "demotes": [
+      " hillside",
+      " hill",
+      " uphill",
+      " climb",
+      "mountain"
+    ],
+    "generated_description": "Mountain name \u2014 activates on mountain/place names or range adjectives (Andean, Nepal Himalaya, Mont Cervin, Graslitzen, Sulphur Mountain); fires on tokens introducing geographic peaks/ranges"
+  },
+  {
+    "id": "21_9094_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.27131786942481995,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 75.0,
+        "context": " 1733, and lived in tents in midwinter on the shores of the Savannah River, one of the first conditions of safety for his colossal alms"
+      },
+      {
+        "trigger": " off",
+        "score": 57.5,
+        "context": "wettest January on record. Snowfall amounts for locations in the typical snowbelts off Georgian Bay were well below average in January and below average in February.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 55.5,
+        "context": " recently seen sea nettles in the West and Rhode, as well as the mouth of the Severn,\" Trumbauer said. \"I think they are getting extra attention"
+      },
+      {
+        "trigger": " and",
+        "score": 70.0,
+        "context": "0 square mile, rural and remote region of New York State located between Lake Ontario and the Adirondacks. The region is heavily forested and receives the heaviest snowfall in"
+      },
+      {
+        "trigger": " eyed",
+        "score": 55.5,
+        "context": " Odysseus sought to get home. Columbus set sail for a new world. Edmund Hillary eyed the Summit of Everest. However, what turns does a journey take when the"
+      }
+    ],
+    "promotes": [
+      " Mt",
+      "Mount",
+      "Lake",
+      " Mount",
+      " Lake"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      "Predecesor",
+      " vide",
+      "Descarga",
+      "printStackTrace"
+    ],
+    "generated_description": "say Mount/Lake \u2014 activates on prepositions/conjunctions (of, off, and) or verbs that introduce place names; promotes tokens like \"Mt\", \"Mount\", \"Lake\" (geographic name next)."
+  },
+  {
+    "id": "21_13774_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3995334506034851,
+    "top_activations": [
+      {
+        "trigger": "5",
+        "score": 97.5,
+        "context": "<bos>Magnitude 6.5 MINDORO, PHILIPPINES\u23ceFriday, October 08, 2004 at 14:36:"
+      },
+      {
+        "trigger": " a",
+        "score": 98.0,
+        "context": " Tuesday the 29th of September a devastating tsunami hit Samoa Islands after a massive earthquake measuring between 8.0 and 8.3 struck Laloman"
+      },
+      {
+        "trigger": " its",
+        "score": 107.5,
+        "context": "otsky national reserve in Kamchatka, the far-eastern peninsula famed for its volcanoes, contained about 90 geysers, as well as a"
+      },
+      {
+        "trigger": " a",
+        "score": 98.5,
+        "context": " is an area of 40,000 tightly packed basalt columns resulting from a volcanic eruption 60 million years ago. It is located along the"
+      },
+      {
+        "trigger": " and",
+        "score": 114.5,
+        "context": " and Mauna Loa volcanoes. It may provide a precursor to the next Mauna Loa eruption. These measurements also detection large sulfur dioxide pollution events from Asia.\u23ce"
+      }
+    ],
+    "promotes": [
+      "Vol",
+      " vol",
+      " VOL",
+      "VOL",
+      "vol"
+    ],
+    "demotes": [
+      "Geplaatst",
+      " linkovi",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "MigrationBuilder",
+      " tartalomaj\u00e1nl\u00f3"
+    ],
+    "generated_description": "say \"volcano\" \u2014 fires on small tokens (articles, possessives, digits, conjunctions) immediately before mentions of volcano/Vol/volcanoes; promotes \"Vol\" token in output"
+  },
+  {
+    "id": "21_10664_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3081284463405609,
+    "top_activations": [
+      {
+        "trigger": " you",
+        "score": 56.75,
+        "context": "20 meters high with its television antennas,\u23ceit still incredibly towers above Paris. Open air elevators\u23cebring you up to the first (57 meters high"
+      },
+      {
+        "trigger": " crawl",
+        "score": 53.25,
+        "context": "<bos>Gecko\u2019s sticky feet seem to let the little climbing lizards crawl wherever they want. Now researchers have used the gecko feet\u2019s trade secrets to let robots"
+      },
+      {
+        "trigger": " summit",
+        "score": 52.25,
+        "context": " National Cemetery; before it sparked fiery Congressional debates, reached the North Pole or the summit of Mount Everest; before it became a lapel fixture, testified to the Marines"
+      },
+      {
+        "trigger": " straight",
+        "score": 53.75,
+        "context": "0 or 9. Look for his \u201cbelt\u201d of three stars pointing almost straight up from the horizon, with a bright orange star to the left and a"
+      },
+      {
+        "trigger": " lead",
+        "score": 73.0,
+        "context": " but now, many sprouts are visible emerging form its stump. 60 stone steps lead up to the main shrine, which offers views over Kamakura City."
+      }
+    ],
+    "promotes": [
+      " climbed",
+      " ascent",
+      " climbing",
+      " ascending",
+      " climb"
+    ],
+    "demotes": [
+      "UnitTesting",
+      " disambiguazione",
+      " DbContext",
+      "LayoutStyle",
+      "JTextField"
+    ],
+    "generated_description": "Ascend/Climb \u2014 activates on tokens about going up (climb, crawl up, lead up, summit, straight up); promotes climb/ascent verbs in output (climbed, ascent, climbing)"
+  },
+  {
+    "id": "17_9762_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.27623945474624634,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 61.0,
+        "context": ", or Zinjerli, ancient Samal, archaeological site in the foothills of the Anti-Taurus Mountains, south-central Turkey. Samal was one of"
+      },
+      {
+        "trigger": " of",
+        "score": 64.5,
+        "context": " highlight travel atop the Continental Divide; northwest-southeast trending mountain ranges culminate in the jagged heights of Mount Borah, Idaho's tallest peak. The sage"
+      },
+      {
+        "trigger": " the",
+        "score": 58.5,
+        "context": " National Forest, said this week that late-summer thunder showers near the crest of the Sierra Nevada mountains delayed some of the work to close the Juniper Uranium Mine."
+      },
+      {
+        "trigger": " the",
+        "score": 52.5,
+        "context": " between 10 and 20 million years ago, streams draining eastward from the Appalachian Highlands spread a blanket of sand and gravel over the newly exposed sea floor"
+      },
+      {
+        "trigger": ",",
+        "score": 55.5,
+        "context": " properties. A site cradled by protective mountains on three sides with the highest mountain, Mt. Hiei, to the northeast (the\u23cedirection from which evil"
+      }
+    ],
+    "promotes": [
+      " Mountains",
+      " mountain",
+      " Mt",
+      " mountains",
+      " Mount"
+    ],
+    "demotes": [
+      " \u0645\u0631\u0626\u064a\u0647",
+      " jsPsych",
+      "IndentedString",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u090f\u0902",
+      "FEL"
+    ],
+    "generated_description": "say \"Mount\"/\"mountain\" \u2014 triggers on prepositions/articles/commas before geographic peaks; consistently pushes tokens like Mount, mountain, Mountains, Mt."
+  },
+  {
+    "id": "24_3865_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3969760239124298,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "comma/period \u2014 activates on commas and sentence-ending periods; marks clause/sentence boundaries; associated with demoting output commas/newlines (pushes non-punctuation tokens instead)."
+  },
+  {
+    "id": "21_5505_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3943391740322113,
+    "top_activations": [
+      {
+        "trigger": " build",
+        "score": 42.5,
+        "context": "<bos>The rocks that were used to build the walls were probably throw-aways, unearthed during excavation for homes built more than a century ago. Each is different."
+      },
+      {
+        "trigger": " than",
+        "score": 39.5,
+        "context": " when he grew to be a man he painted the pleasant flat Suffolk country oftener than any other. Constable went to nature, walked humbly with her, and loved"
+      },
+      {
+        "trigger": ":",
+        "score": 40.5,
+        "context": " material. Having proven the technology, Dini's eyeing a remote building site: the surface of the moon, which has an abundance of both space and raw"
+      },
+      {
+        "trigger": "to",
+        "score": 42.5,
+        "context": "s important to consider your environmental impact.\u23ceNo matter where you are going\u2014to an urban or rural setting in a more or less developed country\u2014you will"
+      },
+      {
+        "trigger": " to",
+        "score": 41.5,
+        "context": " at how you resemble your mother?\u23ce4. How is Mary's trip to college with Mother the \"hairpin\", as she describes it, in her"
+      }
+    ],
+    "promotes": [
+      " Tuscany",
+      " Yosemite",
+      " Hawaii",
+      " Machu",
+      " Santorini"
+    ],
+    "demotes": [
+      "SequentialGroup",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "outSlope",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " Throwable"
+    ],
+    "generated_description": "say place name \u2014 promotes geographic/destination proper nouns (Tuscany, Yosemite, Hawaii, Machu, Santorini)."
+  },
+  {
+    "id": "23_6476_7",
+    "layer": 23,
+    "ctx_idx": 7,
+    "influence_score": 0.37101417779922485,
+    "top_activations": [
+      {
+        "trigger": " high",
+        "score": 65.5,
+        "context": " is bordered by the Graslitzen, a 2.044 m high summit of the mountain chain Gailtaler Alpen. In the north it is limited"
+      },
+      {
+        "trigger": " as",
+        "score": 82.0,
+        "context": " of mountains.\u23ceWe now know that the highest peaks in the world \u2013 such as Mount Everest \u2013 are formed from ancient marine sediments. When we think about a"
+      },
+      {
+        "trigger": " is",
+        "score": 77.5,
+        "context": " Calif. The highest point is Alaska's Mount McKinley\u23ce; within the conterminous states it is Mount Whitney\u23ce, Calif. Chief rivers are the Mississippi"
+      },
+      {
+        "trigger": " highest",
+        "score": 63.0,
+        "context": " National Park in Alaska, the Kluane National Park protects the St Elias Mountains, including Mount Logan (5950m) - Canada's highest point"
+      },
+      {
+        "trigger": " of",
+        "score": 81.5,
+        "context": " are slowly reduced to lakes.\u23ceWhen Sir Edmund Hillary made his successful expedition to the top of Everest in 1953, Lake Imja did not"
+      }
+    ],
+    "promotes": [
+      "\u043a\u0441\u0438",
+      "ism",
+      "\u0439\u0441",
+      "showthread",
+      " Paso"
+    ],
+    "demotes": [
+      " kasarigan",
+      ":\u2728",
+      "providedIn",
+      " ProtoMessage",
+      "writeFieldEnd"
+    ],
+    "generated_description": "Highest/superlative \u2014 activates on mentions of \u201chighest\u201d, \u201chigh\u201d, \u201cis/of\u201d in geography contexts; signals statements about top/summit (often before mountain names like Mount Everest)."
+  },
+  {
+    "id": "21_16274_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.3742283582687378,
+    "top_activations": [
+      {
+        "trigger": " highest",
+        "score": 49.25,
+        "context": ", 28 January 2013\u23ceHome to Mongolia's highest mountain, Kuiten Uul,4374 m, this national"
+      },
+      {
+        "trigger": "capped",
+        "score": 58.0,
+        "context": " Andes, and on a clear day it\u2019s possible to see the snow-capped volcano, Cotopaxi in the distance.\u23ceClose to the Tibetan"
+      },
+      {
+        "trigger": " called",
+        "score": 48.25,
+        "context": " as the highest\u23cepeak in the world in 1852 it was called \u201cPeak XIV\u201d, even today it\u2019s altitude\u23ceis still disputed."
+      },
+      {
+        "trigger": " the",
+        "score": 52.5,
+        "context": "matha - Solu Khumbu or Everest region\u23ceThe major mountains are the Mt.Everest, Mt.Lhotse, Cho Oyu, N"
+      },
+      {
+        "trigger": " of",
+        "score": 59.5,
+        "context": " 1906, Cook stated that he had made the first successful ascent of Alaska's Mount McKinley. Later, his summit photographs were revealed as fakes"
+      }
+    ],
+    "promotes": [
+      "mitte",
+      " Nutz",
+      "LAB",
+      "ItemCount",
+      " Ceres"
+    ],
+    "demotes": [
+      "Personendaten",
+      " JpaRepository",
+      "Personensuche",
+      " AttributeSet",
+      "MigrationBuilder"
+    ],
+    "generated_description": "mountain description \u2014 activates on tokens in mountain/peak descriptions; signals naming or descriptive phrases (e.g. \"highest\", \"snow\u2011capped\", \"called\", \"the\", \"of\")"
+  },
+  {
+    "id": "24_5999_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3861832916736603,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ],
+    "generated_description": "Heading/List token \u2014 activates on words or symbols in titles, list items, or isolated/formatting contexts (headings, bullets, arrows, lone punctuation)."
+  },
+  {
+    "id": "24_13277_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.29802870750427246,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say next noun/entity \u2014 fires on prepositions/articles/commas that introduce a following noun phrase (places, people, institutions, lists)."
+  },
+  {
+    "id": "24_12777_7",
+    "layer": 24,
+    "ctx_idx": 7,
+    "influence_score": 0.3407292366027832,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 54.5,
+        "context": " a warm ocean that no longer exists \u2013 now lifted up 9 km to form the top of Mount Everest, the only proper response is awe. The rocks just"
+      },
+      {
+        "trigger": " of",
+        "score": 61.75,
+        "context": ".\u23ce- This fragment of a bronze bowl was found on a scree-slope below Craig Cwm Beudy Mawr, on the\u23cenorth-east side of"
+      },
+      {
+        "trigger": " as",
+        "score": 51.5,
+        "context": " he said. \"There's a mountain that's almost twice as big as Mount Everest.\"\u23ceFuller stood with his partner, Shonto third-grader"
+      },
+      {
+        "trigger": " mountain",
+        "score": 60.25,
+        "context": " from the Tibetan Plateau. By extension, it is also the name of the massive mountain system which includes the Karakoram, the Hindu Kush, and a host"
+      },
+      {
+        "trigger": " mountain",
+        "score": 65.0,
+        "context": "Cadair Idris is a spectacular mountain reserve with a variety of landscapes and terrain. Rugged summits, glacial lakes and a mossy wooded gorge cover over 450"
+      }
+    ],
+    "promotes": [
+      " Cre",
+      " solid",
+      " M",
+      " cre",
+      "iplin"
+    ],
+    "demotes": [
+      "EndContext",
+      " AssemblyProduct",
+      "resave",
+      "Extinguishing",
+      "setVerticalGroup"
+    ],
+    "generated_description": "mountain \u2014 represents mountain/geography mentions; activates on the word \"mountain\" and on nearby function words introducing mountain phrases (the, of, as before Mount/Everest, peaks)."
+  },
+  {
+    "id": "25_5293_7",
+    "layer": 25,
+    "ctx_idx": 7,
+    "influence_score": 0.2549854516983032,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 57.5,
+        "context": " mits`ar would then mean \"from the little mountain,\" i.e. the little mountain of Zion. Some scholars think that the \"m\" in me"
+      },
+      {
+        "trigger": " the",
+        "score": 48.5,
+        "context": ". But as you can see they are lush with grass.|\u23ceIn the summer months the grass turn brown hence the name chocolate hills. The point we are trying"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 49.25,
+        "context": " The observatory is a historically significant facility responsible for a number of important photographic surveys.\u23ceThe 4,090 m (13,419"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 54.5,
+        "context": "\u23ceThe provinces of Benguet, Ifugao, and Nueva Vizcaya meet at the mountain's peak.\u23ce|By comparison the Picture you see"
+      },
+      {
+        "trigger": " that",
+        "score": 61.0,
+        "context": " well with other vicinity peaks like Whale Peak, Bald Mountain, and Square Top Mountain.\u23ceI get the feeling that after I post this mountain on SP, some"
+      }
+    ],
+    "promotes": [
+      " quack",
+      " Soy",
+      " Zeug",
+      "Quack",
+      " Inf\u00f3rmanos"
+    ],
+    "demotes": [
+      " Mount",
+      " mount",
+      "Mount",
+      " MOUNT",
+      " Mountain"
+    ],
+    "generated_description": "avoid \"Mountain\" \u2014 activates on determiners/line breaks/relational words around mountain mentions; consistently suppresses output tokens \"Mount\"/\"mount\"/\"Mountain\"."
+  },
+  {
+    "id": "20_9542_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.26057523488998413,
+    "top_activations": [
+      {
+        "trigger": " on",
+        "score": 63.0,
+        "context": " It is the eternal depository\u23ceof the Tablets that Moses received directly from Hashem on Mount\u23ceSinai, and as such, it is the ultimate symbol of"
+      },
+      {
+        "trigger": " highest",
+        "score": 48.5,
+        "context": " a solitary bird are five:\u23ce- The first, that it flies to the highest point;\u23ce- The second, that it does not suffer for company,"
+      },
+      {
+        "trigger": " of",
+        "score": 48.25,
+        "context": "776. Built by Col. Swartwout on the southwest slope of Spuyten\u23ceDuyvil Hill at today's West 2"
+      },
+      {
+        "trigger": " reach",
+        "score": 64.0,
+        "context": " be standing on top of the world. He had dreamed of the day he would reach the top of Mount Everest. On May 29, 19"
+      },
+      {
+        "trigger": " highest",
+        "score": 47.75,
+        "context": " km\u00b2, 57 km in length and 22 km wide. The highest place in the island is called pico Ruivo at 1862"
+      }
+    ],
+    "promotes": [
+      " summits",
+      " heights",
+      " atop",
+      " hill",
+      " mountain"
+    ],
+    "demotes": [
+      " Audiodateien",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "adaptiveStyles",
+      "yntaxException",
+      "quias"
+    ],
+    "generated_description": "Highest point / summit \u2014 activates on mentions of tops/peaks ('highest', 'reach the top', 'summit of'), pushes mountain/summit vocabulary (summits, heights, atop)."
+  }
+]

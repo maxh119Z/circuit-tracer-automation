@@ -1,0 +1,3506 @@
+[
+  {
+    "id": "0_2015_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3739432692527771,
+    "top_activations": [
+      {
+        "trigger": " influence",
+        "score": 18.38,
+        "context": " topics in the course.\u23ceLeadership development is the process of enhancing your skills to influence and organize others to accomplish key goals. It goes beyond knowledge of leadership theories"
+      },
+      {
+        "trigger": " influence",
+        "score": 17.88,
+        "context": " reacted to the shoplifting scenario endorsed various motivations to obey the law -- morality, influence from family and friends, fear of getting caught and an inherent obligation to follow"
+      },
+      {
+        "trigger": " influence",
+        "score": 18.0,
+        "context": " Geophysics, in an email to the department dated March 15. \u201cHis influence is so large it is impossible to measure.\u201d\u23ceTurekian\u2019s"
+      },
+      {
+        "trigger": " influence",
+        "score": 18.0,
+        "context": " are: 1) That it is\u23cenot only true that the mind can influence the body, but that the body\u23cecan influence the mind; 2"
+      },
+      {
+        "trigger": " influence",
+        "score": 17.88,
+        "context": " driving fire in PNW, SW, and NR are not constant in their relative influence on fire through time or across space and that their differentiation is not stationary through"
+      }
+    ],
+    "promotes": [
+      ",",
+      " (",
+      " and",
+      " the",
+      " in"
+    ],
+    "demotes": [
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " \u0f0b\u0f0b",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      " ainfi"
+    ],
+    "generated_description": "influence \u2014 fires on the token \u201cinfluence\u201d and close synonyms; marks mentions of affecting/impacting across academic, social, and causal contexts."
+  },
+  {
+    "id": "0_3820_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.32918307185173035,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on occurrences of the token \"the\", especially when used before nouns (pre-nominal function word)"
+  },
+  {
+    "id": "0_13096_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3830700218677521,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 23.12,
+        "context": " been used for congestion pricing: during business hours in downtown London, for instance, the license plates of cars are photographed, and the drivers are sent a bill."
+      },
+      {
+        "trigger": " the",
+        "score": 24.0,
+        "context": "gov/WWW/K-12/airplane/vel.html and use the simulator to determine the effect of airspeed on lift. When you double the"
+      },
+      {
+        "trigger": " the",
+        "score": 23.62,
+        "context": "driven graphics in Photoshop automatically, using variables and a simple text file.\u23ceAdjust the color of a complexly color-casted image, using a 10"
+      },
+      {
+        "trigger": " the",
+        "score": 22.62,
+        "context": "<bos>DM \u2013 Mosquitoes contribute to the problem of childhood obesity in some parts of the United States, a small study suggests. Researchers from Brandeis University in Massachusetts"
+      },
+      {
+        "trigger": " the",
+        "score": 22.88,
+        "context": " displayed (a new Worksheet or an existing Worksheet). Click OK.\u23ce- Select the fields you wish to be included in your Pivot by dragging them to the Row"
+      }
+    ],
+    "promotes": [
+      " Di\u017f",
+      " Re\u017f",
+      " An\u017f",
+      " Monfieur",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " it",
+      " this"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on the token \"the\", especially when introducing a following noun phrase; structural/article detector."
+  },
+  {
+    "id": "0_2848_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.3631904423236847,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of \u2014 activates on the preposition \u201cof\u201d; fires on occurrences linking places, institutions, people, or possessions (structural token trigger)."
+  },
+  {
+    "id": "0_8918_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3417046368122101,
+    "top_activations": [
+      {
+        "trigger": " countries",
+        "score": 20.88,
+        "context": ", libraries, facility upkeep and to provide a comfortable student learning experience. In most countries, especially in non-English-speaking countries, there are no or only"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " borders into economies both near and far, causing persistent social and economic detriment in many countries. The Global Economic Crisis in Latin America: Impacts and Responses is an examination"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " and schizophrenia) account for nearly 25% of all disability across major industrialized countries.12\u23ceAs the President indicated in his speech announcing the Commission ("
+      },
+      {
+        "trigger": " countries",
+        "score": 20.5,
+        "context": " implement and fund projects on autism spectrum disorders and other mental disorders in children in developing countries, the vast majority of whom do not currently receive any treatment or care."
+      },
+      {
+        "trigger": " countries",
+        "score": 20.62,
+        "context": "\u23ceLATCH stands for Lower Anchors and Tethers for Children. In other countries, it\u2019s known as ISOFIX/ISOFIT or LUAS"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "\ue315",
+      "InputBorder",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      " country",
+      "ral",
+      " current",
+      "en",
+      "country"
+    ],
+    "generated_description": "countries (plural) \u2014 activates on the token \u201ccountries\u201d; appears in general mentions of nations, often with modifiers (developing, industrialized, non\u2011English\u2011speaking)."
+  },
+  {
+    "id": "0_12884_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3880957365036011,
+    "top_activations": [
+      {
+        "trigger": " thousand",
+        "score": 12.12,
+        "context": " scheme to cool a collection of fluoromethane molecules to a temperature of just a few thousandths of a kelvin. Cooling molecules with more than two atoms had proved"
+      },
+      {
+        "trigger": " attribute",
+        "score": 16.0,
+        "context": " Materials attribute. After that, you calculate and set each polygon's MaterialID attribute to specify the material you want based on whatever criteria you choose.\u23ceallows"
+      },
+      {
+        "trigger": " attribute",
+        "score": 15.75,
+        "context": " line 1, in <module> AttributeError: 'str' object has no attribute 'ascii_uppercase'\u23ceMy question is: how can I convert a"
+      },
+      {
+        "trigger": " attribute",
+        "score": 16.0,
+        "context": " Persistence of vision is directly related to the perception of an afterimage.\u23ceSome attribute persistence of vision only to the retina, and some attribute it to the visual"
+      },
+      {
+        "trigger": " thousand",
+        "score": 12.25,
+        "context": "000 years ago, Tasmania was probably populated by no more than a few thousand Aboriginal hunter-gatherers. By the time their descendants were discovered by "
+      }
+    ],
+    "promotes": [
+      " ExecuteAsync",
+      " unknownFields",
+      "IntoConstraints",
+      "InjectAttribute",
+      "CloseOperation"
+    ],
+    "demotes": [
+      " look",
+      " pass",
+      ",",
+      " sus",
+      " ch"
+    ],
+    "generated_description": "attribute \u2014 activates on the token \"attribute\" in code/docs contexts; often drives Attribute-style identifiers or API-like tokens (e.g., InjectAttribute, unknownFields)."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.33914363384246826,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say In \u2014 sentence-initial preposition introducing a topical prepositional clause (In X, ...); triggers at starts like \"In music theory\", \"In medicine\", \"In word processing\""
+  },
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.37074196338653564,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ],
+    "generated_description": "By (author byline) \u2014 activates on sentence-start \"By\"/\"By:\" tokens introducing author names or credits; marks article bylines and attribution phrases."
+  },
+  {
+    "id": "0_6084_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.380869060754776,
+    "top_activations": [
+      {
+        "trigger": " boundary",
+        "score": 17.12,
+        "context": " media sites. Some have had inappropriate contact with students that blur the teacher-student boundary. In extreme cases, teachers and coaches have been jailed on sexual abuse and"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.62,
+        "context": " welded to the bottom side of the steel plate. This assembly is tied to the boundary element which surrounds it. The concrete wall below the level of these plates was"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.12,
+        "context": "<bos>Migration is the movement of people across a specified boundary for the purpose of establishing a\u23cenew or semi-permanent residence. External migration is where residence changes between"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.88,
+        "context": " the northern boundary of that parish and\u23ceCastle Street, Long Acre, the northern boundary of the parish of St. Martinin-the-Fields; through this"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.62,
+        "context": " the plane x+y+z=1 and the surface S which is the boundary of this region, calculate for the vector valued function F=(x^2"
+      }
+    ],
+    "promotes": [
+      "EDEFAULT",
+      "ormick",
+      "phazard",
+      "omitempty",
+      "])));"
+    ],
+    "demotes": [
+      " Zacks",
+      "TextWatcher",
+      " of",
+      " \u8df3\u8f6c\u81f3",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ],
+    "generated_description": "boundary \u2014 activates on the word \u201cboundary\u201d; signals physical, legal, geographic, or mathematical borders and conceptual limits across contexts"
+  },
+  {
+    "id": "0_9028_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36659669876098633,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 7.44,
+        "context": " 50,000 people annually.\u23ceBut HIV, the virus that causes AIDS, is on the rise among younger Americans under the age of "
+      },
+      {
+        "trigger": " that",
+        "score": 7.38,
+        "context": " you add the 1.2 GW and counting of customer-owned solar generation that serves onsite load, the total more than doubles).\u23ceA key takeaway here"
+      },
+      {
+        "trigger": " that",
+        "score": 7.88,
+        "context": " we offer miles and miles of visibility, a horizon almost as wide as the ocean that surrounds it, by the total absence of trees.\u23cePhotography by Alex Gre"
+      },
+      {
+        "trigger": " that",
+        "score": 7.31,
+        "context": "\u23ceEradication efforts in Arizona and Southern California are the final piece of the puzzle that when put together will show a picture of the pink bollworm eradicated in the"
+      },
+      {
+        "trigger": " that",
+        "score": 7.44,
+        "context": " International news release\u23ceThere needs to be significant investment to solve the growing water crisis that threatens water supplies and water quality for both people and nature, says IUCN."
+      }
+    ],
+    "promotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "SourceChecksum",
+      " Inf\u00f3rmanos",
+      "rungsseite",
+      " HasFactory"
+    ],
+    "demotes": [
+      " this",
+      " that",
+      " and",
+      ".",
+      "\u23ce"
+    ],
+    "generated_description": "say 'that' \u2014 activates on the word \"that\" introducing relative/explanatory clauses; signals upcoming clause content (restrictive or explanatory continuation)"
+  },
+  {
+    "id": "0_2115_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.39436963200569153,
+    "top_activations": [
+      {
+        "trigger": "combat",
+        "score": 17.5,
+        "context": "1930s. Hoping that it would allow self-simulative\u23cecombat. However powerfully applied techniques still\u23cecause concussions through the thickest protections"
+      },
+      {
+        "trigger": "athery",
+        "score": 13.88,
+        "context": "cts persistent, broadly ovate or triangular-ovate, flat, large, leathery, base cordate, margin irregularly and finely serrulate, apex long ac"
+      },
+      {
+        "trigger": "biological",
+        "score": 13.88,
+        "context": " insects, weeds and plant diseases is referred to as \u201cbiocontrol\u201d or \u201cbiological control\u201d.\u23ceAs part of the greenhouse installation at Agriculture in the City visitors"
+      },
+      {
+        "trigger": "sustainable",
+        "score": 15.62,
+        "context": " World Commission on Environment and Development, which produced the now-familiar concept of \u201csustainable development\u201d. She was addressing a discussion on population and reproductive health on 1"
+      },
+      {
+        "trigger": "glitter",
+        "score": 19.62,
+        "context": " others. A spectacular desirable effect of metal halide lighting in your aquarium is the \"glitter effect,\" which replicates the effect of surface waves reflecting on a reef in a"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " Shakspeare",
+      " \u017fche",
+      " plea\u017fure",
+      " Monfieur"
+    ],
+    "demotes": [
+      " \u201c",
+      " a",
+      "ratulations",
+      " an",
+      " co"
+    ],
+    "generated_description": "archaic long-\u017f \u2014 activates on ordinary content words; pushes archaic spellings and medial long-\u017f tokens (my\u017felf, Shakspeare, \u017fche, plea\u017fure)."
+  },
+  {
+    "id": "0_1790_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3699254095554352,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 18.88,
+        "context": "farm resources and integrate natural biological cycles and controls\u23ce\u2022 sustain the economic viability of farm operations\u23ce\u2022 enhance the quality of life for farmers, ranchers and society as"
+      },
+      {
+        "trigger": " farm",
+        "score": 18.88,
+        "context": " loss, meat quality and food safety. A brief discussion of sea...\u23ceProtecting farm animals from hunger and thirst is central to good welfare. However, there are"
+      },
+      {
+        "trigger": " farm",
+        "score": 18.88,
+        "context": " into water. People can protect lakes and ponds by minimizing the runoff of yard or farm soil into waterways.\u23ce(Copyright 2012 The Associated Press"
+      },
+      {
+        "trigger": " farm",
+        "score": 18.88,
+        "context": ".\u23ceThe main policy mechanisms behind this stimulus were farm price floors, to raise farm prices to \u201cparity,\u201d and supply management to make it work. Additionally there"
+      },
+      {
+        "trigger": " farm",
+        "score": 18.88,
+        "context": " like the kind they find pre-wrapped for them in their local supermarkets. While farm-bred turkeys don\u2019t usually conjure up images of speed and agility,"
+      }
+    ],
+    "promotes": [
+      " ch",
+      " can",
+      " the",
+      ",",
+      " a"
+    ],
+    "demotes": [
+      " disambiguazione",
+      "AddTagHelper",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " ModelExpression",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ],
+    "generated_description": "farm \u2014 activates on the token \"farm\" and farm-related compounds; signals agricultural contexts (animals, soil/runoff, price floors, farm-bred products)"
+  },
+  {
+    "id": "0_13454_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3778674900531769,
+    "top_activations": [
+      {
+        "trigger": " School",
+        "score": 9.75,
+        "context": "ius, Sc.D., an assistant professor of community health at Brown University Medical School, in Providence, R.I. Wellenius collaborated with researchers at Beth"
+      },
+      {
+        "trigger": " School",
+        "score": 9.38,
+        "context": " of the homeless in the United States,\u201d wrote the researchers, led by Harvard Medical School student Katherine Koh, in an upcoming Journal of Urban Health study.\u23ceThe"
+      },
+      {
+        "trigger": " Show",
+        "score": 7.09,
+        "context": " step closer to realizing that vision at the 2013 International Consumer Electronics Show (CES) in Las Vegas, where Toyota unveiled research it has been conducting"
+      },
+      {
+        "trigger": " Complex",
+        "score": 7.28,
+        "context": " Publications Collective. Abolition Now!: Ten Years of Strategy and Struggle Against the Prison Industrial Complex. Oakland, CA: AK Press, 2008.\u23ce"
+      },
+      {
+        "trigger": " failure",
+        "score": 7.16,
+        "context": " high blood pressure, which in turn can lead to strokes, heart attacks and heart failure- the world's number one killer.\u23ceConsumer groups have long h"
+      }
+    ],
+    "promotes": [
+      "providedIn",
+      "rophoresis",
+      "makeText",
+      "TestingModule",
+      "\u062c\u0648\u0627\u064a\u0632"
+    ],
+    "demotes": [
+      "<bos>",
+      "d\u0117",
+      " sp\u0113",
+      "znacz",
+      " f\u00f6rs"
+    ],
+    "generated_description": "compound-final noun \u2014 activates on second word of common multiword names/phrases (e.g., School, Show, Complex, failure); signals completion of a fixed compound/name"
+  },
+  {
+    "id": "0_13503_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3108590245246887,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 22.0,
+        "context": "Since time immemorial, the oceans have absorbed vast amounts of carbon dioxide in a system that keeps our planet\u2019s atmosphere in balance. Now, thanks to the burning"
+      },
+      {
+        "trigger": " that",
+        "score": 21.88,
+        "context": " and seagrass beds.\u23ceSite for the Platte River Program in Nebraska an area that is a critical staging area for migratory waterbirds of the Central Flyway."
+      },
+      {
+        "trigger": " that",
+        "score": 22.38,
+        "context": " case.\u23ceThere are things you can do to help your provider create an environment that is safe and welcoming.\u23ceIn addition to the environment, there are other"
+      },
+      {
+        "trigger": " that",
+        "score": 23.12,
+        "context": " and other industrial poisons than a decade ago, offering some good news for a species that may face critical loss of ice habitat as the Arctic warms.\u23ceBlood levels"
+      },
+      {
+        "trigger": " that",
+        "score": 22.0,
+        "context": "A technology that adds value to our lives is an ethically good thing. A technology that enables a whole range of services that add value to our lives is even better"
+      }
+    ],
+    "promotes": [
+      " Who",
+      "who",
+      " whose",
+      " which",
+      " who"
+    ],
+    "demotes": [
+      "AccessorTable",
+      "Portale",
+      " NSCoder",
+      "^(@)",
+      " Forumite"
+    ],
+    "generated_description": "relative \"that\" \u2014 activates on the relative-pronoun \"that\" introducing clauses; linked to promoting other relative/question words (who, which, whose) in output."
+  },
+  {
+    "id": "0_15423_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36053213477134705,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 13.19,
+        "context": ", is a nationwide organization that has established specific guidelines for foreign language proficiency across the country. Norych explained how ACTFL\u2019s main vision is for students"
+      },
+      {
+        "trigger": " country",
+        "score": 13.44,
+        "context": " will continue, especially so in the Upper Midwest and New England. Elsewhere across the country, near average temperatures will likely round out the season once all the months finish"
+      },
+      {
+        "trigger": " country",
+        "score": 13.56,
+        "context": "<bos>As debate rages over sexism and misogyny in Canberra and across the country, a global survey has found Australian women are the most economically empowered in the"
+      },
+      {
+        "trigger": " country",
+        "score": 13.06,
+        "context": " as the air we breathe. In recent months, many schools and districts around the country have taken steps to create social media policies and guidelines for their students and staff"
+      },
+      {
+        "trigger": " country",
+        "score": 13.44,
+        "context": " environmentally contaminated sites known as \"brownfields.\" He has worked in cities across the country, including Atlanta and Cleveland, to turn vacant properties into parks, gardens or"
+      }
+    ],
+    "promotes": [
+      " who\u017fe",
+      " hou\u017fe",
+      " them\u017felves",
+      " The\u017fe",
+      " purpo\u017fe"
+    ],
+    "demotes": [
+      "CloseOperation",
+      "\u4f8b\u53e5",
+      "tagHelperRunner",
+      "tvguidetime",
+      "rawDesc"
+    ],
+    "generated_description": "country \u2014 activates on mentions of \u201ccountry,\u201d especially in phrases like \u201cacross the country\u201d; signals nationwide/geographic scope contexts"
+  },
+  {
+    "id": "0_9793_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.39160412549972534,
+    "top_activations": [
+      {
+        "trigger": " Water",
+        "score": 11.94,
+        "context": " every other year or so,\" according to Sandra Postel, director of the Global Water Policy Project. \"Why? Heavy pumping of groundwater for irrigation of big green"
+      },
+      {
+        "trigger": " Plant",
+        "score": 14.69,
+        "context": "84 081 001\u23ceThe Portsmouth Gaseous Diffusion Plant is located in south central Ohio, approximately 32 kilometers (20"
+      },
+      {
+        "trigger": " Plant",
+        "score": 13.69,
+        "context": "<bos>Location: Plant, Soil and Nutrition Research\u23ceProject Number: 1907-21000-036-11\u23ce"
+      },
+      {
+        "trigger": " Water",
+        "score": 12.94,
+        "context": " comes to territory, clearly you will likely find liquid water below the timberline. Water follows the gradient, so keep into account the watershed and look for features that"
+      },
+      {
+        "trigger": " Cell",
+        "score": 11.94,
+        "context": "ini the story of how he had broken the nose of Michelangelo as a boy. Cellini already idolized Michelangelo by this time and disliked Torrigiano thereafter,"
+      }
+    ],
+    "promotes": [
+      " mineral",
+      " fuel",
+      " water",
+      " plant",
+      " food"
+    ],
+    "demotes": [
+      " Drug",
+      " Wine",
+      " Oil",
+      " Drugs",
+      " Fish"
+    ],
+    "generated_description": "Natural resource \u2014 activates on tokens like \"Water\"/\"Plant\"/\"Cell\"; promotes resource words (water, plant, food, mineral, fuel)."
+  },
+  {
+    "id": "0_11375_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.32608166337013245,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "say \"is\" \u2014 activates on the token \"is\" (present-tense linking/copula) before predicates; often signals/latches on simple \"is\" constructions and tends to demote \"is\" in outputs."
+  },
+  {
+    "id": "0_8061_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.33646899461746216,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 39.0,
+        "context": " aquatic ecosystem ecologist at the University of Alaska, was flying over the Alaska tundra in 2008 when she spotted something odd in the lakes there."
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " Agriculture\u23ce(USDA-ARS) have confirmed conclusively the existence of the\u23cedisease in Yemen. There is also evidence that the disease has\u23cespread into Sudan but"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": "\u23cecomprehensive and effective.\u23ceThe UN Conference on Sustainable Development (UNCSD) in June 2012 in Brazil is an opportunity to reinvigorate"
+      },
+      {
+        "trigger": " in",
+        "score": 38.5,
+        "context": " 100,000 people, compared to 325 in Israel, 217 in Poland, 154 in England"
+      },
+      {
+        "trigger": " in",
+        "score": 38.75,
+        "context": " II, was younger and reigned for 27 years, during a transformative era in world politics and in the way the Catholic Church influences culture.\u23ceAs recently"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " in",
+      " ",
+      ",",
+      " on",
+      " ("
+    ],
+    "generated_description": "in (preposition) \u2014 activates on the token \u201cin\u201d; responsive to locative/temporal uses (e.g., \u201cin Yemen,\u201d \u201cin Brazil,\u201d \u201cin Israel\u201d), structural preposition marker."
+  },
+  {
+    "id": "0_958_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.39229992032051086,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 14.5,
+        "context": " teaches Natural Resources and Wildlife Conservation at Berwick Academy, owns and operates a small horse farm in Madbury, New Hampshire. Gray and his wife, Katherine, have"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.5,
+        "context": " find and pick the best greens near their nesting chickens to feed horses from the adjacent farm land.\u23ceGavilan College CGD students are developing real-world technical"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.88,
+        "context": ", Kelmscott Farm here has made a priority of breeding only endangered breeds of farm animals and finding markets for them. Besides being a working farm, Kelms"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.5,
+        "context": "pland continues to be utilized by other farmers.\u23ceAnd while the report focuses on farm numbers, it doesn\u2019t address the fact that overall, New York farms"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.12,
+        "context": " that Schmeiser had infringed Monsanto\u2019s patent by growing the plants on his farm, but Schmeiser \u201cdid not gain any agricultural advantage from the herbicide resistant"
+      }
+    ],
+    "promotes": [
+      "1",
+      "'",
+      "\u23ce\u23ce",
+      "2",
+      " "
+    ],
+    "demotes": [
+      "^(@)",
+      " Efq",
+      " photolibrary",
+      " $_\"",
+      " my\u017felf"
+    ],
+    "generated_description": "farm \u2014 detects the content token \u201cfarm\u201d and close agricultural mentions; fires on \u201cfarms\u201d, \u201cfarmer(s)\u201d, possessive/adjacent farm-context tokens."
+  },
+  {
+    "id": "0_10596_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.396417498588562,
+    "top_activations": [
+      {
+        "trigger": " animal",
+        "score": 22.5,
+        "context": " U.S., between six and eight million dogs and cats are turned over to animal shelters; of that number, three to four million are euthanized --"
+      },
+      {
+        "trigger": " animal",
+        "score": 22.5,
+        "context": " and metal content, no treatment is required of waste from animal agriculture. Yet, animal waste has been associated with water- and food-borne disease outbreaks, increased"
+      },
+      {
+        "trigger": " animal",
+        "score": 22.75,
+        "context": "<bos>How to Draw > How to draw a goatThey aren't the first animal you would think of for comic interest, but goats can be a treasure-"
+      },
+      {
+        "trigger": " animal",
+        "score": 23.25,
+        "context": " Animal Health E-Mail List Sign up and MDARD will keep you informed of animal health issues that impact livestock owners.\u23ce\u2022 About Emerging Diseases Emerging Infectious diseases"
+      },
+      {
+        "trigger": " animal",
+        "score": 22.75,
+        "context": " Good drainage requires a 6% slope. To avoid overstocking, each animal should be provided with 18 m2 of space in well-drained"
+      }
+    ],
+    "promotes": [
+      " di",
+      "<eos>",
+      " ma",
+      " I",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      "^(@)",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " auffi",
+      " doubtnut"
+    ],
+    "generated_description": "animal \u2014 represents the noun \u201canimal\u201d and animal-related mentions (shelters, agriculture, health, livestock, per-animal contexts)"
+  },
+  {
+    "id": "0_10790_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.385959267616272,
+    "top_activations": [
+      {
+        "trigger": " miss",
+        "score": 14.0,
+        "context": " and 22. Thanks, Barry!\u23ceADDENDUM: Don't miss the fascinating string of comments on the subject of sight-size practice."
+      },
+      {
+        "trigger": " farm",
+        "score": 13.88,
+        "context": " also a lot at stake for the air, waters, and lands--not just farmlands--that farmers and the rest of us share. And ultimately what'"
+      },
+      {
+        "trigger": " farm",
+        "score": 13.62,
+        "context": " proposed changes to the Hazardous Occupations Orders for Agricultural Employment. The changes will affect hired farmworkers between the ages of 14 and 16 regardless of their"
+      },
+      {
+        "trigger": " farm",
+        "score": 13.75,
+        "context": "\u23ce3. Before the twentieth century, the typical American family lived on a small farm. They raised almost everything they ate and sold their remaining crops and/or"
+      },
+      {
+        "trigger": " farm",
+        "score": 13.62,
+        "context": " labor and cost may pay for itself quicker than almost any other management practice on the farm, says J. Craig Williams, Penn State extension educator.\u23ceIn the"
+      }
+    ],
+    "promotes": [
+      "NUMX",
+      " my\u017felf",
+      " Efq",
+      "^(@)",
+      "]--;"
+    ],
+    "demotes": [
+      ".",
+      "\u23ce",
+      ",",
+      " ",
+      "  "
+    ],
+    "generated_description": "farm \u2014 activates on \u201cfarm\u201d and farm-related tokens (farmlands, farmworkers, on the farm)"
+  },
+  {
+    "id": "0_3635_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.2874804139137268,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": "warm waters along the shore, particularly in the south, and cooler waters in the center\u2014develops.\u23ceOn August 2, it was clear that westerly"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " I miss the arcade version\u2019s rollerball).\u23ceAnyway, it turns out that Egyptian vending machine wasn\u2019t such a stretch after all. Ancient machines that"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " her family get?\u23ceBefore they throw, everyone chooses some of the scores so that if\u23ceone of their numbers comes up, they get the last slice of"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " workers murdered by the SS guards near Namering, Germany, and displayed here so that townspeople could view the work of their Nazi leaders. American soldiers of the"
+      },
+      {
+        "trigger": " that",
+        "score": 40.25,
+        "context": " were surprised, confused, resistant. The violence in their communities has become so normalized that they literally could not believe that this does not happen everywhere, that this is"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u2018",
+      "<strong>",
+      "1",
+      "\u201c"
+    ],
+    "demotes": [
+      " that",
+      "that",
+      " r\u1eb1ng",
+      " bahwa",
+      " kwamba"
+    ],
+    "generated_description": "that \u2014 activates on the word \"that\" used to introduce clauses; picks out structural/subordinating \"that\" tokens."
+  },
+  {
+    "id": "0_13004_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3306873142719269,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "parenthetical/numeral token \u2014 activates on '(' and digit/roman-numeral characters inside dates or parentheses; marks inline citations, dates, or parenthetical items."
+  },
+  {
+    "id": "0_2458_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.34290844202041626,
+    "top_activations": [
+      {
+        "trigger": " was",
+        "score": 38.0,
+        "context": ", and not be distracted by a desire to attain absolute accuracy, which he believed was ultimately untruthful. A year after this was painted it was reproduced as"
+      },
+      {
+        "trigger": " was",
+        "score": 38.25,
+        "context": " was linked to that of the transmigration of souls. The great chain of being was one of a number of philosophical or theological arguments put forward, from the "
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " from controlling the approaches to the Middle East and Persia. The city state of Tyre was situated on an island 1/2 mile off the coast of today\u2019"
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " were\u23cefifteen miles removed from others. The British force before New-York was\u23ceincreasing by frequent successive arrivals from Halifax, South-Carolina,\u23ceFlorida"
+      },
+      {
+        "trigger": " was",
+        "score": 37.75,
+        "context": " from Gibeah, the royal residence, and stumbling in her haste, the child was thrown to the ground and maimed in both his feet, and ever after"
+      }
+    ],
+    "promotes": [
+      " Are",
+      "are",
+      " ARE",
+      " aren",
+      "Are"
+    ],
+    "demotes": [
+      " was",
+      "was",
+      "Was",
+      " wasn",
+      " Was"
+    ],
+    "generated_description": "was \u2014 activates on the token \"was\"; suppresses \"was\" in output and pushes toward present-tense \"are\" replacements"
+  },
+  {
+    "id": "0_830_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.39709290862083435,
+    "top_activations": [
+      {
+        "trigger": " doubt",
+        "score": 14.75,
+        "context": "<bos>There\u2019s no doubt that wearing a motorcycle helmet is better than not wearing one, but various studies have shown that there\u2019s one potentially-lethal injury"
+      },
+      {
+        "trigger": " doubt",
+        "score": 15.0,
+        "context": " of his thirst are probably deliriums of joy. His experiences, which no doubt seem real to him, will be his salvation. Spreading the word that God"
+      },
+      {
+        "trigger": " doubt",
+        "score": 14.12,
+        "context": " slave-catching expedition, without regard to national consensus or\u23ce\"I have little doubt of the fact, that this fort has been established by some villains for rap"
+      },
+      {
+        "trigger": " doubt",
+        "score": 14.62,
+        "context": "<bos>Without a doubt, the dominant strain of early Ozarks settlers was Scots-Irish.\u23ceTroubled by continued reports of turbulence in his Irish population,"
+      },
+      {
+        "trigger": " doubt",
+        "score": 14.62,
+        "context": "s death in 1957, the future of the museum was in doubt. Some thoughts were to transfer the collection to the American Museum of Natural History"
+      }
+    ],
+    "promotes": [
+      "InjectAttribute",
+      "\u24e7",
+      " Signalez",
+      "contentLoaded",
+      " \u062a\u0627\u0646\u064a\u0647"
+    ],
+    "demotes": [
+      " pre",
+      " call",
+      " put",
+      " set",
+      " form"
+    ],
+    "generated_description": "Doubt / uncertainty \u2014 activates on the token \u201cdoubt\u201d and similar uncertainty nouns; flags sentences expressing uncertainty, lack of belief, or things being in question."
+  },
+  {
+    "id": "1_4582_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3715514540672302,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 13.75,
+        "context": " art into a single ecosystem ruled by metal organisms, networks, and financial systems, that we might call the metal-earth.\u23ceThe main effect of that change"
+      },
+      {
+        "trigger": " That",
+        "score": 14.25,
+        "context": " and the Human Spirit, Carl Safina, You Tube\u23ceCod: The Fish That Made New England, You Tube\u23ceKnowledge and Devotion, Carl\u2019s Blog"
+      },
+      {
+        "trigger": " that",
+        "score": 12.75,
+        "context": "wards it covers the escarpment mountains of Dhofar, consisting of three ranges that together form a chain 290 km in length: Jebel Q"
+      },
+      {
+        "trigger": " that",
+        "score": 12.88,
+        "context": "<bos>)A local-area network (LAN) that uses a star topology in which all nodes are connected to a central computer. The main advantages of a star"
+      },
+      {
+        "trigger": " that",
+        "score": 13.75,
+        "context": " bloody diarrhea can advance to the possibly deadly hemolytic uremic syndrome (HUS) that known as the special characteristics that distinguish EHEC from other strain.\u23ceEs"
+      }
+    ],
+    "promotes": [
+      " quien",
+      "who",
+      " WHICH",
+      " which",
+      " who"
+    ],
+    "demotes": [
+      "<bos>",
+      "enumii",
+      "wardship",
+      " htons",
+      "\u0425\u043e\u0442\u044f"
+    ],
+    "generated_description": "say which/who \u2014 activates on relative-clause introducers (tokens like \"that\"); promotes relative pronouns (\"which\", \"who\") for restrictive clauses."
+  },
+  {
+    "id": "1_9387_8",
+    "layer": 1,
+    "ctx_idx": 8,
+    "influence_score": 0.3793843686580658,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 14.94,
+        "context": " includes more than 765 working farms, including, now, the Corse farm, run by fifth-generation farmers Leon and Roy Corse.\u23ceA conservation"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.81,
+        "context": " School.\u23ce\u201cThis is the beginning,\u201d Anne Wilson, the district\u2019s farm-to-school coordinator, said of the district\u2019s recent plunge into"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.69,
+        "context": " summer of 2010.\u23ceAbout 55 percent of the farmworkers in the study said they had no air conditioning in their dwelling, "
+      },
+      {
+        "trigger": " farm",
+        "score": 14.94,
+        "context": " with mailings from charities requesting donations. But in making contributions, either as a farm or individually, one organization you might want to send a check to is Farm"
+      },
+      {
+        "trigger": " farm",
+        "score": 14.56,
+        "context": " increased and programs expanded. The acreage under fire protection grew, the Conservation Department added farm foresters, the size of the Licking nursery doubled and the agency bought"
+      }
+    ],
+    "promotes": [
+      " faire",
+      " co",
+      "thou",
+      " En",
+      " dat"
+    ],
+    "demotes": [
+      "<bos>",
+      "GEBURTSDATUM",
+      "OGND",
+      "Personendaten",
+      "RectangleBorder"
+    ],
+    "generated_description": "farm \u2014 activates on the token \"farm\" and compounds (farmworkers, farm-to-school, farms), signals agricultural contexts and mentions of farms, farmers, or farm-related roles."
+  },
+  {
+    "id": "1_14245_8",
+    "layer": 1,
+    "ctx_idx": 8,
+    "influence_score": 0.38379809260368347,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 15.0,
+        "context": " and animals\u2014collectively\u2014the land.\u23ceThis entity known as the family farm is based on owner operation. This means the rights and responsibilities of ownership"
+      },
+      {
+        "trigger": " farm",
+        "score": 15.62,
+        "context": "pland continues to be utilized by other farmers.\u23ceAnd while the report focuses on farm numbers, it doesn\u2019t address the fact that overall, New York farms"
+      },
+      {
+        "trigger": " farm",
+        "score": 15.5,
+        "context": " fertilizer, or feed \u00e2\u20ac\u201c concentrates or roughage - may be imported into farm systems from external sources. The feasibility of such a self-sustaining system and"
+      },
+      {
+        "trigger": " farm",
+        "score": 15.25,
+        "context": " Change from 'Chicken Feed' in Siem Reap Province\u23ceOn a tiny Cambodian farm, smaller than a football pitch in size, it's clear that this"
+      },
+      {
+        "trigger": " farm",
+        "score": 15.0,
+        "context": " fines if one of those workers sustains a serious injury, or dies, in a farm accident.\u23ceThe U.S. Department of Labor\u2019s Wage and"
+      }
+    ],
+    "promotes": [
+      "::",
+      ".",
+      "FetchType",
+      " f",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      " Cows",
+      " cows",
+      " my\u017felf",
+      " it\u017felf",
+      " farms"
+    ],
+    "generated_description": "Farm / farms \u2014 activates on the token \u201cfarm\u201d and variants (farms, farmers, farmed); signals agricultural places/contexts (land, animals, production, accidents)."
+  },
+  {
+    "id": "2_16382_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.35869351029396057,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 11.0,
+        "context": " Spain, one of the largest southern European countries, found additional characteristics specific to this country, such as an earlier age at onset and higher rates of comorbidity and"
+      },
+      {
+        "trigger": " country",
+        "score": 10.0,
+        "context": "Some people are already planning ahead for disaster. The president of Kiribati, a country in the South Pacific Islands, is planning to buy land in Fiji for the"
+      },
+      {
+        "trigger": " country",
+        "score": 13.12,
+        "context": "0 miles (60 km) on the North Sea\u23ceBelgium is an important country to both Europe and the rest of the world as its capital, Brussels,"
+      },
+      {
+        "trigger": " cities",
+        "score": 11.5,
+        "context": " numbers come in, that would top July 1936.\u23ceFive cities \u2014 St. Louis, Indianapolis Chicago, Detroit and Denver \u2014 are all on"
+      },
+      {
+        "trigger": " country",
+        "score": 11.12,
+        "context": "\u23ceChina , officially the People's Republic of China , is the most populous country in the world, with over 1.3 billion citizens. Located in"
+      }
+    ],
+    "promotes": [
+      " \u0645\u06a9\u0627\u0646",
+      "Topics",
+      "-",
+      "\u4eba\u7269",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "SharedDtor",
+      "HasForeignKey",
+      "tagHelperRunner",
+      "WebElementEntity"
+    ],
+    "generated_description": "Country token \u2014 activates on mentions of countries or national entities; fires in geographic/contextual sentences referencing countries (occasionally nearby tokens like city lists)."
+  },
+  {
+    "id": "2_535_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3936823010444641,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 19.5,
+        "context": " to government ministries. And it\u2019s showing results: Contraceptive prevalence in the country has increased by 5.2 per cent in just the past two years"
+      },
+      {
+        "trigger": " country",
+        "score": 18.38,
+        "context": " Kenya, has been the most severely affected; it has the highest prevalence in the country at 14.9% compared to 7.1% country"
+      },
+      {
+        "trigger": " country",
+        "score": 17.88,
+        "context": " group says the images highlight human rights violations against Aleppo's civilian population amid the country's civil war.\u23ceThe release of the images comes exactly a year"
+      },
+      {
+        "trigger": " country",
+        "score": 18.25,
+        "context": " unrest. That's, in part, because of difficulties delivering drugs around the country to where they're needed. The full extent of the outbreak isn'"
+      },
+      {
+        "trigger": " country",
+        "score": 18.62,
+        "context": " that the two-and-a half-year Syrian civil war has devastated the country's health-care system, disrupted vaccination programs and left millions of families"
+      }
+    ],
+    "promotes": [
+      " disponibilit\u00e9s",
+      "NgModule",
+      " Wiktionnaire",
+      " \u062a\u0627\u0646\u064a\u0647",
+      " ddelweddau"
+    ],
+    "demotes": [
+      " country",
+      " Country",
+      "country",
+      " COUNTRY",
+      "Country"
+    ],
+    "generated_description": "country \u2014 activates on the token \"country\" (incl. \"country's\") in nation-contexts; signals presence of the word and tends to suppress emitting English \"country\" tokens."
+  },
+  {
+    "id": "1_13189_8",
+    "layer": 1,
+    "ctx_idx": 8,
+    "influence_score": 0.3873872458934784,
+    "top_activations": [
+      {
+        "trigger": " social",
+        "score": 10.75,
+        "context": " outdoors, rabbits need lots of room to run for exercise.\u23ce- Rabbits are social animals, and they need interaction. That interaction can be found with other rabbits"
+      },
+      {
+        "trigger": " people",
+        "score": 10.31,
+        "context": " mammals' experiences could shed light on the effects that contaminated water and seafood have on people.\u23ceLatest MedicineNet News\u23ce\"Dolphins and humans are both mammals"
+      },
+      {
+        "trigger": " Farm",
+        "score": 12.06,
+        "context": "; the windmill\u23ceThe three most important aspects of Animal Farm:\u23ce- Animal Farm is an allegory, which is a story in which concrete and specific characters and"
+      },
+      {
+        "trigger": " social",
+        "score": 11.81,
+        "context": "ing, indicates social grooming between members of the same species. Grooming is a major social activity, and a means by which animals who live in proximity may bond and"
+      },
+      {
+        "trigger": " America",
+        "score": 12.44,
+        "context": ", French-American ornithologist, naturalist and painter who produced the monumental Birds of America\u23ce- 5 July \u2013 Birth of William Brewster, American ornithologist and"
+      }
+    ],
+    "promotes": [
+      " Bedi",
+      "ardoor",
+      "pr\u00fcche",
+      "SPATH",
+      " ThemeData"
+    ],
+    "demotes": [
+      "<bos>",
+      "SourceChecksum",
+      "\u062d\u064a\u0627\u062a\u0647\u0627",
+      " nahilalakip",
+      "XmlAccessType"
+    ],
+    "generated_description": "social-group words \u2014 activates on tokens naming groups, people, places, or social concepts (e.g., \u201csocial,\u201d \u201cpeople,\u201d \u201cFarm,\u201d \u201cAmerica\u201d); signals collective or societal referents."
+  },
+  {
+    "id": "1_9272_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.39090681076049805,
+    "top_activations": [
+      {
+        "trigger": " Department",
+        "score": 22.75,
+        "context": " of this region.\u23ceSri Lankan Snails is available to order from the Zoology Department at the Museum.\u23ceFred Naggs is a Biodiversity Officer in the Mollus"
+      },
+      {
+        "trigger": " Department",
+        "score": 22.25,
+        "context": " their impoverished state.\u23ceThe World Bank\u2019s new study was presented by Environment Department\u23ceDirector Warren Evans, who explained that economic development is the\u23cemost cost"
+      },
+      {
+        "trigger": " Department",
+        "score": 22.75,
+        "context": " underpin this ambitious conservation project David Watkinson and Mark Lewis carried out research in the Department of Archaeology and Conservation in Cardiff University. This identified the corrosion mechanisms occurring on"
+      },
+      {
+        "trigger": " Department",
+        "score": 22.5,
+        "context": " a stage when the disease is irreversible,\u2019 Anil Arora, chairman and head of the Department of Gastroenterology and Hepatology, Sir Ganga Ram Hospital, New Delhi said"
+      },
+      {
+        "trigger": " Department",
+        "score": 23.25,
+        "context": " (WHO), also includes the World Bank and the United Nations Population Division of the Department of Economic and Social Affairs as full members.\u23ceThe IGME's"
+      }
+    ],
+    "promotes": [
+      "isContained",
+      " Parli",
+      "urcht",
+      " IOError",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " department",
+      " Department",
+      "Department",
+      " Dept",
+      "department"
+    ],
+    "generated_description": "Department \u2014 activates on the token \u201cDepartment\u201d in institutional phrases (often \u201cDepartment of X\u201d); university/hospital/government org-unit contexts, names and titles."
+  },
+  {
+    "id": "1_2344_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.36826950311660767,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 21.0,
+        "context": " capital \"I\").\u23ce5. Imperialism is another country exerting their over a country. The 4 patterns of imperialism are 1.Make Colonies 2"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": ". This applies to entire countries as well. If the merits of all of a country's inhabitants are more numerous than its sins, the land is called righteous"
+      },
+      {
+        "trigger": " country",
+        "score": 21.75,
+        "context": " in the exchange rates of the country\u2019s currency. Such fluctuations may change a country\u2019s ranking from one year to the next, even though they often make"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Research Agency (NISRA) \u2013 following consultation with key users of projections in each country and advice from an expert advisory panel.\u23ceThe primary purpose of the national"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Nationality, & Ethnicity\u23ceNo one has submitted information on Agront-badil country of origin, nationality, or ethnicity. Add to this section\u23ceNo content"
+      }
+    ],
+    "promotes": [
+      " gesteld",
+      " Department",
+      "fortawesome",
+      "enderror",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      " Country",
+      " COUNTRY",
+      "Country"
+    ],
+    "generated_description": "country token \u2014 activates on the word \"country\" and variants (country\u2019s, countries); fires on standalone occurrences across contexts."
+  },
+  {
+    "id": "2_2290_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.3902070224285126,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 9.69,
+        "context": " serve as a model for sustainable energy production, as they can turn sunlight into chemical energy.\u23ce\"The four that have been sequenced represent numerous strains that populate ocean"
+      },
+      {
+        "trigger": " who",
+        "score": 9.19,
+        "context": " century. They survived the fall of the Early Chalukyas.\u23ceThe one who ruled from Kalyani, now in Karnataka, are referred as Later Chaluk"
+      },
+      {
+        "trigger": " of",
+        "score": 9.69,
+        "context": "\" from CarbFix any year soon.\u23ceIn fact, one of the objectives of the project, whose main sponsors are Reykjavik's city-owned utility and"
+      },
+      {
+        "trigger": " that",
+        "score": 8.81,
+        "context": "<bos>The news that Arctic sea ice is in meltdown is being treated as merely one news item among many, even though it threatens to set off a chain of tipping"
+      },
+      {
+        "trigger": " that",
+        "score": 10.94,
+        "context": "<bos>The mere mention of Korean food and the first thing that comes to mind is kimchi \u2013 the spicy red-tinged fermented vegetable dish. It is as distinctly"
+      }
+    ],
+    "promotes": [
+      " jestli",
+      " muligt",
+      " qu\u00e6",
+      " habet",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "Datuak",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627",
+      " getPost",
+      "\u66d6\u6627\u3055\u56de\u907f"
+    ],
+    "generated_description": "say clause starter \u2014 activates on structural words like \"that\", \"who\", \"of\"; signals upcoming subordinate/relative descriptive clause or qualifier."
+  },
+  {
+    "id": "2_13756_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.37708839774131775,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 23.38,
+        "context": " islands not\u23cetoo far away are following suit.\u23ceLucia, a small island country in the eastern Caribbean Sea, is set\u23cea series of geothermal plants based"
+      },
+      {
+        "trigger": " country",
+        "score": 23.62,
+        "context": " Ellen Peak, Henry Mountains\u23ceBy: Wynne Benti\u23ceEast of the expansive country known as the waterpocket fold and north of the deep water-filled canyons"
+      },
+      {
+        "trigger": " country",
+        "score": 23.75,
+        "context": "ge of the Quinkl:\u23ce- Quinkl family history\u23ce- Quinkl country of origin, nationality, & ethnicity\u23ce- Quinkl last name meaning &"
+      },
+      {
+        "trigger": " country",
+        "score": 22.12,
+        "context": "-communist dissident who spent five years in Soviet prisons before being seated as his country\u2019s President in the wake of the 1989 \u201cVelvet"
+      },
+      {
+        "trigger": " country",
+        "score": 22.62,
+        "context": " have that language connection to their cultural heritage.\u23ceThis was western Pennsylvania. The country my family came from is Poland, but our background is actually not Polish but"
+      }
+    ],
+    "promotes": [
+      " producciones",
+      "\u0432\u0430\u044e\u0449\u0430\u044f",
+      "</thead>",
+      " biens",
+      "langer"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      "Country",
+      " Country",
+      " COUNTRY"
+    ],
+    "generated_description": "country token \u2014 activates on the literal word \"country\" and nearby place mentions; common in \"country of origin\", possessive contexts, and generic country/place references."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.34525808691978455,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ],
+    "generated_description": "Sentence-initial \"It\" \u2014 activates on sentence-starting/expletive \"It\", often before copula/existential phrases (\"is\", \"was\", \"\u2019s\", \"\u2019s no\u2026\") or parenthetical openings."
+  },
+  {
+    "id": "2_4185_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.3731526732444763,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 21.0,
+        "context": " center was founded 30 years ago by Ann van Dyk on her family farm and is authorized under CITES to capture, breed, and trade in cheeta"
+      },
+      {
+        "trigger": " farm",
+        "score": 20.75,
+        "context": " left and the British arrived, and then when African and Indian farmers came here to farm sugar cane.\u23ceBut it was the events that unfolded at the turn of"
+      },
+      {
+        "trigger": " farm",
+        "score": 21.0,
+        "context": "48 a University of Texas student, Jack Frizzell, visited the Ayala farm. He helped to uncover a total of eleven prehistoric burial sites. Except for"
+      },
+      {
+        "trigger": " farm",
+        "score": 21.0,
+        "context": ". Most milk only travels about 100 miles to get from the dairy farm to the local grocery store, which means jobs typically remain in the surrounding area"
+      },
+      {
+        "trigger": " farm",
+        "score": 21.0,
+        "context": "than Landmarks Foundation, the park features an 1890s living history farm, a one-room schoolhouse, a general store, and a turn"
+      }
+    ],
+    "promotes": [
+      "Autoritn\u00ed",
+      "yntaxException",
+      "uxxxx",
+      "\u0421\u043f\u043e\u0459\u0430\u0448\u045a\u0435",
+      ":\u2728"
+    ],
+    "demotes": [
+      " farm",
+      " Farm",
+      "Farm",
+      "farm",
+      " FARM"
+    ],
+    "generated_description": "farm \u2014 activates on the token \"farm\" (agricultural/location contexts); consistently suppresses/output-demotes \"farm\"/\"Farm\" tokens."
+  },
+  {
+    "id": "2_4207_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.36909976601600647,
+    "top_activations": [
+      {
+        "trigger": " Paris",
+        "score": 13.31,
+        "context": " his daughters hand in marriage with Romeo, he sets a date for her to marry Paris on Thursday. She spends the night with Romeo before learning of her father'"
+      },
+      {
+        "trigger": " Abigail",
+        "score": 18.75,
+        "context": " committed adultery with Abigail Williams.\u23ceprotagonist \u00b7 John Proctor\u23ceantagonist \u00b7 Abigail Williams\u23cesetting (time) \u00b7 1692\u23cesetting ("
+      },
+      {
+        "trigger": " Linus",
+        "score": 14.56,
+        "context": ".\u23ceLater, we were introduced to Linus, Lucy Van Pelt, Sally and Schroeder; and learned that the Peanuts gang came from the California town of Sebast"
+      },
+      {
+        "trigger": "ennie",
+        "score": 12.62,
+        "context": " the opposite of George Milton. Where George has sharp features and definite lines, Lennie is \"shapeless.\" Often he is described in terms of animals."
+      },
+      {
+        "trigger": " Rosalind",
+        "score": 10.38,
+        "context": " because of her friendship with his daughter, but now he banishes her, despite Celia's pleas to allow her to remain. Rosalind and Celia make plans to"
+      }
+    ],
+    "promotes": [
+      "GEBURTSDATUM",
+      "\ue315",
+      "tagHelperRunner",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "<bos>",
+      " we",
+      "The",
+      "#",
+      "We"
+    ],
+    "generated_description": "Character name \u2014 activates on proper given names of fictional/literary characters (Paris, Abigail, Linus, Lennie, Rosalind); signals character mentions in story context."
+  },
+  {
+    "id": "4_9484_8",
+    "layer": 4,
+    "ctx_idx": 8,
+    "influence_score": 0.35389161109924316,
+    "top_activations": [
+      {
+        "trigger": " eden",
+        "score": 19.62,
+        "context": "<bos>Positive Chronicles - East of eden\u23ceby Dr Kailash Vajpeyi\u23ce\"Man is no longer\u23ceto be the measure of all things, the center"
+      },
+      {
+        "trigger": " Find",
+        "score": 19.38,
+        "context": " roads would have been similar to those described in \"A Good Man is Hard to Find.\" At the EDSITEment-reviewed American Memory website's Farm Security"
+      },
+      {
+        "trigger": "ot",
+        "score": 21.0,
+        "context": " In this play, two vagrants pass the time while waiting for the unidentified Godot. But Godot never arrives. Godot is a thinly veiled characterization"
+      },
+      {
+        "trigger": " Lear",
+        "score": 23.0,
+        "context": "<bos>Shakespeare's King Lear: The Promised End\u23ce2012, Vol. 4 No. 09 | pg. 1/1"
+      },
+      {
+        "trigger": " Life",
+        "score": 19.0,
+        "context": " guessing most of you have seen the classic Christmas movie, It\u2019s a Wonderful Life with Jimmy Stewart. In the movie, Stewart plays George Bailey who has inherited"
+      }
+    ],
+    "promotes": [
+      " propOrder",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " Administrativna",
+      "formik",
+      "owulf"
+    ],
+    "demotes": [
+      " /\\.(",
+      "openzeppelin",
+      " f\u00f8dt",
+      " Burch",
+      " estudio"
+    ],
+    "generated_description": "Work-title word \u2014 activates on main/last word of literary or film titles (Eden, Find, Godot, Lear, Life)."
+  },
+  {
+    "id": "12_10440_12",
+    "layer": 12,
+    "ctx_idx": 12,
+    "influence_score": 0.38233712315559387,
+    "top_activations": [
+      {
+        "trigger": " as",
+        "score": 27.38,
+        "context": "<bos>The ability to enumerate objects without counting is known as subitizing.\u23ceMost studies suggest that we can subitize up to about 3 or 4 items"
+      },
+      {
+        "trigger": " consists",
+        "score": 33.5,
+        "context": "<bos>A derived class object consists of a concatenation in memory of the data\u23ceareas defined by each base class, starting with the leftmost and ending\u23cewith the"
+      },
+      {
+        "trigger": " that",
+        "score": 27.62,
+        "context": "<bos>It is the band of glandular tissue in earthworm that secretes a viscid sac in which the eggs are deposited. Once the eggs have been deposited in"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " and carries away the rocks and soils that make up the Earth\u2019s surface is called erosion. It is caused by flowing water, waves, glaciers, and the"
+      },
+      {
+        "trigger": " is",
+        "score": 30.38,
+        "context": " of a gas is doubled at constant temperature, the factor by which the pressure increases is:\u23ceA barometer filled with an unknown liquid has a height of 1"
+      }
+    ],
+    "promotes": [
+      "\ufeff<?",
+      "iNdEx",
+      "SequentialGroup",
+      "ArrowToggle",
+      "astify"
+    ],
+    "demotes": [
+      ")\"),",
+      "\u043d\u043e\u0432\u043d\u0438\u0448",
+      ".\"</",
+      ")\u201d.",
+      "\")));\r"
+    ],
+    "generated_description": "definition marker \u2014 activates on linking words that introduce definitions or explanatory clauses (is, that, consists, as); signals upcoming definitional/explanatory content"
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.3657545745372772,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ],
+    "generated_description": "sentence-start token \u2014 activates on the very first token of an input; fires for short initial tokens (I, It, 1, #, digits/punctuation) indicating sentence/turn start."
+  },
+  {
+    "id": "3_9864_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3852424621582031,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 11.38,
+        "context": "breathing\u2019 by global plant-life. The argument is about whether the greenhouse models that say this will result in warming will turn out right. I honestly don\u2019"
+      },
+      {
+        "trigger": " that",
+        "score": 12.12,
+        "context": " release glucose into the bloodstream varies, depending on the type of carbohydrate and the food that contains it. Some carbohydrate-containing foods cause the blood glucose level to rise"
+      },
+      {
+        "trigger": " that",
+        "score": 12.5,
+        "context": " you meet these people \u2014 your ancestors \u2014 and learn more about the places and eras that shaped them.\u23ceNot sure about exact dates and locations? Even a guess"
+      },
+      {
+        "trigger": " that",
+        "score": 11.5,
+        "context": " March of Dimes, where you would learn that amniotic fluid is the fluid that surrounds a baby while in the womb. You'd also learn that it"
+      },
+      {
+        "trigger": " that",
+        "score": 11.88,
+        "context": " many colors are needed to color the territories of this map, if all the territories that share a border segment must be of different colors?\u23ceIt turns out that"
+      }
+    ],
+    "promotes": [
+      "\"",
+      " what",
+      "\u2019",
+      "'",
+      "<bos>"
+    ],
+    "demotes": [
+      " Hou\u017fe",
+      " hou\u017fe",
+      " plea\u017fure",
+      " Efq",
+      " The\u017fe"
+    ],
+    "generated_description": "say \"that\" clause \u2014 signals start of a relative/subordinate clause; activates on the token \"that\" introducing a verb phrase (contains, shaped, share, will turn out)"
+  },
+  {
+    "id": "4_6087_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3486751914024353,
+    "top_activations": [
+      {
+        "trigger": " state",
+        "score": 14.5,
+        "context": ", 1958, as a first step towards a pan-Arab state, the UAR was created when a group of political and military leaders in"
+      },
+      {
+        "trigger": " countries",
+        "score": 15.25,
+        "context": " the water management and related environmental problems, in 1975, Mediterranean countries and the EEC adopted the Mediterranean Action Plan (MAP). In 19"
+      },
+      {
+        "trigger": "country",
+        "score": 14.5,
+        "context": ".\u23ceNow, more than six decades later, as the 28-country alliance gathers in Chicago for its summit, the Afghan war and U.S"
+      },
+      {
+        "trigger": " country",
+        "score": 15.62,
+        "context": " his first foreign voyage as leader of the infant country. His destination? The Jewish state of Israel.\u23cePresident Shimon Peres hailed the visit as a \u201cmoving"
+      },
+      {
+        "trigger": " countries",
+        "score": 14.62,
+        "context": " ensures adherence to market regulations.\u23ceIn France, as in the other European Union countries, the electricity supply market has been wholly open to competition since July 1"
+      }
+    ],
+    "promotes": [
+      " Countries",
+      "Countries",
+      " Country",
+      " countries",
+      " country"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "fortawesome",
+      "th\u00e2u",
+      "\u0627\u0646\u064a\u0641",
+      " Syrie"
+    ],
+    "generated_description": "Country / countries \u2014 activates on tokens like \"country\", \"countries\", \"state\"; represents nation-related mentions and tends to promote country(s) tokens in output."
+  },
+  {
+    "id": "12_10631_12",
+    "layer": 12,
+    "ctx_idx": 12,
+    "influence_score": 0.3568243086338043,
+    "top_activations": [
+      {
+        "trigger": " are",
+        "score": 25.88,
+        "context": " structures of complex materials with high accuracy. The questions these experiments are designed to answer are (1) can neutrons \"see\" the grain bond system and if so"
+      },
+      {
+        "trigger": " is",
+        "score": 24.62,
+        "context": " the notion of the banality of evil. What seems to lie behind this idea is that Eichmann was no more than a dim little man whose crimes were simply"
+      },
+      {
+        "trigger": " is",
+        "score": 23.88,
+        "context": " is common as well as threats.\u23ceThe difference between these two types of bullying is that it is witnessed by other people and cyberbullying is only witnessed by the"
+      },
+      {
+        "trigger": " is",
+        "score": 23.88,
+        "context": " loss in a space craft for a given size air leak?\u23ceThe quick approximation is that the air will flow out of the hole at the speed of sound."
+      },
+      {
+        "trigger": " was",
+        "score": 24.88,
+        "context": "avadra and the parliament were deposed.\u23ceThe long term consequence of the coup was a gradual migration of ethnic Indians, resulting in a loss of skilled labor and"
+      }
+    ],
+    "promotes": [
+      " onCreateView",
+      "WriteAttribute",
+      "ValueStyle",
+      "EDEFAULT",
+      "URLException"
+    ],
+    "demotes": [
+      "TabIndex",
+      "saraba",
+      " BOC",
+      "context",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986"
+    ],
+    "generated_description": "be-verb (is/are/was) \u2014 activates on copula forms (is, are, was), marking state/predicate boundaries typically just before a complement or clause."
+  },
+  {
+    "id": "13_3610_12",
+    "layer": 13,
+    "ctx_idx": 12,
+    "influence_score": 0.3816033899784088,
+    "top_activations": [
+      {
+        "trigger": " Safety",
+        "score": 18.38,
+        "context": "<bos>Drinking Water Quality and Safety\u23ceWhen you turn on the tap for a glass of water, do you ever wonder about the quality or safety of that water?"
+      },
+      {
+        "trigger": " effects",
+        "score": 16.75,
+        "context": "<bos>Morphine short term effects:\u23ce- Pain relief\u23ce- Cough suppression\u23ce- Anxiety relief\u23ce- Unusual unpleasant feelings (dysphoria) or unusual pleasant feelings"
+      },
+      {
+        "trigger": ":",
+        "score": 19.25,
+        "context": "<bos>Enemy Aliens, Prisoners of War: Canada's First World War Internment Operations, 1914-1920\u23ceInternment in"
+      },
+      {
+        "trigger": "?",
+        "score": 16.5,
+        "context": "<bos>How energy efficient are new Canadian houses? That's not as easy a question to answer as you might think and something called EnerGuide for New Houses is"
+      },
+      {
+        "trigger": ")",
+        "score": 17.25,
+        "context": "<bos>National Front (East Germany)\u23ceThe National Front of the German Democratic Republic (German: Nationale Front der Deutschen Demokratischen Republik, NF) until 1"
+      }
+    ],
+    "promotes": [
+      " or",
+      ",",
+      " I",
+      " (",
+      " "
+    ],
+    "demotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "InjectAttribute",
+      " \u0f0b\u0f0b",
+      "UserScript",
+      " \u017find"
+    ],
+    "generated_description": "Heading end token \u2014 activates on final word of titles/section headings (words before colon, question mark, closing parenthesis or newline); signals section/title boundary."
+  },
+  {
+    "id": "4_6152_8",
+    "layer": 4,
+    "ctx_idx": 8,
+    "influence_score": 0.38950446248054504,
+    "top_activations": [
+      {
+        "trigger": " Farm",
+        "score": 32.0,
+        "context": " pressures to cut these programs?\u23ce- Are you willing to support amendments to the Farm Bill that would provide incentives and subsidies for small farmers and not just agribusiness"
+      },
+      {
+        "trigger": " Farm",
+        "score": 30.5,
+        "context": " At a Business Solely Owned/Operated By Your Parents\u23ce- On a Farm Owned/Operated By Your Powers\u23ceNote: Parents cannot employ their children"
+      },
+      {
+        "trigger": "Farmers",
+        "score": 31.5,
+        "context": "<bos>Farmers can take steps to reduce the impact of drought, should we face another shortage of rainfall in 2013, says Rob Myers, a University"
+      },
+      {
+        "trigger": " farmers",
+        "score": 30.25,
+        "context": " a diverse range of occupations including law enforcement, the oil industry, archeologists, farmers and manufacturers of common consumer products. At the core of these applications is the"
+      },
+      {
+        "trigger": " farm",
+        "score": 31.25,
+        "context": " of our clientele. From home finance to nutrition and fitness, to agronomy, farm and business planning, to family dynamics, ...\u23ceUniversity of Missouri Extension is"
+      }
+    ],
+    "promotes": [
+      " agricul",
+      " nahilalakip",
+      " farmer",
+      " farmers",
+      " tractors"
+    ],
+    "demotes": [
+      "randomUUID",
+      "hafen",
+      "bane",
+      "ise",
+      " project"
+    ],
+    "generated_description": "Farm/Farmers \u2014 activates on tokens \"farm\", \"Farm\", \"farmers\"; signals agricultural/farming context and promotes farmer/tractor/agriculture vocabulary."
+  },
+  {
+    "id": "17_10747_12",
+    "layer": 17,
+    "ctx_idx": 12,
+    "influence_score": 0.38880088925361633,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": "By John H. Essex.\u23ceONE OF THE GREATEST PROBLEMS facing all believers is that of evil. Why does God, Whose name is love, permit evil"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " most cost-effective, affordable renewable energy technology currently available for domestic and commercial applications is solar thermal water heating - the technology that allows to effectively collect and utilise solar"
+      },
+      {
+        "trigger": " is",
+        "score": 37.5,
+        "context": " murdering kin or breaking oaths.\u23ce- A common Greek story featuring the Furies is \"Eumenides\" by Aeschylus. The Furies torment O"
+      },
+      {
+        "trigger": " is",
+        "score": 39.0,
+        "context": " off by the tympanic membrane. The most obvious feature of the middle ear cavity is the auditory ossicles: malleus, incus, and stages (so"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": ".\u23ceWhat is probably an even greater discouragement to new investment and increased production is the present income tax rate of 52.8 per cent on corporations"
+      }
+    ],
+    "promotes": [
+      "seen",
+      " a",
+      " F",
+      " linh",
+      " the"
+    ],
+    "demotes": [
+      ":\u2728",
+      "Personendaten",
+      " henvisninger",
+      "\u064a\u0643\u0628",
+      "MemoryWarning"
+    ],
+    "generated_description": "say following \"is\" \u2014 activates on the copula \"is\"; signals and promotes the noun/phrase that immediately follows (predicate completion)"
+  },
+  {
+    "id": "18_3536_12",
+    "layer": 18,
+    "ctx_idx": 12,
+    "influence_score": 0.39840829372406006,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " and post it, but the best way I know of to improve your typing skill is good old practice. That means that nearly everything you do on your computer can"
+      },
+      {
+        "trigger": " is",
+        "score": 42.25,
+        "context": ". But here\u2019s the problem: The Fed cannot protect the dollar. The Fed\u2019s best\u2014and only\u2014weapon for fighting financial collapse is printing money"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " over the life of the CFL, one report found.\u23ceOne of the simplest ways to upgrade your home in a green way is to purchase an energy-saving"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " electronic works using watermarks.\u23ceWatermarking your photographs can be done a number of ways. The most popular route is to create and add a watermark through a"
+      },
+      {
+        "trigger": " is",
+        "score": 36.5,
+        "context": " or greater are considered obese.\u23ceOne of the most obvious ways to lose weight is dieting. And while it can seem like a daunting task, small changes in"
+      }
+    ],
+    "promotes": [
+      "tiga",
+      "\u067e\u06cc\u0648\u0646\u062f",
+      " a",
+      "ImageContext",
+      " the"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " <<<<<<<<<<<<<<",
+      "\u043d\u0456\u0446\u0438\u043f\u0430"
+    ],
+    "generated_description": "say \"is\" \u2014 activates on copula \"is\" used to introduce explanations/solutions (often followed by infinitive or gerund: \"is to...\", \"is to create\", \"is printing\", etc.)"
+  },
+  {
+    "id": "17_14546_12",
+    "layer": 17,
+    "ctx_idx": 12,
+    "influence_score": 0.3649086058139801,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 39.0,
+        "context": ", Indonesia; Aya, Japan; Korgalzhyn, Kazakhstan; Tehuac\u00e1n-Cuicatl\u00e1n, Mexico; the Island of Pr\u00edncipe, S\u00e3o Tom\u00e9"
+      },
+      {
+        "trigger": " (",
+        "score": 31.88,
+        "context": " experts from the Eindhoven University of Technology (the Netherlands) and McGill University in Montreal (Canada), have achieved a scientific milestone in the field of optical communications. After"
+      },
+      {
+        "trigger": " (",
+        "score": 28.62,
+        "context": " development, starting with work in the Tana (Kenya) and Volta (Ghana-Burkina Faso) river basins. The project will be coordinated by a global partnership"
+      },
+      {
+        "trigger": " Republic",
+        "score": 30.12,
+        "context": " people alongside other central Bantu speaking people are believed to have originated in the current Democratic Republic of Congo and migrated to East Africa across Tanzania border. They settled around Mount"
+      },
+      {
+        "trigger": " of",
+        "score": 29.38,
+        "context": " to the north, the\u23ceBanthat Mountain Range along the4 border of the Kingdom of\u23ceCambodia to the south, the Mekhong River and Lao People\u2019"
+      }
+    ],
+    "promotes": [
+      ">'+",
+      "MethodManager",
+      ")\";\r",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "]));\r"
+    ],
+    "demotes": [
+      " r\u00e9gionale",
+      " regionales",
+      " in\u00e9gal",
+      " Daerah",
+      " financi\u00e8re"
+    ],
+    "generated_description": "say country name \u2014 activates on commas/parentheses and words like \"of\"/\"Republic\" that immediately precede or surround country/place names, signaling an upcoming country token"
+  },
+  {
+    "id": "6_14710_8",
+    "layer": 6,
+    "ctx_idx": 8,
+    "influence_score": 0.3614234924316406,
+    "top_activations": [
+      {
+        "trigger": " Rabbit",
+        "score": 18.25,
+        "context": " - the 16KB \"write\" that could\u23ceAlice goes down the Rabbit hole\u23ceAlice wants to pass through the small door\u23ceLittle Alice joins the"
+      },
+      {
+        "trigger": " Tolkien",
+        "score": 18.75,
+        "context": "\u00eb\u23ceThe supreme deity of Tolkien's universe is called Eru Il\u00favatar. In the beginning, Il\u00favatar created spirits named the Ainur."
+      },
+      {
+        "trigger": " Rye",
+        "score": 24.0,
+        "context": "<bos>The Catcher in the Rye Study Guide & Essays\u23ceAlthough J.D. Salinger has written many short stories, The Catcher in the Rye is Salinger"
+      },
+      {
+        "trigger": " Ring",
+        "score": 20.75,
+        "context": " he did so underneath the Tree.\u23ceAfter The War of the Ring, Samwise Gamgee returned to the Shire in November of 3019 only"
+      },
+      {
+        "trigger": " Carroll",
+        "score": 22.75,
+        "context": ", Chrysler, Coca-Cola, Pepsi), five individuals (Jane Austen, Lewis Carroll, Doyle Arthur, Niccolo Machiavelli, Mark Twain) and one horary"
+      }
+    ],
+    "promotes": [
+      "AndEndTag",
+      " R\u00e9ponses",
+      "PostInfinity",
+      " esternos",
+      "\uf0f1"
+    ],
+    "demotes": [
+      "\u0441\u044e\u0434\u0430",
+      " actuels",
+      ".*\")]",
+      " vostri",
+      " prochaines"
+    ],
+    "generated_description": "Literary proper nouns \u2014 activates on book-title words and author names (Rabbit, Ring, Rye, Tolkien, Carroll); signals literary characters/titles or author surnames."
+  },
+  {
+    "id": "6_15850_8",
+    "layer": 6,
+    "ctx_idx": 8,
+    "influence_score": 0.39505302906036377,
+    "top_activations": [
+      {
+        "trigger": " Lewis",
+        "score": 9.0,
+        "context": "<bos>Perl, Martin Lewis, 1927-, American physicist, b. New York City, Ph.D. Columbia, 1955"
+      },
+      {
+        "trigger": " Oxford",
+        "score": 9.38,
+        "context": "noble strife\"; and so on. Robert L. Mack, Gray's definitive biographer, has observed that a recent edition of the Oxford Dictionary of Quotations draws"
+      },
+      {
+        "trigger": "day",
+        "score": 9.12,
+        "context": ". You could say that the first large scale census taken in modern history was Domesday and there have been others over the years, such as Muster rolls, taken"
+      },
+      {
+        "trigger": "fiore",
+        "score": 11.62,
+        "context": "<bos>Jerusalem, The Biography by Simon Sebag Montefiore\u23ceFebruary 2, 2012 by Bob Livingston\u23ceThe fact that Jerusalem is the center"
+      },
+      {
+        "trigger": " Elizabeth",
+        "score": 8.5,
+        "context": " Mini soon became the best selling car in Europe. To honor his success, he was knighted by Queen Elizabeth in 1969. Issigonis"
+      }
+    ],
+    "promotes": [
+      " confiable",
+      "\u00f4nico",
+      " monitore",
+      " econ\u00f4",
+      "\u00f4mico"
+    ],
+    "demotes": [
+      " (\u00a3",
+      " \u00a3",
+      " UK",
+      "-\u00a3",
+      " HMRC"
+    ],
+    "generated_description": "Proper name (person/place) \u2014 fires on title-case tokens; often final parts of names or place/titles (Lewis, Oxford, Domesday/day, Montefiore, Elizabeth)."
+  },
+  {
+    "id": "4_8047_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3786351978778839,
+    "top_activations": [
+      {
+        "trigger": " who",
+        "score": 10.25,
+        "context": "19 July 2008\u23ceLeonid Hurwicz, the economist who last year became the oldest person ever to win a Nobel prize, helped transform"
+      },
+      {
+        "trigger": " They",
+        "score": 14.0,
+        "context": "<bos>The Man They Call Jesus by Robert Larrison\u23ceApprox. 27,240 words.\u23cePublished on January 14, 2"
+      },
+      {
+        "trigger": " that",
+        "score": 14.38,
+        "context": " the Civil War is the only book you'll ever need on \"the war that never ended.\"\u23ceAbout the Author\u23ceKenneth C. Davis is the New"
+      },
+      {
+        "trigger": " who",
+        "score": 11.12,
+        "context": " be on show at Maidstone Museum next week.\u23ceMr Guthrie said the man who discovered the artefact in 2005 told him it came out"
+      },
+      {
+        "trigger": " aux",
+        "score": 10.25,
+        "context": "l\u2019\u00c9glise.\u23ceSoon after his marriage Pierre Le Blanc settled on the Rivi\u00e8re aux Canards (Canard River, N. S.), and at the time"
+      }
+    ],
+    "promotes": [
+      "MemoryWarning",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "Geographie",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "Hentet"
+    ],
+    "demotes": [
+      "NodeType",
+      " st\u00e4llet",
+      " UIAlert",
+      "ItemBackground",
+      " quelconque"
+    ],
+    "generated_description": "Relative/third-person pronouns \u2014 activates on clause-introducing pronouns (who, that, They); marks referent/relative-clause starts and similar function words."
+  },
+  {
+    "id": "19_15275_12",
+    "layer": 19,
+    "ctx_idx": 12,
+    "influence_score": 0.3440912365913391,
+    "top_activations": [
+      {
+        "trigger": " also",
+        "score": 74.0,
+        "context": "\u23ceHypolimnas Bolina, Female A female Hypolimnas bolina, also called the Blue Moon or Great Eggfly butterfly. The proportion of females in"
+      },
+      {
+        "trigger": " also",
+        "score": 77.5,
+        "context": "<bos>Louisiana Voodoo, also known as New Orleans Voodoo, describes a set of religious practices which originated from the traditions of the African diaspora. It is one of many"
+      },
+      {
+        "trigger": " also",
+        "score": 82.0,
+        "context": " color palette, text and other elements as opposed to photos.\u23ceJPG files, also known as JPEG files, are a common file format for digital photos and other"
+      },
+      {
+        "trigger": " so",
+        "score": 83.0,
+        "context": " methods to track changes in income distribution in America.\u23ceFirst, we used the so-called Gini index, named after the 20th-century"
+      },
+      {
+        "trigger": "also",
+        "score": 86.0,
+        "context": " a radiology department so the tissue can be seen with an ultrasound or CAT scan (also called a CT scan or computed axial tomography scan) to show exactly where to"
+      }
+    ],
+    "promotes": [
+      "Called",
+      "called",
+      " Called",
+      " known",
+      " called"
+    ],
+    "demotes": [
+      " Roskov",
+      "f\u00f8lgelig",
+      " Bioaccumulative",
+      "\\{\\\\",
+      "orsese"
+    ],
+    "generated_description": "say \"also called\" \u2014 activates on appositive/alias markers (also, so\u2011called), signals alternate names/aliases; promotes tokens like \"called\" / \"known\" introducing synonyms."
+  },
+  {
+    "id": "20_3094_12",
+    "layer": 20,
+    "ctx_idx": 12,
+    "influence_score": 0.3558613061904907,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 45.0,
+        "context": " of your body (paralysis) as a\u23ceresult of a tick bite is a rare problem.\u23ceTick paralysis can be caused by several different\u23cetypes of"
+      },
+      {
+        "trigger": " are",
+        "score": 43.5,
+        "context": " walks 3 km towards the South. The two directions in which the man walks are perpendicular to each other.\u23ceThe distance between the final point and the initial"
+      },
+      {
+        "trigger": " is",
+        "score": 56.5,
+        "context": "<bos>The best shape for containing a pressurised gas is a sphere, where by `best' we mean the shape that uses the smallest amount of material to"
+      },
+      {
+        "trigger": " contains",
+        "score": 39.0,
+        "context": " efficient than TCP for carrying messages that fit within one data packet\u23ceA UPD header contains _____ fields.\u23ceThe subprotocol that enables TCP?IP to internetwork"
+      },
+      {
+        "trigger": " to",
+        "score": 41.5,
+        "context": " levels of each item.\u23ceThe average amount of inventory in a system is equal to the product of the average demand rate and the average time a unit is in"
+      }
+    ],
+    "promotes": [
+      " ___",
+      "____",
+      " __",
+      "___",
+      " ____"
+    ],
+    "demotes": [
+      "expandindo",
+      ")\";\r",
+      "'));\r",
+      ".\";\r",
+      "\".\r"
+    ],
+    "generated_description": "Linking-verb connector \u2014 activates on tokens that introduce descriptions/definitions (is, are, contains, to); marks predicate or descriptive clause starts."
+  },
+  {
+    "id": "19_5146_12",
+    "layer": 19,
+    "ctx_idx": 12,
+    "influence_score": 0.3997073769569397,
+    "top_activations": [
+      {
+        "trigger": " hormone",
+        "score": 56.5,
+        "context": " in the blood. It moves from the blood to cells with the help of a hormone called insulin. Once glucose is in those cells, it can be used for"
+      },
+      {
+        "trigger": " Scot",
+        "score": 54.5,
+        "context": " published in 1762 and 1763, was a Scot, James Macpherson (1736-1796)."
+      },
+      {
+        "trigger": "3",
+        "score": 54.0,
+        "context": "<bos>French author and visionary Jules Verne, wrote a book in 1863 called Paris in the Twentieth Century. The book presented what Verne thought Paris would"
+      },
+      {
+        "trigger": " application",
+        "score": 55.5,
+        "context": " is the name of the application with a .config extension. For example, an application called myApp.exe can be associated with a configuration file called myApp"
+      },
+      {
+        "trigger": " by",
+        "score": 78.5,
+        "context": " and kited to the bottom of the world. Amongst them was a young man by the name of Lewis Clarke, who crossed more than 700 miles"
+      }
+    ],
+    "promotes": [
+      "named",
+      " Called",
+      "called",
+      " named",
+      " called"
+    ],
+    "demotes": [
+      " betweenstory",
+      "Nox",
+      " Bioaccumulative",
+      "criminator",
+      " referenties"
+    ],
+    "generated_description": "say \"called\" \u2014 activates on name-introduction phrases (e.g., \"a hormone called X\", \"by the name of Y\", apposition); promotes naming tokens like \"called\"/\"named\""
+  },
+  {
+    "id": "4_8364_12",
+    "layer": 4,
+    "ctx_idx": 12,
+    "influence_score": 0.39905932545661926,
+    "top_activations": [
+      {
+        "trigger": "kes",
+        "score": 24.12,
+        "context": " has determined that when skin is damaged by the sun\u2019s UVB rays it provokes \u201chealthy, neighboring cells to start a process that results in an inflammatory response"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 22.88,
+        "context": "<bos>Deforestation continues to be one of the world\u2019s biggest environmental problems, especially in fast developing regions like South America, Southeast Asia and Africa. Cutting down"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 22.88,
+        "context": "<bos>Remington, Frederic, 1861\u20131909, American painter, sculptor, illustrator, and writer, b. Canton, N"
+      },
+      {
+        "trigger": " indicates",
+        "score": 25.38,
+        "context": " other examples in biblical Greek in which \u1f10\u03bd + the dative after \u03c0\u03bb\u03b7\u03c1\u03cc\u03c9 indicates content. Further, the parallel with \u03bf\u1f34\u03bd\u1ff3 as well as the"
+      },
+      {
+        "trigger": "gle",
+        "score": 23.38,
+        "context": " Institute of Technology in Zurich, whose researchers had previously taught these flying machines to juggle ping-pong balls.\u23ceUsing motion capture technology, these autonomous flying robots"
+      }
+    ],
+    "promotes": [
+      " Intelligen",
+      "disambiguation",
+      " Exceptions",
+      "xffffffff",
+      "orative"
+    ],
+    "demotes": [
+      "<bos>",
+      "'",
+      "\u2019",
+      "The",
+      "<h2>"
+    ],
+    "generated_description": "Action verbs \u2014 activates on lexical action verbs (provokes, indicates, continues, juggle); sensitive to present-tense or base/infinitive verb forms describing events or actions."
+  },
+  {
+    "id": "21_5807_12",
+    "layer": 21,
+    "ctx_idx": 12,
+    "influence_score": 0.3866751492023468,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 29.0,
+        "context": " of the historical events which were to play a major role in Galois' life is surely the storming of the Bastille on 14 July 178"
+      },
+      {
+        "trigger": " is",
+        "score": 28.5,
+        "context": " brought it to its present humiliating state.\u23ceThe logical starting point in this examination is Bretton Woods. When the representatives of some forty nations met there in "
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "<bos>One of the greatest stories of explorationand discovery is the Europeanquest for a Northwest Passageanoceanic shortcut from the Atlantic to thePacific across the top of"
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " became a proponent for the hypothesis , which states that the prototype of the Armenian alphabet is a variety of combinations of resembling curves and horizontal elements. Subsequently these horizontal elements"
+      },
+      {
+        "trigger": " be",
+        "score": 28.75,
+        "context": ". Indeed, in the construction \u2018anosognosia for X\u2019, X might even be anosognosia for some Y.|\u23ce|Keywords||Amnesia Belief Del"
+      }
+    ],
+    "promotes": [
+      "supplied",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "applicable",
+      " MainAxisSize",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "Those",
+      " Those",
+      "ItemLayout",
+      "erweise",
+      "\u90a3\u5c31\u662f"
+    ],
+    "generated_description": "contains \"is\" \u2014 activates on tokens with the letter sequence \"is\" (inside words: historical, discovery, hypothes[is], this), regardless of position"
+  },
+  {
+    "id": "21_7764_12",
+    "layer": 21,
+    "ctx_idx": 12,
+    "influence_score": 0.31689637899398804,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 38.0,
+        "context": "13\u2019s centenary edition.\u23ceBuilding French identity with a race\u23ceBoth in his book and during an extensive interview with VeloNews, Thompson explained that since"
+      },
+      {
+        "trigger": " in",
+        "score": 42.0,
+        "context": ".5 miles (52.3 km) long, in north central Colorado in the United States. It drains large portion of the Middle Park basin in Grand"
+      },
+      {
+        "trigger": " in",
+        "score": 41.5,
+        "context": " thousand years and as such has played a vital role in the shaping of Western society.\u23ceWhile the Roman Catholic church has the largest number of worldwide members, in"
+      },
+      {
+        "trigger": " in",
+        "score": 40.0,
+        "context": ", lung cancer is one of the three most common cancers that kill men and women in developed countries with a statistic of one million deaths every year.\u23ceTraditionally"
+      },
+      {
+        "trigger": " in",
+        "score": 47.5,
+        "context": ", a U.S. study said.\u23ceMore than half a million children in the United States go to hospital each year with brain injuries, often due to"
+      }
+    ],
+    "promotes": [
+      " England",
+      " Canada",
+      " Australia",
+      " India",
+      " America"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " wireType",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ],
+    "generated_description": "say country \u2014 activates on the preposition \"in\" when introducing locations; promotes country/region tokens (England, Canada, Australia, India, America)."
+  },
+  {
+    "id": "24_598_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.33215799927711487,
+    "top_activations": [
+      {
+        "trigger": " cells",
+        "score": 59.5,
+        "context": " is necessary to understand how the skin gets it color. The body naturally produces a pigment known as melanin through specialized cells known as melanocytes. A person's"
+      },
+      {
+        "trigger": " organization",
+        "score": 55.0,
+        "context": " Training and Research (UNITAR), and the University of Geneva to create\u23cean organization dubbed \"Citizen Cyberscience\u23ceCentre\", which looks to test and deploy"
+      },
+      {
+        "trigger": " process",
+        "score": 56.5,
+        "context": " novelty plant in your neighbor's garden.\u23ceThe plants are created by a process called grafting, meaning they aren't hybrids of genetically modified organisms (not"
+      },
+      {
+        "trigger": "making",
+        "score": 65.5,
+        "context": "\u23ceConcept/Goal: To learn about still life drawings and a method of printmaking.\u23ceActivity: Students will use a still life to make a drawing and"
+      },
+      {
+        "trigger": " data",
+        "score": 69.5,
+        "context": " networking technologies are based on packet switching, which involves the creation of small chunks of data to be sent over a network. Even though the word packet appears in the"
+      }
+    ],
+    "promotes": [
+      "uginosa",
+      "expandindo",
+      " gener",
+      "SequentialGroup",
+      "<>());"
+    ],
+    "demotes": [
+      " known",
+      " Known",
+      "Known",
+      "known",
+      " KNOWN"
+    ],
+    "generated_description": "Category noun \u2014 activates on general class words (process, organization, cells, data, making); signals introduction/definition of a type, often followed by \"called/dubbed/known as\" or a defining phrase."
+  },
+  {
+    "id": "23_2209_12",
+    "layer": 23,
+    "ctx_idx": 12,
+    "influence_score": 0.3723566234111786,
+    "top_activations": [
+      {
+        "trigger": "computer",
+        "score": 48.0,
+        "context": " in the early 1980s, he built a massively parallel supercomputer which he named the Connection Machine. At the time, computers were still somewhat"
+      },
+      {
+        "trigger": " often",
+        "score": 49.0,
+        "context": " affection, love, comfort, and solace of the other. This bundle of rights is often called the \u201cright of consortium.\u201d Anyone who interferes with these rights by"
+      },
+      {
+        "trigger": " view",
+        "score": 42.0,
+        "context": " of our friends believe the opposite, namely there are many ways to God, a view called religious pluralism. In the next few posts, we will examine the claims"
+      },
+      {
+        "trigger": " industry",
+        "score": 54.5,
+        "context": " is also a newer polymer that is starting to move up in its use in the industry and under certain circumstances it is a better product than PVC. This is CP"
+      },
+      {
+        "trigger": "er",
+        "score": 44.0,
+        "context": " space programs.\u23ceTevatron has been overtaken by a more powerful atom smasher -- the world's largest -- the Large Hadron Collider, built on"
+      }
+    ],
+    "promotes": [
+      " KNOWN",
+      "Known",
+      " Known",
+      "known",
+      " known"
+    ],
+    "demotes": [
+      " Calls",
+      " Calling",
+      "cessite",
+      "Calls",
+      " jao"
+    ],
+    "generated_description": "Common content words \u2014 activates on frequent open-class tokens (nouns/adverbs/verbs like computer, often, view, industry); correlates with promoting \"known\" in outputs."
+  },
+  {
+    "id": "22_14738_12",
+    "layer": 22,
+    "ctx_idx": 12,
+    "influence_score": 0.3528701364994049,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 35.75,
+        "context": " of degree and numerous economies in the world are very socialistic such as European countries (many of which are facing financial difficulties due to over taxation and excessive spending)."
+      },
+      {
+        "trigger": " and",
+        "score": 29.75,
+        "context": "<bos>June 10, 2008 Researchers in Sweden and Japan report development of a new type of paper that resists breaking when pulled almost as well"
+      },
+      {
+        "trigger": " and",
+        "score": 29.25,
+        "context": "<bos>An international research team led by Japan and including the University of Colorado Boulder may have taken a significant step in discovering why matter trumped antimatter at the time"
+      },
+      {
+        "trigger": ",",
+        "score": 32.25,
+        "context": " 13:13\u23ceA recent study carried out by scientists from Canada, Mexico and the United States, including several BirdLife Partners found that of the"
+      },
+      {
+        "trigger": " and",
+        "score": 28.5,
+        "context": " comprehensive analysis of the roles, status and experiences of women journalists in the United States and Britain.\u23ceDrawing on a variety of sources and dealing with a host of"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " Jefus",
+      " \u0f0b\u0f0b",
+      " it\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      " Country",
+      " COUNTRY",
+      "Country"
+    ],
+    "generated_description": "and in country lists \u2014 activates on \"and\"/commas joining country names or multi-country lists; signals list continuation of nations or groups."
+  },
+  {
+    "id": "5_8881_8",
+    "layer": 5,
+    "ctx_idx": 8,
+    "influence_score": 0.3350740671157837,
+    "top_activations": [
+      {
+        "trigger": "MJ",
+        "score": 12.38,
+        "context": " ears, according to a study published today in Occupational & Environmental Medicine, a BMJ Publishing Group journal. Business Week reports.\u23cePatients in Austria who used their"
+      },
+      {
+        "trigger": " WHO",
+        "score": 11.25,
+        "context": "<bos>THE WHOOPING CRANE REPORT: 16\u23ceA pair of whoopers takes turns incubating eggs in their pen at Patuxent. While"
+      },
+      {
+        "trigger": " College",
+        "score": 12.0,
+        "context": " percent.\u23ceProfessor Majid Ezzati is Chair in Global Environmental Health at Imperial College London.\u23ce\u201cSalt is perhaps the most important dietary determinant of high blood"
+      },
+      {
+        "trigger": " Economics",
+        "score": 14.5,
+        "context": " France, 1947-1947; London School of Economics, 1947-1948.\u23ce- During"
+      },
+      {
+        "trigger": " Museum",
+        "score": 12.12,
+        "context": "We\u2019re getting right to the heart of the matter this month as the Science Museum\u2019s Lates with MasterCard explores Mending Broken Hearts on Wednesday 2"
+      }
+    ],
+    "promotes": [
+      "jface",
+      "addPreferredGap",
+      "OGND",
+      " Anglia",
+      "\u24d8"
+    ],
+    "demotes": [
+      "verifyException",
+      " f\u00e9d\u00e9ral",
+      "featureID",
+      "entennial",
+      "tilhe"
+    ],
+    "generated_description": "Institution name \u2014 activates on organization/place proper nouns (WHO, College, Economics, Museum, publishing group); signals institutional/organizational names in text."
+  },
+  {
+    "id": "24_5780_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.36743423342704773,
+    "top_activations": [
+      {
+        "trigger": " U",
+        "score": 135.0,
+        "context": " all of these people together under the umbrella term \"pagan,\" said Philip Shaw, who researches early Germanic languages and Old English at Leicester University in the U."
+      },
+      {
+        "trigger": " the",
+        "score": 89.0,
+        "context": "-author Anna Stec, a fire specialist at the University of Central Lancashire in the United Kingdom, said in a statement.\u23ceThese two gases are by far"
+      },
+      {
+        "trigger": " the",
+        "score": 107.0,
+        "context": " Security Service to give it its proper name, is a part of the intelligence community in the UK, and they work closely with GCHQ, MI6 and"
+      },
+      {
+        "trigger": " the",
+        "score": 82.0,
+        "context": ".\u23ceHong Kong was a former trading port, it became a crown colony of the United Kingdom in 1842, in 1997"
+      },
+      {
+        "trigger": ",",
+        "score": 89.0,
+        "context": " Mary's Hospital, Newport, Isle of Wight PO30 5TG, UK;\u23ceContributors SHA conceived the idea and worked with all the authors on"
+      }
+    ],
+    "promotes": [
+      " Vereinigten",
+      "UNITED",
+      " UNITED",
+      "United",
+      " United"
+    ],
+    "demotes": [
+      " Englishmen",
+      " Englishman",
+      "featureID",
+      " ProtoMessage",
+      " initComponents"
+    ],
+    "generated_description": "United Kingdom \u2014 activates on UK/United contexts (University, UK, crown colony); consistently promotes the token \u201cUnited\u201d in outputs"
+  },
+  {
+    "id": "24_5999_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.3518419861793518,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ],
+    "generated_description": "Formatting/navigation markers \u2014 activates on headings, UI labels and special symbols (arrows, section headers, capitalized title words, punctuation used in site navigation)."
+  },
+  {
+    "id": "24_13277_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.2906455993652344,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "English function words \u2014 activates on short, high-frequency tokens (prepositions, articles, commas, helper verbs); marks structural/function-word positions in English text."
+  },
+  {
+    "id": "25_11647_12",
+    "layer": 25,
+    "ctx_idx": 12,
+    "influence_score": 0.3086426556110382,
+    "top_activations": [
+      {
+        "trigger": " young",
+        "score": 38.25,
+        "context": " of Singapore began in 1819 with Thomas Stamford Raffles, a young official who worked for the British East India Company. Raffles estimated that the"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 40.0,
+        "context": ", completing with traditional dishes with origins rooted back from the beginning of the country.\u23ceBritain first started out with a poor selection of food, mainly due to the"
+      },
+      {
+        "trigger": ",",
+        "score": 45.5,
+        "context": " of Europe under Hitler's thumb, and the United States still frustratingly neutral, Britain was left alone to fight Nazi Germany. The only hope lay in the"
+      },
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": " also visually striking and accessible. It offers a detailed study of both the chronological phases of expansion, and more focused analysis of the very different areas of colonization. It"
+      },
+      {
+        "trigger": " new",
+        "score": 36.25,
+        "context": " Peter Dearman, a garage inventor in Hertfordshire, to power vehicles.\u23ceA new firm, Highview Power Storage, was created to transfer Mr Dearman'"
+      }
+    ],
+    "promotes": [
+      " Bioaccumulative",
+      "harapkan",
+      "crollView",
+      "intios",
+      "apd"
+    ],
+    "demotes": [
+      " UK",
+      "UK",
+      " British",
+      " \u00a3",
+      "British"
+    ],
+    "generated_description": "word-start detector \u2014 fires on short/common tokens and punctuation (commas, newlines, short adjectives or subword starts like \"of\"/\"new\"/\"young\"); correlates with demoting \"UK/British\" outputs"
+  },
+  {
+    "id": "18_7499_12",
+    "layer": 18,
+    "ctx_idx": 12,
+    "influence_score": 0.3596141040325165,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 43.5,
+        "context": " September, 1850), which restored a hierarchy to the Catholic church in England. It comprises the counties of Oxford, Stafford, Warwick, and Worcester"
+      },
+      {
+        "trigger": " throughout",
+        "score": 50.5,
+        "context": " as Lake Baikal and as far north as the Arctic coast. It is widespread throughout, with the exception of arid steppe and desert areas. In the Mediterranean,"
+      },
+      {
+        "trigger": " of",
+        "score": 50.0,
+        "context": " naturally produced large grains (seeds) that were tasty and nourishing. In other parts of the world, between 8000 BC and 300"
+      },
+      {
+        "trigger": " of",
+        "score": 44.5,
+        "context": ").\u23ce- Origin is too complex for it to be native to only certain parts of the world.\u23ce- Other violets are its relatives.\u23ce- Annual,"
+      },
+      {
+        "trigger": " in",
+        "score": 46.5,
+        "context": " been designated a nature preserve, are one of the premier birding places in all of the Balearics. The resident species are supplemented by hundreds of migrating birds"
+      }
+    ],
+    "promotes": [
+      "setVerticalGroup",
+      " Africa",
+      " India",
+      " England",
+      " Europe"
+    ],
+    "demotes": [
+      "MLLoader",
+      "\uc36c",
+      "BASEPATH",
+      " '<?",
+      " Danes"
+    ],
+    "generated_description": "say place name \u2014 activates on prepositions (in/of/throughout) introducing geographic phrases; promotes country/region tokens (England, India, Africa)"
+  },
+  {
+    "id": "18_868_12",
+    "layer": 18,
+    "ctx_idx": 12,
+    "influence_score": 0.3378523588180542,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 46.5,
+        "context": "% of net growth. But these increases were offset by declines in the United States and European Union, where oil consumption fell by 1.8 and 2"
+      },
+      {
+        "trigger": ",",
+        "score": 55.75,
+        "context": "<bos>Europe's strongest economic and industrial power, Germany is also\u23cethe most populous European country outside Russia. Fertile northern\u23ceplains stretch south from the North"
+      },
+      {
+        "trigger": " ",
+        "score": 54.75,
+        "context": " 11 percent of graduates in 2010, is expected to overtake the United States and produce 12 percent of the share of graduates by"
+      },
+      {
+        "trigger": ",",
+        "score": 53.25,
+        "context": " 13 harrowing days, the leaders of the United States, the Soviet Union, and Cuba brought the planet within a hair's breadth of nuclear catastrophe."
+      },
+      {
+        "trigger": ",",
+        "score": 51.75,
+        "context": " nations. The major Allies (China, Soviet Union, France, Great Britain, and the United States) held seats on the Security Council, each country held veto"
+      }
+    ],
+    "promotes": [
+      "France",
+      " Italy",
+      " Japan",
+      " Germany",
+      " France"
+    ],
+    "demotes": [
+      "IonicModule",
+      "zean",
+      " linkovi",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " cremallera"
+    ],
+    "generated_description": "say country \u2014 activates on commas/\u201cand\u201d in lists; pushes next token toward country names (France, Germany, Italy, Japan)."
+  },
+  {
+    "id": "23_5510_12",
+    "layer": 23,
+    "ctx_idx": 12,
+    "influence_score": 0.3640598952770233,
+    "top_activations": [
+      {
+        "trigger": " U",
+        "score": 51.75,
+        "context": " demand and an inability to build sufficient infrastructure to cope. For example, in the U.S., as population grew nearly 20% between 19"
+      },
+      {
+        "trigger": " United",
+        "score": 65.0,
+        "context": " release says, \"along with those produced by the Met Office Hadley Centre in the United Kingdom and the National Oceanic and Atmospheric Administration's National Climatic Data Center in"
+      },
+      {
+        "trigger": " U",
+        "score": 58.25,
+        "context": " help decide whether they need to take steps to preserve their fertility.\"\u23ceIn the U.S. alone, breast cancer is diagnosed in more than 25"
+      },
+      {
+        "trigger": " U",
+        "score": 51.25,
+        "context": " dog as well as feeding it food out of her own mouth.\u23ceIn the U.S., hookworms and roundworms take top spot for dog parasites."
+      },
+      {
+        "trigger": " U",
+        "score": 66.0,
+        "context": " said Thursday that only direct Palestinian-Israeli negotiations can achieve peace, adding that the U.K would not recognize a unilaterally declared Palestinian state.\u201d Parliamentary Under Secretary of"
+      }
+    ],
+    "promotes": [
+      " London",
+      " Britain",
+      " UK",
+      " British",
+      " England"
+    ],
+    "demotes": [
+      "ThroughAttribute",
+      "addContainerGap",
+      "inigte",
+      " Hecht",
+      "amerika"
+    ],
+    "generated_description": "United Kingdom / UK \u2014 fires on 'United'/'U.' tokens in \"U.K.\" / \"United Kingdom\" mentions; promotes London, Britain, England, British."
+  },
+  {
+    "id": "20_15360_12",
+    "layer": 20,
+    "ctx_idx": 12,
+    "influence_score": 0.2733716368675232,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 41.5,
+        "context": " administration gets its act together. Along with Japan, Canada, New Zealand and Australia, the country has formally requested that the conference of parties to the un Framework Convention"
+      },
+      {
+        "trigger": " \u2013",
+        "score": 46.0,
+        "context": " for CO2 emissions per capita \u2013 the US (#1), China (#2), and India (#5) [UCSUSA].\u23ce- Unless we move quickly to"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": " army captured Mexico City, forcing Mexico to agree to the sale of its northern territories to the U.S.\u23ceTerritorial expansion of the United States to the"
+      },
+      {
+        "trigger": " between",
+        "score": 54.0,
+        "context": " the first time that blood was drawn in the Olympic Games. During the water polo game between the USSR and Hungary, the Russian athlete Valentin Propokov cried out"
+      },
+      {
+        "trigger": " by",
+        "score": 41.0,
+        "context": " American Independence|\u23ce|b. a treaty of 1763 signed by Britain, France, and Spain that ended their involvement in the Seven Years'"
+      }
+    ],
+    "promotes": [
+      " Italy",
+      " Ireland",
+      " France",
+      " Australia",
+      " Canada"
+    ],
+    "demotes": [
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "RegressionTest",
+      "ParallelGroup",
+      "tvguidetime",
+      " Audiodateien"
+    ],
+    "generated_description": "say country name \u2014 fires on commas/dashes/prepositions that precede country or nation names; consistently promotes country tokens (Italy, Ireland, France, Australia, Canada)"
+  },
+  {
+    "id": "25_15003_12",
+    "layer": 25,
+    "ctx_idx": 12,
+    "influence_score": 0.3226318955421448,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 37.0,
+        "context": " groups commend NMFS for recognizing the new science documenting the perils facing this unique population of great white sharks.\u23ce\u201dWe commend NMFS for elevating great white sharks"
+      },
+      {
+        "trigger": " a",
+        "score": 35.5,
+        "context": "erase marker!\u23ceSo easy and a lot of fun. It's also a good way to practice drawing shapes. You could even make a game of it"
+      },
+      {
+        "trigger": " the",
+        "score": 37.5,
+        "context": "\u23ceGreat bustard fact file\u23ce- Find out more\u23ce- Print factsheet\u23ceGreat bustard description\u23ceA tall bird, the great bustard has a"
+      },
+      {
+        "trigger": " as",
+        "score": 44.5,
+        "context": "1932 and 1936 Olympics were disappointments, however, as the worldwide economic depression limited participation in the former, while Great Britain went home"
+      },
+      {
+        "trigger": " or",
+        "score": 58.5,
+        "context": " not our country's founders, but rather the founders' great- or great-great-, or great-great-great-great-grandchildren.\u23ceThe"
+      }
+    ],
+    "promotes": [
+      " \u0635\u0648\u062a\u064a\u0647",
+      "SharedDtor",
+      "\u0628\u0648\u0627\u0628\u0629",
+      "disposing",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448"
+    ],
+    "demotes": [
+      " Great",
+      "Great",
+      "GREAT",
+      " GREAT",
+      "great"
+    ],
+    "generated_description": "before great \u2014 activates on short function words (of/a/the/as/or) immediately before \"great\"; consistently anti-\"great\" (pushes/demotes the token \"Great\"/\"great\")."
+  },
+  {
+    "id": "24_3213_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.25613099336624146,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 96.5,
+        "context": ", on the island of Great Britain. The United Kingdom is the three countries of Great Britain plus the country of Northern Ireland.\u23ceThe British Isles are Great Britain"
+      },
+      {
+        "trigger": " with",
+        "score": 68.0,
+        "context": " prior, this thought was inconceivable. Congress had previously met only to regress their grievances with the British government. What changed this and what did the Declaration bring forth?"
+      },
+      {
+        "trigger": " with",
+        "score": 78.5,
+        "context": "), but there were varying opinions on how best to preserve liberty and win the clash with British forces. Some of the delegates preferred to wait until foreign alliances could be"
+      },
+      {
+        "trigger": " United",
+        "score": 64.0,
+        "context": ", before conducting similar studies on individuals from Germany, Norway, the Netherlands and the United States.\u23ceExperts say the discovery opens a new door for drug manufacturers and"
+      },
+      {
+        "trigger": " U",
+        "score": 80.0,
+        "context": " can be worn at the waist or in an under-arm holster. In the U.S., where the\u23cedevice was designed, the artificial heart is permitted"
+      }
+    ],
+    "promotes": [
+      "great",
+      " GREAT",
+      "GREAT",
+      "Great",
+      " Great"
+    ],
+    "demotes": [
+      " firebaseConfig",
+      " Audiodateien",
+      "SharedDtor",
+      " British",
+      " NSCoder"
+    ],
+    "generated_description": "say country name \u2014 activates on prepositions/articles right before country/nationality words; signals upcoming place tokens (e.g. Great, British, United, U.S.)"
+  },
+  {
+    "id": "25_286_12",
+    "layer": 25,
+    "ctx_idx": 12,
+    "influence_score": 0.2965507507324219,
+    "top_activations": [
+      {
+        "trigger": " In",
+        "score": 36.25,
+        "context": " U.S., hookworms and roundworms take top spot for dog parasites. In humans, roundworms transmitted from dog fur can cause ocular larva migrans ("
+      },
+      {
+        "trigger": " in",
+        "score": 33.75,
+        "context": "etal abnormalities, find experts\u23ceResearchers from University of Leeds, England together with colleagues in Paris, Rome, and San Diego established that a defective gene TMEM2"
+      },
+      {
+        "trigger": " medieval",
+        "score": 43.0,
+        "context": " was still in\u23ceuse in the 1950's. In medieval Japan building roads and\u23cebridges as an act of piety became almost an obsession"
+      },
+      {
+        "trigger": " expects",
+        "score": 39.5,
+        "context": " in The Hague on Wednesday.\u23ceAustralian Attorney General Mark Dreyfus said on Sunday he expects to win before the next southern hemisphere summer. The whaling fleet generally leaves"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": "tenberg??\u23ceDo you know where our Reher and Stoltenberg ancestors came from in Germany??\u23ceJohann Reher came from the town of Bebensee.\u23ce"
+      }
+    ],
+    "promotes": [
+      " @\"/",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "PerformLayout",
+      "makeConstraints",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      " Australia",
+      " Italy",
+      " Canada",
+      " France",
+      " Ireland"
+    ],
+    "generated_description": "say location/time \u2014 fires on the preposition \"in\" when introducing a place or time (e.g., Germany, The Hague, medieval Japan, humans); signals an upcoming locative/temporal phrase."
+  }
+]

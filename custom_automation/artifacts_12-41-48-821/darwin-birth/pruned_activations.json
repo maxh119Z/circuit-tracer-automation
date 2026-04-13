@@ -1,0 +1,2305 @@
+[
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.38570305705070496,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ]
+  },
+  {
+    "id": "0_6084_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.39666110277175903,
+    "top_activations": [
+      {
+        "trigger": " boundary",
+        "score": 17.12,
+        "context": " media sites. Some have had inappropriate contact with students that blur the teacher-student boundary. In extreme cases, teachers and coaches have been jailed on sexual abuse and"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.62,
+        "context": " welded to the bottom side of the steel plate. This assembly is tied to the boundary element which surrounds it. The concrete wall below the level of these plates was"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.12,
+        "context": "<bos>Migration is the movement of people across a specified boundary for the purpose of establishing a\u23cenew or semi-permanent residence. External migration is where residence changes between"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.88,
+        "context": " the northern boundary of that parish and\u23ceCastle Street, Long Acre, the northern boundary of the parish of St. Martinin-the-Fields; through this"
+      },
+      {
+        "trigger": " boundary",
+        "score": 16.62,
+        "context": " the plane x+y+z=1 and the surface S which is the boundary of this region, calculate for the vector valued function F=(x^2"
+      }
+    ],
+    "promotes": [
+      "EDEFAULT",
+      "ormick",
+      "phazard",
+      "omitempty",
+      "])));"
+    ],
+    "demotes": [
+      " Zacks",
+      "TextWatcher",
+      " of",
+      " \u8df3\u8f6c\u81f3",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940"
+    ]
+  },
+  {
+    "id": "0_8918_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.34542137384414673,
+    "top_activations": [
+      {
+        "trigger": " countries",
+        "score": 20.88,
+        "context": ", libraries, facility upkeep and to provide a comfortable student learning experience. In most countries, especially in non-English-speaking countries, there are no or only"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " borders into economies both near and far, causing persistent social and economic detriment in many countries. The Global Economic Crisis in Latin America: Impacts and Responses is an examination"
+      },
+      {
+        "trigger": " countries",
+        "score": 20.75,
+        "context": " and schizophrenia) account for nearly 25% of all disability across major industrialized countries.12\u23ceAs the President indicated in his speech announcing the Commission ("
+      },
+      {
+        "trigger": " countries",
+        "score": 20.5,
+        "context": " implement and fund projects on autism spectrum disorders and other mental disorders in children in developing countries, the vast majority of whom do not currently receive any treatment or care."
+      },
+      {
+        "trigger": " countries",
+        "score": 20.62,
+        "context": "\u23ceLATCH stands for Lower Anchors and Tethers for Children. In other countries, it\u2019s known as ISOFIX/ISOFIT or LUAS"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "\ue315",
+      "InputBorder",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "demotes": [
+      " country",
+      "ral",
+      " current",
+      "en",
+      "country"
+    ]
+  },
+  {
+    "id": "0_10754_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.37285900115966797,
+    "top_activations": [
+      {
+        "trigger": " state",
+        "score": 18.25,
+        "context": " third of South Dakota for three days. They may never know.\u23ceSouth Dakota state veterinarian Dustin Oedekoven estimated Oct. 17 that the number"
+      },
+      {
+        "trigger": " state",
+        "score": 18.25,
+        "context": " Generation 'Forestry for Conservation' led to the consolidation and appropriation of forests to state ownership. The alienation of rural people from forest access began. The Second Generation"
+      },
+      {
+        "trigger": " state",
+        "score": 17.75,
+        "context": " data on ~150,000 facilities regulated by the EPA, state, and local air regulatory agencies.\u23cePermit Compliance System. Contains data on"
+      },
+      {
+        "trigger": " state",
+        "score": 18.0,
+        "context": "\u2022 Non-invasive urodynamics\u23ce\u2022 Neurophysiology of voiding\u23ceThe worldwide state of the art in non-invasive urodynamics has been summarized in a special"
+      },
+      {
+        "trigger": " state",
+        "score": 19.25,
+        "context": " most of these studies, the researchers found no significant physical change associated with the trance state of hypnosis. The subject's heart rate and respiration may slow down,"
+      }
+    ],
+    "promotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "EndGlobalSection",
+      " transfieras",
+      "<bos>",
+      " States"
+    ],
+    "demotes": [
+      " state",
+      "state",
+      " world",
+      " city",
+      " estado"
+    ]
+  },
+  {
+    "id": "0_1750_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.333270400762558,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 18.25,
+        "context": "2) People in families: People who are related to the\u23cehouseholder by birth, marriage, or adoption. People who\u23ceare related to each other but"
+      },
+      {
+        "trigger": " birth",
+        "score": 18.25,
+        "context": ", found that uncontrolled asthma during the first trimester of pregnancy significantly increases the risk of birth defects in babies. For the study, the researchers analyzed >430"
+      },
+      {
+        "trigger": " birth",
+        "score": 18.25,
+        "context": " 14, 1879. To mark the anniversary of his birth, Israel's Hebrew University of Jerusalem has launched an expanded Einstein Archives Online"
+      },
+      {
+        "trigger": " birth",
+        "score": 18.25,
+        "context": "\u23ceWASHINGTON\u2014Pregnant women may unknowingly be putting their unborn children at risk of birth defects by taking over-the-counter medications and prescription drugs, and using"
+      },
+      {
+        "trigger": " birth",
+        "score": 18.25,
+        "context": " rung in 1846, on the anniversary of George Washington\u2019s birth.\u23ceEnshrined in art and legend, the bell appeared on the"
+      }
+    ],
+    "promotes": [
+      "__':\r",
+      " \u017find",
+      " rai\u017f",
+      " Jefus",
+      " purpo\u017fe"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      " Enquiries",
+      " tyres",
+      " unauthorised",
+      " specialising"
+    ]
+  },
+  {
+    "id": "0_9140_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39306026697158813,
+    "top_activations": [
+      {
+        "trigger": " farm",
+        "score": 12.12,
+        "context": " growing crops or keeping animals. Many have suffered floods and food shortage. Restoring farmlands and forests is an immediate need.\u23ceFinding twin-track solutions:"
+      },
+      {
+        "trigger": " farm",
+        "score": 11.88,
+        "context": " can reduce the use of fossil fuels, and they also are a big draw for farm-state votes.\u23ceBut scientists writing in the current issue of Science magazine"
+      },
+      {
+        "trigger": " farm",
+        "score": 11.75,
+        "context": " costs, the costs and returns per acre, hourly equipment costs, and the whole farm annual equipment, investment, and business overhead costs.\u23ceThe new studies are"
+      },
+      {
+        "trigger": " farm",
+        "score": 12.12,
+        "context": "\u23ceFor your third field trip and insect collecting expedition, visit a small lake or farm pond as well as a creek or small stream with clean running water. If"
+      },
+      {
+        "trigger": " farm",
+        "score": 12.62,
+        "context": " was born on Oct. 1, 1863, on a farm near Albion, Ill. He attended Ewing (Ill.) College for two years"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      "'",
+      " '",
+      "\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " Monfieur",
+      " my\u017felf",
+      " purpo\u017fe",
+      " Di\u017f",
+      " fa\u017ft"
+    ]
+  },
+  {
+    "id": "0_12255_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3558078706264496,
+    "top_activations": [
+      {
+        "trigger": " manufacturer",
+        "score": 18.5,
+        "context": " the 1860s, Lip went on to become the biggest watch manufacturer in France, and the only French watch company able to play a role outside"
+      },
+      {
+        "trigger": " manufacturers",
+        "score": 16.75,
+        "context": "<bos>Thirteen peer-reviewed papers examine current and developing sustainable building and product standards for manufacturers, designers, retailers, the general public, and government regulators.\u23ceThe"
+      },
+      {
+        "trigger": " manufacturer",
+        "score": 18.75,
+        "context": " liquid form of this medication, carefully measure the dose using the dropper provided by the manufacturer. Do not use a household spoon because you may not get the correct dose"
+      },
+      {
+        "trigger": " manufacturer",
+        "score": 17.88,
+        "context": " C.W. Post, an 1800s-era food manufacturer most well known for pioneering the field of breakfast cereal. He also invented a"
+      },
+      {
+        "trigger": " manufacturer",
+        "score": 18.75,
+        "context": " amount of dyes present in a powdered beverage in order to examine the allegation that the manufacturer is exceeding the allowable amount of the artificial food dyes in the drinks it produces"
+      }
+    ],
+    "promotes": [
+      "To",
+      "\u23ce\u23ce",
+      " I",
+      " ",
+      "<eos>"
+    ],
+    "demotes": [
+      " The\u017fe",
+      "Autoritn\u00ed",
+      " my\u017felf",
+      " Majefty",
+      " Efq"
+    ]
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3439945578575134,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ]
+  },
+  {
+    "id": "0_2015_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3790304362773895,
+    "top_activations": [
+      {
+        "trigger": " influence",
+        "score": 18.38,
+        "context": " topics in the course.\u23ceLeadership development is the process of enhancing your skills to influence and organize others to accomplish key goals. It goes beyond knowledge of leadership theories"
+      },
+      {
+        "trigger": " influence",
+        "score": 17.88,
+        "context": " reacted to the shoplifting scenario endorsed various motivations to obey the law -- morality, influence from family and friends, fear of getting caught and an inherent obligation to follow"
+      },
+      {
+        "trigger": " influence",
+        "score": 18.0,
+        "context": " Geophysics, in an email to the department dated March 15. \u201cHis influence is so large it is impossible to measure.\u201d\u23ceTurekian\u2019s"
+      },
+      {
+        "trigger": " influence",
+        "score": 18.0,
+        "context": " are: 1) That it is\u23cenot only true that the mind can influence the body, but that the body\u23cecan influence the mind; 2"
+      },
+      {
+        "trigger": " influence",
+        "score": 17.88,
+        "context": " driving fire in PNW, SW, and NR are not constant in their relative influence on fire through time or across space and that their differentiation is not stationary through"
+      }
+    ],
+    "promotes": [
+      ",",
+      " (",
+      " and",
+      " the",
+      " in"
+    ],
+    "demotes": [
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " \u0f0b\u0f0b",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      " ainfi"
+    ]
+  },
+  {
+    "id": "0_10899_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37999749183654785,
+    "top_activations": [
+      {
+        "trigger": " soon",
+        "score": 13.12,
+        "context": " for ticks is May through August but healthcare professionals suggest you be on the lookout as soon as the snow melts.\u23ceLast year, there were 153"
+      },
+      {
+        "trigger": " soon",
+        "score": 13.38,
+        "context": " of your trip and asking him or her for a course of antibiotics. Taken as soon as diarrhea strikes, the drugs can usually shorten the illness from several days to"
+      },
+      {
+        "trigger": " soon",
+        "score": 13.25,
+        "context": " the meantime, the Indian could discharge his arrow from a running horse, and as soon as his adversary's guns were empty could turn upon him with arrows and"
+      },
+      {
+        "trigger": " soon",
+        "score": 13.38,
+        "context": " opportunities, call the teacher to set up a meeting.\u23ceContact the teacher as soon as you suspect your child has a homework problem (as well as when you"
+      },
+      {
+        "trigger": " soon",
+        "score": 13.5,
+        "context": " in the hands of speculators and others who sought to sell their\u23ceholdings as soon as a survey was made.\u23ceWilliam Macclure, a Scotch-"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " u\u017fed",
+      " them\u017felves",
+      " my\u017felf",
+      " it\u017felf"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      " I",
+      " and",
+      "<bos>",
+      " of"
+    ]
+  },
+  {
+    "id": "0_2848_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3894040286540985,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_13252_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3570106625556946,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 13.25,
+        "context": "th of August, which coincides with India's Independence Day, Hindus celebrate the birth anniversary of Rishi Aurobindo \u2014 the great Indian scholar, litterateur,"
+      },
+      {
+        "trigger": " birth",
+        "score": 13.0,
+        "context": "\u23ceThis year marks the 200th anniversary of the explorer\u2019s birth, and as such, David Livingstone Bicentennial celebrations are taking place in the"
+      },
+      {
+        "trigger": " birth",
+        "score": 13.25,
+        "context": " |\u23ceFetal Alcohol Spectrum Disorders (FASD) describes a continuum of permanent birth defects caused by maternal consumption of alcohol during pregnancy, which includes, but is"
+      },
+      {
+        "trigger": " birth",
+        "score": 13.38,
+        "context": " no food or liquid can be kept down.\u23ceOfficials, who announced the upcoming birth of the first child between the duchess and Prince William, said the 3"
+      },
+      {
+        "trigger": " birth",
+        "score": 13.25,
+        "context": " embodies a total overhaul of the basic rules and institutions of world trade, and the birth of a new institution, the World Trade Organization.\u23ceWith such a complex"
+      }
+    ],
+    "promotes": [
+      " rucksack",
+      " bespoke",
+      "DrawerToggle",
+      " Numerade",
+      "fjspx"
+    ],
+    "demotes": [
+      "ValueStyle",
+      "protoc",
+      " demais",
+      "Autoritn\u00ed",
+      " compounds"
+    ]
+  },
+  {
+    "id": "0_2848_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3316512703895569,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ]
+  },
+  {
+    "id": "0_13565_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3410717248916626,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 15.81,
+        "context": "<bos>As we get ready to celebrate our nation\u201a\u00c4\u00f4s birth, we thought this would be a perfect time to share a little trivia about Independence Day and the"
+      },
+      {
+        "trigger": " birth",
+        "score": 15.81,
+        "context": " power have racked Rome with social and political turmoil for years before Julius Caesar's birth.\u23ce(The entire section is 76 words.)\u23ceWant to"
+      },
+      {
+        "trigger": " birth",
+        "score": 15.44,
+        "context": "CI Cancer Bulletin.Since they were first licensed nearly 50 years ago, birth control pills containing estrogen have prevented some 200,000"
+      },
+      {
+        "trigger": " birth",
+        "score": 15.56,
+        "context": "Some 3% of the world\u2019s population live permanently outside their country of birth. In Europe, the foreign born population is about 7%. In the"
+      },
+      {
+        "trigger": " birth",
+        "score": 15.81,
+        "context": " the Versailles gardens.\u23ceTo mark the 400th anniversary of his birth, the spotlight is placed on Louis XIV's gardener, the exceptional architect"
+      }
+    ],
+    "promotes": [
+      " due",
+      " it",
+      " in",
+      " a",
+      " the"
+    ],
+    "demotes": [
+      " \u017ftate",
+      " purpo\u017fe",
+      " \u017fmall",
+      " enfans",
+      " poffible"
+    ]
+  },
+  {
+    "id": "0_15904_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3481723964214325,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 17.0,
+        "context": "/2 pound more than girls; two-and-a-half times the birthweight by 8 months\u23ce- Height: average growth of about 1"
+      },
+      {
+        "trigger": " birth",
+        "score": 18.0,
+        "context": "29.\u23ceMeanwhile, 14.8 percent more women first gave birth when 30 to 34 years old, and 7."
+      },
+      {
+        "trigger": " birth",
+        "score": 16.88,
+        "context": " near farms that use the weed killer atrazine may up the risk of a rare birth defect, according to a study presented this past Friday at the annual meeting of"
+      },
+      {
+        "trigger": " birth",
+        "score": 17.62,
+        "context": " and others that come to man out of darkness.\u23ceMeanwhile Gaea alone gave birth to Uranus, the heavens. Uranus became Gaea's mate covering her"
+      },
+      {
+        "trigger": " birth",
+        "score": 17.88,
+        "context": " for pygmy sperm whales is 11 months, after which the female gives birth to a calf that is about 4 feet long. Calves are born"
+      }
+    ],
+    "promotes": [
+      " stuffs",
+      " Cambrian",
+      " dotato",
+      "CharField",
+      " nothin"
+    ],
+    "demotes": [
+      "\u5e16\u6700\u540e\u7531",
+      "ing",
+      "InjectAttribute",
+      "PyExc",
+      "tvguidetime"
+    ]
+  },
+  {
+    "id": "0_11375_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3078315556049347,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ]
+  },
+  {
+    "id": "0_3171_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.39755162596702576,
+    "top_activations": [
+      {
+        "trigger": " evolution",
+        "score": 17.75,
+        "context": " earth providing an excellent system for studies of ... microbial speciation, biogeography, and evolution of thermal adaptation. Recent advances in high throughput DNA sequencing and bioinformatics allow"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.5,
+        "context": "-biodiversity of Ecuador. (2) What is biodiversity? The processes of evolution and adaptation of species that create diversity. (3) What is an ecosystem"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.75,
+        "context": " material beyond Earth, and suggested that the finding would shed light on the subject of evolution.\u23ceThe fact is, however, that the research in question sheds light"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.75,
+        "context": "; biogeography|\u23ce|Abstract||The paper summarizes the current understanding of the evolution and diversification of birds. New insights into this field have mainly come from two"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.75,
+        "context": " unexpected complexity, for this lowly sponge has an impressive complement of genes. As one evolutionist put it, \u201cThis flies in the face of what we think of"
+      }
+    ],
+    "promotes": [
+      "lioth\u00e8que",
+      "th\u00e2u",
+      " HasFactory",
+      ">*/",
+      "=[]\r"
+    ],
+    "demotes": [
+      " avoient",
+      " sauvages",
+      " normaux",
+      " d\u00e9mocr",
+      " communs"
+    ]
+  },
+  {
+    "id": "0_9776_11",
+    "layer": 0,
+    "ctx_idx": 11,
+    "influence_score": 0.36283397674560547,
+    "top_activations": [
+      {
+        "trigger": " evolution",
+        "score": 19.0,
+        "context": " to understand the Sun, determine how predictable solar activity truly is, and develop the capability to forecast solar activity and the evolution of disturbances as they propagate to Earth."
+      },
+      {
+        "trigger": " evolution",
+        "score": 19.0,
+        "context": " changed over\u23ceThrough their inquiry in this module, students develop understandings\u23ceof the evolution of Earth\u2019s systems. The major themes addressed\u23ceinclude the following portions"
+      },
+      {
+        "trigger": " evolution",
+        "score": 19.12,
+        "context": " Just how does what you call an invisible, intangible, eternally elusive gardener differ from an imaginary gardener or even from no gardener at all?\"\u23ceDarwin and the evolution"
+      },
+      {
+        "trigger": " evolution",
+        "score": 19.0,
+        "context": " and cancer proliferation\u23ceBy John Phillip\u23ceOxygen has been a critical component in the evolution of life on earth, and humans are no exception as the gas has enabled"
+      },
+      {
+        "trigger": " evolution",
+        "score": 19.38,
+        "context": "wood Larned Washburn, the father of modern primatology who first glimpsed the evolution of human behavior in the actions of monkeys and apes, died Sunday from pneumonia"
+      }
+    ],
+    "promotes": [
+      "  ",
+      "1",
+      ".",
+      "\u23ce",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " $_\"",
+      " [],\r",
+      "NUMX",
+      " photolibrary",
+      " {},\r"
+    ]
+  },
+  {
+    "id": "1_2344_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3616926372051239,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 21.0,
+        "context": " capital \"I\").\u23ce5. Imperialism is another country exerting their over a country. The 4 patterns of imperialism are 1.Make Colonies 2"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": ". This applies to entire countries as well. If the merits of all of a country's inhabitants are more numerous than its sins, the land is called righteous"
+      },
+      {
+        "trigger": " country",
+        "score": 21.75,
+        "context": " in the exchange rates of the country\u2019s currency. Such fluctuations may change a country\u2019s ranking from one year to the next, even though they often make"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Research Agency (NISRA) \u2013 following consultation with key users of projections in each country and advice from an expert advisory panel.\u23ceThe primary purpose of the national"
+      },
+      {
+        "trigger": " country",
+        "score": 21.5,
+        "context": " Nationality, & Ethnicity\u23ceNo one has submitted information on Agront-badil country of origin, nationality, or ethnicity. Add to this section\u23ceNo content"
+      }
+    ],
+    "promotes": [
+      " gesteld",
+      " Department",
+      "fortawesome",
+      "enderror",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      " Country",
+      " COUNTRY",
+      "Country"
+    ]
+  },
+  {
+    "id": "0_13004_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3605380654335022,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "1_12964_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3993239104747772,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 20.75,
+        "context": " of UNFPA\u2019s efforts to ensure that every pregnancy is wanted, every child birth is safe, and every young person\u2019s potential is fulfilled.\u201d\u23ceVic"
+      },
+      {
+        "trigger": " birth",
+        "score": 21.0,
+        "context": " women are becoming more health conscious.\u23ceMost know that taking folic acids can prevent birth defects to the baby's spine, but what about the importance of omega"
+      },
+      {
+        "trigger": " birth",
+        "score": 20.75,
+        "context": " disease\u2014heart disease that is present at birth\u2014is the most common type of birth defect. Approximately 1 out of every 110 babies is born"
+      },
+      {
+        "trigger": " birth",
+        "score": 20.75,
+        "context": "gestin.\u23ceThe birth control patch delivers more estrogen than the low-dose birth control pills do. The U.S. Food and Drug Administration (FDA"
+      },
+      {
+        "trigger": " birth",
+        "score": 20.5,
+        "context": ", rheumatoid arthritis, and lupus, lasts a long time in the body and causes birth defects in children from women who have it in their systems. The study of"
+      }
+    ],
+    "promotes": [
+      "h",
+      "\u23ce\u23ce",
+      ".",
+      " ",
+      "<bos>"
+    ],
+    "demotes": [
+      " propOrder",
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628",
+      "Datuak",
+      "f\u00f8lgelig",
+      "]--;"
+    ]
+  },
+  {
+    "id": "2_15035_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.39843860268592834,
+    "top_activations": [
+      {
+        "trigger": " birth",
+        "score": 30.5,
+        "context": " one-fifth of all American babies were delivered this way.\u23ce- The rise was accompanied by a 60 percent decline in the rate of women giving birth"
+      },
+      {
+        "trigger": " birth",
+        "score": 26.25,
+        "context": " the anus) to enlarge the vaginal opening and facilitate childbirth.\u23ceDuring a vaginal birth, the health care provider will assist the fetus' head and chin out of"
+      },
+      {
+        "trigger": " birth",
+        "score": 28.25,
+        "context": " 1The man had intercourse with his wife Eve, and she conceived and gave birth to Cain, saying, \u201cI have produced a male child with the help"
+      },
+      {
+        "trigger": " birth",
+        "score": 26.75,
+        "context": " year during the warmer months, from February to September. Populations living farther south give birth to their young earlier in the year than do populations living in the northern parts"
+      },
+      {
+        "trigger": " birth",
+        "score": 26.5,
+        "context": ", but it is best to start treatment as early as possible\u2014sometimes right after birth. Treatment options include:\u23ceWith casting, the foot is manually moved into"
+      }
+    ],
+    "promotes": [
+      " the\u017fe",
+      " my\u017felf",
+      " it\u017felf",
+      " him\u017felf",
+      " them\u017felves"
+    ],
+    "demotes": [
+      " birth",
+      " Birth",
+      "birth",
+      "Birth",
+      " BIRTH"
+    ]
+  },
+  {
+    "id": "2_16382_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.3639735281467438,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 11.0,
+        "context": " Spain, one of the largest southern European countries, found additional characteristics specific to this country, such as an earlier age at onset and higher rates of comorbidity and"
+      },
+      {
+        "trigger": " country",
+        "score": 10.0,
+        "context": "Some people are already planning ahead for disaster. The president of Kiribati, a country in the South Pacific Islands, is planning to buy land in Fiji for the"
+      },
+      {
+        "trigger": " country",
+        "score": 13.12,
+        "context": "0 miles (60 km) on the North Sea\u23ceBelgium is an important country to both Europe and the rest of the world as its capital, Brussels,"
+      },
+      {
+        "trigger": " cities",
+        "score": 11.5,
+        "context": " numbers come in, that would top July 1936.\u23ceFive cities \u2014 St. Louis, Indianapolis Chicago, Detroit and Denver \u2014 are all on"
+      },
+      {
+        "trigger": " country",
+        "score": 11.12,
+        "context": "\u23ceChina , officially the People's Republic of China , is the most populous country in the world, with over 1.3 billion citizens. Located in"
+      }
+    ],
+    "promotes": [
+      " \u0645\u06a9\u0627\u0646",
+      "Topics",
+      "-",
+      "\u4eba\u7269",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "SharedDtor",
+      "HasForeignKey",
+      "tagHelperRunner",
+      "WebElementEntity"
+    ]
+  },
+  {
+    "id": "2_13756_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.36510321497917175,
+    "top_activations": [
+      {
+        "trigger": " country",
+        "score": 23.38,
+        "context": " islands not\u23cetoo far away are following suit.\u23ceLucia, a small island country in the eastern Caribbean Sea, is set\u23cea series of geothermal plants based"
+      },
+      {
+        "trigger": " country",
+        "score": 23.62,
+        "context": " Ellen Peak, Henry Mountains\u23ceBy: Wynne Benti\u23ceEast of the expansive country known as the waterpocket fold and north of the deep water-filled canyons"
+      },
+      {
+        "trigger": " country",
+        "score": 23.75,
+        "context": "ge of the Quinkl:\u23ce- Quinkl family history\u23ce- Quinkl country of origin, nationality, & ethnicity\u23ce- Quinkl last name meaning &"
+      },
+      {
+        "trigger": " country",
+        "score": 22.12,
+        "context": "-communist dissident who spent five years in Soviet prisons before being seated as his country\u2019s President in the wake of the 1989 \u201cVelvet"
+      },
+      {
+        "trigger": " country",
+        "score": 22.62,
+        "context": " have that language connection to their cultural heritage.\u23ceThis was western Pennsylvania. The country my family came from is Poland, but our background is actually not Polish but"
+      }
+    ],
+    "promotes": [
+      " producciones",
+      "\u0432\u0430\u044e\u0449\u0430\u044f",
+      "</thead>",
+      " biens",
+      "langer"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      "Country",
+      " Country",
+      " COUNTRY"
+    ]
+  },
+  {
+    "id": "1_6336_11",
+    "layer": 1,
+    "ctx_idx": 11,
+    "influence_score": 0.39032110571861267,
+    "top_activations": [
+      {
+        "trigger": " evolution",
+        "score": 17.0,
+        "context": " discover the often ignored reasoning behind his own abandonment of some of the core mechanisms of evolution later in his life, though they remain unchallenged pillars of unquestioning science"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.25,
+        "context": "<bos>The Evolution Deceit\u23ceAlexander I. Oparin, a leading proponent of evolution, describes coacervates as blobs of organic matter (mostly containing sugars"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.12,
+        "context": ". It does not, however, establish that historical contingency plays an important role in evolution generally. But even if the importance of historical contingency does become established, that"
+      },
+      {
+        "trigger": " evolution",
+        "score": 16.88,
+        "context": " so-called Discovery Institute using my work in an attempt to limit the teaching of evolution in Ohio schools. At such times it is difficult to know whether to laugh"
+      },
+      {
+        "trigger": " evolution",
+        "score": 17.0,
+        "context": "0 generations. No one has ever suggested differently.\u23ceWhile extinction is important for evolution, since it frees up ecological niches that were previosuly occupied, it is"
+      }
+    ],
+    "promotes": [
+      "AndEndTag",
+      "PreferredItem",
+      "StoryboardSegue",
+      " resourceCulture",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      " to",
+      " and",
+      "\u23ce"
+    ]
+  },
+  {
+    "id": "4_6087_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.3760293126106262,
+    "top_activations": [
+      {
+        "trigger": " state",
+        "score": 14.5,
+        "context": ", 1958, as a first step towards a pan-Arab state, the UAR was created when a group of political and military leaders in"
+      },
+      {
+        "trigger": " countries",
+        "score": 15.25,
+        "context": " the water management and related environmental problems, in 1975, Mediterranean countries and the EEC adopted the Mediterranean Action Plan (MAP). In 19"
+      },
+      {
+        "trigger": "country",
+        "score": 14.5,
+        "context": ".\u23ceNow, more than six decades later, as the 28-country alliance gathers in Chicago for its summit, the Afghan war and U.S"
+      },
+      {
+        "trigger": " country",
+        "score": 15.62,
+        "context": " his first foreign voyage as leader of the infant country. His destination? The Jewish state of Israel.\u23cePresident Shimon Peres hailed the visit as a \u201cmoving"
+      },
+      {
+        "trigger": " countries",
+        "score": 14.62,
+        "context": " ensures adherence to market regulations.\u23ceIn France, as in the other European Union countries, the electricity supply market has been wholly open to competition since July 1"
+      }
+    ],
+    "promotes": [
+      " Countries",
+      "Countries",
+      " Country",
+      " countries",
+      " country"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "fortawesome",
+      "th\u00e2u",
+      "\u0627\u0646\u064a\u0641",
+      " Syrie"
+    ]
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.34680745005607605,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It\u2019s no secret that New Mexico is one of the nation\u2019s hot spots for nuclear activity. We don\u2019t have any commercial nuclear power plants"
+      },
+      {
+        "trigger": "It",
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "trigger": "(",
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds \u2013 a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Port\u00e1ly",
+      "goku",
+      " l\u00e9gale"
+    ]
+  },
+  {
+    "id": "3_5683_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3957667946815491,
+    "top_activations": [
+      {
+        "trigger": " voltage",
+        "score": 9.38,
+        "context": " the conductors. When the voltage difference between the conductors exceeds the gap's breakdown voltage, a spark forms, ionizing the gas and drastically reducing its electrical resistance."
+      },
+      {
+        "trigger": " date",
+        "score": 9.44,
+        "context": "entered on June 4, 2000.\u23ce|Shuttle deployment date\u23ce||Apr. 7, 1991\u23ce||4"
+      },
+      {
+        "trigger": " direction",
+        "score": 9.88,
+        "context": " control the direction in which a gallium nitride nanowire grows. Growth direction is critical to determining the wire's electrical and thermal conductivity and other important"
+      },
+      {
+        "trigger": " energies",
+        "score": 10.12,
+        "context": " linear accelerators that accelerate beams of electrons and positrons toward each other, producing collision energies of up to 1,000 giga-electron volts."
+      },
+      {
+        "trigger": " times",
+        "score": 10.56,
+        "context": " also means waking 2 hours later in the morning.\u23ceEarly high school start times. In most school districts, the move to high school is accompanied by an"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " them\u017felves",
+      " him\u017felf",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " '",
+      "\u0565\u057f",
+      " \u2018",
+      " Such",
+      "lievo"
+    ]
+  },
+  {
+    "id": "7_462_1",
+    "layer": 7,
+    "ctx_idx": 1,
+    "influence_score": 0.37497642636299133,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 37.0,
+        "context": "<bos>1. Hebrew hl*l*q=,\u23ce(qelalah), noun = a curse\u23cePi'el = curse (make contemptible) ("
+      },
+      {
+        "trigger": "#",
+        "score": 40.25,
+        "context": "<bos>#104604. Asked by madkeen4. (Apr 11 09 6:01 AM)\u23ceIt"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019ll not make modifications to the text except for differences between C and Python.\u23ceCairo is a powerful 2-dimensional graphics library designed to support"
+      },
+      {
+        "trigger": "It",
+        "score": 37.25,
+        "context": "<bos>It's something that can creep up on you this time of the year.\u23ceThe holidays are supposed to be bright and shiny and filled with cheer,"
+      },
+      {
+        "trigger": "I",
+        "score": 37.75,
+        "context": "<bos>I\u2019m sorry to disappoint you, but this is an obvious alteration, done after the coin left the Mint. There is nothing in the minting process"
+      }
+    ],
+    "promotes": [
+      " mixte",
+      "Olvid",
+      "'",
+      "Popis",
+      " \u041f\u0440\u043e\u0444\u0438\u043b\u044c"
+    ],
+    "demotes": [
+      "__\":\r",
+      "});*/",
+      " AttributeSet",
+      " }}\"></",
+      "__':\r"
+    ]
+  },
+  {
+    "id": "13_3610_12",
+    "layer": 13,
+    "ctx_idx": 12,
+    "influence_score": 0.32839521765708923,
+    "top_activations": [
+      {
+        "trigger": " Safety",
+        "score": 18.38,
+        "context": "<bos>Drinking Water Quality and Safety\u23ceWhen you turn on the tap for a glass of water, do you ever wonder about the quality or safety of that water?"
+      },
+      {
+        "trigger": " effects",
+        "score": 16.75,
+        "context": "<bos>Morphine short term effects:\u23ce- Pain relief\u23ce- Cough suppression\u23ce- Anxiety relief\u23ce- Unusual unpleasant feelings (dysphoria) or unusual pleasant feelings"
+      },
+      {
+        "trigger": ":",
+        "score": 19.25,
+        "context": "<bos>Enemy Aliens, Prisoners of War: Canada's First World War Internment Operations, 1914-1920\u23ceInternment in"
+      },
+      {
+        "trigger": "?",
+        "score": 16.5,
+        "context": "<bos>How energy efficient are new Canadian houses? That's not as easy a question to answer as you might think and something called EnerGuide for New Houses is"
+      },
+      {
+        "trigger": ")",
+        "score": 17.25,
+        "context": "<bos>National Front (East Germany)\u23ceThe National Front of the German Democratic Republic (German: Nationale Front der Deutschen Demokratischen Republik, NF) until 1"
+      }
+    ],
+    "promotes": [
+      " or",
+      ",",
+      " I",
+      " (",
+      " "
+    ],
+    "demotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "InjectAttribute",
+      " \u0f0b\u0f0b",
+      "UserScript",
+      " \u017find"
+    ]
+  },
+  {
+    "id": "14_3704_12",
+    "layer": 14,
+    "ctx_idx": 12,
+    "influence_score": 0.39215055108070374,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.25,
+        "context": "man is counting on you!\u23ceQ. The poem is written on the occasion of\u2026\u23cethe poet's twenty-first birthday.\u23cethe death of"
+      },
+      {
+        "trigger": " refers",
+        "score": 37.75,
+        "context": " is a disorder where\u23ce8) In Dissociative Identity Disorder the host identity refers to\u23ce9) In Dissociative Identity Disorder the alter host identities refers"
+      },
+      {
+        "trigger": " is",
+        "score": 37.0,
+        "context": " disturbances. Systematic amnesia is\u23ce6) The basic feature of dissociative fugue is that the individual\u23ce7) Dissociative Identity Disorder (DID) is"
+      },
+      {
+        "trigger": " which",
+        "score": 42.5,
+        "context": "When a user formats a disk, they are generally performing a high-level format which prepares the drive to hold data. When a low-level format is performed"
+      },
+      {
+        "trigger": " because",
+        "score": 39.5,
+        "context": " APICS/ Fox Valley program, it\u2019s important to understand how people learn because:\u23ceLearning style is a proven predictor of learning success\u23ceBeliefs about"
+      }
+    ],
+    "promotes": [
+      "DockStyle",
+      "GraphicsUnit",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "ArgsConstructor",
+      "SequentialGroup"
+    ],
+    "demotes": [
+      " atras",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " fathers",
+      "\u00e1dza",
+      " novia"
+    ]
+  },
+  {
+    "id": "18_3536_12",
+    "layer": 18,
+    "ctx_idx": 12,
+    "influence_score": 0.382864773273468,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " and post it, but the best way I know of to improve your typing skill is good old practice. That means that nearly everything you do on your computer can"
+      },
+      {
+        "trigger": " is",
+        "score": 42.25,
+        "context": ". But here\u2019s the problem: The Fed cannot protect the dollar. The Fed\u2019s best\u2014and only\u2014weapon for fighting financial collapse is printing money"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " over the life of the CFL, one report found.\u23ceOne of the simplest ways to upgrade your home in a green way is to purchase an energy-saving"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": " electronic works using watermarks.\u23ceWatermarking your photographs can be done a number of ways. The most popular route is to create and add a watermark through a"
+      },
+      {
+        "trigger": " is",
+        "score": 36.5,
+        "context": " or greater are considered obese.\u23ceOne of the most obvious ways to lose weight is dieting. And while it can seem like a daunting task, small changes in"
+      }
+    ],
+    "promotes": [
+      "tiga",
+      "\u067e\u06cc\u0648\u0646\u062f",
+      " a",
+      "ImageContext",
+      " the"
+    ],
+    "demotes": [
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " \u064a\u062a\u064a\u0645\u0647",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " <<<<<<<<<<<<<<",
+      "\u043d\u0456\u0446\u0438\u043f\u0430"
+    ]
+  },
+  {
+    "id": "18_868_12",
+    "layer": 18,
+    "ctx_idx": 12,
+    "influence_score": 0.3593772053718567,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 46.5,
+        "context": "% of net growth. But these increases were offset by declines in the United States and European Union, where oil consumption fell by 1.8 and 2"
+      },
+      {
+        "trigger": ",",
+        "score": 55.75,
+        "context": "<bos>Europe's strongest economic and industrial power, Germany is also\u23cethe most populous European country outside Russia. Fertile northern\u23ceplains stretch south from the North"
+      },
+      {
+        "trigger": " ",
+        "score": 54.75,
+        "context": " 11 percent of graduates in 2010, is expected to overtake the United States and produce 12 percent of the share of graduates by"
+      },
+      {
+        "trigger": ",",
+        "score": 53.25,
+        "context": " 13 harrowing days, the leaders of the United States, the Soviet Union, and Cuba brought the planet within a hair's breadth of nuclear catastrophe."
+      },
+      {
+        "trigger": ",",
+        "score": 51.75,
+        "context": " nations. The major Allies (China, Soviet Union, France, Great Britain, and the United States) held seats on the Security Council, each country held veto"
+      }
+    ],
+    "promotes": [
+      "France",
+      " Italy",
+      " Japan",
+      " Germany",
+      " France"
+    ],
+    "demotes": [
+      "IonicModule",
+      "zean",
+      " linkovi",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " cremallera"
+    ]
+  },
+  {
+    "id": "17_5821_12",
+    "layer": 17,
+    "ctx_idx": 12,
+    "influence_score": 0.38381427526474,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 41.0,
+        "context": " presenting feature. The disease may progress slowly over several decades; the mean survival time is 14 years. In the final stages patients are mute, blind,"
+      },
+      {
+        "trigger": " was",
+        "score": 38.25,
+        "context": " WHO benchmark at some point during these journeys.\u23ceThe average peak during smoking trips was 385 micrograms per cubic metre, with the highest being more"
+      },
+      {
+        "trigger": " was",
+        "score": 45.0,
+        "context": " sex and nonuse of condoms.\u23ceResults: The average age at first intercourse was 15.6 for males and 15.8 for females"
+      },
+      {
+        "trigger": " is",
+        "score": 37.25,
+        "context": " as two alters, or as many as 100. The average number is about 10. Often alters are stable over time, continuing to play"
+      },
+      {
+        "trigger": " is",
+        "score": 41.25,
+        "context": ".5 tons of carbon dioxide per year. The average per capita carbon footprint globally is just 4 tons. Regardless of an individual's personal efforts at reducing"
+      }
+    ],
+    "promotes": [
+      " hit",
+      " Jeffries",
+      " Vergine",
+      " \u00a3",
+      " "
+    ],
+    "demotes": [
+      " kasarigan",
+      " \u0645\u0634\u064a\u0646",
+      "InjectAttribute",
+      " surla",
+      "ChildScrollView"
+    ]
+  },
+  {
+    "id": "19_15909_12",
+    "layer": 19,
+    "ctx_idx": 12,
+    "influence_score": 0.35458919405937195,
+    "top_activations": [
+      {
+        "trigger": " when",
+        "score": 28.88,
+        "context": ", and riparian areas.\u23ceA riparian-wetland area is healthy and functioning when adequate vegetation, landform, or large woody debris is present to dissipate energy"
+      },
+      {
+        "trigger": " on",
+        "score": 35.5,
+        "context": " is an example.\u23ceHow you and your doctor choose to treat esophageal cancer depends on the goal of treatment. When the cancer is found at an early stage before"
+      },
+      {
+        "trigger": " because",
+        "score": 27.12,
+        "context": " that most of the seedling establishment occurred during the first couple of years after scarification because:\u23ce8. The results of the Madec et al. study suggest"
+      },
+      {
+        "trigger": " for",
+        "score": 33.0,
+        "context": " care provider will evaluate a murmur based on several factors. Murmurs are analyzed for pitch, loudness, location, and duration. They also are graded according"
+      },
+      {
+        "trigger": " learn",
+        "score": 25.62,
+        "context": " formatted printed pages based upon XML code.\u23ceIn this tutorial, you'll learn\u23ceWhat XSL-FO is and how it came to be\u23ceAbout"
+      }
+    ],
+    "promotes": [
+      "):",
+      ":\\\\",
+      "():",
+      ":\r",
+      ":"
+    ],
+    "demotes": [
+      " nahilalakip",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "OGND",
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a"
+    ]
+  },
+  {
+    "id": "20_3094_12",
+    "layer": 20,
+    "ctx_idx": 12,
+    "influence_score": 0.3170572817325592,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 45.0,
+        "context": " of your body (paralysis) as a\u23ceresult of a tick bite is a rare problem.\u23ceTick paralysis can be caused by several different\u23cetypes of"
+      },
+      {
+        "trigger": " are",
+        "score": 43.5,
+        "context": " walks 3 km towards the South. The two directions in which the man walks are perpendicular to each other.\u23ceThe distance between the final point and the initial"
+      },
+      {
+        "trigger": " is",
+        "score": 56.5,
+        "context": "<bos>The best shape for containing a pressurised gas is a sphere, where by `best' we mean the shape that uses the smallest amount of material to"
+      },
+      {
+        "trigger": " contains",
+        "score": 39.0,
+        "context": " efficient than TCP for carrying messages that fit within one data packet\u23ceA UPD header contains _____ fields.\u23ceThe subprotocol that enables TCP?IP to internetwork"
+      },
+      {
+        "trigger": " to",
+        "score": 41.5,
+        "context": " levels of each item.\u23ceThe average amount of inventory in a system is equal to the product of the average demand rate and the average time a unit is in"
+      }
+    ],
+    "promotes": [
+      " ___",
+      "____",
+      " __",
+      "___",
+      " ____"
+    ],
+    "demotes": [
+      "expandindo",
+      ")\";\r",
+      "'));\r",
+      ".\";\r",
+      "\".\r"
+    ]
+  },
+  {
+    "id": "20_15360_12",
+    "layer": 20,
+    "ctx_idx": 12,
+    "influence_score": 0.2971648573875427,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 41.5,
+        "context": " administration gets its act together. Along with Japan, Canada, New Zealand and Australia, the country has formally requested that the conference of parties to the un Framework Convention"
+      },
+      {
+        "trigger": " \u2013",
+        "score": 46.0,
+        "context": " for CO2 emissions per capita \u2013 the US (#1), China (#2), and India (#5) [UCSUSA].\u23ce- Unless we move quickly to"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": " army captured Mexico City, forcing Mexico to agree to the sale of its northern territories to the U.S.\u23ceTerritorial expansion of the United States to the"
+      },
+      {
+        "trigger": " between",
+        "score": 54.0,
+        "context": " the first time that blood was drawn in the Olympic Games. During the water polo game between the USSR and Hungary, the Russian athlete Valentin Propokov cried out"
+      },
+      {
+        "trigger": " by",
+        "score": 41.0,
+        "context": " American Independence|\u23ce|b. a treaty of 1763 signed by Britain, France, and Spain that ended their involvement in the Seven Years'"
+      }
+    ],
+    "promotes": [
+      " Italy",
+      " Ireland",
+      " France",
+      " Australia",
+      " Canada"
+    ],
+    "demotes": [
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "RegressionTest",
+      "ParallelGroup",
+      "tvguidetime",
+      " Audiodateien"
+    ]
+  },
+  {
+    "id": "19_9841_12",
+    "layer": 19,
+    "ctx_idx": 12,
+    "influence_score": 0.3695826828479767,
+    "top_activations": [
+      {
+        "trigger": " given",
+        "score": 30.5,
+        "context": " also determine how long and how often you will have chemotherapy treatments. Chemotherapy can be given intravenously (in the vein or IV) or by pill, and usually"
+      },
+      {
+        "trigger": " may",
+        "score": 34.75,
+        "context": " life. But in time common symptoms begin to appear. A child who has MD may start to stumble, waddle, have difficulty going up stairs, and toe"
+      },
+      {
+        "trigger": " will",
+        "score": 41.0,
+        "context": " of the sound.\u23ceUpon completion of this lesson, the student will be able to:\u23ce- Correlate string tension with sound pitch.\u23ce- Describe how"
+      },
+      {
+        "trigger": " to",
+        "score": 31.75,
+        "context": " next, incorporating lessons learned from previous prototypes.\u23ceRequirements for the designs included that they were to be untethered, which meant they had to carry their own"
+      },
+      {
+        "trigger": " will",
+        "score": 37.75,
+        "context": ". In addition to the reward of working with youth, through volunteering for Scouts you will:\u23ce- Develop a greater level of pride in your community.\u23ce-"
+      }
+    ],
+    "promotes": [
+      "):",
+      ":\\\\",
+      "():",
+      ":\r",
+      ":"
+    ],
+    "demotes": [
+      " \u0648\u062a\u0633\u062c\u064a\u0644\u0627\u062a",
+      " Taktlose",
+      " nahilalakip",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      "OGND"
+    ]
+  },
+  {
+    "id": "22_14738_12",
+    "layer": 22,
+    "ctx_idx": 12,
+    "influence_score": 0.3847629725933075,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 35.75,
+        "context": " of degree and numerous economies in the world are very socialistic such as European countries (many of which are facing financial difficulties due to over taxation and excessive spending)."
+      },
+      {
+        "trigger": " and",
+        "score": 29.75,
+        "context": "<bos>June 10, 2008 Researchers in Sweden and Japan report development of a new type of paper that resists breaking when pulled almost as well"
+      },
+      {
+        "trigger": " and",
+        "score": 29.25,
+        "context": "<bos>An international research team led by Japan and including the University of Colorado Boulder may have taken a significant step in discovering why matter trumped antimatter at the time"
+      },
+      {
+        "trigger": ",",
+        "score": 32.25,
+        "context": " 13:13\u23ceA recent study carried out by scientists from Canada, Mexico and the United States, including several BirdLife Partners found that of the"
+      },
+      {
+        "trigger": " and",
+        "score": 28.5,
+        "context": " comprehensive analysis of the roles, status and experiences of women journalists in the United States and Britain.\u23ceDrawing on a variety of sources and dealing with a host of"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " Jefus",
+      " \u0f0b\u0f0b",
+      " it\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " country",
+      "country",
+      " Country",
+      " COUNTRY",
+      "Country"
+    ]
+  },
+  {
+    "id": "21_7764_12",
+    "layer": 21,
+    "ctx_idx": 12,
+    "influence_score": 0.31929343938827515,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 38.0,
+        "context": "13\u2019s centenary edition.\u23ceBuilding French identity with a race\u23ceBoth in his book and during an extensive interview with VeloNews, Thompson explained that since"
+      },
+      {
+        "trigger": " in",
+        "score": 42.0,
+        "context": ".5 miles (52.3 km) long, in north central Colorado in the United States. It drains large portion of the Middle Park basin in Grand"
+      },
+      {
+        "trigger": " in",
+        "score": 41.5,
+        "context": " thousand years and as such has played a vital role in the shaping of Western society.\u23ceWhile the Roman Catholic church has the largest number of worldwide members, in"
+      },
+      {
+        "trigger": " in",
+        "score": 40.0,
+        "context": ", lung cancer is one of the three most common cancers that kill men and women in developed countries with a statistic of one million deaths every year.\u23ceTraditionally"
+      },
+      {
+        "trigger": " in",
+        "score": 47.5,
+        "context": ", a U.S. study said.\u23ceMore than half a million children in the United States go to hospital each year with brain injuries, often due to"
+      }
+    ],
+    "promotes": [
+      " England",
+      " Canada",
+      " Australia",
+      " India",
+      " America"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " wireType",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627"
+    ]
+  },
+  {
+    "id": "22_2834_12",
+    "layer": 22,
+    "ctx_idx": 12,
+    "influence_score": 0.37704893946647644,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 24.0,
+        "context": "<bos>Wireless sensor network\u23ce|This article needs additional citations for verification. (May 2011)|\u23ceA wireless sensor network (WSN) consists"
+      },
+      {
+        "trigger": " c",
+        "score": 18.75,
+        "context": " pronunciation is probably older (see father (n.)).\u23ceMother nature first attested c.1600; mother earth is from 1580"
+      },
+      {
+        "trigger": " of",
+        "score": 20.75,
+        "context": " education. This toolkit gathers that information from all 50 states and the District of Columbia, providing easy access for early childhood educators across the nation. Toolkit "
+      },
+      {
+        "trigger": " St",
+        "score": 20.0,
+        "context": " to those great engineering achievements the construction of the Victoria Bridge at Montreal, and the St. Clair Tunnel under the St. Clair river between Canada and the United States"
+      },
+      {
+        "trigger": "3",
+        "score": 19.38,
+        "context": "17, 1942, when the French police arrested 13,152 Jewish men, women, and children from Paris and its"
+      }
+    ],
+    "promotes": [
+      ",",
+      "!",
+      "?",
+      ";",
+      "."
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      "\u017felves",
+      " Efq",
+      " \u0f0b\u0f0b"
+    ]
+  },
+  {
+    "id": "23_5510_12",
+    "layer": 23,
+    "ctx_idx": 12,
+    "influence_score": 0.3213517963886261,
+    "top_activations": [
+      {
+        "trigger": " U",
+        "score": 51.75,
+        "context": " demand and an inability to build sufficient infrastructure to cope. For example, in the U.S., as population grew nearly 20% between 19"
+      },
+      {
+        "trigger": " United",
+        "score": 65.0,
+        "context": " release says, \"along with those produced by the Met Office Hadley Centre in the United Kingdom and the National Oceanic and Atmospheric Administration's National Climatic Data Center in"
+      },
+      {
+        "trigger": " U",
+        "score": 58.25,
+        "context": " help decide whether they need to take steps to preserve their fertility.\"\u23ceIn the U.S. alone, breast cancer is diagnosed in more than 25"
+      },
+      {
+        "trigger": " U",
+        "score": 51.25,
+        "context": " dog as well as feeding it food out of her own mouth.\u23ceIn the U.S., hookworms and roundworms take top spot for dog parasites."
+      },
+      {
+        "trigger": " U",
+        "score": 66.0,
+        "context": " said Thursday that only direct Palestinian-Israeli negotiations can achieve peace, adding that the U.K would not recognize a unilaterally declared Palestinian state.\u201d Parliamentary Under Secretary of"
+      }
+    ],
+    "promotes": [
+      " London",
+      " Britain",
+      " UK",
+      " British",
+      " England"
+    ],
+    "demotes": [
+      "ThroughAttribute",
+      "addContainerGap",
+      "inigte",
+      " Hecht",
+      "amerika"
+    ]
+  },
+  {
+    "id": "23_57_12",
+    "layer": 23,
+    "ctx_idx": 12,
+    "influence_score": 0.39123690128326416,
+    "top_activations": [
+      {
+        "trigger": "This",
+        "score": 64.0,
+        "context": "<bos>This is the second book wrote by Lee Lehman and presents in a very detailed manner the astrological dignities. It was published in 1989"
+      },
+      {
+        "trigger": "There",
+        "score": 55.0,
+        "context": "<bos>There has never been anything like the Saturn V, the launch vehicle that powered the United States past the Soviet Union to a series of manned lunar landings in the"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The creation of dead zones begins when nitrogen and phosphorus from fertilizers used on land, and from raw or poorly treated sewage, wash into streams, into rivers,"
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The first sea turtle hatchlings whose eggs were evacuated from the Gulf Coast oil spill to Florida's Kennedy Space Center have been released into the Atlantic Ocean."
+      },
+      {
+        "trigger": "The",
+        "score": 53.25,
+        "context": "<bos>The school's playground consists of play structures and tetherball, volleyball, basketball and wall ball courts. For safety and supervision, students should remain within their"
+      }
+    ],
+    "promotes": [
+      "RenderAtEndOf",
+      "^(@)",
+      "\u4f8b\u6587\u5e33\u306b\u8ffd\u52a0",
+      " Saltar",
+      "saraba"
+    ],
+    "demotes": [
+      "<eos>",
+      "\u2003\u2003(",
+      "Port\u00e1ly",
+      " [\u2026]",
+      "\u5f88\u8d5e\u54e6"
+    ]
+  },
+  {
+    "id": "23_5188_12",
+    "layer": 23,
+    "ctx_idx": 12,
+    "influence_score": 0.34255683422088623,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ]
+  },
+  {
+    "id": "24_3213_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.3026804029941559,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 96.5,
+        "context": ", on the island of Great Britain. The United Kingdom is the three countries of Great Britain plus the country of Northern Ireland.\u23ceThe British Isles are Great Britain"
+      },
+      {
+        "trigger": " with",
+        "score": 68.0,
+        "context": " prior, this thought was inconceivable. Congress had previously met only to regress their grievances with the British government. What changed this and what did the Declaration bring forth?"
+      },
+      {
+        "trigger": " with",
+        "score": 78.5,
+        "context": "), but there were varying opinions on how best to preserve liberty and win the clash with British forces. Some of the delegates preferred to wait until foreign alliances could be"
+      },
+      {
+        "trigger": " United",
+        "score": 64.0,
+        "context": ", before conducting similar studies on individuals from Germany, Norway, the Netherlands and the United States.\u23ceExperts say the discovery opens a new door for drug manufacturers and"
+      },
+      {
+        "trigger": " U",
+        "score": 80.0,
+        "context": " can be worn at the waist or in an under-arm holster. In the U.S., where the\u23cedevice was designed, the artificial heart is permitted"
+      }
+    ],
+    "promotes": [
+      "great",
+      " GREAT",
+      "GREAT",
+      "Great",
+      " Great"
+    ],
+    "demotes": [
+      " firebaseConfig",
+      " Audiodateien",
+      "SharedDtor",
+      " British",
+      " NSCoder"
+    ]
+  },
+  {
+    "id": "24_5999_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.3348776698112488,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ]
+  },
+  {
+    "id": "24_13277_12",
+    "layer": 24,
+    "ctx_idx": 12,
+    "influence_score": 0.31480833888053894,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ]
+  },
+  {
+    "id": "25_286_12",
+    "layer": 25,
+    "ctx_idx": 12,
+    "influence_score": 0.3000500798225403,
+    "top_activations": [
+      {
+        "trigger": " In",
+        "score": 36.25,
+        "context": " U.S., hookworms and roundworms take top spot for dog parasites. In humans, roundworms transmitted from dog fur can cause ocular larva migrans ("
+      },
+      {
+        "trigger": " in",
+        "score": 33.75,
+        "context": "etal abnormalities, find experts\u23ceResearchers from University of Leeds, England together with colleagues in Paris, Rome, and San Diego established that a defective gene TMEM2"
+      },
+      {
+        "trigger": " medieval",
+        "score": 43.0,
+        "context": " was still in\u23ceuse in the 1950's. In medieval Japan building roads and\u23cebridges as an act of piety became almost an obsession"
+      },
+      {
+        "trigger": " expects",
+        "score": 39.5,
+        "context": " in The Hague on Wednesday.\u23ceAustralian Attorney General Mark Dreyfus said on Sunday he expects to win before the next southern hemisphere summer. The whaling fleet generally leaves"
+      },
+      {
+        "trigger": " in",
+        "score": 36.0,
+        "context": "tenberg??\u23ceDo you know where our Reher and Stoltenberg ancestors came from in Germany??\u23ceJohann Reher came from the town of Bebensee.\u23ce"
+      }
+    ],
+    "promotes": [
+      " @\"/",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "PerformLayout",
+      "makeConstraints",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+    ],
+    "demotes": [
+      " Australia",
+      " Italy",
+      " Canada",
+      " France",
+      " Ireland"
+    ]
+  },
+  {
+    "id": "25_11647_12",
+    "layer": 25,
+    "ctx_idx": 12,
+    "influence_score": 0.3380106985569,
+    "top_activations": [
+      {
+        "trigger": " young",
+        "score": 38.25,
+        "context": " of Singapore began in 1819 with Thomas Stamford Raffles, a young official who worked for the British East India Company. Raffles estimated that the"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 40.0,
+        "context": ", completing with traditional dishes with origins rooted back from the beginning of the country.\u23ceBritain first started out with a poor selection of food, mainly due to the"
+      },
+      {
+        "trigger": ",",
+        "score": 45.5,
+        "context": " of Europe under Hitler's thumb, and the United States still frustratingly neutral, Britain was left alone to fight Nazi Germany. The only hope lay in the"
+      },
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": " also visually striking and accessible. It offers a detailed study of both the chronological phases of expansion, and more focused analysis of the very different areas of colonization. It"
+      },
+      {
+        "trigger": " new",
+        "score": 36.25,
+        "context": " Peter Dearman, a garage inventor in Hertfordshire, to power vehicles.\u23ceA new firm, Highview Power Storage, was created to transfer Mr Dearman'"
+      }
+    ],
+    "promotes": [
+      " Bioaccumulative",
+      "harapkan",
+      "crollView",
+      "intios",
+      "apd"
+    ],
+    "demotes": [
+      " UK",
+      "UK",
+      " British",
+      " \u00a3",
+      "British"
+    ]
+  }
+]

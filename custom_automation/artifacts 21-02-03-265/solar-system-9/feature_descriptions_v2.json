@@ -1,0 +1,3170 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.35970377922058105,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "Initial \"In\" \u2014 fires on sentence-leading \"In\" that begins topical prepositional phrases (e.g., \"In medicine,\" \"In music theory,\" \"In my previous entries\")."
+  },
+  {
+    "id": "0_10028_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.39483121037483215,
+    "top_activations": [
+      {
+        "trigger": "ars",
+        "score": 12.0,
+        "context": ", most patients relapse and their disease recurs.\u23ceToday, a new Cedars-Sinai Phase I-II clinical trial may improve treatment approaches and combat"
+      },
+      {
+        "trigger": "\u00b0",
+        "score": 11.5,
+        "context": " or rock and included ice or organic material) that remains at or below 0\u00b0C for at least two consecutive years. Lowland permafrost regions are traditionally"
+      },
+      {
+        "trigger": "\u00b0",
+        "score": 11.5,
+        "context": "\u23ceWater-based engine washings are not conducted in air temperatures below 5\u00b0C (41\u00b0F), to avoid residual water from freezing inside the"
+      },
+      {
+        "trigger": "ars",
+        "score": 11.62,
+        "context": ", a leading cause of death for women.\u23ceThe study by researchers at Cedars-Sinai Medical Center found that chemicals in the skins and seeds of red"
+      },
+      {
+        "trigger": " System",
+        "score": 11.38,
+        "context": " with radiation,\u201d says Dr. Alan Brown, radiation oncologist on Lee Memorial Health System\u2019s medical staff.\u23ceIt\u2019s called hyperthermia, which means"
+      }
+    ],
+    "promotes": [
+      "(",
+      "\u2019",
+      "\u23ce\u23ce",
+      "'",
+      "<bos>"
+    ],
+    "demotes": [
+      "]='\\",
+      "))))))))",
+      "ReusableCell",
+      "tvguidetime",
+      ".}~\\"
+    ],
+    "generated_description": "Proper-name fragments \u2014 activates on substrings of organization/place names (Cedars, System) and other rare non-word tokens (\u00b0), signals mid-word/name pieces and uncommon symbols."
+  },
+  {
+    "id": "0_11375_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.34287115931510925,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "say \"is\" \u2014 activates on the present-tense copula \"is\" (linking subject to predicate); fires on instances of statements defining or describing subjects."
+  },
+  {
+    "id": "0_899_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.335746705532074,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": " to stop. You don't take it over a long, long period of time because you can just stimulate the immune system so much and to continue to take"
+      },
+      {
+        "trigger": " system",
+        "score": 19.0,
+        "context": " programs to identify and to remove. They function a the base layer of the operating system or can get into the boot sector of the operating system and infect the bios"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " the mid-1970s has highlighted the distortions of the present voting system.\u23ceThe 1997 Labour government promised a referendum on the"
+      },
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": "\u201cHowever, if we are right, we have significantly broadened the diversity of solar system environments where we might possibly have conditions suitable for living organisms.\u201d\u23ceScientists have"
+      },
+      {
+        "trigger": " system",
+        "score": 18.5,
+        "context": " (RAM) has been allocated to a given virtual page, in which case the MMU will signal a \"page fault\" to the CPU. The operating system"
+      }
+    ],
+    "promotes": [
+      "2",
+      "\u00e4nning",
+      ",",
+      ".",
+      " and"
+    ],
+    "demotes": [
+      "abestanden",
+      "ConstraintMaker",
+      "IsContent",
+      "+#+#",
+      "DockStyle"
+    ],
+    "generated_description": "system \u2014 activates on the noun \"system\" across domains; fires for biological, computing, political, astronomical contexts (immune, operating, voting, Solar)."
+  },
+  {
+    "id": "0_3820_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.35313931107521057,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "say noun-start \u2014 activates on the definite article \"the\" right before concrete nouns; signals the start of a noun phrase / upcoming content word."
+  },
+  {
+    "id": "0_9606_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3896585702896118,
+    "top_activations": [
+      {
+        "trigger": " over",
+        "score": 17.62,
+        "context": " drama, and their combined use. Imitation of animal movements by dancers is recognized all over the world. In early stages of the history of hunting tribes these simple ceremonies"
+      },
+      {
+        "trigger": " tap",
+        "score": 18.0,
+        "context": " should be filled 2/3 of the way. Fill the other cup with tap water.\u23ce2. Pour the tap water (slowly) into the sediment"
+      },
+      {
+        "trigger": " over",
+        "score": 17.62,
+        "context": " as an actual disease, many women who complained of being fatigued and having pain all over their bodies were dismissed as merely being stressed out or just not coping with the"
+      },
+      {
+        "trigger": " over",
+        "score": 17.62,
+        "context": " agreement among church and traveling musicians because organ pitches in Germany were, literally, all over the map. In comparison to today\u2019s standard pitch of a\u2019 ="
+      },
+      {
+        "trigger": " over",
+        "score": 17.62,
+        "context": " and unusal local words, it also draws together the dozens of terms from all over the country that mean the same thing, such as knee-knabbed"
+      }
+    ],
+    "promotes": [
+      "featureID",
+      "InjectAttribute",
+      " snippetHide",
+      "ThroughAttribute",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " jubile",
+      " uns",
+      "Thx",
+      " cla"
+    ],
+    "generated_description": "say \"all over\" \u2014 activates on the preposition \"over\" in locative phrases like \"all over the X\"; signals an upcoming location/extent phrase."
+  },
+  {
+    "id": "0_11063_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39262834191322327,
+    "top_activations": [
+      {
+        "trigger": " variable",
+        "score": 14.12,
+        "context": " conditions. Because land-use practices and change processes are often spatially and temporally variable, a detailed project-specific study arguably is likely to yield a more accurate"
+      },
+      {
+        "trigger": " variable",
+        "score": 14.25,
+        "context": "t: ..\u23ceShow how to declare an int variable called count, a double variable called temperature, and a boolean variable called done.\u23ceJava is the foundation"
+      },
+      {
+        "trigger": " variable",
+        "score": 13.88,
+        "context": " jQuery plugins, since jQuery can run in noConflict mode, the\u23ce$ global variable will not be created, so the jQuery global object is passed as an argument"
+      },
+      {
+        "trigger": " variable",
+        "score": 14.0,
+        "context": " poor tear production.\u23ceThe causes and symptoms of dry eyes are so complex and variable that doctors have not agreed on a precise clinical definition of the syndrome. Dry"
+      },
+      {
+        "trigger": " variable",
+        "score": 14.25,
+        "context": " values.\u23cedisplayWarning - this should display a warning,\u23ceuse a global variable to tell the user if it's the first or last warning.\u23ce"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " Efq",
+      " Jefus",
+      "^(@)",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ".",
+      ",",
+      "2",
+      ";",
+      "3"
+    ],
+    "generated_description": "variable \u2014 activates on the token \"variable\"; covers programming (int/double/global/JS $) and general/changeable uses (scientific, medical); signals mention of a mutable parameter."
+  },
+  {
+    "id": "0_7656_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36378201842308044,
+    "top_activations": [
+      {
+        "trigger": " mixture",
+        "score": 10.38,
+        "context": " the shale formations deep underground, then creating small explosions to splinter the shale. A mixture of water, sand and chemicals are then poured in to release the trapped gas"
+      },
+      {
+        "trigger": " mixture",
+        "score": 10.25,
+        "context": "5-7-354:\u23ce- (i)Any substance or mixture of substances intended for preventing, destroying, repelling, or mitigating any pests"
+      },
+      {
+        "trigger": " System",
+        "score": 10.06,
+        "context": ".\u23ce|Carnegie Mellon University|\u23ce|The Advanced Robotic Laser Coating Removal System is being deployed in a two-year demonstration project at Hill Air Force Base"
+      },
+      {
+        "trigger": " System",
+        "score": 10.0,
+        "context": "The video features high-resolution images from Arizona State University's Thermal Emission Imaging System multi-band camera on NASA's Mars Odyssey. The images, which"
+      },
+      {
+        "trigger": " mixture",
+        "score": 10.38,
+        "context": " than 7.5 hours a day, seven days a week with a potent mixture of digitally delivered music, television, computers and games. Legions of government"
+      }
+    ],
+    "promotes": [
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      " <=\",",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " propOrder",
+      "rungsseite"
+    ],
+    "demotes": [
+      " the",
+      "2",
+      "1",
+      "3",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "collection noun \u2014 activates on nouns naming assemblies/combination entities (mixture, system); detects things made of parts or components."
+  },
+  {
+    "id": "0_13096_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.38813573122024536,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 23.12,
+        "context": " been used for congestion pricing: during business hours in downtown London, for instance, the license plates of cars are photographed, and the drivers are sent a bill."
+      },
+      {
+        "trigger": " the",
+        "score": 24.0,
+        "context": "gov/WWW/K-12/airplane/vel.html and use the simulator to determine the effect of airspeed on lift. When you double the"
+      },
+      {
+        "trigger": " the",
+        "score": 23.62,
+        "context": "driven graphics in Photoshop automatically, using variables and a simple text file.\u23ceAdjust the color of a complexly color-casted image, using a 10"
+      },
+      {
+        "trigger": " the",
+        "score": 22.62,
+        "context": "<bos>DM \u2013 Mosquitoes contribute to the problem of childhood obesity in some parts of the United States, a small study suggests. Researchers from Brandeis University in Massachusetts"
+      },
+      {
+        "trigger": " the",
+        "score": 22.88,
+        "context": " displayed (a new Worksheet or an existing Worksheet). Click OK.\u23ce- Select the fields you wish to be included in your Pivot by dragging them to the Row"
+      }
+    ],
+    "promotes": [
+      " Di\u017f",
+      " Re\u017f",
+      " An\u017f",
+      " Monfieur",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " it",
+      " this"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on the token \"the\" in many contexts; fires on the word introducing noun phrases or noun-headed phrases."
+  },
+  {
+    "id": "0_1241_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3455677926540375,
+    "top_activations": [
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " needs.\u23ceThe Saudi oil minister Ali-al-Naimi has very confidently stated that the country has the potential to produce enough solar power by 20"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " as polycrystalline solar cells.\u23ceThe monocrystalline as well as polycrystalline solar cells are produced around the clock in one of the most advanced solar cell production"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " energy. The remainder will go to research on thin-film solar technology that allows solar cells to be printed or sprayed onto surfaces like stainless steel, reducing solar panels"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.75,
+        "context": " expensive electricity, and reduces costs for all.\u23ceVote Solar is a non-profit grassroots organization working to fight climate change and foster economic opportunity by bringing solar energy"
+      },
+      {
+        "trigger": " solar",
+        "score": 19.5,
+        "context": " gigawatt of energy annually. In 2010 alone, new solar panel systems generated seventeen gigawatts, the same amount of energy as seventeen"
+      }
+    ],
+    "promotes": [
+      " ",
+      " The",
+      " All",
+      "  ",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      "Hentet",
+      " \u272d\u272d",
+      " auffi",
+      " iconFacebook",
+      "SequentialGroup"
+    ],
+    "generated_description": "solar \u2014 activates on the word \u201csolar\u201d and solar-energy contexts (solar power, solar panels, solar cells, solar technology)"
+  },
+  {
+    "id": "0_5280_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.34006163477897644,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 21.0,
+        "context": "<bos>High-performance insulation and an automatic control monitoring system further reduce energy use inside the building.\u23ceThe Welios Science Center is located in the Wels\u2019"
+      },
+      {
+        "trigger": " system",
+        "score": 20.75,
+        "context": " large centralized pumps to actuators for brakes, landing gear, and the nose wheel steering system. Ordinarily, large commercial jets have three sets of redundant hydraulics:"
+      },
+      {
+        "trigger": " system",
+        "score": 21.5,
+        "context": " \"If they used a cobalt oxide chemistry, then the battery should use a cooling system.\"\u23ceAn NTSB engineer examines the casing from the battery involved in the"
+      },
+      {
+        "trigger": " system",
+        "score": 22.0,
+        "context": " the utility.\u23ceRegardless of which approach is taken, each PV system uses similar components, including PV modules, a cooling system, an energy storage system or battery"
+      },
+      {
+        "trigger": " system",
+        "score": 21.25,
+        "context": " and $400 per year with proper upgrades to a high-efficiency heating system.\u23ceEliminating cold spots or overheated rooms makes a home comfortable."
+      }
+    ],
+    "promotes": [
+      " .",
+      " B",
+      "<i>",
+      " The",
+      " "
+    ],
+    "demotes": [
+      "tvguidetime",
+      " Monfieur",
+      " it\u017felf",
+      "\ue315",
+      " purpo\u017fe"
+    ],
+    "generated_description": "system (technical) \u2014 activates on the noun \"system\" in engineering/vehicle/building contexts; appears with cooling, heating, hydraulic, energy-storage, control, PV system phrases."
+  },
+  {
+    "id": "0_3639_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3223307430744171,
+    "top_activations": [
+      {
+        "trigger": " System",
+        "score": 22.25,
+        "context": ", that have been improved upon, or conserved, on behalf of the Resource Recovery System. Here are some of the results of our wetlands mitigation efforts:\u23ce-"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": " civilians this summer.\u23ceThe Cape Ray now houses the Field Deployable Hydrolysis System, a transportable system designed to neutralize chemical warfare agents and their precursors by"
+      },
+      {
+        "trigger": " System",
+        "score": 22.0,
+        "context": "<bos>Indian Ocean Tsunami warning System activated following earthquake off Sumatra\u23ceA tsunami alert was issued in the Indian Ocean today following a strong earthquake off the west coast of Sumatra"
+      },
+      {
+        "trigger": " System",
+        "score": 21.5,
+        "context": " story time programs featuring the One Book Every Young Child selection at all Adams County Library System locations.\u23ceThe 2012 selection is Stop Snoring,"
+      },
+      {
+        "trigger": " System",
+        "score": 21.75,
+        "context": "<bos>The Andrew Project: What is Andrew?\u23ceThe Andrew System (Andrew) is a set of computer tools that enables the user to write and edit documents,"
+      }
+    ],
+    "promotes": [
+      "OGND",
+      " ModelExpression",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "findpost",
+      "Datuak"
+    ],
+    "demotes": [
+      " System",
+      "System",
+      " system",
+      "system",
+      " SYSTEM"
+    ],
+    "generated_description": "Capitalized \"System\" \u2014 activates on the token \"System\" in proper names/titles (e.g., Resource Recovery System, Field Deployable Hydrolysis System), often following a proper noun."
+  },
+  {
+    "id": "0_2848_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.2871040999889374,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of \u2014 activates on the preposition \"of\"; appears when linking places, institutions, possessions, measurements, and before proper nouns/institutional names."
+  },
+  {
+    "id": "0_10395_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3724958896636963,
+    "top_activations": [
+      {
+        "trigger": " solar",
+        "score": 14.69,
+        "context": " photons.\u23ce\"The ideal band gaps for a solar cell are determined by the solar spectrum,\" said Daniel Friedman, manager of the NREL III-V Multi"
+      },
+      {
+        "trigger": " solar",
+        "score": 14.81,
+        "context": " led by Matra Marconi (now called ASTRIUM). The service module, with solar panels, thrusters, attitude control systems, communications and housekeeping functions, was"
+      },
+      {
+        "trigger": " solar",
+        "score": 14.69,
+        "context": ", topped with a 1 cm thick layer of crystalline silicon solar cells. The solar cells will then be protected by a thick, heavy-duty glass surface strong"
+      },
+      {
+        "trigger": " solar",
+        "score": 14.69,
+        "context": " a century.\u23ce\u201cWe were there to see it transform from a fairly normal solar cycle to a very low-activity solar cycle,\u201d said Tom Woods, associate"
+      },
+      {
+        "trigger": " solar",
+        "score": 14.69,
+        "context": " causing changes in the solar panel\u2019s output. In figure 2, the solar panel is pointed directly up. Sunlight, represented by the yellow rectangle, shines"
+      }
+    ],
+    "promotes": [
+      " my\u017felf",
+      " Jefus",
+      " \u017feveral",
+      " Efq",
+      " Majefty"
+    ],
+    "demotes": [
+      "\u0012",
+      "  ",
+      "usercontent",
+      "mybatisplus",
+      "eneuve"
+    ],
+    "generated_description": "solar \u2014 fires on the adjective \u201csolar\u201d: solar panels, solar cells, solar spectrum/cycle; sun-related technical/engineering contexts"
+  },
+  {
+    "id": "0_12637_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3941023349761963,
+    "top_activations": [
+      {
+        "trigger": " huge",
+        "score": 24.25,
+        "context": " gallons surging beyond the banks of the Missouri and Mississippi rivers could have been relocated to huge storage basins in the West with benefit to both areas. In normal times,"
+      },
+      {
+        "trigger": " huge",
+        "score": 24.25,
+        "context": " of planet Earth.\u23ceRationale: Cosmic Voyage describes in a very attractive way the huge distances of deep space. Students usually know that stars are in galaxies and that"
+      },
+      {
+        "trigger": " huge",
+        "score": 24.25,
+        "context": "ptor Galaxy) as observed by the ALMA radio telescope in Chile. It shows huge amounts of gas being ejected from the galaxy's center and will make it"
+      },
+      {
+        "trigger": " huge",
+        "score": 24.12,
+        "context": " of in smoky piles in the forest:\u23ceCHRISTOFF: \"The benefits are huge, on the order of 95 percent reduction on particulate matter, "
+      },
+      {
+        "trigger": " huge",
+        "score": 24.38,
+        "context": "waves, especially in the USA and Europe. Suddenly, it became possible to reach huge audiences with new ideas and information and for people to take an active interest in"
+      }
+    ],
+    "promotes": [
+      "te",
+      "es",
+      "</i>",
+      "</b>",
+      "<bos>"
+    ],
+    "demotes": [
+      " Monfieur",
+      " my\u017felf",
+      " Efq",
+      " \u017feveral",
+      "huge"
+    ],
+    "generated_description": "huge \u2014 activates on the adjective \"huge\"; signals large size/amount/distances in contexts like amounts, audiences, distances, benefits."
+  },
+  {
+    "id": "1_3756_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3696722984313965,
+    "top_activations": [
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " described in connection therewith.\u23ce2. Discussion of Related Art\u23ceA cellular communication system is a mobile telephone service wherein radio coverage is divided into 20 cells"
+      },
+      {
+        "trigger": " system",
+        "score": 21.75,
+        "context": " a C-like syntax.\u23ceXorg also brought with it a modular build system. While this separation into modules resulted in full control of the features available to"
+      },
+      {
+        "trigger": " system",
+        "score": 22.5,
+        "context": "\u23ceOn systems that do memory mapping, the process is slightly more complicated. The system loader has to create the segments, then arrange to map the file pages into"
+      },
+      {
+        "trigger": " system",
+        "score": 21.5,
+        "context": " would be very wary of looking purely at FLOPS (or BogoMIPS) as a measure of overall system speed since they don't account for other speed"
+      },
+      {
+        "trigger": " system",
+        "score": 22.25,
+        "context": " available meant that system designers could take advantage of these building blocks to truly design a system with features that they want.\u23ceHowever, that's not all there"
+      }
+    ],
+    "promotes": [
+      "\u0411\u0430\u0445\u0430\u0440",
+      " Leinwand",
+      "terase",
+      "pos\u00f3b",
+      "\u1ec5m"
+    ],
+    "demotes": [
+      " system",
+      "system",
+      " System",
+      "System",
+      " SYSTEM"
+    ],
+    "generated_description": "system \u2014 activates on the lexical token \u201csystem\u201d (and variants) across technical contexts (OS, networks, legal); consistently associated with demoting/anti-activation of the output token \u201csystem.\u201d"
+  },
+  {
+    "id": "1_4577_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3991726338863373,
+    "top_activations": [
+      {
+        "trigger": " generation",
+        "score": 19.88,
+        "context": ". \u201cThere has been almost no interaction between the loads and those responsible for electricity generation and distribution. In a smart grid world, facilities become full partners in supporting"
+      },
+      {
+        "trigger": " generation",
+        "score": 21.38,
+        "context": "soaked state. More than 1,000 megawatts of solar power generation\u2014equal to the size of two large gas-fired power plants\u2014set"
+      },
+      {
+        "trigger": " farm",
+        "score": 23.88,
+        "context": "000 MW, and is suitable to serve as a connection to a wind farm or supply a remote load. VSC HVDC technology has very fast steer and"
+      },
+      {
+        "trigger": " generating",
+        "score": 22.25,
+        "context": "GTP), which began in 2010, aims to increase the power generating capacity at least fourfold from the current level of 2,17"
+      },
+      {
+        "trigger": " generation",
+        "score": 20.5,
+        "context": " Scunthorpe, UK, to overcome coal bunker flow problems.\u23ceMany power generation and industrial processes rely on storing coal in large bunkers. Over time changes in"
+      }
+    ],
+    "promotes": [
+      " ThemeData",
+      "noinspection",
+      "niosek",
+      " neuve",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd"
+    ],
+    "demotes": [
+      "tvguidetime",
+      " getItemId",
+      "FormTagHelper",
+      "inflate",
+      "zielle"
+    ],
+    "generated_description": "electricity generation \u2014 activates on \"generation\"/\"generating\" and related tokens (solar, wind farm, power plant); marks passages about power/electricity production and generation capacity."
+  },
+  {
+    "id": "1_6394_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.34147554636001587,
+    "top_activations": [
+      {
+        "trigger": " Panels",
+        "score": 28.5,
+        "context": "<bos>Costs and Benefits of Solar Panels\u23ceTaking a closer look at the pros and cons of solar energy\u23ceSolar energy has received more credence over the last few years"
+      },
+      {
+        "trigger": " modules",
+        "score": 23.5,
+        "context": ". Germany could profit from this development and is working to build modern factories for solar modules.\u23ceMore than 6 percent of Germany's energy needs are covered"
+      },
+      {
+        "trigger": " cell",
+        "score": 20.5,
+        "context": " noon. Traveling through the atmosphere reduces the amount of sun that arrives at the solar cell. In figure 1, the light at solar noon travels through less atmosphere"
+      },
+      {
+        "trigger": " panels",
+        "score": 25.25,
+        "context": "-Max concept-car models (based on a commercially available vehicle) with solar panels on the roof, along with some sort of sun-tracking system. It"
+      },
+      {
+        "trigger": " cell",
+        "score": 21.5,
+        "context": " collect sunlight during the day, then store it for use at night. The solar cell can be mounted in a sunny place and wired to the lighting fixture it its"
+      }
+    ],
+    "promotes": [
+      " NDEBUG",
+      "ViewImports",
+      "Personensuche",
+      " ProtoMessage",
+      "<bos>"
+    ],
+    "demotes": [
+      "SuspendLayout",
+      "\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f",
+      " mezzo",
+      "ript",
+      " evening"
+    ],
+    "generated_description": "solar component (panel/module/cell) \u2014 activates on tokens naming solar hardware parts (panel, module, cell); appears before discussion of collecting/storing sunlight or system design."
+  },
+  {
+    "id": "1_9173_3",
+    "layer": 1,
+    "ctx_idx": 3,
+    "influence_score": 0.3801329433917999,
+    "top_activations": [
+      {
+        "trigger": " faint",
+        "score": 21.25,
+        "context": "5.6, when it can be seen with the naked eye, to as faint as 10.5 in 1997, when it"
+      },
+      {
+        "trigger": " gas",
+        "score": 22.25,
+        "context": ", the process must be complete before the radiation pressure from the star blows away the gas and dust. While this much is certain, the exact time frames have remained"
+      },
+      {
+        "trigger": " gas",
+        "score": 20.75,
+        "context": " of this study were published in the journal Nature.\u23ce\u201cWhen the mass of gas is roughly equal to the mass of dust, the two interact in a way"
+      },
+      {
+        "trigger": " disks",
+        "score": 21.25,
+        "context": " Fig. 12).\u23ceFigure 12. Protoplanetary disks (Proplyds) in the Orion Nebula (M42), HST"
+      },
+      {
+        "trigger": " Galaxy",
+        "score": 21.75,
+        "context": " massive star explosion 11,000 light years away in our own Galaxy.\u23ceCosmic dust is made up of tiny particles of solid material and is"
+      }
+    ],
+    "promotes": [
+      "+#+",
+      "uasion",
+      "setContentView",
+      "ruptedException",
+      "Abp"
+    ],
+    "demotes": [
+      "BagConstraints",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "BagLayout",
+      "ukone",
+      "RLock"
+    ],
+    "generated_description": "astronomical nouns \u2014 activates on space/astronomy words: gas, disks, Galaxy, faint (brightness), protoplanetary/ISM vocabulary."
+  },
+  {
+    "id": "1_9929_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3984562158584595,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 14.69,
+        "context": " to understand or teach Mary Barton by Elizabeth Gaskell.\u23ceElizabeth Gaskell is the author of the fiction novel Mary Barton, a tale of Manchester life. It"
+      },
+      {
+        "trigger": " the",
+        "score": 13.81,
+        "context": "open source software version of Netscape was then developed\u23cecalled Mozilla, which was the internal name for the old Netscape\u23cereleased in 2002"
+      },
+      {
+        "trigger": " the",
+        "score": 14.31,
+        "context": " of Bacon himself amply sum up his contribution to the world of letters. He was the earliest to seek (in his Advancement of Learning) the ways and means to"
+      },
+      {
+        "trigger": " the",
+        "score": 14.19,
+        "context": " wheat, barely, maize and pulses. They are called cereals.\u23ceRice is the staple food of many of the Indians. Rice is obtained from paddy. Paddy"
+      },
+      {
+        "trigger": " the",
+        "score": 14.31,
+        "context": " returned to Rome in 71 and his father made it clear Titus would be the next ruler of a Flavian dynasty. Titus became emperor after the death of"
+      }
+    ],
+    "promotes": [
+      "cyd",
+      " gepubliceerd",
+      "AndEndTag",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "\u65e5\u95b2\u89a7"
+    ],
+    "demotes": [
+      " the",
+      "gameserver",
+      "tothe",
+      "\u043b\u0456\u043a\u0438",
+      "<bos>"
+    ],
+    "generated_description": "definite article \"the\" \u2014 fires on English token \"the\" (precedes nouns/proper names); often correlates with demoting/emitting less \"the\" in output."
+  },
+  {
+    "id": "3_11149_10",
+    "layer": 3,
+    "ctx_idx": 10,
+    "influence_score": 0.3809491693973541,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 17.75,
+        "context": " maps, contain thousands of dots, each representing a different protein. A complicated network of lines connects the dots, diagramming how the proteins interact as they go"
+      },
+      {
+        "trigger": " of",
+        "score": 18.5,
+        "context": " fairly easy to prove. For instance, we have:\u23ceGenerating C code\u23ceGenerate C code for merge-sorting an array of size\u23cen. Again,"
+      },
+      {
+        "trigger": " of",
+        "score": 19.5,
+        "context": " Products that implement the JMS specification do so by developing a provider that supports the set of JMS interfaces and messaging semantics. Examples of JMS providers include open source offerings such"
+      },
+      {
+        "trigger": " of",
+        "score": 18.25,
+        "context": " A String? Should Number be a class or a fundamental type, or a set of fundamental types, int/float/bignum/etc?\u23ceIt is"
+      },
+      {
+        "trigger": " of",
+        "score": 19.5,
+        "context": " and the limited set of configurations in which these elemental particles can exist (the set of quantum numbers). Atoms prefer to be in their ground state, where all of"
+      }
+    ],
+    "promotes": [
+      " $\\{\\",
+      " $\\{",
+      "=\\{",
+      "setof",
+      "<bos>"
+    ],
+    "demotes": [
+      "CHEZ",
+      "PLIC",
+      " ELSE",
+      "\u062d\u064a\u0627\u062a\u0647",
+      "ativity"
+    ],
+    "generated_description": "of (genitive connector) \u2014 activates on the preposition \"of\", especially in phrases like \"set of\" / \"size of\" linking nouns to collections, attributes, or membership."
+  },
+  {
+    "id": "4_170_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.2957240343093872,
+    "top_activations": [
+      {
+        "trigger": "ENGER",
+        "score": 24.12,
+        "context": " This picture shows meteorite craters and huge cracks on Mercury's surface. The MESSENGER spacecraft took this pictures in January 2008. The area in"
+      },
+      {
+        "trigger": "Sat",
+        "score": 20.38,
+        "context": ".\u23ceThe selections announced on Tuesday represent the fourth round of NASA's CubeSat Launch Initiative. Those selected in the this round will be eligible for flight after"
+      },
+      {
+        "trigger": " satellite",
+        "score": 23.12,
+        "context": "<bos>There are several natural satellites or moons in our solar system that might harbor life. One such moon is called Titan. It is the largest natural satellite of the"
+      },
+      {
+        "trigger": " orbit",
+        "score": 21.0,
+        "context": "/AP:\u23ceWASHINGTON (AFP) \u2013 NASA on Sunday launched a probe into orbit high above earth to study the distant edge of the solar system where hot solar"
+      },
+      {
+        "trigger": "toid",
+        "score": 21.0,
+        "context": " I mean, asteroid mining is all fine and dandy, but even a small planetoid like Mars or Europa has hundreds of times more resources close the surface than min"
+      }
+    ],
+    "promotes": [
+      " MOON",
+      "Moon",
+      "bited",
+      " Moon",
+      " moon"
+    ],
+    "demotes": [
+      " \u0645\u0634\u064a\u0646",
+      " \u0111\u00e2u",
+      " HOG",
+      " StatefulWidget",
+      "\u05b2"
+    ],
+    "generated_description": "Moon / natural satellite \u2014 activates on words about satellites, spacecraft, orbiting bodies (MESSENGER, Sat, satellite, orbit, planetoid); pushes output toward \u201cmoon\u201d tokens."
+  },
+  {
+    "id": "6_1348_3",
+    "layer": 6,
+    "ctx_idx": 3,
+    "influence_score": 0.374257355928421,
+    "top_activations": [
+      {
+        "trigger": "Pluto",
+        "score": 27.25,
+        "context": " a question at http://www.quora.com/Why-does-Pluto-have-so-many-satellites/answer/Alex-K"
+      },
+      {
+        "trigger": " Uranus",
+        "score": 22.62,
+        "context": " hours of closest encounter than we have in the roughly 200 years since Uranus was discovered. In this issue of The Universe in the Classroom, we summarize"
+      },
+      {
+        "trigger": " Ceres",
+        "score": 22.75,
+        "context": ". Dawn is now officially on its way to its second destination, the dwarf planet Ceres.\u23ceDawn departed from Vesta at about 11:26 p"
+      },
+      {
+        "trigger": "asteroid",
+        "score": 22.12,
+        "context": " the roughly 50-foot diameter space rock, that is officially named \"asteroid 2012 TC4,\" will pass within 60,"
+      },
+      {
+        "trigger": " Neptune",
+        "score": 26.5,
+        "context": " some pass close to the Sun, and others are found out beyond the orbit of Neptune. A vast majority have been collected by Jupiter\u2019s gravity into a belt"
+      }
+    ],
+    "promotes": [
+      "woff",
+      "fml",
+      "AsUp",
+      "enumi",
+      "WebElementEntity"
+    ],
+    "demotes": [
+      "MLLoader",
+      "mereka",
+      " solas",
+      "\u0012",
+      "ABETH"
+    ],
+    "generated_description": "Solar-system body name \u2014 activates on planet/dwarf-planet/asteroid proper names and labels (Pluto, Uranus, Ceres, Neptune, \u201casteroid\u201d)."
+  },
+  {
+    "id": "4_15288_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.35070154070854187,
+    "top_activations": [
+      {
+        "trigger": " sun",
+        "score": 20.5,
+        "context": "Zirconium is found in S-type stars, and has been identified in the sun and meteorites. Analyses of lunar rock samples show a surprisingly high zirconium oxide"
+      },
+      {
+        "trigger": " sun",
+        "score": 18.0,
+        "context": " pressure must be in balance between the region inside\u23ceand the region outside of the sunspot. David Dearborn elaborates on how\u23cemagnetic fields keep sunspots cooler"
+      },
+      {
+        "trigger": " Sun",
+        "score": 18.75,
+        "context": " and settles onto the surface.\u23ceThe discovery of over a dozen objects orbiting the Sun beyond Neptune's orbit makes Pluto less special. The observational status of Pluto"
+      },
+      {
+        "trigger": " sun",
+        "score": 17.75,
+        "context": " ship's wake or a comet's tail.\u23ceThe region of the sun's influence, in which the solar wind is dominant, is called the"
+      },
+      {
+        "trigger": " solar",
+        "score": 18.88,
+        "context": " the Loneliest Star. Its planet Fomalhaut b was the first beyond our solar system to be visible to the human eye.\u23ceDelta Cephei doubles in"
+      }
+    ],
+    "promotes": [
+      "ConstraintMaker",
+      "webElementXpaths",
+      "XmlAccessType",
+      "OGND",
+      " referenties"
+    ],
+    "demotes": [
+      "InitStruct",
+      " digital",
+      " ex",
+      "\u6c40",
+      "lebo"
+    ],
+    "generated_description": "Sun / solar \u2014 activates on tokens referring to the Sun or solar concept (sun, Sun, sun's, solar); common in sunspot, solar-system, and stellar-context mentions."
+  },
+  {
+    "id": "2_12144_3",
+    "layer": 2,
+    "ctx_idx": 3,
+    "influence_score": 0.3647824823856354,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 17.12,
+        "context": " WATER SAVINGS\u23ceHigh-efficiency toilets, water-efficient washing machines, rainwater harvesting systems, and water-efficient landscaping can all help reduce water use\u23ceWater-"
+      },
+      {
+        "trigger": " system",
+        "score": 19.5,
+        "context": ")\u23ceThis fact sheet can get you started with a seven-step action plan to analyze and improve your compressed air system. Source: North Carolina Department of En"
+      },
+      {
+        "trigger": " system",
+        "score": 19.5,
+        "context": "wide mobile home to investigate a problem with a 4- year-old duct system (the original duct system was no longer being used). Looking down the supply"
+      },
+      {
+        "trigger": " system",
+        "score": 18.25,
+        "context": " water from the system by first locating the cooling tower as the highest element in the system. The tower should be elevated until all other system components are below the overflow"
+      },
+      {
+        "trigger": " system",
+        "score": 18.75,
+        "context": " commissioned the installation of a template-assisted-crystallization (TAC) central treatment system.\u23ceTAC falls into a category often referred to as \u201cphysical water treatment"
+      }
+    ],
+    "promotes": [
+      "}>;",
+      "ayage",
+      "F\u00f8",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0627\u0644\u0631\u062e\u0635\u0629"
+    ],
+    "demotes": [
+      " System",
+      "System",
+      " system",
+      " SYSTEM",
+      "system"
+    ],
+    "generated_description": "system \u2014 activates on the noun \u201csystem\u201d; often infrastructure/technical contexts (water, duct, compressed-air, treatment systems)."
+  },
+  {
+    "id": "16_6764_10",
+    "layer": 16,
+    "ctx_idx": 10,
+    "influence_score": 0.3784855902194977,
+    "top_activations": [
+      {
+        "trigger": " which",
+        "score": 22.62,
+        "context": "Hodgkin Lymphoma\u23ceNon-Hodgkin lymphoma is a disease in which cancer cells form in the lymphatic system and start to grow uncontrollably.\u23ce"
+      },
+      {
+        "trigger": " increase",
+        "score": 23.62,
+        "context": " (SEO) can be more than a little confusing. The main idea is to increase traffic to your site through optimizing pages for search engines, but how does it"
+      },
+      {
+        "trigger": " which",
+        "score": 29.38,
+        "context": "<bos>Obesity - a condition in which a person's body mass exceeds the norm by a certain amount, as measured by body weight index (BMI). A BMI"
+      },
+      {
+        "trigger": " of",
+        "score": 25.12,
+        "context": ".\u23ce- x-ray crystallography.\u23ce- Determination of three dimensional arrangement of atoms in a crystal by analysis of x-ray diffraction patterns.\u23ce-"
+      },
+      {
+        "trigger": " view",
+        "score": 24.5,
+        "context": " uses computer processed tomography to view medical images. A CT scan can create detailed pictures of the brain, spine, chest and abdomen.\u23ceWhat is CT scan used"
+      }
+    ],
+    "promotes": [
+      "^(@)",
+      " >=\",",
+      " it\u017felf",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " ta",
+      " lo",
+      " c",
+      "rawtypes",
+      " Ju"
+    ],
+    "generated_description": "Definition connective \u2014 activates on tokens that introduce explanations/definitions (e.g. \"in which\", \"of\", \"used to\", \"view\", \"increase\"); marks definitional/explanatory clauses."
+  },
+  {
+    "id": "17_14757_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.30784690380096436,
+    "top_activations": [
+      {
+        "trigger": " around",
+        "score": 60.0,
+        "context": ".\u23ceThe mismatch occurs for two reasons.\u23ceFirst, Earth's orbit around the Sun is not a perfect circle. Instead, it's slightly elliptical"
+      },
+      {
+        "trigger": " orbiting",
+        "score": 73.5,
+        "context": " five planets orbiting a sun-like star, 55 Cancri, that is located 40 light years from Earth yet still visible to the naked eye"
+      },
+      {
+        "trigger": " the",
+        "score": 61.0,
+        "context": " directly for nearby stars by\u23cea technique called parallax - as the earth goes around the\u23cesun the star looks like its moving, and the extent of the motion"
+      },
+      {
+        "trigger": " their",
+        "score": 63.5,
+        "context": " quite close to their host stars, while this new technique will look for habitable planets orbiting stars at distances typically twice the Sun-Earth distance. But astronomers say they"
+      },
+      {
+        "trigger": " small",
+        "score": 60.0,
+        "context": "ating dust from the moon's surface.\u23ceThe finding is applicable to other small, air-less bodies, like asteroids.\u23ceFuture settlers may one day"
+      }
+    ],
+    "promotes": [
+      " transfieras",
+      "GraphicsUnit",
+      "\u51fa\u7248\u5e74",
+      " betweenstory",
+      "ThroughAttribute"
+    ],
+    "demotes": [
+      "\"><",
+      " \u0646\u0642",
+      "thoven",
+      " edit",
+      "]!='"
+    ],
+    "generated_description": "Orbital/spatial astronomy \u2014 activates on verbs/prepositions and possessives about orbiting or motion (around, orbiting, their, small) in sentences discussing planets, stars, and small bodies."
+  },
+  {
+    "id": "19_8745_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3627748489379883,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 51.0,
+        "context": " gas to create a million stars like our own sun is on a collision course with the Milky Way, the National Radio Astronomy Observatory (NRAO) has announced."
+      },
+      {
+        "trigger": " our",
+        "score": 51.0,
+        "context": "1990s, astronomers couldn't be certain that any planets existed outside our solar system. These days, not only are astronomers confident that planets are"
+      },
+      {
+        "trigger": " the",
+        "score": 49.5,
+        "context": " the chemical make-up of stars.\u23ceTheir research reveals how stars in centre of the Milky Way \u2018live fast and die young\u2019, shedding light on the formation"
+      },
+      {
+        "trigger": " ",
+        "score": 50.5,
+        "context": " it often seems to flicker with all the colors of the rainbow. Sirius is about 23 times as bright as our sun, 2.35 times"
+      },
+      {
+        "trigger": " ",
+        "score": 61.5,
+        "context": " gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this is perfectly normal is obviously some indication"
+      }
+    ],
+    "promotes": [
+      " \u0111\u1ec9nh",
+      "phazard",
+      "PerformLayout",
+      "\u0012",
+      "ArgsConstructor"
+    ],
+    "demotes": [
+      " it\u017felf",
+      " \u017fever",
+      " mohair",
+      " nh\u00e0ng",
+      "Havolalar"
+    ],
+    "generated_description": "Determiner before astronomy noun \u2014 activates on \"the\"/\"our\" directly preceding astronomical objects (Milky Way, solar system, sun, chemical make-up of stars)."
+  },
+  {
+    "id": "17_8390_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.3911469578742981,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " those voting at the electorate is all that is required, whereas a more complex set of criteria must be met in Australia (a majority of voters in a majority of"
+      },
+      {
+        "trigger": " of",
+        "score": 44.0,
+        "context": ".\u23ceWhy Care?, Continued\u23ceWhy should we care whether or not a set of data follows a power law distribution, as opposed to a Normal distribution or any"
+      },
+      {
+        "trigger": " of",
+        "score": 40.25,
+        "context": ", dinosaurs, the Flood of Noah, salvation, and more!\u23ceThis series of books reveals biblical truth to children in an interesting and enjoyable way. Whether teaching"
+      },
+      {
+        "trigger": " of",
+        "score": 43.75,
+        "context": " Texas Tech were honored and their designs highlighted: the Texas Tech team built a set of millimeter-wide dragonfly wings, and CMU made an electrostatically-"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": "Introduction to Medical Disorders\u23ceWelcome to our Medical Disorders topic area. In this family of topic centers you will find information concerning common medical disorders. We've attempted"
+      }
+    ],
+    "promotes": [
+      " intptr",
+      "EMENTS",
+      "balleur",
+      " plates",
+      "esez"
+    ],
+    "demotes": [
+      " bunch",
+      " wikipagina",
+      " who\u017fe",
+      " ujednoznacz",
+      " Reihe"
+    ],
+    "generated_description": "say noun after 'of' \u2014 activates on the preposition \"of\"; signals a noun or noun-phrase immediately following (partitive/possessive/relationship object)."
+  },
+  {
+    "id": "18_2349_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.31001511216163635,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 72.5,
+        "context": ". Indeed, some speculate that Pluto itself is a Kuiper Belt object, not a planet at all.\u23ceTorrence Johnson, on the Cassini science team at"
+      },
+      {
+        "trigger": " including",
+        "score": 89.5,
+        "context": " the Sun. Jewitt and Luu discovered the Kuiper Belt, and Brown discovered and characterized many of its largest members, including Sedna, whose exceptionally long"
+      },
+      {
+        "trigger": " beyond",
+        "score": 80.5,
+        "context": " have discovered a slew of \"dwarf planets\" that dwell with Pluto beyond the orbit of Neptune. Makemake was a world nicknamed \"Easterbunny\" by its discover"
+      },
+      {
+        "trigger": " ",
+        "score": 86.0,
+        "context": "012 A collage shows nine radar images of near-Earth asteroid 2007 PA8 that were obtained between Oct. 31 and Nov"
+      },
+      {
+        "trigger": " Planets",
+        "score": 82.0,
+        "context": ", Venus, Mars, Jupiter, Saturn, Uranus, Neptune, and The Dwarf Planets\u23ceSpecial Features Include: Printable Teacher Notes, Planet Summaries, Student Work Sheets"
+      }
+    ],
+    "promotes": [
+      "Gweler",
+      "parsedMessage",
+      "InstrumentedTest",
+      " Roskov",
+      "toHaveBeenCalled"
+    ],
+    "demotes": [
+      " Exactos",
+      " AssemblyProduct",
+      "ArgsConstructor",
+      "SBATCH",
+      " CreateTagHelper"
+    ],
+    "generated_description": "Kuiper Belt / dwarf planets \u2014 activates on mentions of Kuiper Belt, Sedna, \u201cbeyond Neptune\u201d, \u201cincluding\u201d, and other trans\u2011Neptunian / dwarf-planet discussion."
+  },
+  {
+    "id": "18_2540_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.33266130089759827,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 48.0,
+        "context": ", and have positively identified ethane. This result makes Titan the only place in our solar system beyond Earth known to have liquid on its surface.\u23ceThe Cassini"
+      },
+      {
+        "trigger": " the",
+        "score": 48.0,
+        "context": " organisms would have found their way into comets and asteroids, and have been carried around the solar system, some making their way to Earth, administering a dose of \u201c"
+      },
+      {
+        "trigger": " around",
+        "score": 49.0,
+        "context": "Researchers suggested this bonanza of planets in the so-called Goldilocks zone around a star, a habitable zone in which conditions are liquid water to exist on"
+      },
+      {
+        "trigger": " in",
+        "score": 48.5,
+        "context": " the University of Arizona in Tucson.\u23ceTitan is one of the few bodies in the solar system with a significant atmosphere. Scientists believe methane gas breaks up in the"
+      },
+      {
+        "trigger": " the",
+        "score": 46.0,
+        "context": "6 arcseconds.\u23ceJupiter's mean sidereal period or one journey around the Sun is 11.9 years. The last opposition in December "
+      }
+    ],
+    "promotes": [
+      "ginfo",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      "}\")]",
+      "(\"}\");",
+      " Fie"
+    ],
+    "demotes": [
+      " earth",
+      " Earth",
+      "Earth",
+      "earth",
+      " EARTH"
+    ],
+    "generated_description": "say location \u2014 activates on prepositions/articles (\"in\", \"around\", \"the\") that introduce a place or astronomical location (Sun, Titan, Earth, Tucson)."
+  },
+  {
+    "id": "14_14037_10",
+    "layer": 14,
+    "ctx_idx": 10,
+    "influence_score": 0.3687122166156769,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 40.5,
+        "context": "<bos>A group of federal advisers is endorsing testing the anthrax vaccine in children. Now the Obama administration has to decide whether to move forward with the risky prospect of"
+      },
+      {
+        "trigger": " of",
+        "score": 35.5,
+        "context": " immune system: asthma, according to a new study.\u23ceSpecifically, a group of European researchers found that people with celiac disease were 60 percent more"
+      },
+      {
+        "trigger": " of",
+        "score": 37.25,
+        "context": " curated a rich collection of cool earth and space science fair projects written by our team of talented professional scientists, science teachers, and educational consultants. Our earth science projects"
+      },
+      {
+        "trigger": " of",
+        "score": 38.25,
+        "context": " from six bedrock wells located in different bedrock lithologies across Orange County. This network of wells is now known as Orange Well Net. Following the completion of several tasks"
+      },
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": " member countries agree to work on it together.\u23ceAt the core of a network of senior energy technology experts, these initiatives are also a fundamental building block for facilitating"
+      }
+    ],
+    "promotes": [
+      "UserScript",
+      "DoubleQuotes",
+      "BufferException",
+      "Personensuche",
+      "pleft"
+    ],
+    "demotes": [
+      " AssemblyCulture",
+      "GraphicsUnit",
+      "::",
+      "spath",
+      "\u8aad\u307f"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\" introducing noun phrases (a group of, collection of, network of); signals a noun/NP should follow"
+  },
+  {
+    "id": "19_10402_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.36774957180023193,
+    "top_activations": [
+      {
+        "trigger": " an",
+        "score": 44.75,
+        "context": " PetMD U\u23ceMore commonly referred to as a tumor, a neoplasm is an abnormal cluster of cell growth. There is no known age or sex that is"
+      },
+      {
+        "trigger": " the",
+        "score": 34.5,
+        "context": "<bos>Soils play a major role in a desert ecosystem. A soil is the result of weathering of geologic material. Once exposed, the forces of nature, break this"
+      },
+      {
+        "trigger": " a",
+        "score": 32.5,
+        "context": "<bos>Autism is a neurodevelopmental condition which is usually diagnosed in the first 3 years of life. Generally parents become concerned when their child has delays in speech development"
+      },
+      {
+        "trigger": " a",
+        "score": 30.75,
+        "context": " do about it?\u23ceWhat Is Acne and What Causes It?\u23ceAcne is a condition of the skin that shows up as different types of bumps. These bumps"
+      },
+      {
+        "trigger": "A",
+        "score": 33.5,
+        "context": " where sensory neurons are concentrated and that functions as a receptor. Also called sensor.A structure which is a receptor for external or internal stimulation. A sense organ is"
+      }
+    ],
+    "promotes": [
+      "WriteBarrier",
+      "){",
+      "posix",
+      " ViewGroup",
+      " MonoBehaviour"
+    ],
+    "demotes": [
+      " Superhosts",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " circumcision",
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      "interopRequire"
+    ],
+    "generated_description": "Definition-intro article \u2014 activates on initial articles (A/An/The) that start noun phrases defining or describing a concept (e.g., \u201cA soil is\u2026\u201d, \u201cAutism is a\u2026\u201d, \u201can abnormal cluster\u201d)."
+  },
+  {
+    "id": "19_13419_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3184012770652771,
+    "top_activations": [
+      {
+        "trigger": " past",
+        "score": 78.5,
+        "context": " the globe in monitoring asteroid 2005 YU55 as it swept past Earth on November 8 and 9, 2011."
+      },
+      {
+        "trigger": " the",
+        "score": 80.0,
+        "context": " dot symbolizes the position of the Moon, and the yellow sun symbolizes the position of the sun.\u23ceView Day and Night Map\u23ce- The bright part of the"
+      },
+      {
+        "trigger": " into",
+        "score": 68.5,
+        "context": " an announcement reassuring the world that a rogue planet called Nibiru would not smash into the Earth killing us all.\u23ceIt makes no sense, because if it was"
+      },
+      {
+        "trigger": " the",
+        "score": 84.0,
+        "context": "s energy?\u23ceThe source of nearly all energy on Earth is our star, the Sun. Solar energy feeds almost all life on Earth, is trapped in fossil"
+      },
+      {
+        "trigger": " the",
+        "score": 72.5,
+        "context": "\" warning, humans currently have no capacity to stop an asteroid on a collision course with the planet, scientists told a Senate panel Wednesday.\u23ce\"Right now we"
+      }
+    ],
+    "promotes": [
+      " earth",
+      "Sun",
+      " sun",
+      " Earth",
+      " Sun"
+    ],
+    "demotes": [
+      "\"],\r",
+      "windowFixed",
+      " initComponents",
+      " unknownFields",
+      " biografias"
+    ],
+    "generated_description": "say Earth/Sun \u2014 activates on prepositions/articles (the, into, past) immediately before celestial nouns; promotes tokens like \"Earth\", \"Sun\", \"sun\", \"earth\"."
+  },
+  {
+    "id": "19_13712_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3933654725551605,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 31.5,
+        "context": " to orchestrate a breach in the body's natural defenses. Blocking this cascade of events in mice hobbled the cells' migration and prevented the metastatic cancer that"
+      },
+      {
+        "trigger": " of",
+        "score": 35.25,
+        "context": "<bos>The array of official privileges that made the SUV possible all had as a necessary precondition its classification as a light truck. This was not unreasonable, given that SUVs"
+      },
+      {
+        "trigger": " of",
+        "score": 30.0,
+        "context": " and how those methods can help avert larger strokes in the future.\u23ceThis list of screenings is free and include some or all of the following obesity-related tests"
+      },
+      {
+        "trigger": " of",
+        "score": 29.75,
+        "context": " one collective human civilisation comprised of geo-cultural domains and cultures.\u23ceA set of global values in keeping with human nature and dignity need to be identified and developed"
+      },
+      {
+        "trigger": " of",
+        "score": 30.25,
+        "context": "ites, and Ishamelites\u2014all of Hebrew origins.\u23ceA northern tier of mound-builders lived in southern Ontario where thousands of Nephites moved after fleeing"
+      }
+    ],
+    "promotes": [
+      "UpInside",
+      "\u03c1\u03cc\u03c2",
+      " the",
+      "InSection",
+      " two"
+    ],
+    "demotes": [
+      " lenker",
+      " vectorielles",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " ferons",
+      " \u05d7\u05d9\u05e6\u05d5\u05e0\u05d9\u05d9\u05dd"
+    ],
+    "generated_description": "of (preposition) \u2014 activates on the token \"of\", especially when introducing noun-phrase complements or lists (linking/genitive constructions)."
+  },
+  {
+    "id": "20_1204_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.35755857825279236,
+    "top_activations": [
+      {
+        "trigger": " giant",
+        "score": 51.0,
+        "context": " become the first mission to fly by the seventh planet in our solar system. a giant, bluish-green, and often puzzling world called Uranus. Mission scientists predict"
+      },
+      {
+        "trigger": " a",
+        "score": 45.0,
+        "context": " orbit around the brightest stars in the sun\u2019s neighborhood.\u23ceAn exoplanet is a planet orbiting a star other than the sun; a transiting ex"
+      },
+      {
+        "trigger": " planetary",
+        "score": 47.0,
+        "context": " mission around Saturn has now been extended to 2017 to better study the complex planetary system as its season changes from equinox to solstice.\u23ceAuthors &"
+      },
+      {
+        "trigger": " smaller",
+        "score": 59.0,
+        "context": "in orbit around a young star. Planets grow from collisions and\u23cemergers of smaller objects, known as planetesimals, embedded in\u23cethe disk. Pro"
+      },
+      {
+        "trigger": " largest",
+        "score": 57.0,
+        "context": " of the Dawn mission is to characterize the conditions and processes of the solar system\u2019s earliest epoch by investigating in detail two of the largest protoplanets remaining"
+      }
+    ],
+    "promotes": [
+      " unknownFields",
+      " ini",
+      "comet",
+      "ini",
+      " Volcanic"
+    ],
+    "demotes": [
+      "AndEndTag",
+      " makeStyles",
+      "findpost",
+      " resourceCulture",
+      "\u03c3\u03b9\u03bc\u03bf\u03c0\u03bf\u03b9"
+    ],
+    "generated_description": "planet-size descriptor \u2014 activates on adjectives/articles that modify celestial bodies (giant, planetary, smaller, largest, \u201ca\u201d before planet terms); marks size/descriptor modifiers in astronomy context"
+  },
+  {
+    "id": "14_2022_10",
+    "layer": 14,
+    "ctx_idx": 10,
+    "influence_score": 0.39628779888153076,
+    "top_activations": [
+      {
+        "trigger": " distant",
+        "score": 33.25,
+        "context": ", extremely bright explosion of light recently spotted in the night sky may be the most distant object ever seen in the universe, astronomers say.\u23ceScientists can't"
+      },
+      {
+        "trigger": " galaxies",
+        "score": 40.25,
+        "context": "<bos>Ring galaxies are dramatic examples of galaxy transformation caused by a remarkably simple interaction. Observations and numerical models (Lynds & Toomre 1976"
+      },
+      {
+        "trigger": " universe",
+        "score": 33.25,
+        "context": " (NASA) General Observer award to continue his study of a group of mysterious quasars in the distant universe. Shemmer\u2019s observations have been made using the"
+      },
+      {
+        "trigger": " Planets",
+        "score": 33.5,
+        "context": "<bos>Kepler Mission to Hunt for Earth-like Planets\u23ceFebruary 20, 2009: Are there other worlds like ours? Are we"
+      },
+      {
+        "trigger": " astronomers",
+        "score": 34.5,
+        "context": " on visible objects.\u23ceThis common understanding faced a severe challenge when a team of astronomers, writing in Science in 2003, reported a surprising absence"
+      }
+    ],
+    "promotes": [
+      " astro",
+      " d\u00e9couver",
+      " Italijani",
+      " propOrder",
+      " \u0644\u064a\u0646\u0643"
+    ],
+    "demotes": [
+      " <=\",",
+      " antlers",
+      "ForType",
+      "=?\";",
+      "}}_"
+    ],
+    "generated_description": "Astronomy terms \u2014 fires on astronomy/space nouns (distant, galaxies, universe, planets, astronomers); signals mention of astronomical objects/people/topics."
+  },
+  {
+    "id": "20_12828_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.3768235146999359,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 94.5,
+        "context": " the platonic solids by the early Greeks, the revolutionary Copernican model of the solar system and the discovery of the Theory of Relativity by Einstein are just a"
+      },
+      {
+        "trigger": " the",
+        "score": 92.0,
+        "context": " but they all work kind of\u23cethe same way: you point it at somewhere in the sky and look\u23ceat what kind of electromagnetic signals are coming from there"
+      },
+      {
+        "trigger": " our",
+        "score": 93.0,
+        "context": " Lutetia to be a primitive body, left over as the planets were forming in our Solar System. Results from Rosetta's fleeting flyby also suggest that this"
+      },
+      {
+        "trigger": " the",
+        "score": 109.0,
+        "context": " images from the Hubble Space Telescope.\u23ce\"Never before has a roadmap of the entire sky been made so readily available. Anyone interested in exploring the wonders of our"
+      },
+      {
+        "trigger": " our",
+        "score": 88.0,
+        "context": " tell us about other planets, and even how the solar system first began? Explore our universe with the help of the Museum, and discover the role the Museum plays"
+      }
+    ],
+    "promotes": [
+      " universo",
+      "Solar",
+      " universe",
+      " Solar",
+      " solar"
+    ],
+    "demotes": [
+      "AsUp",
+      " }</",
+      "rungsseite",
+      " GenerationType",
+      "Personensuche"
+    ],
+    "generated_description": "say space term \u2014 activates on determiners/possessives (\"the\", \"our\") right before astronomy nouns; pushes tokens like \"Solar\", \"solar\", \"universe\"/\"universo\"."
+  },
+  {
+    "id": "22_2720_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.39988255500793457,
+    "top_activations": [
+      {
+        "trigger": " ended",
+        "score": 20.75,
+        "context": "002 \"Cessation of Hostilities Agreement\" (COHA) ended when the Indonesian government declared a \"military emergency\" in Aceh in May "
+      },
+      {
+        "trigger": " aside",
+        "score": 29.25,
+        "context": " made them?\u23cePortions of the Sch\u00f6ningen open pit coal mine were set aside for archaeological work decades ago. In 1997, Hartmut"
+      },
+      {
+        "trigger": " itself",
+        "score": 20.5,
+        "context": " an economic stimulus, I want to call attention to an economic stimulus that paid for itself. I refer here to the farm portion of the Steagall Amendment of"
+      },
+      {
+        "trigger": " popular",
+        "score": 27.5,
+        "context": " into animated films, the process is also possible using simple handheld devices. Optical toys popular in the 19th century brought to life still photographic images. The"
+      },
+      {
+        "trigger": " it",
+        "score": 20.5,
+        "context": " so large that you need to hold both hands out at arm\u00eds length to cover it. Sports fans in North America might think of it as a baseball diamond rather"
+      }
+    ],
+    "promotes": [
+      " About",
+      " ABOUT",
+      "About",
+      "about",
+      " about"
+    ],
+    "demotes": [
+      "popd",
+      "\u1ecbp",
+      "addWidget",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+      "readObject"
+    ],
+    "generated_description": "say \"about\" \u2014 activates on clause boundaries/transition words (ended, aside, itself, popular, it), pushes next-token toward the preposition \"about\"."
+  },
+  {
+    "id": "21_13018_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.27092763781547546,
+    "top_activations": [
+      {
+        "trigger": " beyond",
+        "score": 70.0,
+        "context": " has made the most detailed examination yet of the atmosphere of a Jupiter-sized planet beyond our solar system.\u23ce\u201cWe have been able to observe this planet in"
+      },
+      {
+        "trigger": " of",
+        "score": 90.5,
+        "context": " but it was significant. Pioneer 10 took the first close-up pictures of Jupiter before leaving our solar system in 1983 and is being"
+      },
+      {
+        "trigger": " other",
+        "score": 75.5,
+        "context": " the Sun and planets some 4.5 billion years ago. Unlike other objects in the solar system, comets have barely changed with time and contain pristine material from"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " *\u23ceThe most volcanically active body in the solar system is a little moon of Jupiter named Io. This moon is pumping out the hottest lavas known,"
+      },
+      {
+        "trigger": " produces",
+        "score": 68.5,
+        "context": " orbits. A cascade of collisions\u23ceamong rapidly moving planetesimals produces a ring of dust grains,\u23cewhich slowly disappears as protoplanets grow into planets"
+      }
+    ],
+    "promotes": [
+      " space",
+      " stars",
+      " star",
+      " planet",
+      " planets"
+    ],
+    "demotes": [
+      "Personendaten",
+      "rhosis",
+      " \u0645\u0634\u064a\u0646",
+      "richTextPanel",
+      "ymce"
+    ],
+    "generated_description": "planets & moons & stars \u2014 activates on mentions of planets, moons, or other celestial bodies; pushes astronomical nouns (planet, planets, star, stars, space)"
+  },
+  {
+    "id": "21_961_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.38658252358436584,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 28.75,
+        "context": "g. clicks on a certain part of an interface or browser chrome. Cognition refers to how one thinks and acquires knowledge.\u23ceIn the current study, I used"
+      },
+      {
+        "trigger": " to",
+        "score": 33.0,
+        "context": " It is closely associated with learning, which experts say is the ability to change behavior through the acquisition of new knowledge. Memory allows us to retain what we've"
+      },
+      {
+        "trigger": " the",
+        "score": 29.0,
+        "context": " disorder do not seek care because of the stigma surrounding mental illness. Stigma is the single greatest barrier to people getting the treatment they need.\u23ce\u201cThe greatest"
+      },
+      {
+        "trigger": " into",
+        "score": 29.25,
+        "context": " look for again, in this case means the diligent and systematic inquiry or investigation into a subject in order to discover or revise facts, theories, applications, etc."
+      },
+      {
+        "trigger": " a",
+        "score": 30.0,
+        "context": "The first 200 words of this essay...\u23cePersonality is a mixture of a person's traits and characteristics which make them different from everyone else."
+      }
+    ],
+    "promotes": [
+      "arma",
+      " o",
+      " ",
+      " ver",
+      " \u00ab"
+    ],
+    "demotes": [
+      " purpo\u017fe",
+      " my\u017felf",
+      " him\u017felf",
+      " plea\u017fure",
+      " rea\u017fon"
+    ],
+    "generated_description": "say definition intro \u2014 activates on function words (to, the, into, a) that introduce definitions, explanations, or purpose/goal phrases."
+  },
+  {
+    "id": "22_12644_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.3857954740524292,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 56.5,
+        "context": " vetted by SERC staff and may be incomplete or incorrect. If you\u23cehave information we can use to flesh out or correct this record let us know."
+      },
+      {
+        "trigger": " full",
+        "score": 54.0,
+        "context": " a worldwide explosion of scientific and engineering interest.\u23ceOxford Scholarship Online requires a subscription or purchase to access the full text of books within the service. Public users can"
+      },
+      {
+        "trigger": "9",
+        "score": 50.5,
+        "context": " on March 30, 1958. In 1990, legislation was introduced into the United States House of Representatives and United States"
+      },
+      {
+        "trigger": " ",
+        "score": 51.75,
+        "context": " Permusyawaratan Rakyat - MPR) meets every five years. It has 1000 members. Half of the seats is reserved for DPR members"
+      },
+      {
+        "trigger": " ",
+        "score": 50.75,
+        "context": "500 CE. By the Eighth Century, when its population had reached some 200,000 people, its decline had begun. Theories"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " \u017feveral",
+      "latego",
+      " The\u017fe",
+      "antaranya"
+    ],
+    "demotes": [
+      "BagLayout",
+      "GEBURTSDATUM",
+      "\u24e7",
+      "mockito",
+      "\u0645\u0635\u0627\u062f\u0631"
+    ],
+    "generated_description": "short tokens \u2014 activates on brief words or single-character tokens (e.g., \"to\", \"full\", \"9\"); common small function/content tokens and digits"
+  },
+  {
+    "id": "21_7506_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.3277604877948761,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 24.38,
+        "context": " Decorum Est\u23ceBest of the Web\u23ceHow to Read a Poem\u23ceTable of Contents\u23ceAP English Language\u23ceAP English Literature\u23ceSAT Test Prep\u23ceACT"
+      },
+      {
+        "trigger": "8",
+        "score": 27.38,
+        "context": "581919). Hunting Trips of a Ranchman. 1885.\u23ceSTILL-HUNTING ELK ON THE MOUN"
+      },
+      {
+        "trigger": " of",
+        "score": 25.62,
+        "context": " Hubble (orange). Located above the center of the galaxy, the \"hair\" of the Medusa is a tidal tail formed by a collision between galaxies. The bright"
+      },
+      {
+        "trigger": " of",
+        "score": 26.12,
+        "context": ".\u23ce> This material is only available to signed-in subscribers.\u23ceTable of random numbers (PDF)\u23ceActivities for Students August 2012"
+      },
+      {
+        "trigger": "0",
+        "score": 24.12,
+        "context": "Engelsdorp, who directs the Bee Informed Partnership, led a team of eleven researchers in the survey.\u23ceThe 2012-201"
+      }
+    ],
+    "promotes": [
+      " devices",
+      " tokens",
+      " songs",
+      " characters",
+      " items"
+    ],
+    "demotes": [
+      " v\u0153ux",
+      " \u00e9paules",
+      " v\u00e9rit",
+      " l\u00e8vres",
+      " genoux"
+    ],
+    "generated_description": "say of \u2014 activates on the preposition \"of\", especially when followed by object nouns (often plurals: devices, tokens, songs, characters)"
+  },
+  {
+    "id": "15_14728_10",
+    "layer": 15,
+    "ctx_idx": 10,
+    "influence_score": 0.3955596089363098,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 26.12,
+        "context": " that fits into a groove on the outer diameter of a piston\u23ceA piston is a component of reciprocating engines, reciprocating pumps, gas compressors and pneumatic cylinders"
+      },
+      {
+        "trigger": " a",
+        "score": 29.62,
+        "context": " an electronic signal, mostly used in digital cameras.\u23ceA Camera is a device that stores and records images, which consist of a light proof enclosure that has an"
+      },
+      {
+        "trigger": " from",
+        "score": 29.62,
+        "context": " dramatic actions in order to tell a story or create a spectacle. The word derives from the Greek theatron (\u201cplace of seeing\u201d). Theatre is one of the oldest"
+      },
+      {
+        "trigger": " to",
+        "score": 27.62,
+        "context": " Spain from 2003 to 2013. GDP refers to the total market value of all goods and services that are produced within a country"
+      },
+      {
+        "trigger": " at",
+        "score": 35.0,
+        "context": " expertise aimed at restoring health. Broadly speaking, it is the science which relates to the prevention, detection, cure or alleviation of diseases. It is a highly"
+      }
+    ],
+    "promotes": [
+      " betweenstory",
+      "labelledby",
+      "\\{\\\\",
+      "ogaster",
+      " TextAppearance"
+    ],
+    "demotes": [
+      " \u0645\u0648\u062c",
+      "MessageTagHelper",
+      " Krakowie",
+      "RegressionTest",
+      " CreateTagHelper"
+    ],
+    "generated_description": "introductory function word \u2014 activates on small words that begin modifiers/clauses (that, an, from, to, at); signals an upcoming descriptive or relational phrase."
+  },
+  {
+    "id": "22_15348_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.31431636214256287,
+    "top_activations": [
+      {
+        "trigger": " discovered",
+        "score": 45.75,
+        "context": " greater detail, including the smooth plains in the foreground and the rim of a newly discovered impact basin at lower left. Surprisingly, at the center of the bright halo"
+      },
+      {
+        "trigger": " large",
+        "score": 60.0,
+        "context": " (revised 18 December 2005)\u23ceA moon is a large body or mass or material that orbits around a planet. It is usually"
+      },
+      {
+        "trigger": " large",
+        "score": 45.5,
+        "context": " very long time to shed the excess heat from formation. The Earth is a very large sphere so it has a small ratio of surface area to volume ratio which makes"
+      },
+      {
+        "trigger": " an",
+        "score": 40.0,
+        "context": ", at the left a group of serous alveoli.|\u23ceA gland is an organ in an animal's body that synthesizes a substance such as hormones"
+      },
+      {
+        "trigger": " important",
+        "score": 42.25,
+        "context": ", what do they mean? The answer is many different things. Glands are important organs, you have a variety of them all over your body, and though"
+      }
+    ],
+    "promotes": [
+      " body",
+      " structures",
+      " Structure",
+      "structure",
+      " structure"
+    ],
+    "demotes": [
+      "uxxxx",
+      "EDEFAULT",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "BufferException",
+      "IsMutable"
+    ],
+    "generated_description": "Descriptive adjective \u2014 activates on qualifying words (large, important, discovered, etc.) in factual descriptions; often tied to following nouns like \u201cbody\u201d or \u201cstructure.\u201d"
+  },
+  {
+    "id": "23_595_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.32038313150405884,
+    "top_activations": [
+      {
+        "trigger": " disrupted",
+        "score": 80.5,
+        "context": " to believe we're looking at an asteroid.\u201d\u23ceAsteroids are remnants of disrupted planet formation located in the belt between Mars and Jupiter. These solid objects that"
+      },
+      {
+        "trigger": " moon",
+        "score": 85.0,
+        "context": " Hubble Space Telescope has observed water vapor above the frigid south polar region of Jupiter's moon Europa, providing the first strong evidence of water plumes erupting off the"
+      },
+      {
+        "trigger": " other",
+        "score": 79.5,
+        "context": " Scientists believe these particles are the pristine remains of the material that formed the planets and other bodies some 4.6 billion years ago.\u23ceThe spacecraft flew with"
+      },
+      {
+        "trigger": " a",
+        "score": 88.0,
+        "context": " type of icy dwarf planet known as a plutoid, as are Pluto and the newfound trans-Neptunian worlds Erisand Haumea.\u23ceWhereas"
+      },
+      {
+        "trigger": "'",
+        "score": 78.0,
+        "context": " 2010.\u23ceBy tracing craters and other features on Lutetia's surface, scientists have put together a geological map for the asteroid. Their"
+      }
+    ],
+    "promotes": [
+      " ice",
+      "\u0119d",
+      " water",
+      " aire",
+      " air"
+    ],
+    "demotes": [
+      "rungsseite",
+      " CreateTagHelper",
+      "tagHelperRunner",
+      "RenderAtEndOf",
+      "Portale"
+    ],
+    "generated_description": "Celestial body \u2014 activates on mentions of moons, asteroids, dwarf/plutoid names and possessives; often linked to surface/substance words (ice, water)."
+  },
+  {
+    "id": "22_4086_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.36577609181404114,
+    "top_activations": [
+      {
+        "trigger": "umas",
+        "score": 39.0,
+        "context": "3-km-wide swaths over selected areas in\u23ceEl Dorado and Plumas counties that contain serpentinite and ultramafic rocks as part an experiment to"
+      },
+      {
+        "trigger": "bron",
+        "score": 24.88,
+        "context": " lung. The bronchoscope is then moved down your larger breathing\u23cetubes (bronchi) to examine the lower airways.\u23ceIf your doctor\u23cecollects"
+      },
+      {
+        "trigger": " Union",
+        "score": 28.38,
+        "context": " been spared. Farms in Ballard, Crittenden, Livingston, McCracken and Union counties recently became eligible for Small Business Administration Disaster Loans, and, last week"
+      },
+      {
+        "trigger": "cy",
+        "score": 25.12,
+        "context": " mid-1800's, wheat was cut by hand with scythes or sickles, sharp knife-like tools. Then, in "
+      },
+      {
+        "trigger": " Harvard",
+        "score": 25.12,
+        "context": " slender jaw\", existed 65 million years ago.\u23ceResearchers from Yale and Harvard discovered Obamadon, or Obamadon gracilis if you want to get scientific,"
+      }
+    ],
+    "promotes": [
+      " magazines",
+      " rivers",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438",
+      " clubs",
+      " boards"
+    ],
+    "demotes": [
+      " Evaluations",
+      " Jefus",
+      " evaluations",
+      " executions",
+      "Comparisons"
+    ],
+    "generated_description": "Named places/orgs \u2014 activates on proper names and location/organization tokens (county names, universities: Plumas, Union, Harvard); signals named-entity/place mentions."
+  },
+  {
+    "id": "23_14734_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3751222789287567,
+    "top_activations": [
+      {
+        "trigger": " for",
+        "score": 32.75,
+        "context": "<bos>When you explore haunted houses or search for sacred artifacts in ancient temples, the cobwebs that you brush out of your way may seem fairly flimsy and inconsequential"
+      },
+      {
+        "trigger": " preserving",
+        "score": 30.75,
+        "context": ", says that \"sunken ships can be a very, very good environment for preserving remains\" because of the protective coating of silt that forms over them. This"
+      },
+      {
+        "trigger": " physical",
+        "score": 31.0,
+        "context": " Point on the southern Cape coast near Mossel Bay that contain archaeological artefacts and other physical evidence critically important to the understanding of how and when fully modern humans evolved."
+      },
+      {
+        "trigger": "ized",
+        "score": 28.0,
+        "context": " position and share but do not alternate color schemes. Thought to represent the same skeletonized figure, they have been variously described as falling, floating, flying, dancing"
+      },
+      {
+        "trigger": " spider",
+        "score": 33.5,
+        "context": " to be a new species in the genus Cyclosa, the arachnid crafts the larger spider from leaves, debris and dead insects. Though Cyclosa includes"
+      }
+    ],
+    "promotes": [
+      " m",
+      " invokingState",
+      " imp",
+      " models",
+      " pulumi"
+    ],
+    "demotes": [
+      " disambiguazione",
+      "findpost",
+      "AddHtmlAttribute",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "\u03b4\u03b9"
+    ],
+    "generated_description": "Physical objects \u2014 activates on tokens naming or describing tangible items or preservation. E.g., spider, physical, preserving, skeletonized; often near artifacts, remains, concrete objects."
+  },
+  {
+    "id": "24_5564_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3468729257583618,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 90.0,
+        "context": ". The right hemisphere is in charge of the functions on the left-side of the body, as well as many cognitive functions.\u23ceA right-side stroke"
+      },
+      {
+        "trigger": " the",
+        "score": 86.5,
+        "context": " Medical Research in New York City. There he investigated the preservation of living tissues outside the body, keeping organs or tissues alive\u2014in one famous case, for more"
+      },
+      {
+        "trigger": " the",
+        "score": 82.0,
+        "context": " and entire cells soon become damaged and die. Peroxidation is important because it helps the body destroy cells that have outlived their usefulness. It also kills germs and"
+      },
+      {
+        "trigger": " their",
+        "score": 76.0,
+        "context": " lies in how dogs circulate their blood to prevent cold surfaces from chilling the rest of their bodies, according to Hiroyoshi Ninomiya, a professor at Yamazaki Gak"
+      },
+      {
+        "trigger": " our",
+        "score": 104.0,
+        "context": " are made from amino acids (the building blocks of protein), regulate many systems in our bodies. These include the regulation of metabolism, digestion, and nutrient absorption,"
+      }
+    ],
+    "promotes": [
+      " n\u00e9lk",
+      " leopardo",
+      " v\u0153ux",
+      "\u013e",
+      " f\u0131r"
+    ],
+    "demotes": [
+      " Body",
+      " body",
+      "Body",
+      "body",
+      " bodies"
+    ],
+    "generated_description": "say \"body/bodies\" \u2014 activates on determiners/possessives (the, their, our) immediately before references to a physical body; consistently pushes the token \"body\"/\"bodies\" away."
+  },
+  {
+    "id": "24_5093_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3759835958480835,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 56.5,
+        "context": " to take energy from another source. The energy source of everything on Earth is ultimately the Sun.\u23ceWe burn fuel to power our car, but only a small"
+      },
+      {
+        "trigger": " the",
+        "score": 58.5,
+        "context": ", Comet ISON will lose a massive amount of material as it passes close to the sun. This will cause the comet to brighten tremendously, but it comes at"
+      },
+      {
+        "trigger": " the",
+        "score": 58.5,
+        "context": "grade motion can be seen each time Earth overtakes and laps planets orbiting farther from the Sun, Earth moving more rapidly through its own relatively close-in orbit."
+      },
+      {
+        "trigger": " the",
+        "score": 60.5,
+        "context": " water heating - the technology that allows to effectively collect and utilise solar energy radiated by the sun to heat the water.\u23ceSolar thermal technology transforms direct and diffuse solar"
+      },
+      {
+        "trigger": " the",
+        "score": 69.5,
+        "context": " athletics also be used in family relationships?\u23ceAll successful athletes have routines: bouncing the ball three times and pausing before shooting a free throw, having a warm-"
+      }
+    ],
+    "promotes": [
+      " Ball",
+      " BALL",
+      " football",
+      "ball",
+      " ball"
+    ],
+    "demotes": [
+      " ModelExpression",
+      " typelib",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      "########.",
+      " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928"
+    ],
+    "generated_description": "say ball (follows \"the\") \u2014 activates on the definite article before concrete nouns (Sun, ball, technology); consistently pushes next-token toward \"ball\"/\"football\"."
+  },
+  {
+    "id": "24_6767_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.35863831639289856,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 59.5,
+        "context": " of an increased number of gamma ray sources, possibly even the indirect detection of the mysterious dark matter in the universe,\" said Karen Byrum, Argonne physicist.\u23ce"
+      },
+      {
+        "trigger": " when",
+        "score": 59.0,
+        "context": " Telescope, has turned up a mass of previously-undiscovered black holes from when the universe was around 800 to 950 million years"
+      },
+      {
+        "trigger": " of",
+        "score": 62.5,
+        "context": " a key prediction of the speculative but popular cosmic theory known as inflation about the distribution of matter and energy in the Big Bang. The theory holds that during its first"
+      },
+      {
+        "trigger": " which",
+        "score": 65.5,
+        "context": " predictions of the Big Bang theory, the clouds provide a unique insight into the materials from which the first stars and galaxies were born.\"\u23ceSee the full announcement\u23ce"
+      },
+      {
+        "trigger": " in",
+        "score": 74.0,
+        "context": ".\u23ceThe atoms around you have existed for billions of years \u2014 and most originated in the flaming, gaseous core of a star. Dennis Wildfogel tells the"
+      }
+    ],
+    "promotes": [
+      " gak",
+      " jegy",
+      " echip",
+      "HttpDelete",
+      " r\u00e9guli"
+    ],
+    "demotes": [
+      "Datuak",
+      " nahilalakip",
+      "ContentAsync",
+      "atko",
+      "antiate"
+    ],
+    "generated_description": "say source/time preposition \u2014 activates on prepositions/subordinators (of, when, which, in) that introduce source, origin, or time noun-phrases."
+  },
+  {
+    "id": "8_11582_10",
+    "layer": 8,
+    "ctx_idx": 10,
+    "influence_score": 0.3833903670310974,
+    "top_activations": [
+      {
+        "trigger": " Gravity",
+        "score": 20.5,
+        "context": "8: a galaxy cluster lens\u23ceWhat are those strange filaments? Background galaxies. Gravity can bend light, allowing huge clusters of galaxies to act as telescopes, and"
+      },
+      {
+        "trigger": " gravity",
+        "score": 18.5,
+        "context": " and numerous simple, bowl-shaped craters. Data also show the moon's gravity field is unlike that of any terrestrial planet in our solar system. The map"
+      },
+      {
+        "trigger": " gravitational",
+        "score": 23.62,
+        "context": " they are dispersed over time as they encounter other stars, interstellar clouds, and experience gravitational tides while orbiting the center of our galaxy. Still, M67 contains"
+      },
+      {
+        "trigger": " bodies",
+        "score": 19.12,
+        "context": "<bos>Authors: H. Ron Harrison\u23ceGalileo studied bodies falling under gravity and Tycho Brahe made extensive astronomical observations which led Kepler to formulate his three famous"
+      },
+      {
+        "trigger": " gravity",
+        "score": 26.0,
+        "context": " of Pioneer 10 and 11 at escaping from the Sun's gravity with \"acceleration of the speed of the electromagnetic radiation\" emanated from the"
+      }
+    ],
+    "promotes": [
+      " MainAxisSize",
+      "uxxxx",
+      " NSCoder",
+      " ModelExpression",
+      "ReusableCell"
+    ],
+    "demotes": [
+      " in",
+      " lead",
+      " base",
+      " spend",
+      " under"
+    ],
+    "generated_description": "Gravity \u2014 activates on mentions of gravity/gravitational (e.g., gravity, gravitational, bodies falling under gravity); signals physical gravitational context (fields, tides, escape from a body)."
+  },
+  {
+    "id": "23_11832_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.35193949937820435,
+    "top_activations": [
+      {
+        "trigger": " test",
+        "score": 68.0,
+        "context": " have other names?\u23ceProgesterone blood test, serum progesterone\u23ceWhat is this test?\u23ceThis test measures the level of a hormone called progesterone in your blood"
+      },
+      {
+        "trigger": "Share",
+        "score": 69.0,
+        "context": " and is licensed under the GNU Free Documentation License and under the Creative Commons Attribution-ShareAlike License\u23ce|WordNet 2.0 Dictionary||Download this dictionary"
+      },
+      {
+        "trigger": " they",
+        "score": 66.0,
+        "context": " devised by man for breaking down injustice and destroying the terrible walls which imprison men because they are different from other men.'\u23ce-- President Lyndon B. Johnson, at"
+      },
+      {
+        "trigger": "press",
+        "score": 59.0,
+        "context": "<bos>(Medical Xpress)\u2014A painstaking effort to create a biocompatible patch to heal infant hearts is paying off at Rice University and Texas Children's Hospital."
+      },
+      {
+        "trigger": "3",
+        "score": 59.5,
+        "context": ".\u23ceThe rewards and punishment of another life, which the Almighty has established as the enforcements of his law.\u23ce\u00a9 Webster 1913."
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " st\u00e4llet",
+      " my\u017felf",
+      " Efq",
+      " The\u017fe"
+    ],
+    "demotes": [
+      " ",
+      "\u23ce",
+      " (",
+      ",",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "Word token (non-punct) \u2014 activates on standalone word tokens (letters/digits like \"test\", \"Share\", \"they\", \"press\", \"3\"); suppresses punctuation/newlines; often promotes rare/archaic word forms."
+  },
+  {
+    "id": "24_3263_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.30555713176727295,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 66.0,
+        "context": ", the object's Hour Angle indicates how much Sidereal Time has passed since the object was on the Local Meridian. It is also the angular distance between the"
+      },
+      {
+        "trigger": " track",
+        "score": 62.5,
+        "context": " going cross-eyed, and distinguishes more colors.\u23ceBabies this age now can track even rapid motion with their eyes. Your baby can follow the course of a"
+      },
+      {
+        "trigger": " the",
+        "score": 58.0,
+        "context": " and the change in frequency, it determines the distance, direction, and speed of the object being observed. Direction and speed are computed based on the Doppler effect."
+      },
+      {
+        "trigger": " no",
+        "score": 76.5,
+        "context": "s no object; I want the best.\u23cean event or story that shows you the right or wrong way of doing something\u23ceobject lesson in\u23ceThe way"
+      },
+      {
+        "trigger": "0",
+        "score": 70.5,
+        "context": " more. After three years Chaser\u2019s vocabulary included names for 800 different stuffed animals, 116 balls, 26 Frisbees"
+      }
+    ],
+    "promotes": [
+      "GraphicsUnit",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " versa",
+      " an",
+      "tagHelperRunner"
+    ],
+    "demotes": [
+      " object",
+      " Object",
+      " Objects",
+      " objects",
+      "object"
+    ],
+    "generated_description": "Object concept \u2014 activates on determiners/words introducing mentions of a physical \"object\" (the, no, track before object); consistently suppresses the token \"object\"."
+  },
+  {
+    "id": "22_13978_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.3553861975669861,
+    "top_activations": [
+      {
+        "trigger": " fourth",
+        "score": 78.5,
+        "context": ", and have classified it as the fourth dwarf planet in our solar system and the third plutoid.\u23ceMakemake (pronounced MAH-keh MAH-keh)"
+      },
+      {
+        "trigger": " of",
+        "score": 85.0,
+        "context": " years.\u23ceare celestial bodies in orbit around the sun at a distance greater than\u23cethat of Neptune that have sufficient mass for their self-gravity to overcome\u23ce"
+      },
+      {
+        "trigger": " a",
+        "score": 67.5,
+        "context": " showers result from the Earth passing through the trail of dust and debris left behind by a comet. In the case of the Orionids the parent object is the most"
+      },
+      {
+        "trigger": " of",
+        "score": 90.0,
+        "context": " it became the first man-made object to leave the solar system when it passed the orbit of Neptune (which was then the outermost planet due to the eccentric orbit"
+      },
+      {
+        "trigger": " of",
+        "score": 84.0,
+        "context": ", astronomers have discovered a slew of \"dwarf planets\" that dwell with Pluto beyond the orbit of Neptune. Makemake was a world nicknamed \"Easterbunny\" by"
+      }
+    ],
+    "promotes": [
+      " FetchType",
+      "\u043a\u043b\u043e\u043f\u0435",
+      " estekak",
+      " lenker",
+      "NameInMap"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      "WaitGroup",
+      "StoreMessageInfo",
+      "\u10d0\u10e0\u10d8",
+      "\u00fcstung"
+    ],
+    "generated_description": "say of \u2014 activates on the preposition \"of\" (linking/possessive phrases), often before nouns like \"Neptune\", \"distance\", \"orbit\", etc."
+  },
+  {
+    "id": "24_13277_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.2663177251815796,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say following noun \u2014 activates on prepositions/articles/commas right before a noun/phrase; signals and promotes the upcoming content word or proper name"
+  },
+  {
+    "id": "24_6877_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.36676502227783203,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 71.0,
+        "context": " can cause skin cancer, but that's only half the story. The fact is that skin cancer was very rare 100 years ago and is still"
+      },
+      {
+        "trigger": " (",
+        "score": 66.0,
+        "context": " report included a limited set of resources \u2013 on-shore wind and rooftop solar photovoltaic (PV) \u2013 and also examined the potential for biomass-derived transportation fuels."
+      },
+      {
+        "trigger": " of",
+        "score": 67.0,
+        "context": " amounts of UV light due to training and competition schedules. Sun protection strategies, including sunscreens and sun protective clothing, may help to reduce this risk for athletes,\""
+      },
+      {
+        "trigger": " for",
+        "score": 71.0,
+        "context": " are only a fraction of the cost of solar panels, so the overall cost reduction for solar power as we said is actually 10-20%.\u23ce"
+      },
+      {
+        "trigger": " to",
+        "score": 65.0,
+        "context": " UVA and UVB radiation. The amount of the radiation produced during indoor tanning is similar to the sun, and in some cases, may be stronger. (6)"
+      }
+    ],
+    "promotes": [
+      "text",
+      "Previews",
+      "Rujuakan",
+      "thik",
+      "COUVER"
+    ],
+    "demotes": [
+      " sun",
+      "sun",
+      " Sun",
+      "Sun",
+      " SUN"
+    ],
+    "generated_description": "say sun \u2014 fires on small function tokens (that, of, for, to, \"(\") immediately before mentions of sun/solar/UV; consistently pushes down the token \"sun\" in output."
+  },
+  {
+    "id": "25_4717_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.2616558372974396,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "'s (apostrophe-s) \u2014 activates on the clitic \"'s\" in contractions/possessives (what's, that's, it's); marks a following predicate or possessive phrase."
+  },
+  {
+    "id": "25_1037_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.37156468629837036,
+    "top_activations": [
+      {
+        "trigger": "machine",
+        "score": 64.5,
+        "context": " W3C defines a \"web service\" as \"a software system designed to support interoperable machine-to-machine interaction over a network. It has an"
+      },
+      {
+        "trigger": " the",
+        "score": 63.5,
+        "context": " free-flowing condition, and that they and their immediate environments shall be protected for the benefit and enjoyment of present and future generations. Learn more.\u23ceWild &"
+      },
+      {
+        "trigger": " not",
+        "score": 70.0,
+        "context": " abolished forever. Man is the only creature that consumes without producing. He does not give milk, he does not lay eggs, he is too weak to pull the"
+      },
+      {
+        "trigger": "ione",
+        "score": 60.5,
+        "context": "00 miles) from Dione and at a Sun-Dione-spacecraft, or phase, angle of 44 degrees. Image scale is "
+      },
+      {
+        "trigger": " for",
+        "score": 61.0,
+        "context": " applied to the human body for cleansing, beautifying, promoting attractiveness, or altering the appearance without affecting the body\u2019s structure or functions.\u201d This broad definition includes"
+      }
+    ],
+    "promotes": [
+      " ext\u00e9rieures",
+      " compl\u00e8tes",
+      " sup\u00e9rieurs",
+      " r\u00e9guli",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      ".\"));",
+      ".\"]",
+      "'},\r",
+      ".\";\r",
+      ")\";\r"
+    ],
+    "generated_description": "say French adjective \u2014 fires on small/common tokens (articles/prep/short words) before a language switch; promotes accented French adjective stems (ext\u00e9rieures, compl\u00e8tes, sup\u00e9rieurs, r\u00e9guli, d\u00e9mocr)"
+  },
+  {
+    "id": "25_8361_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.39701390266418457,
+    "top_activations": [
+      {
+        "trigger": " a",
+        "score": 40.75,
+        "context": " is less than g.\u23ceSo what's the G-force experienced by a skydiver? If you ignore air resistance, it should be.... er..."
+      },
+      {
+        "trigger": " the",
+        "score": 46.75,
+        "context": " first day of spring, Earth\u2019s axis is oriented neither toward nor away from the sun. If the southern hemisphere represents the planet\u2019s feet and northern hemisphere"
+      },
+      {
+        "trigger": " the",
+        "score": 42.0,
+        "context": " Vitamin D comes from skin exposure to sunshine. Even 15 minutes exposure to the arms or legs 2-3 times per week should provide enough natural Vitamin"
+      },
+      {
+        "trigger": " the",
+        "score": 43.75,
+        "context": "\u23ce. The first release of WISE data, covering about 80 percent of the sky, will be delivered to the astronomical community in May of next year\u23ce"
+      },
+      {
+        "trigger": " the",
+        "score": 46.0,
+        "context": " Panel Orientation\u23ceFrom dawn to dusk, the sun travels from east to west across the sky. During the course of the day, a fixed solar cell will show"
+      }
+    ],
+    "promotes": [
+      "FilterChain",
+      "featureID",
+      "makeConstraints",
+      "ConstraintMaker",
+      "ValueStyle"
+    ],
+    "demotes": [
+      " Sky",
+      "Sky",
+      " SKY",
+      " sky",
+      "SKY"
+    ],
+    "generated_description": "say sky \u2014 fires on the/article tokens immediately before physical-world nouns (sky, sun); often in contexts about astronomy/weather; associated with demotion of the word \u201csky.\u201d"
+  },
+  {
+    "id": "25_11969_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.35647451877593994,
+    "top_activations": [
+      {
+        "trigger": " known",
+        "score": 62.0,
+        "context": " MAH-keh) is one of the largest objects known in the outer solar system and is just slightly smaller and dimmer than Pluto, its fellow plutoid. The"
+      },
+      {
+        "trigger": " is",
+        "score": 61.5,
+        "context": "\u23ceThe diagram shows three different locations: on the left, the quasar accretion disc, which is bluer in the centre and redder around the edges;"
+      },
+      {
+        "trigger": " are",
+        "score": 74.5,
+        "context": "none of which are Earth-like), only about 20 of them are around so-called binaries. The percentage may grow higher. The current ratio is"
+      },
+      {
+        "trigger": " of",
+        "score": 69.0,
+        "context": " used to correct in real-time for atmospheric turbulence to obtain these historic infrared images of an extra-solar multiple-planet system.\u23ceAccording Dr. Marois"
+      },
+      {
+        "trigger": " as",
+        "score": 58.0,
+        "context": " planets, just within this galaxy.\u23ceThey're known as exoplanets, and the recent spate of discoveries has changed astronomers' beliefs about the nature of"
+      }
+    ],
+    "promotes": [
+      "Portale",
+      "rayage",
+      " \u0645\u0634\u064a\u0646",
+      "writeFieldEnd",
+      " <>\","
+    ],
+    "demotes": [
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627",
+      " Astronomical",
+      " satellite",
+      " Satellite"
+    ],
+    "generated_description": "say next noun phrase \u2014 activates on copulas/prepositions (is, are, of, as, known) that introduce the following noun/entity phrase; predicts upcoming content word."
+  },
+  {
+    "id": "25_13416_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.37931492924690247,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "Foreign/loanword token \u2014 activates on names, foreign words, and unusual tokens (parafia, daikon, Mhz, Cervantez); tends to push non-English/French lexical continuations."
+  },
+  {
+    "id": "16_13145_10",
+    "layer": 16,
+    "ctx_idx": 10,
+    "influence_score": 0.39040350914001465,
+    "top_activations": [
+      {
+        "trigger": "2",
+        "score": 46.0,
+        "context": " suggested it had over a two percent chance of doing exactly that in 2029. Further refinements in its orbit quickly eliminated that chance, but it set"
+      },
+      {
+        "trigger": " of",
+        "score": 44.0,
+        "context": " C/2012 S1 (ISON). Currently located beyond the orbit of Jupiter, Comet ISON is heading for a very close encounter with the sun"
+      },
+      {
+        "trigger": " ",
+        "score": 42.0,
+        "context": "\u23ceNASA\u2019s MESSENGER spacecraft captured this image on January 14, 2008, during its closest approach to Mercury. The image reveals"
+      },
+      {
+        "trigger": " ",
+        "score": 44.0,
+        "context": " moon Epimetheus.\u23ceThe image was taken when Cassini was only about 100,000 kilometers from the\u23celarge icy moon."
+      },
+      {
+        "trigger": " of",
+        "score": 43.5,
+        "context": ": some pass close to the Sun, and others are found out beyond the orbit of Neptune. A vast majority have been collected by Jupiter\u2019s gravity into a"
+      }
+    ],
+    "promotes": [
+      "\u0627\u0644\u062d\u064a\u0627\u0647",
+      " BrowserModule",
+      " createContext",
+      " createSlice",
+      " calendriers"
+    ],
+    "demotes": [
+      " SEDS",
+      ":+:",
+      "HostException",
+      "Semitism",
+      "writerow"
+    ],
+    "generated_description": "say planet after of \u2014 activates on the token \"of\" in phrases like \"orbit of Jupiter/Neptune\" or \"moon Epimetheus\"; signals a following celestial body name."
+  },
+  {
+    "id": "25_15920_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.34943392872810364,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 186.0,
+        "context": ", forced labour, disease or execution during the Khmer Rouge \"killing fields,\" from 1975 to 1979.\u23ceBut to date"
+      },
+      {
+        "trigger": " ",
+        "score": 192.0,
+        "context": " paint the wooden face.\u201d\u23cePinocchio hit movie theaters the following year, in 1940.\u23ceToday, December 5, is Walt Disney"
+      },
+      {
+        "trigger": " ",
+        "score": 198.0,
+        "context": " utilities, savings bank life insurance, and anti-monopoly legislation.\u23ceIn 1908 Brandeis argued a case in front of the Supreme Court"
+      },
+      {
+        "trigger": " ",
+        "score": 216.0,
+        "context": "1984.\u23ceA settlement was founded on the site of Mobile in 1710 by the sieur de Bienville, and it was"
+      },
+      {
+        "trigger": "2",
+        "score": 186.0,
+        "context": "\u23ceWhile use of influenza antivirals in the United States has increased during the 2009-2010 flu season, there are still"
+      }
+    ],
+    "promotes": [
+      " enfans",
+      " sup\u00e9rieurs",
+      " europ\u00e9ennes",
+      " automatiques",
+      " varandra"
+    ],
+    "demotes": [
+      " DAF",
+      " Realt",
+      " IFT",
+      " Ruger",
+      " Sandman"
+    ],
+    "generated_description": "Sentence-start marker \u2014 activates at sentence/paragraph boundaries (before the next sentence begins). Picks up on new-sentence tokens like \"But\", \"Today\", \"In\", year/start-of-sentence tokens."
+  },
+  {
+    "id": "24_13541_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3617561161518097,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ],
+    "generated_description": "Number/digit token \u2014 activates on numerals and number fragments (digits in dates, DOIs, timestamps, bracketed numbers); often around punctuation and promotes spaces/newlines."
+  },
+  {
+    "id": "25_15903_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.2930697202682495,
+    "top_activations": [
+      {
+        "trigger": "Download",
+        "score": 19.0,
+        "context": "6-161. Boston: Birkhauser, 1993.)\u23ceDownload an Adobe Acrobat (.pdf) version of the image for printing."
+      },
+      {
+        "trigger": " being",
+        "score": 19.62,
+        "context": " up to 25,000 larger mammals. Nearly half of those being zebra and wildebeest while other species found are buffalo, gazelle, el"
+      },
+      {
+        "trigger": " in",
+        "score": 20.25,
+        "context": "<bos>The first Inaugurations weren't in D.C.?\u23ceCredit: MPI/Getty Images\u23ceGeorge Washington was sworn in for the first time in New"
+      },
+      {
+        "trigger": " for",
+        "score": 20.5,
+        "context": " get people to eat more veggies,\u201d said Harry Balzer, the chief industry analyst for the NPD Group, a market research company. \u2026\u201cBefore we want health"
+      },
+      {
+        "trigger": " downloading",
+        "score": 19.25,
+        "context": " the conditions for a sculpture to exist outdoors.\u23ceDownload InfoIf you experience problems downloading a file, check if you have the proper application to view it first."
+      }
+    ],
+    "promotes": [
+      " oameni",
+      "\u0301s",
+      "\u306a\u3057",
+      "\u00e9se",
+      " yhte"
+    ],
+    "demotes": [
+      " the",
+      "the",
+      "AddTagHelper",
+      "DockStyle",
+      " tbe"
+    ],
+    "generated_description": "Preposition/gerund \u2014 activates on structural words (in, for, being, downloading, Download); marks tokens that introduce noun phrases or subordinate clauses, signals upcoming argument/content."
+  }
+]

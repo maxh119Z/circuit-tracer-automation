@@ -43,6 +43,9 @@ RUN_VALIDATE=false ./reproduce.sh all-groups
 ```bash
 cd ..
 circuit-tracer start-server --graph_file_dir ./test_graphs
+
+python analysis/analyze_hops.py --variants a2
+
 ```
 
 ## Batch Production
@@ -73,7 +76,7 @@ circuit-tracer attribute-batch --csv prompts/prompts.csv --graph_file_dir ./test
 ./batch_reproduce.sh ../prompts/prompts.csv
 
 # With validation
-./batch_reproduce.sh ../prompts/prompts.csv all
+./batch_reproduce.sh ../prompts/prompts_anthropic.csv all
 
 # Custom pruning threshold
 ./batch_reproduce.sh ../prompts/prompts.csv all 0.40

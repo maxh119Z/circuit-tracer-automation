@@ -1,0 +1,2930 @@
+[
+  {
+    "id": "0_10536_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3968702554702759,
+    "top_activations": [
+      {
+        "trigger": " approved",
+        "score": 17.0,
+        "context": "otecan, oxaliplatin and capecitabine, and each is individually approved by the Food and Drug Administration (FDA) for the treatment of cancer."
+      },
+      {
+        "trigger": " approved",
+        "score": 17.25,
+        "context": " commercial-size research irradiation facility.\u23ce\"At the minimum dose that would be approved, the equivalent of about one million E.coli cells would be killed."
+      },
+      {
+        "trigger": " approved",
+        "score": 16.75,
+        "context": "\u23ceIn fact, huge red flags are being raised about how drugs are tested and approved in two new studies, including one just published in the May 4th"
+      },
+      {
+        "trigger": " approved",
+        "score": 17.38,
+        "context": " entertained and engaged until spring arrives!\u23ceThis article first appeared in The Bark,\u23cePlease note comments are moderated. After being approved your comment will appear below."
+      },
+      {
+        "trigger": " approved",
+        "score": 17.5,
+        "context": " - our government programs to provide health care for the elderly and the poor - were approved in 1965, they were widely seen as a step toward"
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " Jefus",
+      " it\u017felf",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      " ",
+      ".",
+      " (",
+      ",",
+      ":"
+    ],
+    "generated_description": "approved \u2014 activates on the past-participle \"approved\" in passive approval contexts (drugs, policies, comments); marks authorization/acceptance mentions."
+  },
+  {
+    "id": "0_3820_20",
+    "layer": 0,
+    "ctx_idx": 20,
+    "influence_score": 0.38623061776161194,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on the token \"the\", especially when introducing a noun phrase; marks/represents definite noun phrases."
+  },
+  {
+    "id": "0_2848_22",
+    "layer": 0,
+    "ctx_idx": 22,
+    "influence_score": 0.29470324516296387,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of (preposition) \u2014 marks possession/relationship or affiliation; links nouns (partitive, origin, institutional/place attachment)"
+  },
+  {
+    "id": "2_7335_9",
+    "layer": 2,
+    "ctx_idx": 9,
+    "influence_score": 0.39259520173072815,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 26.5,
+        "context": "<bos>Listen to the podcast of this information.\u23ceHave you been meaning to add a few native plants to your garden? Now is the perfect time. Native plants"
+      },
+      {
+        "trigger": " meaning",
+        "score": 27.0,
+        "context": " word signified people who have converted to Judaism, but is nowadays used in a wider meaning.\u23ceConversion to Judaism\u23ceSee also the main article ger tzedek"
+      },
+      {
+        "trigger": " meaning",
+        "score": 27.75,
+        "context": " the federal garrison at Fort McHenry. In time the banner would take on larger meaning, set on a path to glory by a young lawyer named Francis Scott Key"
+      },
+      {
+        "trigger": " meaning",
+        "score": 28.25,
+        "context": " Hood is the one man he is out to destroy. What is the deeper moral meaning of his claim?\u23ceIn Ragnar Danneskj\u00f7ld and Robin Hood"
+      },
+      {
+        "trigger": " meaning",
+        "score": 26.5,
+        "context": "\u2019 has for the most part supplanted this use of the word value. Another meaning which the term value conveys is the significance of an object to an individual as"
+      }
+    ],
+    "promotes": [
+      "\u5e16\u6700\u540e\u7531",
+      ":+:",
+      "tvguidetime",
+      "#+#",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " meaning",
+      "meaning",
+      "Meaning",
+      " Meaning",
+      " meanings"
+    ],
+    "generated_description": "meaning \u2014 activates on the noun \"meaning\" in contexts of sense/significance/interpretation; often appears with explanatory phrases like \"of\", \"which\", or \"the deeper\"."
+  },
+  {
+    "id": "0_4266_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3868846297264099,
+    "top_activations": [
+      {
+        "trigger": " investigation",
+        "score": 24.75,
+        "context": ": a \"Study of Students\u2019 Transition from Primary to Secondary Schooling\"; an investigation of the skills, knowledge and values that may be required by teachers to most"
+      },
+      {
+        "trigger": " investigation",
+        "score": 25.0,
+        "context": ", the Association of Certified Fraud Examiners (ACFE), a national society of fraud investigation professionals, reported that government organizations were the victims in 18 percent of"
+      },
+      {
+        "trigger": " investigation",
+        "score": 24.5,
+        "context": "ed off and covered with an awning, giving it the air of a crime scene investigation.\u23ceArchaeologists will dig by hand, focusing on four areas identified as"
+      },
+      {
+        "trigger": " investigation",
+        "score": 24.75,
+        "context": " preserve the health and safety of Iowans from infectious diseases through disease surveillance; investigation of acute outbreaks; education and consultation to county, local, and private health"
+      },
+      {
+        "trigger": " investigation",
+        "score": 24.25,
+        "context": "s Agriculture and Agri-Food Minister Lyle Vanclief ... about Canada's investigation and feel that all appropriate measures are being taken in what appears to be an"
+      }
+    ],
+    "promotes": [
+      " sup\u00e9rieurs",
+      " normaux",
+      " dedans",
+      " gouver",
+      " \u00e9nerg\u00e9"
+    ],
+    "demotes": [
+      "]\";",
+      ")\";",
+      ")';",
+      ")\";\r",
+      "__':"
+    ],
+    "generated_description": "investigation \u2014 activates on the noun \u201cinvestigation\u201d; appears in crime, public-health, academic, and governmental contexts referring to formal inquiries or probes."
+  },
+  {
+    "id": "0_4870_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.3919723331928253,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " Longshot rifle and spots an enemy. He puts his cross hairs on his head, pulls the trigger and is rewarded with a gush of blood on his screen"
+      },
+      {
+        "trigger": ",",
+        "score": 28.88,
+        "context": " of your own voice.\u201d\u23ce\u201cHe's also probably a great conversationalist, which is the only reason I chose him over Neil Young, who would probably"
+      },
+      {
+        "trigger": ",",
+        "score": 28.12,
+        "context": ")\u23ce- The word \"palindrome\" is derived from the Greek pal\u00edndromos, meaning \"running back\" (pal\u00edn = back + dromos = running"
+      },
+      {
+        "trigger": ",",
+        "score": 28.0,
+        "context": " part of the inflammatory immune reaction. It\u2019s this inflammation that gives you puffy, swollen eyes or a blistery skin rash. As well as being produced"
+      },
+      {
+        "trigger": ",",
+        "score": 28.38,
+        "context": " this is the module for you. You can either study it on its own or, if you wish to embark on a programme of study, it will provide the"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      "^(@)",
+      " The\u017fe",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      "-",
+      " (",
+      ";"
+    ],
+    "generated_description": "Comma \u2014 activates on commas in running text; associated with promoting archaic/typographic word forms (The\u017fe, my\u017felf) and demoting standard punctuation tokens."
+  },
+  {
+    "id": "0_11159_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.34959056973457336,
+    "top_activations": [
+      {
+        "trigger": " into",
+        "score": 35.25,
+        "context": " ear. If the tube opens, the negative pressure will result in bacteria being swept into the middle ear and quickly proliferate. As purulent fluid accumulates in the"
+      },
+      {
+        "trigger": " into",
+        "score": 35.25,
+        "context": " from the ocean bottom. As the kombu floats to the surface it is gathered into boats and taken ashore. The fronds are washed, folded and naturally sun"
+      },
+      {
+        "trigger": " into",
+        "score": 35.25,
+        "context": " It is rich in fossils and organic matter such as kerogen (which breaks down into oil and gas), and is black to grey black in color. In Ohio"
+      },
+      {
+        "trigger": " into",
+        "score": 35.5,
+        "context": " flocks of sandhills on the move begin to parade from surrounding croplands back into the roost areas in the Navarino marshes.\u23ceAs the setting sun paints"
+      },
+      {
+        "trigger": " into",
+        "score": 35.5,
+        "context": " came knocking in the guise of the war.\u23ceNever one to miss a chance to make money, he marched into Poland on the heels of the SS. He"
+      }
+    ],
+    "promotes": [
+      " tuturor",
+      " mijne",
+      " auroit",
+      " poup\u00e9e",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " into",
+      "into",
+      " Into",
+      "Into",
+      " INTO"
+    ],
+    "generated_description": "say into \u2014 activates on the preposition \"into\", especially when introducing a location or object (occurs before noun phrases/locations)"
+  },
+  {
+    "id": "0_6906_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.37864968180656433,
+    "top_activations": [
+      {
+        "trigger": " into",
+        "score": 27.0,
+        "context": " learning.\u23ceI think we can agree that for the most part when we come into this world we are virtually a blank page. Hour by hour, day by"
+      },
+      {
+        "trigger": " into",
+        "score": 26.38,
+        "context": "A.)\u23ceThere are so many aspects of these quotes I would like to get into, but the one I will focus on here is \u201cthe skills they need"
+      },
+      {
+        "trigger": " into",
+        "score": 26.5,
+        "context": " up-to-date content.\u23ceThe press release reads: \u201cTexts get into classrooms quickly and can be updated as needed rather than on a publishing schedule \u2013"
+      },
+      {
+        "trigger": " into",
+        "score": 27.25,
+        "context": " sky. Various aspects need to be considered in the site selection process. Parameters taken into account are not restricted to \u201csky quality\u201d, but include more general scientific aspects"
+      },
+      {
+        "trigger": " into",
+        "score": 26.88,
+        "context": " emissions spewed by all those earth movers, tunnel boring machines, bulldozers, trucks, cranes, etc. are taken into account, the carbon advantage for"
+      }
+    ],
+    "promotes": [
+      "ty",
+      "r",
+      " OnInit",
+      "p",
+      "k"
+    ],
+    "demotes": [
+      " tartalomaj\u00e1nl\u00f3",
+      " into",
+      " typelib",
+      " Paglinawan",
+      "verwijspagina"
+    ],
+    "generated_description": "into \u2014 activates on the preposition \"into\" (introducing noun phrases/clauses); consistent across contexts; often correlates with demotion of \"into\" in outputs."
+  },
+  {
+    "id": "0_2848_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.381490558385849,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say \"of\" \u2192 place/person/institution \u2014 activates on the preposition \"of\" when it introduces a proper name, location, organization, or similar noun phrase."
+  },
+  {
+    "id": "3_5753_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3591075539588928,
+    "top_activations": [
+      {
+        "trigger": " include",
+        "score": 25.38,
+        "context": " from heart defects and developmental delays to seizures and effects on facial appearance. These might include cleft palate (an opening in the roof of the mouth).\u23ceIn "
+      },
+      {
+        "trigger": " includes",
+        "score": 25.12,
+        "context": "<bos>Trademarks - Trademark Lawyers\u23ceA trademark includes any word, name, symbol, or device, or any combination used, or intended to be used, in"
+      },
+      {
+        "trigger": " includes",
+        "score": 25.38,
+        "context": " very high in iron and very low in calcium, phosphorus and nitrogen; it also includes high levels of chromium, nickel and cobalt that are toxic to most plants."
+      },
+      {
+        "trigger": " includes",
+        "score": 25.38,
+        "context": " to the ornate Gothic types of 19th century Germany. This category also includes faces with a Gothic look but created by modern type designers. Blackletter types"
+      },
+      {
+        "trigger": " includes",
+        "score": 25.12,
+        "context": " just behind your nose.\u23ce- Oropharyngeal cancer starts behind your mouth that includes your tonsils.\u23ce- Hypopharyngeal cancer (laryngopharyngeal"
+      }
+    ],
+    "promotes": [
+      "ereum",
+      " nhi\u00eau",
+      "selaer",
+      "########.",
+      " \u8df3\u8f6c\u81f3"
+    ],
+    "demotes": [
+      " include",
+      " includes",
+      " Include",
+      " Includes",
+      " included"
+    ],
+    "generated_description": "includes \u2014 activates on the verb \u201cinclude(s)\u201d; marks introduction of examples or list members, typically followed by items or parenthetical explanations."
+  },
+  {
+    "id": "0_6366_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.3726029396057129,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 19.5,
+        "context": ".\u23ceWhile English people usually do not see that this degree of flexibility for the meaning of a tiny word \u2018the\u2019 is difficult, many people from other language"
+      },
+      {
+        "trigger": " meaning",
+        "score": 19.38,
+        "context": " guesses the meaning of the word by himself. This power of deciphering the meaning of a word by it its implementation is very useful in competitive examinations.\u23ce"
+      },
+      {
+        "trigger": " meaning",
+        "score": 19.62,
+        "context": " due to its association with the Latin term virgo, meaning ''maiden.'' This meaning has driven the use of the name ever since.\u23ceIn 15"
+      },
+      {
+        "trigger": " meaning",
+        "score": 19.38,
+        "context": " have noticed that a few phonetic characters have phonetic components that are also very related in meaning to the overall character. That's probably because the people coining these"
+      },
+      {
+        "trigger": " meaning",
+        "score": 19.62,
+        "context": " was published in Nuremberg, Germany, by the firm of Hom\u00e4nnische Erben, meaning the successors of the Nuremberg engraver and publisher Johann Baptist Homann (16"
+      }
+    ],
+    "promotes": [
+      " end",
+      "JAMIN",
+      "jsdelivr",
+      "+\");",
+      "@\","
+    ],
+    "demotes": [
+      " termica",
+      " auffi",
+      " kysy",
+      " toiminta",
+      " acorns"
+    ],
+    "generated_description": "meaning \u2014 activates on the token \"meaning\", especially in definitional/etymology/gloss contexts explaining a word's sense or translation"
+  },
+  {
+    "id": "0_10783_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36350661516189575,
+    "top_activations": [
+      {
+        "trigger": " include",
+        "score": 22.88,
+        "context": " of these home-builders can be used in small house construction today. These insights include the use of decks and outdoor spaces, separation of spaces, and simple framing"
+      },
+      {
+        "trigger": " include",
+        "score": 22.88,
+        "context": ". mTOR combines with two other proteins to mediate several important cellular processes. These include translation of mRNA into protein, mitochondrial activity, and autophagy. Caloric restriction"
+      },
+      {
+        "trigger": " include",
+        "score": 22.88,
+        "context": " diseases, disorders and conditions that can be serious, even life-threatening. These include oral cancer and leukoplakia.\u23ceDepending on the cause, mouth"
+      },
+      {
+        "trigger": " include",
+        "score": 23.25,
+        "context": "0 athletes will compete across a range of track, field and road events. These include sprints, hurdles, relays, shot put, high jump, pole vault and"
+      },
+      {
+        "trigger": " include",
+        "score": 22.75,
+        "context": "\u23ceConsider eating foods high in omega-3 fatty acids, too. These foods include fresh fish (salmon, mackerel, and halibut) and plant oils ("
+      }
+    ],
+    "promotes": [
+      " ",
+      "\u2019",
+      ",",
+      " in",
+      "\u23ce\u23ce"
+    ],
+    "demotes": [
+      " Monfieur",
+      " Efq",
+      " Majefty",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "generated_description": "include (list-introducer) \u2014 activates on \"include\" in phrases like \"These include\", signals an upcoming enumeration or examples list"
+  },
+  {
+    "id": "2_13011_21",
+    "layer": 2,
+    "ctx_idx": 21,
+    "influence_score": 0.3900844156742096,
+    "top_activations": [
+      {
+        "trigger": " constitution",
+        "score": 25.0,
+        "context": " the country became independent in 1980. A referendum on a new constitution that is intended as a step towards democratic reform is due to be held in"
+      },
+      {
+        "trigger": " Constitution",
+        "score": 24.62,
+        "context": " an enumerated power granted to Congress under Article 1, Section 8 of the Constitution. It is not. It is a general statement describing the section content and"
+      },
+      {
+        "trigger": " Constitution",
+        "score": 24.38,
+        "context": " oversees the Mississippi Department of Education.\u23ceSection 203 of the Mississippi Constitution was amended on July 1, 1984. It requires"
+      },
+      {
+        "trigger": " constitution",
+        "score": 24.0,
+        "context": "5, 1776, Jefferson immediately wrote up three drafts of a constitution for the state that would soon be formed. This document is important because it"
+      },
+      {
+        "trigger": " Constitution",
+        "score": 24.75,
+        "context": "<bos>For far too long, Congress has been violating the Constitution by passing legislation that gives them powers that were never authorized by the Constitution. In every case, those"
+      }
+    ],
+    "promotes": [
+      "rawDesc",
+      " xrange",
+      "addContainerGap",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " Hospice"
+    ],
+    "demotes": [
+      " constitution",
+      " Constitution",
+      " constitutional",
+      "Constitution",
+      " CONSTITUTION"
+    ],
+    "generated_description": "Constitution (document) \u2014 activates on mentions of \u201cconstitution\u201d (Cap or lower); appears with Article/Section, amendments, referendums, state/national charters."
+  },
+  {
+    "id": "3_8351_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.39864692091941833,
+    "top_activations": [
+      {
+        "trigger": " includes",
+        "score": 19.75,
+        "context": "50-feet high may not seem the obvious candidates to join a list that includes the pyramids of Egypt, the Great Wall of China, and Yellowstone National Park"
+      },
+      {
+        "trigger": "Includes",
+        "score": 21.0,
+        "context": " range of habitats, animals and plants, accounting for a remarkably rich biodiversity.\u23ceIncludes the Da Lat range\u23ceThe term Annamite Mountains normally refers to the"
+      },
+      {
+        "trigger": " include",
+        "score": 20.5,
+        "context": "CFF) has established guidelines for maintaining health and monitoring symptoms of CF, to include annual clinic visits, routine follow-up clinic visits, and PRN or"
+      },
+      {
+        "trigger": " includes",
+        "score": 19.75,
+        "context": "lecystitis requires a hospital stay. Treatment for cholecystitis often eventually includes gallbladder removal.\u23ceSigns and symptoms of cholecystitis may include:"
+      },
+      {
+        "trigger": " includes",
+        "score": 19.75,
+        "context": " amassing what is believed to be the largest private collection of its kind, which includes more than 7,500 Union and Confederate objects. I have"
+      }
+    ],
+    "promotes": [
+      " including",
+      " included",
+      " Include",
+      " includes",
+      " include"
+    ],
+    "demotes": [
+      "igshid",
+      "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+      " \u8df3\u8f6c\u81f3",
+      "schild",
+      " TestBed"
+    ],
+    "generated_description": "include(s) \u2014 activates on the verb \"include\" and its variants; signals introduction of lists/examples, promotes forms like \"including\", \"included\", \"Include\"."
+  },
+  {
+    "id": "0_7365_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3516511023044586,
+    "top_activations": [
+      {
+        "trigger": " may",
+        "score": 31.25,
+        "context": " ever-increasing demand for the Colorado\u2019s water, combined with drought \u2014 which may become more frequent and severe in the future thanks to climate change from human activities"
+      },
+      {
+        "trigger": " may",
+        "score": 31.25,
+        "context": " below a certain limit. This so-called size effect, the sources of which may be quite diverse, can be a road block for the miniaturization of"
+      },
+      {
+        "trigger": " may",
+        "score": 31.25,
+        "context": " to solve a problem by...reducing it to the same problem. What? It may be counterintuitive, but many turn-based games (including chess) use"
+      },
+      {
+        "trigger": " may",
+        "score": 31.25,
+        "context": ", and with 20 cases and 4 fatalities in two weeks, there may be reason for concern that the virus has changed its tropism to favor humans"
+      },
+      {
+        "trigger": " may",
+        "score": 31.25,
+        "context": " clear, don't miss your chance.\" By March 20th it may be only half as bright as it was seven days before.\u23ceOn Tuesday"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " plea\u017fure",
+      " purpo\u017fe",
+      " Efq",
+      " Di\u017f"
+    ],
+    "demotes": [
+      " may",
+      "may",
+      " might",
+      " May",
+      " will"
+    ],
+    "generated_description": "may (possibility modal) \u2014 activates on the token \"may\" marking possibility/uncertainty, typically before verbs to signal speculative/potential statements."
+  },
+  {
+    "id": "0_7138_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.3779301047325134,
+    "top_activations": [
+      {
+        "trigger": " meaning",
+        "score": 15.62,
+        "context": "ism, the reader and not the writer became paramount: the author\u2019s intended meaning, because it could never be truly known, was less important than the reader"
+      },
+      {
+        "trigger": " meaning",
+        "score": 15.75,
+        "context": " Old Icelandic rifr, Old Swedish river, and Old Norse rifr\u2014all meaning something like \"abundant\". It does not seem to be related to ripe"
+      },
+      {
+        "trigger": " meaning",
+        "score": 15.88,
+        "context": " dances are vehicles for teaching newer generations about their history. These dances are filled with meaning, and an evening of entertainment can be arranged with a local dance group."
+      },
+      {
+        "trigger": " meaning",
+        "score": 15.88,
+        "context": " completely exhausted from all the Christmas services), and have uncovered the \u201creal\u201d true meaning behind this carol.\u23ceThe Twelve Days of Christmas\u23ce(the \u201cReal"
+      },
+      {
+        "trigger": " meaning",
+        "score": 15.88,
+        "context": " range of individual model annual means. Discontinuities between different periods have no physical meaning and are caused by the fact that the number of models that have run a"
+      }
+    ],
+    "promotes": [
+      " i\u017ft",
+      " it\u017felf",
+      " my\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015",
+      "NUMX"
+    ],
+    "demotes": [
+      ".",
+      ",",
+      " vs",
+      "!",
+      " -"
+    ],
+    "generated_description": "meaning \u2014 activates on the noun \"meaning\" across contexts (semantic sense, significance, etymology), often preceding explanatory or descriptive phrases"
+  },
+  {
+    "id": "3_6231_22",
+    "layer": 3,
+    "ctx_idx": 22,
+    "influence_score": 0.3998122215270996,
+    "top_activations": [
+      {
+        "trigger": "itu",
+        "score": 30.75,
+        "context": " gaining rights now another one must be made. To add the ERA to the Consitution not only does Congress need to pass it but 38 out of"
+      },
+      {
+        "trigger": " up",
+        "score": 25.25,
+        "context": " features like the original fertilized egg to having\u23cethose of the developed cells that make up human tissues like nerve\u23ceand skin. This process is known as differentiation."
+      },
+      {
+        "trigger": "posing",
+        "score": 25.75,
+        "context": " documents. Be advised -- these are simple examples that contain minimal commands.\u23ceComposing papers and reports is something many of us do daily. For example, if"
+      },
+      {
+        "trigger": " up",
+        "score": 26.25,
+        "context": " in its decay. All baryons are hadrons and the most common ones are the proton and neutron, which make up most of the mass of ordinary atoms."
+      },
+      {
+        "trigger": "se",
+        "score": 28.0,
+        "context": " by a stressed one (as in the words \"revrse\" and \"compse\").\u23ceHere is a table of meters and their names.\u23ceMeter is"
+      }
+    ],
+    "promotes": [
+      " composition",
+      " compositions",
+      " compose",
+      " Composition",
+      " composing"
+    ],
+    "demotes": [
+      " the",
+      "testcase",
+      "\u23ce\u23ce",
+      " eszk\u00f6z",
+      " E"
+    ],
+    "generated_description": "compose / composition \u2014 activates on \u201ccompose/ composing\u201d, \u201cmake up\u201d contexts and word stems (compos-, -pose); promotes tokens like composition, compose, composing."
+  },
+  {
+    "id": "17_1121_22",
+    "layer": 17,
+    "ctx_idx": 22,
+    "influence_score": 0.37572261691093445,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 24.25,
+        "context": " Where she once moved away from things, she now reaches for them. Her sense of touch is developing and she will stroke her face and feel bits of her body"
+      },
+      {
+        "trigger": " nature",
+        "score": 25.5,
+        "context": " the Internet immediately.\"\u23ceThe Riemann hypothesis is a highly complex theory about the nature of prime numbers - those numbers divisible only by 1 and themselves - that has"
+      },
+      {
+        "trigger": "anti",
+        "score": 22.5,
+        "context": " unrealistic and relied upon the presence of \u201cworm holes\u201d and an undiscovered \u201cantimatter\u201d.\u23ceProfessor Amos Ori of Techion Israel Institute of Technology has proposed"
+      },
+      {
+        "trigger": "'",
+        "score": 23.25,
+        "context": " to be. It's absurd for me to ask this, because you can't do it, because what I\u23cejust posted was correct to begin with"
+      },
+      {
+        "trigger": " idea",
+        "score": 24.0,
+        "context": " that the theory itself is too weird to master and forces us to abandon the very idea that there is a world out there that science could describe.\u23ce- Those"
+      }
+    ],
+    "promotes": [
+      "ElementException",
+      "quelize",
+      "lossians",
+      "featureID",
+      "SharedCtor"
+    ],
+    "demotes": [
+      " doccia",
+      " ganger",
+      " combien",
+      "ArgumentParser",
+      " miatt"
+    ],
+    "generated_description": "Abstract-concept token \u2014 activates on words that introduce or are abstract concepts (nature, idea, of, anti-, \u2019s), signaling upcoming philosophical/abstract noun phrases."
+  },
+  {
+    "id": "19_13163_22",
+    "layer": 19,
+    "ctx_idx": 22,
+    "influence_score": 0.33427825570106506,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 23.12,
+        "context": " significantly stopped the proliferation process. This confirmed Aloe's benefit in halting the progression of tumor formation after radiation by the sun.\u23ceThis study confirms other recent findings"
+      },
+      {
+        "trigger": " of",
+        "score": 24.12,
+        "context": " are common. The nebula has nothing to do with planet formation, indeed the formation of the nebula would effectively destroy any planets the parent star had, rather the name"
+      },
+      {
+        "trigger": " of",
+        "score": 23.38,
+        "context": " tuning process by shedding light on the immunological signaling pathways and the mechanism of biogenesis of miRNAs.\u23ceTing Chen and colleagues at Jiao Tong University School of Medicine,"
+      },
+      {
+        "trigger": " of",
+        "score": 25.62,
+        "context": " allow behaviors to be performed. Topics covered include genetics and behavior, learning, organization of behavior, communication, mating systems, paternal behavior and cooperation. The principle objective"
+      },
+      {
+        "trigger": " of",
+        "score": 24.88,
+        "context": " by 1905 a new Antiquities Law was enacted which regulated the distribution of finds and set the basis for the protection of cultural heritage on the island."
+      }
+    ],
+    "promotes": [
+      "RenderAtEndOf",
+      "haustible",
+      " these",
+      " this",
+      " the"
+    ],
+    "demotes": [
+      "AddTagHelper",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " lenker",
+      " deles",
+      "Hauptartikel"
+    ],
+    "generated_description": "say \"of\" (genitive) \u2014 activates on the preposition \"of\" before noun phrases; signals upcoming noun/possessive content, linking a head noun to its complement."
+  },
+  {
+    "id": "17_7290_22",
+    "layer": 17,
+    "ctx_idx": 22,
+    "influence_score": 0.35999003052711487,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 26.0,
+        "context": " printing begins with the preparation of ink. Unlike offset printing, letterpress requires colours to be mixed and printed individually. The mixing of coloured inks is so precise that"
+      },
+      {
+        "trigger": " of",
+        "score": 25.25,
+        "context": " of mature cows can be affected.\u23ceEtiology and Pathogenesis\u23ceSinking of the claw due to activation of matrix metalloproteinase, which is a feature"
+      },
+      {
+        "trigger": " of",
+        "score": 27.25,
+        "context": " in turn are driven by mental processes. \u201cThe critical issue is not the contraction of the muscle, it\u2019s the thought that has preceded it, that has"
+      },
+      {
+        "trigger": " of",
+        "score": 24.75,
+        "context": " help crime investigators by telling them the kind of perpetrator they are seeking. The development of psychological profiling began in the Federal Bureau of Investigation (FBI) Behavioral Science Unit"
+      },
+      {
+        "trigger": " of",
+        "score": 26.0,
+        "context": "<bos>Privacy laws rely on the unexamined assumption that the collection of data is not speech. That assumption is incorrect. Privacy scholars, recognizing an imminent clash between"
+      }
+    ],
+    "promotes": [
+      "live",
+      " those",
+      " live",
+      " the",
+      "endphp"
+    ],
+    "demotes": [
+      "Kaynak\u00e7a",
+      "rungsseite",
+      "Hochspringen",
+      "Filmographie",
+      " \u0627\u0644\u062d\u0631\u0647"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\"/\"kind of\"; signals an upcoming noun phrase or partitive construction; promotes following determiners/articles and noun continuations."
+  },
+  {
+    "id": "18_1051_22",
+    "layer": 18,
+    "ctx_idx": 22,
+    "influence_score": 0.3564227521419525,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 27.75,
+        "context": " those industries. Based on extensive archival and oral history research, we argue that diverse fishing practices occurred and that the sustained exploitation of dugongs, green turtles, and"
+      },
+      {
+        "trigger": " of",
+        "score": 25.25,
+        "context": " The text stream spoken contains a number of long words in order to show this interruption of words more clearly.\u23ceOption Explicit Private WithEvents V As SpeechLib."
+      },
+      {
+        "trigger": " of",
+        "score": 25.5,
+        "context": ", but still remains within the political borders of his or her country. The presence of a refugee crisis or of a large number of IDPs are usually indicators that"
+      },
+      {
+        "trigger": " of",
+        "score": 27.25,
+        "context": " knows how often it occurs. No valid statistics for rape and sexual assault exist due to under-reporting of the crime, as many victims do not report sex crimes"
+      },
+      {
+        "trigger": " of",
+        "score": 25.5,
+        "context": "<bos>The dissection of the ear will be essentially a \"do-it-yourself\" project. This guide will outline the basic schema of the internal and middle ear"
+      }
+    ],
+    "promotes": [
+      "Datuak",
+      "IUrlHelper",
+      " referenties",
+      " CreateTagHelper",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      " of",
+      "TypedDataSet",
+      " realizarse",
+      " P\u00fab",
+      "cassert"
+    ],
+    "generated_description": "say of \u2014 activates on the preposition \"of\", signaling an upcoming noun/phrase (possessives, partitives, measures, nouns like dugongs, number, country, ear)"
+  },
+  {
+    "id": "16_10530_22",
+    "layer": 16,
+    "ctx_idx": 22,
+    "influence_score": 0.3875335156917572,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 26.25,
+        "context": " optimizing) reality check, particularly as we begin to understand more about the extreme heterogeneity of our emerging resource plays. Sweet spots can be dramatically sweet, and barren stretches"
+      },
+      {
+        "trigger": " of",
+        "score": 27.25,
+        "context": " a direct tie-in between the security of a system, and the basic quality of the code:\u23ceIt has been shown that investments in software quality will reduce"
+      },
+      {
+        "trigger": " of",
+        "score": 27.0,
+        "context": " as easy as making currents flowing through what will be the heater!\u23ceThe nature of heat is in the vibration of atoms and electrons making the material. The more"
+      },
+      {
+        "trigger": " of",
+        "score": 26.0,
+        "context": " in the art of deceptive facial expressions. However, the researchers figured that the smoothness of the arm movements may have betrayed the player's confidence in their hand,"
+      },
+      {
+        "trigger": " of",
+        "score": 25.25,
+        "context": " it all depends on how high you set your sights for the quality and the relevance of that prediction.\u23ceSo, riffing on the Five Things You Should Know"
+      }
+    ],
+    "promotes": [
+      "uzen",
+      "busch",
+      "\u00e4d",
+      "\ub9b0",
+      "rifft"
+    ],
+    "demotes": [
+      " kasarigan",
+      "SequentialGroup",
+      "Tikang",
+      " LUMP",
+      "\u5e16\u6700\u540e\u7531"
+    ],
+    "generated_description": "say following noun \u2014 activates on the preposition \u201cof\u201d; signals a forthcoming noun/NP head (possessive/partitive relation), often right before the content word that completes the phrase."
+  },
+  {
+    "id": "19_15140_22",
+    "layer": 19,
+    "ctx_idx": 22,
+    "influence_score": 0.3436858654022217,
+    "top_activations": [
+      {
+        "trigger": " truth",
+        "score": 69.0,
+        "context": ". Fred\u2019s being a male sibling is necessary and sufficient for the truth of the statement that Fred is a brother.\u23ce- 1 Definitions\u23ce- "
+      },
+      {
+        "trigger": " is",
+        "score": 68.5,
+        "context": " (Rule 2). No premise is negative (Rule 3). One premise is universal (Rule 2). Therefore, the premises are either AI or IA"
+      },
+      {
+        "trigger": " a",
+        "score": 80.5,
+        "context": ". It turns out that for various syntactic properties (such as being a formula, being a sentence, etc.), these sets of numbers are recursive. And, it"
+      },
+      {
+        "trigger": " T",
+        "score": 74.5,
+        "context": " philosophy \u00b7 Philosophies \u00b7 Philosophers \u00b7 List of lists\u23ceIn mathematical logic, Tarski's Indefinability Theorem is a theorem due to Alfred T"
+      },
+      {
+        "trigger": " Peter",
+        "score": 71.0,
+        "context": "schrift,\u201d in From Frege to G\u00f6del (1967); and A. and M. Quinton (trans.), \u201cThe Thought,\u201d in Peter"
+      }
+    ],
+    "promotes": [
+      "///</",
+      "MigrationBuilder",
+      "\u0421\u043f\u043e\u0459\u0430\u0448\u045a\u0435",
+      "LookAnd",
+      "Personendaten"
+    ],
+    "demotes": [
+      "reactstrap",
+      "Equation",
+      " assemblies",
+      " assembly",
+      " maestra"
+    ],
+    "generated_description": "short/common tokens \u2014 fires on short standalone tokens: single letters, short function words, and short content tokens often split as their own token (a, is, T, Peter, truth)"
+  },
+  {
+    "id": "18_2678_22",
+    "layer": 18,
+    "ctx_idx": 22,
+    "influence_score": 0.3835478127002716,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 24.0,
+        "context": ".\u23ceAll three are developed by Hegel in his idealist fashion as mere laws of thought: the first, in the first part of his Logic, in the"
+      },
+      {
+        "trigger": " of",
+        "score": 24.5,
+        "context": " be manifested in will and action; and they thought a single personality must involve a single will and a single category of action. The Person of Christ, being divino"
+      },
+      {
+        "trigger": " to",
+        "score": 24.0,
+        "context": "data. There are innate categories of the mind. They mold, condition, and give form to the senses; a hermeneutical grid for the mind not the"
+      },
+      {
+        "trigger": " cognitive",
+        "score": 24.0,
+        "context": "uous element, and reveal a cognitive faculty of a higher order than is required for mere sense-cognitions. In harmony, therefore, with Catholic usage, we"
+      },
+      {
+        "trigger": " to",
+        "score": 23.5,
+        "context": " being the object of perception or thought; belonging to the object of thought rather than to the thinking subject.\u23ce- of or pertaining to something that can be known"
+      }
+    ],
+    "promotes": [
+      " la\u017ft",
+      " \u017fta",
+      " lea\u017ft",
+      " hou\u017fe",
+      " plea\u017fure"
+    ],
+    "demotes": [
+      "RectangleBorder",
+      "GEBURTSDATUM",
+      " onOptions",
+      " estekak",
+      " disambiguazione"
+    ],
+    "generated_description": "Cognitive/epistemic relation \u2014 fires on tokens and phrases linking things to mind/knowledge (of/to + noun, \"cognitive\", \"object of thought\", \"categories of the mind\")."
+  },
+  {
+    "id": "20_2536_22",
+    "layer": 20,
+    "ctx_idx": 22,
+    "influence_score": 0.3944549262523651,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 61.5,
+        "context": " is the Java basin, located south of the island of Java. Its depth is of 7450 m. It is int...\u23ce|4||"
+      },
+      {
+        "trigger": "Of",
+        "score": 69.0,
+        "context": " implausibly alleges, it might still be possible to save the world.\u23ceOf course, it will not be easy. Or cheap. Individual liberty, self"
+      },
+      {
+        "trigger": " of",
+        "score": 63.5,
+        "context": "--two and a half million jobs since Barack Obama's been president. And of that two and a half million jobs, almost 45 percent of those"
+      },
+      {
+        "trigger": " of",
+        "score": 60.0,
+        "context": "<bos>Writing has always been a passion of mine\u2014from scribbling pretend news stories when I was a child to penning blog posts and bylines as a communications"
+      },
+      {
+        "trigger": " of",
+        "score": 63.0,
+        "context": " them to purchase medication produced and marketed by the Brinkley Pharmaceutical Association. Kansas pharmacists of the time reported taking in more money from the sale of Brinkley's"
+      }
+    ],
+    "promotes": [
+      " Course",
+      "COURSE",
+      " COURSE",
+      "course",
+      " course"
+    ],
+    "demotes": [
+      " laik\u0101",
+      "\u0e04\u0e38\u0e13",
+      "newtheorem",
+      "\u00fdchod",
+      " dalamnya"
+    ],
+    "generated_description": "of (preposition) \u2014 activates on the token \"of\" in possessive/partitive contexts; fires before noun phrases or phrase heads (e.g., of the, of that, Of course)"
+  },
+  {
+    "id": "20_4752_22",
+    "layer": 20,
+    "ctx_idx": 22,
+    "influence_score": 0.3764681816101074,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 49.5,
+        "context": ". All rights reserved.\u23ceA set of words that have one or more grammatical or syntactic characteristics in common, such as the class of transitive verbs in English."
+      },
+      {
+        "trigger": " of",
+        "score": 50.5,
+        "context": " What alternatives might there be?\u23ceInterjections are dealt with in the semantic area of linguistics. They are an important aspect that is worth considering in regards to semantics"
+      },
+      {
+        "trigger": " a",
+        "score": 53.0,
+        "context": "\u23ce- n. The contraction of a vowel or diphthong at the end of a word with a vowel or diphthong at the start of the following word."
+      },
+      {
+        "trigger": " frequency",
+        "score": 56.5,
+        "context": "his own personalized list. The first five will be class words, coming from a high frequency list, curriculum, or usage needs. The other five will come from"
+      },
+      {
+        "trigger": " of",
+        "score": 60.5,
+        "context": " and challenging game that will spark writing and spelling activities as well as show how words are made of chunks. The game consists of 100 plastic tiles which"
+      }
+    ],
+    "promotes": [
+      "Words",
+      " WORDS",
+      " Words",
+      " word",
+      " words"
+    ],
+    "demotes": [
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " \"'\");",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "maxcdn",
+      "Portail"
+    ],
+    "generated_description": "Words \u2014 activates on text about words/word classes; fires on small function words (of, a, or) around lexical/definition contexts; promotes the token \"words\"."
+  },
+  {
+    "id": "20_7734_22",
+    "layer": 20,
+    "ctx_idx": 22,
+    "influence_score": 0.35732850432395935,
+    "top_activations": [
+      {
+        "trigger": " about",
+        "score": 37.75,
+        "context": " Duke University, rightly points out the difference between science and engineering. \u201cScience is about understanding the origins, nature and behavior of the universe and all it contains,\u201d"
+      },
+      {
+        "trigger": " and",
+        "score": 39.75,
+        "context": ". Behind these two main approaches, there are important theoretical differences and philosophical assumptions about the nature of knowledge, truth and reality, how this should be recorded, what"
+      },
+      {
+        "trigger": " scientific",
+        "score": 34.75,
+        "context": " in the form If A is true, then B will also be true. The scientific method is built on testing assertions which are logical consequences of scientific theories. This"
+      },
+      {
+        "trigger": " reliable",
+        "score": 29.0,
+        "context": " article, I demonstrate fundamental weaknesses in the ability of critical understandings of race to produce reliable knowledge of how social actors use social comparisons as a way to align self with"
+      },
+      {
+        "trigger": " is",
+        "score": 36.75,
+        "context": " that element.\u23ceA broad definition of culture is that it is the human-made part of the environment. It can be split into material and subjective culture."
+      }
+    ],
+    "promotes": [
+      "id",
+      "data",
+      " saying",
+      "ob",
+      "iba"
+    ],
+    "demotes": [
+      "Tikang",
+      "verwijspagina",
+      "addCriterion",
+      "MigrationBuilder",
+      "ContentAsync"
+    ],
+    "generated_description": "Definition marker \u2014 activates on copula/prep tokens ('is', 'about', 'and') in academic/expository clauses; signals definitional or assertive contexts (claims, method descriptions, reliability statements)."
+  },
+  {
+    "id": "20_10871_22",
+    "layer": 20,
+    "ctx_idx": 22,
+    "influence_score": 0.34241923689842224,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 29.62,
+        "context": ", Zoroaster and Jesus. His philosophy was that Evil was not a perversion of Good, but rather an alternative form of matter to Good. The two matters"
+      },
+      {
+        "trigger": " of",
+        "score": 43.5,
+        "context": " as\u23cethe existence of God,\u23cethe meaning of life,\u23cethe nature of truth and reality,\u23cethe organization of government and society,\u23cethe significance"
+      },
+      {
+        "trigger": " of",
+        "score": 31.12,
+        "context": " unique than we once believed.\u23ceSuch a revelation reaches beyond science to our concept of who we are. Our sense of identity may soon be changed in the same"
+      },
+      {
+        "trigger": " of",
+        "score": 30.12,
+        "context": " 2001).\u23ce- Stephen Buckle, Natural Law and the Theory of Property:\u23ceGrotius to Hume (Oxford: Claredon Press,"
+      },
+      {
+        "trigger": " of",
+        "score": 28.88,
+        "context": "\u23ceWhat kind of seeing is it, though, that reveals not only the surfaces of things, but also their within?\u23ceThis question forms the axis around which"
+      }
+    ],
+    "promotes": [
+      "\u093e\u0930\u094d",
+      "\u590f",
+      "amo",
+      " \u043d\u0430\u0447\u0438",
+      "Parameterized"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "DockStyle",
+      " actionMode",
+      " <>\",",
+      "createServer"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\", marking genitive/partitive/nominal links; common before abstract nouns, properties, concepts, or noun phrases."
+  },
+  {
+    "id": "21_3842_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.3626317083835602,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 57.5,
+        "context": "\u23ceThere is also an older notion of an algebraic structure/algebra as a model for a one-sorted theory where the only relation symbols in the language involved are"
+      },
+      {
+        "trigger": " the",
+        "score": 58.0,
+        "context": " , , and such that .\u201d The technical phrase here is that we are speaking the first order language of integers.\u23cePuzzle: Within this limited vocabulary, express the"
+      },
+      {
+        "trigger": " as",
+        "score": 53.0,
+        "context": " the fundamental theorems and lemmas in the proof theory of logic programming. Advanced topics such as recursive complexity and negation as failure and its semantics are covered, and streamlined setups"
+      },
+      {
+        "trigger": " is",
+        "score": 47.5,
+        "context": "able in the language of fields, and because the theory of algebraically closed fields ismodel complete.\u23ceDefinitions, notation and some basic algebraic results. In the"
+      },
+      {
+        "trigger": " a",
+        "score": 58.0,
+        "context": " as sets of numbers. It turns out that for various syntactic properties (such as being a formula, being a sentence, etc.), these sets of numbers are recursive"
+      }
+    ],
+    "promotes": [
+      " dis",
+      " g",
+      " est",
+      "  ",
+      "astify"
+    ],
+    "demotes": [
+      "CloseOperation",
+      " Efq",
+      "principalColumn",
+      " my\u017felf",
+      " ainfi"
+    ],
+    "generated_description": "common function words \u2014 activates on short high-frequency tokens (the, a, is, as); signals articles/prepositions/copula in formal/academic text, not content words."
+  },
+  {
+    "id": "21_2587_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.371012806892395,
+    "top_activations": [
+      {
+        "trigger": " ignoring",
+        "score": 27.75,
+        "context": " consequence. Under the \"contemporaneous\" method of investigation, the researcher is ignoring conclusions and seeking out the heart and soul of the matter that consequently led to"
+      },
+      {
+        "trigger": " of",
+        "score": 26.75,
+        "context": "\u23ce\u201cCorrespondences\u201d is a poem about the unity of nature, human perceptions of interdependence in sense perceptions, and the multiple worlds those analogies reveal. One becomes"
+      },
+      {
+        "trigger": " over",
+        "score": 30.25,
+        "context": " order for the ages. Never before in human history had any government denied itself jurisdiction over that on which it entirely depends, the opinion of its people.\u23ceThat"
+      },
+      {
+        "trigger": " about",
+        "score": 36.25,
+        "context": " in the idealist context, was not just some capacity of mind to prove propositions about experience true or false; it was, for Hegel, a supernatural force out"
+      },
+      {
+        "trigger": " on",
+        "score": 30.0,
+        "context": " and meaningless coincidences; philosophy, they argue, has achieved its successes by focusing on deducing universal truths from basic principles. X-phi, on the other"
+      }
+    ],
+    "promotes": [
+      " assumptions",
+      " society",
+      "ividual",
+      " humanity",
+      "tiqueta"
+    ],
+    "demotes": [
+      " BufferedReader",
+      "AsUp",
+      "ariest",
+      "audiovisuel",
+      " Raising"
+    ],
+    "generated_description": "say topic preposition \u2014 activates on prepositions/gerund markers (of, about, in, on, ignoring, over) that introduce a following object/topic; often pushes topical nouns (assumptions, society)."
+  },
+  {
+    "id": "21_6292_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.33711445331573486,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 26.5,
+        "context": " and the triple constraint considerations of time, cost and scope, the design and development of a product can be easier to handle and organize.\u23ceIn the planning stages"
+      },
+      {
+        "trigger": " of",
+        "score": 26.5,
+        "context": " these countries has made telemedicine possible and this is a factor for the continued growth of the market in these regions. The cost associated with telemedicine is often lower"
+      },
+      {
+        "trigger": " of",
+        "score": 26.5,
+        "context": "50 before the expedition.\u23ceThe unprecedented richness of marine life and vulnerable status of the atoll's coral beds make Saba Bank a prime candidate for designation"
+      },
+      {
+        "trigger": " of",
+        "score": 31.5,
+        "context": " types of bark have evolved the way they have. One possibility is that the appearance of bark is not adaptive,\u23ceand while all trees must have bark of one"
+      },
+      {
+        "trigger": " of",
+        "score": 29.0,
+        "context": "<bos>Date: Summer 2013\u23ceI know that the magnitude of the cross product of 2 vectors is the magnitude of vector A times the magnitude"
+      }
+    ],
+    "promotes": [
+      " autorytatywna",
+      "yntaxException",
+      " chi\u030dt",
+      " the",
+      "webElementXpaths"
+    ],
+    "demotes": [
+      " of",
+      "We",
+      "They",
+      "of",
+      " suivants"
+    ],
+    "generated_description": "say noun after \"of\" \u2014 activates on the preposition \"of\", signals the upcoming noun/noun-phrase (partitive/possessive constructions like \"of time\", \"of the market\", \"of marine life\")."
+  },
+  {
+    "id": "21_11996_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.34615087509155273,
+    "top_activations": [
+      {
+        "trigger": ",\"",
+        "score": 76.0,
+        "context": " de prima philosophia, or Meditations on First Philosophy (1641), \"I think therefore I am,\" philosopher and mathematician Rene Descartes also devoted much"
+      },
+      {
+        "trigger": " William",
+        "score": 52.5,
+        "context": " studies regarding contact with \"dead\" people were performed by two outstanding scientists, Sir William Crookes  and Sir Oliver Lodge , over one hundred years ago. Similar"
+      },
+      {
+        "trigger": " psychologist",
+        "score": 77.0,
+        "context": "<bos>What's the Latest Development?\u23ceIn his new book on consciousness, The Self Illusion, University of Bristol psychologist Bruce Hood says the idea that each individual"
+      },
+      {
+        "trigger": ",",
+        "score": 78.5,
+        "context": " most introductory texts, we have chosen to scrutinize carefully the history of the thinking of the canonical participants in these debates \u2014 principally Descartes, Newton, Leibniz, Mach"
+      },
+      {
+        "trigger": " of",
+        "score": 77.5,
+        "context": " how well they reduce to the biological level. Other versions entail the non-existence of conscious mental states such as pain and visual perceptions.\u23ceEliminativism stands"
+      }
+    ],
+    "promotes": [
+      " Soul",
+      " conscious",
+      " consciousness",
+      " soul",
+      " mind"
+    ],
+    "demotes": [
+      " AssemblyCulture",
+      " nahilalakip",
+      " <=\",",
+      "]--;",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "generated_description": "Person/profession mention \u2014 activates on names/titles (philosopher, psychologist, proper names) introducing thinkers/scientists; often pushes semantic tokens about mind/consciousness."
+  },
+  {
+    "id": "19_14564_22",
+    "layer": 19,
+    "ctx_idx": 22,
+    "influence_score": 0.31442904472351074,
+    "top_activations": [
+      {
+        "trigger": "-",
+        "score": 30.75,
+        "context": " Laramie Project By Moises Kaufman and the Tectonic Theater Project\u23cePost-Modern Focus: Bildingsroman, Kunstelrroman, Meta-Fiction by Maus"
+      },
+      {
+        "trigger": " priori",
+        "score": 38.25,
+        "context": " is a rationalist (the mind shapes the object with a priori categories). A priori, meaning prior to experience. Not from experience but from definition. A posteriori"
+      },
+      {
+        "trigger": " of",
+        "score": 52.25,
+        "context": "system\", of absolute idealism to account in an integrated and developmental way for the relation of mind and nature, the subject and object of knowledge, psychology, the state"
+      },
+      {
+        "trigger": " be",
+        "score": 36.5,
+        "context": " finite forms of being and thus cannot be reached directly by finite human minds, although indirect rational proofs may be possible. The opposite position concludes that God cannot be perceived"
+      },
+      {
+        "trigger": " of",
+        "score": 44.25,
+        "context": "). The objects present in the experience of the knower. The object rests beyond the experience of the knower. What they are?\u23ce- Def. The"
+      }
+    ],
+    "promotes": [
+      " rappresent",
+      " representations",
+      " represents",
+      " represent",
+      " representation"
+    ],
+    "demotes": [
+      "uxxxx",
+      "AddTagHelper",
+      "ThroughAttribute",
+      " beginnetje",
+      " BoxFit"
+    ],
+    "generated_description": "representation \u2014 activates on discussion of mind/world relation (a priori, of, being, experience); promotes tokens like represent/representation/represents"
+  },
+  {
+    "id": "21_13315_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.3685801923274994,
+    "top_activations": [
+      {
+        "trigger": " their",
+        "score": 40.0,
+        "context": ". Recent experimental studies have investigated how people recognise a particular event as being caused by their own action or by that of another person. These studies suggest that people match"
+      },
+      {
+        "trigger": " social",
+        "score": 39.0,
+        "context": " weaknesses in the ability of critical understandings of race to produce reliable knowledge of how social actors use social comparisons as a way to align self with ingroup. I trace"
+      },
+      {
+        "trigger": " have",
+        "score": 36.0,
+        "context": " For example, can people be morally responsible for their actions if they don\u2019t have free will? Many philosophers have assumed that all sane people would of course say"
+      },
+      {
+        "trigger": " and",
+        "score": 33.0,
+        "context": " focuses on how we make decisions as human beings. By decisions, I mean voluntary and conscious decisions, not reflexes. We always talk about comparing between apples and oranges"
+      },
+      {
+        "trigger": " having",
+        "score": 40.5,
+        "context": " of psychiatry at RWTH Aachen University.\u23ceIn social cognitive neuroscience, the ability to attribute intentions and desires to others is referred to as having a Theory of Mind"
+      }
+    ],
+    "promotes": [
+      "writeFieldEnd",
+      " Actor",
+      " agent",
+      " actors",
+      " actor"
+    ],
+    "demotes": [
+      " useParams",
+      "gonic",
+      " Antilles",
+      "outState",
+      " funkcji"
+    ],
+    "generated_description": "Agent/actor \u2014 activates on possessives/verbs introducing agency (their, have, having, social); promotes tokens like Actor/agent/actors."
+  },
+  {
+    "id": "21_12785_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.38881489634513855,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 41.0,
+        "context": " all natures, intelligible, intellectual and material, are derived by successive emanations from the infinite fountain of deity. These emanations they called oeons. These doctrines"
+      },
+      {
+        "trigger": " the",
+        "score": 45.0,
+        "context": " is about conclusions, it is a kind of knowledge caused by something else which is the knowledge of principles. But nothing is caused in God; therefore science is not"
+      },
+      {
+        "trigger": " is",
+        "score": 45.0,
+        "context": " potentiality that is not actuality, imperfections as well as perfection. Only God is simultaneously all that He can be, infinitely real and infinitely perfect: 'I am"
+      },
+      {
+        "trigger": ")",
+        "score": 42.0,
+        "context": ") matter, as in potentiality, (b) form or essence, as in actuality, (c) that which is compounded of both matter and form."
+      },
+      {
+        "trigger": " a",
+        "score": 46.0,
+        "context": " matter, not that which is attributed to it. Hence, the soul must be a substance in the sense of the form of a natural body having life potentially within"
+      }
+    ],
+    "promotes": [
+      "kannya",
+      " angep",
+      "MetaObject",
+      " \u25c4",
+      " AttributeSet"
+    ],
+    "demotes": [
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580",
+      "WithIOException",
+      "Verweise",
+      " \u064a\u062a\u064a\u0645\u0647",
+      "__':\r"
+    ],
+    "generated_description": "say philosophical term \u2014 activates on articles/auxiliaries/punctuation before dense metaphysical nouns or concepts (God, knowledge, actuality, matter, form)"
+  },
+  {
+    "id": "21_9046_22",
+    "layer": 21,
+    "ctx_idx": 22,
+    "influence_score": 0.3536207377910614,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 58.5,
+        "context": " covered before) was concerned with words, phrases and sentences, the unit of analysis in pragmatics (and in the units we will cover later) is the utterance"
+      },
+      {
+        "trigger": " and",
+        "score": 48.5,
+        "context": " chapters assume no prior knowledge of linguistics and outline\u23cean approach to language that focuses on meaning and communication ranging\u23cefrom cultural issues to syntax and intonation.\u23ceThe"
+      },
+      {
+        "trigger": " in",
+        "score": 61.0,
+        "context": " offers a new theory of speech acts which is philosophically sophisticated and builds on work in cognitive science, formal semantics, and linguistic typology. This highly readable, brilliant"
+      },
+      {
+        "trigger": "2",
+        "score": 44.5,
+        "context": "\u23ceIn the World: Murmurs of Mayan\u23ceOctober 5, 2011MIT undergraduate travels to Mexico in hopes of documenting and preserving ancient"
+      },
+      {
+        "trigger": " of",
+        "score": 44.0,
+        "context": " language, to how they are used in everyday talk, as well as psychological aspects of language.\u23ceOur department offers a wide range of classes involving theories of language"
+      }
+    ],
+    "promotes": [
+      "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+      " EconPapers",
+      "adaptiveStyles",
+      "AnimationsModule",
+      "\u0012"
+    ],
+    "demotes": [
+      " numbers",
+      " licha",
+      " \u0638\u0647\u0631",
+      " Ferner",
+      "NameInMap"
+    ],
+    "generated_description": "Function-word token \u2014 activates on short common tokens: articles (the), conjunctions (and), prepositions (in, of), numeral subword (2 in 2011)."
+  },
+  {
+    "id": "22_727_22",
+    "layer": 22,
+    "ctx_idx": 22,
+    "influence_score": 0.31913939118385315,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 37.75,
+        "context": ".\u23ce- The state or quality of being aware of something\u23ce- The awareness of one type of idea naturally fosters an awareness of another idea\u23ce- (state"
+      },
+      {
+        "trigger": " of",
+        "score": 29.5,
+        "context": " is impossible to tell where one word ends and the next begins. The seamlessness of speech is... apparent in \"oronyms,\" strings of sound that can be"
+      },
+      {
+        "trigger": " separates",
+        "score": 35.75,
+        "context": " one loses one\u2019s ordinary state of mind, when one no longer separates oneself from one\u2019s surroundings and objects from one another, one may be able to"
+      },
+      {
+        "trigger": "experience",
+        "score": 36.25,
+        "context": "\u23ce\"Based on this approach, we have determined that animals do re-experience the day's events during sleep in a way that includes visual imagery (what"
+      },
+      {
+        "trigger": " of",
+        "score": 40.0,
+        "context": " change. If children paint naturally, we can actually document the evolution of their perceptions of the world. Their visual expressions of the sensations of the human body, for"
+      }
+    ],
+    "promotes": [
+      "pr\u00fcche",
+      "\ud69f",
+      " reality",
+      "BeginContext",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " eslint",
+      " illustrazione",
+      "UserScript",
+      "ModelAdmin"
+    ],
+    "generated_description": "of (preposition) \u2014 activates on the token \"of\"; signals genitive/partitive links, the upcoming noun or noun-phrase (content following \"of\")."
+  },
+  {
+    "id": "22_4623_22",
+    "layer": 22,
+    "ctx_idx": 22,
+    "influence_score": 0.34115099906921387,
+    "top_activations": [
+      {
+        "trigger": " an",
+        "score": 32.5,
+        "context": " on new revelation. The topics have been carefully selected and are treated briefly. If an elaborate discussion is desired, the student should consult a more exhaustive dictionary.\u23ce"
+      },
+      {
+        "trigger": ",",
+        "score": 33.0,
+        "context": ".\u23ceHow does Semantic Search provide relevant search results?\u23ceSemantic Search system reckons different factors such as context of the search, synonyms, intention, generalized and"
+      },
+      {
+        "trigger": " one",
+        "score": 41.0,
+        "context": ".S. National Library of Medicine\u23ceLearning in which the subject must respond with one word or syllable when presented with another word or syllable.\u23ceFind a translation"
+      },
+      {
+        "trigger": " individual",
+        "score": 34.5,
+        "context": ".\u23ceThe following types of skin, found in the Dictionary Archive, also have individual entries.\u23ceSkins taken from mammals or birds:\u23ceASS SKIN, BAR"
+      },
+      {
+        "trigger": " up",
+        "score": 34.5,
+        "context": " material: specialized dictionaries, encyclopedias or handbooks. These allow you to check names, dates and places, find additional information, and look up definitions of"
+      }
+    ],
+    "promotes": [
+      "Definition",
+      " Definition",
+      "definition",
+      " definitions",
+      " definition"
+    ],
+    "demotes": [
+      " snippetHide",
+      "migrationBuilder",
+      "Datuak",
+      " spic",
+      "ni\u0161tvo"
+    ],
+    "generated_description": "say definition \u2014 activates on structural tokens (articles, numbers, adjectives, prepositions) immediately before nouns like \"definition(s)\"/\"entry\"/\"word\"; promotes \"definition\" tokens."
+  },
+  {
+    "id": "22_12914_22",
+    "layer": 22,
+    "ctx_idx": 22,
+    "influence_score": 0.3617539405822754,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 38.5,
+        "context": "and composition courses. Students learn to read a variety of prose texts, analyze language and visual media, write\u23cein several forms on different levels about a broad range"
+      },
+      {
+        "trigger": " intended",
+        "score": 38.75,
+        "context": " range of issues in linguistics. Clark argues that we use grammar strategically to signal our intended meanings: our choices as speaker are conditioned by what choices the hearer will"
+      },
+      {
+        "trigger": " the",
+        "score": 46.5,
+        "context": " signals that contradict or interfere with the effective presentation or reception of messages. Often they express true feelings more accurately than the spoken or written language.||Herta A"
+      },
+      {
+        "trigger": " convey",
+        "score": 39.0,
+        "context": "<bos>Definition: The use of pitch or tone in a sentence to convey meaning or emotion. Although the term when strictly used applies only to the pitch of speech,"
+      },
+      {
+        "trigger": " to",
+        "score": 47.0,
+        "context": " which language is used to perform different functions. Language is action, in the words of J.L. Austin, and much of the interaction between human beings is"
+      }
+    ],
+    "promotes": [
+      "\u10d8\u10da",
+      " encodes",
+      " code",
+      " meaning",
+      " codes"
+    ],
+    "demotes": [
+      "GEBURTSDATUM",
+      "DockStyle",
+      "NameInMap",
+      " estekak",
+      "Manbalar"
+    ],
+    "generated_description": "Semantic meaning \u2014 activates on phrases about conveying or intending meaning/communication; pushes tokens like \u201cmeaning\u201d, \u201cencodes\u201d, \u201ccode\u201d, \u201ccodes\u201d."
+  },
+  {
+    "id": "22_15627_22",
+    "layer": 22,
+    "ctx_idx": 22,
+    "influence_score": 0.3881768584251404,
+    "top_activations": [
+      {
+        "trigger": " that",
+        "score": 61.5,
+        "context": ") is a materialist position in the philosophy of mind. Its primary claim is that people's common-sense understanding of the mind (or folk psychology)"
+      },
+      {
+        "trigger": " and",
+        "score": 46.25,
+        "context": " of Science Be?\u23ceRationality, Relativism, and Cognition\u23ceRepresentation and Judgment\u23ceCan the Philosophy of Science Be Naturalized?\u23ceMust the Natural"
+      },
+      {
+        "trigger": " which",
+        "score": 55.5,
+        "context": "Epiphenomenalism is a position in the philosophy of mind according to which mental states or events are caused by physical states or events in the brain but do not themselves"
+      },
+      {
+        "trigger": " by",
+        "score": 65.0,
+        "context": " a bit like the descriptivist approach attacked by Kripke (see Wikipedia's article about WikiPedia:Saul_Kripke), but here"
+      },
+      {
+        "trigger": " moral",
+        "score": 51.75,
+        "context": " from other branches of moral philosophy? How should we understand the nature of moral properties, ethical statements, moral judgments and moral reasons? What is moral goodness? Are"
+      }
+    ],
+    "promotes": [
+      " Econ\u00f3mica",
+      " Normdatei",
+      "\u0d4d\u0d1f",
+      "urally",
+      "\u0440\u0430\u0437\u0434\u043e"
+    ],
+    "demotes": [
+      "NavController",
+      " Lightboxes",
+      "WindowConstants",
+      " mergeFrom",
+      " Waray"
+    ],
+    "generated_description": "say clause introducer \u2014 activates on complementizers/conjunctions/relatives (that, which, and, by); signals start of explanatory/defining subordinate clause or clause boundary."
+  },
+  {
+    "id": "17_10472_22",
+    "layer": 17,
+    "ctx_idx": 22,
+    "influence_score": 0.39321526885032654,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 30.88,
+        "context": ". There were slaves hiring themselves out, and making their own money. The nature of rice farming was very different from tobacco which was different than cotton. Though whipping"
+      },
+      {
+        "trigger": " of",
+        "score": 34.0,
+        "context": " a gambler is unknown and could be that the tale arose just because of the shape of his monument. Described as \"one of the most important figures in the civil"
+      },
+      {
+        "trigger": " of",
+        "score": 33.5,
+        "context": ".. government are not enough to prop up the financial markets? What if the size of the financial crisis is so big that all the interest rate cuts, all the"
+      },
+      {
+        "trigger": " of",
+        "score": 32.5,
+        "context": " lots of sand.\u23ceThese sands are as characteristic and influential in defining the nature of the north and eastern coasts of New Brunswick as are the tides in the Bay"
+      },
+      {
+        "trigger": " of",
+        "score": 30.62,
+        "context": " indicator used is the body mass index (BMI). It takes into account the shape of the individual, even if it can be exceptionally biased in the case of athletes"
+      }
+    ],
+    "promotes": [
+      "nodoc",
+      "addContainerGap",
+      "requireNonNull",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      " Paglinawan"
+    ],
+    "demotes": [
+      "WebElementEntity",
+      " consultato",
+      "gi\u00e8ne",
+      "HasAnnotation",
+      " bevor"
+    ],
+    "generated_description": "say of \u2014 activates on the preposition \"of\", just before noun phrases; signals upcoming noun/head (e.g., \"of rice farming\", \"of the financial crisis\", \"of sand\")."
+  },
+  {
+    "id": "15_11142_22",
+    "layer": 15,
+    "ctx_idx": 22,
+    "influence_score": 0.3855651319026947,
+    "top_activations": [
+      {
+        "trigger": " because",
+        "score": 31.25,
+        "context": " prohibited. Like other forms of indirect killing, it is usually prohibited because it is usually unfair to the individual whose death is caused, albeit as an unintended side effect"
+      },
+      {
+        "trigger": " view",
+        "score": 31.5,
+        "context": " pluralism, which, like moral pluralism, is often called value pluralism, is a view associated with political liberalism. Political pluralism usually starts with the observation that there are"
+      },
+      {
+        "trigger": " a",
+        "score": 30.25,
+        "context": " \"happiness\" to be both intellectual and sensual pleasure. He argues that we have a sense of dignity that makes us prefer intellectual pleasures to sensual ones. He adds"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 32.75,
+        "context": " proven is that knowledge is not true justified belief. This is due to Gettier\u2019s article. In that short article he gave examples that cumulated in a"
+      },
+      {
+        "trigger": " of",
+        "score": 34.75,
+        "context": ", ethical intuitionism is the thesis that our intuitive awareness of value, or intuitive knowledge of evaluative facts, forms the foundation of our ethical knowledge.\u23ceThe"
+      }
+    ],
+    "promotes": [
+      " eyel",
+      "]));\r",
+      "WithIOException",
+      "OGND",
+      "basicConfig"
+    ],
+    "demotes": [
+      " Political",
+      " ristor",
+      "oft",
+      " softly",
+      " Arche"
+    ],
+    "generated_description": "Grammatical connector \u2014 activates on small function words (because, of, a, \u2019) and markers; signals relational/connector words that introduce clauses or links to content."
+  },
+  {
+    "id": "23_2935_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.36608389019966125,
+    "top_activations": [
+      {
+        "trigger": " view",
+        "score": 28.75,
+        "context": ".\u23ce- Aesthetic Awareness: Each lesson ends with a suggestion for encouraging students to view their world like an artist, and to look for the concepts they learned about"
+      },
+      {
+        "trigger": " highlight",
+        "score": 33.5,
+        "context": " up being very distracting.\u23ceThe Purpose of Quotes:\u23ce(1) Quotes highlight main points. Writing a summary of a philosophical text can be very difficult."
+      },
+      {
+        "trigger": " at",
+        "score": 38.25,
+        "context": " speakers to express themselves with their own individual style. It provides new ways of looking at the world, by describing something through the use of unusual comparisons for effect,"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 30.75,
+        "context": "inks, but many thoughts dwell below the surface of\u23ceexpression, yet these thoughts determine how we experience\u23ceourselves. Writing can be a pleasurable, creative way"
+      },
+      {
+        "trigger": " comprehend",
+        "score": 37.5,
+        "context": " may be added to other majors.\u23ceThe Department of History seeks to help students comprehend the present state of the world through a study of some of the essential currents"
+      }
+    ],
+    "promotes": [
+      " \u00eei",
+      " problems",
+      "who",
+      " invisible",
+      " who"
+    ],
+    "demotes": [
+      " AssemblyCulture",
+      "PreferredItem",
+      "AddTagHelper",
+      "CppMethod",
+      " nakalista"
+    ],
+    "generated_description": "Perception/understanding verbs \u2014 activates on verbs like \"view\", \"highlight\", \"comprehend\", \"at\" used to signal seeing, grasping, or framing ideas."
+  },
+  {
+    "id": "23_3237_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.3938351273536682,
+    "top_activations": [
+      {
+        "trigger": " into",
+        "score": 22.0,
+        "context": " dyes, or preservatives\u23cepregnant or trying to get pregnant\u23ceThis medicine is infused into a vein. It is usually given by a health care provider in a hospital"
+      },
+      {
+        "trigger": " holds",
+        "score": 22.25,
+        "context": " lining of the uterus is called endometrial cancer.\u23ceThe uterus is the organ that holds the baby when a woman is pregnant. The endometrium is the inside lining"
+      },
+      {
+        "trigger": " after",
+        "score": 22.5,
+        "context": "?\u23ceTo start NAM, parents work with an orthodontist. Within the first couple of weeks after birth, babies are fitted with a custom-made molding plate"
+      },
+      {
+        "trigger": " donate",
+        "score": 28.0,
+        "context": "A lot of people come up to me and say, \u2018I wish I could donate a kidney, but I\u2019m too old\u2019,\u201d Dr. Dorry"
+      },
+      {
+        "trigger": " if",
+        "score": 23.0,
+        "context": "It starts with a pain in the abdomen, sometimes so bad it \u201cfeels as if you\u2018ve dropped 30 lit cigarette butts\u201d into it. Add"
+      }
+    ],
+    "promotes": [
+      "avir",
+      " avanti",
+      " consultato",
+      "\u5e16\u6700\u540e\u7531",
+      "<bos>"
+    ],
+    "demotes": [
+      " }}}{",
+      "']}",
+      " }}\"",
+      "')}}\"",
+      ")]:"
+    ],
+    "generated_description": "medical event connector \u2014 activates on prepositions/verbs that link actions, timing, and roles in health/birth contexts (into, holds, after, donate, if)"
+  },
+  {
+    "id": "23_1601_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.32541894912719727,
+    "top_activations": [
+      {
+        "trigger": " only",
+        "score": 43.75,
+        "context": " must note that intelligent beings are distinguished from non-intelligent beings in that the latter possess only their own form; whereas the intelligent being is naturally adapted to have also"
+      },
+      {
+        "trigger": " other",
+        "score": 48.0,
+        "context": ".e., different sets of norms, standards, or principles for forming beliefs and other doxastic states. Communities try to guide or regulate their members\u2019 credence"
+      },
+      {
+        "trigger": " of",
+        "score": 50.25,
+        "context": " against this doctrine, rationalism holds reason to be a faculty that can lay hold of truths beyond the reach of sense perception, both in certainty and in generality."
+      },
+      {
+        "trigger": "-",
+        "score": 56.25,
+        "context": " conscious and acquainted with a color or hardness of a table before us, our sense-data. Since acquaintance with things is logically independent from any knowledge of truths,"
+      },
+      {
+        "trigger": " of",
+        "score": 51.25,
+        "context": ".\u23ceDefinition and Scope\u23ceThe subject of ontology is the study of the categories of things that exist or may exist in some domain. The product of such a"
+      }
+    ],
+    "promotes": [
+      " DbSet",
+      "InjectAttribute",
+      "\u030dt",
+      "CodedInputStream",
+      "\u4e0b\u8f7d\u9644\u4ef6"
+    ],
+    "demotes": [
+      " synth\u00e8se",
+      "SequentialGroup",
+      " r\u00e9daction",
+      " Programm",
+      "ocha"
+    ],
+    "generated_description": "Common function words \u2014 activates on short high-frequency grammatical tokens (of, only, other, prepositions, hyphen-like punctuation)."
+  },
+  {
+    "id": "23_5188_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.35457852482795715,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ],
+    "generated_description": "comma \u2014 activates on commas separating names/dates/list items; promotes continuation tokens (and, or, \" , the) indicating list or clause continuation"
+  },
+  {
+    "id": "23_8748_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.3907148241996765,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 21.25,
+        "context": "<bos>As the problem is complex so the mindset of a common Kashmiri\u23ceKashmir is a contested state split between India and Pakistan. Before 194"
+      },
+      {
+        "trigger": " of",
+        "score": 21.75,
+        "context": " be described as SOA, which leads to a global misunderstanding of the true spirit of SOA. We often get bogged down talking about the technology, so this"
+      },
+      {
+        "trigger": " of",
+        "score": 21.75,
+        "context": " to Hull's High School, now sited\u23ceon that same historic point of land jutting out into Boston Harbor.\u23ceThe funds came from the Mass"
+      },
+      {
+        "trigger": "of",
+        "score": 22.25,
+        "context": " to be on the Moon?\u23ceWhen a meteorite strikes the Moon, the\u23ceof the impact melts some of the\u23cea fraction of which might cool into tiny"
+      },
+      {
+        "trigger": " of",
+        "score": 22.25,
+        "context": " orbit, announcing to the world a new age of space travel with each faint beep of its radio signals.\u23ceAmerican reactions were diverse. The Washington Post reported that"
+      }
+    ],
+    "promotes": [
+      " C\u00e6sar",
+      " my",
+      " their",
+      " the",
+      " that"
+    ],
+    "demotes": [
+      " to",
+      "TargetException",
+      " -",
+      " \u2013",
+      " \u0648\u0635\u0644\u0629"
+    ],
+    "generated_description": "OF \u2192 noun-phrase \u2014 activates on the preposition \"of\" introducing a following noun/possessive; nudges determiners/pronouns for that noun (my, their, the, that)"
+  },
+  {
+    "id": "24_539_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.31187334656715393,
+    "top_activations": [
+      {
+        "trigger": " literal",
+        "score": 57.0,
+        "context": " and 'Understood' Meanings\u23ceThe meaning of certain ayat is derived from the literal wording (mantdq) while that of others is derived from what is understood"
+      },
+      {
+        "trigger": "\u201d",
+        "score": 65.5,
+        "context": "m still completely exhausted from all the Christmas services), and have uncovered the \u201creal\u201d true meaning behind this carol.\u23ceThe Twelve Days of Christmas\u23ce(the"
+      },
+      {
+        "trigger": "\u201d",
+        "score": 65.5,
+        "context": "\u2019m still completely exhausted from all the Christmas services), and have uncovered the \u201creal\u201d true meaning behind this carol.\u23ceThe Twelve Days of Christmas\u23ce("
+      },
+      {
+        "trigger": " philosophical",
+        "score": 64.5,
+        "context": "17). As an adj., attested in Eng. 1566 in the philosophical sense, 1642 in the lit. sense."
+      },
+      {
+        "trigger": "s",
+        "score": 52.5,
+        "context": " smallest unit of sound in the\u23ceEnglish language that makes a difference in a word\u2019s meaning. \u201cPhonemic\u23ceawareness\u201d is the ability to identify,"
+      }
+    ],
+    "promotes": [
+      " getSystem",
+      "verifyException",
+      "rxjs",
+      "providedIn",
+      "ietf"
+    ],
+    "demotes": [
+      " meaning",
+      "Meaning",
+      " Meaning",
+      "meaning",
+      " meanings"
+    ],
+    "generated_description": "meaning/definition cue \u2014 activates on words that introduce or discuss senses/definitions (literal, \u201creal\u201d/true meaning, philosophical sense, definitional entries like \u201csmallest\u201d in dictionary contexts)"
+  },
+  {
+    "id": "24_2279_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.39134466648101807,
+    "top_activations": [
+      {
+        "trigger": " If",
+        "score": 43.0,
+        "context": " it seems to scientists as if the world evolved over millions of years.Question: If so, why then does the Torah establish the description of creation in terms of"
+      },
+      {
+        "trigger": " between",
+        "score": 37.5,
+        "context": " of the universe. This knowledge of the secret forces of nature of the true relation between the world and man frees them from the ordinary limitations of human life, and"
+      },
+      {
+        "trigger": " of",
+        "score": 46.0,
+        "context": " scene, Greek society changes. Philosophers before him had certainly questioned into the nature of things, or in Aristotelian language, into the causes of things; but"
+      },
+      {
+        "trigger": " of",
+        "score": 36.0,
+        "context": "ifinitesimally tiny (and ubiquitous) Planck scale. In a 1996 paper, Penrose and I further suggested that the precursors of conscious"
+      },
+      {
+        "trigger": " of",
+        "score": 46.5,
+        "context": " by clocks, calendars, birthday cards, sympathy cards\u2026is a seriously limited metaphor of life, the universe, et al. Did you know you have the power"
+      }
+    ],
+    "promotes": [
+      " Land",
+      "ERO",
+      "EROS",
+      " reason",
+      "GrantedAuthority"
+    ],
+    "demotes": [
+      "rungsseite",
+      " intptr",
+      "TypedDataSet",
+      " <<<<<<<<<<<<<<",
+      "\u279f"
+    ],
+    "generated_description": "Connective preposition \u2014 activates on function words (of, between, if), signaling upcoming noun phrases or subordinate clauses."
+  },
+  {
+    "id": "17_3400_22",
+    "layer": 17,
+    "ctx_idx": 22,
+    "influence_score": 0.382182240486145,
+    "top_activations": [
+      {
+        "trigger": " objective",
+        "score": 43.5,
+        "context": " the scientific revolution, we have tended to divide the world into a public sphere of objective, measurable reality and a private sphere of ephemeral, subjective perceptions. In this"
+      },
+      {
+        "trigger": " about",
+        "score": 39.0,
+        "context": "<bos>Learning is the means whereby we acquire new working knowledge about the world. Memory is the means whereby we retain that knowledge over time. Our abilities to learn and"
+      },
+      {
+        "trigger": " simply",
+        "score": 35.0,
+        "context": " existence is a special case in terms of semantics and meaning. By definition, words simply can\u2019t describe it, so it is different than everything else that we"
+      },
+      {
+        "trigger": " the",
+        "score": 48.0,
+        "context": " result, how we act and treat one another. Modern neuroscience shows that human perceive not the thing itself but a copy, an illusion created by the human brain,"
+      },
+      {
+        "trigger": " things",
+        "score": 36.5,
+        "context": " reasons for disagreeing that correct our own errors of knowledge and mistakes in judgment about the truth of things.\u23ceSecond, sometimes the truth about things exists as half"
+      }
+    ],
+    "promotes": [
+      " Wirklichkeit",
+      "reality",
+      " Reality",
+      "Reality",
+      " reality"
+    ],
+    "demotes": [
+      "\ue315",
+      " propOrder",
+      "oredCriteria",
+      "AsUp",
+      "WriteBarrier"
+    ],
+    "generated_description": "Objective reality \u2014 activates on tokens introducing aboutness/objectivity (objective, about, things, simply, the); consistently promotes output tokens like \u201creality\u201d / \u201cReality\u201d / \u201cWirklichkeit.\u201d"
+  },
+  {
+    "id": "24_10211_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.3484642207622528,
+    "top_activations": [
+      {
+        "trigger": " causal",
+        "score": 70.0,
+        "context": ". Natural objects are, philosophically speaking, individuals; they are involved as units in dynamic, causal processes. I shall draw a distinction between natural objects and the"
+      },
+      {
+        "trigger": " of",
+        "score": 71.0,
+        "context": " by another is said to be in potency to that other: realization of potency is called actuality. The universe is conceived of as a series of things arranged in an"
+      },
+      {
+        "trigger": " a",
+        "score": 77.0,
+        "context": " in another sense of the word: moreover, Being does not possess its goodness as a quality but as a constituent.\u23ceBut the other genera too, we said"
+      },
+      {
+        "trigger": " into",
+        "score": 61.75,
+        "context": " him had certainly questioned into the nature of things, or in Aristotelian language, into the causes of things; but these philosophers had not yet begun to question knowledge"
+      },
+      {
+        "trigger": " in",
+        "score": 61.75,
+        "context": ", chance), a term used by C. S. Peirce for the theories which make chance an objective factor in the process of the Universe. Opponents of this"
+      }
+    ],
+    "promotes": [
+      "army",
+      "\u272d\u272d",
+      "intellectual",
+      " sensibles",
+      " sensible"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      "UnusedPrivate",
+      "findpost",
+      "kh\u00e1u",
+      " Wikimedijinoj"
+    ],
+    "generated_description": "say relational preposition \u2014 activates on tokens like \"of\"/\"in\"/\"into\"/\"a\" that introduce abstract/philosophical nouns; pushes continuation toward philosophical adjectives/terms (intellectual, sensible)."
+  },
+  {
+    "id": "24_2840_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.38422471284866333,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 58.25,
+        "context": " the concept of PF seems bound up with other, interdefinable notions: design, damage, purpose, normativity, and the like. PF is applies to"
+      },
+      {
+        "trigger": " be",
+        "score": 57.25,
+        "context": " core a foundationalism about moral beliefs: it is the view that some moral truths can be known non-inferentially (i.e., known without one needing"
+      },
+      {
+        "trigger": " of",
+        "score": 61.25,
+        "context": "), an excellent statement of the central views of logical positivism, including the use of verifiability as a criterion of meaning, the rejection of metaphysics and theology"
+      },
+      {
+        "trigger": ",",
+        "score": 65.0,
+        "context": " in philosophy of science. Laws are usually believed to stand in a tight conceptual relation to many important key concepts such as causation, explanation, confirmation, determinism,"
+      },
+      {
+        "trigger": " that",
+        "score": 60.75,
+        "context": " materialist position in the philosophy of mind. Its primary claim is that people's common-sense understanding of the mind (or folk psychology) is false and"
+      }
+    ],
+    "promotes": [
+      "\u05d9\u05e6\u05d5\u05d1",
+      " \u05de\u05d9\u05dd",
+      "ynchron",
+      " \u0645\u062d\u0641\u0648\u0638\u0629",
+      "'])){\r"
+    ],
+    "demotes": [
+      "ImageContext",
+      "UnknownFieldSet",
+      "avajillas",
+      " Pauly",
+      "RegistryLite"
+    ],
+    "generated_description": "lead-in to content \u2014 activates on small function words/punctuation (of, that, :, ,) immediately before noun phrases or clauses introducing key concepts or definitions"
+  },
+  {
+    "id": "23_15898_22",
+    "layer": 23,
+    "ctx_idx": 22,
+    "influence_score": 0.3473221957683563,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 69.5,
+        "context": "vism. One kind of epistemic relativism is descriptive pluralism. This is the simple, non-normative thesis that many different communities, cultures, social networks"
+      },
+      {
+        "trigger": " of",
+        "score": 64.5,
+        "context": ".e., different sets of norms, standards, or principles for forming beliefs and other doxastic states. Communities try to guide or regulate their members\u2019 credence"
+      },
+      {
+        "trigger": ".",
+        "score": 46.0,
+        "context": " we can and should work to achieve a high degree of coherence within our belief structures. What that means is that the propositions we believe should be logically consistent, they"
+      },
+      {
+        "trigger": " according",
+        "score": 53.0,
+        "context": " or galaxies are theoretical constructs, as much so as mathematical objects (or even, according to some, more so). It is true that any reference to an object"
+      },
+      {
+        "trigger": " and",
+        "score": 51.75,
+        "context": " of speech acts which is philosophically sophisticated and builds on work in cognitive science, formal semantics, and linguistic typology. This highly readable, brilliant essay is a major"
+      }
+    ],
+    "promotes": [
+      " rowspan",
+      " \u0645\u0634\u064a\u0646",
+      "InvalidProtocol",
+      "__\":",
+      "__':"
+    ],
+    "demotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "Configurer",
+      " StringTokenizer",
+      "SourceChecksum",
+      "qrstuvwxyz"
+    ],
+    "generated_description": "grammatical connective \u2014 activates on short function words and punctuation (and, of, is, ., according); signals clause/linking tokens that join phrases or mark sentence structure."
+  },
+  {
+    "id": "24_10480_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.35264259576797485,
+    "top_activations": [
+      {
+        "trigger": " decode",
+        "score": 45.25,
+        "context": " What role does attention play in minimising distraction?\u23ce- What are the neural mechanisms of emotion and motivation?\u23ce- How does the brain decode emotion expressions?"
+      },
+      {
+        "trigger": " of",
+        "score": 35.75,
+        "context": " The child may avoid direct eye contact and exhibit odd behaviors such as focusing on parts of objects (e.g. the spinning wheel of a toy car). There"
+      },
+      {
+        "trigger": " comprehend",
+        "score": 45.25,
+        "context": " they need to improve their concentration abilities, multitasking, space orientation, the ability to comprehend, and enhancing memory capacity and so on.\u23ceBarcelona\u2019s midfielder,"
+      },
+      {
+        "trigger": " process",
+        "score": 40.0,
+        "context": " have discovered that this diversity is critical to overall brain function and essential in how neurons process complex stimuli and code information. The researchers published their findings, the first to"
+      },
+      {
+        "trigger": " processing",
+        "score": 47.75,
+        "context": " In everyday life, your mind is constantly processing a barrage of sensations, visual impressions, emotions, and thoughts. When you meditate, you narrow your focus, limit"
+      }
+    ],
+    "promotes": [
+      "LookAnd",
+      ",",
+      " si",
+      " an",
+      " sp"
+    ],
+    "demotes": [
+      " enfans",
+      " my\u017felf",
+      " it\u017felf",
+      " purpo\u017fe",
+      " plea\u017fure"
+    ],
+    "generated_description": "cognitive-process verbs \u2014 activates on verbs meaning \u201cunderstand/process\u201d (decode, comprehend, process/processing), tied to brain/mind, attention, perception contexts."
+  },
+  {
+    "id": "24_10662_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.38286688923835754,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ],
+    "generated_description": "Content word (technical nouns/adverbs) \u2014 activates on mid-sentence nouns/adverbs: systems, power, forehead, correctly; marks generic informational/technical content in expository prose."
+  },
+  {
+    "id": "24_13277_22",
+    "layer": 24,
+    "ctx_idx": 22,
+    "influence_score": 0.2915334403514862,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say next noun/entity \u2014 activates on prepositions/articles/commas/verbs that introduce a concrete noun phrase or proper name (places, institutions, objects)."
+  },
+  {
+    "id": "25_13416_22",
+    "layer": 25,
+    "ctx_idx": 22,
+    "influence_score": 0.3962719738483429,
+    "top_activations": [
+      {
+        "trigger": " used",
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "trigger": "fia",
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "trigger": "Mhz",
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "trigger": " known",
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "trigger": " to",
+        "score": 81.0,
+        "context": ".\u23ceSince this early period the dance had been devided to be: court and people\u2019s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " sup\u00e9rieures",
+      " sup\u00e9rieurs",
+      " religieuses",
+      " d\u00e9mocr"
+    ],
+    "demotes": [
+      "__);",
+      " \u2003\u2003",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "say French feminine-plural adjectives \u2014 promotes fem.\u2011pl. adjective/noun forms (e.g. \"sup\u00e9rieures\", \"religieuses\", \"sauvages\", \"d\u00e9mocr\u2026\"); suppresses punctuation/bracket tokens."
+  },
+  {
+    "id": "25_15903_22",
+    "layer": 25,
+    "ctx_idx": 22,
+    "influence_score": 0.33570802211761475,
+    "top_activations": [
+      {
+        "trigger": "Download",
+        "score": 19.0,
+        "context": "6-161. Boston: Birkhauser, 1993.)\u23ceDownload an Adobe Acrobat (.pdf) version of the image for printing."
+      },
+      {
+        "trigger": " being",
+        "score": 19.62,
+        "context": " up to 25,000 larger mammals. Nearly half of those being zebra and wildebeest while other species found are buffalo, gazelle, el"
+      },
+      {
+        "trigger": " in",
+        "score": 20.25,
+        "context": "<bos>The first Inaugurations weren't in D.C.?\u23ceCredit: MPI/Getty Images\u23ceGeorge Washington was sworn in for the first time in New"
+      },
+      {
+        "trigger": " for",
+        "score": 20.5,
+        "context": " get people to eat more veggies,\u201d said Harry Balzer, the chief industry analyst for the NPD Group, a market research company. \u2026\u201cBefore we want health"
+      },
+      {
+        "trigger": " downloading",
+        "score": 19.25,
+        "context": " the conditions for a sculpture to exist outdoors.\u23ceDownload InfoIf you experience problems downloading a file, check if you have the proper application to view it first."
+      }
+    ],
+    "promotes": [
+      " oameni",
+      "\u0301s",
+      "\u306a\u3057",
+      "\u00e9se",
+      " yhte"
+    ],
+    "demotes": [
+      " the",
+      "the",
+      "AddTagHelper",
+      "DockStyle",
+      " tbe"
+    ],
+    "generated_description": "say noun phrase \u2014 activates on prepositions/gerunds/verbs like \"in\",\"for\",\"being\",\"Download/downloading\"; signals an upcoming noun/object phrase or filename/NP continuation."
+  },
+  {
+    "id": "25_9975_22",
+    "layer": 25,
+    "ctx_idx": 22,
+    "influence_score": 0.3669273257255554,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Clause connector \u2014 activates on subordinating words/phrase starters (while, following, the, gerund verbs like removing/implement) that mark clause or phrase transitions."
+  },
+  {
+    "id": "25_6094_22",
+    "layer": 25,
+    "ctx_idx": 22,
+    "influence_score": 0.37339478731155396,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 25.62,
+        "context": " a variety of engineering applications. In so doing, they have dramatically increased the efficiency of systems through energy savings, regulation of the dynamics, increased robustness and disturbance tolerance"
+      },
+      {
+        "trigger": " of",
+        "score": 25.12,
+        "context": ", in his April 26 letter, raises an important point relating to flooding of Onondaga Creek in spite of the existence of the flood control dam on"
+      },
+      {
+        "trigger": " of",
+        "score": 28.62,
+        "context": "Qur'an, 48:26). One of the common characteristics of such ideologies is their emotional force, an underlying cause of radicalism that is"
+      },
+      {
+        "trigger": " of",
+        "score": 26.62,
+        "context": " than men in the total population of the capital city of Serbia. The sex imbalance of age groups is determined by gender differences in the number of born boys and girls"
+      },
+      {
+        "trigger": " of",
+        "score": 26.62,
+        "context": " all its works, is the most authentic building of its creator.\u23ceThe reception of antique motif and form is an important feature of the sculptures from the late "
+      }
+    ],
+    "promotes": [
+      " nuages",
+      " blitt",
+      " grecque",
+      " religione",
+      " kvinder"
+    ],
+    "demotes": [
+      " to",
+      " for",
+      " with",
+      " from",
+      "']\")."
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\" in genitive/prepositional contexts; signals upcoming noun phrase or noun-phrase continuation."
+  },
+  {
+    "id": "25_11529_22",
+    "layer": 25,
+    "ctx_idx": 22,
+    "influence_score": 0.37020742893218994,
+    "top_activations": [
+      {
+        "trigger": " with",
+        "score": 85.5,
+        "context": " epistemological view implies that there are moral beliefs with propositional contents; so it implies cognitivism.\u23ce- 1 Definitional issues\u23ce- 2"
+      },
+      {
+        "trigger": " incorporate",
+        "score": 71.0,
+        "context": " in the biological and physical sciences. But PF is not enough for warrant. A satisfactory account of warrant must also incorporate considerations of cognitive environment, degrees of firmness with"
+      },
+      {
+        "trigger": " by",
+        "score": 75.5,
+        "context": " that psychological concepts of behaviour and experience should be judged by how well they reduce to the biological level. Other versions entail the non-existence of conscious mental states such"
+      },
+      {
+        "trigger": " Strong",
+        "score": 61.0,
+        "context": "- 5. Understanding and Epistemic Value\u23ce- 6. Other Accounts of the Value of Knowledge\u23ce- 7. Weak and Strong Conceptions"
+      },
+      {
+        "trigger": " on",
+        "score": 85.0,
+        "context": " the laws of the special sciences differ is one of the crucial questions motivating the debate on ceteris paribus laws. Another major, controversial question concerns the determination"
+      }
+    ],
+    "promotes": [
+      "gl\u0119d",
+      " froh",
+      "(\"$.",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " EconPapers"
+    ],
+    "demotes": [
+      "EndGlobal",
+      " \u0645\u0634\u064a\u0646",
+      " Ababa",
+      " Minna",
+      "ShowDialog"
+    ],
+    "generated_description": "Relation introducers \u2014 activates on prepositions/linking verbs that introduce complements or clause relations (with, by, on, incorporate); marks connective, relation-establishing tokens."
+  }
+]

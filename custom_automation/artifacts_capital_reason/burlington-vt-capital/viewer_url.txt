@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/burlington-vt-capital.json
+# Descriptions: 47, Groups: 11, Pinned: 21

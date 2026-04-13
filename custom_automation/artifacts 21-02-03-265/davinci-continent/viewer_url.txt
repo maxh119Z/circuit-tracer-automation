@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/davinci-continent.json
+# Descriptions: 53, Groups: 19, Pinned: 32

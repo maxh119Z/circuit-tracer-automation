@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/anthropic-savannah-capital-fact.json
+# Descriptions: 46, Groups: 15, Pinned: 42

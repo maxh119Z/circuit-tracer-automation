@@ -1,0 +1,2594 @@
+[
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3939506411552429,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ],
+    "generated_description": "Byline \"By\" \u2014 activates on leading \"By\" tokens introducing author names; signals article bylines at start of pieces."
+  },
+  {
+    "id": "0_7118_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.36275631189346313,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " Helman, Forbes Staff\u23ceI'm based in Houston, Texas. Energy capital of the world.\u23ceThis article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " control.\u23ceTwo days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "\u23ce"
+    ],
+    "generated_description": "capital \u2014 activates on the token \"capital\", especially in \"capital of\"/\"capital city\" contexts; signals upcoming place-name (city) mentions."
+  },
+  {
+    "id": "0_8885_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3691020607948303,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": "th\u201318th century). In addition to being an important regional and provincial capital (of E\u1e63fah\u0101n province), the city is one of the most"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " rai\u017f",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".\u201d",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital \u2014 activates on the token \"capital\"; covers city-capital, financial capital, and \"capital letters\" usages"
+  },
+  {
+    "id": "0_8939_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.37108054757118225,
+    "top_activations": [
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn\u2019t realistic.\u23ceWampServer allows you to easily set up a server on your"
+      },
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.\u23ce"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"\u23ceThe"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.\u23ceDevelop an action plan for your goals."
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.75,
+        "context": " stress disorder.\u23ceBy bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " purpo\u017fe",
+      " Majefty",
+      " Monfieur",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Port\u00e1ly",
+      " ("
+    ],
+    "generated_description": "realistic \u2014 activates on the adjective \"realistic\" (describing looks, timelines, scenes); signals mention of plausibility/realism in varied contexts (examples: look, timeline, thumps of battle)"
+  },
+  {
+    "id": "0_11124_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3811950087547302,
+    "top_activations": [
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "trigger": " fill",
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": ".\u23ceBesides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "\u05e0\u05d2\u05dc\u05d9\u05ea",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "Fill / \u201cfill in\u201d \u2014 activates on the verb \u201cfill\u201d (gap\u2011filling, flood\u2011fill, fill a void/jobs/pixels); signals instances of filling or completing missing parts."
+  },
+  {
+    "id": "0_13096_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.36049288511276245,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 23.12,
+        "context": " been used for congestion pricing: during business hours in downtown London, for instance, the license plates of cars are photographed, and the drivers are sent a bill."
+      },
+      {
+        "trigger": " the",
+        "score": 24.0,
+        "context": "gov/WWW/K-12/airplane/vel.html and use the simulator to determine the effect of airspeed on lift. When you double the"
+      },
+      {
+        "trigger": " the",
+        "score": 23.62,
+        "context": "driven graphics in Photoshop automatically, using variables and a simple text file.\u23ceAdjust the color of a complexly color-casted image, using a 10"
+      },
+      {
+        "trigger": " the",
+        "score": 22.62,
+        "context": "<bos>DM \u2013 Mosquitoes contribute to the problem of childhood obesity in some parts of the United States, a small study suggests. Researchers from Brandeis University in Massachusetts"
+      },
+      {
+        "trigger": " the",
+        "score": 22.88,
+        "context": " displayed (a new Worksheet or an existing Worksheet). Click OK.\u23ce- Select the fields you wish to be included in your Pivot by dragging them to the Row"
+      }
+    ],
+    "promotes": [
+      " Di\u017f",
+      " Re\u017f",
+      " An\u017f",
+      " Monfieur",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " it",
+      " this"
+    ],
+    "generated_description": "the (definite article) \u2014 activates on the determiner \"the\" before nouns/noun phrases, appears across many contexts (signals definite reference)"
+  },
+  {
+    "id": "0_3820_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3300771415233612,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on instances of \"the\" before nouns/phrases; associated with suppressing/article-demoting output tendency"
+  },
+  {
+    "id": "0_1961_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3660063147544861,
+    "top_activations": [
+      {
+        "trigger": " games",
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "trigger": " games",
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.\u23ceDave McCool, president and CEO of Muzzy"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " in my mind\u2019s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " \u00e0",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "+#+#",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "Diwedd"
+    ],
+    "generated_description": "Location/event noun \u2014 activates on content nouns naming places or events (e.g., \u201ccapital\u201d, \u201cgames\u201d); marks main-place or main-event word in a phrase."
+  },
+  {
+    "id": "0_16200_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3009974956512451,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ],
+    "generated_description": "Colon \":\" \u2014 activates on colon punctuation introducing labels/sections/lists; fires on the \":\" before tags, headings, or list labels, signaling an upcoming short label."
+  },
+  {
+    "id": "0_12613_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39885959029197693,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": "<bos>Reykjav\u00edk is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "trigger": " capital",
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.\u23ceSouth Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " hou\u017fe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital (word) \u2014 activates on the token \"capital\"; fires for city-capital and financial-capital uses, across place and money contexts."
+  },
+  {
+    "id": "0_2848_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.33479952812194824,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of \u2014 detects the preposition \"of\"; fires on possessive/association noun phrases (e.g., \"X of Y\"), signals upcoming noun/phrase after \"of\"."
+  },
+  {
+    "id": "0_4323_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39062532782554626,
+    "top_activations": [
+      {
+        "trigger": " achieve",
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " in that culture.\u23ceExactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " again\u017ft",
+      " becau\u017fe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve \u2014 represents the verb \"achieve\", especially the infinitival phrase \"to achieve\" (activates on instances of achieving goals/outcomes)."
+  },
+  {
+    "id": "0_997_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3996618390083313,
+    "top_activations": [
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " words. He uses dialogue to move the story forward with the barest minimum of facts and descriptions. The story is told in third person with the actual narration limited"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " with the King produced children. The question is complicated by the difficulty of separating the facts of Rosamund's life from the profusion of legends surrounding it."
+      },
+      {
+        "trigger": " facts",
+        "score": 25.75,
+        "context": " The 2010 Census provides a statistical snapshot of the City that reflects facts on how Riverside is growing, diverse and constantly changing.\u23ceCensus information is"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.62,
+        "context": " all and we are happy to provide this forum for the community to share opinions and facts. We ask that commenters keep it clean, keep it truthful, stay"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " come.\u23ceTeachers and Museum Docents use specimens in our collections to bring the facts and concepts of science to life.\u23ceAnyway, you get the idea."
+      }
+    ],
+    "promotes": [
+      "<eos>",
+      "\u043c",
+      "e",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      "WriteTagHelper",
+      "bootstrapcdn",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "SpringRunner"
+    ],
+    "generated_description": "facts (plural) \u2014 activates on the token \"facts\"; appears in informational/community contexts referencing factual information, lists, or descriptions."
+  },
+  {
+    "id": "0_13145_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3956011235713959,
+    "top_activations": [
+      {
+        "trigger": " Voice",
+        "score": 13.81,
+        "context": " performing with a local or regional theater group.\u23cePerforming Musically: Finding Your Voice--or Instrument: Singers and musicians also make up a large portion of performing"
+      },
+      {
+        "trigger": " Pain",
+        "score": 15.06,
+        "context": " lessen it to tolerable levels, regardless of the cause, according to the American Chronic Pain Association.\u23ceThese are common types of chronic pain:\u23cePain and inflammation"
+      },
+      {
+        "trigger": " Knowledge",
+        "score": 13.19,
+        "context": " by expert participants in a debate hosted by AlertNet Climate and the Climate and Development Knowledge Network this week, exploring how cutting the world's annual $60"
+      },
+      {
+        "trigger": " Facts",
+        "score": 12.75,
+        "context": " the foot will be controlled in the first several weeks after surgery.\u23ceGeneral Recovery Facts\u23ceThe goal of surgery is to regain strength and function in as short a"
+      },
+      {
+        "trigger": " Life",
+        "score": 12.94,
+        "context": "21 23262 7\u23ce- Nietzsche: A Critical Life by Ronald Hayman\u23ceWeidenfeld, 424 pp,"
+      }
+    ],
+    "promotes": [
+      "BarStyle",
+      "BufferException",
+      "esModule",
+      " Webcam",
+      "tableFuture"
+    ],
+    "demotes": [
+      " Tiempo",
+      " Peace",
+      "Tiempo",
+      " Hope",
+      " Time"
+    ],
+    "generated_description": "Abstract noun headings \u2014 activates on single-word abstract nouns/titles (Voice, Pain, Knowledge, Facts, Life); often header/section words or conceptual nouns."
+  },
+  {
+    "id": "0_5660_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.342067688703537,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " snippetHide"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "1",
+      "\u23ce",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital \u2014 represents economic capital: money, investment, factor-of-production contexts (capital market, raising capital, debt, production inputs)"
+  },
+  {
+    "id": "0_12958_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3729773461818695,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 12.0,
+        "context": "Posted: Mon Jul 14, 2008 10:12 am Post subject: New nanotechnique producing small things in large"
+      },
+      {
+        "trigger": ":",
+        "score": 14.12,
+        "context": "<bos>Re: teaching relational basics to people, questions\u23ceDate: Sat, 28 Nov 2009 20:33:3"
+      },
+      {
+        "trigger": ":",
+        "score": 12.38,
+        "context": "<bos>Submitted to: North American Cranberry Research and Extension Workers Annual Meeting\u23cePublication Type: Abstract Only\u23cePublication Acceptance Date: October 20, 20"
+      },
+      {
+        "trigger": ":",
+        "score": 12.5,
+        "context": ": 09/26/1999 at 18:14:46 From: Andrew Subject: Algebra II with Trigonometry On"
+      },
+      {
+        "trigger": ":",
+        "score": 13.12,
+        "context": "<bos>103: Introduction to Logic\u23ceThe Language of Symbolic Logic\u23ceAbstract: Conventions for\u23cetranslating ordinary language statements into symbolic notation are\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      " ",
+      " in"
+    ],
+    "generated_description": "Colon (:) \u2014 activates on colons used as headers/labels (e.g., \"Posted:\", \"Re:\", \"Submitted to:\", timestamps, subject lines); signals metadata/field separators."
+  },
+  {
+    "id": "0_5626_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.331657737493515,
+    "top_activations": [
+      {
+        "trigger": " Croatia",
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia\u23ceCroatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.38,
+        "context": " diplomatic mission\u23ceAccording to the article 3 of the 1961 Vienna Convention, normal functions consist in:\u23ce- representing the sending State in the"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "Central/Western Europe city \u2014 fires on mentions of European places (Vienna, Copenhagen, Croatia); correlates with promoting regional tokens like west, Central, Ber-"
+  },
+  {
+    "id": "0_11375_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.31707876920700073,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "copula \"is\" \u2014 activates on the token \"is\" (linking verb) in sentences, typically before predicates; often associated with demoting generation of \"is\" in output."
+  },
+  {
+    "id": "0_13004_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.3776143789291382,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 13.12,
+        "context": "<bos>Swat (princely state)\u23ce||This article needs additional citations for verification. (April 2012)|\u23ce|State of Swat|"
+      },
+      {
+        "trigger": "2",
+        "score": 11.62,
+        "context": " Hern\u00e1n Cort\u00e9s was away from the capital (March 2, 1527 to August 22, 1527).\u23ceArrival"
+      },
+      {
+        "trigger": " I",
+        "score": 10.5,
+        "context": ", however; shortly after 5am on 28 September Pope John Paul I was found dead in the papal lodgings. The Vatican claimed initially that his body"
+      },
+      {
+        "trigger": "2",
+        "score": 10.62,
+        "context": " and Realities about Testing\u23ceOn Jan. 8, 2002, President Bush signed into law the No Child Left Behind Act of 2"
+      },
+      {
+        "trigger": " is",
+        "score": 11.25,
+        "context": "The root of wisdom\u2014to whom has it been revealed?\u23ce8* There is but one, wise and truly awesome,\u23ceseated upon his throne\u2014the"
+      }
+    ],
+    "promotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      ".",
+      " (",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "Short/one-char tokens \u2014 activates on very short tokens: parentheses, single digits, roman numerals, brief substrings (e.g. 'is' inside \u201cwisdom\u201d), punctuation-adjacent pieces."
+  },
+  {
+    "id": "0_9026_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.37851637601852417,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Entity-final token \u2014 activates on final token of names/things (Jewell, Nile, Nucleus, alfalfa, boardwalks); signals entity boundary, promotes punctuation/newlines/parentheses."
+  },
+  {
+    "id": "1_1000_4",
+    "layer": 1,
+    "ctx_idx": 4,
+    "influence_score": 0.3472225069999695,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " the Indian laws.\u23ce6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "trigger": " capital",
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "\u00e1lni",
+      "\u305d\u3046\u306a",
+      " \u0648\u0639\u0644\u0649",
+      "\ub9ac\ub97c"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital (economic) \u2014 activates on the token \"capital\" in finance/economics contexts (assets, interest, inputs, receipts); correlated with suppressing generation of the literal word \"capital\""
+  },
+  {
+    "id": "2_5132_1",
+    "layer": 2,
+    "ctx_idx": 1,
+    "influence_score": 0.3864106237888336,
+    "top_activations": [
+      {
+        "trigger": " facts",
+        "score": 26.75,
+        "context": "Achievement Objective Being Assessed\u23ce|Transactional Writing||Write explanations about shadows, state facts and opinions and recount events.|\u23ce|Making Sense of the Physical World||"
+      },
+      {
+        "trigger": " facts",
+        "score": 26.5,
+        "context": " Disorders Sourcebook, Fourth Edition offers information on how genes work, and it provides facts about the most common genetic disorders, including those that arise from mutations in specific"
+      },
+      {
+        "trigger": " facts",
+        "score": 26.75,
+        "context": "the patient died\". They can be used to downplay or conceal unpalatable facts, such as \"collateral damage\" for \"civilian casualties\" in"
+      },
+      {
+        "trigger": " facts",
+        "score": 27.25,
+        "context": " usually have deep, basic, negative beliefs about themselves, which are often taken as facts and can have a negative impact on the person\u2019s life.\u23ce-"
+      },
+      {
+        "trigger": " facts",
+        "score": 27.0,
+        "context": " religions can find creative\u23ceexpression on the Internet.\u23ceThe place to go for facts and figures about membership in most world religions\u23ce- The GodWeb\u23cefeatures"
+      }
+    ],
+    "promotes": [
+      "PreAuthorize",
+      "bootstrapcdn",
+      "InSection",
+      " propOrder",
+      "aarrggbb"
+    ],
+    "demotes": [
+      " fact",
+      "fact",
+      " facts",
+      "Fact",
+      "Facts"
+    ],
+    "generated_description": "facts \u2014 activates on the plural token \"facts\" in input; correlated with suppressing/ demoting output tokens \"fact\"/\"facts\"."
+  },
+  {
+    "id": "3_9559_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.37670859694480896,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 17.75,
+        "context": "<bos>Capital of Tyrol, Austria. While Jews settled throughout Tyrol, especially in the southern part, as early as the beginning of the fourteenth century, no mention of"
+      },
+      {
+        "trigger": " of",
+        "score": 11.88,
+        "context": ", to crush, do away with; to prohibit, subdue\u23ce- The government of China suppressed the student demonstrations by ordering tanks to Tiananmen square.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 14.5,
+        "context": "2% of the newshole. One day later, an earthquake off the coast of Indonesia killed an estimated 1,100 people, accounting for "
+      },
+      {
+        "trigger": " of",
+        "score": 12.62,
+        "context": " on Pennsylvania Avenue houses the Charters of Freedom\u2013the Declaration of Independence, the Constitution of the United States, and the Bill of Rights\u2013and exhibits highlighting historical themes"
+      },
+      {
+        "trigger": " of",
+        "score": 11.75,
+        "context": "ts in New York, June has since been declared LGBT Pride Month by the President of the United States on five separate occasions, and although the exact timing and focus"
+      }
+    ],
+    "promotes": [
+      " Flag",
+      "Flag",
+      "flag",
+      " flag",
+      "memberOf"
+    ],
+    "demotes": [
+      "eradish",
+      "SharedCtor",
+      " nargin",
+      "ulemon",
+      "resizingMask"
+    ],
+    "generated_description": "of (possession/partitive) \u2014 activates on the preposition \"of\" linking nouns; signals possession, partitive, or source relations (e.g., \"capital of\", \"government of\", \"2% of\")."
+  },
+  {
+    "id": "4_6028_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.3980482220649719,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 22.0,
+        "context": " scientist, Christopher Jacques.\u23ceA particular concern being raised by hunters is the fact of expanding wolf and bear populations in Wisconsin. Both are large predators that feed on"
+      },
+      {
+        "trigger": " is",
+        "score": 21.0,
+        "context": "Despite real progress over the last generation in overcoming discrimination in our society, the reality is that Americans are still regularly refused employment, housing or equal treatment under the law"
+      },
+      {
+        "trigger": " of",
+        "score": 19.25,
+        "context": "012 \u2014 For many people living in East Asia, floods are a fact of life.\u23ce\u201cWe just accept it because we know this area is always"
+      },
+      {
+        "trigger": " remain",
+        "score": 19.25,
+        "context": ". You could probably learn something from opening your mind a bit.\u23ceThe facts remain that no life exists off of the earth.\u23ceLets just stick to the"
+      },
+      {
+        "trigger": " fact",
+        "score": 17.75,
+        "context": " poverty, lack of education, and numerous other factors including parenting, however the one fact that is undeniable, is the fact that the individuals perpetrating these acts of"
+      }
+    ],
+    "promotes": [
+      "\u24d8",
+      "Facts",
+      " fact",
+      " Facts",
+      " facts"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      " convoy",
+      "MENAFN",
+      " aure",
+      " Normdatei"
+    ],
+    "generated_description": "fact(s) \u2014 activates on the word \u201cfact\u201d and close variants (fact, facts, factors fragments, \u201cfact of\u201d, \u201cfacts remain\u201d); tends to promote output tokens like \u201cfact\u201d/\u201cFacts\u201d."
+  },
+  {
+    "id": "4_7671_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.38207510113716125,
+    "top_activations": [
+      {
+        "trigger": "quarter",
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "trigger": " of",
+        "score": 20.75,
+        "context": " a school for Native Americans.\u23ce1875: Helena is named capital of the Montana Territory.\u23ce1876: U.S. soldiers"
+      },
+      {
+        "trigger": " of",
+        "score": 22.75,
+        "context": " Copenhagen conference.\u23ceThe officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "trigger": " of",
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "trigger": " headquarters",
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "\u0445\u044c\u0442\u0430\u043d",
+      "R\u00fcyada",
+      "endmodule"
+    ],
+    "generated_description": "Administrative center \u2014 activates on \"headquarters\" and prepositional triggers like \"of\" before place names; signals capital/headquarters context, promotes HQ/coordinator tokens."
+  },
+  {
+    "id": "2_7173_4",
+    "layer": 2,
+    "ctx_idx": 4,
+    "influence_score": 0.35222411155700684,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,\u201d said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.\u23cePuerto del Rosario is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital (word) \u2014 activates on the token \"capital\"; fires for both city-capital and financial-capital contexts, across mentions of capitals, infrastructure, and money."
+  },
+  {
+    "id": "4_15884_9",
+    "layer": 4,
+    "ctx_idx": 9,
+    "influence_score": 0.3378182053565979,
+    "top_activations": [
+      {
+        "trigger": "ini",
+        "score": 30.75,
+        "context": " o\u2019 the pileus to Dorothy King for spotting this item in Kathimerini \u2026 don\u2019t really hear much from Pella for some reason:\u23ce"
+      },
+      {
+        "trigger": "ini",
+        "score": 30.75,
+        "context": "Tip o\u2019 the pileus to Dorothy King for spotting this item in Kathimerini \u2026 don\u2019t really hear much from Pella for some reason:"
+      },
+      {
+        "trigger": "ou",
+        "score": 38.5,
+        "context": " cemetery site of Archontiko, Pella.\u23ceArchaeologists Anastasia and Pavlos Chrysostomou, of the 17th Ephorate of Prehistoric"
+      },
+      {
+        "trigger": "oulou",
+        "score": 33.5,
+        "context": "<bos>Angeliki Lymberopoulou of The Open University, and Vasiliki Tsamakda, from the University of Mainz, aim to place and assess these"
+      },
+      {
+        "trigger": "os",
+        "score": 25.75,
+        "context": ", in Greek religion, ancient festival held in honour of Demeter Thesmophoros and celebrated by women in many parts of the Greek world. The meaning of"
+      }
+    ],
+    "promotes": [
+      " Crete",
+      "Greece",
+      "akis",
+      " Greek",
+      " Greece"
+    ],
+    "demotes": [
+      " it\u017felf",
+      "AccessorTable",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      " my\u017felf",
+      "`{."
+    ],
+    "generated_description": "Greek name endings \u2014 activates on transliterated Greek proper names/words (suffixes like -ini, -ou, -os, -oulou); signals Greek-related entities, promotes \"Greece\"/\"Greek\" tokens"
+  },
+  {
+    "id": "16_4298_10",
+    "layer": 16,
+    "ctx_idx": 10,
+    "influence_score": 0.3855530321598053,
+    "top_activations": [
+      {
+        "trigger": " county",
+        "score": 33.75,
+        "context": ", Texas Legislators created the County of Kleberg, with Kingsville as the county seat. Shortly thereafter, various events provided the impetus to further spur the growth"
+      },
+      {
+        "trigger": " is",
+        "score": 34.0,
+        "context": " 156,172 square miles. The capital of the State is Sacramento, with a population (1900) of 29"
+      },
+      {
+        "trigger": " capital",
+        "score": 34.25,
+        "context": "\u23ceThe islands of Trobriand are about 90 minutes away from the capital of Port Moresby. Ferry services are also available from Alotau by use"
+      },
+      {
+        "trigger": " capital",
+        "score": 36.0,
+        "context": " Yogyakarta, Merapi is more than 530 kilometers from Bali's capital of Denpasar.\u23ceWhile no one can be certain when, or even"
+      },
+      {
+        "trigger": " is",
+        "score": 31.75,
+        "context": " the European Union. The capital city is Nicosia and the unrecognised capital of northern Cyprus is also Nicosia (known as Lefko\u015fa in Turkish). The currency of"
+      }
+    ],
+    "promotes": [
+      "unnitel",
+      "rawDesc",
+      "verl\u00e4s",
+      " urbaine",
+      " urbanas"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      "\u0440\u0438\u0442\u043e\u0440\u0438",
+      "check",
+      "ImageContext",
+      "findpost"
+    ],
+    "generated_description": "capital city \u2014 activates on mentions of \u201ccapital\u201d or copula \u201cis\u201d introducing a capital; often fires right before a place-name naming the capital."
+  },
+  {
+    "id": "17_5821_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.39723601937294006,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 41.0,
+        "context": " presenting feature. The disease may progress slowly over several decades; the mean survival time is 14 years. In the final stages patients are mute, blind,"
+      },
+      {
+        "trigger": " was",
+        "score": 38.25,
+        "context": " WHO benchmark at some point during these journeys.\u23ceThe average peak during smoking trips was 385 micrograms per cubic metre, with the highest being more"
+      },
+      {
+        "trigger": " was",
+        "score": 45.0,
+        "context": " sex and nonuse of condoms.\u23ceResults: The average age at first intercourse was 15.6 for males and 15.8 for females"
+      },
+      {
+        "trigger": " is",
+        "score": 37.25,
+        "context": " as two alters, or as many as 100. The average number is about 10. Often alters are stable over time, continuing to play"
+      },
+      {
+        "trigger": " is",
+        "score": 41.25,
+        "context": ".5 tons of carbon dioxide per year. The average per capita carbon footprint globally is just 4 tons. Regardless of an individual's personal efforts at reducing"
+      }
+    ],
+    "promotes": [
+      " hit",
+      " Jeffries",
+      " Vergine",
+      " \u00a3",
+      " "
+    ],
+    "demotes": [
+      " kasarigan",
+      " \u0645\u0634\u064a\u0646",
+      "InjectAttribute",
+      " surla",
+      "ChildScrollView"
+    ],
+    "generated_description": "Copula is/was \u2014 activates on linking verbs \"is\"/\"was\", especially in factual/average statements (e.g., \"the average is/was ...\")."
+  },
+  {
+    "id": "18_4443_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.30589547753334045,
+    "top_activations": [
+      {
+        "trigger": " Greek",
+        "score": 70.0,
+        "context": ": a mania for mushrooms|\u23ce|[C14: via Late Latin from Greek: madness]|\u23cemania ma\u00b7ni\u00b7a (m\u0101'n\u0113"
+      },
+      {
+        "trigger": " ph",
+        "score": 71.0,
+        "context": " in a more legalistic sense. (Or in the sense of the verb form phusis, indicating that Nature has a period of growth over time.)\u23ceThe"
+      },
+      {
+        "trigger": " \u03bf",
+        "score": 71.0,
+        "context": " + the dative after \u03c0\u03bb\u03b7\u03c1\u03cc\u03c9 indicates content. Further, the parallel with \u03bf\u1f34\u03bd\u1ff3 as well as the common grammatical category of means suggest that the"
+      },
+      {
+        "trigger": "pep",
+        "score": 73.0,
+        "context": " \u03c0\u03ad\u03c0\u03c9\u03bd (pep\u014dn, \"ripe\"), from \u03c0\u03ad\u03c0\u03c4\u03c9 (pept\u014d, \"ripen\"). Compare pumpkin. (Wiktionary)\u23ce"
+      },
+      {
+        "trigger": " word",
+        "score": 69.0,
+        "context": " Christian experience. Members refer to themselves as charismatic (a term derived from the Greek word for Grace) or as the new Pentecost. The origins of the movement cannot"
+      }
+    ],
+    "promotes": [
+      "endphp",
+      "LayoutStyle",
+      "RenderAtEndOf",
+      "Personendaten",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      " m",
+      "ul",
+      "uls",
+      "voer",
+      " mg"
+    ],
+    "generated_description": "Greek-origin words \u2014 activates on etymology mentions and Greek tokens/transliterations (Greek, \u03c0\u03b5\u03c0\u03c9\u03bd/pep\u014dn, phusis, \u03bf, Greek\u2011derived word notes)"
+  },
+  {
+    "id": "19_10921_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3838236629962921,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 103.5,
+        "context": " the Greeks in Epiros, Macedonia, Thessalia, Roumeli, Attiki, Peloponnesos, Crete, and the rest of Greece to the Germans caused"
+      },
+      {
+        "trigger": " and",
+        "score": 109.5,
+        "context": " right next to Kalamas, between the villages of Aghios Georgios and Geroplatanos, extends over 53 m2. By finishing the"
+      },
+      {
+        "trigger": "iliki",
+        "score": 114.5,
+        "context": "<bos>Angeliki Lymberopoulou of The Open University, and Vasiliki Tsamakda, from the University of Mainz, aim to place and assess these"
+      },
+      {
+        "trigger": "3",
+        "score": 86.0,
+        "context": " a largely ceremonial role. Legislative power lies with the single-chamber Parliament of 300 members elected by universal direct suffrage for a four-year term."
+      },
+      {
+        "trigger": "inos",
+        "score": 95.5,
+        "context": " prostate cancer fail radiation therapy because the cancerous cells become resistant to treatment,\" said Constantinos Koumenis, Ph.D., lead researcher. \"Any agent that"
+      }
+    ],
+    "promotes": [
+      " Athens",
+      " Thessaloniki",
+      " Greece",
+      "Greek",
+      " Greek"
+    ],
+    "demotes": [
+      "UnsafeEnabled",
+      " ISNI",
+      "\u1eabu",
+      " NSCoder",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "generated_description": "Greek place/person \u2014 activates on Greek names, regions, or name fragments; promotes tokens like Athens, Thessaloniki, Greece, Greek."
+  },
+  {
+    "id": "19_37_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.39146193861961365,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 27.5,
+        "context": " on the right is a sixteenth-century oak statue of St Chad holding a model of Lichfield Cathedral, where this \"Apostle of the Midlands\" established his"
+      },
+      {
+        "trigger": " rule",
+        "score": 28.5,
+        "context": "atoani, meaning \u2018speaker\u2019, in 1502 CE he would rule as an absolute monarch until 1520 CE, during which time"
+      },
+      {
+        "trigger": " captured",
+        "score": 26.5,
+        "context": " Babylon around 539 B.C. after the Persian king Cyrus had captured the city. It describes how Cyrus was able to defeat the Babylonian king Nab"
+      },
+      {
+        "trigger": " just",
+        "score": 28.75,
+        "context": " Zurg, who has been secretly building a weapon with the destructive capacity to annihilate an entire planet. Or maybe just teach kids about math and science. I"
+      },
+      {
+        "trigger": "state",
+        "score": 34.5,
+        "context": " Cassiopea. He responded by sending a flood and a sea monster to devastate the land.\u23ceAn oracle told Cepheus that the only way he could"
+      }
+    ],
+    "promotes": [
+      "centralwidget",
+      " West",
+      " Los",
+      " Washington",
+      " India"
+    ],
+    "demotes": [
+      " Etrus",
+      " Urugu",
+      "DockStyle",
+      " Aper",
+      " Flemish"
+    ],
+    "generated_description": "say place name \u2014 fires on short function words/verbs that introduce locations; consistently pushes geographic/place tokens (West, Los, Washington, India)"
+  },
+  {
+    "id": "19_10921_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.28256821632385254,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 103.5,
+        "context": " the Greeks in Epiros, Macedonia, Thessalia, Roumeli, Attiki, Peloponnesos, Crete, and the rest of Greece to the Germans caused"
+      },
+      {
+        "trigger": " and",
+        "score": 109.5,
+        "context": " right next to Kalamas, between the villages of Aghios Georgios and Geroplatanos, extends over 53 m2. By finishing the"
+      },
+      {
+        "trigger": "iliki",
+        "score": 114.5,
+        "context": "<bos>Angeliki Lymberopoulou of The Open University, and Vasiliki Tsamakda, from the University of Mainz, aim to place and assess these"
+      },
+      {
+        "trigger": "3",
+        "score": 86.0,
+        "context": " a largely ceremonial role. Legislative power lies with the single-chamber Parliament of 300 members elected by universal direct suffrage for a four-year term."
+      },
+      {
+        "trigger": "inos",
+        "score": 95.5,
+        "context": " prostate cancer fail radiation therapy because the cancerous cells become resistant to treatment,\" said Constantinos Koumenis, Ph.D., lead researcher. \"Any agent that"
+      }
+    ],
+    "promotes": [
+      " Athens",
+      " Thessaloniki",
+      " Greece",
+      "Greek",
+      " Greek"
+    ],
+    "demotes": [
+      "UnsafeEnabled",
+      " ISNI",
+      "\u1eabu",
+      " NSCoder",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443"
+    ],
+    "generated_description": "Greek proper nouns \u2014 activates on Greek place/person name fragments and nearby commas/\u201cand\u201d; tends to push output toward Greece-related tokens (Athens, Thessaloniki, Greece)"
+  },
+  {
+    "id": "20_4402_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.3803088963031769,
+    "top_activations": [
+      {
+        "trigger": " <",
+        "score": 64.5,
+        "context": " etc. that exhorts\u23ceOrigin: ME exhortacion < OFr < L exhortatio\u23ceUsed by arrangement with John Wiley & Sons, Inc."
+      },
+      {
+        "trigger": " of",
+        "score": 74.5,
+        "context": " hard to study art and not learn something about classical mythology. The gods and heroes of ancient Greece and Rome are not only prevalent in ancient art (as in the"
+      },
+      {
+        "trigger": " and",
+        "score": 74.5,
+        "context": "4. It is evident from his plays that he was moved by his studies of Greek and Latin classics. He married Anne Hathaway at age eighteen, and they had"
+      },
+      {
+        "trigger": " classical",
+        "score": 67.0,
+        "context": " Asian-inspired floral compositions in the Aesthetic Movement style. Hospitalitas, dressed in classical garb and flanked by columns, may have been La Farge's attempt"
+      },
+      {
+        "trigger": " of",
+        "score": 63.0,
+        "context": "In the more precise and definite sense in which the name was employed from the time of Augustus, and in which it is used by the geographers (Strabo"
+      }
+    ],
+    "promotes": [
+      "Ancient",
+      " Greek",
+      " ancient",
+      " Roman",
+      " Ancient"
+    ],
+    "demotes": [
+      " CreateTagHelper",
+      " my\u017felf",
+      " it\u017felf",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " ujednoznacz"
+    ],
+    "generated_description": "Ancient Greek/Roman \u2014 activates on mentions of classical/ancient, Greece, Rome, Latin; promotes tokens like \u201cAncient\u201d, \u201cGreek\u201d, \u201cRoman\u201d in outputs."
+  },
+  {
+    "id": "19_5682_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3846893310546875,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 74.0,
+        "context": "ots\" with internal mirrors that automatically rotate to take up to 1,000 readings along both horizontal and vertical axes. A single set of readings may"
+      },
+      {
+        "trigger": " L",
+        "score": 73.0,
+        "context": " In 222, Antigonus crushed Cleomenes at Sellasia in Laconea and took Corinth as his reward. Meanwhile he had reconstituted the Hellenic"
+      },
+      {
+        "trigger": " to",
+        "score": 76.0,
+        "context": " what we recognize as drama, giving rise to the Classic period of Greek theatre in the fifth century B.C.\u23ceDuring the Classic period, tragedies, comedies"
+      },
+      {
+        "trigger": " at",
+        "score": 88.5,
+        "context": "his practise was universally followed, first in the games for Zeus at Olympia, then at other athletic festivals, and so in gymnasia and in many public places,"
+      },
+      {
+        "trigger": " in",
+        "score": 76.0,
+        "context": "The year 776 b.c. saw the first Olympiad, in which runners wore only a small loincloth. Then, in 72"
+      }
+    ],
+    "promotes": [
+      " greek",
+      "Greek",
+      "Athens",
+      " Athens",
+      " Greek"
+    ],
+    "demotes": [
+      " betweenstory",
+      " Shakspeare",
+      " \u0627\u0644\u062f\u0648\u0644\u0649",
+      "twimg",
+      "tanleria"
+    ],
+    "generated_description": "say Greek place \u2014 activates on prepositions/articles (in, at, to, etc.) before Greek locations or historical Greek nouns; promotes tokens like \"Greek\"/\"Athens\""
+  },
+  {
+    "id": "19_2695_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.32842764258384705,
+    "top_activations": [
+      {
+        "trigger": " greater",
+        "score": 44.75,
+        "context": " paper proposes a specific demonstration project in Southern California. Orange County, part of the greater Los Angeles metro area, has five new toll road projects under development: two"
+      },
+      {
+        "trigger": ",",
+        "score": 64.0,
+        "context": "936.\u23ceFive cities \u2014 St. Louis, Indianapolis Chicago, Detroit and Denver \u2014 are all on pace to shatter their all-time monthly heat records"
+      },
+      {
+        "trigger": ",",
+        "score": 62.25,
+        "context": "13 election cycle. Ten of America's 30 largest cities -- including Boston, Detroit, Los Angeles, New York and Seattle -- elected mayors this"
+      },
+      {
+        "trigger": " major",
+        "score": 47.75,
+        "context": " Los Angeles and Phoenix. They hope to ultimately map the CO2 emissions in all major cities acrosUltimately, they say, they hope to cover the entire United"
+      },
+      {
+        "trigger": ",",
+        "score": 62.25,
+        "context": "-Ft. Worth. Belize is also served from Atlanta, Charlotte, Los Angeles, New York and Washington, DC, as well as Toronto, Canada ... more"
+      }
+    ],
+    "promotes": [
+      " Seattle",
+      " Atlanta",
+      " London",
+      " cities",
+      " Chicago"
+    ],
+    "demotes": [
+      "XmlAccessorType",
+      "\u0411\u0430\u0445\u0430\u0440",
+      "SBATCH",
+      "}');",
+      "\u0159ev\u011b"
+    ],
+    "generated_description": "say city name \u2014 activates on commas and modifiers (greater, major) in lists/metro phrases; pushes city tokens (Seattle, Atlanta, Chicago, cities)"
+  },
+  {
+    "id": "21_5943_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.28682824969291687,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:\u23ce- Capital City = Freetown\u23ce- Population = 5,245,695\u23ce- Official and Recognized Languages"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.\u23ceIsrael's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "trigger": " capital",
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.\u23ceAs presented here, in"
+      },
+      {
+        "trigger": " in",
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "trigger": " in",
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in\u23ceOctober 1998 in a national launch by then Deputy President Thabo\u23ceMbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "say capital city \u2014 fires on \"capital\"/\"in\" context words; promotes common city names (London, Toronto, Sydney, Dublin, Nairobi) as the upcoming token."
+  },
+  {
+    "id": "21_5807_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.3757841885089874,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 29.0,
+        "context": " of the historical events which were to play a major role in Galois' life is surely the storming of the Bastille on 14 July 178"
+      },
+      {
+        "trigger": " is",
+        "score": 28.5,
+        "context": " brought it to its present humiliating state.\u23ceThe logical starting point in this examination is Bretton Woods. When the representatives of some forty nations met there in "
+      },
+      {
+        "trigger": " is",
+        "score": 30.25,
+        "context": "<bos>One of the greatest stories of explorationand discovery is the Europeanquest for a Northwest Passageanoceanic shortcut from the Atlantic to thePacific across the top of"
+      },
+      {
+        "trigger": " is",
+        "score": 30.75,
+        "context": " became a proponent for the hypothesis , which states that the prototype of the Armenian alphabet is a variety of combinations of resembling curves and horizontal elements. Subsequently these horizontal elements"
+      },
+      {
+        "trigger": " be",
+        "score": 28.75,
+        "context": ". Indeed, in the construction \u2018anosognosia for X\u2019, X might even be anosognosia for some Y.|\u23ce|Keywords||Amnesia Belief Del"
+      }
+    ],
+    "promotes": [
+      "supplied",
+      " \u0441\u0442\u0430\u043d\u043e\u0432\u043d\u0438\u043a\u0430",
+      "applicable",
+      " MainAxisSize",
+      "AndEndTag"
+    ],
+    "demotes": [
+      "Those",
+      " Those",
+      "ItemLayout",
+      "erweise",
+      "\u90a3\u5c31\u662f"
+    ],
+    "generated_description": "contains \"is\" \u2014 activates on the letter sequence \"is\" inside words (historical, this, discovery, hypothesis); occasional activation on \"be\""
+  },
+  {
+    "id": "21_10336_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.34596359729766846,
+    "top_activations": [
+      {
+        "trigger": " before",
+        "score": 41.75,
+        "context": ", some of which were\u23cefifteen miles removed from others. The British force before New-York was\u23ceincreasing by frequent successive arrivals from Halifax, South-"
+      },
+      {
+        "trigger": ".",
+        "score": 57.25,
+        "context": "\u23ceLater she witnessed firsthand the Bolshevik take-over of her beloved city of St. Petersburg. She and Boris escaped Communist Russia, fleeing first to a family"
+      },
+      {
+        "trigger": " and",
+        "score": 42.25,
+        "context": " 14th and 15th-century architecture of Florence, Genoa and Venice. The palazzo style was justified primarily on associational grounds: Renaissance street"
+      },
+      {
+        "trigger": ",",
+        "score": 44.75,
+        "context": " as measured by annual average losses due to floods, span developed and developing countries: Guangzhou, Miami, New York, New Orleans, Mumbai, Nagoya, Tampa-"
+      },
+      {
+        "trigger": " of",
+        "score": 41.5,
+        "context": "35 views of the main tourist sights of Rome and a few\u23ceviews outside of the city. The series, begun in 1748, occupied"
+      }
+    ],
+    "promotes": [
+      "exitRule",
+      " cities",
+      " The\u017fe",
+      " city",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "demotes": [
+      "\u8981\u77e5\u9053",
+      "\u0497",
+      "das",
+      " das",
+      " De"
+    ],
+    "generated_description": "say city \u2014 fires on commas/and/of/before (structural tokens) in geographic/place lists; boosts tokens like \"city\"/\"cities\"/\"The\u017fe\" and nearby place names."
+  },
+  {
+    "id": "23_5188_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3638458251953125,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ],
+    "generated_description": "Comma \u2014 activates on commas and list separators (dates, author lists, appositions); signals list/coordination context and correlates with promoting conjunctions/quotes/\u201cand\u201d."
+  },
+  {
+    "id": "23_13541_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.34468817710876465,
+    "top_activations": [
+      {
+        "trigger": "4",
+        "score": 65.5,
+        "context": "<bos>- Shopping Bag ( 0 items )\u23ceIn 1954 the U.S. Supreme Court sounded the death knell for school segregation with"
+      },
+      {
+        "trigger": " on",
+        "score": 46.75,
+        "context": "<bos>Subscribe To our E-Newsletter\u23ceScholar Offers a Fresh Take on Middle East\u23ceLike it or not, the United States is embroiled in the Middle East"
+      },
+      {
+        "trigger": " by",
+        "score": 53.0,
+        "context": " unsure exactly how many individuals in the United States have an FASD.\u23ceStudies by the Centers for Disease Control and Prevention (CDC) have reported prevalence rates of"
+      },
+      {
+        "trigger": " Hope",
+        "score": 44.5,
+        "context": " June 30, 2009\u23ceAfghanistan: Optimism and Hope Takes Root March 13, 2009\u23ceAfghanistan:"
+      },
+      {
+        "trigger": "4",
+        "score": 54.5,
+        "context": " Nearly one in ten people have this type of asthma. In 1984 Olympics, nearly 20 percent Olympians suffered from exercise induced asthma."
+      }
+    ],
+    "promotes": [
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " my\u017felf",
+      " Monfieur",
+      " it\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ".",
+      " (",
+      "  ",
+      "-"
+    ],
+    "generated_description": "digit \"4\" \u2014 activates on tokens containing the numeral 4 (years like 1954, 1984); fires on the '4' character within numeric tokens."
+  },
+  {
+    "id": "24_5999_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.34067004919052124,
+    "top_activations": [
+      {
+        "trigger": " Network",
+        "score": 105.5,
+        "context": " Web's Largest Resource for\u23ceDefinitions & Translations\u23ceA Member Of The STANDS4 Network\u23ceNearby & related entries:\u23ceAlternative searches for minch:"
+      },
+      {
+        "trigger": " .",
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .\u23ceHow many different solutions can you find to this problem?\u23ceArrange "
+      },
+      {
+        "trigger": " power",
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.\u23ceMost e"
+      },
+      {
+        "trigger": "-",
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.\u23ce- 1 Terminology\u23ce- 2 Basic"
+      },
+      {
+        "trigger": " Solution",
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution\u23ceBy Nnimmo Bassey *\u23ceThe fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " \u0f0b\u0f0b",
+      " Forumite",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "demotes": [
+      " europ\u00e9ennes",
+      " helyzet",
+      " industriels",
+      " pracovn\u00ed",
+      " atuais"
+    ],
+    "generated_description": "Heading/line-content word \u2014 activates on strong content words (titles/headings/line-end tokens) appearing before punctuation, line breaks, or section markers (e.g., \u201cNetwork\u201d, \u201cSolution\u201d, \u201cpower\u201d)"
+  },
+  {
+    "id": "24_6394_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3150167465209961,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 57.0,
+        "context": ".\u23ceCREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder\u23ceSuperman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "trigger": " capital",
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "trigger": " in",
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "trigger": " in",
+        "score": 48.0,
+        "context": " \u2013 cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.\u23ceBut now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 47.0,
+        "context": " Federal Waters\u23ceNew Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean\u23ceSAN FRANCISCO\u2014 The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$\u200b",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "say PLACE \u2014 activates on location-introducing words ('in', 'at', 'capital'); signals an upcoming geographic/place name (city, capital, other location)."
+  },
+  {
+    "id": "24_13277_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.29085567593574524,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say proper name \u2014 activates on structural tokens (to, in, attended, , , a) that precede upcoming proper nouns: places, people, institutions."
+  },
+  {
+    "id": "8_10470_9",
+    "layer": 8,
+    "ctx_idx": 9,
+    "influence_score": 0.3570285439491272,
+    "top_activations": [
+      {
+        "trigger": "land",
+        "score": 38.0,
+        "context": " MCA is a private institution functioning under the auspices of the Nicholas and Dolly Goulandris Foundation (a non-profit organization) and the supervision of the Hellenic Ministry"
+      },
+      {
+        "trigger": "\u03c4",
+        "score": 32.0,
+        "context": " 1583 which they call \u201cthe ruling power of the soul\u201d\u2014\u03c4\u1f78 \u1f21\u03b3\u03b5\u03bc\u03bf\u03bd\u03b9\u03ba\u03cc\u03bd for if this be not admitted, the whole"
+      },
+      {
+        "trigger": "2",
+        "score": 28.38,
+        "context": "80 BC) have been exposed during the 2010 season, according to a statement released by the Culture Ministry on September 20, "
+      },
+      {
+        "trigger": " Ano",
+        "score": 30.38,
+        "context": "<bos>The Didaktirion of Ano Archanes is an excellent\u23cesample of the architecture current in Crete during the period of the\u23ceCretan State, that"
+      },
+      {
+        "trigger": " \u03c0\u03bf",
+        "score": 27.38,
+        "context": " Poetry - wikipedia, the free encyclopedia, Poetry (from the greek poiesis \u2014 \u03c0\u03bf\u03af\u03b7\u03c3\u03b9\u03c2 \u2014 meaning a \"making\", seen also in such terms as"
+      }
+    ],
+    "promotes": [
+      "\u03a0\u03b7\u03b3\u03ad\u03c2",
+      "aphne",
+      "CopyWith",
+      "twimg",
+      " typelib"
+    ],
+    "demotes": [
+      "mojo",
+      "}]\r",
+      "FormUrlEncoded",
+      "<bos>",
+      "__':\r"
+    ],
+    "generated_description": "Greek/Name token starts \u2014 activates on token-initial fragments: Greek letters (\u03c0\u03bf, \u03c4), capitalized name starts (Ano, land in Goulandris), digits/prefixes like 2 in 2010."
+  },
+  {
+    "id": "25_12025_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.38726159930229187,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 25.5,
+        "context": " rim fragment called \"Cape York.\" The next Endeavour rim fragment to the south is called \"Sutherland Point,\" and a gap between Cape York and Sutherland Point"
+      },
+      {
+        "trigger": " is",
+        "score": 26.75,
+        "context": ",\u201d Galileo Galilei, an Italian physicist and astronomer responsible for many astronomical advancements. The liquid inside the thermometer is actually a mixture of water and parafin oil."
+      },
+      {
+        "trigger": " is",
+        "score": 27.25,
+        "context": " and ad hoc groupings used for specific types of combat. The basic infantry fighting unit is the platoon, which consists of around 30 to 40 men"
+      },
+      {
+        "trigger": " was",
+        "score": 25.25,
+        "context": "The question remains as to whether the bright spot seen moving away\u23cefrom the sun was simply debris, or whether a small nucleus of the\u23ceoriginal ball of ice"
+      },
+      {
+        "trigger": " was",
+        "score": 24.75,
+        "context": " rather than tapered, and the upper wing had a slight sweepback. The engine was a 450hp Pratt & Whitney R-1340"
+      }
+    ],
+    "promotes": [
+      " Tacitus",
+      " buckwheat",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      " Manipur",
+      " \u00e9missions"
+    ],
+    "demotes": [
+      " it",
+      "EndProject",
+      "XmlAccessorType",
+      " transfieras",
+      "EndContext"
+    ],
+    "generated_description": "BE verb (is/was) \u2014 activates on tokens \"is\" or \"was\", especially when linking a subject to a description or definition."
+  },
+  {
+    "id": "25_16302_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.35097718238830566,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ],
+    "generated_description": "Clause-boundary marker \u2014 activates on commas, prepositions and discourse verbs (\",\", in, at, during, said); signals clause boundaries or phrase attachments before new info."
+  },
+  {
+    "id": "23_10682_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3720339834690094,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 69.5,
+        "context": " of King Agenor of Phoenicia. He carried her from Tyre across the sea to Crete. Their children included King Minos, famous for building the palace at"
+      },
+      {
+        "trigger": " from",
+        "score": 64.5,
+        "context": " of Hagia Sophia by the order of Justinian I. Anthemius came from an educated family, one of five sons of Stephanus of Tralles,"
+      },
+      {
+        "trigger": " in",
+        "score": 62.0,
+        "context": " University Press.\u23ceRabbi Akiba was the foremost teacher of the Torah who lived in the second half of the first century and the first half of the second century"
+      },
+      {
+        "trigger": " near",
+        "score": 82.0,
+        "context": " in which Trajan was held. He implemented a building plan and, according to Christian sources, a persecution. Decius died while on campaign near Nicopolis."
+      },
+      {
+        "trigger": " to",
+        "score": 68.0,
+        "context": " disguising herself as a male slave and visiting them in prison. She eventually traveled to Jerusalem where she set up a convent for women and provided for a monastery for"
+      }
+    ],
+    "promotes": [
+      "getActive",
+      " h\u0131z",
+      " that",
+      " power",
+      " Romains"
+    ],
+    "demotes": [
+      " disponibilit\u00e9s",
+      "tvguidetime",
+      "UrlResolution",
+      " disambiguazione",
+      " Wikispecies"
+    ],
+    "generated_description": "say place name \u2014 activates on prepositions (in, to, near, from, of) that introduce geographic locations; signals upcoming city/region names (cities, provinces, landmarks)"
+  },
+  {
+    "id": "24_4233_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3701004981994629,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 83.0,
+        "context": "pileser was drawn to campaign against a coalition of rebellious vassals that included Tyre, Aram-Damascus, and Israel. Ahaz had come under pressure"
+      },
+      {
+        "trigger": " in",
+        "score": 80.5,
+        "context": " during the reign emperor Justin I.\u23ceIn exile at the Monastery of Enaton in el-Dekhiela outside of Alexandria on the Mediterranean coastal road to Mers"
+      },
+      {
+        "trigger": " in",
+        "score": 69.0,
+        "context": " 'heresies' of the Middle Ages.\u23ceMani was born in Persian-controlled Iraq in 3AD and saw himself as one in the line of Buddha"
+      },
+      {
+        "trigger": " into",
+        "score": 73.0,
+        "context": " the Hittites established one of the great empires of the ancient Near East, extending into western Anatolia and south into Syria. They adopted many of the traditions of"
+      },
+      {
+        "trigger": " of",
+        "score": 77.0,
+        "context": " field of Castolos\", i.e. of the army of the district of Asia Minor.\u23ceHe gave strenuous support to the Spartans; evidently he had"
+      }
+    ],
+    "promotes": [
+      "RuleContext",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "])]",
+      "bootstrapcdn",
+      "SourceChecksum"
+    ],
+    "demotes": [
+      " AppComponent",
+      "testnet",
+      "findpost",
+      "\u272d",
+      " COMPONENT"
+    ],
+    "generated_description": "say location \u2014 activates on prepositions/comma (in, into, of, ,) that introduce places, territories, or geographic/possession phrases."
+  },
+  {
+    "id": "25_9975_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.37391921877861023,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Common function words \u2014 activates on short high-frequency grammatical tokens (the, while, following, removing, implement); signals general stopword/transition items in text."
+  },
+  {
+    "id": "24_758_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.33635371923446655,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 64.5,
+        "context": " people against its enemies (in Tracia and Macedonia against the Slavic people, and in Asia Minor against the Arabs).\u23ceThe other period of significant emigration occurred at"
+      },
+      {
+        "trigger": " Byzantine",
+        "score": 52.5,
+        "context": " called a dinar and was similar, in both size and weight, to the Byzantine solidus. On the obverse, there were three standing figures of unknown identities"
+      },
+      {
+        "trigger": " in",
+        "score": 55.5,
+        "context": " resort on the Bulgarian Black Sea Coast, classified the third and the second largest city in Bulgaria. It is the administrative centre of the homonymous province and Varna"
+      },
+      {
+        "trigger": " and",
+        "score": 47.5,
+        "context": " by their intermediate position in Near Eastern and European evolutional models. In Anatolia and the Caucasus we have confirmations of the existence of \u00absymbiotic cultures\u00bb which"
+      },
+      {
+        "trigger": "East",
+        "score": 54.0,
+        "context": " Russian in 1984) that the Northern part of the Near East (an area close to North-East Syria and North Mesopotamia) may be considered"
+      }
+    ],
+    "promotes": [
+      "NegativeButton",
+      " HasFactory",
+      " kasarigan",
+      " resourceCulture",
+      "@[+]["
+    ],
+    "demotes": [
+      " Polish",
+      " Hungarian",
+      " Greek",
+      " Slovenian",
+      " Bulgarian"
+    ],
+    "generated_description": "Location/geography marker \u2014 activates on place names and prepositions introducing regions or realms (Byzantine, Asia Minor, in Bulgaria, Near East, \u201cin\u201d, \u201cEast\u201d)"
+  },
+  {
+    "id": "20_12951_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.3931232690811157,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 51.0,
+        "context": " the Apocalypse\u23ceThe Cave of the Apocalypse is situated between the villages of Skala and Chora on the island of Patmos in Greece. It is in this"
+      },
+      {
+        "trigger": " in",
+        "score": 47.5,
+        "context": "-established by the Greeks about the end of the nineteenth century; the bishop resides in the monastery of Preveli. Lequien (Oriens Christianus, II"
+      },
+      {
+        "trigger": " from",
+        "score": 52.5,
+        "context": " bridge close to the archeological site, Doliani is now just 2km away from Igoumenitsa-Ioannina national road .\u23ceThe 1"
+      },
+      {
+        "trigger": " modern",
+        "score": 41.5,
+        "context": " with it the right of coinage. It has been identified with the modern small village of Polis. The episcopal see is mentioned in the \"Notitiae episco"
+      },
+      {
+        "trigger": " of",
+        "score": 47.0,
+        "context": " years, ephor of Palaeoanthropology and Speleology of southern Greece of the Ministry of Culture. Human skeletons have been rarely discovered. On the contrary"
+      }
+    ],
+    "promotes": [
+      " betweenstory",
+      "KURZBESCHREIBUNG",
+      "\ub4ef",
+      "\u0c98",
+      "Manbalar"
+    ],
+    "demotes": [
+      "tagHelperRunner",
+      " nahilalakip",
+      "EndInit",
+      "AutoScaleMode",
+      "\u00e1stica"
+    ],
+    "generated_description": "location preposition \u2014 activates on function words (in, of, from, and) that introduce place names or location phrases; flags geographic/location context"
+  },
+  {
+    "id": "22_3793_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.35819464921951294,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 80.5,
+        "context": "es. Pausanias was responsible for the Greek victory over Mardonius and the Persians at the Battle of Plataea in 479 BC, and was the"
+      },
+      {
+        "trigger": " and",
+        "score": 77.5,
+        "context": " Thracian Bosporus, Erbil (Arbela), Issus, Leuctra and Mantinea. Some of the maps are color coded to show the two sides"
+      },
+      {
+        "trigger": " at",
+        "score": 76.5,
+        "context": " friends about the beginning of the Peloponnesian war.\u23ceWe find Diagoras at Athens as early as b. c. 424, for Arist"
+      },
+      {
+        "trigger": " in",
+        "score": 76.5,
+        "context": "ain) Ibn Al-Haitham. Born c. 965 in Basra (Iraq), he flourished in Egypt under Al-Hakim ("
+      },
+      {
+        "trigger": " in",
+        "score": 82.5,
+        "context": " c. 216/17 CE)\u23ceGalen was born in Greece, studied medicine in Egypt and became the most celebrated physician in the Roman"
+      }
+    ],
+    "promotes": [
+      "ftagPool",
+      "owskiego",
+      " Baillargeon",
+      "UnknownFields",
+      " \u043f\u0440\u0435\u043f\u0440\u0430\u0442\u043a\u0438"
+    ],
+    "demotes": [
+      "providedIn",
+      "URLException",
+      " newBuilder",
+      "KommentareTeilen",
+      "+#+#"
+    ],
+    "generated_description": "Locative preposition \u2014 activates on \"in\"/\"at\" (and list connectors) immediately before place names, battles, cities; signals an upcoming location mention."
+  },
+  {
+    "id": "25_1436_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.30348294973373413,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 76.5,
+        "context": " myth.\u23ce5. ATHENS, 1896\u23ceWhen that pistol fired in the village of Marathon, it was predictably three foreign track runners"
+      },
+      {
+        "trigger": " the",
+        "score": 82.0,
+        "context": " the Ottoman occupation it was constantly inhabited. Witnesses of this diachronism are the findings of the city cemetery and the ruins of buildings on top of the hill."
+      },
+      {
+        "trigger": ",",
+        "score": 77.5,
+        "context": " of the Greeks in Epiros, Macedonia, Thessalia, Roumeli, Attiki, Peloponnesos, Crete, and the rest of Greece to the Germans"
+      },
+      {
+        "trigger": "Greek",
+        "score": 73.5,
+        "context": " of the Mediterranean and eastern Atlantic to 1,000 BC.\u23ceGreek and Roman explorations followed that with the Norsemen later executing trans-Atlantic crossings"
+      },
+      {
+        "trigger": " the",
+        "score": 89.5,
+        "context": "<bos>In Kalambaka, the most ancient technical project\u23ceThe most ancient technical project of Greece, probably in the world, is found in the Theopetra"
+      }
+    ],
+    "promotes": [
+      " actionMode",
+      " Perf",
+      " eddy",
+      "Spire",
+      "expandindo"
+    ],
+    "demotes": [
+      " Greek",
+      "Greek",
+      " greek",
+      " Greece",
+      " GREEK"
+    ],
+    "generated_description": "place-list separator \u2014 activates on commas and definite articles around place/nationality mentions (lists of regions/cities); consistently associated with suppressing \u201cGreek/Greece\u201d tokens."
+  }
+]

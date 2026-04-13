@@ -1,0 +1,3 @@
+# Pipeline output saved to graph JSON — just refresh the viewer.
+# Graph file: /Users/maxhz/circuit-tracer-automation/test_graphs/anthropic-thessaloniki-capital-fact.json
+# Descriptions: 54, Groups: 15, Pinned: 29

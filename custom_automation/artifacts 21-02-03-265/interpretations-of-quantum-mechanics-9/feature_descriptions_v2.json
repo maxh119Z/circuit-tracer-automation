@@ -1,0 +1,3746 @@
+[
+  {
+    "id": "0_12600_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.32644420862197876,
+    "top_activations": [
+      {
+        "trigger": " An",
+        "score": 34.75,
+        "context": " sources. The Beige Book summarizes this information by Federal Reserve District and industry sector. An overall summary of the twelve district reports is prepared by a designated Federal Reserve Bank"
+      },
+      {
+        "trigger": " An",
+        "score": 35.25,
+        "context": ": We know how to make them, and our favorite tools do, too. An elliptical frame or coffee might make a refreshing and challenging departure from same old rectangles"
+      },
+      {
+        "trigger": " An",
+        "score": 35.0,
+        "context": " to help educate the public for all emergencies ranging from natural disasters to national threats. An official site for \u201cEmergency Preparedness and Response\u201d breaks down the process in four"
+      },
+      {
+        "trigger": " An",
+        "score": 34.75,
+        "context": " Powered Vehicles!\"\u23ceWhy not be creative and work within his area of interest? An electric car can be a great place to teach the topic of honesty \u2013 and"
+      },
+      {
+        "trigger": " An",
+        "score": 35.0,
+        "context": " a paper bag and a \u201cReader\u2019s Digest\u201d book have in common? An opportunity to create a new book, at least for Bess Ratsimbahar"
+      }
+    ],
+    "promotes": [
+      " A",
+      "A",
+      " his",
+      " an",
+      " a"
+    ],
+    "demotes": [
+      " An",
+      " \u0f0b\u0f0b",
+      "An",
+      " my\u017felf",
+      " An\u017f"
+    ],
+    "generated_description": "Capitalized \"An\" \u2014 activates on sentence-initial/capitalized indefinite article \"An\"; marks starts of noun phrases or sentence openings."
+  },
+  {
+    "id": "0_8910_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39557939767837524,
+    "top_activations": [
+      {
+        "trigger": " while",
+        "score": 9.94,
+        "context": " is itself 102 pages long and should keep you busy reading for a while (free for non-subscribers).\u23ceWhat this study has found in a"
+      },
+      {
+        "trigger": " number",
+        "score": 8.38,
+        "context": " nose at the library I decided to give it a try.\u23ceAfter listing a number of similarities among paintings found in caves from France to Spain Curtis says:\u23ce"
+      },
+      {
+        "trigger": " number",
+        "score": 8.88,
+        "context": " been unable to conclusively determine what causes people to abuse drugs, there have been a number of explanations offered. People appear to use drugs for a variety of different reasons"
+      },
+      {
+        "trigger": " estimated",
+        "score": 9.06,
+        "context": " down and mutilated is a violation of her human rights and \u2013 shockingly \u2013 an estimated three million girls are at risk each year,\u201d said Jos\u00e9 Luis D\u00edaz, Amnesty"
+      },
+      {
+        "trigger": " number",
+        "score": 9.38,
+        "context": ". Professor Robert Bickers of the University of Bristol has been instrumental in making a number of those collections available through the Visualising China website, where more than "
+      }
+    ],
+    "promotes": [
+      "\u017felves",
+      " purpo\u017fe",
+      " Efq",
+      " Majefty",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "Neighbors",
+      "\u201d",
+      "\u23ce",
+      "\u65e2",
+      "he"
+    ],
+    "generated_description": "Quantifier/estimate marker \u2014 activates on \"a number (of)\", \"estimated\", sometimes duration \"while\"; signals upcoming quantity/amount phrase."
+  },
+  {
+    "id": "0_9026_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36142128705978394,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Rare/proper noun \u2014 activates on content-bearing nouns and names (Jewell, Nile, Nucleus, alfalfa); associated with following punctuation/newline, marks distinct content tokens."
+  },
+  {
+    "id": "0_1181_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.32779785990715027,
+    "top_activations": [
+      {
+        "trigger": " tape",
+        "score": 15.62,
+        "context": " means measuring the body. Anthropometry is the simplest technology. It involves using a tape measure to take key readings, such as biceps, thigh, waist, and"
+      },
+      {
+        "trigger": " tape",
+        "score": 15.88,
+        "context": " 12 years and younger to determine correct drug dosing for resuscitation. Although the tape is a well-known tool for determining pediatric medication doses, it is not"
+      },
+      {
+        "trigger": " tape",
+        "score": 16.0,
+        "context": " operator monitored a live video feed from the camera and began recording data on two video tape recorders. When the camera reached bottom the deck crew was notified by radio to"
+      },
+      {
+        "trigger": " tape",
+        "score": 16.0,
+        "context": " the network.\u23ceadvanced intelligent tape; a helical scan technology developed by Sony for tape backup/archive of networks and servers, specifically addressing midrange to high-"
+      },
+      {
+        "trigger": " tape",
+        "score": 16.0,
+        "context": " breadfruit. Methods of data collection using interviews, observation and other tools such as tape recorders and pens with the intention of obtaining an adequate and complete data. The"
+      }
+    ],
+    "promotes": [
+      "&\r",
+      "'},\r",
+      "\"])\r",
+      "\"):\r",
+      "^(@)"
+    ],
+    "demotes": [
+      "L",
+      "B",
+      "F",
+      "\u043c",
+      "M"
+    ],
+    "generated_description": "tape (physical media) \u2014 activates on literal \"tape\" uses: tape measure, videotape/tape recorder, backup/archive tape; physical/measuring/recording contexts."
+  },
+  {
+    "id": "0_9271_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35345712304115295,
+    "top_activations": [
+      {
+        "trigger": " battle",
+        "score": 20.88,
+        "context": " world\u2019s first real politician\u2014for in the course of his ten-year battle to secure the French throne for the Bourbon dynasty he began deliberately enlisting public"
+      },
+      {
+        "trigger": " battle",
+        "score": 21.25,
+        "context": " burst to another (if they were cadenced)?\u23ce- How long did a battle take?\u23ce- How much damage could a vessel take (for each of"
+      },
+      {
+        "trigger": " battle",
+        "score": 21.0,
+        "context": " time, according to the International Peace Research Institute in Oslo, which counts conflicts with 25 or more battle-related deaths. But none of these involved national"
+      },
+      {
+        "trigger": " battle",
+        "score": 20.88,
+        "context": "\u2019 passage from fledgling country at the turn of 18th century to battle-scarred nation ninety years later, all in fewer than two hundred pages"
+      },
+      {
+        "trigger": " battle",
+        "score": 20.88,
+        "context": " lay on the dry Dagorlad, the site of a great months-long battle of the second age of Middle Earth. In this battle the Last Alliance of"
+      }
+    ],
+    "promotes": [
+      " VIDEOTAPE",
+      " lemb",
+      "\u0440\u043e\u0441\u0441\u0438\u0439",
+      "cheduled",
+      ">[]"
+    ],
+    "demotes": [
+      "TargetException",
+      "AutoresizingMask",
+      " BoxDecoration",
+      "aarrggbb",
+      "CrossRef"
+    ],
+    "generated_description": "battle / conflict \u2014 activates on the word \u201cbattle\u201d and war/conflict mentions; includes compounds like \u201cbattle-related\u201d; historical/military context."
+  },
+  {
+    "id": "0_10518_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.2992956340312958,
+    "top_activations": [
+      {
+        "trigger": " interpretation",
+        "score": 21.5,
+        "context": " texts will notice that a difference also lies in the nature of both authors\u2019 theoretical interpretation about government and its citizens, a component that neither author overlooked. Essentially,"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.5,
+        "context": " during the Reconstruction period following the Civil War and comprehensively covers modern legislation and the constitutional interpretation and constitutional basis for civil rights protection, including the contemporary Supreme Court\u2019s"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.62,
+        "context": " general that it becomes, practically, a condition of the experiment. Nevertheless, the interpretation of the figures actually has little to do with imagination, and it is unnecessary"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.38,
+        "context": ", which he incorporated and named \"Trenton.\" Through careful preservation and accurate historical interpretation, visitors will become aware of the importance of this building in national, state"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.38,
+        "context": "This is a study guide commentary, which means that you are responsible for your own interpretation of the Bible. Each of us must walk in the light we have."
+      }
+    ],
+    "promotes": [
+      " Efq",
+      "\u017felves",
+      " my\u017felf",
+      " him\u017felf",
+      "\u017felf"
+    ],
+    "demotes": [
+      " reorganized",
+      " localize",
+      "IMPORTED",
+      "Activit\u00e9s",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "generated_description": "interpretation \u2014 activates on the noun \"interpretation\"; appears in contexts about analysis/meaning (legal, historical, religious, literary commentary)."
+  },
+  {
+    "id": "0_11528_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3029661476612091,
+    "top_activations": [
+      {
+        "trigger": " interpretation",
+        "score": 19.75,
+        "context": "test were analyzing an overall topographic region, reading a map image, and hydrograph interpretation. The highest frequency of hybrid conceptions occurred as teachers attempted to add new academic"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 20.0,
+        "context": " instance, Rabindranath Tagore\u23ce`s novel Gora is a masterly interpretation of this built-in conflict in the very nature of Indian renaissance, a"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 20.0,
+        "context": "ities and privileges clause.\u23ceAs you might imagine, there was more than one interpretation of how the amendment applied the Bill of Rights and subsequent amendments to the various"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 19.75,
+        "context": " and is based on ungrouped rather than grouped data allowing student to focus on interpretation of the data. Regression and correlation analysis includes more realistic examples and more observations"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 20.25,
+        "context": " rate that governs most observed patterns in ecology.\u23ceMTE is based on an interpretation of the relationships between body size, body temperature, and metabolic rate across all"
+      }
+    ],
+    "promotes": [
+      "u",
+      "[",
+      "\\",
+      "Con",
+      "("
+    ],
+    "demotes": [
+      "NUMX",
+      "BibitemShut",
+      "$.\r",
+      "iffance",
+      ")\");\r"
+    ],
+    "generated_description": "interpretation \u2014 activates on the noun \u201cinterpretation\u201d; fires on scholarly/expository uses (legal, literary, data/science contexts), marks the concept of explaining or making sense."
+  },
+  {
+    "id": "0_9151_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3193294107913971,
+    "top_activations": [
+      {
+        "trigger": " mirror",
+        "score": 17.12,
+        "context": "-type images.\u23ceThe newtechnology for this camera relies on a precisely controlled mirror to follow the object and freeze the image on the camera. Buckner,"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 14.88,
+        "context": " plainchant\u23ce- 3 Solesmes notation\u23ce- 4 Rhythmic interpretation\u23ce- 5 Illustrations\u23ce- 6 Other functions of Western neumes"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 14.88,
+        "context": " measure that is flexible and easily reversible, one that reduces maintenance while permitting visitation and interpretation of the site. The GCI-NPS team also developed experimental strategies to"
+      },
+      {
+        "trigger": " mirror",
+        "score": 17.5,
+        "context": " which also takes its start from the destruction of Samaria, and are as faithful a mirror of the condition of the people under Hezekiah, as chapters 7"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 15.12,
+        "context": "\u23cetheoretical, diachronic and synchronic studies that focus on the structure\u23ceand interpretation of bare nouns in creoles. The contributions demonstrate\u23cethe variety and complex"
+      }
+    ],
+    "promotes": [
+      "of\u00fcr",
+      " \"",
+      " But",
+      "verwijspagina",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      " Monfieur",
+      " ainfi",
+      " An\u017f",
+      " Hou\u017fe",
+      " my\u017felf"
+    ],
+    "generated_description": "interpretation/mirror nouns \u2014 activates on topic nouns about analysis or reflection; frequent on headings/list items (e.g., \"interpretation\", \"mirror\")"
+  },
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3756367564201355,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ],
+    "generated_description": "byline \"By\" \u2014 activates on leading \"By\" introducing author/credit lines (author names, attributions, newspaper/byline headers)."
+  },
+  {
+    "id": "0_1847_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37059760093688965,
+    "top_activations": [
+      {
+        "trigger": " dehydration",
+        "score": 14.38,
+        "context": " essential to any animal life. It regulates the water content of the body and avoids dehydration.\u23ceThe proper consumption of salt is beneficial to our immune and digestive systems"
+      },
+      {
+        "trigger": " nationalism",
+        "score": 15.19,
+        "context": " value of local customs and traditions, to the movements that would redraw the map of Europe and lead to calls for \"self-determination\" of nationalities, nationalism was"
+      },
+      {
+        "trigger": " pharmaceuticals",
+        "score": 14.88,
+        "context": " Unused prescription medications should not be flushed or washed down the drain because the residue from pharmaceuticals adversely affects fish and other aquatic species, according to a Penn State Extension water"
+      },
+      {
+        "trigger": " minerals",
+        "score": 14.62,
+        "context": "<bos>25 good health natural foods that provide all of your vitamins and minerals\u23ceHere are 25 basic good health natural foods to prioritize because they are the"
+      },
+      {
+        "trigger": " subsurface",
+        "score": 14.12,
+        "context": ".\u23ceMicrohole technology holds great promise for economically recovering a sizeable portion of the estimated remaining, bypassed shallow (less than 5,000 ft subsurface"
+      }
+    ],
+    "promotes": [
+      "\"];\r",
+      " '\\\\;'",
+      "')));",
+      "')):",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " Monfieur",
+      " purpo\u017fe",
+      " \u017ftate",
+      " \u017fmall",
+      " \u017feveral"
+    ],
+    "generated_description": "Topic noun \u2014 activates on content-bearing nouns naming subjects or domains (health, politics, science, geology); concrete and abstract topic words (dehydration, nationalism, pharmaceuticals, minerals, subsurface)."
+  },
+  {
+    "id": "0_7794_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.32909098267555237,
+    "top_activations": [
+      {
+        "trigger": " implementation",
+        "score": 15.75,
+        "context": " also geography and social customs.\u23ceWhereas ritual worship is something that is between a person and the Creator, the implementation of social transactions and punishments depends much on governing"
+      },
+      {
+        "trigger": " implementation",
+        "score": 16.88,
+        "context": "<bos>Gofer (\u201cGOod For Equational Reasoning\u201d) was an early implementation of a Haskell 1.x-ish language by Mark Jones, originally released in"
+      },
+      {
+        "trigger": " implementation",
+        "score": 16.25,
+        "context": " status, rights and responsibilities not only in formal but also in substance without any discrimination. National Women Commission works for the promotion, protection and implementation of human rights"
+      },
+      {
+        "trigger": " implementation",
+        "score": 15.75,
+        "context": " sites. An integrated coastal management framework has been adopted to guide the process of project implementation on the ground. The project has worked to assess ecosystem services, evaluate threats"
+      },
+      {
+        "trigger": " implementation",
+        "score": 15.75,
+        "context": " public participation process, which was initiated during the environmental assessment exercise and continued into the implementation and construction phase of the project, involved a broad range of Namibian stakeholders"
+      }
+    ],
+    "promotes": [
+      "en",
+      "i",
+      "o",
+      " $",
+      "r"
+    ],
+    "demotes": [
+      " Efq",
+      " it\u017felf",
+      " Hou\u017fe",
+      " my\u017felf",
+      " Majefty"
+    ],
+    "generated_description": "implementation \u2014 activates on the token \"implementation\"; appears in project/policy/software/human-rights contexts (implementation phase, project implementation, software implementation)"
+  },
+  {
+    "id": "0_6406_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.32079726457595825,
+    "top_activations": [
+      {
+        "trigger": " deposit",
+        "score": 17.75,
+        "context": " bones of dead animals. The bones were clearly deposited by a huge flood; the deposit is at least as large as the Everglades! And mixed into the layer are"
+      },
+      {
+        "trigger": " deposit",
+        "score": 17.25,
+        "context": "pton, say that the oil contained in the tar sands of Alberta is the largest deposit on earth after Saudi Arabia and that burning it would be \u201cgame over\u201d"
+      },
+      {
+        "trigger": " deposit",
+        "score": 17.75,
+        "context": "<bos>What if households could deposit excess solar output in an \u201cenergy bank\u201d, and use it to drawn down when needed or loan energy to others.\u23ceThere is"
+      },
+      {
+        "trigger": " deposit",
+        "score": 17.75,
+        "context": "\u23cea secluded hollow or small valley usually covered with trees or turf\u23cethe alluvial deposit at the mouth of a river\u23cearid land with usually sparse vegetation; especially"
+      },
+      {
+        "trigger": " deposit",
+        "score": 17.75,
+        "context": " tell the first person you saw that machines in the future could read your checks, deposit them, and dispense exactly the amount of money you needed whenever you needed it"
+      }
+    ],
+    "promotes": [
+      " honte",
+      " tersenyum",
+      "ratulations",
+      "\udb40\udc62",
+      "Bronnen"
+    ],
+    "demotes": [
+      "\u201c",
+      "<bos>",
+      "\u200b",
+      "=\"\"/>",
+      " ${"
+    ],
+    "generated_description": "deposit \u2014 activates on the word/concept \u201cdeposit\u201d: geological layers, oil/tar sands, money/energy being deposited; covers both noun (layer) and verb (place/store)."
+  },
+  {
+    "id": "0_3842_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3379361629486084,
+    "top_activations": [
+      {
+        "trigger": " translated",
+        "score": 22.75,
+        "context": ". He is the author of commentaries on several Taoist classics that have been published in English, including The Taoist I Ching , also translated by Thomas Cleary."
+      },
+      {
+        "trigger": " translated",
+        "score": 22.88,
+        "context": " James translators probably found the expression redundant and cumbersome, which would explain why they often translated it as \"and it became,\" \"and it was,\" or \"and"
+      },
+      {
+        "trigger": " translated",
+        "score": 22.62,
+        "context": " found in the Hebrew Bible some 1,200 times, it was translated in the King James Version as \"and it came to pass\" only about"
+      },
+      {
+        "trigger": " translated",
+        "score": 23.0,
+        "context": "He describes this in 9:5-6:\u23ceSheol is often translated as \"the grave\", but that translation is questionable.\u23ceProfessors James"
+      },
+      {
+        "trigger": " translated",
+        "score": 23.0,
+        "context": "-Talmudische Medizin (originally published in 1911), was translated into English by Dr. Fred Rosner This book gathers the medical and hygienic"
+      }
+    ],
+    "promotes": [
+      "ividual",
+      " }</",
+      " Meksiku",
+      " professions",
+      " \\%)"
+    ],
+    "demotes": [
+      "paramref",
+      " as",
+      " and",
+      " ModelExpression",
+      "AllAfrica"
+    ],
+    "generated_description": "\"translated\" \u2014 activates on mentions of works being translated (passive past-participle), bibliographic/translation contexts (e.g., \"translated by\", \"was translated into English\")."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3329600393772125,
+    "top_activations": [
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: \u03c4\u03b5\u03c4\u03c1\u03ac\u03c7\u03bf\u03c1\u03b4o\u03bd, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "trigger": "In",
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "UserScript",
+      "\ue315",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" \u2014 sentence\u2011initial \"In\" introducing a topical domain (e.g., \"In medicine,\", \"In music theory,\"); marks topical introductory prepositional phrase."
+  },
+  {
+    "id": "0_6872_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37886348366737366,
+    "top_activations": [
+      {
+        "trigger": " exhibit",
+        "score": 11.25,
+        "context": "'re eating and determine if that makes an impact on the environment.\"\u23ceThe exhibit gives kids to a chance to compete in dung beetle racesand examine samples from"
+      },
+      {
+        "trigger": " exhibit",
+        "score": 11.88,
+        "context": " base of the skull. If it compresses the spinal cord, the ferret will exhibit such signs as weakness and ataxia (demonstrated by a lack of coordination"
+      },
+      {
+        "trigger": " exhibit",
+        "score": 11.75,
+        "context": " few swings due to excessive friction in the bearings. Inductors and capacitors that exhibit low loss will make high Q tuned circuits as will low friction spring-mass"
+      },
+      {
+        "trigger": " exhibit",
+        "score": 11.12,
+        "context": " L.A. tells many sides of the black soldier through photographs.\u23ceThe exhibit is called \u201cAfrican-American Military Portraits from the American Civil War.\" It"
+      },
+      {
+        "trigger": " review",
+        "score": 10.88,
+        "context": " Write down specific ways you and your family can reduce expenses or manage your finances more efficiently. Then commit to a specific plan and review it regularly. Although this can"
+      }
+    ],
+    "promotes": [
+      " auffi",
+      " ujednoznacz",
+      ")\";\r",
+      " autorytatywna",
+      "Autoritn\u00ed"
+    ],
+    "demotes": [
+      ",",
+      "-",
+      "  ",
+      "/",
+      "\u2019"
+    ],
+    "generated_description": "exhibit \u2014 activates on the token \"exhibit\" (verb or noun); fires for uses meaning \"show/manifest\" and for museum/exhibit noun contexts."
+  },
+  {
+    "id": "0_8597_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3804164528846741,
+    "top_activations": [
+      {
+        "trigger": " analytics",
+        "score": 7.38,
+        "context": " sunlight for power conversion. A recent study published by the Bentek energy market analytics company found wind power can actually increase pollution and greenhouse gas emissions because the constant"
+      },
+      {
+        "trigger": " definition",
+        "score": 8.19,
+        "context": " with Kuiper belt objects such as the plutinos. The IAU's definition does not attach specific numbers or equations to this term, but all the planets"
+      },
+      {
+        "trigger": " definitions",
+        "score": 7.25,
+        "context": ", birches, and the like. I never know what to picture. Dictionary definitions don't help. Google is no replacement for real knowledge.\u23ceI"
+      },
+      {
+        "trigger": " definitions",
+        "score": 7.69,
+        "context": " attempt to separate positive and normative analysis to be as scientific as possible. Here are definitions of positive and normative economics from Wikipedia:\u23cePositive economics, value-free"
+      },
+      {
+        "trigger": " illustration",
+        "score": 7.12,
+        "context": " shape of slinky whose ends have been attached to each other. This type of illustration leads to an intuitive understanding of how it\u2019s possible to facilitate an efficient"
+      }
+    ],
+    "promotes": [
+      " '\\\\;'",
+      "GEBURTSDATUM",
+      " ModelExpression",
+      "setVerticalGroup",
+      " calendriers"
+    ],
+    "demotes": [
+      " analogy",
+      " definizione",
+      "Discography",
+      " Glossary",
+      " d\u00e9finition"
+    ],
+    "generated_description": "section-heading noun \u2014 activates on label/heading words that introduce explanatory blocks (e.g. \"definition(s)\", \"illustration\", \"analytics\"); signals an explanatory label or section boundary."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.28678640723228455,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\"; triggers at noun-possessive links and prepositional phrases (before names, places, noun phrases)."
+  },
+  {
+    "id": "0_14896_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3921392261981964,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 9.0,
+        "context": " Historic Trails Interpretive Center in Wyoming \u2013 exchanged temporary exhibits that focused on the conservation of BLM lands. Both exhibits are currently on display, and will be showcased through"
+      },
+      {
+        "trigger": " of",
+        "score": 9.25,
+        "context": " coastal resource managers and emergency officials a wealth of information for assessment, analysis and monitoring of natural disasters such as tsunamis, earthquakes and typhoons.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 9.38,
+        "context": " to show their leadership on an issue that will greatly benefit all Americans: the preservation of our country\u2019s natural heritage. Now is the time for our political leaders"
+      },
+      {
+        "trigger": " of",
+        "score": 9.88,
+        "context": " of the oro- and nasopharynx. Because many rapid tests for the identification of N. gonorrhoeae test for a limited number of characteristics which may be"
+      },
+      {
+        "trigger": " of",
+        "score": 9.75,
+        "context": " Division: Alaska\u23ce- Resource management activities\u23ce- Research, including inventory and monitoring of resources\u23ce- Visitor activities (458,307 visitors in"
+      }
+    ],
+    "promotes": [
+      "\u2019",
+      "'",
+      "\u23ce",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " \u017ftate",
+      " InputDecoration",
+      " hou\u017fe",
+      " Majefty",
+      " purpo\u017fe"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on the preposition \"of\", particularly when introducing noun phrases or possessive/of-phrases; structural trigger before content words."
+  },
+  {
+    "id": "0_10004_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3714490830898285,
+    "top_activations": [
+      {
+        "trigger": " plastic",
+        "score": 11.94,
+        "context": "0 percent weight cellulosic fibers;\u23ce(d) preparing a homogeneous, plastically formable material by adding to the suspension sufficient hydrocolloid to bind"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.94,
+        "context": " properties of laser printer toner.\u23ceToner is a mix of a very fine plastic powder and black pigment.\u23ceWhen paper is being heated by fuser inside"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.69,
+        "context": " Now get ready for Plastics Power.\u23cesolar technologies use advanced materials, including conductive plastic, to\u23ceachieve acceptable efficiencies and design capabilities not possible with\u23ceTwo of"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.81,
+        "context": " of the waste they handle. It is clear that attempts to decrease the amount of plastic that people throw away in the garbage are failing.\u23ceWhich one of the"
+      },
+      {
+        "trigger": " plastic",
+        "score": 11.81,
+        "context": " from the picture, a tub of water with a Wiimote pointing at a plastic boat is a simple and cost-effective way to achieve the same\u2014or"
+      }
+    ],
+    "promotes": [
+      "intenance",
+      "ctober",
+      " \"",
+      " i\u017ft",
+      "Continue"
+    ],
+    "demotes": [
+      "WebVitals",
+      "IntoConstraints",
+      " firent",
+      "]\")]",
+      "endphp"
+    ],
+    "generated_description": "plastic / plastics \u2014 activates on mentions of plastic materials (plastic, plastics, conductive plastic, plastic boat, plastic powder); token-level input feature for material/plastic references."
+  },
+  {
+    "id": "0_4442_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.342651903629303,
+    "top_activations": [
+      {
+        "trigger": " optical",
+        "score": 9.0,
+        "context": " 0.77 \u03bcm to 1.65 \u03bcm after optical pumping by an intense, 0.5 ps pulse at 0."
+      },
+      {
+        "trigger": " Quantum",
+        "score": 8.38,
+        "context": "\u23ceAsking questions that lead to brilliant ideas is at the root of scientific discovery. Quantum leaps in science are made by this type of innovative thinking, but funding for"
+      },
+      {
+        "trigger": " Bose",
+        "score": 7.94,
+        "context": " a gas are outlined. Starting with Heisenberg's uncertainty principle, the formation of Bose-Einstein condensate (BEC) is explained as occurring when the interatomic spacing"
+      },
+      {
+        "trigger": " quantum",
+        "score": 9.31,
+        "context": " no ordinary words to describe them because they come from another world -- the world of quantum mechanics.\u23ceAlthough quantum rules are counter-intuitive, they underlie the macroscopic"
+      },
+      {
+        "trigger": " spin",
+        "score": 9.88,
+        "context": "\u23ceIn the theory, the electromagnetic field is described as being carried by a massless spin-1 particle called the photon. Electromagnetic forces occur when electrically charged particles emit"
+      }
+    ],
+    "promotes": [
+      "<bos>",
+      " phonon",
+      "\u23ce\u23ce",
+      "\u017byciorys",
+      "'"
+    ],
+    "demotes": [
+      " resourceCulture",
+      "InputBorder",
+      "numerusform",
+      "\u5e16\u6700\u540e\u7531",
+      " \u0645\u0631\u0626\u064a\u0647"
+    ],
+    "generated_description": "Quantum concepts \u2014 activates on physics/quantum vocabulary (quantum, Bose, spin, optical, photon), scientific context about particles, fields, and condensed-matter phenomena."
+  },
+  {
+    "id": "0_15814_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39894214272499084,
+    "top_activations": [
+      {
+        "trigger": " quantitative",
+        "score": 22.25,
+        "context": " time, these theories were only loosely applied. They couldn\u2019t be put into quantitative practice because of the difficulty of carefully implementing them. But with the ability to"
+      },
+      {
+        "trigger": " quantitative",
+        "score": 22.25,
+        "context": " X-ray diffraction microscope that enabled them to reveal the internal structure of yeast spores. The team reports the quantitative 3-D imaging of a whole, un"
+      },
+      {
+        "trigger": " quantitative",
+        "score": 22.12,
+        "context": "<bos><radiobiology> A quantitative measure of x or gamma radiation at a certain place, based on its ability to produce ionisation in air. The former special"
+      },
+      {
+        "trigger": " quantitative",
+        "score": 22.25,
+        "context": "? In this study we've shown that non-human primates also possess basic quantitative abilities. In fact, non-human primates can be as accurate at discriminating"
+      },
+      {
+        "trigger": " Quantitative",
+        "score": 18.5,
+        "context": " such as periodontopathic bacteria are the etiological factors in the development of gum diseases. Quantitative analysis with the identification of periodontopathic bacteria is important for the"
+      }
+    ],
+    "promotes": [
+      "tocin",
+      "sprozess",
+      " \u0645\u062d\u0641\u0648\u0638\u0629",
+      "aarrggbb",
+      "rrggbb"
+    ],
+    "demotes": [
+      " [''],",
+      "er",
+      "<bos>",
+      "FormsModule",
+      " <<-"
+    ],
+    "generated_description": "quantitative \u2014 represents the word \"quantitative\"; fires on scientific/measurement contexts discussing numerical measures, analyses, or metrics."
+  },
+  {
+    "id": "0_4229_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.38784798979759216,
+    "top_activations": [
+      {
+        "trigger": " world",
+        "score": 7.22,
+        "context": " graphically, and verbally. Contains many ...show moreworked examples and problems using real world data. Can be used with any technology for graphing functions.\u23ceFrom the"
+      },
+      {
+        "trigger": " physics",
+        "score": 7.09,
+        "context": " 1)\u23ceMax Planck, who shook the world with his discovery of quantum physics, also offered a warning.\u23ce\u201cOne must be careful,\u201d he said"
+      },
+      {
+        "trigger": " fields",
+        "score": 6.66,
+        "context": " providing a possible explanation for anomalies observed in certain 3D materials in high magnetic fields.\u23cePhysics2, 24 (2009) \u2013"
+      },
+      {
+        "trigger": " field",
+        "score": 7.34,
+        "context": " 2012)|\u23ceIn vector calculus, the gradient of a scalar field is a vector field which points in the direction of the greatest rate of increase"
+      },
+      {
+        "trigger": " world",
+        "score": 7.59,
+        "context": " should of course say what the conjecture states, and explain its importance in the real world. This, however, is easier said than done, as those of us"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "'",
+      "\u23ce\u23ce",
+      "\u2019",
+      "<bos>"
+    ],
+    "demotes": [
+      "AutoScaleMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " betweenstory",
+      " ArrayAdapter",
+      "moiselle"
+    ],
+    "generated_description": "Physics/field nouns \u2014 activates on scientific nouns like \"field\"/\"fields\", \"physics\", \"world\" in physics/technical contexts; signals discussion of physical/scientific concepts."
+  },
+  {
+    "id": "0_8444_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.27954310178756714,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 41.5,
+        "context": " it is. There are two kinds or grades of actuality, one that is akin to the possession of knowledge, and another to the exercise of knowledge. The first"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " dark eyes, and white feathers on the outer tail. Female Juncos are similar to males in the same race, but are usually paler and duller. The"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " of 100. Fractions can also be expressed as decimals: is equivalent to 0.05 (five-hundredths). Therefore, 5"
+      },
+      {
+        "trigger": " to",
+        "score": 41.0,
+        "context": " you get a room full of moms and dads together with their babies, they love to admire each other\u2019s babies and discuss what is best for their babies from"
+      },
+      {
+        "trigger": " to",
+        "score": 41.25,
+        "context": " popularity\u23ceIs often mispronounced Mal-ah-chee\u23ceWe gave this name to our beautiful son and we love it! Sometimes we call him Kai.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Jefus",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " to",
+      " in",
+      " for",
+      " ",
+      " and"
+    ],
+    "generated_description": "say \"to\" \u2014 activates on the preposition/infinitive marker \"to\", i.e., the token \"to\" preceding nouns or verbs."
+  },
+  {
+    "id": "0_11375_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.30994200706481934,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "\" is \" \u2014 activates on the character sequence \"is\" (standalone copula and substrings inside words like \"brackish\"); triggers on copula contexts."
+  },
+  {
+    "id": "1_10040_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3604511022567749,
+    "top_activations": [
+      {
+        "trigger": " interpret",
+        "score": 19.25,
+        "context": " creating and editing tables easy.\u23ceHowever, tables are difficult for screen readers to interpret. Before creating a table, explore using headings, lists, or another tool"
+      },
+      {
+        "trigger": " interpret",
+        "score": 19.38,
+        "context": " TAU School of Computer Sciences, has successfully \u201ctaught\u201d a computer how to interpret attractiveness in women.\u23ceKagian published the findings in the scientific journal Vision"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 19.38,
+        "context": ", treated principally from an engineering point of view. The tendency to adopt a restricted interpretation for the term has been largely reversed but, as a result of its existence"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 19.75,
+        "context": " to investigate when children can understand false belief, inspired by Daniel Dennett's interpretation of a Punch and Judy scene. The field diversified in the early 1"
+      },
+      {
+        "trigger": " interpret",
+        "score": 20.5,
+        "context": " will construct knowledge and understanding of concepts\u23cein life science and apply these understandings to interpret,\u23ceintegrate, and extend their knowledge.\u23ceStudents will be encouraged to"
+      }
+    ],
+    "promotes": [
+      " initComponents",
+      " BoxDecoration",
+      "Autoritn\u00ed",
+      "utilisons",
+      " mergeFrom"
+    ],
+    "demotes": [
+      " understand",
+      " understood",
+      " interpret",
+      " interpreted",
+      "ort"
+    ],
+    "generated_description": "interpret / interpretation \u2014 activates on the lemma \"interpret\"/\"interpretation\" (verb and noun forms), across academic, instructional, and explanatory contexts."
+  },
+  {
+    "id": "1_6872_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3492722511291504,
+    "top_activations": [
+      {
+        "trigger": " interpretation",
+        "score": 21.75,
+        "context": " reflect contemporary values. What has received less attention is the extent which changes in constitutional interpretation are driven not by shifts in political mores, but rather by new developments in"
+      },
+      {
+        "trigger": " interpret",
+        "score": 21.62,
+        "context": "re a Christian Locke...). nature holds the absolute truth but reason is the only means in which to interpret it and gain it.\u23ceLudwig Wittgenstein stated that the world"
+      },
+      {
+        "trigger": " interpret",
+        "score": 22.75,
+        "context": " objective truth in the field of values, in a sense that the value concepts are interpretative and can be objectively true when articulated in accordance with methodological rules and standards"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.12,
+        "context": " categorizing and differentiating people on the basis of their race, and imposing a racial interpretation. A racialized rep would be elected to represent everyone who is considered \u201c"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 21.38,
+        "context": " and the dialectical treatment of alternatives\u23ce3. Demonstrate skill in the reading, interpretation, and application of classics of moral philosophy\u23ce4. Understand the strengths and"
+      }
+    ],
+    "promotes": [
+      " luk",
+      "trab",
+      "kol",
+      " Wonder",
+      " fac"
+    ],
+    "demotes": [
+      " BoxDecoration",
+      "stateProvider",
+      "]\")]",
+      "<bos>",
+      " my\u017felf"
+    ],
+    "generated_description": "interpretation / interpret \u2014 activates on tokens meaning \u201cinterpret\u201d or \u201cinterpretation\u201d; contexts: reading, legal/moral/constitutional/racial meaning, methods of understanding and truth."
+  },
+  {
+    "id": "1_5343_5",
+    "layer": 1,
+    "ctx_idx": 5,
+    "influence_score": 0.3982769548892975,
+    "top_activations": [
+      {
+        "trigger": " uncertainty",
+        "score": 13.31,
+        "context": " the 1S-2S transition frequency in hydrogen has been measured with an uncertainty of 1.4 parts in 1014 ,\u23cethis"
+      },
+      {
+        "trigger": " wave",
+        "score": 14.69,
+        "context": "ing in the Alps, Schr\u00f6dinger formulated a wave-equation that accurately gave the energy levels of atoms. It formed the basis of the work that would earn him the"
+      },
+      {
+        "trigger": " wave",
+        "score": 14.44,
+        "context": " are of the same sign) or destructive (opposite signs). The phases of a wave function can be represented as a simple sine curve, y=sinx, in"
+      },
+      {
+        "trigger": " momentum",
+        "score": 13.81,
+        "context": " the product of its mass times its velocity. It is a vector quantity. The momentum of a system is the vector sum of the momenta of the objects which make"
+      },
+      {
+        "trigger": " energy",
+        "score": 18.25,
+        "context": " jumping from the nth orbit to the mth emitted radiation at frequency equal to the energy difference of the orbits divided by h. Presumably, it began radiating as soon"
+      }
+    ],
+    "promotes": [
+      "\u5e16\u6700\u540e\u7531",
+      "XmlEnum",
+      " TextAppearance",
+      "TemporalType",
+      "\u0627\u0644\u0645\u0646\u0627\u0635\u0628"
+    ],
+    "demotes": [
+      "colazione",
+      "TypedDataSet",
+      " nakalista",
+      "<bos>",
+      " LoginComponent"
+    ],
+    "generated_description": "Physical-quantity term \u2014 activates on physics keywords (energy, momentum, uncertainty, wave) in quantum/mechanics contexts, flags basic observables and wave-related concepts."
+  },
+  {
+    "id": "1_15756_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.39489829540252686,
+    "top_activations": [
+      {
+        "trigger": " interpretation",
+        "score": 11.88,
+        "context": ".\u23ceMadison and Monroe, as Democratic-Republicans, favored a states-oriented interpretation of the Constitution, but this came in the 1790s"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 13.38,
+        "context": " enable us to classify this individual within the European haplogroup K. Although population interpretation cannot be carried out, it is interesting to notice the antiquity of this hap"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 12.25,
+        "context": " comprehension.|\u23ce|Science||40 questions||35 minutes||Measures the interpretation, analysis, evaluation, reasoning, and problem-solving skills required in the"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 12.62,
+        "context": " found any reviews in the usual places.\u23ceSufis as warriors\u23ceMethods of interpretation\u23ceThe Perfect Man as the prototype of the Self in the Sufism\u23ce"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 11.88,
+        "context": " as the person can hire cunning lawyers (In other words, the correct interpretation is interpretation of people with most money or power).\u23ceIn this post, I would"
+      }
+    ],
+    "promotes": [
+      "Tikang",
+      "loyer",
+      " uLocal",
+      " AspNetCore",
+      "ThroughAttribute"
+    ],
+    "demotes": [
+      " chi\u030dt",
+      " interpretation",
+      " interpretations",
+      " puissiez",
+      " questions"
+    ],
+    "generated_description": "interpretation (noun) \u2014 activates on the noun \u201cinterpretation\u201d across domains (constitutional, scientific, literary); represents the act/method of interpreting or an interpretation instance."
+  },
+  {
+    "id": "1_12468_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3863924741744995,
+    "top_activations": [
+      {
+        "trigger": " interpret",
+        "score": 16.25,
+        "context": ": Quotations do not speak for themselves. You need to comment upon them and interpret them for your reader.\u23ceCREATIVE THOUGHT MATTERS\u23ceSkidmore College"
+      },
+      {
+        "trigger": " interpret",
+        "score": 16.25,
+        "context": "The variables used in our online calculator are defined in detail below, including how to interpret the results.\u23ceIn this dropdown box, select the federal income tax rate"
+      },
+      {
+        "trigger": " interpret",
+        "score": 15.94,
+        "context": " the last ten thousand years \u2013 all humans have retained a basic ability to recognize and interpret footprints on a beach.\u23ceWhen you look at footprints on a beach,"
+      },
+      {
+        "trigger": " interpret",
+        "score": 16.0,
+        "context": " probability, but unless the probability values are extremely high or low it is difficult to interpret these statistics.\u23ceExperimentally, we want to test graphically the hypothesis of"
+      },
+      {
+        "trigger": " interpret",
+        "score": 15.56,
+        "context": " a resource for people seeking records of past events, and people trying to analyze, interpret and display county-based historical data like returns of elections and censuses,"
+      }
+    ],
+    "promotes": [
+      " qu\u00e6",
+      "oredCriteria",
+      " Efq",
+      " my\u017felf",
+      " varandra"
+    ],
+    "demotes": [
+      "ponses",
+      "\u0e47\u0e08",
+      " lu",
+      ")).",
+      "\u03ac\u03b6"
+    ],
+    "generated_description": "interpret \u2014 activates on the verb \u201cinterpret\u201d (explain/analyze); signals instructional contexts (how to read results, comment on quotations, analyze data or footprints)."
+  },
+  {
+    "id": "2_4442_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3811814486980438,
+    "top_activations": [
+      {
+        "trigger": " opportunities",
+        "score": 20.12,
+        "context": " the Anacostia and Patapsco rivers provide local residents with drinking water and opportunities for fishing, boating and swimming. Cleaning up and restoring these rivers is essential"
+      },
+      {
+        "trigger": " opportunities",
+        "score": 20.0,
+        "context": ". Native American cultures are the foundation from which we teach about many cultures, providing opportunities for our students to make their own cultural connections.\u23cePathfinder educates"
+      },
+      {
+        "trigger": " opportunities",
+        "score": 20.0,
+        "context": " months since winning the Prize. He discussed a free and open scientific community, funding opportunities, the challenges and changes in medicine, and of course, award-winning"
+      },
+      {
+        "trigger": " opportunities",
+        "score": 21.0,
+        "context": "Safe Routes to School is an international movement to create safe, convenient, and fun opportunities for children to bicycle or walk to school.\u23ceToday, approximately 3"
+      },
+      {
+        "trigger": " opportunities",
+        "score": 20.12,
+        "context": " country to compete on the global stage.\u23ceDid you know that the library provides opportunities for everyone in the community to expand their STEM knowledge? From after school and"
+      }
+    ],
+    "promotes": [
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      ".\"</",
+      "NameInMap",
+      " bezeichneter",
+      "<bos>"
+    ],
+    "demotes": [
+      " COUNTER",
+      " INTERPRET",
+      " abundance",
+      " counter",
+      " Counter"
+    ],
+    "generated_description": "opportunities (plural) \u2014 activates on the token \"opportunities\"; appears in contexts like \"provides/creates opportunities\" for community, education, recreation, jobs, funding."
+  },
+  {
+    "id": "3_1188_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.36973637342453003,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 23.38,
+        "context": " also can improve motion resolution for viewing fast-moving action. There are different versions of LED technology, including edge-lighted screens and more advanced full array lighting with"
+      },
+      {
+        "trigger": " of",
+        "score": 22.5,
+        "context": " school students and \"citizen scientists,\" has also collected 200 different versions of cockroaches. Soekle also told Nat Geo that New Yorkers send in more"
+      },
+      {
+        "trigger": " of",
+        "score": 23.0,
+        "context": "<bos>Since I wrote the first version of this article I've acquired a 1976 copy of Jane's Infantry Weapons. This makes the statement"
+      },
+      {
+        "trigger": " of",
+        "score": 22.5,
+        "context": " and traditional value, the oath is considered a rite of passage for practitioners of medicine in many countries, although nowadays the modernized version of the text varies among them."
+      },
+      {
+        "trigger": " of",
+        "score": 24.5,
+        "context": " authors say, such analysis might reveal the drugs you've been taking or biomarkers of diseases such as cancer.\u23ceSmaller versions of the machine may someday make their"
+      }
+    ],
+    "promotes": [
+      " Versions",
+      " VERSION",
+      " versions",
+      " Version",
+      " version"
+    ],
+    "demotes": [
+      " wireType",
+      "hele",
+      " Roskov",
+      "abestanden",
+      "FailureListener"
+    ],
+    "generated_description": "versions-of marker \u2014 activates on \"of\" following \"version\"/\"versions\"; signals a noun specifying which variant or instance (e.g., versions of X, version of this article)."
+  },
+  {
+    "id": "2_10891_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.37726590037345886,
+    "top_activations": [
+      {
+        "trigger": " interpret",
+        "score": 22.12,
+        "context": " came from European missionaries who arrived in the 15th century. At the time, it was common for Europeans to interpret everything through the Bible, and their"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 22.5,
+        "context": "MSU are considering the creation of a \u201cRacialized Students\u201d Representative. The interpretation of the term \u201cRacialized\u201d is generally taken to mean all students"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 22.38,
+        "context": " Restigouche River, at the far end of Chaleur Bay. An interpretation centre built in front of the battle site exhibits the remains of an 1"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 22.25,
+        "context": " its abandonment.\u23ceThis chapter also mentions how Egyptian writing was perceived after\u23cethe interpretation of it became \"lost\", and then discusses its \"rediscovery\"\u23ce"
+      },
+      {
+        "trigger": " interpretation",
+        "score": 22.38,
+        "context": " their images? What fuels those assumptions?\u23ce- How do our experiences affect our interpretation of images?\u23ce- When images desensitize us, how do we"
+      }
+    ],
+    "promotes": [
+      "AxisAlignment",
+      "VersionUID",
+      " unknownFields",
+      "extAlignment",
+      " typelib"
+    ],
+    "demotes": [
+      " Interpretation",
+      "Interpretation",
+      " interpreted",
+      " interpretation",
+      " interpretations"
+    ],
+    "generated_description": "interpretation token \u2014 activates on \"interpret\"/\"interpretation\" and variants; signals discussion of meaning, analysis, perception (how texts/images/events are being interpreted)."
+  },
+  {
+    "id": "2_14250_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.38857075572013855,
+    "top_activations": [
+      {
+        "trigger": " infinite",
+        "score": 20.0,
+        "context": " speak on \"Escher and the Droste Effect,\" which refers to the infinite reproduction of an image within an image.\u23ceLenstra has been fascinated with"
+      },
+      {
+        "trigger": " infinite",
+        "score": 19.88,
+        "context": " Still, it is a low-cost approach, which can be a useful complement when model checking\u23cecannot be applied.\u23ceTo handle programs with infinite state space"
+      },
+      {
+        "trigger": " infinite",
+        "score": 19.88,
+        "context": " natures, intelligible, intellectual and material, are derived by successive emanations from the infinite fountain of deity. These emanations they called oeons. These doctrines were"
+      },
+      {
+        "trigger": " infinite",
+        "score": 19.38,
+        "context": " I say that to mean that we can always trust infinity to be the quality of infinite, we can then know that infinity is a quality that can be applicable to"
+      },
+      {
+        "trigger": " infinite",
+        "score": 19.88,
+        "context": " of his time. In struggles over how mathematics was to accommodate new understandings of the infinite, the Dutch mathematician L. E. J. Brouwer was his most"
+      }
+    ],
+    "promotes": [
+      " Pyle",
+      " d\u00e9couvertes",
+      "pecha",
+      "\u0633\u0645\u0628\u0631",
+      "\u0648\u0631\u062f\u0627\u0631"
+    ],
+    "demotes": [
+      " infinite",
+      "<bos>",
+      "infinite",
+      " Infinite",
+      " unlimited"
+    ],
+    "generated_description": "infinite \u2014 activates on the word \u201cinfinite\u201d / mentions of infinity; fires across contexts (math, theology, art), typically when the adjective/noun \u201cinfinite\u201d appears."
+  },
+  {
+    "id": "4_1897_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.36795222759246826,
+    "top_activations": [
+      {
+        "trigger": "anglement",
+        "score": 19.12,
+        "context": "<bos>Entanglement of Large Whales\u23ceA new area of work for the IWC is to assist countries and properly trained individuals in responding to large whales that have become"
+      },
+      {
+        "trigger": " function",
+        "score": 23.12,
+        "context": " physical chemistry, Electron Phases describe the sign (positive or negative) of the wave function, which is a solution to the Schr\u00f6dinger equation. When two wave functions describing"
+      },
+      {
+        "trigger": "quantum",
+        "score": 19.62,
+        "context": " significantly different than when QM effects kick in, whereby we get the fractional charge/quantum hall effect. It is interesting to note that we always think that to get"
+      },
+      {
+        "trigger": " quantum",
+        "score": 25.5,
+        "context": " there to explain how a quantum eraser works in general: You send particles through two slits so that they can interfere, but individual photons bounce off them near the slits"
+      },
+      {
+        "trigger": "Quantum",
+        "score": 19.75,
+        "context": " area would correspond to having a single detector closer to one of the slits.\u23ceQuantum mechanics tells us (or at least quantum mechanicists tell us, or write"
+      }
+    ],
+    "promotes": [
+      "NotFoundError",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " estekak",
+      "<bos>",
+      " lenker"
+    ],
+    "demotes": [
+      "FXMLLoader",
+      "WaitGroup",
+      "Portale",
+      " NACIONAL",
+      "\u0627\u062f\u06af\u06cc"
+    ],
+    "generated_description": "Quantum / wavefunction terms \u2014 activates on physics jargon: \u201cquantum\u201d, \u201centanglement\u201d, \u201cwave function\u201d, \u201cquantum eraser\u201d; signals quantum-mechanics topic words and related technical nouns."
+  },
+  {
+    "id": "1_16090_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.373982310295105,
+    "top_activations": [
+      {
+        "trigger": " array",
+        "score": 20.25,
+        "context": " Arrays [aka. Pdata]\u23ceA pdata array is a fixed size array of information contained within a primitive. Each pdata array has a name,"
+      },
+      {
+        "trigger": " array",
+        "score": 19.38,
+        "context": " is indicative of the array\u2019s behavior under complex load. In fact, the array is working with two threads (one for reading and one for writing) when"
+      },
+      {
+        "trigger": " array",
+        "score": 18.62,
+        "context": " Layers array defined in a Frame. Layer XML elements, as a part of Layers array, can be defined on any Frame, which includes elements like Buttons and Check"
+      },
+      {
+        "trigger": " array",
+        "score": 19.5,
+        "context": " may be identified by changing the subscript value of the array element name.\u23ceAn array name is local to a program unit ( 18.1.2"
+      },
+      {
+        "trigger": " array",
+        "score": 19.5,
+        "context": " recomputed.\u23ce|Repr D a|\u23ceCompute elements of a delayed array.\u23ce|(Fillable r2 e, Elt e) => Fill"
+      }
+    ],
+    "promotes": [
+      "\u0410\u0440\u0445\u0456\u0432\u043e\u0432\u0430\u043d\u043e",
+      "\u0425\u044c\u0430\u0436\u043e\u0440\u0433\u0430\u0448",
+      "Nationalit\u00e9",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "<bos>"
+    ],
+    "demotes": [
+      " array",
+      "array",
+      " Array",
+      " arrays",
+      " ARRAY"
+    ],
+    "generated_description": "Array token \u2014 activates on occurrences of \"array\"/variants in programming/docs (pdata, Frame, layers); frequently suppresses emitting the literal \"array\" token."
+  },
+  {
+    "id": "15_16246_9",
+    "layer": 15,
+    "ctx_idx": 9,
+    "influence_score": 0.3996048867702484,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 37.75,
+        "context": " On some days, they wear slacks and blazers to class and generally try to hold themselves to a standard usually reserved for men much older.\u23ceThey are"
+      },
+      {
+        "trigger": " to",
+        "score": 37.25,
+        "context": " on some of the trees: an orange P, dots on some trees and tried to work out what these meant. How I expected to know about woodland management beats"
+      },
+      {
+        "trigger": " to",
+        "score": 38.0,
+        "context": " guns blazed all over Europe and airplanes dropped death from the sky. Many people tried to escape from the war. These people were called refugees.\u23ceSome Unitarians"
+      },
+      {
+        "trigger": " to",
+        "score": 38.25,
+        "context": " information management systems (LIMS) systems, but scientists were still forced to try to communicate their needs to bioinformaticians, who had scant understanding of many-"
+      },
+      {
+        "trigger": " to",
+        "score": 39.5,
+        "context": " day. Spanish and English words fly around the room. A couple adult volunteers try to give instructions in Spanish.\u23ceThis is Owatonna's Club Latino"
+      }
+    ],
+    "promotes": [
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580",
+      "EndProject",
+      " ModelExpression",
+      " nakalista",
+      " Administrativna"
+    ],
+    "demotes": [
+      " Majefty",
+      " becau\u017fe",
+      " Jefus",
+      "\u24e7",
+      " \u017feveral"
+    ],
+    "generated_description": "say \"to\" (infinitive marker) \u2014 activates on the particle introducing verbs (infinitives), often in \"try/tried/forced to\" and similar constructions."
+  },
+  {
+    "id": "18_4291_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.38269829750061035,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 25.5,
+        "context": " a linear spring with spring constant proportional to the surface tension. This insight allows us to describe the droplet dynamics in terms of a single simple equation. Numerical solution of"
+      },
+      {
+        "trigger": " to",
+        "score": 27.5,
+        "context": " surfaces. Surface materials are identified by detections of characteristic spectral bands. We show how to define whether to accept an observed spectral feature as a detection when the target material"
+      },
+      {
+        "trigger": " of",
+        "score": 25.5,
+        "context": " actual occurrence of one of them. The cross impact model was introduced as a means of accounting for the interactions between a set of forecasts, when those interactions may not"
+      },
+      {
+        "trigger": " to",
+        "score": 25.5,
+        "context": " and van Minnen (2001) that use detailed biophysical models to estimate regionally specific, non-monetized impacts for different sectors (i."
+      },
+      {
+        "trigger": " to",
+        "score": 24.25,
+        "context": " Environment\u23ceIn the past few years, several experimental and theoretical researches have been conducted to define the concept of immersion and test the different levels of involvement a player may"
+      }
+    ],
+    "promotes": [
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "embatan",
+      "RenderAtEndOf",
+      "IUrlHelper",
+      "enumi"
+    ],
+    "demotes": [
+      "LookAnd",
+      " HttpNotFound",
+      " udaler",
+      "\u0e25\u0e31\u0e07",
+      " Ecc"
+    ],
+    "generated_description": "say \"to\" (infinitive) \u2014 activates on the infinitive marker \"to\" introducing verb phrases (to describe/define/estimate); signals upcoming verb phrase."
+  },
+  {
+    "id": "4_1897_4",
+    "layer": 4,
+    "ctx_idx": 4,
+    "influence_score": 0.3969355523586273,
+    "top_activations": [
+      {
+        "trigger": "anglement",
+        "score": 19.12,
+        "context": "<bos>Entanglement of Large Whales\u23ceA new area of work for the IWC is to assist countries and properly trained individuals in responding to large whales that have become"
+      },
+      {
+        "trigger": " function",
+        "score": 23.12,
+        "context": " physical chemistry, Electron Phases describe the sign (positive or negative) of the wave function, which is a solution to the Schr\u00f6dinger equation. When two wave functions describing"
+      },
+      {
+        "trigger": "quantum",
+        "score": 19.62,
+        "context": " significantly different than when QM effects kick in, whereby we get the fractional charge/quantum hall effect. It is interesting to note that we always think that to get"
+      },
+      {
+        "trigger": " quantum",
+        "score": 25.5,
+        "context": " there to explain how a quantum eraser works in general: You send particles through two slits so that they can interfere, but individual photons bounce off them near the slits"
+      },
+      {
+        "trigger": "Quantum",
+        "score": 19.75,
+        "context": " area would correspond to having a single detector closer to one of the slits.\u23ceQuantum mechanics tells us (or at least quantum mechanicists tell us, or write"
+      }
+    ],
+    "promotes": [
+      "NotFoundError",
+      " \u0627\u0644\u062d\u0631\u0647",
+      " estekak",
+      "<bos>",
+      " lenker"
+    ],
+    "demotes": [
+      "FXMLLoader",
+      "WaitGroup",
+      "Portale",
+      " NACIONAL",
+      "\u0627\u062f\u06af\u06cc"
+    ],
+    "generated_description": "Quantum concepts \u2014 activates on tokens like \"quantum\", \"entanglement\", \"wave function\", \"quantum eraser\"; signals technical quantum-mechanics vocabulary."
+  },
+  {
+    "id": "18_6790_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3367128074169159,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 38.0,
+        "context": " exceptional levels of support to the financial system, when governments have been unable or unwilling to act. Along the way, central bankers - traditionally seen as a reserved and"
+      },
+      {
+        "trigger": " to",
+        "score": 37.0,
+        "context": "One aspect of prophecy is that of \u201cprediction,\u201d i.e., the ability to speak precisely beforehand of events that later are to be realized factually. Predictive"
+      },
+      {
+        "trigger": " to",
+        "score": 37.0,
+        "context": " just there.\u23ceIt is certainly a rare occurrence that a child has a chance to store memories of his great-grandfather. I suspect that it very few who"
+      },
+      {
+        "trigger": " to",
+        "score": 36.5,
+        "context": " form of human-to-human communication. Digital technology has created opportunities for individuals to mix and share images and sounds across great distances, but not flavors and smells"
+      },
+      {
+        "trigger": " to",
+        "score": 36.5,
+        "context": " soon avoid any of them.\u23ceThe fact is, if a person is willing to adjust their lifestyle, most people can lower their blood pressure without resorting to drugs"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      "contentLoaded",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "AddTagHelper",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      " to",
+      "to",
+      "/",
+      " T",
+      "<eos>"
+    ],
+    "generated_description": "to (infinitive/preposition) \u2014 activates on the token \u201cto\u201d; structural marker before verbs, phrases, or relations (introduces infinitives, prepositional phrases, and \u201cX-to-Y\u201d constructions)"
+  },
+  {
+    "id": "18_10557_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3403278589248657,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 74.5,
+        "context": " Rose provides outside perspective on a report in the same issue that fills an important gap in scientists' understanding of whale evolution. The report by others documents new fossils of"
+      },
+      {
+        "trigger": " our",
+        "score": 68.0,
+        "context": ", the purpose of the observatory is: to monitor the volcanic system, to increase our scientific understanding of the Yellowstone volcanic and hydrothermal system, and to disseminate data,"
+      },
+      {
+        "trigger": " better",
+        "score": 82.0,
+        "context": " plays a key role in protein folding. The scientists\u2019 findings may contribute to a better understanding of how proteins adopt their structure and misfold during illness. (Nature"
+      },
+      {
+        "trigger": " advance",
+        "score": 61.0,
+        "context": " the energy mission.\u23ce1. Development of robust analytical frameworks and model hierarchies to advance Earth system projections, predictions, and hindcasts, and to understand climate evolution"
+      },
+      {
+        "trigger": " better",
+        "score": 80.0,
+        "context": " that can threaten telecommunications, navigation systems and electric power grids on Earth. A better understanding of these eruptions and of the solar wind, the huge volume of ionized"
+      }
+    ],
+    "promotes": [
+      " understood",
+      "Understanding",
+      " Understanding",
+      "understanding",
+      " understanding"
+    ],
+    "demotes": [
+      " First",
+      "First",
+      " Red",
+      "rungsseite",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438"
+    ],
+    "generated_description": "scientific understanding \u2014 activates on phrases about increasing or bettering knowledge (better/advance/our understanding); promotes the token \"understanding\"/\"Understanding\"/\"understood\""
+  },
+  {
+    "id": "18_11821_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.31631502509117126,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 49.5,
+        "context": "by San Francisco columnist Herb Caen. \"Beat\" was indeed used by Kerouac to denote both \"beaten down\" and \"beatitude\"\u23ce-- a state"
+      },
+      {
+        "trigger": " to",
+        "score": 67.0,
+        "context": " It may be your worst nightmare or your greatest dream. There is only one word to describe it: Exams.\u23ce1Walk into the classroom or examination area."
+      },
+      {
+        "trigger": "Those",
+        "score": 58.5,
+        "context": "<bos>BOSTON \u2014 Astounding. Remarkable. Revolutionary.\u23ceThose are some of the ways scientists are describing the news that researchers at Boston\u2019s Brigham and Women"
+      },
+      {
+        "trigger": " to",
+        "score": 83.5,
+        "context": "pensible and accessible.\u23ceSimple, fluid and fast. These are words used to describe the \u201cswoosh\u201d in the NIKE logo that has become one"
+      },
+      {
+        "trigger": " to",
+        "score": 50.0,
+        "context": "\u23ceResearchers say that the term \u201cmetabolically abnormal\u201d is one they use to classify individuals who are taking medication for diseases like diabetes, high blood pressure and"
+      }
+    ],
+    "promotes": [
+      " describes",
+      " descriptions",
+      " describing",
+      " describe",
+      " description"
+    ],
+    "demotes": [
+      "SourceChecksum",
+      " nahilalakip",
+      " otomatig",
+      "InjectAttribute",
+      "TagMode"
+    ],
+    "generated_description": "say \"describe\" \u2014 activates on structural tokens introducing descriptions (e.g., \"to\" in \"to describe\", \"Those\" before \"are describing\"); promotes words like describe/description/describing"
+  },
+  {
+    "id": "18_13139_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3780772089958191,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 34.5,
+        "context": " the other models cannot do.\u23ceThe number line is an appropriate model to make sense of each set of\u23cenumbers as an expansion of other and to build the"
+      },
+      {
+        "trigger": " Spatial",
+        "score": 34.5,
+        "context": " of early sex differences in spatial understanding, the recently published article Early Sex Differences in Spatial Skill reports the first unambiguous evidence that these sex differences develop during the preschool years"
+      },
+      {
+        "trigger": " conceptual",
+        "score": 41.5,
+        "context": " carbon cycle science in a visual and interactive manner, the activity provides students with a conceptual framework with which to address the challenges of a changing climate.\u23ceIn this"
+      },
+      {
+        "trigger": " concrete",
+        "score": 46.5,
+        "context": " as four distinct stages in children: sensorimotor, preoperational, concrete, and formal.\u23ceJean Piaget's theory has become one of the most influential"
+      },
+      {
+        "trigger": " this",
+        "score": 34.5,
+        "context": " rays can burn their skin just like a hot stove or other surface. To continue this analogy, explain that, just as you shouldn't pick up a hot"
+      }
+    ],
+    "promotes": [
+      " conceptual",
+      "Concepts",
+      "concepts",
+      " concepts",
+      " concept"
+    ],
+    "demotes": [
+      "LookAnd",
+      "ValueStyle",
+      " nakalista",
+      "rungsseite",
+      " Audiodateien"
+    ],
+    "generated_description": "Conceptual-word detector \u2014 activates on words naming types of concepts (conceptual, concrete, spatial, etc.); pushes output toward \"concept\"/\"conceptual\"/\"concepts\" tokens."
+  },
+  {
+    "id": "18_16021_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3907266855239868,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 36.25,
+        "context": " hung over our heads at one point in trail. I worked around the group trying to get a good angle on the plant to capture the details with the strong back"
+      },
+      {
+        "trigger": " to",
+        "score": 35.25,
+        "context": " After her husband was killed in a brawl and her sons had died, Rita tried to join the Augustinian nuns in Cascia. Unsuccessful at first because"
+      },
+      {
+        "trigger": " to",
+        "score": 34.75,
+        "context": "\u23ceIf you have not yet died from your raw milk habit but you are trying to treat your flu symptoms, be sure not to ruin your liver in so doing"
+      },
+      {
+        "trigger": " to",
+        "score": 37.25,
+        "context": " falling population\u201d, 28 July 2007, the Economist tries to minimize concerns about world population by saying that we are \u201chardly near the"
+      },
+      {
+        "trigger": " to",
+        "score": 42.0,
+        "context": " an unlikely Australian project. Jenner, a self-taught English immigrant painter, tried to establish a cultivated artistic climate in Queensland at the end of the nineteenth century."
+      }
+    ],
+    "promotes": [
+      " imitate",
+      "ailles",
+      " convince",
+      "iastes",
+      " persuade"
+    ],
+    "demotes": [
+      "\ue315",
+      " linkovi",
+      "\u51fa\u7248\u5e74",
+      "\u0648\u0641\u0627\u062a\u0647",
+      " naselje"
+    ],
+    "generated_description": "say \"to\" (infinitive marker) \u2014 activates on instances of to after verbs (tried/trying/tries) that introduce an infinitive; signals upcoming action verb phrase."
+  },
+  {
+    "id": "3_15097_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.37964287400245667,
+    "top_activations": [
+      {
+        "trigger": " guess",
+        "score": 14.19,
+        "context": " could generally fit nine passengers inside and six outside. Inside, as you can probably guess, meant that passengers traveled inside the body of the coach. They would ride"
+      },
+      {
+        "trigger": "ination",
+        "score": 16.5,
+        "context": " one of the few complete copies of the Falnamah or 'Book of Divination', which has 37 magnificent paintings. This forms the basis of one"
+      },
+      {
+        "trigger": " guess",
+        "score": 16.5,
+        "context": " what's in the foods you're eating. It's easy to guess what some foods contain, but others are more of a mystery. That'"
+      },
+      {
+        "trigger": " guess",
+        "score": 14.56,
+        "context": " to expand your knowledge of basic computer networking. Even if you get a question wrong, or need to guess, the explanations provided with answer will teach you what you"
+      },
+      {
+        "trigger": " guess",
+        "score": 15.06,
+        "context": ", and both of them have saberteeth long, ferocious canines. Would you guess that these saberteeth are homologous inherited from a common ancestor with extra-long"
+      }
+    ],
+    "promotes": [
+      " predicted",
+      " predictions",
+      " predict",
+      " prediction",
+      " predicting"
+    ],
+    "demotes": [
+      " utafitiHapana",
+      "TypedDataSet",
+      "fjspx",
+      " intptr",
+      "\u0561\u0563\u0580\u0578\u0582\u0569\u0575\u0578\u0582\u0576\u0576\u0565\u0580"
+    ],
+    "generated_description": "Prediction / guess \u2014 activates on words about guessing, predicting, divination (e.g., \"guess\", \"divination\"); pushes next-token predictions like \"predict\", \"prediction\", \"predicted\"."
+  },
+  {
+    "id": "12_1165_9",
+    "layer": 12,
+    "ctx_idx": 9,
+    "influence_score": 0.37313902378082275,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 20.5,
+        "context": " of renewable energy, including solar power, being used on the planet. Here\u2019s a brief rundown on FIT.\u23ceFeed-in tariffs are designed to encourage"
+      },
+      {
+        "trigger": " to",
+        "score": 19.5,
+        "context": " information they share with Web sites. OPS has a dual purpose: (1) to allow Web sites to personalize their pages for the individual user and (2)"
+      },
+      {
+        "trigger": " to",
+        "score": 19.88,
+        "context": " in the Journal of Medical Internet Research. He said the team's goal was to determine how to increase motivation during physical activity.\u23ce\"People like to exercise"
+      },
+      {
+        "trigger": " to",
+        "score": 19.88,
+        "context": "AWEA) have formed an alliance to improve safety standards. Its purpose is to develop consensus on standardising safety practices, to ensure compliance and to establish training"
+      },
+      {
+        "trigger": " to",
+        "score": 19.0,
+        "context": " specialized form of psychotherapy using the horse as a therapeutic tool. This modality is designed to address self-esteem and personal confidence, communication and interpersonal effectiveness, trust,"
+      }
+    ],
+    "promotes": [
+      "tymologie",
+      "={()=>",
+      " deal",
+      " raise",
+      "igers"
+    ],
+    "demotes": [
+      "expandindo",
+      "\u062a\u0642\u0627\u0648\u0649",
+      " espagnole",
+      "Vidite",
+      "adpleegd"
+    ],
+    "generated_description": "say \"to\" (infinitive) \u2014 activates on the infinitival marker introducing purpose/verb phrases (\"to encourage\", \"to allow\", \"to determine\", \"to improve\")"
+  },
+  {
+    "id": "19_750_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3449232578277588,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 51.0,
+        "context": "<bos>What to expect at this ageTrying to get respectful behaviour out of a three or four year old is like trying to get blood from the proverbial stone. That"
+      },
+      {
+        "trigger": " to",
+        "score": 52.25,
+        "context": " As she steers her two-wheeler through the wind, she sees her mother trying to ask her something, but she cannot understand. Frustrated, she pedals to"
+      },
+      {
+        "trigger": " to",
+        "score": 44.75,
+        "context": " who think you look awesome are actually unhealthily obese. And if you try to lose the weight, your future children will follow in your footsteps. Does this"
+      },
+      {
+        "trigger": " to",
+        "score": 47.75,
+        "context": "<bos>Helping Your Healthy Child Cope with Your Illness\u23ce\u201cI\u2019m trying to keep the bubble intact until they approach me about it. I don\u2019t know"
+      },
+      {
+        "trigger": " to",
+        "score": 44.0,
+        "context": "1899-1901.\u23ceThe Philippines had been trying to revolt against Spanish rule. In 1898 America declared war on"
+      }
+    ],
+    "promotes": [
+      " improve",
+      " understand",
+      " keep",
+      " be",
+      " avoid"
+    ],
+    "demotes": [
+      " NSCoder",
+      "providedIn",
+      "Vidite",
+      "ConstraintMaker",
+      " externi"
+    ],
+    "generated_description": "say verb after \"try to\" \u2014 activates on the infinitival \"to\" in \"try/trying to\"; pushes following verbs (keep, understand, improve, avoid, be)."
+  },
+  {
+    "id": "16_15081_9",
+    "layer": 16,
+    "ctx_idx": 9,
+    "influence_score": 0.3303832411766052,
+    "top_activations": [
+      {
+        "trigger": " test",
+        "score": 34.75,
+        "context": " the precise distance between the Moon and Earth. They're using the observations to test Albert Einstein's theory of gravity, and to measure the structure of the"
+      },
+      {
+        "trigger": " test",
+        "score": 38.0,
+        "context": " the neural circuitry of experimental auctions, and then to use this insight to generate and test a novel economic approach to understand overbidding. It was conducted by a"
+      },
+      {
+        "trigger": "a",
+        "score": 46.0,
+        "context": " and in a scientific context. A theory, in the scientific sense, is \"a coherent group of general propositions used as principles of explanation for a class of phenomena"
+      },
+      {
+        "trigger": "ious",
+        "score": 35.25,
+        "context": " of cellular evolution that, from independent considerations, seem to be the most parsimonious among the existing ones.\u23ceSeveral genes coding for key proteins involved in viral"
+      },
+      {
+        "trigger": " attempt",
+        "score": 30.75,
+        "context": " process it once they get it. For decades, psychologists have considered different models that attempt to describe the seeking and processing of information, and how this affects critical thought"
+      }
+    ],
+    "promotes": [
+      "unnitel",
+      "\u0627\u0644\u062d\u064a\u0627\u0647",
+      "\u0628\u0648\u0627\u0628\u0629",
+      " propOrder",
+      "TintMode"
+    ],
+    "demotes": [
+      "\u044b\u0433\u0430\u043d\u0430",
+      "IBarButtonItem",
+      "rachtet",
+      "TagHelper",
+      "sera"
+    ],
+    "generated_description": "science-method words \u2014 activates on verbs/adjectives in scientific contexts (test, attempt, parsimonious), signals experimental/theoretical discussion about hypotheses, measurements, and models."
+  },
+  {
+    "id": "19_14348_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3082750141620636,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 59.0,
+        "context": " encountered the indigenous people, they fostered a sense of individualism that helped to create slavery to be an unimaginable condition. When slaves were brought to America, families were broken"
+      },
+      {
+        "trigger": " to",
+        "score": 52.5,
+        "context": " recognized by many honors as well as sustained National Institutes of Health research grants totaling, to date, over $20,000,000."
+      },
+      {
+        "trigger": " to",
+        "score": 51.0,
+        "context": " are aimed specifically at children ages 3-8 year...\u23ceThe author writes to and considers his favorite dead authors from To W. M. Thackeray To Charles"
+      },
+      {
+        "trigger": " to",
+        "score": 51.0,
+        "context": " arms have two rows of suckers and wide protective webs along their length.\u23ceBody to 1m, weight up to 20kg.\u23ceFound throughout"
+      },
+      {
+        "trigger": " to",
+        "score": 50.5,
+        "context": " Links to websites, biographies, chronology, bibliographies, and information on key collections, to give users background and context for further research.\u23ce- Collections published through partnerships"
+      }
+    ],
+    "promotes": [
+      "PRWEB",
+      " trav\u00e9s",
+      "plevel",
+      "asting",
+      " be"
+    ],
+    "demotes": [
+      " estekak",
+      "endphp",
+      "httphttps",
+      " gangen",
+      "clerview"
+    ],
+    "generated_description": "to (preposition/infinitive) \u2014 activates on the token \"to\"; signals linking/infinitive usage before verbs, nouns, ranges, lists, or links."
+  },
+  {
+    "id": "17_5364_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.27097395062446594,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 32.0,
+        "context": "ish variant. This is mainly based on the melodic variants, i.e. the tendency to raise the semitones; research on Dutch manuscripts covering the entire"
+      },
+      {
+        "trigger": " to",
+        "score": 29.62,
+        "context": " diversion of water out of the Great Lakes Basin, or both.\u23ce- Consumptive use is a use of water that results in a failure to return any portion"
+      },
+      {
+        "trigger": " to",
+        "score": 29.88,
+        "context": " the last few years or decades - for example since the moment when Jimmy Carter started to fund this research by big money. The energy that the people are able to"
+      },
+      {
+        "trigger": " to",
+        "score": 29.88,
+        "context": " representations, and have difficulty understanding the terms ways, positions, and operators. Learning to read schematic drawings is similar to learning a foreign language. To the trained eye"
+      },
+      {
+        "trigger": " to",
+        "score": 30.88,
+        "context": " to the impacts of global change as they become apparent. Many governments are already beginning to take actions to mitigate ozone depletion and other forms of global change by limiting CFC"
+      }
+    ],
+    "promotes": [
+      " make",
+      " keep",
+      " operate",
+      " get",
+      " be"
+    ],
+    "demotes": [
+      " contextLoads",
+      " mourut",
+      " disfrutando",
+      " auroit",
+      "StoryboardSegue"
+    ],
+    "generated_description": "say infinitival verb \u2014 activates on the token \"to\" (incl. standalone or inside words); promotes base-form verbs following it (make, keep, operate, get, be)."
+  },
+  {
+    "id": "20_3812_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.3047432005405426,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 46.5,
+        "context": " believed to be true, that embodies some of the wisdom and truth valued by that society. These stories may help to explain why the world works the way it does"
+      },
+      {
+        "trigger": " may",
+        "score": 46.0,
+        "context": " shock to some. Scientists estimated his age at around 100 years which may seem old in human years but is actually middle-aged for giant tortoises"
+      },
+      {
+        "trigger": " to",
+        "score": 46.5,
+        "context": " (e.g. historical human occupation) would seem to be important as well to the skuas.\u23ceDistance sampling for South polar skua (Stercor"
+      },
+      {
+        "trigger": " alternative",
+        "score": 45.5,
+        "context": " themselves artistically.\u23cePublished today in the journal Proceedings of the National Academy of Sciences, a new paper offers an alternative to the hybridization theory, raising doubts about"
+      },
+      {
+        "trigger": " helps",
+        "score": 55.5,
+        "context": " it\u2019s quite easy to understand why the Midwinter was so important to them.\u201d\u23ceHe added: \u201cIt helps us to understand what Stonehenge is really all"
+      }
+    ],
+    "promotes": [
+      " explains",
+      " explaining",
+      " explanations",
+      " explanation",
+      " explain"
+    ],
+    "demotes": [
+      "})]",
+      " calldata",
+      "\u00edslu",
+      " Bergh",
+      " k\u00e4nna"
+    ],
+    "generated_description": "say explain \u2014 activates on hedging/introductory words (may, to, helps, alternative) that introduce explanations/interpretations; pushes tokens like explain/explaining/explanation"
+  },
+  {
+    "id": "19_3118_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3935316801071167,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 54.0,
+        "context": " (Sanskrit -- Pali: Nibbana -- \"beyond all that can be described or defined\") is the \"goal\" of Buddhism. In Chinese Buddhist scriptures,"
+      },
+      {
+        "trigger": "herself",
+        "score": 58.0,
+        "context": " by being picked up when crying. Being held is reassuring and comforting when a baby cannot express him/herself any other way.\u23ceSome techniques to help console a"
+      },
+      {
+        "trigger": " into",
+        "score": 63.0,
+        "context": " entire Bible is contained in the Psalms.\u201d The Psalms put our inchoate longings, or as St. Paul would say, groanings, into words."
+      },
+      {
+        "trigger": " description",
+        "score": 44.0,
+        "context": "you had to be there\u201d or\u23ceinvocations of a mystical ritual that exceeds description in words (neither of\u23cewhich have I found very helpful or enlightening)."
+      },
+      {
+        "trigger": " to",
+        "score": 54.5,
+        "context": " on Australian aboriginies. The study suggests that, even without having the language to describe numbers, the human mind has an innate ability to count and differentiate between"
+      }
+    ],
+    "promotes": [
+      "Words",
+      "words",
+      " WORDS",
+      " Words",
+      " words"
+    ],
+    "demotes": [
+      "RegressionTest",
+      "\uf0f1",
+      "mybatisplus",
+      "DoubleQuotes",
+      "IsContent"
+    ],
+    "generated_description": "Words/description \u2014 activates on phrasing about describing or expressing (put into words, description, to describe); promotes literal \"Words\" token."
+  },
+  {
+    "id": "19_10348_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3391571342945099,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 30.25,
+        "context": " time since the Neolithic Revolution, and a measure of technological sophistication based on historical data to test various aspects of Malthusian theory during the period 1-"
+      },
+      {
+        "trigger": " to",
+        "score": 32.75,
+        "context": ", efficiency, and radiation patterns were measured and analyzed with a phantom head in order to understand the human head's effect on the antenna's performance. Although"
+      },
+      {
+        "trigger": " to",
+        "score": 32.0,
+        "context": ". Individual head-related transfer functions (HRTFs) and headphone equalization are used to present narrow-band noises from different directions to listeners. Their task is to"
+      },
+      {
+        "trigger": " to",
+        "score": 30.75,
+        "context": " Ages\u23ceca. 300 BC and earlier: Babylonian astronomers use linear and higher-order interpolation to fill gaps in ephemerides of the sun,"
+      },
+      {
+        "trigger": " to",
+        "score": 36.0,
+        "context": ". Experimental results on the impacts of the doping in the active region will be reported. A simple model is proposed to explain the experimental observation.\u23ce|The speaker"
+      }
+    ],
+    "promotes": [
+      " in",
+      " is",
+      " evaluate",
+      " for",
+      " estimate"
+    ],
+    "demotes": [
+      " GenerationType",
+      "GOTREF",
+      " EconPapers",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " Italijanski"
+    ],
+    "generated_description": "say \"to\" (infinitive) \u2014 activates on the token \"to\" when introducing infinitives/purpose clauses; fires when \"to\" precedes verbs or verb phrases."
+  },
+  {
+    "id": "20_14449_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.33423784375190735,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 40.5,
+        "context": " the sectors would be able share responsibilities and data.\u23ceThe goal would be to ensure cost-effective spending on the nation\u2019s weather systems while minimizing the"
+      },
+      {
+        "trigger": " to",
+        "score": 40.5,
+        "context": " streetcar changes direction. Also, the Birney cars only require one motorman to operate the car as opposed to a motorman and conductor. This was beneficial"
+      },
+      {
+        "trigger": " to",
+        "score": 39.5,
+        "context": " Fast Company reports that SFMTA signed a contract with security firm BRS Labs to deploy cameras in 12 Muni subway stations.\u23ceUsing algorithms and machine"
+      },
+      {
+        "trigger": " to",
+        "score": 39.5,
+        "context": " that naturally occurring Bt bacteria are directly (and legally) used by some organic farmers to reduce caterpillar infestation\u2014a process similar to that used to control gypsy moth infestations"
+      },
+      {
+        "trigger": " to",
+        "score": 43.5,
+        "context": " affordable options for the poor.\u23ceIn most major cities, people can choose either to drive or take public transportation to work. Commuters select the option that"
+      }
+    ],
+    "promotes": [
+      " nab",
+      "hObject",
+      "BufferException",
+      " \u0645\u0631\u0626\u064a\u0647",
+      " \u0641\u0631\u064a\u0628\u064a\u0633"
+    ],
+    "demotes": [
+      "\u51fa\u7248\u5e74",
+      " r\u00e9guli",
+      " \u00e2g\u00e9es",
+      "jekk",
+      " sup\u00e9rieures"
+    ],
+    "generated_description": "\"to\" substring \u2014 activates on the letter sequence \"to\", both as the standalone preposition introducing infinitives/purpose and as a subword inside tokens (sectors, motorman)."
+  },
+  {
+    "id": "20_3734_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.35850393772125244,
+    "top_activations": [
+      {
+        "trigger": " To",
+        "score": 37.25,
+        "context": " from the past to the future. Such metaphors are of very limited value.\u00c2 To think of time as having a direction spatializes time;\u00c2 to think of"
+      },
+      {
+        "trigger": " to",
+        "score": 37.75,
+        "context": " that serve the very goals he sets out. But one can only admire his willingness to step outside the usual comfort zone of political theorists by attempting to pin down the"
+      },
+      {
+        "trigger": " to",
+        "score": 43.0,
+        "context": "\u2014which he later declared to be the maker of civilized humanity\u2014could he begin to explore the clash of that sense of guilt with the aggressive instinct derived from the"
+      },
+      {
+        "trigger": " to",
+        "score": 35.5,
+        "context": "Anthony Orum's goals for this book were certainly ambitious. \"We want to learn how cities are built and how they can change over time ... want to"
+      },
+      {
+        "trigger": " to",
+        "score": 33.5,
+        "context": " us on our paths through life.\u23ce\u201cI think there's another way to understand the immigrant experience now that doesn't look at connection to one'"
+      }
+    ],
+    "promotes": [
+      "PendingIntent",
+      " sausages",
+      "ou",
+      "account",
+      " explained"
+    ],
+    "demotes": [
+      "ValueStyle",
+      " resourceCulture",
+      "WindowConstants",
+      "providedIn",
+      " []:"
+    ],
+    "generated_description": "say \"to\" (infinitive) \u2014 activates on the particle \"to\" that introduces verbs/infinitives; signals an upcoming verb phrase (e.g., to think, to learn, to understand)"
+  },
+  {
+    "id": "21_183_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.38566187024116516,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 56.25,
+        "context": " his lifetime. One occurred when he was approaching the disciples. The disciples were attempting to fish in a storm when they saw Jesus walking on the water toward them."
+      },
+      {
+        "trigger": " to",
+        "score": 67.0,
+        "context": "<bos>Marilyn Lane attempts to close her doors to prevent a large wave from crashing into her Solimar Beach home near Ventura, Calif., on Jan. 30"
+      },
+      {
+        "trigger": " to",
+        "score": 56.25,
+        "context": "arbeiters had arrived from Spain. Fascinated by the strange sounds, I tried to get to know some more languages, the only opportunity being TV courses of English"
+      },
+      {
+        "trigger": " to",
+        "score": 63.25,
+        "context": "than-your-*BSD-and-vice-versa\" topic. I tried to argue in favour of Linux because it knows multiple TCP variants. They corrected me"
+      },
+      {
+        "trigger": " to",
+        "score": 58.25,
+        "context": ", 971)\u23ceNotice that O'Connor doesn't try to tell us how to read the peacock in the story, but rather to share"
+      }
+    ],
+    "promotes": [
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "+#+",
+      "kh\u00e1u",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " try",
+      " Try",
+      "try",
+      "Try",
+      " tries"
+    ],
+    "generated_description": "say \"to\" after try/attempt \u2014 activates on the infinitival \"to\" following verbs like try, tried, attempts; signals upcoming verb phrase (tries/try contexts)."
+  },
+  {
+    "id": "21_2049_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.3438089191913605,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 33.0,
+        "context": " persons who were primarily interested in ethics and desiderated a system of moral certainties to stabilize societies. The Stoic answer was like that given in the Fourteenth Century"
+      },
+      {
+        "trigger": " to",
+        "score": 32.25,
+        "context": " minutiae of battles and the changing attitudes of the masses, it has done little to help us combine these details into a full-scale picture of what was actually"
+      },
+      {
+        "trigger": " to",
+        "score": 35.75,
+        "context": " many Progressive education, growing out of the social reflection that characterized the era, sought to do away with the centralized, bureaucratic, anonymous pubic school and replace it"
+      },
+      {
+        "trigger": " to",
+        "score": 35.25,
+        "context": "\u23ceThe honour was not conferred until the candidates had prepared themselves by various rituals designed to purify the inner soul by fasting, vigils and prayer, and cleansing themselves"
+      },
+      {
+        "trigger": " '",
+        "score": 32.5,
+        "context": " of the Jindywoorobak position. Here, Ingamells saught to 'free Australian art from whatever alien inlfuences trammel it'."
+      }
+    ],
+    "promotes": [
+      "parsedMessage",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      " gainera",
+      " \u0648\u064a\u0643\u064a\u067e\u064a\u062f\u064a\u0627",
+      "NameInMap"
+    ],
+    "demotes": [
+      "breit",
+      " r\u00e9frig",
+      " qu\u00e6",
+      " commerciali",
+      " pubblici"
+    ],
+    "generated_description": "say \"to\" (infinitive marker) \u2014 activates on the particle \"to\" introducing infinitive verbs/purpose clauses (e.g., to stabilize, to help, to do away, to purify)"
+  },
+  {
+    "id": "21_3241_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.3633396029472351,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 47.25,
+        "context": " Journal. It was undertaken by Oscar Franco and colleagues from Cambridge University, who wanted to try to establish whether a long-speculated association between eating chocolate and reduced"
+      },
+      {
+        "trigger": " at",
+        "score": 41.5,
+        "context": ", Rozva and Wenimbi. The findings are part of the study aimed at assessing the socio-economic impact of smallholder irrigation development in Zimbabwe. The"
+      },
+      {
+        "trigger": " to",
+        "score": 48.75,
+        "context": " and the US.\u23ceResearchers also surveyed three quarters of ICD implantation centres in England to find out why eligible patients are being denied the treatment. They found three main"
+      },
+      {
+        "trigger": " to",
+        "score": 42.5,
+        "context": "-derived omega-3 PUFA. Those studies have spurred hundreds of others attempting to unravel the effects of omega-3 PUFA on cardiovascular disease and its risk"
+      },
+      {
+        "trigger": " to",
+        "score": 42.25,
+        "context": " Clark was able to figure out when those names reached average representation among the elites. You can also use names to identify minority groups. For example, 90"
+      }
+    ],
+    "promotes": [
+      " understand",
+      " gau",
+      " understanding",
+      " determining",
+      " determine"
+    ],
+    "demotes": [
+      " Meksiku",
+      " ModelExpression",
+      "\u064a\u0645\u064a\u062f\u064a\u0627",
+      "mybatisplus",
+      "momix"
+    ],
+    "generated_description": "say to-infinitive \u2014 fires on prepositions like \u201cto\u201d/\u201cat\u201d introducing goals or infinitives; promotes forthcoming goal/verb tokens (understand, determine, etc.)."
+  },
+  {
+    "id": "21_10354_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.311589777469635,
+    "top_activations": [
+      {
+        "trigger": "nex",
+        "score": 83.0,
+        "context": " Abraham Lincoln. Taken from the Reader\u2019s Digest book, Mysteries of the Unexplained, you will amazed at these astonishing facts.\u23ce- Lincoln\u2019s"
+      },
+      {
+        "trigger": " defy",
+        "score": 71.0,
+        "context": " in thousands of anecdotes. They've been recorded scientifically too, but they still defy explanation.\u23ceScientists from Rutgers University may have stumbled upon an answer. They"
+      },
+      {
+        "trigger": " Harry",
+        "score": 68.0,
+        "context": " Office with Joe Biden as his vice-president. How could that happen? Let Harry explain.\u23ceThe US Electoral College Explained: Why We Don't Vote"
+      },
+      {
+        "trigger": " cannot",
+        "score": 100.0,
+        "context": " lead author of the paper, said in a statement. \"However, these factors cannot explain the staggering declines since the 1950s, when we"
+      },
+      {
+        "trigger": "t",
+        "score": 66.0,
+        "context": " and women seem to be using their quad region the same, so that couldn\u2019t explain why females are more at risk,\u201d said Oregon State\u2019s lead author"
+      }
+    ],
+    "promotes": [
+      " explain",
+      " exp",
+      " Exp",
+      "Exp",
+      "exp"
+    ],
+    "demotes": [
+      "CppMethod",
+      "\ucc38\uace0",
+      "TagMode",
+      " referenties",
+      " consid\u00e9rons"
+    ],
+    "generated_description": "say \"explain\" \u2014 fires on setup for explanation or puzzlement (unexplained, defy, cannot, \"Let X\") and promotes tokens like \"explain\"/\"exp\"."
+  },
+  {
+    "id": "4_4137_9",
+    "layer": 4,
+    "ctx_idx": 9,
+    "influence_score": 0.35551220178604126,
+    "top_activations": [
+      {
+        "trigger": " try",
+        "score": 30.25,
+        "context": " people who may be nearby.\u23ce- Don't hold the person down or try to stop his movements.\u23ce- Time the seizure with your watch.\u23ce"
+      },
+      {
+        "trigger": " try",
+        "score": 30.5,
+        "context": " isn't nearly as frowned upon as fifths or octaves, but you should try to keep it to a minimum if you can.\u23ceSo, when you"
+      },
+      {
+        "trigger": " try",
+        "score": 28.0,
+        "context": " shrink America's waistline?\u23ce\"We won't know until we try,\" said Alan Saltiel, director of University of Michigan's Life Sciences"
+      },
+      {
+        "trigger": " Try",
+        "score": 28.0,
+        "context": " dead center of any pyramid or fall in perfect alignment along the side/s. Try plotting your lines using the actual\u23celocations, long/lat deg,min"
+      },
+      {
+        "trigger": " Try",
+        "score": 27.5,
+        "context": "s skin.\u23ce- Ask your friend how many points he or she feels. Try the forehead, the cheek, the inside of the arm, the back,"
+      }
+    ],
+    "promotes": [
+      " attempting",
+      " trying",
+      " Attempt",
+      " attempts",
+      " attempt"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " him\u017felf",
+      " Jefus",
+      " fa\u017ft"
+    ],
+    "generated_description": "try/attempt \u2014 activates on the token \"try\" (imperative/suggestion contexts); associated with suggestion/instruction phrasing; pushes output toward synonyms like attempt/trying/attempting."
+  },
+  {
+    "id": "22_814_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3914341628551483,
+    "top_activations": [
+      {
+        "trigger": " This",
+        "score": 44.5,
+        "context": ". We define the length of a complex number as the square root of . This quantity is always a positive real number, and thus always has a square root."
+      },
+      {
+        "trigger": " measure",
+        "score": 35.0,
+        "context": " basic approach to measure theory.\u23ceIn mathematics the concept of a measure generalizes notions such as \"length\", \"area\", and \"volume\" (but not"
+      },
+      {
+        "trigger": " topological",
+        "score": 35.0,
+        "context": " move towards multivariable calculus, we\u2019re going to primarily be concerned with the topological spaces (for various values of ) just as in calculus we were primarily concerned"
+      },
+      {
+        "trigger": " things",
+        "score": 38.5,
+        "context": " What happens if we act by one vector field followed by another? To really make things explicit, let\u2019s say that is a coordinate patch, so we can"
+      },
+      {
+        "trigger": " some",
+        "score": 33.5,
+        "context": " of a satisfactory answer in general, what are some specific examples of exact sequences encoding some desirable property?\u23cePlease set me straight! It seems like all of the"
+      }
+    ],
+    "promotes": [
+      " arise",
+      " montado",
+      " f\u00edsicos",
+      " f\u00edsicas",
+      "IBOutlet"
+    ],
+    "demotes": [
+      "Spolja\u0161nje",
+      "ActionCreators",
+      "\u0446\u0435\u0437\u0434\u0430\u0442\u043d\u0438\u0439",
+      "ValueGeneration",
+      " Wikimedijinoj"
+    ],
+    "generated_description": "Concept pointer \u2014 activates on demonstratives and vague nouns (\"this\", \"some\", \"things\") and on math-concept words when pointing to or introducing ideas."
+  },
+  {
+    "id": "21_14442_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.2767884135246277,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 52.0,
+        "context": " The vaccinated mice demonstrated normal learning skills and functioning memory in spite of being genetically designed to develop an aggressive form of the disease.\u23ceThe Rochester scientists reported the findings"
+      },
+      {
+        "trigger": " to",
+        "score": 52.5,
+        "context": " sugar cubes, and presented N with the materials. That\u2019s all she needed to hear before she began to glue the cubes onto the panel.\u23ceAnd stack"
+      },
+      {
+        "trigger": " to",
+        "score": 53.0,
+        "context": " people are enslaved in 2013 is \u2014 and should be \u2014 hard to ignore.\u23ceIn his book Disposable People, the co-founder of Free"
+      },
+      {
+        "trigger": " to",
+        "score": 53.5,
+        "context": " rank floods and landslips.\u201d He was not the first \u2013 nor the last \u2013 to express his concerns about deforestation in New Zealand. In 1877"
+      },
+      {
+        "trigger": " to",
+        "score": 60.5,
+        "context": " a feudal tenant to his or her\u23celord or ruler in proportion to the ability to pay. As one R. Higdon put it in\u23ce142"
+      }
+    ],
+    "promotes": [
+      " autorytatywna",
+      " participate",
+      " deliver",
+      " qualify",
+      " spend"
+    ],
+    "demotes": [
+      " to",
+      " actuelles",
+      " ext\u00e9rieures",
+      " m\u00e9dicaux",
+      " actuels"
+    ],
+    "generated_description": "say \"to\" \u2014 activates on the structural \"to\" before infinitives or to-phrases; signals an upcoming verb/infinitive or to\u2011phrase."
+  },
+  {
+    "id": "21_7845_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.36884695291519165,
+    "top_activations": [
+      {
+        "trigger": " To",
+        "score": 47.0,
+        "context": " mechanism for aromatic ring formation from a linear intermediate with high fidelity has remained unclear. To reveal the cyclization mechanism, researchers at the University of California, Irvine,"
+      },
+      {
+        "trigger": " to",
+        "score": 53.5,
+        "context": " IQ, and fragile X mental retardation protein level; and linear support vector machine analyses to classify group membership.\u23ceIn addition to aberrant brain structures reported previously in older"
+      },
+      {
+        "trigger": " to",
+        "score": 53.0,
+        "context": " offspring gain much higher fitness when they develop in inner ovules. We conducted studies of Ficus rubiginosa at six field sites in Australia to test whether wasp"
+      },
+      {
+        "trigger": " to",
+        "score": 51.0,
+        "context": " model of krill population development and predator diet data from South Georgia have been used to examine seasonal changes in the population structure of krill. The krill population"
+      },
+      {
+        "trigger": " to",
+        "score": 52.5,
+        "context": ", but the factors that influence their spatial arrangement are poorly understood. This study sought to explain the spatial structure of coral reef fish communities in the Ryukyu Archipelago"
+      }
+    ],
+    "promotes": [
+      " assess",
+      " intercal",
+      " quantify",
+      " character",
+      " estimate"
+    ],
+    "demotes": [
+      "GraphicsUnit",
+      "WithMany",
+      "msgTypes",
+      "dropIfExists",
+      " dawned"
+    ],
+    "generated_description": "say 'to' (infinitive) \u2014 activates on the token \"to\" introducing purpose/infinitive clauses; typically precedes action verbs (reveal, test, classify, examine)."
+  },
+  {
+    "id": "23_8792_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.293410986661911,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 36.5,
+        "context": "-up plans and models of the forts. At the same time it was decided to make an engineers' dike through the Haarlemmermeer polder. This dike"
+      },
+      {
+        "trigger": " to",
+        "score": 36.0,
+        "context": " leading to careers in biology. During Bioblitz, school children and others are encouraged to visit tables set up at a central location. Here, scientists identify their finds"
+      },
+      {
+        "trigger": " to",
+        "score": 37.0,
+        "context": " to other private businesses. Sometimes, it is easier, faster and cheaper for it to do this than hire more and more employees. The result of this is the"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": ", I had already learned some of the ins and outs of this program before beginning to utilize the object palette for design work. So that is where it begins as"
+      },
+      {
+        "trigger": " to",
+        "score": 37.0,
+        "context": " years in prison. So the protesters, like many Egyptians, considered it perfectly reasonable to demand that the US government censor a film that offended Muslims \u2013 and assumed that"
+      }
+    ],
+    "promotes": [
+      "aarrggbb",
+      " u\u017fe",
+      "tvguidetime",
+      " Wicidata",
+      "NameInMap"
+    ],
+    "demotes": [
+      " to",
+      "to",
+      "To",
+      " To",
+      " in"
+    ],
+    "generated_description": "infinitival \"to\" \u2014 activates on the particle \"to\" introducing infinitives (to + verb); marks upcoming verb phrase or action phrase in prose."
+  },
+  {
+    "id": "23_13740_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.2954654097557068,
+    "top_activations": [
+      {
+        "trigger": " least",
+        "score": 61.5,
+        "context": " single cell, the fertilized egg, is one of the most miraculous, intriguing and least understood events in biology. Shortly after fertilization the embryo begins to grow and develop"
+      },
+      {
+        "trigger": " better",
+        "score": 51.0,
+        "context": ", of biochemistry, biophysics and molecular biology \u2013 said the finding gives researchers a better understanding of bacterial resistance to antibiotics. Ultimately it could help drug researchers develop treatments"
+      },
+      {
+        "trigger": " satisfactorily",
+        "score": 52.0,
+        "context": " of being less effective as heat insulators . This behavior of ceramic coatings has not been satisfactorily explained. It is believed that some detailed heat transfer characteristics must have a more"
+      },
+      {
+        "trigger": " makes",
+        "score": 56.5,
+        "context": " weeks for the 54 (6 weeks have double portions). I hope that makes sense; if you are a bit muddled, always consult a good Jewish"
+      },
+      {
+        "trigger": " our",
+        "score": 53.5,
+        "context": "engineers design new molecular machines for nanotechnology applications, as well as significantly aid our understanding of diseases such as Alzheimer's and Parkinson's, both of"
+      }
+    ],
+    "promotes": [
+      "niaj\u0105ca",
+      " Wikispecies",
+      " BoxDecoration",
+      " \u062a\u0627\u0646\u064a\u0647",
+      "Hentet"
+    ],
+    "demotes": [
+      " understood",
+      " understanding",
+      " understand",
+      " Understanding",
+      "Understanding"
+    ],
+    "generated_description": "avoid \"understand\" words \u2014 activates on modifiers/verbs before phrases like \"understood/understanding/explained/makes sense\"; consistently pushes away tokens in the understand/understood/understanding family"
+  },
+  {
+    "id": "23_8002_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3976103961467743,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 31.25,
+        "context": " centuries formed a portion of the teachings of the Oriental Yogis.\u23ceIn order to avoid misconceptions arising from the various theories regarding this great principle, which theories are"
+      },
+      {
+        "trigger": " to",
+        "score": 32.75,
+        "context": " attention to finding laborers for the newly developing lumber and mining industries.\u23ceIn order to attract laborers to West Virginia the state government encouraged the immigration commissioner to advertise in"
+      },
+      {
+        "trigger": " to",
+        "score": 36.25,
+        "context": " things segregated.\u23ceIn order to give a general survey of the results, and to demonstrate the reality of segregation over the wide range of material included in the experiments"
+      },
+      {
+        "trigger": " to",
+        "score": 36.25,
+        "context": ", nor as to the entire distinctness of the things segregated.\u23ceIn order to give a general survey of the results, and to demonstrate the reality of segregation"
+      },
+      {
+        "trigger": " to",
+        "score": 35.25,
+        "context": " for overdue reserve items are usually higher than for material which is not on reserve, to encourage users to return the material so that others may have access to it."
+      }
+    ],
+    "promotes": [
+      " balsam",
+      " gres",
+      " FOREST",
+      " forest",
+      "hoots"
+    ],
+    "demotes": [
+      "ThroughAttribute",
+      " d\u00e9mocr",
+      "})));",
+      " \u0645\u0634\u064a\u0646",
+      "parsedMessage"
+    ],
+    "generated_description": "say purpose \"to\" \u2014 activates on \"to\" in purposive constructions (esp. \"In order to\"); signals upcoming infinitive expressing purpose or goal."
+  },
+  {
+    "id": "23_9060_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3513840436935425,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 54.0,
+        "context": "<bos>Molecular dynamic simulation method has been employed to consider the critical buckling force, pressure, and strain of pristine and defected single-walled carbon nanotube (SW"
+      },
+      {
+        "trigger": " to",
+        "score": 55.0,
+        "context": " friction between droplet and surface. By modelling of the droplet motion, it was possible to extract information on the friction and kinetic energy dissipation.\u23ceFor many years researchers"
+      },
+      {
+        "trigger": " to",
+        "score": 58.5,
+        "context": " offspring gain much higher fitness when they develop in inner ovules. We conducted studies of Ficus rubiginosa at six field sites in Australia to test whether wasp"
+      },
+      {
+        "trigger": " to",
+        "score": 48.0,
+        "context": " of cingulate cortex in emotion and a limbic system have failed as have efforts to characterize a single cingulate function such as attention. Because assessing the structure of"
+      },
+      {
+        "trigger": " to",
+        "score": 54.0,
+        "context": " particular phenotypic traits to variation in rates of speciation and/or extinction, including attempts to identify evolutionary key innovations. Although most studies that employ PCMs focus on extant"
+      }
+    ],
+    "promotes": [
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u0915",
+      "niaj\u0105ca",
+      "findpost",
+      " consultato",
+      " \u064a\u062a\u064a\u0645\u0647"
+    ],
+    "demotes": [
+      " Band",
+      "PCell",
+      " CreateTagHelper",
+      " complejos",
+      "ThroughAttribute"
+    ],
+    "generated_description": "say infinitive verb \u2014 activates on the particle \"to\" introducing an infinitive; signals/predicts an immediately following verb/action (consider, extract, test, characterize)."
+  },
+  {
+    "id": "24_3173_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.30651435256004333,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 33.5,
+        "context": " its national ethnographical applied art. The founders of the museum\u2019s collections decided to prove that this opinion was wrong and defined the list of main representatives of Ukrainian"
+      },
+      {
+        "trigger": " to",
+        "score": 33.5,
+        "context": "<bos>People love to sensationalize the deleterious effects of new-fangled tech on the impressionable brains of children. Psychologist Larry D. Rosen's presentation to"
+      },
+      {
+        "trigger": " to",
+        "score": 34.25,
+        "context": " Adverbs, Adverbs of motion & location, Dolgo\u23ceIf you want to ask how often something happens in Russian, you can use the phrase \u00ab\u043a\u0430\u043a"
+      },
+      {
+        "trigger": " to",
+        "score": 37.25,
+        "context": "\u201cI think where the group really nailed it on the head is where they tried to understand how to modify consumer behavior in a way that would promote green thinking,\u201d"
+      },
+      {
+        "trigger": " to",
+        "score": 34.0,
+        "context": " ideas on deceit and self-deception, was eager for the three of us to get together.\u23ce- Ignorance, self-deception and false consciousness are"
+      }
+    ],
+    "promotes": [
+      " connect",
+      " eat",
+      " verify",
+      " treat",
+      " add"
+    ],
+    "demotes": [
+      "NUMX",
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "Skocz",
+      " CreateTagHelper",
+      "'},\r"
+    ],
+    "generated_description": "say to-infinitive \u2014 activates on the word \u201cto\u201d introducing an infinitive; signals/pushes for the following verb token (e.g., connect, eat, verify)."
+  },
+  {
+    "id": "23_16023_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3178459703922272,
+    "top_activations": [
+      {
+        "trigger": " us",
+        "score": 44.25,
+        "context": "2\u23ceInformation designer Tom Wujec talks through three areas of the brain that help us understand words, images, feelings, connections. In this short talk from TED"
+      },
+      {
+        "trigger": " time",
+        "score": 36.75,
+        "context": " about. Even when we're working on syntax, we often have a hard time defining what we're doing or articulating why it's important."
+      },
+      {
+        "trigger": " to",
+        "score": 38.5,
+        "context": " a lot in discussions of renewable energy, but its meaning isn't particularly easy to guess at. Most often you'll hear it in arguments over whether rooftop"
+      },
+      {
+        "trigger": " to",
+        "score": 37.0,
+        "context": "\"? This is by no means so clear-cut in its meaning or so easy to define as is the family. While it is obviously not the same as man"
+      },
+      {
+        "trigger": " to",
+        "score": 40.25,
+        "context": " this stage we are making no conscious attempt to memorise facts and will not attempt to do so. Nevertheless your child will by now have made certain discoveries about the"
+      }
+    ],
+    "promotes": [
+      " Orrell",
+      " domestic",
+      "\u565b",
+      " form",
+      " kasarigan"
+    ],
+    "demotes": [
+      "\u044b\u0433\u0430\u043d\u0430",
+      "MockMvc",
+      " nahilalakip",
+      "atri\u00e8me",
+      " \u0938\u092e\u0940\u0915\u094d\u0937\u093e\u0913\u0902"
+    ],
+    "generated_description": "signal upcoming verb phrase \u2014 activates on 'to' and object pronouns before verbs; marks infinitival/complement structures (e.g., \"to do\", \"help us understand\", \"time to define\")"
+  },
+  {
+    "id": "22_2983_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.36704814434051514,
+    "top_activations": [
+      {
+        "trigger": " be",
+        "score": 38.0,
+        "context": " of a higher-value symbol, so that 1956 may also be represented as MCMLVI, where the CM symbol, with C before M"
+      },
+      {
+        "trigger": " to",
+        "score": 40.0,
+        "context": " 'School of Athens' fresco by Raphael, housed in the Vatican, is meant to represent the Greek agora and all the great minds that passed through it.\u23ce"
+      },
+      {
+        "trigger": " is",
+        "score": 38.0,
+        "context": " Roman numerals as MDCCXXXII, and the number 1956 is represented by Roman numerals as MDCCCCLVI. Letter symbols are normally written"
+      },
+      {
+        "trigger": " detailed",
+        "score": 50.25,
+        "context": " of travellers. In 1976, a German naturalist gave rather a detailed description of the Sumxu, when a droop-eared cat had been brought"
+      },
+      {
+        "trigger": " to",
+        "score": 41.75,
+        "context": " members use themselves, or find familiar and comfortable. The terms used in this manuscript to describe populations are as historically correct as possible and are chosen so as not to"
+      }
+    ],
+    "promotes": [
+      " int\u00e9gral",
+      " extensively",
+      "</i>",
+      "rag",
+      "Personensuche"
+    ],
+    "demotes": [
+      " representations",
+      " Representation",
+      "representation",
+      " representation",
+      " propOrder"
+    ],
+    "generated_description": "say represent/describe \u2014 fires on structural words (to/is/be/used) right before verbs about representing or describing; signals upcoming phrasing like \u201crepresent,\u201d \u201cis represented,\u201d or \u201cdescribe.\u201d"
+  },
+  {
+    "id": "24_10006_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3503304719924927,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 37.0,
+        "context": ". Include your pet's sex, age, weight, breed, color, and any special markings. When describing your pet, leave out one identifying characteristic and"
+      },
+      {
+        "trigger": " those",
+        "score": 40.5,
+        "context": "Many words come to mind when describing a volunteer: devoted, inspiring, passionate. But those words feel pale and generic when faced with the deep motivation and strength that"
+      },
+      {
+        "trigger": " a",
+        "score": 39.5,
+        "context": " where you can see birds coming and going. Choose a bird and write as full a description of it as you possibly can. Here's an example from the"
+      },
+      {
+        "trigger": " brief",
+        "score": 37.5,
+        "context": " operations phase; and\u23ce- the mine closure phase.\u23ceThis section provides a brief overview of the activities that take place during each phase of the mine life cycle"
+      },
+      {
+        "trigger": " point",
+        "score": 39.5,
+        "context": " the Allies after they landed at Anzio, chronicling what LIFE magazine at one point characterized as a \u201cslow, maddening, fruitless battle.\u201d In late May"
+      }
+    ],
+    "promotes": [
+      " heapq",
+      "mybatisplus",
+      " gradova",
+      " Lexer",
+      " resourceCulture"
+    ],
+    "demotes": [
+      " description",
+      " descriptions",
+      " describe",
+      " described",
+      " Descriptions"
+    ],
+    "generated_description": "Description-context \u2014 activates on function words inside prompts asking for descriptions or \u201cdescribe\u201d tasks; consistently suppresses output tokens like \u201cdescribe\u201d/\u201cdescription.\u201d"
+  },
+  {
+    "id": "24_10662_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3524240553379059,
+    "top_activations": [
+      {
+        "trigger": " systems",
+        "score": 68.5,
+        "context": " identified, Lovley said. That opens up the possibility of using genetic engineering and systems biology to manufacture wires with predetermined properties.\u23ce\"The desirable properties will most"
+      },
+      {
+        "trigger": " power",
+        "score": 68.0,
+        "context": " devices could possess, finding them to be cheaper, have greater integration potential and lower power consumption than the alternatives.\u23ceMEMS emerged out of the semiconductor industry,"
+      },
+      {
+        "trigger": " of",
+        "score": 71.5,
+        "context": " used to make jewelry such as necklaces and earrings. Additionally, figurines are carved out of haematite. It is mined throughout Africa including in Sierra Leone and South Africa"
+      },
+      {
+        "trigger": " forehead",
+        "score": 72.0,
+        "context": " temeperature with the forehead thermometer as it is more skin temperature which is affected by room temperature than a core temperature. It is a nice device for monitoring but not"
+      },
+      {
+        "trigger": " correctly",
+        "score": 67.0,
+        "context": " to pesticides.\u23ceIdentify the problem\u23ceBefore considering what control measure to use, correctly\u23ceidentify the pest, disease or weed you are facing. Nursery personnel are"
+      }
+    ],
+    "promotes": [
+      " lyre",
+      " spake",
+      " Aut\u00f3noma",
+      " hou\u017fe",
+      " Econ\u00f3mica"
+    ],
+    "demotes": [
+      " ferm\u00e9s",
+      " d\u00e9mocr",
+      " sup\u00e9rieurs",
+      " d\u00e9tru",
+      " color\u00e9s"
+    ],
+    "generated_description": "Precedes important word \u2014 activates on tokens immediately before a content word (e.g., modifiers/compounds, \u201cof\u201d, adverbs like \u201ccorrectly\u201d); signals an upcoming noun/verb."
+  },
+  {
+    "id": "20_1332_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.37229424715042114,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 36.25,
+        "context": " theoretical foundations and practical implementation issues.\u23ceAs a particular example, we show how to use type qualifiers to find format-string\u23cevulnerabilities in widely-"
+      },
+      {
+        "trigger": " to",
+        "score": 30.75,
+        "context": " and includes: holistic, coherent, volumetric modeling systems; symbolic languages that are able to handle infinite degrees of freedom and detail in a compact format; and the direct"
+      },
+      {
+        "trigger": " to",
+        "score": 30.25,
+        "context": " for the energy mission.\u23ce1. Development of robust analytical frameworks and model hierarchies to advance Earth system projections, predictions, and hindcasts, and to understand climate"
+      },
+      {
+        "trigger": " to",
+        "score": 32.5,
+        "context": " considerably reduces the size of the representation: use a graph instead of a tree, to share common subexpressions. For example, the expression above can be"
+      },
+      {
+        "trigger": " to",
+        "score": 37.5,
+        "context": " and Tolerable Windows Approach (Toth, 2003), aim to define a guardrail of allowable emissions for sets of unacceptable impacts or intolerable mitigation"
+      }
+    ],
+    "promotes": [
+      "snprintf",
+      " nyelven",
+      "\u0e2b\u0e27\u0e31\u0e14",
+      " \u6765\u81ea",
+      " robus"
+    ],
+    "demotes": [
+      " plea\u017fure",
+      " it\u017felf",
+      " my\u017felf",
+      " \u017ftand",
+      " fa\u017ft"
+    ],
+    "generated_description": "to (infinitive marker) \u2014 activates on the word \"to\" before verbs; signals infinitive/purpose constructions (e.g. \"how to\", \"able to\", \"aim to\", \"to advance\")"
+  },
+  {
+    "id": "24_10743_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3942153751850128,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 52.0,
+        "context": ", and the effects of these processes on citizens. The goal in this course is to develop a conceptual and practical understanding of how politics, religion, and media intersect"
+      },
+      {
+        "trigger": " to",
+        "score": 56.0,
+        "context": " national identity. This applies even to non-Catholics.\u23ceCould astrology help us to understand what lies behind the huge popularity of the Virgin of Guadalupe? Is"
+      },
+      {
+        "trigger": " not",
+        "score": 53.5,
+        "context": ") is an autoimmune disease in the general family of lupus. For reasons that are not understood, in rheumatoid arthritis the immune system goes awry and begins attacking innocent"
+      },
+      {
+        "trigger": " to",
+        "score": 47.25,
+        "context": ", nearly 200 years after her death, we\u2019re still struggling to put a face to her name. The only two authenticated Austen portraits are this"
+      },
+      {
+        "trigger": " children",
+        "score": 47.75,
+        "context": " It also includes an excerpt from a 1946 pamphlet intended to help children respond to death and to the psychological effects of war on friends and family."
+      }
+    ],
+    "promotes": [
+      " BETTER",
+      " Better",
+      "Better",
+      "better",
+      " better"
+    ],
+    "demotes": [
+      "Knowing",
+      "StoryboardSegue",
+      " knowing",
+      "Know",
+      " Knowing"
+    ],
+    "generated_description": "infinitival \"to\" \u2014 activates on the token \"to\" when used as an infinitive marker or preposition introducing verb phrases or noun complements (e.g., \"to develop\", \"to put\", \"to help\")."
+  },
+  {
+    "id": "22_10023_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.26045000553131104,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 52.0,
+        "context": " in the media, workplace, and in their own minds.\u23ceWhite people tend to be unaware of the nature of colorism because of the popularity of tanning."
+      },
+      {
+        "trigger": " will",
+        "score": 52.0,
+        "context": " first character of every line will be removed from the input, and the following actions will be performed:\u23ceIf the character removed is:\u23ce- The rest of"
+      },
+      {
+        "trigger": " will",
+        "score": 55.0,
+        "context": " servicemen.\u23ceThe building will be 500 feet in diameter and will enclose an indoor beach surrounding a large circular swimming pool. The interior will be"
+      },
+      {
+        "trigger": " to",
+        "score": 55.5,
+        "context": "-go traffic ...\u23ceAnd what's the deal with gridlock that seems to have no cause?\u23ceLane closures, on ramps, uphill, chronic lane"
+      },
+      {
+        "trigger": " to",
+        "score": 55.5,
+        "context": "kin to expose the glans. In the nineteenth century this condition was wrongly believed to be the cause of a host of nervous and other diseases, leading many doctors"
+      }
+    ],
+    "promotes": [
+      " receive",
+      " serve",
+      " continue",
+      " apply",
+      " have"
+    ],
+    "demotes": [
+      " mourut",
+      " laissant",
+      " teniendo",
+      " llegando",
+      " diciendo"
+    ],
+    "generated_description": "say verb (after to/will) \u2014 activates on structural tokens \"to\"/\"will\"; signals an upcoming main verb (infinitive or future); promotes verbs like receive, serve, continue, apply."
+  },
+  {
+    "id": "24_14137_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.33167165517807007,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 71.5,
+        "context": " also were analyzed for the isotopes oxygen-18, deuterium, and tritium to determine recharge sources and the occurrence of water recharged since the early 1"
+      },
+      {
+        "trigger": " to",
+        "score": 76.5,
+        "context": " can neutrons \"see\" the grain bond system and if so, (2) can neutrons help to ascertain the role(s) of intergranular bonds vs"
+      },
+      {
+        "trigger": " to",
+        "score": 68.5,
+        "context": " been made from geophysical observations at the surface and in boreholes. A current challenge is to develop reliable techniques for the direct remote sensing of subsurface fluids and their permeability"
+      },
+      {
+        "trigger": " to",
+        "score": 60.0,
+        "context": "8) and Foster and Rahmstorf (2011) aiming to disentangle anthropogenic and natural influences seen in the instrumental temperature record. Three different"
+      },
+      {
+        "trigger": " to",
+        "score": 73.5,
+        "context": " protein environment modulates reactivity. Using\u23ceX-ray crystallography, we hope to gain insight into the function and\u23cemechanism of nature's complex protein machines"
+      }
+    ],
+    "promotes": [
+      "cektir",
+      "dari",
+      "aarrggbb",
+      " test",
+      "glClear"
+    ],
+    "demotes": [
+      " contin\u00faas",
+      " Signalez",
+      "Jereo",
+      "TAWA",
+      "\"]();"
+    ],
+    "generated_description": "say \"to\" (infinitive) \u2014 activates on the infinitival marker \"to\" before verbs; marks/predicts an upcoming verb phrase or purpose clause."
+  },
+  {
+    "id": "24_15700_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.2641191780567169,
+    "top_activations": [
+      {
+        "trigger": " try",
+        "score": 62.5,
+        "context": " the case, rather just a tricky usage of terminology used by memory manufactures. Let me try to explain\u2026\u23ceYou see, digital data is of binary numbers."
+      },
+      {
+        "trigger": ",",
+        "score": 46.0,
+        "context": ".\u23ceGive each child a blank piece of paper. Show the example paper boat, and tell the children you want them to make the same boat with their paper"
+      },
+      {
+        "trigger": " one",
+        "score": 57.0,
+        "context": " in coal a hundred feet below the surface of the earth?\u23ceThere is only one logical explanation: At the time of Noah's Flood, there were people"
+      },
+      {
+        "trigger": " an",
+        "score": 74.5,
+        "context": ", or of unexplained features within the universe. On the contrary, it fails as an explanation because it does nothing more than push the question of origin up a level"
+      },
+      {
+        "trigger": " in",
+        "score": 58.5,
+        "context": "s a great article from Evolution News that explains the trouble that Darwinian evolution has in building up to functional new biological information by using a process of random mutation and"
+      }
+    ],
+    "promotes": [
+      "colnshire",
+      "CHELL",
+      " R\u00e9f\u00e9rence",
+      " Dever",
+      " TextAppearance"
+    ],
+    "demotes": [
+      " explanation",
+      " explain",
+      " explaining",
+      " explanations",
+      " explained"
+    ],
+    "generated_description": "short function token \u2014 activates on short/common tokens and punctuation (try, ,, one, an, in); signals small high-frequency words rather than content words."
+  },
+  {
+    "id": "24_13277_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.31477782130241394,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say upcoming noun/phrase \u2014 fires on prepositions/articles/commas/verbs that introduce the next content chunk, often right before place names, institutions, or other noun phrases."
+  },
+  {
+    "id": "25_13386_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3471176326274872,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 64.5,
+        "context": " eating or drinking, and when.\u23ceRICHARD ROSS, MD: You definitely want to avoid anything with caffeine in it after five in the in the afternoon. You"
+      },
+      {
+        "trigger": " may",
+        "score": 63.0,
+        "context": " gene, called PTCH, located on chromosome 9. Mutations in this gene may increase the risk of some cancers.\u23ceTumor suppressor genes usually control cell growth"
+      },
+      {
+        "trigger": " would",
+        "score": 63.5,
+        "context": " in the Proceedings of the National Academy of Sciences.\u23ceAnd heat from the sun would carry these blackened particles into the stratosphere, say the University of Colorado scientists"
+      },
+      {
+        "trigger": " can",
+        "score": 70.5,
+        "context": " conduits that allow you to see what\u2019s in front of you, your eyes can reveal the presence of cardiovascular disease, diabetes, and other health conditions, and"
+      },
+      {
+        "trigger": " to",
+        "score": 76.5,
+        "context": " of ourselves, but cattle react to human actions. Ideally, we want our cows to respond to what we ask them to do \u2014 walk calmly into the milking parlor"
+      }
+    ],
+    "promotes": [
+      "localctx",
+      " endforeach",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "-------------</",
+      " Roskov"
+    ],
+    "demotes": [
+      " uses",
+      " knows",
+      " finds",
+      " tries",
+      " calls"
+    ],
+    "generated_description": "say modal/infinitive \u2014 activates on auxiliaries and infinitival marker (can, may, would, to), signals upcoming possibility/ability/infinitive verb phrase."
+  }
+]

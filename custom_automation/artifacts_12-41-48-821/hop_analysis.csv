@@ -1,0 +1,51 @@
+slug,variant,hop_type,intermediate_concept,correct_answer,predicted,predicted_prob,model_correct,top_k_rank,rank_score,notes,total_transcoder_nodes,hop_feature_count,hop_feature_fraction,hop_mean_influence,hop_max_influence,hop_found_in_clerp,hop_groups,hop_found_in_groups,hop_found
+dallas-capital,a2,city→state→capital,Texas,Austin,Austin,0.3352,True,1,1.0,,1441,9,0.0062,0.3045,0.3403,True,"['Texas', 'say Texas', 'Output: ""Texas"" (4.1%)']",True,True
+sf-capital,a2,city→state→capital,California,Sacramento,Sacramento,0.2969,True,1,1.0,Model may say San Francisco itself,1543,11,0.0071,0.3389,0.3983,True,"['California', 'say California', 'Output: ""California"" (5.0%)']",True,True
+las-vegas-capital,a2,city→state→capital,Nevada,Carson City,Reno,0.1613,False,3,0.6,Carson City is obscure,1633,4,0.0024,0.3038,0.3787,True,"['say Nevada', 'Nevada', 'Output: ""Nevada"" (11.8%)']",True,True
+oakland-capital,a2,city→state→capital,California,Sacramento,Sacramento,0.2773,True,1,1.0,,1472,8,0.0054,0.3291,0.3717,True,['California'],True,True
+grand-canyon-capital,a2,landmark→state→capital,Arizona,Phoenix,Phoenix,0.2733,True,1,1.0,,1901,6,0.0032,0.3069,0.3763,True,"['Arizona', 'say Arizona-Tucson']",True,True
+miami-capital,a2,city→state→capital,Florida,Tallahassee,Tallahassee,0.4248,True,1,1.0,,1425,8,0.0056,0.3251,0.3955,True,"['Florida', 'Output: ""Florida"" (3.8%)']",True,True
+hollywood-capital,a2,landmark→state→capital,California,Sacramento,Los,0.191,False,5,0.2,,1587,7,0.0044,0.316,0.3737,True,"['California', 'say California', 'Output: ""California"" (5.1%)']",True,True
+spokane-capital,a2,city→state→capital,Washington,Olympia,Olympia,0.2146,True,1,1.0,,1487,4,0.0027,0.3142,0.3711,True,['Washington (state)'],True,True
+packers-capital,a2,team→state→capital,Wisconsin,Madison,Green,0.0903,False,3,0.6,,2024,5,0.0025,0.3423,0.3782,True,"['Wisconsin place names', 'say Wisconsin']",True,True
+niagara-falls-capital,a2,landmark→state→capital,New York,Albany,Buffalo,0.1737,False,2,0.8,Model may say New York City,1752,5,0.0029,0.3224,0.3764,True,['New York (state)'],True,True
+east-california-capital,a2,geo→state→capital,Nevada,Carson City,Sacramento,0.3298,False,3,0.6,,1726,1,0.0006,0.3226,0.3226,True,[],False,True
+saints-capital,a2,team→state→capital,Louisiana,Baton Rouge,New,0.1278,False,2,0.8,Baton Rouge is obscure,2022,6,0.003,0.3238,0.3784,True,"['New Orleans, Louisiana', 'say Louisiana-Parish']",True,True
+memphis-capital,a2,city→state→capital,Tennessee,Nashville,the,0.1558,False,2,0.8,,1480,4,0.0027,0.312,0.3314,True,"['say Nashville-Tennessee', 'Output: ""Tennessee"" (8.8%)']",True,True
+yellowstone-national-park-capital,a2,landmark→state→capital,Wyoming,Cheyenne,the,0.1449,False,2,0.8,,1788,1,0.0006,0.3391,0.3391,True,[],False,True
+mount-rushmore-capital,a2,landmark→state→capital,South Dakota,Pierre,South,0.1391,False,3,0.6,Pierre is obscure,2042,1,0.0005,0.3379,0.3379,True,['South Dakota'],True,True
+gettysburg-capital,a2,landmark→state→capital,Pennsylvania,Harrisburg,Harrisburg,0.6115,True,1,1.0,,1444,9,0.0062,0.326,0.3653,True,"['Pennsylvania', 'say Pennsylvania city', 'Output: ""Pennsylvania"" (1.2%)']",True,True
+orlando-capital,a2,city→state→capital,Florida,Tallahassee,Tallahassee,0.3661,True,1,1.0,,1429,7,0.0049,0.3263,0.3845,True,['Florida'],True,True
+albuquerque-capital,a2,city→state→capital,New Mexico,Santa Fe,Santa,0.3974,True,1,1.0,Albuquerque is larger but Santa Fe is capital,1516,3,0.002,0.3254,0.3685,True,"['New Mexico', 'say New Mexico']",True,True
+detroit-capital,a2,city→state→capital,Michigan,Lansing,Lansing,0.523,True,1,1.0,,1426,7,0.0049,0.3328,0.3929,True,"['Michigan', 'Output: ""Michigan"" (7.4%)']",True,True
+minneapolis-capital,a2,city→state→capital,Minnesota,Saint Paul,St,0.2521,False,2,0.8,Model may say Minneapolis,1522,7,0.0046,0.3267,0.3624,True,"['say Minnesota', 'Minnesota (state)', 'Output: ""Minnesota"" (9.3%)']",True,True
+machu-picchu-language,a2,landmark→country→language,Peru,Spanish,Que,0.3999,False,2,0.8,,1948,1,0.0005,0.3099,0.3099,True,[],False,True
+forbidden-city-language,a2,landmark→country→language,China,Chinese,Chinese,0.3249,True,1,1.0,,2136,9,0.0042,0.3279,0.3945,True,"['China-Chinese', 'say China']",True,True
+big-ben-language,a2,landmark→country→language,United Kingdom,English,English,0.3695,True,1,1.0,,2013,1,0.0005,0.3611,0.3611,True,[],False,True
+colosseum-language,a2,landmark→country→language,Italy,Italian,Italian,0.3439,True,1,1.0,,1984,8,0.004,0.3461,0.3955,True,['Italy - Italian'],True,True
+eiffel-tower-language,a2,landmark→country→language,France,French,French,0.5642,True,1,1.0,,1839,8,0.0044,0.3425,0.3858,True,['France'],True,True
+taj-mahal-language,a2,landmark→country→language,India,Hindi,Hindi,0.2344,True,1,1.0,Model may say Indian or Sanskrit,2064,3,0.0015,0.3318,0.3544,True,['India'],True,True
+great-wall-language,a2,landmark→country→language,China,Chinese,Chinese,0.2229,True,1,1.0,,2073,9,0.0043,0.3249,0.3929,True,"['China - Chinese', 'say China-Chinese']",True,True
+mount-fuji-language,a2,landmark→country→language,Japan,Japanese,Japanese,0.4117,True,1,1.0,,2030,9,0.0044,0.3001,0.3548,True,['Japan - Japanese'],True,True
+burj-khalifa-language,a2,landmark→country→language,UAE,Arabic,Arabic,0.5497,True,1,1.0,,2111,4,0.0019,0.3556,0.3897,True,[],False,True
+angkor-wat-langugage,a2,landmark→country→language,Cambodia,Khmer,Khmer,0.266,True,1,1.0,Answer is obscure,2204,3,0.0014,0.3136,0.3288,True,['Cambodia - Khmer'],True,True
+animal-farm-lang,a2,book→author→country,George Orwell,India,Great,0.1418,False,,0.0,Orwell born in Motihari British India,2090,0,0.0,0.0,0.0,False,[],False,False
+crucible-country,a2,book→author→country,Arthur Miller,USA,the,0.1773,False,,0.0,,2062,0,0.0,0.0,0.0,False,[],False,False
+alchemist-birth-country,a2,book→author→country,Paulo Coelho,Brazil,Spain,0.2161,False,,0.0,,2004,0,0.0,0.0,0.0,False,[],False,False
+hamlet-country,a2,book→author→country,William Shakespeare,England,Denmark,0.2293,False,3,0.6,,2027,0,0.0,0.0,0.0,False,[],False,False
+tale-country,a2,book→author→country,Charles Dickens,England,France,0.2139,False,2,0.8,,2237,0,0.0,0.0,0.0,False,[],False,False
+beethoven-fifth-symphony-country,a2,work→composer→country,Ludwig van Beethoven,Germany,not,0.0929,False,2,0.8,,2018,0,0.0,0.0,0.0,False,[],False,False
+penicillin-country,a2,achievement→scientist→country,Alexander Fleming,Scotland,the,0.1013,False,5,0.2,,1919,0,0.0,0.0,0.0,False,[],False,False
+darwin-birth,a2,achievement→scientist→country,Charles Darwin,England,England,0.1105,True,1,1.0,,1883,0,0.0,0.0,0.0,False,[],False,False
+harry-potter-birth,a2,work→author→country,J.K. Rowling,England,the,0.1183,False,2,0.8,,2089,0,0.0,0.0,0.0,False,[],False,False
+relativity-birth,a2,achievement→scientist→country,Albert Einstein,Germany,Germany,0.1089,True,1,1.0,,2030,0,0.0,0.0,0.0,False,[],False,False
+fdr-president,a2,achievement→president→successor,Franklin D. Roosevelt,Truman,the,0.1825,False,3,0.6,,1872,0,0.0,0.0,0.0,False,[],False,False
+andrew-johnson,a2,achievement→president→successor,Abraham Lincoln,Andrew Johnson,the,0.1846,False,2,0.8,,1949,0,0.0,0.0,0.0,False,[],False,False
+john-adams,a2,achievement→president→successor,George Washington,John Adams,the,0.1369,False,2,0.8,Fort Necessity was Washington's first military engagement,1998,0,0.0,0.0,0.0,False,[],False,False
+donald-trump,a2,achievement→president→successor,Barack Obama,Donald Trump,the,0.1569,False,3,0.6,,1755,2,0.0011,0.352,0.3549,True,[],False,True
+warren-harding,a2,achievement→president→successor,Woodrow Wilson,Warren Harding,the,0.1595,False,3,0.6,,1950,0,0.0,0.0,0.0,False,[],False,False
+vivaldi-nationality,a2,work→composer→nationality,Antonio Vivaldi,Italian,unknown,0.0944,False,2,0.8,,2058,0,0.0,0.0,0.0,False,[],False,False
+stone-stars,a2,song→film→actress,La La Land,Emma Stone,Emma,0.0809,True,1,1.0,,2256,0,0.0,0.0,0.0,False,[],False,False
+gosling-stars,a2,song→film→actor,La La Land,Ryan Gosling,Ryan,0.1676,True,1,1.0,,2250,0,0.0,0.0,0.0,False,[],False,False
+da-vinci-painting,a2,work→artist→century,Leonardo da Vinci,15th century,the,0.1123,False,,0.0,Da Vinci born 1452,1895,0,0.0,0.0,0.0,False,[],False,False
+hamilton-lead-actor,a2,work→actor,Hamilton,Lin-Manuel Miranda,after,0.2653,False,4,0.4,,1977,0,0.0,0.0,0.0,False,[],False,False

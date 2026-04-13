@@ -1,0 +1,2916 @@
+[
+  {
+    "id": "0_7344_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3880733549594879,
+    "top_activations": [
+      {
+        "trigger": "News",
+        "score": 13.5,
+        "context": "<bos>News>Archaeologists tour Luke's 5,000 year old site\u23ceRobert Wegener, Statistical Research Inc. principal investigator, briefs visitors"
+      },
+      {
+        "trigger": "Congress",
+        "score": 13.62,
+        "context": "<bos>Congress is currently deciding whether or not to minimize programs that help poor people buy food. There are public health experts, however, that say food stamp cuts could"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 8, 2013\u23ce- Centers for Disease Control and Prevention\u23ce- American Association for the Study of Liver Diseases\u23ce- Hepatitis Foundation"
+      },
+      {
+        "trigger": "Outdoor",
+        "score": 12.88,
+        "context": "<bos>Outdoor play time can enhance children's sleep\u23ceUpdated On: Jul 26 2013 03:03:58"
+      },
+      {
+        "trigger": "December",
+        "score": 12.62,
+        "context": "<bos>December 18, 2012\u23ceCould 3D printing be a climate revolution?\u23ceAdditive manufacturing has five key attributes that could help"
+      }
+    ],
+    "promotes": [
+      " Roskov",
+      " autorytatywna",
+      ":\u2728",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " CreateTagHelper"
+    ],
+    "demotes": [
+      "<bos>",
+      "The",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<strong>"
+    ]
+  },
+  {
+    "id": "0_15941_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.34104248881340027,
+    "top_activations": [
+      {
+        "trigger": "+",
+        "score": 26.0,
+        "context": "<bos>|Alveolar lateral click\u23ce|Unicode (hex)||U+01C1 U+0296|\u23ce|Voiced alveolar lateral click"
+      },
+      {
+        "trigger": "+",
+        "score": 26.75,
+        "context": " (arrow) or not with Figurine Algebraic Notation (FAN). Unfortunately, U+2654 or \u2654 and other chess glyphs do not always"
+      },
+      {
+        "trigger": "+",
+        "score": 26.0,
+        "context": "@bul:* Describes techniques for detection of [Ca2+]I: Ca2+ - sensitive microelectrodes\u23ce* Fluorescent dyes\u23ce* Luminescent proteins\u23ce"
+      },
+      {
+        "trigger": "+",
+        "score": 26.0,
+        "context": "\u23ceWhen I first started working in the Department of Finance (for 30+ years), we\u23cewere located in the Confederation Building. Prior to that time"
+      },
+      {
+        "trigger": "+",
+        "score": 26.75,
+        "context": " implementations.''\u23cefeature expression n. A boolean combination of features used by the #+ and #- reader macros in order to direct conditional reading of expressions by the"
+      }
+    ],
+    "promotes": [
+      "BibitemShut",
+      "^(@)",
+      "\\\\\r",
+      "$.\r",
+      " \\\\\r"
+    ],
+    "demotes": [
+      "+",
+      "/",
+      "(",
+      "_",
+      "-"
+    ]
+  },
+  {
+    "id": "0_7511_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3694569170475006,
+    "top_activations": [
+      {
+        "trigger": " calculated",
+        "score": 24.12,
+        "context": " is more to a good financial life than just long term concrete goals that can be calculated. There are short term and intermediate term goals that should be taken into account"
+      },
+      {
+        "trigger": " calculated",
+        "score": 24.38,
+        "context": " just about every DVD and\u23ceHD source is a compressed video stream. It is calculated from the original RGB (native) source as follows:\u23ceY = +"
+      },
+      {
+        "trigger": " calculated",
+        "score": 23.88,
+        "context": "1 is the highest weight; 5 is the lowest.\u23ceThe sample is calculated based on one of the following methods:\u23ce- A fixed number of features"
+      },
+      {
+        "trigger": " calculated",
+        "score": 24.25,
+        "context": "10 seconds and an average value ... (from 60 readings) is calculated every 5 minutes and recorded. Barometric pressure was measured as well,"
+      },
+      {
+        "trigger": " calculated",
+        "score": 24.38,
+        "context": " read-in the degrees of all nodes will be calculated. Then the distribution is calculated.\u23ceThe program generates two output files, corresponding to two different ways of"
+      }
+    ],
+    "promotes": [
+      "\u00e0",
+      "ParallelGroup",
+      "IntoConstraints",
+      "ArgsConstructor",
+      "\\{\\\\"
+    ],
+    "demotes": [
+      " enfans",
+      "^(@)",
+      " chr\u00e9",
+      " vectorielles",
+      "MERCIAL"
+    ]
+  },
+  {
+    "id": "0_253_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3194524347782135,
+    "top_activations": [
+      {
+        "trigger": "you",
+        "score": 13.5,
+        "context": "<bos>you know what plants need to live?....come and find out!\u23ceyou wanna know how plants grow?\u23ceLearn the parts of a plant?\u23ce"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Browse by Issue:\u23ceOne of the oldest conflicts in the American system of government is that between Congress and the President over the right to formulate and implement"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- BC Games\u23ceMeasles cases rise in the eastern Fraser Valley\u23ceFraser Health's chief medical health officer is warning about the rise in measles cases in"
+      },
+      {
+        "trigger": "-",
+        "score": 11.38,
+        "context": "<bos>- Draft SEPUP to CC Grades 6-8\u23ceCC & Storytown\u23ce- StoryTown CC Brochure information on purchasing additional curriculum resources to align with"
+      },
+      {
+        "trigger": "research",
+        "score": 14.12,
+        "context": "<bos>researchers have claimed that giant heat waves caused by global\u23cewarming will kill\u23ceoff desert bird communities over the next one hundred years,\u23ceand even believe"
+      }
+    ],
+    "promotes": [
+      " it",
+      " the",
+      " a",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      " NDEBUG",
+      " Efq",
+      "ArgsConstructor",
+      " Shakspeare",
+      " ARXIV"
+    ]
+  },
+  {
+    "id": "0_16200_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.30489853024482727,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ]
+  },
+  {
+    "id": "0_12958_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37530165910720825,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 12.0,
+        "context": "Posted: Mon Jul 14, 2008 10:12 am Post subject: New nanotechnique producing small things in large"
+      },
+      {
+        "trigger": ":",
+        "score": 14.12,
+        "context": "<bos>Re: teaching relational basics to people, questions\u23ceDate: Sat, 28 Nov 2009 20:33:3"
+      },
+      {
+        "trigger": ":",
+        "score": 12.38,
+        "context": "<bos>Submitted to: North American Cranberry Research and Extension Workers Annual Meeting\u23cePublication Type: Abstract Only\u23cePublication Acceptance Date: October 20, 20"
+      },
+      {
+        "trigger": ":",
+        "score": 12.5,
+        "context": ": 09/26/1999 at 18:14:46 From: Andrew Subject: Algebra II with Trigonometry On"
+      },
+      {
+        "trigger": ":",
+        "score": 13.12,
+        "context": "<bos>103: Introduction to Logic\u23ceThe Language of Symbolic Logic\u23ceAbstract: Conventions for\u23cetranslating ordinary language statements into symbolic notation are\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      " ",
+      " in"
+    ]
+  },
+  {
+    "id": "0_3916_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.37415802478790283,
+    "top_activations": [
+      {
+        "trigger": "indonesia",
+        "score": 9.44,
+        "context": "<bos>indonesia: raising public awareness of environmental damage\u23ceDeforestation rates have reached about two million ha a day, with illegal logging and conversion to oil palm plantations the"
+      },
+      {
+        "trigger": "freight",
+        "score": 9.69,
+        "context": "<bos>freight train composed of cars carrying a single type of commodity that are all bound for the same destination. By hauling only one kind of freight for one destination,"
+      },
+      {
+        "trigger": "only",
+        "score": 9.44,
+        "context": " coach, who tracked their progress. they also attended nutrition and exercise classes.\u23ceonly using the app, without educational support, did not lead to weight loss."
+      },
+      {
+        "trigger": "cruise",
+        "score": 9.12,
+        "context": "<bos>cruise control in a sentence\u23ceExample sentences for cruise control\u23ceCruise control-which keeps a vehicle at a constant speed-has been around for decades.\u23ce"
+      },
+      {
+        "trigger": "published",
+        "score": 9.75,
+        "context": "<bos>published on 30 October 2013\u23ceThe Indus valley Civilization was an ancient civilization located in what today is Pakistan and northwest India, on"
+      }
+    ],
+    "promotes": [
+      "\u23ce",
+      "\u2019",
+      "'",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      "^(@)",
+      " Efq",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " my\u017felf",
+      "BibitemShut"
+    ]
+  },
+  {
+    "id": "0_3560_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.37181586027145386,
+    "top_activations": [
+      {
+        "trigger": "+",
+        "score": 15.94,
+        "context": "<bos>UN Pushes False Himalayan Glacier Scare to Set the Stage for Rio+20 Conference\u23ceThe United Nations Development Program (UNDP) has issued a press"
+      },
+      {
+        "trigger": "+",
+        "score": 16.5,
+        "context": " weakened immune systems (for example, cancer patients, organ transplant recipients, and HIV+ people) are at high risk for severe and prolonged HZ infections. They are"
+      },
+      {
+        "trigger": "+",
+        "score": 15.94,
+        "context": " determinants in fungi). The proteins that correspond to [URE3] and [PSI+], regulator of nitrogen metabolism Ure2 and translation termination factor Sup35,"
+      },
+      {
+        "trigger": "+",
+        "score": 16.25,
+        "context": " resources.\u23ceOn 20 June 2012, a Rio+20 side event, moderated by Wendy Watson-Wright (Executive Secretary,"
+      },
+      {
+        "trigger": "+",
+        "score": 16.75,
+        "context": " in the new book, \"Effects of Noise on Aquatic Life,\" from Springer Science+Business Media in its \"Advances in Experimental Medicine and Biology\" series. It"
+      }
+    ],
+    "promotes": [
+      "tagHelperRunner",
+      " kaarangay",
+      "Personensuche",
+      " propOrder",
+      "LookAnd"
+    ],
+    "demotes": [
+      ",",
+      "\u23ce",
+      " -",
+      "GMENT",
+      " try"
+    ]
+  },
+  {
+    "id": "0_7193_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3870850205421448,
+    "top_activations": [
+      {
+        "trigger": "8",
+        "score": 17.5,
+        "context": " commission on the selling price of a house. If his commission was $8,880, what was the selling price of the house?\u23ceAn electric"
+      },
+      {
+        "trigger": "8",
+        "score": 17.62,
+        "context": "366|\u23ce|Annual total precipitation:||1367.88 mm||361|\u23ce|Annual average visibility:||1"
+      },
+      {
+        "trigger": "8",
+        "score": 17.62,
+        "context": " National STD/HIV/AIDS Hotline - (800)CDC-INFO (1-800-232-4636)."
+      },
+      {
+        "trigger": "8",
+        "score": 17.38,
+        "context": "\u23ceHow big of a difference is that? And how common are 3.8-magnitude earthquakes?\u23ceThe Richter Scale considers anything between a 3."
+      },
+      {
+        "trigger": "6",
+        "score": 17.38,
+        "context": "<bos>For many, 1066 is the date when the Middle Ages began. Centuries of castles, cathedrals and churches followed, busy with chivalry,"
+      }
+    ],
+    "promotes": [
+      ")\";\r",
+      "%\\]",
+      " Efq",
+      "BibitemShut",
+      "^(@)"
+    ],
+    "demotes": [
+      "1",
+      "2",
+      "3",
+      "0",
+      "4"
+    ]
+  },
+  {
+    "id": "0_9622_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.38077273964881897,
+    "top_activations": [
+      {
+        "trigger": " calculated",
+        "score": 22.62,
+        "context": " a child of an alcoholic. This is consistent with current estimates of children of parental period alcoholics, which is calculated to be 22%. In another study"
+      },
+      {
+        "trigger": " calculated",
+        "score": 22.62,
+        "context": " no mode of exposure into categories according to historical patterns of reclassification.3 CDC calculated confidence intervals (CIs), taking into account adjustments for reporting delays and rec"
+      },
+      {
+        "trigger": " calculated",
+        "score": 23.0,
+        "context": " of measured data. This enables the non-Newtonian effect of gravity to be calculated in a simpler manner than by use of the General Theory of Relativity (GR"
+      },
+      {
+        "trigger": " calculated",
+        "score": 22.75,
+        "context": "<bos>Body Mass Index\u23ceThe Body Mass Index is calculated by putting your body\u2019s height and your weight into relation.\u23ceThe Body Mass Index is calculated by"
+      },
+      {
+        "trigger": " calculated",
+        "score": 22.88,
+        "context": " best method of accounting. Learn how percentage of completion method for accounting in construction is calculated and recorded in the financial books of record for construction. Find out the advantages"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " ainfi",
+      " plufieurs",
+      " enfans",
+      " sauvages"
+    ],
+    "demotes": [
+      "ry",
+      "ter",
+      "ia",
+      " hier",
+      "_"
+    ]
+  },
+  {
+    "id": "0_10935_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3729883134365082,
+    "top_activations": [
+      {
+        "trigger": " mode",
+        "score": 13.12,
+        "context": " by a storm but something smellier, horse manure.\u23ceHorses, the primary mode of transportation, dropped more than a million pounds each day, causing a sanitation"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.25,
+        "context": " connections rather than directly connected terminals.\u23ceOne use for them is to connect many modems (or terminals) to a high speed network which connects to host computers"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.5,
+        "context": " foreign country. This key feature provide high flexibility and encourage the businesses to apply exporting mode of entry while initially enter into the foreign market.\u23ceExporting mode of"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.12,
+        "context": " can allow the user to select from several detents, each representing a different shooting mode. Another dial may control aperture or shutter speed when the user is on a"
+      },
+      {
+        "trigger": " mode",
+        "score": 13.5,
+        "context": " in the same manner as the holes. This device enabled the performer to change the mode or key in which he was playing, just as did the crooks many"
+      }
+    ],
+    "promotes": [
+      " The\u017fe",
+      " it\u017felf",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      "-",
+      "/"
+    ]
+  },
+  {
+    "id": "0_10317_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.36578604578971863,
+    "top_activations": [
+      {
+        "trigger": "How",
+        "score": 13.62,
+        "context": "<bos>How to be a Successful College Student\u23ce- Attend class.\u23ce- Read the syllabus for each course and mark important dates on their calendars.\u23ce- Talk"
+      },
+      {
+        "trigger": "a",
+        "score": 15.62,
+        "context": "<bos>a Pecan ShellOnce\u23ceincluded in the Santa Cruz de Concepci\u00f3n land grant, the village took its name\u23cefrom that source when a post office opened in"
+      },
+      {
+        "trigger": "the",
+        "score": 14.88,
+        "context": "<bos>the ship hull including the propeller influences. In this panel method, a quadratic dipole distribution is distributed over each panel on the body surface, and an internal Dirichlet"
+      },
+      {
+        "trigger": "time",
+        "score": 14.75,
+        "context": "<bos>time ( times plural & 3rd person present) ( timing present participle) ( timed past tense & past participle )\u23ce1 n-uncount Time"
+      },
+      {
+        "trigger": "on",
+        "score": 14.25,
+        "context": "<bos>on July 4, 2010\u23ceIndependence Hall is the building where the Declaration of Independence and the United States Constitution were signed. As such"
+      }
+    ],
+    "promotes": [
+      " i\u017ft",
+      " purpo\u017fe",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "\u23ce",
+      "'",
+      " ",
+      "<bos>"
+    ]
+  },
+  {
+    "id": "1_14137_1",
+    "layer": 1,
+    "ctx_idx": 1,
+    "influence_score": 0.39091983437538147,
+    "top_activations": [
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>For many professors, it would be legacy enough to have sent so many students into the hallowed halls of academia and the boardrooms of Silicon Valley. But for"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>Over the millennia First Nation people in the Yukon lived a nomadic lifestyle. They followed the game and moved with the seasons to different locations where sources of food were"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>This region is dominated by dense unbroken tracts of forest. Majestic pine and hemlock stands shade deeply carved hollows with layered falls and moss-covered grottos that"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>Bearing in mind the postulates of the Universal Declaration\u23ceon Human Rights (1948) which determines the basic rights and freedoms\u23ceof every human being"
+      },
+      {
+        "trigger": "<bos>",
+        "score": 49.0,
+        "context": "<bos>\u201cMy husband likes to tease me by calling my parenting style the \u2018lazy parent\u2019s method\u2019 for raising a child,\u201d writes one mother. \u201cI"
+      }
+    ],
+    "promotes": [
+      " Resonance",
+      " PeEn",
+      " \u0648\u064a\u0643\u064a\u067e",
+      "ReusableCell",
+      " BrowserModule"
+    ],
+    "demotes": [
+      "<bos>",
+      " the",
+      "\u23ce\u23ce",
+      "'",
+      "\u2019"
+    ]
+  },
+  {
+    "id": "2_3014_9",
+    "layer": 2,
+    "ctx_idx": 9,
+    "influence_score": 0.349445104598999,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 30.5,
+        "context": " degrees a, b and y, respectively, such that \u03b1+\u03b2+\u03b3 = 0. The undecided case (6; 6; 8)"
+      },
+      {
+        "trigger": " =",
+        "score": 27.5,
+        "context": " under-12s. Then 220/1800 = 0.122... and (220/18"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": "||b|cos(\u03b8) => -1*2+2*3 = sqrt((-1)^2+2^2)*sqrt(2^2"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": " is prime. [Hint: If d is a divisor of p, say p = dt, then p | d or p | t. Show that this implies"
+      },
+      {
+        "trigger": " =",
+        "score": 27.25,
+        "context": " not an element of the Mandelbrot set.\u23ceOn the other hand, c = i gives the sequence 0, i, (-1 + i), \u2013"
+      }
+    ],
+    "promotes": [
+      " Bergmann",
+      "FundMe",
+      "tonode",
+      "}=\\",
+      ">=</"
+    ],
+    "demotes": [
+      "\u24e7",
+      " NgModule",
+      "tagHelperRunner",
+      "setopt",
+      " Chwiliwch"
+    ]
+  },
+  {
+    "id": "2_14931_6",
+    "layer": 2,
+    "ctx_idx": 6,
+    "influence_score": 0.3607279360294342,
+    "top_activations": [
+      {
+        "trigger": "+",
+        "score": 20.5,
+        "context": "^3-180 /(2*sqrt(pi*r^4+90/r\u00b2))=0\u23ceFast way to find R :\u23ce"
+      },
+      {
+        "trigger": " +",
+        "score": 21.75,
+        "context": " Rate = Total Interest Paid / Principal Amount\u23ce2. Effective Rate = (1 + i / n)n \u2013 1\u23ceis the nominal rate and n"
+      },
+      {
+        "trigger": "+",
+        "score": 23.25,
+        "context": "dt = A po Sqrt [(g/(R To)) (2/(g+1))^((g+1)/(g-1))) ] (eqn."
+      },
+      {
+        "trigger": " +",
+        "score": 22.75,
+        "context": " last?\u23ceAnswer: Option B\u23ceHence, total time taken = (6 + 4) days = 10 days.\u23ceA is 3"
+      },
+      {
+        "trigger": "+",
+        "score": 22.25,
+        "context": " = x\u00b2/(1+x\u00b2)f(x) = x\u00b2(1+x\u00b2)-\u00b9Now, use the uv method:- u'v +"
+      }
+    ],
+    "promotes": [
+      ")-\\",
+      "}+",
+      ")+\\",
+      " +",
+      "+"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "-------\f",
+      "i\u00e1ln\u00ed",
+      "endwhile"
+    ]
+  },
+  {
+    "id": "3_373_1",
+    "layer": 3,
+    "ctx_idx": 1,
+    "influence_score": 0.3299300968647003,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 29.62,
+        "context": "<bos>: to cover (something) by winding or folding a piece of material around it\u23ce: to wind or fold (something) around something else\u23ce: to"
+      },
+      {
+        "trigger": "ver",
+        "score": 33.0,
+        "context": "<bos>verbo (posits, positing, posited)\u23ce- 1 [with object] Put forward as fact or as a basis for argument: the"
+      },
+      {
+        "trigger": "2",
+        "score": 28.12,
+        "context": "<bos>2nd ed. - Cold Spring Harbor, N.Y. : Cold Spring Harbor Laboratory Press, c2007.\u23ceviii, 1"
+      },
+      {
+        "trigger": "uus",
+        "score": 29.62,
+        "context": "<bos>uus in the news\u23ceInventor of World Wide Web is knighted by queen\u23ceMassachusetts Unitarian Universalist Tim Berners-Lee, the inventor of the"
+      },
+      {
+        "trigger": "1",
+        "score": 22.12,
+        "context": "<bos>11.2 Appraisal Methods\u23ce- Be able to describe the various appraisal methods.\u23ceIt probably goes without saying that different industries and jobs need different kinds"
+      }
+    ],
+    "promotes": [
+      " i",
+      " Guess",
+      " guess",
+      " direct",
+      "."
+    ],
+    "demotes": [
+      ")++;",
+      " Efq",
+      "]:\r",
+      "...');",
+      " my\u017felf"
+    ]
+  },
+  {
+    "id": "3_3780_1",
+    "layer": 3,
+    "ctx_idx": 1,
+    "influence_score": 0.35942938923835754,
+    "top_activations": [
+      {
+        "trigger": "culi",
+        "score": 22.38,
+        "context": " in diagnosing a disease or monitoring the body's response to treatment.\u23ceCalculi (stones) in the urinary tract. Use of some antiretroviral ("
+      },
+      {
+        "trigger": " of",
+        "score": 17.75,
+        "context": " of practical applications such as in the determination of receiver dynamic range limits or the calculation of the expected fully integrated signal level for electromagnetic interference regulation purposes. On the surface"
+      },
+      {
+        "trigger": " calculate",
+        "score": 16.75,
+        "context": "io package.\u23ceWith the help of this example, you will see how to calculate the size of file and use of skip function. First of all, we"
+      },
+      {
+        "trigger": "culated",
+        "score": 22.25,
+        "context": " with draggable vertices. As you drag them the triangle's area is recalculated from the vertex coordinates using the formula.\u23ceThe grid and coordinates can be"
+      },
+      {
+        "trigger": " out",
+        "score": 17.25,
+        "context": " theorem that I suspect is new to you. It too is a theorem for working out the length of the hypotenuse of a right-angled triangle from the"
+      }
+    ],
+    "promotes": [
+      " calculates",
+      " calculation",
+      " calculate",
+      " calculating",
+      "<bos>"
+    ],
+    "demotes": [
+      "WEBPACK",
+      " Fakta",
+      " Ceramby",
+      "couverture",
+      "ridor"
+    ]
+  },
+  {
+    "id": "16_5003_9",
+    "layer": 16,
+    "ctx_idx": 9,
+    "influence_score": 0.3860612213611603,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 48.0,
+        "context": "7. Subsequently, the 70 and 7 can be added to equal 77. With repeated practice, students can become very quick and efficient add"
+      },
+      {
+        "trigger": " $",
+        "score": 53.25,
+        "context": " (transfer-in price) + $10 (own variable cost) = $90 (marginal revenue)\u23ceUsually, this rule is restated to"
+      },
+      {
+        "trigger": " ",
+        "score": 56.25,
+        "context": ", 146; Lower Kalispel, 57; total, 1,811.\u23ceThe agency is situated in the southwestern portion"
+      },
+      {
+        "trigger": "RM",
+        "score": 52.25,
+        "context": "0. Hence total tax = RM675 + RM15- =RM825.\u23ce2.1 Answer is c \u2013 RM90"
+      },
+      {
+        "trigger": "(",
+        "score": 46.25,
+        "context": " 3^2) = sqrt(36 + 9) = sqrt(45) = 3*sqrt 5`\u23ceThe point at"
+      }
+    ],
+    "promotes": [
+      "ArgsConstructor",
+      " ranking",
+      "picasso",
+      "AutoresizingMask",
+      "tonode"
+    ],
+    "demotes": [
+      "\u00e9valuateur",
+      "\"])\r",
+      " ferm\u00e9s",
+      " \u0361\u00b0)",
+      " tartalomaj\u00e1nl\u00f3"
+    ]
+  },
+  {
+    "id": "14_15071_9",
+    "layer": 14,
+    "ctx_idx": 9,
+    "influence_score": 0.39730265736579895,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 24.75,
+        "context": " oak, be 6ft (180cm) long and weigh over\u23ce900 grms. Please note though, that for training and grading"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 27.5,
+        "context": " grow an\u23ceaverage of 3 in. (7.6 cm) to\u23ce5 in. (12.7 cm) Also,\u23ceteething"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 28.5,
+        "context": "plants and animals).\u23ceA small percentage of carbon atoms have an atomic weight of\u23ce14 AMU\u2019s. This is carbon-14. Carbon"
+      },
+      {
+        "trigger": " ",
+        "score": 22.0,
+        "context": " with genital warts including HPV 6, 11, 13, 44, 55, and 74. These types do"
+      },
+      {
+        "trigger": "||",
+        "score": 22.25,
+        "context": " : 37.0 (h:m)\u23ce|Declination||-29 : 52 (deg:m)\u23ce|Visual"
+      }
+    ],
+    "promotes": [
+      "\u00efd",
+      " net",
+      " Mus",
+      "elry",
+      "geons"
+    ],
+    "demotes": [
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      " \u0627\u0644\u0645\u0639\u064a\u0627\u0631\u0649",
+      " sumpay",
+      "ThroughAttribute",
+      " NUKAT"
+    ]
+  },
+  {
+    "id": "4_16055_9",
+    "layer": 4,
+    "ctx_idx": 9,
+    "influence_score": 0.3899722695350647,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 36.5,
+        "context": " the double-intercept equation (x/a) + (y/b) = 1 would work but I couldn't get it in the correct form"
+      },
+      {
+        "trigger": " =",
+        "score": 33.0,
+        "context": "4+5x^3+4X^2+6X+8 = 0 has 2 real roots thay are:\u23cex = -1"
+      },
+      {
+        "trigger": " =",
+        "score": 38.5,
+        "context": "2 regression lines are\u23ce8x - 10y + 66 = 0 , 40x - 18y - 2"
+      },
+      {
+        "trigger": "=",
+        "score": 33.5,
+        "context": "I know that the equation of a circle is x^2+y^2=r^2, but I cannot use this because I have no way to"
+      },
+      {
+        "trigger": "=",
+        "score": 34.0,
+        "context": "=4x.\u23ceBudget line, 40x+10y=32,400,\u23ceb) If px=90"
+      }
+    ],
+    "promotes": [
+      "Outgoing",
+      " DialogInterface",
+      "Incoming",
+      "uronic",
+      "biri"
+    ],
+    "demotes": [
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      " ffilmiau",
+      "abestanden",
+      "IsMutable",
+      "quelize"
+    ]
+  },
+  {
+    "id": "15_15323_9",
+    "layer": 15,
+    "ctx_idx": 9,
+    "influence_score": 0.3238750398159027,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 90.0,
+        "context": " the Post Office asked for a 2 cent increase, from 44 to 46 cents. The PRC approved only a penny.\u23ceA few days"
+      },
+      {
+        "trigger": "0",
+        "score": 91.0,
+        "context": " chief pilot at the NASA Dryden Flight Research Center (1986\u20132007).\u23ceHe was a master of the exacting and dangerous field of"
+      },
+      {
+        "trigger": "9",
+        "score": 88.0,
+        "context": "-white lighthouse met the sailors on their way to the port. In 1964, the steel base beacon considered fragile, and it was decommissioned"
+      },
+      {
+        "trigger": "1",
+        "score": 103.0,
+        "context": "., in 1912. Five years later, in 1917, the troop introduced its first African American girl scouts, possibly in the"
+      },
+      {
+        "trigger": "6",
+        "score": 101.0,
+        "context": " 324 people from last year's estimate of 588,654\u23ceThe largest segment of the population is the 35"
+      }
+    ],
+    "promotes": [
+      "IContainer",
+      " '\\\\;'",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "InjectAttribute",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      ",",
+      " male",
+      " '",
+      "/",
+      " specchio"
+    ]
+  },
+  {
+    "id": "15_15686_9",
+    "layer": 15,
+    "ctx_idx": 9,
+    "influence_score": 0.3918601870536804,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 60.5,
+        "context": " SW GA RESA\u23ce- Example: 32 + 42 = 52. 9 + 16 = 25. "
+      },
+      {
+        "trigger": "(",
+        "score": 64.5,
+        "context": " given by `sqrt(6^2 + 3^2) = sqrt(36 + 9) = sqrt(45) = 3"
+      },
+      {
+        "trigger": " $",
+        "score": 67.5,
+        "context": "1 billion a year in nano-start-ups,\" he said. \"So in total you have roughly $4 billion a year going into nanotechnology research.\""
+      },
+      {
+        "trigger": " ",
+        "score": 67.0,
+        "context": "16 wounded, and 1,043 missing for a total of 12,469 out of approximately 75,00"
+      },
+      {
+        "trigger": " ",
+        "score": 69.0,
+        "context": "68671and my Y\u23cevalue=-33.5474. The magnitude came out to 34.026N"
+      }
+    ],
+    "promotes": [
+      "\ufdfa",
+      "zheimer",
+      "igshid",
+      "onaceous",
+      " Mather"
+    ],
+    "demotes": [
+      "Rujuakan",
+      "RenderAtEndOf",
+      "\u51fa\u7248\u5e74",
+      "TestingModule",
+      "\u0418\u0441\u043a\u04d9\u0440\u043c\u04d9\u043b\u04d9\u0440"
+    ]
+  },
+  {
+    "id": "19_7492_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.38397979736328125,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 93.0,
+        "context": " a combination of methadone and one or more other narcotic and dangerous drugs, and 5 were due to causes other than drugs but methadone was found by post"
+      },
+      {
+        "trigger": " ",
+        "score": 83.0,
+        "context": " have at least 75 hours of training, 51 theoretical instructions and 24 hours of practical course; classes for which generally last for eight weeks"
+      },
+      {
+        "trigger": " ",
+        "score": 78.5,
+        "context": " triangles. There are five boxes: 2 rectangular, 1 triangular,\u23ceand 1 large and 1 small hexagonal. Each box contains triangles of different"
+      },
+      {
+        "trigger": " ",
+        "score": 97.5,
+        "context": "5,089 in another group used both aspirin and NSAIDs, and 9188 in the third group used NSAIDs alone.\u23ceThe"
+      },
+      {
+        "trigger": "2",
+        "score": 72.5,
+        "context": " participants' abilities for calculation (eg 32-17+5=20) and rote learning (committing times tables such as 4x"
+      }
+    ],
+    "promotes": [
+      "ogno",
+      "ArgsConstructor",
+      " manutenzione",
+      "fromJson",
+      "ButterKnife"
+    ],
+    "demotes": [
+      " gyhoeddwyd",
+      "tispiece",
+      "SourceChecksum",
+      "\u0012",
+      " Vikipedi"
+    ]
+  },
+  {
+    "id": "17_15809_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.37751391530036926,
+    "top_activations": [
+      {
+        "trigger": "7",
+        "score": 87.0,
+        "context": "4\u23ce70 91.7 86.3 178.0\u23ce75 103.7 95"
+      },
+      {
+        "trigger": ".",
+        "score": 78.5,
+        "context": ")\u23ce50 48.4 50.3 98.8\u23ce55 58.5 59.3"
+      },
+      {
+        "trigger": "4",
+        "score": 95.5,
+        "context": " wounded, and 1,043 missing for a total of 12,469 out of approximately 75,000 troops"
+      },
+      {
+        "trigger": "1",
+        "score": 86.0,
+        "context": "8\u23ce55 58.5 59.3 117.8\u23ce60 69.0 68."
+      },
+      {
+        "trigger": "2",
+        "score": 78.5,
+        "context": "2i+16)`\u23ce`(-10 + 5i)/25`\u23ceDivide to turn into a + bi form:\u23ce`-"
+      }
+    ],
+    "promotes": [
+      " spend",
+      " Emp",
+      "writeHead",
+      " memp",
+      " emp"
+    ],
+    "demotes": [
+      "service",
+      "httphttps",
+      " service",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "+#+#"
+    ]
+  },
+  {
+    "id": "17_10218_9",
+    "layer": 17,
+    "ctx_idx": 9,
+    "influence_score": 0.3927777409553528,
+    "top_activations": [
+      {
+        "trigger": "4",
+        "score": 59.75,
+        "context": "45949 ISBN 10: 0801845947\u23ce$25.49 - Save $1"
+      },
+      {
+        "trigger": "8",
+        "score": 41.0,
+        "context": " Camille Cerclet|\u23ceFranz Camille Overbeck (16 November 1837 \u2013 26 June 1905) was a"
+      },
+      {
+        "trigger": "8",
+        "score": 41.25,
+        "context": " Oscar Bernadotte; 4 July 1799 \u2013 8 July 1859) was King of Sweden and Norway from 18"
+      },
+      {
+        "trigger": "7",
+        "score": 53.75,
+        "context": "2769-4 (0-440-22769-0)\u23ceAlso available as an eBook.\u23ce1. The"
+      },
+      {
+        "trigger": "4",
+        "score": 35.25,
+        "context": " obtain a college degree.\u23ceWhat is Math 47?\u23ceMath 47 is an alternative path to college level math courses, specifically, Math "
+      }
+    ],
+    "promotes": [
+      " Paglinawan",
+      " InputDecoration",
+      " AssemblyCulture",
+      "IntoConstraints",
+      "ValueStyle"
+    ],
+    "demotes": [
+      "<bos>",
+      " N",
+      " ",
+      " F",
+      "fer"
+    ]
+  },
+  {
+    "id": "20_1053_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.3990861475467682,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 68.5,
+        "context": ".\u23ceIn the fall of 1814, another group of approximately 43 families, many Evangelical Lutheran,\u23cespent the winter in a colonists"
+      },
+      {
+        "trigger": " ",
+        "score": 68.0,
+        "context": "54\u23ce|Died||21 July 1934 (aged 79)\u23ce|Years of service||1873-1"
+      },
+      {
+        "trigger": "9",
+        "score": 67.0,
+        "context": "1.7 86.3 178.0\u23ce75 103.7 95.3 199"
+      },
+      {
+        "trigger": ",",
+        "score": 60.5,
+        "context": " with an area of 23,486 hectares and 50,106 hectares respectively.\u23ceRMFR was gazetted in 1"
+      },
+      {
+        "trigger": " and",
+        "score": 59.5,
+        "context": " into 4 and 4, equals and parities, and into 5 and 3, both imparities.\u23ceBut the ODD number is only"
+      }
+    ],
+    "promotes": [
+      " compris",
+      "dersfield",
+      "\t\t\t",
+      "ngdoc",
+      " disambiguazione"
+    ],
+    "demotes": [
+      " Sixth",
+      "zzlies",
+      "IsContent",
+      "Sixth",
+      " CanadaChoose"
+    ]
+  },
+  {
+    "id": "18_15406_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.38902369141578674,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 81.0,
+        "context": "1.7 86.3 178.0\u23ce75 103.7 95.3 199"
+      },
+      {
+        "trigger": " ",
+        "score": 72.0,
+        "context": "<bos>Saturdays: Feburary 2, 9, 16 and 23, 2013\u23ceFamily Resource Library, "
+      },
+      {
+        "trigger": " ",
+        "score": 61.5,
+        "context": ": Oct. 27; Nov. 3, 10, 17; Dec. 1, 8\u23ceRoom: MB-"
+      },
+      {
+        "trigger": " ",
+        "score": 72.0,
+        "context": "Saturdays: Feburary 2, 9, 16 and 23, 2013\u23ceFamily Resource Library, 1"
+      },
+      {
+        "trigger": " ",
+        "score": 72.0,
+        "context": "<bos>Saturdays: Feburary 2, 9, 16 and 23, 2013\u23ceFamily Resource Library, "
+      }
+    ],
+    "promotes": [
+      "ast\u00e9ro",
+      "Enllaces",
+      " Himo",
+      "httphttps",
+      "Viki"
+    ],
+    "demotes": [
+      "putan",
+      "xffffff",
+      " IW",
+      " <>\",",
+      " BorderSide"
+    ]
+  },
+  {
+    "id": "19_3665_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3645438849925995,
+    "top_activations": [
+      {
+        "trigger": ".",
+        "score": 48.25,
+        "context": " for the Atlantic blue marlin are the Cuban black marlin, ocean gar, and ocean guard.\u23ceDimensions Up to 14'8\" (4.5"
+      },
+      {
+        "trigger": ",",
+        "score": 51.5,
+        "context": " Lake, Placer County|\u23ce|- elevation||7,923 ft (2,415 m) |\u23ce|Secondary source||South Fork American"
+      },
+      {
+        "trigger": "3",
+        "score": 53.5,
+        "context": ", shallow waters surrounding coral reefs. It has been reported at depths to 1,083 feet (330 m). Rarely coming to the surface"
+      },
+      {
+        "trigger": "4",
+        "score": 55.5,
+        "context": "2 m) above sea level and 14,800 ft (4,500 m) above the ocean floor. The islands were settled"
+      },
+      {
+        "trigger": ",",
+        "score": 55.5,
+        "context": " moonrise in the background. At 15,771 feet (4,807 meters), Mont Blanc is the highest peak in the Alps"
+      }
+    ],
+    "promotes": [
+      "\u0432\u0438\u043d",
+      " bes",
+      "rel",
+      "\u00e4n",
+      " at"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      " \u0641\u0631\u064a\u0628\u064a\u0633",
+      "Personendaten",
+      " \u0635\u0648\u062a\u064a\u0647",
+      " HasFactory"
+    ]
+  },
+  {
+    "id": "18_7285_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.29681476950645447,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 106.5,
+        "context": "1898 and, 115 years later, in 2013. Doing this highlights the characteristics of today\u2019s Manx cat"
+      },
+      {
+        "trigger": "3",
+        "score": 132.0,
+        "context": "119,535 absentee ballots, for a total of 324,462 ballots. That is roughly three times the president\u2019"
+      },
+      {
+        "trigger": " ",
+        "score": 88.5,
+        "context": " Talbot family for 791 years, from 1185 until 1976, the only exception being the period from 16"
+      },
+      {
+        "trigger": "9",
+        "score": 95.0,
+        "context": "\u23ceIn a 15-year study (1979-1994) a total of 239 deaths were reported as a"
+      },
+      {
+        "trigger": "4",
+        "score": 93.5,
+        "context": "75\u00b041\u203246\u2033W / 45.441405\u00b0N 75.69623"
+      }
+    ],
+    "promotes": [
+      "parsedMessage",
+      "FieldBuilder",
+      " autorytatywna",
+      "\u51fa\u7248\u5e74",
+      "MigrationBuilder"
+    ],
+    "demotes": [
+      "WithMany",
+      "\u0cc1\u0cb5",
+      "\u0e01\u0e27\u0e48\u0e32",
+      " old",
+      "\u304d\u305f"
+    ]
+  },
+  {
+    "id": "20_10358_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.331834077835083,
+    "top_activations": [
+      {
+        "trigger": " (",
+        "score": 76.5,
+        "context": "229 m) at the base and originally stood 479 feet (146 m) high. Stone robbers have taken stones from the top"
+      },
+      {
+        "trigger": " (",
+        "score": 72.0,
+        "context": "9:21 EDT details\u23ce- You Save: $4.68 (59%)\u23ce- Seller:TOTAL BOOKS\u23ce- Sales Rank:6"
+      },
+      {
+        "trigger": "-",
+        "score": 68.5,
+        "context": "\u23ce- Tail Length: 20-42 cm (7.8-16\u2033)\u23ce- Height: Appr. 20 cm"
+      },
+      {
+        "trigger": "-",
+        "score": 69.5,
+        "context": "arms: A sound you can live with,\u201d is being celebrated Oct. 3-9 in schools, neighborhoods and fire departments across America to emphasize the importance of"
+      },
+      {
+        "trigger": "2",
+        "score": 76.5,
+        "context": " Lines 7, 17, 22-24, 26-34. As we have discussed before on this forum, understand"
+      }
+    ],
+    "promotes": [
+      " Eighth",
+      " seventh",
+      " Satur",
+      " eighth",
+      "ParallelGroup"
+    ],
+    "demotes": [
+      " Wednesday",
+      "Wednesday",
+      "3",
+      " WEDNESDAY",
+      " \u0627\u0644\u0623\u0631\u0628\u0639"
+    ]
+  },
+  {
+    "id": "20_5598_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.3461715579032898,
+    "top_activations": [
+      {
+        "trigger": "3",
+        "score": 87.0,
+        "context": "856.\u23ce- Navy Lists 1836-1838\u23ce- Army List Jan 1908\u23ce- Hart\u2019"
+      },
+      {
+        "trigger": "8",
+        "score": 76.0,
+        "context": "-Wallace College).\u23ceIt is characteristic that at his commencement exercises in 1886 he gave a lecture on \"The Sun\" and also played a"
+      },
+      {
+        "trigger": "1",
+        "score": 84.0,
+        "context": " Influences \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 16\u23ce5. Conclusion \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. 18\u23ceWorks Cited \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. 20\u23ceThe genre of"
+      },
+      {
+        "trigger": "0",
+        "score": 78.0,
+        "context": "7).\u23ceThe Carbon Neutral Public Service programme was discontinued in March 2009.\u23ceThere were three aspects to achieving carbon neutrality under this programme."
+      },
+      {
+        "trigger": "7",
+        "score": 90.0,
+        "context": ", 1873, 1876, 1879, 1882, 1885, "
+      }
+    ],
+    "promotes": [
+      " Sunday",
+      " tenth",
+      " ten",
+      " Ninth",
+      " Tenth"
+    ],
+    "demotes": [
+      " fifth",
+      "TestingModule",
+      " pi\u0105",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      " five"
+    ]
+  },
+  {
+    "id": "23_782_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3670273721218109,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 25.5,
+        "context": " History, Today\u2019s Featured Birthday and Daily Quote.\u23ceWord of the Day\u23ceCredulous KREJ-uh-lus (adjective) Ready to believe especially"
+      },
+      {
+        "trigger": ".",
+        "score": 21.75,
+        "context": " more, visit Project Syndicate or follow it on Facebook and Twitter.\u23ceBy Martin Ford, Project Syndicate\u23ceNearly all economic forecasts agree that high unemployment in much of"
+      },
+      {
+        "trigger": " dictionary",
+        "score": 18.0,
+        "context": "<bos>Definition from Wiktionary, the free dictionary\u23ceThis is the topical category for demonyms. A demonym is a name for an inhabitant of a specific"
+      },
+      {
+        "trigger": ".",
+        "score": 18.25,
+        "context": " frictional contact forces produce mechanical stresses and strains that are in the cellular mechanosensing ranges.\u23ceFetching data from CrossRef. This may take some time to load."
+      },
+      {
+        "trigger": " altitude",
+        "score": 20.25,
+        "context": "ft:\u23ceSELECT name, altitude FROM cities WHERE altitude > 500;\u23cename | altitude -----------+---------- Las Vegas | 2174"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " Efq",
+      " my\u017felf",
+      " Monfieur",
+      " The\u017fe"
+    ],
+    "demotes": [
+      "<unused62>",
+      "<unused61>",
+      "<unused63>",
+      ",",
+      "."
+    ]
+  },
+  {
+    "id": "22_1037_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3829202651977539,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 50.0,
+        "context": "rise in the background. At 15,771 feet (4,807 meters), Mont Blanc is the highest peak in the Alps and"
+      },
+      {
+        "trigger": "0",
+        "score": 54.0,
+        "context": " of the General George S. Patton Primary School on May 7, 2005, with Patton's grandson George Patton Waters and more than "
+      },
+      {
+        "trigger": "4",
+        "score": 64.0,
+        "context": " (337 m)|\u23ce|Beam:||134 ft (41 m)|\u23ce|Propulsion:||2 A1B nuclear"
+      },
+      {
+        "trigger": "0",
+        "score": 68.0,
+        "context": "1898 and, 115 years later, in 2013. Doing this highlights the characteristics of today\u2019s Manx cat"
+      },
+      {
+        "trigger": "1",
+        "score": 53.5,
+        "context": ".8\u23ce55 58.5 59.3 117.8\u23ce60 69.0 68"
+      }
+    ],
+    "promotes": [
+      " \u0633\u0643\u0627\u0646\u064a\u0629",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "transQ",
+      " zewn\u0119trzne",
+      "Controllo"
+    ],
+    "demotes": [
+      " imageNamed",
+      "\u539f\u59cb\u5185\u5bb9\u5b58\u6863\u4e8e",
+      " localObject",
+      " iArr",
+      " nine"
+    ]
+  },
+  {
+    "id": "23_5526_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3356066048145294,
+    "top_activations": [
+      {
+        "trigger": "9",
+        "score": 48.0,
+        "context": "1.7 86.3 178.0\u23ce75 103.7 95.3 199"
+      },
+      {
+        "trigger": ",",
+        "score": 50.25,
+        "context": " what was originally a network of canals 6,166 miles (9,923 km) long, feeding the largest irrigation system in the world"
+      },
+      {
+        "trigger": "8",
+        "score": 68.5,
+        "context": " of Manhattan and scattered over 347,400 square miles/899,000 sq km of ocean\u2014an area larger than"
+      },
+      {
+        "trigger": "7",
+        "score": 51.0,
+        "context": " (13.60 km2)|\u23ce|\u2022 Water||3.78 sq mi (9.79 km2)|\u23ce|Elevation||"
+      },
+      {
+        "trigger": "3",
+        "score": 48.0,
+        "context": " Bo Hai) is about 146,700 square miles (380,000 square km); its mean depth is 1"
+      }
+    ],
+    "promotes": [
+      " './../",
+      "httphttps",
+      " EconPapers",
+      "9",
+      " \u0645\u062a\u0639\u0644\u0642\u0647"
+    ],
+    "demotes": [
+      " Seven",
+      "Seven",
+      "seven",
+      " seven",
+      " SEVEN"
+    ]
+  },
+  {
+    "id": "20_11293_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.3850346803665161,
+    "top_activations": [
+      {
+        "trigger": " ~",
+        "score": 43.0,
+        "context": " ~6000 points per second (~600 points per scan at ~10Hz) over a 180\u00b0 field-of-"
+      },
+      {
+        "trigger": "-",
+        "score": 40.75,
+        "context": "\u23ceIn 2003-04 and 2005-06, roughly 32 percent of children were overweight or obese,"
+      },
+      {
+        "trigger": " ",
+        "score": 40.25,
+        "context": ", including 196 cases reported during the week 27 February - 5 March 2006. Estimations from a mathematical model evaluate"
+      },
+      {
+        "trigger": " ",
+        "score": 43.75,
+        "context": "Care Provision for Older Adults: Who Will Provide?\" Online Journal of Issues in Nursing. Vol. 8 No. 2, Manuscript 3. Available:"
+      },
+      {
+        "trigger": ",",
+        "score": 40.5,
+        "context": " a remainder of 1. Therefore, X could be 1, 5, 9, 13, 17, 21,"
+      }
+    ],
+    "promotes": [
+      " six",
+      " eight",
+      " ten",
+      " tenth",
+      " nine"
+    ],
+    "demotes": [
+      "NameInMap",
+      "DispatchToProps",
+      "AnchorStyles",
+      "migrationBuilder",
+      " Twenty"
+    ]
+  },
+  {
+    "id": "22_10851_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.32169538736343384,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 67.0,
+        "context": " the islands.\u23ceIt is a rendered granite circular tower 4.8 metres (16 ft) in diameter and 6.4 metres (21"
+      },
+      {
+        "trigger": " (",
+        "score": 77.0,
+        "context": " stem 31 miles (50 km); North Fork 88 miles (142 km)|\u23ce|Basin||2,150 sq"
+      },
+      {
+        "trigger": " $",
+        "score": 89.0,
+        "context": " $2.09 each\u23ce3 for $8.97\u23ceOnly $2.99 each\u23ce5 for $11.95\u23ce"
+      },
+      {
+        "trigger": " ",
+        "score": 66.5,
+        "context": "4 x 38.1cm (31 x 10 x 15 in.)\u23ceLightweight metal and glass\u23ceBack-up film door"
+      },
+      {
+        "trigger": "1",
+        "score": 92.0,
+        "context": "3 ft (7 m) |\u23ce|Length||119 mi (192 km), Northeast-southwest Main stem 31 miles (5"
+      }
+    ],
+    "promotes": [
+      "municipi",
+      "ient\u00ed",
+      "migrationBuilder",
+      "mybatisplus",
+      "principalColumn"
+    ],
+    "demotes": [
+      "ruptedException",
+      " ModelAndView",
+      "rceil",
+      "GAD",
+      "WillAppear"
+    ]
+  },
+  {
+    "id": "22_15404_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3796882927417755,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 84.0,
+        "context": " mmHg (millimeters of mercury) is considered ideal for adults. A systolic pressure of 120 to 139 mmHg or a diastolic pressure of "
+      },
+      {
+        "trigger": " than",
+        "score": 96.5,
+        "context": " here.\u23ceThe Powerhouse Museum has been - by different names, such as the Technological Museum - part of the neighbourhood for more than 100 years"
+      },
+      {
+        "trigger": "||",
+        "score": 84.0,
+        "context": " ft 5 in||21.18 m|\u23ce|Wingspan||102 ft||31.09 m|\u23ce|Height"
+      },
+      {
+        "trigger": " $",
+        "score": 86.5,
+        "context": " annual wages for popular construction and engineering jobs in California:\u23ce- Aerospace Engineers: $107,710\u23ce- Civil Engineers: $91"
+      },
+      {
+        "trigger": " half",
+        "score": 77.5,
+        "context": " world. Its study sites have been measuring the environmental pulse of the forest for nearly half a century.\u23ceBecause nitrogen is essential to plant growth and a potential pollutant"
+      }
+    ],
+    "promotes": [
+      " Hundred",
+      "Hundred",
+      "hundred",
+      " century",
+      " hundred"
+    ],
+    "demotes": [
+      " Italijanski",
+      "WithIOException",
+      "IUrlHelper",
+      "principalTable",
+      "Dec"
+    ]
+  },
+  {
+    "id": "23_8967_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.31474700570106506,
+    "top_activations": [
+      {
+        "trigger": " feces",
+        "score": 30.5,
+        "context": " the mucosa. Adult females produce unembryonated eggs that are passed in feces of the marine mammals.\u23ce2a. The eggs become embryonated"
+      },
+      {
+        "trigger": "Click",
+        "score": 30.5,
+        "context": "<bos>Click here for audio of Episode 1419.\u23ceToday, population reduction by disaster. The\u23ceUniversity of Houston's College of Engineering\u23ce"
+      },
+      {
+        "trigger": " German",
+        "score": 31.5,
+        "context": "<bos>To celebrate the birthday of German microbiologist Julius Richard Petri, inventor of the eponymous dish, Google has created a very germ-y, somewhat unsettling"
+      },
+      {
+        "trigger": "carry",
+        "score": 47.75,
+        "context": " the only prokaryotes. All other life forms are Eukaryotes (you-carry-oats), creatures whose cells have nuclei.\u23ce(Note: viruses"
+      },
+      {
+        "trigger": "ree",
+        "score": 37.75,
+        "context": " similar evolutionary history, but it belongs to the peccary (pECK-ah-ree) family, which developed in the Western Hemisphere. Its hide is covered"
+      }
+    ],
+    "promotes": [
+      "\u017felves",
+      " it\u017felf",
+      "\u017felf",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "\u23ce",
+      "-",
+      "\u23ce\u23ce",
+      ".",
+      " ("
+    ]
+  },
+  {
+    "id": "23_8618_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3510217070579529,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 93.5,
+        "context": ". An MP3 player at 70% of its top volume is about 85 decibels. Turning the volume up and listening for long periods of"
+      },
+      {
+        "trigger": " ",
+        "score": 100.0,
+        "context": "zed, or left alone.\u23ceIts rapid growth allows it to reach heights of 60 feet tall by 30 feet wide in about thirty years with"
+      },
+      {
+        "trigger": " ",
+        "score": 112.0,
+        "context": " in length, stand nearly a yard at the shoulder, and weigh as much as 175-pounds.\u23ceIn Cherokee lore he was the revered \u201c"
+      },
+      {
+        "trigger": " ",
+        "score": 108.0,
+        "context": " dog breeds stands 26 to 30 inches and typically weigh up to 140 pounds. Though not recognized by any major kennel club, they"
+      },
+      {
+        "trigger": " ",
+        "score": 93.0,
+        "context": "(YT-326: dp. 225; l. 97'; b. 21'8\"; dr. 9"
+      }
+    ],
+    "promotes": [
+      " Ninety",
+      "InputBorder",
+      "dafx",
+      "TargetException",
+      "webElementXpaths"
+    ],
+    "demotes": [
+      "}>;",
+      " Anschluss",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      "horts",
+      "complexContent"
+    ]
+  },
+  {
+    "id": "22_10031_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3632780611515045,
+    "top_activations": [
+      {
+        "trigger": "9",
+        "score": 34.0,
+        "context": " Brunswick and Nova Scotia.\u23ceThe 12.7 kilometer (7.9 mile) path from Cape Jourimain, New Brunswick to Borden-Car"
+      },
+      {
+        "trigger": "3",
+        "score": 37.75,
+        "context": " they deal with this pressure? The density of sea water is 1.03 x 103 kg/m3\u23ce- A water hose is"
+      },
+      {
+        "trigger": "3",
+        "score": 31.25,
+        "context": ".83 to 1.1 in and a length of 3.9 to 6.3 in. its main parts are the larynx and the"
+      },
+      {
+        "trigger": "5",
+        "score": 29.75,
+        "context": " pasteurizer, heated to 150\u00b0 F (65.5\u00b0 C) and held for 30 minutes.\u23ceThe second type"
+      },
+      {
+        "trigger": "5",
+        "score": 34.25,
+        "context": "Sample: One plated area 0.010 inches (0.25 mm) in diameter or larger.\u23ceBasic Description: ASTM B56"
+      }
+    ],
+    "promotes": [
+      "9",
+      " (",
+      "2",
+      "1",
+      " "
+    ],
+    "demotes": [
+      " Efq",
+      " my\u017felf",
+      " it\u017felf",
+      " Jefus",
+      " plea\u017fure"
+    ]
+  },
+  {
+    "id": "23_1925_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3936905860900879,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 97.5,
+        "context": "Lincoln died at 53), but can range from 4 to more than 70. The mutations lead to abnormalities in the protein, and understanding their"
+      },
+      {
+        "trigger": " nearly",
+        "score": 93.5,
+        "context": " the world. Its study sites have been measuring the environmental pulse of the forest for nearly half a century.\u23ceBecause nitrogen is essential to plant growth and a potential"
+      },
+      {
+        "trigger": " ",
+        "score": 106.0,
+        "context": " within a sturdy plastic storage box (235 x 170 x 35 mm) and includes a brief instruction leaflet.\u23ceThe Molymod"
+      },
+      {
+        "trigger": " (",
+        "score": 103.0,
+        "context": "63), signs and symptoms (68), diagnosis (26), treatment (22) and outcome (20).\u23ceThe data in this study"
+      },
+      {
+        "trigger": " $",
+        "score": 112.0,
+        "context": " ISBN 0-252-02929-1. $40.00.\u23ceReviewed by Lesley A. Beaumont, University"
+      }
+    ],
+    "promotes": [
+      "si",
+      "6",
+      "Properties",
+      "5",
+      "Se"
+    ],
+    "demotes": [
+      "AndEndTag",
+      "\u51fa\u7248\u5e74",
+      " eighteen",
+      " Eighteen",
+      " AssemblyCulture"
+    ]
+  },
+  {
+    "id": "23_9698_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3022962510585785,
+    "top_activations": [
+      {
+        "trigger": "8",
+        "score": 74.0,
+        "context": " of the frying pan and into the fire? Medical Journal of Australia, 186(2), pp. 52-54.\u23ce|"
+      },
+      {
+        "trigger": " ",
+        "score": 99.0,
+        "context": " A total of 1013 patients (476 female, 537 male) from 5 institutions participated in the study\u23ce- All"
+      },
+      {
+        "trigger": ",",
+        "score": 84.5,
+        "context": " through what was originally a network of canals 6,166 miles (9,923 km) long, feeding the largest irrigation system in the"
+      },
+      {
+        "trigger": "5",
+        "score": 89.0,
+        "context": " Social anxiety disorder. N Engl J Med. 2006;355:1029-1036.\u23ceSocial phobia"
+      },
+      {
+        "trigger": " ",
+        "score": 106.5,
+        "context": ",\u23ce15000 - 14 489 = 511,\u23ceclearly 14 489 is nearer"
+      }
+    ],
+    "promotes": [
+      " Thirdly",
+      " Five",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "atiable",
+      "\u044f\u0431\u0440\u0435"
+    ],
+    "demotes": [
+      " \u064a\u062a\u064a\u0645\u0647",
+      "InSection",
+      " OBITUARY",
+      "\u0434\u0435\u0440\u0436\u043a\u0430",
+      "\u043b\u0430\u0448"
+    ]
+  },
+  {
+    "id": "23_12265_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.31718412041664124,
+    "top_activations": [
+      {
+        "trigger": "+",
+        "score": 28.38,
+        "context": "8/5*2+B 5=-16/5+B 5+16/5=B (25+16)/"
+      },
+      {
+        "trigger": ",",
+        "score": 28.62,
+        "context": "924xtroph, 1934bdxtropst,1934xtrophbr,1936,1"
+      },
+      {
+        "trigger": " (",
+        "score": 28.88,
+        "context": "813\u201316), was an associate justice of the Ohio supreme court (1816\u201322), and commissioner of the U.S"
+      },
+      {
+        "trigger": " (",
+        "score": 30.12,
+        "context": " 10 m (34 ft) for males and 13 m (44 ft) for females from caudal fin to the tip of the two"
+      },
+      {
+        "trigger": " (",
+        "score": 28.38,
+        "context": "MUPP-NP)|\u23ce|Elevation||2,754 m (9,035 ft)|\u23ce|Time zone||ECT (UTC"
+      }
+    ],
+    "promotes": [
+      "4",
+      "5",
+      "2",
+      "3",
+      "1"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " them\u017felves"
+    ]
+  },
+  {
+    "id": "23_10088_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.35256722569465637,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 64.0,
+        "context": " utterance (individually, collectively or specifically). Examples are found in Luke 1:38; 3:2; 5:5; and Acts"
+      },
+      {
+        "trigger": ":",
+        "score": 47.25,
+        "context": " place is immortalized by its connection with David. (1 Samuel 23:14,15,24; 26:2)"
+      },
+      {
+        "trigger": ":",
+        "score": 55.0,
+        "context": "make contemptible) (Gen 12:3; Lev 19:14; Ex 21:17; Judg\u23ce9"
+      },
+      {
+        "trigger": ":",
+        "score": 53.5,
+        "context": "19); (Dan 9:26); (Dan 11:35); (Dan 11:40); (Dan "
+      },
+      {
+        "trigger": ":",
+        "score": 50.0,
+        "context": " (degel) in their camps to signify their tribal identities (Num 2:2).\u23ceAccording to the Midrash, each tribal prince had a flag"
+      }
+    ],
+    "promotes": [
+      "\u10ec",
+      "\u539f",
+      " nacionais",
+      "mame",
+      " Mathf"
+    ],
+    "demotes": [
+      "tvguidetime",
+      "UnusedPrivate",
+      "DockStyle",
+      " snippetHide",
+      "GraphicsUnit"
+    ]
+  },
+  {
+    "id": "23_9657_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.37642234563827515,
+    "top_activations": [
+      {
+        "trigger": " ",
+        "score": 41.5,
+        "context": " Mbit (or Mb).\u23ce1 megabit = 106 = 1,000,000 bits which is equal to "
+      },
+      {
+        "trigger": " ",
+        "score": 41.5,
+        "context": ", N.C. State University, firstname.lastname@example.org or 919.515.7303 (This story"
+      },
+      {
+        "trigger": " ",
+        "score": 38.0,
+        "context": " 0.5% higher than the 1989 poverty rate of 12.8%.\u23ceThe figure shows another measure of the depth of"
+      },
+      {
+        "trigger": " ",
+        "score": 37.0,
+        "context": " is not showing the current phase of the Moon.\u23ceFraction of moon illuminated: 4%\u23cePosition of the Moon\u23ceOn Friday, January 3,"
+      },
+      {
+        "trigger": " ",
+        "score": 38.0,
+        "context": "2BC: Assyria Assyria independent 586BC: Babylonia 520BC: Persia Persia Persia 332BC: Macedonia"
+      }
+    ],
+    "promotes": [
+      "2",
+      "1",
+      "$",
+      "<code>",
+      "["
+    ],
+    "demotes": [
+      " nakalista",
+      " Efq",
+      " \u2015\u2015\u2015\u2015\u2015",
+      "tvguidetime",
+      " AssemblyProduct"
+    ]
+  },
+  {
+    "id": "24_348_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.22464321553707123,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 98.5,
+        "context": " published Apr 23, it may have protected recipients against the 2009 pandemic strain of flu.\u23ceScientists from St Jude Children's Research"
+      },
+      {
+        "trigger": "8",
+        "score": 100.0,
+        "context": " completed this version, the Eiffel Tower, which was built for the 1889 Exposition universelle in Paris, had become a symbol of technological progress and modernity"
+      },
+      {
+        "trigger": "5",
+        "score": 96.0,
+        "context": "write('<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\\n')\u23cefp.write(' <anothertag"
+      },
+      {
+        "trigger": "0",
+        "score": 91.0,
+        "context": "Safety of pandemic vaccines\u23cePandemic (H1N1) 2009 briefing note 16\u23ce19 November 2009"
+      },
+      {
+        "trigger": "8",
+        "score": 90.0,
+        "context": " being seated as his country\u2019s President in the wake of the 1989 \u201cVelvet Revolution\u201d that dismantled the oppressive communist regime. It also described"
+      }
+    ],
+    "promotes": [
+      "\u4e5d",
+      "\uff19",
+      " Nine",
+      " nine",
+      "9"
+    ],
+    "demotes": [
+      "mybatisplus",
+      "tagHelperRunner",
+      "LookAnd",
+      " nahilalakip",
+      "StoreMessageInfo"
+    ]
+  },
+  {
+    "id": "23_10805_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3620107173919678,
+    "top_activations": [
+      {
+        "trigger": "6",
+        "score": 125.5,
+        "context": " x 65 3/4 in. (47 x 167 cm)\u23ceBequest of John M. Crawford Jr., 1"
+      },
+      {
+        "trigger": ".",
+        "score": 70.5,
+        "context": " July with an average temperature of 66.9\u00b0F (19.4\u00b0C). The coolest month on average is January, with an average"
+      },
+      {
+        "trigger": ".",
+        "score": 132.0,
+        "context": "14, 2011, the AHPS reported that the Mississippi River at Vicksburg reached 44.88 feet (13.6"
+      },
+      {
+        "trigger": "6",
+        "score": 101.0,
+        "context": "\u23ceAqua Skyscraper (Chicago)\u23ceReaching 859 ft (262 m), it is currently the tallest building in the world whose lead architect"
+      },
+      {
+        "trigger": "4",
+        "score": 79.0,
+        "context": "2 m) above sea level and 14,800 ft (4,500 m) above the ocean floor. The islands were settled"
+      }
+    ],
+    "promotes": [
+      "Sixth",
+      " six",
+      " sixth",
+      " Six",
+      "6"
+    ],
+    "demotes": [
+      " \u092c\u094d\u0930\u0947\u0915\u0921\u093e\u0909\u0928",
+      "TryDecodeAsNil",
+      "Jugend",
+      "HEET",
+      "ftagPool"
+    ]
+  },
+  {
+    "id": "24_2421_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.35812294483184814,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 59.5,
+        "context": " which 4,724,735.16 acres (19,120 km\u00b2) are federally owned. The national preserve is"
+      },
+      {
+        "trigger": "3",
+        "score": 55.5,
+        "context": " considered ideal for adults. A systolic pressure of 120 to 139 mmHg or a diastolic pressure of 80 to 89 mmHg"
+      },
+      {
+        "trigger": "8",
+        "score": 50.5,
+        "context": " he was an honor student in Hyde Park High School where he graduated in 1890. He went to Harvard University where he received his bachelor's"
+      },
+      {
+        "trigger": "2",
+        "score": 54.0,
+        "context": " the Journal of the American Medical Association (2006, vol. 296, no. 10).\u23ceFor 11 years"
+      },
+      {
+        "trigger": "2",
+        "score": 81.5,
+        "context": " gigatons last year, 5 percent higher than the previous record of 29.3 gigatons in 2008, the Paris"
+      }
+    ],
+    "promotes": [
+      " Cody",
+      "gow",
+      " civiles",
+      " pr\u00e9sidenti",
+      " favorables"
+    ],
+    "demotes": [
+      "WithIOException",
+      " nineteen",
+      " seventies",
+      "GEBURTSDATUM",
+      "AccessorTable"
+    ]
+  },
+  {
+    "id": "24_3775_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3786024749279022,
+    "top_activations": [
+      {
+        "trigger": " *",
+        "score": 39.0,
+        "context": "_t speed); speed_t cfgetospeed(const struct termios *tp); int cfsetospeed(struct termios *tp, speed"
+      },
+      {
+        "trigger": ".",
+        "score": 38.5,
+        "context": ": www.emagazine.com. Or e-mail us at: firstname.lastname@example.org.\u23ceThe Hidden Secret of Perfect Flowers\u23ceWhat"
+      },
+      {
+        "trigger": ",",
+        "score": 42.0,
+        "context": "0.01:pi-0.01; plot(x1,csc(x1),x2,csc(x2)), grid on"
+      },
+      {
+        "trigger": " *",
+        "score": 44.0,
+        "context": "<bos>Defined in header\u23cechar *gets( char *str );\u23cechar *gets_s(char *str, rsize_t n);\u23cestr"
+      },
+      {
+        "trigger": " *",
+        "score": 37.5,
+        "context": " is for the length of the target) and the\u23ceint scanf(const char *format, ...)\u23ceThe same as fscanf(stdin,...).\u23ceint"
+      }
+    ],
+    "promotes": [
+      "bibfield",
+      ")\";\r",
+      " Efq",
+      " The\u017fe",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      ",",
+      "/",
+      "\u2014"
+    ]
+  },
+  {
+    "id": "24_3865_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3955012261867523,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha par\u00e9ntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "trigger": ".",
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "trigger": ".",
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "trigger": "6",
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "\u23ce\u23ce"
+    ]
+  },
+  {
+    "id": "23_15735_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.3999752998352051,
+    "top_activations": [
+      {
+        "trigger": "/",
+        "score": 72.5,
+        "context": "/28/1996]\u23ceHow do I find the y1 value?\u23ce- Finding Asymptotes [07/06/1"
+      },
+      {
+        "trigger": "0",
+        "score": 74.0,
+        "context": " 2008\u23cePublication Date: March 12, 2009\u23ceCitation: Konstantinov, A.S., Korot"
+      },
+      {
+        "trigger": ",",
+        "score": 79.5,
+        "context": ",441 feet (744 meters), Mount Jesus is 2,340 feet (710 meters), and Mount Lookout is "
+      },
+      {
+        "trigger": "9",
+        "score": 75.0,
+        "context": " Research in London, but five years between 1946 and 1951 were spent at the Common CoId Research Unit at Harvard Hospital in"
+      },
+      {
+        "trigger": "-",
+        "score": 73.0,
+        "context": "st Edition November 1999\u23ce1-56592-449-5, Order Number: 4495\u23ce"
+      }
+    ],
+    "promotes": [
+      "0",
+      "2",
+      "EDEFAULT",
+      "1",
+      "\u0418\u0437\u0442\u043e\u0447\u043d\u0438\u0446\u0438"
+    ],
+    "demotes": [
+      " nine",
+      " cinq",
+      " quatre",
+      " six",
+      " eleven"
+    ]
+  },
+  {
+    "id": "23_14350_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.2996331453323364,
+    "top_activations": [
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": ". I don't\u23cesee any signs of gum infection and none of them\u23ceare loose as nearly as I can tell, so what is this\u23cebrown"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 112.0,
+        "context": " person access to a secure area. This tutorial will shows you how to build a\u23ceface recognition program using Matlab.\u23ceMotivation and Audience\u23ceThis tutorial has been"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 114.0,
+        "context": "traveled on it. It had not many comforts; several days and nights were\u23cerequired for the New York trip; yet it was a wonderful and beautiful\u23ce"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": "ged north-northwestward late on 26 October, followed by a\u23cenorth-northeastward turn and acceleration on the 27th. During"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 108.0,
+        "context": " left\u23cefor about 300,000 light-years from\u23ceNGC 3628's warped, edge-on disk."
+      }
+    ],
+    "promotes": [
+      "P",
+      "p",
+      "I",
+      "in",
+      "to"
+    ],
+    "demotes": [
+      "\u00e6us",
+      "ine\u017fs",
+      "ratulations",
+      "BibitemShut",
+      "iffance"
+    ]
+  },
+  {
+    "id": "24_13541_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3427819013595581,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ]
+  },
+  {
+    "id": "24_7767_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3098568320274353,
+    "top_activations": [
+      {
+        "trigger": "4",
+        "score": 26.75,
+        "context": "<bos>|Name, Symbol, Number||chromium, Cr, 24|\u23ce|Chemical series||transition metals|\u23ce|Group, Period, Block||"
+      },
+      {
+        "trigger": "3",
+        "score": 26.75,
+        "context": ").|\u23ce|Atomic Number:||31||Atomic Radius:||187 pm (Van der Waals)|\u23ce|Atomic Symbol:||Ga"
+      },
+      {
+        "trigger": "||",
+        "score": 23.75,
+        "context": "-||-|\u23ce|Annual average visibility:||14.6 Km||366|\u23ce|Annual average wind speed:||17.3"
+      },
+      {
+        "trigger": "5",
+        "score": 25.75,
+        "context": "1\u20131941|\u23ce|Commands held||1./JG 51, I./JG 51|\u23ce|Awards||Knight'"
+      },
+      {
+        "trigger": "3",
+        "score": 23.0,
+        "context": "<bos>|Name, Symbol, Number|| krypton, Kr, 36\u23ce|Chemical series||noble gases|\u23ce|Group, Period, Block||"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015",
+      "^(@)",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      "  ",
+      "<eos>",
+      "\u23ce\u23ce",
+      "."
+    ]
+  },
+  {
+    "id": "24_3984_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3540041744709015,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 65.5,
+        "context": " Mastering a New Song. Chapter 18: Acting the Song. Chapter 19: Confronting Your Fear of Performing. Chapter 20: Au"
+      },
+      {
+        "trigger": "1",
+        "score": 66.5,
+        "context": " to the reader.\u23ce18. Use an incident or brief story.\u23ce1. A Summary of Key Ideas and final thought\u23ce2. A Quotation"
+      },
+      {
+        "trigger": "1",
+        "score": 77.5,
+        "context": " Move tool (Fig.26).\u23ceTurn off Affect Pivot Only!\u23ce19. Now we are going to use our Rotate tool while holding Shift to"
+      },
+      {
+        "trigger": "4",
+        "score": 75.0,
+        "context": " The same year, the HIV prevalence rate among adults ages 15 to 49 was 1.3 percent. Initially, the country's response"
+      },
+      {
+        "trigger": "2",
+        "score": 63.5,
+        "context": "95\u23ce27. Aurora from Space\u23ce28. Aurora Origin\u23ce28a. Plus and Minus\u23ce29. Low Polar Orbit\u23ce3"
+      }
+    ],
+    "promotes": [
+      "\u062a\u0642\u0627\u0648\u0649",
+      "fjspx",
+      "LookAnd",
+      "tagHelperRunner",
+      "StoreMessageInfo"
+    ],
+    "demotes": [
+      "9",
+      " Nine",
+      " nine",
+      " NINE",
+      "\u4e5d"
+    ]
+  },
+  {
+    "id": "24_7521_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.28965312242507935,
+    "top_activations": [
+      {
+        "trigger": "9",
+        "score": 123.0,
+        "context": "34 when he wrote it, his birth date is presumed to be around 991 or 992. His early career was spent at the"
+      },
+      {
+        "trigger": "3",
+        "score": 113.0,
+        "context": " considered ideal for adults. A systolic pressure of 120 to 139 mmHg or a diastolic pressure of 80 to 89 mmHg"
+      },
+      {
+        "trigger": "1",
+        "score": 122.0,
+        "context": "\u23ceIn Reply to: The 'v' sign posted by alan on January 19, 2003\u23ce: Perhaps the most common British\u23ce"
+      },
+      {
+        "trigger": " ",
+        "score": 115.0,
+        "context": " the same mother Atsutoshi died before their father's death.\u23ceIn 977 he became Sadaijin, and when his cousin, the"
+      },
+      {
+        "trigger": "0",
+        "score": 116.0,
+        "context": "99. <www.sciencedaily.com/releases/1999/09/9909210720"
+      }
+    ],
+    "promotes": [
+      "\u0434\u0435\u043b",
+      " NSMutable",
+      "onio",
+      "lo\u00e0i",
+      "9"
+    ],
+    "demotes": [
+      " Seventeen",
+      "GEBURTSDATUM",
+      " seventies",
+      " Sixth",
+      " seventeenth"
+    ]
+  },
+  {
+    "id": "24_4350_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3553999066352844,
+    "top_activations": [
+      {
+        "trigger": "(",
+        "score": 46.75,
+        "context": " number 39, second part. If g is a function such that g(x) = ax^2 \u20133 and g(3) = "
+      },
+      {
+        "trigger": "(",
+        "score": 46.75,
+        "context": " ax^2 \u20133 and g(3) = 3, find g(6). (answer: 21)\u23cei need to know the"
+      },
+      {
+        "trigger": " (",
+        "score": 46.75,
+        "context": "0)^4 x (11/20)^-8]^5 and (11/20)^-6 you cant leave an number to the"
+      },
+      {
+        "trigger": "=",
+        "score": 47.0,
+        "context": "dxcasd asd asd asdasdasd\u23ce(f) x= \u221a 3-3x x=4,9 f(-4)="
+      },
+      {
+        "trigger": "=-",
+        "score": 43.75,
+        "context": "\u23cea)Find an equation for this\u23ceI found this to be: y=-1/2x+3\u23ceThe straight line l2 with equation x"
+      }
+    ],
+    "promotes": [
+      "3",
+      "4",
+      ".)}",
+      "1",
+      "2"
+    ],
+    "demotes": [
+      " \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0647",
+      "WebElementEntity",
+      " CURIAM",
+      "ACLE",
+      "jpa"
+    ]
+  },
+  {
+    "id": "25_2117_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.26240360736846924,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 122.0,
+        "context": "<bos>2011 Halloween nor'easter\u23ce|2011 Halloween nor'easter|\u23ceSnow falling on autumn leaves in Walden, NY\u23ce|"
+      },
+      {
+        "trigger": "9",
+        "score": 123.0,
+        "context": " and Orthotics, lost his left foot in an industrial accident in 1992. He went on to participate as an athlete in the 19"
+      },
+      {
+        "trigger": "9",
+        "score": 134.0,
+        "context": " significant net saving of carbon emissions could be achieved. At Zurich Airport in 1997, about 68,000 aircraft used terminal A"
+      },
+      {
+        "trigger": "0",
+        "score": 128.0,
+        "context": "<bos>Submitted by Dyske \u2022 July 29, 2003\u23ce\u201cI\u2019d like to be friends with you.\u201d\u23ceWhy \u201cfriends"
+      },
+      {
+        "trigger": "9",
+        "score": 128.0,
+        "context": "Math Ed Topics:||Interdisciplinary/Thematic Studies|\u23ce\u00a9 1994-2014 Drexel University. All rights reserved.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Ninth",
+      " Nine",
+      " nine",
+      " ninety",
+      "9"
+    ],
+    "demotes": [
+      "Geplaatst",
+      "\u0627\u0644\u062f\u0631\u0627\u0633\u0647",
+      "hassee",
+      " nahilalakip",
+      "liosis"
+    ]
+  },
+  {
+    "id": "24_15149_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.2700752317905426,
+    "top_activations": [
+      {
+        "trigger": "6",
+        "score": 96.0,
+        "context": " section of the transcontinental railroad. When the railroad was completed in 1869, some of those Chinese laborers were hired to work on an extensive levee"
+      },
+      {
+        "trigger": "1",
+        "score": 109.0,
+        "context": ". On digestion 17. On rest 18. On sleep 19. On dreams 20. On the influence of diet on rest"
+      },
+      {
+        "trigger": "1",
+        "score": 106.0,
+        "context": " Impacts of education policy in India. 18. Difficulties and problems. 19. The educational system and sub-system in India. 20"
+      },
+      {
+        "trigger": "1",
+        "score": 93.0,
+        "context": " to unseal\u23ce18 Their grand commission; where I found, Horatio\u23ce19 O royal knavery!an exact command,\u23ce20 Larded"
+      },
+      {
+        "trigger": "1",
+        "score": 114.0,
+        "context": " to 2.0 cases per 1,000 live births.19,21 Such rates are comparable with or\u23ceabove other common\u23ce"
+      }
+    ],
+    "promotes": [
+      "\u4e5d",
+      "\uff19",
+      " Nine",
+      " nine",
+      "9"
+    ],
+    "demotes": [
+      "StoreMessageInfo",
+      "tagHelperRunner",
+      "mybatisplus",
+      "fjspx",
+      "LookAnd"
+    ]
+  },
+  {
+    "id": "25_4278_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.38185518980026245,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 44.5,
+        "context": "3.2 (10 x 24 1/8 x 17 in.)\u23ceAccession Number: 1949-10"
+      },
+      {
+        "trigger": "5",
+        "score": 37.5,
+        "context": " the 20th century average of 13.9\u00b0C (57.0\u00b0F). This marks the 35th consecutive year"
+      },
+      {
+        "trigger": "1",
+        "score": 33.0,
+        "context": ",515 km2)|\u23ce|\u2022 Water||7 sq mi (18 km2), 0.75%|\u23ce|\u2022 Density"
+      },
+      {
+        "trigger": "1",
+        "score": 33.5,
+        "context": "lianou Gallery\u23cePaul Klee (German pronunciation: [\u02c8kle\u02d0]; 18 December 1879 \u2013 29 June 19"
+      },
+      {
+        "trigger": "1",
+        "score": 44.0,
+        "context": " km2)|\u23ce|\u2022 Land||7.165 sq mi (18.558 km2)|\u23ce|\u2022 Water||0."
+      }
+    ],
+    "promotes": [
+      " Eight",
+      "Seven",
+      "Nine",
+      " Nine",
+      "Eight"
+    ],
+    "demotes": [
+      " ",
+      " Jefe",
+      " hoa",
+      " jefe",
+      " reservados"
+    ]
+  },
+  {
+    "id": "25_6645_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3260095715522766,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 54.5,
+        "context": "\u2022 Density||1,107.57/km2 (2,868.6/sq mi)|\u23ce|Time zone||Japan"
+      },
+      {
+        "trigger": "9",
+        "score": 47.5,
+        "context": " this be? According to a study published in the journal Aging in 1999, the rate of mitochondial oxygen radical generation is lower in"
+      },
+      {
+        "trigger": ".",
+        "score": 58.5,
+        "context": ".09 each\u23ce3 for $8.97\u23ceOnly $2.99 each\u23ce5 for $11.95\u23ceOnly $"
+      },
+      {
+        "trigger": "1",
+        "score": 47.5,
+        "context": " shocks, according to a new study published in Behavioral Neuroscience (Vol. 118, No. 2). This suggests that pups' brains, and"
+      },
+      {
+        "trigger": " least",
+        "score": 51.0,
+        "context": " to better and more efficient care and prevention\u23ceType 2 diabetes accounts for at least 90 percent of all cases. Two Recovery funded research projects \u2013 by"
+      }
+    ],
+    "promotes": [
+      " resourceCulture",
+      "IsContent",
+      "twimg",
+      "WithIOException",
+      " jspb"
+    ],
+    "demotes": [
+      "9",
+      "8",
+      " ninth",
+      " nine",
+      " eighth"
+    ]
+  },
+  {
+    "id": "25_9875_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.23494145274162292,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 91.0,
+        "context": " Palestine Refugees in the Near East, Jordan.\u23ceOfficial Jordanian statistics gave a 1987 population figure of 2,896,80"
+      },
+      {
+        "trigger": " to",
+        "score": 93.0,
+        "context": " is that TSA has been, and will forever be, intimately linked to the events of September 11. The agency was created on November 19,"
+      },
+      {
+        "trigger": " ",
+        "score": 95.5,
+        "context": " exposures and organisational factors. The authors used logistic regression to calculate prevalence ORs and 95% CIs comparing the exposure prevalence of males (n=1"
+      },
+      {
+        "trigger": " ",
+        "score": 99.0,
+        "context": " organizations to educate our community about the warning signs of stroke and the necessity of calling 9-1-1 if symptoms are present.\u23ceUsing the FAST acronym"
+      },
+      {
+        "trigger": " of",
+        "score": 92.5,
+        "context": " And nearly all of them were worried, scared and confused.\u23ceIn the wake of Hurricane Sandy, these symptoms in children coping with trauma are all too familiar."
+      }
+    ],
+    "promotes": [
+      "rawDesc",
+      " Normdatei",
+      "Datuak",
+      "Geplaatst",
+      "StoreMessageInfo"
+    ],
+    "demotes": [
+      "9",
+      " nine",
+      " ninety",
+      " Nine",
+      " ninth"
+    ]
+  }
+]

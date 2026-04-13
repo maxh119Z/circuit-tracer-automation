@@ -1,0 +1,2882 @@
+[
+  {
+    "id": "0_12958_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.390194296836853,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 12.0,
+        "context": "Posted: Mon Jul 14, 2008 10:12 am Post subject: New nanotechnique producing small things in large"
+      },
+      {
+        "trigger": ":",
+        "score": 14.12,
+        "context": "<bos>Re: teaching relational basics to people, questions\u23ceDate: Sat, 28 Nov 2009 20:33:3"
+      },
+      {
+        "trigger": ":",
+        "score": 12.38,
+        "context": "<bos>Submitted to: North American Cranberry Research and Extension Workers Annual Meeting\u23cePublication Type: Abstract Only\u23cePublication Acceptance Date: October 20, 20"
+      },
+      {
+        "trigger": ":",
+        "score": 12.5,
+        "context": ": 09/26/1999 at 18:14:46 From: Andrew Subject: Algebra II with Trigonometry On"
+      },
+      {
+        "trigger": ":",
+        "score": 13.12,
+        "context": "<bos>103: Introduction to Logic\u23ceThe Language of Symbolic Logic\u23ceAbstract: Conventions for\u23cetranslating ordinary language statements into symbolic notation are\u23ce- We"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " The\u017fe",
+      " Monfieur",
+      " my\u017felf",
+      " Efq"
+    ],
+    "demotes": [
+      ",",
+      ".",
+      " (",
+      " ",
+      " in"
+    ],
+    "generated_description": "Metadata colon \u2014 activates on colons after header labels (Posted:, Re:, Submitted to:, From:, Subject:, dates); marks boundary before the header value."
+  },
+  {
+    "id": "0_7118_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.35062119364738464,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " Helman, Forbes Staff\u23ceI'm based in Houston, Texas. Energy capital of the world.\u23ceThis article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " control.\u23ceTwo days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " \u0432\u0438\u043f\u0440\u0430\u0432\u0438\u0432\u0448\u0438",
+      " \u062a\u0636\u064a\u0641\u0644\u0647\u0627",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "\u23ce"
+    ],
+    "generated_description": "capital \u2014 activates on the token \"capital\" (usually referring to a capital city); fires on uses setting up a place name (e.g., \"the capital of X\")."
+  },
+  {
+    "id": "0_16200_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3083958327770233,
+    "top_activations": [
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Bring the Snow Inside! Winter Scapes Art Project!, Charity Calendar Collage\u23ceTags: Art: Chalk\u23ce8 more ways to have fun this winter\u23ceColoring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": " Kleinman, M.D., Ph.D., NIMH Clinical Brain Disorders Branch\u23ceUsage Restrictions: None\u23ceRelated news release: Our brains are made of"
+      },
+      {
+        "trigger": ":",
+        "score": 30.38,
+        "context": " literary and non-fiction texts in a dramatic and motivating manner.\u23ceSection A: Drama and Literacy Section B: Exploring story through drama conventions Section C: Exploring"
+      },
+      {
+        "trigger": ":",
+        "score": 30.88,
+        "context": " elected Senate chooses vice president from top two Electoral College vote-getters.\u23ceTimeline: Congressional intervention\u23ceAn elector bucks system\u23ceIn 26 states and Washington"
+      },
+      {
+        "trigger": ":",
+        "score": 30.62,
+        "context": ".\u23cePiaget Believed That Infants Have Mental Structures Called SCHEMES\u23ceSchemes: Organized Patterns of Functioning\u23ceNewborn schemes differ from adult schemes.\u23ce"
+      }
+    ],
+    "promotes": [
+      " Hou\u017fe",
+      " Monfieur",
+      " \u017feveral",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      ":",
+      " :",
+      ":\r",
+      ",",
+      ";"
+    ],
+    "generated_description": "Colon (section/header) \u2014 activates on ':' used to introduce labels, headers, tags, timelines, list separators; structural separator marker before a following label or section name."
+  },
+  {
+    "id": "0_12698_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3910498321056366,
+    "top_activations": [
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Elizabeth Robertson\u23ceLos Altos High School Class of 2013\u23ce2nd Place Prize Winner, Gilder Lehrman Institute of American History"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By PETER PESIC\u23ceCommon objects often have uncommon stories. The zipper, the pencil and the paper clip were devised by inventors who long struggled to produce things"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Katrina Vogelgesang, Contributing writer\u23ceFor April Gottung, an active and healthy young girl, a heart issue shouldn't have been a worry"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By Mac Lacy\u23ceFewer than 50 years ago, on Sunday, Sept. 15, 1963, four young girls"
+      },
+      {
+        "trigger": "By",
+        "score": 16.5,
+        "context": "<bos>By: Mir M.Hosseini\u23cePursuing the Afghan invaders, in 1738, Nader Shah conquered Kandahar, the last"
+      }
+    ],
+    "promotes": [
+      "fromnode",
+      "\\{\\\\",
+      " snippetHide",
+      "setVerticalGroup",
+      " \u0645\u0634\u064a\u0646"
+    ],
+    "demotes": [
+      "<bos>",
+      " it\u017felf",
+      "<blockquote>",
+      "I",
+      " \u017find"
+    ],
+    "generated_description": "say byline (By) \u2014 activates on leading \"By\" in article headers; signals an author name or byline follows."
+  },
+  {
+    "id": "0_997_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.397731751203537,
+    "top_activations": [
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " words. He uses dialogue to move the story forward with the barest minimum of facts and descriptions. The story is told in third person with the actual narration limited"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " with the King produced children. The question is complicated by the difficulty of separating the facts of Rosamund's life from the profusion of legends surrounding it."
+      },
+      {
+        "trigger": " facts",
+        "score": 25.75,
+        "context": " The 2010 Census provides a statistical snapshot of the City that reflects facts on how Riverside is growing, diverse and constantly changing.\u23ceCensus information is"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.62,
+        "context": " all and we are happy to provide this forum for the community to share opinions and facts. We ask that commenters keep it clean, keep it truthful, stay"
+      },
+      {
+        "trigger": " facts",
+        "score": 25.88,
+        "context": " come.\u23ceTeachers and Museum Docents use specimens in our collections to bring the facts and concepts of science to life.\u23ceAnyway, you get the idea."
+      }
+    ],
+    "promotes": [
+      "<eos>",
+      "\u043c",
+      "e",
+      "\u23ce\u23ce",
+      "<bos>"
+    ],
+    "demotes": [
+      "WriteTagHelper",
+      "bootstrapcdn",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      " \u0627\u0644\u062d\u0631\u0647",
+      "SpringRunner"
+    ],
+    "generated_description": "facts (plural) \u2014 activates on the token \"facts\"; appears in informational contexts (data, truth, census, science, background details)."
+  },
+  {
+    "id": "0_8885_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.35648149251937866,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": "th\u201318th century). In addition to being an important regional and provincial capital (of E\u1e63fah\u0101n province), the city is one of the most"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "trigger": " capital",
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " rai\u017f",
+      " Monfieur",
+      " Efq",
+      " it\u017felf",
+      " my\u017felf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".\u201d",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital \u2014 activates on the token \u201ccapital\u201d; fires for province/city capital, economic capital, and \u201ccapital letters\u201d contexts."
+  },
+  {
+    "id": "0_13096_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3493941128253937,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 23.12,
+        "context": " been used for congestion pricing: during business hours in downtown London, for instance, the license plates of cars are photographed, and the drivers are sent a bill."
+      },
+      {
+        "trigger": " the",
+        "score": 24.0,
+        "context": "gov/WWW/K-12/airplane/vel.html and use the simulator to determine the effect of airspeed on lift. When you double the"
+      },
+      {
+        "trigger": " the",
+        "score": 23.62,
+        "context": "driven graphics in Photoshop automatically, using variables and a simple text file.\u23ceAdjust the color of a complexly color-casted image, using a 10"
+      },
+      {
+        "trigger": " the",
+        "score": 22.62,
+        "context": "<bos>DM \u2013 Mosquitoes contribute to the problem of childhood obesity in some parts of the United States, a small study suggests. Researchers from Brandeis University in Massachusetts"
+      },
+      {
+        "trigger": " the",
+        "score": 22.88,
+        "context": " displayed (a new Worksheet or an existing Worksheet). Click OK.\u23ce- Select the fields you wish to be included in your Pivot by dragging them to the Row"
+      }
+    ],
+    "promotes": [
+      " Di\u017f",
+      " Re\u017f",
+      " An\u017f",
+      " Monfieur",
+      " Shakspeare"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " it",
+      " this"
+    ],
+    "generated_description": "say following noun \u2014 activates on the definite article \"the\" when it introduces a noun phrase; signals an upcoming content word (noun or noun phrase)"
+  },
+  {
+    "id": "0_1961_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3641584515571594,
+    "top_activations": [
+      {
+        "trigger": " games",
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "trigger": " games",
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.\u23ceDave McCool, president and CEO of Muzzy"
+      },
+      {
+        "trigger": " capital",
+        "score": 14.25,
+        "context": " in my mind\u2019s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " \u00e0",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      "+#+#",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "Diwedd"
+    ],
+    "generated_description": "Place/Event noun \u2014 activates on tokens naming locations or major events (capital, games); often in contexts with city names or events; pushes articles/locale words (the, \u00e0, ville)."
+  },
+  {
+    "id": "0_11124_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39274391531944275,
+    "top_activations": [
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "trigger": " fill",
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "trigger": " fill",
+        "score": 17.25,
+        "context": ".\u23ceBesides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "\u05e0\u05d2\u05dc\u05d9\u05ea",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " \u0635\u0648\u062a\u064a\u0647",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill \u2014 activates on the verb \u201cfill\u201d; used to indicate filling gaps/voids, pixels, positions, jobs, tissue, etc."
+  },
+  {
+    "id": "0_5660_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.34024831652641296,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "trigger": " capital",
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " \u0645\u062a\u0639\u0644\u0642\u0647",
+      " snippetHide"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "1",
+      "\u23ce",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital (economic) \u2014 activates on noun \u201ccapital\u201d in finance/economics contexts: factor of production, capital markets, raising/borrowing capital, investment/money used for production."
+  },
+  {
+    "id": "0_8939_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3455734848976135,
+    "top_activations": [
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn\u2019t realistic.\u23ceWampServer allows you to easily set up a server on your"
+      },
+      {
+        "trigger": " realistic",
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.\u23ce"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"\u23ceThe"
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.\u23ceDevelop an action plan for your goals."
+      },
+      {
+        "trigger": " realistic",
+        "score": 17.75,
+        "context": " stress disorder.\u23ceBy bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Re\u017f",
+      " purpo\u017fe",
+      " Majefty",
+      " Monfieur",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Port\u00e1ly",
+      " ("
+    ],
+    "generated_description": "realistic (adj) \u2014 activates on the adjective \"realistic\"; signals lifelike/plausible quality (looks, timelines, depictions, scenarios)."
+  },
+  {
+    "id": "0_3820_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.32459867000579834,
+    "top_activations": [
+      {
+        "trigger": " the",
+        "score": 32.25,
+        "context": ". In no future case will a launch occur at 35F or colder, and in low-wind and low humidity situations the temperature may need to be"
+      },
+      {
+        "trigger": " the",
+        "score": 33.25,
+        "context": " well as dysthymia. His (self-)therapeutic strategies were: (a) the systematic use of helping alliances, (b) behavioral techniques, (c"
+      },
+      {
+        "trigger": " the",
+        "score": 32.5,
+        "context": " other respiratory difficulties. In 1997 (these things take time) the EPA imposed stiff new regulations to protect public health.\u23ceIn 20"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " on astrological houses to show how influences2 enter individual lives. The method highlights the Ascendant as the basis of down-to-earth astrology.\u23ceMor"
+      },
+      {
+        "trigger": " the",
+        "score": 32.0,
+        "context": " the subject which it treats. The first examines the mechanical arrangement of the figures; the second asks, what is the real relation between them? The first deals with"
+      }
+    ],
+    "promotes": [
+      " vectorielles",
+      " Shakspeare",
+      " photolibrary",
+      " The\u017fe",
+      " Efq"
+    ],
+    "demotes": [
+      " the",
+      " a",
+      " an",
+      " this",
+      " their"
+    ],
+    "generated_description": "definite article \"the\" \u2014 activates on token \"the\" (article before nouns); associated with suppressing common articles in output tokens."
+  },
+  {
+    "id": "0_13145_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3788102865219116,
+    "top_activations": [
+      {
+        "trigger": " Voice",
+        "score": 13.81,
+        "context": " performing with a local or regional theater group.\u23cePerforming Musically: Finding Your Voice--or Instrument: Singers and musicians also make up a large portion of performing"
+      },
+      {
+        "trigger": " Pain",
+        "score": 15.06,
+        "context": " lessen it to tolerable levels, regardless of the cause, according to the American Chronic Pain Association.\u23ceThese are common types of chronic pain:\u23cePain and inflammation"
+      },
+      {
+        "trigger": " Knowledge",
+        "score": 13.19,
+        "context": " by expert participants in a debate hosted by AlertNet Climate and the Climate and Development Knowledge Network this week, exploring how cutting the world's annual $60"
+      },
+      {
+        "trigger": " Facts",
+        "score": 12.75,
+        "context": " the foot will be controlled in the first several weeks after surgery.\u23ceGeneral Recovery Facts\u23ceThe goal of surgery is to regain strength and function in as short a"
+      },
+      {
+        "trigger": " Life",
+        "score": 12.94,
+        "context": "21 23262 7\u23ce- Nietzsche: A Critical Life by Ronald Hayman\u23ceWeidenfeld, 424 pp,"
+      }
+    ],
+    "promotes": [
+      "BarStyle",
+      "BufferException",
+      "esModule",
+      " Webcam",
+      "tableFuture"
+    ],
+    "demotes": [
+      " Tiempo",
+      " Peace",
+      "Tiempo",
+      " Hope",
+      " Time"
+    ],
+    "generated_description": "One-word Section Heading \u2014 activates on capitalized abstract nouns used as headings/titles (Fact, Voice, Pain, Knowledge, Life)."
+  },
+  {
+    "id": "0_4323_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.3884793519973755,
+    "top_activations": [
+      {
+        "trigger": " achieve",
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " in that culture.\u23ceExactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "trigger": " achieve",
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " again\u017ft",
+      " becau\u017fe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve \u2014 activates on the verb \"achieve\" (especially infinitival \"to achieve\"); marks expressions of attaining/ accomplishing goals or outcomes."
+  },
+  {
+    "id": "0_12613_4",
+    "layer": 0,
+    "ctx_idx": 4,
+    "influence_score": 0.39854347705841064,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": "<bos>Reykjav\u00edk is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "trigger": " capital",
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "trigger": " capital",
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.\u23ceSouth Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " hou\u017fe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "\u23ce\u23ce",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital (word) \u2014 Activates on the token \"capital\" in varied senses: city/state capital, financial capital, and typographic/usage examples (e.g., \"capital I\")."
+  },
+  {
+    "id": "0_2848_5",
+    "layer": 0,
+    "ctx_idx": 5,
+    "influence_score": 0.32793378829956055,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in \u00bd liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family\u23ceoriginate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King\u23ceof Norway"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.\u23ceDr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "trigger": " of",
+        "score": 37.5,
+        "context": ".\u23ceAfter this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " An\u017f",
+      " The\u017fe",
+      " Monfieur",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of \u2014 activates on the preposition \"of\"; marks possessive/of-phrase heads, often before locations, institutions, names, or partitive constructions."
+  },
+  {
+    "id": "0_5626_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.3609398305416107,
+    "top_activations": [
+      {
+        "trigger": " Croatia",
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia\u23ceCroatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.38,
+        "context": " diplomatic mission\u23ceAccording to the article 3 of the 1961 Vienna Convention, normal functions consist in:\u23ce- representing the sending State in the"
+      },
+      {
+        "trigger": " Vienna",
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "trigger": " Copenhagen",
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "European capital \u2014 activates on European capital/place names (Vienna, Copenhagen); often correlates with regional/directional tokens (east, west, Central)"
+  },
+  {
+    "id": "0_11375_10",
+    "layer": 0,
+    "ctx_idx": 10,
+    "influence_score": 0.33124688267707825,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "is (copula) \u2014 activates on the token \"is\" linking subject to predicate; appears before adjectives/noun phrases; tends to demote/generate less \"is\" in output."
+  },
+  {
+    "id": "1_1000_4",
+    "layer": 1,
+    "ctx_idx": 4,
+    "influence_score": 0.3481430113315582,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " the Indian laws.\u23ce6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "trigger": " capital",
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "\u00e1lni",
+      "\u305d\u3046\u306a",
+      " \u0648\u0639\u0644\u0649",
+      "\ub9ac\ub97c"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital (economic) \u2014 activates on the token \u201ccapital\u201d in economic/finance contexts (capital assets, capital receipt, capital for development); consistently suppresses emitting the word \u201ccapital.\u201d"
+  },
+  {
+    "id": "2_7173_4",
+    "layer": 2,
+    "ctx_idx": 4,
+    "influence_score": 0.355342835187912,
+    "top_activations": [
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,\u201d said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "trigger": " capital",
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.\u23cePuerto del Rosario is"
+      },
+      {
+        "trigger": " capital",
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital \u2014 activates on the token \u201ccapital\u201d; fires for both city-seat uses and financial/capital-assets contexts."
+  },
+  {
+    "id": "0_13331_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3262718617916107,
+    "top_activations": [
+      {
+        "trigger": " province",
+        "score": 27.0,
+        "context": " the Cascade Mountains that straddle the Canada-U.S. border in the province of British Columbia and Washington state.\u23ceIn the southern half of the eco"
+      },
+      {
+        "trigger": " province",
+        "score": 27.12,
+        "context": "8th century, when it was made the capital of what was then Suruga province. In the 15th and 16th centuries the city"
+      },
+      {
+        "trigger": " province",
+        "score": 27.0,
+        "context": "2009-2010. This study considers it a have province because these payments are small relative to population and, taken together with other transfers"
+      },
+      {
+        "trigger": " province",
+        "score": 27.12,
+        "context": " Special Administrative Region (SAR), located south of the Chinese Guangdong (formerly Canton) province. The area comprises Hong Kong Island, the Kowloon peninsula, and the"
+      },
+      {
+        "trigger": " province",
+        "score": 27.0,
+        "context": " captured in a host of dedicated cultural museums scattered across the length and breadth of the province.\u23ceThe Campbell Collection in Durban features 18th and 1"
+      }
+    ],
+    "promotes": [
+      " ThemeData",
+      " blz",
+      "\u012bjum",
+      "uesday",
+      "liana"
+    ],
+    "demotes": [
+      "SBATCH",
+      " Seeder",
+      "UserScript",
+      "SPATH",
+      "EndProject"
+    ],
+    "generated_description": "province \u2014 activates on the token \"province\" in geographic/administrative contexts; often appears just before province names (British Columbia, Guangdong, Suruga)."
+  },
+  {
+    "id": "0_6367_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.33586087822914124,
+    "top_activations": [
+      {
+        "trigger": " province",
+        "score": 25.5,
+        "context": " example, which was an imperial province until 22 BC, became a senatorial province in that year, and was therefore governed no longer by an imperial legate"
+      },
+      {
+        "trigger": " province",
+        "score": 25.5,
+        "context": " February 4, 1941, in Mokpo, Cholla province, for centuries the scene of resistance to overbearing govts. While a"
+      },
+      {
+        "trigger": " province",
+        "score": 26.0,
+        "context": " of southwestern France, and includes sculpture originally from the abbey, contemporary elements from the province, and early-twentieth-century reproduction carvings. Medieval cloisters served"
+      },
+      {
+        "trigger": " province",
+        "score": 25.25,
+        "context": " healing powers.\u23ceUntil last year, the fossils were being sold in Henan province as \"dragon bones\" at about 4 yuan (50 cents)"
+      },
+      {
+        "trigger": " province",
+        "score": 26.0,
+        "context": "<bos>Some 5,800 peasants in Sindh province are set to receive farmland previously designated as government-owned flood runoff. By the end of March,"
+      }
+    ],
+    "promotes": [
+      "/",
+      "OuterClass",
+      "SPATH",
+      "ffindor",
+      "ers"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " him\u017felf",
+      " Efq",
+      " \u017fmall",
+      " it\u017felf"
+    ],
+    "generated_description": "province \u2014 activates on the token \"province\"; signals administrative/ geographic region mentions, often with attached proper names (Henan, Sindh, Cholla)."
+  },
+  {
+    "id": "2_11528_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.39358821511268616,
+    "top_activations": [
+      {
+        "trigger": " contain",
+        "score": 25.5,
+        "context": " vision of the organic food advocates.\u23ceAll Foods Contain Negatives\u23ceAll foods contain negatives provided by Mother Nature as a part of life.\u23ceMany people automatically"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.25,
+        "context": " training requirements, noise and neighborhoods were part of the equation. The concern was to contain the majority of the noise on the installation and away from other populations. But"
+      },
+      {
+        "trigger": " contain",
+        "score": 24.88,
+        "context": "<bos>What is in a CFL? CFLs contain a very small amount of mercury vapour (around 5 mg), which is approximately 100 times less"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.0,
+        "context": " you can get protein from food sources other than meat. Did you know that vegetables contain protein? Even if you omit meat from your meal, it\u2019s not"
+      },
+      {
+        "trigger": " contain",
+        "score": 25.12,
+        "context": " are ripe with remotely accessible vulnerabilities. Even before enabling the servers, Windows based machines contain numerous exploitable holes allowing attackers to not only access the system but also execute"
+      }
+    ],
+    "promotes": [
+      " effect",
+      " Humphreys",
+      "\u043d\u0456\u0446\u0438\u043f\u0430\u043b\u0456",
+      " IOError",
+      "WithIOException"
+    ],
+    "demotes": [
+      " contents",
+      "Contents",
+      "contents",
+      " Contents",
+      "Portail"
+    ],
+    "generated_description": "contain / contains \u2014 activates on the verb \u201ccontain\u201d (and variants); signals factual/descriptive claims of inclusion/holding (things that include or have something)."
+  },
+  {
+    "id": "2_5132_1",
+    "layer": 2,
+    "ctx_idx": 1,
+    "influence_score": 0.3769695460796356,
+    "top_activations": [
+      {
+        "trigger": " facts",
+        "score": 26.75,
+        "context": "Achievement Objective Being Assessed\u23ce|Transactional Writing||Write explanations about shadows, state facts and opinions and recount events.|\u23ce|Making Sense of the Physical World||"
+      },
+      {
+        "trigger": " facts",
+        "score": 26.5,
+        "context": " Disorders Sourcebook, Fourth Edition offers information on how genes work, and it provides facts about the most common genetic disorders, including those that arise from mutations in specific"
+      },
+      {
+        "trigger": " facts",
+        "score": 26.75,
+        "context": "the patient died\". They can be used to downplay or conceal unpalatable facts, such as \"collateral damage\" for \"civilian casualties\" in"
+      },
+      {
+        "trigger": " facts",
+        "score": 27.25,
+        "context": " usually have deep, basic, negative beliefs about themselves, which are often taken as facts and can have a negative impact on the person\u2019s life.\u23ce-"
+      },
+      {
+        "trigger": " facts",
+        "score": 27.0,
+        "context": " religions can find creative\u23ceexpression on the Internet.\u23ceThe place to go for facts and figures about membership in most world religions\u23ce- The GodWeb\u23cefeatures"
+      }
+    ],
+    "promotes": [
+      "PreAuthorize",
+      "bootstrapcdn",
+      "InSection",
+      " propOrder",
+      "aarrggbb"
+    ],
+    "demotes": [
+      " fact",
+      "fact",
+      " facts",
+      "Fact",
+      "Facts"
+    ],
+    "generated_description": "facts \u2014 activates on the plural noun \"facts\"; fires on informational contexts listing data, figures, or statements presented as true."
+  },
+  {
+    "id": "2_9856_7",
+    "layer": 2,
+    "ctx_idx": 7,
+    "influence_score": 0.3824084997177124,
+    "top_activations": [
+      {
+        "trigger": " province",
+        "score": 24.0,
+        "context": " jurisdiction, authority, liability, interest, claim, ownership, tenure, affair, province; reason, cause, function, justification.\u23ce\u201cpono\u201d \u2013"
+      },
+      {
+        "trigger": " province",
+        "score": 23.25,
+        "context": "People and culture\u23ceIfugao refers to the people, their dialect and the province they live in the mountainous northern part of the Philippines. They are known as"
+      },
+      {
+        "trigger": " province",
+        "score": 24.5,
+        "context": " the reign o Keeng Mongkut (Rama IV) the main settlement o the province wis moved tae its present-day location. Durin the wars wi the"
+      },
+      {
+        "trigger": " province",
+        "score": 23.0,
+        "context": "The Maa-nulth Final Agreement is among the first Final Agreements reached in the province under the British Columbia treaty process. The Final Agreement sets out each Maa-"
+      },
+      {
+        "trigger": " province",
+        "score": 23.0,
+        "context": " controversy and debate\u2026it ceases to be an issue of politics and moves into the province of the technicians.\u201d\u23ceThe technicians whom Douglas thought should be involved in regulating"
+      }
+    ],
+    "promotes": [
+      "VersionUID",
+      "(\"\")]\r",
+      " \u043e\u0440\u0438\u0433\u0456\u043d\u0430\u043b\u0443",
+      "\u043a\u043b\u043e\u043f\u0435",
+      "\">//"
+    ],
+    "demotes": [
+      " province",
+      " Province",
+      "Province",
+      " provincial",
+      " Provincial"
+    ],
+    "generated_description": "province \u2014 activates on mentions of a province / provincial administrative region; fires in geographic or governance contexts (e.g., Vancouver, Ifugao, British Columbia)."
+  },
+  {
+    "id": "2_9457_9",
+    "layer": 2,
+    "ctx_idx": 9,
+    "influence_score": 0.38414978981018066,
+    "top_activations": [
+      {
+        "trigger": " City",
+        "score": 21.75,
+        "context": " Vera Cruz. The forced commanded by Gen. Winfield Scott moved inland and occupied Mexico City (September 14, 1847). A peace treaty"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.12,
+        "context": " Colorado is the decade of drought.\u23ceSo says Brian Bledsoe, a Colorado Springs meteorologist who studies the history of ocean currents and uses what he learns to"
+      },
+      {
+        "trigger": " Francisco",
+        "score": 23.0,
+        "context": " at the annual Integrated Solid State\u23ceCircuits Conference (ISSCC) in San Francisco. At the forefront of Intel\u2019s announcements is its success in developing the"
+      },
+      {
+        "trigger": " Springs",
+        "score": 25.38,
+        "context": " Command (CONAD) have been tracking Santa. The tradition began after a Colorado Springs-based Sears Roebuck & Co. store advertisement for children to call Santa"
+      },
+      {
+        "trigger": "Seattle",
+        "score": 21.62,
+        "context": "<bos>The scientists, who are affiliated with the University of Washington (Seattle, WA), Case Western Reserve University (Cleveland, OH), the University of Bari (Bari"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " LUMP",
+      "ajuku",
+      "caloosa",
+      "pannt"
+    ],
+    "demotes": [
+      "TagMode",
+      "WithIOException",
+      "XmlAccessType",
+      "+:+",
+      "TextWatcher"
+    ],
+    "generated_description": "City name \u2014 activates on city/place names or their tokens (San Francisco, Seattle, Colorado Springs, City, Vera Cruz)"
+  },
+  {
+    "id": "3_9559_5",
+    "layer": 3,
+    "ctx_idx": 5,
+    "influence_score": 0.3741598427295685,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 17.75,
+        "context": "<bos>Capital of Tyrol, Austria. While Jews settled throughout Tyrol, especially in the southern part, as early as the beginning of the fourteenth century, no mention of"
+      },
+      {
+        "trigger": " of",
+        "score": 11.88,
+        "context": ", to crush, do away with; to prohibit, subdue\u23ce- The government of China suppressed the student demonstrations by ordering tanks to Tiananmen square.\u23ce"
+      },
+      {
+        "trigger": " of",
+        "score": 14.5,
+        "context": "2% of the newshole. One day later, an earthquake off the coast of Indonesia killed an estimated 1,100 people, accounting for "
+      },
+      {
+        "trigger": " of",
+        "score": 12.62,
+        "context": " on Pennsylvania Avenue houses the Charters of Freedom\u2013the Declaration of Independence, the Constitution of the United States, and the Bill of Rights\u2013and exhibits highlighting historical themes"
+      },
+      {
+        "trigger": " of",
+        "score": 11.75,
+        "context": "ts in New York, June has since been declared LGBT Pride Month by the President of the United States on five separate occasions, and although the exact timing and focus"
+      }
+    ],
+    "promotes": [
+      " Flag",
+      "Flag",
+      "flag",
+      " flag",
+      "memberOf"
+    ],
+    "demotes": [
+      "eradish",
+      "SharedCtor",
+      " nargin",
+      "ulemon",
+      "resizingMask"
+    ],
+    "generated_description": "say following noun \u2014 activates on the preposition \"of\"; signals/anticipates the noun or entity phrase that comes after (\"of\" + place, govt, percentage, proper names)."
+  },
+  {
+    "id": "4_7671_5",
+    "layer": 4,
+    "ctx_idx": 5,
+    "influence_score": 0.385887086391449,
+    "top_activations": [
+      {
+        "trigger": "quarter",
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "trigger": " of",
+        "score": 20.75,
+        "context": " a school for Native Americans.\u23ce1875: Helena is named capital of the Montana Territory.\u23ce1876: U.S. soldiers"
+      },
+      {
+        "trigger": " of",
+        "score": 22.75,
+        "context": " Copenhagen conference.\u23ceThe officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "trigger": " of",
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "trigger": " headquarters",
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "\u0445\u044c\u0442\u0430\u043d",
+      "R\u00fcyada",
+      "endmodule"
+    ],
+    "generated_description": "administrative-center-of \u2014 activates on \"of\" or \"headquarter(s)\" when linking an entity to its capital/headquarters; promotes outputs like \"headquarters\", \"HQ\", \"coordinators\"."
+  },
+  {
+    "id": "14_12562_9",
+    "layer": 14,
+    "ctx_idx": 9,
+    "influence_score": 0.39442938566207886,
+    "top_activations": [
+      {
+        "trigger": " Barbara",
+        "score": 31.0,
+        "context": " Range: Worldwide, especially north temperate. On our coasts, Bering Sea to Santa Barbara, CA; most abundant in the north.\u23ceDepth Range: Lower inter"
+      },
+      {
+        "trigger": " Calif",
+        "score": 31.0,
+        "context": "<bos>7. Dicentra uniflora Kellogg, Proc. Calif. Acad. Sci. 4: 141. 1871.\u23ce"
+      },
+      {
+        "trigger": " PT",
+        "score": 31.25,
+        "context": " state.\u23ceJoin our live video discussion here at 3 p.m. PT\u23ceOn Monday, a group of California's top geophysicists"
+      },
+      {
+        "trigger": " California",
+        "score": 30.5,
+        "context": "<bos>All posts by Scott Andes\u23ceThis November, California voters will be asked to decide whether food that has been \u201cgenetically modified (GM)\u201d should come with"
+      },
+      {
+        "trigger": " California",
+        "score": 31.0,
+        "context": ".\u23ceDistributionLabrador to the Gulf of Mexico and westward. From Alaska to California. Europe and Asia.\u23ceHere is a bloodthirsty little miscreant"
+      }
+    ],
+    "promotes": [
+      " Californian",
+      "CALIFORNIA",
+      " CALIFORNIA",
+      " California",
+      "California"
+    ],
+    "demotes": [
+      "\u043a\u043b\u043e\u043f\u0435",
+      " Roe",
+      "valbard",
+      " CommonModule",
+      " ligiloj"
+    ],
+    "generated_description": "California \u2014 activates on California place names/abbrev. (Calif, Santa, PT/West Coast contexts); tends to promote \u201cCalifornia\u201d/\u201cCALIFORNIA\u201d tokens in output."
+  },
+  {
+    "id": "16_4298_10",
+    "layer": 16,
+    "ctx_idx": 10,
+    "influence_score": 0.38062721490859985,
+    "top_activations": [
+      {
+        "trigger": " county",
+        "score": 33.75,
+        "context": ", Texas Legislators created the County of Kleberg, with Kingsville as the county seat. Shortly thereafter, various events provided the impetus to further spur the growth"
+      },
+      {
+        "trigger": " is",
+        "score": 34.0,
+        "context": " 156,172 square miles. The capital of the State is Sacramento, with a population (1900) of 29"
+      },
+      {
+        "trigger": " capital",
+        "score": 34.25,
+        "context": "\u23ceThe islands of Trobriand are about 90 minutes away from the capital of Port Moresby. Ferry services are also available from Alotau by use"
+      },
+      {
+        "trigger": " capital",
+        "score": 36.0,
+        "context": " Yogyakarta, Merapi is more than 530 kilometers from Bali's capital of Denpasar.\u23ceWhile no one can be certain when, or even"
+      },
+      {
+        "trigger": " is",
+        "score": 31.75,
+        "context": " the European Union. The capital city is Nicosia and the unrecognised capital of northern Cyprus is also Nicosia (known as Lefko\u015fa in Turkish). The currency of"
+      }
+    ],
+    "promotes": [
+      "unnitel",
+      "rawDesc",
+      "verl\u00e4s",
+      " urbaine",
+      " urbanas"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      "\u0440\u0438\u0442\u043e\u0440\u0438",
+      "check",
+      "ImageContext",
+      "findpost"
+    ],
+    "generated_description": "say capital-name \u2014 activates on \"capital\" or the copula \"is\" in phrases like \"the capital ... is\" or \"capital of X\"; signals upcoming place/capital name."
+  },
+  {
+    "id": "14_5600_9",
+    "layer": 14,
+    "ctx_idx": 9,
+    "influence_score": 0.3388608992099762,
+    "top_activations": [
+      {
+        "trigger": " Canadian",
+        "score": 40.25,
+        "context": " walking, according to an earlier study.\u23ceThat's the conclusion of a Canadian study that found that dog ownership nearly doubles the amount of time spent healthily"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 42.0,
+        "context": "<bos>The Columbia Country is a term used in the Canadian province of British Columbia to refer to the upper basin of the Columbia River in that province. It includes a"
+      },
+      {
+        "trigger": " honour",
+        "score": 41.0,
+        "context": "We feel eating a lot of good Mexican food at this time is a way of honouring the day. Last year friends of mine, the Bryant's,"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 42.25,
+        "context": "<bos>What is the NIYC?\u23ceAcross the Canadian Arctic, there are four Inuit regions: Inuvialuit Settlement Region (ISR), Nunavut, Nun"
+      },
+      {
+        "trigger": " Canada",
+        "score": 41.25,
+        "context": " in many parts of Europe, Latin America and India and are catching on fast in Canada, South Africa, China and elsewhere. They typically hold a liter of milk"
+      }
+    ],
+    "promotes": [
+      "canada",
+      " Canadians",
+      " CANADA",
+      "Canada",
+      " Canada"
+    ],
+    "demotes": [
+      "<bos>",
+      "\u23ce\u23ce",
+      " sp",
+      "\u043c\u043c\u0430",
+      "ate"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on mentions of Canada or \u201cCanadian\u201d; signals Canadian context and pushes output tokens like \u201cCanada\u201d / \u201cCanadians.\u201d"
+  },
+  {
+    "id": "17_7178_10",
+    "layer": 17,
+    "ctx_idx": 10,
+    "influence_score": 0.3702530562877655,
+    "top_activations": [
+      {
+        "trigger": " Capitol",
+        "score": 36.75,
+        "context": " until 1968.\u23ceThe Code Talkers were honored at the Capitol in Washington by President George W. Bush in July of 200"
+      },
+      {
+        "trigger": " capitol",
+        "score": 35.75,
+        "context": " its presence on the state flag and South Carolina legislators removed it last year from the capitol dome, says Dr. John Clark, a WMU associate professor of political"
+      },
+      {
+        "trigger": ":",
+        "score": 44.25,
+        "context": " est.) 307,226,000. Capital: Washington, D.C.\u23ceThe population includes people of European and Middle"
+      },
+      {
+        "trigger": " is",
+        "score": 32.75,
+        "context": ", and English is also spoken. The\u23cecurrency is the peso. The capital is Manila (Manila).\u23ceA white equilateral triangle is located to the side,"
+      },
+      {
+        "trigger": " of",
+        "score": 34.75,
+        "context": " of the City of Westminster, close to the historic Westminster Abbey and the government buildings of Whitehall and Downing Street.\u23ceHer Majesty's Royal Palace and Fortress,"
+      }
+    ],
+    "promotes": [
+      "Parliament",
+      "Capitol",
+      " Parliament",
+      " Legislative",
+      " Capitol"
+    ],
+    "demotes": [
+      "TagMode",
+      "zewod",
+      "AndEndTag",
+      "Port\u00e1ly",
+      " useRef"
+    ],
+    "generated_description": "capitol/capital (government seat) \u2014 activates on mentions of capital/capitol, government buildings, or seat-of-government phrases; promotes tokens like Parliament, Capitol, Legislative"
+  },
+  {
+    "id": "4_6028_2",
+    "layer": 4,
+    "ctx_idx": 2,
+    "influence_score": 0.39189809560775757,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 22.0,
+        "context": " scientist, Christopher Jacques.\u23ceA particular concern being raised by hunters is the fact of expanding wolf and bear populations in Wisconsin. Both are large predators that feed on"
+      },
+      {
+        "trigger": " is",
+        "score": 21.0,
+        "context": "Despite real progress over the last generation in overcoming discrimination in our society, the reality is that Americans are still regularly refused employment, housing or equal treatment under the law"
+      },
+      {
+        "trigger": " of",
+        "score": 19.25,
+        "context": "012 \u2014 For many people living in East Asia, floods are a fact of life.\u23ce\u201cWe just accept it because we know this area is always"
+      },
+      {
+        "trigger": " remain",
+        "score": 19.25,
+        "context": ". You could probably learn something from opening your mind a bit.\u23ceThe facts remain that no life exists off of the earth.\u23ceLets just stick to the"
+      },
+      {
+        "trigger": " fact",
+        "score": 17.75,
+        "context": " poverty, lack of education, and numerous other factors including parenting, however the one fact that is undeniable, is the fact that the individuals perpetrating these acts of"
+      }
+    ],
+    "promotes": [
+      "\u24d8",
+      "Facts",
+      " fact",
+      " Facts",
+      " facts"
+    ],
+    "demotes": [
+      " \u0627\u0644\u062d\u0631\u0647",
+      " convoy",
+      "MENAFN",
+      " aure",
+      " Normdatei"
+    ],
+    "generated_description": "fact / facts \u2014 represents the concept-token \"fact\" (and plural). Activates on occurrences or nearby cues (\"of\", \"remain\") and pushes/promotes the token \"fact\"/\"facts\"."
+  },
+  {
+    "id": "18_8959_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.3587466776371002,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 45.5,
+        "context": " used to calculate rates, are projections from the Population Statistics Unit in the Arizona Department of Economic Security (data for 1987-1989"
+      },
+      {
+        "trigger": "2",
+        "score": 42.5,
+        "context": "<bos>Georgia Wildlife Resources Division\u23ce2070 U.S. Hwy. 278, SE, Social Circle, GA 3002"
+      },
+      {
+        "trigger": "2",
+        "score": 53.5,
+        "context": "50319-0075 :: (515) 281-7689 or toll-free at 1"
+      },
+      {
+        "trigger": " ",
+        "score": 48.5,
+        "context": "., Wednesday, Jan. 5 in Room 5 of the State Office Building, St. Paul.\u23ceThe Minnesota Water Sustainability Framework, commissioned by the "
+      },
+      {
+        "trigger": " Governor",
+        "score": 44.5,
+        "context": "<bos>The \"stand in the schoolhouse door\" incident was Alabama Governor George Wallace's symbolic opposition to school integration imposed by the federal government. The June "
+      }
+    ],
+    "promotes": [
+      "governor",
+      " statewide",
+      "Governor",
+      " Governor",
+      " governor"
+    ],
+    "demotes": [
+      " FEDERAL",
+      " National",
+      "National",
+      " NATIONAL",
+      " national"
+    ],
+    "generated_description": "State government / governor \u2014 activates on U.S. state names, state agencies, local addresses/phones; promotes \"governor\"/\"statewide\", suppresses \"federal\"/\"national\""
+  },
+  {
+    "id": "19_15123_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.34687966108322144,
+    "top_activations": [
+      {
+        "trigger": " Agricultural",
+        "score": 75.0,
+        "context": " (CPLA) and their respective Regulations. Other legislation, such as the Canada Agricultural Products Act and Regulations, the Meat Inspection Act and Regulations, the Fish Inspection"
+      },
+      {
+        "trigger": "0",
+        "score": 84.0,
+        "context": " Wilfrid Laurier's Liberal administration as deputy minister of labor (1900\u20131908) and minister of labor (190"
+      },
+      {
+        "trigger": "1",
+        "score": 84.0,
+        "context": "10 current provinces in Canada. These provinces include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island"
+      },
+      {
+        "trigger": " Communications",
+        "score": 77.5,
+        "context": " the Internet are not subject to the Government of Canada Web Standards. As per the Communications Policy of the Government of Canada, you can request alternate formats of this page"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 69.5,
+        "context": "<bos>The Canadian Genealogy Centre has so much information on the military. The first page provides a list of different topics as well as other websites to help you with your"
+      }
+    ],
+    "promotes": [
+      "Canada",
+      "Canadian",
+      " Canadians",
+      " Canada",
+      " Canadian"
+    ],
+    "demotes": [
+      " correctes",
+      " MotionEvent",
+      " proposons",
+      "URLException",
+      "port\u00e1l"
+    ],
+    "generated_description": "Canada / Canadian \u2014 fires on tokens about Canada (Canadian, provinces, federal acts, government/communications); promotes output tokens like \"Canada\"/\"Canadian\"."
+  },
+  {
+    "id": "18_15314_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.37789082527160645,
+    "top_activations": [
+      {
+        "trigger": "VA",
+        "score": 48.5,
+        "context": " of many years from precancerous areas called vaginal intraepithelial neoplasia (VAIN).\u23ceA much smaller percentage of vaginal cancers (~5%) are aden"
+      },
+      {
+        "trigger": " Victor",
+        "score": 53.5,
+        "context": " lots of different cells, organs, tissue types and flowers, and you can do it without the ['junk' DNA],\" said co-corresponding author Victor Albert."
+      },
+      {
+        "trigger": "Vice",
+        "score": 45.5,
+        "context": " FDR offered what he called \"the best way to settle the Jewish question.\"\u23ceVice President Henry Wallace, who noted the conversation in his diary, said Roosevelt spoke"
+      },
+      {
+        "trigger": " vice",
+        "score": 48.0,
+        "context": " lorises are a unique group of primates found throughout South and Southeast Asia. Their vice-like grip, snake-like movements, shy nature, and most remarkably"
+      },
+      {
+        "trigger": "VP",
+        "score": 45.5,
+        "context": ", a standard neutralization assay, and sequencing of the complete capsid-encoding (VP1) gene identified the 18 isolates (FDJS03)"
+      }
+    ],
+    "promotes": [
+      " A\u00f1ade",
+      " vVar",
+      " Efq",
+      "RTEX",
+      "]\")]"
+    ],
+    "demotes": [
+      "CodeAttribute",
+      " sexuales",
+      "antMatchers",
+      "Biograf\u00eda",
+      "__(/*!"
+    ],
+    "generated_description": "V-start tokens \u2014 activates on tokens beginning with uppercase V (VA, VP, Victor, Vice, vice-like)"
+  },
+  {
+    "id": "19_1445_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.37604397535324097,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 57.25,
+        "context": " city worker sells eggs at government subsidized prices as people line up outside the city truck in Mexico City, Friday, Aug. 24, 201"
+      },
+      {
+        "trigger": " of",
+        "score": 53.25,
+        "context": ". The formation and the nearby badlands are located about 14 miles south of I-70 near Quinter, Kansas.\u23ceOn January 2"
+      },
+      {
+        "trigger": "),",
+        "score": 52.75,
+        "context": " are known for the specific beers they produce. Dusseldorf (albtbier), Dortmund (Dortmunder), and K\u00f6ln (K\u00f6lsch) all have a"
+      },
+      {
+        "trigger": " of",
+        "score": 54.25,
+        "context": " a new puppy for the holidays.\u23ceThe Everett Herald reported recently that the cities of Everett and Mukilteo temporarily closed municipal off-leash dog parks out"
+      },
+      {
+        "trigger": " outside",
+        "score": 51.75,
+        "context": " planning to build a 2 megawatt biomass plant on county-owned land just outside Truckee.\u23ceTransportation cost is a complicating factor. It's"
+      }
+    ],
+    "promotes": [
+      "raisals",
+      "effect",
+      "STRUCTOR",
+      "\u66d6\u6627\u3055\u56de\u907f",
+      " El"
+    ],
+    "demotes": [
+      "bootstrapcdn",
+      "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+      "DrawerToggle",
+      "istoitu",
+      " ar\u015fivlendi"
+    ],
+    "generated_description": "say place name \u2014 activates on prepositions/punctuation that introduce locations (in, of, outside, \u201c,\u201d before city/state); signals an upcoming city/region/place token."
+  },
+  {
+    "id": "19_15123_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.2901434898376465,
+    "top_activations": [
+      {
+        "trigger": " Agricultural",
+        "score": 75.0,
+        "context": " (CPLA) and their respective Regulations. Other legislation, such as the Canada Agricultural Products Act and Regulations, the Meat Inspection Act and Regulations, the Fish Inspection"
+      },
+      {
+        "trigger": "0",
+        "score": 84.0,
+        "context": " Wilfrid Laurier's Liberal administration as deputy minister of labor (1900\u20131908) and minister of labor (190"
+      },
+      {
+        "trigger": "1",
+        "score": 84.0,
+        "context": "10 current provinces in Canada. These provinces include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island"
+      },
+      {
+        "trigger": " Communications",
+        "score": 77.5,
+        "context": " the Internet are not subject to the Government of Canada Web Standards. As per the Communications Policy of the Government of Canada, you can request alternate formats of this page"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 69.5,
+        "context": "<bos>The Canadian Genealogy Centre has so much information on the military. The first page provides a list of different topics as well as other websites to help you with your"
+      }
+    ],
+    "promotes": [
+      "Canada",
+      "Canadian",
+      " Canadians",
+      " Canada",
+      " Canadian"
+    ],
+    "demotes": [
+      " correctes",
+      " MotionEvent",
+      " proposons",
+      "URLException",
+      "port\u00e1l"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on \"Canada\"/\"Canadian\" and related terms (provinces, Canadian laws/policies, govt pages); promotes Canada/Citizen tokens in output."
+  },
+  {
+    "id": "18_1025_10",
+    "layer": 18,
+    "ctx_idx": 10,
+    "influence_score": 0.35761570930480957,
+    "top_activations": [
+      {
+        "trigger": "\u2019",
+        "score": 61.0,
+        "context": " Statistics provides some astounding numbers for the critical role that small businesses play in British Columbia\u2019s economy. According to BC Statistics, small business is defined as a company"
+      },
+      {
+        "trigger": " British",
+        "score": 76.5,
+        "context": "<bos>Bruce Alexander, a psychologist formerly with Simon Fraser University, British Columbia has since the 1970\u2032s been arguing against the traditional view that drugs"
+      },
+      {
+        "trigger": " British",
+        "score": 62.0,
+        "context": " districts. Districts may request additional AT services for some students through Special Education Technology \u2013 British Columbia (SET-BC).\u23ceWhat is SET-BC?\u23ceSET"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 86.5,
+        "context": " aims at boosting skills\u23ceTwo out of every three Langley Grade 9 students can\u2019t solve math problems by themselves, according to a just-released report prepared"
+      },
+      {
+        "trigger": "-",
+        "score": 78.5,
+        "context": "ca/RCBC Toll-Free Hotline at 1-800-667-4321\u23ceElectronic Toy Stewardship Program:\u23ceElectronic"
+      }
+    ],
+    "promotes": [
+      " VIAF",
+      "AndEndTag",
+      " cherch\u00e9s",
+      " Inf\u00f3rmanos",
+      "Clik"
+    ],
+    "demotes": [
+      " anbef",
+      "extAlignment",
+      " \u53d1\u8868\u4e8e",
+      " onBind",
+      "\u7814\u7a76\u6240"
+    ],
+    "generated_description": "British Columbia \u2014 fires on the token \"British\" and the curly apostrophe in phrases like \"British Columbia's\"; marks the province-name phrase (e.g., \"British Columbia\") contexts."
+  },
+  {
+    "id": "20_9153_10",
+    "layer": 20,
+    "ctx_idx": 10,
+    "influence_score": 0.35184434056282043,
+    "top_activations": [
+      {
+        "trigger": "3",
+        "score": 33.25,
+        "context": ", ON\u23ce2Health Canada, Pest Management Regulatory Agency, Ottawa, ON\u23ce3Environment Canada, National Wildlife Research Centre, Hull, QC\u23ce4Environment Canada"
+      },
+      {
+        "trigger": " the",
+        "score": 30.0,
+        "context": "50% greater than what it would be on a typical day,\u201d according to the city\u2019s Hot Weather Response Plan. Yikes. So find yourself some"
+      },
+      {
+        "trigger": " an",
+        "score": 30.25,
+        "context": " students \u2014This program allows high school students to earn credits toward an apprenticeship program and a high school diploma at the same time.\u23ceFor Apprentices and Journeyp"
+      },
+      {
+        "trigger": " (",
+        "score": 30.0,
+        "context": " the next two decades, creating a \"literacy dilemma\" if the problem isn't addressed immediately (Canadian Council on Learning, The Future of Literacy in Canada"
+      },
+      {
+        "trigger": " provincial",
+        "score": 31.0,
+        "context": " how do you manage? We talked to three people \u2013 a conservationist, a provincial weed specialist, and a senior agronomist - and this is their advice:"
+      }
+    ],
+    "promotes": [
+      "TAWA",
+      " CANADIAN",
+      " Canada",
+      " Toronto",
+      " Canadian"
+    ],
+    "demotes": [
+      "SharedCtor",
+      " \u043d\u0430\u0441\u0435\u0459\u0443",
+      "ItemBackground",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      "\uf0f1"
+    ],
+    "generated_description": "say Canadian place/org \u2014 fires on articles/parentheses/prepositions before nouns that name Canadian locations, agencies, or local entities (cities, provinces, organizations)."
+  },
+  {
+    "id": "21_5943_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.32959550619125366,
+    "top_activations": [
+      {
+        "trigger": " =",
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:\u23ce- Capital City = Freetown\u23ce- Population = 5,245,695\u23ce- Official and Recognized Languages"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.\u23ceIsrael's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "trigger": " capital",
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.\u23ceAs presented here, in"
+      },
+      {
+        "trigger": " in",
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "trigger": " in",
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in\u23ceOctober 1998 in a national launch by then Deputy President Thabo\u23ceMbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "say capital city \u2014 activates on \"capital\"/\"Capital City\" and prepositions before places; promotes major city names (Toronto, Sydney, Dublin, London, Nairobi)"
+  },
+  {
+    "id": "19_8765_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.3682549297809601,
+    "top_activations": [
+      {
+        "trigger": " and",
+        "score": 88.5,
+        "context": " village and a chapelry in Witley parish, Surrey. The village stands adjacent to the Guildford, Godalming, and Portsmouth railway, 1\u00bd mile"
+      },
+      {
+        "trigger": " under",
+        "score": 102.0,
+        "context": " Godalming; and has a station on the railway, and a postoffice under Godalming. The chapelry was constituted in 1844"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 78.5,
+        "context": " district superintendent Cheryle Beaumont.\u23ceThe numbers cited in the annual \u201cSuperintendent\u2019s Report on Achievement\u201d show just 31 per cent of Grade "
+      },
+      {
+        "trigger": " from",
+        "score": 64.0,
+        "context": "<bos>Hampton Court Palace is an easy train ride from London and a great day out. Visitors interested in garden history will enjoy this chance to see how English garden style"
+      },
+      {
+        "trigger": " of",
+        "score": 79.0,
+        "context": " straightforward, inexpensive technology,\u201d said project leader Joseph Keddie, of the university\u2019s Department of Physics.\u23ce\u201cOur process can create coatings with nearly any desired"
+      }
+    ],
+    "promotes": [
+      "\u0446\u044e",
+      "********/",
+      " fus",
+      " Surrey",
+      "\u0e40\u0e2b"
+    ],
+    "demotes": [
+      "Personendaten",
+      " Roskov",
+      " >=\",",
+      " \u043d\u0435\u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0430",
+      " R\u00e9ponses"
+    ],
+    "generated_description": "say place name \u2014 activates on prepositions/possessives (of, from, under, \u2019s, and); signals an upcoming location/place noun (e.g., Surrey, Godalming)"
+  },
+  {
+    "id": "19_13164_10",
+    "layer": 19,
+    "ctx_idx": 10,
+    "influence_score": 0.39608529210090637,
+    "top_activations": [
+      {
+        "trigger": " British",
+        "score": 35.0,
+        "context": "<bos>Bruce Alexander, a psychologist formerly with Simon Fraser University, British Columbia has since the 1970\u2032s been arguing against the traditional view that drugs"
+      },
+      {
+        "trigger": ".",
+        "score": 35.75,
+        "context": " is warning about the rise in measles cases in the eastern Fraser Valley.\u23ceDr. Paul Van Buynder said the most recent case involves up to 60"
+      },
+      {
+        "trigger": " British",
+        "score": 34.25,
+        "context": " page on the Contact Us page.\u23ceCariboo stage, Fraser Canyon region, British Columbia, n.d.\u23cePrior to the introduction of the first passenger"
+      },
+      {
+        "trigger": "\u2019",
+        "score": 35.5,
+        "context": " Statistics provides some astounding numbers for the critical role that small businesses play in British Columbia\u2019s economy. According to BC Statistics, small business is defined as a company"
+      },
+      {
+        "trigger": ".",
+        "score": 35.75,
+        "context": " On May 15, 2001, the population of B.C. was counted as 3,907,738"
+      }
+    ],
+    "promotes": [
+      " kh\u1ea3o",
+      " de",
+      "all",
+      "propTypes",
+      " \u00e1lla"
+    ],
+    "demotes": [
+      " referenties",
+      ")\"),",
+      "\u00e9valuateur",
+      "]),\r",
+      " cherch\u00e9s"
+    ],
+    "generated_description": "British Columbia \u2014 activates on \"British\" / \"B.C.\" tokens and possessive/abbreviated forms; represents the province name (the Canadian province containing Vancouver)."
+  },
+  {
+    "id": "21_2236_10",
+    "layer": 21,
+    "ctx_idx": 10,
+    "influence_score": 0.28457531332969666,
+    "top_activations": [
+      {
+        "trigger": "1",
+        "score": 81.5,
+        "context": "Lax Kw'alaams), B.C.; d. 7 May 1930 in Victoria.\u23ceCaroline Knott came to Upper Canada with"
+      },
+      {
+        "trigger": " and",
+        "score": 80.0,
+        "context": " influence habitat for juvenile Chinook salmon along their primary migratory corridor between the Skagit River and Padilla Bay in northern Puget Sound, Washington. During the spring outmigration of"
+      },
+      {
+        "trigger": " of",
+        "score": 113.0,
+        "context": ", but the Nuu-Chah-Nulth--the Indian peoples of the western side of the island--became important trading partners for the English and"
+      },
+      {
+        "trigger": " the",
+        "score": 112.0,
+        "context": " in Canada. The masks were made by carvers in the Native American group once called the Kwakiutl, who are now known as the Kwakw"
+      },
+      {
+        "trigger": " in",
+        "score": 113.0,
+        "context": " Edenshaw; d. 16 Nov. 1894 in Masset, B.C.\u23ceThe man who would become the dynamic"
+      }
+    ],
+    "promotes": [
+      "TagMode",
+      "AutoresizingMask",
+      "WebVitals",
+      " []:",
+      " AssemblyCompany"
+    ],
+    "demotes": [
+      " tek",
+      "Biblia",
+      "liquez",
+      "dier",
+      " ARS"
+    ],
+    "generated_description": "say place name \u2014 fires on structural words (in, of, the, and) that introduce geographic/place names (Victoria, Padilla Bay, Masset); predicts upcoming location tokens"
+  },
+  {
+    "id": "22_4847_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.3850194811820984,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": " Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan. There are also three"
+      },
+      {
+        "trigger": " of",
+        "score": 84.0,
+        "context": " of Labrador, in an area called Nunatsiavut (\"Our Beautiful Land\"); in various parts of the Northwest Territories, mainly on the coast of the Arctic Ocean"
+      },
+      {
+        "trigger": ",",
+        "score": 93.5,
+        "context": " (British Columbia, Alberta, Saskatchewan, Manitoba, Ontario, Quebec, New Brunswick, Nova Scotia and Prince Edward Island) and two territories (the Yukon and the"
+      },
+      {
+        "trigger": ",",
+        "score": 88.0,
+        "context": ", Newfoundland and Labrador, Nova Scotia, Ontario, Prince Edward Island, Quebec, and Saskatchewan. There are also three territories, which are Northwest Territories, Nunavut"
+      },
+      {
+        "trigger": ",",
+        "score": 94.5,
+        "context": " are 10 current provinces in Canada. These provinces include Alberta, British Columbia, Manitoba, New Brunswick, Newfoundland and Labrador, Nova Scotia, Ontario, Prince"
+      }
+    ],
+    "promotes": [
+      " Nova",
+      " Alberta",
+      " Ontario",
+      " Ont",
+      "saga"
+    ],
+    "demotes": [
+      " autorytatywna",
+      " otomatig",
+      " InputDecoration",
+      " \u00e9trang\u00e8re",
+      "th\u00e2u"
+    ],
+    "generated_description": "say province \u2014 fires on commas/\u201cof\u201d inside lists of Canadian provinces; promotes the next province name (e.g., Nova, Alberta, Ontario)"
+  },
+  {
+    "id": "24_1899_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.372233510017395,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 109.0,
+        "context": " located in Otaru, Japan; Indianapolis, USA; and the Canadian cities of Vancouver, Whistler and Port Coquitlam, all in British Columbia. Steam"
+      },
+      {
+        "trigger": " in",
+        "score": 86.0,
+        "context": " in the United States, principally in Massachusetts and New York State before establishing a practise in Gananoque and Thousand Island area with a focus on suburban and summer residences"
+      },
+      {
+        "trigger": " in",
+        "score": 74.0,
+        "context": "field in 1927. By the early 1940s this branch had more money on deposit than the bank\u2019s outlets in Oko"
+      },
+      {
+        "trigger": " to",
+        "score": 75.5,
+        "context": " of crossing their great river in comfort at any time. The railway ran from Quebec to Longueuil on the south side of the St. Lawrence, and from"
+      },
+      {
+        "trigger": " of",
+        "score": 109.0,
+        "context": "u, Japan; Indianapolis, USA; and the Canadian cities of Vancouver, Whistler and Port Coquitlam, all in British Columbia. Steam clocks by other makers"
+      }
+    ],
+    "promotes": [
+      " montagem",
+      "iastes",
+      " samarbeid",
+      " coscienza",
+      "Geplaatst"
+    ],
+    "demotes": [
+      "WireFormatLite",
+      "bulo",
+      "abetes",
+      " booties",
+      "providedIn"
+    ],
+    "generated_description": "say place name \u2014 activates on prepositions (in, of, to) that introduce geographic names or similar location tokens; signals an upcoming place/date mention."
+  },
+  {
+    "id": "23_6265_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3172239363193512,
+    "top_activations": [
+      {
+        "trigger": "\u2019",
+        "score": 69.5,
+        "context": " and integrated into a microgrid. Microgrids are small-scale versions of today\u2019s huge centralized electricity system, where it can generate, distribute and regulate the"
+      },
+      {
+        "trigger": ",",
+        "score": 99.0,
+        "context": " Western Australian Institute for Medical Research and Centre for Medical Research, University of Western Australia, Crawley 6009, Western Australia, Australia\u23ceSchool of Medicine"
+      },
+      {
+        "trigger": " of",
+        "score": 86.0,
+        "context": " half of the twentieth century. It specifically focuses on the metropolitan area of Perth and south-western towns in Western Australia to show that although Aboriginal camps existed in the"
+      },
+      {
+        "trigger": " to",
+        "score": 103.5,
+        "context": " inhabitants were a Swan River tribe of Aborigines who made their campsites along the City's central chain of lakes to avoid the salty waters of the lakes nearer to"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 105.5,
+        "context": " Conference\u23ceTelethon Institute for Child Health Research\u23cePO Box 855\u23ceWest Perth WA 6872\u23cePh: (08)"
+      }
+    ],
+    "promotes": [
+      "TYPED",
+      " Red",
+      "HashCode",
+      "LocationManager",
+      "\u0417\u043d\u043e\u0441\u043a\u0456"
+    ],
+    "demotes": [
+      "\ue315",
+      "httphttps",
+      "SequentialGroup",
+      "localctx",
+      "RTDA"
+    ],
+    "generated_description": "clause-boundary token \u2014 activates on punctuation/short function words (\u2019, comma, of, to, newline); marks clause/phrase boundaries often preceding named entities or continuations"
+  },
+  {
+    "id": "24_6394_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3692541718482971,
+    "top_activations": [
+      {
+        "trigger": " at",
+        "score": 57.0,
+        "context": ".\u23ceCREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder\u23ceSuperman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "trigger": " capital",
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "trigger": " in",
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "trigger": " in",
+        "score": 48.0,
+        "context": " \u2013 cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.\u23ceBut now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "trigger": "\u23ce",
+        "score": 47.0,
+        "context": " Federal Waters\u23ceNew Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean\u23ceSAN FRANCISCO\u2014 The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$\u200b",
+      "\u5b58\u4e8e\u4e92\u8054\u7f51\u6863\u6848\u9986",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "Place indicator \u2014 activates on location tokens (in, at, capital, line breaks before place names); often in contexts introducing geographic/place names; suppresses specific city tokens."
+  },
+  {
+    "id": "23_3476_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.353028804063797,
+    "top_activations": [
+      {
+        "trigger": "\u2019",
+        "score": 82.0,
+        "context": " in fishing nets.\u201d\u23ceFishing with nets is the main reason the numbers of Hector\u2019s dolphins have declined so rapidly; the nets entangle the dolphins and cause"
+      },
+      {
+        "trigger": " as",
+        "score": 109.0,
+        "context": " all other penguins, it is mainly piscivorous.\u23ceThe species breeds around the South Island of New Zealand, as well as Stewart, Auckland and Campbell Islands"
+      },
+      {
+        "trigger": ",",
+        "score": 88.0,
+        "context": " Neuqu\u00e9n, R\u00edo Negro, Chubut and Santa Cruz, as well as the eastern portion of Tierra del Fuego archipelago and the southernmost department of Buenos"
+      },
+      {
+        "trigger": ",",
+        "score": 84.5,
+        "context": ".).\u23ceHistory.\u2014This tree inhabits the southern parts of South America, Chili, Peril, Terra del Fuego, etc., and takes its name from its"
+      },
+      {
+        "trigger": " from",
+        "score": 114.0,
+        "context": " the day. The pressure in the new low dropped below 976mb at its peak.\u23ceThe weather system brought strong to severe gales from the west"
+      }
+    ],
+    "promotes": [
+      " \u00e9pis",
+      " Society",
+      " sumpay",
+      " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc\u0627\u06cc",
+      " \u0434\u043e\u043f\u0438\u0441\u0430\u0432\u0448\u0438"
+    ],
+    "demotes": [
+      "AutoresizingMask",
+      " oprot",
+      "webElementXpaths",
+      " AssemblyCulture",
+      "HtmlAttribute"
+    ],
+    "generated_description": "List-continuation \u2014 activates on commas/prepositions like \u201c,\u201d, \u201cas\u201d, \u201cfrom\u201d that introduce additional items/locations; marks continuation or addition in lists."
+  },
+  {
+    "id": "22_6874_10",
+    "layer": 22,
+    "ctx_idx": 10,
+    "influence_score": 0.33279165625572205,
+    "top_activations": [
+      {
+        "trigger": " of",
+        "score": 127.0,
+        "context": " may back up into the Okanagan River.\u23ceThe Okanagan River begins south of Penticton and continues southwards through Okanagan Falls, Oliver, and"
+      },
+      {
+        "trigger": " around",
+        "score": 151.0,
+        "context": " generally referred to as a region in their own right, or as part of the West Kootenay. The lower Columbia, around the cities of Castlegar"
+      },
+      {
+        "trigger": " and",
+        "score": 153.0,
+        "context": " The lower Columbia, around the cities of Castlegar and Trail is considered part of the West Kootenay, not the Columbia Country.\u23ceThe Columbia Country"
+      },
+      {
+        "trigger": " around",
+        "score": 151.0,
+        "context": " are generally referred to as a region in their own right, or as part of the West Kootenay. The lower Columbia, around the cities of Castleg"
+      },
+      {
+        "trigger": "s",
+        "score": 120.0,
+        "context": " On August 14, they were hunting for Dall sheep in British Columbia's Tatshenshini-Alsek Provincial Wilderness Park (special permits are"
+      }
+    ],
+    "promotes": [
+      " nahilalakip",
+      " otomatig",
+      " Cast",
+      " autorytatywna",
+      " \u0641\u0631\u064a\u0628\u064a\u0633"
+    ],
+    "demotes": [
+      "verton",
+      "mybatisplus",
+      " \u043e\u0442\u043e",
+      "=$((",
+      "atsun"
+    ],
+    "generated_description": "say location linker \u2014 activates on prepositions/conjunctions ('of', 'around', 'and', \"'s\") that introduce locations or city/place names and list continuations"
+  },
+  {
+    "id": "24_11034_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.32289308309555054,
+    "top_activations": [
+      {
+        "trigger": " in",
+        "score": 66.0,
+        "context": " legal status of midwives in Canadian territories and provinces.\u23ceThe practice of midwifery in Canada is regulated by provincial and territorial authorities. Midwives can only legally practice"
+      },
+      {
+        "trigger": " southern",
+        "score": 76.0,
+        "context": " supper of garden pests. The spring diet of the western bluebird (which ranges from southern British Columbia down to central Mexico and from the Pacific to west Texas)"
+      },
+      {
+        "trigger": " southern",
+        "score": 90.0,
+        "context": " can be seen from Guatemala, through Mexico, the western United States to southern Canada in southern British Columbia, Alberta and southwestern Saskatchewan. It typically lives near streams and"
+      },
+      {
+        "trigger": " of",
+        "score": 92.5,
+        "context": "9, an expansion of West Nile virus (WNV) into the Canadian province of British Columbia was detected. Two locally acquired cases of infection in humans and "
+      },
+      {
+        "trigger": " except",
+        "score": 103.5,
+        "context": " death in every province and territory in 2008 \u2013 except Nunavut, where suicide ranked second.\u23ceCancer accounted for 30 per cent of"
+      }
+    ],
+    "promotes": [
+      " BRITISH",
+      " british",
+      "british",
+      "British",
+      " British"
+    ],
+    "demotes": [
+      "CloseOperation",
+      "DockStyle",
+      "batore",
+      " CANADIAN",
+      " CANADA"
+    ],
+    "generated_description": "say \"British\" \u2014 activates on preposition/adverb tokens that precede place-name \"British\" (e.g., \"southern\", \"in\", \"of\", \"except\"); pushes next-token toward \"British\" (as in \"British Columbia\")."
+  },
+  {
+    "id": "23_6918_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3192691504955292,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 53.75,
+        "context": " the UNESCO World Heritage site, Dinosaur Provincial Park, and the Red Deer River Valley surrounding Drumheller. The vertebrate fossil resources south of the Dinosaur Park region have"
+      },
+      {
+        "trigger": " in",
+        "score": 56.75,
+        "context": "896, in the Trembowla area along the Drifting River, in the Rural Municipality of Dauphin. The following spring, Reverend Nestor Dmytri"
+      },
+      {
+        "trigger": " town",
+        "score": 58.75,
+        "context": "recyclable plastic bags made from petroleum products.\u23ceLater in April, the Manitoba town of Leaf Rapids became the first Canadian municipality to prohibit plastic sacks.\u23ceOther"
+      },
+      {
+        "trigger": "|",
+        "score": 59.25,
+        "context": "014 - April 27, 2014|\u23ce|Fort Wellington Laurier House NHS, Prescott||May 17, "
+      },
+      {
+        "trigger": " near",
+        "score": 55.25,
+        "context": " of the passenger train.\u23ceRotary snowplow clearing a snowbound railway line near Banff, Alberta, 1910\u23ceCanadian National Railways, "
+      }
+    ],
+    "promotes": [
+      " inform\u00e9e",
+      " \u0644\u0644\u0645\u0639\u0627\u0631\u0641",
+      "djangoproject",
+      "OGND",
+      " localObject"
+    ],
+    "demotes": [
+      " province",
+      " provinces",
+      " Province",
+      " provincial",
+      " Provincial"
+    ],
+    "generated_description": "say place name \u2014 activates on commas, \"in\", \"near\", \"town\", \"|\" and other structural tokens that introduce geographic/place names; signals an upcoming location token."
+  },
+  {
+    "id": "24_12412_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.36202195286750793,
+    "top_activations": [
+      {
+        "trigger": " Canadian",
+        "score": 55.75,
+        "context": " must end.\u23ceHow Greenpeace works to ensure fish for the future\u23ceChallenging the marketplace: Our supermarket campaign takes direct action at Canadian grocery chains to convince them"
+      },
+      {
+        "trigger": "ing",
+        "score": 53.25,
+        "context": " leadership, there had been a serious split in party ranks over the issue of stationing American nuclear missiles (see Bomarc missile) on Canadian soil for protection from"
+      },
+      {
+        "trigger": " and",
+        "score": 52.75,
+        "context": "<bos>Canada and Brazil both have vast and fertile lands and are large agricultural producers. Both countries are and will continue to be suppliers of food in the coming decades,"
+      },
+      {
+        "trigger": " Canadian",
+        "score": 71.0,
+        "context": " would involve tankers crossing rough and environmentally sensitive U.S. waters.\u23ceThe Canadian government seems determined to develop the country's oil resources. There's"
+      },
+      {
+        "trigger": ".",
+        "score": 60.25,
+        "context": " present in about nine per cent of individuals from outside of Africa.\u23cehttp://www.cbc.ca/news/technology/story ... eding.html"
+      }
+    ],
+    "promotes": [
+      "POSE",
+      "Predecesor",
+      "eus",
+      "FailureListener",
+      "Brainz"
+    ],
+    "demotes": [
+      " Canada",
+      " Canadian",
+      "Canada",
+      "Canadian",
+      " CANADA"
+    ],
+    "generated_description": "Canada / Canadian \u2014 activates on mentions of Canada or \u201cCanadian\u201d (includes tokens like \u201cCanada and\u201d); often anti-correlated with output token \u201cCanada\u201d (tends to suppress it)"
+  },
+  {
+    "id": "24_13277_10",
+    "layer": 24,
+    "ctx_idx": 10,
+    "influence_score": 0.3004341125488281,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "Function-word connector \u2014 activates on short function words (in, to, a, comma, linking verbs like attended); signals structural links that introduce or connect a following phrase."
+  },
+  {
+    "id": "23_10722_10",
+    "layer": 23,
+    "ctx_idx": 10,
+    "influence_score": 0.3832797408103943,
+    "top_activations": [
+      {
+        "trigger": " or",
+        "score": 87.0,
+        "context": " believe the first recorded Canadian women\u2019s hockey game was in Barrie, Ont., or behind Rideau Hall in Ottawa, Ont., one way or another, it"
+      },
+      {
+        "trigger": ",",
+        "score": 78.5,
+        "context": " Management Regulatory Agency, Ottawa, ON\u23ce3Environment Canada, National Wildlife Research Centre, Hull, QC\u23ce4Environment Canada, Commercial Chemicals Evaluation Branch, Hull,"
+      },
+      {
+        "trigger": " from",
+        "score": 64.0,
+        "context": " 14 years, Caroline Chartrand, a Metis woman who recently traveled from Winnipeg, Canada, to the 8th annual Great Lakes Indigenous Farming Conference"
+      },
+      {
+        "trigger": " in",
+        "score": 72.0,
+        "context": " to get vaccinated,\" said Johnson, director of the Alliance for Canadian Health Outcomes Research in Diabetes at the University of Alberta.\u23ceThe American Diabetes Association, the Canadian"
+      },
+      {
+        "trigger": " nearby",
+        "score": 71.5,
+        "context": "St. Catherine University\u2019s St. Paul campus and the Crowne Plaza Hotel in nearby Bloomington will be the hubs for a week of innovative training, sharing discoveries"
+      }
+    ],
+    "promotes": [
+      "vav",
+      " Ed",
+      "blan",
+      "mark",
+      " h\u00ecnh"
+    ],
+    "demotes": [
+      " MessageBoxIcon",
+      "COUVER",
+      "oplayer",
+      "eseorang",
+      "CloseOperation"
+    ],
+    "generated_description": "Common small function tokens \u2014 activates on short prepositions/punctuation and small function words (in, from, or, commas, nearby); signals brief connective/location words."
+  },
+  {
+    "id": "25_9975_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.3797197937965393,
+    "top_activations": [
+      {
+        "trigger": " removing",
+        "score": 167.0,
+        "context": " in the standardization of commodities often comes from removing standardization from the processes of production. For instance: How \u201cstandardized\u201d was the application of building codes in Bangladesh"
+      },
+      {
+        "trigger": " the",
+        "score": 174.0,
+        "context": " understanding that it often conceals, humankind\u2019s position in the universal scheme, the transcendental quality of tragedy, and the ambiguous nature of good and evil. Stein"
+      },
+      {
+        "trigger": " following",
+        "score": 172.0,
+        "context": " opportunity. His relations with Hooke had turned sour in 1686 following controversy over Hooke\u2019s contributions to Newton\u2019s theory of gravity."
+      },
+      {
+        "trigger": "While",
+        "score": 173.0,
+        "context": "ens, commonly used as cosmetic preservatives, were detected in every girl tested.\u23ceWhile it remains unclear how dangerous these toxins, absorbed in minute amounts, really are"
+      },
+      {
+        "trigger": " implement",
+        "score": 178.0,
+        "context": " a \"global Internet health model\" that uses existing technologies and organizational policies to implement a system that limits what an infected computer can do on the Internet.\u23ceChar"
+      }
+    ],
+    "promotes": [
+      " Realt",
+      " GUR",
+      " RSP",
+      " zirc",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " \u00e9lectroniques",
+      " sauvages",
+      " automatiques",
+      " industriels",
+      " europ\u00e9ennes"
+    ],
+    "generated_description": "Clause/phrase starter \u2014 activates on tokens that open a continuing phrase or subordinate clause (removing, following, while, the, implement); signals clause-level transition/continuation."
+  },
+  {
+    "id": "25_553_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.3876163363456726,
+    "top_activations": [
+      {
+        "trigger": " SET",
+        "score": 169.0,
+        "context": " SET\u23ceRESTART_VALUE assigns a value to the global symbol BATCH$RESTART, the\u23celocation at which the batch job should be restarted after its execution"
+      },
+      {
+        "trigger": " THE",
+        "score": 186.0,
+        "context": "NAISSANCE SATELLITE PHOTOS SHOW THE RECENT HISTORY OF SHRUB RECRUITMENT AND SURVIVAL IN DESERT GRASSLANDS. 85TH ANNUAL"
+      },
+      {
+        "trigger": " -",
+        "score": 119.0,
+        "context": " to conform to the new course of the river.\u23ce- - - - - - - - - - - - -\u23ceMay 6, 19"
+      },
+      {
+        "trigger": " TO",
+        "score": 181.0,
+        "context": " the pilgrimage is more dangerous than it has been in years. In PILGRIMAGE TO KARBALA we examine the roots of the Islamic schism, and see"
+      },
+      {
+        "trigger": " THE",
+        "score": 189.0,
+        "context": "<bos>RISING STORM - THE IMPERIAL JAPANESE NAVY AND\u23ceShanghai in 1930s\u23ceThe Beginning of The Second Sino-Japanese War -"
+      }
+    ],
+    "promotes": [
+      " THEY",
+      " THE",
+      " FROM",
+      " WITH",
+      " FOR"
+    ],
+    "demotes": [
+      "]<<\"",
+      "CESO",
+      "PHIA",
+      "]='\\",
+      "\u00cdO"
+    ],
+    "generated_description": "say THE \u2014 fires on headings/titles, separators, and structural tokens before noun phrases; promotes the definite article \"THE\" (and other function words like THEY/FROM/FOR)"
+  },
+  {
+    "id": "25_16302_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.38933759927749634,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.\u23ceTo perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "trigger": " in",
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.\u23ce\u201cForest Trees of Florida\u201d has been a standard handbook"
+      },
+      {
+        "trigger": " said",
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.\u23ceA NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "trigger": " During",
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "trigger": " at",
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ],
+    "generated_description": "Clause connector \u2014 activates on commas/prepositions/temporal verbs; marks clause boundaries that introduce descriptive or locative continuation."
+  },
+  {
+    "id": "25_13885_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.354196697473526,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 72.5,
+        "context": " were available. The parents of nine-month-old Carl Derhousoff drove from their farm to Preeceville, Canora and finally Yorkton to seek"
+      },
+      {
+        "trigger": " in",
+        "score": 57.75,
+        "context": "970s and 1980s to develop downtown shopping malls in cities across Canada. Each mall contained an Eaton's store, or was"
+      },
+      {
+        "trigger": " or",
+        "score": 76.0,
+        "context": " believe the first recorded Canadian women\u2019s hockey game was in Barrie, Ont., or behind Rideau Hall in Ottawa, Ont., one way or another, it"
+      },
+      {
+        "trigger": " near",
+        "score": 57.75,
+        "context": " Ireland); d. 16 May 1865 in Westminster Township near London, Canada West.\u23ceDennis O\u2019Brien emigrated to the United States"
+      },
+      {
+        "trigger": " in",
+        "score": 83.5,
+        "context": " author Dr. Paul Sean Echlin, of the AIM Health Group, Family Medicine in South London, Ontario, said in an American Association of Neurological Surgeons news release"
+      }
+    ],
+    "promotes": [
+      "sedia",
+      "\u0275\u0275",
+      " Sligo",
+      " pulumi",
+      "</thead>"
+    ],
+    "demotes": [
+      " \u0421\u0430\u0432\u0435\u0437\u043d\u0435",
+      "RTEX",
+      " nonatomic",
+      "URLException",
+      " bezeichneter"
+    ],
+    "generated_description": "say place name \u2014 activates on locative/relational words (in, from, near, etc.); signals a following place or geographic name token."
+  },
+  {
+    "id": "25_7006_10",
+    "layer": 25,
+    "ctx_idx": 10,
+    "influence_score": 0.3151768743991852,
+    "top_activations": [
+      {
+        "trigger": " on",
+        "score": 83.5,
+        "context": " in Nanaimo, a coal mining centre and port that is located north of Victoria on Vancouver Island. When the brewery amalgamated with the Union Brewery in 1"
+      },
+      {
+        "trigger": " from",
+        "score": 70.0,
+        "context": " much- although I did only go to the library. It is a short ride from my home and so tonight I thought to chase up the 196"
+      },
+      {
+        "trigger": " the",
+        "score": 78.5,
+        "context": " Anderson is the air quality educator for the Williams Lake Environmental Society, in partnership with the Williams Lake Air Quality Roundtable\u23cePublished: June 05, 2"
+      },
+      {
+        "trigger": " in",
+        "score": 73.0,
+        "context": " Buynder said the most recent case involves up to 60 women and newborns in a post-natal unit at Abbotsford Regional Hospital being exposed to the"
+      },
+      {
+        "trigger": " and",
+        "score": 76.5,
+        "context": " New Westminster on the east, the City is further bounded by Burrard Inlet and the Fraser River on the North and South respectively. Burnaby, Vancouver and New"
+      }
+    ],
+    "promotes": [
+      " semej",
+      "Handling",
+      "\u0626\u064a\u0633",
+      "arResult",
+      "qus"
+    ],
+    "demotes": [
+      "ConstraintMaker",
+      " InputDecoration",
+      " esternos",
+      " British",
+      "British"
+    ],
+    "generated_description": "say location preposition \u2014 activates on short function words (on, in, from, the, and) that introduce place or noun phrases, signals upcoming location/content token"
+  }
+]

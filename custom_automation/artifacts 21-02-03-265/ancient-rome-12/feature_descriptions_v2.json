@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "0_9026_14",
+    "layer": 0,
+    "ctx_idx": 14,
+    "influence_score": 0.35550177097320557,
+    "top_activations": [
+      {
+        "trigger": "walks",
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "trigger": " Nucleus",
+        "score": 29.75,
+        "context": "<bos>|Copyright \u00a9 Nucleus Medical Media, Inc.|\u23ce- Age: 55 or older\u23ce- Sex: male\u23ce- Family history of atrial fibrillation\u23ce"
+      },
+      {
+        "trigger": " Jewell",
+        "score": 26.12,
+        "context": ", says: \"The first white man\u23cewho settled in Tamworth was Mark Jewell (1772), whose father\u23ceresided in Sandwich.\u23ce"
+      },
+      {
+        "trigger": " Nile",
+        "score": 25.5,
+        "context": ".\u23ceLast year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "trigger": " alfalfa",
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "\u23ce\u23ce",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " my\u017felf",
+      " it\u017felf",
+      " Efq",
+      " Monfieur",
+      " \u2015\u2015\u2015\u2015\u2015"
+    ],
+    "generated_description": "Concrete noun / entity \u2014 activates on content nouns and proper names (walks, Jewell, Nile, alfalfa); often at ends of noun phrases or list items, pushes punctuation/newline."
+  },
+  {
+    "id": "20_1133_14",
+    "layer": 20,
+    "ctx_idx": 14,
+    "influence_score": 0.2627057731151581,
+    "top_activations": [
+      {
+        "trigger": "cutting",
+        "score": 51.0,
+        "context": ". However, extensive logging practices in the early twentieth century contributed to the clear-cutting of nearly all old-growth longleaf pine trees.\u23ceIn the early"
+      },
+      {
+        "trigger": " Creation",
+        "score": 53.0,
+        "context": " The mouse has become the leading animal model for studying\u23cebiological processes in mammals. Creation of additional genomic\u23ceand genetic resources will make the mouse an even more useful"
+      },
+      {
+        "trigger": " emission",
+        "score": 49.0,
+        "context": "2 annually by using a laptop instead of a desktop\u23ceEnvironmental Impact: Prevent the emission of 227 pounds of CO2 annually\u23ceTake the challenge and"
+      },
+      {
+        "trigger": " provision",
+        "score": 50.0,
+        "context": " people returning to their villages continues to rise, health officials say the top priorities are provision of safe drinking water, proper disposal of excreta, digging trench latrines"
+      },
+      {
+        "trigger": " questioning",
+        "score": 49.5,
+        "context": " seems to be deteriorating. This dwindling sense of happiness and satisfaction has led to the questioning of the definition of growth as we know it. Largely, public policy"
+      }
+    ],
+    "promotes": [
+      " Of",
+      "\u0e02\u0e2d\u0e07",
+      " c\u1ee7a",
+      "of",
+      " of"
+    ],
+    "demotes": [
+      "tershire",
+      "webElementGuid",
+      "\u24e7",
+      "didSet",
+      " onOptions"
+    ],
+    "generated_description": "say \"of\" after nominalized action \u2014 activates on gerunds/nominalizations (creation, emission, cutting, provision, questioning) that are followed by \"of\" in phrases."
+  },
+  {
+    "id": "15_11981_14",
+    "layer": 15,
+    "ctx_idx": 14,
+    "influence_score": 0.3971857726573944,
+    "top_activations": [
+      {
+        "trigger": " appearance",
+        "score": 35.75,
+        "context": " unknown and it tends to occur more commonly in women. Each outbreak consists of the appearance of itchy small blisters on the palms of the hands. The condition may come"
+      },
+      {
+        "trigger": " application",
+        "score": 33.5,
+        "context": " of companies are responding to tighter budgets and increased competition by adapting their businesses through the application of a process known as LEAN.\u23ceLEAN is defined as a collection"
+      },
+      {
+        "trigger": "gence",
+        "score": 37.5,
+        "context": " and society - i.e. the Iraqi army - thus triggering the\u23ceemergence of fundamental conflicts and disputes in various respects.\u23cePost-Saddam"
+      },
+      {
+        "trigger": " appearance",
+        "score": 37.5,
+        "context": " worked collectively to enlarge the scope of time, thereby helping pave the way for the appearance of Darwin's Origin of Species in 1859.\u23ce"
+      },
+      {
+        "trigger": " addition",
+        "score": 33.75,
+        "context": " the new instructions and the system generates other logic. The extension language provides for the addition of processor state, including register files, and instructions that operate on that state"
+      }
+    ],
+    "promotes": [
+      "CodedInputStream",
+      " \u064a\u062a\u064a\u0645\u0647",
+      "setupUi",
+      "SourceChecksum",
+      "OGND"
+    ],
+    "demotes": [
+      " Paglinawan",
+      "brida",
+      "lably",
+      " Dios",
+      "ghty"
+    ],
+    "generated_description": "abstract nominalization (-ance/-ence/-ation) \u2014 activates on abstract event/result nouns (appearance, application, emergence, addition); often the noun form after \"the\" or similar determiners."
+  },
+  {
+    "id": "0_11375_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3994562327861786,
+    "top_activations": [
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.\u23ce\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "trigger": " is",
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "trigger": " is",
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.\u23ceThe Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "trigger": " is",
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It\u2019"
+      },
+      {
+        "trigger": " is",
+        "score": 35.5,
+        "context": " have\u23cea fresher taste and a more aromatic smell. The whole of the plant is used\u23cefor culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " them\u017felves",
+      " Majefty",
+      " Di\u017f",
+      " my\u017felf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f",
+      " was"
+    ],
+    "generated_description": "copula \"is\" \u2014 present-tense linking verb; activates on token \"is\" connecting subject \u2192 predicate (often before noun phrases); tends to demote/output\u2011avoid \"is\"."
+  },
+  {
+    "id": "16_3625_14",
+    "layer": 16,
+    "ctx_idx": 14,
+    "influence_score": 0.3862331807613373,
+    "top_activations": [
+      {
+        "trigger": " study",
+        "score": 26.25,
+        "context": " means of tinning iron. As a naturalist he is best known for his exhaustive study of insects (6 vol., 1734\u201342;"
+      },
+      {
+        "trigger": " invasion",
+        "score": 27.5,
+        "context": " Salvatore Quasimodo, Nobel lecture, 1959\u23ceSince the invasion of Iraq in 2003, the relationship between politics and poetic"
+      },
+      {
+        "trigger": " invasion",
+        "score": 30.75,
+        "context": " three incurred the wrath of the entire Muslim world for refusing to go along with the invasion of Palestine by the armies of six Arab countries in order to crush the nascent"
+      },
+      {
+        "trigger": " analysis",
+        "score": 26.25,
+        "context": " an interesting new installment in the literature of the Big Fix. It\u2019s an analysis by an international team of scientists led by Jonathan A. Foley, director of"
+      },
+      {
+        "trigger": " examination",
+        "score": 31.75,
+        "context": "bby, softball-sized rock in Gusev Crater on Mars. During an examination by the Mars Exploration Rover Spirit on June 25, 20"
+      }
+    ],
+    "promotes": [
+      " whereof",
+      "webElementXpaths",
+      "\u800c\u53bb",
+      "makeText",
+      " of"
+    ],
+    "demotes": [
+      "__\":",
+      "__\":\r",
+      "MigrationBuilder",
+      "#+#",
+      " Efq"
+    ],
+    "generated_description": "Formal/academic noun \u2014 activates on investigative/action nouns (study, analysis, examination, invasion); prefers nominalizations (-ion/-ysis/-ment) denoting events or inquiries."
+  },
+  {
+    "id": "21_13967_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.35996872186660767,
+    "top_activations": [
+      {
+        "trigger": " face",
+        "score": 46.0,
+        "context": " East Side of New York was one of the most densely populated square miles on the face of the earth in the 1890s. The photo-"
+      },
+      {
+        "trigger": " decades",
+        "score": 44.25,
+        "context": " began to integrate themselves into the economic and political life of Russia. In the last decades of the nineteenth century, increasing numbers of Russian and Ukrainian settlers moved into the"
+      },
+      {
+        "trigger": " rest",
+        "score": 45.25,
+        "context": " construct a temporary dredge cell within this pond to receive ash hydraulically dredged from the rest of the pond. Dredged ash is being reclaimed from the dredge cell for"
+      },
+      {
+        "trigger": " surface",
+        "score": 47.75,
+        "context": " and let's make us a name; lest we be scattered abroad on the surface of the whole earth.\"\u23ceYahweh came down to see the city and"
+      },
+      {
+        "trigger": " side",
+        "score": 52.5,
+        "context": " send ships filled with convicts and their jailors to, quite literally, the other side of the world. The answer is simple economics.\u23ceIn the 1"
+      }
+    ],
+    "promotes": [
+      "Hochspringen",
+      "\u51fa\u7248\u5e74",
+      " CreateTagHelper",
+      "of",
+      " of"
+    ],
+    "demotes": [
+      "lusconi",
+      "\u00e9valuateur",
+      " monot",
+      "?,?,",
+      " \u0643\u0648\u0631\u0629"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on nouns immediately before \"of\" (face, side, surface, rest, decades); promotes the preposition \"of\" as the next token."
+  },
+  {
+    "id": "0_8974_12",
+    "layer": 0,
+    "ctx_idx": 12,
+    "influence_score": 0.3760853409767151,
+    "top_activations": [
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": ") came into use, carrying with it the implication that all Jews would be removed from Nazi Germany.\u23ce6.62 Hitler's attitude at this time"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": "One part of the hoax, \"fluoride helps with tooth formation,\" was removed from the \"American Fluoride Campaign\" early on. Realizing this might expose"
+      },
+      {
+        "trigger": " from",
+        "score": 37.25,
+        "context": " while it placed an added burden of wages on the former owner.\u23ceTransition away from slavery\u23ceCompensated emancipation was typically enacted as part of an act that"
+      },
+      {
+        "trigger": " from",
+        "score": 37.75,
+        "context": " 40-45 \u00b0C to facilitate pumping\u23cewhen unloaded, leaked from the tanks. The Polmar plan was triggered.\u23ceThe vast oil slick"
+      },
+      {
+        "trigger": " from",
+        "score": 37.5,
+        "context": " retina.\u23ce\"As you get older, the vitreous collapses and may shrink away from the retina. This may happen earlier if you are short-sighted or have"
+      }
+    ],
+    "promotes": [
+      "ob",
+      "s",
+      "\u2026",
+      "ma",
+      "\u0445\u0435"
+    ],
+    "demotes": [
+      " from",
+      "from",
+      " fr\u00e5n",
+      "\u0e08\u0e32\u0e01",
+      " desde"
+    ],
+    "generated_description": "from (preposition) \u2014 fires on the token \"from\" marking origin/separation/removal (e.g., \"removed from\", \"leaked from\", \"shrink away from\", \"transition away from\")."
+  },
+  {
+    "id": "18_15231_14",
+    "layer": 18,
+    "ctx_idx": 14,
+    "influence_score": 0.3728366494178772,
+    "top_activations": [
+      {
+        "trigger": " development",
+        "score": 40.75,
+        "context": " Cell Stem Cell by a collaboration that included scientists from China, was enabled by the development of \"humanized\" laboratory mice that contained a functional human immune system capable"
+      },
+      {
+        "trigger": " creation",
+        "score": 39.75,
+        "context": " Proclamation outlawing slavery in the rebel states, and in March, with the creation of the Massachusetts 54th Regiment, the first black regiment to fight"
+      },
+      {
+        "trigger": " appearance",
+        "score": 37.75,
+        "context": " Hardening of the arteries means a thickening of the walls of blood vessels and the appearance of so-called atherosclerotic plaque, which consist of stored fat"
+      },
+      {
+        "trigger": " emergence",
+        "score": 37.25,
+        "context": ", the \u201cIncense Road\u201d, lost its prominence.\u23ceNonetheless, with the emergence of Islam since the early 7th century, caravan routes experienced renewed flo"
+      },
+      {
+        "trigger": " development",
+        "score": 37.25,
+        "context": " the structure of DNA by Jim Watson and Francis Crick, and more recently with the development of recombinant DNA technologies by Paul Berg and Herb Boyer. These scientific events revolution"
+      }
+    ],
+    "promotes": [
+      "\u06af\u0631\u0627\u0646",
+      "SqlSession",
+      "\u0c32\u0c3e\u0c32\u0c41",
+      "SerializeField",
+      " of"
+    ],
+    "demotes": [
+      " Shakspeare",
+      "LLocation",
+      " impro",
+      " Shaksp",
+      " it\u017felf"
+    ],
+    "generated_description": "Emergence/development \u2014 activates on tokens meaning coming into being (development, creation, appearance, emergence); marks introduction/origin of a thing, process, or phenomenon."
+  },
+  {
+    "id": "22_1601_14",
+    "layer": 22,
+    "ctx_idx": 14,
+    "influence_score": 0.36759716272354126,
+    "top_activations": [
+      {
+        "trigger": " creation",
+        "score": 31.75,
+        "context": " Standard Changes that have been automated. The automated process for Standard Changes should include the creation and population of the change record per standard policy in order to make sure audit"
+      },
+      {
+        "trigger": " release",
+        "score": 31.75,
+        "context": "NRH1 also called LHRH) is a peptide hormone responsible for the release of FSH and LH from the anterior pituitary. GNRH1 is synthesized"
+      },
+      {
+        "trigger": " installation",
+        "score": 35.25,
+        "context": " 2010.\u23ceThe EPA says reasons for the drop include the installation of air pollution control technologies at coal-fired power plants and a shift to"
+      },
+      {
+        "trigger": " expansion",
+        "score": 36.5,
+        "context": " give birth to new grammars.\u23ceWith the increasing number of screens and the expansion of the information society, digital design is in a state of agitation. It"
+      },
+      {
+        "trigger": " release",
+        "score": 33.25,
+        "context": " radiocarbon dating to put their findings onto a reliable time-scale.\u23ceThe release of the new curve will mean that more precise date estimates can be obtained than"
+      }
+    ],
+    "promotes": [
+      " by",
+      ",",
+      " (",
+      " of",
+      " and"
+    ],
+    "demotes": [
+      " Efq",
+      "\u00e9valuateur",
+      " The\u017fe",
+      " Re\u017f",
+      " my\u017felf"
+    ],
+    "generated_description": "Nominalized action \u2014 activates on event/process nouns (creation, release, installation, expansion); often in \"the X of\" constructions, promotes commas and prepositions like \"of\" and \"by\""
+  },
+  {
+    "id": "21_14876_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.32211118936538696,
+    "top_activations": [
+      {
+        "trigger": "uation",
+        "score": 43.5,
+        "context": " evidence for the veracity of that account is overwhelming.\u23ce- Furthermore, the perpetuation of flawed and false theories for origins is due to the fallacy of affirming the"
+      },
+      {
+        "trigger": " recovery",
+        "score": 38.5,
+        "context": "\u23ceSubsequent investigations in the area of the cave of discovery ultimately led to the recovery of documents in a total of eleven caves and the archaeology excavation of a modest"
+      },
+      {
+        "trigger": " development",
+        "score": 38.25,
+        "context": " there has been an implicit but mythical Exit Strategy for the fight against malaria - the development of a vaccine. This implied weapon has been the stimulus for enormous amounts of"
+      },
+      {
+        "trigger": " promotion",
+        "score": 38.0,
+        "context": " and careers in science, technology, engineering, and mathematics\u23ce- Facilitate the promotion of quality school leadership that supports school redesign efforts, quality teacher recruitment and improved"
+      },
+      {
+        "trigger": " completion",
+        "score": 38.25,
+        "context": "<bos>With the completion of the Alaska Railroad station in Mount McKinley National Park, the park became a popular tourist attraction. Expecting a rush of tourists, park resident"
+      }
+    ],
+    "promotes": [
+      "of",
+      " \u05e9\u05dc",
+      "\u0e02\u0e2d\u0e07",
+      " c\u1ee7a",
+      " of"
+    ],
+    "demotes": [
+      "\u24e7",
+      "TagHelper",
+      " \"..\\..\\",
+      "\u811a\u6ce8\u306e\u4f7f\u3044\u65b9",
+      "\ufeff//"
+    ],
+    "generated_description": "Nominalized action nouns \u2014 activates on nouns formed from verbs (development, completion, promotion, recovery, perpetuation); abstract process/result words (\u2011ion/\u2011ment)."
+  },
+  {
+    "id": "22_16137_14",
+    "layer": 22,
+    "ctx_idx": 14,
+    "influence_score": 0.2808069586753845,
+    "top_activations": [
+      {
+        "trigger": " patterns",
+        "score": 71.5,
+        "context": " Braddock Bay Raptor Research (BBRR) began asking questions about the migration patterns that they were observing during BBRR's annual hawk watch and banding"
+      },
+      {
+        "trigger": " extent",
+        "score": 71.0,
+        "context": "4). The five standards are:\u23ceThe information literate student determines the nature and extent of the information needed.\u23ceThe information literate student accesses needed information effectively and"
+      },
+      {
+        "trigger": " hands",
+        "score": 77.5,
+        "context": ", Manual Training and Stuyvesant high schools. With so many guns in the hands of youngsters, did we see today's level of youth violence?\u23ce"
+      },
+      {
+        "trigger": " needs",
+        "score": 72.5,
+        "context": " House and Senate and signed into law\u23ceNew law will safely and effectively meet the needs of more victims\u23ceThe Violence Against Women Act (VAWA) is the"
+      },
+      {
+        "trigger": " development",
+        "score": 71.5,
+        "context": " embrace also cultural and religious factors. What interests the Church is above all the integral development of the human person and of all peoples.(22) She notes with"
+      }
+    ],
+    "promotes": [
+      "MigrationBuilder",
+      " jScrollPane",
+      "\u0411\u0438\u043b\u0433\u0430\u043b\u0434\u0430\u0445\u0430\u0440\u0448",
+      "Ford\u00edt\u00e1s",
+      "IUrlHelper"
+    ],
+    "demotes": [
+      " como",
+      " untuk",
+      "that",
+      "foreach",
+      "for"
+    ],
+    "generated_description": "of-phrase head \u2014 activates on noun heads that take an \u201cof\u201d complement (extent, hands, needs, development); measure/possession/part/abstract-noun role."
+  },
+  {
+    "id": "23_2311_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.36194080114364624,
+    "top_activations": [
+      {
+        "trigger": " copies",
+        "score": 24.5,
+        "context": "electron microscopy.\u23ceIn this method, an electron microscope scans samples that contain many copies of the object of interest suspended in an ice-like solid at every possible"
+      },
+      {
+        "trigger": "pod",
+        "score": 41.0,
+        "context": "<bos>Upozorenje: Ova stranica jo\u0161 nije prevedena. Ispod je izvorna ina\u010dica stranice. Molimo koristite o"
+      },
+      {
+        "trigger": " masses",
+        "score": 23.5,
+        "context": "<bos>VLTI observations of the radii of four small stars\u23ceThe radii and masses of the four very-low-mass stars now observed with the VLTI,"
+      },
+      {
+        "trigger": "section",
+        "score": 22.75,
+        "context": " But it is a 3-D cryoelectron microscope reconstruction of the cross-section of a virus, before and after cramming itself full of its own DNA"
+      },
+      {
+        "trigger": " feathers",
+        "score": 27.0,
+        "context": "- transitive v. To remove dirt and parasites from the skin, fur, or feathers of (another animal).\u23ce- transitive v. To prepare, as for"
+      }
+    ],
+    "promotes": [
+      "RegressionTest",
+      " \u0644\u0644\u0627\u0633\u0645\u0627\u0621",
+      " ujednoznacz",
+      "Datuak",
+      "\u205f"
+    ],
+    "demotes": [
+      " of",
+      "\u0e02\u0e2d\u0e07",
+      " ofthe",
+      " c\u1ee7a",
+      "ofthe"
+    ],
+    "generated_description": "Plural noun \u2014 activates on English plural content words (copies, masses, feathers); also fires on related content nouns/words across languages (e.g., ispod in Slavic excerpt)."
+  },
+  {
+    "id": "23_3015_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.37113720178604126,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 39.0,
+        "context": "-veined, cross veinlets present, base rounded, contracted to sheath, apex acuminate; ligule scarious. Inflorescence a large panicle"
+      },
+      {
+        "trigger": " launched",
+        "score": 35.25,
+        "context": " Rannals for redOrbit.com \u2013 Your Universe Online\u23ceThe twin spacecraft launched from Cape Canaveral Air Force Station on Thursday at 4:05"
+      },
+      {
+        "trigger": " perfectly",
+        "score": 31.5,
+        "context": " we shall see and hear one another as perfectly as though we were face to face, despite intervening distances of thousands of miles; and the instruments through which we shall"
+      },
+      {
+        "trigger": " her",
+        "score": 30.0,
+        "context": " Prynne,\u23cea native of a village in England. The novel presents her background\u2014through\u23cedialogue and flashbacks\u2014from time to time in the opening"
+      },
+      {
+        "trigger": " apex",
+        "score": 30.5,
+        "context": " margin crenate-serrate or obtusely serrate, rarely subentire, apex acuminate. Inflorescence densely ferruginous or yellow-brownish t"
+      }
+    ],
+    "promotes": [
+      ",",
+      " ",
+      " (",
+      "\u23ce",
+      "."
+    ],
+    "demotes": [
+      " \u2015\u2015\u2015\u2015\u2015",
+      " \u0f0b\u0f0b",
+      " doubtnut",
+      " it\u017felf",
+      "NUMX"
+    ],
+    "generated_description": "followed-by-comma \u2014 activates on tokens at clause boundaries (varied POS: verbs, adverbs, pronouns, nouns); promotes commas/newlines/other continuation punctuation."
+  },
+  {
+    "id": "23_3392_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.38488534092903137,
+    "top_activations": [
+      {
+        "trigger": " outcome",
+        "score": 77.0,
+        "context": " problems, from software vulnerabilities that could let an attacker install malicious software that changes the outcome of a vote, to opportunities to tamper with the devices while they are held"
+      },
+      {
+        "trigger": " likely",
+        "score": 75.0,
+        "context": " of lower socioeconomic status are more likely to experience hardship, facing discrimination, job insecurity, and financial troubles. In addition, lower-paying jobs are less likely to"
+      },
+      {
+        "trigger": " cases",
+        "score": 75.0,
+        "context": " questionnaire in 1989 \u2013 the researchers documented 887 incident cases of psoriasis during the 14 years of follow-up. Lifetime smoking"
+      },
+      {
+        "trigger": " that",
+        "score": 77.0,
+        "context": " they attempted to write their own histories and examine their circumstances as distinct and similar to that of slaves. Among those she examines: Lorenzo Dow Blackson, a self"
+      },
+      {
+        "trigger": " quantities",
+        "score": 76.0,
+        "context": " have to be made, but it\u2019s obvious it can generate in time great quantities of energy. For free.\u23ceThe platform can be put in the sea"
+      }
+    ],
+    "promotes": [
+      " it\u017felf",
+      " Monfieur",
+      " The\u017fe",
+      " Efq",
+      " my\u017felf"
+    ],
+    "demotes": [
+      " ",
+      "<eos>",
+      " (",
+      "\u23ce\u23ce",
+      "1"
+    ],
+    "generated_description": "Content word (alphabetic) \u2014 activates on ordinary lexical tokens (nouns/adverbs/quantities like outcome, likely, cases, that); promotes alphabetic word tokens, demotes punctuation/newlines."
+  },
+  {
+    "id": "23_3350_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.3447142243385315,
+    "top_activations": [
+      {
+        "trigger": " compensate",
+        "score": 99.0,
+        "context": " effectively reversed the IEEE course. Contrary to past wireless technologies that used more power to compensate for its effects, new innovations are now taking advantage of multipath conditions to"
+      },
+      {
+        "trigger": " access",
+        "score": 91.0,
+        "context": "MAST) team in Baltimore, MD. This new astronomy Web resource provides easy access to the rich repository of black-and-white images and spectra of stars"
+      },
+      {
+        "trigger": " look",
+        "score": 91.0,
+        "context": ",000 periodical titles. This month the British Architectural Library takes a potted look at the architecture of railway stations 150 and 100"
+      },
+      {
+        "trigger": " understanding",
+        "score": 90.0,
+        "context": "ers design new molecular machines for nanotechnology applications, as well as significantly aid our understanding of diseases such as Alzheimer's and Parkinson's, both of which"
+      },
+      {
+        "trigger": " threats",
+        "score": 91.0,
+        "context": " America.\u23ceImpacts to Drinking Water and Human Health\u23ceMTR mining poses significant threats to water quality in Appalachia, despite the objectives and requirements of the Clean"
+      }
+    ],
+    "promotes": [
+      " (",
+      "\u23ce\u23ce",
+      "\u23ce",
+      "<eos>",
+      " "
+    ],
+    "demotes": [
+      " Efq",
+      " my\u017felf",
+      " The\u017fe",
+      " it\u017felf",
+      " Majefty"
+    ],
+    "generated_description": "abstract topic word \u2014 activates on content words naming concepts/impacts (access, threats, understanding, look, compensate) in expository/sectional text; often aligned with paragraph/line breaks."
+  },
+  {
+    "id": "23_11286_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.25090157985687256,
+    "top_activations": [
+      {
+        "trigger": " because",
+        "score": 61.5,
+        "context": " facilities into the environment and construction delays as a result of public opposition.\u23cePartly because of these concerns about radioactivity and the cost of containing it, the American public"
+      },
+      {
+        "trigger": " forms",
+        "score": 58.5,
+        "context": " to survive breast cancer is early detection and treatment. Here are the five most prevalent forms of breast cancer affecting women today.\u23ceIn-situ ductal carcinoma is"
+      },
+      {
+        "trigger": " part",
+        "score": 57.0,
+        "context": "in the ball park,\" clearly there is valid reason for urging candor on the part of our government. [Ralph E. Lapp, \"Atomic Candor,\""
+      },
+      {
+        "trigger": " name",
+        "score": 57.5,
+        "context": " bills, which the various state utility commissions are only too happy to approve in the name of saving the planet.\u23ceRPSs generally do not include hydroelectric power,"
+      },
+      {
+        "trigger": " part",
+        "score": 58.5,
+        "context": " of clue words like \"but\"\u2014where you can expect a contrast in the next part of a question; or \"moreover\"\u2014which tells you that a continuation"
+      }
+    ],
+    "promotes": [
+      " OF",
+      "Of",
+      "of",
+      " Of",
+      " of"
+    ],
+    "demotes": [
+      "yntaxException",
+      "\u017felves",
+      " The\u017fe",
+      "\u0421\u042f",
+      "\u017felf"
+    ],
+    "generated_description": "say OF \u2014 activates on content words that precede the phrase \"of\" (e.g. \"because\", \"forms\", \"part\", \"name\"); signals/encourages the next token \"of\"."
+  },
+  {
+    "id": "23_5917_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.3503051698207855,
+    "top_activations": [
+      {
+        "trigger": " result",
+        "score": 172.0,
+        "context": "A federal tax on firearms and ammunition began in 1937 as a result of the Pittman-Robertson Act. Each purchase of firearms, ammunition, archery"
+      },
+      {
+        "trigger": " capable",
+        "score": 182.0,
+        "context": " the European nations victorious in World War I, the League emerged as an organ potentially capable of reducing geopolitical tensions and securing cooperative interaction between nation-states. Claude stated"
+      },
+      {
+        "trigger": " unable",
+        "score": 168.0,
+        "context": ", since it is characteristically so concerned with living in the moment that it is unable to consider the deeper questions.\u23ceThough youth will fade, what replaces it"
+      },
+      {
+        "trigger": " observed",
+        "score": 178.0,
+        "context": " process begins to decrease. In other studies of plant stress responses, it has been observed that the compound gamma-aminobutyric acid accumulates upon the imposition of"
+      },
+      {
+        "trigger": " importance",
+        "score": 172.0,
+        "context": " she says.\u23ceBut Lanni presents a new argument: The Athenians understood the importance of the rule of law and applied it (especially in homicide and maritime cases"
+      }
+    ],
+    "promotes": [
+      " wikipagina",
+      " Monfieur",
+      " \u00e9toient",
+      " plea\u017fure",
+      " The\u017fe"
+    ],
+    "demotes": [
+      "<unused61>",
+      "<unused63>",
+      "<unused62>",
+      " ",
+      "<unused60>"
+    ],
+    "generated_description": "Abstract-state words \u2014 activates on abstract nouns/adjectives signaling states, abilities or evaluations (result, capable, unable, observed, importance)."
+  },
+  {
+    "id": "16_948_14",
+    "layer": 16,
+    "ctx_idx": 14,
+    "influence_score": 0.3792085647583008,
+    "top_activations": [
+      {
+        "trigger": " production",
+        "score": 36.5,
+        "context": " minimum concentration of 2.5% salt-on-water phase prevented the production of toxin for 30 days when fish were stored at 10"
+      },
+      {
+        "trigger": " passage",
+        "score": 35.5,
+        "context": " had origins in pre-Confederation times, but was primarily active following the passage of the Indian Act in 1876, until the mid-"
+      },
+      {
+        "trigger": " passage",
+        "score": 39.75,
+        "context": " twentieth century. Government played only a small role in this arena. Not until the passage of the federal Hospital Survey and Construction Act, known as the Hill-Burton"
+      },
+      {
+        "trigger": " creation",
+        "score": 38.75,
+        "context": " patients connected to pacemakers it was life-threatening. The blackout did spur the creation the first portable, battery-powered pacemaker.\u23ceMinneapolis, Minn. \u2014"
+      },
+      {
+        "trigger": " production",
+        "score": 36.25,
+        "context": " vaccination currently are under way. Passive immunization is also a promising strategy that involves the production of antibodies outside of the patient and injection of these antibodies. There are currently"
+      }
+    ],
+    "promotes": [
+      " \u0935\u093f\u0936\u094d\u0935\u0938\u0928\u0940\u092f\u0924\u093e",
+      "rungsseite",
+      " of",
+      "Vidite",
+      " ujednoznacz"
+    ],
+    "demotes": [
+      "UserScript",
+      "stateProvider",
+      "ollectionView",
+      "extAlignment",
+      "[]):"
+    ],
+    "generated_description": "Event noun \u2014 activates on nouns naming actions/processes (production, passage, creation); picks out nominalized events in factual/descriptive contexts."
+  },
+  {
+    "id": "23_5188_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.38214603066444397,
+    "top_activations": [
+      {
+        "trigger": ",",
+        "score": 46.5,
+        "context": " 27 May 2011, 14:00, Large Operon, EMBL Heidelberg\u23ceRaghavendra Gadagkar,"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "enix Y. Pan, James H. Burge, Rene Zehnder, and Yanqui Wang, \"Fabrication and Alignment Issues for Segmented Mirror Telescopes"
+      },
+      {
+        "trigger": ",",
+        "score": 43.5,
+        "context": "<bos>Published on January 18th, 2011 | by Guest Contributor6\u23ceMonsanto\u2019s Roundup Triggers Over 40 Plant Diseases"
+      },
+      {
+        "trigger": " one",
+        "score": 40.5,
+        "context": " fresh, powerful images.\u23ce2. Never use a long word where a short one will do.\u23ceLong words don\u2019t make you sound intelligent unless used"
+      },
+      {
+        "trigger": " Ballet",
+        "score": 62.0,
+        "context": "1 she staged what is regarded as the first court ballet, Ballet Comique de la Reine Louise. Instead of a series of divertissements, it was based"
+      }
+    ],
+    "promotes": [
+      " and",
+      " \"",
+      " or",
+      " the",
+      " "
+    ],
+    "demotes": [
+      "setVerticalGroup",
+      "\u043d\u0433\u0440\u0435\u0434",
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      "DockStyle",
+      "\u20da"
+    ],
+    "generated_description": "Comma \u2014 activates on commas as list/item separators (dates, names, metadata); often in lists and appositions."
+  },
+  {
+    "id": "23_16177_14",
+    "layer": 23,
+    "ctx_idx": 14,
+    "influence_score": 0.39832133054733276,
+    "top_activations": [
+      {
+        "trigger": " habit",
+        "score": 41.0,
+        "context": " out their writings and their books.\u23ceIf you really want to get into the habit of reading classical literature, you can start by reading 30 minutes every"
+      },
+      {
+        "trigger": " decades",
+        "score": 48.0,
+        "context": " the most recent issue of The Journal of Heredity, researchers compared more than two decades of field observations on humpback whales from the Whale Center of New England with"
+      },
+      {
+        "trigger": " unheard",
+        "score": 45.5,
+        "context": " 4GB in size. When it was developed, that size file was almost unheard of but now, a DVD can have files that large or larger routinely."
+      },
+      {
+        "trigger": " body",
+        "score": 43.5,
+        "context": "<bos>Your mother was right.\u23ceThere's a growing body of scientific evidence that expressing thanks isn't just nice for the person on the receiving end,"
+      },
+      {
+        "trigger": " out",
+        "score": 42.5,
+        "context": " foot center is as green as they come, with the project obtaining 61 out of the 69 available LEED points. The building was designed by Kub"
+      }
+    ],
+    "promotes": [
+      " ",
+      " (",
+      ".",
+      ",",
+      "'"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " Efq",
+      " Majefty",
+      "^(@)",
+      " purpo\u017fe"
+    ],
+    "generated_description": "Precedes \"of\" \u2014 activates on tokens that are immediately followed by the preposition \"of\" (e.g. habit of, decades of, body of, out of, unheard of)."
+  },
+  {
+    "id": "24_8983_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.32706427574157715,
+    "top_activations": [
+      {
+        "trigger": " top",
+        "score": 80.5,
+        "context": " keeping track of appointments and deadlines (and consistently checking them!) you can stay on top of all your tasks at work and home. Some software programs even have reminders"
+      },
+      {
+        "trigger": " types",
+        "score": 88.5,
+        "context": " individuals that form them, as well as to look for other forms of interactions between people and distinguish between these different types of interactions.\u23ceThese algorithms are going to"
+      },
+      {
+        "trigger": " size",
+        "score": 81.5,
+        "context": " protect it.\u23cePerhaps what saved Glasgow Cathedral more than anything else was simply the size of the city's population: when the crisis arose, enough collective sanity"
+      },
+      {
+        "trigger": " use",
+        "score": 85.0,
+        "context": ", and personalized. This conference and book volumes seek original research with respect to the use of Social Media and related technologies for education; the emerging applications of Web "
+      },
+      {
+        "trigger": " types",
+        "score": 97.5,
+        "context": " level overview of fat as a whole, then a lower level look at the various types of fat. I believe this is important, because fat, at its base"
+      }
+    ],
+    "promotes": [
+      "setdefault",
+      "\u062c\u063a\u0631\u0627\u0641\u064a\u0627",
+      " useRouter",
+      "Pyx",
+      " of"
+    ],
+    "demotes": [
+      "OF",
+      "Of",
+      " OF",
+      " Of",
+      "of"
+    ],
+    "generated_description": "abstract/common nouns \u2014 activates on short, generic category nouns (top, types, size, use); signals general conceptual noun tokens rather than specific names"
+  },
+  {
+    "id": "24_2563_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3113741874694824,
+    "top_activations": [
+      {
+        "trigger": " number",
+        "score": 65.5,
+        "context": " a policy that prevented blacks from joining the military.\u23ceThe Union needed a large number of men to move supplies from the North to the battlefields of the South"
+      },
+      {
+        "trigger": " rest",
+        "score": 64.5,
+        "context": ", a few acrylic fish tanks are made with a substantially thicker acrylic bottom than the rest of the aquarium so that an aquarium stand is not necessary.\u23ceAn acrylic"
+      },
+      {
+        "trigger": " advantage",
+        "score": 64.5,
+        "context": " a longer signal range for connecting during data communication and transfers. NFC technology has taken advantage of this and can connect two devices quickly, then turn the signal over to"
+      },
+      {
+        "trigger": " part",
+        "score": 66.5,
+        "context": "<bos>Emotions: Their Origins and Definitions\u23ceEmotions are a vital part of our lives. They increase human interaction and allow us to express our feelings to those around us"
+      },
+      {
+        "trigger": " group",
+        "score": 68.0,
+        "context": "A recent study at Washington University School of Medicine in St. Louis followed a large group of older adults (60 years old or older) with painfree rot"
+      }
+    ],
+    "promotes": [
+      " If",
+      "\ufeff#",
+      "\uff2f",
+      " f",
+      "hoga"
+    ],
+    "demotes": [
+      " of",
+      " c\u1ee7a",
+      "\u0e02\u0e2d\u0e07",
+      " venons",
+      " d\u00e9finiti"
+    ],
+    "generated_description": "Common NP head \u2014 activates on common head nouns in noun phrases (e.g., number, rest, advantage, part, group); typically follows a determiner/adjective completing the NP."
+  },
+  {
+    "id": "24_13277_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3693702816963196,
+    "top_activations": [
+      {
+        "trigger": " to",
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "trigger": " in",
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "trigger": " attended",
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "trigger": ",",
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "trigger": " a",
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.\u23ceFor most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " C\u00e6sar"
+    ],
+    "demotes": [
+      " st\u00e4llet",
+      " v\u00e9rit",
+      " m\u00e8res",
+      " pr\u00eatres",
+      " genoux"
+    ],
+    "generated_description": "say NP start \u2014 activates on preps/articles/verbs that introduce a following noun phrase; often signals an upcoming proper name (Georgia, Rugby, Alice)"
+  },
+  {
+    "id": "24_15822_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.3925269842147827,
+    "top_activations": [
+      {
+        "trigger": " access",
+        "score": 73.0,
+        "context": " phone system, so they can easily tap phones without being detected. They also have access to the stations that relay cell-phone calls, which lets them eavesdrop"
+      },
+      {
+        "trigger": " shadow",
+        "score": 71.0,
+        "context": " fire and ice\u201d is the most dangerous volcano in the Cascade Range. In the shadow of Mount Rainier, live over 1.5 million people. The glaciers"
+      },
+      {
+        "trigger": " percent",
+        "score": 69.0,
+        "context": " the volatile organic compounds (VOCs), and for 57-61 percent of the nitrogen oxide emissions. VOCs and nitrogen compounds are the key ingredients"
+      },
+      {
+        "trigger": " recipient",
+        "score": 68.0,
+        "context": " the Temple Sisterhood. Once, local officials had to reveal that she was the recipient of the town's distinguished citizen's award in order to convince her"
+      },
+      {
+        "trigger": " thanks",
+        "score": 67.0,
+        "context": " adaptations that once made them so successful\u2014their long adult life span and delayed sexual maturity\u2014has made them vulnerable as the world around them changed, mostly thanks to"
+      }
+    ],
+    "promotes": [
+      " (",
+      "\u23ce\u23ce",
+      "of",
+      "<eos>",
+      " "
+    ],
+    "demotes": [
+      " Efq",
+      " my\u017felf",
+      " \u2015\u2015\u2015\u2015\u2015",
+      " it\u017felf",
+      "^(@)"
+    ],
+    "generated_description": "say \"of\" \u2014 activates on nouns/phrases (access, shadow, percent, recipient, thanks) that are typically followed by \"of\" (occasionally \"to\"); promotes continuation/complement after them."
+  },
+  {
+    "id": "24_13541_14",
+    "layer": 24,
+    "ctx_idx": 14,
+    "influence_score": 0.37766245007514954,
+    "top_activations": [
+      {
+        "trigger": "0",
+        "score": 177.0,
+        "context": "ctively from a more complex form (Proc Natl Acad Sci USA, DOI:10.1073/pnas.173540"
+      },
+      {
+        "trigger": ",",
+        "score": 183.0,
+        "context": "<bos>From Wikipedia, the free encyclopedia - View original article\u23ceMost modern scholars view the fact that Jesus was baptized by John the Baptist as an historical event to which"
+      },
+      {
+        "trigger": " continuity",
+        "score": 178.0,
+        "context": " at a crucial intersection in history, while questioning the ideas of tradition and movement, continuity and breaks. It brings together exceptional ensembles by great artists, for example,"
+      },
+      {
+        "trigger": "6",
+        "score": 204.0,
+        "context": "\u23ceOriginally published on Thu October 31, 2013 6:27 pm\u23ceUpdate on Thursday, Oct. 31,"
+      },
+      {
+        "trigger": "4",
+        "score": 197.0,
+        "context": " help me with multiplication so that I can better understand\u23ce- Improper Fractions [04/15/1999]\u23ceI need help making improper"
+      }
+    ],
+    "promotes": [
+      "2",
+      "  ",
+      "1",
+      " ",
+      "\u23ce"
+    ],
+    "demotes": [
+      " kasarigan",
+      "expandindo",
+      "NameInMap",
+      " espirituales",
+      "MigrationBuilder"
+    ],
+    "generated_description": "Digit character \u2014 activates on Arabic numerals (0\u20139) in dates/times/DOIs/number strings; tends to push numeric tokens in output."
+  },
+  {
+    "id": "17_7299_14",
+    "layer": 17,
+    "ctx_idx": 14,
+    "influence_score": 0.3835250437259674,
+    "top_activations": [
+      {
+        "trigger": " Opening",
+        "score": 30.62,
+        "context": "You can log in using Facebook.)\u23ce(Hebrew: it is our duty) Opening words of a Jewish prayer recited at the end of the three periods of daily"
+      },
+      {
+        "trigger": " opening",
+        "score": 34.5,
+        "context": " saws and excited teens filled a basement classroom at Rideau High School during the official opening of a new wood shop specially built to give elementary school students an early glimpse"
+      },
+      {
+        "trigger": " opening",
+        "score": 35.0,
+        "context": " was no longer \u201ca colony of the East,\u201d and the London Times described the opening of the Overland Mail route to California as \u201ca matter of greatest importance to"
+      },
+      {
+        "trigger": " opening",
+        "score": 33.0,
+        "context": " by Craig Venter [The Institute for Genomic Research (TIGR)] in the opening session, small-genome research is growing exponentially, and a new era of"
+      },
+      {
+        "trigger": " kickoff",
+        "score": 30.88,
+        "context": " to the John Wesley Powell River History Museum in Green River for one year. The kickoff event was held on March 10. Students from Book Cliff Elementary attended"
+      }
+    ],
+    "promotes": [
+      " study",
+      " pres",
+      " ten",
+      "usch",
+      " test"
+    ],
+    "demotes": [
+      " '\\\\;'",
+      " HasFactory",
+      "\ue605",
+      "]--;",
+      "tvguidetime"
+    ],
+    "generated_description": "Opening / kickoff \u2014 activates on words signaling the start of an event or ceremony (opening, kickoff, opening session, inaugural, start of route/project)."
+  },
+  {
+    "id": "25_10746_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.23885515332221985,
+    "top_activations": [
+      {
+        "trigger": " part",
+        "score": 55.5,
+        "context": " brain, which may be due to:\u23ce- A clot that forms in another part of the body (eg, heart or neck) breaking off and blocking the"
+      },
+      {
+        "trigger": " parts",
+        "score": 58.0,
+        "context": " 70% accurate\u23ceWhen a person is telling the truth they use different parts of their brain than when people lie, the Temple University team said.\u23ce"
+      },
+      {
+        "trigger": " Code",
+        "score": 51.5,
+        "context": "<bos>Course Expectations, Guidelines, Grading Policy and Code of Conduct\u23ceText: Discovering French Bleu (1) Blanc(2 + 3) Rouge (4)"
+      },
+      {
+        "trigger": " world",
+        "score": 52.0,
+        "context": " the forgotten victims of the Holocaust. The Nazis, in their strive to rid the world of undesirables, targeted both Jews and Gypsies for extermination. Follow"
+      },
+      {
+        "trigger": " knowledge",
+        "score": 52.5,
+        "context": " Historical Background\u23ceIn order to get the most from this audiocast, a basic knowledge of symmetric key encryption, public and private key mechanisms, digital certificates and hashing"
+      }
+    ],
+    "promotes": [
+      "ophobia",
+      "esez",
+      "\u00e9valuateur",
+      " or",
+      "anthene"
+    ],
+    "demotes": [
+      " of",
+      "of",
+      " c\u1ee7a",
+      "\u0e02\u0e2d\u0e07",
+      "Of"
+    ],
+    "generated_description": "Content nouns \u2014 activates on main topical nouns/head words (part/parts, Code, world, knowledge); marks semantically informative content nouns, not function words."
+  },
+  {
+    "id": "25_4717_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.3638435900211334,
+    "top_activations": [
+      {
+        "trigger": "'",
+        "score": 332.0,
+        "context": " Got it Down?\u23ceTest your knowledge again:\u23ceSpring and Fall: What's Happening? Quiz\u23ceThink you\u2019ve got your head wrapped around Spring"
+      },
+      {
+        "trigger": "'",
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "trigger": " in",
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "trigger": "'",
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "trigger": "According",
+        "score": 330.0,
+        "context": " including probiotics\u23cefor gastrointestinal complaints, are now widely recommended for children.\u23ceAccording to the survey findings:\u23ceUse of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " \u0f0b\u0f0b"
+    ],
+    "demotes": [
+      " avoient",
+      " \u00e9toient",
+      " varandra",
+      " d\u00e9mocr",
+      " feroit"
+    ],
+    "generated_description": "'s (contraction for \"is\") \u2014 activates on contracted \"'s\" in casual phrases (what's, that's, it's); signals informal spoken-style copula/auxiliary uses."
+  },
+  {
+    "id": "25_10882_14",
+    "layer": 25,
+    "ctx_idx": 14,
+    "influence_score": 0.31696081161499023,
+    "top_activations": [
+      {
+        "trigger": " unaware",
+        "score": 54.5,
+        "context": " not to hear you at times\u23ce- Resists cuddling and holding\u23ce- Appears unaware of others' feelings\u23ce- Seems to prefer playing alone \u2014 retreats into his"
+      },
+      {
+        "trigger": " sites",
+        "score": 54.5,
+        "context": ". In 1975 the scientific community finally tracked down the wintering sites of the Monarch in Mexico. Until then, the Monarch butterflies' winter hide"
+      },
+      {
+        "trigger": " test",
+        "score": 60.0,
+        "context": " But the structures, the icons of each Fair, don\u2019t always stand the test of time \u2013 no matter their architectural pedigree. In Flushing Meadows Park, New"
+      },
+      {
+        "trigger": " part",
+        "score": 64.0,
+        "context": " installed, they still can survive even if in the room of fire\u2019s origin.\u201d\u23ceAs part of this effort, ASPE joined numerous organizations and other advocates"
+      },
+      {
+        "trigger": " availability",
+        "score": 57.0,
+        "context": " cortex by using controversial embryonic stem cells.\u23ceHowever, since embryonic research has drawn ethical concerns scientists say it has led to limited availability of funding and materials.\u23ce"
+      }
+    ],
+    "promotes": [
+      " OF",
+      "Of",
+      "of",
+      " Of",
+      " of"
+    ],
+    "demotes": [
+      "Rohy",
+      " a\u00e9reas",
+      " engra\u00e7adas",
+      "\ufeff#",
+      " femininas"
+    ],
+    "generated_description": "say OF \u2014 activates on nouns/adjectives that take an \"of\" complement (unaware, sites, test, part, availability); promotes output token \"of.\""
+  },
+  {
+    "id": "17_400_14",
+    "layer": 17,
+    "ctx_idx": 14,
+    "influence_score": 0.3351415991783142,
+    "top_activations": [
+      {
+        "trigger": " formation",
+        "score": 43.0,
+        "context": "ography. Directed self-assembly uses lithographically defined pre-patterns to guide the formation of self-assembled features so that the pre-pattern is subdivided in a"
+      },
+      {
+        "trigger": " creation",
+        "score": 40.0,
+        "context": ") expanding their range in Central America, as a result of continuing deforestation and the creation of cattle pastures.\u23ceGarrigues, Richard & Robert Dean. 2"
+      },
+      {
+        "trigger": " formation",
+        "score": 38.5,
+        "context": " more typical of geological processes. The key to the pressure-driven transformation is the formation of a clathrate, or cage-like structure in the crystal lattice"
+      },
+      {
+        "trigger": " application",
+        "score": 44.0,
+        "context": " government debt in the world. As a result, the European Commission believes that the application of specific taxes to this sector could have the following positive effects:\u23ce-"
+      },
+      {
+        "trigger": " arrival",
+        "score": 39.75,
+        "context": " stationed on the St. Lawrence.\u23ceThe English were on alert to prevent the arrival of supplies to Quebec and upon learning of the presence of French ships in the"
+      }
+    ],
+    "promotes": [
+      " setia",
+      "\u0e02\u0e2d\u0e07",
+      " nakalista",
+      " c\u1ee7a",
+      " of"
+    ],
+    "demotes": [
+      " my\u017felf",
+      " Majefty",
+      " Efq",
+      " CGSize",
+      " depositphotos"
+    ],
+    "generated_description": "Event/\u2011ation nouns \u2014 activates on process/event nominalizations (formation, creation, transformation, application, arrival); favors -ation-style nouns denoting events or processes."
+  },
+  {
+    "id": "21_13048_14",
+    "layer": 21,
+    "ctx_idx": 14,
+    "influence_score": 0.34189218282699585,
+    "top_activations": [
+      {
+        "trigger": " cases",
+        "score": 72.0,
+        "context": ", the organism causing 300 million to 500 million new cases of malaria each year, contains over 5000 genes distributed among"
+      },
+      {
+        "trigger": " sense",
+        "score": 84.0,
+        "context": " school-change program focused on creating caring, supportive learning environments that foster students' sense of belonging and connection to school. The CDP program incorporated cooperative learning approaches,"
+      },
+      {
+        "trigger": " point",
+        "score": 70.0,
+        "context": " Jewish community from its religious Zionists. Addressing the concerns of both communities from the point of view of one who is deeply committed to religious pluralism, David Hartman suggests"
+      },
+      {
+        "trigger": " body",
+        "score": 80.0,
+        "context": " two papers published in this issue of SAMJ2,3 add to the growing body of published information on allergens and allergies in southern Africa.\u23ceSeedat et"
+      },
+      {
+        "trigger": " test",
+        "score": 75.0,
+        "context": " it incited the audience to riot. Revolutionary art doesn\u2019t always stand the test of time, but the Rite of Spring has become a lasting icon that continues"
+      }
+    ],
+    "promotes": [
+      " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+      " \u062a\u0627\u0646\u064a\u0647",
+      " it\u017felf",
+      " my\u017felf",
+      " The\u017fe"
+    ],
+    "demotes": [
+      " ",
+      "<eos>",
+      ",",
+      " (",
+      "\u23ce\u23ce"
+    ],
+    "generated_description": "abstract \"of\" noun \u2014 activates on abstract/common nouns that head an \"of\" phrase (cases, sense, point, body, test); signals nouns taking an \"of\" complement."
+  },
+  {
+    "id": "2_11279_14",
+    "layer": 2,
+    "ctx_idx": 14,
+    "influence_score": 0.396038681268692,
+    "top_activations": [
+      {
+        "trigger": " founder",
+        "score": 24.0,
+        "context": ") was founded by a private initiative for public use and it has to meet the founder-assigned tasks and objectives, it has to fulfil a special mission:\u23ce"
+      },
+      {
+        "trigger": " founder",
+        "score": 24.5,
+        "context": " looted by the Nazis. Then, on the initiative of the museum\u00e2\u20ac\u2122s founder, L\u0102\u00a9on Frenkiel, a collection of documents on European synagogue"
+      },
+      {
+        "trigger": " founder",
+        "score": 26.12,
+        "context": " to make sure kids get here even if their parents don\u2019t,\u201d said MAKE founder Dale Dougherty.\u23ceAt Education Day kids got to play with 3D"
+      },
+      {
+        "trigger": " founder",
+        "score": 25.0,
+        "context": " herring, according to a charming account of shad's American history by CleanFish founder Dale Sims. Civil War soldiers had rations of shad. And even now,"
+      },
+      {
+        "trigger": " founder",
+        "score": 26.25,
+        "context": " more, and guidelines are emerging. Here are a few that I\u2019d like to pass on, based on my experience as a materials engineer and as a founder"
+      }
+    ],
+    "promotes": [
+      " is",
+      " in",
+      " individuals",
+      "Folks",
+      " folks"
+    ],
+    "demotes": [
+      " founder",
+      " Founder",
+      " founding",
+      " founded",
+      "founder"
+    ],
+    "generated_description": "founder \u2014 activates on the token \u201cfounder\u201d and close usages (as a founder, the founder of, initiative of the founder); signals role/creator mentions in institutional contexts"
+  }
+]
