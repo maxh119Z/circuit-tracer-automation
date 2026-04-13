@@ -536,7 +536,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Zero-ablate intermediate-hop features and measure causal effect."
+        description="Negatively steer intermediate-hop features and measure causal effect."
     )
     parser.add_argument(
         "--ground_truth",
