@@ -1,1 +1,51 @@
 slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+france-capital,The capital of France is,N/A,Paris,country → capital,0-hop direct lookup
+jupiter-largest,The largest planet in the solar system is,N/A,Jupiter,superlative → entity,0-hop direct lookup
+gold-symbol,The chemical symbol for gold is,N/A,Au,element → symbol,0-hop direct lookup
+romeo-author,The author of Romeo and Juliet is,N/A,William Shakespeare,work → author,0-hop direct lookup
+everest-tallest,The tallest mountain in the world is,N/A,Mount Everest,superlative → entity,0-hop direct lookup
+japan-currency,The currency of Japan is,N/A,Yen,country → currency,0-hop direct lookup
+nile-river,The longest river in the world is,N/A,Nile,superlative → entity,0-hop direct lookup
+washington-first,The first president of the United States was,N/A,George Washington,role → person,0-hop direct lookup
+einstein-relativity,The scientist who developed the theory of relativity was,N/A,Albert Einstein,theory → scientist,0-hop direct lookup
+monalisa-painter,The painter of the Mona Lisa was,N/A,Leonardo da Vinci,painting → painter,0-hop direct lookup
+memphis-capital,The capital of the state containing Memphis is,Tennessee,Nashville,city → state → capital,2-hop
+munich-capital,The capital of the country containing Munich is,Germany,Berlin,city → country → capital,2-hop
+eiffel-capital,The capital of the country containing the Eiffel Tower is,France,Paris,landmark → country → capital,2-hop
+miami-capital,The capital of the state containing Miami is,Florida,Tallahassee,city → state → capital,2-hop
+rio-language,The official language of the country containing Rio de Janeiro is,Brazil,Portuguese,city → country → language,2-hop
+colosseum-capital,The capital of the country containing the Colosseum is,Italy,Rome,landmark → country → capital,2-hop
+chicago-capital,The capital of the state containing Chicago is,Illinois,Springfield,city → state → capital,2-hop
+fuji-city,The largest city in the country containing Mount Fuji is,Japan,Tokyo,landmark → country → largest city,2-hop
+greatwall-currency,The currency of the country containing the Great Wall is,China,Yuan (Renminbi),landmark → country → currency,2-hop
+sydney-capital,The capital of the country containing Sydney is,Australia,Canberra,city → country → capital,2-hop
+elvis-capital,The capital of the state containing the birthplace of Elvis Presley is,"Tupelo | Mississippi",Jackson,person → birth city → state → capital,3-hop
+mozart-capital,The capital of the country containing the birthplace of Mozart is,"Salzburg | Austria",Vienna,person → birth city → country → capital,3-hop
+shakespeare-capital,The capital of the country where the author of Hamlet was born is,"Shakespeare | England/UK",London,work → author → country → capital,3-hop
+zuckerberg-capital,The capital of the state containing the university Mark Zuckerberg attended is,"Harvard | Massachusetts",Boston,person → university → state → capital,3-hop
+iphone-capital,The capital of the country containing the headquarters of the maker of the iPhone is,"Apple | USA",Washington D.C.,product → company → country → capital,3-hop
+beethoven-currency,The currency of the country where the composer Beethoven died is,"Vienna | Austria",Euro,person → death city → country → currency,3-hop
+obama-capital,The capital of the state where the 44th US president was born is,"Barack Obama | Hawaii",Honolulu,role → person → state → capital,3-hop
+tesla-currency,The currency of the country containing the headquarters of the company that makes the Model S is,"Tesla | USA",US Dollar,product → company → country → currency,3-hop
+relativity-continent,The continent containing the country where the scientist who developed the theory of relativity was born is,"Einstein | Germany",Europe,theory → scientist → country → continent,3-hop
+davinci-capital,The capital of the country where the painter of the Mona Lisa was born is,"Leonardo da Vinci | Italy",Rome,painting → painter → country → capital,3-hop
+hamlet-currency,The currency of the country containing the birthplace of the author of Hamlet is,"Shakespeare | Stratford-upon-Avon | UK",Pound Sterling,work → author → birthplace → country → currency,4-hop
+tomsawyer-capital,The capital of the state containing the birthplace of the author of Tom Sawyer is,"Mark Twain | Florida Missouri | Missouri",Jefferson City,work → author → birth city → state → capital,4-hop
+monalisa-currency,The currency of the country containing the birthplace of the painter of the Mona Lisa is,"Leonardo da Vinci | Vinci | Italy",Euro,painting → painter → birthplace → country → currency,4-hop
+relativity-capital,The capital of the country containing the birthplace of the scientist who developed relativity is,"Einstein | Ulm | Germany",Berlin,theory → scientist → birthplace → country → capital,4-hop
+iphone-currency,The currency of the country containing the headquarters of the company that makes the iPhone is,"Apple | Cupertino | USA",US Dollar,product → company → HQ → country → currency,4-hop
+moonlanding-capital,The capital of the state containing the launch site of the first crewed mission to land on the moon is,"Apollo 11 | Kennedy Space Center | Florida",Tallahassee,mission → launch site → state → capital,4-hop
+dune-capital,The capital of the state containing the birthplace of the author of Dune is,"Frank Herbert | Tacoma | Washington",Olympia,book → author → birth city → state → capital,4-hop
+gravity-currency,The currency of the country containing the birthplace of the scientist who formulated the law of universal gravitation is,"Isaac Newton | Woolsthorpe | UK",Pound Sterling,law → scientist → birthplace → country → currency,4-hop
+starrynight-capital,The capital of the country containing the birthplace of the painter of Starry Night is,"Van Gogh | Zundert | Netherlands",Amsterdam,painting → painter → birthplace → country → capital,4-hop
+fahrenheit-capital,The capital of the state containing the birthplace of the author of Fahrenheit 451 is,"Ray Bradbury | Waukegan | Illinois",Springfield,book → author → birth city → state → capital,4-hop
+elvis-currency,The currency of the country containing the capital of the state containing the birthplace of Elvis Presley is,"Tupelo | Mississippi | Jackson | USA",US Dollar,person → birth city → state → capital → country → currency,5-hop
+mozart-continent,The continent containing the capital of the country containing the birthplace of Mozart is,"Salzburg | Austria | Vienna",Europe,person → birth city → country → capital → continent,5-hop
+hamlet-continent,The continent containing the capital of the country where the author of Hamlet was born is,"Shakespeare | England | UK | London",Europe,work → author → birthplace → country → capital → continent,5-hop
+gatsby-currency,The currency of the country containing the capital of the state containing the birthplace of the author of The Great Gatsby is,"F. Scott Fitzgerald | St. Paul | Minnesota | St. Paul | USA",US Dollar,work → author → birth city → state → capital → country → currency,5-hop; birthplace and state capital coincide (St. Paul)
+davinci-continent,The continent containing the capital of the country where the painter of the Mona Lisa was born is,"Leonardo da Vinci | Italy | Rome",Europe,painting → painter → country → capital → continent,5-hop
+einstein-continent,The continent containing the capital of the country where the scientist who developed the theory of relativity was born is,"Einstein | Germany | Berlin",Europe,theory → scientist → country → capital → continent,5-hop
+iphone-continent,The continent containing the capital of the country containing the headquarters of the maker of the iPhone is,"Apple | Cupertino | USA | Washington D.C.",North America,product → company → HQ → country → capital → continent,5-hop
+wagner-continent,The continent containing the capital of the country where the composer Wagner died is,"Wagner | Venice | Italy | Rome",Europe,person → death city → country → capital → continent,5-hop; Wagner died in Venice (not Italy's capital) — clean chain
+newton-continent,The continent containing the capital of the country where the scientist who formulated the law of universal gravitation was born is,"Newton | England | UK | London",Europe,law → scientist → country → capital → continent,5-hop
+vangogh-continent,The continent containing the capital of the country containing the birthplace of the painter of Starry Night is,"Van Gogh | Zundert | Netherlands | Amsterdam",Europe,painting → painter → birthplace → country → capital → continent,5-hop

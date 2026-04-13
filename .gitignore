@@ -182,4 +182,6 @@ custom_automation/artifacts/*
 !custom_automation/artifacts/.gitkeep
 custom_automation/artifacts
 myenv/
+test_graphs_200_4-12/
+custom_automation/artifacts/
 # CUSTOM EDITS END: custom-automation
