@@ -183,6 +183,7 @@ custom_automation/artifacts/*
 custom_automation/artifacts
 custom_automation/artifacts_*/
 custom_automation/artifacts*
+custom_atuomation/artifacts_capital_reason/
 myenv/
 test_graphs_200_4-12/
 custom_automation/artifacts/
