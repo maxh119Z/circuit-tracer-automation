@@ -1,241 +1,226 @@
 slug,prompt,intermediate_concept,correct_answer,hop_type,num_hops,notes
-mquake-1,Who is the current head of state in the country of citizenship of Ellie Kemper?,United States of America,Donald Trump,2-hop,2,United States of America → Donald Trump
-mquake-1-h1,Ellie Kemper is a citizen of,N/A,United States of America,1-hop (hop 1 of 2),1,sub-question 1/2 of case 1
-mquake-1-h2,The name of the current head of state in United States of America is,N/A,Donald Trump,1-hop (hop 2 of 2),1,sub-question 2/2 of case 1
-mquake-2,What is the country of citizenship of the author of Misery?,Stephen King,United States of America,2-hop,2,Stephen King → United States of America
-mquake-2-h1,The author of Misery is,N/A,Stephen King,1-hop (hop 1 of 2),1,sub-question 1/2 of case 2
-mquake-2-h2,Stephen King is a citizen of,N/A,United States of America,1-hop (hop 2 of 2),1,sub-question 2/2 of case 2
-mquake-3,What city is the capital of the country that Michael Feinstein is a citizen of?,United States of America,"Washington, D.C.",2-hop,2,"United States of America → Washington, D.C."
-mquake-3-h1,Michael Feinstein is a citizen of,N/A,United States of America,1-hop (hop 1 of 2),1,sub-question 1/2 of case 3
-mquake-3-h2,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 2 of 2),1,sub-question 2/2 of case 3
-mquake-4,What is the capital of the nation that Lou Pearlman is a citizen of?,United States of America,"Washington, D.C.",2-hop,2,"United States of America → Washington, D.C."
-mquake-4-h1,Lou Pearlman is a citizen of,N/A,United States of America,1-hop (hop 1 of 2),1,sub-question 1/2 of case 4
-mquake-4-h2,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 2 of 2),1,sub-question 2/2 of case 4
-mquake-5,"On which continent is the country located, whose citizen is Emma Bunton?",United Kingdom,Europe,2-hop,2,United Kingdom → Europe
-mquake-5-h1,Emma Bunton is a citizen of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 5
-mquake-5-h2,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 5
-mquake-6,In what city did the creator of Tetris originate from?,Alexey Pajitnov,Moscow,2-hop,2,Alexey Pajitnov → Moscow
-mquake-6-h1,Tetris was created by,N/A,Alexey Pajitnov,1-hop (hop 1 of 2),1,sub-question 1/2 of case 6
-mquake-6-h2,Alexey Pajitnov was born in the city of,N/A,Moscow,1-hop (hop 2 of 2),1,sub-question 2/2 of case 6
-mquake-7,What is the country of origin of the sport associated with Cincinnati Gardens?,basketball,United States of America,2-hop,2,basketball → United States of America
-mquake-7-h1,Cincinnati Gardens is associated with the sport of,N/A,basketball,1-hop (hop 1 of 2),1,sub-question 1/2 of case 7
-mquake-7-h2,basketball was created in the country of,N/A,United States of America,1-hop (hop 2 of 2),1,sub-question 2/2 of case 7
-mquake-8,What language is officially spoken in the country where William Gillette is a citizen?,United States of America,American English,2-hop,2,United States of America → American English
-mquake-8-h1,William Gillette is a citizen of,N/A,United States of America,1-hop (hop 1 of 2),1,sub-question 1/2 of case 8
-mquake-8-h2,The official language of United States of America is,N/A,American English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 8
-mquake-9,Which city is the birthplace of William Howard Taft's partner?,Helen Herron Taft,Cincinnati,2-hop,2,Helen Herron Taft → Cincinnati
-mquake-9-h1,William Howard Taft is married to,N/A,Helen Herron Taft,1-hop (hop 1 of 2),1,sub-question 1/2 of case 9
-mquake-9-h2,Helen Herron Taft was born in the city of,N/A,Cincinnati,1-hop (hop 2 of 2),1,sub-question 2/2 of case 9
-mquake-10,Who founded the religion that Khalistan movement is affiliated with?,Sikhism,Guru Nanak,2-hop,2,Sikhism → Guru Nanak
-mquake-10-h1,Khalistan movement is affiliated with the religion of,N/A,Sikhism,1-hop (hop 1 of 2),1,sub-question 1/2 of case 10
-mquake-10-h2,Sikhism was founded by,N/A,Guru Nanak,1-hop (hop 2 of 2),1,sub-question 2/2 of case 10
-mquake-11,Which continent is home to the city where Thomas Graham Jackson was born?,London,Europe,2-hop,2,London → Europe
-mquake-11-h1,Thomas Graham Jackson was born in the city of,N/A,London,1-hop (hop 1 of 2),1,sub-question 1/2 of case 11
-mquake-11-h2,London is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 11
-mquake-12,Which language is used in the country that produced Screen International?,United Kingdom,English,2-hop,2,United Kingdom → English
-mquake-12-h1,Screen International was created in the country of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 12
-mquake-12-h2,The official language of United Kingdom is,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 12
-mquake-13,What city is the capital of the country that Gato Barbieri is a citizen of?,Argentina,Buenos Aires,2-hop,2,Argentina → Buenos Aires
-mquake-13-h1,Gato Barbieri is a citizen of,N/A,Argentina,1-hop (hop 1 of 2),1,sub-question 1/2 of case 13
-mquake-13-h2,The capital of Argentina is,N/A,Buenos Aires,1-hop (hop 2 of 2),1,sub-question 2/2 of case 13
-mquake-14,What country is the creator of Devious Maids a citizen of?,Marc Cherry,United States of America,2-hop,2,Marc Cherry → United States of America
-mquake-14-h1,Devious Maids was created by,N/A,Marc Cherry,1-hop (hop 1 of 2),1,sub-question 1/2 of case 14
-mquake-14-h2,Marc Cherry is a citizen of,N/A,United States of America,1-hop (hop 2 of 2),1,sub-question 2/2 of case 14
-mquake-15,What sport is associated with the position played by Ty Detmer?,quarterback,American football,2-hop,2,quarterback → American football
-mquake-15-h1,Ty Detmer plays the position of,N/A,quarterback,1-hop (hop 1 of 2),1,sub-question 1/2 of case 15
-mquake-15-h2,quarterback is associated with the sport of,N/A,American football,1-hop (hop 2 of 2),1,sub-question 2/2 of case 15
-mquake-16,What is the country of citizenship of the chief executive officer of Twitter?,Jack Dorsey,United States of America,2-hop,2,Jack Dorsey → United States of America
-mquake-16-h1,The chief executive officer of Twitter is,N/A,Jack Dorsey,1-hop (hop 1 of 2),1,sub-question 1/2 of case 16
-mquake-16-h2,Jack Dorsey is a citizen of,N/A,United States of America,1-hop (hop 2 of 2),1,sub-question 2/2 of case 16
-mquake-17,What continent contains the country that created Monty Python Live (Mostly)?,United Kingdom,Europe,2-hop,2,United Kingdom → Europe
-mquake-17-h1,Monty Python Live (Mostly) was created in the country of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 17
-mquake-17-h2,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 17
-mquake-18,Who is the head of the government in the country that Ahmadu Bello is a citizen of?,Nigeria,Muhammadu Buhari,2-hop,2,Nigeria → Muhammadu Buhari
-mquake-18-h1,Ahmadu Bello is a citizen of,N/A,Nigeria,1-hop (hop 1 of 2),1,sub-question 1/2 of case 18
-mquake-18-h2,The name of the current head of the Nigeria government is,N/A,Muhammadu Buhari,1-hop (hop 2 of 2),1,sub-question 2/2 of case 18
-mquake-19,What is the capital of the nation that Damiano Cunego is a citizen of?,Italy,Rome,2-hop,2,Italy → Rome
-mquake-19-h1,Damiano Cunego is a citizen of,N/A,Italy,1-hop (hop 1 of 2),1,sub-question 1/2 of case 19
-mquake-19-h2,The capital of Italy is,N/A,Rome,1-hop (hop 2 of 2),1,sub-question 2/2 of case 19
-mquake-20,In what city can you find the headquarters of the company that produced Volkswagen Caddy?,Volkswagen Group,Wolfsburg,2-hop,2,Volkswagen Group → Wolfsburg
-mquake-20-h1,The company that produced Volkswagen Caddy is,N/A,Volkswagen Group,1-hop (hop 1 of 2),1,sub-question 1/2 of case 20
-mquake-20-h2,The headquarters of Volkswagen Group is located in the city of,N/A,Wolfsburg,1-hop (hop 2 of 2),1,sub-question 2/2 of case 20
-mquake-1001,What is the official language of the country where the sport associated with Saipa F.C. was created?,association football | England,English,3-hop,3,association football → England → English
+mquake-1001,What is the official language of the country where the sport associated with Saipa F.C. was created?,association football | England,English,3-hop,3,association football -> England -> English
 mquake-1001-h1,Saipa F.C. is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1001
 mquake-1001-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1001
 mquake-1001-h3,The official language of England is,N/A,English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1001
-mquake-1002,Who is the current leader of the country that created the type of music performed by Betty Carter?,jazz | United States of America,Donald Trump,3-hop,3,jazz → United States of America → Donald Trump
-mquake-1002-h1,The type of music that Betty Carter plays is,N/A,jazz,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1002
-mquake-1002-h2,jazz was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1002
-mquake-1002-h3,The name of the current head of state in United States of America is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1002
-mquake-1003,What is the capital city of the country where the sport linked to South Atlantic League originated?,baseball | United States of America,"Washington, D.C.",3-hop,3,"baseball → United States of America → Washington, D.C."
-mquake-1003-h1,South Atlantic League is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1003
-mquake-1003-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1003
-mquake-1003-h3,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 3 of 3),1,sub-question 3/3 of case 1003
-mquake-1004,What city is the birthplace of the founder of the religion tied to Jean Bodin?,Catholic Church | Jesus Christ,Bethlehem,3-hop,3,Catholic Church → Jesus Christ → Bethlehem
-mquake-1004-h1,Jean Bodin is affiliated with the religion of,N/A,Catholic Church,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1004
-mquake-1004-h2,Catholic Church was founded by,N/A,Jesus Christ,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1004
-mquake-1004-h3,Jesus Christ was born in the city of,N/A,Bethlehem,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1004
-mquake-1005,Who is the current head of the government of the city where the producer of Chevrolet Cobalt was founded?,General Motors | Detroit,Mike Duggan,3-hop,3,General Motors → Detroit → Mike Duggan
-mquake-1005-h1,The company that produced Chevrolet Cobalt is,N/A,General Motors,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1005
-mquake-1005-h2,General Motors was founded in the city of,N/A,Detroit,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1005
-mquake-1005-h3,The name of the current head of the Detroit government is,N/A,Mike Duggan,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1005
-mquake-1006,Where was the founder of the religion linked to Louis XV of France born?,Catholic Church | Jesus Christ,Bethlehem,3-hop,3,Catholic Church → Jesus Christ → Bethlehem
-mquake-1006-h1,Louis XV of France is affiliated with the religion of,N/A,Catholic Church,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1006
-mquake-1006-h2,Catholic Church was founded by,N/A,Jesus Christ,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1006
-mquake-1006-h3,Jesus Christ was born in the city of,N/A,Bethlehem,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1006
-mquake-1007,Which continent is home to the city where the author of 1984 breathed their last?,George Orwell | London,Europe,3-hop,3,George Orwell → London → Europe
-mquake-1007-h1,The author of 1984 is,N/A,George Orwell,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1007
-mquake-1007-h2,George Orwell died in the city of,N/A,London,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1007
-mquake-1007-h3,London is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1007
-mquake-1008,"In which country was the sport developed, that is associated with the position played by Juninho Pernambucano?",midfielder | association football,England,3-hop,3,midfielder → association football → England
+mquake-1008,"In which country was the sport developed, that is associated with the position played by Juninho Pernambucano?",midfielder | association football,England,3-hop,3,midfielder -> association football -> England
 mquake-1008-h1,Juninho Pernambucano plays the position of,N/A,midfielder,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1008
 mquake-1008-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1008
 mquake-1008-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1008
-mquake-1009,Which city is the capital of the country of citizenship of the performer of Firework?,Katy Perry | United States of America,"Washington, D.C.",3-hop,3,"Katy Perry → United States of America → Washington, D.C."
-mquake-1009-h1,Firework was performed by,N/A,Katy Perry,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1009
-mquake-1009-h2,Katy Perry is a citizen of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1009
-mquake-1009-h3,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 3 of 3),1,sub-question 3/3 of case 1009
-mquake-1010,What is the main language spoken in the country that developed the sport associated with Basil D'Oliveira?,cricket | England,English,3-hop,3,cricket → England → English
-mquake-1010-h1,Basil D'Oliveira is associated with the sport of,N/A,cricket,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1010
-mquake-1010-h2,cricket was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1010
-mquake-1010-h3,The official language of England is,N/A,English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1010
-mquake-1011,"In which country was the sport developed, that is associated with the position played by Abet Guidaben?",center | basketball,United States of America,3-hop,3,center → basketball → United States of America
-mquake-1011-h1,Abet Guidaben plays the position of,N/A,center,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1011
-mquake-1011-h2,center is associated with the sport of,N/A,basketball,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1011
-mquake-1011-h3,basketball was created in the country of,N/A,United States of America,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1011
-mquake-1012,What country created the sport associated with the position played by Grégory Coupet?,goalkeeper | association football,England,3-hop,3,goalkeeper → association football → England
-mquake-1012-h1,Grégory Coupet plays the position of,N/A,goalkeeper,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1012
-mquake-1012-h2,goalkeeper is associated with the sport of,N/A,association football,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1012
-mquake-1012-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1012
-mquake-1013,What language is predominantly spoken in the country where the music style associated with Mike Stern originated?,jazz | United States of America,American English,3-hop,3,jazz → United States of America → American English
-mquake-1013-h1,The type of music that Mike Stern plays is,N/A,jazz,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1013
-mquake-1013-h2,jazz was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1013
-mquake-1013-h3,The official language of United States of America is,N/A,American English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1013
-mquake-1014,What city did the founder of the religion affiliated with Louis of Toulouse work in?,Catholic Church | Jesus Christ,Galilee,3-hop,3,Catholic Church → Jesus Christ → Galilee
-mquake-1014-h1,Louis of Toulouse is affiliated with the religion of,N/A,Catholic Church,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1014
-mquake-1014-h2,Catholic Church was founded by,N/A,Jesus Christ,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1014
-mquake-1014-h3,Jesus Christ worked in the city of,N/A,Galilee,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1014
-mquake-1015,Who is the current head of state in the country that created the sport associated with Don Balón?,association football | England,Elizabeth II,3-hop,3,association football → England → Elizabeth II
-mquake-1015-h1,Don Balón is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1015
-mquake-1015-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1015
-mquake-1015-h3,The name of the current head of state in England is,N/A,Elizabeth II,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1015
-mquake-1016,What is the country of origin of the sport associated with the head coach of Toronto Blue Jays?,John Gibbons | baseball,United States of America,3-hop,3,John Gibbons → baseball → United States of America
-mquake-1016-h1,The head coach of Toronto Blue Jays is,N/A,John Gibbons,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1016
-mquake-1016-h2,John Gibbons is associated with the sport of,N/A,baseball,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1016
-mquake-1016-h3,baseball was created in the country of,N/A,United States of America,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1016
-mquake-1017,In what city is the main office of the company that employs the author of The Principles of Psychology located?,William James | Harvard University,Cambridge,3-hop,3,William James → Harvard University → Cambridge
-mquake-1017-h1,The author of The Principles of Psychology is,N/A,William James,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1017
-mquake-1017-h2,William James is employed by,N/A,Harvard University,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1017
-mquake-1017-h3,The headquarters of Harvard University is located in the city of,N/A,Cambridge,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1017
-mquake-1018,Which language is officially spoken in the country that created the music genre played by Sturgill Simpson?,country music | United States of America,American English,3-hop,3,country music → United States of America → American English
-mquake-1018-h1,The type of music that Sturgill Simpson plays is,N/A,country music,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1018
-mquake-1018-h2,country music was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1018
-mquake-1018-h3,The official language of United States of America is,N/A,American English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1018
-mquake-1019,Which language is the official one in the country where the creator of Lestat de Lioncourt holds citizenship?,Anne Rice | United States of America,American English,3-hop,3,Anne Rice → United States of America → American English
-mquake-1019-h1,Lestat de Lioncourt was created by,N/A,Anne Rice,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1019
-mquake-1019-h2,Anne Rice is a citizen of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1019
-mquake-1019-h3,The official language of United States of America is,N/A,American English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1019
-mquake-1020,What person founded the religion that the author of Gesta Danorum belongs to?,Saxo Grammaticus | Christianity,Jesus Christ,3-hop,3,Saxo Grammaticus → Christianity → Jesus Christ
-mquake-1020-h1,The author of Gesta Danorum is,N/A,Saxo Grammaticus,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1020
-mquake-1020-h2,Saxo Grammaticus is affiliated with the religion of,N/A,Christianity,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1020
-mquake-1020-h3,Christianity was founded by,N/A,Jesus Christ,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1020
-mquake-2001,What continent is the country located in where the sport associated with the position played by Arturo Vidal was created?,midfielder | association football | England,Europe,4-hop,4,midfielder → association football → England → Europe
-mquake-2001-h1,Arturo Vidal plays the position of,N/A,midfielder,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2001
-mquake-2001-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2001
-mquake-2001-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2001
-mquake-2001-h4,England is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2001
-mquake-2002,Which city is the capital of the country whose citizen is the child of the person who founded Ford Germany?,Henry Ford | Edsel Ford | United States of America,"Washington, D.C.",4-hop,4,"Henry Ford → Edsel Ford → United States of America → Washington, D.C."
-mquake-2002-h1,Ford Germany was founded by,N/A,Henry Ford,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2002
-mquake-2002-h2,Henry Ford's child is,N/A,Edsel Ford,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2002
-mquake-2002-h3,Edsel Ford is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2002
-mquake-2002-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2002
-mquake-2003,What language is officially spoken in the country where the creator of the spouse of Derek Shepherd is a citizen?,Meredith Grey | Shonda Rhimes | United States of America,American English,4-hop,4,Meredith Grey → Shonda Rhimes → United States of America → American English
-mquake-2003-h1,Derek Shepherd is married to,N/A,Meredith Grey,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2003
-mquake-2003-h2,Meredith Grey was created by,N/A,Shonda Rhimes,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2003
-mquake-2003-h3,Shonda Rhimes is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2003
-mquake-2003-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2003
-mquake-2004,What is the capital of the country that created the sport connected to the position played by Andre Miller?,point guard | basketball | United States of America,"Washington, D.C.",4-hop,4,"point guard → basketball → United States of America → Washington, D.C."
-mquake-2004-h1,Andre Miller plays the position of,N/A,point guard,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2004
-mquake-2004-h2,point guard is associated with the sport of,N/A,basketball,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2004
-mquake-2004-h3,basketball was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2004
-mquake-2004-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2004
-mquake-2005,What is the capital of the country that created the sport connected to the position played by Rony Seikaly?,center | basketball | United States of America,"Washington, D.C.",4-hop,4,"center → basketball → United States of America → Washington, D.C."
-mquake-2005-h1,Rony Seikaly plays the position of,N/A,center,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2005
-mquake-2005-h2,center is associated with the sport of,N/A,basketball,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2005
-mquake-2005-h3,basketball was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2005
-mquake-2005-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2005
-mquake-2006,What city serves as the capital of the country where the person married to the author of Little Dorrit is a citizen?,Charles Dickens | Catherine Dickens | United Kingdom,London,4-hop,4,Charles Dickens → Catherine Dickens → United Kingdom → London
-mquake-2006-h1,The author of Little Dorrit is,N/A,Charles Dickens,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2006
-mquake-2006-h2,Charles Dickens is married to,N/A,Catherine Dickens,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2006
-mquake-2006-h3,Catherine Dickens is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2006
-mquake-2006-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2006
-mquake-2007,What is the capital of the country that created the sport that the head coach of Miami Heat is associated with?,Erik Spoelstra | basketball | United States of America,"Washington, D.C.",4-hop,4,"Erik Spoelstra → basketball → United States of America → Washington, D.C."
-mquake-2007-h1,The head coach of Miami Heat is,N/A,Erik Spoelstra,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2007
-mquake-2007-h2,Erik Spoelstra is associated with the sport of,N/A,basketball,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2007
-mquake-2007-h3,basketball was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2007
-mquake-2007-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2007
-mquake-2008,What continent is the country located in where the sport associated with the position played by Marten Stekelenburg was created?,goalkeeper | association football | England,Europe,4-hop,4,goalkeeper → association football → England → Europe
-mquake-2008-h1,Marten Stekelenburg plays the position of,N/A,goalkeeper,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2008
-mquake-2008-h2,goalkeeper is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2008
-mquake-2008-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2008
-mquake-2008-h4,England is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2008
-mquake-2009,What city is the capital of the country that developed the sport associated with the position played by Kirk Hinrich?,point guard | basketball | United States of America,"Washington, D.C.",4-hop,4,"point guard → basketball → United States of America → Washington, D.C."
-mquake-2009-h1,Kirk Hinrich plays the position of,N/A,point guard,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2009
-mquake-2009-h2,point guard is associated with the sport of,N/A,basketball,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2009
-mquake-2009-h3,basketball was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2009
-mquake-2009-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2009
-mquake-2010,What city is the capital of the country that developed the sport associated with the position played by Fred McGriff?,first baseman | baseball | United States of America,"Washington, D.C.",4-hop,4,"first baseman → baseball → United States of America → Washington, D.C."
-mquake-2010-h1,Fred McGriff plays the position of,N/A,first baseman,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2010
-mquake-2010-h2,first baseman is associated with the sport of,N/A,baseball,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2010
-mquake-2010-h3,baseball was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2010
-mquake-2010-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2010
-mquake-2011,"On which continent is the city situated, where the chief executive officer of the company that developed GW-BASIC was born?",Microsoft | Satya Nadella | Hyderabad,Asia,4-hop,4,Microsoft → Satya Nadella → Hyderabad → Asia
-mquake-2011-h1,GW-BASIC was developed by,N/A,Microsoft,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2011
-mquake-2011-h2,The chief executive officer of Microsoft is,N/A,Satya Nadella,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2011
-mquake-2011-h3,Satya Nadella was born in the city of,N/A,Hyderabad,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2011
-mquake-2011-h4,Hyderabad is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2011
-mquake-2012,"Which continent is the country in, where the director of the performer of Back in the U.S.S.R. is a citizen?",The Beatles | Brian Epstein | United Kingdom,Europe,4-hop,4,The Beatles → Brian Epstein → United Kingdom → Europe
-mquake-2012-h1,Back in the U.S.S.R. was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2012
-mquake-2012-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2012
-mquake-2012-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2012
-mquake-2012-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2012
-mquake-2013,"In what city, which is the capital of a country, is the director of the original broadcaster of Jimmy Kimmel Live! a citizen?",American Broadcasting Company | Bob Iger | United States of America,"Washington, D.C.",4-hop,4,"American Broadcasting Company → Bob Iger → United States of America → Washington, D.C."
-mquake-2013-h1,The origianl broadcaster of Jimmy Kimmel Live! is,N/A,American Broadcasting Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2013
-mquake-2013-h2,The director of American Broadcasting Company is,N/A,Bob Iger,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2013
-mquake-2013-h3,Bob Iger is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2013
-mquake-2013-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2013
-mquake-2014,What is the capital of the country that the founder of the company that produced Ford Probe calls home?,Ford Motor Company | Henry Ford | United States of America,"Washington, D.C.",4-hop,4,"Ford Motor Company → Henry Ford → United States of America → Washington, D.C."
-mquake-2014-h1,The company that produced Ford Probe is,N/A,Ford Motor Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2014
-mquake-2014-h2,Ford Motor Company was founded by,N/A,Henry Ford,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2014
-mquake-2014-h3,Henry Ford is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2014
-mquake-2014-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2014
-mquake-2015,"In which city, the capital of the country, is the founder of the company that produced Ford Laser a citizen?",Ford Motor Company | Henry Ford | United States of America,"Washington, D.C.",4-hop,4,"Ford Motor Company → Henry Ford → United States of America → Washington, D.C."
-mquake-2015-h1,The company that produced Ford Laser is,N/A,Ford Motor Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2015
-mquake-2015-h2,Ford Motor Company was founded by,N/A,Henry Ford,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2015
-mquake-2015-h3,Henry Ford is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2015
-mquake-2015-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2015
-mquake-2016,What is the official language of the country where the child of the founder of Clinton Foundation is a citizen?,Bill Clinton | Chelsea Clinton | United States of America,American English,4-hop,4,Bill Clinton → Chelsea Clinton → United States of America → American English
-mquake-2016-h1,Clinton Foundation was founded by,N/A,Bill Clinton,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2016
-mquake-2016-h2,Bill Clinton's child is,N/A,Chelsea Clinton,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2016
-mquake-2016-h3,Chelsea Clinton is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2016
-mquake-2016-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2016
-mquake-2017,"In which city is the capital located, of the country where the CEO of the developer of MobileMe is a citizen?",Apple Inc. | Tim Cook | United States of America,"Washington, D.C.",4-hop,4,"Apple Inc. → Tim Cook → United States of America → Washington, D.C."
-mquake-2017-h1,MobileMe was developed by,N/A,Apple Inc.,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2017
-mquake-2017-h2,The chief executive officer of Apple Inc. is,N/A,Tim Cook,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2017
-mquake-2017-h3,Tim Cook is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2017
-mquake-2017-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2017
-mquake-2018,What is the capital of the country whose citizen founded the sport associated with International Judo Federation?,judo | Jigoro Kano | Japan,Tokyo,4-hop,4,judo → Jigoro Kano → Japan → Tokyo
-mquake-2018-h1,International Judo Federation is associated with the sport of,N/A,judo,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2018
-mquake-2018-h2,judo was founded by,N/A,Jigoro Kano,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2018
-mquake-2018-h3,Jigoro Kano is a citizen of,N/A,Japan,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2018
-mquake-2018-h4,The capital of Japan is,N/A,Tokyo,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2018
-mquake-2019,What city serves as the capital of the country that is home to the CEO of the developer of Apple Music?,Apple Inc. | Tim Cook | United States of America,"Washington, D.C.",4-hop,4,"Apple Inc. → Tim Cook → United States of America → Washington, D.C."
-mquake-2019-h1,Apple Music was developed by,N/A,Apple Inc.,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2019
-mquake-2019-h2,The chief executive officer of Apple Inc. is,N/A,Tim Cook,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2019
-mquake-2019-h3,Tim Cook is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2019
-mquake-2019-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2019
-mquake-2020,"On which continent is the city located, which is the birthplace of the CEO of the company that produced Xbox?",Microsoft | Satya Nadella | Hyderabad,Asia,4-hop,4,Microsoft → Satya Nadella → Hyderabad → Asia
-mquake-2020-h1,The company that produced Xbox is,N/A,Microsoft,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2020
-mquake-2020-h2,The chief executive officer of Microsoft is,N/A,Satya Nadella,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2020
-mquake-2020-h3,Satya Nadella was born in the city of,N/A,Hyderabad,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2020
-mquake-2020-h4,Hyderabad is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2020
+mquake-1045,Who is the head of state in the country where the sport associated with Maccabi Tel Aviv F.C. originated?,association football | England,Elizabeth II,3-hop,3,association football -> England -> Elizabeth II
+mquake-1045-h1,Maccabi Tel Aviv F.C. is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1045
+mquake-1045-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1045
+mquake-1045-h3,The name of the current head of state in England is,N/A,Elizabeth II,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1045
+mquake-1047,What is the name of the person who founded the religion that the husband/wife of Elisabeth Farnese is associated with?,Philip V of Spain | Catholic Church,Jesus Christ,3-hop,3,Philip V of Spain -> Catholic Church -> Jesus Christ
+mquake-1047-h1,Elisabeth Farnese is married to,N/A,Philip V of Spain,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1047
+mquake-1047-h2,Philip V of Spain is affiliated with the religion of,N/A,Catholic Church,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1047
+mquake-1047-h3,Catholic Church was founded by,N/A,Jesus Christ,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1047
+mquake-1209,What is the name of the current head of state in the country that gave birth to the type of music played by Humphrey Lyttelton?,jazz | United States of America,Donald Trump,3-hop,3,jazz -> United States of America -> Donald Trump
+mquake-1209-h1,The type of music that Humphrey Lyttelton plays is,N/A,jazz,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1209
+mquake-1209-h2,jazz was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1209
+mquake-1209-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1209
+mquake-1244,What is the name of the current leader of the government in the city that is home to the original broadcaster of Your Hit Parade?,NBC | New York City,Bill de Blasio,3-hop,3,NBC -> New York City -> Bill de Blasio
+mquake-1244-h1,The origianl broadcaster of Your Hit Parade is,N/A,NBC,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1244
+mquake-1244-h2,NBC was founded in the city of,N/A,New York City,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1244
+mquake-1244-h3,The name of the current head of the New York City government is,N/A,Bill de Blasio,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1244
+mquake-1261,"In which city is the capital located, of the country whose citizen is the current head of the Solberg's Cabinet government?",Erna Solberg | Norway,Oslo,3-hop,3,Erna Solberg -> Norway -> Oslo
+mquake-1261-h1,The name of the current head of the Solberg's Cabinet government is,N/A,Erna Solberg,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1261
+mquake-1261-h2,Erna Solberg is a citizen of,N/A,Norway,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1261
+mquake-1261-h3,The capital of Norway is,N/A,Oslo,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1261
+mquake-1276,What is the linguistic creation of the person who created the official language of the city where the headquarters of Iltalehti is located?,Helsinki | Finnish,Mikael Agricola,3-hop,3,Helsinki -> Finnish -> Mikael Agricola
+mquake-1276-h1,The headquarters of Iltalehti is located in the city of,N/A,Helsinki,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1276
+mquake-1276-h2,The official language of Helsinki is,N/A,Finnish,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1276
+mquake-1276-h3,Finnish was created by,N/A,Mikael Agricola,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1276
+mquake-1289,What is the name of the current head of the government of the country where the sport associated with Tyler Clippard was created?,baseball | United States of America,Donald Trump,3-hop,3,baseball -> United States of America -> Donald Trump
+mquake-1289-h1,Tyler Clippard is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1289
+mquake-1289-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1289
+mquake-1289-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1289
+mquake-1312,What is the name of the current head of the government of the country where the sport associated with Eric Hosmer was created?,baseball | United States of America,Donald Trump,3-hop,3,baseball -> United States of America -> Donald Trump
+mquake-1312-h1,Eric Hosmer is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1312
+mquake-1312-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1312
+mquake-1312-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1312
+mquake-1365,Who is the creator of the language that is the official language of the city where the headquarters of Helsingin Sanomat is based?,Helsinki | Finnish,Mikael Agricola,3-hop,3,Helsinki -> Finnish -> Mikael Agricola
+mquake-1365-h1,The headquarters of Helsingin Sanomat is located in the city of,N/A,Helsinki,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1365
+mquake-1365-h2,The official language of Helsinki is,N/A,Finnish,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1365
+mquake-1365-h3,Finnish was created by,N/A,Mikael Agricola,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1365
+mquake-1519,What is the name of the head of the government in the country where the sport associated with Rich Aurilia originated?,baseball | United States of America,Donald Trump,3-hop,3,baseball -> United States of America -> Donald Trump
+mquake-1519-h1,Rich Aurilia is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1519
+mquake-1519-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1519
+mquake-1519-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1519
+mquake-1610,What is the linguistic creation of the person who created the official language of the city where the headquarters of Yle TV2 is located?,Helsinki | Finnish,Mikael Agricola,3-hop,3,Helsinki -> Finnish -> Mikael Agricola
+mquake-1610-h1,The headquarters of Yle TV2 is located in the city of,N/A,Helsinki,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1610
+mquake-1610-h2,The official language of Helsinki is,N/A,Finnish,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1610
+mquake-1610-h3,Finnish was created by,N/A,Mikael Agricola,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1610
+mquake-1641,Which language is the official tongue of the country where the sport associated with Brazilian football league system was born?,association football | England,English,3-hop,3,association football -> England -> English
+mquake-1641-h1,Brazilian football league system is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1641
+mquake-1641-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1641
+mquake-1641-h3,The official language of England is,N/A,English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1641
+mquake-1657,What is the name of the current head of state in the country that gave birth to the type of music played by The Wiggles?,children's music | United States of America,Donald Trump,3-hop,3,children's music -> United States of America -> Donald Trump
+mquake-1657-h1,The type of music that The Wiggles plays is,N/A,children's music,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1657
+mquake-1657-h2,children's music was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1657
+mquake-1657-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1657
+mquake-1688,What is the name of the current head of state in the country where the type of music played by Sonny Criss was created?,jazz | United States of America,Donald Trump,3-hop,3,jazz -> United States of America -> Donald Trump
+mquake-1688-h1,The type of music that Sonny Criss plays is,N/A,jazz,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1688
+mquake-1688-h2,jazz was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1688
+mquake-1688-h3,The name of the current head of state in United States of America is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1688
+mquake-1780,What is the name of the current leader of the government in the country where the sport associated with Gil McDougald was developed?,baseball | United States of America,Donald Trump,3-hop,3,baseball -> United States of America -> Donald Trump
+mquake-1780-h1,Gil McDougald is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1780
+mquake-1780-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1780
+mquake-1780-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1780
+mquake-1798,Which continent houses the country where the sport associated with FC Lokomotiv Gorna Oryahovitsa originated?,association football | England,Europe,3-hop,3,association football -> England -> Europe
+mquake-1798-h1,FC Lokomotiv Gorna Oryahovitsa is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1798
+mquake-1798-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1798
+mquake-1798-h3,England is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1798
+mquake-1831,What is the linguistic creation of the person who created the official language of the city where the headquarters of FC Jokerit is located?,Helsinki | Finnish,Mikael Agricola,3-hop,3,Helsinki -> Finnish -> Mikael Agricola
+mquake-1831-h1,The headquarters of FC Jokerit is located in the city of,N/A,Helsinki,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1831
+mquake-1831-h2,The official language of Helsinki is,N/A,Finnish,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1831
+mquake-1831-h3,Finnish was created by,N/A,Mikael Agricola,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1831
+mquake-1847,"What is the name of the current head of the government of the city where the headquarters of the university, where Miuccia Prada was educated, is located?",University of Milan | Milan,Giuseppe Sala,3-hop,3,University of Milan -> Milan -> Giuseppe Sala
+mquake-1847-h1,The univeristy where Miuccia Prada was educated is,N/A,University of Milan,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1847
+mquake-1847-h2,The headquarters of University of Milan is located in the city of,N/A,Milan,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1847
+mquake-1847-h3,The name of the current head of the Milan government is,N/A,Giuseppe Sala,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1847
+mquake-1886,What is the name of the current leader of the country that created the thing that Todd McFarlane is famous for?,Spawn | United States of America,Donald Trump,3-hop,3,Spawn -> United States of America -> Donald Trump
+mquake-1886-h1,Todd McFarlane is famous for,N/A,Spawn,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1886
+mquake-1886-h2,Spawn was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1886
+mquake-1886-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1886
+mquake-1921,What is the name of the current head of state in the country that gave birth to the type of music played by Mike D?,hip hop music | United States of America,Donald Trump,3-hop,3,hip hop music -> United States of America -> Donald Trump
+mquake-1921-h1,The type of music that Mike D plays is,N/A,hip hop music,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1921
+mquake-1921-h2,hip hop music was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1921
+mquake-1921-h3,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1921
+mquake-1949,What is the main language spoken in the country that developed the sport associated with Tiburones de La Guaira?,baseball | United States of America,American English,3-hop,3,baseball -> United States of America -> American English
+mquake-1949-h1,Tiburones de La Guaira is associated with the sport of,N/A,baseball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1949
+mquake-1949-h2,baseball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1949
+mquake-1949-h3,The official language of United States of America is,N/A,American English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1949
+mquake-1977,Which city is the capital of the country that created the sport associated with Pistoia Basket 2000?,basketball | United States of America,"Washington, D.C.",3-hop,3,"basketball -> United States of America -> Washington, D.C."
+mquake-1977-h1,Pistoia Basket 2000 is associated with the sport of,N/A,basketball,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1977
+mquake-1977-h2,basketball was created in the country of,N/A,United States of America,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1977
+mquake-1977-h3,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 3 of 3),1,sub-question 3/3 of case 1977
+mquake-1984,What is the name of the current head of state in the country where the sport associated with Selangor FA was created?,association football | England,Elizabeth II,3-hop,3,association football -> England -> Elizabeth II
+mquake-1984-h1,Selangor FA is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1984
+mquake-1984-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1984
+mquake-1984-h3,The name of the current head of state in England is,N/A,Elizabeth II,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1984
+mquake-2098,Which language is the official language of the country where the author of Coraline's husband/wife is a citizen?,Neil Gaiman | Amanda Palmer | United States of America,American English,4-hop,4,Neil Gaiman -> Amanda Palmer -> United States of America -> American English
+mquake-2098-h1,The author of Coraline is,N/A,Neil Gaiman,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2098
+mquake-2098-h2,Neil Gaiman is married to,N/A,Amanda Palmer,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2098
+mquake-2098-h3,Amanda Palmer is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2098
+mquake-2098-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2098
+mquake-2116,Which city is the capital of the country of citizenship of the director of the original broadcaster of Agents of S.H.I.E.L.D.?,American Broadcasting Company | Bob Iger | United States of America,"Washington, D.C.",4-hop,4,"American Broadcasting Company -> Bob Iger -> United States of America -> Washington, D.C."
+mquake-2116-h1,The origianl broadcaster of Agents of S.H.I.E.L.D. is,N/A,American Broadcasting Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2116
+mquake-2116-h2,The director of American Broadcasting Company is,N/A,Bob Iger,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2116
+mquake-2116-h3,Bob Iger is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2116
+mquake-2116-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2116
+mquake-2208,"Which continent is home to the city, where the headquarters of the employer of the founder of Visva-Bharati University is based?",Rabindranath Tagore | University of Calcutta | Kolkata,Asia,4-hop,4,Rabindranath Tagore -> University of Calcutta -> Kolkata -> Asia
+mquake-2208-h1,Visva-Bharati University was founded by,N/A,Rabindranath Tagore,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2208
+mquake-2208-h2,Rabindranath Tagore is employed by,N/A,University of Calcutta,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2208
+mquake-2208-h3,The headquarters of University of Calcutta is located in the city of,N/A,Kolkata,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2208
+mquake-2208-h4,Kolkata is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2208
+mquake-2237,"In which city, being the capital of a country, is the founder of the sport associated with Asian Judo Championships a citizen?",judo | Jigoro Kano | Japan,Tokyo,4-hop,4,judo -> Jigoro Kano -> Japan -> Tokyo
+mquake-2237-h1,Asian Judo Championships is associated with the sport of,N/A,judo,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2237
+mquake-2237-h2,judo was founded by,N/A,Jigoro Kano,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2237
+mquake-2237-h3,Jigoro Kano is a citizen of,N/A,Japan,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2237
+mquake-2237-h4,The capital of Japan is,N/A,Tokyo,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2237
+mquake-2371,"In what city is the capital located, of the country where the director of the performer of Anthology 3 is a citizen?",The Beatles | Brian Epstein | United Kingdom,London,4-hop,4,The Beatles -> Brian Epstein -> United Kingdom -> London
+mquake-2371-h1,Anthology 3 was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2371
+mquake-2371-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2371
+mquake-2371-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2371
+mquake-2371-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2371
+mquake-2375,Which city is the capital of the country of citizenship of the director of the original broadcaster of 666 Park Avenue?,American Broadcasting Company | Bob Iger | United States of America,"Washington, D.C.",4-hop,4,"American Broadcasting Company -> Bob Iger -> United States of America -> Washington, D.C."
+mquake-2375-h1,The origianl broadcaster of 666 Park Avenue is,N/A,American Broadcasting Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2375
+mquake-2375-h2,The director of American Broadcasting Company is,N/A,Bob Iger,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2375
+mquake-2375-h3,Bob Iger is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2375
+mquake-2375-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2375
+mquake-2391,Which language is the official language of the country where the author of Barnaby Rudge's husband/wife is a citizen?,Charles Dickens | Catherine Dickens | United Kingdom,English,4-hop,4,Charles Dickens -> Catherine Dickens -> United Kingdom -> English
+mquake-2391-h1,The author of Barnaby Rudge is,N/A,Charles Dickens,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2391
+mquake-2391-h2,Charles Dickens is married to,N/A,Catherine Dickens,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2391
+mquake-2391-h3,Catherine Dickens is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2391
+mquake-2391-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2391
+mquake-2446,"In what city, which is the capital of a country, is the director of the original broadcaster of What's Happening!! a citizen?",American Broadcasting Company | Bob Iger | United States of America,"Washington, D.C.",4-hop,4,"American Broadcasting Company -> Bob Iger -> United States of America -> Washington, D.C."
+mquake-2446-h1,The origianl broadcaster of What's Happening!! is,N/A,American Broadcasting Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2446
+mquake-2446-h2,The director of American Broadcasting Company is,N/A,Bob Iger,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2446
+mquake-2446-h3,Bob Iger is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2446
+mquake-2446-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2446
+mquake-2461,"In which city is the capital located, of the country where the CEO of the developer of Left 4 Dead 2 is a citizen?",Valve Corporation | Gabe Newell | United States of America,"Washington, D.C.",4-hop,4,"Valve Corporation -> Gabe Newell -> United States of America -> Washington, D.C."
+mquake-2461-h1,Left 4 Dead 2 was developed by,N/A,Valve Corporation,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2461
+mquake-2461-h2,The chief executive officer of Valve Corporation is,N/A,Gabe Newell,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2461
+mquake-2461-h3,Gabe Newell is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2461
+mquake-2461-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2461
+mquake-2472,"What is the capital of the country where the thing that {} is famous for originated, and {} was founded by Self-Realization Fellowship?",Paramahansa Yogananda | Autobiography of a Yogi | United States of America,"Washington, D.C.",4-hop,4,"Paramahansa Yogananda -> Autobiography of a Yogi -> United States of America -> Washington, D.C."
+mquake-2472-h1,Self-Realization Fellowship was founded by,N/A,Paramahansa Yogananda,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2472
+mquake-2472-h2,Paramahansa Yogananda is famous for,N/A,Autobiography of a Yogi,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2472
+mquake-2472-h3,Autobiography of a Yogi was created in the country of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2472
+mquake-2472-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2472
+mquake-2489,Which city is the capital of the country of citizenship of the director of the original broadcaster of Bewitched?,American Broadcasting Company | Bob Iger | United States of America,"Washington, D.C.",4-hop,4,"American Broadcasting Company -> Bob Iger -> United States of America -> Washington, D.C."
+mquake-2489-h1,The origianl broadcaster of Bewitched is,N/A,American Broadcasting Company,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2489
+mquake-2489-h2,The director of American Broadcasting Company is,N/A,Bob Iger,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2489
+mquake-2489-h3,Bob Iger is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2489
+mquake-2489-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2489
+mquake-2498,Which language is officially spoken in the country of citizenship of the person married to the author of Our Mutual Friend?,Charles Dickens | Catherine Dickens | United Kingdom,English,4-hop,4,Charles Dickens -> Catherine Dickens -> United Kingdom -> English
+mquake-2498-h1,The author of Our Mutual Friend is,N/A,Charles Dickens,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2498
+mquake-2498-h2,Charles Dickens is married to,N/A,Catherine Dickens,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2498
+mquake-2498-h3,Catherine Dickens is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2498
+mquake-2498-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2498
+mquake-2501,What is the official language of the country of which the author of The Sandman's partner is a citizen?,Neil Gaiman | Amanda Palmer | United States of America,American English,4-hop,4,Neil Gaiman -> Amanda Palmer -> United States of America -> American English
+mquake-2501-h1,The author of The Sandman is,N/A,Neil Gaiman,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2501
+mquake-2501-h2,Neil Gaiman is married to,N/A,Amanda Palmer,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2501
+mquake-2501-h3,Amanda Palmer is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2501
+mquake-2501-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2501
+mquake-2578,Which language is the official language of the country where the author of American Gods's husband/wife is a citizen?,Neil Gaiman | Amanda Palmer | United States of America,American English,4-hop,4,Neil Gaiman -> Amanda Palmer -> United States of America -> American English
+mquake-2578-h1,The author of American Gods is,N/A,Neil Gaiman,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2578
+mquake-2578-h2,Neil Gaiman is married to,N/A,Amanda Palmer,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2578
+mquake-2578-h3,Amanda Palmer is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2578
+mquake-2578-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2578
+mquake-2598,"In which city is the capital located, of the country where the CEO of the developer of Half-Life is a citizen?",Valve Corporation | Gabe Newell | United States of America,"Washington, D.C.",4-hop,4,"Valve Corporation -> Gabe Newell -> United States of America -> Washington, D.C."
+mquake-2598-h1,Half-Life was developed by,N/A,Valve Corporation,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2598
+mquake-2598-h2,The chief executive officer of Valve Corporation is,N/A,Gabe Newell,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2598
+mquake-2598-h3,Gabe Newell is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2598
+mquake-2598-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2598
+mquake-2603,Which language is the official language of the country of citizenship of the person married to the performer of FutureSex/LoveSounds?,Justin Timberlake | Jessica Biel | United States of America,American English,4-hop,4,Justin Timberlake -> Jessica Biel -> United States of America -> American English
+mquake-2603-h1,FutureSex/LoveSounds was performed by,N/A,Justin Timberlake,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2603
+mquake-2603-h2,Justin Timberlake is married to,N/A,Jessica Biel,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2603
+mquake-2603-h3,Jessica Biel is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2603
+mquake-2603-h4,The official language of United States of America is,N/A,American English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2603
+mquake-2694,"In which city is the capital located, of the country where the child of the creator of Eeyore is a citizen?",A. A. Milne | Christopher Robin Milne | United Kingdom,London,4-hop,4,A. A. Milne -> Christopher Robin Milne -> United Kingdom -> London
+mquake-2694-h1,Eeyore was created by,N/A,A. A. Milne,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2694
+mquake-2694-h2,A. A. Milne's child is,N/A,Christopher Robin Milne,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2694
+mquake-2694-h3,Christopher Robin Milne is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2694
+mquake-2694-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2694
+mquake-2760,"In which continent is the city situated, where the headquarters of the university that educated the child of Satyajit Ray is located?",Sandip Ray | University of Calcutta | Kolkata,Asia,4-hop,4,Sandip Ray -> University of Calcutta -> Kolkata -> Asia
+mquake-2760-h1,Satyajit Ray's child is,N/A,Sandip Ray,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2760
+mquake-2760-h2,The univeristy where Sandip Ray was educated is,N/A,University of Calcutta,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2760
+mquake-2760-h3,The headquarters of University of Calcutta is located in the city of,N/A,Kolkata,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2760
+mquake-2760-h4,Kolkata is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2760
+mquake-2774,"On which continent is the country located, whose citizen is the spouse of the person who founded Rashtriya Janata Dal?",Lalu Prasad Yadav | Rabri Devi | India,Asia,4-hop,4,Lalu Prasad Yadav -> Rabri Devi -> India -> Asia
+mquake-2774-h1,Rashtriya Janata Dal was founded by,N/A,Lalu Prasad Yadav,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2774
+mquake-2774-h2,Lalu Prasad Yadav is married to,N/A,Rabri Devi,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2774
+mquake-2774-h3,Rabri Devi is a citizen of,N/A,India,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2774
+mquake-2774-h4,India is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2774
+mquake-2810,What is the name of the current head of the government of the country where the child of the spouse of Kyle Reese is a citizen?,Sarah Connor | John Connor | United States of America,Donald Trump,4-hop,4,Sarah Connor -> John Connor -> United States of America -> Donald Trump
+mquake-2810-h1,Kyle Reese is married to,N/A,Sarah Connor,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2810
+mquake-2810-h2,Sarah Connor's child is,N/A,John Connor,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2810
+mquake-2810-h3,John Connor is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2810
+mquake-2810-h4,The name of the current head of the United States of America government is,N/A,Donald Trump,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2810
+mquake-2830,Which language is the official language of the country of citizenship of the person married to the performer of Blizzard of Ozz?,Ozzy Osbourne | Sharon Osbourne | United Kingdom,English,4-hop,4,Ozzy Osbourne -> Sharon Osbourne -> United Kingdom -> English
+mquake-2830-h1,Blizzard of Ozz was performed by,N/A,Ozzy Osbourne,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2830
+mquake-2830-h2,Ozzy Osbourne is married to,N/A,Sharon Osbourne,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2830
+mquake-2830-h3,Sharon Osbourne is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2830
+mquake-2830-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2830
+mquake-2841,What city serves as the capital of the country where the spouse of the performer of Can't Stop the Feeling! holds citizenship?,Justin Timberlake | Jessica Biel | United States of America,"Washington, D.C.",4-hop,4,"Justin Timberlake -> Jessica Biel -> United States of America -> Washington, D.C."
+mquake-2841-h1,Can't Stop the Feeling! was performed by,N/A,Justin Timberlake,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2841
+mquake-2841-h2,Justin Timberlake is married to,N/A,Jessica Biel,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2841
+mquake-2841-h3,Jessica Biel is a citizen of,N/A,United States of America,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2841
+mquake-2841-h4,The capital of United States of America is,N/A,"Washington, D.C.",1-hop (hop 4 of 4),1,sub-question 4/4 of case 2841
+mquake-2865,"In which continent is the city located, where the headquarters of the university that educated the person married to Nicolae Ceaușescu is based?",Elena Ceaușescu | University of Bucharest | Bucharest,Europe,4-hop,4,Elena Ceaușescu -> University of Bucharest -> Bucharest -> Europe
+mquake-2865-h1,Nicolae Ceaușescu is married to,N/A,Elena Ceaușescu,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2865
+mquake-2865-h2,The univeristy where Elena Ceaușescu was educated is,N/A,University of Bucharest,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2865
+mquake-2865-h3,The headquarters of University of Bucharest is located in the city of,N/A,Bucharest,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2865
+mquake-2865-h4,Bucharest is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2865
+mquake-2895,"In what city is the capital located, of the country that created the sport associated with the field of work of Jorge Sampaoli?",association football manager | association football | England,London,4-hop,4,association football manager -> association football -> England -> London
+mquake-2895-h1,Jorge Sampaoli works in the field of,N/A,association football manager,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2895
+mquake-2895-h2,association football manager is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2895
+mquake-2895-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2895
+mquake-2895-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2895
+mquake-2980,"In what city is the capital located, of the country that created the sport associated with the founder of Mediaset S.p.A.?",Silvio Berlusconi | association football | England,London,4-hop,4,Silvio Berlusconi -> association football -> England -> London
+mquake-2980-h1,Mediaset S.p.A. was founded by,N/A,Silvio Berlusconi,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2980
+mquake-2980-h2,Silvio Berlusconi is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2980
+mquake-2980-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2980
+mquake-2980-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2980

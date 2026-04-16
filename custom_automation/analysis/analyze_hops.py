@@ -161,15 +161,155 @@ def concept_in_text(concept: str, text: str) -> bool:
     return bool(pattern.search(text.lower()))
 
 
+# ---------------------------------------------------------------------------
+# Concept alias expansion (for MQuAKE multi-word entities)
+# ---------------------------------------------------------------------------
+
+# Common aliases for entities that appear in MQuAKE.
+# Keys are lowercased; values are additional search terms.
+_ALIASES: dict[str, list[str]] = {
+    # Countries / regions
+    "united states of america": ["united states", "america", "usa", "us", "american"],
+    "united kingdom": ["uk", "britain", "british", "england", "english", "great britain"],
+    "south korea": ["korea", "korean"],
+    "north korea": ["korea", "korean"],
+    "new zealand": ["zealand", "kiwi"],
+    "czech republic": ["czech", "czechia"],
+    "soviet union": ["ussr", "soviet"],
+    "people's republic of china": ["china", "chinese", "prc"],
+    "republic of china": ["china", "chinese", "taiwan", "taiwanese"],
+    "india": ["indian", "hindi"],
+    "japan": ["japanese"],
+    "brazil": ["brazilian", "brasil"],
+    "norway": ["norwegian"],
+    "romania": ["romanian"],
+    "finland": ["finnish"],
+    "australia": ["australian"],
+    "venezuela": ["venezuelan"],
+    "bulgaria": ["bulgarian"],
+    # Cities
+    "new york city": ["new york", "nyc", "manhattan"],
+    "washington, d.c.": ["washington dc", "washington", "capitol"],
+    "helsinki": ["finnish"],
+    "milan": ["milano"],
+    "kolkata": ["calcutta"],
+    "bucharest": ["bucuresti"],
+    "tokyo": ["japanese capital"],
+    # Sports
+    "association football": ["football", "soccer", "footballer"],
+    "association football manager": ["football manager", "soccer manager", "football coach"],
+    "ice hockey": ["hockey"],
+    "table tennis": ["ping pong"],
+    "baseball": ["mlb", "pitcher", "batter"],
+    "basketball": ["nba", "hoops"],
+    # Music genres
+    "hip hop music": ["hip hop", "hip-hop", "rap", "rapper"],
+    "children's music": ["children", "kids music"],
+    "jazz": ["jazz musician", "jazzy"],
+    # Religion
+    "catholic church": ["catholic", "catholicism", "roman catholic"],
+    "orthodox church": ["orthodox"],
+    # Organisations / broadcasters
+    "american broadcasting company": ["abc", "abc network"],
+    "nbc": ["national broadcasting", "nbc network"],
+    "valve corporation": ["valve", "steam"],
+    # People (common MQuAKE intermediate entities)
+    "neil gaiman": ["gaiman"],
+    "amanda palmer": ["palmer"],
+    "charles dickens": ["dickens"],
+    "catherine dickens": ["dickens wife", "catherine"],
+    "bob iger": ["iger", "disney ceo"],
+    "justin timberlake": ["timberlake"],
+    "jessica biel": ["biel"],
+    "ozzy osbourne": ["osbourne", "ozzy"],
+    "sharon osbourne": ["sharon"],
+    "silvio berlusconi": ["berlusconi"],
+    "a. a. milne": ["milne", "aa milne"],
+    "christopher robin milne": ["christopher robin"],
+    "jigoro kano": ["kano"],
+    "rabindranath tagore": ["tagore"],
+    "satyajit ray": ["ray"],
+    "sandip ray": ["sandip"],
+    "elena ceaușescu": ["elena ceausescu", "elena"],
+    "nicolae ceaușescu": ["ceausescu", "ceaușescu"],
+    "paramahansa yogananda": ["yogananda"],
+    "lalu prasad yadav": ["lalu prasad", "lalu"],
+    "rabri devi": ["rabri"],
+    "philip v of spain": ["philip v", "philip", "spanish king"],
+    "erna solberg": ["solberg"],
+    "gabe newell": ["newell", "gaben"],
+    "miuccia prada": ["prada"],
+    # Works / concepts
+    "autobiography of a yogi": ["autobiography yogi", "yogananda book"],
+    "spawn": ["spawn comic", "mcfarlane"],
+    "university of calcutta": ["calcutta university"],
+    "university of milan": ["milan university", "università di milano"],
+    "university of bucharest": ["bucharest university"],
+}
+
+
+def expand_concept(concept: str) -> list[str]:
+    """Return a list of search terms for a concept: the original + aliases + sub-phrases."""
+    terms = [concept]
+    low = concept.lower()
+
+    # Add known aliases
+    if low in _ALIASES:
+        terms.extend(_ALIASES[low])
+
+    # For multi-word concepts, also try each significant word (>5 chars)
+    # e.g. "association football" → also try "football"
+    # Threshold of 5+ chars avoids false positives from generic words like
+    # "city", "music", "church", "sport", "state", "king"
+    _STOP_WORDS = {
+        "with", "from", "that", "this", "have", "been", "were", "they",
+        "their", "which", "where", "when", "what", "about", "being",
+        "other", "there", "after", "before", "first", "under", "could",
+        "would", "should", "these", "those", "through", "between",
+        "current", "original", "country", "capital",
+    }
+    words = concept.split()
+    if len(words) >= 2:
+        for w in words:
+            if len(w) > 5 and w.lower() not in _STOP_WORDS:
+                terms.append(w)
+
+    # Deduplicate while preserving order
+    seen: set[str] = set()
+    unique: list[str] = []
+    for t in terms:
+        tl = t.lower().strip()
+        if tl and tl not in seen:
+            seen.add(tl)
+            unique.append(tl)
+    return unique
+
+
+def concept_matches_text(concept: str, text: str) -> bool:
+    """Check if a single concept (with alias expansion) matches text."""
+    for term in expand_concept(concept):
+        if concept_in_text(term, text):
+            return True
+    return False
+
+
+def any_concept_matches(concepts: list[str], text: str) -> bool:
+    """Check if any concept (with alias expansion) matches text."""
+    for concept in concepts:
+        if concept_matches_text(concept, text):
+            return True
+    return False
+
+
 def detect_intermediate_hop(
     graph: dict,
     intermediate_concept: str,
 ) -> dict:
     """
     Scan all transcoder feature nodes for mentions of the intermediate concept.
-    Also check supernode group names.
+    Also check supernode group names (excluding Emb: and Output: nodes).
 
-    Returns a dict with detection metrics.
+    Returns a dict with detection metrics, including per-concept breakdown.
     """
     nodes = graph.get("nodes", [])
     transcoder_nodes = [
@@ -177,10 +317,28 @@ def detect_intermediate_hop(
         if n.get("feature_type") == "cross layer transcoder"
     ]
 
+    # Split pipe-separated concepts (MQuAKE uses "concept1 | concept2 | ...")
+    concepts = [c.strip() for c in intermediate_concept.split("|") if c.strip()]
+
+    # --- Per-concept tracking ---
+    per_concept: dict[str, dict] = {}
+    for concept in concepts:
+        per_concept[concept] = {"found_in_clerp": False, "found_in_group": False,
+                                "feature_count": 0, "matched_terms": set()}
+
     matching_nodes = []
     for n in transcoder_nodes:
         clerp = n.get("clerp", "")
-        if concept_in_text(intermediate_concept, clerp):
+        node_matched = False
+        for concept in concepts:
+            for term in expand_concept(concept):
+                if concept_in_text(term, clerp):
+                    per_concept[concept]["found_in_clerp"] = True
+                    per_concept[concept]["feature_count"] += 1
+                    per_concept[concept]["matched_terms"].add(term)
+                    node_matched = True
+                    break  # one match per concept per node is enough
+        if node_matched:
             matching_nodes.append(n)
 
     matching_influences = [
@@ -189,11 +347,18 @@ def detect_intermediate_hop(
         if n.get("influence") is not None
     ]
 
+    # Only match real supernodes (exclude Emb: and Output: which are just
+    # input/output tokens, not intermediate representations)
     supernodes = parse_supernodes(graph)
-    matching_groups = [
-        name for name, _ in supernodes
-        if concept_in_text(intermediate_concept, name)
-    ]
+    matching_groups = []
+    for name, _ in supernodes:
+        if name.startswith("Emb:") or name.startswith("Output:"):
+            continue
+        for concept in concepts:
+            if concept_matches_text(concept, name):
+                matching_groups.append(name)
+                per_concept[concept]["found_in_group"] = True
+                break
 
     # Fraction of transcoder nodes that mention the intermediate concept
     total_transcoder = len(transcoder_nodes)
@@ -205,6 +370,16 @@ def detect_intermediate_hop(
     )
     max_influence = max(matching_influences) if matching_influences else 0.0
 
+    # Build per-concept summary: which concepts found, which missed
+    concepts_found = [c for c in concepts if per_concept[c]["found_in_clerp"] or per_concept[c]["found_in_group"]]
+    concepts_missed = [c for c in concepts if c not in concepts_found]
+
+    # Serializable per-concept detail (convert sets to lists)
+    per_concept_detail = {
+        c: {**d, "matched_terms": sorted(d["matched_terms"])}
+        for c, d in per_concept.items()
+    }
+
     return {
         "total_transcoder_nodes": total_transcoder,
         "hop_feature_count": len(matching_nodes),
@@ -215,13 +390,32 @@ def detect_intermediate_hop(
         "hop_groups": matching_groups,
         "hop_found_in_groups": len(matching_groups) > 0,
         "hop_found": len(matching_nodes) > 0 or len(matching_groups) > 0,
+        "concepts_found": concepts_found,
+        "concepts_missed": concepts_missed,
+        "per_concept": per_concept_detail,
     }
 
 
+def _safe_predicted(token: str) -> str:
+    """Make a predicted token safe for markdown display (handle newlines, empty)."""
+    t = token.strip()
+    if not t:
+        return "(empty)"
+    return t.replace("\n", "\\n").replace("\r", "\\r")
+
+
 def answer_matches(predicted: str, correct: str) -> bool:
-    """Loose match: correct_answer is a substring of predicted or vice versa."""
+    """Match: predicted is a meaningful substring of correct or vice versa.
+
+    Requires predicted to be at least 3 chars to avoid single-token false
+    positives (e.g. 'The' matching 'The United States').
+    """
     p = predicted.lower().strip()
     c = correct.lower().strip()
+    if not p or not c:
+        return False
+    if len(p) < 3:
+        return p == c
     return c in p or p in c
 
 
@@ -528,14 +722,22 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 rank_str = str(r["top_k_rank"]) if r["top_k_rank"] is not None else "—"
                 hop_tick = "✓" if r["hop_found"] else "✗"
                 groups_str = ", ".join(r["hop_groups"]) if r["hop_groups"] else "—"
+                pred_display = _safe_predicted(r['predicted'])
+                found_concepts = r.get("concepts_found", [])
+                missed_concepts = r.get("concepts_missed", [])
+                concept_str = ""
+                if found_concepts:
+                    concept_str = " ✓" + ",".join(found_concepts)
+                if missed_concepts:
+                    concept_str += " ✗" + ",".join(missed_concepts)
                 f.write(
                     f"| {r['slug']} "
                     f"| {r['hop_type']} "
                     f"| {r['intermediate_concept']} "
-                    f"| {r['predicted']} ({r['predicted_prob']:.1%}) "
+                    f"| `{pred_display}` ({r['predicted_prob']:.1%}) "
                     f"| {rank_str} "
                     f"| {r['rank_score']:.1f} "
-                    f"| {hop_tick} ({r['hop_feature_count']} feat, groups: {groups_str}) "
+                    f"| {hop_tick} ({r['hop_feature_count']} feat, groups: {groups_str}){concept_str} "
                     f"| {r['hop_feature_count']} ({r['hop_feature_fraction']:.1%}) "
                     f"| {r['hop_mean_influence']:.4f} |\n"
                 )
@@ -548,14 +750,27 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             f.write("These are the most interpretability-interesting cases — the model encoded "
                     "the intermediate concept but still predicted incorrectly.\n\n")
             for r in wrong_hop_cases:
+                pred_display = _safe_predicted(r['predicted'])
                 f.write(f"### {r['slug']} ({r['variant']})\n")
                 f.write(f"- Prompt type: {r['hop_type']}\n")
                 f.write(f"- Intermediate concept: **{r['intermediate_concept']}**\n")
                 f.write(f"- Correct answer: {r['correct_answer']}\n")
-                f.write(f"- Model predicted: **{r['predicted']}** ({r['predicted_prob']:.1%})\n")
+                f.write(f"- Model predicted: `{pred_display}` ({r['predicted_prob']:.1%})\n")
                 f.write(f"- Hop features: {r['hop_feature_count']} ({r['hop_feature_fraction']:.1%} of transcoder nodes)\n")
                 f.write(f"- Hop in supernode groups: {r['hop_groups']}\n")
-                f.write(f"- Mean influence of hop features: {r['hop_mean_influence']:.4f}\n\n")
+                f.write(f"- Mean influence of hop features: {r['hop_mean_influence']:.4f}\n")
+                # Per-concept breakdown
+                concepts_found = r.get("concepts_found", [])
+                concepts_missed = r.get("concepts_missed", [])
+                if concepts_found or concepts_missed:
+                    f.write(f"- **Concepts found:** {', '.join(concepts_found) if concepts_found else 'none'}\n")
+                    f.write(f"- **Concepts missed:** {', '.join(concepts_missed) if concepts_missed else 'none'}\n")
+                    per_concept = r.get("per_concept", {})
+                    for c, detail in per_concept.items():
+                        if detail.get("found_in_clerp") or detail.get("found_in_group"):
+                            terms = detail.get("matched_terms", [])
+                            f.write(f"  - `{c}`: matched via terms: {terms} ({detail['feature_count']} features)\n")
+                f.write("\n")
 
         # ---- MQuAKE multi-hop validation ----
         if mquake_cases:
@@ -608,8 +823,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         f.write(f"Cases: {len(correct_no_hop)}\n\n")
         for r in correct_no_hop:
             f.write("---\n")
-            f.write(f"## {r['prompt_text']} — {r['slug']}\n\n")
-            f.write(f"**Predicted:** {r['predicted']} ({r['predicted_prob']:.1%})  \n")
+            f.write(f"## {r['slug']}\n\n")
+            f.write(f"**Predicted:** `{_safe_predicted(r['predicted'])}` ({r['predicted_prob']:.1%})  \n")
             f.write(f"**Correct answer:** {r['correct_answer']}  \n")
             f.write(f"**Missing hop:** {r['intermediate_concept']}\n\n")
             f.write("### Supernodes\n")

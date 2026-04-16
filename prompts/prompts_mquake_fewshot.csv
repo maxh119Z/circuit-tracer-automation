@@ -1,0 +1,851 @@
+slug,prompt,transcoder_set
+mquake-1001,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the official language of the country where the sport associated with Saipa F.C. was created?
+A:",gemma
+mquake-1008,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which country was the sport developed, that is associated with the position played by Juninho Pernambucano?
+A:",gemma
+mquake-1045,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Who is the head of state in the country where the sport associated with Maccabi Tel Aviv F.C. originated?
+A:",gemma
+mquake-1047,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the person who founded the religion that the husband/wife of Elisabeth Farnese is associated with?
+A:",gemma
+mquake-1209,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of state in the country that gave birth to the type of music played by Humphrey Lyttelton?
+A:",gemma
+mquake-1244,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current leader of the government in the city that is home to the original broadcaster of Your Hit Parade?
+A:",gemma
+mquake-1261,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which city is the capital located, of the country whose citizen is the current head of the Solberg's Cabinet government?
+A:",gemma
+mquake-1276,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the linguistic creation of the person who created the official language of the city where the headquarters of Iltalehti is located?
+A:",gemma
+mquake-1289,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of the government of the country where the sport associated with Tyler Clippard was created?
+A:",gemma
+mquake-1312,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of the government of the country where the sport associated with Eric Hosmer was created?
+A:",gemma
+mquake-1365,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Who is the creator of the language that is the official language of the city where the headquarters of Helsingin Sanomat is based?
+A:",gemma
+mquake-1519,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the head of the government in the country where the sport associated with Rich Aurilia originated?
+A:",gemma
+mquake-1610,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the linguistic creation of the person who created the official language of the city where the headquarters of Yle TV2 is located?
+A:",gemma
+mquake-1641,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official tongue of the country where the sport associated with Brazilian football league system was born?
+A:",gemma
+mquake-1657,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of state in the country that gave birth to the type of music played by The Wiggles?
+A:",gemma
+mquake-1688,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of state in the country where the type of music played by Sonny Criss was created?
+A:",gemma
+mquake-1780,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current leader of the government in the country where the sport associated with Gil McDougald was developed?
+A:",gemma
+mquake-1798,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which continent houses the country where the sport associated with FC Lokomotiv Gorna Oryahovitsa originated?
+A:",gemma
+mquake-1831,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the linguistic creation of the person who created the official language of the city where the headquarters of FC Jokerit is located?
+A:",gemma
+mquake-1847,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of the government of the city where the headquarters of the university, where Miuccia Prada was educated, is located?
+A:",gemma
+mquake-1886,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current leader of the country that created the thing that Todd McFarlane is famous for?
+A:",gemma
+mquake-1921,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of state in the country that gave birth to the type of music played by Mike D?
+A:",gemma
+mquake-1949,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the main language spoken in the country that developed the sport associated with Tiburones de La Guaira?
+A:",gemma
+mquake-1977,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which city is the capital of the country that created the sport associated with Pistoia Basket 2000?
+A:",gemma
+mquake-1984,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of state in the country where the sport associated with Selangor FA was created?
+A:",gemma
+mquake-2098,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official language of the country where the author of Coraline's husband/wife is a citizen?
+A:",gemma
+mquake-2116,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which city is the capital of the country of citizenship of the director of the original broadcaster of Agents of S.H.I.E.L.D.?
+A:",gemma
+mquake-2208,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which continent is home to the city, where the headquarters of the employer of the founder of Visva-Bharati University is based?
+A:",gemma
+mquake-2237,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which city, being the capital of a country, is the founder of the sport associated with Asian Judo Championships a citizen?
+A:",gemma
+mquake-2371,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In what city is the capital located, of the country where the director of the performer of Anthology 3 is a citizen?
+A:",gemma
+mquake-2375,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which city is the capital of the country of citizenship of the director of the original broadcaster of 666 Park Avenue?
+A:",gemma
+mquake-2391,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official language of the country where the author of Barnaby Rudge's husband/wife is a citizen?
+A:",gemma
+mquake-2446,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In what city, which is the capital of a country, is the director of the original broadcaster of What's Happening!! a citizen?
+A:",gemma
+mquake-2461,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which city is the capital located, of the country where the CEO of the developer of Left 4 Dead 2 is a citizen?
+A:",gemma
+mquake-2472,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the capital of the country where the thing that {} is famous for originated, and {} was founded by Self-Realization Fellowship?
+A:",gemma
+mquake-2489,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which city is the capital of the country of citizenship of the director of the original broadcaster of Bewitched?
+A:",gemma
+mquake-2498,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is officially spoken in the country of citizenship of the person married to the author of Our Mutual Friend?
+A:",gemma
+mquake-2501,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the official language of the country of which the author of The Sandman's partner is a citizen?
+A:",gemma
+mquake-2578,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official language of the country where the author of American Gods's husband/wife is a citizen?
+A:",gemma
+mquake-2598,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which city is the capital located, of the country where the CEO of the developer of Half-Life is a citizen?
+A:",gemma
+mquake-2603,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official language of the country of citizenship of the person married to the performer of FutureSex/LoveSounds?
+A:",gemma
+mquake-2694,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which city is the capital located, of the country where the child of the creator of Eeyore is a citizen?
+A:",gemma
+mquake-2760,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which continent is the city situated, where the headquarters of the university that educated the child of Satyajit Ray is located?
+A:",gemma
+mquake-2774,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: On which continent is the country located, whose citizen is the spouse of the person who founded Rashtriya Janata Dal?
+A:",gemma
+mquake-2810,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What is the name of the current head of the government of the country where the child of the spouse of Kyle Reese is a citizen?
+A:",gemma
+mquake-2830,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: Which language is the official language of the country of citizenship of the person married to the performer of Blizzard of Ozz?
+A:",gemma
+mquake-2841,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: What city serves as the capital of the country where the spouse of the performer of Can't Stop the Feeling! holds citizenship?
+A:",gemma
+mquake-2865,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In which continent is the city located, where the headquarters of the university that educated the person married to Nicolae Ceaușescu is based?
+A:",gemma
+mquake-2895,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In what city is the capital located, of the country that created the sport associated with the field of work of Jorge Sampaoli?
+A:",gemma
+mquake-2980,"Q: What is the capital of France?
+A: Paris
+
+Q: The currency of Japan is
+A: the yen
+
+Q: Who wrote Romeo and Juliet?
+A: William Shakespeare
+
+Q: The largest planet in the solar system is
+A: Jupiter
+
+Q: What is the official language of the country where the Eiffel Tower is located?
+A: French
+
+Q: In what city is the capital located, of the country that created the sport associated with the founder of Mediaset S.p.A.?
+A:",gemma
