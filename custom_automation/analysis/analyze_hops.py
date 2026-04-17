@@ -22,7 +22,7 @@ Outputs:
 Usage:
     python analyze_hops.py
     python analyze_hops.py --variants a0,a3
-    python analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a0
+    python analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
 """
 
 from __future__ import annotations
@@ -41,10 +41,10 @@ from pathlib import Path
 PACKAGE_DIR = Path(__file__).resolve().parent.parent
 REPO_ROOT = PACKAGE_DIR.parent
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
-ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
+ARTIFACTS_DIR = PACKAGE_DIR / "analysis" / "results"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts/ground_truth_capital.csv"
+DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts/ground_truth_mquake.csv"
 DESCRIPTION_VARIANT = "v2"
 
 
@@ -142,10 +142,13 @@ def rank_to_score(rank: int | None, k: int = 5) -> float:
 def parse_supernodes(graph: dict) -> list[tuple[str, list[str]]]:
     """Parse qParams.supernodes → list of (group_name, [node_ids])."""
     raw = graph.get("qParams", {}).get("supernodes", "[]")
-    try:
-        items = json.loads(raw)
-    except json.JSONDecodeError:
-        return []
+    if isinstance(raw, list):
+        items = raw
+    else:
+        try:
+            items = json.loads(raw)
+        except (json.JSONDecodeError, TypeError):
+            return []
     result = []
     for item in items:
         if isinstance(item, list) and len(item) >= 1:
@@ -603,6 +606,10 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             else:
                 mh = {"num_intermediate_hops": 0, "predicted_max_hop": None, "hops_found_in_graph": ""}
 
+            # How many intermediate concepts found vs total
+            n_concepts = len([c.strip() for c in intermediate_concept.split("|") if c.strip() and c.strip().upper() != "N/A"])
+            n_found = len(hop_metrics.get("concepts_found", []))
+
             results.append({
                 "slug": slug,
                 "variant": variant,
@@ -617,6 +624,8 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                 "rank_score": round(score, 2),
                 "notes": notes,
                 "all_supernodes": all_supernodes,
+                "n_intermediate_concepts": n_concepts,
+                "n_hops_found": n_found,
                 **hop_metrics,
                 **mh,
             })
@@ -671,34 +680,73 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         f.write(f"Prompts analysed: {len(rows)}  \n")
         f.write(f"Total graph runs: {len(results)}\n\n")
 
-        # ---- aggregate stats ----
+        # ---- group by hop count for unified table ----
+        from collections import defaultdict
         n = len(results)
-        n_correct = sum(1 for r in results if r["model_correct"])
-        n_top5    = sum(1 for r in results if r["top_k_rank"] is not None)
-        mean_score = sum(r["rank_score"] for r in results) / n if n else 0.0
-        n_hop_found = sum(1 for r in results if r["hop_found"])
-        n_hop_clerp = sum(1 for r in results if r["hop_found_in_clerp"])
-        n_hop_group = sum(1 for r in results if r["hop_found_in_groups"])
+        by_num_hops: dict[str, list[dict]] = defaultdict(list)
+        for r in results:
+            key = str(r.get("num_hops", "?"))
+            by_num_hops[key].append(r)
 
-        # Correct + hop found vs wrong + hop found (binary top-1)
+        has_intermediate = any(r.get("n_intermediate_concepts", 0) > 0 for r in results)
+
+        def _row_stats(group: list[dict]) -> dict:
+            n_g = len(group)
+            n_correct_g = sum(1 for r in group if r["model_correct"])
+            n_top5_g    = sum(1 for r in group if r["top_k_rank"] is not None)
+            n_hop_g     = sum(1 for r in group if r["hop_found"])
+            n_all       = sum(1 for r in group if r["n_hops_found"] > 0 and r["n_hops_found"] == r["n_intermediate_concepts"])
+            n_partial   = sum(1 for r in group if 0 < r["n_hops_found"] < r["n_intermediate_concepts"])
+            n_none      = sum(1 for r in group if r["n_hops_found"] == 0 and r["n_intermediate_concepts"] > 0)
+            mean_score_g = sum(r["rank_score"] for r in group) / n_g if n_g else 0.0
+            return dict(n=n_g, n_correct=n_correct_g, n_top5=n_top5_g, n_hop=n_hop_g,
+                        n_all=n_all, n_partial=n_partial, n_none=n_none, mean_score=mean_score_g)
+
+        def _fmt_pct(count: int, total: int) -> str:
+            return f"{count} ({count/total:.0%})" if total else "—"
+
+        f.write("## Results by Hop Count\n\n")
+        if has_intermediate:
+            f.write("| Hop type | Cases | Correct | In top-5 | Mean score | Hop found | All int. hops found | Partial | None found |\n")
+            f.write("|----------|------:|-------:|--------:|----------:|----------:|--------------------:|--------:|-----------:|\n")
+        else:
+            f.write("| Hop type | Cases | Correct | In top-5 | Mean score | Hop found |\n")
+            f.write("|----------|------:|-------:|--------:|----------:|----------:|\n")
+
+        def _write_row(label: str, group: list[dict]) -> None:
+            s = _row_stats(group)
+            n_g = s["n"]
+            line = (
+                f"| {label} | {n_g} | {_fmt_pct(s['n_correct'], n_g)} "
+                f"| {_fmt_pct(s['n_top5'], n_g)} | {s['mean_score']:.2f} "
+                f"| {_fmt_pct(s['n_hop'], n_g)}"
+            )
+            if has_intermediate:
+                line += (
+                    f" | {_fmt_pct(s['n_all'], n_g)}"
+                    f" | {_fmt_pct(s['n_partial'], n_g)}"
+                    f" | {_fmt_pct(s['n_none'], n_g)}"
+                )
+            line += " |\n"
+            f.write(line)
+
+        # Overall row
+        _write_row("**Overall**", results)
+        # Per-hop rows
+        for key in sorted(by_num_hops, key=lambda k: (k == "?", k)):
+            label = f"{key}-hop" if key != "?" else "unknown"
+            _write_row(label, by_num_hops[key])
+        f.write("\n")
+
+        # Correctness × Hop presence contingency
         correct_with_hop    = sum(1 for r in results if r["model_correct"] and r["hop_found"])
         correct_without_hop = sum(1 for r in results if r["model_correct"] and not r["hop_found"])
         wrong_with_hop      = sum(1 for r in results if not r["model_correct"] and r["hop_found"])
         wrong_without_hop   = sum(1 for r in results if not r["model_correct"] and not r["hop_found"])
 
-        f.write("## Aggregate Stats\n\n")
-        f.write(f"| Metric | Count | Fraction |\n")
-        f.write(f"|--------|-------|----------|\n")
-        f.write(f"| Model correct (top-1) | {n_correct} | {n_correct/n:.1%} |\n")
-        f.write(f"| Correct answer in top-5 | {n_top5} | {n_top5/n:.1%} |\n")
-        f.write(f"| Mean rank score (0–1) | — | {mean_score:.2f} |\n")
-        f.write(f"| Intermediate hop found (any) | {n_hop_found} | {n_hop_found/n:.1%} |\n")
-        f.write(f"| Hop found in feature clerps | {n_hop_clerp} | {n_hop_clerp/n:.1%} |\n")
-        f.write(f"| Hop found in supernode groups | {n_hop_group} | {n_hop_group/n:.1%} |\n")
-        f.write(f"\n")
-        f.write(f"## Correctness × Hop Presence\n\n")
-        f.write(f"| | Hop found | No hop found |\n")
-        f.write(f"|---|---|---|\n")
+        f.write("## Correctness × Hop Presence\n\n")
+        f.write("| | Hop found | No hop found |\n")
+        f.write("|---|---|---|\n")
         f.write(f"| **Model correct** | {correct_with_hop} | {correct_without_hop} |\n")
         f.write(f"| **Model wrong** | {wrong_with_hop} | {wrong_without_hop} |\n\n")
 
@@ -708,6 +756,20 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
         if correct_with_hop + correct_without_hop > 0:
             correct_hop_rate = correct_with_hop / (correct_with_hop + correct_without_hop)
             f.write(f"> When model is **correct**: hop found in {correct_hop_rate:.1%} of cases\n\n")
+
+        # Per-case detail for multi-hop (3+ hop cases have 2+ intermediate concepts)
+        multi = [r for r in results if r.get("n_intermediate_concepts", 0) > 1]
+        if multi:
+            f.write("## Multi-Hop Case Detail\n\n")
+            f.write("| Slug | Hops | Correct | Hops found | Concepts found | Concepts missed |\n")
+            f.write("|------|------|---------|------------|----------------|------------------|\n")
+            for r in multi:
+                tick = "✓" if r["model_correct"] else "✗"
+                found_str = f"{r['n_hops_found']}/{r['n_intermediate_concepts']}"
+                concepts_found = ", ".join(r.get("concepts_found", [])) or "—"
+                concepts_missed = ", ".join(r.get("concepts_missed", [])) or "—"
+                f.write(f"| {r['slug']} | {r['num_hops']} | {tick} | {found_str} | {concepts_found} | {concepts_missed} |\n")
+            f.write("\n")
 
         # ---- per-variant breakdown ----
         for variant in variants:
@@ -836,6 +898,13 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     # ------------------------------------------------------------------
     # Terminal summary
     # ------------------------------------------------------------------
+    n = len(results)
+    n_correct   = sum(1 for r in results if r["model_correct"])
+    n_top5      = sum(1 for r in results if r["top_k_rank"] is not None)
+    mean_score  = sum(r["rank_score"] for r in results) / n if n else 0.0
+    n_hop_found = sum(1 for r in results if r["hop_found"])
+    correct_with_hop = sum(1 for r in results if r["model_correct"] and r["hop_found"])
+    wrong_with_hop   = sum(1 for r in results if not r["model_correct"] and r["hop_found"])
     print()
     print("=" * 55)
     print(f"  Graphs analysed:       {n}")

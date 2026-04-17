@@ -121,7 +121,7 @@ elapsed() { local end; end=$(date +%s); echo "  Completed in $(( end - $1 ))s"; 
 # ---------------------------------------------------------------------------
 # Summary
 # ---------------------------------------------------------------------------
-TOTAL=$(tail -n +2 "$CSV_FILE" | grep -c '[^[:space:]]' || true)
+TOTAL=$(python -c "import csv,sys; r=list(csv.reader(open(sys.argv[1]))); print(len(r)-1)" "$CSV_FILE")
 N_VARIANTS="${#VARIANT_LIST[@]}"
 echo ""
 echo "Batch pipeline"
@@ -146,8 +146,7 @@ python pipeline/apply_frontend_patch.py
 # Main loop
 # ---------------------------------------------------------------------------
 ROW_NUM=0
-while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
-    [[ "$slug" == "slug" ]] && continue
+while IFS=$'\t' read -r slug prompt || [[ -n "$slug" ]]; do
     [[ -z "${slug// }" ]] && continue
 
     ROW_NUM=$(( ROW_NUM + 1 ))
@@ -252,7 +251,12 @@ while IFS=',' read -r slug prompt _rest || [[ -n "$slug" ]]; do
     echo ""
     echo "  [$ROW_NUM/$TOTAL] $slug complete."
 
-done < "$CSV_FILE"
+done < <(python -c "
+import csv, sys
+for row in csv.reader(open(sys.argv[1])):
+    if row[0] == 'slug': continue
+    print(row[0] + '\t' + row[1])
+" "$CSV_FILE")
 
 # ---------------------------------------------------------------------------
 # Aggregate validation

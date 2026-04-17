@@ -278,7 +278,7 @@ async def process_feature(
     async with sem:
         for attempt in range(1, max_retries + 1):
             log.info(
-                "[%d/%d] Requesting GPT-5.4-mini for %s (attempt %d/%d)...",
+                "[%d/%d] Requesting GPT-5-mini for %s (attempt %d/%d)...",
                 idx, total, fid, attempt, max_retries
             )
             try:
