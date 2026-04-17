@@ -1,51 +1,87 @@
 slug,prompt,transcoder_set
-mquake-1001,What is the official language of the country where the sport associated with Saipa F.C. was created?,gemma
-mquake-1008,"In which country was the sport developed, that is associated with the position played by Juninho Pernambucano?",gemma
-mquake-1045,Who is the head of state in the country where the sport associated with Maccabi Tel Aviv F.C. originated?,gemma
-mquake-1047,What is the name of the person who founded the religion that the husband/wife of Elisabeth Farnese is associated with?,gemma
-mquake-1209,What is the name of the current head of state in the country that gave birth to the type of music played by Humphrey Lyttelton?,gemma
-mquake-1244,What is the name of the current leader of the government in the city that is home to the original broadcaster of Your Hit Parade?,gemma
-mquake-1261,"In which city is the capital located, of the country whose citizen is the current head of the Solberg's Cabinet government?",gemma
-mquake-1276,What is the linguistic creation of the person who created the official language of the city where the headquarters of Iltalehti is located?,gemma
-mquake-1289,What is the name of the current head of the government of the country where the sport associated with Tyler Clippard was created?,gemma
-mquake-1312,What is the name of the current head of the government of the country where the sport associated with Eric Hosmer was created?,gemma
-mquake-1365,Who is the creator of the language that is the official language of the city where the headquarters of Helsingin Sanomat is based?,gemma
-mquake-1519,What is the name of the head of the government in the country where the sport associated with Rich Aurilia originated?,gemma
-mquake-1610,What is the linguistic creation of the person who created the official language of the city where the headquarters of Yle TV2 is located?,gemma
-mquake-1641,Which language is the official tongue of the country where the sport associated with Brazilian football league system was born?,gemma
-mquake-1657,What is the name of the current head of state in the country that gave birth to the type of music played by The Wiggles?,gemma
-mquake-1688,What is the name of the current head of state in the country where the type of music played by Sonny Criss was created?,gemma
-mquake-1780,What is the name of the current leader of the government in the country where the sport associated with Gil McDougald was developed?,gemma
-mquake-1798,Which continent houses the country where the sport associated with FC Lokomotiv Gorna Oryahovitsa originated?,gemma
-mquake-1831,What is the linguistic creation of the person who created the official language of the city where the headquarters of FC Jokerit is located?,gemma
-mquake-1847,"What is the name of the current head of the government of the city where the headquarters of the university, where Miuccia Prada was educated, is located?",gemma
-mquake-1886,What is the name of the current leader of the country that created the thing that Todd McFarlane is famous for?,gemma
-mquake-1921,What is the name of the current head of state in the country that gave birth to the type of music played by Mike D?,gemma
-mquake-1949,What is the main language spoken in the country that developed the sport associated with Tiburones de La Guaira?,gemma
-mquake-1977,Which city is the capital of the country that created the sport associated with Pistoia Basket 2000?,gemma
-mquake-1984,What is the name of the current head of state in the country where the sport associated with Selangor FA was created?,gemma
-mquake-2098,Which language is the official language of the country where the author of Coraline's husband/wife is a citizen?,gemma
-mquake-2116,Which city is the capital of the country of citizenship of the director of the original broadcaster of Agents of S.H.I.E.L.D.?,gemma
-mquake-2208,"Which continent is home to the city, where the headquarters of the employer of the founder of Visva-Bharati University is based?",gemma
-mquake-2237,"In which city, being the capital of a country, is the founder of the sport associated with Asian Judo Championships a citizen?",gemma
-mquake-2371,"In what city is the capital located, of the country where the director of the performer of Anthology 3 is a citizen?",gemma
-mquake-2375,Which city is the capital of the country of citizenship of the director of the original broadcaster of 666 Park Avenue?,gemma
-mquake-2391,Which language is the official language of the country where the author of Barnaby Rudge's husband/wife is a citizen?,gemma
-mquake-2446,"In what city, which is the capital of a country, is the director of the original broadcaster of What's Happening!! a citizen?",gemma
-mquake-2461,"In which city is the capital located, of the country where the CEO of the developer of Left 4 Dead 2 is a citizen?",gemma
-mquake-2472,"What is the capital of the country where the thing that {} is famous for originated, and {} was founded by Self-Realization Fellowship?",gemma
-mquake-2489,Which city is the capital of the country of citizenship of the director of the original broadcaster of Bewitched?,gemma
-mquake-2498,Which language is officially spoken in the country of citizenship of the person married to the author of Our Mutual Friend?,gemma
-mquake-2501,What is the official language of the country of which the author of The Sandman's partner is a citizen?,gemma
-mquake-2578,Which language is the official language of the country where the author of American Gods's husband/wife is a citizen?,gemma
-mquake-2598,"In which city is the capital located, of the country where the CEO of the developer of Half-Life is a citizen?",gemma
-mquake-2603,Which language is the official language of the country of citizenship of the person married to the performer of FutureSex/LoveSounds?,gemma
-mquake-2694,"In which city is the capital located, of the country where the child of the creator of Eeyore is a citizen?",gemma
-mquake-2760,"In which continent is the city situated, where the headquarters of the university that educated the child of Satyajit Ray is located?",gemma
-mquake-2774,"On which continent is the country located, whose citizen is the spouse of the person who founded Rashtriya Janata Dal?",gemma
-mquake-2810,What is the name of the current head of the government of the country where the child of the spouse of Kyle Reese is a citizen?,gemma
-mquake-2830,Which language is the official language of the country of citizenship of the person married to the performer of Blizzard of Ozz?,gemma
-mquake-2841,What city serves as the capital of the country where the spouse of the performer of Can't Stop the Feeling! holds citizenship?,gemma
-mquake-2865,"In which continent is the city located, where the headquarters of the university that educated the person married to Nicolae Ceaușescu is based?",gemma
-mquake-2895,"In what city is the capital located, of the country that created the sport associated with the field of work of Jorge Sampaoli?",gemma
-mquake-2980,"In what city is the capital located, of the country that created the sport associated with the founder of Mediaset S.p.A.?",gemma
+mquake-5,"Human: On which continent is the country located, whose citizen is Emma Bunton? Answer in one word.
+Assistant:",gemma
+mquake-6,"Human: In what city did the creator of Tetris originate from? Answer in one word.
+Assistant:",gemma
+mquake-12,"Human: Which language is used in the country that produced Screen International? Answer in one word.
+Assistant:",gemma
+mquake-19,"Human: What is the capital of the nation that Damiano Cunego is a citizen of? Answer in one word.
+Assistant:",gemma
+mquake-25,"Human: What is the official language of the country of citizenship of Roberto Merhi? Answer in one word.
+Assistant:",gemma
+mquake-36,"Human: What language does the spouse of Robert Venturi speak? Answer in one word.
+Assistant:",gemma
+mquake-50,"Human: What city houses the headquarters of the company that employs Leonte Răutu? Answer in one word.
+Assistant:",gemma
+mquake-52,"Human: What language does the creator of Miss Piggy speak? Answer in one word.
+Assistant:",gemma
+mquake-56,"Human: Which language is used by the creator of Miss Moneypenny? Answer in one word.
+Assistant:",gemma
+mquake-63,"Human: Who founded the religion that Iqbal Theba is affiliated with? Answer in one word.
+Assistant:",gemma
+mquake-64,"Human: Where is the birthplace of the chairperson of Serbian Progressive Party? Answer in one word.
+Assistant:",gemma
+mquake-68,"Human: What language is used by the person who performed Happy? Answer in one word.
+Assistant:",gemma
+mquake-73,"Human: What continent is the country located in, where Uma Bharti is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-74,"Human: What is the official language spoken in the country of W. G. Sebald's citizenship? Answer in one word.
+Assistant:",gemma
+mquake-77,"Human: What is the official language spoken in the country of Thierry Mugler's citizenship? Answer in one word.
+Assistant:",gemma
+mquake-82,"Human: Which continent houses the country where SS501 originated? Answer in one word.
+Assistant:",gemma
+mquake-85,"Human: In which city is the capital of the country located that Henri Lefebvre is a citizen of? Answer in one word.
+Assistant:",gemma
+mquake-99,"Human: What city is home to the headquarters of the university where Arthur Schnitzler was educated? Answer in one word.
+Assistant:",gemma
+mquake-106,"Human: Which continent houses the country of citizenship of Pascal Lissouba? Answer in one word.
+Assistant:",gemma
+mquake-120,"Human: Which language is the native tongue of the person who is married to Yves Montand? Answer in one word.
+Assistant:",gemma
+mquake-121,"Human: What continent is the country located in where Higurashi When They Cry was created? Answer in one word.
+Assistant:",gemma
+mquake-125,"Human: What is the capital of the nation that Gustav Vigeland is a citizen of? Answer in one word.
+Assistant:",gemma
+mquake-130,"Human: What is the sport that involves the position played by Ian Kennedy? Answer in one word.
+Assistant:",gemma
+mquake-134,"Human: What is the capital of the nation that Tomasz Gollob is a citizen of? Answer in one word.
+Assistant:",gemma
+mquake-137,"Human: Which language does the author of The Selfish Gene speak? Answer in one word.
+Assistant:",gemma
+mquake-138,"Human: What continent is the country located in, where Hitomi is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-140,"Human: What is the name of the person who founded the religion associated with Abdul Rahim Khan-I-Khana? Answer in one word.
+Assistant:",gemma
+mquake-147,"Human: What is the native language of the author of Frost/Nixon? Answer in one word.
+Assistant:",gemma
+mquake-1036,"Human: Where is the headquarters of the university that educated the creator of Jim Hawkins located? Answer in one word.
+Assistant:",gemma
+mquake-1050,"Human: What city houses the headquarters of the university that educated the chairperson of Scottish National Party? Answer in one word.
+Assistant:",gemma
+mquake-1052,"Human: What faith is linked to the child of the individual who established Sasanian Empire? Answer in one word.
+Assistant:",gemma
+mquake-1108,"Human: What city is home to the headquarters of the university where the entity known as President of Albania was educated? Answer in one word.
+Assistant:",gemma
+mquake-2012,"Human: Which continent is the country in, where the director of the performer of Back in the U.S.S.R. is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-2028,"Human: What continent is the country located in, where the creator of the founder of Death Eater is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-2031,"Human: Which language is officially spoken in the country where the director of the performer of Ticket to Ride is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-2043,"Human: What language is spoken in the country of citizenship of the director of the performer of Help!? Answer in one word.
+Assistant:",gemma
+mquake-2056,"Human: What continent is the country located in, where the director of the performer of Nowhere Man is a citizen? Answer in one word.
+Assistant:",gemma
+mquake-2058,"Human: What continent contains the city where the chief executive officer of the developer of Windows NT 4.0 was born? Answer in one word.
+Assistant:",gemma
+mquake-2059,"Human: What continent contains the country of citizenship of the founder of the developer of Ju 88? Answer in one word.
+Assistant:",gemma
+mquake-2066,"Human: What continent contains the country that created the sport associated with the position played by Yossi Benayoun? Answer in one word.
+Assistant:",gemma
+mquake-2074,"Human: Which continent is home to the city where the person who founded the developer of Tu-95 passed away? Answer in one word.
+Assistant:",gemma
+mquake-2089,"Human: What city is the capital of the country of citizenship of the director of the performer of Nowhere Man? Answer in one word.
+Assistant:",gemma
+mquake-2121,"Human: What continent contains the country of citizenship of the director of the entity that performed Helter Skelter? Answer in one word.
+Assistant:",gemma
