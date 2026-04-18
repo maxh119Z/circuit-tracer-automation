@@ -48,7 +48,7 @@ MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
 
 # Multiply baseline activation by this factor. 5x is a strong but not extreme boost.
-AMPLIFY_FACTOR = 2.0
+AMPLIFY_FACTOR = 5.0
 
 
 # ---------------------------------------------------------------------------

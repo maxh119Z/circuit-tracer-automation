@@ -1,156 +1,196 @@
 slug,prompt,intermediate_concept,correct_answer,hop_type,num_hops,notes
-mquake-5,"On which continent is the country located, whose citizen is Emma Bunton?",United Kingdom,Europe,2-hop,2,United Kingdom → Europe
-mquake-5-h1,Emma Bunton is a citizen of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 5
-mquake-5-h2,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 5
-mquake-6,In what city did the creator of Tetris originate from?,Alexey Pajitnov,Moscow,2-hop,2,Alexey Pajitnov → Moscow
-mquake-6-h1,Tetris was created by,N/A,Alexey Pajitnov,1-hop (hop 1 of 2),1,sub-question 1/2 of case 6
-mquake-6-h2,Alexey Pajitnov was born in the city of,N/A,Moscow,1-hop (hop 2 of 2),1,sub-question 2/2 of case 6
-mquake-12,Which language is used in the country that produced Screen International?,United Kingdom,English,2-hop,2,United Kingdom → English
-mquake-12-h1,Screen International was created in the country of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 12
-mquake-12-h2,The official language of United Kingdom is,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 12
-mquake-19,What is the capital of the nation that Damiano Cunego is a citizen of?,Italy,Rome,2-hop,2,Italy → Rome
-mquake-19-h1,Damiano Cunego is a citizen of,N/A,Italy,1-hop (hop 1 of 2),1,sub-question 1/2 of case 19
-mquake-19-h2,The capital of Italy is,N/A,Rome,1-hop (hop 2 of 2),1,sub-question 2/2 of case 19
-mquake-25,What is the official language of the country of citizenship of Roberto Merhi?,Spain,Spanish,2-hop,2,Spain → Spanish
-mquake-25-h1,Roberto Merhi is a citizen of,N/A,Spain,1-hop (hop 1 of 2),1,sub-question 1/2 of case 25
-mquake-25-h2,The official language of Spain is,N/A,Spanish,1-hop (hop 2 of 2),1,sub-question 2/2 of case 25
-mquake-36,What language does the spouse of Robert Venturi speak?,Denise Scott Brown,English,2-hop,2,Denise Scott Brown → English
-mquake-36-h1,Robert Venturi is married to,N/A,Denise Scott Brown,1-hop (hop 1 of 2),1,sub-question 1/2 of case 36
-mquake-36-h2,Denise Scott Brown speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 36
-mquake-50,What city houses the headquarters of the company that employs Leonte Răutu?,University of Bucharest,Bucharest,2-hop,2,University of Bucharest → Bucharest
-mquake-50-h1,Leonte Răutu is employed by,N/A,University of Bucharest,1-hop (hop 1 of 2),1,sub-question 1/2 of case 50
-mquake-50-h2,The headquarters of University of Bucharest is located in the city of,N/A,Bucharest,1-hop (hop 2 of 2),1,sub-question 2/2 of case 50
-mquake-52,What language does the creator of Miss Piggy speak?,Jim Henson,English,2-hop,2,Jim Henson → English
-mquake-52-h1,Miss Piggy was created by,N/A,Jim Henson,1-hop (hop 1 of 2),1,sub-question 1/2 of case 52
-mquake-52-h2,Jim Henson speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 52
-mquake-56,Which language is used by the creator of Miss Moneypenny?,Ian Fleming,English,2-hop,2,Ian Fleming → English
-mquake-56-h1,Miss Moneypenny was created by,N/A,Ian Fleming,1-hop (hop 1 of 2),1,sub-question 1/2 of case 56
-mquake-56-h2,Ian Fleming speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 56
+mquake-878,What city houses the headquarters of the company that employs Lucrețiu Pătrășcanu?,University of Bucharest,Bucharest,2-hop,2,University of Bucharest → Bucharest
+mquake-878-h1,Lucrețiu Pătrășcanu is employed by,N/A,University of Bucharest,1-hop (hop 1 of 2),1,sub-question 1/2 of case 878
+mquake-878-h2,The headquarters of University of Bucharest is located in the city of,N/A,Bucharest,1-hop (hop 2 of 2),1,sub-question 2/2 of case 878
+mquake-211,What language is spoken by the creator of Flash Gordon?,Alex Raymond,English,2-hop,2,Alex Raymond → English
+mquake-211-h1,Flash Gordon was created by,N/A,Alex Raymond,1-hop (hop 1 of 2),1,sub-question 1/2 of case 211
+mquake-211-h2,Alex Raymond speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 211
+mquake-948,Which language is used by the creator of Our Gang?,Hal Roach,English,2-hop,2,Hal Roach → English
+mquake-948-h1,Our Gang was created by,N/A,Hal Roach,1-hop (hop 1 of 2),1,sub-question 1/2 of case 948
+mquake-948-h2,Hal Roach speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 948
 mquake-63,Who founded the religion that Iqbal Theba is affiliated with?,Islam,Muhammad,2-hop,2,Islam → Muhammad
 mquake-63-h1,Iqbal Theba is affiliated with the religion of,N/A,Islam,1-hop (hop 1 of 2),1,sub-question 1/2 of case 63
 mquake-63-h2,Islam was founded by,N/A,Muhammad,1-hop (hop 2 of 2),1,sub-question 2/2 of case 63
-mquake-64,Where is the birthplace of the chairperson of Serbian Progressive Party?,Aleksandar Vučić,Belgrade,2-hop,2,Aleksandar Vučić → Belgrade
-mquake-64-h1,The chairperson of Serbian Progressive Party is,N/A,Aleksandar Vučić,1-hop (hop 1 of 2),1,sub-question 1/2 of case 64
-mquake-64-h2,Aleksandar Vučić was born in the city of,N/A,Belgrade,1-hop (hop 2 of 2),1,sub-question 2/2 of case 64
-mquake-68,What language is used by the person who performed Happy?,Pharrell Williams,English,2-hop,2,Pharrell Williams → English
-mquake-68-h1,Happy was performed by,N/A,Pharrell Williams,1-hop (hop 1 of 2),1,sub-question 1/2 of case 68
-mquake-68-h2,Pharrell Williams speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 68
-mquake-73,"What continent is the country located in, where Uma Bharti is a citizen?",India,Asia,2-hop,2,India → Asia
-mquake-73-h1,Uma Bharti is a citizen of,N/A,India,1-hop (hop 1 of 2),1,sub-question 1/2 of case 73
-mquake-73-h2,India is located in the continent of,N/A,Asia,1-hop (hop 2 of 2),1,sub-question 2/2 of case 73
-mquake-74,What is the official language spoken in the country of W. G. Sebald's citizenship?,Germany,German,2-hop,2,Germany → German
-mquake-74-h1,W. G. Sebald is a citizen of,N/A,Germany,1-hop (hop 1 of 2),1,sub-question 1/2 of case 74
-mquake-74-h2,The official language of Germany is,N/A,German,1-hop (hop 2 of 2),1,sub-question 2/2 of case 74
+mquake-855,In which city is the capital of the country located that Brian May is a citizen of?,United Kingdom,London,2-hop,2,United Kingdom → London
+mquake-855-h1,Brian May is a citizen of,N/A,United Kingdom,1-hop (hop 1 of 2),1,sub-question 1/2 of case 855
+mquake-855-h2,The capital of United Kingdom is,N/A,London,1-hop (hop 2 of 2),1,sub-question 2/2 of case 855
+mquake-322,Where did the author of De architectura originate from in terms of city?,Vitruvius,Rome,2-hop,2,Vitruvius → Rome
+mquake-322-h1,The author of De architectura is,N/A,Vitruvius,1-hop (hop 1 of 2),1,sub-question 1/2 of case 322
+mquake-322-h2,Vitruvius was born in the city of,N/A,Rome,1-hop (hop 2 of 2),1,sub-question 2/2 of case 322
+mquake-979,What is the official language of the country of citizenship of Michael von Faulhaber?,Germany,German,2-hop,2,Germany → German
+mquake-979-h1,Michael von Faulhaber is a citizen of,N/A,Germany,1-hop (hop 1 of 2),1,sub-question 1/2 of case 979
+mquake-979-h2,The official language of Germany is,N/A,German,1-hop (hop 2 of 2),1,sub-question 2/2 of case 979
+mquake-542,What city is the capital of the country that Augustinas Voldemaras is a citizen of?,Lithuania,Vilnius,2-hop,2,Lithuania → Vilnius
+mquake-542-h1,Augustinas Voldemaras is a citizen of,N/A,Lithuania,1-hop (hop 1 of 2),1,sub-question 1/2 of case 542
+mquake-542-h2,The capital of Lithuania is,N/A,Vilnius,1-hop (hop 2 of 2),1,sub-question 2/2 of case 542
+mquake-902,Which language is the mother tongue of the performer of Jean-Luc Picard?,Patrick Stewart,English,2-hop,2,Patrick Stewart → English
+mquake-902-h1,Jean-Luc Picard was performed by,N/A,Patrick Stewart,1-hop (hop 1 of 2),1,sub-question 1/2 of case 902
+mquake-902-h2,Patrick Stewart speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 902
 mquake-77,What is the official language spoken in the country of Thierry Mugler's citizenship?,France,French,2-hop,2,France → French
 mquake-77-h1,Thierry Mugler is a citizen of,N/A,France,1-hop (hop 1 of 2),1,sub-question 1/2 of case 77
 mquake-77-h2,The official language of France is,N/A,French,1-hop (hop 2 of 2),1,sub-question 2/2 of case 77
-mquake-82,Which continent houses the country where SS501 originated?,South Korea,Asia,2-hop,2,South Korea → Asia
-mquake-82-h1,SS501 was created in the country of,N/A,South Korea,1-hop (hop 1 of 2),1,sub-question 1/2 of case 82
-mquake-82-h2,South Korea is located in the continent of,N/A,Asia,1-hop (hop 2 of 2),1,sub-question 2/2 of case 82
-mquake-85,In which city is the capital of the country located that Henri Lefebvre is a citizen of?,France,Paris,2-hop,2,France → Paris
-mquake-85-h1,Henri Lefebvre is a citizen of,N/A,France,1-hop (hop 1 of 2),1,sub-question 1/2 of case 85
-mquake-85-h2,The capital of France is,N/A,Paris,1-hop (hop 2 of 2),1,sub-question 2/2 of case 85
-mquake-99,What city is home to the headquarters of the university where Arthur Schnitzler was educated?,University of Vienna,Vienna,2-hop,2,University of Vienna → Vienna
-mquake-99-h1,The univeristy where Arthur Schnitzler was educated is,N/A,University of Vienna,1-hop (hop 1 of 2),1,sub-question 1/2 of case 99
-mquake-99-h2,The headquarters of University of Vienna is located in the city of,N/A,Vienna,1-hop (hop 2 of 2),1,sub-question 2/2 of case 99
-mquake-106,Which continent houses the country of citizenship of Pascal Lissouba?,Republic of the Congo,Africa,2-hop,2,Republic of the Congo → Africa
-mquake-106-h1,Pascal Lissouba is a citizen of,N/A,Republic of the Congo,1-hop (hop 1 of 2),1,sub-question 1/2 of case 106
-mquake-106-h2,Republic of the Congo is located in the continent of,N/A,Africa,1-hop (hop 2 of 2),1,sub-question 2/2 of case 106
-mquake-120,Which language is the native tongue of the person who is married to Yves Montand?,Simone Signoret,French,2-hop,2,Simone Signoret → French
-mquake-120-h1,Yves Montand is married to,N/A,Simone Signoret,1-hop (hop 1 of 2),1,sub-question 1/2 of case 120
-mquake-120-h2,Simone Signoret speaks the language of,N/A,French,1-hop (hop 2 of 2),1,sub-question 2/2 of case 120
-mquake-121,What continent is the country located in where Higurashi When They Cry was created?,Japan,Asia,2-hop,2,Japan → Asia
-mquake-121-h1,Higurashi When They Cry was created in the country of,N/A,Japan,1-hop (hop 1 of 2),1,sub-question 1/2 of case 121
-mquake-121-h2,Japan is located in the continent of,N/A,Asia,1-hop (hop 2 of 2),1,sub-question 2/2 of case 121
-mquake-125,What is the capital of the nation that Gustav Vigeland is a citizen of?,Norway,Oslo,2-hop,2,Norway → Oslo
-mquake-125-h1,Gustav Vigeland is a citizen of,N/A,Norway,1-hop (hop 1 of 2),1,sub-question 1/2 of case 125
-mquake-125-h2,The capital of Norway is,N/A,Oslo,1-hop (hop 2 of 2),1,sub-question 2/2 of case 125
-mquake-130,What is the sport that involves the position played by Ian Kennedy?,starting pitcher,baseball,2-hop,2,starting pitcher → baseball
-mquake-130-h1,Ian Kennedy plays the position of,N/A,starting pitcher,1-hop (hop 1 of 2),1,sub-question 1/2 of case 130
-mquake-130-h2,starting pitcher is associated with the sport of,N/A,baseball,1-hop (hop 2 of 2),1,sub-question 2/2 of case 130
-mquake-134,What is the capital of the nation that Tomasz Gollob is a citizen of?,Poland,Warsaw,2-hop,2,Poland → Warsaw
-mquake-134-h1,Tomasz Gollob is a citizen of,N/A,Poland,1-hop (hop 1 of 2),1,sub-question 1/2 of case 134
-mquake-134-h2,The capital of Poland is,N/A,Warsaw,1-hop (hop 2 of 2),1,sub-question 2/2 of case 134
-mquake-137,Which language does the author of The Selfish Gene speak?,Richard Dawkins,English,2-hop,2,Richard Dawkins → English
-mquake-137-h1,The author of The Selfish Gene is,N/A,Richard Dawkins,1-hop (hop 1 of 2),1,sub-question 1/2 of case 137
-mquake-137-h2,Richard Dawkins speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 137
-mquake-138,"What continent is the country located in, where Hitomi is a citizen?",Japan,Asia,2-hop,2,Japan → Asia
-mquake-138-h1,Hitomi is a citizen of,N/A,Japan,1-hop (hop 1 of 2),1,sub-question 1/2 of case 138
-mquake-138-h2,Japan is located in the continent of,N/A,Asia,1-hop (hop 2 of 2),1,sub-question 2/2 of case 138
-mquake-140,What is the name of the person who founded the religion associated with Abdul Rahim Khan-I-Khana?,Islam,Muhammad,2-hop,2,Islam → Muhammad
-mquake-140-h1,Abdul Rahim Khan-I-Khana is affiliated with the religion of,N/A,Islam,1-hop (hop 1 of 2),1,sub-question 1/2 of case 140
-mquake-140-h2,Islam was founded by,N/A,Muhammad,1-hop (hop 2 of 2),1,sub-question 2/2 of case 140
-mquake-147,What is the native language of the author of Frost/Nixon?,Peter Morgan,English,2-hop,2,Peter Morgan → English
-mquake-147-h1,The author of Frost/Nixon is,N/A,Peter Morgan,1-hop (hop 1 of 2),1,sub-question 1/2 of case 147
-mquake-147-h2,Peter Morgan speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 147
+mquake-151,Which language is spoken by the individual who is President of Syria?,Bashar al-Assad,Arabic,2-hop,2,Bashar al-Assad → Arabic
+mquake-151-h1,The President of Syria is,N/A,Bashar al-Assad,1-hop (hop 1 of 2),1,sub-question 1/2 of case 151
+mquake-151-h2,Bashar al-Assad speaks the language of,N/A,Arabic,1-hop (hop 2 of 2),1,sub-question 2/2 of case 151
+mquake-789,Which continent houses the country of citizenship of Kostas Papanikolaou?,Greece,Europe,2-hop,2,Greece → Europe
+mquake-789-h1,Kostas Papanikolaou is a citizen of,N/A,Greece,1-hop (hop 1 of 2),1,sub-question 1/2 of case 789
+mquake-789-h2,Greece is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 789
+mquake-372,What language is spoken by the author of Matilda?,Roald Dahl,English,2-hop,2,Roald Dahl → English
+mquake-372-h1,The author of Matilda is,N/A,Roald Dahl,1-hop (hop 1 of 2),1,sub-question 1/2 of case 372
+mquake-372-h2,Roald Dahl speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 372
+mquake-678,What is the native language of the person who is Shadow Home Secretary?,Diane Abbott,English,2-hop,2,Diane Abbott → English
+mquake-678-h1,The Shadow Home Secretary is,N/A,Diane Abbott,1-hop (hop 1 of 2),1,sub-question 1/2 of case 678
+mquake-678-h2,Diane Abbott speaks the language of,N/A,English,1-hop (hop 2 of 2),1,sub-question 2/2 of case 678
+mquake-352,Who founded the religion that Nur Misuari is affiliated with?,Islam,Muhammad,2-hop,2,Islam → Muhammad
+mquake-352-h1,Nur Misuari is affiliated with the religion of,N/A,Islam,1-hop (hop 1 of 2),1,sub-question 1/2 of case 352
+mquake-352-h2,Islam was founded by,N/A,Muhammad,1-hop (hop 2 of 2),1,sub-question 2/2 of case 352
+mquake-74,What is the official language spoken in the country of W. G. Sebald's citizenship?,Germany,German,2-hop,2,Germany → German
+mquake-74-h1,W. G. Sebald is a citizen of,N/A,Germany,1-hop (hop 1 of 2),1,sub-question 1/2 of case 74
+mquake-74-h2,The official language of Germany is,N/A,German,1-hop (hop 2 of 2),1,sub-question 2/2 of case 74
+mquake-556,What country is the origin of the music type played by Balamuralikrishna?,Carnatic music,India,2-hop,2,Carnatic music → India
+mquake-556-h1,The type of music that Balamuralikrishna plays is,N/A,Carnatic music,1-hop (hop 1 of 2),1,sub-question 1/2 of case 556
+mquake-556-h2,Carnatic music was created in the country of,N/A,India,1-hop (hop 2 of 2),1,sub-question 2/2 of case 556
+mquake-249,In what city did the current head of the Chile government originate from?,Sebastian Piñera,Santiago,2-hop,2,Sebastian Piñera → Santiago
+mquake-249-h1,The name of the current head of the Chile government is,N/A,Sebastian Piñera,1-hop (hop 1 of 2),1,sub-question 1/2 of case 249
+mquake-249-h2,Sebastian Piñera was born in the city of,N/A,Santiago,1-hop (hop 2 of 2),1,sub-question 2/2 of case 249
+mquake-600,What continent contains the country where Johann Jakob Froberger is a citizen?,Germany,Europe,2-hop,2,Germany → Europe
+mquake-600-h1,Johann Jakob Froberger is a citizen of,N/A,Germany,1-hop (hop 1 of 2),1,sub-question 1/2 of case 600
+mquake-600-h2,Germany is located in the continent of,N/A,Europe,1-hop (hop 2 of 2),1,sub-question 2/2 of case 600
+mquake-581,Who founded the religion that Husayn ibn Ali is affiliated with?,Islam,Muhammad,2-hop,2,Islam → Muhammad
+mquake-581-h1,Husayn ibn Ali is affiliated with the religion of,N/A,Islam,1-hop (hop 1 of 2),1,sub-question 1/2 of case 581
+mquake-581-h2,Islam was founded by,N/A,Muhammad,1-hop (hop 2 of 2),1,sub-question 2/2 of case 581
+mquake-1190,Which religion does the spouse of the current head of state in Azerbaijan belong to?,Ilham Aliyev | Mehriban Aliyeva,Islam,3-hop,3,Ilham Aliyev → Mehriban Aliyeva → Islam
+mquake-1190-h1,The name of the current head of state in Azerbaijan is,N/A,Ilham Aliyev,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1190
+mquake-1190-h2,Ilham Aliyev is married to,N/A,Mehriban Aliyeva,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1190
+mquake-1190-h3,Mehriban Aliyeva is affiliated with the religion of,N/A,Islam,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1190
+mquake-1261,"In which city is the capital located, of the country whose citizen is the current head of the Solberg's Cabinet government?",Erna Solberg | Norway,Oslo,3-hop,3,Erna Solberg → Norway → Oslo
+mquake-1261-h1,The name of the current head of the Solberg's Cabinet government is,N/A,Erna Solberg,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1261
+mquake-1261-h2,Erna Solberg is a citizen of,N/A,Norway,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1261
+mquake-1261-h3,The capital of Norway is,N/A,Oslo,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1261
+mquake-1875,"What continent is the country located in, where the author of Carmen is a citizen?",Prosper Mérimée | France,Europe,3-hop,3,Prosper Mérimée → France → Europe
+mquake-1875-h1,The author of Carmen is,N/A,Prosper Mérimée,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1875
+mquake-1875-h2,Prosper Mérimée is a citizen of,N/A,France,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1875
+mquake-1875-h3,France is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1875
+mquake-1910,"In which city is the headquarters of the university located, where the author of psychoanalysis was educated?",Sigmund Freud | University of Vienna,Vienna,3-hop,3,Sigmund Freud → University of Vienna → Vienna
+mquake-1910-h1,The author of psychoanalysis is,N/A,Sigmund Freud,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1910
+mquake-1910-h2,The univeristy where Sigmund Freud was educated is,N/A,University of Vienna,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1910
+mquake-1910-h3,The headquarters of University of Vienna is located in the city of,N/A,Vienna,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1910
 mquake-1036,Where is the headquarters of the university that educated the creator of Jim Hawkins located?,Robert Louis Stevenson | University of Edinburgh,Edinburgh,3-hop,3,Robert Louis Stevenson → University of Edinburgh → Edinburgh
 mquake-1036-h1,Jim Hawkins was created by,N/A,Robert Louis Stevenson,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1036
 mquake-1036-h2,The univeristy where Robert Louis Stevenson was educated is,N/A,University of Edinburgh,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1036
 mquake-1036-h3,The headquarters of University of Edinburgh is located in the city of,N/A,Edinburgh,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1036
-mquake-1050,What city houses the headquarters of the university that educated the chairperson of Scottish National Party?,Nicola Sturgeon | University of Glasgow,Glasgow,3-hop,3,Nicola Sturgeon → University of Glasgow → Glasgow
-mquake-1050-h1,The chairperson of Scottish National Party is,N/A,Nicola Sturgeon,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1050
-mquake-1050-h2,The univeristy where Nicola Sturgeon was educated is,N/A,University of Glasgow,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1050
-mquake-1050-h3,The headquarters of University of Glasgow is located in the city of,N/A,Glasgow,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1050
-mquake-1052,What faith is linked to the child of the individual who established Sasanian Empire?,Ardashir I | Shapur I,Zoroastrianism,3-hop,3,Ardashir I → Shapur I → Zoroastrianism
-mquake-1052-h1,Sasanian Empire was founded by,N/A,Ardashir I,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1052
-mquake-1052-h2,Ardashir I's child is,N/A,Shapur I,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1052
-mquake-1052-h3,Shapur I is affiliated with the religion of,N/A,Zoroastrianism,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1052
-mquake-1108,What city is home to the headquarters of the university where the entity known as President of Albania was educated?,Ilir Meta | University of Tirana,Tirana,3-hop,3,Ilir Meta → University of Tirana → Tirana
-mquake-1108-h1,The President of Albania is,N/A,Ilir Meta,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1108
-mquake-1108-h2,The univeristy where Ilir Meta was educated is,N/A,University of Tirana,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1108
-mquake-1108-h3,The headquarters of University of Tirana is located in the city of,N/A,Tirana,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1108
+mquake-1846,Which country is the birthplace of the sport that is linked to the position played by Jack Butland?,goalkeeper | association football,England,3-hop,3,goalkeeper → association football → England
+mquake-1846-h1,Jack Butland plays the position of,N/A,goalkeeper,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1846
+mquake-1846-h2,goalkeeper is associated with the sport of,N/A,association football,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1846
+mquake-1846-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1846
+mquake-1798,Which continent houses the country where the sport associated with FC Lokomotiv Gorna Oryahovitsa originated?,association football | England,Europe,3-hop,3,association football → England → Europe
+mquake-1798-h1,FC Lokomotiv Gorna Oryahovitsa is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1798
+mquake-1798-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1798
+mquake-1798-h3,England is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1798
+mquake-1594,Which language was used to write the famous work created by the maker of Vito Corleone?,Mario Puzo | The Godfather,English,3-hop,3,Mario Puzo → The Godfather → English
+mquake-1594-h1,Vito Corleone was created by,N/A,Mario Puzo,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1594
+mquake-1594-h2,Mario Puzo is famous for,N/A,The Godfather,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1594
+mquake-1594-h3,The Godfather was written in the language of,N/A,English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1594
+mquake-1380,Which language is officially spoken in the country of citizenship of the child of Carlos Sainz?,Carlos Sainz Jr. | Spain,Spanish,3-hop,3,Carlos Sainz Jr. → Spain → Spanish
+mquake-1380-h1,Carlos Sainz's child is,N/A,Carlos Sainz Jr.,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1380
+mquake-1380-h2,Carlos Sainz Jr. is a citizen of,N/A,Spain,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1380
+mquake-1380-h3,The official language of Spain is,N/A,Spanish,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1380
+mquake-1425,What continent contains the country that created the sport associated with FC Khimik Dzerzhinsk?,association football | England,Europe,3-hop,3,association football → England → Europe
+mquake-1425-h1,FC Khimik Dzerzhinsk is associated with the sport of,N/A,association football,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1425
+mquake-1425-h2,association football was created in the country of,N/A,England,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1425
+mquake-1425-h3,England is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1425
+mquake-1995,In which country was the thing created that the creator of Monkey D. Luffy is known for?,Eiichiro Oda | One Piece,Japan,3-hop,3,Eiichiro Oda → One Piece → Japan
+mquake-1995-h1,Monkey D. Luffy was created by,N/A,Eiichiro Oda,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1995
+mquake-1995-h2,Eiichiro Oda is famous for,N/A,One Piece,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1995
+mquake-1995-h3,One Piece was created in the country of,N/A,Japan,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1995
+mquake-1791,In which language was the notable work of the creator of Ultimates written?,Mark Millar | Kick-Ass,English,3-hop,3,Mark Millar → Kick-Ass → English
+mquake-1791-h1,Ultimates was created by,N/A,Mark Millar,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1791
+mquake-1791-h2,Mark Millar is famous for,N/A,Kick-Ass,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1791
+mquake-1791-h3,Kick-Ass was written in the language of,N/A,English,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1791
+mquake-1429,What country originated the sport that is connected to the position played by Tom Huddlestone?,midfielder | association football,England,3-hop,3,midfielder → association football → England
+mquake-1429-h1,Tom Huddlestone plays the position of,N/A,midfielder,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1429
+mquake-1429-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1429
+mquake-1429-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1429
+mquake-1180,Which continent is home to the country where the performer of Dancing Queen was developed?,ABBA | Sweden,Europe,3-hop,3,ABBA → Sweden → Europe
+mquake-1180-h1,Dancing Queen was performed by,N/A,ABBA,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1180
+mquake-1180-h2,ABBA was created in the country of,N/A,Sweden,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1180
+mquake-1180-h3,Sweden is located in the continent of,N/A,Europe,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1180
+mquake-1803,What city is the capital of the country where the performer of Shape of You is a citizen?,Ed Sheeran | United Kingdom,London,3-hop,3,Ed Sheeran → United Kingdom → London
+mquake-1803-h1,Shape of You was performed by,N/A,Ed Sheeran,1-hop (hop 1 of 3),1,sub-question 1/3 of case 1803
+mquake-1803-h2,Ed Sheeran is a citizen of,N/A,United Kingdom,1-hop (hop 2 of 3),1,sub-question 2/3 of case 1803
+mquake-1803-h3,The capital of United Kingdom is,N/A,London,1-hop (hop 3 of 3),1,sub-question 3/3 of case 1803
 mquake-2012,"Which continent is the country in, where the director of the performer of Back in the U.S.S.R. is a citizen?",The Beatles | Brian Epstein | United Kingdom,Europe,4-hop,4,The Beatles → Brian Epstein → United Kingdom → Europe
 mquake-2012-h1,Back in the U.S.S.R. was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2012
 mquake-2012-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2012
 mquake-2012-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2012
 mquake-2012-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2012
-mquake-2028,"What continent is the country located in, where the creator of the founder of Death Eater is a citizen?",Lord Voldemort | J. K. Rowling | United Kingdom,Europe,4-hop,4,Lord Voldemort → J. K. Rowling → United Kingdom → Europe
-mquake-2028-h1,Death Eater was founded by,N/A,Lord Voldemort,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2028
-mquake-2028-h2,Lord Voldemort was created by,N/A,J. K. Rowling,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2028
-mquake-2028-h3,J. K. Rowling is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2028
-mquake-2028-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2028
-mquake-2031,Which language is officially spoken in the country where the director of the performer of Ticket to Ride is a citizen?,The Beatles | Brian Epstein | United Kingdom,English,4-hop,4,The Beatles → Brian Epstein → United Kingdom → English
-mquake-2031-h1,Ticket to Ride was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2031
-mquake-2031-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2031
-mquake-2031-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2031
-mquake-2031-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2031
-mquake-2043,What language is spoken in the country of citizenship of the director of the performer of Help!?,The Beatles | Brian Epstein | United Kingdom,English,4-hop,4,The Beatles → Brian Epstein → United Kingdom → English
-mquake-2043-h1,Help! was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2043
-mquake-2043-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2043
-mquake-2043-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2043
-mquake-2043-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2043
-mquake-2056,"What continent is the country located in, where the director of the performer of Nowhere Man is a citizen?",The Beatles | Brian Epstein | United Kingdom,Europe,4-hop,4,The Beatles → Brian Epstein → United Kingdom → Europe
-mquake-2056-h1,Nowhere Man was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2056
-mquake-2056-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2056
-mquake-2056-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2056
-mquake-2056-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2056
+mquake-2465,"Which continent is the country in, where the director of the performer of Yesterday and Today is a citizen?",The Beatles | Brian Epstein | United Kingdom,Europe,4-hop,4,The Beatles → Brian Epstein → United Kingdom → Europe
+mquake-2465-h1,Yesterday and Today was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2465
+mquake-2465-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2465
+mquake-2465-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2465
+mquake-2465-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2465
+mquake-2749,What city is the capital of the country of citizenship of the director of the performer of Abbey Road?,The Beatles | Brian Epstein | United Kingdom,London,4-hop,4,The Beatles → Brian Epstein → United Kingdom → London
+mquake-2749-h1,Abbey Road was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2749
+mquake-2749-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2749
+mquake-2749-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2749
+mquake-2749-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2749
+mquake-2847,Which city is the capital of the country that created the sport associated with the position played by Tom Cleverley?,midfielder | association football | England,London,4-hop,4,midfielder → association football → England → London
+mquake-2847-h1,Tom Cleverley plays the position of,N/A,midfielder,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2847
+mquake-2847-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2847
+mquake-2847-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2847
+mquake-2847-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2847
+mquake-2965,Which continent houses the country of the founder of the company that produced Me 262?,Messerschmitt | Willy Messerschmitt | Germany,Europe,4-hop,4,Messerschmitt → Willy Messerschmitt → Germany → Europe
+mquake-2965-h1,The company that produced Me 262 is,N/A,Messerschmitt,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2965
+mquake-2965-h2,Messerschmitt was founded by,N/A,Willy Messerschmitt,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2965
+mquake-2965-h3,Willy Messerschmitt is a citizen of,N/A,Germany,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2965
+mquake-2965-h4,Germany is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2965
+mquake-2471,What continent contains the country of citizenship of the head coach of the employer of Louis van Gaal?,Manchester United F.C. | Ole Gunnar Solskjær | Norway,Europe,4-hop,4,Manchester United F.C. → Ole Gunnar Solskjær → Norway → Europe
+mquake-2471-h1,Louis van Gaal is employed by,N/A,Manchester United F.C.,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2471
+mquake-2471-h2,The head coach of Manchester United F.C. is,N/A,Ole Gunnar Solskjær,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2471
+mquake-2471-h3,Ole Gunnar Solskjær is a citizen of,N/A,Norway,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2471
+mquake-2471-h4,Norway is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2471
+mquake-2185,What city is the capital of the country that developed the sport associated with the position played by John Obi Mikel?,midfielder | association football | England,London,4-hop,4,midfielder → association football → England → London
+mquake-2185-h1,John Obi Mikel plays the position of,N/A,midfielder,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2185
+mquake-2185-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2185
+mquake-2185-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2185
+mquake-2185-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2185
+mquake-2431,What city is the capital of the country where the sport associated with the profession of André Villas-Boas was developed?,association football manager | association football | England,London,4-hop,4,association football manager → association football → England → London
+mquake-2431-h1,André Villas-Boas works in the field of,N/A,association football manager,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2431
+mquake-2431-h2,association football manager is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2431
+mquake-2431-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2431
+mquake-2431-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2431
+mquake-2557,"In what city is the capital located, of the country where the famous creation of the creator of Blake's 7 was made?",Terry Nation | Doctor Who | United Kingdom,London,4-hop,4,Terry Nation → Doctor Who → United Kingdom → London
+mquake-2557-h1,Blake's 7 was created by,N/A,Terry Nation,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2557
+mquake-2557-h2,Terry Nation is famous for,N/A,Doctor Who,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2557
+mquake-2557-h3,Doctor Who was created in the country of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2557
+mquake-2557-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2557
+mquake-2170,"On which continent is the country located, whose citizen is the child of the person who created Winnie the Pooh?",A. A. Milne | Christopher Robin Milne | United Kingdom,Europe,4-hop,4,A. A. Milne → Christopher Robin Milne → United Kingdom → Europe
+mquake-2170-h1,Winnie the Pooh was created by,N/A,A. A. Milne,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2170
+mquake-2170-h2,A. A. Milne's child is,N/A,Christopher Robin Milne,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2170
+mquake-2170-h3,Christopher Robin Milne is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2170
+mquake-2170-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2170
+mquake-2354,What is the capital of the country that is home to the citizen who founded the company that developed Ju 88?,Junkers | Hugo Junkers | Germany,Berlin,4-hop,4,Junkers → Hugo Junkers → Germany → Berlin
+mquake-2354-h1,Ju 88 was developed by,N/A,Junkers,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2354
+mquake-2354-h2,Junkers was founded by,N/A,Hugo Junkers,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2354
+mquake-2354-h3,Hugo Junkers is a citizen of,N/A,Germany,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2354
+mquake-2354-h4,The capital of Germany is,N/A,Berlin,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2354
 mquake-2058,What continent contains the city where the chief executive officer of the developer of Windows NT 4.0 was born?,Microsoft | Satya Nadella | Hyderabad,Asia,4-hop,4,Microsoft → Satya Nadella → Hyderabad → Asia
 mquake-2058-h1,Windows NT 4.0 was developed by,N/A,Microsoft,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2058
 mquake-2058-h2,The chief executive officer of Microsoft is,N/A,Satya Nadella,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2058
 mquake-2058-h3,Satya Nadella was born in the city of,N/A,Hyderabad,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2058
 mquake-2058-h4,Hyderabad is located in the continent of,N/A,Asia,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2058
-mquake-2059,What continent contains the country of citizenship of the founder of the developer of Ju 88?,Junkers | Hugo Junkers | Germany,Europe,4-hop,4,Junkers → Hugo Junkers → Germany → Europe
-mquake-2059-h1,Ju 88 was developed by,N/A,Junkers,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2059
-mquake-2059-h2,Junkers was founded by,N/A,Hugo Junkers,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2059
-mquake-2059-h3,Hugo Junkers is a citizen of,N/A,Germany,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2059
-mquake-2059-h4,Germany is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2059
-mquake-2066,What continent contains the country that created the sport associated with the position played by Yossi Benayoun?,midfielder | association football | England,Europe,4-hop,4,midfielder → association football → England → Europe
-mquake-2066-h1,Yossi Benayoun plays the position of,N/A,midfielder,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2066
-mquake-2066-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2066
-mquake-2066-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2066
-mquake-2066-h4,England is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2066
-mquake-2074,Which continent is home to the city where the person who founded the developer of Tu-95 passed away?,Tupolev | Andrei Tupolev | Moscow,Europe,4-hop,4,Tupolev → Andrei Tupolev → Moscow → Europe
-mquake-2074-h1,Tu-95 was developed by,N/A,Tupolev,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2074
-mquake-2074-h2,Tupolev was founded by,N/A,Andrei Tupolev,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2074
-mquake-2074-h3,Andrei Tupolev died in the city of,N/A,Moscow,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2074
-mquake-2074-h4,Moscow is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2074
-mquake-2089,What city is the capital of the country of citizenship of the director of the performer of Nowhere Man?,The Beatles | Brian Epstein | United Kingdom,London,4-hop,4,The Beatles → Brian Epstein → United Kingdom → London
-mquake-2089-h1,Nowhere Man was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2089
-mquake-2089-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2089
-mquake-2089-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2089
-mquake-2089-h4,The capital of United Kingdom is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2089
-mquake-2121,What continent contains the country of citizenship of the director of the entity that performed Helter Skelter?,The Beatles | Brian Epstein | United Kingdom,Europe,4-hop,4,The Beatles → Brian Epstein → United Kingdom → Europe
-mquake-2121-h1,Helter Skelter was performed by,N/A,The Beatles,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2121
-mquake-2121-h2,The director of The Beatles is,N/A,Brian Epstein,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2121
-mquake-2121-h3,Brian Epstein is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2121
-mquake-2121-h4,United Kingdom is located in the continent of,N/A,Europe,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2121
+mquake-2777,What is the capital of the country that created the sport connected to the position played by Ray Parlour?,midfielder | association football | England,London,4-hop,4,midfielder → association football → England → London
+mquake-2777-h1,Ray Parlour plays the position of,N/A,midfielder,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2777
+mquake-2777-h2,midfielder is associated with the sport of,N/A,association football,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2777
+mquake-2777-h3,association football was created in the country of,N/A,England,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2777
+mquake-2777-h4,The capital of England is,N/A,London,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2777
+mquake-2271,What is the capital of the country where the founder of the employer of Hans Delbrück is a citizen?,Humboldt University of Berlin | Wilhelm von Humboldt | Germany,Berlin,4-hop,4,Humboldt University of Berlin → Wilhelm von Humboldt → Germany → Berlin
+mquake-2271-h1,Hans Delbrück is employed by,N/A,Humboldt University of Berlin,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2271
+mquake-2271-h2,Humboldt University of Berlin was founded by,N/A,Wilhelm von Humboldt,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2271
+mquake-2271-h3,Wilhelm von Humboldt is a citizen of,N/A,Germany,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2271
+mquake-2271-h4,The capital of Germany is,N/A,Berlin,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2271
+mquake-2718,What language is officially spoken in the country of citizenship of the child of the person who created Winnie the Pooh?,A. A. Milne | Christopher Robin Milne | United Kingdom,English,4-hop,4,A. A. Milne → Christopher Robin Milne → United Kingdom → English
+mquake-2718-h1,Winnie the Pooh was created by,N/A,A. A. Milne,1-hop (hop 1 of 4),1,sub-question 1/4 of case 2718
+mquake-2718-h2,A. A. Milne's child is,N/A,Christopher Robin Milne,1-hop (hop 2 of 4),1,sub-question 2/4 of case 2718
+mquake-2718-h3,Christopher Robin Milne is a citizen of,N/A,United Kingdom,1-hop (hop 3 of 4),1,sub-question 3/4 of case 2718
+mquake-2718-h4,The official language of United Kingdom is,N/A,English,1-hop (hop 4 of 4),1,sub-question 4/4 of case 2718

@@ -5,9 +5,9 @@ anthropic-savannah-capital-fact,Fact: the capital of the state containing Savann
 anthropic-vancouver-capital-fact,Fact: the capital of the province containing Vancouver is,British Columbia,Victoria,city→province→capital,
 anthropic-shanghai-capital-fact,Fact: the capital of the country containing Shanghai is,China,Beijing,city→country→capital,
 anthropic-thessaloniki-capital-fact,Fact: the capital of the empire containing Thessaloniki is,Byzantine Empire,Constantinople,city→empire→capital,
-anthropic-small-opposite-en,The opposite of 'small' is,antonym,big,word→antonym,
-anthropic-small-opposite-fr,Le contraire de 'petit' est,antonyme,grand,word→antonym→French,
-anthropic-small-synonym,A synonym of 'small' is,synonym,little,word→synonym,Not explicitly stated in paper
+anthropic-small-opposite-en,The opposite of 'small' is ',antonym,big,word→antonym,
+anthropic-small-opposite-fr,Le contraire de 'petit' est ',antonyme,grand,word→antonym→French,
+anthropic-small-synonym,A synonym of 'small' is ',synonym,little,word→synonym,Not explicitly stated in paper
 anthropic-calc-addition,calc: 36+59=,arithmetic,95,arithmetic,
 anthropic-assert-multiplication,assert (4 + 5) * 3 ==,arithmetic,27,arithmetic,
 anthropic-jordan-sport,Which sport does Michael Jordan play? Answer in one word.,Michael Jordan,basketball,entity→sport,

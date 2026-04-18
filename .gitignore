@@ -178,11 +178,28 @@ cython_debug/
 test_graphs/
 
 #CUSTOM CHANGES START: custom-automation
-custom_automation/artifacts*/
-custom_automation/artifacts_capital_reason/
+# Virtual env
 myenv/
-test_graphs*/
+
+# Artifacts (attribution graphs, feature JSONs)
+custom_automation/artifacts*/
 custom_automation/artifacts/
-custom_automation/analysis/results/*
+
+# Analysis results (CSVs, markdown reports)
 custom_automation/analysis/results/
+custom_automation/analysis/amplify_experiment/amplify_results.csv
+custom_automation/analysis/amplify_experiment/amplify_results.md
+custom_automation/analysis/shortcut_experiment/prompts/
+
+# Intervention results
+custom_automation/intervention/intervention_results*.csv
+custom_automation/intervention/constrained_intervention_results*.csv
+
+# Pycache
+custom_automation/__pycache__/
+custom_automation/**/__pycache__/
+
+# Misc
+test_graphs*/
+.claude/
 # CUSTOM EDITS END: custom-automation

@@ -5,9 +5,9 @@ anthropic-savannah-capital-fact,Fact: the capital of the state containing Savann
 anthropic-vancouver-capital-fact,Fact: the capital of the province containing Vancouver is,gemma
 anthropic-shanghai-capital-fact,Fact: the capital of the country containing Shanghai is,gemma
 anthropic-thessaloniki-capital-fact,Fact: the capital of the empire containing Thessaloniki is,gemma
-anthropic-small-opposite-en,The opposite of 'small' is,gemma
-anthropic-small-opposite-fr,Le contraire de 'petit' est,gemma
-anthropic-small-synonym,A synonym of 'small' is,gemma
+anthropic-small-opposite-en,The opposite of 'small' is ',gemma
+anthropic-small-opposite-fr,Le contraire de 'petit' est ',gemma
+anthropic-small-synonym,A synonym of 'small' is ',gemma
 anthropic-calc-addition,calc: 36+59=,gemma
 anthropic-assert-multiplication,assert (4 + 5) * 3 ==,gemma
 anthropic-jordan-sport,Which sport does Michael Jordan play? Answer in one word.,gemma
