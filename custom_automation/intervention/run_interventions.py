@@ -397,6 +397,12 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
                 results.append({**base_row, **EMPTY_METRICS, "skipped": "graph_missing"})
                 continue
 
+            # Use the prompt stored in the graph metadata — it matches exactly what
+            # was passed during attribution (e.g. chat-wrapped for mquake prompts).
+            graph_prompt = graph.get("metadata", {}).get("prompt", "").replace("<bos>", "").strip()
+            if graph_prompt:
+                prompt = graph_prompt
+
             feature_groups = load_feature_groups(slug, variant)
             hop_features = find_hop_features(graph, intermediate_concept, feature_groups)
             print(
