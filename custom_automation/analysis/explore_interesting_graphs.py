@@ -494,7 +494,7 @@ if __name__ == "__main__":
         help="Directory containing processed graph JSONs (default: test_graphs/)",
     )
     parser.add_argument(
-        "--top_k", type=int, default=20,
+        "--top_k", type=int, default=30,
         help="Number of top candidates to send to the LLM judge (default: 20)",
     )
     parser.add_argument(
