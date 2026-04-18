@@ -33,8 +33,8 @@ from transformer_lens import HookedTransformer
 # ---------------------------------------------------------------------------
 
 TARGET_N = 50
-CANDIDATES_TO_FETCH = 500       # how many article sentences to collect before scoring
-MAX_PER_ARTICLE = 3             # diversity cap per article
+CANDIDATES_TO_FETCH = 3500       # how many article sentences to collect before scoring
+MAX_PER_ARTICLE = 3             # max prompts per article in final selection
 MIN_WORDS = 8                   # minimum words in a truncated prefix
 MAX_WORDS = 15                  # maximum words in a truncated prefix
 MIN_CONF = 0.15                 # lower bound on top-1 softmax prob (filter boring/random)
@@ -45,16 +45,32 @@ BATCH_SIZE = 16                 # prompts scored at once (tune to your GPU VRAM)
 SCORE_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 OUT_FILE = Path(__file__).parent / "ground_truth_wikipedia.csv"
+PROMPTS_FILE = Path(__file__).parent / "prompts_wikipedia.csv"
 
 # Diverse Wikipedia categories to seed article selection
 SEED_TOPICS = [
-    "History of science", "World War II", "Ancient Rome", "Renaissance art",
-    "Quantum mechanics", "Human evolution", "Climate change", "Jazz music",
-    "Olympic Games", "Byzantine Empire", "French Revolution", "Solar System",
-    "Medieval philosophy", "Amazon rainforest", "Industrial Revolution",
-    "Chinese dynasties", "Neuroscience", "Architecture", "Linguistics",
-    "Astronomy", "Ecology", "Economics", "Ancient Greece", "Mathematics",
-    "Literature", "Geography", "Medicine", "Philosophy", "Sociology", "Music theory",
+    # Science & technology
+    "History of science", "Quantum mechanics", "Human evolution", "Neuroscience",
+    "Astronomy", "Ecology", "Mathematics", "Medicine", "Computer science",
+    "Physics", "Chemistry", "Biology", "Genetics", "Climate change",
+    "Artificial intelligence", "Space exploration", "Geology", "Oceanography",
+    # History & civilization
+    "World War II", "Ancient Rome", "Byzantine Empire", "French Revolution",
+    "Industrial Revolution", "Chinese dynasties", "Ancient Greece", "Medieval history",
+    "World War I", "Roman Empire", "Cold War", "Age of Exploration",
+    "Egyptian civilization", "Mongol Empire", "Ottoman Empire", "British Empire",
+    # Arts & culture
+    "Renaissance art", "Jazz music", "Classical music", "Impressionism",
+    "Architecture", "Literature", "Film history", "Photography", "Opera",
+    "Baroque art", "Modernist literature", "Ancient philosophy",
+    # Geography & nature
+    "Amazon rainforest", "Solar System", "African geography", "Mountain ranges",
+    "Major rivers", "Island nations", "Desert ecosystems", "Arctic exploration",
+    # Social sciences
+    "Linguistics", "Economics", "Sociology", "Anthropology", "Psychology",
+    "Political philosophy", "Medieval philosophy", "Music theory",
+    # Sports & other
+    "Olympic Games", "History of chess", "History of sport",
 ]
 
 # ---------------------------------------------------------------------------
@@ -96,50 +112,57 @@ def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> l
 
 
 def fetch_candidates(n: int) -> list[dict]:
-    """Collect ~n candidate prompts from random Wikipedia articles."""
+    """Collect ~n candidate prompts from random Wikipedia articles.
+
+    Seeds from topic searches then keeps pulling random pages until we hit n.
+    Random pages avoid disambiguation failures that plague topic searches.
+    """
+    import random
+
     candidates: list[dict] = []
     seen_slugs: set[str] = set()
     tried_titles: set[str] = set()
-    article_counts: dict[str, int] = {}
+    queue: list[str] = []
+    consec_refill_failures = 0
 
-    # First pass: use seed topics to get good article titles
-    import random
+    # Seed from topic searches
     random.shuffle(SEED_TOPICS)
-    titles_queue: list[str] = []
-
     for topic in SEED_TOPICS:
         try:
-            results = wikipedia.search(topic, results=5)
-            titles_queue.extend(results)
+            queue.extend(wikipedia.search(topic, results=5))
         except Exception:
             pass
 
-    # Pad with random articles
-    for _ in range(30):
-        try:
-            titles_queue.extend(wikipedia.random(pages=5))
-        except Exception:
-            pass
+    while len(candidates) < n:
+        # Refill with random pages (actual articles, not disambiguation pages)
+        if not queue:
+            try:
+                queue.extend(wikipedia.random(pages=50))
+                consec_refill_failures = 0
+            except Exception:
+                consec_refill_failures += 1
+                if consec_refill_failures >= 10:
+                    print("  Wikipedia API unresponsive — stopping fetch early.")
+                    break
+                time.sleep(2)
+                continue
 
-    for title in titles_queue:
-        if len(candidates) >= n:
-            break
+        title = queue.pop(0)
         if title in tried_titles:
             continue
-        if article_counts.get(title, 0) >= MAX_PER_ARTICLE:
-            continue
         tried_titles.add(title)
+
         try:
             page = wikipedia.page(title, auto_suggest=False)
-            text = page.content[:4000]  # first ~4000 chars is enough
+            text = page.content[:6000]
             new_cands = extract_candidates(title, text, seen_slugs)
-            # Limit per article
-            new_cands = new_cands[: MAX_PER_ARTICLE * 6]  # keep some to score, trim later
-            candidates.extend(new_cands)
-            article_counts[title] = article_counts.get(title, 0) + len(new_cands)
-            time.sleep(0.1)  # be polite to Wikipedia API
+            candidates.extend(new_cands[:8])
+            time.sleep(0.05)
         except Exception:
             continue
+
+        if len(tried_titles) % 100 == 0:
+            print(f"  [{len(tried_titles)} articles tried] {len(candidates)} candidates so far...")
 
     return candidates
 
@@ -195,11 +218,68 @@ def main():
 
     # --- Step 3: filter, deduplicate per article, select top 50 ---
     print(f"\n[3/3] Filtering and selecting {TARGET_N} prompts...")
+
+    # Same list as generate_supernodes.py FUNCTION_WORDS
+    FUNCTION_WORDS = frozenset({
+        "the", "a", "an", "this", "that", "these", "those",
+        "of", "in", "to", "for", "with", "on", "at", "from", "by", "about",
+        "into", "through", "during", "before", "after", "above", "below",
+        "between", "under", "over",
+        "and", "but", "or", "nor", "so", "yet", "both", "either", "neither",
+        "it", "its", "he", "she", "they", "them", "his", "her", "we", "you",
+        "i", "me", "my", "your", "our", "their",
+        "is", "are", "was", "were", "be", "been", "being",
+        "has", "have", "had", "do", "does", "did",
+        "will", "would", "shall", "should", "can", "could", "may", "might",
+        "not", "no", "if", "then", "than", "as", "which", "who", "whom",
+        "what", "when", "where", "how", "that",
+        ",", ".", ":", ";", "!", "?", "'", '"', "(", ")", "-", "—", "",
+        "<bos>", "<eos>", "<pad>", "<s>", "</s>",
+        "containing",
+    })
+
+    def _is_clean_token(tok: str) -> bool:
+        t = tok.strip().lower()
+        if not t or len(t) < 3:                     # filter single chars and very short fragments
+            return False
+        if not t[0].isalpha():                      # no punctuation, digits, markup
+            return False
+        if t in FUNCTION_WORDS:
+            return False
+        # Filter subword fragments: real words don't start with lowercase after a capital
+        # and don't look like truncated tokens (e.g. 'Hoo', 'psych', 'kháu')
+        if len(tok.strip()) < 4 and tok.strip()[0].isupper():
+            return False                             # 3-char capitalised fragments like 'Hoo'
+        # Filter non-ASCII tokens (markup artifacts, non-English subwords)
+        if not tok.strip().isascii():
+            return False
+        # Filter camelCase/PascalCase markup artifacts like 'UnknownFieldSet', 'SourceChecksum'
+        if re.search(r'[a-z][A-Z]', tok):
+            return False
+        # Filter tokens with suspicious substrings
+        if any(s in tok for s in ["\\", "{", "}", "<", ">", "Field", "Checksum", "rawDesc"]):
+            return False
+        return True
+
+    def _is_clean_prompt(prompt: str) -> bool:
+        if not prompt or not prompt[0].isupper():   # no mid-sentence fragments
+            return False
+        # Avoid context-free pronoun openers
+        for opener in ("It ", "This ", "They ", "He ", "She ", "Also ", "However "):
+            if prompt.startswith(opener):
+                return False
+        # Avoid prompts with non-ASCII (Japanese, Chinese, etc. mixed in)
+        if not prompt.isascii():
+            return False
+        return True
+
     interesting = [
         c for c in candidates
         if MIN_CONF <= c["top1_prob"] <= MAX_CONF
+        and _is_clean_token(c["correct_answer"])
+        and _is_clean_prompt(c["prompt"])
     ]
-    print(f"  {len(interesting)} candidates in confidence window [{MIN_CONF}, {MAX_CONF}].")
+    print(f"  {len(interesting)} candidates after quality + confidence filtering.")
 
     # Sort by distance from midpoint of confidence window (most "interesting" first)
     midpoint = (MIN_CONF + MAX_CONF) / 2
@@ -223,7 +303,7 @@ def main():
             "Consider lowering MIN_CONF or raising MAX_CONF."
         )
 
-    # --- Write CSV ---
+    # --- Write ground truth CSV ---
     with OUT_FILE.open("w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["slug", "prompt", "intermediate_concept", "correct_answer", "hop_type", "notes"])
@@ -237,7 +317,15 @@ def main():
                 f"wikipedia article: {cand['article']} | top1_prob: {cand['top1_prob']:.3f}",
             ])
 
+    # --- Write prompts CSV (for attribution batch) ---
+    with PROMPTS_FILE.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow(["slug", "prompt", "transcoder_set"])
+        for cand in selected:
+            writer.writerow([cand["slug"], cand["prompt"], "gemma"])
+
     print(f"\nWrote {len(selected)} prompts to {OUT_FILE}")
+    print(f"Wrote {len(selected)} prompts to {PROMPTS_FILE}")
     print("\nSample prompts:")
     for cand in selected[:5]:
         print(f"  [{cand['top1_prob']:.2f}] {cand['prompt']!r} -> {cand['correct_answer']!r}")

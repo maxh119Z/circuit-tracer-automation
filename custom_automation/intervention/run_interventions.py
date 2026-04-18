@@ -51,7 +51,7 @@ TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_GROUND_TRUTH = REPO_ROOT / "ground_truth.csv"
+DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts" / "ground_truth_capital.csv"
 DESCRIPTION_VARIANT = "v2"
 MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
@@ -369,6 +369,15 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
         intermediate_concept = row.get("intermediate_concept", "").strip()
         correct_answer = row.get("correct_answer", "").strip()
         hop_type = row.get("hop_type", "").strip()
+        num_hops_str = row.get("num_hops", "").strip()
+
+        # Only run on 2-hop cases (one intermediate step, e.g. dallas→texas→austin).
+        # CSVs without a num_hops column (capital, anthropic, multihop) are all 2-hop
+        # by construction and pass through. Sub-hop rows and 3-hop+ are skipped.
+        if num_hops_str and num_hops_str != "2":
+            continue
+        if not intermediate_concept or intermediate_concept.upper() == "N/A":
+            continue
 
         for variant in variants:
             graph_slug = f"{slug}-{DESCRIPTION_VARIANT}-{variant}"

@@ -82,37 +82,46 @@ def case_answers_match(generated: str, case: dict) -> bool:
 # Selection strategy
 # ---------------------------------------------------------------------------
 
-def select_balanced(all_cases: list[dict], per_hop: int) -> list[dict]:
-    """
-    Return up to `per_hop` cases per hop count.
+CANDIDATES_PER_HOP = {2: 80, 3: 300, 4: 300}
 
-    Within each hop bucket, prefer:
-      1. Cases with single-word final answers (cleaner one-token logit target)
-      2. Cases with non-empty questions and answers
+# Max cases allowed to share the same first-hop entity (prevents clustering like Beatles x11)
+MAX_CHAIN_DUPLICATES = 3
+
+
+def select_balanced(all_cases: list[dict], targets: dict[int, int]) -> list[dict]:
     """
+    Feed CANDIDATES_PER_HOP[n] candidates per hop count to Gemma for filtering.
+    Shuffles each bucket randomly so no single entity dominates.
+    Single-word answers are still preferred within the shuffled bucket.
+    """
+    import random
+
     by_hops: dict[int, list[dict]] = defaultdict(list)
     for case in all_cases:
         hops = case.get("single_hops") or []
         answer = (case.get("answer") or "").strip()
         question = (case.get("questions") or [""])[0].strip()
-        # Skip malformed cases
         if not hops or not answer or not question:
             continue
-        n = len(hops)
-        by_hops[n].append(case)
+        by_hops[len(hops)].append(case)
 
     selected: list[dict] = []
     for n_hops in sorted(by_hops):
+        target = targets.get(n_hops, 0)
+        if target == 0:
+            continue
         bucket = by_hops[n_hops]
-        # Prefer single-word answers — they produce a clean one-token logit target
+        random.shuffle(bucket)
+        # Within shuffled bucket, still prefer single-word answers
         bucket.sort(key=lambda c: len((c.get("answer") or "").split()))
-        chosen = bucket[:per_hop]
-        print(f"  {n_hops}-hop: {len(bucket)} available, using {len(chosen)}")
+        limit = min(CANDIDATES_PER_HOP.get(n_hops, 100), len(bucket))
+        chosen = bucket[:limit]
+        print(f"  {n_hops}-hop: {len(bucket)} available, sending {len(chosen)} to Gemma (target={target})")
         selected.extend(chosen)
 
-    missing = [h for h in range(1, 6) if h not in by_hops]
+    missing = [h for h in sorted(targets) if h not in by_hops]
     if missing:
-        print(f"  Note: hop counts not present in CF3k: {missing}")
+        print(f"  WARNING: hop counts not in CF3k: {missing}")
 
     return selected
 
@@ -133,7 +142,7 @@ def _run_sanity_check(model, tokenizer) -> None:
     import torch
     import torch.nn.functional as F
 
-    inputs = tokenizer(SANITY_PROMPT, return_tensors="pt").to(model.device)
+    inputs = tokenizer(wrap_prompt(SANITY_PROMPT), return_tensors="pt").to(model.device)
     with torch.no_grad():
         logits = model(**inputs).logits[0, -1, :]
     probs = F.softmax(logits, dim=-1)
@@ -307,7 +316,41 @@ def build_rows(case: dict, include_subhops: bool) -> tuple[dict, list[dict]]:
 # Main
 # ---------------------------------------------------------------------------
 
-def run(per_hop: int, include_subhops: bool, filter_by_model: bool, device: str) -> None:
+def cap_by_hop(cases: list[dict], targets: dict[int, int]) -> list[dict]:
+    """After Gemma filtering, deduplicate by first-hop entity then cap to target."""
+    by_hops: dict[int, list[dict]] = defaultdict(list)
+    for case in cases:
+        by_hops[len(case["single_hops"])].append(case)
+    result = []
+    for n in sorted(by_hops):
+        target = targets.get(n, len(by_hops[n]))
+        # Cap by first-hop entity to prevent clustering (e.g. Beatles x11, football x3)
+        chain_counts: dict[str, int] = {}
+        deduped = []
+        for case in by_hops[n]:
+            key = (case["single_hops"][0].get("answer") or "").strip().lower()
+            if chain_counts.get(key, 0) < MAX_CHAIN_DUPLICATES:
+                chain_counts[key] = chain_counts.get(key, 0) + 1
+                deduped.append(case)
+        kept = deduped[:target]
+        dropped_chain = len(by_hops[n]) - len(deduped)
+        dropped_cap = len(deduped) - len(kept)
+        print(f"  {n}-hop: {len(kept)} kept  (chain dedup dropped {dropped_chain}, cap dropped {dropped_cap})")
+        result.extend(kept)
+    return result
+
+
+def parse_targets(s: str) -> dict[int, int]:
+    """Parse '2:20,3:15,4:15' into {2: 20, 3: 15, 4: 15}."""
+    result = {}
+    for part in s.split(","):
+        hops, count = part.strip().split(":")
+        result[int(hops)] = int(count)
+    return result
+
+
+def run(targets: dict[int, int], include_subhops: bool,
+        filter_by_model: bool, device: str) -> None:
     try:
         from huggingface_hub import hf_hub_download, list_repo_files
         import pyarrow.parquet as pq
@@ -343,9 +386,9 @@ def run(per_hop: int, include_subhops: bool, filter_by_model: bool, device: str)
     if missing_fields:
         raise SystemExit(f"Unexpected schema — missing fields: {missing_fields}")
 
-    print(f"\nSelecting up to {per_hop} cases per hop count:")
-    cases = select_balanced(all_cases, per_hop)
-    print(f"  Total selected: {len(cases)} cases")
+    print(f"\nTargets: { {k: targets[k] for k in sorted(targets)} }")
+    cases = select_balanced(all_cases, targets)
+    print(f"  Total candidates for Gemma: {len(cases)}")
 
     if filter_by_model:
         cases = filter_by_gemma(cases, device)
@@ -353,7 +396,10 @@ def run(per_hop: int, include_subhops: bool, filter_by_model: bool, device: str)
         print("\n  Skipping Gemma filter (--no_filter)")
 
     if not cases:
-        raise SystemExit("No cases passed the filter. Try --per_hop with a larger value.")
+        raise SystemExit("No cases passed the filter. Increase CANDIDATE_MULTIPLIER or check dataset.")
+
+    print(f"\nCapping to targets after filtering:")
+    cases = cap_by_hop(cases, targets)
 
     all_prompt_rows: list[dict] = []
     all_ground_truth_rows: list[dict] = []
@@ -385,8 +431,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Generate Gemma-filtered MQuAKE prompt CSVs.")
     parser.add_argument(
-        "--per_hop", type=int, default=70,
-        help="Max cases to consider per hop count before filtering (default=40)",
+        "--targets", type=str, default="2:20,3:15,4:15",
+        help="Target cases per hop count, format '2:20,3:15,4:15' (default: 2:20,3:15,4:15)",
     )
     parser.add_argument(
         "--include_subhops", type=lambda x: x.lower() != "false", default=True,
@@ -406,7 +452,7 @@ if __name__ == "__main__":
         args.device = "cuda" if torch.cuda.is_available() else "cpu"
 
     run(
-        per_hop=args.per_hop,
+        targets=parse_targets(args.targets),
         include_subhops=args.include_subhops,
         filter_by_model=not args.no_filter,
         device=args.device,
