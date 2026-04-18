@@ -896,6 +896,53 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
     print(f"Results -> {results_path}")
 
     # ------------------------------------------------------------------
+    # Shortcut candidates: 3+ hop cases that are correct but hops missing
+    # ------------------------------------------------------------------
+    shortcut_candidates = [
+        r for r in results
+        if r["model_correct"]
+        and int(r.get("num_hops") or 0) >= 3
+        and r.get("n_intermediate_concepts", 0) > 0
+        and r.get("n_hops_found", 0) < r.get("n_intermediate_concepts", 0)
+    ]
+    sc_path = results_dir / "shortcut_candidates.md"
+    with open(sc_path, "w", encoding="utf-8") as f:
+        f.write("# Shortcut Candidates — Correct but Intermediate Hops Missing\n\n")
+        f.write("These are 3+ hop cases where the model answered correctly but some or all\n")
+        f.write("intermediate concepts were not detected in the attribution graph.\n")
+        f.write("They are candidates for shortcut reasoning — the model may have bypassed\n")
+        f.write("intermediate steps via a direct association.\n\n")
+        f.write(f"Cases: {len(shortcut_candidates)}\n\n")
+        for r in shortcut_candidates:
+            n_found = r.get("n_hops_found", 0)
+            n_total = r.get("n_intermediate_concepts", 0)
+            coverage = "none found" if n_found == 0 else f"{n_found}/{n_total} found"
+            f.write("---\n")
+            f.write(f"## {r['slug']} ({r['num_hops']}-hop, {coverage})\n\n")
+            f.write(f"**Prompt type:** {r['hop_type']}  \n")
+            f.write(f"**Predicted:** `{_safe_predicted(r['predicted'])}` ({r['predicted_prob']:.1%})  \n")
+            f.write(f"**Correct answer:** {r['correct_answer']}  \n")
+            f.write(f"**Full hop chain:** {r['notes']}  \n\n")
+            found = r.get("concepts_found", [])
+            missed = r.get("concepts_missed", [])
+            f.write(f"**Intermediate concepts found ({n_found}/{n_total}):** "
+                    f"{', '.join(found) if found else '—'}  \n")
+            f.write(f"**Missing concepts:** {', '.join(missed) if missed else '—'}  \n\n")
+            f.write("**Hypothesis:** The model may have answered via a direct ")
+            if n_found == 0:
+                f.write("association, skipping all intermediate steps.\n\n")
+            else:
+                f.write(f"shortcut from `{', '.join(found)}` to the final answer, "
+                        f"bypassing: {', '.join(missed)}.\n\n")
+            f.write("### Supernodes\n")
+            groups = [g for g in r["all_supernodes"] if not g.startswith("Emb:") and not g.startswith("Output:")]
+            f.write(", ".join(groups) if groups else "—")
+            f.write("\n\n")
+            f.write("**Next step:** Attribute the sub-hop questions for this case to verify "
+                    "whether the model can answer each step individually.\n\n")
+    print(f"Results -> {sc_path}")
+
+    # ------------------------------------------------------------------
     # Terminal summary
     # ------------------------------------------------------------------
     n = len(results)
