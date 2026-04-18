@@ -1,19 +1,41 @@
 """
-generate_shortcut_prompts.py — Generate shortcut prompt variants for cases
-where the model answered correctly but skipped intermediate reasoning hops.
+generate_shortcut_prompts.py — Test whether the model uses shortcuts on missed hops.
 
-For each shortcut candidate, GPT rewrites the original question by substituting
-a missed intermediate entity directly — removing the indirection.
+For each case where:
+  - The model answered correctly (predicts D)
+  - At least one intermediate concept was NOT found in the attribution graph
+
+We generate a "skip" variant: rewrite the question to remove that missed
+intermediate from the chain, still asking for the same final answer D.
+
+Rationale:
+  If a concept was found in the attribution graph it is almost certainly
+  load-bearing — the graph shows the model used it.  The interesting test
+  is for concepts that were NOT found: the model reached D without going
+  through that intermediate, which suggests a shortcut exists.
+
+  We confirm by generating a simpler question that explicitly skips the
+  missed hop.  If the model still gets D → shortcut confirmed.
+  If the model gets D wrong → the intermediate was implicitly needed.
+
+General pattern:
+  Chain A → B → C → D
+  B not found in graph → skip B → prompt becomes A → C → D
+  C not found in graph → skip C → prompt becomes A → B → D
+  B and C both not found → skip both → prompt becomes A → D
 
 Example:
-  Original:  "What continent is the country in where the director of the
-              performer of Back in the U.S.S.R. is a citizen?"
-  Shortcut:  "What continent is the country in where The Beatles is from?"
-  Shortcut:  "What continent is the country in where Brian Epstein is from?"
+  Chain:   A → John Lennon → Yoko Ono
+  John Lennon NOT found in graph, model still predicted Yoko Ono.
+  Skip:    "The spouse of Imagine is"  ← removes the John Lennon hop
+  If still correct → confirmed shortcut (A → Yoko Ono directly).
+
+Only missed concepts get a skip variant. If a concept WAS found in the
+attribution graph it is considered load-bearing and is not tested.
 
 Reads:
-  analysis/results/hop_analysis.csv       — identifies shortcut candidates
-  prompts/ground_truth_mquake.csv         — original prompts and hop chains
+  analysis/results/hop_analysis.csv       — correctness + missed concepts per case
+  prompts/ground_truth_mquake.csv         — original prompts and full hop chains
 
 Writes:
   analysis/shortcut_experiment/prompts/prompts_shortcut.csv
@@ -47,60 +69,71 @@ OUT_DIR.mkdir(parents=True, exist_ok=True)
 PROMPTS_OUT = OUT_DIR / "prompts_shortcut.csv"
 GT_OUT = OUT_DIR / "ground_truth_shortcut.csv"
 
-MODEL = "gpt-5-mini"
+MODEL = "gpt-5.4"
+
+# ---------------------------------------------------------------------------
+# GPT prompt
+# ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You rewrite multi-hop factual questions into simpler "shortcut" variants.
+You rewrite multi-hop factual questions to skip ALL listed missed intermediate steps.
 
-Given an original question and one specific intermediate entity that was NOT found
-in the model's attribution graph, rewrite the question by substituting that entity
-directly — removing only the indirect phrasing that leads to it. Keep any later
-steps in the chain that WERE found.
+Given an original question, its reasoning chain, found concepts (load-bearing — keep
+them implicit in the rewrite), and missed concepts (skip all of them at once),
+produce ONE rewritten question that removes every missed hop while keeping the same
+final answer.
 
-Rules:
-- Replace only the indirect reference that leads to the missed entity.
-- Preserve any remaining chain steps (especially found concepts) in the question.
-- The rewritten question must have the same correct final answer.
-- Return ONLY valid JSON, no other text.
+The skip logic:
+  Chain A → B → C → D, B not found → prompt asks A → C → D
+  Chain A → B → C → D, C not found → prompt asks A → B → D
+  Chain A → B → C → D, B and C both not found → prompt asks A → D
+
+Critical rules:
+- Do NOT name found concepts explicitly if doing so makes the answer trivially obvious.
+  Keep found concepts implicit via a relational phrase ("the country associated with X").
+- Remove ALL phrasing that resolves the skipped concepts.
+- The final answer must remain correct and non-obvious from the question alone.
+- The rewrite must be natural English.
+- Return ONLY valid JSON with keys "rewritten_question" and "skip_description".
 
 ---
-Example A — substituting the first missed concept, keeping later chain intact:
+Example A — 3-hop, no found concepts, skip all intermediates:
 
 Input:
-  original: "What continent is the country in where the director of the performer of Back in the U.S.S.R. is a citizen?"
-  chain: Back in the U.S.S.R. → The Beatles → Brian Epstein → United Kingdom → Europe
+  original: "What faith is linked to the child of the individual who established the Sasanian Empire?"
+  chain: Ardashir I → Shapur I → Zoroastrianism
+  correct_answer: Zoroastrianism
+  found_concepts: []
+  skip_concepts: ["Ardashir I", "Shapur I"]
+
+Output:
+  {{"rewritten_question": "What faith is linked to the Sasanian Empire?", "skip_description": "removed founder+child hops; no found concepts so Sasanian Empire (from original question) becomes the direct anchor"}}
+
+---
+Example B — 4-hop, skip Beatles+Epstein, keep UK implicit (answer=London):
+
+Input:
+  original: "What city is the capital of the country of citizenship of the director of the performer of Nowhere Man?"
+  chain: Nowhere Man → The Beatles → Brian Epstein → United Kingdom → London
+  correct_answer: London
+  found_concepts: ["United Kingdom"]
+  skip_concepts: ["The Beatles", "Brian Epstein"]
+
+Output:
+  {{"rewritten_question": "What city is the capital of the country Nowhere Man is associated with?", "skip_description": "removed performer+director hops; UK kept implicit so London isn't trivially obvious"}}
+
+---
+Example C — 4-hop, skip Junkers+Hugo Junkers, keep Germany implicit (answer=Europe):
+
+Input:
+  original: "What continent contains the country of citizenship of the founder of the developer of Ju 88?"
+  chain: Ju 88 → Junkers → Hugo Junkers → Germany → Europe
   correct_answer: Europe
-  found_concepts: United Kingdom
-  missed_concept: "The Beatles"
+  found_concepts: ["Germany"]
+  skip_concepts: ["Junkers", "Hugo Junkers"]
 
 Output:
-  {{"rewritten_question": "What continent is the country in where the director of The Beatles is a citizen?", "substitution_made": "replaced 'the performer of Back in the U.S.S.R.' with 'The Beatles', kept 'director of ___'"}}
-
----
-Example B — substituting a later missed concept, skipping further into the chain:
-
-Input:
-  original: "What continent is the country in where the director of the performer of Back in the U.S.S.R. is a citizen?"
-  chain: Back in the U.S.S.R. → The Beatles → Brian Epstein → United Kingdom → Europe
-  correct_answer: Europe
-  found_concepts: United Kingdom
-  missed_concept: "Brian Epstein"
-
-Output:
-  {{"rewritten_question": "What continent is the country in where Brian Epstein is a citizen?", "substitution_made": "replaced 'the director of the performer of Back in the U.S.S.R.' with 'Brian Epstein'"}}
-
----
-Example C — one hop found, substitute the single missing one:
-
-Input:
-  original: "What city is home to the headquarters of the university where the entity known as President of Albania was educated?"
-  chain: President of Albania → Ilir Meta → University of Tirana → Tirana
-  correct_answer: Tirana
-  found_concepts: University of Tirana
-  missed_concept: "Ilir Meta"
-
-Output:
-  {{"rewritten_question": "What city is home to the headquarters of the university where Ilir Meta was educated?", "substitution_made": "replaced 'the entity known as President of Albania' with 'Ilir Meta'"}}
+  {{"rewritten_question": "What continent is the country that developed Ju 88 in?", "skip_description": "removed developer+founder hops; Germany kept implicit"}}
 """
 
 USER_TEMPLATE = """\
@@ -108,31 +141,30 @@ original: "{original_prompt}"
 chain: {chain}
 correct_answer: {correct_answer}
 found_concepts: {found_concepts}
-missed_concept: "{missed_concept}"
+skip_concepts: {skip_concepts}
 """
 
 
 def call_gpt(client: OpenAI, original_prompt: str, chain: str,
-             correct_answer: str, missed_concept: str,
-             found_concepts: list[str]) -> dict | None:
+             correct_answer: str, found_concepts: list[str],
+             skip_concepts: list[str]) -> dict | None:
     user_msg = USER_TEMPLATE.format(
         original_prompt=original_prompt,
         chain=chain,
         correct_answer=correct_answer,
-        missed_concept=missed_concept,
-        found_concepts=", ".join(found_concepts) if found_concepts else "none",
+        found_concepts=json.dumps(found_concepts),
+        skip_concepts=json.dumps(skip_concepts),
     )
     try:
         resp = client.chat.completions.create(
             model=MODEL,
-            max_completion_tokens=1024,
+            max_completion_tokens=2048,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_msg},
             ],
         )
         text = (resp.choices[0].message.content or "").strip()
-        # strip markdown code fences if present
         if text.startswith("```"):
             text = text.split("```")[1]
             if text.startswith("json"):
@@ -164,20 +196,30 @@ def _parse_list(val: str) -> list[str]:
         return []
 
 
-def load_shortcut_candidates(hop_csv: Path) -> list[dict]:
+def load_candidates(hop_csv: Path) -> list[dict]:
+    """
+    Select cases where:
+      - num_hops >= 3 (3-hop or 4-hop only — 2-hop skips are trivial 1-hop questions)
+      - model is correct
+      - at least one intermediate concept was NOT found in the attribution graph
+
+    Found concepts are considered load-bearing (the graph shows the model used
+    them).  Only missed concepts are worth testing — these are intermediates the
+    model skipped over, suggesting a direct shortcut to D.
+    """
     candidates = []
     with open(hop_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             try:
-                num_hops = int(row.get("num_hops") or 0)
                 model_correct = row.get("model_correct", "").lower() == "true"
-                n_concepts = int(row.get("n_intermediate_concepts") or 0)
                 n_found = int(row.get("n_hops_found") or 0)
+                n_intermediate = int(row.get("n_intermediate_concepts") or 0)
+                num_hops = int(row.get("num_hops") or 0)
             except (ValueError, TypeError):
                 continue
-            if model_correct and num_hops >= 3 and n_concepts > 0 and n_found < n_concepts:
+            n_missed = n_intermediate - n_found
+            if model_correct and n_missed > 0 and num_hops >= 3:
                 row["_concepts_missed"] = _parse_list(row.get("concepts_missed", "[]"))
-                row["_concepts_found"] = _parse_list(row.get("concepts_found", "[]"))
                 candidates.append(row)
     return candidates
 
@@ -199,9 +241,9 @@ def main() -> None:
 
     client = OpenAI()
 
-    print("Loading shortcut candidates from hop_analysis.csv ...")
-    candidates = load_shortcut_candidates(HOP_CSV)
-    print(f"  {len(candidates)} candidates found\n")
+    print("Loading candidates from hop_analysis.csv ...")
+    candidates = load_candidates(HOP_CSV)
+    print(f"  {len(candidates)} candidates (3-hop+, correct, at least one intermediate NOT found)\n")
 
     print("Loading original prompts from ground_truth_mquake.csv ...")
     gt_by_slug = load_ground_truth(GROUND_TRUTH_CSV)
@@ -221,60 +263,65 @@ def main() -> None:
         chain = cand.get("notes", "").strip()
         correct_answer = cand["correct_answer"].strip()
         missed = cand["_concepts_missed"]
-        found = cand["_concepts_found"]
-        num_hops = cand["num_hops"]
+        found = _parse_list(cand.get("concepts_found", "[]"))
+        num_hops = cand.get("num_hops", "?")
 
-        print(f"[{slug}] {num_hops}-hop | found: {found} | missed: {missed}")
+        print(f"[{slug}] {num_hops}-hop | missed: {missed} | found: {found}")
         print(f"  Chain: {chain}")
+        print(f"  → Generating skip for all missed concepts ...")
 
-        for i, missed_concept in enumerate(missed, start=1):
-            print(f"  → Generating shortcut for missed concept: '{missed_concept}' ...")
-            result = call_gpt(client, original_prompt, chain, correct_answer, missed_concept, found)
-            if result is None:
-                print(f"    SKIP (GPT failed)")
-                continue
+        result = call_gpt(client, original_prompt, chain, correct_answer, found, missed)
+        if result is None:
+            print(f"    SKIP (GPT failed)")
+            print()
+            continue
 
-            rewritten = result.get("rewritten_question", "").strip()
-            substitution = result.get("substitution_made", "")
-            if not rewritten:
-                print(f"    SKIP (empty rewrite)")
-                continue
+        rewritten = result.get("rewritten_question", "").strip()
+        description = result.get("skip_description", "")
+        if not rewritten:
+            print(f"    SKIP (empty rewrite)")
+            print()
+            continue
 
-            sc_slug = f"{slug}-sc{i}"
-            wrapped = wrap_prompt(rewritten)
+        skip_slug = f"{slug}-skip"
+        wrapped = wrap_prompt(rewritten)
 
-            print(f"    {sc_slug}: {rewritten}")
-            print(f"    ({substitution})")
+        print(f"    {skip_slug}: {rewritten}")
+        print(f"    ({description})")
 
-            prompt_rows.append({
-                "slug": sc_slug,
-                "prompt": wrapped,
-                "transcoder_set": "gemma",
-            })
-            gt_rows.append({
-                "slug": sc_slug,
-                "prompt": rewritten,
-                "intermediate_concept": missed_concept,
-                "correct_answer": correct_answer,
-                "hop_type": f"shortcut (from {slug})",
-                "num_hops": 1,
-                "notes": f"Shortcut: '{missed_concept}' substituted directly | original chain: {chain}",
-            })
-            total_variants += 1
+        prompt_rows.append({
+            "slug": skip_slug,
+            "prompt": wrapped,
+            "transcoder_set": "gemma",
+        })
+        gt_rows.append({
+            "slug": skip_slug,
+            "prompt": rewritten,
+            "intermediate_concept": ", ".join(missed),
+            "correct_answer": correct_answer,
+            "hop_type": f"skip-test (from {slug})",
+            "num_hops": max(int(num_hops) - len(missed), 1) if str(num_hops).isdigit() else 1,
+            "notes": (
+                f"Skipped {missed} (NOT found in graph) | "
+                f"kept {found} (found, load-bearing) | "
+                f"original chain: {chain} | "
+                f"if still correct → shortcut confirmed | "
+                f"if wrong → missed concepts were implicitly needed"
+            ),
+        })
+        total_variants += 1
 
         print()
 
     if not prompt_rows:
-        print("No shortcut prompts generated.", file=sys.stderr)
+        print("No skip prompts generated.", file=sys.stderr)
         sys.exit(1)
 
-    # Write prompts CSV
     with open(PROMPTS_OUT, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=["slug", "prompt", "transcoder_set"])
         w.writeheader()
         w.writerows(prompt_rows)
 
-    # Write ground truth CSV
     gt_fields = ["slug", "prompt", "intermediate_concept", "correct_answer",
                  "hop_type", "num_hops", "notes"]
     with open(GT_OUT, "w", newline="", encoding="utf-8") as f:
@@ -283,9 +330,9 @@ def main() -> None:
         w.writerows(gt_rows)
 
     print("=" * 60)
-    print(f"  Generated {total_variants} shortcut prompt(s) from {len(candidates)} candidate(s)")
-    print(f"  Prompts CSV     -> {PROMPTS_OUT}")
-    print(f"  Ground truth    -> {GT_OUT}")
+    print(f"  Generated {total_variants} skip variant(s) from {len(candidates)} candidate(s)")
+    print(f"  Prompts CSV  -> {PROMPTS_OUT}")
+    print(f"  Ground truth -> {GT_OUT}")
     print()
     print("NEXT STEPS — run these manually:")
     print()
@@ -298,7 +345,7 @@ def main() -> None:
     print(f"     GROUPING_VARIANTS=a2 ./batch_reproduce.sh \\")
     print(f"       {PROMPTS_OUT.relative_to(PACKAGE_DIR)}")
     print()
-    print("  3. Analyze hops (from custom_automation/):")
+    print("  3. Analyze (from custom_automation/):")
     print(f"     python analysis/analyze_hops.py \\")
     print(f"       --ground_truth {GT_OUT} \\")
     print(f"       --variants a2")
