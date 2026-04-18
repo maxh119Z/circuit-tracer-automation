@@ -29,6 +29,7 @@ Usage
     python explore_interesting_graphs.py
     python explore_interesting_graphs.py --graphs_dir ../../test_graphs --top_k 20
     python explore_interesting_graphs.py --min_confidence 0.05 --influence_threshold 0.3 --no_llm
+    python analysis/explore_interesting_graphs.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
 """
 
 from __future__ import annotations
@@ -50,7 +51,7 @@ from openai import OpenAI
 PACKAGE_DIR = Path(__file__).resolve().parent.parent
 REPO_ROOT = PACKAGE_DIR.parent
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
-ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
+ARTIFACTS_DIR = PACKAGE_DIR / "analysis" / "results"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -162,7 +163,9 @@ def get_supernode_names(graph: dict) -> list[str]:
     names = []
     for item in items:
         if isinstance(item, list) and item:
-            names.append(str(item[0]))
+            name = str(item[0])
+            if not name.startswith("Emb:") and not name.startswith("Output:"):
+                names.append(name)
     return names
 
 
@@ -220,41 +223,51 @@ def compute_metrics(graph: dict, influence_threshold: float) -> dict:
 LLM_JUDGE_MODEL = "gpt-5-mini"
 
 LLM_SYSTEM = (
-    "You are an interpretability researcher evaluating attribution graphs from a "
-    "language model. Your job is to judge whether the internal feature groups "
-    "that activated for a given prompt are *surprising* or *interesting* from an "
-    "interpretability standpoint.\n\n"
-    "Interesting means: the internal reasoning path is unexpected, reveals a non-obvious "
-    "concept the model relies on, or shows the model doing something more complex than "
-    "simple token matching. Uninteresting means: obvious features, surface-level pattern "
-    "matching, or nothing unexpected given the input."
+    "You are a strict interpretability researcher evaluating attribution graphs from a "
+    "language model. You are highly selective — you flag a graph as interesting only when "
+    "there is a *specific*, *concrete* anomaly worth investigating.\n\n"
+    "Flag as interesting (true) ONLY if at least one of these holds:\n"
+    "  1. The model predicted the WRONG answer but internal features show it had the RIGHT "
+    "concept (e.g. correct intermediate entity activated, but wrong token emitted).\n"
+    "  2. The model predicted the right answer but via clearly WRONG internal concepts "
+    "(e.g. irrelevant or contradictory features dominating).\n"
+    "  3. A specific unexpected concept fires that has no plausible connection to the prompt "
+    "(not just noise — something that reveals a surprising association).\n"
+    "  4. Strong, highly specific internal conflict between competing supernode groups — "
+    "meaning two clearly opposing concept clusters are both strongly active in a way that "
+    "is surprising given the question. Mild competition between similar nodes (e.g. a few "
+    "continent names on a continent question) does NOT count.\n\n"
+    "Do NOT flag as interesting:\n"
+    "  - Geography questions where a few continent/region nodes fire alongside the correct one.\n"
+    "  - Language questions where a few language nodes fire alongside the correct one.\n"
+    "  - Any question where all activated features are plausibly related to the prompt.\n"
+    "  - Low confidence alone without a specific anomaly.\n\n"
+    "Be conservative. Expect that most graphs (80%+) are NOT interesting."
 )
 
 LLM_PROMPT_TEMPLATE = """\
 Prompt given to the model: "{prompt}"
-Model's predicted output: "{predicted}"
+Model's predicted output: "{predicted}" — correct answer is: {correct_answer}
 Model confidence: {confidence:.1%} — {confidence_band}
 
-High-level feature groups that activated (supernode labels):
+Feature groups that activated (supernode labels):
 {groups}
 
 Sample descriptions of the most influential individual nodes (by influence score):
 {clerp_samples}
 
-Question: Is this internal reasoning path surprising or interesting from an \
-interpretability standpoint? Note: very high confidence on an obvious question \
-is typically uninteresting. Moderate confidence with unexpected internal concepts \
-is more interesting.
+Is there a specific, concrete anomaly here worth investigating? Be strict — most graphs \
+should NOT be flagged.
 
 Reply in this exact JSON format:
 {{
   "is_interesting": true or false,
-  "score": <integer 1-5, where 5 = extremely interesting>,
-  "reason": "<one or two sentences explaining why>"
+  "score": <integer 1-5, where 5 = extremely interesting, 1 = not interesting>,
+  "reason": "<one concrete sentence naming the specific anomaly, or why there is none>"
 }}"""
 
 
-def call_llm_judge(prompt: str, predicted: str, confidence: float,
+def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence: float,
                    groups: list[str], clerps: list[str], client: OpenAI) -> dict:
     """Call GPT-5-mini to judge whether the graph is interesting. Returns parsed JSON."""
     groups_str = "\n".join(f"  - {g}" for g in groups) if groups else "  (no supernode groups)"
@@ -262,6 +275,7 @@ def call_llm_judge(prompt: str, predicted: str, confidence: float,
     user_msg = LLM_PROMPT_TEMPLATE.format(
         prompt=prompt,
         predicted=predicted,
+        correct_answer=correct_answer or "unknown",
         confidence=confidence,
         confidence_band=confidence_band(confidence),
         groups=groups_str,
@@ -270,7 +284,7 @@ def call_llm_judge(prompt: str, predicted: str, confidence: float,
     try:
         response = client.chat.completions.create(
             model=LLM_JUDGE_MODEL,
-            max_tokens=256,
+            max_completion_tokens=1024,
             messages=[
                 {"role": "system", "content": LLM_SYSTEM},
                 {"role": "user", "content": user_msg},
@@ -295,23 +309,52 @@ def run(
     min_confidence: float,
     influence_threshold: float,
     use_llm: bool,
+    ground_truth: Path | None,
+    variants: list[str],
 ) -> None:
-    graph_paths = sorted(graphs_dir.glob("*.json"))
-    if not graph_paths:
-        print(f"No graph JSONs found in {graphs_dir}", file=sys.stderr)
-        sys.exit(1)
-    print(f"Found {len(graph_paths)} graph(s) in {graphs_dir}")
+    # Build list of (slug, path) to process
+    if ground_truth is not None:
+        if not ground_truth.exists():
+            print(f"ERROR: ground truth CSV not found: {ground_truth}", file=sys.stderr)
+            sys.exit(1)
+        gt_rows: dict[str, str] = {}
+        with open(ground_truth, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                slug = row["slug"].strip()
+                if slug and not re.search(r"-h\d+$", slug):
+                    gt_rows[slug] = row.get("correct_answer", "").strip()
+        candidates_paths: list[tuple[str, Path, str]] = []
+        for slug, correct_answer in gt_rows.items():
+            for variant in variants:
+                name = f"{slug}-v2-{variant}.json" if variant else f"{slug}.json"
+                p = graphs_dir / name
+                if p.exists():
+                    candidates_paths.append((f"{slug} ({variant})", p, correct_answer))
+                else:
+                    print(f"  SKIP {slug} ({variant}) — {p.name} not found")
+        if not candidates_paths:
+            print("No matching graph files found.", file=sys.stderr)
+            sys.exit(1)
+        print(f"Found {len(candidates_paths)} graph(s) from ground truth CSV")
+    else:
+        all_paths = sorted(graphs_dir.glob("*.json"))
+        if not all_paths:
+            print(f"No graph JSONs found in {graphs_dir}", file=sys.stderr)
+            sys.exit(1)
+        candidates_paths = [(p.stem, p, "") for p in all_paths]
+        print(f"Found {len(candidates_paths)} graph(s) in {graphs_dir}")
 
     # ------------------------------------------------------------------
     # Step 1-2: Load and compute metrics
     # ------------------------------------------------------------------
     all_metrics: list[dict] = []
-    for path in graph_paths:
+    for label, path, correct_answer in candidates_paths:
         graph = load_graph(path)
         if graph is None:
             continue
         m = compute_metrics(graph, influence_threshold)
-        m["slug"] = path.stem
+        m["slug"] = label
+        m["correct_answer"] = correct_answer
         all_metrics.append(m)
 
     print(f"  Loaded {len(all_metrics)} valid graphs")
@@ -327,11 +370,11 @@ def run(
         sys.exit(0)
 
     # ------------------------------------------------------------------
-    # Step 4: Rank by longest path (deeper reasoning = more interesting)
+    # Step 4: Rank by number of meaningful supernode groups
     # ------------------------------------------------------------------
-    ranked = sorted(clean, key=lambda m: m["longest_path_length"], reverse=True)
+    ranked = sorted(clean, key=lambda m: m["num_supernode_groups"], reverse=True)
     candidates = ranked[:top_k]
-    print(f"  Top {len(candidates)} candidates by longest path\n")
+    print(f"  Top {len(candidates)} candidates by supernode group count\n")
 
     # ------------------------------------------------------------------
     # Step 5: LLM judge
@@ -348,8 +391,8 @@ def run(
         if use_llm and client is not None:
             print(f"  [{i+1}/{len(candidates)}] LLM judging: {m['slug']} ...", end=" ", flush=True)
             verdict = call_llm_judge(
-                m["prompt"], m["predicted"], m["model_confidence"],
-                groups, m["top_clerps"], client
+                m["prompt"], m["predicted"], m.get("correct_answer", ""),
+                m["model_confidence"], groups, m["top_clerps"], client
             )
             llm_score = verdict.get("score", 0)
             llm_interesting = verdict.get("is_interesting", False)
@@ -392,7 +435,6 @@ def run(
         f.write("# Interesting Graph Exploration\n\n")
         f.write(f"Graphs scanned: {len(all_metrics)}  \n")
         f.write(f"Passed confidence filter (≥{min_confidence:.1%}): {len(clean)}  \n")
-        f.write(f"Influence threshold for path: {influence_threshold}  \n")
         f.write(f"Top-K candidates: {len(candidates)}\n\n")
 
         if use_llm:
@@ -401,13 +443,13 @@ def run(
 
         # Summary table
         f.write("## Ranked Candidates\n\n")
-        f.write("| Slug | Confidence | Longest path | LLM score | Interesting? |\n")
-        f.write("|------|------------|:------------:|:---------:|:------------:|\n")
+        f.write("| Slug | Confidence | Supernode groups | LLM score | Interesting? |\n")
+        f.write("|------|------------|:----------------:|:---------:|:------------:|\n")
         for r in results:
             tick = ("✓" if r["llm_interesting"] else "✗") if r["llm_interesting"] is not None else "—"
             f.write(
                 f"| {r['slug']} | {r['model_confidence']:.1%} "
-                f"| {r['longest_path_length']} "
+                f"| {r['num_supernode_groups']} "
                 f"| {r['llm_score'] or '—'} "
                 f"| {tick} |\n"
             )
@@ -432,7 +474,7 @@ def run(
     print("=" * 55)
     print(f"  Graphs scanned:          {len(all_metrics)}")
     print(f"  Passed confidence filter:{len(clean)}")
-    print(f"  Longest path (max):      {results[0]['longest_path_length'] if results else 0}")
+    print(f"  Supernode groups (max):  {results[0]['num_supernode_groups'] if results else 0}")
     if use_llm:
         n_interesting = sum(1 for r in results if r["llm_interesting"])
         print(f"  LLM flagged interesting: {n_interesting}/{len(results)}")
@@ -467,6 +509,14 @@ if __name__ == "__main__":
         "--no_llm", action="store_true",
         help="Skip the LLM judge and rank by path length only",
     )
+    parser.add_argument(
+        "--ground_truth", type=Path, default=None,
+        help="CSV with a 'slug' column; only those graphs are processed (skips missing files)",
+    )
+    parser.add_argument(
+        "--variants", type=str, default="a2",
+        help="Comma-separated grouping variants to look for (default: a2)",
+    )
     args = parser.parse_args()
     run(
         graphs_dir=args.graphs_dir,
@@ -474,4 +524,6 @@ if __name__ == "__main__":
         min_confidence=args.min_confidence,
         influence_threshold=args.influence_threshold,
         use_llm=not args.no_llm,
+        ground_truth=args.ground_truth,
+        variants=[v.strip() for v in args.variants.split(",")],
     )
