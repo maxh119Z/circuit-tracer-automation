@@ -190,7 +190,8 @@ def build_amplify_interventions(answer_features: list[dict],
     tuples = []
     for f in answer_features:
         layer, ctx_idx, feature_idx = f["layer"], f["ctx_idx"], f["feature_idx"]
-        if layer >= activation_cache.shape[0] or ctx_idx >= activation_cache.shape[1]:
+        if (layer >= activation_cache.shape[0] or ctx_idx >= activation_cache.shape[1]
+                or feature_idx >= activation_cache.shape[2]):
             continue
         default_act = float(activation_cache[layer, ctx_idx, feature_idx].item())
         tuples.append((layer, ctx_idx, feature_idx, AMPLIFY_FACTOR * default_act))
@@ -370,8 +371,9 @@ def run(variants: list[str], dry_run: bool = False) -> None:
     # Write CSV
     fieldnames = list(results[0].keys())
     with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
-        csv.DictWriter(f, fieldnames=fieldnames).writeheader()
-        csv.DictWriter(f, fieldnames=fieldnames).writerows(results)
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(results)
     print(f"\nCSV  -> {OUT_CSV}")
 
     # Write markdown
