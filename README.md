@@ -16,7 +16,7 @@ export OPENAI_API_KEY="sk-..."
 
 ### 1. Run attribution (circuit-tracer)
 ```bash
-circuit-tracer attribute --prompt "The capital of the state containing Dallas is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
+circuit-tracer attribute --prompt "The capital of the state containing Oakland is" --transcoder_set gemma --slug test-run --graph_file_dir ./test_graphs --server
 ```
 
 ### 2. Run the automation pipeline
@@ -35,7 +35,7 @@ cd custom_automation
 # Run all 4 grouping variants without validation.
 RUN_VALIDATE=false ./reproduce.sh all-groups
 
-# Full pipeline in one shot; 1 grouping variant (a0), v2 description generation.
+# Full pipeline in one shot; 1 grouping variant (a2), v2 description generation.
 ./reproduce.sh core
 ```
 
@@ -66,14 +66,14 @@ Prompt CSVs and their ground truth files live in `prompts/`:
 | `prompts/ground_truth_wikipedia.csv` | Ground truth for Wikipedia set |
 
 ```bash
-# Step 1: attribute all prompts (generates graph JSONs)
-circuit-tracer attribute-batch --csv prompts/prompts.csv --graph_file_dir ./test_graphs
+# Step 1: attribute all prompts (generates graph JSONs). CHANGE CSV between runs
+circuit-tracer attribute-batch --csv prompts/prompts_capital.csv --graph_file_dir ./test_graphs
 ```
 
 ### Single grouping variant
 ```bash
 # Run pipeline for all prompts, one grouping variant
-./batch_reproduce.sh ../prompts/prompts.csv
+./batch_reproduce.sh ../prompts/prompts_capital.csv
 
 # With validation
 ./batch_reproduce.sh ../prompts/prompts_anthropic.csv all
