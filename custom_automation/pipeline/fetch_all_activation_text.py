@@ -196,11 +196,11 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
         tokens = ex.get("tokens", [])
         scores = ex.get("tokens_acts_list", []) or ex.get("values", [])
         if scores and len(scores) == len(tokens):
-            max_val = max(scores)
+            top_indices = sorted(range(len(scores)), key=lambda i: scores[i], reverse=True)[:3]
             parsed["top_activations"].append(
                 {
-                    "trigger": str(tokens[scores.index(max_val)]),
-                    "score": round(max_val, 2),
+                    "triggers": [str(tokens[i]) for i in top_indices],
+                    "score": round(scores[top_indices[0]], 2),
                     "context": "".join(str(t) for t in tokens).replace("\n", " "),
                 }
             )

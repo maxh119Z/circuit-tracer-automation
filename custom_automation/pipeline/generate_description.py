@@ -12,7 +12,6 @@ Usage:
     export OPENAI_API_KEY="sk-..."
     python add_description.py
 """
-
 from __future__ import annotations
 
 import asyncio
@@ -131,8 +130,8 @@ _V2_CORE = (
 
     "PROPER NOUNS:\n"
     "If a specific name, place, or entity recurs across the activations — even in a minority of them — "
-    "include it in the SHORT_LABEL or elaboration. Don’t collapse to a generic label when a specific one is clearly supported. "
-    "Recurring proper nouns are a signal of specificity, not noise. "
+    "include it in the SHORT_LABEL or elaboration. Don’t collapse to a generic label when a specific one is clearly supported. Beyond highlighted triggers, also consider consistently occuring proper nouns."
+    "These are a signal of specificity, not noise. "
     "If highlighted tokens vary widely and the feature looks polysemantic, capture the consistently specific entities that recur across excerpts when clear and possible rather than defaulting to a single broad label.\n\n"
 
     "AVOID:\n"
@@ -209,12 +208,18 @@ def _get_system_prompt() -> str:
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _format_excerpt(context: str, trigger: str) -> str:
-    """Wrap *trigger* in ``<<<>>>`` within *context*."""
-    clean = trigger.strip()
-    if clean and clean in context:
-        return context.replace(clean, f"<<<{clean}>>>", 1)
-    return f"{context} [Activates on: <<<{clean}>>>]"
+def _format_excerpt(context: str, triggers: list[str]) -> str:
+    """Wrap each trigger token in <<<>>> within context."""
+    marked = False
+    for t in triggers:
+        clean = t.strip()
+        if clean and clean in context:
+            context = context.replace(clean, f"<<<{clean}>>>", 1)
+            marked = True
+    if not marked:
+        context += f" [Activates on: <<<{'|'.join(t.strip() for t in triggers)}>>>]"
+    return context
+
 
 def _build_user_prompt(feature: dict, prompt_text: str) -> str:
     """Compose the user-turn content including prompt context, inputs, and output logits."""
@@ -225,7 +230,8 @@ def _build_user_prompt(feature: dict, prompt_text: str) -> str:
 
     lines.append("\n--- INPUT ACTIVATIONS ---")
     for i, act in enumerate(feature.get("top_activations", [])[:10], 1):
-        formatted = _format_excerpt(act.get("context", ""), act.get("trigger", ""))
+        triggers = act.get("triggers") or [act.get("trigger", "")]
+        formatted = _format_excerpt(act.get("context", ""), triggers)
         lines.append(f"Excerpt {i}: {formatted}")
 
     lines.append("\n--- GLOBAL OUTPUT TOKENS ---")

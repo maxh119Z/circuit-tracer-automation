@@ -169,7 +169,7 @@ _SAY_X_STRICTNESS = (
 
 _SPECIFICITY_BIAS_BASE = (
     "When in doubt between narrower and broader groups, use whichever granularity best explains the model's specific output and prompt. "
-    "Consider both the prompt and the predicted output together: a distinction is worth keeping only if it is relevant to what was asked and what the model predicted. "
+    "Consider both the prompt and the predicted output together: a distinction is worth keeping only if it is relevant to what was asked and (or) what the model predicted. "
 )
 
 
