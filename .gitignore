@@ -202,4 +202,6 @@ custom_automation/**/__pycache__/
 # Misc
 test_graphs*/
 .claude/
+.DS_Store
+**/.DS_Store
 # CUSTOM EDITS END: custom-automation
