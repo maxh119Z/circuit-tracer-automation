@@ -1,5 +1,9 @@
 """
-run_amplify.py — Amplify answer-token features to correct wrong predictions.
+run_amplify_constrained.py — Amplify answer-token features (constrained patching).
+
+Same candidate selection as run_amplify.py but uses constrained_layers=range(n_layers),
+which freezes all other transcoder outputs and attention patterns so only the steered
+features' own decoder vectors affect the output (direct effects / paper's primary method).
 
 Candidates: rows in hop_analysis.csv where
   - model_correct = False
@@ -9,17 +13,18 @@ Candidates: rows in hop_analysis.csv where
 For each candidate:
   1. Load the graph and feature_groups artifact.
   2. Find transcoder features whose supernode group contains the correct answer.
-  3. Run baseline forward pass, then amplify those features by AMPLIFY_FACTOR.
+  3. Run baseline forward pass, then amplify those features by AMPLIFY_FACTOR
+     with constrained_layers=range(n_layers).
   4. Check whether the model now outputs the correct answer.
 
 Writes:
-  analysis/amplify_experiment/amplify_results.csv
-  analysis/amplify_experiment/amplify_results.md
+  analysis/amplify_experiment/amplify_constrained_results.csv
+  analysis/amplify_experiment/amplify_constrained_results.md
 
 Usage:
-    python analysis/amplify_experiment/run_amplify.py
-    python analysis/amplify_experiment/run_amplify.py --variants a2
-    python analysis/amplify_experiment/run_amplify.py --dry_run
+    python analysis/amplify_experiment/run_amplify_constrained.py
+    python analysis/amplify_experiment/run_amplify_constrained.py --variants a2
+    python analysis/amplify_experiment/run_amplify_constrained.py --dry_run
 """
 
 from __future__ import annotations
@@ -39,14 +44,13 @@ TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 HOP_CSV = PACKAGE_DIR / "analysis" / "results" / "hop_analysis.csv"
 OUT_DIR = Path(__file__).resolve().parent
-OUT_CSV = OUT_DIR / "amplify_results.csv"
-OUT_MD = OUT_DIR / "amplify_results.md"
+OUT_CSV = OUT_DIR / "amplify_constrained_results.csv"
+OUT_MD = OUT_DIR / "amplify_constrained_results.md"
 
 DESCRIPTION_VARIANT = "v2"
 MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
 
-# Multiply baseline activation by this factor. 5x is a strong but not extreme boost.
 AMPLIFY_FACTOR = 5.0
 
 
@@ -63,12 +67,6 @@ def _parse_list(val: str) -> list[str]:
 
 
 def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
-    """
-    Filter hop_analysis.csv for rows where:
-      - model_correct = False
-      - correct answer token appears (case-insensitive) in all_supernodes
-      - variant is in the requested list
-    """
     candidates = []
     with open(hop_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
@@ -89,7 +87,7 @@ def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Graph / feature loading (mirrors run_interventions.py)
+# Graph / feature loading
 # ---------------------------------------------------------------------------
 
 def load_graph(path: Path) -> dict | None:
@@ -159,7 +157,7 @@ def find_answer_features(graph: dict, correct_answer: str,
 
 
 # ---------------------------------------------------------------------------
-# Steering helpers (mirrors run_interventions.py)
+# Steering helpers
 # ---------------------------------------------------------------------------
 
 def build_amplify_interventions(answer_features: list[dict],
@@ -205,12 +203,13 @@ def fmt_top5(top5: list[tuple[str, float]]) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Single run
+# Single run — constrained patching
 # ---------------------------------------------------------------------------
 
 def run_single(model, prompt: str, correct_answer: str,
                answer_features: list[dict]) -> dict:
     tok_id = correct_token_id(model.tokenizer, correct_answer)
+    n_layers = model.cfg.n_layers
 
     with torch.inference_mode():
         baseline_logits, activation_cache = model.feature_intervention(
@@ -218,7 +217,10 @@ def run_single(model, prompt: str, correct_answer: str,
         )
         amp_tuples = build_amplify_interventions(answer_features, activation_cache)
         amplified_logits, _ = model.feature_intervention(
-            prompt, amp_tuples, return_activations=False
+            prompt,
+            amp_tuples,
+            constrained_layers=range(n_layers),
+            return_activations=False,
         )
 
     base_last = next_token_logits(baseline_logits)
@@ -315,7 +317,6 @@ def run(variants: list[str], dry_run: bool = False) -> None:
             results.append({**base_row, **EMPTY_METRICS, "skipped": "graph_missing"})
             continue
 
-        # Pull prompt from the graph metadata — hop_analysis.csv has no prompt column
         prompt = graph.get("metadata", {}).get("prompt", "").replace("<bos>", "").strip()
         base_row["prompt"] = prompt[:80]
         if not prompt:
@@ -348,7 +349,6 @@ def run(variants: list[str], dry_run: bool = False) -> None:
             print(f"  {r['slug']} ({r['variant']}): {r['n_features_amplified']} answer feature(s)")
         return
 
-    # Write CSV
     fieldnames = list(results[0].keys())
     with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -356,16 +356,16 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         writer.writerows(results)
     print(f"\nCSV  -> {OUT_CSV}")
 
-    # Write markdown
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
     n_flipped = sum(1 for r in valid if r.get("flipped_correct"))
 
     with open(OUT_MD, "w", encoding="utf-8") as f:
-        f.write("# Amplify Experiment Results\n\n")
+        f.write("# Amplify Experiment Results (Constrained Patching)\n\n")
         f.write(f"Variants: {', '.join(variants)}  \n")
         f.write(f"Candidates: {len(candidates)}  \n")
-        f.write(f"Amplify factor: {AMPLIFY_FACTOR}×  \n\n")
+        f.write(f"Amplify factor: {AMPLIFY_FACTOR}×  \n")
+        f.write(f"Method: constrained patching (direct effects only — constrained_layers=range(n_layers))  \n\n")
 
         f.write("## Summary\n\n")
         f.write("| Metric | Value |\n|--------|-------|\n")
@@ -413,7 +413,9 @@ def run(variants: list[str], dry_run: bool = False) -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        description="Amplify answer features via constrained patching (direct effects)."
+    )
     parser.add_argument("--variants", type=str, default="a2")
     parser.add_argument("--dry_run", action="store_true")
     args = parser.parse_args()

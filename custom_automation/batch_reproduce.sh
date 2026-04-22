@@ -255,7 +255,7 @@ done < <(python -c "
 import csv, sys
 for row in csv.reader(open(sys.argv[1])):
     if row[0] == 'slug': continue
-    print(row[0] + '\t' + row[1])
+    print(row[0] + '\t' + row[1].replace('\n', r'\n'))
 " "$CSV_FILE")
 
 # ---------------------------------------------------------------------------

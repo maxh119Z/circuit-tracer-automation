@@ -22,7 +22,7 @@ Outputs:
 Usage:
     python analyze_hops.py
     python analyze_hops.py --variants a0,a3
-    python analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
+    python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
 """
 
 from __future__ import annotations

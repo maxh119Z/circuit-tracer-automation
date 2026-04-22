@@ -42,6 +42,9 @@ Usage:
     python intervention/run_constrained_interventions.py --variants a0,a3
     python intervention/run_constrained_interventions.py --ground_truth ../ground_truth.csv
     python intervention/run_constrained_interventions.py --dry_run   # skip model loading
+    python intervention/run_constrained_interventions.py \
+  --ground_truth ../prompts/ground_truth_mquake.csv
+
 """
 
 from __future__ import annotations
@@ -49,7 +52,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import re
 import sys
 from pathlib import Path
 
@@ -92,7 +94,11 @@ def load_graph(graph_path: Path) -> dict | None:
 
 def load_feature_groups(slug: str, variant: str) -> dict[str, str] | None:
     """Load feature_groups artifact for a slug+variant. Returns {feature_id: group_name} or None."""
+    # Multi-variant naming: artifacts/{slug}-v2-a2/feature_groups_v2_a2.json
     path = ARTIFACTS_DIR / f"{slug}-{DESCRIPTION_VARIANT}-{variant}" / f"feature_groups_{DESCRIPTION_VARIANT}_{variant}.json"
+    if not path.exists():
+        # Single-variant naming: artifacts/{slug}/feature_groups_v2_a2.json
+        path = ARTIFACTS_DIR / slug / f"feature_groups_{DESCRIPTION_VARIANT}_{variant}.json"
     if not path.exists():
         return None
     with open(path, encoding="utf-8") as f:
@@ -101,74 +107,45 @@ def load_feature_groups(slug: str, variant: str) -> dict[str, str] | None:
 
 def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: dict[str, str] | None) -> list[dict]:
     """
-    Return cross-layer transcoder nodes belonging to the supernode group matching
-    the intermediate concept. Falls back to clerp string matching if no groups available.
-    Each entry contains layer, feature_idx, ctx_idx, clerp, influence.
+    Return cross-layer transcoder nodes whose supernode group name shares at least one
+    meaningful word with the intermediate concept (bidirectional word overlap).
+    Returns empty list if no feature_groups are available or no group matches.
     """
-    # Build node_id → node lookup for graph
+    if not feature_groups:
+        return []
+
     node_lookup: dict[str, dict] = {str(n.get("node_id", "")): n for n in graph.get("nodes", [])}
+    concept_words = {w for w in intermediate_concept.lower().split() if len(w) > 2}
 
-    if feature_groups is not None:
-        # Find group names that contain the intermediate concept (case-insensitive substring)
-        concept_lower = intermediate_concept.lower()
-        matching_groups = {
-            g for g in set(feature_groups.values())
-            if g != "Ungrouped"
-            and concept_lower in g.lower()
-            and not g.startswith("Output:")
-            and not g.startswith("Emb:")
-            and not g.lower().startswith("say ")
-        }
-        if not matching_groups:
-            print(f"    WARNING: no group matched '{intermediate_concept}' — falling back to clerp matching")
-        else:
-            print(f"    Groups matched: {matching_groups}")
-            results = []
-            for fid, gname in feature_groups.items():
-                if gname not in matching_groups:
-                    continue
-                node = node_lookup.get(fid)
-                if node is None or node.get("feature_type") != "cross layer transcoder":
-                    continue
-                parts = fid.split("_")
-                if len(parts) < 3:
-                    continue
-                try:
-                    layer = int(parts[0])
-                    feature_idx = int(parts[1])
-                    ctx_idx = int(parts[2])
-                except ValueError:
-                    continue
-                results.append({
-                    "node_id": fid,
-                    "layer": layer,
-                    "feature_idx": feature_idx,
-                    "ctx_idx": ctx_idx,
-                    "clerp": node.get("clerp", ""),
-                    "influence": float(node.get("influence", 0.0)),
-                })
-            return results
+    def _group_matches(g: str) -> bool:
+        if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
+            return False
+        g_lower = g.lower()
+        g_words = {w for w in g_lower.split() if len(w) > 2}
+        # Either concept word appears in group name, or group word appears in concept
+        return bool(concept_words & g_words)
 
-    # Fallback: clerp string matching
-    pattern = re.compile(r"\b" + re.escape(intermediate_concept.lower()) + r"\b")
+    matching_groups = {g for g in set(feature_groups.values()) if _group_matches(g)}
+    if not matching_groups:
+        return []
+
+    print(f"    '{intermediate_concept}' → {sorted(matching_groups)}")
     results = []
-    for node in graph.get("nodes", []):
-        if node.get("feature_type") != "cross layer transcoder":
+    for fid, gname in feature_groups.items():
+        if gname not in matching_groups:
             continue
-        if not pattern.search(node.get("clerp", "").lower()):
+        node = node_lookup.get(fid)
+        if node is None or node.get("feature_type") != "cross layer transcoder":
             continue
-        node_id = str(node.get("node_id", ""))
-        parts = node_id.split("_")
+        parts = fid.split("_")
         if len(parts) < 3:
             continue
         try:
-            layer = int(parts[0])
-            feature_idx = int(parts[1])
-            ctx_idx = int(parts[2])
+            layer, feature_idx, ctx_idx = int(parts[0]), int(parts[1]), int(parts[2])
         except ValueError:
             continue
         results.append({
-            "node_id": node_id,
+            "node_id": fid,
             "layer": layer,
             "feature_idx": feature_idx,
             "ctx_idx": ctx_idx,
@@ -416,6 +393,10 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
         for variant in variants:
             graph_slug = f"{slug}-{DESCRIPTION_VARIANT}-{variant}"
             graph_path = TEST_GRAPHS_DIR / f"{graph_slug}.json"
+            if not graph_path.exists():
+                # Single-variant mode: graph was saved as {slug}.json
+                graph_slug = slug
+                graph_path = TEST_GRAPHS_DIR / f"{slug}.json"
             graph = load_graph(graph_path)
 
             base_row = {
@@ -458,6 +439,11 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
 
             metrics = run_single(model, prompt, correct_answer, hop_features)
             results.append({**base_row, **metrics})
+            rc = metrics.get("rank_change")
+            drop = metrics.get("prob_drop", 0.0)
+            rank_str = (f"{metrics['baseline_rank']} → {metrics['steered_rank']} ({rc:+d})"
+                        if rc is not None else "rank unavailable")
+            print(f"    prob drop: {drop:+.4f} | rank: {rank_str}")
 
     if not results:
         print("No results — check that graphs exist in test_graphs/ and have been processed.")

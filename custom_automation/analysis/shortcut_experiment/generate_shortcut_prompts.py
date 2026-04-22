@@ -218,7 +218,7 @@ def load_candidates(hop_csv: Path) -> list[dict]:
             except (ValueError, TypeError):
                 continue
             n_missed = n_intermediate - n_found
-            if model_correct and n_missed > 0 and num_hops >= 2:
+            if model_correct and n_missed > 0 and num_hops >= 3:
                 row["_concepts_missed"] = _parse_list(row.get("concepts_missed", "[]"))
                 candidates.append(row)
     return candidates
