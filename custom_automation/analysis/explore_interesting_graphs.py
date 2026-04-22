@@ -26,7 +26,7 @@ using topological order (nodes sorted by layer index).
 
 Usage
 -----
-    python explore_interesting_graphs.py
+    python analysis/explore_interesting_graphs.py
     python explore_interesting_graphs.py --graphs_dir ../../test_graphs --top_k 20
     python explore_interesting_graphs.py --min_confidence 0.05 --influence_threshold 0.3 --no_llm
     python analysis/explore_interesting_graphs.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
@@ -236,10 +236,15 @@ LLM_SYSTEM = (
     "  4. Strong, highly specific internal conflict between competing supernode groups — "
     "meaning two clearly opposing concept clusters are both strongly active in a way that "
     "is surprising given the question. Mild competition between similar nodes (e.g. a few "
-    "continent names on a continent question) does NOT count.\n\n"
+    "continent names on a continent question) does NOT count.\n"
+    "  5. Sparse grouping — very few supernode groups (≤2) given the complexity of the prompt, "
+    "suggesting the attribution graph has almost no recoverable structure and the model may be "
+    "doing a direct lookup with no intermediate routing.\n"
+    "  6. Hyper-specific entity — a supernode named after a very specific person, work, or entity "
+    "that is not a normal intermediate reasoning step and abnormal, or specific enough that it is questionable "
+    "whether a dedicated feature should exist for it at all.\n\n"
     "Do NOT flag as interesting:\n"
-    "  - Geography questions where a few continent/region nodes fire alongside the correct one.\n"
-    "  - Language questions where a few language nodes fire alongside the correct one.\n"
+    "  - A few same-category nodes fire alongside the correct answer (e.g. nearby alternatives in the same topic).\n"
     "  - Any question where all activated features are plausibly related to the prompt.\n"
     "  - Low confidence alone without a specific anomaly.\n\n"
     "Be conservative. Expect that most graphs (80%+) are NOT interesting."
@@ -249,6 +254,7 @@ LLM_PROMPT_TEMPLATE = """\
 Prompt given to the model: "{prompt}"
 Model's predicted output: "{predicted}" — correct answer is: {correct_answer}
 Model confidence: {confidence:.1%} — {confidence_band}
+Supernode groups: {num_supernode_groups}
 
 Feature groups that activated (supernode labels):
 {groups}
@@ -268,7 +274,8 @@ Reply in this exact JSON format:
 
 
 def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence: float,
-                   groups: list[str], clerps: list[str], client: OpenAI) -> dict:
+                   groups: list[str], clerps: list[str], num_supernode_groups: int,
+                   client: OpenAI) -> dict:
     """Call GPT-5-mini to judge whether the graph is interesting. Returns parsed JSON."""
     groups_str = "\n".join(f"  - {g}" for g in groups) if groups else "  (no supernode groups)"
     clerps_str = "\n".join(f"  - {c}" for c in clerps) if clerps else "  (no descriptions available)"
@@ -278,6 +285,7 @@ def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence:
         correct_answer=correct_answer or "unknown",
         confidence=confidence,
         confidence_band=confidence_band(confidence),
+        num_supernode_groups=num_supernode_groups,
         groups=groups_str,
         clerp_samples=clerps_str,
     )
@@ -305,7 +313,6 @@ def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence:
 
 def run(
     graphs_dir: Path,
-    top_k: int,
     min_confidence: float,
     influence_threshold: float,
     use_llm: bool,
@@ -369,15 +376,11 @@ def run(
         print("No clean graphs found. Lower --min_confidence.")
         sys.exit(0)
 
-    # ------------------------------------------------------------------
-    # Step 4: Rank by number of meaningful supernode groups
-    # ------------------------------------------------------------------
-    ranked = sorted(clean, key=lambda m: m["num_supernode_groups"], reverse=True)
-    candidates = ranked[:top_k]
-    print(f"  Top {len(candidates)} candidates by supernode group count\n")
+    candidates = clean
+    print(f"  Running LLM judge on all {len(candidates)} clean graphs\n")
 
     # ------------------------------------------------------------------
-    # Step 5: LLM judge
+    # Step 4: LLM judge (all clean graphs)
     # ------------------------------------------------------------------
     client: OpenAI | None = None
     if use_llm:
@@ -392,7 +395,7 @@ def run(
             print(f"  [{i+1}/{len(candidates)}] LLM judging: {m['slug']} ...", end=" ", flush=True)
             verdict = call_llm_judge(
                 m["prompt"], m["predicted"], m.get("correct_answer", ""),
-                m["model_confidence"], groups, m["top_clerps"], client
+                m["model_confidence"], groups, m["top_clerps"], m["num_supernode_groups"], client
             )
             llm_score = verdict.get("score", 0)
             llm_interesting = verdict.get("is_interesting", False)
@@ -413,8 +416,13 @@ def run(
             "supernode_names": " | ".join(groups),
         })
 
-    # Sort final results: LLM score first (if available), then path length
-    results.sort(key=lambda r: (-(r["llm_score"] or 0), -r["longest_path_length"]))
+    # final_score = llm_score (1-5) + supernode_bonus (0-1, normalized across batch)
+    max_groups = max((r["num_supernode_groups"] for r in results), default=1) or 1
+    for r in results:
+        supernode_bonus = r["num_supernode_groups"] / max_groups
+        r["final_score"] = round((r["llm_score"] or 0) + supernode_bonus, 4)
+
+    results.sort(key=lambda r: -r["final_score"])
 
     # ------------------------------------------------------------------
     # Write CSV
@@ -434,8 +442,7 @@ def run(
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Interesting Graph Exploration\n\n")
         f.write(f"Graphs scanned: {len(all_metrics)}  \n")
-        f.write(f"Passed confidence filter (≥{min_confidence:.1%}): {len(clean)}  \n")
-        f.write(f"Top-K candidates: {len(candidates)}\n\n")
+        f.write(f"Passed confidence filter (≥{min_confidence:.1%}): {len(clean)}  \n\n")
 
         if use_llm:
             n_interesting = sum(1 for r in results if r["llm_interesting"])
@@ -494,10 +501,6 @@ if __name__ == "__main__":
         help="Directory containing processed graph JSONs (default: test_graphs/)",
     )
     parser.add_argument(
-        "--top_k", type=int, default=30,
-        help="Number of top candidates to send to the LLM judge (default: 20)",
-    )
-    parser.add_argument(
         "--min_confidence", type=float, default=0.05,
         help="Minimum model confidence to include a graph (default: 0.05)",
     )
@@ -520,7 +523,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     run(
         graphs_dir=args.graphs_dir,
-        top_k=args.top_k,
         min_confidence=args.min_confidence,
         influence_threshold=args.influence_threshold,
         use_llm=not args.no_llm,

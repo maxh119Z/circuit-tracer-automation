@@ -774,7 +774,7 @@ Lastly, this is important, groups such as “suppress X" or “demote X” or �
 4. REASSIGN: Are any individual features obviously in the wrong group given their description and the prompt? Move them. Only reassign with high confidence.
 
 
-5. RELEVANCE DROP: If a group's concept has no clear connection to the prompt's reasoning chain or predicted output — it is not a named entity in the prompt, not an intermediate reasoning step, and not a framing pattern for the output — drop it (members to Ungrouped). Use the SPECIFICITY GUIDANCE to judge relevance.
+5. RELEVANCE DROP: If a group's concept has no clear connection to the prompt's reasoning chain or predicted output — it is not a named entity in the prompt or is not specific and interesting in general, not an intermediate reasoning step, and not a framing pattern for the output — drop it (members to Ungrouped). Use the SPECIFICITY GUIDANCE to judge relevance. Exception: keep groups that name a competing value in the same category as the answer (e.g., a wrong language when the prompt asks about a language) — these are informative conflicting signals, not noise.
 
 
 SPECIFIC → BROAD PROTECTION: Before any merge or rename, check — is one group semantically more precise than the other (a named entity, specific concept, or something referenced in the prompt or output)? If yes, protect the specific group. "say color" must not collapse into "say appearance"; "say school" must not collapse into "say place name". If the specific group is irrelevant to the reasoning chain, send it to Ungrouped — never collapse into a vaguer group.
