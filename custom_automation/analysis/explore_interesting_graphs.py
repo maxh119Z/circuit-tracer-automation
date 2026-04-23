@@ -169,7 +169,7 @@ def get_supernode_names(graph: dict) -> list[str]:
     return names
 
 
-def get_top_clerps(graph: dict, k: int = 8) -> list[str]:
+def get_top_clerps(graph: dict, k: int = 5) -> list[str]:
     """Return the top-k transcoder node clerps by influence score."""
     nodes = [
         n for n in graph.get("nodes", [])
