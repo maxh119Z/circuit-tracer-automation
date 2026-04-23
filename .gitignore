@@ -21,6 +21,8 @@ sdist/
 var/
 wheels/
 share/python-wheels/
+mquake/
+mquake_graphs/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -189,6 +191,8 @@ custom_automation/artifacts/
 custom_automation/analysis/results/
 custom_automation/analysis/amplify_experiment/amplify_results.csv
 custom_automation/analysis/amplify_experiment/amplify_results.md
+custom_automation/analysis/amplify_experiment/amplify_constrained_results.csv
+custom_automation/analysis/amplify_experiment/amplify_constrained_results.md
 custom_automation/analysis/shortcut_experiment/prompts/
 
 # Intervention results
