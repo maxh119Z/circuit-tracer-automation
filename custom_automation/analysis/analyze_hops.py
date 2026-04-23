@@ -22,7 +22,7 @@ Outputs:
 Usage:
     python analyze_hops.py
     python analyze_hops.py --variants a0,a3
-    python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
+    python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_capital.csv --variants a2
 """
 
 from __future__ import annotations
@@ -326,58 +326,42 @@ def detect_intermediate_hop(
     # --- Per-concept tracking ---
     per_concept: dict[str, dict] = {}
     for concept in concepts:
-        per_concept[concept] = {"found_in_clerp": False, "found_in_group": False,
-                                "feature_count": 0, "matched_terms": set()}
+        per_concept[concept] = {"found_in_group": False, "feature_count": 0, "matched_terms": set()}
 
-    matching_nodes = []
-    for n in transcoder_nodes:
-        clerp = n.get("clerp", "")
-        node_matched = False
-        for concept in concepts:
-            for term in expand_concept(concept):
-                if concept_in_text(term, clerp):
-                    per_concept[concept]["found_in_clerp"] = True
-                    per_concept[concept]["feature_count"] += 1
-                    per_concept[concept]["matched_terms"].add(term)
-                    node_matched = True
-                    break  # one match per concept per node is enough
-        if node_matched:
-            matching_nodes.append(n)
-
-    matching_influences = [
-        float(n.get("influence", 0.0))
-        for n in matching_nodes
-        if n.get("influence") is not None
-    ]
-
-    # Only match real supernodes (exclude Emb: and Output: which are just
-    # input/output tokens, not intermediate representations)
+    # Only match supernode group names (exclude Emb: and Output:)
+    node_lookup: dict[str, dict] = {str(n.get("node_id", "")): n for n in transcoder_nodes}
     supernodes = parse_supernodes(graph)
     matching_groups = []
-    for name, _ in supernodes:
+    matching_node_ids: set[str] = set()
+    for name, node_ids in supernodes:
         if name.startswith("Emb:") or name.startswith("Output:"):
             continue
         for concept in concepts:
             if concept_matches_text(concept, name):
                 matching_groups.append(name)
                 per_concept[concept]["found_in_group"] = True
+                concept_words = {w for w in concept.lower().split() if len(w) > 2}
+                name_words = {w for w in name.lower().split() if len(w) > 2}
+                per_concept[concept]["matched_terms"].update(concept_words & name_words)
+                for nid in node_ids:
+                    matching_node_ids.add(nid)
                 break
 
-    # Fraction of transcoder nodes that mention the intermediate concept
+    matching_nodes = [node_lookup[nid] for nid in matching_node_ids if nid in node_lookup]
+    matching_influences = [
+        float(n.get("influence", 0.0))
+        for n in matching_nodes
+        if n.get("influence") is not None
+    ]
+
     total_transcoder = len(transcoder_nodes)
     frac = len(matching_nodes) / total_transcoder if total_transcoder > 0 else 0.0
-
-    mean_influence = (
-        sum(matching_influences) / len(matching_influences)
-        if matching_influences else 0.0
-    )
+    mean_influence = sum(matching_influences) / len(matching_influences) if matching_influences else 0.0
     max_influence = max(matching_influences) if matching_influences else 0.0
 
-    # Build per-concept summary: which concepts found, which missed
-    concepts_found = [c for c in concepts if per_concept[c]["found_in_clerp"] or per_concept[c]["found_in_group"]]
+    concepts_found = [c for c in concepts if per_concept[c]["found_in_group"]]
     concepts_missed = [c for c in concepts if c not in concepts_found]
 
-    # Serializable per-concept detail (convert sets to lists)
     per_concept_detail = {
         c: {**d, "matched_terms": sorted(d["matched_terms"])}
         for c, d in per_concept.items()
@@ -389,10 +373,10 @@ def detect_intermediate_hop(
         "hop_feature_fraction": round(frac, 4),
         "hop_mean_influence": round(mean_influence, 4),
         "hop_max_influence": round(max_influence, 4),
-        "hop_found_in_clerp": len(matching_nodes) > 0,
+        "hop_found_in_clerp": False,
         "hop_groups": matching_groups,
         "hop_found_in_groups": len(matching_groups) > 0,
-        "hop_found": len(matching_nodes) > 0 or len(matching_groups) > 0,
+        "hop_found": len(matching_groups) > 0,
         "concepts_found": concepts_found,
         "concepts_missed": concepts_missed,
         "per_concept": per_concept_detail,
@@ -551,7 +535,10 @@ def compute_mquake_validation(results: list[dict]) -> list[dict]:
 # Main
 # ---------------------------------------------------------------------------
 
-def run(ground_truth_path: Path, variants: list[str]) -> None:
+def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = None) -> None:
+    global TEST_GRAPHS_DIR
+    if graph_dir is not None:
+        TEST_GRAPHS_DIR = graph_dir
     rows = load_ground_truth(ground_truth_path)
     if not rows:
         print("ERROR: ground_truth.csv is empty or missing.", file=sys.stderr)
@@ -757,6 +744,22 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
             correct_hop_rate = correct_with_hop / (correct_with_hop + correct_without_hop)
             f.write(f"> When model is **correct**: hop found in {correct_hop_rate:.1%} of cases\n\n")
 
+        # Per-hop-count contingency table
+        f.write("## Correctness × Hop Presence by Hop Count\n\n")
+        f.write("| Hop type | n | Correct + Hop found | Correct + Hop missing | Wrong + Hop found | Wrong + Hop missing |\n")
+        f.write("|----------|--:|--------------------:|----------------------:|------------------:|--------------------:|\n")
+        def _contingency_row(label: str, group: list[dict]) -> None:
+            c_h  = sum(1 for r in group if r["model_correct"] and r["hop_found"])
+            c_nh = sum(1 for r in group if r["model_correct"] and not r["hop_found"])
+            w_h  = sum(1 for r in group if not r["model_correct"] and r["hop_found"])
+            w_nh = sum(1 for r in group if not r["model_correct"] and not r["hop_found"])
+            f.write(f"| {label} | {len(group)} | {c_h} | {c_nh} | {w_h} | {w_nh} |\n")
+        _contingency_row("**Overall**", results)
+        for key in sorted(by_num_hops, key=lambda k: (k == "?", k)):
+            label = f"{key}-hop" if key != "?" else "unknown"
+            _contingency_row(label, by_num_hops[key])
+        f.write("\n")
+
         # Per-case detail for multi-hop (3+ hop cases have 2+ intermediate concepts)
         multi = [r for r in results if r.get("n_intermediate_concepts", 0) > 1]
         if multi:
@@ -829,9 +832,9 @@ def run(ground_truth_path: Path, variants: list[str]) -> None:
                     f.write(f"- **Concepts missed:** {', '.join(concepts_missed) if concepts_missed else 'none'}\n")
                     per_concept = r.get("per_concept", {})
                     for c, detail in per_concept.items():
-                        if detail.get("found_in_clerp") or detail.get("found_in_group"):
+                        if detail.get("found_in_group"):
                             terms = detail.get("matched_terms", [])
-                            f.write(f"  - `{c}`: matched via terms: {terms} ({detail['feature_count']} features)\n")
+                            f.write(f"  - `{c}`: matched via terms: {terms}\n")
                 f.write("\n")
 
         # ---- MQuAKE multi-hop validation ----
@@ -983,7 +986,11 @@ if __name__ == "__main__":
         "--variants", type=str, default="a0,a1,a2,a3",
         help="Comma-separated grouping variants to analyse (e.g. a0,a3)"
     )
+    parser.add_argument(
+        "--graph_dir", type=Path, default=None,
+        help="Directory containing graph JSONs (default: test_graphs/)"
+    )
     args = parser.parse_args()
 
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
-    run(args.ground_truth, variants)
+    run(args.ground_truth, variants, graph_dir=args.graph_dir)
