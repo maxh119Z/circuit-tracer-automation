@@ -200,7 +200,7 @@ def fmt_top5(top5: list[tuple[str, float]]) -> str:
 # ---------------------------------------------------------------------------
 
 def run_single(model, prompt: str, correct_answer: str,
-               middlehop_features: list[dict]) -> dict:
+               intermediate_concept: str, middlehop_features: list[dict]) -> dict:
     tok_id = correct_token_id(model.tokenizer, correct_answer)
 
     with torch.inference_mode():
@@ -228,12 +228,14 @@ def run_single(model, prompt: str, correct_answer: str,
 
     rank_change = (amp_rank - base_rank) if base_rank > 0 and amp_rank > 0 else None
     flipped_correct = amp_top5[0][0].strip().lower() == correct_answer.lower() if amp_top5 else False
+    flipped_to_middlehop = amp_top5[0][0].strip().lower() == intermediate_concept.lower() if amp_top5 else False
 
     return {
         "n_features_amplified": len(amp_tuples),
         "baseline_predicted": base_top5[0][0].strip() if base_top5 else "?",
         "amplified_predicted": amp_top5[0][0].strip() if amp_top5 else "?",
         "flipped_correct": flipped_correct,
+        "flipped_to_middlehop": flipped_to_middlehop,
         "baseline_rank": base_rank if base_rank > 0 else None,
         "amplified_rank": amp_rank if amp_rank > 0 else None,
         "rank_change": rank_change,
@@ -248,7 +250,7 @@ def run_single(model, prompt: str, correct_answer: str,
 
 EMPTY_METRICS: dict = {k: None for k in [
     "n_features_amplified", "baseline_predicted", "amplified_predicted",
-    "flipped_correct", "baseline_rank", "amplified_rank", "rank_change",
+    "flipped_correct", "flipped_to_middlehop", "baseline_rank", "amplified_rank", "rank_change",
     "baseline_prob", "amplified_prob", "prob_gain",
     "baseline_top5", "amplified_top5", "skipped",
 ]}
@@ -328,9 +330,9 @@ def run(variants: list[str], dry_run: bool = False) -> None:
             results.append({**base_row, **EMPTY_METRICS, "skipped": "no_middlehop_features"})
             continue
 
-        metrics = run_single(model, prompt, correct_answer, middlehop_features)
+        metrics = run_single(model, prompt, correct_answer, intermediate_concept, middlehop_features)
         results.append({**base_row, **metrics})
-        status = "✓ FLIPPED" if metrics["flipped_correct"] else "✗ still wrong"
+        status = "✓ FLIPPED" if metrics["flipped_correct"] else ("→ middlehop" if metrics["flipped_to_middlehop"] else "✗ still wrong")
         print(f"    {status} | {metrics['baseline_predicted']} → {metrics['amplified_predicted']} "
               f"| rank {metrics['baseline_rank']} → {metrics['amplified_rank']} "
               f"| prob gain: {metrics['prob_gain']:+.4f}")
@@ -351,6 +353,7 @@ def run(variants: list[str], dry_run: bool = False) -> None:
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
     n_flipped = sum(1 for r in valid if r.get("flipped_correct"))
+    n_middlehop = sum(1 for r in valid if r.get("flipped_to_middlehop"))
     n_improved = sum(1 for r in valid if (r.get("rank_change") or 0) < 0)
 
     with open(OUT_MD, "w", encoding="utf-8") as f:
@@ -364,6 +367,7 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         f.write(f"| Candidates with middlehop features found | {n} / {len(candidates)} |\n")
         if n:
             f.write(f"| Flipped to correct after amplification | {n_flipped} / {n} ({n_flipped/n:.1%}) |\n")
+            f.write(f"| Flipped to middlehop (over-amplified) | {n_middlehop} / {n} ({n_middlehop/n:.1%}) |\n")
             f.write(f"| Correct-answer rank improved | {n_improved} / {n} ({n_improved/n:.1%}) |\n")
             mean_gain = sum(r["prob_gain"] for r in valid if r.get("prob_gain") is not None) / n
             f.write(f"| Mean correct-answer prob gain | {mean_gain:+.4f} |\n")
@@ -399,6 +403,7 @@ def run(variants: list[str], dry_run: bool = False) -> None:
     print(f"  With middlehop features:     {n}")
     if n:
         print(f"  Flipped correct:             {n_flipped} / {n}")
+        print(f"  Flipped to middlehop:        {n_middlehop} / {n}")
         print(f"  Rank improved:               {n_improved} / {n}")
         print(f"  Mean prob gain:              {mean_gain:+.4f}")
     print("=" * 55)
