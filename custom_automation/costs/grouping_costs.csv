@@ -1,8 +1,0 @@
-timestamp,graph,grouping_variant,description_variant,api_calls,input_tokens,output_tokens,est_cost_usd,wall_time_s
-2026-04-24T17:09:56,colorado-springs-capital,a2,v2,2,8150,10039,0.02212,141.8
-2026-04-24T17:12:25,twin-falls-capital,a2,v2,3,11806,10339,0.02363,122.1
-2026-04-24T17:15:20,south-bend-capital,a2,v2,2,9086,11187,0.02465,158.6
-2026-04-24T17:18:11,nashua-capital,a2,v2,3,11402,11757,0.02636,145.7
-2026-04-24T17:20:22,medellin-capital,a2,v2,2,8930,12135,0.0265,113.3
-2026-04-24T17:22:32,porto-capital,a2,v2,2,8057,11198,0.02441,116.0
-2026-04-24T17:24:20,phuket-capital,a2,v2,2,8193,10008,0.02206,94.7
