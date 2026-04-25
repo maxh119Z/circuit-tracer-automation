@@ -261,6 +261,14 @@ def main():
             return False
         return True
 
+    # Words that syntactically force an article/preposition/pronoun next
+    _FUNCTION_FORCING_ENDINGS = frozenset({
+        "and", "or", "but", "of", "in", "to", "for", "with", "on", "at",
+        "from", "by", "about", "into", "through", "is", "was", "are", "were",
+        "a", "an", "the", "that", "which", "as", "than", "not", "also",
+        "both", "either", "neither", "between", "among",
+    })
+
     def _is_clean_prompt(prompt: str) -> bool:
         if not prompt or not prompt[0].isupper():   # no mid-sentence fragments
             return False
@@ -270,6 +278,10 @@ def main():
                 return False
         # Avoid prompts with non-ASCII (Japanese, Chinese, etc. mixed in)
         if not prompt.isascii():
+            return False
+        # Reject prompts whose last word syntactically forces a function word next
+        last_word = prompt.rstrip().rsplit(" ", 1)[-1].lower().strip(".,;:")
+        if last_word in _FUNCTION_FORCING_ENDINGS:
             return False
         return True
 
