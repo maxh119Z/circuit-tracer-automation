@@ -1,5 +1,5 @@
 """
-Generate 50 Wikipedia next-token-prediction prompts for circuit tracing.
+Generate 100 Wikipedia next-token-prediction prompts for circuit tracing.
 
 Strategy:
   1. Fetch random Wikipedia articles across diverse categories.
@@ -32,8 +32,8 @@ from transformer_lens import HookedTransformer
 # Config
 # ---------------------------------------------------------------------------
 
-TARGET_N = 50
-CANDIDATES_TO_FETCH = 3500       # how many article sentences to collect before scoring
+TARGET_N = 100
+CANDIDATES_TO_FETCH = 8000       # how many article sentences to collect before scoring
 MAX_PER_ARTICLE = 3             # max prompts per article in final selection
 MIN_WORDS = 8                   # minimum words in a truncated prefix
 MAX_WORDS = 15                  # maximum words in a truncated prefix
