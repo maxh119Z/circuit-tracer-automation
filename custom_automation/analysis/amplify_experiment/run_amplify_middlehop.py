@@ -115,10 +115,20 @@ def find_middlehop_features(graph: dict, intermediate_concept: str,
     def _matches(g: str) -> bool:
         if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
             return False
-        g_words = {w for w in g.lower().split() if len(w) > 5}
+        g_lower = g.lower()
+        g_words = {w for w in g_lower.split() if len(w) > 5}
         if not g_words:
-            g_words = {g.lower()}
-        return bool(concept_words & g_words)
+            g_words = {g_lower}
+        if concept_words & g_words:
+            return True
+        # Prefix fallback: first 4 chars match (handles Thai/Thailand, Colombian/Colombia)
+        all_g_words = {w for w in g_lower.split() if len(w) >= 4}
+        for cw in concept_words:
+            if len(cw) >= 4:
+                for gw in all_g_words:
+                    if cw[:4] == gw[:4]:
+                        return True
+        return False
 
     matching_groups = {g for g in set(feature_groups.values()) if _matches(g)}
     if not matching_groups:

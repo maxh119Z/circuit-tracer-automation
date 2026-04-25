@@ -204,8 +204,12 @@ custom_automation/intervention/constrained_intervention_results*.csv
 custom_automation/__pycache__/
 custom_automation/**/__pycache__/
 
+# Cost tracking
+custom_automation/costs/
+
 # Misc
 test_graphs*/
+prompts_check.csv
 .claude/
 .DS_Store
 **/.DS_Store

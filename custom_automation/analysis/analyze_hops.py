@@ -157,11 +157,33 @@ def parse_supernodes(graph: dict) -> list[tuple[str, list[str]]]:
 
 
 def concept_in_text(concept: str, text: str) -> bool:
-    """Case-insensitive whole-word match of concept in text."""
+    """Exact whole-word match first; prefix fallback (first 4 chars equal) for derived forms."""
     if not concept or not text:
         return False
-    pattern = re.compile(r'\b' + re.escape(concept.lower()) + r'\b')
-    return bool(pattern.search(text.lower()))
+    c = concept.lower()
+    t = text.lower()
+    if re.search(r'\b' + re.escape(c) + r'\b', t):
+        return True
+    if len(c) >= 4:
+        for word in re.findall(r'\b\w+\b', t):
+            if len(word) >= 4 and c[:4] == word[:4]:
+                return True
+    return False
+
+
+def _prefix_match_info(concept: str, text: str) -> tuple[bool, str]:
+    """Return (True, matched_word) if prefix fires but exact would not; else (False, '')."""
+    if not concept or not text:
+        return False, ""
+    c = concept.lower()
+    t = text.lower()
+    if re.search(r'\b' + re.escape(c) + r'\b', t):
+        return False, ""  # exact match — not a prefix-only hit
+    if len(c) >= 4:
+        for word in re.findall(r'\b\w+\b', t):
+            if len(word) >= 4 and c[:4] == word[:4]:
+                return True, word
+    return False, ""
 
 
 # ---------------------------------------------------------------------------
@@ -184,6 +206,7 @@ _ALIASES: dict[str, list[str]] = {
     "india": ["indian", "hindi"],
     "japan": ["japanese"],
     "brazil": ["brazilian", "brasil"],
+    "portugal": ["portuguese"],
     "norway": ["norwegian"],
     "romania": ["romanian"],
     "finland": ["finnish"],
@@ -333,6 +356,7 @@ def detect_intermediate_hop(
     supernodes = parse_supernodes(graph)
     matching_groups = []
     matching_node_ids: set[str] = set()
+    prefix_matches: list[dict] = []
     for name, node_ids in supernodes:
         if name.startswith("Emb:") or name.startswith("Output:"):
             continue
@@ -345,6 +369,15 @@ def detect_intermediate_hop(
                 per_concept[concept]["matched_terms"].update(concept_words & name_words)
                 for nid in node_ids:
                     matching_node_ids.add(nid)
+                # Check if this was a prefix-only match (for char_match.md reporting)
+                is_prefix, matched_word = _prefix_match_info(concept, name)
+                if not is_prefix:
+                    for term in expand_concept(concept)[1:]:  # skip original, already checked
+                        is_prefix, matched_word = _prefix_match_info(term, name)
+                        if is_prefix:
+                            break
+                if is_prefix:
+                    prefix_matches.append({"concept": concept, "group": name, "word": matched_word})
                 break
 
     matching_nodes = [node_lookup[nid] for nid in matching_node_ids if nid in node_lookup]
@@ -375,6 +408,7 @@ def detect_intermediate_hop(
         "hop_max_influence": round(max_influence, 4),
         "hop_found_in_clerp": False,
         "hop_groups": matching_groups,
+        "prefix_matches": prefix_matches,
         "hop_found_in_groups": len(matching_groups) > 0,
         "hop_found": len(matching_groups) > 0,
         "concepts_found": concepts_found,
@@ -774,6 +808,31 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
                 f.write(f"| {r['slug']} | {r['num_hops']} | {tick} | {found_str} | {concepts_found} | {concepts_missed} |\n")
             f.write("\n")
 
+            # Hops-missing distribution — grouped by num_hops, then by n_missing.
+            # Gives the n-prompts column for the shortcut/accuracy table.
+            from collections import defaultdict as _dd
+            by_nhop: dict[str, list[dict]] = _dd(list)
+            for r in multi:
+                by_nhop[str(r.get("num_hops", "?"))].append(r)
+
+            f.write("## Multi-Hop: Missing Hops Distribution\n\n")
+            for nhop_key in sorted(by_nhop, key=lambda k: (k == "?", k)):
+                grp = by_nhop[nhop_key]
+                n_int = grp[0].get("n_intermediate_concepts", "?")
+                f.write(f"### {nhop_key}-hop  ({n_int} intermediate concept(s))\n\n")
+                f.write("| Hops missing | Correct | Wrong | Total |\n")
+                f.write("|---|---|---|---|\n")
+                max_miss = max(r["n_intermediate_concepts"] - r["n_hops_found"] for r in grp)
+                for n_miss in range(0, max_miss + 1):
+                    bucket = [r for r in grp if (r["n_intermediate_concepts"] - r["n_hops_found"]) == n_miss]
+                    if not bucket:
+                        continue
+                    nc = sum(1 for r in bucket if r["model_correct"])
+                    suffix = " (all found)" if n_miss == 0 else (" (none found)" if n_miss == n_int else "")
+                    f.write(f"| {n_miss}{suffix} | {nc} | {len(bucket) - nc} | {len(bucket)} |\n")
+                tc = sum(1 for r in grp if r["model_correct"])
+                f.write(f"| **Total** | **{tc}** | **{len(grp) - tc}** | **{len(grp)}** |\n\n")
+
         # ---- per-variant breakdown ----
         for variant in variants:
             vr = [r for r in results if r["variant"] == variant]
@@ -897,6 +956,30 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
             f.write(", ".join(groups) if groups else "—")
             f.write("\n\n")
     print(f"Results -> {results_path}")
+
+    # ------------------------------------------------------------------
+    # Write prefix-match cases (char_match.md)
+    # ------------------------------------------------------------------
+    prefix_cases = [r for r in results if r.get("prefix_matches")]
+    char_match_path = results_dir / "char_match.md"
+    with open(char_match_path, "w", encoding="utf-8") as f:
+        f.write("# Prefix-Matched Hops\n\n")
+        f.write("Cases where the hop was found via 4-char prefix match rather than exact match.\n\n")
+        f.write(f"Cases: {len(prefix_cases)}\n\n")
+        for r in prefix_cases:
+            f.write("---\n")
+            f.write(f"## {r['slug']}\n\n")
+            f.write(f"**Predicted:** `{_safe_predicted(r['predicted'])}` ({r['predicted_prob']:.1%})  \n")
+            f.write(f"**Correct answer:** {r['correct_answer']}  \n")
+            f.write(f"**Hop concept:** {r['intermediate_concept']}\n\n")
+            f.write("### Prefix matches\n")
+            for pm in r["prefix_matches"]:
+                f.write(f'- "{pm["concept"]}" → "{pm["word"]}" in group "{pm["group"]}"\n')
+            f.write("\n### Supernodes\n")
+            groups = [g for g in r["all_supernodes"] if not g.startswith("Emb:") and not g.startswith("Output:")]
+            f.write(", ".join(groups) if groups else "—")
+            f.write("\n\n")
+    print(f"Prefix matches -> {char_match_path}")
 
     # ------------------------------------------------------------------
     # Shortcut candidates: 3+ hop cases that are correct but hops missing

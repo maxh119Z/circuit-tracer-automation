@@ -20,11 +20,14 @@ Usage:
 from __future__ import annotations
 
 import asyncio
+import csv as _csv
 import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
+from datetime import datetime
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from openai import AsyncOpenAI
@@ -44,6 +47,14 @@ from config import (
 )
 
 GROUPING_LOG_FILE = PACKAGE_DIR / "artifacts" / "grouping_log.md"
+COSTS_DIR = PACKAGE_DIR / "costs"
+COSTS_CSV = COSTS_DIR / "grouping_costs.csv"
+
+# gpt-5-mini pricing per 1M tokens
+_COST_INPUT  = 0.25
+_COST_OUTPUT = 2.00
+
+_api_usage: list[dict] = []  # accumulated per run; safe in asyncio (single-threaded)
 
 log = setup_logging()
 
@@ -188,6 +199,7 @@ _DESCRIPTION_READING = (
     "Apply the same rule to say-X groups: if descriptions consistently name a specific entity after the trigger, prefer 'say California' over 'say a place'. "
     "If features clearly relate to an alternate sense of a key prompt word, name the group with a sense qualifier (e.g. 'X (general)') rather than a domain label that is not applicable given the prompt and output context (e.g. 'economic X' or 'X (music)'). "
     "The last few words of a description often carry non-trivial specificity — use them as an additional signal when placing features into groups. "
+    "When a description lists specific promoted tokens in portions like proper nouns, treat those tokens as a meaningful naming signal — prefer relevant specificity when existing over broader category labels. Of course, this is given the relevancy to the prompt and output, since features may be polysemantic."
     "Group names must come from member descriptions, not from the prompt and output context. Be faithful to feature descriptions in naming. "
 
 
@@ -432,6 +444,8 @@ Features:
             reasoning_effort="low",
         )
         parsed = response.choices[0].message.parsed
+        if response.usage:
+            _api_usage.append({"input": response.usage.prompt_tokens, "output": response.usage.completion_tokens})
         if parsed is None:
             log.warning("Phase 2 batch returned None — skipping batch.")
             return Phase2Output(assignments=[], new_groups=[])
@@ -629,6 +643,9 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
 # ---------------------------------------------------------------------------
 
 async def main() -> None:
+    _start = time.time()
+    _api_usage.clear()
+
     features, prompt_text, output_context = load_and_sort_features()
     if not features:
         log.error("No described features found.")
@@ -686,6 +703,8 @@ Features:
         max_completion_tokens=32768,
     )
     p1 = response.choices[0].message.parsed
+    if response.usage:
+        _api_usage.append({"input": response.usage.prompt_tokens, "output": response.usage.completion_tokens})
 
     if p1 is None:
         log.error("Phase 1 parsing returned None — check OpenAI response.")
@@ -774,7 +793,7 @@ Lastly, this is important, groups such as “suppress X" or “demote X” or �
 4. REASSIGN: Are any individual features obviously in the wrong group given their description and the prompt? Move them. Only reassign with high confidence.
 
 
-5. RELEVANCE DROP: If a group's concept has no clear connection to the prompt's reasoning chain or predicted output — it is not a named entity in the prompt or is not specific and interesting in general, not an intermediate reasoning step, and not a framing pattern for the output — drop it (members to Ungrouped). Use the SPECIFICITY GUIDANCE to judge relevance. Exception: keep groups that name a competing value in the same category as the answer (e.g., a wrong language when the prompt asks about a language) — these are informative conflicting signals, not noise.
+5. RELEVANCE DROP: If a group's concept has no clear connection to the prompt's reasoning chain or predicted output — it is not a named entity in the prompt or is not specific and interesting in general, not an intermediate reasoning step, and not a framing pattern for the output — drop it (members to Ungrouped). Use the SPECIFICITY GUIDANCE to judge relevance. Exception: keep groups that name a competing value in the same category as the answer (e.g., a wrong language when the prompt asks about a language), and lean towards keeping neighbors or related topics in the same domain (e.g., neighboring states, nearby countries) — these may be informative competing signals, not noise.
 
 
 SPECIFIC → BROAD PROTECTION: Before any merge or rename, check — is one group semantically more precise than the other (a named entity, specific concept, or something referenced in the prompt or output)? If yes, protect the specific group. "say color" must not collapse into "say appearance"; "say school" must not collapse into "say place name". If the specific group is irrelevant to the reasoning chain, send it to Ungrouped — never collapse into a vaguer group.
@@ -802,6 +821,8 @@ Current grouping:
             max_completion_tokens=8192,
         )
         p3 = response3.choices[0].message.parsed
+        if response3.usage:
+            _api_usage.append({"input": response3.usage.prompt_tokens, "output": response3.usage.completion_tokens})
     except Exception as e:
         log.warning("Phase 3 API call failed (%s) — skipping reconciliation.", e)
         p3 = None
@@ -843,6 +864,40 @@ Current grouping:
         len(final_assignments),
         final_group_count,
         FEATURE_GROUPS_FILE,
+    )
+
+    # ------------------------------------------------------------------
+    # Cost report
+    # ------------------------------------------------------------------
+    elapsed = time.time() - _start
+    in_tok  = sum(u["input"]  for u in _api_usage)
+    out_tok = sum(u["output"] for u in _api_usage)
+    est_cost = (in_tok * _COST_INPUT + out_tok * _COST_OUTPUT) / 1_000_000
+    api_calls = len(_api_usage)
+
+    COSTS_DIR.mkdir(parents=True, exist_ok=True)
+    write_header = not COSTS_CSV.exists()
+    with open(COSTS_CSV, "a", newline="", encoding="utf-8") as f:
+        w = _csv.DictWriter(f, fieldnames=[
+            "timestamp", "graph", "grouping_variant", "description_variant",
+            "api_calls", "input_tokens", "output_tokens", "est_cost_usd", "wall_time_s",
+        ])
+        if write_header:
+            w.writeheader()
+        w.writerow({
+            "timestamp":          datetime.now().isoformat(timespec="seconds"),
+            "graph":              GRAPH_FILE.stem,
+            "grouping_variant":   GROUPING_VARIANT,
+            "description_variant": DESCRIPTION_VARIANT,
+            "api_calls":          api_calls,
+            "input_tokens":       in_tok,
+            "output_tokens":      out_tok,
+            "est_cost_usd":       round(est_cost, 5),
+            "wall_time_s":        round(elapsed, 1),
+        })
+    log.info(
+        "Cost: %d calls | %d in / %d out tokens | $%.4f | %.1fs → %s",
+        api_calls, in_tok, out_tok, est_cost, elapsed, COSTS_CSV,
     )
 
 

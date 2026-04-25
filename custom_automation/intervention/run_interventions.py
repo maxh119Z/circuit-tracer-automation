@@ -106,8 +106,17 @@ def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: di
     def _group_matches(g: str) -> bool:
         if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
             return False
-        g_words = {w for w in g.lower().split() if len(w) > 2}
-        return bool(concept_words & g_words)
+        g_lower = g.lower()
+        g_words = {w for w in g_lower.split() if len(w) > 2}
+        if concept_words & g_words:
+            return True
+        # Prefix fallback: first 4 chars match (handles Thai/Thailand, Colombian/Colombia)
+        for cw in concept_words:
+            if len(cw) >= 4:
+                for gw in g_words:
+                    if len(gw) >= 4 and cw[:4] == gw[:4]:
+                        return True
+        return False
 
     matching_groups = {g for g in set(feature_groups.values()) if _group_matches(g)}
     if not matching_groups:

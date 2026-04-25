@@ -15,9 +15,12 @@ Usage:
 from __future__ import annotations
 
 import asyncio
+import csv as _csv
 import json
 import os
 import sys
+import time
+from datetime import datetime
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -28,6 +31,7 @@ from config import (
     DESCRIPTION_MODEL,
     DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
+    PACKAGE_DIR,
     PRUNED_ACTIVATIONS_FILE,
     GRAPH_FILE,
     setup_logging,
@@ -42,6 +46,12 @@ log = setup_logging()
 MODEL = "gpt-5-mini"
 CONCURRENCY_LIMIT = 167
 CHUNK_SIZE = 50 # How many to process before saving a checkpoint
+
+COSTS_DIR = PACKAGE_DIR / "costs"
+COSTS_CSV = COSTS_DIR / "description_costs.csv"
+_COST_INPUT  = 0.25
+_COST_OUTPUT = 2.00
+_api_usage: list[dict] = []
 
 # DESCRIPTION_VARIANT is imported from config (set via DESCRIPTION_VARIANT env var, default "v1").
 # This controls both the system prompt used here and the artifact filenames throughout the pipeline.
@@ -60,7 +70,8 @@ _EVIDENCE_BLOCK = (
 
     "Use input activations as the primary evidence. "
     "Use prompt context only for disambiguation, not as proof by itself. "
-    "Output tokens can be noisy — only factor them in when either show a clear, consistent pattern. If they are consistent, they likely reveal a lot of information.\n\n"
+    "Output tokens can be noisy — only factor them in when they show a clear, consistent pattern. If they are consistent, they likely reveal a lot of information. "
+    "A tight cluster of specific promoted tokens (e.g. one city, one state) outranks a broader category label — prefer the specific entity.\n\n"
 
     "STYLE: Write in short, direct fragments — not full sentences. "
     "Get to the point immediately. No filler, no hedging, no grammatical padding. "
@@ -304,6 +315,8 @@ async def process_feature(
                     desc = desc.split("[DESCRIPTION]:", 1)[-1].strip()
 
                 feature["generated_description"] = desc
+                if response.usage:
+                    _api_usage.append({"input": response.usage.prompt_tokens, "output": response.usage.completion_tokens})
                 log.info("  → %s: %s", fid, desc[:60])
                 return
 
@@ -347,6 +360,9 @@ def _load_prompt_text() -> str:
 # ---------------------------------------------------------------------------
 
 async def main_async() -> None:
+    _start = time.time()
+    _api_usage.clear()
+
     if not PRUNED_ACTIVATIONS_FILE.exists():
         log.error("Input file not found: %s", PRUNED_ACTIVATIONS_FILE)
         log.error("Run fetch_all_activating_text.py first (Step 1).")
@@ -392,6 +408,33 @@ async def main_async() -> None:
 
         await asyncio.gather(*tasks)
         _save_checkpoint(features, FEATURE_DESCRIPTIONS_FILE)
+
+    elapsed = time.time() - _start
+    in_tok  = sum(u["input"]  for u in _api_usage)
+    out_tok = sum(u["output"] for u in _api_usage)
+    est_cost = (in_tok * _COST_INPUT + out_tok * _COST_OUTPUT) / 1_000_000
+    api_calls = len(_api_usage)
+    COSTS_DIR.mkdir(parents=True, exist_ok=True)
+    write_header = not COSTS_CSV.exists()
+    with open(COSTS_CSV, "a", newline="", encoding="utf-8") as f:
+        w = _csv.DictWriter(f, fieldnames=[
+            "timestamp", "graph", "description_variant",
+            "api_calls", "input_tokens", "output_tokens", "est_cost_usd", "wall_time_s",
+        ])
+        if write_header:
+            w.writeheader()
+        w.writerow({
+            "timestamp":          datetime.now().isoformat(timespec="seconds"),
+            "graph":              GRAPH_FILE.stem,
+            "description_variant": DESCRIPTION_VARIANT,
+            "api_calls":          api_calls,
+            "input_tokens":       in_tok,
+            "output_tokens":      out_tok,
+            "est_cost_usd":       round(est_cost, 5),
+            "wall_time_s":        round(elapsed, 1),
+        })
+    log.info("Cost: %d calls | %d in / %d out tokens | $%.4f | %.1fs → %s",
+             api_calls, in_tok, out_tok, est_cost, elapsed, COSTS_CSV)
 
     log.info("Done — Descriptions fully generated and saved to %s", FEATURE_DESCRIPTIONS_FILE)
 
