@@ -111,6 +111,15 @@ case "$SUBCOMMAND" in
         exit 1 ;;
 esac
 
+# Time & cost tracking (opt-in via TRACK_COSTS=1)
+TRACK_COSTS="${TRACK_COSTS:-0}"
+_core_total=0 _val_total=0 _core_n=0 _val_n=0
+_BATCH_START_TS="" _BATCH_WALL=0
+if [ "$TRACK_COSTS" = "1" ]; then
+    _BATCH_WALL=$(date +%s)
+    _BATCH_START_TS=$(python3 -c "from datetime import datetime; print(datetime.now().isoformat(timespec='seconds'))")
+fi
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -164,6 +173,7 @@ while IFS=$'\t' read -r slug prompt || [[ -n "$slug" ]]; do
     fi
 
     if [ "$RUN_CORE" = true ]; then
+        if [ "$TRACK_COSTS" = "1" ]; then _g_start=$(date +%s); _g_val_time=0; fi
 
         # ------------------------------------------------------------------
         # Steps 1–2: shared per prompt (regardless of variant count)
@@ -228,11 +238,19 @@ while IFS=$'\t' read -r slug prompt || [[ -n "$slug" ]]; do
 
             if [ "$RUN_VALIDATE" = true ]; then
                 step_banner "$LABEL Step 6 — Validate groups"
+                if [ "$TRACK_COSTS" = "1" ]; then _vs=$(date +%s); fi
                 t=$(date +%s); python pipeline/validate_groups.py; elapsed "$t"
+                if [ "$TRACK_COSTS" = "1" ]; then _vd=$(( $(date +%s) - _vs )); _g_val_time=$(( _g_val_time + _vd )); _val_total=$(( _val_total + _vd )); _val_n=$(( _val_n + 1 )); fi
             fi
 
             echo "  [$VARIANT_SLUG] artifacts/${VARIANT_SLUG}/"
         done
+
+        if [ "$TRACK_COSTS" = "1" ]; then
+            _g_elapsed=$(( $(date +%s) - _g_start ))
+            _core_total=$(( _core_total + _g_elapsed - _g_val_time ))
+            _core_n=$(( _core_n + 1 ))
+        fi
 
     elif [ "$RUN_VALIDATE" = true ]; then
         # validate-only mode: loop over variants too
@@ -244,7 +262,9 @@ while IFS=$'\t' read -r slug prompt || [[ -n "$slug" ]]; do
                 export CURRENT_SLUG="$slug"
             fi
             step_banner "[$ROW_NUM/$TOTAL | $gvar] Step 6 — Validate groups"
+            if [ "$TRACK_COSTS" = "1" ]; then _vs=$(date +%s); fi
             t=$(date +%s); python pipeline/validate_groups.py; elapsed "$t"
+            if [ "$TRACK_COSTS" = "1" ]; then _val_total=$(( _val_total + $(date +%s) - _vs )); _val_n=$(( _val_n + 1 )); fi
         done
     fi
 
@@ -268,6 +288,47 @@ if [ "$RUN_VALIDATE" = true ]; then
 fi
 
 unset CURRENT_SLUG GROUPING_VARIANT
+
+# ---------------------------------------------------------------------------
+# Time & cost summary (TRACK_COSTS=1 only)
+# ---------------------------------------------------------------------------
+if [ "$TRACK_COSTS" = "1" ]; then
+    _batch_elapsed=$(( $(date +%s) - _BATCH_WALL ))
+    echo ""
+    echo "===== TIME & COST SUMMARY ====="
+    echo "  Total batch wall time: ${_batch_elapsed}s"
+    if [ "$_core_n" -gt 0 ]; then
+        echo "  Avg core pipeline time (steps 1-5): $(( _core_total / _core_n ))s  (${_core_n} graph(s))"
+    fi
+    if [ "$_val_n" -gt 0 ]; then
+        echo "  Avg validation time (step 6): $(( _val_total / _val_n ))s  (${_val_n} graph(s))"
+    fi
+    python3 <<PYEOF
+import csv
+from pathlib import Path
+from datetime import datetime
+batch_start = datetime.fromisoformat("$_BATCH_START_TS")
+total = 0.0
+costs_dir = Path("costs")
+for fname in ["description_costs.csv", "grouping_costs.csv"]:
+    p = costs_dir / fname
+    sub = 0.0
+    if p.exists():
+        with open(p) as f:
+            for row in csv.DictReader(f):
+                try:
+                    if datetime.fromisoformat(row["timestamp"]) >= batch_start:
+                        sub += float(row.get("est_cost_usd", 0))
+                except Exception:
+                    pass
+    if sub > 0:
+        label = fname.replace("_costs.csv", "").capitalize()
+        print(f"  Est. {label} cost: \${sub:.4f}")
+    total += sub
+print(f"  Total estimated API cost: \${total:.4f}")
+PYEOF
+    echo "==============================="
+fi
 
 # ---------------------------------------------------------------------------
 # Done

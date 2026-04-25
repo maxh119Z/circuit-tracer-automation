@@ -80,6 +80,9 @@ circuit-tracer attribute-batch --csv prompts/prompts_capital.csv --graph_file_di
 
 # Custom pruning threshold
 ./batch_reproduce.sh ../prompts/prompts.csv all 0.40
+
+# Track time and API cost per graph (prints summary at end)
+TRACK_COSTS=1 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 ```
 
 ### Multiple grouping variants
