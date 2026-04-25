@@ -217,66 +217,102 @@ def compute_metrics(graph: dict, influence_threshold: float) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# LLM judge
+# LLM judge — per-criterion scoring
 # ---------------------------------------------------------------------------
 
-LLM_JUDGE_MODEL = "gpt-5-mini"
+LLM_JUDGE_MODEL = "gpt-5.4"
+
+# Each LLM criterion: (json_key, human label, one-line description for the prompt)
+LLM_CRITERIA: list[tuple[str, str, str]] = [
+    (
+        "wrong_answer_right_concept",
+        "Wrong answer / right concept",
+        "Model predicted the WRONG answer but internal features show it had the RIGHT "
+        "concept (e.g. correct intermediate entity activated, but wrong token emitted).",
+    ),
+    (
+        "right_answer_wrong_concept",
+        "Right answer / wrong concept",
+        "Model predicted the right answer but via clearly WRONG internal concepts "
+        "(irrelevant or contradictory features dominating).",
+    ),
+    (
+        "surprising_unrelated_concept",
+        "Surprising unrelated concept",
+        "A specific unexpected concept fires that has no plausible connection to the "
+        "prompt (not noise — a surprising, revealing association).",
+    ),
+    (
+        "internal_conflict",
+        "Internal conflict",
+        "Strong, highly specific conflict between competing supernode groups — two "
+        "clearly opposing concept clusters both strongly active in a surprising way. "
+        "Mild same-category competition does NOT count.",
+    ),
+    (
+        "sparse_grouping",
+        "Sparse grouping",
+        "Very few supernode groups (≤2) given the complexity of the prompt, suggesting "
+        "almost no recoverable structure (direct lookup with no intermediate routing).",
+    ),
+    (
+        "hyper_specific_entity",
+        "Hyper-specific entity",
+        "A supernode named after a very specific person, work, or entity that is not a "
+        "normal intermediate reasoning step — specific enough that it is questionable "
+        "whether a dedicated feature should exist for it at all.",
+    ),
+]
 
 LLM_SYSTEM = (
     "You are a strict interpretability researcher evaluating attribution graphs from a "
-    "language model. You are highly selective — you flag a graph as interesting only when "
-    "there is a *specific*, *concrete* anomaly worth investigating.\n\n"
-    "Flag as interesting (true) ONLY if at least one of these holds:\n"
-    "  1. The model predicted the WRONG answer but internal features show it had the RIGHT "
-    "concept (e.g. correct intermediate entity activated, but wrong token emitted).\n"
-    "  2. The model predicted the right answer but via clearly WRONG internal concepts "
-    "(e.g. irrelevant or contradictory features dominating).\n"
-    "  3. A specific unexpected concept fires that has no plausible connection to the prompt "
-    "(not just noise — something that reveals a surprising association).\n"
-    "  4. Strong, highly specific internal conflict between competing supernode groups — "
-    "meaning two clearly opposing concept clusters are both strongly active in a way that "
-    "is surprising given the question. Mild competition between similar nodes (e.g. a few "
-    "continent names on a continent question) does NOT count.\n"
-    "  5. Sparse grouping — very few supernode groups (≤2) given the complexity of the prompt, "
-    "suggesting the attribution graph has almost no recoverable structure and the model may be "
-    "doing a direct lookup with no intermediate routing.\n"
-    "  6. Hyper-specific entity — a supernode named after a very specific person, work, or entity "
-    "that is not a normal intermediate reasoning step and abnormal, or specific enough that it is questionable "
-    "whether a dedicated feature should exist for it at all.\n\n"
-    "Do NOT flag as interesting:\n"
-    "  - A few same-category nodes fire alongside the correct answer (e.g. nearby alternatives in the same topic).\n"
-    "  - Any question where all activated features are plausibly related to the prompt.\n"
-    "  - Low confidence alone without a specific anomaly.\n\n"
-    "Be conservative. Expect that most graphs (80%+) are NOT interesting."
+    "language model. You score each graph INDEPENDENTLY on six different dimensions of "
+    "'interestingness', each on a 1-10 scale.\n\n"
+    "The six dimensions are:\n"
+    + "\n".join(f"  {i+1}. {key} — {desc}" for i, (key, _, desc) in enumerate(LLM_CRITERIA))
+    + "\n\n"
+    "Scoring guidance (use the full 1-10 range):\n"
+    "  1-2  = no sign of this anomaly at all\n"
+    "  3-4  = weak / ambiguous hint, easily explained by noise\n"
+    "  5-6  = plausible candidate but not clearly anomalous\n"
+    "  7-8  = clear, concrete instance of this specific anomaly\n"
+    "  9-10 = textbook example of this anomaly, worth a writeup\n\n"
+    "Score each dimension on its own merits — a graph can score 9 on one dimension and 1 on "
+    "all the others. Be conservative: most graphs should score 1-3 on most dimensions. "
+    "Do NOT inflate scores because the prompt is interesting; only the *graph structure* "
+    "matters for these scores."
 )
 
-LLM_PROMPT_TEMPLATE = """\
-Prompt given to the model: "{prompt}"
-Model's predicted output: "{predicted}" — correct answer is: {correct_answer}
-Model confidence: {confidence:.1%} — {confidence_band}
-Supernode groups: {num_supernode_groups}
+# Each line uses {{ and }} so a single .format() call later produces literal { and }.
+_CRITERIA_JSON_LINES = ",\n".join(
+    f'  "{key}": {{{{"score": <integer 1-10>, "reason": "<one concrete sentence>"}}}}'
+    for key, _, _ in LLM_CRITERIA
+)
 
-Feature groups that activated (supernode labels):
-{groups}
+LLM_PROMPT_TEMPLATE = (
+    'Prompt given to the model: "{prompt}"\n'
+    'Model\'s predicted output: "{predicted}" — correct answer is: {correct_answer}\n'
+    'Model confidence: {confidence:.1%} — {confidence_band}\n'
+    'Supernode groups: {num_supernode_groups}\n\n'
+    'Feature groups that activated (supernode labels):\n'
+    '{groups}\n\n'
+    'Sample descriptions of the most influential individual nodes (by influence score):\n'
+    '{clerp_samples}\n\n'
+    'Score this graph on each of the six dimensions independently on a 1-10 scale. Most '
+    'graphs should score low (1-3) on most dimensions. Reply in this exact JSON format — '
+    'every dimension is required:\n\n'
+    '{{\n' + _CRITERIA_JSON_LINES + '\n}}'
+)
 
-Sample descriptions of the most influential individual nodes (by influence score):
-{clerp_samples}
 
-Is there a specific, concrete anomaly here worth investigating? Be strict — most graphs \
-should NOT be flagged.
-
-Reply in this exact JSON format:
-{{
-  "is_interesting": true or false,
-  "score": <integer 1-5, where 5 = extremely interesting, 1 = not interesting>,
-  "reason": "<one concrete sentence naming the specific anomaly, or why there is none>"
-}}"""
+def _empty_verdict(reason: str) -> dict:
+    return {key: {"score": 0, "reason": reason} for key, _, _ in LLM_CRITERIA}
 
 
 def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence: float,
                    groups: list[str], clerps: list[str], num_supernode_groups: int,
                    client: OpenAI) -> dict:
-    """Call GPT-5-mini to judge whether the graph is interesting. Returns parsed JSON."""
+    """Call the LLM judge. Returns dict mapping criterion_key -> {score, reason}."""
     groups_str = "\n".join(f"  - {g}" for g in groups) if groups else "  (no supernode groups)"
     clerps_str = "\n".join(f"  - {c}" for c in clerps) if clerps else "  (no descriptions available)"
     user_msg = LLM_PROMPT_TEMPLATE.format(
@@ -292,7 +328,7 @@ def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence:
     try:
         response = client.chat.completions.create(
             model=LLM_JUDGE_MODEL,
-            max_completion_tokens=1024,
+            max_completion_tokens=2048,
             messages=[
                 {"role": "system", "content": LLM_SYSTEM},
                 {"role": "user", "content": user_msg},
@@ -300,11 +336,28 @@ def call_llm_judge(prompt: str, predicted: str, correct_answer: str, confidence:
         )
         text = (response.choices[0].message.content or "").strip()
         m = re.search(r'\{[\s\S]*\}', text)
-        if m:
-            return json.loads(m.group(0))
+        if not m:
+            return _empty_verdict("No JSON in response")
+        parsed = json.loads(m.group(0))
+        verdict: dict[str, dict] = {}
+        for key, _, _ in LLM_CRITERIA:
+            entry = parsed.get(key) or {}
+            if isinstance(entry, (int, float)):
+                entry = {"score": int(entry), "reason": ""}
+            elif not isinstance(entry, dict):
+                entry = {"score": 0, "reason": "Malformed entry"}
+            score = entry.get("score", 0)
+            try:
+                score = int(score)
+            except (TypeError, ValueError):
+                score = 0
+            verdict[key] = {
+                "score": max(0, min(10, score)),
+                "reason": str(entry.get("reason", "")).strip(),
+            }
+        return verdict
     except Exception as e:
-        return {"is_interesting": False, "score": 0, "reason": f"LLM error: {e}"}
-    return {"is_interesting": False, "score": 0, "reason": "No JSON in response"}
+        return _empty_verdict(f"LLM error: {e}")
 
 
 # ---------------------------------------------------------------------------
@@ -389,7 +442,7 @@ def run(
     results: list[dict] = []
     for i, m in enumerate(candidates):
         groups = m["supernode_names"]
-        llm_score, llm_interesting, llm_reason = 0, None, ""
+        verdict: dict[str, dict] = _empty_verdict("LLM not run")
 
         if use_llm and client is not None:
             print(f"  [{i+1}/{len(candidates)}] LLM judging: {m['slug']} ...", end=" ", flush=True)
@@ -397,35 +450,56 @@ def run(
                 m["prompt"], m["predicted"], m.get("correct_answer", ""),
                 m["model_confidence"], groups, m["top_clerps"], m["num_supernode_groups"], client
             )
-            llm_score = verdict.get("score", 0)
-            llm_interesting = verdict.get("is_interesting", False)
-            llm_reason = verdict.get("reason", "")
-            print(f"score={llm_score}, interesting={llm_interesting}")
+            score_summary = " ".join(f"{verdict[key]['score']}" for key, _, _ in LLM_CRITERIA)
+            print(f"scores=[{score_summary}]")
 
-        results.append({
+        row = {
             "slug": m["slug"],
             "prompt": m["prompt"],
             "predicted": m["predicted"],
+            "correct_answer": m.get("correct_answer", ""),
             "model_confidence": m["model_confidence"],
             "longest_path_length": m["longest_path_length"],
             "num_transcoder_nodes": m["num_transcoder_nodes"],
             "num_supernode_groups": m["num_supernode_groups"],
-            "llm_score": llm_score,
-            "llm_interesting": llm_interesting,
-            "llm_reason": llm_reason,
             "supernode_names": " | ".join(groups),
-        })
-
-    # final_score = llm_score (1-5) + supernode_bonus (0-1, normalized across batch)
-    max_groups = max((r["num_supernode_groups"] for r in results), default=1) or 1
-    for r in results:
-        supernode_bonus = r["num_supernode_groups"] / max_groups
-        r["final_score"] = round((r["llm_score"] or 0) + supernode_bonus, 4)
-
-    results.sort(key=lambda r: -r["final_score"])
+        }
+        for key, _, _ in LLM_CRITERIA:
+            row[f"score_{key}"] = verdict[key]["score"]
+            row[f"reason_{key}"] = verdict[key]["reason"]
+        results.append(row)
 
     # ------------------------------------------------------------------
-    # Write CSV
+    # Build per-category rankings
+    # Each entry: (category_key, label, sort_key_fn, display_fn)
+    # ------------------------------------------------------------------
+    categories: list[tuple] = []
+    for key, label, _ in LLM_CRITERIA:
+        field = f"score_{key}"
+        categories.append((
+            key, label,
+            (lambda r, fld=field: -r[fld]),         # sort by score desc
+            (lambda r, fld=field: f"{r[fld]}/10"),  # display value
+        ))
+    # Structural rankings (no LLM reason field for these)
+    categories.append((
+        "longest_path", "Longest reasoning path",
+        lambda r: -r["longest_path_length"],
+        lambda r: f"{r['longest_path_length']} nodes",
+    ))
+    categories.append((
+        "most_supernode_groups", "Most supernode groups",
+        lambda r: -r["num_supernode_groups"],
+        lambda r: f"{r['num_supernode_groups']} groups",
+    ))
+    categories.append((
+        "lowest_confidence", "Lowest model confidence",
+        lambda r: r["model_confidence"],
+        lambda r: f"{r['model_confidence']:.1%}",
+    ))
+
+    # ------------------------------------------------------------------
+    # Write CSV (one row per graph, all per-criterion scores)
     # ------------------------------------------------------------------
     csv_path = ARTIFACTS_DIR / "interesting_graphs.csv"
     fieldnames = list(results[0].keys())
@@ -436,43 +510,53 @@ def run(
     print(f"\nCSV  -> {csv_path}")
 
     # ------------------------------------------------------------------
-    # Write Markdown report
+    # Write Markdown report — one ranked table per category
     # ------------------------------------------------------------------
+    TOP_N = 5
     md_path = ARTIFACTS_DIR / "interesting_graphs.md"
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Interesting Graph Exploration\n\n")
         f.write(f"Graphs scanned: {len(all_metrics)}  \n")
         f.write(f"Passed confidence filter (≥{min_confidence:.1%}): {len(clean)}  \n\n")
+        f.write(
+            "Each category below is an *independent* ranking. The same graph may appear "
+            "at the top of multiple categories, or only one — that's the point.\n\n"
+        )
 
-        if use_llm:
-            n_interesting = sum(1 for r in results if r["llm_interesting"])
-            f.write(f"LLM judge: {n_interesting}/{len(results)} flagged as interesting\n\n")
-
-        # Summary table
-        f.write("## Ranked Candidates\n\n")
-        f.write("| Slug | Confidence | Supernode groups | LLM score | Interesting? |\n")
-        f.write("|------|------------|:----------------:|:---------:|:------------:|\n")
-        for r in results:
-            tick = ("✓" if r["llm_interesting"] else "✗") if r["llm_interesting"] is not None else "—"
-            f.write(
-                f"| {r['slug']} | {r['model_confidence']:.1%} "
-                f"| {r['num_supernode_groups']} "
-                f"| {r['llm_score'] or '—'} "
-                f"| {tick} |\n"
-            )
+        # Top graph per category — summary
+        f.write("## Top Graph per Category\n\n")
+        f.write("| Category | Top Graph | Value |\n")
+        f.write("|----------|-----------|-------|\n")
+        for _, label, sort_key, display in categories:
+            top = sorted(results, key=sort_key)[0]
+            f.write(f"| {label} | {top['slug']} | {display(top)} |\n")
         f.write("\n")
 
-        # Spotlight: top interesting cases
-        spotlight = [r for r in results if r["llm_interesting"]] or results[:5]
-        f.write("## Spotlight: Most Interesting Graphs\n\n")
-        for r in spotlight:
-            f.write(f"### {r['slug']}\n")
-            f.write(f"- **Prompt**: {r['prompt']}\n")
-            f.write(f"- **Predicted**: {r['predicted']} ({r['model_confidence']:.1%})\n")
-            f.write(f"- **Longest reasoning path**: {r['longest_path_length']} nodes\n")
-            f.write(f"- **Supernode groups**: {r['supernode_names'] or '(none)'}\n")
-            if r["llm_reason"]:
-                f.write(f"- **Why interesting**: {r['llm_reason']}\n")
+        # Per-category ranked sections
+        for cat_key, label, sort_key, display in categories:
+            ranked = sorted(results, key=sort_key)
+            top = ranked[0]
+            f.write(f"## {label}\n\n")
+            f.write(f"**Top: {top['slug']}** — {display(top)}\n\n")
+            f.write(f"- **Prompt**: {top['prompt']}\n")
+            f.write(f"- **Predicted**: {top['predicted']} ({top['model_confidence']:.1%})")
+            if top.get("correct_answer"):
+                f.write(f" — correct: {top['correct_answer']}")
+            f.write("\n")
+            f.write(f"- **Longest reasoning path**: {top['longest_path_length']} nodes\n")
+            f.write(f"- **Supernode groups**: {top['supernode_names'] or '(none)'}\n")
+            reason_field = f"reason_{cat_key}"
+            if reason_field in top and top[reason_field]:
+                f.write(f"- **Why**: {top[reason_field]}\n")
+            f.write("\n")
+            f.write(f"Top {TOP_N}:\n\n")
+            f.write("| Rank | Slug | Value | Reason |\n")
+            f.write("|------|------|-------|--------|\n")
+            for rank, r in enumerate(ranked[:TOP_N], 1):
+                reason = r.get(f"reason_{cat_key}", "") or "—"
+                # escape pipes in reasons so the table doesn't break
+                reason = reason.replace("|", "\\|")
+                f.write(f"| {rank} | {r['slug']} | {display(r)} | {reason} |\n")
             f.write("\n")
 
     print(f"Report -> {md_path}\n")
@@ -481,10 +565,11 @@ def run(
     print("=" * 55)
     print(f"  Graphs scanned:          {len(all_metrics)}")
     print(f"  Passed confidence filter:{len(clean)}")
-    print(f"  Supernode groups (max):  {results[0]['num_supernode_groups'] if results else 0}")
+    print(f"  Categories ranked:       {len(categories)}")
     if use_llm:
-        n_interesting = sum(1 for r in results if r["llm_interesting"])
-        print(f"  LLM flagged interesting: {n_interesting}/{len(results)}")
+        for key, label, _ in LLM_CRITERIA:
+            top = max(results, key=lambda r, f=f"score_{key}": r[f])
+            print(f"    {label:32s} top: {top['slug']} ({top[f'score_{key}']}/10)")
     print("=" * 55)
 
 
