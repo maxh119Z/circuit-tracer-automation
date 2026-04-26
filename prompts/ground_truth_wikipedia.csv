@@ -1,51 +1,101 @@
 slug,prompt,intermediate_concept,correct_answer,hop_type,notes
-decline-of-the-byzantine-empire-15,The Byzantine Empire experienced cycles of growth and decay over the course of nearly a,N/A,millennium,next-token prediction,wikipedia article: Decline of the Byzantine Empire | top1_prob: 0.403
-history-of-sport-in-france-15,"Its origins can be traced to the Gallo-Roman era, followed by specific developments during the",N/A,Middle,next-token prediction,wikipedia article: History of sport in France | top1_prob: 0.410
-sydney-opera-house-13,"The Sydney Opera House is a multi-venue performing arts centre in Sydney, New",N/A,South,next-token prediction,wikipedia article: Sydney Opera House | top1_prob: 0.385
-music-theory-15,"The Oxford Companion to Music describes three interrelated uses of the term ""music theory"": The",N/A,first,next-token prediction,wikipedia article: Music theory | top1_prob: 0.415
-modernist-poetry-15,Modernist poetry refers to poetry written between 1890 and 1950 in the tradition of modernist,N/A,literature,next-token prediction,wikipedia article: Modernist poetry | top1_prob: 0.385
-geography-15,Geography is an all-encompassing discipline that seeks an understanding of Earth and its human and,N/A,physical,next-token prediction,wikipedia article: Geography | top1_prob: 0.377
-sydney-opera-house-15,"Located on the foreshore of Sydney Harbour, it is widely regarded as one of the",N/A,most,next-token prediction,wikipedia article: Sydney Opera House | top1_prob: 0.364
-italian-renaissance-painting-14,Italian Renaissance painting is the painting of the period beginning in the late 13th,N/A,century,next-token prediction,wikipedia article: Italian Renaissance painting | top1_prob: 0.446
-human-evolution-14,"Homo sapiens is a distinct species of the hominid family of primates, which also",N/A,includes,next-token prediction,wikipedia article: Human evolution | top1_prob: 0.346
-gothic-architecture-15,Gothic architecture is an architectural style that was prevalent in Europe from the late 12th,N/A,century,next-token prediction,wikipedia article: Gothic architecture | top1_prob: 0.457
-impressionism-15,"Impressionism was a 19th-century art movement characterized by visible brush strokes, open composition, emphasis on",N/A,accurate,next-token prediction,wikipedia article: Impressionism | top1_prob: 0.341
-john-michael-montgomery-discography-15,"Of his albums, six studio albums and his 1997 Greatest Hits album are all certified",N/A,gold,next-token prediction,wikipedia article: John Michael Montgomery discography | top1_prob: 0.339
-cell-biology-15,Except for highly-differentiated cell types (examples include red blood cells and gametes) most cells are,N/A,capable,next-token prediction,wikipedia article: Cell (biology) | top1_prob: 0.338
-pederasty-in-ancient-greece-14,Pederasty in ancient Greece was a relationship between an older male (the erastes) and,N/A,younger,next-token prediction,wikipedia article: Pederasty in ancient Greece | top1_prob: 0.331
-british-empire-15,"The British Empire comprised the dominions, colonies, protectorates, mandates, and other territories headed by the",N/A,British,next-token prediction,wikipedia article: British Empire | top1_prob: 0.476
-sport-15,"A sport is a physical activity or game, often competitive and organized, that maintains or",N/A,improves,next-token prediction,wikipedia article: Sport | top1_prob: 0.476
-neuroscience-14,"Neuroscience is the scientific study of the nervous system (the brain, spinal cord, and",N/A,nerves,next-token prediction,wikipedia article: Neuroscience | top1_prob: 0.483
-sigma-i-62-war-game-14,"The Sigma I-62 war game, played in February 1962, was the first of a",N/A,series,next-token prediction,wikipedia article: Sigma I-62 war game | top1_prob: 0.485
-biological-anthropology-15,"Biological anthropology, also known as physical anthropology, is a natural science discipline concerned with the",N/A,study,next-token prediction,wikipedia article: Biological anthropology | top1_prob: 0.494
-allies-of-world-war-i-15,"The Allies or the Entente (UK: , US: on-TONT) was an international military coalition of",N/A,nations,next-token prediction,wikipedia article: Allies of World War I | top1_prob: 0.299
-soap-opera-15,A soap opera (also called a daytime drama or soap) is a genre of a,N/A,television,next-token prediction,wikipedia article: Soap opera | top1_prob: 0.298
-concierge-medicine-15,"Concierge medicine, also known as retainer medicine, is a relationship between a patient and a",N/A,physician,next-token prediction,wikipedia article: Concierge medicine | top1_prob: 0.410
-fleet-numerical-meteorology-and-oceanography-center-15,The Fleet Numerical Meteorology and Oceanography Center (FNMOC) is an echelon IV component of the,N/A,Naval,next-token prediction,wikipedia article: Fleet Numerical Meteorology and Oceanography Center | top1_prob: 0.415
-patrician-ancient-rome-14,The patricians (from Latin: patricius) were originally a group of ruling class families in,N/A,ancient,next-token prediction,wikipedia article: Patrician (ancient Rome) | top1_prob: 0.521
-cognitive-neuroscience-15,Cognitive neuroscience is the scientific field that is concerned with the study of the biological,N/A,basis,next-token prediction,wikipedia article: Cognitive neuroscience | top1_prob: 0.277
-discrete-mathematics-15,"Discrete mathematics is the study of mathematical structures that can be considered ""discrete"" (in a",N/A,sense,next-token prediction,wikipedia article: Discrete mathematics | top1_prob: 0.266
-void-astronomy-14,Cosmic voids (also known as dark space) are vast spaces between filaments (the largest-scale,N/A,structures,next-token prediction,wikipedia article: Void (astronomy) | top1_prob: 0.264
-artificial-intelligence-15,Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with,N/A,human,next-token prediction,wikipedia article: Artificial intelligence | top1_prob: 0.537
-winter-olympic-games-13,"The Winter Olympic Games (French: Jeux olympiques d'hiver), also known as the Olympic",N/A,Winter,next-token prediction,wikipedia article: Winter Olympic Games | top1_prob: 0.262
-list-of-island-countries-14,"Others consist of a single island, such as Barbados, Dominica, and Nauru; a main",N/A,island,next-token prediction,wikipedia article: List of island countries | top1_prob: 0.261
-april-2021-mediterranean-shipwreck-13,"On April 22, 2021, a boat carrying around 130 migrants of sub-Saharan origin",N/A,sank,next-token prediction,wikipedia article: April 2021 Mediterranean shipwreck | top1_prob: 0.257
-human-skin-color-15,"Differences in skin color among individuals is caused by variation in pigmentation, which is largely",N/A,determined,next-token prediction,wikipedia article: Human skin color | top1_prob: 0.253
-evolutionary-biology-15,Evolutionary biology is a subfield of biology that analyzes the four mechanisms of evolution: natural,N/A,selection,next-token prediction,wikipedia article: Evolutionary biology | top1_prob: 0.248
-history-of-science-15,"Protoscience, early sciences, and natural philosophies such as alchemy and astrology that existed during the",N/A,Middle,next-token prediction,wikipedia article: History of science | top1_prob: 0.248
-ap-music-theory-15,Advanced Placement (AP) Music Theory (also known as AP Music or AP Theory) is a,N/A,college,next-token prediction,wikipedia article: AP Music Theory | top1_prob: 0.247
-geography-of-south-africa-14,"South Africa occupies the southern tip of Africa, its coastline stretching more than 2,850",N/A,miles,next-token prediction,wikipedia article: Geography of South Africa | top1_prob: 0.246
-hemotoxin-15,"Haemotoxins, hemotoxins or hematotoxins are toxins that destroy red blood cells, disrupt blood clotting, and/or",N/A,cause,next-token prediction,wikipedia article: Hemotoxin | top1_prob: 0.244
-2017-turkish-parliament-speaker-election-15,The mid-term Turkish Parliament Speaker elections of 2017 were held on 20 November 2017 in,N/A,Turkey,next-token prediction,wikipedia article: 2017 Turkish Parliament Speaker election | top1_prob: 0.557
-exoplanet-15,"The first confirmed detection of an exoplanet was in 1992 around a pulsar, and the",N/A,first,next-token prediction,wikipedia article: Exoplanet | top1_prob: 0.561
-educational-neuroscience-15,"Educational neuroscience (or neuroeducation, a component of Mind Brain and Education) is an emerging scientific",N/A,field,next-token prediction,wikipedia article: Educational neuroscience | top1_prob: 0.561
-list-of-mountain-ranges-15,"First, the highest and longest mountain ranges on Earth are listed, followed by more comprehensive",N/A,lists,next-token prediction,wikipedia article: List of mountain ranges | top1_prob: 0.232
-psychology-13,"Its subject matter includes the behavior of humans and nonhumans, both conscious and",N/A,unconscious,next-token prediction,wikipedia article: Psychology | top1_prob: 0.226
-april-2021-mediterranean-shipwreck-12,"On April 22, 2021, a boat carrying around 130 migrants of sub-Saharan",N/A,African,next-token prediction,wikipedia article: April 2021 Mediterranean shipwreck | top1_prob: 0.224
-human-genetics-13,"Human genetics encompasses a variety of overlapping fields including: classical genetics, cytogenetics, molecular",N/A,genetics,next-token prediction,wikipedia article: Human genetics | top1_prob: 0.221
-a-i-artificial-intelligence-14,Artificial Intelligence (or simply A.I.) is a 2001 science fiction drama film directed by,N/A,Steven,next-token prediction,wikipedia article: A.I. Artificial Intelligence | top1_prob: 0.580
-allies-of-world-war-i-14,"The Allies or the Entente (UK: , US: on-TONT) was an international military coalition",N/A,formed,next-token prediction,wikipedia article: Allies of World War I | top1_prob: 0.220
-jazz-fusion-15,"Jazz fusion (also known as jazz rock, jazz-rock fusion, or simply fusion) is a popular",N/A,genre,next-token prediction,wikipedia article: Jazz fusion | top1_prob: 0.216
-behavioral-neuroscience-13,"Behavioral neuroscience, also known as biological psychology, biopsychology, or psychobiology, is part of",N/A,psychology,next-token prediction,wikipedia article: Behavioral neuroscience | top1_prob: 0.213
-linguistics-15,Subdisciplines such as biolinguistics (the study of the biological variables and evolution of language) and,N/A,psych,next-token prediction,wikipedia article: Linguistics | top1_prob: 0.208
-william-vouama-15,William Vouama (born 12 November 1996) is a footballer who plays as a midfielder or,N/A,forward,next-token prediction,wikipedia article: William Vouama | top1_prob: 0.208
+october-1918-prestwich-by-election-8,"The Prestwich by-election, 1918 was a parliamentary by-election",N/A,held,next-token prediction,wikipedia article: October 1918 Prestwich by-election | top1_prob: 0.401
+parole-2010-film-9,Parole is a 2010 Indian Kannada-language action drama film,N/A,directed,next-token prediction,wikipedia article: Parole (2010 film) | top1_prob: 0.402
+winckelmann-s-travels-8,Winckelmann's Travels (German: Winckelmanns Reisen) is a 1990,N/A,German,next-token prediction,wikipedia article: Winckelmann's Travels | top1_prob: 0.398
+louisy-joseph-12,"Lydy Louisy-Joseph (born 14 April 1978), better known by the shorter name",N/A,Louis,next-token prediction,wikipedia article: Louisy Joseph | top1_prob: 0.402
+central-plaza-san-francisco-10,"Central Plaza is a 23-storey, 96.93 m (318.0 ft) skyscraper",N/A,located,next-token prediction,wikipedia article: Central Plaza (San Francisco) | top1_prob: 0.398
+allies-of-world-war-i-12,"The Allies or the Entente (UK: , US: on-TONT) was an international",N/A,alliance,next-token prediction,wikipedia article: Allies of World War I | top1_prob: 0.404
+nate-kmic-11,"Nate Kmic (born June 22, 1987) is an American former professional",N/A,baseball,next-token prediction,wikipedia article: Nate Kmic | top1_prob: 0.404
+maximiliano-abad-10,Maximiliano Abad (born 30 May 1977) is an Argentine Radical,N/A,Party,next-token prediction,wikipedia article: Maximiliano Abad | top1_prob: 0.394
+drackenorth-13,"Drackenorth or Drakenorth is a prominent hill, 221 metres (725 ft) high, 3",N/A,miles,next-token prediction,wikipedia article: Drackenorth | top1_prob: 0.393
+berdsk-15,Open land is south of the town and a pine forest covering about 20 square,N/A,kilometers,next-token prediction,wikipedia article: Berdsk | top1_prob: 0.407
+ciderius-15,"Ciderius is an extinct genus of jawless fish from the family Euphaneropidae, being the oldest",N/A,known,next-token prediction,wikipedia article: Ciderius | top1_prob: 0.391
+merlyn-lowther-8,Merlyn Vivienne Lowther (born March 1954) was Chief,N/A,Executive,next-token prediction,wikipedia article: Merlyn Lowther | top1_prob: 0.411
+big-band-8,A big band (historically referred to as jazz,N/A,orchestra,next-token prediction,wikipedia article: Big band | top1_prob: 0.388
+ray-county-missouri-14,"The county was organized November 16, 1820, and named for John Ray, a Missouri",N/A,pioneer,next-token prediction,"wikipedia article: Ray County, Missouri | top1_prob: 0.385"
+hindustani-classical-music-8,Hindustani classical music (also known as North Indian,N/A,classical,next-token prediction,wikipedia article: Hindustani classical music | top1_prob: 0.383
+list-of-byzantine-emperors-10,The foundation of Constantinople in 330 AD marks the conventional,N/A,beginning,next-token prediction,wikipedia article: List of Byzantine emperors | top1_prob: 0.417
+wattis-brothers-12,The Wattis Brothers was a 19th-century railway contracting firm operated by three,N/A,brothers,next-token prediction,wikipedia article: Wattis Brothers | top1_prob: 0.383
+cimbebasia-8,Cimbebasia was the name given for a long,N/A,time,next-token prediction,wikipedia article: Cimbebasia | top1_prob: 0.381
+central-plaza-san-francisco-15,"Central Plaza is a 23-storey, 96.93 m (318.0 ft) skyscraper at 455 Market and First",N/A,Street,next-token prediction,wikipedia article: Central Plaza (San Francisco) | top1_prob: 0.380
+information-doesn-t-want-to-be-free-15,Information Doesn't Want to Be Free is a 2014 non-fiction book by the science fiction,N/A,author,next-token prediction,wikipedia article: Information Doesn't Want to Be Free | top1_prob: 0.422
+ryan-babel-15,"Babel began his career at Ajax in 1997, working his way up through the youth",N/A,ranks,next-token prediction,wikipedia article: Ryan Babel | top1_prob: 0.378
+physics-wallah-9,Physics Wallah Limited (PW) is an Indian educational technology,N/A,company,next-token prediction,wikipedia article: Physics Wallah | top1_prob: 0.377
+2009-budweiser-shootout-15,The 2009 Budweiser Shootout was the first exhibition stock car race of the 2009 NASCAR,N/A,Sprint,next-token prediction,wikipedia article: 2009 Budweiser Shootout | top1_prob: 0.423
+slavery-in-the-ottoman-empire-14,Chattel slavery was a major institution and a significant part of the Ottoman Empire's,N/A,economy,next-token prediction,wikipedia article: Slavery in the Ottoman Empire | top1_prob: 0.375
+lgbtq-literature-12,LGBTQ literature may refer to: Works by LGBTQ authors Works centering LGBTQ,N/A,characters,next-token prediction,wikipedia article: LGBTQ literature | top1_prob: 0.425
+blake-wingle-10,"Blake Leo Wingle (born April 17, 1960) is a former",N/A,American,next-token prediction,wikipedia article: Blake Wingle | top1_prob: 0.425
+roger-lewis-biographer-9,Roger Lewis (born 26 February 1960) is a Welsh,N/A,former,next-token prediction,wikipedia article: Roger Lewis (biographer) | top1_prob: 0.426
+diego-ferreyra-10,Diego Ferreyra (born (1997-10-14)14 October 1997) is a Chilean road,N/A,cyclist,next-token prediction,wikipedia article: Diego Ferreyra | top1_prob: 0.373
+list-of-mountain-ranges-of-colorado-11,"All the major mountain ranges in the state of Colorado, United",N/A,States,next-token prediction,wikipedia article: List of mountain ranges of Colorado | top1_prob: 0.372
+deandra-cobb-10,"DeAndra' Cobb (born May 18, 1981) is an American former",N/A,professional,next-token prediction,wikipedia article: DeAndra' Cobb | top1_prob: 0.372
+lola-t280-10,"The Lola T280, and its evolutions, the Lola T282, Lola",N/A,Lola,next-token prediction,wikipedia article: Lola T280 | top1_prob: 0.428
+norbert-pardi-14,"Norbert Pardi (born February 19, 1981) is a Hungarian biochemist researcher known for his",N/A,work,next-token prediction,wikipedia article: Norbert Pardi | top1_prob: 0.430
+drackenorth-8,"Drackenorth or Drakenorth is a prominent hill, 221",N/A,metres,next-token prediction,wikipedia article: Drackenorth | top1_prob: 0.369
+national-museum-of-egyptian-civilization-10,The National Museum of Egyptian Civilization (NMEC) is a national,N/A,museum,next-token prediction,wikipedia article: National Museum of Egyptian Civilization | top1_prob: 0.434
+1962-chatham-cup-10,The 1962 Chatham Cup was the 35th annual nationwide knockout,N/A,football,next-token prediction,wikipedia article: 1962 Chatham Cup | top1_prob: 0.435
+daniel-barrera-barrera-11,"Daniel Barrera Barrera, also known as El Loco, is a Colombian",N/A,drug,next-token prediction,wikipedia article: Daniel Barrera Barrera | top1_prob: 0.364
+felipe-herrero-11,"Felipe Herrero Baeza (born 18 June 1970), is a retired Spanish",N/A,footballer,next-token prediction,wikipedia article: Felipe Herrero | top1_prob: 0.437
+amazon-rainforest-15,"The Amazon rainforest, also called the Amazon jungle or Amazonia, is a moist broadleaf tropical",N/A,forest,next-token prediction,wikipedia article: Amazon rainforest | top1_prob: 0.437
+on-photography-10,On Photography is a 1977 collection of essays by American,N/A,photographer,next-token prediction,wikipedia article: On Photography | top1_prob: 0.362
+mamadou-tangara-13,Mamadou Tangara (born 4 June 1965) is a Gambian diplomat and politician who,N/A,served,next-token prediction,wikipedia article: Mamadou Tangara | top1_prob: 0.361
+jurong-police-division-13,The Jurong Police Division (or 'J' Division) is one of the seven land,N/A,divisions,next-token prediction,wikipedia article: Jurong Police Division | top1_prob: 0.361
+hannele-s-journey-to-heaven-12,Hannele's Journey to Heaven (German: Hanneles Himmelfahrt) is a 1922 German silent,N/A,film,next-token prediction,wikipedia article: Hannele's Journey to Heaven | top1_prob: 0.439
+cornell-green-defensive-back-10,"Green (born February 10, 1940), is an American former professional",N/A,basketball,next-token prediction,wikipedia article: Cornell Green (defensive back) | top1_prob: 0.359
+list-of-olympic-games-host-cities-11,"Since then, summer and winter games have usually celebrated a four-year",N/A,cycle,next-token prediction,wikipedia article: List of Olympic Games host cities | top1_prob: 0.359
+a-i-artificial-intelligence-10,Artificial Intelligence (or simply A.I.) is a 2001 science fiction,N/A,film,next-token prediction,wikipedia article: A.I. Artificial Intelligence | top1_prob: 0.356
+nuptse-13,Nuptse or Nubtse is a mountain in the Khumbu region of the Mahalangur,N/A,Himal,next-token prediction,wikipedia article: Nuptse | top1_prob: 0.444
+javorius-allen-13,"Javorius ""Buck"" Allen (born August 27, 1991), is an American former professional football",N/A,wide,next-token prediction,wikipedia article: Javorius Allen | top1_prob: 0.356
+justin-marks-10,"Justin Marks (born March 25, 1981) is an American semi-retired",N/A,professional,next-token prediction,wikipedia article: Justin Marks | top1_prob: 0.354
+peter-hetherston-9,Peter Hetherston (born 6 November 1964) is a Scottish,N/A,former,next-token prediction,wikipedia article: Peter Hetherston | top1_prob: 0.354
+baroness-fiddlesticks-9,The Baroness Fiddlesticks is a two-act 1904 Broadway musical,N/A,comedy,next-token prediction,wikipedia article: Baroness Fiddlesticks | top1_prob: 0.354
+st-xavier-s-college-maitighar-12,"Xavier's College, Maitighar is a private institute, Jesuit, co-educational secondary and tertiary",N/A,secondary,next-token prediction,"wikipedia article: St. Xavier's College, Maitighar | top1_prob: 0.353"
+olympic-games-12,The modern Olympic Games (Olympics; French: Jeux olympiques) are the world's biggest,N/A,multi,next-token prediction,wikipedia article: Olympic Games | top1_prob: 0.353
+live-at-the-palomino-1983-14,"Live at the Palomino, 1983 is a live album by American country rock band",N/A,Poco,next-token prediction,"wikipedia article: Live at the Palomino, 1983 | top1_prob: 0.447"
+educational-neuroscience-14,"Educational neuroscience (or neuroeducation, a component of Mind Brain and Education) is an emerging",N/A,field,next-token prediction,wikipedia article: Educational neuroscience | top1_prob: 0.448
+natasha-kaplinsky-10,Natasha Margaret Kaplinsky (born 9 September 1972) is an English,N/A,television,next-token prediction,wikipedia article: Natasha Kaplinsky | top1_prob: 0.450
+riesel-texas-10,"Its population was 1,062 at the 2020 census, a slight",N/A,increase,next-token prediction,"wikipedia article: Riesel, Texas | top1_prob: 0.350"
+human-genetics-13,"Human genetics encompasses a variety of overlapping fields including: classical genetics, cytogenetics, molecular",N/A,genetics,next-token prediction,wikipedia article: Human genetics | top1_prob: 0.349
+insignificant-things-9,Insignificant Things (Spanish: Cosas insignificantes) is a 2008 Mexican,N/A,drama,next-token prediction,wikipedia article: Insignificant Things | top1_prob: 0.349
+human-evolution-9,Homo sapiens is a distinct species of the hominid,N/A,family,next-token prediction,wikipedia article: Human evolution | top1_prob: 0.452
+isidoro-ruiz-10,Isidoro Ruiz Argaiz (born 19 June 1955) is a Mexican,N/A,politician,next-token prediction,wikipedia article: Isidoro Ruiz | top1_prob: 0.347
+basoeki-abdullah-museum-11,Basoeki Abdullah Museum (Indonesian: Museum Basoeki Abdullah) is an art museum,N/A,located,next-token prediction,wikipedia article: Basoeki Abdullah Museum | top1_prob: 0.346
+olympic-games-11,The modern Olympic Games (Olympics; French: Jeux olympiques) are the world's,N/A,largest,next-token prediction,wikipedia article: Olympic Games | top1_prob: 0.346
+early-dynastic-period-of-egypt-8,"The Early Dynastic Period, also known as Archaic",N/A,Egypt,next-token prediction,wikipedia article: Early Dynastic Period of Egypt | top1_prob: 0.344
+aftermath-of-world-war-ii-12,The aftermath of World War II saw the rise of two global,N/A,superpowers,next-token prediction,wikipedia article: Aftermath of World War II | top1_prob: 0.456
+gerard-archbishop-of-york-15,Gerard (died 21 May 1108) was Archbishop of York between 1100 and 1108 and Lord,N/A,Chancellor,next-token prediction,wikipedia article: Gerard (archbishop of York) | top1_prob: 0.458
+coat-of-plates-14,A coat of plates is a form of segmented torso armour consisting of overlapping,N/A,plates,next-token prediction,wikipedia article: Coat of plates | top1_prob: 0.338
+a-man-about-town-10,A Man About Town is a 1923 American silent film,N/A,directed,next-token prediction,wikipedia article: A Man About Town | top1_prob: 0.462
+dinea-11,Dinea is a genus of trilobite from the Cambrian-aged Shallow Bay,N/A,Formation,next-token prediction,wikipedia article: Dinea | top1_prob: 0.462
+pancratium-zeylanicum-11,"Pancratium zeylanicum, commonly known as the Javanese lily is a bulbous",N/A,plant,next-token prediction,wikipedia article: Pancratium zeylanicum | top1_prob: 0.337
+human-genetics-15,"Human genetics encompasses a variety of overlapping fields including: classical genetics, cytogenetics, molecular genetics, biochemical",N/A,genetics,next-token prediction,wikipedia article: Human genetics | top1_prob: 0.334
+xhqy-fm-13,"Broadcasting on 103.7 FM, XHQY carries the La Nueva Bestia format of its",N/A,sister,next-token prediction,wikipedia article: XHQY-FM | top1_prob: 0.333
+diego-ferreyra-9,Diego Ferreyra (born (1997-10-14)14 October 1997) is a Chilean,N/A,footballer,next-token prediction,wikipedia article: Diego Ferreyra | top1_prob: 0.467
+mamadou-tangara-9,Mamadou Tangara (born 4 June 1965) is a Gambian,N/A,politician,next-token prediction,wikipedia article: Mamadou Tangara | top1_prob: 0.470
+rainforest-11,Estimates vary from 40% to 75% of all biotic species being,N/A,threatened,next-token prediction,wikipedia article: Rainforest | top1_prob: 0.330
+erotic-photography-12,"Erotic photography is a style of art photography of an erotic, sexually",N/A,suggestive,next-token prediction,wikipedia article: Erotic photography | top1_prob: 0.329
+1932-texas-a-i-javelinas-football-team-9,The 1932 Texas A&I Javelinas football team represented Texas,N/A,Agricultural,next-token prediction,wikipedia article: 1932 Texas A&I Javelinas football team | top1_prob: 0.329
+robert-gotterson-11,Robert William Gotterson AO (born 28 December 1949) is an Appeals,N/A,Court,next-token prediction,wikipedia article: Robert Gotterson | top1_prob: 0.472
+pacitto-11,"Notable people with the surname include: Brando Pacitto (born 1996), Italian",N/A,footballer,next-token prediction,wikipedia article: Pacitto | top1_prob: 0.328
+cornell-green-defensive-back-9,"Green (born February 10, 1940), is an American former",N/A,professional,next-token prediction,wikipedia article: Cornell Green (defensive back) | top1_prob: 0.472
+salem-indiana-11,Salem is a city in and the county seat of Washington,N/A,County,next-token prediction,"wikipedia article: Salem, Indiana | top1_prob: 0.472"
+information-doesn-t-want-to-be-free-9,Information Doesn't Want to Be Free is a 2014,N/A,book,next-token prediction,wikipedia article: Information Doesn't Want to Be Free | top1_prob: 0.327
+john-batchelor-actor-12,John David Batchelor (born 25 September 1969) is a Singaporean-born Australian television,N/A,presenter,next-token prediction,wikipedia article: John Batchelor (actor) | top1_prob: 0.326
+modernism-9,"Modernism was an early 20th-century movement in literature, visual",N/A,art,next-token prediction,wikipedia article: Modernism | top1_prob: 0.475
+jason-croker-9,Jason Croker (born 10 March 1973) is an Australian,N/A,former,next-token prediction,wikipedia article: Jason Croker | top1_prob: 0.324
+list-of-byzantine-emperors-14,The foundation of Constantinople in 330 AD marks the conventional start of the Eastern,N/A,Orthodox,next-token prediction,wikipedia article: List of Byzantine emperors | top1_prob: 0.478
+sharecropper-s-son-10,Sharecropper's Son is a 2021 studio album by American blues,N/A,musician,next-token prediction,wikipedia article: Sharecropper's Son | top1_prob: 0.322
+fillmore-west-1969-12,Fillmore West 1969 is a three-CD live album by the rock band,N/A,Jefferson,next-token prediction,wikipedia article: Fillmore West 1969 | top1_prob: 0.320
+garret-crossman-11,"Garret Crossman, (born 7 December 1982) is an Australian former professional",N/A,rugby,next-token prediction,wikipedia article: Garret Crossman | top1_prob: 0.481
+celliers-12,"Notable people with the surname include: Grant Celliers (born 1978), South African",N/A,rugby,next-token prediction,wikipedia article: Celliers | top1_prob: 0.318
+leigh-cowlishaw-9,Leigh Cowlishaw (born 16 December 1970) is an English,N/A,former,next-token prediction,wikipedia article: Leigh Cowlishaw | top1_prob: 0.318
+history-of-sport-in-australia-11,The history of sport in Australia dates back to the pre-colonial,N/A,era,next-token prediction,wikipedia article: History of sport in Australia | top1_prob: 0.482
+lal-darja-11,Lal Darja (English language: The Red Door) is a 1997 Bengali,N/A,film,next-token prediction,wikipedia article: Lal Darja | top1_prob: 0.316
+larry-sheets-politician-11,"Larry Sheets (born May 11, 1943) is an American politician who",N/A,served,next-token prediction,wikipedia article: Larry Sheets (politician) | top1_prob: 0.316
+tree-taper-9,Tree taper is the degree to which a tree's,N/A,diameter,next-token prediction,wikipedia article: Tree taper | top1_prob: 0.486
+the-mall-at-tuttle-crossing-10,The Mall at Tuttle Crossing is an enclosed shopping mall,N/A,located,next-token prediction,wikipedia article: The Mall at Tuttle Crossing | top1_prob: 0.314
+the-last-journey-of-ninoy-8,The Last Journey of Ninoy is a 2009,N/A,Filipino,next-token prediction,wikipedia article: The Last Journey of Ninoy | top1_prob: 0.314
+kaarlo-rantanen-10,Kaarlo Verneri Rantanen (born 14 December 1988) is a Finnish,N/A,professional,next-token prediction,wikipedia article: Kaarlo Rantanen | top1_prob: 0.314
+territorial-evolution-of-the-british-empire-11,The territorial evolution of the British Empire is considered to have,N/A,begun,next-token prediction,wikipedia article: Territorial evolution of the British Empire | top1_prob: 0.392
+aftermath-of-world-war-i-10,The aftermath of World War I saw far-reaching and wide-ranging,N/A,changes,next-token prediction,wikipedia article: Aftermath of World War I | top1_prob: 0.362
+history-of-astronomy-14,The history of astronomy focuses on the efforts of civilizations to understand the universe,N/A,around,next-token prediction,wikipedia article: History of astronomy | top1_prob: 0.285
