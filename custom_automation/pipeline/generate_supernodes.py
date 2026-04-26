@@ -20,6 +20,7 @@ Usage:
 from __future__ import annotations
 
 import asyncio
+import copy
 import csv as _csv
 import json
 import os
@@ -38,6 +39,7 @@ from config import (
     DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
     FEATURE_GROUPS_FILE,
+    FEATURE_GROUPS_PRE3_FILE,
     GRAPH_FILE,
     GROUPING_BATCH_SIZE,
     GROUPING_MODEL,
@@ -751,6 +753,11 @@ Features:
                     log.info("New group created mid-stream: %s", g.group_name)
 
     # ==================================================================
+    # SNAPSHOT — pre-phase-3 assignments (for ours-no-reconciliation validation)
+    # ==================================================================
+    pre_phase3_assignments: dict[str, str] = copy.deepcopy(final_assignments)
+
+    # ==================================================================
     # PHASE 3 — Reconciliation
     # ==================================================================
     log.info("Phase 3: Reconciling groups…")
@@ -843,12 +850,16 @@ Current grouping:
     append_grouping_log(prompt_text, phase1_group_names, p3, final_assignments)
 
     # ==================================================================
-    # POST-PROCESSING — Embedding & Logit nodes
+    # POST-PROCESSING — Embedding & Logit nodes (applied to BOTH snapshots
+    # so the pre-phase-3 condition has the same emb/logit handling as the
+    # final, isolating phase-3 reconciliation as the only difference.)
     # ==================================================================
     if GRAPH_FILE.exists():
         with open(GRAPH_FILE, "r") as f:
             graph_data: dict = json.load(f)
 
+        group_embedding_nodes(graph_data, pre_phase3_assignments)
+        group_logit_nodes(graph_data, pre_phase3_assignments)
         group_embedding_nodes(graph_data, final_assignments)
         group_logit_nodes(graph_data, final_assignments)
 
@@ -857,6 +868,10 @@ Current grouping:
     # ==================================================================
     with open(FEATURE_GROUPS_FILE, "w") as f:
         json.dump(final_assignments, f, indent=2)
+
+    with open(FEATURE_GROUPS_PRE3_FILE, "w") as f:
+        json.dump(pre_phase3_assignments, f, indent=2)
+    log.info("Pre-phase-3 snapshot saved → %s", FEATURE_GROUPS_PRE3_FILE)
 
     final_group_count = len({g for g in final_assignments.values() if g != "Ungrouped"})
     log.info(
