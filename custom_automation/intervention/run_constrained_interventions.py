@@ -43,7 +43,7 @@ Usage:
     python intervention/run_constrained_interventions.py --ground_truth ../ground_truth.csv
     python intervention/run_constrained_interventions.py --dry_run   # skip model loading
     python intervention/run_constrained_interventions.py \
-  --ground_truth ../prompts/ground_truth_mquake.csv
+  --ground_truth ../prompts/ground_truth_capital.csv
 
 """
 
@@ -63,7 +63,7 @@ import torch
 
 PACKAGE_DIR = Path(__file__).resolve().parent.parent
 REPO_ROOT = PACKAGE_DIR.parent
-TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
+TEST_GRAPHS_DIR = REPO_ROOT / "capital_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -163,9 +163,8 @@ def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: di
 
 
 # Scaling factor for negative multiplicative steering, per the paper and tutorial.
-# -1 suppresses the feature to its negative (strong but not extreme).
-# The tutorial uses -2 for even stronger suppression.
-SCALING_FACTOR = -2.0
+# 0x zero-ablation: removes the feature's contribution entirely without adding anti-signal.
+SCALING_FACTOR = 0.0
 
 
 def build_scaled_interventions(hop_features: list[dict], activation_cache: torch.Tensor) -> list[tuple]:
@@ -465,7 +464,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     # ------------------------------------------------------------------
     # Write CSV
     # ------------------------------------------------------------------
-    csv_path = ARTIFACTS_DIR / "constrained_intervention_results.csv"
+    csv_path = ARTIFACTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.csv"
     fieldnames = list(results[0].keys())
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -479,7 +478,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
 
-    md_path = ARTIFACTS_DIR / "constrained_intervention_results.md"
+    md_path = ARTIFACTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.md"
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Constrained Intervention Results\n\n")
         f.write("Method: constrained patching (direct effects only — paper's primary validation method)  \n")
@@ -597,11 +596,19 @@ if __name__ == "__main__":
         help="Comma-separated grouping variants to run (e.g. a0,a3)",
     )
     parser.add_argument(
+        "--artifacts_dir",
+        type=Path,
+        default=ARTIFACTS_DIR,
+        help="Path to artifacts directory containing feature_groups JSON files",
+    )
+    parser.add_argument(
         "--dry_run",
         action="store_true",
         help="Skip model loading — report which features would be steered",
     )
     args = parser.parse_args()
+
+    ARTIFACTS_DIR = args.artifacts_dir
 
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
     run(args.ground_truth, variants, dry_run=args.dry_run)

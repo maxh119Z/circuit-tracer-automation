@@ -60,13 +60,11 @@ AMPLIFY_FACTOR = 2.0
 # ---------------------------------------------------------------------------
 
 def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
-    """Filter hop_analysis.csv for wrong cases where the intermediate hop was found."""
+    """Filter hop_analysis.csv for all cases (correct and wrong) where the intermediate hop was found."""
     candidates = []
     with open(hop_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             if row.get("variant", "").strip() not in variants:
-                continue
-            if row.get("model_correct", "").lower() == "true":
                 continue
             if row.get("hop_found", "").lower() != "true":
                 continue
@@ -211,7 +209,10 @@ def fmt_top5(top5: list[tuple[str, float]]) -> str:
 
 def run_single(model, prompt: str, correct_answer: str,
                intermediate_concept: str, middlehop_features: list[dict]) -> dict:
+    # p(correct) is measured on the first subword token of the correct answer.
+    # For multi-token answers this is an upper bound on the true sequence probability.
     tok_id = correct_token_id(model.tokenizer, correct_answer)
+    n_layers = model.cfg.n_layers
 
     with torch.inference_mode():
         baseline_logits, activation_cache = model.feature_intervention(
@@ -219,7 +220,7 @@ def run_single(model, prompt: str, correct_answer: str,
         )
         amp_tuples = build_amplify_interventions(middlehop_features, activation_cache)
         amplified_logits, _ = model.feature_intervention(
-            prompt, amp_tuples, return_activations=False
+            prompt, amp_tuples, constrained_layers=range(n_layers), return_activations=False
         )
 
     base_last = next_token_logits(baseline_logits)
@@ -309,6 +310,7 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         base_row = {
             "slug": slug,
             "variant": variant,
+            "model_correct": cand.get("model_correct", "").strip().lower() == "true",
             "intermediate_concept": intermediate_concept,
             "correct_answer": correct_answer,
             "predicted": predicted,

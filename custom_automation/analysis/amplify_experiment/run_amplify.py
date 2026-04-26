@@ -65,16 +65,14 @@ def _parse_list(val: str) -> list[str]:
 def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
     """
     Filter hop_analysis.csv for rows where:
-      - model_correct = False
       - correct answer token appears (case-insensitive) in all_supernodes
       - variant is in the requested list
+    Includes both correct and wrong baseline predictions.
     """
     candidates = []
     with open(hop_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             if row.get("variant", "").strip() not in variants:
-                continue
-            if row.get("model_correct", "").lower() == "true":
                 continue
             correct_answer = row.get("correct_answer", "").strip().lower()
             if not correct_answer:
@@ -305,6 +303,7 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         base_row = {
             "slug": slug,
             "variant": variant,
+            "model_correct": cand.get("model_correct", "").strip().lower() == "true",
             "correct_answer": correct_answer,
             "predicted": predicted,
             "prompt": "",
