@@ -43,7 +43,7 @@ Usage:
     python intervention/run_constrained_interventions.py --ground_truth ../ground_truth.csv
     python intervention/run_constrained_interventions.py --dry_run   # skip model loading
     python intervention/run_constrained_interventions.py \
-  --ground_truth ../prompts/ground_truth_capital.csv
+  --ground_truth ../prompts/ground_truth_mquake.csv
 
 """
 
@@ -63,11 +63,11 @@ import torch
 
 PACKAGE_DIR = Path(__file__).resolve().parent.parent
 REPO_ROOT = PACKAGE_DIR.parent
-TEST_GRAPHS_DIR = REPO_ROOT / "capital_graphs"
+TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"  # overridable via --graphs_dir
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts" / "ground_truth_capital.csv"
+DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts" / "ground_truth_mquake.csv"
 DESCRIPTION_VARIANT = "v2"
 MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
@@ -478,6 +478,9 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
 
+    was_correct = [r for r in valid if r.get("baseline_rank") == 1]
+    was_wrong   = [r for r in valid if r.get("baseline_rank") != 1]
+
     md_path = ARTIFACTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.md"
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Constrained Intervention Results\n\n")
@@ -492,25 +495,32 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
         )
 
         if n > 0:
-            n_top1_changed = sum(1 for r in valid if r.get("top1_changed"))
+            # correct baselines: did suppression demote the answer off top-1?
+            n_demoted = sum(1 for r in was_correct if (r.get("steered_rank") or 1) > 1)
+            # all: rank worsened
+            n_rank_worsened = sum(1 for r in valid if (r.get("rank_change") or 0) > 0)
             mean_prob_drop = sum(
                 r["prob_drop"] for r in valid if r.get("prob_drop") is not None
             ) / n
-            n_rank_worsened = sum(
-                1 for r in valid if (r.get("rank_change") or 0) > 0
-            )
 
             f.write("## Aggregate Stats\n\n")
             f.write("| Metric | Value |\n")
             f.write("|--------|-------|\n")
             f.write(f"| Runs with hop features steered | {n} |\n")
-            f.write(
-                f"| Top-1 prediction changed after steering | "
-                f"{n_top1_changed} / {n} ({n_top1_changed / n:.1%}) |\n"
-            )
+            f.write(f"| Baseline correct (top-1) | {len(was_correct)} / {n} |\n")
+            f.write(f"| Baseline wrong | {len(was_wrong)} / {n} |\n")
+            if was_correct:
+                f.write(
+                    f"| Correct → demoted off top-1 by suppression | "
+                    f"{n_demoted} / {len(was_correct)} ({n_demoted / len(was_correct):.1%}) |\n"
+                )
+                f.write(
+                    f"| Correct → still top-1 after suppression | "
+                    f"{len(was_correct) - n_demoted} / {len(was_correct)} |\n"
+                )
             f.write(f"| Mean correct-answer prob drop | {mean_prob_drop:.4f} |\n")
             f.write(
-                f"| Rank worsened after steering | "
+                f"| Correct-answer rank worsened (any baseline) | "
                 f"{n_rank_worsened} / {n} ({n_rank_worsened / n:.1%}) |\n\n"
             )
 
@@ -566,13 +576,17 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     # Terminal summary
     if n > 0:
         print()
-        print("=" * 55)
-        print(f"  Graph runs:              {len(results)}")
-        print(f"  With hop features:       {n}")
-        print(f"  Top-1 changed:           {n_top1_changed} / {n}")
-        print(f"  Mean prob drop:          {mean_prob_drop:.4f}")
-        print(f"  Rank worsened:           {n_rank_worsened} / {n}")
-        print("=" * 55)
+        print("=" * 60)
+        print(f"  Graph runs:                          {len(results)}")
+        print(f"  With hop features:                   {n}")
+        print(f"  Baseline correct:                    {len(was_correct)} / {n}")
+        print(f"  Baseline wrong:                      {len(was_wrong)} / {n}")
+        if was_correct:
+            print(f"  Correct → demoted off top-1:         {n_demoted} / {len(was_correct)}")
+            print(f"  Correct → still top-1:               {len(was_correct) - n_demoted} / {len(was_correct)}")
+        print(f"  Rank worsened (any baseline):        {n_rank_worsened} / {n}")
+        print(f"  Mean correct-answer prob drop:       {mean_prob_drop:.4f}")
+        print("=" * 60)
 
 
 # ---------------------------------------------------------------------------
@@ -602,6 +616,12 @@ if __name__ == "__main__":
         help="Path to artifacts directory containing feature_groups JSON files",
     )
     parser.add_argument(
+        "--graphs_dir",
+        type=Path,
+        default=TEST_GRAPHS_DIR,
+        help="Path to directory containing attribution graph JSON files",
+    )
+    parser.add_argument(
         "--dry_run",
         action="store_true",
         help="Skip model loading — report which features would be steered",
@@ -609,6 +629,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     ARTIFACTS_DIR = args.artifacts_dir
+    TEST_GRAPHS_DIR = args.graphs_dir
 
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
     run(args.ground_truth, variants, dry_run=args.dry_run)
