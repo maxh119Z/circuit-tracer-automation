@@ -31,7 +31,7 @@ import sys
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from config import PACKAGE_DIR, setup_logging
 
@@ -158,6 +158,66 @@ def write_manual_groups(
         json.dump(manual_groups, f, indent=2)
     log.info("Wrote %d manual group entries → %s", len(manual_groups), out_path)
     return out_path
+
+
+# ---------------------------------------------------------------------------
+# Clerps — per-feature custom labels (separate URL param from supernodes)
+# ---------------------------------------------------------------------------
+
+def normalize_clerp_id(fid: str) -> str:
+    """Convert Neuronpedia's clerp display ID to canonical layer_feature_ctx form.
+
+    The `clerps` URL param uses an internal form where the middle field is
+    layer-prefixed and zero-padded to 5 digits:
+
+        '23_2312237_10' = layer 23, feature 12237, ctx 10  →  '23_12237_10'
+        '18_1808959_10' = layer 18, feature  8959, ctx 10  →  '18_8959_10'
+
+    pinnedIds and supernodes both use the canonical form already, so we
+    normalize clerps to match.
+    """
+    parts = fid.split("_")
+    if len(parts) != 3:
+        return fid
+    layer, middle, ctx = parts
+    if not (layer.isdigit() and middle.isdigit() and ctx.isdigit()):
+        return fid
+    if middle.startswith(layer) and len(middle) > len(layer):
+        feature = middle[len(layer):].lstrip("0") or "0"
+        return f"{layer}_{feature}_{ctx}"
+    return fid
+
+
+def parse_clerps_from_url(url: str) -> list[list[str]]:
+    """Extract the `clerps` JSON array from a Neuronpedia share URL.
+
+    Returns a list of [feature_id, custom_label] pairs. Empty list if the URL
+    has no `clerps` param.
+    """
+    qs = parse_qs(urlparse(url).query)
+    raw = qs.get("clerps", [None])[0]
+    if not raw:
+        return []
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        log.error("Could not parse clerps JSON from URL: %s", exc)
+        return []
+    return parsed if isinstance(parsed, list) else []
+
+
+def clerps_to_dict(clerps: list[list[str]]) -> dict[str, str]:
+    """Convert [[fid, label], ...] → {normalized_fid: label}."""
+    out: dict[str, str] = {}
+    for entry in clerps:
+        if not isinstance(entry, list) or len(entry) < 2:
+            continue
+        fid_raw = str(entry[0]).strip()
+        label = str(entry[1]).strip()
+        if not fid_raw or not label:
+            continue
+        out[normalize_clerp_id(fid_raw)] = label
+    return out
 
 
 # ---------------------------------------------------------------------------

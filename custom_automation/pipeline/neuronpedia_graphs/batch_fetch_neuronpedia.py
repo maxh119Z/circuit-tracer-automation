@@ -39,7 +39,7 @@ import sys
 from pathlib import Path
 from typing import Callable
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from config import (
     DESCRIPTION_VARIANT,
@@ -51,7 +51,11 @@ from config import (
 
 log = setup_logging()
 
-PIPELINE_DIR = Path(__file__).resolve().parent
+# Sibling Neuronpedia scripts live in this dir; standard pipeline steps
+# (fetch_all_activation_text.py, generate_description.py, generate_supernodes.py)
+# live one level up.
+NEURONPEDIA_DIR = Path(__file__).resolve().parent
+PIPELINE_DIR = NEURONPEDIA_DIR.parent
 ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts"
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 DEFAULT_CSV = REPO_ROOT / "prompts" / "neuronpedia_graphs.csv"
@@ -61,6 +65,32 @@ DEFAULT_CSV = REPO_ROOT / "prompts" / "neuronpedia_graphs.csv"
 # CSV parsing
 # ---------------------------------------------------------------------------
 
+_URL_RE = __import__("re").compile(r"https?://\S+")
+
+
+def _clean_url(raw: str) -> str:
+    """Recover a usable URL from a CSV cell, even with copy-paste quirks.
+
+    Handles:
+      - Leading/trailing whitespace
+      - Surrounding single or double quotes (e.g. `"https://..."` from
+        accidentally double-quoting a CSV field, or `, "https...` where a
+        stray space before the quote made csv.DictReader treat it as part
+        of the value)
+      - `<iframe src="https://..." ...>` HTML pasted instead of the URL itself
+    """
+    s = raw.strip()
+    # Strip surrounding matched quotes (potentially nested)
+    while len(s) >= 2 and s[0] in "\"'" and s[-1] in "\"'":
+        s = s[1:-1].strip()
+    # If anything else is wrapping the URL, extract the first http(s) match
+    m = _URL_RE.search(s)
+    if m:
+        candidate = m.group(0).rstrip("\"'>")
+        return candidate
+    return s
+
+
 def read_csv(path: Path) -> list[dict]:
     """Return a list of {slug, url, notes} dicts. Skips empty rows + comments."""
     if not path.exists():
@@ -68,14 +98,15 @@ def read_csv(path: Path) -> list[dict]:
         sys.exit(1)
     rows: list[dict] = []
     with open(path, encoding="utf-8") as f:
-        reader = csv.DictReader(f)
+        reader = csv.DictReader(f, skipinitialspace=True)
         for r in reader:
             slug = (r.get("slug") or r.get("local_slug") or "").strip()
-            url = (r.get("share_url") or r.get("url") or "").strip()
+            url_raw = r.get("share_url") or r.get("url") or ""
+            url = _clean_url(url_raw)
             if not slug or slug.startswith("#"):
                 continue
-            if not url:
-                log.warning("Row missing share_url for slug %s — skipping.", slug)
+            if not url or not url.startswith(("http://", "https://")):
+                log.warning("Row for slug %s has no usable URL — skipping. (raw=%r)", slug, url_raw[:80])
                 continue
             rows.append({"slug": slug, "url": url, "notes": (r.get("notes") or "").strip()})
     return rows
@@ -144,7 +175,7 @@ def process_one(
         ok = run_step(
             "fetch graph + supernodes",
             [
-                sys.executable, str(PIPELINE_DIR / "fetch_neuronpedia_graph.py"),
+                sys.executable, str(NEURONPEDIA_DIR / "fetch_neuronpedia_graph.py"),
                 "--slug", slug, "--url", url,
                 *(["--force"] if force else []),
             ],

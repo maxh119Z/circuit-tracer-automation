@@ -43,12 +43,14 @@ import urllib.request
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from config import PACKAGE_DIR, REPO_ROOT, setup_logging
 
 # Reuse the small parsers from the supernode fetcher.
 from fetch_neuronpedia_groups import (
+    clerps_to_dict,
+    parse_clerps_from_url,
     parse_supernodes_from_url,
     slug_from_url,
     supernodes_to_manual_groups,
@@ -183,6 +185,7 @@ def fetch_graph_json(
 def sanity_report(
     graph: dict,
     manual_groups: dict[str, str],
+    manual_clerps: dict[str, str],
     local_slug: str,
     np_slug: str,
 ) -> None:
@@ -192,7 +195,10 @@ def sanity_report(
 
     prompt = meta.get("prompt") or "".join(meta.get("prompt_tokens", []) or [])
     node_ids = {str(n.get("node_id", "")) for n in nodes}
-    n_groups = len(set(manual_groups.values())) if manual_groups else 0
+    n_named_groups = len({
+        v for v in manual_groups.values()
+        if v not in manual_clerps.values()
+    })
     matched = sum(1 for fid in manual_groups if fid in node_ids)
 
     print("\n=== Neuronpedia graph fetched ===")
@@ -201,7 +207,8 @@ def sanity_report(
     print(f"  prompt         : {prompt}")
     print(f"  nodes          : {len(nodes)}")
     print(f"  scan/transcoder: {meta.get('scan', '?')}")
-    print(f"  supernodes     : {n_groups} groups, {len(manual_groups)} feature IDs")
+    print(f"  manual labels  : {len(manual_groups)} feature IDs "
+          f"({n_named_groups} named groups + {len(manual_clerps)} clerp singletons)")
     if manual_groups:
         status = "[OK]" if matched == len(manual_groups) else "[WARN: some IDs not in graph]"
         print(f"  IDs in graph   : {matched}/{len(manual_groups)} {status}")
@@ -238,16 +245,24 @@ def main() -> None:
         log.error("%s already exists. Pass --force to overwrite.", out_path)
         sys.exit(1)
 
-    # 3. Parse supernodes from URL (independent of the graph download)
+    # 3. Parse supernodes + clerps from URL, merge both into one
+    #    manual_groups dict. Clerps become 1-feature "groups" with the
+    #    clerp's custom label as the group name.
     supernodes = parse_supernodes_from_url(args.url) if not args.no_supernodes else []
     manual_groups = supernodes_to_manual_groups(supernodes) if supernodes else {}
+    clerps_list = parse_clerps_from_url(args.url) if not args.no_supernodes else []
+    manual_clerps = clerps_to_dict(clerps_list) if clerps_list else {}
+    # Supernodes win on conflict (rare in practice — Neuronpedia separates them).
+    for fid, label in manual_clerps.items():
+        manual_groups.setdefault(fid, label)
 
     # 4. Write everything (or just plan)
     if args.dry_run:
         log.info("[dry-run] Would write graph to %s", out_path)
         if manual_groups:
-            log.info("[dry-run] Would write %d manual entries to artifacts/%s/manual_groups.json",
-                     len(manual_groups), args.slug)
+            n_super = sum(1 for v in manual_groups.values() if v in {e[0] for e in supernodes})
+            log.info("[dry-run] Would write %d manual entries (%d from supernodes + %d clerps) to artifacts/%s/manual_groups.json",
+                     len(manual_groups), n_super, len(manual_clerps), args.slug)
     else:
         TEST_GRAPHS_DIR.mkdir(parents=True, exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as f:
@@ -256,7 +271,7 @@ def main() -> None:
         if manual_groups:
             write_manual_groups(manual_groups, args.slug, dry_run=False)
 
-    sanity_report(graph, manual_groups, args.slug, np_slug)
+    sanity_report(graph, manual_groups, manual_clerps, args.slug, np_slug)
 
 
 if __name__ == "__main__":
