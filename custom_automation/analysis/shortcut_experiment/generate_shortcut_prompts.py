@@ -50,6 +50,7 @@ from __future__ import annotations
 import ast
 import csv
 import json
+import random
 import re
 import sys
 from pathlib import Path
@@ -68,6 +69,8 @@ OUT_DIR = Path(__file__).resolve().parent / "prompts"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 PROMPTS_OUT = OUT_DIR / "prompts_shortcut.csv"
 GT_OUT = OUT_DIR / "ground_truth_shortcut.csv"
+PROMPTS_RANDOM_OUT = OUT_DIR / "prompts_random.csv"
+GT_RANDOM_OUT = OUT_DIR / "ground_truth_random.csv"
 
 MODEL = "gpt-5.4"
 
@@ -213,12 +216,11 @@ def load_candidates(hop_csv: Path) -> list[dict]:
             try:
                 model_correct = row.get("model_correct", "").lower() == "true"
                 n_found = int(row.get("n_hops_found") or 0)
-                n_intermediate = int(row.get("n_intermediate_concepts") or 0)
-                num_hops = int(row.get("num_hops") or 0)
+                n_intermediate = int(row.get("num_intermediate_hops") or row.get("n_intermediate_concepts") or 0)
             except (ValueError, TypeError):
                 continue
             n_missed = n_intermediate - n_found
-            if model_correct and n_missed > 0 and num_hops >= 3:
+            if model_correct and n_missed > 0 and n_intermediate == 2:
                 row["_concepts_missed"] = _parse_list(row.get("concepts_missed", "[]"))
                 candidates.append(row)
     return candidates
@@ -250,6 +252,8 @@ def main() -> None:
 
     prompt_rows: list[dict] = []
     gt_rows: list[dict] = []
+    prompt_random_rows: list[dict] = []
+    gt_random_rows: list[dict] = []
     total_variants = 0
 
     for cand in candidates:
@@ -270,6 +274,7 @@ def main() -> None:
         print(f"  Chain: {chain}")
         print(f"  → Generating skip for all missed concepts ...")
 
+        # --- missed-hop skip rewrite ---
         result = call_gpt(client, original_prompt, chain, correct_answer, found, missed)
         if result is None:
             print(f"    SKIP (GPT failed)")
@@ -284,32 +289,47 @@ def main() -> None:
             continue
 
         skip_slug = f"{slug}-skip"
-        wrapped = wrap_prompt(rewritten)
-
         print(f"    {skip_slug}: {rewritten}")
         print(f"    ({description})")
 
-        prompt_rows.append({
-            "slug": skip_slug,
-            "prompt": wrapped,
-            "transcoder_set": "gemma",
-        })
+        prompt_rows.append({"slug": skip_slug, "prompt": wrap_prompt(rewritten), "transcoder_set": "gemma"})
         gt_rows.append({
             "slug": skip_slug,
             "prompt": rewritten,
             "intermediate_concept": ", ".join(missed),
             "correct_answer": correct_answer,
-            "hop_type": f"skip-test (from {slug})",
-            "num_hops": max(int(num_hops) - len(missed), 1) if str(num_hops).isdigit() else 1,
+            "hop_type": f"skip-missed (from {slug})",
+            "num_hops": max(len(found) + 1, 1),
             "notes": (
-                f"Skipped {missed} (NOT found in graph) | "
-                f"kept {found} (found, load-bearing) | "
-                f"original chain: {chain} | "
-                f"if still correct → shortcut confirmed | "
-                f"if wrong → missed concepts were implicitly needed"
+                f"Skipped {missed} (NOT found in graph) | kept {found} | "
+                f"chain: {chain} | shortcut confirmed if still correct"
             ),
         })
         total_variants += 1
+
+        # --- random-k skip rewrite (matched baseline) ---
+        all_concepts = found + missed
+        k = len(missed)
+        if k < len(all_concepts):
+            random.seed(hash(slug))
+            random_skip = random.sample(all_concepts, k)
+            random_keep = [c for c in all_concepts if c not in random_skip]
+            rand_result = call_gpt(client, original_prompt, chain, correct_answer, random_keep, random_skip)
+            if rand_result:
+                rand_rewritten = rand_result.get("rewritten_question", "").strip()
+                if rand_rewritten:
+                    rand_slug = f"{slug}-random"
+                    print(f"    {rand_slug}: {rand_rewritten}")
+                    prompt_random_rows.append({"slug": rand_slug, "prompt": wrap_prompt(rand_rewritten), "transcoder_set": "gemma"})
+                    gt_random_rows.append({
+                        "slug": rand_slug,
+                        "prompt": rand_rewritten,
+                        "intermediate_concept": ", ".join(random_skip),
+                        "correct_answer": correct_answer,
+                        "hop_type": f"skip-random-{k} (from {slug})",
+                        "num_hops": max(len(random_keep) + 1, 1),
+                        "notes": f"Randomly skipped {random_skip} (k={k}) | kept {random_keep} | chain: {chain}",
+                    })
 
         print()
 
@@ -317,17 +337,20 @@ def main() -> None:
         print("No skip prompts generated.", file=sys.stderr)
         sys.exit(1)
 
-    with open(PROMPTS_OUT, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["slug", "prompt", "transcoder_set"])
-        w.writeheader()
-        w.writerows(prompt_rows)
+    p_fields = ["slug", "prompt", "transcoder_set"]
+    gt_fields = ["slug", "prompt", "intermediate_concept", "correct_answer", "hop_type", "num_hops", "notes"]
 
-    gt_fields = ["slug", "prompt", "intermediate_concept", "correct_answer",
-                 "hop_type", "num_hops", "notes"]
-    with open(GT_OUT, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=gt_fields)
-        w.writeheader()
-        w.writerows(gt_rows)
+    for path, rows in [(PROMPTS_OUT, prompt_rows), (PROMPTS_RANDOM_OUT, prompt_random_rows)]:
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=p_fields)
+            w.writeheader()
+            w.writerows(rows)
+
+    for path, rows in [(GT_OUT, gt_rows), (GT_RANDOM_OUT, gt_random_rows)]:
+        with open(path, "w", newline="", encoding="utf-8") as f:
+            w = csv.DictWriter(f, fieldnames=gt_fields)
+            w.writeheader()
+            w.writerows(rows)
 
     print("=" * 60)
     print(f"  Generated {total_variants} skip variant(s) from {len(candidates)} candidate(s)")

@@ -60,13 +60,19 @@ AMPLIFY_FACTOR = 2.0
 # ---------------------------------------------------------------------------
 
 def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
-    """Filter hop_analysis.csv for all cases (correct and wrong) where the intermediate hop was found."""
+    """Filter hop_analysis.csv for all cases (correct and wrong) where the intermediate hop was found,
+    restricted to exactly 1 intermediate hop (2-hop chains) to avoid ambiguity about which hop to amplify."""
     candidates = []
     with open(hop_csv, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
             if row.get("variant", "").strip() not in variants:
                 continue
             if row.get("hop_found", "").lower() != "true":
+                continue
+            try:
+                if int(row.get("num_hops") or 0) != 2:
+                    continue
+            except (ValueError, TypeError):
                 continue
             candidates.append(row)
     return candidates
@@ -271,14 +277,29 @@ EMPTY_METRICS: dict = {k: None for k in [
 # Main
 # ---------------------------------------------------------------------------
 
-def run(variants: list[str], dry_run: bool = False) -> None:
-    if not HOP_CSV.exists():
-        print(f"ERROR: not found: {HOP_CSV}", file=sys.stderr)
+def run(variants: list[str], dry_run: bool = False,
+        hop_csv: Path | None = None,
+        graphs_dir: Path | None = None,
+        artifacts_dir: Path | None = None,
+        out_csv: Path | None = None,
+        out_md: Path | None = None) -> None:
+    global TEST_GRAPHS_DIR, ARTIFACTS_DIR, OUT_CSV, OUT_MD
+    if graphs_dir is not None:
+        TEST_GRAPHS_DIR = graphs_dir
+    if artifacts_dir is not None:
+        ARTIFACTS_DIR = artifacts_dir
+    if out_csv is not None:
+        OUT_CSV = out_csv
+    if out_md is not None:
+        OUT_MD = out_md
+    hop_csv = hop_csv or HOP_CSV
+    if not hop_csv.exists():
+        print(f"ERROR: not found: {hop_csv}", file=sys.stderr)
         sys.exit(1)
 
     print("Filtering candidates from hop_analysis.csv ...")
-    candidates = load_candidates(HOP_CSV, variants)
-    print(f"  {len(candidates)} candidates (wrong + intermediate hop found)\n")
+    candidates = load_candidates(hop_csv, variants)
+    print(f"  {len(candidates)} candidates (2-hop, intermediate hop found in graph)\n")
 
     if not candidates:
         print("No candidates found.", file=sys.stderr)
@@ -364,9 +385,20 @@ def run(variants: list[str], dry_run: bool = False) -> None:
 
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
-    n_flipped = sum(1 for r in valid if r.get("flipped_correct"))
-    n_middlehop = sum(1 for r in valid if r.get("flipped_to_middlehop"))
-    n_improved = sum(1 for r in valid if (r.get("rank_change") or 0) < 0)
+
+    was_correct   = [r for r in valid if r.get("model_correct")]
+    was_wrong     = [r for r in valid if not r.get("model_correct")]
+
+    # wrong baseline → top-1 after amplification is the correct answer
+    n_rescued     = sum(1 for r in was_wrong if r.get("flipped_correct"))
+    # correct baseline → top-1 after amplification is still the correct answer
+    n_held        = sum(1 for r in was_correct if r.get("flipped_correct"))
+    # correct baseline → top-1 after amplification is no longer correct (amplification hurt)
+    n_broke       = sum(1 for r in was_correct if not r.get("flipped_correct"))
+    n_middlehop   = sum(1 for r in valid if r.get("flipped_to_middlehop"))
+    n_improved    = sum(1 for r in valid if (r.get("rank_change") or 0) < 0)
+
+    mean_gain = (sum(r["prob_gain"] for r in valid if r.get("prob_gain") is not None) / n) if n else 0.0
 
     with open(OUT_MD, "w", encoding="utf-8") as f:
         f.write("# Amplify Middle-Hop Experiment Results\n\n")
@@ -377,27 +409,31 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         f.write("## Summary\n\n")
         f.write("| Metric | Value |\n|--------|-------|\n")
         f.write(f"| Candidates with middlehop features found | {n} / {len(candidates)} |\n")
+        f.write(f"| Baseline correct | {len(was_correct)} / {n} |\n")
+        f.write(f"| Baseline wrong | {len(was_wrong)} / {n} |\n")
         if n:
-            f.write(f"| Flipped to correct after amplification | {n_flipped} / {n} ({n_flipped/n:.1%}) |\n")
-            f.write(f"| Flipped to middlehop (over-amplified) | {n_middlehop} / {n} ({n_middlehop/n:.1%}) |\n")
-            f.write(f"| Correct-answer rank improved | {n_improved} / {n} ({n_improved/n:.1%}) |\n")
-            mean_gain = sum(r["prob_gain"] for r in valid if r.get("prob_gain") is not None) / n
+            f.write(f"| Wrong → correct after amplification | {n_rescued} / {len(was_wrong)} |\n" if was_wrong else "")
+            f.write(f"| Correct → still correct after amplification | {n_held} / {len(was_correct)} |\n" if was_correct else "")
+            f.write(f"| Correct → broken by amplification | {n_broke} / {len(was_correct)} |\n" if was_correct else "")
+            f.write(f"| Flipped to middlehop intermediate (over-amplified) | {n_middlehop} / {n} |\n")
+            f.write(f"| Correct-answer rank improved (any baseline) | {n_improved} / {n} ({n_improved/n:.1%}) |\n")
             f.write(f"| Mean correct-answer prob gain | {mean_gain:+.4f} |\n")
         f.write("\n")
 
         f.write("## Per-Prompt Results\n\n")
-        f.write("| Slug | Intermediate | Correct | Predicted | # Amp | Flipped? | Rank Δ | "
+        f.write("| Slug | Baseline | Intermediate | Correct | Predicted | # Amp | Amplified top-1 correct? | Rank Δ | "
                 "Prob gain | Baseline top-5 | Amplified top-5 |\n")
-        f.write("|------|-------------|---------|-----------|-------|----------|--------|"
+        f.write("|------|----------|-------------|---------|-----------|-------|--------------------------|--------|"
                 "-----------|----------------|----------------|\n")
         for r in valid:
             rc = r.get("rank_change")
             delta = f"{rc:+d}" if rc is not None else "—"
-            flipped = "✓" if r.get("flipped_correct") else "✗"
+            baseline_label = "correct" if r.get("model_correct") else "wrong"
+            amp_correct = "yes" if r.get("flipped_correct") else "no"
             gain = r.get("prob_gain", 0.0)
             f.write(
-                f"| {r['slug']} | {r['intermediate_concept']} | {r['correct_answer']} "
-                f"| {r['predicted']} | {r['n_features_amplified']} | {flipped} | {delta} "
+                f"| {r['slug']} | {baseline_label} | {r['intermediate_concept']} | {r['correct_answer']} "
+                f"| {r['predicted']} | {r['n_features_amplified']} | {amp_correct} | {delta} "
                 f"| {gain:+.4f} | {r.get('baseline_top5','—')} | {r.get('amplified_top5','—')} |\n"
             )
         f.write("\n")
@@ -410,21 +446,38 @@ def run(variants: list[str], dry_run: bool = False) -> None:
 
     print(f"Report -> {OUT_MD}")
     print()
-    print("=" * 55)
-    print(f"  Candidates:                  {len(candidates)}")
-    print(f"  With middlehop features:     {n}")
+    print("=" * 60)
+    print(f"  Candidates:                        {len(candidates)}")
+    print(f"  With middlehop features:           {n}")
     if n:
-        print(f"  Flipped correct:             {n_flipped} / {n}")
-        print(f"  Flipped to middlehop:        {n_middlehop} / {n}")
-        print(f"  Rank improved:               {n_improved} / {n}")
-        print(f"  Mean prob gain:              {mean_gain:+.4f}")
-    print("=" * 55)
+        print(f"  Baseline correct:                  {len(was_correct)} / {n}")
+        print(f"  Baseline wrong:                    {len(was_wrong)} / {n}")
+        if was_wrong:
+            print(f"  Wrong → correct (amplified):       {n_rescued} / {len(was_wrong)}")
+        if was_correct:
+            print(f"  Correct → still correct:           {n_held} / {len(was_correct)}")
+            print(f"  Correct → broken by amplification: {n_broke} / {len(was_correct)}")
+        print(f"  Over-amplified (→ middlehop):      {n_middlehop} / {n}")
+        print(f"  Rank improved (any baseline):      {n_improved} / {n}")
+        print(f"  Mean prob gain:                    {mean_gain:+.4f}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--variants", type=str, default="a2")
     parser.add_argument("--dry_run", action="store_true")
+    parser.add_argument("--hop_csv", type=Path, default=None,
+                        help="Path to hop_analysis.csv (default: analysis/results/hop_analysis.csv)")
+    parser.add_argument("--graphs_dir", type=Path, default=None,
+                        help="Directory containing graph JSONs (default: test_graphs/)")
+    parser.add_argument("--artifacts_dir", type=Path, default=None,
+                        help="Directory containing feature_groups JSON files (default: artifacts/)")
+    parser.add_argument("--out_csv", type=Path, default=None,
+                        help="Output CSV path (default: amplify_middlehop_results.csv next to this script)")
+    parser.add_argument("--out_md", type=Path, default=None,
+                        help="Output Markdown path (default: amplify_middlehop_results.md next to this script)")
     args = parser.parse_args()
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
-    run(variants, dry_run=args.dry_run)
+    run(variants, dry_run=args.dry_run, hop_csv=args.hop_csv, graphs_dir=args.graphs_dir,
+        artifacts_dir=args.artifacts_dir, out_csv=args.out_csv, out_md=args.out_md)

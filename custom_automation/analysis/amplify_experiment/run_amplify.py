@@ -265,13 +265,28 @@ EMPTY_METRICS: dict = {k: None for k in [
 # Main
 # ---------------------------------------------------------------------------
 
-def run(variants: list[str], dry_run: bool = False) -> None:
-    if not HOP_CSV.exists():
-        print(f"ERROR: not found: {HOP_CSV}", file=sys.stderr)
+def run(variants: list[str], dry_run: bool = False,
+        hop_csv: Path | None = None,
+        graphs_dir: Path | None = None,
+        artifacts_dir: Path | None = None,
+        out_csv: Path | None = None,
+        out_md: Path | None = None) -> None:
+    global TEST_GRAPHS_DIR, ARTIFACTS_DIR, OUT_CSV, OUT_MD
+    if graphs_dir is not None:
+        TEST_GRAPHS_DIR = graphs_dir
+    if artifacts_dir is not None:
+        ARTIFACTS_DIR = artifacts_dir
+    if out_csv is not None:
+        OUT_CSV = out_csv
+    if out_md is not None:
+        OUT_MD = out_md
+    hop_csv = hop_csv or HOP_CSV
+    if not hop_csv.exists():
+        print(f"ERROR: not found: {hop_csv}", file=sys.stderr)
         sys.exit(1)
 
     print("Filtering candidates from hop_analysis.csv ...")
-    candidates = load_candidates(HOP_CSV, variants)
+    candidates = load_candidates(hop_csv, variants)
     print(f"  {len(candidates)} candidates (wrong + answer token in supernodes)\n")
 
     if not candidates:
@@ -358,7 +373,13 @@ def run(variants: list[str], dry_run: bool = False) -> None:
     # Write markdown
     valid = [r for r in results if r.get("baseline_rank") is not None]
     n = len(valid)
-    n_flipped = sum(1 for r in valid if r.get("flipped_correct"))
+
+    was_correct = [r for r in valid if r.get("model_correct")]
+    was_wrong   = [r for r in valid if not r.get("model_correct")]
+    n_rescued   = sum(1 for r in was_wrong if r.get("flipped_correct"))
+    n_held      = sum(1 for r in was_correct if r.get("flipped_correct"))
+    n_broke     = sum(1 for r in was_correct if not r.get("flipped_correct"))
+    mean_gain   = (sum(r["prob_gain"] for r in valid if r.get("prob_gain") is not None) / n) if n else 0.0
 
     with open(OUT_MD, "w", encoding="utf-8") as f:
         f.write("# Amplify Experiment Results\n\n")
@@ -369,26 +390,31 @@ def run(variants: list[str], dry_run: bool = False) -> None:
         f.write("## Summary\n\n")
         f.write("| Metric | Value |\n|--------|-------|\n")
         f.write(f"| Candidates with answer features found | {n} / {len(candidates)} |\n")
-        f.write(f"| Flipped to correct after amplification | {n_flipped} / {n} "
-                f"({n_flipped/n:.1%}) |\n" if n else "| Flipped to correct | — |\n")
+        f.write(f"| Baseline correct | {len(was_correct)} / {n} |\n")
+        f.write(f"| Baseline wrong | {len(was_wrong)} / {n} |\n")
         if n:
-            mean_gain = sum(r["prob_gain"] for r in valid if r.get("prob_gain") is not None) / n
+            if was_wrong:
+                f.write(f"| Wrong → correct after amplification | {n_rescued} / {len(was_wrong)} |\n")
+            if was_correct:
+                f.write(f"| Correct → still correct after amplification | {n_held} / {len(was_correct)} |\n")
+                f.write(f"| Correct → broken by amplification | {n_broke} / {len(was_correct)} |\n")
             f.write(f"| Mean correct-answer prob gain | {mean_gain:+.4f} |\n")
         f.write("\n")
 
         f.write("## Per-Prompt Results\n\n")
-        f.write("| Slug | Correct | Predicted | # Amp | Flipped? | Rank Δ | "
+        f.write("| Slug | Baseline | Correct | Predicted | # Amp | Amplified top-1 correct? | Rank Δ | "
                 "Prob gain | Baseline top-5 | Amplified top-5 |\n")
-        f.write("|------|---------|-----------|-------|----------|--------|"
+        f.write("|------|----------|---------|-----------|-------|--------------------------|--------|"
                 "-----------|----------------|----------------|\n")
         for r in valid:
             rc = r.get("rank_change")
             delta = f"{rc:+d}" if rc is not None else "—"
-            flipped = "✓" if r.get("flipped_correct") else "✗"
+            baseline_label = "correct" if r.get("model_correct") else "wrong"
+            amp_correct = "yes" if r.get("flipped_correct") else "no"
             gain = r.get("prob_gain", 0.0)
             f.write(
-                f"| {r['slug']} | {r['correct_answer']} | {r['predicted']} "
-                f"| {r['n_features_amplified']} | {flipped} | {delta} "
+                f"| {r['slug']} | {baseline_label} | {r['correct_answer']} | {r['predicted']} "
+                f"| {r['n_features_amplified']} | {amp_correct} | {delta} "
                 f"| {gain:+.4f} | {r.get('baseline_top5','—')} | {r.get('amplified_top5','—')} |\n"
             )
         f.write("\n")
@@ -402,19 +428,36 @@ def run(variants: list[str], dry_run: bool = False) -> None:
     print(f"Report -> {OUT_MD}")
 
     print()
-    print("=" * 55)
-    print(f"  Candidates:              {len(candidates)}")
-    print(f"  With answer features:    {n}")
-    print(f"  Flipped correct:         {n_flipped} / {n}")
+    print("=" * 60)
+    print(f"  Candidates:                        {len(candidates)}")
+    print(f"  With answer features:              {n}")
+    print(f"  Baseline correct:                  {len(was_correct)} / {n}")
+    print(f"  Baseline wrong:                    {len(was_wrong)} / {n}")
     if n:
-        print(f"  Mean prob gain:          {mean_gain:+.4f}")
-    print("=" * 55)
+        if was_wrong:
+            print(f"  Wrong → correct (amplified):       {n_rescued} / {len(was_wrong)}")
+        if was_correct:
+            print(f"  Correct → still correct:           {n_held} / {len(was_correct)}")
+            print(f"  Correct → broken by amplification: {n_broke} / {len(was_correct)}")
+        print(f"  Mean prob gain:                    {mean_gain:+.4f}")
+    print("=" * 60)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--variants", type=str, default="a2")
     parser.add_argument("--dry_run", action="store_true")
+    parser.add_argument("--hop_csv", type=Path, default=None,
+                        help="Path to hop_analysis.csv (default: analysis/results/hop_analysis.csv)")
+    parser.add_argument("--graphs_dir", type=Path, default=None,
+                        help="Directory containing graph JSONs (default: test_graphs/)")
+    parser.add_argument("--artifacts_dir", type=Path, default=None,
+                        help="Directory containing feature_groups JSON files (default: artifacts/)")
+    parser.add_argument("--out_csv", type=Path, default=None,
+                        help="Output CSV path (default: amplify_results.csv next to this script)")
+    parser.add_argument("--out_md", type=Path, default=None,
+                        help="Output Markdown path (default: amplify_results.md next to this script)")
     args = parser.parse_args()
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
-    run(variants, dry_run=args.dry_run)
+    run(variants, dry_run=args.dry_run, hop_csv=args.hop_csv, graphs_dir=args.graphs_dir,
+        artifacts_dir=args.artifacts_dir, out_csv=args.out_csv, out_md=args.out_md)
