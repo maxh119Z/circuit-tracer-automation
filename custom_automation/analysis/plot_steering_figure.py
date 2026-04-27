@@ -48,15 +48,14 @@ plt.rcParams.update({
     "axes.spines.right": False,
 })
 
-GREEN = "#2ca02c"
-RED = "#d62728"
+DOT_COLOR = "#4878cf"
 
 
 def _drop_invalid(df: pd.DataFrame, prob_col: str) -> pd.DataFrame:
     mask = df["skipped"].isna() | (df["skipped"].astype(str).str.strip() == "")
     df = df[mask].copy()
     df = df[df["baseline_prob"].notna() & (df["baseline_prob"] > 0)]
-    df = df[df[prob_col].notna() & (df[prob_col] > 0)]
+    df = df[df[prob_col].notna()]
     return df
 
 
@@ -96,18 +95,23 @@ def plot_panel(
         n_above = int((ratios > Y_MAX).sum())
 
         jitter = rng.uniform(-0.10, 0.10, size=len(ratios))
-        mask_up = in_range & (ratios > 1)
-        mask_dn = in_range & (ratios <= 1)
-        ax.scatter(x + jitter[mask_up], ratios[mask_up], color=GREEN,
+        ax.scatter(x + jitter[in_range], ratios[in_range], color=DOT_COLOR,
                    alpha=0.55, s=12, linewidths=0, zorder=3)
-        ax.scatter(x + jitter[mask_dn], ratios[mask_dn], color=RED,
-                   alpha=0.55, s=12, linewidths=0, zorder=3)
+
+        valid = ratios[ratios > 0]
+        if len(valid):
+            gm = float(np.exp(np.mean(np.log(valid))))
+            gm_clipped = np.clip(gm, Y_MIN, Y_MAX)
+            ax.plot([x - 0.18, x + 0.18], [gm_clipped, gm_clipped],
+                    color="black", lw=1.8, ls="--", zorder=4)
+            ax.text(x, 0.97, f"gm={gm:.2g}×",
+                    ha="center", va="top", fontsize=6, color="black",
+                    transform=ax.get_xaxis_transform())
 
         xform = ax.get_xaxis_transform()
         if n_below:
-            ax.text(x, 0.02, f"$\\downarrow${n_below} below",
-                    ha="center", va="bottom", fontsize=6, color="#888888",
-                    transform=xform, clip_on=False)
+            ax.text(x + 0.22, Y_MIN, f"$\\downarrow${n_below} below",
+                    ha="left", va="bottom", fontsize=6, color="#888888")
         if n_above:
             ax.text(x, 0.98, f"$\\uparrow${n_above} above",
                     ha="center", va="top", fontsize=6, color="#888888",

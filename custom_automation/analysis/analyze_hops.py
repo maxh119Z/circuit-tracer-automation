@@ -22,7 +22,7 @@ Outputs:
 Usage:
     python analyze_hops.py
     python analyze_hops.py --variants a0,a3
-    python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_capital.csv --variants a2
+    python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
 """
 
 from __future__ import annotations
@@ -569,10 +569,14 @@ def compute_mquake_validation(results: list[dict]) -> list[dict]:
 # Main
 # ---------------------------------------------------------------------------
 
-def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = None) -> None:
-    global TEST_GRAPHS_DIR
+def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = None,
+        output_dir: Path | None = None) -> None:
+    global TEST_GRAPHS_DIR, ARTIFACTS_DIR
     if graph_dir is not None:
         TEST_GRAPHS_DIR = graph_dir
+    if output_dir is not None:
+        ARTIFACTS_DIR = output_dir
+        ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
     rows = load_ground_truth(ground_truth_path)
     if not rows:
         print("ERROR: ground_truth.csv is empty or missing.", file=sys.stderr)
@@ -1073,7 +1077,11 @@ if __name__ == "__main__":
         "--graph_dir", type=Path, default=None,
         help="Directory containing graph JSONs (default: test_graphs/)"
     )
+    parser.add_argument(
+        "--output_dir", type=Path, default=None,
+        help="Directory to write hop_analysis.csv/.md (default: analysis/results/)"
+    )
     args = parser.parse_args()
 
     variants = [v.strip() for v in args.variants.split(",") if v.strip()]
-    run(args.ground_truth, variants, graph_dir=args.graph_dir)
+    run(args.ground_truth, variants, graph_dir=args.graph_dir, output_dir=args.output_dir)
