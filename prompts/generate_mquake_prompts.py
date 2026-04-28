@@ -60,12 +60,18 @@ def _normalize(text: str) -> str:
 
 
 def answers_match(generated: str, correct: str) -> bool:
-    """Return True if generated text contains or is contained by correct answer."""
+    """Return True if generated text contains or is contained by correct answer.
+
+    g in c (token is substring of answer) requires len >= 4 to prevent stopwords
+    like 'The' / 'New' from matching long aliases that happen to contain them.
+    """
     g = _normalize(generated)
     c = _normalize(correct)
     if not g or len(g) < 2:
         return False
-    return c in g or g in c
+    if c in g:
+        return True
+    return len(g) >= 4 and g in c
 
 
 def case_answers_match(generated: str, case: dict) -> bool:
@@ -82,7 +88,7 @@ def case_answers_match(generated: str, case: dict) -> bool:
 # Selection strategy
 # ---------------------------------------------------------------------------
 
-CANDIDATES_PER_HOP = {2: 80, 3: 300, 4: 300}
+CANDIDATES_PER_HOP = {2: 0, 3: 0, 4: 2000}
 
 # Max cases allowed to share the same first-hop entity (prevents clustering like Beatles x11)
 MAX_CHAIN_DUPLICATES = 3
@@ -431,8 +437,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Generate Gemma-filtered MQuAKE prompt CSVs.")
     parser.add_argument(
-        "--targets", type=str, default="2:20,3:15,4:15",
-        help="Target cases per hop count, format '2:20,3:15,4:15' (default: 2:20,3:15,4:15)",
+        "--targets", type=str, default="2:0,3:0,4:100",
+        help="Target cases per hop count, format '2:0,3:0,4:100' (default: 2:0,3:0,4:100)",
     )
     parser.add_argument(
         "--include_subhops", type=lambda x: x.lower() != "false", default=True,

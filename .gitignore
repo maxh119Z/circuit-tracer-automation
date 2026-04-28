@@ -200,6 +200,16 @@ custom_automation/analysis/shortcut_experiment/prompts/
 custom_automation/intervention/intervention_results*.csv
 custom_automation/intervention/constrained_intervention_results*.csv
 
+# Amplify experiment results
+custom_automation/analysis/amplify_experiment/amplify_results*.csv
+custom_automation/analysis/amplify_experiment/amplify_results*.md
+custom_automation/analysis/amplify_experiment/amplify_middlehop_results*.csv
+custom_automation/analysis/amplify_experiment/amplify_middlehop_results*.md
+
+# Shortcut experiment results
+custom_automation/analysis/shortcut_experiment/results/
+custom_automation/analysis/shortcut_experiment/results_random/
+
 # Pycache
 custom_automation/__pycache__/
 custom_automation/**/__pycache__/

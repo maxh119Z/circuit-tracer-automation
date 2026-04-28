@@ -76,8 +76,12 @@ GROUPING_VARIANT: str = os.environ.get("GROUPING_VARIANT", "a2")
 # """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / f"feature_descriptions_{DESCRIPTION_VARIANT}.json"
 FEATURE_GROUPS_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
+FEATURE_GROUPS_PRE3_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_pre3.json"
 VALIDATION_REPORT_FILE = ARTIFACTS_DIR / f"validation_report_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
 VALIDATION_HISTORY_FILE = ARTIFACTS_DIR / f"validation_history_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
+VALIDATION_CONDITIONS: str = os.environ.get("VALIDATION_CONDITIONS", "")
+VALIDATION_DIFFICULTY: str = os.environ.get("VALIDATION_DIFFICULTY", "medium")
+VALIDATION_MIN_GROUP_SIZE: int = int(os.environ.get("VALIDATION_MIN_GROUP_SIZE", "2"))
 
 # ---------------------------------------------------------------------------
 # Grouping (OpenAI) — used by generate_supernodes.py

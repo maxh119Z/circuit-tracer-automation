@@ -874,10 +874,13 @@ Current grouping:
     log.info("Pre-phase-3 snapshot saved → %s", FEATURE_GROUPS_PRE3_FILE)
 
     final_group_count = len({g for g in final_assignments.values() if g != "Ungrouped"})
+    ungrouped_count = sum(1 for g in final_assignments.values() if g == "Ungrouped")
     log.info(
-        "Done — %d features across %d groups → %s",
+        "Done — %d features: %d grouped (%d groups), %d ungrouped → %s",
         len(final_assignments),
+        len(final_assignments) - ungrouped_count,
         final_group_count,
+        ungrouped_count,
         FEATURE_GROUPS_FILE,
     )
 
