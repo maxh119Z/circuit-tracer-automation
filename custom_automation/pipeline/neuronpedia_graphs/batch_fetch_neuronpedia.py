@@ -3,12 +3,12 @@ Batch process a CSV of Neuronpedia share URLs into validation-ready artifacts.
 
 For each row in the CSV, this runs the steps needed before validation:
 
-  1. fetch_neuronpedia_graph.py     -> test_graphs/<slug>.json
-                                     + artifacts/<slug>/manual_groups.json
-  2. fetch_all_activation_text.py   -> artifacts/<slug>/pruned_activations.json
-  3. generate_description.py        -> artifacts/<slug>/feature_descriptions_<desc>.json
-  4. generate_supernodes.py         -> artifacts/<slug>/feature_groups_<desc>_<group>.json
-                                     + artifacts/<slug>/feature_groups_<desc>_<group>_pre3.json
+  1. Fetch graph JSON + parse supernodes  -> test_graphs/<slug>.json
+                                           + artifacts/<slug>/manual_groups.json
+  2. fetch_all_activation_text.py         -> artifacts/<slug>/pruned_activations.json
+  3. generate_description.py             -> artifacts/<slug>/feature_descriptions_<desc>.json
+  4. generate_supernodes.py              -> artifacts/<slug>/feature_groups_<desc>_<group>.json
+                                           + artifacts/<slug>/feature_groups_<desc>_<group>_pre3.json
 
 Each step is skipped when its output already exists, so re-runs resume cleanly.
 After this finishes, slugs are ready for `run_validation_sweep.py`.
@@ -20,26 +20,35 @@ CSV format (header required):
 the three Neuronpedia "Share" URL variants — Normal, iFrame, or HTML embed.
 `notes` is free-form (ignored by this script).
 
-Usage:
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py --csv my_urls.csv
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py --slugs dallas-austin
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py --only-fetch     # graphs + supernodes only, no API calls
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py --skip-groups   # stop after descriptions
-    OPENAI_API_KEY=sk-... python batch_fetch_neuronpedia.py --force          # re-run even if outputs exist
+Quick start (run all 16 Anthropic demo graphs):
+    cd <repo_root>
+    OPENAI_API_KEY=sk-... python custom_automation/pipeline/neuronpedia_graphs/batch_fetch_neuronpedia.py \
+        --csv prompts/neuronpedia_graphs.csv
+
+Then validate:
+    OPENAI_API_KEY=sk-... python custom_automation/pipeline/neuronpedia_graphs/run_validation_sweep.py
+                   # re-run even if outputs exist
 """
 
 from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import subprocess
 import sys
+import ssl
+import urllib.error
+import urllib.request
 from pathlib import Path
-from typing import Callable
+from urllib.parse import parse_qs, urlparse
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import certifi
+
+_SSL_CTX = ssl.create_default_context(cafile=certifi.where())
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 from config import (
     DESCRIPTION_VARIANT,
@@ -51,10 +60,189 @@ from config import (
 
 log = setup_logging()
 
-PIPELINE_DIR = Path(__file__).resolve().parent
+PIPELINE_DIR = Path(__file__).resolve().parent.parent
 ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts"
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 DEFAULT_CSV = REPO_ROOT / "prompts" / "neuronpedia_graphs.csv"
+
+GRAPH_URL_TEMPLATES: list[str] = [
+    "https://www.neuronpedia.org/api/graph/{model_id}/{slug}",
+    "https://www.neuronpedia.org/api/graph/data/{model_id}/{slug}",
+    "https://www.neuronpedia.org/api/graph/{slug}",
+]
+
+REQUEST_HEADERS = {
+    "User-Agent": "circuit-tracer-automation/0.1 (+local research script)",
+    "Accept": "application/json",
+}
+
+
+# ---------------------------------------------------------------------------
+# URL parsing helpers
+# ---------------------------------------------------------------------------
+
+def slug_from_url(url: str) -> str | None:
+    qs = parse_qs(urlparse(url).query)
+    val = qs.get("slug", [None])[0]
+    return val.strip() if val else None
+
+
+def model_id_from_url(url: str) -> str | None:
+    parts = [p for p in urlparse(url).path.split("/") if p]
+    return parts[0] if parts else None
+
+
+def parse_supernodes_from_url(url: str) -> list[list[str]]:
+    qs = parse_qs(urlparse(url).query)
+    raw = qs.get("supernodes", [None])[0]
+    if not raw:
+        return []
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        log.error("Could not parse supernodes JSON from URL: %s", exc)
+        return []
+    return parsed if isinstance(parsed, list) else []
+
+
+def supernodes_to_manual_groups(supernodes: list[list[str]]) -> dict[str, str]:
+    """Convert [[label, fid, fid, ...], ...] → {fid: label}."""
+    groups: dict[str, str] = {}
+    seen_labels: dict[str, int] = {}
+    for entry in supernodes:
+        if not entry or len(entry) < 2:
+            continue
+        label = str(entry[0]).strip() or "Unnamed"
+        feature_ids = [str(fid).strip() for fid in entry[1:] if fid]
+        if label in seen_labels:
+            seen_labels[label] += 1
+            label = f"{label} ({seen_labels[label]})"
+        else:
+            seen_labels[label] = 1
+        for fid in feature_ids:
+            if fid in groups:
+                log.warning("Feature %s assigned twice (%s vs %s) — keeping first.",
+                            fid, groups[fid], label)
+                continue
+            groups[fid] = label
+    return groups
+
+
+# ---------------------------------------------------------------------------
+# HTTP fetch
+# ---------------------------------------------------------------------------
+
+def _looks_like_graph(data: object) -> bool:
+    return (
+        isinstance(data, dict)
+        and isinstance(data.get("metadata"), dict)
+        and isinstance(data.get("nodes"), list)
+    )
+
+
+def _http_get_json(url: str, timeout: int = 30) -> object | None:
+    req = urllib.request.Request(url, headers=REQUEST_HEADERS)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=_SSL_CTX) as resp:
+            body = resp.read()
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
+        log.info("  %s → %s", url, exc)
+        return None
+    try:
+        return json.loads(body.decode("utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError):
+        return None
+
+
+def _resolve_graph_payload(data: object) -> dict | None:
+    if _looks_like_graph(data):
+        return data  # type: ignore[return-value]
+    if isinstance(data, dict):
+        s3_url = data.get("url")
+        if isinstance(s3_url, str) and s3_url.startswith("http"):
+            log.info("  metadata record → following url=%s", s3_url)
+            inner = _http_get_json(s3_url)
+            if _looks_like_graph(inner):
+                return inner  # type: ignore[return-value]
+        for key in ("graph", "data", "result"):
+            inner = data.get(key)
+            if _looks_like_graph(inner):
+                return inner
+    return None
+
+
+def fetch_graph_json(model_id: str, np_slug: str) -> dict:
+    candidates = [tmpl.format(model_id=model_id, slug=np_slug) for tmpl in GRAPH_URL_TEMPLATES]
+    for url in candidates:
+        log.info("Fetching graph from %s …", url)
+        data = _http_get_json(url)
+        if data is None:
+            log.info("  ✗ request failed")
+            continue
+        graph = _resolve_graph_payload(data)
+        if graph is not None:
+            log.info("  ✓ valid graph (%d nodes)", len(graph.get("nodes", [])))
+            return graph
+        log.info("  ✗ unexpected payload shape")
+    raise RuntimeError(
+        "Could not download graph JSON from any known endpoint. "
+        "Open Neuronpedia in a browser, find the graph JSON request in DevTools → Network, "
+        "and verify the share URL is correct."
+    )
+
+
+# ---------------------------------------------------------------------------
+# File writing
+# ---------------------------------------------------------------------------
+
+def fetch_and_write_graph(slug: str, url: str, force: bool) -> bool:
+    """Fetch graph JSON and manual_groups.json for one slug. Returns True on success."""
+    np_slug = slug_from_url(url)
+    if not np_slug:
+        log.error("[%s] Could not find `slug=` in URL.", slug)
+        return False
+
+    model_id = model_id_from_url(url) or "gemma-2-2b"
+    out_path = TEST_GRAPHS_DIR / f"{slug}.json"
+
+    if out_path.exists() and not force:
+        log.error("[%s] %s already exists. Pass --force to overwrite.", slug, out_path)
+        return False
+
+    try:
+        graph = fetch_graph_json(model_id, np_slug)
+    except RuntimeError as exc:
+        log.error("[%s] %s", slug, exc)
+        return False
+
+    TEST_GRAPHS_DIR.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(graph, f, indent=2)
+    log.info("[%s] Wrote graph → %s", slug, out_path)
+
+    supernodes = parse_supernodes_from_url(url)
+    if supernodes:
+        manual_groups = supernodes_to_manual_groups(supernodes)
+        artifact_dir = ARTIFACTS_ROOT / slug
+        artifact_dir.mkdir(parents=True, exist_ok=True)
+        groups_path = artifact_dir / "manual_groups.json"
+        with open(groups_path, "w", encoding="utf-8") as f:
+            json.dump(manual_groups, f, indent=2)
+        log.info("[%s] Wrote %d manual group entries → %s", slug, len(manual_groups), groups_path)
+
+        meta = graph.get("metadata", {}) or {}
+        nodes = graph.get("nodes", []) or []
+        node_ids = {str(n.get("node_id", "")) for n in nodes}
+        matched = sum(1 for fid in manual_groups if fid in node_ids)
+        n_groups = len(set(manual_groups.values()))
+        log.info("[%s] prompt: %s", slug,
+                 meta.get("prompt") or "".join(meta.get("prompt_tokens", []) or []))
+        log.info("[%s] %d nodes, %d supernodes, %d/%d IDs matched",
+                 slug, len(nodes), n_groups, matched, len(manual_groups))
+    else:
+        log.warning("[%s] No supernodes in URL — manual_groups.json not written.", slug)
+
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -62,7 +250,6 @@ DEFAULT_CSV = REPO_ROOT / "prompts" / "neuronpedia_graphs.csv"
 # ---------------------------------------------------------------------------
 
 def read_csv(path: Path) -> list[dict]:
-    """Return a list of {slug, url, notes} dicts. Skips empty rows + comments."""
     if not path.exists():
         log.error("CSV not found: %s", path)
         sys.exit(1)
@@ -82,24 +269,26 @@ def read_csv(path: Path) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Subprocess runner
+# Subprocess runner (for pipeline steps that are separate scripts)
 # ---------------------------------------------------------------------------
 
-def run_step(
-    name: str,
-    args: list[str],
-    env: dict[str, str],
-    log_lines: list[str],
-) -> bool:
-    """Run a pipeline step as a subprocess; return True on success."""
+def run_step(name: str, args: list[str], env: dict[str, str], log_lines: list[str]) -> bool:
     log.info("  -> %s", name)
-    proc = subprocess.run(
-        args, env=env, capture_output=True, text=True, cwd=str(PACKAGE_DIR),
+    proc = subprocess.Popen(
+        args, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+        text=True, cwd=str(PACKAGE_DIR),
     )
+    output_lines: list[str] = []
+    for line in proc.stdout:  # type: ignore[union-attr]
+        line = line.rstrip()
+        if line:
+            print(f"    {line}", flush=True)
+            output_lines.append(line)
+    proc.wait()
     if proc.returncode != 0:
         log.error("  FAIL: %s (rc=%d)", name, proc.returncode)
-        tail = proc.stderr[-1500:] if proc.stderr else "(no stderr)"
-        log.error("    stderr tail:\n%s", tail)
+        if output_lines:
+            log.error("    output tail:\n%s", "\n".join(output_lines[-20:]))
         log_lines.append(f"  FAIL: {name}")
         return False
     log_lines.append(f"  OK:   {name}")
@@ -115,10 +304,8 @@ def process_one(
     url: str,
     *,
     only_fetch: bool,
-    skip_groups: bool,
     force: bool,
 ) -> tuple[bool, list[str]]:
-    """Run the pipeline steps for one slug. Returns (success, per-step log)."""
     artifact_dir = ARTIFACTS_ROOT / slug
     graph_path = TEST_GRAPHS_DIR / f"{slug}.json"
     manual_path = artifact_dir / "manual_groups.json"
@@ -132,6 +319,7 @@ def process_one(
 
     env = os.environ.copy()
     env["CURRENT_SLUG"] = slug
+    env["PRUNING_THRESHOLD"] = "1.0"  # graph is already pruned by Neuronpedia
     env.setdefault("DESCRIPTION_VARIANT", DESCRIPTION_VARIANT)
     env.setdefault("GROUPING_VARIANT", GROUPING_VARIANT)
 
@@ -141,15 +329,8 @@ def process_one(
         log.info("  skip: graph + manual_groups already present")
         steps.append("  SKIP: fetch graph (already present)")
     else:
-        ok = run_step(
-            "fetch graph + supernodes",
-            [
-                sys.executable, str(PIPELINE_DIR / "fetch_neuronpedia_graph.py"),
-                "--slug", slug, "--url", url,
-                *(["--force"] if force else []),
-            ],
-            env, steps,
-        )
+        ok = fetch_and_write_graph(slug, url, force=force)
+        steps.append("  OK:   fetch graph + supernodes" if ok else "  FAIL: fetch graph + supernodes")
         if not ok:
             return False, steps
 
@@ -182,9 +363,6 @@ def process_one(
         if not ok:
             return False, steps
 
-    if skip_groups:
-        return True, steps
-
     # --- Step 4: auto supernodes (with pre-phase-3 snapshot) ---------------
     have_groups = groups_path.exists() and pre3_path.exists()
     if have_groups and not force:
@@ -210,19 +388,28 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--csv", default=str(DEFAULT_CSV), help=f"CSV path (default: {DEFAULT_CSV}).")
     parser.add_argument("--slugs", help="Comma-separated subset of slugs to process. Default: all rows.")
+    parser.add_argument("--urls", nargs="+", metavar="SLUG=URL",
+                        help="One or more slug=url pairs to process directly, bypassing the CSV.")
     parser.add_argument("--only-fetch", action="store_true",
                         help="Only fetch graph + manual_groups.json. Skip activations/descriptions/groups.")
-    parser.add_argument("--skip-groups", action="store_true",
-                        help="Run through descriptions but skip generate_supernodes.py.")
     parser.add_argument("--force", action="store_true",
                         help="Re-run every step even if outputs exist.")
     args = parser.parse_args()
 
-    csv_path = Path(args.csv)
-    rows = read_csv(csv_path)
-    if not rows:
-        log.error("No usable rows in %s.", csv_path)
-        sys.exit(1)
+    if args.urls:
+        rows = []
+        for pair in args.urls:
+            if "=" not in pair:
+                log.error("--urls entries must be slug=url, got: %s", pair)
+                sys.exit(1)
+            slug, url = pair.split("=", 1)
+            rows.append({"slug": slug.strip(), "url": url.strip(), "notes": ""})
+    else:
+        csv_path = Path(args.csv)
+        rows = read_csv(csv_path)
+        if not rows:
+            log.error("No usable rows in %s.", csv_path)
+            sys.exit(1)
 
     if args.slugs:
         wanted = {s.strip() for s in args.slugs.split(",") if s.strip()}
@@ -233,14 +420,14 @@ def main() -> None:
         if missing:
             log.warning("Slugs in --slugs but not in CSV: %s", sorted(missing))
 
-    needs_api = not args.only_fetch
-    if needs_api and not os.environ.get("OPENAI_API_KEY"):
+    if not args.only_fetch and not os.environ.get("OPENAI_API_KEY"):
         log.error("OPENAI_API_KEY not set (required for descriptions/groups). "
                   "Pass --only-fetch to download graphs without API calls.")
         sys.exit(1)
 
-    log.info("Batch: %d slug(s) from %s", len(rows), csv_path)
-    log.info("Mode: only_fetch=%s skip_groups=%s force=%s", args.only_fetch, args.skip_groups, args.force)
+    source = "command line" if args.urls else str(Path(args.csv))
+    log.info("Batch: %d slug(s) from %s", len(rows), source)
+    log.info("Mode: only_fetch=%s force=%s", args.only_fetch, args.force)
     log.info("Variants: desc=%s grouping=%s", DESCRIPTION_VARIANT, GROUPING_VARIANT)
 
     success: list[tuple[str, list[str]]] = []
@@ -249,12 +436,10 @@ def main() -> None:
         ok, steps = process_one(
             row["slug"], row["url"],
             only_fetch=args.only_fetch,
-            skip_groups=args.skip_groups,
             force=args.force,
         )
         (success if ok else failed).append((row["slug"], steps))
 
-    # Summary
     print("\n" + "=" * 70)
     print(f"  Batch summary: {len(success)} ok, {len(failed)} failed (of {len(rows)})")
     print("=" * 70)
@@ -267,11 +452,11 @@ def main() -> None:
         for s in steps:
             print(s)
 
-    if not args.only_fetch and not args.skip_groups and success:
+    if not args.only_fetch and success:
         print("\nNext step: validate.")
-        print("  python custom_automation/pipeline/run_validation_sweep.py \\")
+        print("  python custom_automation/pipeline/neuronpedia_graphs/run_validation_sweep.py \\")
         print(f"      --slugs {','.join(s for s, _ in success)} \\")
-        print("      --min-sizes 2,3,4,5,6 --standardize-names")
+        print("      --min-sizes 2,3,4,5,6")
 
     sys.exit(1 if failed else 0)
 
