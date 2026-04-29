@@ -259,7 +259,7 @@ def _load_existing_descriptions(path: Path) -> dict[str, dict]:
         return {}
 
     try:
-        with open(path, "r") as f:
+        with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         return {
@@ -272,8 +272,8 @@ def _load_existing_descriptions(path: Path) -> dict[str, dict]:
         return {}
 
 def _save_checkpoint(features: list[dict], path: Path) -> None:
-    with open(path, "w") as f:
-        json.dump(features, f, indent=2)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(features, f, indent=2, ensure_ascii=False)
     log.info("💾 Checkpoint saved (%d features) → %s", len(features), path)
 
 # ---------------------------------------------------------------------------
@@ -340,7 +340,7 @@ def _load_prompt_text() -> str:
         return "Unknown Prompt"
 
     try:
-        with open(GRAPH_FILE, "r") as f:
+        with open(GRAPH_FILE, "r", encoding="utf-8") as f:
             graph = json.load(f)
 
         metadata = graph.get("metadata", {})
@@ -368,7 +368,7 @@ async def main_async() -> None:
         log.error("Run fetch_all_activating_text.py first (Step 1).")
         sys.exit(1)
 
-    with open(PRUNED_ACTIVATIONS_FILE, "r") as f:
+    with open(PRUNED_ACTIVATIONS_FILE, "r", encoding="utf-8") as f:
         features: list[dict] = json.load(f)
         prompt_text = _load_prompt_text()
         log.info("Prompt context: %s", prompt_text)

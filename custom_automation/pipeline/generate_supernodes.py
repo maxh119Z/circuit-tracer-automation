@@ -352,7 +352,7 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
         log.error("Missing %s — run generate_description.py first.", FEATURE_DESCRIPTIONS_FILE)
         sys.exit(1)
 
-    with open(FEATURE_DESCRIPTIONS_FILE, "r") as f:
+    with open(FEATURE_DESCRIPTIONS_FILE, "r", encoding="utf-8") as f:
         desc_data = json.load(f)
 
     features = []
@@ -370,7 +370,7 @@ def load_and_sort_features() -> tuple[list[dict], str, str]:
     prompt_text = "Unknown Prompt"
     output_tokens_str = ""
     if GRAPH_FILE.exists():
-        with open(GRAPH_FILE, "r") as f:
+        with open(GRAPH_FILE, "r", encoding="utf-8") as f:
             graph = json.load(f)
         metadata = graph.get("metadata", {})
         prompt_text = metadata.get("prompt", "")
@@ -925,7 +925,7 @@ def apply_postprocessing_to_snapshots(
     """Apply embedding/logit grouping in place to every snapshot, sharing one graph load."""
     if not graph_path.exists():
         return
-    with open(graph_path, "r") as f:
+    with open(graph_path, "r", encoding="utf-8") as f:
         graph_data: dict = json.load(f)
     for snap in snapshots:
         group_embedding_nodes(graph_data, snap)
@@ -939,10 +939,10 @@ def save_groupings(
     pre3_path: Path = FEATURE_GROUPS_PRE3_FILE,
 ) -> None:
     final_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(final_path, "w") as f:
-        json.dump(final_assignments, f, indent=2)
-    with open(pre3_path, "w") as f:
-        json.dump(pre_phase3_assignments, f, indent=2)
+    with open(final_path, "w", encoding="utf-8") as f:
+        json.dump(final_assignments, f, indent=2, ensure_ascii=False)
+    with open(pre3_path, "w", encoding="utf-8") as f:
+        json.dump(pre_phase3_assignments, f, indent=2, ensure_ascii=False)
     log.info("Pre-phase-3 snapshot saved → %s", pre3_path)
 
     final_group_count = len({g for g in final_assignments.values() if g != "Ungrouped"})

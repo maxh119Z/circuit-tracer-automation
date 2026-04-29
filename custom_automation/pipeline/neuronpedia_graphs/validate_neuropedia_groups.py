@@ -176,9 +176,9 @@ def load_data() -> tuple[list[dict], dict[str, str]]:
         log.error("Missing %s — run generate_supernodes.py first.", FEATURE_GROUPS_FILE)
         sys.exit(1)
 
-    with open(FEATURE_DESCRIPTIONS_FILE) as f:
+    with open(FEATURE_DESCRIPTIONS_FILE, encoding="utf-8") as f:
         features: list[dict] = json.load(f)
-    with open(FEATURE_GROUPS_FILE) as f:
+    with open(FEATURE_GROUPS_FILE, encoding="utf-8") as f:
         groups: dict[str, str] = json.load(f)
 
     return features, groups
@@ -235,7 +235,7 @@ def load_condition_groups(
         if not MANUAL_GROUPS_FILE.exists():
             log.info("[human] %s missing — skipping condition.", MANUAL_GROUPS_FILE)
             return None
-        with open(MANUAL_GROUPS_FILE) as f:
+        with open(MANUAL_GROUPS_FILE, encoding="utf-8") as f:
             groups: dict[str, str] = json.load(f)
         index = build_group_index(features, groups)
         if not index:
@@ -247,7 +247,7 @@ def load_condition_groups(
         if not FEATURE_GROUPS_FILE.exists():
             log.error("[ours-full] %s missing — run generate_supernodes.py first.", FEATURE_GROUPS_FILE)
             return None
-        with open(FEATURE_GROUPS_FILE) as f:
+        with open(FEATURE_GROUPS_FILE, encoding="utf-8") as f:
             groups = json.load(f)
         index = build_group_index(features, groups)
         return (groups, index) if index else None
@@ -256,7 +256,7 @@ def load_condition_groups(
         if not FEATURE_GROUPS_PRE3_FILE.exists():
             log.warning("[ours-no-reconciliation] %s missing.", FEATURE_GROUPS_PRE3_FILE)
             return None
-        with open(FEATURE_GROUPS_PRE3_FILE) as f:
+        with open(FEATURE_GROUPS_PRE3_FILE, encoding="utf-8") as f:
             groups = json.load(f)
         index = build_group_index(features, groups)
         return (groups, index) if index else None
@@ -269,7 +269,7 @@ def load_condition_groups(
         if not cap_file.exists():
             log.info("[%s] %s missing — skipping condition.", condition, cap_file)
             return None
-        with open(cap_file) as f:
+        with open(cap_file, encoding="utf-8") as f:
             groups = json.load(f)
         index = build_group_index(features, groups)
         return (groups, index) if index else None
@@ -869,7 +869,7 @@ def write_markdown_report(report: dict, path: Path) -> None:
 
 def _read_prompt_from_graph() -> str:
     try:
-        with open(GRAPH_FILE) as f:
+        with open(GRAPH_FILE, encoding="utf-8") as f:
             data = json.load(f)
         meta = data.get("metadata", {})
         prompt = meta.get("prompt", "")
@@ -912,7 +912,7 @@ async def main_async() -> None:
     if not FEATURE_DESCRIPTIONS_FILE.exists():
         log.error("Missing %s — run generate_description.py first.", FEATURE_DESCRIPTIONS_FILE)
         sys.exit(1)
-    with open(FEATURE_DESCRIPTIONS_FILE) as f:
+    with open(FEATURE_DESCRIPTIONS_FILE, encoding="utf-8") as f:
         features: list[dict] = json.load(f)
 
     requested = _resolve_requested_conditions()
@@ -994,8 +994,8 @@ async def main_async() -> None:
         "conditions": condition_results,
     }
 
-    with open(VALIDATION_REPORT_FILE, "w") as f:
-        json.dump(report, f, indent=2)
+    with open(VALIDATION_REPORT_FILE, "w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2, ensure_ascii=False)
     log.info("Validation report saved → %s", VALIDATION_REPORT_FILE)
 
     write_markdown_report(report, VALIDATION_MARKDOWN_FILE)
@@ -1003,13 +1003,13 @@ async def main_async() -> None:
     history: list[dict] = []
     if VALIDATION_HISTORY_FILE.exists():
         try:
-            with open(VALIDATION_HISTORY_FILE) as f:
+            with open(VALIDATION_HISTORY_FILE, encoding="utf-8") as f:
                 history = json.load(f)
         except json.JSONDecodeError:
             history = []
     history.append(report)
-    with open(VALIDATION_HISTORY_FILE, "w") as f:
-        json.dump(history, f, indent=2)
+    with open(VALIDATION_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, indent=2, ensure_ascii=False)
     log.info("Appended to history (%d total) → %s", len(history), VALIDATION_HISTORY_FILE)
 
     # Console summary

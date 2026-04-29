@@ -274,9 +274,13 @@ def read_csv(path: Path) -> list[dict]:
 
 def run_step(name: str, args: list[str], env: dict[str, str], log_lines: list[str]) -> bool:
     log.info("  -> %s", name)
+    # Force UTF-8 decoding of child stdout: on Windows the default is cp1252,
+    # which crashes on Spanish/French accents and other UTF-8 multibyte
+    # sequences printed by log lines or LLM-generated group names.
     proc = subprocess.Popen(
         args, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-        text=True, cwd=str(PACKAGE_DIR),
+        text=True, encoding="utf-8", errors="replace",
+        cwd=str(PACKAGE_DIR),
     )
     output_lines: list[str] = []
     for line in proc.stdout:  # type: ignore[union-attr]

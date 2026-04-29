@@ -19,6 +19,7 @@ Usage (on the desktop with the model):
 from __future__ import annotations
 
 import csv
+import random
 import re
 import time
 from pathlib import Path
@@ -33,8 +34,8 @@ from transformer_lens import HookedTransformer
 # ---------------------------------------------------------------------------
 
 TARGET_N = 100
-CANDIDATES_TO_FETCH = 10000       # how many article sentences to collect before scoring
-MAX_PER_ARTICLE = 3             # max prompts per article in final selection
+CANDIDATES_TO_FETCH = 5000       # how many article sentences to collect before scoring
+MAX_PER_ARTICLE = 5             # max prompts per article in final selection
 MIN_WORDS = 8                   # minimum words in a truncated prefix
 MAX_WORDS = 15                  # maximum words in a truncated prefix
 MIN_CONF = 0.0                  # lower bound on top-1 softmax prob (no floor — model_correct already implies non-trivial mass)
@@ -87,27 +88,27 @@ def _normalize_word(w: str) -> str:
     return _WORD_NORMALIZE.sub("", w.strip()).lower()
 
 
-def _slug(article_title: str, word_idx: int) -> str:
+def _slug(article_title: str, sent_idx: int, word_idx: int) -> str:
     base = re.sub(r"[^a-z0-9]+", "-", article_title.lower()).strip("-")
-    return f"{base}-{word_idx}"
+    return f"{base}-s{sent_idx}-{word_idx}"
 
 
 def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> list[dict]:
-    """Return truncated sentence prefixes from one article."""
+    """Return truncated sentence prefixes from one article (shuffled, so the
+    caller's [:N] cap samples random sentences instead of always the first few)."""
     candidates = []
     sentences = _SENTENCE_SPLIT.split(text)
-    for sent in sentences:
+    for sent_idx, sent in enumerate(sentences):
         sent = _CLEANUP.sub(" ", sent).strip()
         words = sent.split()
         if len(words) < MIN_WORDS + 2:
             continue
-        # Try two truncation lengths per sentence for variety
         for trunc in range(MIN_WORDS, min(MAX_WORDS + 1, len(words) - 1)):
             prefix = " ".join(words[:trunc])
             expected = _normalize_word(words[trunc])
             if not expected:                # next word is pure punctuation
                 continue
-            slug = _slug(article_title, trunc)
+            slug = _slug(article_title, sent_idx, trunc)
             if slug in seen_slugs:
                 continue
             # Basic quality filters
@@ -122,6 +123,7 @@ def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> l
                 "article": article_title,
                 "expected_answer": expected,
             })
+    random.shuffle(candidates)
     return candidates
 
 
@@ -131,21 +133,21 @@ def fetch_candidates(n: int) -> list[dict]:
     Seeds from topic searches then keeps pulling random pages until we hit n.
     Random pages avoid disambiguation failures that plague topic searches.
     """
-    import random
-
     candidates: list[dict] = []
     seen_slugs: set[str] = set()
     tried_titles: set[str] = set()
     queue: list[str] = []
     consec_refill_failures = 0
+    page_failures = 0
+    page_successes = 0
 
     # Seed from topic searches
     random.shuffle(SEED_TOPICS)
     for topic in SEED_TOPICS:
         try:
             queue.extend(wikipedia.search(topic, results=5))
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"  seed search failed for {topic!r}: {type(e).__name__}: {e}")
 
     while len(candidates) < n:
         # Refill with random pages (actual articles, not disambiguation pages)
@@ -153,12 +155,15 @@ def fetch_candidates(n: int) -> list[dict]:
             try:
                 queue.extend(wikipedia.random(pages=50))
                 consec_refill_failures = 0
-            except Exception:
+            except Exception as e:
                 consec_refill_failures += 1
-                if consec_refill_failures >= 10:
-                    print("  Wikipedia API unresponsive — stopping fetch early.")
+                backoff = min(2 ** consec_refill_failures, 60)  # exp backoff up to 60s
+                print(f"  random refill failed ({consec_refill_failures}/30): "
+                      f"{type(e).__name__}: {e} — sleeping {backoff}s")
+                if consec_refill_failures >= 30:
+                    print("  Wikipedia API unresponsive after 30 retries — stopping fetch early.")
                     break
-                time.sleep(2)
+                time.sleep(backoff)
                 continue
 
         title = queue.pop(0)
@@ -170,14 +175,24 @@ def fetch_candidates(n: int) -> list[dict]:
             page = wikipedia.page(title, auto_suggest=False)
             text = page.content[:6000]
             new_cands = extract_candidates(title, text, seen_slugs)
-            candidates.extend(new_cands[:8])
+            candidates.extend(new_cands[:40])
+            page_successes += 1
             time.sleep(0.05)
-        except Exception:
-            continue
+        except Exception as e:
+            page_failures += 1
+            # Log a sample failure every 200 errors so we can see what's happening
+            # without spamming the console with disambiguation/missing-page noise.
+            if page_failures % 200 == 1:
+                print(f"  page failure #{page_failures} for {title!r}: {type(e).__name__}: {e}")
 
         if len(tried_titles) % 100 == 0:
-            print(f"  [{len(tried_titles)} articles tried] {len(candidates)} candidates so far...")
+            ok_rate = page_successes / max(1, page_successes + page_failures)
+            print(f"  [{len(tried_titles)} articles tried | {page_successes} ok, "
+                  f"{page_failures} failed ({ok_rate:.0%})] "
+                  f"{len(candidates)} candidates so far...")
 
+    print(f"  Final: {page_successes} successful pages, {page_failures} failed, "
+          f"{len(candidates)} candidates.")
     return candidates
 
 

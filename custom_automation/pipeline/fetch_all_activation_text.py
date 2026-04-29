@@ -60,7 +60,7 @@ def load_pruned_nodes_from_graph(graph_path: Path = GRAPH_FILE) -> list[dict]:
         return []
 
     log.info("Loading graph from %s", graph_path)
-    with open(graph_path, "r") as f:
+    with open(graph_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     all_nodes = data.get("nodes", [])
@@ -251,8 +251,8 @@ def main() -> None:
                 log.info("Downloaded %d / %d features…", i, len(nodes))
 
     output_path = PRUNED_ACTIVATIONS_FILE
-    with open(output_path, "w") as f:
-        json.dump(results, f, indent=2)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2, ensure_ascii=False)
     log.info("Done — %d features saved to %s", len(results), output_path)
 
 
