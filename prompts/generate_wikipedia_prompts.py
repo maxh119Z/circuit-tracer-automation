@@ -33,12 +33,12 @@ from transformer_lens import HookedTransformer
 # ---------------------------------------------------------------------------
 
 TARGET_N = 100
-CANDIDATES_TO_FETCH = 8000       # how many article sentences to collect before scoring
+CANDIDATES_TO_FETCH = 10000       # how many article sentences to collect before scoring
 MAX_PER_ARTICLE = 3             # max prompts per article in final selection
 MIN_WORDS = 8                   # minimum words in a truncated prefix
 MAX_WORDS = 15                  # maximum words in a truncated prefix
-MIN_CONF = 0.15                 # lower bound on top-1 softmax prob (filter boring/random)
-MAX_CONF = 0.65                 # upper bound on top-1 softmax prob (filter trivially easy)
+MIN_CONF = 0.0                  # lower bound on top-1 softmax prob (no floor — model_correct already implies non-trivial mass)
+MAX_CONF = 0.8                  # upper bound on top-1 softmax prob (filter trivially easy)
 MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
 BATCH_SIZE = 16                 # prompts scored at once (tune to your GPU VRAM)
@@ -79,6 +79,12 @@ SEED_TOPICS = [
 
 _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 _CLEANUP = re.compile(r"\s+")
+_WORD_NORMALIZE = re.compile(r"^[^\w]+|[^\w]+$")
+
+
+def _normalize_word(w: str) -> str:
+    """Strip surrounding punctuation/whitespace and lowercase."""
+    return _WORD_NORMALIZE.sub("", w.strip()).lower()
 
 
 def _slug(article_title: str, word_idx: int) -> str:
@@ -98,6 +104,9 @@ def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> l
         # Try two truncation lengths per sentence for variety
         for trunc in range(MIN_WORDS, min(MAX_WORDS + 1, len(words) - 1)):
             prefix = " ".join(words[:trunc])
+            expected = _normalize_word(words[trunc])
+            if not expected:                # next word is pure punctuation
+                continue
             slug = _slug(article_title, trunc)
             if slug in seen_slugs:
                 continue
@@ -107,7 +116,12 @@ def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> l
             if any(c in prefix for c in ["[", "]", "{", "}"]):  # skip wiki markup
                 continue
             seen_slugs.add(slug)
-            candidates.append({"slug": slug, "prompt": prefix, "article": article_title})
+            candidates.append({
+                "slug": slug,
+                "prompt": prefix,
+                "article": article_title,
+                "expected_answer": expected,
+            })
     return candidates
 
 
@@ -174,12 +188,23 @@ def fetch_candidates(n: int) -> list[dict]:
 def score_prompts(prompts: list[str], model: HookedTransformer) -> list[dict]:
     """Return top-1 softmax probability and predicted token for each prompt."""
     results = []
+    pad_id = model.tokenizer.pad_token_id
     for i in range(0, len(prompts), BATCH_SIZE):
         batch = prompts[i : i + BATCH_SIZE]
         tokens = model.to_tokens(batch, prepend_bos=True)  # (B, L)
+        # Right-padding means logits[:, -1] reads from a PAD position for every
+        # prompt that isn't the longest in the batch. Find each row's real last
+        # non-pad index and read the logit there.
+        if pad_id is not None:
+            non_pad = (tokens != pad_id).long()
+            last_idx = non_pad.sum(dim=-1) - 1  # (B,)
+        else:
+            last_idx = torch.full((tokens.size(0),), tokens.size(1) - 1,
+                                  device=tokens.device, dtype=torch.long)
         with torch.no_grad():
             logits = model(tokens)  # (B, L, V)
-        last_logits = logits[:, -1, :]  # (B, V)
+        batch_idx = torch.arange(logits.size(0), device=logits.device)
+        last_logits = logits[batch_idx, last_idx, :].float()  # (B, V)
         probs = F.softmax(last_logits, dim=-1)
         top1_probs, top1_indices = probs.max(dim=-1)  # (B,)
         top1_tokens = model.to_str_tokens(top1_indices)
@@ -214,7 +239,13 @@ def main():
 
     for cand, result in zip(candidates, results):
         cand["top1_prob"] = result["top1_prob"]
-        cand["correct_answer"] = result["top1_token"]
+        cand["top1_token"] = result["top1_token"]
+        # The Wikipedia next-word is the ground truth; we keep the prompt only
+        # if the model also picked it (see model_correct check below).
+        cand["correct_answer"] = cand["expected_answer"]
+        cand["model_correct"] = (
+            _normalize_word(result["top1_token"]) == cand["expected_answer"]
+        )
 
     # --- Step 3: filter, deduplicate per article, select top 50 ---
     print(f"\n[3/3] Filtering and selecting {TARGET_N} prompts...")
@@ -285,13 +316,18 @@ def main():
             return False
         return True
 
+    n_correct = sum(1 for c in candidates if c["model_correct"])
+    n_in_window = sum(1 for c in candidates
+                      if c["model_correct"] and MIN_CONF <= c["top1_prob"] <= MAX_CONF)
     interesting = [
         c for c in candidates
-        if MIN_CONF <= c["top1_prob"] <= MAX_CONF
-        and _is_clean_token(c["correct_answer"])
+        if c["model_correct"]                       # (2) model's top-1 == Wikipedia next word
+        and MIN_CONF <= c["top1_prob"] <= MAX_CONF  # (3) probability ≤ 0.8
+        and _is_clean_token(c["correct_answer"])    # (1) not a stopword + other quality filters
         and _is_clean_prompt(c["prompt"])
     ]
-    print(f"  {len(interesting)} candidates after quality + confidence filtering.")
+    print(f"  {len(candidates)} candidates -> {n_correct} model_correct "
+          f"-> {n_in_window} in [{MIN_CONF}, {MAX_CONF}] -> {len(interesting)} after token/prompt cleanup.")
 
     # Sort by distance from midpoint of confidence window (most "interesting" first)
     midpoint = (MIN_CONF + MAX_CONF) / 2
@@ -311,8 +347,8 @@ def main():
 
     if len(selected) < TARGET_N:
         print(
-            f"  WARNING: only found {len(selected)} prompts in confidence window. "
-            "Consider lowering MIN_CONF or raising MAX_CONF."
+            f"  WARNING: only found {len(selected)} prompts. "
+            "Consider raising MAX_CONF, raising MAX_PER_ARTICLE, or fetching more candidates."
         )
 
     # --- Write ground truth CSV ---
