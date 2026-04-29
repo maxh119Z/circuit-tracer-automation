@@ -641,29 +641,20 @@ def group_logit_nodes(graph_data: dict, final_assignments: dict[str, str]) -> No
 
 
 # ---------------------------------------------------------------------------
-# Main
+# Phase 1 — Discover groups from top-K seed features
 # ---------------------------------------------------------------------------
 
-async def main() -> None:
-    _start = time.time()
-    _api_usage.clear()
+async def run_phase1(
+    seed_features: list[dict],
+    prompt_text: str,
+    output_context: str,
+) -> Phase1Output | None:
+    """Run phase 1 once: discover groups from the top-K seed features.
 
-    features, prompt_text, output_context = load_and_sort_features()
-    if not features:
-        log.error("No described features found.")
-        return
-
-    log.info("Total features: %d", len(features))
-    log.info("Prompt: %s", prompt_text)
-
-    active_groups: dict[str, str] = {}      # name → rationale
-    final_assignments: dict[str, str] = {}  # feature_id → group_name
-
-    # ==================================================================
-    # PHASE 1 — Discover groups from top-K seed features
-    # ==================================================================
-    seed_features = features[:GROUPING_TOP_K_SEED]
-    log.info("Phase 1: Discovering groups from top %d features…", GROUPING_TOP_K_SEED)
+    Returns the parsed Phase1Output (or None if the API call failed).
+    Does not mutate any state; caller is responsible for stitching.
+    """
+    log.info("Phase 1: Discovering groups from top %d features…", len(seed_features))
 
     phase1_prompt = f"""You are an expert AI interpretability researcher analyzing internal representations of a large language model.
 Context: The model was given the following prompt: {prompt_text}
@@ -710,59 +701,124 @@ Features:
 
     if p1 is None:
         log.error("Phase 1 parsing returned None — check OpenAI response.")
-        return
+        return None
+    log.info("Established %d initial supernodes.", len(p1.groups))
+    return p1
 
+
+def apply_phase1_output(
+    p1: Phase1Output,
+    active_groups: dict[str, str],
+    final_assignments: dict[str, str],
+) -> None:
+    """Stitch a Phase1Output into the running active_groups + final_assignments."""
     for g in p1.groups:
         active_groups[g.group_name] = g.rationale
     for a in p1.assignments:
         final_assignments[a.feature_id] = a.group_name
 
-    phase1_group_names = list(active_groups.keys())
-    log.info("Established %d initial supernodes.", len(active_groups))
 
-    # ==================================================================
-    # PHASE 2 — Assign remaining features concurrently
-    # ==================================================================
-    remaining = features[GROUPING_TOP_K_SEED:]
+# ---------------------------------------------------------------------------
+# Phase 2 — Concurrent batch assignment of remaining features
+# ---------------------------------------------------------------------------
 
-    if remaining:
-        log.info("Phase 2: Assigning remaining %d features…", len(remaining))
-        groups_context = json.dumps(active_groups, indent=2)
+async def run_phase2_batches(
+    remaining_features: list[dict],
+    active_groups: dict[str, str],
+    prompt_text: str,
+    output_context: str,
+) -> list[Phase2Output]:
+    """Run phase 2 over `remaining_features` in concurrent batches of GROUPING_BATCH_SIZE.
 
-        MAX_CONCURRENT_REQUESTS = 67
-        semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
+    Each batch sees the same `active_groups` (the phase-1 result) — batches do
+    not influence each other. Returns the per-batch outputs in batch order so
+    callers can stitch any prefix (the cap-sweep driver uses this to build
+    snapshots at cap=100, 150, ...).
+    """
+    if not remaining_features:
+        return []
 
-        tasks = [
-            process_batch(
-                remaining[i : i + GROUPING_BATCH_SIZE],
-                groups_context,
-                prompt_text,
-                output_context,
-                semaphore,
-            )
-            for i in range(0, len(remaining), GROUPING_BATCH_SIZE)
-        ]
+    log.info("Phase 2: Assigning %d features in %d batches…",
+             len(remaining_features),
+             (len(remaining_features) + GROUPING_BATCH_SIZE - 1) // GROUPING_BATCH_SIZE)
+    groups_context = json.dumps(active_groups, indent=2)
 
-        for coro in tqdm(asyncio.as_completed(tasks), total=len(tasks)):
-            p2: Phase2Output = await coro
-            for a in p2.assignments:
-                final_assignments[a.feature_id] = a.group_name
-            for g in p2.new_groups:
-                if g.group_name not in active_groups:
-                    active_groups[g.group_name] = g.rationale
-                    log.info("New group created mid-stream: %s", g.group_name)
+    MAX_CONCURRENT_REQUESTS = 67
+    semaphore = asyncio.Semaphore(MAX_CONCURRENT_REQUESTS)
 
-    # ==================================================================
-    # SNAPSHOT — pre-phase-3 assignments (for ours-no-reconciliation validation)
-    # ==================================================================
-    pre_phase3_assignments: dict[str, str] = copy.deepcopy(final_assignments)
+    coros = [
+        process_batch(
+            remaining_features[i : i + GROUPING_BATCH_SIZE],
+            groups_context,
+            prompt_text,
+            output_context,
+            semaphore,
+        )
+        for i in range(0, len(remaining_features), GROUPING_BATCH_SIZE)
+    ]
 
-    # ==================================================================
-    # PHASE 3 — Reconciliation
-    # ==================================================================
+    # gather preserves submission order — important for cap-sweep stitching where
+    # cap=100 must use exactly batches[0:1], cap=150 must use exactly batches[0:2], etc.
+    pbar = tqdm(total=len(coros), desc="phase 2")
+
+    async def _run_with_progress(coro):
+        try:
+            return await coro
+        finally:
+            pbar.update(1)
+
+    try:
+        results: list[Phase2Output] = await asyncio.gather(*(_run_with_progress(c) for c in coros))
+    finally:
+        pbar.close()
+    return results
+
+
+def apply_phase2_outputs(
+    p2_outputs: list[Phase2Output],
+    active_groups: dict[str, str],
+    final_assignments: dict[str, str],
+) -> None:
+    """Stitch a list of Phase2 batch outputs into running state, in order."""
+    for p2 in p2_outputs:
+        if p2 is None:
+            continue
+        for a in p2.assignments:
+            final_assignments[a.feature_id] = a.group_name
+        for g in p2.new_groups:
+            if g.group_name not in active_groups:
+                active_groups[g.group_name] = g.rationale
+                log.info("New group created mid-stream: %s", g.group_name)
+
+
+def filter_active_groups_to_assigned(
+    active_groups: dict[str, str],
+    final_assignments: dict[str, str],
+) -> dict[str, str]:
+    """Drop groups from active_groups that have zero members in final_assignments.
+
+    This matters for the cap-sweep: when stitching only the first N phase-2
+    batches, a group that was first invented in batch N+1 has no members in our
+    snapshot. Passing it to phase 3 would let it try to merge/rename a phantom.
+    """
+    assigned_names = {g for g in final_assignments.values()}
+    return {name: rat for name, rat in active_groups.items() if name in assigned_names}
+
+
+# ---------------------------------------------------------------------------
+# Phase 3 — Reconciliation
+# ---------------------------------------------------------------------------
+
+async def run_phase3(
+    final_assignments: dict[str, str],
+    all_features: list[dict],
+    prompt_text: str,
+    output_context: str,
+) -> Phase3Output | None:
+    """Run phase 3 reconciliation. Returns the parsed Phase3Output, or None."""
     log.info("Phase 3: Reconciling groups…")
 
-    group_summary = build_group_summary(final_assignments, features)
+    group_summary = build_group_summary(final_assignments, all_features)
     # Strip control characters that can corrupt the JSON payload
     group_summary = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', ' ', group_summary)
     num_groups = len({g for g in final_assignments.values() if g != "Ungrouped"})
@@ -836,42 +892,58 @@ Current grouping:
 
     if p3 is None:
         log.warning("Phase 3 parsing returned None — skipping reconciliation.")
-    else:
-        total_actions = (
-            len(p3.renames) + len(p3.merges)
-            + len(p3.reassignments) + len(p3.dropped_groups)
-        )
-        if total_actions == 0:
-            log.info("Phase 3: No changes needed — grouping looks clean.")
-        else:
-            log.info("Phase 3: Applying %d actions…", total_actions)
-            apply_phase3(p3, final_assignments, active_groups)
+    return p3
 
-    append_grouping_log(prompt_text, phase1_group_names, p3, final_assignments)
 
-    # ==================================================================
-    # POST-PROCESSING — Embedding & Logit nodes (applied to BOTH snapshots
-    # so the pre-phase-3 condition has the same emb/logit handling as the
-    # final, isolating phase-3 reconciliation as the only difference.)
-    # ==================================================================
-    if GRAPH_FILE.exists():
-        with open(GRAPH_FILE, "r") as f:
-            graph_data: dict = json.load(f)
+def apply_phase3_actions(
+    p3: Phase3Output | None,
+    active_groups: dict[str, str],
+    final_assignments: dict[str, str],
+) -> None:
+    """Apply a Phase3Output to running state, with the same logging main() used."""
+    if p3 is None:
+        return
+    total_actions = (
+        len(p3.renames) + len(p3.merges)
+        + len(p3.reassignments) + len(p3.dropped_groups)
+    )
+    if total_actions == 0:
+        log.info("Phase 3: No changes needed — grouping looks clean.")
+        return
+    log.info("Phase 3: Applying %d actions…", total_actions)
+    apply_phase3(p3, final_assignments, active_groups)
 
-        group_embedding_nodes(graph_data, pre_phase3_assignments)
-        group_logit_nodes(graph_data, pre_phase3_assignments)
-        group_embedding_nodes(graph_data, final_assignments)
-        group_logit_nodes(graph_data, final_assignments)
 
-    # ==================================================================
-    # SAVE
-    # ==================================================================
-    with open(FEATURE_GROUPS_FILE, "w") as f:
+# ---------------------------------------------------------------------------
+# Post-processing + persistence
+# ---------------------------------------------------------------------------
+
+def apply_postprocessing_to_snapshots(
+    snapshots: list[dict[str, str]],
+    graph_path: Path = GRAPH_FILE,
+) -> None:
+    """Apply embedding/logit grouping in place to every snapshot, sharing one graph load."""
+    if not graph_path.exists():
+        return
+    with open(graph_path, "r") as f:
+        graph_data: dict = json.load(f)
+    for snap in snapshots:
+        group_embedding_nodes(graph_data, snap)
+        group_logit_nodes(graph_data, snap)
+
+
+def save_groupings(
+    final_assignments: dict[str, str],
+    pre_phase3_assignments: dict[str, str],
+    final_path: Path = FEATURE_GROUPS_FILE,
+    pre3_path: Path = FEATURE_GROUPS_PRE3_FILE,
+) -> None:
+    final_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(final_path, "w") as f:
         json.dump(final_assignments, f, indent=2)
-
-    with open(FEATURE_GROUPS_PRE3_FILE, "w") as f:
+    with open(pre3_path, "w") as f:
         json.dump(pre_phase3_assignments, f, indent=2)
-    log.info("Pre-phase-3 snapshot saved → %s", FEATURE_GROUPS_PRE3_FILE)
+    log.info("Pre-phase-3 snapshot saved → %s", pre3_path)
 
     final_group_count = len({g for g in final_assignments.values() if g != "Ungrouped"})
     ungrouped_count = sum(1 for g in final_assignments.values() if g == "Ungrouped")
@@ -881,13 +953,13 @@ Current grouping:
         len(final_assignments) - ungrouped_count,
         final_group_count,
         ungrouped_count,
-        FEATURE_GROUPS_FILE,
+        final_path,
     )
 
-    # ------------------------------------------------------------------
-    # Cost report
-    # ------------------------------------------------------------------
-    elapsed = time.time() - _start
+
+def write_cost_csv_row(start_time: float, label: str | None = None) -> None:
+    """Append one row to the grouping costs CSV summarising _api_usage so far."""
+    elapsed = time.time() - start_time
     in_tok  = sum(u["input"]  for u in _api_usage)
     out_tok = sum(u["output"] for u in _api_usage)
     est_cost = (in_tok * _COST_INPUT + out_tok * _COST_OUTPUT) / 1_000_000
@@ -895,6 +967,7 @@ Current grouping:
 
     COSTS_DIR.mkdir(parents=True, exist_ok=True)
     write_header = not COSTS_CSV.exists()
+    graph_label = f"{GRAPH_FILE.stem}:{label}" if label else GRAPH_FILE.stem
     with open(COSTS_CSV, "a", newline="", encoding="utf-8") as f:
         w = _csv.DictWriter(f, fieldnames=[
             "timestamp", "graph", "grouping_variant", "description_variant",
@@ -904,7 +977,7 @@ Current grouping:
             w.writeheader()
         w.writerow({
             "timestamp":          datetime.now().isoformat(timespec="seconds"),
-            "graph":              GRAPH_FILE.stem,
+            "graph":              graph_label,
             "grouping_variant":   GROUPING_VARIANT,
             "description_variant": DESCRIPTION_VARIANT,
             "api_calls":          api_calls,
@@ -917,6 +990,53 @@ Current grouping:
         "Cost: %d calls | %d in / %d out tokens | $%.4f | %.1fs → %s",
         api_calls, in_tok, out_tok, est_cost, elapsed, COSTS_CSV,
     )
+
+
+# ---------------------------------------------------------------------------
+# Main — single canonical pipeline run (unlimited features in phase 2)
+# ---------------------------------------------------------------------------
+
+async def main() -> None:
+    _start = time.time()
+    _api_usage.clear()
+
+    features, prompt_text, output_context = load_and_sort_features()
+    if not features:
+        log.error("No described features found.")
+        return
+
+    log.info("Total features: %d", len(features))
+    log.info("Prompt: %s", prompt_text)
+
+    active_groups: dict[str, str] = {}
+    final_assignments: dict[str, str] = {}
+
+    # Phase 1
+    p1 = await run_phase1(features[:GROUPING_TOP_K_SEED], prompt_text, output_context)
+    if p1 is None:
+        return
+    apply_phase1_output(p1, active_groups, final_assignments)
+    phase1_group_names = list(active_groups.keys())
+
+    # Phase 2 (unlimited)
+    p2_outputs = await run_phase2_batches(
+        features[GROUPING_TOP_K_SEED:], active_groups, prompt_text, output_context,
+    )
+    apply_phase2_outputs(p2_outputs, active_groups, final_assignments)
+
+    # Snapshot before phase 3 for the ours-no-reconciliation validation condition.
+    pre_phase3_assignments: dict[str, str] = copy.deepcopy(final_assignments)
+
+    # Phase 3
+    p3 = await run_phase3(final_assignments, features, prompt_text, output_context)
+    apply_phase3_actions(p3, active_groups, final_assignments)
+    append_grouping_log(prompt_text, phase1_group_names, p3, final_assignments)
+
+    # Post-processing on BOTH snapshots so they differ only by phase-3 reconciliation.
+    apply_postprocessing_to_snapshots([pre_phase3_assignments, final_assignments])
+
+    save_groupings(final_assignments, pre_phase3_assignments)
+    write_cost_csv_row(_start)
 
 
 if __name__ == "__main__":

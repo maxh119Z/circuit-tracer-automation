@@ -53,6 +53,7 @@ import asyncio
 import json
 import math
 import random
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -64,6 +65,7 @@ from openai import AsyncOpenAI
 from pydantic import BaseModel, Field
 
 from config import (
+    ARTIFACTS_DIR,
     DESCRIPTION_VARIANT,
     FEATURE_DESCRIPTIONS_FILE,
     FEATURE_GROUPS_FILE,
@@ -99,13 +101,51 @@ VALIDATION_MODEL = GROUPING_MODEL
 CONCURRENCY_LIMIT = 500
 MIN_GROUP_SIZE = VALIDATION_MIN_GROUP_SIZE
 DIFFICULTY = VALIDATION_DIFFICULTY if VALIDATION_DIFFICULTY in ("medium", "both") else "medium"
-ALL_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
+BASE_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
+_OURS_CAP_RE = re.compile(r"^ours-cap(\d+)$")
 MAX_FEATURES_M1 = 5
 N_NEG_FEATURES_M1 = 9
 N_POS_SNIPPETS_M2 = 5
 N_NEG_SNIPPETS_M2 = 5
 RANDOM_SEED = 42
 N_RUNS = 5
+
+
+def discover_cap_conditions() -> list[str]:
+    """Find every feature_groups_<desc>_<group>_cap<N>.json the cap-sweep produced.
+
+    Returned ascending by N so the report renders 50 → 100 → 150 → 200.
+    """
+    pat = re.compile(rf"^feature_groups_{re.escape(DESCRIPTION_VARIANT)}_"
+                     rf"{re.escape(GROUPING_VARIANT)}_cap(\d+)\.json$")
+    found: list[tuple[int, str]] = []
+    for f in ARTIFACTS_DIR.glob(f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap*.json"):
+        if "_pre3" in f.name:
+            continue
+        m = pat.match(f.name)
+        if m:
+            found.append((int(m.group(1)), f"ours-cap{m.group(1)}"))
+    return [name for _, name in sorted(found)]
+
+
+def all_available_conditions() -> tuple[str, ...]:
+    return BASE_CONDITIONS + tuple(discover_cap_conditions())
+
+
+def condition_sort_key(cond: str) -> tuple[int, int]:
+    """Stable display order: random, human, ours-no-rec, ours-cap50…200, ours-full."""
+    base = {"random": 0, "human": 1, "ours-no-reconciliation": 2, "ours-full": 999}
+    if cond in base:
+        return (base[cond], 0)
+    m = _OURS_CAP_RE.match(cond)
+    if m:
+        return (10, int(m.group(1)))
+    return (500, 0)
+
+
+def cap_n_from_condition(cond: str) -> int | None:
+    m = _OURS_CAP_RE.match(cond)
+    return int(m.group(1)) if m else None
 
 
 # ---------------------------------------------------------------------------
@@ -217,6 +257,19 @@ def load_condition_groups(
             log.warning("[ours-no-reconciliation] %s missing.", FEATURE_GROUPS_PRE3_FILE)
             return None
         with open(FEATURE_GROUPS_PRE3_FILE) as f:
+            groups = json.load(f)
+        index = build_group_index(features, groups)
+        return (groups, index) if index else None
+
+    cap_n = cap_n_from_condition(condition)
+    if cap_n is not None:
+        cap_file = ARTIFACTS_DIR / (
+            f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap{cap_n}.json"
+        )
+        if not cap_file.exists():
+            log.info("[%s] %s missing — skipping condition.", condition, cap_file)
+            return None
+        with open(cap_file) as f:
             groups = json.load(f)
         index = build_group_index(features, groups)
         return (groups, index) if index else None
@@ -758,9 +811,7 @@ def write_markdown_report(report: dict, path: Path) -> None:
     L.append("| " + " | ".join(header_cells) + " |")
     L.append("|" + "|".join([":--"] + ["---:"] * (len(header_cells) - 1)) + "|")
 
-    for cond in ("random", "human", "ours-no-reconciliation", "ours-full"):
-        if cond not in conditions:
-            continue
+    for cond in sorted(conditions.keys(), key=condition_sort_key):
         c = conditions[cond]
         if c.get("skipped"):
             L.append(f"| **{cond}** | _skipped: {c.get('reason','')}_ |")
@@ -838,13 +889,17 @@ def _count_named_groups(groups_raw: dict[str, str]) -> int:
 
 
 def _resolve_requested_conditions() -> list[str]:
+    available = all_available_conditions()
     raw = VALIDATION_CONDITIONS.strip()
     if not raw:
-        return list(ALL_CONDITIONS)
+        return list(available)
     requested = [c.strip() for c in raw.split(",") if c.strip()]
-    invalid = [c for c in requested if c not in ALL_CONDITIONS]
+    invalid = [
+        c for c in requested
+        if c not in available and not _OURS_CAP_RE.match(c)
+    ]
     if invalid:
-        log.error("Unknown VALIDATION_CONDITIONS values: %s. Valid: %s", invalid, ALL_CONDITIONS)
+        log.error("Unknown VALIDATION_CONDITIONS values: %s. Available: %s", invalid, available)
         sys.exit(1)
     return requested
 
@@ -929,8 +984,11 @@ async def main_async() -> None:
             "conditions": {
                 "random": "ours-full groups, features shuffled across them",
                 "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
-                "ours-full": "auto pipeline output after phase-3 reconciliation",
+                "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
                 "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+                "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential "
+                               "features were fed to grouping (50 = phase 1 only). Phase 3 "
+                               "still runs on top.",
             },
         },
         "conditions": condition_results,
@@ -972,9 +1030,7 @@ async def main_async() -> None:
     )
     print(header)
     print("  " + "-" * (len(header) - 2))
-    for cond in ("random", "human", "ours-no-reconciliation", "ours-full"):
-        if cond not in condition_results:
-            continue
+    for cond in sorted(condition_results.keys(), key=condition_sort_key):
         c = condition_results[cond]
         if c.get("skipped"):
             print(f"  {cond:<26}  skipped: {c.get('reason','')}")

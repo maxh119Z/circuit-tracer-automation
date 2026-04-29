@@ -47,7 +47,9 @@ DEFAULT_OUT = PACKAGE_DIR / "analysis" / "results" / "validation_sweep.csv"
 PIPELINE_SCRIPT = Path(__file__).resolve().parent / "validate_neuropedia_groups.py"
 
 DEFAULT_MIN_SIZES = (2, 3, 4, 5, 6)
-ALL_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
+# Base conditions; per-slug `ours-cap<N>` variants are added dynamically when
+# the cap-sweep driver has produced them.
+BASE_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
 
 
 # ---------------------------------------------------------------------------
@@ -122,7 +124,9 @@ def report_to_rows(slug: str, min_group_size: int, report: dict) -> list[dict]:
     conditions = report.get("conditions", {})
     difficulty = report.get("difficulty", "medium")
 
-    for cond in ALL_CONDITIONS:
+    # Iterate over every condition present (BASE_CONDITIONS + any ours-cap<N>
+    # the validator discovered for this slug).
+    for cond in conditions.keys():
         c = conditions.get(cond)
         if c is None:
             continue
@@ -180,8 +184,10 @@ def main() -> None:
                         help="Auto-detect slugs even without manual_groups.json (random + ours conditions only).")
     parser.add_argument("--min-sizes", default=",".join(str(n) for n in DEFAULT_MIN_SIZES),
                         help="Comma-separated min_group_size values to sweep. Default: 2,3,4,5,6.")
-    parser.add_argument("--conditions", default=",".join(ALL_CONDITIONS),
-                        help="Comma-separated conditions to evaluate per run.")
+    parser.add_argument("--conditions", default="",
+                        help="Comma-separated conditions to evaluate per run. "
+                             "Default empty = let the validator auto-detect "
+                             "(BASE_CONDITIONS + every ours-cap<N> file present).")
     parser.add_argument("--out", default=str(DEFAULT_OUT),
                         help=f"Output CSV path (default: {DEFAULT_OUT}).")
     parser.add_argument("--skip-existing", action="store_true",

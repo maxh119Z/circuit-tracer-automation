@@ -305,6 +305,8 @@ def process_one(
     *,
     only_fetch: bool,
     force: bool,
+    pruning_threshold: float | None = None,
+    caps: str | None = None,
 ) -> tuple[bool, list[str]]:
     artifact_dir = ARTIFACTS_ROOT / slug
     graph_path = TEST_GRAPHS_DIR / f"{slug}.json"
@@ -314,14 +316,29 @@ def process_one(
     groups_path = artifact_dir / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
     pre3_path = artifact_dir / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_pre3.json"
 
+    # When --caps is set, the cap-sweep driver also produces ours-full at the
+    # canonical filenames, so the existence check covers both modes.
+    cap_suffixed_paths: list[Path] = []
+    if caps:
+        for tok in caps.split(","):
+            tok = tok.strip().lower()
+            if not tok or tok in ("unlimited", "all", "none", "inf"):
+                continue
+            cap_suffixed_paths.append(
+                artifact_dir / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap{tok}.json"
+            )
+
     log.info("\n=== %s ===", slug)
     steps: list[str] = []
 
+    threshold = pruning_threshold if pruning_threshold is not None else 0.7
+
     env = os.environ.copy()
     env["CURRENT_SLUG"] = slug
-    env["PRUNING_THRESHOLD"] = "1.0"  # graph is already pruned by Neuronpedia
+    env["PRUNING_THRESHOLD"] = f"{threshold:.4f}"
     env.setdefault("DESCRIPTION_VARIANT", DESCRIPTION_VARIANT)
     env.setdefault("GROUPING_VARIANT", GROUPING_VARIANT)
+    log.info("  pruning_threshold=%.4f", threshold)
 
     # --- Step 1: graph + supernodes ----------------------------------------
     have_graph = graph_path.exists() and manual_path.exists()
@@ -364,16 +381,25 @@ def process_one(
             return False, steps
 
     # --- Step 4: auto supernodes (with pre-phase-3 snapshot) ---------------
-    have_groups = groups_path.exists() and pre3_path.exists()
-    if have_groups and not force:
-        log.info("  skip: feature_groups + pre3 snapshot already present")
+    have_canonical_groups = groups_path.exists() and pre3_path.exists()
+    have_all_caps = have_canonical_groups and all(p.exists() for p in cap_suffixed_paths)
+    if have_all_caps and not force:
+        log.info("  skip: feature_groups + pre3 snapshot already present (and all cap variants)")
         steps.append("  SKIP: supernodes (already present)")
     else:
-        ok = run_step(
-            "generate supernodes",
-            [sys.executable, str(PIPELINE_DIR / "generate_supernodes.py")],
-            env, steps,
-        )
+        if caps:
+            env["CAPS"] = caps
+            ok = run_step(
+                f"generate supernodes (cap sweep: {caps})",
+                [sys.executable, str(Path(__file__).resolve().parent / "generate_supernodes_cap_sweep.py")],
+                env, steps,
+            )
+        else:
+            ok = run_step(
+                "generate supernodes",
+                [sys.executable, str(PIPELINE_DIR / "generate_supernodes.py")],
+                env, steps,
+            )
         if not ok:
             return False, steps
 
@@ -394,6 +420,17 @@ def main() -> None:
                         help="Only fetch graph + manual_groups.json. Skip activations/descriptions/groups.")
     parser.add_argument("--force", action="store_true",
                         help="Re-run every step even if outputs exist.")
+    parser.add_argument("--pruning-threshold", type=float, default=None,
+                        help="Pruning threshold to use for all slugs. Default: 0.7 "
+                             "(matches the value most Neuronpedia share URLs encode). "
+                             "Pass a different float to override.")
+    parser.add_argument("--caps", default=None,
+                        help="Comma-separated phase-2 feature caps to sweep, e.g. "
+                             "'50,100,150,200,unlimited'. When set, uses the cap-sweep "
+                             "driver; the 'unlimited' cap writes to the canonical filenames "
+                             "(so ours-full validation still works) and each numeric cap "
+                             "writes feature_groups_..._cap<N>.json. Default: off "
+                             "(standard single-run pipeline).")
     args = parser.parse_args()
 
     if args.urls:
@@ -437,6 +474,8 @@ def main() -> None:
             row["slug"], row["url"],
             only_fetch=args.only_fetch,
             force=args.force,
+            pruning_threshold=args.pruning_threshold,
+            caps=args.caps,
         )
         (success if ok else failed).append((row["slug"], steps))
 
