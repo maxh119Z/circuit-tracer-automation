@@ -26,6 +26,7 @@ mquake/
 mquake_graphs/
 *.egg-info/
 .installed.cfg
+neuropedia_graphs/
 *.egg
 MANIFEST
 
@@ -219,6 +220,7 @@ custom_automation/costs/
 
 # Misc
 test_graphs*/
+wikipedia_graphs/
 prompts_check.csv
 .claude/
 .DS_Store
