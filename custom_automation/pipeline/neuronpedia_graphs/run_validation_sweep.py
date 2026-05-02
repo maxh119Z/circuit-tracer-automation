@@ -28,7 +28,7 @@ import json
 import os
 import subprocess
 import sys
-from datetime import datetime, UTC
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
@@ -255,7 +255,7 @@ def main() -> None:
                     log.warning("Skipping rows for %s @ size=%d (no report)", slug, size)
                     continue
                 rows = report_to_rows(slug, size, report)
-                ran_at = datetime.now(UTC).isoformat(timespec="seconds")
+                ran_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
                 for row in rows:
                     row["ran_at"] = ran_at
                     writer.writerow(row)
