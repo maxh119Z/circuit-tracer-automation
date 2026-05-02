@@ -49,6 +49,9 @@ else
     shift || true
 fi
 
+# Save user-supplied env override before script defaults overwrite it
+_ENV_RUN_VALIDATE="${RUN_VALIDATE:-}"
+
 RUN_FETCH=false
 RUN_FETCH_DESC=false
 RUN_CORE=false
@@ -68,7 +71,7 @@ case "$SUBCOMMAND" in
         ;;
     core|all)
         RUN_CORE=true
-        RUN_VALIDATE=true
+        [ "$_ENV_RUN_VALIDATE" != "false" ] && RUN_VALIDATE=true
         ;;
     validate)
         RUN_VALIDATE=true
