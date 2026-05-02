@@ -29,7 +29,7 @@ Usage
     python analysis/explore_interesting_graphs.py
     python explore_interesting_graphs.py --graphs_dir ../../test_graphs --top_k 20
     python explore_interesting_graphs.py --min_confidence 0.05 --influence_threshold 0.3 --no_llm
-    python analysis/explore_interesting_graphs.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
+    python analysis/explore_interesting_graphs.py --ground_truth ../prompts/ground_truth_wikipedia.csv --variants a2
 """
 
 from __future__ import annotations
@@ -222,70 +222,65 @@ def compute_metrics(graph: dict, influence_threshold: float) -> dict:
 
 LLM_JUDGE_MODEL = "gpt-5.4"
 
-# Each LLM criterion: (json_key, human label, one-line description for the prompt)
+# Each LLM criterion: (json_key, human label, description for the prompt)
 LLM_CRITERIA: list[tuple[str, str, str]] = [
     (
-        "wrong_answer_right_concept",
-        "Wrong answer / right concept",
-        "Model predicted the WRONG answer but internal features show it had the RIGHT "
-        "concept (e.g. correct intermediate entity activated, but wrong token emitted).",
+        "parallel_computation",
+        "Parallel computation",
+        "The supernodes reflect internal computation toward multiple different "
+        "possible next-token predictions. Trivial variations (near-synonyms, "
+        "different formattings of the same word) do not count. Medium scores: "
+        "supernodes for multiple candidates are present but weakly separated. "
+        "High scores: clearly distinct supernode groups for each candidate.",
     ),
     (
-        "right_answer_wrong_concept",
-        "Right answer / wrong concept",
-        "Model predicted the right answer but via clearly WRONG internal concepts "
-        "(irrelevant or contradictory features dominating).",
+        "surprising_supernode",
+        "Surprising supernode",
+        "A supernode represents a concept or association that is not directly "
+        "suggested by the model's input and output. Medium scores: associations "
+        "the model might plausibly make but that aren't a given. High scores: "
+        "genuinely surprising associations.",
     ),
     (
-        "surprising_unrelated_concept",
-        "Surprising unrelated concept",
-        "A specific unexpected concept fires that has no plausible connection to the "
-        "prompt (not noise — a surprising, revealing association).",
+        "complex_internal_computation",
+        "Complex internal computation",
+        "The supernodes reflect substantive internal computation — for example, "
+        "multi-hop reasoning, or many supernodes that are not simply derivative "
+        "of the input or output tokens. Medium scores: some non-trivial "
+        "intermediate structure beyond direct lookup. High scores: clear multi-"
+        "hop chains or a rich set of intermediate supernodes doing real work.",
     ),
     (
-        "internal_conflict",
-        "Internal conflict",
-        "Strong, highly specific conflict between competing supernode groups — two "
-        "clearly opposing concept clusters both strongly active in a surprising way. "
-        "Mild same-category competition does NOT count.",
-    ),
-    (
-        "sparse_grouping",
-        "Sparse grouping",
-        "Very few supernode groups (≤2) given the complexity of the prompt, suggesting "
-        "almost no recoverable structure (direct lookup with no intermediate routing).",
-    ),
-    (
-        "hyper_specific_entity",
-        "Hyper-specific entity",
-        "A supernode named after a very specific person, work, or entity that is not a "
-        "normal intermediate reasoning step — specific enough that it is questionable "
-        "whether a dedicated feature should exist for it at all.",
+        "other_interesting_structure",
+        "Other interesting structure",
+        "A catch-all for generally interesting internal structure. If you "
+        "notice something notable about the graph that doesn't fall into the "
+        "other criteria, score it high here.",
     ),
 ]
 
 LLM_SYSTEM = (
-    "You are a strict interpretability researcher evaluating attribution graphs from a "
-    "language model. You score each graph INDEPENDENTLY on six different dimensions of "
-    "'interestingness', each on a 1-10 scale.\n\n"
-    "The six dimensions are:\n"
-    + "\n".join(f"  {i+1}. {key} — {desc}" for i, (key, _, desc) in enumerate(LLM_CRITERIA))
+    "You are a mechanistic interpretability researcher evaluating attribution graphs "
+    "from a language model. You score each graph on four dimensions of interestingness, "
+    "each on a 1-10 scale, and give a short justification for each score.\n\n"
+    "The four dimensions are:\n"
+    + "\n".join(f"  {i+1}. {label} — {desc}" for i, (_, label, desc) in enumerate(LLM_CRITERIA))
     + "\n\n"
     "Scoring guidance (use the full 1-10 range):\n"
-    "  1-2  = no sign of this anomaly at all\n"
-    "  3-4  = weak / ambiguous hint, easily explained by noise\n"
-    "  5-6  = plausible candidate but not clearly anomalous\n"
-    "  7-8  = clear, concrete instance of this specific anomaly\n"
-    "  9-10 = textbook example of this anomaly, worth a writeup\n\n"
-    "Score each dimension on its own merits — a graph can score 9 on one dimension and 1 on "
-    "all the others. Be conservative: most graphs should score 1-3 on most dimensions. "
-    "Do NOT inflate scores because the prompt is interesting; only the *graph structure* "
-    "matters for these scores."
+    "  1-2  = no evidence of this property\n"
+    "  3-4  = weak or ambiguous hint\n"
+    "  5-6  = plausible but not strongly supported\n"
+    "  7-8  = clear, concrete instance worth noting\n"
+    "  9-10 = textbook example, worth a writeup\n\n"
+    "Score each dimension independently on its own merits. "
+    "Do NOT inflate scores because the prompt is interesting; only the supernode "
+    "structure matters. For each score, provide a one-sentence justification that "
+    "names the specific supernodes or features driving your assessment."
 )
 
 # Each line uses {{ and }} so a single .format() call later produces literal { and }.
 _CRITERIA_JSON_LINES = ",\n".join(
-    f'  "{key}": {{{{"score": <integer 1-10>, "reason": "<one concrete sentence>"}}}}'
+    f'  "{key}": {{{{"score": <integer 1-10>, "reason": "<one sentence naming the specific supernodes or features>"}}}}'
     for key, _, _ in LLM_CRITERIA
 )
 
@@ -293,14 +288,12 @@ LLM_PROMPT_TEMPLATE = (
     'Prompt given to the model: "{prompt}"\n'
     'Model\'s predicted output: "{predicted}" — correct answer is: {correct_answer}\n'
     'Model confidence: {confidence:.1%} — {confidence_band}\n'
-    'Supernode groups: {num_supernode_groups}\n\n'
-    'Feature groups that activated (supernode labels):\n'
+    'Supernode groups ({num_supernode_groups} total):\n'
     '{groups}\n\n'
     'Sample descriptions of the most influential individual nodes (by influence score):\n'
     '{clerp_samples}\n\n'
-    'Score this graph on each of the six dimensions independently on a 1-10 scale. Most '
-    'graphs should score low (1-3) on most dimensions. Reply in this exact JSON format — '
-    'every dimension is required:\n\n'
+    'Score this graph on each of the four dimensions. Reply in this exact JSON format — '
+    'every dimension is required, with both a score and a one-sentence reason:\n\n'
     '{{\n' + _CRITERIA_JSON_LINES + '\n}}'
 )
 
@@ -385,13 +378,21 @@ def run(
                     gt_rows[slug] = row.get("correct_answer", "").strip()
         candidates_paths: list[tuple[str, Path, str]] = []
         for slug, correct_answer in gt_rows.items():
+            found = False
             for variant in variants:
                 name = f"{slug}-v2-{variant}.json" if variant else f"{slug}.json"
                 p = graphs_dir / name
                 if p.exists():
                     candidates_paths.append((f"{slug} ({variant})", p, correct_answer))
+                    found = True
+                    break
+            if not found:
+                # Fallback: bare slug filename (no variant suffix)
+                p = graphs_dir / f"{slug}.json"
+                if p.exists():
+                    candidates_paths.append((slug, p, correct_answer))
                 else:
-                    print(f"  SKIP {slug} ({variant}) — {p.name} not found")
+                    print(f"  SKIP {slug} — no matching file found")
         if not candidates_paths:
             print("No matching graph files found.", file=sys.stderr)
             sys.exit(1)
