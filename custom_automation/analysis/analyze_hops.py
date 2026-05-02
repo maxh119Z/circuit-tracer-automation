@@ -349,7 +349,7 @@ def detect_intermediate_hop(
     # --- Per-concept tracking ---
     per_concept: dict[str, dict] = {}
     for concept in concepts:
-        per_concept[concept] = {"found_in_group": False, "feature_count": 0, "matched_terms": set()}
+        per_concept[concept] = {"found_in_group": False, "found_in_clerp": False, "feature_count": 0, "matched_terms": set()}
 
     # Only match supernode group names (exclude Emb: and Output:)
     node_lookup: dict[str, dict] = {str(n.get("node_id", "")): n for n in transcoder_nodes}
@@ -395,6 +395,22 @@ def detect_intermediate_hop(
     concepts_found = [c for c in concepts if per_concept[c]["found_in_group"]]
     concepts_missed = [c for c in concepts if c not in concepts_found]
 
+    # --- Clerp-level scan (per-concept, independent of group names) ---
+    clerp_nodes: list[dict] = []
+    for n in transcoder_nodes:
+        clerp = n.get("clerp", "") or ""
+        for concept in concepts:
+            if concept_matches_text(concept, clerp):
+                per_concept[concept]["found_in_clerp"] = True
+        if any_concept_matches(concepts, clerp):
+            clerp_nodes.append(n)
+    hop_found_in_clerp = len(clerp_nodes) > 0
+
+    concepts_found_either = [
+        c for c in concepts
+        if per_concept[c].get("found_in_group") or per_concept[c].get("found_in_clerp")
+    ]
+
     per_concept_detail = {
         c: {**d, "matched_terms": sorted(d["matched_terms"])}
         for c, d in per_concept.items()
@@ -406,12 +422,15 @@ def detect_intermediate_hop(
         "hop_feature_fraction": round(frac, 4),
         "hop_mean_influence": round(mean_influence, 4),
         "hop_max_influence": round(max_influence, 4),
-        "hop_found_in_clerp": False,
+        "hop_found_in_clerp": hop_found_in_clerp,
+        "hop_clerp_feature_count": len(clerp_nodes),
         "hop_groups": matching_groups,
         "prefix_matches": prefix_matches,
         "hop_found_in_groups": len(matching_groups) > 0,
         "hop_found": len(matching_groups) > 0,
+        "hop_found_either": len(matching_groups) > 0 or hop_found_in_clerp,
         "concepts_found": concepts_found,
+        "concepts_found_either": concepts_found_either,
         "concepts_missed": concepts_missed,
         "per_concept": per_concept_detail,
     }
@@ -634,6 +653,7 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
             # How many intermediate concepts found vs total
             n_concepts = len([c.strip() for c in intermediate_concept.split("|") if c.strip() and c.strip().upper() != "N/A"])
             n_found = len(hop_metrics.get("concepts_found", []))
+            n_found_either = len(hop_metrics.get("concepts_found_either", []))
 
             results.append({
                 "slug": slug,
@@ -651,6 +671,7 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
                 "all_supernodes": all_supernodes,
                 "n_intermediate_concepts": n_concepts,
                 "n_hops_found": n_found,
+                "n_hops_found_either": n_found_either,
                 **hop_metrics,
                 **mh,
             })
@@ -819,23 +840,24 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
             for r in multi:
                 by_nhop[str(r.get("num_hops", "?"))].append(r)
 
-            f.write("## Multi-Hop: Missing Hops Distribution\n\n")
-            for nhop_key in sorted(by_nhop, key=lambda k: (k == "?", k)):
-                grp = by_nhop[nhop_key]
-                n_int = grp[0].get("n_intermediate_concepts", "?")
-                f.write(f"### {nhop_key}-hop  ({n_int} intermediate concept(s))\n\n")
-                f.write("| Hops missing | Correct | Wrong | Total |\n")
-                f.write("|---|---|---|---|\n")
-                max_miss = max(r["n_intermediate_concepts"] - r["n_hops_found"] for r in grp)
-                for n_miss in range(0, max_miss + 1):
-                    bucket = [r for r in grp if (r["n_intermediate_concepts"] - r["n_hops_found"]) == n_miss]
-                    if not bucket:
-                        continue
-                    nc = sum(1 for r in bucket if r["model_correct"])
-                    suffix = " (all found)" if n_miss == 0 else (" (none found)" if n_miss == n_int else "")
-                    f.write(f"| {n_miss}{suffix} | {nc} | {len(bucket) - nc} | {len(bucket)} |\n")
-                tc = sum(1 for r in grp if r["model_correct"])
-                f.write(f"| **Total** | **{tc}** | **{len(grp) - tc}** | **{len(grp)}** |\n\n")
+            for label, found_key in [("Groups only", "n_hops_found"), ("Groups OR clerp", "n_hops_found_either")]:
+                f.write(f"## Multi-Hop: Missing Hops Distribution — {label}\n\n")
+                for nhop_key in sorted(by_nhop, key=lambda k: (k == "?", k)):
+                    grp = by_nhop[nhop_key]
+                    n_int = grp[0].get("n_intermediate_concepts", "?")
+                    f.write(f"### {nhop_key}-hop  ({n_int} intermediate concept(s))\n\n")
+                    f.write("| Hops missing | Correct | Wrong | Total |\n")
+                    f.write("|---|---|---|---|\n")
+                    max_miss = max(r["n_intermediate_concepts"] - r.get(found_key, r["n_hops_found"]) for r in grp)
+                    for n_miss in range(0, max_miss + 1):
+                        bucket = [r for r in grp if (r["n_intermediate_concepts"] - r.get(found_key, r["n_hops_found"])) == n_miss]
+                        if not bucket:
+                            continue
+                        nc = sum(1 for r in bucket if r["model_correct"])
+                        suffix = " (all found)" if n_miss == 0 else (" (none found)" if n_miss == n_int else "")
+                        f.write(f"| {n_miss}{suffix} | {nc} | {len(bucket) - nc} | {len(bucket)} |\n")
+                    tc = sum(1 for r in grp if r["model_correct"])
+                    f.write(f"| **Total** | **{tc}** | **{len(grp) - tc}** | **{len(grp)}** |\n\n")
 
         # ---- per-variant breakdown ----
         for variant in variants:
@@ -1036,21 +1058,32 @@ def run(ground_truth_path: Path, variants: list[str], graph_dir: Path | None = N
     # Terminal summary
     # ------------------------------------------------------------------
     n = len(results)
-    n_correct   = sum(1 for r in results if r["model_correct"])
-    n_top5      = sum(1 for r in results if r["top_k_rank"] is not None)
-    mean_score  = sum(r["rank_score"] for r in results) / n if n else 0.0
-    n_hop_found = sum(1 for r in results if r["hop_found"])
+    n_correct        = sum(1 for r in results if r["model_correct"])
+    n_top5           = sum(1 for r in results if r["top_k_rank"] is not None)
+    mean_score       = sum(r["rank_score"] for r in results) / n if n else 0.0
+    n_hop_groups     = sum(1 for r in results if r["hop_found"])
+    n_hop_clerp      = sum(1 for r in results if r.get("hop_found_in_clerp"))
+    n_hop_either     = sum(1 for r in results if r.get("hop_found_either"))
     correct_with_hop = sum(1 for r in results if r["model_correct"] and r["hop_found"])
     wrong_with_hop   = sum(1 for r in results if not r["model_correct"] and r["hop_found"])
+    correct_with_either = sum(1 for r in results if r["model_correct"] and r.get("hop_found_either"))
+    wrong_with_either   = sum(1 for r in results if not r["model_correct"] and r.get("hop_found_either"))
     print()
-    print("=" * 55)
-    print(f"  Graphs analysed:       {n}")
-    print(f"  Model correct (top-1): {n_correct}/{n} ({n_correct/n:.1%})")
-    print(f"  Correct in top-5:      {n_top5}/{n} ({n_top5/n:.1%})")
-    print(f"  Mean rank score:       {mean_score:.2f} / 1.00")
-    print(f"  Hop found (any):       {n_hop_found}/{n} ({n_hop_found/n:.1%})")
-    print(f"  Correct + hop:         {correct_with_hop}")
-    print(f"  Wrong + hop:           {wrong_with_hop}  <-- most interesting")
+    print("=" * 60)
+    print(f"  Graphs analysed:           {n}")
+    print(f"  Model correct (top-1):     {n_correct}/{n} ({n_correct/n:.1%})")
+    print(f"  Correct in top-5:          {n_top5}/{n} ({n_top5/n:.1%})")
+    print(f"  Mean rank score:           {mean_score:.2f} / 1.00")
+    print(f"  --- Hop detection ---")
+    print(f"  Groups only:               {n_hop_groups}/{n} ({n_hop_groups/n:.1%})")
+    print(f"  Clerp only (no group):     {n_hop_clerp - n_hop_groups}/{n}  (clerp but not group)")
+    print(f"  Groups OR clerp:           {n_hop_either}/{n} ({n_hop_either/n:.1%})")
+    print(f"  --- Groups-only breakdown ---")
+    print(f"  Correct + hop:             {correct_with_hop}")
+    print(f"  Wrong + hop:               {wrong_with_hop}  <-- most interesting")
+    print(f"  --- Groups-OR-clerp breakdown ---")
+    print(f"  Correct + hop:             {correct_with_either}")
+    print(f"  Wrong + hop:               {wrong_with_either}  <-- most interesting")
     if mquake_cases:
         with_gt = [c for c in mquake_cases if c["ground_truth_max_hop"] is not None]
         n_correct_pred = sum(1 for c in with_gt if c["hop_prediction_correct"])
