@@ -102,49 +102,76 @@ CONCURRENCY_LIMIT = 500
 MIN_GROUP_SIZE = VALIDATION_MIN_GROUP_SIZE
 DIFFICULTY = VALIDATION_DIFFICULTY if VALIDATION_DIFFICULTY in ("medium", "both") else "medium"
 BASE_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
-_OURS_CAP_RE = re.compile(r"^ours-cap(\d+)$")
+_OURS_CAP_RE      = re.compile(r"^ours-cap(\d+)$")
+_OURS_CAP_PRE3_RE = re.compile(r"^ours-cap(\d+)-no-reconciliation$")
 MAX_FEATURES_M1 = 5
 N_NEG_FEATURES_M1 = 9
 N_POS_SNIPPETS_M2 = 5
 N_NEG_SNIPPETS_M2 = 5
+# Description-level metrics — operate per-feature (independent of grouping
+# condition or min_group_size). Cached per slug so repeated validation runs
+# at different min_sizes don't re-pay the API cost.
+MAX_FEATURES_D1 = 50
+N_NEG_DESCS_D1 = 9
+MAX_FEATURES_D2 = 50
+N_POS_SNIPPETS_D2 = 5
+N_NEG_SNIPPETS_D2 = 5
+DESCRIPTION_METRICS_FILE = ARTIFACTS_DIR / f"description_metrics_{DESCRIPTION_VARIANT}_neuropedia.json"
 RANDOM_SEED = 42
 N_RUNS = 5
 
 
 def discover_cap_conditions() -> list[str]:
-    """Find every feature_groups_<desc>_<group>_cap<N>.json the cap-sweep produced.
+    """Find every cap variant the cap-sweep produced.
 
-    Returned ascending by N so the report renders 50 → 100 → 150 → 200.
+    Returns both the post-phase-3 (`ours-cap<N>`) and pre-phase-3
+    (`ours-cap<N>-no-reconciliation`) variants for each N that has the
+    matching file present. Ascending by N for stable report ordering.
     """
-    pat = re.compile(rf"^feature_groups_{re.escape(DESCRIPTION_VARIANT)}_"
-                     rf"{re.escape(GROUPING_VARIANT)}_cap(\d+)\.json$")
-    found: list[tuple[int, str]] = []
+    post_pat = re.compile(rf"^feature_groups_{re.escape(DESCRIPTION_VARIANT)}_"
+                          rf"{re.escape(GROUPING_VARIANT)}_cap(\d+)\.json$")
+    pre3_pat = re.compile(rf"^feature_groups_{re.escape(DESCRIPTION_VARIANT)}_"
+                          rf"{re.escape(GROUPING_VARIANT)}_cap(\d+)_pre3\.json$")
+    found: list[tuple[int, int, str]] = []  # (N, post-then-pre3-rank, name)
     for f in ARTIFACTS_DIR.glob(f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap*.json"):
-        if "_pre3" in f.name:
+        m_pre = pre3_pat.match(f.name)
+        if m_pre:
+            found.append((int(m_pre.group(1)), 1, f"ours-cap{m_pre.group(1)}-no-reconciliation"))
             continue
-        m = pat.match(f.name)
-        if m:
-            found.append((int(m.group(1)), f"ours-cap{m.group(1)}"))
-    return [name for _, name in sorted(found)]
+        m_post = post_pat.match(f.name)
+        if m_post:
+            found.append((int(m_post.group(1)), 0, f"ours-cap{m_post.group(1)}"))
+    return [name for _, _, name in sorted(found)]
 
 
 def all_available_conditions() -> tuple[str, ...]:
     return BASE_CONDITIONS + tuple(discover_cap_conditions())
 
 
-def condition_sort_key(cond: str) -> tuple[int, int]:
-    """Stable display order: random, human, ours-no-rec, ours-cap50…200, ours-full."""
+def condition_sort_key(cond: str) -> tuple[int, int, int]:
+    """Stable display order: random, human, ours-no-rec, ours-cap50…200 (pre then post), ours-full."""
     base = {"random": 0, "human": 1, "ours-no-reconciliation": 2, "ours-full": 999}
     if cond in base:
-        return (base[cond], 0)
+        return (base[cond], 0, 0)
+    m_pre = _OURS_CAP_PRE3_RE.match(cond)
+    if m_pre:
+        # Pre-phase-3 variant sits just before its post-phase-3 sibling.
+        return (10, int(m_pre.group(1)), 0)
     m = _OURS_CAP_RE.match(cond)
     if m:
-        return (10, int(m.group(1)))
-    return (500, 0)
+        return (10, int(m.group(1)), 1)
+    return (500, 0, 0)
 
 
 def cap_n_from_condition(cond: str) -> int | None:
-    m = _OURS_CAP_RE.match(cond)
+    """Cap N for either ours-cap<N> or ours-cap<N>-no-reconciliation; None otherwise."""
+    m = _OURS_CAP_PRE3_RE.match(cond) or _OURS_CAP_RE.match(cond)
+    return int(m.group(1)) if m else None
+
+
+def cap_n_from_pre3_condition(cond: str) -> int | None:
+    """Cap N if `cond` is ours-cap<N>-no-reconciliation; else None."""
+    m = _OURS_CAP_PRE3_RE.match(cond)
     return int(m.group(1)) if m else None
 
 
@@ -263,8 +290,10 @@ def load_condition_groups(
 
     cap_n = cap_n_from_condition(condition)
     if cap_n is not None:
+        is_pre3 = cap_n_from_pre3_condition(condition) is not None
+        suffix = "_pre3" if is_pre3 else ""
         cap_file = ARTIFACTS_DIR / (
-            f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap{cap_n}.json"
+            f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_cap{cap_n}{suffix}.json"
         )
         if not cap_file.exists():
             log.info("[%s] %s missing — skipping condition.", condition, cap_file)
@@ -762,6 +791,287 @@ async def run_random_condition(
 
 
 # ---------------------------------------------------------------------------
+# Description-quality metrics — D1 / D2 (per-feature, slug-level)
+# ---------------------------------------------------------------------------
+#
+# These tests evaluate how well the pipeline's auto-generated descriptions
+# in feature_descriptions_<desc>.json fit each feature's actual evidence.
+# They do not depend on grouping conditions or min_group_size, so we cache
+# the result to DESCRIPTION_METRICS_FILE and reuse it across validation runs.
+#
+#   D1 — Description accuracy (1-in-10):
+#       Show the model raw evidence for one feature (its top activations,
+#       promoted/demoted tokens, prompt context); ask which of 10 candidate
+#       descriptions matches. Tests if the description is uniquely identifiable.
+#       Random chance: 10%.
+#
+#   D2 — Description snippet match (5-in-10):
+#       Show the model a feature's description; ask which 5 of 10 snippets
+#       activated this feature. Tests if the description correctly indicates
+#       the activating examples. Random chance: 50%.
+# ---------------------------------------------------------------------------
+
+
+def _format_feature_evidence(feat: dict, prompt_text: str) -> str:
+    """Format a feature's raw evidence (activations + output tokens) for D1 trials."""
+    lines = [f"Feature {feat.get('id', '?')}:\n"]
+
+    lines.append("--- PROMPT CONTEXT ---")
+    lines.append(prompt_text)
+
+    lines.append("\n--- INPUT ACTIVATIONS ---")
+    for i, act in enumerate(feat.get("top_activations", [])[:10], 1):
+        lines.append(f"Excerpt {i}: {_format_snippet(act)}")
+
+    lines.append("\n--- GLOBAL OUTPUT TOKENS ---")
+    promotes = feat.get("promotes", [])
+    demotes = feat.get("demotes", [])
+    lines.append(f"Top Promoted Tokens: {', '.join(promotes) if promotes else 'None available'}")
+    lines.append(f"Top Demoted Tokens: {', '.join(demotes) if demotes else 'None available'}")
+
+    return "\n".join(lines)
+
+
+def build_d1_prompt(evidence: str, items: list[tuple[str, bool]]) -> str:
+    """Method D1: given feature evidence, pick the 1 correct description from N."""
+    n = len(items)
+    lines = [
+        "Below is evidence about a single feature neuron in a language model "
+        "(its input activations and output tokens).\n",
+        evidence,
+        f"\nBelow are {n} candidate descriptions. Exactly 1 of these correctly "
+        "describes this feature. Pick the single best match.\n",
+    ]
+    for i, (desc, _) in enumerate(items, 1):
+        lines.append(f"{i}. {desc}")
+    lines.append(
+        "\nRespond with the 1-based index of the description that best matches "
+        "the feature evidence above."
+    )
+    return "\n".join(lines)
+
+
+def build_d2_prompt(description: str, items: list[tuple[str, bool]], n_pos: int) -> str:
+    """Method D2: given a feature description, pick the n_pos snippets that activated it."""
+    n = len(items)
+    lines = [
+        f'Feature description: "{description}"\n',
+        f"Below are {n} text excerpts that strongly activated neurons inside a "
+        "language model. The key activating tokens are highlighted with <<<>>>. "
+        f"Exactly {n_pos} of these come from the neuron described above.\n",
+        f"Identify which {n_pos} text excerpts match this feature description.\n",
+    ]
+    for i, (snippet, _) in enumerate(items, 1):
+        lines.append(f"{i}. {snippet}")
+    lines.append(
+        f"\nRespond with the 1-based indices of the {n_pos} excerpts that activated this feature."
+    )
+    return "\n".join(lines)
+
+
+def generate_d1_tasks(
+    features: list[dict],
+    prompt_text: str,
+    seed: int,
+    max_features: int = MAX_FEATURES_D1,
+) -> list[dict]:
+    """
+    Generate Method D1 trial specs for one run.
+
+    For each feature (up to max_features), present its evidence and a lineup
+    of descriptions (1 correct + N_NEG_DESCS_D1 from other features).
+    """
+    rng = random.Random(seed)
+
+    # Only features that have descriptions and activations
+    eligible = [
+        f for f in features
+        if f.get("generated_description")
+        and f.get("generated_description") != "Error generating description"
+        and f.get("top_activations")
+    ]
+
+    if len(eligible) < 2:
+        return []
+
+    if len(eligible) > max_features:
+        test_features = rng.sample(eligible, max_features)
+    else:
+        test_features = list(eligible)
+
+    tasks: list[dict] = []
+    for pos_feat in test_features:
+        neg_pool = [f for f in eligible if f["id"] != pos_feat["id"]]
+        if not neg_pool:
+            continue
+
+        n_neg = min(len(neg_pool), N_NEG_DESCS_D1)
+        neg_feats = rng.sample(neg_pool, n_neg)
+
+        items: list[tuple[str, bool]] = [
+            (pos_feat["generated_description"], True)
+        ] + [
+            (f["generated_description"], False)
+            for f in neg_feats
+        ]
+        rng.shuffle(items)
+
+        correct_idx = next(i + 1 for i, (_, is_pos) in enumerate(items) if is_pos)
+        evidence = _format_feature_evidence(pos_feat, prompt_text)
+
+        tasks.append({
+            "group_name": "description_accuracy",  # pseudo-group for aggregation
+            "prompt": build_d1_prompt(evidence, items),
+            "correct_idx": correct_idx,
+            "n_items": len(items),
+            "feature_id": pos_feat["id"],
+        })
+
+    return tasks
+
+
+def generate_d2_tasks(
+    features: list[dict],
+    seed: int,
+    max_features: int = MAX_FEATURES_D2,
+) -> list[dict]:
+    """
+    Generate Method D2 trial specs for one run.
+
+    For each feature (up to max_features), present its description alongside
+    10 text snippets (N_POS_SNIPPETS_D2 from this feature + N_NEG_SNIPPETS_D2
+    from other features). Ask the model to pick the ones that activated it.
+    """
+    rng = random.Random(seed)
+
+    eligible = [
+        f for f in features
+        if f.get("generated_description")
+        and f.get("generated_description") != "Error generating description"
+        and len(_get_formatted_snippets(f)) >= N_POS_SNIPPETS_D2
+    ]
+
+    if len(eligible) < 2:
+        return []
+
+    if len(eligible) > max_features:
+        test_features = rng.sample(eligible, max_features)
+    else:
+        test_features = list(eligible)
+
+    tasks: list[dict] = []
+    for pos_feat in test_features:
+        pos_snippets = _get_formatted_snippets(pos_feat, N_POS_SNIPPETS_D2)
+
+        neg_pool = [
+            s
+            for f in eligible
+            if f["id"] != pos_feat["id"]
+            for s in _get_formatted_snippets(f)
+        ]
+        if len(neg_pool) < N_NEG_SNIPPETS_D2:
+            continue
+
+        neg_snippets = rng.sample(neg_pool, N_NEG_SNIPPETS_D2)
+
+        items: list[tuple[str, bool]] = (
+            [(s, True) for s in pos_snippets] +
+            [(s, False) for s in neg_snippets]
+        )
+        rng.shuffle(items)
+
+        actual_positive_indices = {
+            i + 1 for i, (_, is_pos) in enumerate(items) if is_pos
+        }
+
+        tasks.append({
+            "group_name": "description_snippet_accuracy",  # pseudo-group for aggregation
+            "prompt": build_d2_prompt(pos_feat["generated_description"], items, N_POS_SNIPPETS_D2),
+            "actual_positive_indices": actual_positive_indices,
+            "n_items": len(items),
+            "n_expected": N_POS_SNIPPETS_D2,
+            "feature_id": pos_feat["id"],
+        })
+
+    return tasks
+
+
+async def run_description_metrics(
+    features: list[dict],
+    prompt_text: str,
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+) -> dict[str, Any]:
+    """Run D1 + D2 across N_RUNS. Returns {d1: {...}, d2: {...}}."""
+    d1_specs: list[tuple[int, dict]] = []
+    d2_specs: list[tuple[int, dict]] = []
+    for run_idx in range(N_RUNS):
+        seed = RANDOM_SEED + run_idx
+        for spec in generate_d1_tasks(features, prompt_text, seed):
+            d1_specs.append((run_idx, spec))
+        for spec in generate_d2_tasks(features, seed):
+            d2_specs.append((run_idx, spec))
+
+    log.info("[D1] %d trials  [D2] %d tasks  (×%d runs)",
+             len(d1_specs) // max(1, N_RUNS), len(d2_specs) // max(1, N_RUNS), N_RUNS)
+
+    d1_coros = [
+        run_m1_trial(s["group_name"], s["prompt"], s["correct_idx"], s["n_items"], client, sem)
+        for _, s in d1_specs
+    ]
+    d2_coros = [
+        run_m2_task(s["group_name"], s["prompt"], s["actual_positive_indices"],
+                    s["n_items"], s["n_expected"], client, sem)
+        for _, s in d2_specs
+    ]
+
+    all_scores = await asyncio.gather(*d1_coros, *d2_coros)
+    d1_scores = all_scores[: len(d1_coros)]
+    d2_scores = all_scores[len(d1_coros):]
+
+    d1_tagged = [(ri, spec["group_name"], sc) for (ri, spec), sc in zip(d1_specs, d1_scores)]
+    d2_tagged = [(ri, spec["group_name"], sc) for (ri, spec), sc in zip(d2_specs, d2_scores)]
+    _, d1_macro = aggregate_by_run(d1_tagged)
+    _, d2_macro = aggregate_by_run(d2_tagged)
+
+    log.info("[D1] %.1f%% ± %.1f%%  [D2] %.1f%% ± %.1f%%",
+             d1_macro["mean_accuracy"] * 100, d1_macro["stderr_accuracy"] * 100,
+             d2_macro["mean_accuracy"] * 100, d2_macro["stderr_accuracy"] * 100)
+
+    return {
+        "d1": {"macro_avg": d1_macro, "total_trials": len(d1_tagged)},
+        "d2": {"macro_avg": d2_macro, "total_tasks": len(d2_tagged)},
+    }
+
+
+def load_or_compute_description_metrics(
+    features: list[dict],
+    prompt_text: str,
+    client: AsyncOpenAI,
+    sem: asyncio.Semaphore,
+) -> "asyncio.Future[dict[str, Any]] | dict[str, Any]":
+    """Return cached description metrics if present, else compute + cache."""
+    if DESCRIPTION_METRICS_FILE.exists():
+        try:
+            with open(DESCRIPTION_METRICS_FILE, encoding="utf-8") as f:
+                cached = json.load(f)
+            log.info("[D1/D2] Reusing cached description metrics (%s)", DESCRIPTION_METRICS_FILE.name)
+            return cached
+        except (json.JSONDecodeError, OSError) as exc:
+            log.warning("[D1/D2] Cache unreadable (%s) — recomputing.", exc)
+
+    async def _compute_and_cache():
+        result = await run_description_metrics(features, prompt_text, client, sem)
+        DESCRIPTION_METRICS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(DESCRIPTION_METRICS_FILE, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+        log.info("[D1/D2] Cached → %s", DESCRIPTION_METRICS_FILE)
+        return result
+
+    return _compute_and_cache()
+
+
+# ---------------------------------------------------------------------------
 # Markdown report
 # ---------------------------------------------------------------------------
 
@@ -828,6 +1138,26 @@ def write_markdown_report(report: dict, path: Path) -> None:
         cells += [cov_str, groups_str]
         L.append("| " + " | ".join(cells) + " |")
     L += ["", "---", ""]
+
+    # Description-quality metrics (slug-level, independent of condition / min_size)
+    desc = report.get("description_metrics") or {}
+    if desc:
+        d1 = desc.get("d1", {}).get("macro_avg", {})
+        d2 = desc.get("d2", {}).get("macro_avg", {})
+        L += [
+            "## Description Quality (D1 / D2)",
+            "",
+            "Per-feature tests of how well the auto-generated descriptions fit each feature's evidence. "
+            "Slug-level (does not depend on grouping condition or min_group_size).",
+            "",
+            "| Method | Macro accuracy |",
+            "|:--|---:|",
+            f"| **D1** — feature evidence → description (1-in-{1+N_NEG_DESCS_D1}, chance {1/(1+N_NEG_DESCS_D1):.0%}) | {_fmt_macro(d1)} |",
+            f"| **D2** — description → activating snippets ({N_POS_SNIPPETS_D2}-in-{N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2}, chance {N_POS_SNIPPETS_D2/(N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2):.0%}) | {_fmt_macro(d2)} |",
+            "",
+            "---",
+            "",
+        ]
 
     detail_cond = "ours-full" if "ours-full" in conditions else next(iter(conditions), None)
     if detail_cond:
@@ -896,7 +1226,9 @@ def _resolve_requested_conditions() -> list[str]:
     requested = [c.strip() for c in raw.split(",") if c.strip()]
     invalid = [
         c for c in requested
-        if c not in available and not _OURS_CAP_RE.match(c)
+        if c not in available
+        and not _OURS_CAP_RE.match(c)
+        and not _OURS_CAP_PRE3_RE.match(c)
     ]
     if invalid:
         log.error("Unknown VALIDATION_CONDITIONS values: %s. Available: %s", invalid, available)
@@ -952,9 +1284,25 @@ async def main_async() -> None:
             coros.append(run_condition(cond, group_index, client, sem, medium_neg_pool))
         cond_order.append(cond)
 
+    # Description-quality metrics (D1/D2). Cached per slug — only the first
+    # validation run per slug pays the API cost; later runs at other min_sizes
+    # reuse the result.
+    prompt_text_for_eval = _read_prompt_from_graph()
+    desc_metrics_or_coro = load_or_compute_description_metrics(
+        features, prompt_text_for_eval, client, sem,
+    )
+    if asyncio.iscoroutine(desc_metrics_or_coro):
+        coros.append(desc_metrics_or_coro)
+        desc_metrics_pending = True
+    else:
+        description_metrics = desc_metrics_or_coro
+        desc_metrics_pending = False
+
     gathered = await asyncio.gather(*coros) if coros else []
     n_cond = len(cond_order)
     cond_results_raw = gathered[:n_cond]
+    if desc_metrics_pending:
+        description_metrics = gathered[n_cond]
 
     condition_results: dict[str, Any] = {}
     for cond, out in zip(cond_order, cond_results_raw):
@@ -979,6 +1327,8 @@ async def main_async() -> None:
         "design": {
             "method1": f"1-in-{1+N_NEG_FEATURES_M1} feature identification (chance={1/(1+N_NEG_FEATURES_M1):.0%})",
             "method2": f"{N_POS_SNIPPETS_M2}-in-{N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2} text snippet matching (chance={N_POS_SNIPPETS_M2/(N_POS_SNIPPETS_M2+N_NEG_SNIPPETS_M2):.0%})",
+            "method_d1": f"1-in-{1+N_NEG_DESCS_D1} description accuracy — given feature evidence, pick correct description (chance={1/(1+N_NEG_DESCS_D1):.0%}); per-feature, slug-level (independent of grouping condition / min_group_size)",
+            "method_d2": f"{N_POS_SNIPPETS_D2}-in-{N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2} description snippet match — given description, pick activating snippets (chance={N_POS_SNIPPETS_D2/(N_POS_SNIPPETS_D2+N_NEG_SNIPPETS_D2):.0%}); per-feature, slug-level",
             "aggregation": "per-group run-level means, then mean ± stderr across runs",
             "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
             "conditions": {
@@ -992,6 +1342,7 @@ async def main_async() -> None:
             },
         },
         "conditions": condition_results,
+        "description_metrics": description_metrics,
     }
 
     with open(VALIDATION_REPORT_FILE, "w", encoding="utf-8") as f:

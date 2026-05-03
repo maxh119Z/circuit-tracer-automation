@@ -88,14 +88,27 @@ def _fmt(value: float | None, stderr: float | None = None) -> str:
 # Collection
 # ---------------------------------------------------------------------------
 
-def collect_by_size() -> tuple[dict[int, list[dict]], dict[int, dict[str, dict[str, list[float]]]]]:
+def _description_metrics(entry: dict) -> tuple[float | None, float | None, float | None, float | None]:
+    """Return (d1_mean, d1_stderr, d2_mean, d2_stderr) from a report entry, or Nones."""
+    desc = entry.get("description_metrics") or {}
+    d1 = desc.get("d1", {}).get("macro_avg", {})
+    d2 = desc.get("d2", {}).get("macro_avg", {})
+    return (
+        d1.get("mean_accuracy"), d1.get("stderr_accuracy"),
+        d2.get("mean_accuracy"), d2.get("stderr_accuracy"),
+    )
+
+
+def collect_by_size() -> tuple[dict[int, list[dict]], dict[int, dict[str, dict[str, list[float]]]], dict[str, dict]]:
     """
     Scan every history file once. Returns:
-      per_size_rows:  {size: [row, ...]}      one row per (slug, condition-cluster)
-      cross_size:     {size: {cond: {m1: [means], m2: [means]}}}  for the cross-size table
+      per_size_rows:        {size: [row, ...]}      one row per (slug, size); slug-level D1/D2 fields included
+      cross_size:           {size: {cond: {m1: [means], m2: [means]}}}  for the cross-size table
+      desc_metrics_by_slug: {slug: {d1_mean, d1_stderr, d2_mean, d2_stderr}}  one entry per slug
     """
     per_size_rows: dict[int, list[dict]] = {}
     cross_size: dict[int, dict[str, dict[str, list[float]]]] = {}
+    desc_metrics_by_slug: dict[str, dict] = {}
 
     for path in sorted(ARTIFACTS_DIR.glob(f"*/{HISTORY_NAME}")):
         slug = path.parent.name
@@ -107,7 +120,18 @@ def collect_by_size() -> tuple[dict[int, list[dict]], dict[int, dict[str, dict[s
                 continue
 
             prompt = _strip_bos(entry.get("prompt", ""))
-            row: dict = {"slug": slug, "prompt": prompt, "min_group_size": size}
+            d1_m, d1_s, d2_m, d2_s = _description_metrics(entry)
+            # Cache the latest non-null description metrics seen for this slug
+            # (D1/D2 don't depend on size — same number every entry that has them).
+            if d1_m is not None or d2_m is not None:
+                desc_metrics_by_slug[slug] = {
+                    "d1_mean": d1_m, "d1_stderr": d1_s,
+                    "d2_mean": d2_m, "d2_stderr": d2_s,
+                }
+
+            row: dict = {"slug": slug, "prompt": prompt, "min_group_size": size,
+                         "d1_mean": d1_m, "d1_stderr": d1_s,
+                         "d2_mean": d2_m, "d2_stderr": d2_s}
             for cond in CONDITIONS:
                 m1_mean, m1_se = _macro(entry, cond, "method1")
                 m2_mean, m2_se = _macro(entry, cond, "method2")
@@ -128,17 +152,26 @@ def collect_by_size() -> tuple[dict[int, list[dict]], dict[int, dict[str, dict[s
 
             per_size_rows.setdefault(size, []).append(row)
 
+    # Backfill slug-level D1/D2 onto every row (so a size that didn't include
+    # description_metrics still shows the cached value in the per-prompt table).
+    for rows in per_size_rows.values():
+        for r in rows:
+            if r["d1_mean"] is None and r["d2_mean"] is None:
+                cached = desc_metrics_by_slug.get(r["slug"])
+                if cached:
+                    r.update(cached)
+
     # Sort rows within each size by prompt for stable output.
     for size, rows in per_size_rows.items():
         rows.sort(key=lambda r: (r["prompt"], r["slug"]))
-    return per_size_rows, cross_size
+    return per_size_rows, cross_size, desc_metrics_by_slug
 
 
 # ---------------------------------------------------------------------------
 # Output rendering
 # ---------------------------------------------------------------------------
 
-def write_markdown(out_path: Path, size: int, rows: list[dict], cross_size: dict) -> None:
+def write_markdown(out_path: Path, size: int, rows: list[dict], cross_size: dict, desc_by_slug: dict) -> None:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     lines: list[str] = []
     lines.append(f"# Neuronpedia Validation Summary — min_group_size={size}")
@@ -218,6 +251,32 @@ def write_markdown(out_path: Path, size: int, rows: list[dict], cross_size: dict
             lines.append("| " + " | ".join(cells) + " |")
         lines.append("")
 
+    # Description quality (D1 / D2) — slug-level, size-independent
+    lines.append("## Description Quality (D1 / D2)")
+    lines.append("")
+    lines.append("Per-feature tests of how well the auto-generated descriptions fit each feature's evidence. "
+                 "Slug-level — does **not** depend on grouping condition or `min_group_size`. "
+                 "D1 = feature evidence → pick correct description (1-in-10, chance 10%). "
+                 "D2 = description → pick activating snippets (5-in-10, chance 50%).")
+    lines.append("")
+    lines.append("| Prompt | D1 | D2 |")
+    lines.append("|:--|---:|---:|")
+    for row in rows:
+        slug = row["slug"]
+        d = desc_by_slug.get(slug, {})
+        d1 = _fmt(d.get("d1_mean"), d.get("d1_stderr"))
+        d2 = _fmt(d.get("d2_mean"), d.get("d2_stderr"))
+        lines.append(f"| `{row['prompt']}` | {d1} | {d2} |")
+    # Aggregate row across slugs that have description metrics.
+    d1_vals = [d["d1_mean"] for d in desc_by_slug.values() if d.get("d1_mean") is not None]
+    d2_vals = [d["d2_mean"] for d in desc_by_slug.values() if d.get("d2_mean") is not None]
+    d1_mean = sum(d1_vals) / len(d1_vals) if d1_vals else None
+    d2_mean = sum(d2_vals) / len(d2_vals) if d2_vals else None
+    d1_str = f"{d1_mean*100:.1f}% (n={len(d1_vals)})" if d1_mean is not None else "—"
+    d2_str = f"{d2_mean*100:.1f}% (n={len(d2_vals)})" if d2_mean is not None else "—"
+    lines.append(f"| **Mean across prompts** | **{d1_str}** | **{d2_str}** |")
+    lines.append("")
+
     # Coverage & valid-group counts
     lines.append(f"## Coverage & valid-group counts (min_group_size={size})")
     lines.append("")
@@ -244,7 +303,8 @@ def write_markdown(out_path: Path, size: int, rows: list[dict], cross_size: dict
 
 
 def write_csv(out_path: Path, rows: list[dict]) -> None:
-    fieldnames = ["slug", "prompt", "min_group_size"]
+    fieldnames = ["slug", "prompt", "min_group_size",
+                  "d1_mean", "d1_stderr", "d2_mean", "d2_stderr"]
     for cond in CONDITIONS:
         fieldnames.extend([
             f"{cond}__m1_mean", f"{cond}__m1_stderr",
@@ -252,7 +312,7 @@ def write_csv(out_path: Path, rows: list[dict]) -> None:
             f"{cond}__coverage", f"{cond}__valid", f"{cond}__total",
         ])
     with out_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
     print(f"Wrote {out_path}")
@@ -273,7 +333,7 @@ def main() -> None:
                              "Default: every size present in the validation history files.")
     args = parser.parse_args()
 
-    per_size_rows, cross_size = collect_by_size()
+    per_size_rows, cross_size, desc_by_slug = collect_by_size()
     if not per_size_rows:
         print(f"No history files found matching {ARTIFACTS_DIR}/*/{HISTORY_NAME}")
         return
@@ -298,7 +358,7 @@ def main() -> None:
         rows = per_size_rows[size]
         out_md  = RESULTS_DIR / f"neuronpedia_summary_min{size}.md"
         out_csv = RESULTS_DIR / f"neuronpedia_summary_min{size}.csv"
-        write_markdown(out_md, size, rows, cross_size)
+        write_markdown(out_md, size, rows, cross_size, desc_by_slug)
         write_csv(out_csv, rows)
 
 
