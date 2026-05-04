@@ -32,6 +32,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -101,59 +102,88 @@ def _description_metrics(entry: dict) -> tuple[float | None, float | None, float
 
 def collect_by_size() -> tuple[dict[int, list[dict]], dict[int, dict[str, dict[str, list[float]]]], dict[str, dict]]:
     """
-    Scan every history file once. Returns:
-      per_size_rows:        {size: [row, ...]}      one row per (slug, size); slug-level D1/D2 fields included
-      cross_size:           {size: {cond: {m1: [means], m2: [means]}}}  for the cross-size table
-      desc_metrics_by_slug: {slug: {d1_mean, d1_stderr, d2_mean, d2_stderr}}  one entry per slug
-    """
-    per_size_rows: dict[int, list[dict]] = {}
-    cross_size: dict[int, dict[str, dict[str, list[float]]]] = {}
-    desc_metrics_by_slug: dict[str, dict] = {}
+    Scan every history file once and merge per (slug, size).
 
+    Key behavior: a partial re-run (e.g., `--conditions ours-cap100-no-reconciliation`)
+    appends a new history entry that's mostly empty. We MERGE chronologically so
+    each (slug, size) becomes one row whose fields hold the latest non-null value
+    seen for each condition — no duplicate rows, no overwriting good data with
+    blanks.
+
+    Returns:
+      per_size_rows:        {size: [row, ...]}      one row per (slug, size)
+      cross_size:           {size: {cond: {m1: [means], m2: [means]}}}  cross-size table
+      desc_metrics_by_slug: {slug: {d1_mean, d1_stderr, d2_mean, d2_stderr}}
+    """
+    # Group all history entries by (slug, size); preserve append order within each.
+    grouped: dict[tuple[str, int], list[dict]] = defaultdict(list)
     for path in sorted(ARTIFACTS_DIR.glob(f"*/{HISTORY_NAME}")):
         slug = path.parent.name
         with open(path, encoding="utf-8") as f:
             history = json.load(f)
         for entry in history:
             size = entry.get("min_group_size")
-            if not isinstance(size, int):
-                continue
+            if isinstance(size, int):
+                grouped[(slug, size)].append(entry)
 
+    per_size_rows: dict[int, list[dict]] = {}
+    cross_size: dict[int, dict[str, dict[str, list[float]]]] = {}
+    desc_metrics_by_slug: dict[str, dict] = {}
+
+    for (slug, size), entries in grouped.items():
+        # Fresh row with all fields = None.
+        row: dict = {"slug": slug, "min_group_size": size, "prompt": "",
+                     "d1_mean": None, "d1_stderr": None, "d2_mean": None, "d2_stderr": None}
+        for cond in CONDITIONS:
+            for f in ("m1_mean", "m1_stderr", "m2_mean", "m2_stderr",
+                      "coverage", "valid", "total"):
+                row[f"{cond}__{f}"] = None
+
+        # Walk entries chronologically; later non-null values override earlier ones.
+        for entry in entries:
             prompt = _strip_bos(entry.get("prompt", ""))
+            if prompt:
+                row["prompt"] = prompt
             d1_m, d1_s, d2_m, d2_s = _description_metrics(entry)
-            # Cache the latest non-null description metrics seen for this slug
-            # (D1/D2 don't depend on size — same number every entry that has them).
-            if d1_m is not None or d2_m is not None:
-                desc_metrics_by_slug[slug] = {
-                    "d1_mean": d1_m, "d1_stderr": d1_s,
-                    "d2_mean": d2_m, "d2_stderr": d2_s,
-                }
-
-            row: dict = {"slug": slug, "prompt": prompt, "min_group_size": size,
-                         "d1_mean": d1_m, "d1_stderr": d1_s,
-                         "d2_mean": d2_m, "d2_stderr": d2_s}
+            if d1_m is not None:
+                row["d1_mean"], row["d1_stderr"] = d1_m, d1_s
+            if d2_m is not None:
+                row["d2_mean"], row["d2_stderr"] = d2_m, d2_s
             for cond in CONDITIONS:
                 m1_mean, m1_se = _macro(entry, cond, "method1")
                 m2_mean, m2_se = _macro(entry, cond, "method2")
                 cov, valid, total = _coverage(entry, cond)
-                row[f"{cond}__m1_mean"] = m1_mean
-                row[f"{cond}__m1_stderr"] = m1_se
-                row[f"{cond}__m2_mean"] = m2_mean
-                row[f"{cond}__m2_stderr"] = m2_se
-                row[f"{cond}__coverage"] = cov
-                row[f"{cond}__valid"] = valid
-                row[f"{cond}__total"] = total
-
-                cs = cross_size.setdefault(size, {}).setdefault(cond, {"m1": [], "m2": []})
                 if m1_mean is not None:
-                    cs["m1"].append(m1_mean)
+                    row[f"{cond}__m1_mean"], row[f"{cond}__m1_stderr"] = m1_mean, m1_se
                 if m2_mean is not None:
-                    cs["m2"].append(m2_mean)
+                    row[f"{cond}__m2_mean"], row[f"{cond}__m2_stderr"] = m2_mean, m2_se
+                if cov is not None:
+                    row[f"{cond}__coverage"] = cov
+                if valid:
+                    row[f"{cond}__valid"] = valid
+                if total:
+                    row[f"{cond}__total"] = total
 
-            per_size_rows.setdefault(size, []).append(row)
+        # Slug-level D1/D2 cache (size-independent).
+        if row["d1_mean"] is not None or row["d2_mean"] is not None:
+            desc_metrics_by_slug[slug] = {
+                "d1_mean": row["d1_mean"], "d1_stderr": row["d1_stderr"],
+                "d2_mean": row["d2_mean"], "d2_stderr": row["d2_stderr"],
+            }
 
-    # Backfill slug-level D1/D2 onto every row (so a size that didn't include
-    # description_metrics still shows the cached value in the per-prompt table).
+        per_size_rows.setdefault(size, []).append(row)
+
+        # Cross-size aggregation uses the merged row, not raw entries.
+        for cond in CONDITIONS:
+            cs = cross_size.setdefault(size, {}).setdefault(cond, {"m1": [], "m2": []})
+            if row[f"{cond}__m1_mean"] is not None:
+                cs["m1"].append(row[f"{cond}__m1_mean"])
+            if row[f"{cond}__m2_mean"] is not None:
+                cs["m2"].append(row[f"{cond}__m2_mean"])
+
+    # Backfill slug-level D1/D2 onto sizes that haven't seen a D1/D2 entry yet
+    # (e.g., size=3 historical runs before D1/D2 wiring; size=2 has them and
+    # the values don't depend on size, so it's safe to apply the cache).
     for rows in per_size_rows.values():
         for r in rows:
             if r["d1_mean"] is None and r["d2_mean"] is None:
