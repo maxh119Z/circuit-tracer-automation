@@ -42,11 +42,18 @@ MIN_CONF = 0.0                  # lower bound on top-1 softmax prob (no floor â€
 MAX_CONF = 0.8                  # upper bound on top-1 softmax prob (filter trivially easy)
 MODEL_NAME = "google/gemma-2-2b"
 TRANSCODER_SET = "gemma"
-BATCH_SIZE = 16                 # prompts scored at once (tune to your GPU VRAM)
+BATCH_SIZE = 4                  # prompts scored at once (tune to your GPU VRAM)
 SCORE_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
-OUT_FILE = Path(__file__).parent / "ground_truth_wikipedia.csv"
-PROMPTS_FILE = Path(__file__).parent / "prompts_wikipedia.csv"
+# When True, each prompt is built as: <full previous sentence> + <truncated current sentence>.
+# The truncated portion still has length MIN_WORDS..MAX_WORDS; the prepended sentence
+# only adds context. Output filenames get a "_context" suffix in this mode so the
+# original no-context outputs are not overwritten.
+PREPEND_PREVIOUS_SENTENCE = True
+
+_suffix = "_context" if PREPEND_PREVIOUS_SENTENCE else ""
+OUT_FILE = Path(__file__).parent / f"ground_truth_wikipedia{_suffix}.csv"
+PROMPTS_FILE = Path(__file__).parent / f"prompts_wikipedia{_suffix}.csv"
 
 # Diverse Wikipedia categories to seed article selection
 SEED_TOPICS = [
@@ -81,6 +88,10 @@ SEED_TOPICS = [
 _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
 _CLEANUP = re.compile(r"\s+")
 _WORD_NORMALIZE = re.compile(r"^[^\w]+|[^\w]+$")
+# Wikipedia section headers like "== Ancient history ==" or "=== Subsection ==="
+# don't end in .!? so they get glued onto the next sentence by _SENTENCE_SPLIT.
+# Strip them out before splitting.
+_WIKI_HEADER = re.compile(r"^=+\s*[^=\n]+?\s*=+\s*$", re.MULTILINE)
 
 
 def _normalize_word(w: str) -> str:
@@ -95,14 +106,35 @@ def _slug(article_title: str, sent_idx: int, word_idx: int) -> str:
 
 def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> list[dict]:
     """Return truncated sentence prefixes from one article (shuffled, so the
-    caller's [:N] cap samples random sentences instead of always the first few)."""
+    caller's [:N] cap samples random sentences instead of always the first few).
+
+    If PREPEND_PREVIOUS_SENTENCE is True, each prompt is the full previous
+    sentence + the truncated current-sentence prefix. The truncation length
+    still respects MIN_WORDS..MAX_WORDS for the current sentence only.
+    """
     candidates = []
-    sentences = _SENTENCE_SPLIT.split(text)
+    text = _WIKI_HEADER.sub("", text)
+    sentences = [_CLEANUP.sub(" ", s).strip() for s in _SENTENCE_SPLIT.split(text)]
     for sent_idx, sent in enumerate(sentences):
-        sent = _CLEANUP.sub(" ", sent).strip()
+        if PREPEND_PREVIOUS_SENTENCE and sent_idx == 0:
+            continue                        # need a previous sentence as context
         words = sent.split()
         if len(words) < MIN_WORDS + 2:
             continue
+
+        prev_sent = ""
+        if PREPEND_PREVIOUS_SENTENCE:
+            # A complete prior sentence is REQUIRED â€” drop the pair otherwise.
+            prev_sent = sentences[sent_idx - 1]
+            if (
+                not prev_sent
+                or not prev_sent.endswith((".", "!", "?"))   # must be a complete sentence
+                or not prev_sent[0].isupper()                # must look like a real sentence start
+                or not prev_sent.isascii()
+                or any(c in prev_sent for c in ["[", "]", "{", "}", "="])
+            ):
+                continue
+
         for trunc in range(MIN_WORDS, min(MAX_WORDS + 1, len(words) - 1)):
             prefix = " ".join(words[:trunc])
             expected = _normalize_word(words[trunc])
@@ -111,15 +143,16 @@ def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> l
             slug = _slug(article_title, sent_idx, trunc)
             if slug in seen_slugs:
                 continue
-            # Basic quality filters
+            # Basic quality filters (applied to the truncated current portion)
             if not prefix[-1].isalnum():   # avoid trailing punctuation
                 continue
-            if any(c in prefix for c in ["[", "]", "{", "}"]):  # skip wiki markup
+            if any(c in prefix for c in ["[", "]", "{", "}", "="]):  # skip wiki markup
                 continue
+            full_prompt = (prev_sent + " " + prefix) if PREPEND_PREVIOUS_SENTENCE else prefix
             seen_slugs.add(slug)
             candidates.append({
                 "slug": slug,
-                "prompt": prefix,
+                "prompt": full_prompt,
                 "article": article_title,
                 "expected_answer": expected,
             })
@@ -218,13 +251,19 @@ def score_prompts(prompts: list[str], model: HookedTransformer) -> list[dict]:
                                   device=tokens.device, dtype=torch.long)
         with torch.no_grad():
             logits = model(tokens)  # (B, L, V)
-        batch_idx = torch.arange(logits.size(0), device=logits.device)
-        last_logits = logits[batch_idx, last_idx, :].float()  # (B, V)
-        probs = F.softmax(last_logits, dim=-1)
-        top1_probs, top1_indices = probs.max(dim=-1)  # (B,)
-        top1_tokens = model.to_str_tokens(top1_indices)
-        for prob, tok in zip(top1_probs.tolist(), top1_tokens):
+            batch_idx = torch.arange(logits.size(0), device=logits.device)
+            last_logits = logits[batch_idx, last_idx, :].float()  # (B, V)
+            probs = F.softmax(last_logits, dim=-1)
+            top1_probs, top1_indices = probs.max(dim=-1)  # (B,)
+            # Move to CPU before extending so we can free GPU memory immediately
+            top1_probs_cpu = top1_probs.tolist()
+            top1_indices_cpu = top1_indices.cpu()
+        top1_tokens = model.to_str_tokens(top1_indices_cpu)
+        for prob, tok in zip(top1_probs_cpu, top1_tokens):
             results.append({"top1_prob": prob, "top1_token": tok.strip()})
+        del tokens, logits, last_logits, probs, top1_probs, top1_indices
+        if SCORE_DEVICE == "cuda":
+            torch.cuda.empty_cache()
         print(f"  scored {min(i + BATCH_SIZE, len(prompts))}/{len(prompts)}", end="\r")
     print()
     return results

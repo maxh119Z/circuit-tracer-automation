@@ -1,0 +1,49 @@
+slug,intermediate_concept,correct_answer,hop_type,notes
+gemma-michael-jordan,basketball,basketball,entity-fact,human
+gemma-michael-jordan_ours_cap50,basketball,basketball,entity-fact,_ours_cap50
+gemma-michael-jordan_ours_cap100,basketball,basketball,entity-fact,_ours_cap100
+gemma-michael-jordan_ours_cap150,basketball,basketball,entity-fact,_ours_cap150
+gemma-michael-jordan_ours_cap200,basketball,basketball,entity-fact,_ours_cap200
+gemma-michael-jordan_ours,basketball,basketball,entity-fact,_ours
+gemma-michael-jordan-es,basketball | baloncesto,baloncesto,entity-fact,human
+gemma-michael-jordan-es_ours_cap50,basketball | baloncesto,baloncesto,entity-fact,_ours_cap50
+gemma-michael-jordan-es_ours_cap100,basketball | baloncesto,baloncesto,entity-fact,_ours_cap100
+gemma-michael-jordan-es_ours_cap150,basketball | baloncesto,baloncesto,entity-fact,_ours_cap150
+gemma-michael-jordan-es_ours_cap200,basketball | baloncesto,baloncesto,entity-fact,_ours_cap200
+gemma-michael-jordan-es_ours,basketball | baloncesto,baloncesto,entity-fact,_ours
+gemma-basket,basketball,basket,entity-fact,human
+gemma-basket_ours_cap50,basketball,basket,entity-fact,_ours_cap50
+gemma-basket_ours_cap100,basketball,basket,entity-fact,_ours_cap100
+gemma-basket_ours_cap150,basketball,basket,entity-fact,_ours_cap150
+gemma-basket_ours_cap200,basketball,basket,entity-fact,_ours_cap200
+gemma-basket_ours,basketball,basket,entity-fact,_ours
+gemma-saison,summer,été,seasonal-shift,human
+gemma-saison_ours_cap50,summer,été,seasonal-shift,_ours_cap50
+gemma-saison_ours_cap100,summer,été,seasonal-shift,_ours_cap100
+gemma-saison_ours_cap150,summer,été,seasonal-shift,_ours_cap150
+gemma-saison_ours_cap200,summer,été,seasonal-shift,_ours_cap200
+gemma-saison_ours,summer,été,seasonal-shift,_ours
+gemma-verano,summer | verano,verano,seasonal-shift,human
+gemma-verano_ours_cap50,summer | verano,verano,seasonal-shift,_ours_cap50
+gemma-verano_ours_cap100,summer | verano,verano,seasonal-shift,_ours_cap100
+gemma-verano_ours_cap150,summer | verano,verano,seasonal-shift,_ours_cap150
+gemma-verano_ours_cap200,summer | verano,verano,seasonal-shift,_ours_cap200
+gemma-verano_ours,summer | verano,verano,seasonal-shift,_ours
+gemma-dollar,currency | dollar,dollar,analogy,human
+gemma-dollar_ours_cap50,currency | dollar,dollar,analogy,_ours_cap50
+gemma-dollar_ours_cap100,currency | dollar,dollar,analogy,_ours_cap100
+gemma-dollar_ours_cap150,currency | dollar,dollar,analogy,_ours_cap150
+gemma-dollar_ours_cap200,currency | dollar,dollar,analogy,_ours_cap200
+gemma-dollar_ours,currency | dollar,dollar,analogy,_ours
+gemma-euro,currency | euro,euro,analogy,human
+gemma-euro_ours_cap50,currency | euro,euro,analogy,_ours_cap50
+gemma-euro_ours_cap100,currency | euro,euro,analogy,_ours_cap100
+gemma-euro_ours_cap150,currency | euro,euro,analogy,_ours_cap150
+gemma-euro_ours_cap200,currency | euro,euro,analogy,_ours_cap200
+gemma-euro_ours,currency | euro,euro,analogy,_ours
+gemma-english,language | english,English,analogy,human
+gemma-english_ours_cap50,language | english,English,analogy,_ours_cap50
+gemma-english_ours_cap100,language | english,English,analogy,_ours_cap100
+gemma-english_ours_cap150,language | english,English,analogy,_ours_cap150
+gemma-english_ours_cap200,language | english,English,analogy,_ours_cap200
+gemma-english_ours,language | english,English,analogy,_ours
