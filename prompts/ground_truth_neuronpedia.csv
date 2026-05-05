@@ -1,0 +1,19 @@
+slug,intermediate_concept,correct_answer,hop_type,notes
+gemma-michael-jordan,basketball,basketball,entity-fact,Fact: Michael Jordan plays the sport of __ — MJ -> basketball
+gemma-michael-jordan_ours,basketball,basketball,entity-fact,LLM-grouped variant of michael-jordan
+gemma-michael-jordan-es,basketball | baloncesto,baloncesto,entity-fact,Hecho: Michael Jordan juega al __ — MJ -> baloncesto (Spanish)
+gemma-michael-jordan-es_ours,basketball | baloncesto,baloncesto,entity-fact,LLM-grouped variant (Spanish)
+gemma-basket,basketball,basket,entity-fact,Fait: Michael Jordan joue au __ — MJ -> basket (French)
+gemma-basket_ours,basketball,basket,entity-fact,LLM-grouped variant (French)
+gemma-saison,summer,été,seasonal-shift,La saison après le printemps s'appelle l'__ — spring -> summer (French)
+gemma-saison_ours,summer,été,seasonal-shift,LLM-grouped variant (French)
+gemma-verano,summer | verano,verano,seasonal-shift,La estación después de la primavera se llama el __ — spring -> summer (Spanish)
+gemma-verano_ours,summer | verano,verano,seasonal-shift,LLM-grouped variant (Spanish)
+gemma-dollar,currency | dollar,dollar,analogy,Mexico:peso :: US:__ — currency analogy
+gemma-dollar_ours,currency | dollar,dollar,analogy,LLM-grouped variant
+gemma-euro,currency | euro,euro,analogy,Mexico:peso :: Europe:__ — currency analogy
+gemma-euro_ours,currency | euro,euro,analogy,LLM-grouped variant
+gemma-english,language | english,English,analogy,Mexico:Spanish :: US:__ — language analogy
+gemma-english_ours,language | english,English,analogy,LLM-grouped variant
+gemma-G,acronym,G,acronym,The International Advanced Security Group (IAS__ — initialism completion
+gemma-G_ours,acronym,G,acronym,LLM-grouped variant
