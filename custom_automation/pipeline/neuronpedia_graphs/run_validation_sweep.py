@@ -42,8 +42,30 @@ from config import (
 
 log = setup_logging()
 
-ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts"
-DEFAULT_OUT = PACKAGE_DIR / "analysis" / "results" / "validation_sweep.csv"
+# Neuronpedia inputs live under artifacts_neuronpedia/<slug>/.
+ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts_neuronpedia"
+# When LLM_PROVIDER is set, the per-slug validator writes its report into a
+# parallel provider tree (see validate_neuropedia_groups.py). Pick the matching
+# report-root and a separate CSV name so non-OpenAI runs never overwrite GPT
+# sweep results.
+_PROVIDER_OUTPUT_DIRS: dict[str, str] = {
+    "anthropic": "anthropic_validations",
+    "google":    "gemini_validations",
+    "gemini":    "gemini_validations",
+}
+_PROVIDER_CSV_TAGS: dict[str, str] = {
+    "anthropic": "_claude",
+    "google":    "_gemini",
+    "gemini":    "_gemini",
+}
+_PROVIDER = os.environ.get("LLM_PROVIDER", "openai").lower()
+_NON_OPENAI_DIR_NAME = _PROVIDER_OUTPUT_DIRS.get(_PROVIDER)
+_NON_OPENAI_CSV_TAG = _PROVIDER_CSV_TAGS.get(_PROVIDER, "")
+
+REPORT_ROOT = (PACKAGE_DIR / _NON_OPENAI_DIR_NAME) if _NON_OPENAI_DIR_NAME else ARTIFACTS_ROOT
+DEFAULT_OUT = PACKAGE_DIR / "analysis" / "results" / (
+    f"validation_sweep{_NON_OPENAI_CSV_TAG}.csv"
+)
 PIPELINE_SCRIPT = Path(__file__).resolve().parent / "validate_neuropedia_groups.py"
 
 DEFAULT_MIN_SIZES = (2, 3, 4, 5, 6)
@@ -81,8 +103,7 @@ def run_one(
     min_group_size: int,
     conditions: list[str],
 ) -> dict | None:
-    artifact_dir = ARTIFACTS_ROOT / slug
-    report_path = artifact_dir / f"validation_report_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_neuropedia.json"
+    report_path = REPORT_ROOT / slug / f"validation_report_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_neuropedia.json"
 
     env = os.environ.copy()
     env["CURRENT_SLUG"] = slug

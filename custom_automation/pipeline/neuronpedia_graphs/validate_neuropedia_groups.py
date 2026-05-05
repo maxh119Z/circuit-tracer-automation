@@ -52,6 +52,7 @@ from __future__ import annotations
 import asyncio
 import json
 import math
+import os
 import random
 import re
 import sys
@@ -61,20 +62,23 @@ from datetime import datetime, timezone
 from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
-from openai import AsyncOpenAI
+from openai import AsyncOpenAI  # noqa: F401  (kept for backwards compat / type hints)
 from pydantic import BaseModel, Field
 
 from config import (
-    ARTIFACTS_DIR,
+    ARTIFACTS_DIR as _CONFIG_ARTIFACTS_DIR,  # noqa: F401  (kept for back-compat)
+    CURRENT_SLUG,
     DESCRIPTION_VARIANT,
-    FEATURE_DESCRIPTIONS_FILE,
-    FEATURE_GROUPS_FILE,
-    FEATURE_GROUPS_PRE3_FILE,
-    GRAPH_FILE,
+    FEATURE_DESCRIPTIONS_FILE as _CONFIG_FEATURE_DESCRIPTIONS_FILE,
+    FEATURE_GROUPS_FILE as _CONFIG_FEATURE_GROUPS_FILE,
+    FEATURE_GROUPS_PRE3_FILE as _CONFIG_FEATURE_GROUPS_PRE3_FILE,
+    GRAPH_FILE as _CONFIG_GRAPH_FILE,
     GROUPING_MODEL,
     GROUPING_TOP_K_SEED,
     GROUPING_VARIANT,
-    MANUAL_GROUPS_FILE,
+    MANUAL_GROUPS_FILE as _CONFIG_MANUAL_GROUPS_FILE,
+    PACKAGE_DIR,
+    REPO_ROOT,
     VALIDATION_CONDITIONS,
     VALIDATION_DIFFICULTY,
     VALIDATION_HISTORY_FILE,
@@ -82,13 +86,57 @@ from config import (
     VALIDATION_REPORT_FILE,
     setup_logging,
 )
+from llm_client import get_client
 
 log = setup_logging()
 
-VALIDATION_REPORT_FILE = VALIDATION_REPORT_FILE.with_name(
+# ---------------------------------------------------------------------------
+# Neuronpedia path overrides
+# ---------------------------------------------------------------------------
+# All Neuronpedia inputs (graphs + per-slug artifacts) now live in
+# `test_graphs_neuronpedia/` and `custom_automation/artifacts_neuronpedia/`.
+# Rebase the paths imported from config so this validator reads/writes from
+# the Neuronpedia tree without disturbing config.py defaults used elsewhere.
+NEURONPEDIA_TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs_neuronpedia"
+_NEURONPEDIA_ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts_neuronpedia"
+ARTIFACTS_DIR = (
+    _NEURONPEDIA_ARTIFACTS_ROOT / CURRENT_SLUG if CURRENT_SLUG else _NEURONPEDIA_ARTIFACTS_ROOT
+)
+
+GRAPH_FILE = (
+    NEURONPEDIA_TEST_GRAPHS_DIR / f"{CURRENT_SLUG}.json"
+    if CURRENT_SLUG else NEURONPEDIA_TEST_GRAPHS_DIR / "test-run.json"
+)
+FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / _CONFIG_FEATURE_DESCRIPTIONS_FILE.name
+FEATURE_GROUPS_FILE = ARTIFACTS_DIR / _CONFIG_FEATURE_GROUPS_FILE.name
+FEATURE_GROUPS_PRE3_FILE = ARTIFACTS_DIR / _CONFIG_FEATURE_GROUPS_PRE3_FILE.name
+MANUAL_GROUPS_FILE = ARTIFACTS_DIR / _CONFIG_MANUAL_GROUPS_FILE.name
+
+# When running with a non-OpenAI validator, route every per-slug validator
+# output (report, history, markdown, D1/D2 cache) into a dedicated provider
+# tree so GPT-produced files are not overwritten. Default (LLM_PROVIDER unset
+# / 'openai') keeps every output inside the existing per-slug ARTIFACTS_DIR
+# exactly as before.
+_PROVIDER_OUTPUT_DIRS: dict[str, str] = {
+    "anthropic": "anthropic_validations",
+    "google":    "gemini_validations",
+    "gemini":    "gemini_validations",
+}
+_PROVIDER = os.environ.get("LLM_PROVIDER", "openai").lower()
+_NON_OPENAI_DIR_NAME = _PROVIDER_OUTPUT_DIRS.get(_PROVIDER)
+
+if _NON_OPENAI_DIR_NAME:
+    _VALIDATOR_OUT_DIR = PACKAGE_DIR / _NON_OPENAI_DIR_NAME
+    if CURRENT_SLUG:
+        _VALIDATOR_OUT_DIR = _VALIDATOR_OUT_DIR / CURRENT_SLUG
+    _VALIDATOR_OUT_DIR.mkdir(parents=True, exist_ok=True)
+else:
+    _VALIDATOR_OUT_DIR = ARTIFACTS_DIR
+
+VALIDATION_REPORT_FILE = _VALIDATOR_OUT_DIR / (
     VALIDATION_REPORT_FILE.stem + "_neuropedia" + VALIDATION_REPORT_FILE.suffix
 )
-VALIDATION_HISTORY_FILE = VALIDATION_HISTORY_FILE.with_name(
+VALIDATION_HISTORY_FILE = _VALIDATOR_OUT_DIR / (
     VALIDATION_HISTORY_FILE.stem + "_neuropedia" + VALIDATION_HISTORY_FILE.suffix
 )
 VALIDATION_MARKDOWN_FILE = VALIDATION_REPORT_FILE.with_suffix(".md")
@@ -97,8 +145,15 @@ VALIDATION_MARKDOWN_FILE = VALIDATION_REPORT_FILE.with_suffix(".md")
 # Configuration
 # ---------------------------------------------------------------------------
 
-VALIDATION_MODEL = GROUPING_MODEL
-CONCURRENCY_LIMIT = 500
+# Override either the grouping model entirely or the validator separately.
+# Default keeps GPT runs identical to before.
+VALIDATION_MODEL: str = os.environ.get("VALIDATION_MODEL", GROUPING_MODEL)
+# OpenAI happily handles 500 concurrent calls; Anthropic / Google tier-2 limits
+# (~50 RPM by default) get hammered, the validator's try/except silently catches
+# the 429s as zero-score tasks, and macro_avg collapses. Default lower for the
+# non-OpenAI providers and let the env override.
+_DEFAULT_CONCURRENCY = 8 if _NON_OPENAI_DIR_NAME else 500
+CONCURRENCY_LIMIT: int = int(os.environ.get("VALIDATION_CONCURRENCY", _DEFAULT_CONCURRENCY))
 MIN_GROUP_SIZE = VALIDATION_MIN_GROUP_SIZE
 DIFFICULTY = VALIDATION_DIFFICULTY if VALIDATION_DIFFICULTY in ("medium", "both") else "medium"
 BASE_CONDITIONS = ("random", "human", "ours-full", "ours-no-reconciliation")
@@ -116,7 +171,7 @@ N_NEG_DESCS_D1 = 9
 MAX_FEATURES_D2 = 50
 N_POS_SNIPPETS_D2 = 5
 N_NEG_SNIPPETS_D2 = 5
-DESCRIPTION_METRICS_FILE = ARTIFACTS_DIR / f"description_metrics_{DESCRIPTION_VARIANT}_neuropedia.json"
+DESCRIPTION_METRICS_FILE = _VALIDATOR_OUT_DIR / f"description_metrics_{DESCRIPTION_VARIANT}_neuropedia.json"
 RANDOM_SEED = 42
 N_RUNS = 5
 
@@ -1250,8 +1305,9 @@ async def main_async() -> None:
     requested = _resolve_requested_conditions()
     log.info("Conditions: %s", requested)
     log.info("Min group size: %d  |  Difficulty: %s", MIN_GROUP_SIZE, DIFFICULTY)
+    log.info("Validator model: %s  (provider=%s)", VALIDATION_MODEL, os.environ.get("LLM_PROVIDER", "openai"))
 
-    client = AsyncOpenAI()
+    client = get_client()
     sem = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
     loaded: dict[str, tuple[dict[str, str], dict[str, list[dict]]]] = {}
