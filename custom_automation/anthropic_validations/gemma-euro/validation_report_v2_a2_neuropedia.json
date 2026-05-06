@@ -1,0 +1,770 @@
+{
+  "prompt": "<bos>Mexico:peso :: Europe:",
+  "timestamp": "2026-05-06T03:00:28Z",
+  "n_runs": 5,
+  "min_group_size": 2,
+  "difficulty": "medium",
+  "design": {
+    "method1": "1-in-10 feature identification (chance=10%)",
+    "method2": "5-in-10 text snippet matching (chance=50%)",
+    "method_d1": "1-in-10 description accuracy — given feature evidence, pick correct description (chance=10%); per-feature, slug-level (independent of grouping condition / min_group_size)",
+    "method_d2": "5-in-10 description snippet match — given description, pick activating snippets (chance=50%); per-feature, slug-level",
+    "aggregation": "per-group run-level means, then mean ± stderr across runs",
+    "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
+    "conditions": {
+      "random": "ours-full groups, features shuffled across them",
+      "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
+      "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
+      "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+      "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential features were fed to grouping (50 = phase 1 only). Phase 3 still runs on top."
+    }
+  },
+  "conditions": {
+    "random": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.28,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.2,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 0.16,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 0.32,
+              "stderr_accuracy": 0.1497,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 0.1,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 0.28,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.1333,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.12,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.32,
+              "stderr_accuracy": 0.12,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 0.08,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 0.3,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.24,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.2,
+            "stderr_accuracy": 0.0284
+          },
+          "total_trials": 255
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.1166,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.16,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.1414,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.5108,
+            "stderr_accuracy": 0.0182
+          },
+          "total_tasks": 65
+        }
+      },
+      "attribution_coverage": 0.2568,
+      "n_groups_total": 14,
+      "n_groups_valid": 13
+    },
+    "human": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "EU",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "EU/European",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "currency",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "currency (2)",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "finance",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.848,
+            "stderr_accuracy": 0.0294
+          },
+          "total_trials": 125
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "EU",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "EU/European",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.1939,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "currency",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "currency (2)",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "finance",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.888,
+            "stderr_accuracy": 0.0344
+          },
+          "total_tasks": 25
+        }
+      },
+      "attribution_coverage": 0.0482,
+      "n_groups_total": 5,
+      "n_groups_valid": 5
+    },
+    "ours-no-reconciliation": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Analogy connector",
+              "mean_accuracy": 0.24,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.9057,
+            "stderr_accuracy": 0.0541
+          },
+          "total_trials": 280
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Analogy connector",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.2,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.8086,
+            "stderr_accuracy": 0.0294
+          },
+          "total_tasks": 70
+        }
+      },
+      "attribution_coverage": 0.3043,
+      "n_groups_total": 15,
+      "n_groups_valid": 14
+    },
+    "ours-full": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.9523,
+            "stderr_accuracy": 0.0159
+          },
+          "total_trials": 255
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Country mention",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Country/demonym",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Currency unit",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.1939,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Europe / European",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Monetary/finance terms",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Relations/links",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Spanish/Portuguese tokens",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.172,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say European",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say coin",
+              "mean_accuracy": 0.92,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say country/region",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say exchange",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say location",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say place name",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.8062,
+            "stderr_accuracy": 0.023
+          },
+          "total_tasks": 65
+        }
+      },
+      "attribution_coverage": 0.2568,
+      "n_groups_total": 14,
+      "n_groups_valid": 13
+    }
+  },
+  "description_metrics": {
+    "d1": {
+      "macro_avg": {
+        "mean_accuracy": 0.628,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 250
+    },
+    "d2": {
+      "macro_avg": {
+        "mean_accuracy": 0.828,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 250
+    }
+  }
+}

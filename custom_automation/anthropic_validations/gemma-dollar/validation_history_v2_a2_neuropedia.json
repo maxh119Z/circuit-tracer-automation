@@ -1,0 +1,674 @@
+[
+  {
+    "prompt": "<bos>Mexico:peso :: US:",
+    "timestamp": "2026-05-06T02:47:47Z",
+    "n_runs": 5,
+    "min_group_size": 2,
+    "difficulty": "medium",
+    "design": {
+      "method1": "1-in-10 feature identification (chance=10%)",
+      "method2": "5-in-10 text snippet matching (chance=50%)",
+      "method_d1": "1-in-10 description accuracy — given feature evidence, pick correct description (chance=10%); per-feature, slug-level (independent of grouping condition / min_group_size)",
+      "method_d2": "5-in-10 description snippet match — given description, pick activating snippets (chance=50%); per-feature, slug-level",
+      "aggregation": "per-group run-level means, then mean ± stderr across runs",
+      "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
+      "conditions": {
+        "random": "ours-full groups, features shuffled across them",
+        "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
+        "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
+        "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+        "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential features were fed to grouping (50 = phase 1 only). Phase 3 still runs on top."
+      }
+    },
+    "conditions": {
+      "random": {
+        "medium": {
+          "method1": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 0.52,
+                "stderr_accuracy": 0.12,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.36,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.24,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.16,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 0.12,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 0.08,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.08,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 0.12,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.12,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say dollar",
+                "mean_accuracy": 0.28,
+                "stderr_accuracy": 0.1497,
+                "n_runs": 5,
+                "total_trials": 25
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.208,
+              "stderr_accuracy": 0.0453
+            },
+            "total_trials": 250
+          },
+          "method2": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 0.56,
+                "stderr_accuracy": 0.172,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.6,
+                "stderr_accuracy": 0.1095,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.48,
+                "stderr_accuracy": 0.102,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.44,
+                "stderr_accuracy": 0.147,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 0.52,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 0.56,
+                "stderr_accuracy": 0.098,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.4,
+                "stderr_accuracy": 0.0632,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 0.56,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.52,
+                "stderr_accuracy": 0.08,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say dollar",
+                "mean_accuracy": 0.56,
+                "stderr_accuracy": 0.1166,
+                "n_runs": 5,
+                "total_trials": 5
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.0198
+            },
+            "total_tasks": 50
+          }
+        },
+        "attribution_coverage": 0.2971,
+        "n_groups_total": 11,
+        "n_groups_valid": 10
+      },
+      "human": {
+        "medium": {
+          "method1": {
+            "groups": [
+              {
+                "group": "US",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "US (2)",
+                "mean_accuracy": 0.6667,
+                "stderr_accuracy": 0.1491,
+                "n_runs": 5,
+                "total_trials": 15
+              },
+              {
+                "group": "currency",
+                "mean_accuracy": 0.64,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "currency (2)",
+                "mean_accuracy": 0.72,
+                "stderr_accuracy": 0.102,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "currency exchange",
+                "mean_accuracy": 0.9,
+                "stderr_accuracy": 0.1,
+                "n_runs": 5,
+                "total_trials": 10
+              },
+              {
+                "group": "dollar",
+                "mean_accuracy": 0.7,
+                "stderr_accuracy": 0.05,
+                "n_runs": 5,
+                "total_trials": 20
+              },
+              {
+                "group": "predict D*",
+                "mean_accuracy": 0.3,
+                "stderr_accuracy": 0.2,
+                "n_runs": 5,
+                "total_trials": 10
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.6924,
+              "stderr_accuracy": 0.0776
+            },
+            "total_trials": 130
+          },
+          "method2": {
+            "groups": [
+              {
+                "group": "US",
+                "mean_accuracy": 0.88,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "US (2)",
+                "mean_accuracy": 0.72,
+                "stderr_accuracy": 0.1855,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "currency",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "currency (2)",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "currency exchange",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "dollar",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "predict D*",
+                "mean_accuracy": 0.6,
+                "stderr_accuracy": 0.0632,
+                "n_runs": 5,
+                "total_trials": 5
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.8457,
+              "stderr_accuracy": 0.0505
+            },
+            "total_tasks": 35
+          }
+        },
+        "attribution_coverage": 0.0334,
+        "n_groups_total": 8,
+        "n_groups_valid": 7
+      },
+      "ours-no-reconciliation": {
+        "medium": {
+          "method1": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.84,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.4,
+                "stderr_accuracy": 0.1095,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say coin/dollar",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.84,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say currency (dollar/yuan)",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 10
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.8982,
+              "stderr_accuracy": 0.0532
+            },
+            "total_trials": 260
+          },
+          "method2": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.88,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.8,
+                "stderr_accuracy": 0.0632,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 0.8,
+                "stderr_accuracy": 0.2,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.64,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 0.88,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say coin/dollar",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.76,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say currency (dollar/yuan)",
+                "mean_accuracy": 0.72,
+                "stderr_accuracy": 0.1855,
+                "n_runs": 5,
+                "total_trials": 5
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.8436,
+              "stderr_accuracy": 0.0326
+            },
+            "total_tasks": 55
+          }
+        },
+        "attribution_coverage": 0.3117,
+        "n_groups_total": 15,
+        "n_groups_valid": 11
+      },
+      "ours-full": {
+        "medium": {
+          "method1": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 1.0,
+                "stderr_accuracy": 0.0,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.6,
+                "stderr_accuracy": 0.0894,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.84,
+                "stderr_accuracy": 0.0748,
+                "n_runs": 5,
+                "total_trials": 25
+              },
+              {
+                "group": "say dollar",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 25
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.912,
+              "stderr_accuracy": 0.0376
+            },
+            "total_trials": 250
+          },
+          "method2": {
+            "groups": [
+              {
+                "group": "Currency unit (peso/dollar)",
+                "mean_accuracy": 0.68,
+                "stderr_accuracy": 0.1744,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Exchange / conversion",
+                "mean_accuracy": 0.8,
+                "stderr_accuracy": 0.2,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Monetary magnitude",
+                "mean_accuracy": 0.48,
+                "stderr_accuracy": 0.196,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "Spanish/Portuguese tokens",
+                "mean_accuracy": 0.52,
+                "stderr_accuracy": 0.2154,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "United States",
+                "mean_accuracy": 0.96,
+                "stderr_accuracy": 0.04,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "ratio/per-unit framing",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say \"is to\"",
+                "mean_accuracy": 0.68,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say United States",
+                "mean_accuracy": 0.92,
+                "stderr_accuracy": 0.08,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say country/region",
+                "mean_accuracy": 0.72,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              },
+              {
+                "group": "say dollar",
+                "mean_accuracy": 0.88,
+                "stderr_accuracy": 0.049,
+                "n_runs": 5,
+                "total_trials": 5
+              }
+            ],
+            "macro_avg": {
+              "mean_accuracy": 0.756,
+              "stderr_accuracy": 0.0535
+            },
+            "total_tasks": 50
+          }
+        },
+        "attribution_coverage": 0.2971,
+        "n_groups_total": 11,
+        "n_groups_valid": 10
+      }
+    },
+    "description_metrics": {
+      "d1": {
+        "macro_avg": {
+          "mean_accuracy": 0.656,
+          "stderr_accuracy": 0.0
+        },
+        "total_trials": 250
+      },
+      "d2": {
+        "macro_avg": {
+          "mean_accuracy": 0.8128,
+          "stderr_accuracy": 0.0
+        },
+        "total_tasks": 250
+      }
+    }
+  }
+]

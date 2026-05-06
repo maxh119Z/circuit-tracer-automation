@@ -1,0 +1,518 @@
+{
+  "prompt": "<bos>The guitarist knew the song",
+  "timestamp": "2026-05-06T03:09:39Z",
+  "n_runs": 5,
+  "min_group_size": 2,
+  "difficulty": "medium",
+  "design": {
+    "method1": "1-in-10 feature identification (chance=10%)",
+    "method2": "5-in-10 text snippet matching (chance=50%)",
+    "method_d1": "1-in-10 description accuracy — given feature evidence, pick correct description (chance=10%); per-feature, slug-level (independent of grouping condition / min_group_size)",
+    "method_d2": "5-in-10 description snippet match — given description, pick activating snippets (chance=50%); per-feature, slug-level",
+    "aggregation": "per-group run-level means, then mean ± stderr across runs",
+    "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
+    "conditions": {
+      "random": "ours-full groups, features shuffled across them",
+      "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
+      "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
+      "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+      "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential features were fed to grouping (50 = phase 1 only). Phase 3 still runs on top."
+    }
+  },
+  "conditions": {
+    "random": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.16,
+              "stderr_accuracy": 0.1166,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.05,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "know / knew",
+              "mean_accuracy": 0.24,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 0.05,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.05,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "song / music",
+              "mean_accuracy": 0.32,
+              "stderr_accuracy": 0.1356,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.1814,
+            "stderr_accuracy": 0.054
+          },
+          "total_trials": 160
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.1095,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "know / knew",
+              "mean_accuracy": 0.4,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.12,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "song / music",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.1166,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.4971,
+            "stderr_accuracy": 0.0379
+          },
+          "total_tasks": 35
+        }
+      },
+      "attribution_coverage": 0.3654,
+      "n_groups_total": 8,
+      "n_groups_valid": 7
+    },
+    "human": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "ends of NPs, upweights verbs",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "ends of phrases",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "knew",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say \"was\"",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "say a verb",
+              "mean_accuracy": 0.1333,
+              "stderr_accuracy": 0.1333,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "sentential verbs (say a verb)",
+              "mean_accuracy": 0.6667,
+              "stderr_accuracy": 0.1054,
+              "n_runs": 5,
+              "total_trials": 15
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.4133,
+            "stderr_accuracy": 0.1685
+          },
+          "total_trials": 85
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "ends of NPs, upweights verbs",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "ends of phrases",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "knew",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say \"was\"",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say a verb",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "sentential verbs (say a verb)",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.66,
+            "stderr_accuracy": 0.0544
+          },
+          "total_tasks": 30
+        }
+      },
+      "attribution_coverage": 0.0316,
+      "n_groups_total": 6,
+      "n_groups_valid": 6
+    },
+    "ours-no-reconciliation": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.0612,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "knew/knowing",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.95,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "song/music",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.91,
+            "stderr_accuracy": 0.0292
+          },
+          "total_trials": 160
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "knew/knowing",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "song/music",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.72,
+            "stderr_accuracy": 0.0501
+          },
+          "total_tasks": 35
+        }
+      },
+      "attribution_coverage": 0.3666,
+      "n_groups_total": 10,
+      "n_groups_valid": 7
+    },
+    "ours-full": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.85,
+              "stderr_accuracy": 0.0612,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "know / knew",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.0612,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "song / music",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.9071,
+            "stderr_accuracy": 0.0306
+          },
+          "total_trials": 160
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "content nouns",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "degree adverbs",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "know / knew",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "musical instruments",
+              "mean_accuracy": 0.64,
+              "stderr_accuracy": 0.172,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say well",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say would",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.1356,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "song / music",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.1855,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.6629,
+            "stderr_accuracy": 0.0537
+          },
+          "total_tasks": 35
+        }
+      },
+      "attribution_coverage": 0.3654,
+      "n_groups_total": 8,
+      "n_groups_valid": 7
+    }
+  },
+  "description_metrics": {
+    "d1": {
+      "macro_avg": {
+        "mean_accuracy": 0.76,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 250
+    },
+    "d2": {
+      "macro_avg": {
+        "mean_accuracy": 0.8048,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 250
+    }
+  }
+}

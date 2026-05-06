@@ -1,0 +1,16 @@
+{
+  "d1": {
+    "macro_avg": {
+      "mean_accuracy": 0.628,
+      "stderr_accuracy": 0.0
+    },
+    "total_trials": 250
+  },
+  "d2": {
+    "macro_avg": {
+      "mean_accuracy": 0.828,
+      "stderr_accuracy": 0.0
+    },
+    "total_tasks": 250
+  }
+}

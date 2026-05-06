@@ -1,0 +1,504 @@
+{
+  "prompt": "<bos>La estación después de la primavera se llama el",
+  "timestamp": "2026-05-06T03:29:44Z",
+  "n_runs": 5,
+  "min_group_size": 2,
+  "difficulty": "medium",
+  "design": {
+    "method1": "1-in-10 feature identification (chance=10%)",
+    "method2": "5-in-10 text snippet matching (chance=50%)",
+    "method_d1": "1-in-10 description accuracy — given feature evidence, pick correct description (chance=10%); per-feature, slug-level (independent of grouping condition / min_group_size)",
+    "method_d2": "5-in-10 description snippet match — given description, pick activating snippets (chance=50%); per-feature, slug-level",
+    "aggregation": "per-group run-level means, then mean ± stderr across runs",
+    "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
+    "conditions": {
+      "random": "ours-full groups, features shuffled across them",
+      "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
+      "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
+      "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+      "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential features were fed to grouping (50 = phase 1 only). Phase 3 still runs on top."
+    }
+  },
+  "conditions": {
+    "random": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 125
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_tasks": 25
+        }
+      },
+      "attribution_coverage": 0.1744,
+      "n_groups_total": 5,
+      "n_groups_valid": 5
+    },
+    "human": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Spanish text",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "activates before seasons",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "activates before seasons / downweights summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "months",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "predict summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "romance language articles",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "seasons",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "weather",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 180
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Spanish text",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "activates before seasons",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "activates before seasons / downweights summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "months",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "predict summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "romance language articles",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "seasons",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "weather",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_tasks": 40
+        }
+      },
+      "attribution_coverage": 0.0651,
+      "n_groups_total": 8,
+      "n_groups_valid": 8
+    },
+    "ours-no-reconciliation": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Spanish UI/navigation",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Spanish articles/determiners",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "avoid English 'summer'",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "periodic time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 195
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Spanish UI/navigation",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Spanish articles/determiners",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "avoid English 'summer'",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "periodic time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_tasks": 40
+        }
+      },
+      "attribution_coverage": 0.4141,
+      "n_groups_total": 8,
+      "n_groups_valid": 8
+    },
+    "ours-full": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_trials": 125
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "month names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say season",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say summer",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "season names",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "time expressions",
+              "mean_accuracy": 0.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.0,
+            "stderr_accuracy": 0.0
+          },
+          "total_tasks": 25
+        }
+      },
+      "attribution_coverage": 0.1744,
+      "n_groups_total": 5,
+      "n_groups_valid": 5
+    }
+  },
+  "description_metrics": {
+    "d1": {
+      "macro_avg": {
+        "mean_accuracy": 0.0,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 250
+    },
+    "d2": {
+      "macro_avg": {
+        "mean_accuracy": 0.0,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 250
+    }
+  }
+}

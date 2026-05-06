@@ -117,15 +117,12 @@ def run_one(
     proc = subprocess.run(
         [sys.executable, str(PIPELINE_SCRIPT)],
         env=env,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
+        stdout=None,
+        stderr=None,
         cwd=str(PACKAGE_DIR),
     )
     if proc.returncode != 0:
         log.error("validate_groups failed for %s @ size=%d (rc=%d)", slug, min_group_size, proc.returncode)
-        log.error("stderr tail:\n%s", proc.stderr[-1500:])
         return None
     if not report_path.exists():
         log.error("Report missing after run: %s", report_path)

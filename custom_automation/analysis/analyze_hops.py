@@ -356,9 +356,13 @@ def detect_intermediate_hop(
     supernodes = parse_supernodes(graph)
     matching_groups = []
     matching_node_ids: set[str] = set()
+    _SUPPRESS_PREFIXES = ("suppress ", "anti-", "anti ", "demote ", "inhibit ", "avoid ", "repress ")
     prefix_matches: list[dict] = []
     for name, node_ids in supernodes:
         if name.startswith("Emb:") or name.startswith("Output:"):
+            continue
+        # Skip suppression groups — they are opposite-role and should not count as hop found
+        if any(name.lower().startswith(p) for p in _SUPPRESS_PREFIXES):
             continue
         for concept in concepts:
             if concept_matches_text(concept, name):

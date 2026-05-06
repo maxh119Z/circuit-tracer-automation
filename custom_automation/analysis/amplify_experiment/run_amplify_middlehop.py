@@ -116,8 +116,13 @@ def find_middlehop_features(graph: dict, intermediate_concept: str,
         # Short concepts (e.g. "Iowa"): fall back to full substring match
         concept_words = {intermediate_concept.lower()}
 
+    _SUPPRESS_PREFIXES = ("suppress ", "anti-", "anti ", "demote ", "inhibit ", "avoid ", "repress ")
+
     def _matches(g: str) -> bool:
         if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
+            return False
+        # Never match suppression groups — they have opposite causal role
+        if any(g.lower().startswith(p) for p in _SUPPRESS_PREFIXES):
             return False
         g_lower = g.lower()
         g_words = {w for w in g_lower.split() if len(w) > 5}

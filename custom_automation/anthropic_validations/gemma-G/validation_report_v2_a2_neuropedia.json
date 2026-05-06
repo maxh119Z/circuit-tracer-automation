@@ -1,0 +1,518 @@
+{
+  "prompt": "<bos>The International Advanced Security Group (IAS",
+  "timestamp": "2026-05-06T02:27:02Z",
+  "n_runs": 5,
+  "min_group_size": 2,
+  "difficulty": "medium",
+  "design": {
+    "method1": "1-in-10 feature identification (chance=10%)",
+    "method2": "5-in-10 text snippet matching (chance=50%)",
+    "method_d1": "1-in-10 description accuracy — given feature evidence, pick correct description (chance=10%); per-feature, slug-level (independent of grouping condition / min_group_size)",
+    "method_d2": "5-in-10 description snippet match — given description, pick activating snippets (chance=50%); per-feature, slug-level",
+    "aggregation": "per-group run-level means, then mean ± stderr across runs",
+    "neg_sources": "medium=Ungrouped/unassigned features (excluding Emb/Output)",
+    "conditions": {
+      "random": "ours-full groups, features shuffled across them",
+      "human": "manual_groups.json — human labels from Neuronpedia share URL supernodes",
+      "ours-full": "auto pipeline output after phase-3 reconciliation (no feature cap)",
+      "ours-no-reconciliation": "auto pipeline output before phase-3 (snapshot)",
+      "ours-cap<N>": "phase-2 cap sweep variant — only the top N most influential features were fed to grouping (50 = phase 1 only). Phase 3 still runs on top."
+    }
+  },
+  "conditions": {
+    "random": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Proper names & titles",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 0.1,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.08,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.1267,
+            "stderr_accuracy": 0.0371
+          },
+          "total_trials": 60
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Proper names & titles",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.1166,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.5333,
+            "stderr_accuracy": 0.0267
+          },
+          "total_tasks": 15
+        }
+      },
+      "attribution_coverage": 0.1557,
+      "n_groups_total": 3,
+      "n_groups_valid": 3
+    },
+    "human": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "\"group\"",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "Activates on ( before acronym",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Activates on ( before acronym / upweights G*",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.1225,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "Predict tokens starting with G",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 15
+            },
+            {
+              "group": "Tokens starting with G",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "all caps",
+              "mean_accuracy": 0.2,
+              "stderr_accuracy": 0.0935,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "first token of acronyms",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "tokens followed by G",
+              "mean_accuracy": 0.35,
+              "stderr_accuracy": 0.1,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "tokens of acronyms in parentheses",
+              "mean_accuracy": 0.44,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.6033,
+            "stderr_accuracy": 0.1099
+          },
+          "total_trials": 180
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "\"group\"",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Activates on ( before acronym",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Activates on ( before acronym / upweights G*",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Predict tokens starting with G",
+              "mean_accuracy": 0.48,
+              "stderr_accuracy": 0.12,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Tokens starting with G",
+              "mean_accuracy": 0.76,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "all caps",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "first token of acronyms",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "tokens followed by G",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "tokens of acronyms in parentheses",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.7244,
+            "stderr_accuracy": 0.0439
+          },
+          "total_tasks": 45
+        }
+      },
+      "attribution_coverage": 0.0942,
+      "n_groups_total": 10,
+      "n_groups_valid": 9
+    },
+    "ours-no-reconciliation": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Acronym chunk",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "All-caps acronyms",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Capitalized token",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "G letter/prefix",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Heading/Title start",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Proper-name start",
+              "mean_accuracy": 0.9,
+              "stderr_accuracy": 0.0612,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0632,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "parenthetical acronym",
+              "mean_accuracy": 0.96,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "say parenthetical acronym",
+              "mean_accuracy": 0.95,
+              "stderr_accuracy": 0.05,
+              "n_runs": 5,
+              "total_trials": 20
+            },
+            {
+              "group": "say single-letter token",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "subword fragments",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.8942,
+            "stderr_accuracy": 0.0394
+          },
+          "total_trials": 270
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Acronym chunk",
+              "mean_accuracy": 0.88,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "All-caps acronyms",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Capitalized token",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "G letter/prefix",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Heading/Title start",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.1744,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Proper-name start",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.04,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "parenthetical acronym",
+              "mean_accuracy": 0.72,
+              "stderr_accuracy": 0.102,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say parenthetical acronym",
+              "mean_accuracy": 0.8,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "say single-letter token",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "subword fragments",
+              "mean_accuracy": 0.6,
+              "stderr_accuracy": 0.0894,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.72,
+            "stderr_accuracy": 0.0438
+          },
+          "total_tasks": 60
+        }
+      },
+      "attribution_coverage": 0.6362,
+      "n_groups_total": 17,
+      "n_groups_valid": 12
+    },
+    "ours-full": {
+      "medium": {
+        "method1": {
+          "groups": [
+            {
+              "group": "Proper names & titles",
+              "mean_accuracy": 0.52,
+              "stderr_accuracy": 0.049,
+              "n_runs": 5,
+              "total_trials": 25
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 10
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.84,
+              "stderr_accuracy": 0.0748,
+              "n_runs": 5,
+              "total_trials": 25
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.7867,
+            "stderr_accuracy": 0.1411
+          },
+          "total_trials": 60
+        },
+        "method2": {
+          "groups": [
+            {
+              "group": "Proper names & titles",
+              "mean_accuracy": 0.56,
+              "stderr_accuracy": 0.098,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "Security",
+              "mean_accuracy": 1.0,
+              "stderr_accuracy": 0.0,
+              "n_runs": 5,
+              "total_trials": 5
+            },
+            {
+              "group": "group",
+              "mean_accuracy": 0.68,
+              "stderr_accuracy": 0.08,
+              "n_runs": 5,
+              "total_trials": 5
+            }
+          ],
+          "macro_avg": {
+            "mean_accuracy": 0.7467,
+            "stderr_accuracy": 0.1313
+          },
+          "total_tasks": 15
+        }
+      },
+      "attribution_coverage": 0.1557,
+      "n_groups_total": 3,
+      "n_groups_valid": 3
+    }
+  },
+  "description_metrics": {
+    "d1": {
+      "macro_avg": {
+        "mean_accuracy": 0.792,
+        "stderr_accuracy": 0.0
+      },
+      "total_trials": 250
+    },
+    "d2": {
+      "macro_avg": {
+        "mean_accuracy": 0.7832,
+        "stderr_accuracy": 0.0
+      },
+      "total_tasks": 250
+    }
+  }
+}

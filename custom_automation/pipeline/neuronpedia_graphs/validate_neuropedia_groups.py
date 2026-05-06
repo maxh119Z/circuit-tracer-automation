@@ -470,6 +470,7 @@ async def run_m1_trial(
             )
             parsed = resp.choices[0].message.parsed
             picked = parsed.selected_index if parsed else -1
+            log.info("[M1] %s: picked=%s correct=%d parsed=%s", group_name, picked, correct_idx, parsed)
         except Exception as exc:
             log.warning("[M1] %s: API error — %s", group_name, exc)
             picked = -1
@@ -497,8 +498,10 @@ async def run_m2_task(
             )
             parsed = resp.choices[0].message.parsed
             if parsed is None:
+                log.warning("[M2] %s: parsed=None", group_name)
                 return 0.0
             raw_indices = parsed.selected_indices
+            log.info("[M2] %s: raw_indices=%s actual=%s", group_name, raw_indices, actual_positive_indices)
         except Exception as exc:
             log.warning("[M2] %s: API error — %s", group_name, exc)
             return 0.0
