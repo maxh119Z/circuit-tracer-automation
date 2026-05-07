@@ -1,34 +1,6 @@
 """
 run_constrained_interventions.py — Causal validation via constrained patching on intermediate-hop features.
 
-Identical to run_interventions.py except the intervention pass uses
-constrained_layers=range(n_layers), matching the paper's primary validation
-method (direct effects / constrained patching) rather than iterative patching.
-
-For each (slug, grouping variant) in ground_truth.csv this script:
-  1. Loads the processed attribution graph and the feature_groups artifact.
-  2. Identifies transcoder features belonging to the supernode group matching the
-     intermediate-hop concept (e.g. the "Texas" group for a Dallas prompt).
-     Falls back to clerp string matching if no groups artifact is found.
-  3. Runs a baseline forward pass (return_activations=True) to get each feature's
-     default activation value.
-  4. Steers those features negatively using scaling_factor * default_activation as
-     the intervention value — matching the multiplicative approach from the paper
-     and tutorial (NOT zero-ablation, which ignores baseline contributions).
-  5. The intervention pass uses constrained_layers=range(n_layers), which freezes
-     all attention patterns, LayerNorm denominators, and all other transcoder
-     outputs at their baseline values. Only the steered features' own decoder
-     vectors are allowed to affect the residual stream — no second-order knock-on
-     effects from downstream transcoders. This is the paper's primary method.
-  6. Compares the correct-answer token's rank and probability before and after.
-     A significant drop indicates those features directly support the prediction.
-
-Difference from run_interventions.py (iterative patching):
-  - Iterative: intervention effects propagate through all downstream transcoders,
-    conflating direct and indirect causal paths.
-  - Constrained (this file): only the steered features' decoder contributions reach
-    the output; all other model components are frozen at baseline.
-
 Methodology follows:
   https://transformer-circuits.pub/2025/attribution-graphs/methods.html
   https://github.com/decoderesearch/circuit-tracer/blob/main/demos/circuit_tracing_tutorial.ipynb

@@ -1,28 +1,6 @@
 """
 explore_interesting_graphs.py — Open-ended exploration to surface surprising graphs.
-
-Pipeline
---------
-1. Load all processed graph JSONs from test_graphs/.
-2. For each graph compute structural metrics:
-     model_confidence    : top logit probability  (high = clean, confident model)
-     longest_path_length : longest path through high-influence transcoder nodes in the DAG
-     num_transcoder_nodes: total transcoder features in the graph
-3. Filter to "clean" graphs — model must be confident (above --min_confidence).
-   Rationale (mentor): we don't want uncertain outputs.  The interesting thing is
-   clean, confident behaviour whose *internal* nodes are surprising.
-4. Rank clean graphs by longest_path_length (deeper reasoning chains = more to explain).
-5. For the top --top_k candidates call an LLM judge:
-     Input : prompt, predicted answer, supernode group names (or top clerp labels)
-     Output: is_interesting (bool), reason (str), score (1-5)
-6. Write artifacts/interesting_graphs.csv and artifacts/interesting_graphs.md.
-
-Longest-path algorithm
-----------------------
-The attribution graph is a DAG: edges flow from embedding nodes (layer "E") through
-transcoder feature nodes (layers 0..N) to logit nodes (layer N+1).
-We find the longest path only through transcoder nodes whose influence ≥ threshold,
-using topological order (nodes sorted by layer index).
+writes artifacts/interesting_graphs.csv and artifacts/interesting_graphs.md.
 
 Usage
 -----

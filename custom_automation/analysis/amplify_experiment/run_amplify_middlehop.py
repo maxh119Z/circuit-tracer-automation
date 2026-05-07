@@ -1,21 +1,12 @@
 """
 run_amplify_middlehop.py — Amplify intermediate-hop features and check if p(correct answer) rises.
 
-Candidates: rows in hop_analysis.csv where
-  - model_correct = False
-  - hop_found = True  (the intermediate concept has a matching supernode group)
-
 For each candidate:
   1. Load the graph and feature_groups artifact.
   2. Find transcoder features whose supernode group matches the intermediate concept
      (e.g. "Texas" for a capitals question about a Texas city).
   3. Run baseline forward pass, then amplify those features by AMPLIFY_FACTOR.
   4. Check whether p(correct answer) increases and/or model flips to correct.
-
-Rationale (Nathan Hu's suggestion):
-  Amplifying the intermediate state node (Texas) should cascade — the Austin
-  features that depend on Texas will also activate more strongly, ideally
-  raising p(Austin) even though we never touched the answer features directly.
 
 Writes:
   analysis/amplify_experiment/amplify_middlehop_results.csv

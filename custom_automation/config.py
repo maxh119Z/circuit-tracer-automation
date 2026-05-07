@@ -14,10 +14,6 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-# Windows defaults sys.stdout/sys.stderr to cp1252, which crashes on tokens
-# containing characters like the SentencePiece word-boundary marker U+2581 ("▁")
-# or Spanish accents in LLM-generated group names. Force UTF-8 with replacement
-# so logs and prints are safe everywhere this package runs.
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
         try:

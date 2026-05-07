@@ -4,15 +4,8 @@ analyze_hops.py — Intermediate hop detection across multi-hop attribution grap
 For each prompt in ground_truth.csv, loads its processed graph JSON and checks:
   1. What the model predicted (top logit token).
   2. Whether the model got it right.
-  3. Whether intermediate-hop features are present in the graph — detectable
-     either in individual node clerp descriptions or in supernode group names.
+  3. Whether intermediate-hop features are present in the graph — detectable in supernode group names.
   4. How strong those intermediate-hop features are (mean influence score).
-
-MQuAKE multi-hop validation (when using ground_truth_mquake.csv):
-  For each full multi-hop question, the attribution graph is used to predict
-  the longest sub-chain the model would get right (predicted_max_hop).  This
-  is compared against the actual deepest sub-question answered correctly
-  (ground_truth_max_hop), computed from the sub-question graphs.
 
 Outputs:
   - artifacts/hop_analysis.csv          — one row per (slug, variant)

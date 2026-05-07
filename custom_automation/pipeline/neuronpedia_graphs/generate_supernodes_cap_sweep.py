@@ -2,32 +2,6 @@
 Phase-2 cap sweep — produce supernode groupings at multiple feature caps from
 ONE shared phase 1 + phase 2 run.
 
-Background: the standard pipeline groups every post-prune feature in phase 2.
-This driver lets us study how the pipeline behaves when the operator caps the
-total number of features fed to grouping (50 = phase 1 only, 100 = phase 1 +
-one batch of 50, 150 = +2 batches, 200 = +3 batches, unlimited = everything).
-
-Apples-to-apples by construction:
-  - Phase 1 runs once (same seed features → same initial groups for every cap).
-  - Phase 2 runs once over enough features for the largest cap; each batch is
-    independent (sees only phase-1 groups), so prefixes of the batch list are
-    valid stitches for smaller caps.
-  - Phase 3 runs FRESH per cap on its stitched snapshot (no interleaving — the
-    cap=100 phase-3 result is NOT fed into the cap=150 stitch).
-
-For each cap N this writes:
-  feature_groups_<desc>_<group>_cap<N>.json
-  feature_groups_<desc>_<group>_cap<N>_pre3.json
-
-The "unlimited" cap writes to the CANONICAL filenames (no suffix) so existing
-validation tooling continues to treat it as `ours-full`.
-
-Env vars:
-  CAPS              Comma-separated cap values. "unlimited" is recognised.
-                    Default: "50,100,150,200,unlimited"
-  CURRENT_SLUG      Routes artifacts per-slug (same as the standard pipeline).
-  OPENAI_API_KEY    Required.
-
 Usage:
     OPENAI_API_KEY=sk-... CURRENT_SLUG=gemma-G \
         CAPS=50,100,150,200,unlimited \

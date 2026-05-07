@@ -13,13 +13,6 @@ For each row in the CSV, this runs the steps needed before validation:
 Each step is skipped when its output already exists, so re-runs resume cleanly.
 After this finishes, slugs are ready for `run_validation_sweep.py`.
 
-CSV format (header required):
-    slug,share_url[,notes]
-
-`slug` is the local artifact dir name (your choice). `share_url` is any of
-the three Neuronpedia "Share" URL variants — Normal, iFrame, or HTML embed.
-`notes` is free-form (ignored by this script).
-
 Quick start (run all 16 Anthropic demo graphs):
     cd <repo_root>
     OPENAI_API_KEY=sk-... python custom_automation/pipeline/neuronpedia_graphs/batch_fetch_neuronpedia.py \

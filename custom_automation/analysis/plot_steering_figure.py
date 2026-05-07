@@ -3,9 +3,9 @@ plot_steering_figure.py — Figure 2: causal steering on intermediate-hop supern
 
 Loads:
   analysis/amplify_experiment/amplify_middlehop_results.csv  (+2× constrained amplification)
-  intervention/constrained_intervention_results.csv           (−2× constrained suppression)
+  intervention/constrained_intervention_results.csv           (0× constrained suppression)
 
-Both experiments use constrained patching (direct effects), so comparisons are apples-to-apples.
+Both experiments use constrained patching.
 
 p(correct) is approximated by the probability of the first subword token of the correct answer.
 For multi-token answers this is an upper bound on the true sequence probability; we note this

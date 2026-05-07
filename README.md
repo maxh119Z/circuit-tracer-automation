@@ -23,6 +23,10 @@ circuit-tracer attribute --prompt "The capital of the state containing Oakland i
 ```bash
 cd custom_automation
 
+# Recommended
+# Run all 4 grouping variants without validation.
+RUN_VALIDATE=false ./reproduce.sh core
+
 # Fetch activations only (no API key needed — do this first or core.)
 ./reproduce.sh fetch
 
@@ -31,9 +35,6 @@ cd custom_automation
 
 # Run all 4 grouping variants for comparison (reuses existing descriptions)
 ./reproduce.sh all-groups
-
-# Run all 4 grouping variants without validation.
-RUN_VALIDATE=false ./reproduce.sh all-groups
 
 # Full pipeline in one shot; 1 grouping variant (a2), v2 description generation.
 ./reproduce.sh core
@@ -119,20 +120,6 @@ In multi-variant mode each (prompt × grouping variant) combo gets its own viewe
 | `compare` | — | Read all validation reports in `artifacts/` → write `artifacts/comparison.md`. |
 
 Custom pruning threshold: `./reproduce.sh core 0.40`
-
-## Variants
-
-**Description variants** (`DESCRIPTION_VARIANT`):
-- `v2` *(default)* — label + elaboration, balanced specificity
-
-**Grouping variants** (`GROUPING_VARIANT`):
-All variants share the same say-X / X-itself hard constraint. They differ only in specificity bias:
-- `a0` *(default)* — neutral: use whatever granularity best explains the output
-- `a1` — pull-in: prefer assigning borderline features over Ungrouped
-- `a2` — merge-biased: prefer merging same-role groups
-- `a3` — experimental smart: reasons from first principles about whether each group helps explain the output
-
-Artifacts are namespaced by both variants, e.g. `feature_groups_v2_a0.json`.
 
 ## Pipeline Steps
 
