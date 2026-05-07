@@ -77,6 +77,7 @@ def load_suppress(path: Path) -> pd.DataFrame:
 
 
 Y_MIN, Y_MAX = 0.125, 4.0
+LABEL_FRAC_FLOOR = 0.07   # minimum axes-fraction for label position (avoids bottom tick overlap)
 
 
 def plot_panel(
@@ -101,21 +102,33 @@ def plot_panel(
         valid = ratios[ratios > 0]
         if len(valid):
             gm = float(np.exp(np.mean(np.log(valid))))
-            gm_clipped = np.clip(gm, Y_MIN, Y_MAX)
+            gm_clipped = float(np.clip(gm, Y_MIN, Y_MAX))
             ax.plot([x - 0.18, x + 0.18], [gm_clipped, gm_clipped],
                     color="black", lw=1.8, ls="--", zorder=4)
-            ax.text(x, 0.97, f"gm={gm:.2g}×",
-                    ha="center", va="top", fontsize=6, color="black",
-                    transform=ax.get_xaxis_transform())
 
-        xform = ax.get_xaxis_transform()
-        if n_below:
-            ax.text(x + 0.22, Y_MIN, f"$\\downarrow${n_below} below",
-                    ha="left", va="bottom", fontsize=6, color="#888888")
-        if n_above:
-            ax.text(x, 0.98, f"$\\uparrow${n_above} above",
-                    ha="center", va="top", fontsize=6, color="#888888",
-                    transform=xform, clip_on=False)
+            log_min = np.log10(Y_MIN)
+            log_max = np.log10(Y_MAX)
+            gm_frac = (np.log10(gm_clipped) - log_min) / (log_max - log_min)
+            # Floor label position so it never overlaps the bottom tick
+            label_base = max(gm_frac, LABEL_FRAC_FLOOR)
+            line_h = 0.06
+            xform = ax.get_xaxis_transform()
+
+            ax.text(x + 0.20, label_base, f"gm={gm:.2g}×",
+                    ha="left", va="center", fontsize=6, color="black",
+                    transform=xform, zorder=5)
+            stack = 1
+            if n_below:
+                ax.text(x + 0.20, label_base + stack * line_h,
+                        f"↓{n_below} below",
+                        ha="left", va="center", fontsize=6, color="#888888",
+                        transform=xform, zorder=5)
+                stack += 1
+            if n_above:
+                ax.text(x + 0.20, label_base + stack * line_h,
+                        f"↑{n_above} above",
+                        ha="left", va="center", fontsize=6, color="#888888",
+                        transform=xform, zorder=5)
 
     ax.axhline(1.0, color="gray", lw=0.7, ls=":", zorder=2)
     ax.set_yscale("log")
@@ -144,7 +157,7 @@ def main() -> None:
     amp_df = load_amplify(AMP_CSV)
     sup_df = load_suppress(SUP_CSV)
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, sharey=True)
+    fig, (ax1, ax2) = plt.subplots(1, 2)
 
     plot_panel(ax1, amp_df[amp_df["model_correct"]], sup_df[sup_df["model_correct"]],
                "correct prompts", show_ylabel=True)

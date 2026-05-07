@@ -192,6 +192,12 @@ custom_automation/artifacts/
 # Analysis results (CSVs, markdown reports)
 custom_automation/analysis/results/
 custom_automation/analysis/amplify_experiment/amplify_results.csv
+
+# Cross-model validation outputs
+gemini_validations/
+custom_automation/anthropic_validations/
+custom_automation/gemini_validations/
+custom_automation/analysis/results/validation_sweep*.csv
 custom_automation/analysis/amplify_experiment/amplify_results.md
 custom_automation/analysis/amplify_experiment/amplify_constrained_results.csv
 custom_automation/analysis/amplify_experiment/amplify_constrained_results.md

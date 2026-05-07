@@ -154,7 +154,7 @@ class Phase3Output(BaseModel):
     renames: list[RenameAction] = Field(default_factory=list, description="Groups to rename.")
     merges: list[MergeAction] = Field(default_factory=list, description="Groups to merge together.")
     reassignments: list[ReassignAction] = Field(default_factory=list, description="Individual features to move between groups.")
-    dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve (members become Ungrouped). Use for: (1) Grammar kill — names describing syntactic roles, token patterns, prefix fragments, or suppression. (2) Relevance drop — concepts with no connection to the prompt's reasoning chain or predicted output.")
+    dropped_groups: list[str] = Field(default_factory=list, description="Groups to dissolve (members become Ungrouped). Use for: (1) Grammar kill — names describing syntactic roles, token patterns, or prefix fragments. (2) Relevance drop — concepts with no connection to the prompt's reasoning chain or predicted output. Do NOT dissolve suppression groups (suppress X, anti-X, etc.) — consolidate them instead.")
 
 # ---------------------------------------------------------------------------
 # Grouping prompt variants (a0–a3)
@@ -847,7 +847,7 @@ Your job is limited to five things only:
 2. ALTERNATE SENSE: A word has an alternate sense when it shares a surface form with the relevant concept but means something different given this prompt — this includes any domain (financial, architectural, political, etc.) that the prompt does not require. Example: "notes (music)" or "musical notes" when the prompt asks about note-taking. If alternate-sense groups are present, merge them together into a single fallback group named "[concept] (general)" — do not touch the correct-sense group. Do not split the correct-sense group to create a (general) variant; only create "[concept] (general)" by merging existing alternate-sense groups. If no alternate-sense groups exist, take no action. This applies to genuine alternate senses only — do not use this to merge a specific named group into a broader same-sense group. '[concept] (general)' is strictly for features activating on a genuinely different dictionary definition (e.g. 'bank' as a financial institution vs. a riverbank) — not the same concept in different contexts or positions. 
 
 
-Lastly, this is important, groups such as “suppress X" or “demote X” or “anti-X” or “avoid X” should be grouped into the broader concept “X” group when it exists. This suppression versus promoting distinction is commonly noise and is thus irrelevant. 
+Lastly, suppression-flavored groups (“suppress X”, “demote X”, “anti-X”, “avoid X”, “inhibit X”) must never be merged into the concept group “X” — they represent opposite causal roles. If multiple suppression variants for the same concept X exist, consolidate them into one group named “suppress X”. Always use “suppress X” as the canonical name.
 
 
 3. RENAME: Are any group names unclear, longer than 5 words, or use jargon? Rename for clarity. A rename must not lose specificity, promote a structural name, or flip a concept group to a say-X group or vice versa. Do not drop intermediate reasoning steps from a group name.
@@ -971,24 +971,25 @@ def write_cost_csv_row(start_time: float, label: str | None = None) -> None:
     with open(COSTS_CSV, "a", newline="", encoding="utf-8") as f:
         w = _csv.DictWriter(f, fieldnames=[
             "timestamp", "graph", "grouping_variant", "description_variant",
-            "api_calls", "input_tokens", "output_tokens", "est_cost_usd", "wall_time_s",
+            "api_calls", "input_tokens", "output_tokens", "total_tokens", "est_cost_usd", "wall_time_s",
         ])
         if write_header:
             w.writeheader()
         w.writerow({
-            "timestamp":          datetime.now().isoformat(timespec="seconds"),
-            "graph":              graph_label,
-            "grouping_variant":   GROUPING_VARIANT,
+            "timestamp":           datetime.now().isoformat(timespec="seconds"),
+            "graph":               graph_label,
+            "grouping_variant":    GROUPING_VARIANT,
             "description_variant": DESCRIPTION_VARIANT,
-            "api_calls":          api_calls,
-            "input_tokens":       in_tok,
-            "output_tokens":      out_tok,
-            "est_cost_usd":       round(est_cost, 5),
-            "wall_time_s":        round(elapsed, 1),
+            "api_calls":           api_calls,
+            "input_tokens":        in_tok,
+            "output_tokens":       out_tok,
+            "total_tokens":        in_tok + out_tok,
+            "est_cost_usd":        round(est_cost, 5),
+            "wall_time_s":         round(elapsed, 1),
         })
     log.info(
-        "Cost: %d calls | %d in / %d out tokens | $%.4f | %.1fs → %s",
-        api_calls, in_tok, out_tok, est_cost, elapsed, COSTS_CSV,
+        "Cost: %d calls | %d in + %d out = %d total tokens | $%.4f | %.1fs → %s",
+        api_calls, in_tok, out_tok, in_tok + out_tok, est_cost, elapsed, COSTS_CSV,
     )
 
 

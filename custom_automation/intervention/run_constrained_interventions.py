@@ -117,8 +117,13 @@ def find_hop_features(graph: dict, intermediate_concept: str, feature_groups: di
     node_lookup: dict[str, dict] = {str(n.get("node_id", "")): n for n in graph.get("nodes", [])}
     concept_words = {w for w in intermediate_concept.lower().split() if len(w) > 2}
 
+    _SUPPRESS_PREFIXES = ("suppress ", "anti-", "anti ", "demote ", "inhibit ", "avoid ", "repress ")
+
     def _group_matches(g: str) -> bool:
         if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
+            return False
+        # Never match suppression groups — they have opposite causal role
+        if any(g.lower().startswith(p) for p in _SUPPRESS_PREFIXES):
             return False
         g_lower = g.lower()
         g_words = {w for w in g_lower.split() if len(w) > 2}

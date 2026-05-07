@@ -69,8 +69,10 @@ def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
                 continue
             if row.get("hop_found", "").lower() != "true":
                 continue
+            # Filter to 2-hop only; treat empty num_hops (e.g. Capitals) as 2-hop
             try:
-                if int(row.get("num_hops") or 0) != 2:
+                num_hops = int(row.get("num_hops") or 2)
+                if num_hops != 2:
                     continue
             except (ValueError, TypeError):
                 continue
@@ -116,8 +118,13 @@ def find_middlehop_features(graph: dict, intermediate_concept: str,
         # Short concepts (e.g. "Iowa"): fall back to full substring match
         concept_words = {intermediate_concept.lower()}
 
+    _SUPPRESS_PREFIXES = ("suppress ", "anti-", "anti ", "demote ", "inhibit ", "avoid ", "repress ")
+
     def _matches(g: str) -> bool:
         if g in ("Ungrouped",) or g.startswith("Output:") or g.startswith("Emb:"):
+            return False
+        # Never match suppression groups — they have opposite causal role
+        if any(g.lower().startswith(p) for p in _SUPPRESS_PREFIXES):
             return False
         g_lower = g.lower()
         g_words = {w for w in g_lower.split() if len(w) > 5}
