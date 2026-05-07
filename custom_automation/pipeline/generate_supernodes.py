@@ -971,24 +971,25 @@ def write_cost_csv_row(start_time: float, label: str | None = None) -> None:
     with open(COSTS_CSV, "a", newline="", encoding="utf-8") as f:
         w = _csv.DictWriter(f, fieldnames=[
             "timestamp", "graph", "grouping_variant", "description_variant",
-            "api_calls", "input_tokens", "output_tokens", "est_cost_usd", "wall_time_s",
+            "api_calls", "input_tokens", "output_tokens", "total_tokens", "est_cost_usd", "wall_time_s",
         ])
         if write_header:
             w.writeheader()
         w.writerow({
-            "timestamp":          datetime.now().isoformat(timespec="seconds"),
-            "graph":              graph_label,
-            "grouping_variant":   GROUPING_VARIANT,
+            "timestamp":           datetime.now().isoformat(timespec="seconds"),
+            "graph":               graph_label,
+            "grouping_variant":    GROUPING_VARIANT,
             "description_variant": DESCRIPTION_VARIANT,
-            "api_calls":          api_calls,
-            "input_tokens":       in_tok,
-            "output_tokens":      out_tok,
-            "est_cost_usd":       round(est_cost, 5),
-            "wall_time_s":        round(elapsed, 1),
+            "api_calls":           api_calls,
+            "input_tokens":        in_tok,
+            "output_tokens":       out_tok,
+            "total_tokens":        in_tok + out_tok,
+            "est_cost_usd":        round(est_cost, 5),
+            "wall_time_s":         round(elapsed, 1),
         })
     log.info(
-        "Cost: %d calls | %d in / %d out tokens | $%.4f | %.1fs → %s",
-        api_calls, in_tok, out_tok, est_cost, elapsed, COSTS_CSV,
+        "Cost: %d calls | %d in + %d out = %d total tokens | $%.4f | %.1fs → %s",
+        api_calls, in_tok, out_tok, in_tok + out_tok, est_cost, elapsed, COSTS_CSV,
     )
 
 

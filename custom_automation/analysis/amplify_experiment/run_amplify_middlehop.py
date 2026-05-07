@@ -69,8 +69,10 @@ def load_candidates(hop_csv: Path, variants: list[str]) -> list[dict]:
                 continue
             if row.get("hop_found", "").lower() != "true":
                 continue
+            # Filter to 2-hop only; treat empty num_hops (e.g. Capitals) as 2-hop
             try:
-                if int(row.get("num_hops") or 0) != 2:
+                num_hops = int(row.get("num_hops") or 2)
+                if num_hops != 2:
                     continue
             except (ValueError, TypeError):
                 continue

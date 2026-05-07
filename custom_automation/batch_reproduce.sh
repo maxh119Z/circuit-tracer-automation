@@ -308,24 +308,31 @@ import csv
 from pathlib import Path
 from datetime import datetime
 batch_start = datetime.fromisoformat("$_BATCH_START_TS")
-total = 0.0
+total_cost = 0.0
+total_calls = 0
+total_in = 0
+total_out = 0
 costs_dir = Path("costs")
 for fname in ["description_costs.csv", "grouping_costs.csv"]:
     p = costs_dir / fname
-    sub = 0.0
+    sub_cost = 0.0; sub_calls = 0; sub_in = 0; sub_out = 0
     if p.exists():
         with open(p) as f:
             for row in csv.DictReader(f):
                 try:
                     if datetime.fromisoformat(row["timestamp"]) >= batch_start:
-                        sub += float(row.get("est_cost_usd", 0))
+                        sub_cost  += float(row.get("est_cost_usd", 0))
+                        sub_calls += int(row.get("api_calls", 0))
+                        sub_in    += int(row.get("input_tokens", 0))
+                        sub_out   += int(row.get("output_tokens", 0))
                 except Exception:
                     pass
-    if sub > 0:
+    if sub_calls > 0:
         label = fname.replace("_costs.csv", "").capitalize()
-        print(f"  Est. {label} cost: \${sub:.4f}")
-    total += sub
-print(f"  Total estimated API cost: \${total:.4f}")
+        print(f"  {label}: {sub_calls} calls | {sub_in:,} in + {sub_out:,} out = {sub_in+sub_out:,} tokens | \${sub_cost:.4f}")
+    total_cost += sub_cost; total_calls += sub_calls; total_in += sub_in; total_out += sub_out
+print(f"  ─────────────────────────────────────────────────────")
+print(f"  Total: {total_calls} API calls | {total_in:,} in + {total_out:,} out = {total_in+total_out:,} tokens | \${total_cost:.4f}")
 PYEOF
     echo "==============================="
 fi
