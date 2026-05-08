@@ -221,6 +221,7 @@ circuit-tracer-automation/
 │   ├── <slug>.json
 │   └── <slug>-<desc>-<gvar>.json
 └── circuit_tracer/                          # Vendored circuit-tracer library
+```
 
 # circuit-tracer
 
