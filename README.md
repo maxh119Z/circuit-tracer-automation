@@ -1,6 +1,15 @@
-# Circuit-tracer-automation
+# LLMs can annotate attribution graphs
+## Circuit-tracer-automation
 
 Custom automation pipeline on top of the [circuit-tracer](https://github.com/safety-research/circuit-tracer) library. Automatically generates feature descriptions, supernodes, and validation scores for an attribution graph.
+
+<img width="1239" height="405" alt="image" src="https://github.com/user-attachments/assets/98ad8e2e-cb0c-4cf0-b5b8-851fa485d545" />
+
+## Abstract
+Attribution graphs are a powerful tool for mechanistic interpretability, but their broader utility is bottlenecked by a hefty final step: manually labeling features and grouping them into semantically coherent supernodes. Building on the open-source \circuittracer{} framework, we present an automated end-to-end pipeline, using LLMs to describe features and discover supernodes. Our pipeline averages around \$0.042 and 96 seconds per graph across 150 graphs. We validate output quality through four autointerp protocols on 15 comparison prompts, where our pipeline matches or exceeds human-level groupings on specificity and sensitivity. On 100 Capitals and 50 MQuAKE queries, our pipeline consistently recovers expected intermediate hops, with suppression and amplification interventions confirming their causal role. Lastly, we deploy our pipeline on 100 open-ended Wikipedia completions, where a simple LLM judge surfaces interesting graphs worth human attention.
+
+## Data
+All data is hosted on HuggingFace: [`circuit-tracer-automation/pipeline_automation`]([https://huggingface.co/datasets/safety-irt/safety-data](https://huggingface.co/datasets/circuit-tracer-automation/pipeline_automation/blob/main/README.md))
 
 ## Setup
 
