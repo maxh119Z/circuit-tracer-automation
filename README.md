@@ -223,6 +223,10 @@ circuit-tracer-automation/
 └── circuit_tracer/                          # Vendored circuit-tracer library
 ```
 
+# Citation
+Coming Soon
+
+# ORIGINAL REPO DESCRIPTION [circuit-tracer](https://github.com/decoderesearch/circuit-tracer)
 # circuit-tracer
 
 This library implements tools for finding circuits using features from (cross-layer) MLP transcoders, as originally introduced by [Ameisen et al. (2025)](https://transformer-circuits.pub/2025/attribution-graphs/methods.html) and [Lindsey et al. (2025)](https://transformer-circuits.pub/2025/attribution-graphs/biology.html).
@@ -358,15 +362,3 @@ The following transcodrs are available for use with `circuit-tracer`; this means
 - Gemma-2 (2B): [PLTs (originally from GemmaScope)](https://huggingface.co/mntss/gemma-scope-transcoders) and CLTs with 2 feature counts: [426K](https://huggingface.co/mntss/clt-gemma-2-2b-426k) and [2.5M](https://huggingface.co/mntss/clt-gemma-2-2b-2.5M)
 - Llama-3.2 (1B): [PLTs](https://huggingface.co/mntss/transcoder-Llama-3.2-1B) and [CLTs](https://huggingface.co/mntss/clt-llama-3.2-1b-524k)
 - Qwen-3 PLTs: for Qwen-3 [0.6B](https://huggingface.co/mwhanna/qwen3-0.6b-transcoders-lowl0), [1.7B](https://huggingface.co/mwhanna/qwen3-1.7b-transcoders-lowl0), [4B](https://huggingface.co/mwhanna/qwen3-4b-transcoders), [8B](https://huggingface.co/mwhanna/qwen3-8b-transcoders), and [14B](https://huggingface.co/mwhanna/qwen3-14b-transcoders-lowl0)
-
-## Cite
-You can cite this library as follows:
-```
-@misc{circuit-tracer,
-  author = {Hanna, Michael and Piotrowski, Mateusz and Lindsey, Jack and Ameisen, Emmanuel},
-  title = {circuit-tracer},
-  howpublished = {\url{https://github.com/safety-research/circuit-tracer}},
-  note = {The first two authors contributed equally and are listed alphabetically.},
-  year = {2025}
-}
-```
