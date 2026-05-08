@@ -1,4 +1,4 @@
-# circuit-tracer-automation
+# Circuit-tracer-automation
 
 Custom automation pipeline on top of the [circuit-tracer](https://github.com/safety-research/circuit-tracer) library. Automatically generates feature descriptions, supernodes, and validation scores for an attribution graph.
 
