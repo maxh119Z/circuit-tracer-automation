@@ -26,7 +26,7 @@ cd custom_automation
 # Full pipeline (one description variant, one grouping variant, with validation)
 ./reproduce.sh core
 
-# Skip validation
+# RECOMMENDED: Skip validation
 RUN_VALIDATE=false ./reproduce.sh core
 
 # Fetch activations only — no API key needed
