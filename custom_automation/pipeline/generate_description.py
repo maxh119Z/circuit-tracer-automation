@@ -1,16 +1,16 @@
 """
 Step 2 — Generate natural-language descriptions for pruned features.
 
-Loads ``pruned_activations.json`` from the artifacts directory (fetch_all_activation_text.py), prompts
-OpenAI's GPT-5-mini model concurrently for each feature, and writes
-``feature_descriptions.json``.
+Loads ``pruned_activations.json`` from the artifacts directory (produced by
+fetch_all_activation_text.py), prompts the configured LLM concurrently for each
+feature, and writes ``feature_descriptions_<DESCRIPTION_VARIANT>.json``.
 
-If the output file already exists, features
-that already have a description are skipped.
+If the output file already exists, features that already have a description
+are skipped.
 
 Usage:
     export OPENAI_API_KEY="sk-..."
-    python add_description.py
+    python custom_automation/pipeline/generate_description.py
 """
 from __future__ import annotations
 

@@ -1,17 +1,19 @@
 """
 Provider-agnostic LLM client factory used by validate_neuropedia_groups.py.
 
-Default (LLM_PROVIDER unset or 'openai'): returns a real `AsyncOpenAI`.
+LLM_PROVIDER selects the backend:
+  'openai'    (default) — real AsyncOpenAI
+  'anthropic'           — Anthropic SDK shim; structured output emulated via
+                          forced tool-use (input_schema = Pydantic JSON schema)
+  'gemini'              — google-genai SDK shim; structured output via native
+                          response_schema=PydanticModel
 
-LLM_PROVIDER='anthropic': returns a duck-typed shim that exposes
+All shims expose the same surface as AsyncOpenAI so callers can use
     .chat.completions.create(...)            (plain text)
     .beta.chat.completions.parse(            (Pydantic structured output)
         model=..., messages=..., response_format=PydanticModel, ...
     )
-…but routes the request to the Anthropic SDK. Pydantic structured outputs
-are emulated via a forced tool-use call whose `input_schema` is the Pydantic
-model's JSON schema. Tool input is then parsed back into the Pydantic model
-so callers can use `response.choices[0].message.parsed` exactly as before.
+unchanged. response.choices[0].message.parsed returns a Pydantic instance.
 """
 
 from __future__ import annotations

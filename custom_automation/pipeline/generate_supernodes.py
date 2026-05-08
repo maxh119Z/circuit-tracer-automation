@@ -1,5 +1,5 @@
 """
-Step 3 — Semantically group features into supernodes using OpenAI.
+Step 3 — Semantically group features into supernodes using an LLM.
 
 Three-phase approach:
   Phase 1: Discover groups from the top-50 most influential features.
@@ -10,11 +10,13 @@ Post-processing:
   - Embedding nodes: grouped by semantic role of their token (skip function words)
   - Logit nodes: named by actual predicted token, top-p selection for diversity
 
-Reads:  artifacts/feature_descriptions.json
-Writes: artifacts/feature_groups.json
+Reads:  artifacts/feature_descriptions_<DESCRIPTION_VARIANT>.json
+Writes: artifacts/feature_groups_<DESCRIPTION_VARIANT>_<GROUPING_VARIANT>.json
+        artifacts/feature_groups_<DESCRIPTION_VARIANT>_<GROUPING_VARIANT>_pre3.json
+                                       (snapshot before phase-3 reconciliation)
 
 Usage:
-    OPENAI_API_KEY=sk-xxx python generate_supernodes.py
+    OPENAI_API_KEY=sk-xxx python custom_automation/pipeline/generate_supernodes.py
 """
 
 from __future__ import annotations

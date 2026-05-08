@@ -1,13 +1,11 @@
 """
 explore_interesting_graphs.py — Open-ended exploration to surface surprising graphs.
-writes artifacts/interesting_graphs.csv and artifacts/interesting_graphs.md.
+Writes analysis/results/interesting_graphs.csv and .md.
 
 Usage
 -----
-    python analysis/explore_interesting_graphs.py
-    python explore_interesting_graphs.py --graphs_dir ../../test_graphs --top_k 20
-    python explore_interesting_graphs.py --min_confidence 0.05 --influence_threshold 0.3 --no_llm
     python analysis/explore_interesting_graphs.py --ground_truth ../prompts/ground_truth_wikipedia.csv --variants a2
+    python analysis/explore_interesting_graphs.py --min_confidence 0.05 --influence_threshold 0.3 --no_llm
 """
 
 from __future__ import annotations

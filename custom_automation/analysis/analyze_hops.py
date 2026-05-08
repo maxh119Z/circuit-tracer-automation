@@ -1,20 +1,17 @@
 """
 analyze_hops.py — Intermediate hop detection across multi-hop attribution graphs.
 
-For each prompt in ground_truth.csv, loads its processed graph JSON and checks:
-  1. What the model predicted (top logit token).
-  2. Whether the model got it right.
-  3. Whether intermediate-hop features are present in the graph — detectable in supernode group names.
-  4. How strong those intermediate-hop features are (mean influence score).
+For each prompt in ground_truth.csv, loads the graph JSON and records the
+predicted token, whether it's correct, whether the intermediate hop is present
+(via supernode group names and clerp text), and the influence of matched features.
 
-Outputs:
-  - artifacts/hop_analysis.csv          — one row per (slug, variant)
-  - artifacts/hop_analysis.md           — human-readable summary report
-  - artifacts/mquake_hop_accuracy.csv   — one row per MQuAKE case (if applicable)
+Outputs (default: custom_automation/analysis/results/):
+  - hop_analysis.csv
+  - hop_analysis.md
+  - mquake_hop_accuracy.csv  (MQuAKE only)
 
 Usage:
-    python analyze_hops.py
-    python analyze_hops.py --variants a0,a3
+    python analysis/analyze_hops.py --variants a2
     python analysis/analyze_hops.py --ground_truth ../prompts/ground_truth_mquake.csv --variants a2
 """
 

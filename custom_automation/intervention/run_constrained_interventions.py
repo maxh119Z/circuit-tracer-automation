@@ -10,13 +10,9 @@ Outputs:
   - artifacts/constrained_intervention_results.md  — human-readable report
 
 Usage:
-    python intervention/run_constrained_interventions.py
-    python intervention/run_constrained_interventions.py --variants a0,a3
-    python intervention/run_constrained_interventions.py --ground_truth ../ground_truth.csv
-    python intervention/run_constrained_interventions.py --dry_run   # skip model loading
-    python intervention/run_constrained_interventions.py \
-  --ground_truth ../prompts/ground_truth_mquake.csv
-
+    python intervention/run_constrained_interventions.py --variants a2
+    python intervention/run_constrained_interventions.py --variants a2 --ground_truth ../prompts/ground_truth_capital.csv
+    python intervention/run_constrained_interventions.py --variants a2 --dry_run
 """
 
 from __future__ import annotations

@@ -1,5 +1,5 @@
 """
-Aggregate the phase-2 cap sweep into the two tables the mentor asked for.
+Aggregate the phase-2 cap sweep into structural and autointerp comparison tables.
 
 Inputs (per slug, in custom_automation/artifacts/<slug>/):
   feature_descriptions_v2.json            — for influence scores (attribution coverage)

@@ -3,7 +3,7 @@
 apply_frontend_patch.py — Apply the qParams supernodes fix to init-cg.js.
 
 Run from the repo root:
-    python custom_automation/apply_frontend_patch.py
+    python custom_automation/pipeline/apply_frontend_patch.py
 
 This makes two surgical edits to init-cg.js:
 

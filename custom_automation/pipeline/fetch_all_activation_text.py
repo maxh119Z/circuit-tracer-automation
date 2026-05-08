@@ -6,7 +6,7 @@ then downloads top-activation examples from HuggingFace for each feature.
 It also fetches the top/bottom logits (what the feature promotes vs suppresses).
 
 Usage:
-    PRUNING_THRESHOLD=0.40 python fetch_all_activating_text.py
+    PRUNING_THRESHOLD=0.40 python custom_automation/pipeline/fetch_all_activation_text.py
 """
 
 from __future__ import annotations

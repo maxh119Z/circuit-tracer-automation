@@ -23,85 +23,76 @@ circuit-tracer attribute --prompt "The capital of the state containing Oakland i
 ```bash
 cd custom_automation
 
-# Recommended
-# Run all 4 grouping variants without validation.
+# Full pipeline (one description variant, one grouping variant, with validation)
+./reproduce.sh core
+
+# Skip validation
 RUN_VALIDATE=false ./reproduce.sh core
 
-# Fetch activations only (no API key needed — do this first or core.)
+# Fetch activations only — no API key needed
 ./reproduce.sh fetch
 
-# Fetch + generate descriptions (defaults to description variant 2: the best version)
+# Fetch + generate descriptions only
 ./reproduce.sh fetch-desc
 
-# Run all 4 grouping variants for comparison (reuses existing descriptions)
+# All 4 grouping variants (a0–a3) reusing one description variant
 ./reproduce.sh all-groups
-
-# Full pipeline in one shot; 1 grouping variant (a2), v2 description generation.
-./reproduce.sh core
 ```
 
-### 3. Start the viewer if necessary
+Defaults: `DESCRIPTION_VARIANT=v2`, `GROUPING_VARIANT=a2`, `PRUNING_THRESHOLD=0.40`. All overridable via env vars.
+
+### 3. Start the viewer
 ```bash
 cd ..
 circuit-tracer start-server --graph_file_dir ./test_graphs
-
-python analysis/analyze_hops.py --variants a2
-
 ```
 
-## Batch Production
+If you re-ran the pipeline on a graph you already viewed, **clear your browser cache** (or hard-reload) so the viewer loads the updated supernodes/descriptions instead of the cached version.
 
-Prompt CSVs and their ground truth files live in `prompts/`:
+## Batch production
+
+Prompt CSVs and ground-truth files live in `prompts/`:
 
 | File | Description |
 |---|---|
-| `prompts/prompts.csv` | 10-prompt iteration/test set |
-| `prompts/ground_truth.csv` | Ground truth for test set |
-| `prompts/prompts_multihop.csv` | 50-prompt simple multi-hop dataset (capitals, sports, etc.) |
-| `prompts/ground_truth_multihop.csv` | Ground truth for multihop set |
-| `prompts/prompts_anthropic.csv` | Prompts from the original Anthropic paper |
-| `prompts/ground_truth_anthropic.csv` | Ground truth for Anthropic set |
-| `prompts/prompts_max_hops.csv` | Prompts for finding max number of hops |
-| `prompts/ground_truth_max_hops.csv` | Ground truth for max hops set |
-| `prompts/prompts_wikipedia.csv` | Wikipedia-derived prompts |
-| `prompts/ground_truth_wikipedia.csv` | Ground truth for Wikipedia set |
+| `prompts/prompts_capital.csv` / `ground_truth_capital.csv` | 100 capitals prompts (city → state/country → capital) |
+| `prompts/prompts_mquake.csv` / `ground_truth_mquake.csv` | 50 stratified MQuAKE prompts (20 2-hop, 15 3-hop, 15 4-hop) |
+| `prompts/prompts_wikipedia.csv` / `ground_truth_wikipedia.csv` | 100 open-ended Wikipedia completions |
+| `prompts/neuronpedia_graphs.csv` / `ground_truth_neuronpedia.csv` | 15 Neuronpedia replication graphs (with manual supernodes) |
 
+### Step 1: attribute all prompts → graph JSONs
 ```bash
-# Step 1: attribute all prompts (generates graph JSONs). CHANGE CSV between runs
 circuit-tracer attribute-batch --csv prompts/prompts_capital.csv --graph_file_dir ./test_graphs
 ```
 
-### Single grouping variant
+### Step 2: run the pipeline on all graphs
 ```bash
-# Run pipeline for all prompts, one grouping variant
+cd custom_automation
+
+# Single grouping variant (default a2)
 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 
-# With validation
-./batch_reproduce.sh ../prompts/prompts_anthropic.csv all
+# With validation (autointerp M1/M2/D1/D2 against Ungrouped distractors)
+./batch_reproduce.sh ../prompts/prompts_capital.csv all
 
 # Custom pruning threshold
-./batch_reproduce.sh ../prompts/prompts.csv all 0.40
+./batch_reproduce.sh ../prompts/prompts_capital.csv all 0.40
 
-# Track time and API cost per graph (prints summary at end)
-TRACK_COSTS=1 ./batch_reproduce.sh ../prompts_check.csv
+# Track time, tokens, API calls, and cost per graph (prints summary at end)
+TRACK_COSTS=1 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 ```
 
 ### Multiple grouping variants
 ```bash
 # All 4 variants (a0–a3) for every prompt
-GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv
-
-# Best Variant 2 specifically
-GROUPING_VARIANTS=a2 ./batch_reproduce.sh ../prompts/prompts.csv
+GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 
 # Specific variants only
-GROUPING_VARIANTS=a0,a2,a3 ./batch_reproduce.sh ../prompts/prompts.csv
+GROUPING_VARIANTS=a0,a2,a3 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 
-# With validation
-GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv all
-
-# Custom description variant
-DESCRIPTION_VARIANT=v2 GROUPING_VARIANTS=a0-a3 ./batch_reproduce.sh ../prompts/prompts.csv all
+# Override description variant
+DESCRIPTION_VARIANT=v2 GROUPING_VARIANTS=a0-a3 \
+  ./batch_reproduce.sh ../prompts/prompts_capital.csv all
 ```
 
 In multi-variant mode each (prompt × grouping variant) combo gets its own viewer entry named `<slug>-<desc>-<grouping>` (e.g. `dallas-capital-v2-a2`).
@@ -117,78 +108,119 @@ In multi-variant mode each (prompt × grouping variant) combo gets its own viewe
 | `desc-group` | 0–5 | Specific `DESCRIPTION_VARIANT` + `GROUPING_VARIANT`. |
 | `all-groups` | 0–2 once, 3–6 ×4 | All 4 grouping variants (a0–a3) with one description variant. |
 | `all-variants` | 0–1 once, 2–6 ×4 | All 4 description variants (v0–v3). |
-| `compare` | — | Read all validation reports in `artifacts/` → write `artifacts/comparison.md`. |
+| `compare` | — | Aggregate validation reports → `artifacts/comparison_<slug>.md`. |
+| `batch-summary` | — | Aggregate batch validation → `artifacts/batch_summary.md`. |
 
 Custom pruning threshold: `./reproduce.sh core 0.40`
 
-## Pipeline Steps
+## Pipeline steps
 
 | Step | Script | Description |
 |---|---|---|
 | 0 | `pipeline/apply_frontend_patch.py` | Patch `init-cg.js` for qParams parsing |
 | 1 | `pipeline/fetch_all_activation_text.py` | Download feature activations from HuggingFace |
-| 2 | `pipeline/generate_description.py` | Generate labels per feature via GPT-5.4-mini |
+| 2 | `pipeline/generate_description.py` | Generate label + elaboration per feature via GPT-5-mini |
 | 3 | `pipeline/generate_supernodes.py` | 3-phase semantic grouping (discover → assign → reconcile) |
 | 4 | `pipeline/push_to_website.py` | Inject descriptions + groups into graph JSON |
 | 5 | `pipeline/update_metadata.py` | Register graph in viewer dropdown |
-| 6 | `pipeline/validate_groups.py` | M1 (1-in-10 feature ID) + M2 (5-in-10 text match) + D1/D2 (description accuracy) |
+| 6 | `pipeline/validate_groups.py` | M1 / M2 / D1 / D2 autointerp validation |
 
-## Analysis
+## Analysis & experiments
 
 | Script | Description |
 |---|---|
-| `analysis/aggregate_batch.py` | Average validation scores across all prompts → `artifacts/batch_summary.md` |
-| `analysis/compare_variants.py` | Per-prompt comparison table across variants → `artifacts/comparison_<slug>.md` |
-| `analysis/analyze_hops.py` | Check whether intermediate-hop concepts appear in graphs → `artifacts/hop_analysis.md` |
+| `analysis/aggregate_batch.py` | Average validation scores across prompts → `analysis/results/batch_summary.md` |
+| `analysis/compare_variants.py` | Per-prompt comparison across variants → `artifacts/comparison_<slug>.md` |
+| `analysis/analyze_hops.py` | Detect intermediate-hop concepts in graphs → `analysis/results/hop_analysis.{csv,md}` |
+| `analysis/explore_interesting_graphs.py` | LLM judge surfaces interesting graphs → `analysis/results/interesting_graphs.{csv,md}` |
+| `analysis/plot_steering_figure.py` | Render the suppression/amplification scatter figure |
+| `analysis/summarize_neuronpedia_validation.py` | Aggregate Neuronpedia validation across min-group-sizes |
+| `analysis/summarize_phase2_cap_sweep.py` | Aggregate phase-2 cap sweep tables |
+| `analysis/amplify_experiment/run_amplify_middlehop.py` | Amplify intermediate-hop features (+2×); does p(correct) rise? |
+| `intervention/run_constrained_interventions.py` | Constrained-patching suppression (0×) on intermediate-hop features |
 
-Run via `./reproduce.sh compare` or directly: `python analysis/aggregate_batch.py`
+Typical experiment workflow on Capitals:
+```bash
+# Hop detection
+python analysis/analyze_hops.py --variants a2
 
-python intervention/run_interventions.py --variants a2
+# Suppression
+python intervention/run_constrained_interventions.py --variants a2
 
-## File Structure
+# Amplification
+python analysis/amplify_experiment/run_amplify_middlehop.py --variants a2
+
+# Plot
+python analysis/plot_steering_figure.py
+```
+
+## Neuronpedia replication
+
+15 human-annotated reference graphs from the `circuit-tracer` Gemma demo, used for validation against human supernodes:
+
+```bash
+# Fetch graphs + manual groups + run pipeline (skips already-done steps)
+python custom_automation/pipeline/neuronpedia_graphs/batch_fetch_neuronpedia.py \
+    --csv prompts/neuronpedia_graphs.csv
+
+# Validate (M1/M2 vs random/human/ours-full/ours-no-reconciliation)
+python custom_automation/pipeline/neuronpedia_graphs/run_validation_sweep.py \
+    --conditions random,human,ours-no-reconciliation,ours-full --min-sizes 2
+```
+
+`LLM_PROVIDER` can be set to `openai` (default), `anthropic`, or `gemini`. See `custom_automation/llm_client.py`.
+
+## File structure
 
 ```
 circuit-tracer-automation/
-├── prompts/                               # Prompt CSVs and ground truth files
-│   ├── prompts.csv               # 10-prompt iteration/test set
-│   ├── ground_truth.csv
-│   ├── prompts_multihop.csv               # 50-prompt simple multi-hop dataset
-│   ├── ground_truth_multihop.csv
-│   ├── prompts_anthropic.csv              # Anthropic paper prompts
-│   ├── ground_truth_anthropic.csv
-│   ├── prompts_max_hops.csv               # Max hop count exploration
-│   ├── ground_truth_max_hops.csv
-│   ├── prompts_wikipedia.csv              # Wikipedia-derived prompts
-│   └── ground_truth_wikipedia.csv
+├── prompts/                                 # Prompt CSVs + ground truth
+│   ├── prompts_capital.csv      ground_truth_capital.csv
+│   ├── prompts_mquake.csv       ground_truth_mquake.csv
+│   ├── prompts_wikipedia.csv    ground_truth_wikipedia.csv
+│   └── neuronpedia_graphs.csv   ground_truth_neuronpedia.csv
 ├── custom_automation/
-│   ├── reproduce.sh                   # Master pipeline script (single prompt)
-│   ├── batch_reproduce.sh             # Batch pipeline: N prompts × 1 or M grouping variants
-│   ├── config.py                      # Paths, model names, variant settings
-│   ├── pipeline/                      # Core pipeline steps (run in order 0–6)
+│   ├── reproduce.sh                         # Single-prompt pipeline driver
+│   ├── batch_reproduce.sh                   # Batch driver (N prompts × M variants)
+│   ├── config.py                            # Paths, model names, variant settings
+│   ├── llm_client.py                        # Provider-agnostic LLM shim (openai / anthropic / gemini)
+│   ├── pipeline/                            # Steps 0–6
 │   │   ├── apply_frontend_patch.py
 │   │   ├── fetch_all_activation_text.py
 │   │   ├── generate_description.py
 │   │   ├── generate_supernodes.py
 │   │   ├── push_to_website.py
 │   │   ├── update_metadata.py
-│   │   └── validate_groups.py
-│   ├── analysis/                      # Post-pipeline reporting & analysis
+│   │   ├── validate_groups.py
+│   │   └── neuronpedia_graphs/              # Neuronpedia-specific tooling
+│   │       ├── batch_fetch_neuronpedia.py
+│   │       ├── embed_supernodes.py
+│   │       ├── generate_supernodes_cap_sweep.py
+│   │       ├── run_validation_sweep.py
+│   │       ├── validate_neuropedia_groups.py
+│   │       └── analyze_sweep.py
+│   ├── analysis/                            # Reporting + experiment scripts
 │   │   ├── aggregate_batch.py
 │   │   ├── compare_variants.py
-│   │   └── analyze_hops.py
-│   └── artifacts/                     # Generated files (gitignored)
-│       ├── pruned_activations.json
-│       ├── feature_descriptions_<desc>.json
-│       ├── feature_groups_<desc>_<group>.json
-│       ├── validation_report_<desc>_<group>.json
-│       ├── <slug>/                    # Shared fetch+desc artifacts (batch mode)
-│       └── <slug>-<desc>-<gvar>/      # Per-variant artifacts (multi-variant batch)
-├── test_graphs/
-│   ├── test-run.json                  # Working copy
-│   ├── graph-metadata.json            # Viewer dropdown registry
-│   ├── <slug>.json                    # Named graph copies (single variant)
-│   └── <slug>-<desc>-<gvar>.json      # Per-variant graph copies (multi-variant)
-└── circuit_tracer/                    # Original circuit-tracer library
+│   │   ├── analyze_hops.py
+│   │   ├── explore_interesting_graphs.py
+│   │   ├── plot_steering_figure.py
+│   │   ├── summarize_neuronpedia_validation.py
+│   │   ├── summarize_phase2_cap_sweep.py
+│   │   ├── amplify_experiment/
+│   │   │   └── run_amplify_middlehop.py
+│   │   └── results/                         # Generated CSVs / markdown (gitignored)
+│   ├── intervention/
+│   │   └── run_constrained_interventions.py
+│   ├── costs/                               # Cost CSVs (gitignored)
+│   ├── artifacts/, artifacts_neuronpedia/, artifacts_wikipedia/    # Per-slug pipeline artifacts (gitignored)
+│   └── upload_to_hf.py                      # Upload artifacts to HuggingFace dataset
+├── test_graphs/                             # Graph JSONs (gitignored)
+│   ├── test-run.json                        # Working copy used by single-prompt mode
+│   ├── graph-metadata.json                  # Viewer dropdown registry
+│   ├── <slug>.json
+│   └── <slug>-<desc>-<gvar>.json
+└── circuit_tracer/                          # Vendored circuit-tracer library
 
 # circuit-tracer
 
