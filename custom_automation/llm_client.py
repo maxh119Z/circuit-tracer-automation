@@ -1,5 +1,5 @@
 """
-Provider-agnostic LLM client factory used by validate_neuropedia_groups.py.
+Provider-agnostic LLM client factory used by validate_neuronpedia_groups.py.
 
 LLM_PROVIDER selects the backend:
   'openai'    (default) — real AsyncOpenAI

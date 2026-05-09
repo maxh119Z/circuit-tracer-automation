@@ -50,7 +50,11 @@ def load_pruned_nodes_from_graph(graph_path: Path = GRAPH_FILE) -> list[dict]:
     """Load the attribution graph and return nodes that pass all filters.
 
     Filters applied (in order):
-        1. **Type** — only ``cross layer transcoder`` features.
+        1. **Type** — only transcoder feature nodes (excludes error / embedding / logit nodes).
+           Note: the graph builder hardcodes ``feature_type="cross layer transcoder"`` on every
+           transcoder feature node regardless of which suite produced it. This pipeline uses
+           single-layer (per-layer) GemmaScope transcoders (``--transcoder_set gemma`` →
+           ``mwhanna/gemma-scope-transcoders``); the string is just the frontend label.
         2. **Score** — influence/score <= ``PRUNING_THRESHOLD``.
         3. **Connectivity** — node must have at least one link (no orphans).
         4. **Layer cap** — ``layer_idx < MAX_LAYER_INDEX``.
@@ -73,12 +77,14 @@ def load_pruned_nodes_from_graph(graph_path: Path = GRAPH_FILE) -> list[dict]:
         connected_ids.add(link["target"])
 
     log.info(
-        "Pruning — threshold: %.2f | type: cross layer transcoder | orphan filter: on",
+        "Pruning — threshold: %.2f | type: transcoder feature nodes (single-layer GemmaScope PLTs) | orphan filter: on",
         PRUNING_THRESHOLD,
     )
 
     pruned: list[dict] = []
     for node in all_nodes:
+        # graph_models.py hardcodes this label on every transcoder feature node regardless
+        # of suite; matching it just keeps feature nodes and drops error/embedding/logit nodes.
         feature_type = node.get("feature_type", "unknown")
         if feature_type != "cross layer transcoder":
             continue
