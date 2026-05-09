@@ -206,7 +206,7 @@ circuit-tracer-automation/
 │   │       ├── embed_supernodes.py
 │   │       ├── generate_supernodes_cap_sweep.py
 │   │       ├── run_validation_sweep.py
-│   │       ├── validate_neuropedia_groups.py
+│   │       ├── validate_neuronpedia_groups.py
 │   │       └── analyze_sweep.py
 │   ├── analysis/                            # Reporting + experiment scripts
 │   │   ├── aggregate_batch.py

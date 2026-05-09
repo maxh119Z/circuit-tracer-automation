@@ -1,7 +1,7 @@
 """
 Sweep validation across slugs × min_group_size.
 
-For each (slug, min_group_size) combination, invoke validate_neuropedia_groups.py
+For each (slug, min_group_size) combination, invoke validate_neuronpedia_groups.py
 as a subprocess (so each run gets a fresh config import) with the appropriate
 env vars. After each run, parse the per-slug validation report and append rows
 to a single aggregated CSV: one row per (slug, min_group_size, condition).
@@ -45,7 +45,7 @@ log = setup_logging()
 # Neuronpedia inputs live under artifacts_neuronpedia/<slug>/.
 ARTIFACTS_ROOT = PACKAGE_DIR / "artifacts_neuronpedia"
 # When LLM_PROVIDER is set, the per-slug validator writes its report into a
-# parallel provider tree (see validate_neuropedia_groups.py). Pick the matching
+# parallel provider tree (see validate_neuronpedia_groups.py). Pick the matching
 # report-root and a separate CSV name so non-OpenAI runs never overwrite GPT
 # sweep results.
 _PROVIDER_OUTPUT_DIRS: dict[str, str] = {
@@ -66,7 +66,7 @@ REPORT_ROOT = (PACKAGE_DIR / _NON_OPENAI_DIR_NAME) if _NON_OPENAI_DIR_NAME else 
 DEFAULT_OUT = PACKAGE_DIR / "analysis" / "results" / (
     f"validation_sweep{_NON_OPENAI_CSV_TAG}.csv"
 )
-PIPELINE_SCRIPT = Path(__file__).resolve().parent / "validate_neuropedia_groups.py"
+PIPELINE_SCRIPT = Path(__file__).resolve().parent / "validate_neuronpedia_groups.py"
 
 DEFAULT_MIN_SIZES = (2, 3, 4, 5, 6)
 # Base conditions; per-slug `ours-cap<N>` variants are added dynamically when

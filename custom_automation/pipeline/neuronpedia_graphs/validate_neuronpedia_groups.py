@@ -22,7 +22,7 @@ Writes: artifacts/<slug>/validation_report_<desc>_<group>_neuropedia.json
         artifacts/<slug>/validation_history_<desc>_<group>_neuropedia.json
 
 Usage:
-    OPENAI_API_KEY=sk-xxx CURRENT_SLUG=<slug> python validate_neuropedia_groups.py
+    OPENAI_API_KEY=sk-xxx CURRENT_SLUG=<slug> python validate_neuronpedia_groups.py
 """
 
 from __future__ import annotations
