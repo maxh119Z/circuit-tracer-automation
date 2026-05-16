@@ -2,8 +2,8 @@
 plot_steering_figure.py — Figure 2: causal steering on intermediate-hop supernodes.
 
 Loads:
-  analysis/amplify_experiment/amplify_middlehop_results.csv  (+2× constrained amplification)
-  intervention/constrained_intervention_results.csv           (0× constrained suppression)
+  analysis/steering/results/amplify_middlehop_results.csv  (+2× constrained amplification)
+  analysis/steering/results/constrained_intervention_results_ground_truth_capital.csv  (0× constrained suppression)
 
 Both experiments use constrained patching.
 
@@ -12,11 +12,11 @@ For multi-token answers this is an upper bound on the true sequence probability;
 in the paper.
 
 Produces:
-  analysis/results/steering_figure.pdf
-  analysis/results/steering_figure.png
+  analysis/steering/results/steering_figure.pdf
+  analysis/steering/results/steering_figure.png
 
 Usage:
-    python analysis/plot_steering_figure.py
+    python analysis/steering/plot_steering_figure.py
 """
 
 from __future__ import annotations
@@ -28,10 +28,11 @@ import matplotlib.ticker as mticker
 import numpy as np
 import pandas as pd
 
-PACKAGE_DIR = Path(__file__).resolve().parent.parent
-AMP_CSV = PACKAGE_DIR / "analysis" / "amplify_experiment" / "amplify_middlehop_results.csv"
-SUP_CSV = PACKAGE_DIR / "artifacts" / "constrained_intervention_results_ground_truth_capital.csv"
-OUT_DIR = PACKAGE_DIR / "analysis" / "results"
+STEERING_DIR = Path(__file__).resolve().parent
+PACKAGE_DIR = STEERING_DIR.parent.parent
+AMP_CSV = STEERING_DIR / "results" / "amplify_middlehop_results.csv"
+SUP_CSV = STEERING_DIR / "results" / "constrained_intervention_results_ground_truth_capital.csv"
+OUT_DIR = STEERING_DIR / "results"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 plt.rcParams.update({
@@ -151,9 +152,9 @@ def plot_panel(
 
 def main() -> None:
     if not AMP_CSV.exists():
-        raise FileNotFoundError(f"Run run_amplify_middlehop.py first: {AMP_CSV}")
+        raise FileNotFoundError(f"Run analysis/steering/run_amplify_middlehop.py first: {AMP_CSV}")
     if not SUP_CSV.exists():
-        raise FileNotFoundError(f"Run run_constrained_interventions.py first: {SUP_CSV}")
+        raise FileNotFoundError(f"Run analysis/steering/run_constrained_interventions.py first: {SUP_CSV}")
 
     amp_df = load_amplify(AMP_CSV)
     sup_df = load_suppress(SUP_CSV)

@@ -6,13 +6,13 @@ Methodology follows:
   https://github.com/decoderesearch/circuit-tracer/blob/main/demos/circuit_tracing_tutorial.ipynb
 
 Outputs:
-  - artifacts/constrained_intervention_results.csv — one row per (slug, variant)
-  - artifacts/constrained_intervention_results.md  — human-readable report
+  - analysis/steering/results/constrained_intervention_results.csv — one row per (slug, variant)
+  - analysis/steering/results/constrained_intervention_results.md  — human-readable report
 
 Usage:
-    python intervention/run_constrained_interventions.py --variants a2
-    python intervention/run_constrained_interventions.py --variants a2 --ground_truth ../prompts/ground_truth_capital.csv
-    python intervention/run_constrained_interventions.py --variants a2 --dry_run
+    python analysis/steering/run_constrained_interventions.py --variants a2
+    python analysis/steering/run_constrained_interventions.py --variants a2 --ground_truth ../prompts/ground_truth_capital.csv
+    python analysis/steering/run_constrained_interventions.py --variants a2 --dry_run
 """
 
 from __future__ import annotations
@@ -29,11 +29,13 @@ import torch
 # Paths (mirrors analyze_hops.py)
 # ---------------------------------------------------------------------------
 
-PACKAGE_DIR = Path(__file__).resolve().parent.parent
+PACKAGE_DIR = Path(__file__).resolve().parent.parent.parent
 REPO_ROOT = PACKAGE_DIR.parent
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"  # overridable via --graphs_dir
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 ARTIFACTS_DIR.mkdir(parents=True, exist_ok=True)
+STEERING_RESULTS_DIR = Path(__file__).resolve().parent / "results"
+STEERING_RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_GROUND_TRUTH = REPO_ROOT / "prompts" / "ground_truth_mquake.csv"
 DESCRIPTION_VARIANT = "v2"
@@ -437,7 +439,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     # ------------------------------------------------------------------
     # Write CSV
     # ------------------------------------------------------------------
-    csv_path = ARTIFACTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.csv"
+    csv_path = STEERING_RESULTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.csv"
     fieldnames = list(results[0].keys())
     with open(csv_path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -454,7 +456,7 @@ def run(ground_truth_path: Path, variants: list[str], dry_run: bool = False) -> 
     was_correct = [r for r in valid if r.get("baseline_rank") == 1]
     was_wrong   = [r for r in valid if r.get("baseline_rank") != 1]
 
-    md_path = ARTIFACTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.md"
+    md_path = STEERING_RESULTS_DIR / f"constrained_intervention_results_{ground_truth_path.stem}.md"
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Constrained Intervention Results\n\n")
         f.write("Method: constrained patching (direct effects only — paper's primary validation method)  \n")

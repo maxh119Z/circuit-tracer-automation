@@ -9,13 +9,13 @@ For each candidate:
   4. Check whether p(correct answer) increases and/or model flips to correct.
 
 Writes:
-  analysis/amplify_experiment/amplify_middlehop_results.csv
-  analysis/amplify_experiment/amplify_middlehop_results.md
+  analysis/steering/results/amplify_middlehop_results.csv
+  analysis/steering/results/amplify_middlehop_results.md
 
 Usage:
-    python analysis/amplify_experiment/run_amplify_middlehop.py
-    python analysis/amplify_experiment/run_amplify_middlehop.py --variants a2
-    python analysis/amplify_experiment/run_amplify_middlehop.py --dry_run
+    python analysis/steering/run_amplify_middlehop.py
+    python analysis/steering/run_amplify_middlehop.py --variants a2
+    python analysis/steering/run_amplify_middlehop.py --dry_run
 """
 
 from __future__ import annotations
@@ -33,7 +33,8 @@ REPO_ROOT = PACKAGE_DIR.parent
 TEST_GRAPHS_DIR = REPO_ROOT / "test_graphs"
 ARTIFACTS_DIR = PACKAGE_DIR / "artifacts"
 HOP_CSV = PACKAGE_DIR / "analysis" / "results" / "hop_analysis.csv"
-OUT_DIR = Path(__file__).resolve().parent
+OUT_DIR = Path(__file__).resolve().parent / "results"
+OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_CSV = OUT_DIR / "amplify_middlehop_results.csv"
 OUT_MD = OUT_DIR / "amplify_middlehop_results.md"
 
