@@ -41,10 +41,12 @@ IGNORE_PATTERNS = ["__pycache__/*", "*.pyc", ".DS_Store", ".ipynb_checkpoints/*"
 
 
 def list_uploadable_folders(root: Path) -> list[Path]:
+    """Return all non-skipped subdirectories of root, sorted alphabetically."""
     return sorted(p for p in root.iterdir() if p.is_dir() and p.name not in SKIP_NAMES)
 
 
 def pick_folder_interactive(root: Path) -> Path:
+    """Prompt the user to choose one of root's subdirectories interactively."""
     folders = list_uploadable_folders(root)
     if not folders:
         sys.exit(f"No folders found in {root}")
@@ -60,6 +62,7 @@ def pick_folder_interactive(root: Path) -> Path:
 
 
 def ensure_repo(api: HfApi, repo_id: str, repo_type: str) -> None:
+    """Verify the HF repo exists, offering to create it if not."""
     try:
         api.repo_info(repo_id=repo_id, repo_type=repo_type)
     except RepositoryNotFoundError:
@@ -71,6 +74,7 @@ def ensure_repo(api: HfApi, repo_id: str, repo_type: str) -> None:
 
 
 def upload(local: Path, dest: str, repo_id: str, repo_type: str, api: HfApi, large: bool) -> None:
+    """Upload local folder to dest path inside the HF repo."""
     dest_clean = dest.strip("/")
     print(f"\nUploading {local} -> {repo_id}/{dest_clean or '(root)'}  ({repo_type}){'  [large]' if large else ''}")
     if large:

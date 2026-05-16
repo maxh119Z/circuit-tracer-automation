@@ -346,7 +346,6 @@ def append_grouping_log(
 # ---------------------------------------------------------------------------
 
 def load_and_sort_features() -> tuple[list[dict], str, str]:
-
     """Load described features sorted by influence; return them plus the prompt text."""
     log.info("Loading descriptions from %s", FEATURE_DESCRIPTIONS_FILE)
 

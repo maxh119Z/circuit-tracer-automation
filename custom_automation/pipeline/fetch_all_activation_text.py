@@ -227,7 +227,6 @@ def _parse_feature(node: dict, raw_json: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    # Fetch ndes
     nodes = load_pruned_nodes_from_graph()
 
     if not nodes:

@@ -53,7 +53,7 @@ _COST_INPUT  = 0.25
 _COST_OUTPUT = 2.00
 _api_usage: list[dict] = []
 
-# DESCRIPTION_VARIANT is imported from config (set via DESCRIPTION_VARIANT env var, default "v1").
+# DESCRIPTION_VARIANT is imported from config (set via DESCRIPTION_VARIANT env var, default "v2").
 # This controls both the system prompt used here and the artifact filenames throughout the pipeline.
 
 # ---------------------------------------------------------------------------
@@ -253,6 +253,8 @@ def _build_user_prompt(feature: dict, prompt_text: str) -> str:
     lines.append(f"Top Demoted Tokens: {', '.join(demotes) if demotes else 'None available'}")
 
     return "\n".join(lines)
+
+
 def _load_existing_descriptions(path: Path) -> dict[str, dict]:
     """Return successful prior descriptions only."""
     if not path.exists():
@@ -271,7 +273,9 @@ def _load_existing_descriptions(path: Path) -> dict[str, dict]:
     except (json.JSONDecodeError, KeyError, TypeError):
         return {}
 
+
 def _save_checkpoint(features: list[dict], path: Path) -> None:
+    """Write the current feature list to path as a JSON checkpoint."""
     with open(path, "w", encoding="utf-8") as f:
         json.dump(features, f, indent=2, ensure_ascii=False)
     log.info("💾 Checkpoint saved (%d features) → %s", len(features), path)
@@ -354,7 +358,8 @@ def _load_prompt_text() -> str:
         return prompt_text or "Unknown Prompt"
     except Exception:
         return "Unknown Prompt"
-    
+
+
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------

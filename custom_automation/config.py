@@ -81,7 +81,6 @@ DESCRIPTION_VARIANT: str = os.environ.get("DESCRIPTION_VARIANT", "v2")
 GROUPING_VARIANT: str = os.environ.get("GROUPING_VARIANT", "a2")
 
 # Artifact filenames — namespaced by variant so multiple versions coexist.
-# """Old (unversioned): ARTIFACTS_DIR / "feature_descriptions.json" etc."""
 FEATURE_DESCRIPTIONS_FILE = ARTIFACTS_DIR / f"feature_descriptions_{DESCRIPTION_VARIANT}.json"
 FEATURE_GROUPS_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}.json"
 FEATURE_GROUPS_PRE3_FILE = ARTIFACTS_DIR / f"feature_groups_{DESCRIPTION_VARIANT}_{GROUPING_VARIANT}_pre3.json"
@@ -120,6 +119,7 @@ def make_session(
     backoff_factor: float = 0.5,
     status_forcelist: tuple[int, ...] = (429, 500, 502, 503, 504),
 ) -> requests.Session:
+    """Return a requests.Session with automatic retries for transient HTTP errors."""
     session = requests.Session()
     retry = Retry(
         total=retries,
