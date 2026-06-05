@@ -1,0 +1,94 @@
+================================================================================
+  generate_prompts_surprising_supernode.txt
+  Copy-paste prompt for Claude to generate Wikipedia-style sentence-completion
+  prompts that target the "surprising supernode" criterion from
+  explore_interesting_graphs.py.
+
+  Output: ~10 prompts as CSV. Save as prompts_generated_surprising.csv.
+================================================================================
+
+
+============================ BEGIN COPY-PASTE TO CLAUDE ===========================
+
+You are a mechanistic interpretability researcher generating Wikipedia-style
+sentence-completion prompts for Gemma-2-2B circuit tracing. Your goal: interesting prompts
+whose attribution graphs may contain a **surprising supernode** — a concept the
+model uses internally that is not directly suggested by the input prompt or
+the output token.
+
+The headline example from our exploration is the prompt "Some of the best
+candidates for future deep" → space (43.5%): the graph contains an explicit
+\textsc{Apollo} supernode (the Apollo space program), despite "Apollo" appearing
+nowhere in the prompt or the predicted next word.
+
+---
+
+# Target criterion (verbatim from our automated judge)
+
+> **Surprising supernode.** A supernode represents a concept or association
+> that is not directly suggested by the model's input and output. Medium
+> scores: associations the model might plausibly make but that aren't a given.
+> High scores: genuinely surprising associations.
+
+---
+
+# Design philosophy — avoid retracing the Anthropic biology paper
+
+Anthropic's biology paper (Lindsey et al. 2025) and the original attribution-
+graph methods paper (Ameisen et al. 2025) already characterize the canonical
+circuits: 2-hop city→state→capital factual recall, entity→sport (Michael
+Jordan → basketball), simple two-operand addition, antonym/synonym
+substitution, acronym expansion, induction patterns. The intermediate hops
+in those cases (state, sport) are not "surprising" — they are the expected
+hop. Generate prompts where the hidden concept is genuinely *unexpected*. These prompts should be interesting and expansive, not just "naming the obvious intermediate concept", but should reveal something genuinely worth studying within a model further for a full research paper. Our Apollo supernode should pale in comparison with your generated prompts.
+
+---
+
+# Filter constraints
+
+- 8-30 words in the prompt
+- Single-token next word: one English content word, no punctuation
+- The expected next word must NOT appear verbatim in the prompt
+- The surprising concept must NOT appear in the prompt OR the next token
+- top-1 confidence should reasonably be around 0.2 and 0.6
+
+---
+
+# Topic seeds (anchor your prompts in these; cap each at ~1 prompt)
+
+Science & technology, history & civilization, arts & culture, geography &
+nature, social sciences, sports & games, music, literature, philosophy.
+Cultural and pop-culture domains are especially fertile here (mythology,
+brand names, archetypes, idioms) because the hidden supernode is often a
+specific named instance.
+
+---
+
+# Output format
+
+Produce exactly 10 prompts. Output ONLY the CSV inside one code fence —
+explanations go after the fence.
+
+```csv
+slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+generated-ss-001,Some of the best candidates for future deep,Apollo program,space,surprising_supernode,The model likely retrieves a specific historical instance (Apollo space program) as evidence for "space" — "Apollo" appears in neither prompt nor next token
+generated-ss-002,...
+```
+
+Columns (matching the standard ground_truth CSV schema):
+- `slug`: `generated-ss-NNN`
+- `prompt`: 8-30 word sentence prefix
+- `intermediate_concept`: the surprising concept you expect as a hidden
+  supernode, not present in prompt or next token
+- `correct_answer`: single most likely next content word
+- `hop_type`: always `surprising_supernode`
+- `notes`: one sentence justifying why this concept is load-bearing AND
+  surprising
+
+After the CSV: 1 paragraph on the distribution of surprising-concept types
+(historical instance, cultural archetype, hidden geographical anchor, etc.)
+and any patterns you noticed.
+
+Begin.
+
+============================= END COPY-PASTE TO CLAUDE ============================

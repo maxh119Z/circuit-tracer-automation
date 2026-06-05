@@ -1,0 +1,88 @@
+================================================================================
+  generate_prompts_other_interesting_structure.txt
+  Copy-paste prompt for Claude to generate Wikipedia-style sentence-completion
+  prompts that target the "other interesting structure" criterion from
+  explore_interesting_graphs.py.
+
+  Output: ~10 prompts as CSV. Save as prompts_generated_other.csv.
+================================================================================
+
+
+============================ BEGIN COPY-PASTE TO CLAUDE ===========================
+
+You are a mechanistic interpretability researcher generating Wikipedia-style
+sentence-completion prompts for Gemma-2-2B circuit tracing. Your goal: interesting prompts
+whose attribution graphs may show **structure that doesn't cleanly fit the other
+three criteria** (parallel computation, surprising supernode, complex
+internal computation) but is still notable — unusual topology, cross-domain
+bridging, implicit pragmatics surfacing in the graph, self-referential or
+recursive structure, etc.
+
+---
+
+# Target criterion (verbatim from our automated judge)
+
+> **Other interesting structure.** A catch-all for generally interesting
+> internal structure. If you notice something notable about the graph that
+> doesn't fall into the other criteria, score it high here.
+
+---
+
+# Design philosophy — avoid retracing the Anthropic biology paper
+
+Anthropic's biology paper (Lindsey et al. 2025) and the original attribution-
+graph methods paper (Ameisen et al. 2025) already characterize the canonical
+circuits: 2-hop city→state→capital factual recall, entity→sport, simple
+two-operand addition, antonym/synonym substitution, acronym expansion,
+induction patterns. Avoid variations on these. Generate prompts that go *beyond*. These prompts should be interesting and expansive, not just "swapping in a different idiom or a different long-distance dependency", but should reveal something genuinely worth studying within a model further for a full research paper.
+
+---
+
+# Filter constraints
+
+- 8-30 words in the prompt
+- Single-token next word: one English content word, no punctuation
+- The expected next word must NOT appear verbatim in the prompt
+- Gemma-2-2B must plausibly get the answer right
+- top-1 confidence should reasonably be around 0.2 and 0.6
+
+---
+
+# Topic seeds (anchor your prompts in these; cap each at ~1 prompt)
+
+Science & technology, history & civilization, arts & culture, geography &
+nature, social sciences, sports & games, music, literature, philosophy.
+Phenomena-driven prompts here may benefit from less topical anchoring —
+linguistic and pragmatic prompts can be domain-light.
+
+---
+
+# Output format
+
+Produce exactly 10 prompts. Output ONLY the CSV inside one code fence —
+explanations go after the fence.
+
+```csv
+slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+generated-oi-001,Some students passed the exam meaning the rest,scalar implicature,failed,other_interesting_structure,Probes whether "some" triggers a NOT-all supernode separate from positive answer representation
+generated-oi-002,...
+```
+
+Columns (matching the standard ground_truth CSV schema):
+- `slug`: `generated-oi-NNN`
+- `prompt`: 8-30 word sentence prefix
+- `intermediate_concept`: short tag for the structural phenomenon you
+  expect (e.g., "scalar implicature", "self-reference", "type-vs-token",
+  "long-distance agreement")
+- `correct_answer`: single most likely next content word
+- `hop_type`: always `other_interesting_structure`
+- `notes`: one sentence on why this structure won't be captured by
+  parallel-computation / surprising-supernode / complex-internal-computation
+  but is still notable
+
+After the CSV: 1 paragraph on the distribution of structural phenomena and
+which ones you think are most likely to produce surprising graph topology.
+
+Begin.
+
+============================= END COPY-PASTE TO CLAUDE ============================

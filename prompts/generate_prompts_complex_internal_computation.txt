@@ -1,0 +1,92 @@
+================================================================================
+  generate_prompts_complex_internal_computation.txt
+  Copy-paste prompt for Claude to generate Wikipedia-style sentence-completion
+  prompts that target the "complex internal computation" criterion from
+  explore_interesting_graphs.py.
+
+  Output: ~10 prompts as CSV. Save as prompts_generated_complex.csv.
+================================================================================
+
+
+============================ BEGIN COPY-PASTE TO CLAUDE ===========================
+
+You are a mechanistic interpretability researcher generating Wikipedia-style
+sentence-completion prompts for Gemma-2-2B circuit tracing. Your goal: interesting prompts
+whose attribution graphs may show **complex internal computation** — substantive
+multi-step reasoning visible as a rich chain of intermediate supernodes, not
+direct retrieval or lookup.
+
+---
+
+# Target criterion (verbatim from our automated judge)
+
+> **Complex internal computation.** The supernodes reflect substantive
+> internal computation — for example, multi-hop reasoning, or many supernodes
+> that are not simply derivative of the input or output tokens. Medium scores:
+> some non-trivial intermediate structure beyond direct lookup. High scores:
+> clear multi-hop chains or a rich set of intermediate supernodes doing real
+> work.
+
+---
+
+# Design philosophy — avoid retracing the Anthropic biology paper
+
+Anthropic's biology paper (Lindsey et al. 2025) and the original attribution-
+graph methods paper (Ameisen et al. 2025) already characterize the canonical
+circuits: 2-hop city→state→capital factual recall, entity→sport, simple
+two-operand addition, antonym/synonym substitution, acronym expansion,
+induction patterns. The 2-hop family is the prototypical "complex
+computation" example in those papers. Generate prompts that go *beyond*. These prompts should be interesting and expansive, not just "adding a hop" or making it more difficult, but should reveal something genuinely worth studying within a model further for a full research paper.
+
+---
+
+# Filter constraints
+
+- 8-30 words in the prompt
+- Single-token next word: one English content word, no punctuation
+- The expected next word must NOT appear verbatim in the prompt
+- Gemma-2-2B must plausibly get the answer right (so aim for compositions of
+  well-known facts rather than obscure ones)
+- top-1 confidence should reasonably be around 0.2 and 0.6
+
+---
+
+# Topic seeds (anchor your prompts in these; cap each at ~1 prompt)
+
+Science & technology, history & civilization, arts & culture, geography &
+nature, social sciences, sports & games, music, literature, philosophy.
+Domains where well-known facts compose are best: history of science,
+geography, classical music composers, famous works of literature, world
+history, biology taxonomy.
+
+---
+
+# Output format
+
+Produce exactly 10 prompts. Output ONLY the CSV inside one code fence —
+explanations go after the fence.
+
+```csv
+slug,prompt,intermediate_concept,correct_answer,hop_type,num_hops,notes
+generated-cc-001,The country whose capital was the setting of Casablanca speaks,Casablanca|Morocco|French language,French,complex_internal_computation,3,Film → country (Morocco) → official language (French); none of the hops appear in prompt or next token
+generated-cc-002,...
+```
+
+Columns (matching the standard ground_truth CSV schema, with `num_hops`
+added as in ground_truth_mquake.csv):
+- `slug`: `generated-cc-NNN`
+- `prompt`: 8-30 word sentence prefix
+- `intermediate_concept`: pipe-separated list of concept supernodes you
+  expect (in order from prompt-side to output-side)
+- `correct_answer`: single most likely next content word
+- `hop_type`: always `complex_internal_computation`
+- `num_hops`: integer count of intermediate concepts (more != better)
+- `notes`: one sentence on the composition
+
+After the CSV: 1 paragraph on the distribution of n_hops and reasoning
+types (relational composition, syllogistic, arithmetic, set-intersection,
+counterfactual, etc.).
+
+Begin.
+
+============================= END COPY-PASTE TO CLAUDE ============================

@@ -1,0 +1,89 @@
+================================================================================
+  generate_prompts_parallel_computation.txt
+  Copy-paste prompt for Claude to generate Wikipedia-style sentence-completion
+  prompts that target the "parallel computation" criterion from
+  explore_interesting_graphs.py.
+
+  Output: ~10 prompts as CSV. Save as prompts_generated_parallel.csv.
+================================================================================
+
+
+============================ BEGIN COPY-PASTE TO CLAUDE ===========================
+
+You are a mechanistic interpretability researcher generating Wikipedia-style
+sentence-completion prompts for Gemma-2-2B circuit tracing. Your goal: interesting prompts
+whose attribution graphs may show **parallel computation** — the graph contains
+distinct supernodes for several different plausible next-token candidates,
+not just one.
+
+---
+
+# Target criterion (verbatim from our automated judge)
+
+> **Parallel computation.** The supernodes reflect internal computation toward
+> multiple different possible next-token predictions. Trivial variations
+> (near-synonyms, different formattings of the same word) do not count. Medium
+> scores: supernodes for multiple candidates are present but weakly separated.
+> High scores: clearly distinct supernode groups for each candidate.
+
+---
+
+# Design philosophy — avoid retracing the Anthropic biology paper
+
+Anthropic's biology paper (Lindsey et al. 2025) and the original attribution-
+graph methods paper (Ameisen et al. 2025) already characterize the canonical
+circuits: 2-hop city→state→capital factual recall, entity→sport (Michael
+Jordan → basketball), simple two-operand addition, antonym/synonym
+substitution, acronym expansion, induction patterns. Avoid variations on
+these. Generate prompts that go *beyond*. These prompts should be interesting and expansive, not just "swapping in two near-synonyms" or forcing a token-level competition, but should reveal something genuinely worth studying within a model further for a full research paper.
+
+---
+
+# Filter constraints
+
+- 8-30 words in the prompt
+- Single-token next word: one English content word, no punctuation
+- The expected next word must NOT appear verbatim in the prompt
+- Gemma-2-2B must plausibly get the answer right (so aim for situations
+  where multiple plausible continuations are well-known)
+- top-1 confidence should reasonably be around 0.2 and 0.6
+
+---
+
+# Topic seeds (anchor your prompts in these; cap each at ~1 prompt)
+
+Science & technology, history & civilization, arts & culture, geography &
+nature, social sciences, sports & games, music, literature, philosophy.
+Specific anchors: quantum mechanics, neuroscience, Roman history, French
+Revolution, Renaissance art, jazz, classical music, mountain ranges, Olympic
+Games, chess, linguistics, economics, sociology.
+
+---
+
+# Output format
+
+Produce exactly 10 prompts. Output ONLY the CSV inside one code fence —
+explanations go after the fence.
+
+```csv
+slug,prompt,intermediate_concept,correct_answer,hop_type,notes
+generated-pc-001,She could have studied medicine law or,business|architecture|education,engineering,parallel_computation,Three distinct professional domains beyond medicine/law remain individually plausible — expect separate supernodes for each competing candidate
+generated-pc-002,...
+```
+
+Columns (matching the standard ground_truth CSV schema):
+- `slug`: `generated-pc-NNN`
+- `prompt`: 8-30 word sentence prefix
+- `intermediate_concept`: pipe-separated list of 2+ other plausible next
+  tokens you expect the model to internally consider as competing candidates
+- `correct_answer`: single most likely next content word
+- `hop_type`: always `parallel_computation`
+- `notes`: one sentence on why distinct supernodes are likely for each
+  competing candidate
+
+After the CSV: 1 paragraph on the distribution of competing-candidate types
+you generated and any patterns you noticed.
+
+Begin.
+
+============================= END COPY-PASTE TO CLAUDE ============================
