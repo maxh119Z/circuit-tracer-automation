@@ -18,6 +18,7 @@ Usage (on the desktop with the model):
 
 from __future__ import annotations
 
+import argparse
 import csv
 import random
 import re
@@ -45,11 +46,25 @@ TRANSCODER_SET = "gemma"
 BATCH_SIZE = 4                  # prompts scored at once (tune to your GPU VRAM)
 SCORE_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
+# Wikipedia now returns HTTP 403 ("Please set a user-agent") for the wikipedia
+# library's generic default UA, so EVERY fetch silently fails and the run yields
+# only a handful of prompts regardless of --candidates. A descriptive User-Agent
+# fixes it. Override with the WIKIPEDIA_USER_AGENT env var or --user-agent.
+import os as _os
+WIKIPEDIA_USER_AGENT = _os.environ.get(
+    "WIKIPEDIA_USER_AGENT",
+    "circuit-tracer-automation/0.1 (research; +https://github.com/safety-research/circuit-tracer)",
+)
+
 # When True, each prompt is built as: <full previous sentence> + <truncated current sentence>.
 # The truncated portion still has length MIN_WORDS..MAX_WORDS; the prepended sentence
 # only adds context. Output filenames get a "_context" suffix in this mode so the
 # original no-context outputs are not overwritten.
 PREPEND_PREVIOUS_SENTENCE = True
+
+# Appended to every slug (e.g. "ctx" -> "...-s26-11-ctx"). Lets plain and context
+# runs share one graph pool without filename collisions. Set per-run in main().
+SLUG_TAG = ""
 
 _suffix = "_context" if PREPEND_PREVIOUS_SENTENCE else ""
 OUT_FILE = Path(__file__).parent / f"ground_truth_wikipedia{_suffix}.csv"
@@ -101,7 +116,8 @@ def _normalize_word(w: str) -> str:
 
 def _slug(article_title: str, sent_idx: int, word_idx: int) -> str:
     base = re.sub(r"[^a-z0-9]+", "-", article_title.lower()).strip("-")
-    return f"{base}-s{sent_idx}-{word_idx}"
+    slug = f"{base}-s{sent_idx}-{word_idx}"
+    return f"{slug}-{SLUG_TAG}" if SLUG_TAG else slug
 
 
 def extract_candidates(article_title: str, text: str, seen_slugs: set[str]) -> list[dict]:
@@ -273,18 +289,111 @@ def score_prompts(prompts: list[str], model: HookedTransformer) -> list[dict]:
 # Main
 # ---------------------------------------------------------------------------
 
+def load_excluded_slugs(paths: list[str]) -> set[str]:
+    """Collect slugs already used in earlier prompt/ground-truth CSVs so a new
+    run produces a DISJOINT set (e.g. 800 new on top of the existing 200)."""
+    excluded: set[str] = set()
+    for p in paths:
+        fp = Path(p)
+        if not fp.exists():
+            print(f"  WARNING: --exclude file not found, skipping: {fp}")
+            continue
+        with fp.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                slug = (row.get("slug") or "").strip()
+                if slug:
+                    excluded.add(slug)
+    return excluded
+
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Generate Wikipedia next-token prompts for circuit tracing.")
+    p.add_argument("--target", type=int, default=TARGET_N,
+                   help=f"Number of prompts to select (default {TARGET_N}). Use 800 to scale up.")
+    p.add_argument("--candidates", type=int, default=CANDIDATES_TO_FETCH,
+                   help=f"Candidate sentences to fetch before scoring (default {CANDIDATES_TO_FETCH}). "
+                        "Scale roughly with --target; selection yield is only a few percent.")
+    p.add_argument("--batch-size", type=int, default=BATCH_SIZE,
+                   help=f"Prompts scored per forward pass (default {BATCH_SIZE}). Raise on bigger GPUs.")
+    p.add_argument("--max-per-article", type=int, default=MAX_PER_ARTICLE,
+                   help=f"Max prompts kept per article for diversity (default {MAX_PER_ARTICLE}).")
+    p.add_argument("--mode", choices=["plain", "context"],
+                   default="context" if PREPEND_PREVIOUS_SENTENCE else "plain",
+                   help="plain = bare truncated sentence prefix; context = one complete "
+                        "sentence prepended before the prefix. Sets the output filename "
+                        "(_context suffix) and default slug tag.")
+    p.add_argument("--slug-tag", type=str, default=None,
+                   help="Suffix appended to every slug so plain/context runs can share one "
+                        "graph pool. Default: 'pl' for plain, 'ctx' for context. Pass '' to "
+                        "reproduce the original untagged convention.")
+    p.add_argument("--seed", type=int, default=None,
+                   help="Seed Python's RNG for reproducible candidate selection (default: unseeded).")
+    p.add_argument("--exclude", type=str, default=None,
+                   help="Comma-separated CSV(s) with a 'slug' column whose slugs to skip, so the new "
+                        "set is disjoint from an existing one (e.g. the original 200 prompts).")
+    p.add_argument("--out-suffix", type=str, default="",
+                   help="Append this to the output filename stems, e.g. '_800' -> prompts_wikipedia_800.csv, "
+                        "so an existing set is not overwritten.")
+    p.add_argument("--score-dtype", choices=["bfloat16", "float16", "float32"], default="bfloat16",
+                   help="dtype for the scoring model (default bfloat16). float32 needs ~10GB just "
+                        "for weights and OOMs on longer context-mode prompts on a 10GB GPU.")
+    p.add_argument("--user-agent", type=str, default=WIKIPEDIA_USER_AGENT,
+                   help="User-Agent sent to the Wikipedia API. A descriptive UA is REQUIRED "
+                        "(the library default is rejected with HTTP 403). Default: "
+                        f"{WIKIPEDIA_USER_AGENT!r}")
+    return p.parse_args()
+
+
 def main():
+    global TARGET_N, CANDIDATES_TO_FETCH, BATCH_SIZE, MAX_PER_ARTICLE
+    global OUT_FILE, PROMPTS_FILE, PREPEND_PREVIOUS_SENTENCE, SLUG_TAG
+    args = parse_args()
+    TARGET_N = args.target
+    CANDIDATES_TO_FETCH = args.candidates
+    BATCH_SIZE = args.batch_size
+    MAX_PER_ARTICLE = args.max_per_article
+    if args.seed is not None:
+        random.seed(args.seed)
+
+    # REQUIRED: Wikipedia rejects the library's default UA with HTTP 403, which
+    # silently caps the candidate pool. Set a descriptive one before any fetch.
+    wikipedia.set_user_agent(args.user_agent)
+
+    # Mode controls prompt construction, output filename, and the default slug tag.
+    PREPEND_PREVIOUS_SENTENCE = (args.mode == "context")
+    SLUG_TAG = args.slug_tag if args.slug_tag is not None else ("ctx" if PREPEND_PREVIOUS_SENTENCE else "pl")
+
+    # Recompute output paths from the chosen mode (not the module-load default).
+    prompts_dir = OUT_FILE.parent
+    suffix = ("_context" if PREPEND_PREVIOUS_SENTENCE else "") + args.out_suffix
+    OUT_FILE = prompts_dir / f"ground_truth_wikipedia{suffix}.csv"
+    PROMPTS_FILE = prompts_dir / f"prompts_wikipedia{suffix}.csv"
+
+    excluded = load_excluded_slugs([s.strip() for s in args.exclude.split(",")]) if args.exclude else set()
+
     print("=== Wikipedia prompt generator ===")
-    print(f"Target: {TARGET_N} prompts | confidence window: [{MIN_CONF}, {MAX_CONF}]")
+    print(f"Target: {TARGET_N} prompts | mode={args.mode} | slug_tag={SLUG_TAG!r} "
+          f"| confidence window: [{MIN_CONF}, {MAX_CONF}]"
+          + (f" | excluding {len(excluded)} existing slugs" if excluded else ""))
 
     # --- Step 1: collect candidates ---
     print(f"\n[1/3] Fetching ~{CANDIDATES_TO_FETCH} candidate prompts from Wikipedia...")
     candidates = fetch_candidates(CANDIDATES_TO_FETCH)
     print(f"  Collected {len(candidates)} candidates from Wikipedia.")
 
+    if excluded:
+        before = len(candidates)
+        candidates = [c for c in candidates if c["slug"] not in excluded]
+        print(f"  Dropped {before - len(candidates)} candidates already in the excluded set "
+              f"({len(candidates)} remain).")
+
     # --- Step 2: score with Gemma ---
-    print(f"\n[2/3] Loading {MODEL_NAME} on {SCORE_DEVICE}...")
-    model = HookedTransformer.from_pretrained(MODEL_NAME, device=SCORE_DEVICE)
+    # Load in bfloat16: float32 weights are ~10GB for Gemma-2-2b, which leaves no
+    # room for activations on a 10GB card and OOMs on longer (context-mode) prompts.
+    # bf16 is plenty for top-1 next-token scoring.
+    score_dtype = getattr(torch, args.score_dtype)
+    print(f"\n[2/3] Loading {MODEL_NAME} on {SCORE_DEVICE} ({args.score_dtype})...")
+    model = HookedTransformer.from_pretrained(MODEL_NAME, device=SCORE_DEVICE, dtype=score_dtype)
     model.eval()
 
     print(f"  Scoring {len(candidates)} prompts...")
