@@ -373,6 +373,8 @@ def run_attribution_batch(args, parser):
     logging.info("Batch attribution: %d prompts from %s", len(rows), csv_path)
     os.makedirs(args.graph_file_dir, exist_ok=True)
 
+    import gc
+
     import torch
     from circuit_tracer import ReplacementModel, attribute
     from circuit_tracer.utils.create_graph_files import create_graph_files
@@ -418,26 +420,46 @@ def run_attribution_batch(args, parser):
 
         model_instance = model_cache[transcoder_set]
 
-        graph = attribute(
-            prompt=prompt,
-            model=model_instance,  # type: ignore
-            max_n_logits=args.max_n_logits,
-            desired_logit_prob=args.desired_logit_prob,
-            batch_size=args.batch_size,
-            verbose=args.verbose,
-            offload=args.offload,
-            max_feature_nodes=args.max_feature_nodes,
-        )
+        graph = None
+        try:
+            graph = attribute(
+                prompt=prompt,
+                model=model_instance,  # type: ignore
+                max_n_logits=args.max_n_logits,
+                desired_logit_prob=args.desired_logit_prob,
+                batch_size=args.batch_size,
+                verbose=args.verbose,
+                offload=args.offload,
+                max_feature_nodes=args.max_feature_nodes,
+            )
 
-        create_graph_files(
-            graph_or_path=graph,
-            slug=slug,
-            scan=None,
-            output_path=args.graph_file_dir,
-            node_threshold=args.node_threshold,
-            edge_threshold=args.edge_threshold,
-        )
-        logging.info("[%d/%d] Done — wrote %s", i, len(rows), out_path)
+            create_graph_files(
+                graph_or_path=graph,
+                slug=slug,
+                scan=None,
+                output_path=args.graph_file_dir,
+                node_threshold=args.node_threshold,
+                edge_threshold=args.edge_threshold,
+            )
+            logging.info("[%d/%d] Done — wrote %s", i, len(rows), out_path)
+        except Exception as exc:
+            # Skip prompts that fail (most often CUDA OOM on very long prompts)
+            # instead of killing the whole batch. The `finally` block below frees
+            # GPU memory so the run continues on the still-cached model. Re-running
+            # later (e.g. on a larger GPU) will retry skipped slugs, since no JSON
+            # was written for them.
+            logging.error("[%d/%d] SKIPPED '%s' — %s: %s",
+                          i, len(rows), slug, type(exc).__name__, exc)
+        finally:
+            # Release this prompt's GPU memory before the next iteration. The forward
+            # pass expands the prompt to `batch_size` copies and retains a large
+            # autograd graph; without this the freed memory stays in PyTorch's
+            # caching-allocator reserve, fragmenting the GPU and OOM-ing on later
+            # prompts even though the model itself is cached and reused.
+            del graph
+            gc.collect()
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
 
     logging.info("Batch attribution complete. %d graphs in %s", len(rows), args.graph_file_dir)
 # CUSTOM EDITS END: custom-automation
