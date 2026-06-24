@@ -407,7 +407,7 @@ LLM_PROMPT_TEMPLATE = (
     '{groups}\n\n'
     'Sample descriptions of the most influential individual nodes (by influence score):\n'
     '{clerp_samples}\n\n'
-    'Score this graph on each of the four dimensions. Reply in this exact JSON format — '
+    'Score this graph on each of the five dimensions. Reply in this exact JSON format — '
     'every dimension is required, with both a score and a one-sentence reason:\n\n'
     '{{\n' + _CRITERIA_JSON_LINES + '\n}}'
 )
