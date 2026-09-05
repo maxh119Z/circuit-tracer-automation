@@ -1,0 +1,2926 @@
+[
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3539615869522095,
+    "top_activations": [
+      {
+        "triggers": [
+          " games",
+          " Olympic",
+          " gold"
+        ],
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " Jah"
+        ],
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "triggers": [
+          " capital",
+          " attempt",
+          " to"
+        ],
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "triggers": [
+          " games",
+          " games",
+          " digital"
+        ],
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.⏎Dave McCool, president and CEO of Muzzy"
+      },
+      {
+        "triggers": [
+          " capital",
+          " ancient",
+          " in"
+        ],
+        "score": 14.25,
+        "context": " in my mind’s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " à",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " متعلقه",
+      "+#+#",
+      "脚注の使い方",
+      "Diwedd"
+    ],
+    "generated_description": "capital city — activates on mentions of \"capital\" and city/place contexts (historic or modern capitals); promotes city-related output tokens (e.g., \"ville\", \"à\", articles)."
+  },
+  {
+    "id": "0_3598_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.39326736330986023,
+    "top_activations": [
+      {
+        "triggers": [
+          " contained",
+          " rule",
+          ","
+        ],
+        "score": 22.0,
+        "context": " rule, as some people find this helpful. In the notation, each syllable is contained in [ ], and numbers 1 to 4 indicate the tone of that"
+      },
+      {
+        "triggers": [
+          " contained",
+          " impossible",
+          " for"
+        ],
+        "score": 21.25,
+        "context": " impossible for lawmen to access without detection by the outlaws concealed there. It contained an infrastructure, with each gang supplying its own food and livestock supply, as"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " blood"
+        ],
+        "score": 21.75,
+        "context": " of blood through the body, by way of the cardiac cycles. The heart is contained in the mediastinum in the thoracic cavity of the thorax.⏎The"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " the"
+        ],
+        "score": 21.75,
+        "context": " of the Bible, both Old and New Testaments (though not all that is contained in the Old Testament is directly relevant for Christians). The Bible ultimately is about"
+      },
+      {
+        "triggers": [
+          " contained",
+          " threat",
+          ","
+        ],
+        "score": 22.0,
+        "context": " threat, measures must be taken to ensure that it does not know that it is contained. SCP-850 must be kept in a large habitat maintained in"
+      }
+    ],
+    "promotes": [
+      "Geplaatst",
+      "contentLoaded",
+      " مرئيه",
+      "atshirt",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "WebServlet",
+      " />\";",
+      "/>\";",
+      "ly",
+      " involve"
+    ],
+    "generated_description": "\"contained\" — activates on the token \"contained\" (past-participle), especially in passive/relative clauses describing something held or included."
+  },
+  {
+    "id": "0_5626_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.36033377051353455,
+    "top_activations": [
+      {
+        "triggers": [
+          " Croatia",
+          "Croatia",
+          "<bos>"
+        ],
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia⏎Croatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Gustav",
+          " a"
+        ],
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " diplomatic",
+          " mission"
+        ],
+        "score": 18.38,
+        "context": " diplomatic mission⏎According to the article 3 of the 1961 Vienna Convention, normal functions consist in:⏎- representing the sending State in the"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Town",
+          " Town"
+        ],
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "triggers": [
+          " Copenhagen",
+          ".",
+          " If"
+        ],
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "Vienna (Austria) — activates on mentions of Vienna/Central Europe; pushes regional directions (east, west, central) and tends to suppress Eastern European city names (Krakow, Bucharest, Ljubljana)"
+  },
+  {
+    "id": "0_11375_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.34682032465934753,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " way",
+          " by"
+        ],
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.⏎\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "triggers": [
+          " is",
+          " and",
+          " subtropical"
+        ],
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "triggers": [
+          " is",
+          " the",
+          " Yosh"
+        ],
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.⏎The Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "triggers": [
+          " is",
+          ",",
+          " all"
+        ],
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It’"
+      },
+      {
+        "triggers": [
+          " is",
+          " have",
+          "⏎"
+        ],
+        "score": 35.5,
+        "context": " have⏎a fresher taste and a more aromatic smell. The whole of the plant is used⏎for culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " themſelves",
+      " Majefty",
+      " Diſ",
+      " myſelf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " является",
+      " was"
+    ],
+    "generated_description": "is (present copula) — activates on the token \"is\" in descriptive clauses; marks present‑tense copula occurrences, correlates with suppressing \"is\" in model outputs."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.36341702938079834,
+    "top_activations": [
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " an"
+        ],
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " music"
+        ],
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: τετράχορδoν, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " my"
+        ],
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " word"
+        ],
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " medicine"
+        ],
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " متعلقه",
+      "UserScript",
+      "",
+      " виправивши"
+    ],
+    "demotes": [
+      "<bos>",
+      "⏎⏎",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In <topic>\" — fires on sentence-initial \"In\" that starts a topical prepositional lead‑in (In music, In medicine, In my ..., etc.), signals upcoming topic phrase."
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3412669003009796,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " This",
+          " will"
+        ],
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          "("
+        ],
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "triggers": [
+          " capital",
+          " are",
+          " a"
+        ],
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " terms"
+        ],
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "triggers": [
+          " capital",
+          " $",
+          "1"
+        ],
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " متعلقه",
+      " snippetHide"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "1",
+      "⏎",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital (economics) — activates on the token \"capital\" in economic/production contexts; signals discussion of markets, loans, stock, production, labor–capital tradeoffs."
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3679371178150177,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " especially",
+          " in"
+        ],
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "triggers": [
+          " capital",
+          "th",
+          "–"
+        ],
+        "score": 16.88,
+        "context": "th–18th century). In addition to being an important regional and provincial capital (of Eṣfahān province), the city is one of the most"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Information"
+        ],
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "triggers": [
+          " capital",
+          ".",
+          " In"
+        ],
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Q"
+        ],
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " raiſ",
+      " Monfieur",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".”",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital — activates on the token \"capital\"; fires across senses: city/provincial seat, financial resources, and uppercase letters."
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3844735324382782,
+    "top_activations": [
+      {
+        "triggers": [
+          " fill",
+          ".",
+          " ..."
+        ],
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "triggers": [
+          " fill",
+          " fill",
+          " when"
+        ],
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "triggers": [
+          " fill",
+          " not",
+          " been"
+        ],
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "triggers": [
+          " fill",
+          " expansion",
+          " and"
+        ],
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "triggers": [
+          " fill",
+          ".",
+          "⏎"
+        ],
+        "score": 17.25,
+        "context": ".⏎Besides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "נגלית",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " صوتيه",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill (verb) — activates on the word “fill” meaning to fill gaps/voids/areas; typically appears before “the” + noun (fill the ___)."
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3649376630783081,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "5",
+          "0"
+        ],
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Indian"
+        ],
+        "score": 28.38,
+        "context": " the Indian laws.⏎6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " output"
+        ],
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " interest",
+          " rate"
+        ],
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "triggers": [
+          " capital",
+          "1",
+          "9"
+        ],
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "álni",
+      "そうな",
+      " وعلى",
+      "리를"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital — activates on the word \"capital\" in economic/finance contexts (assets, machinery, receipts, interest rate)."
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35719892382621765,
+    "top_activations": [
+      {
+        "triggers": [
+          " realistic",
+          " and",
+          " testing"
+        ],
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn’t realistic.⏎WampServer allows you to easily set up a server on your"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " soak",
+          " plants"
+        ],
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.⏎"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " realistic",
+          "Ny"
+        ],
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"⏎The"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " what",
+          " you"
+        ],
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.⏎Develop an action plan for your goals."
+      },
+      {
+        "triggers": [
+          " realistic",
+          " stress",
+          " disorder"
+        ],
+        "score": 17.75,
+        "context": " stress disorder.⏎By bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Reſ",
+      " purpoſe",
+      " Majefty",
+      " Monfieur",
+      " myſelf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Portály",
+      " ("
+    ],
+    "generated_description": "realistic — activates on the adjective \"realistic\" in contexts describing appearance, feel, timeline, or authenticity (e.g., realistic look, realistic timeline, realistic thumps)"
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3267233669757843,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "Aza",
+          "di"
+        ],
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in ½ liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "triggers": [
+          " of",
+          "of",
+          " it"
+        ],
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family⏎originate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King⏎of Norway"
+      },
+      {
+        "triggers": [
+          " of",
+          " a",
+          " UK"
+        ],
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.⏎Dr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "triggers": [
+          " of",
+          " of",
+          " National"
+        ],
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "triggers": [
+          " of",
+          ".",
+          "⏎"
+        ],
+        "score": 37.5,
+        "context": ".⏎After this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " Anſ",
+      " Theſe",
+      " Monfieur",
+      " Efq",
+      " myſelf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "archaic long-s — fires on function words/punctuation (of, in, and, commas); pushes old-style spellings/characters (Anſ, Theſe, Monfieur, Efq, myſelf)."
+  },
+  {
+    "id": "4_7671_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.392039954662323,
+    "top_activations": [
+      {
+        "triggers": [
+          "quarter",
+          " staff",
+          " head"
+        ],
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 20.75,
+        "context": " a school for Native Americans.⏎1875: Helena is named capital of the Montana Territory.⏎1876: U.S. soldiers"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 22.75,
+        "context": " Copenhagen conference.⏎The officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " from"
+        ],
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "triggers": [
+          " headquarters",
+          " in",
+          " its"
+        ],
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "хьтан",
+      "Rüyada",
+      "endmodule"
+    ],
+    "generated_description": "Capital / Headquarters — activates on tokens like \"capital of\", \"headquarters\", \"head\", \"HQ\"; signals administrative-center mentions, promotes \"HQ\"/\"Headquarters\"/related labels."
+  },
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3870798945426941,
+    "top_activations": [
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          "."
+        ],
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          " in"
+        ],
+        "score": 15.62,
+        "context": " in that culture.⏎Exactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "triggers": [
+          " achieve",
+          "-",
+          "based"
+        ],
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " [",
+          "Crown"
+        ],
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " Increased",
+          " investment"
+        ],
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " againſt",
+      " becauſe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve — detects the verb \"achieve\", especially in \"to achieve\" infinitive/goal contexts; fires on goal-oriented outcome statements."
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3883349299430847,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " largest",
+          "<bos>"
+        ],
+        "score": 13.0,
+        "context": "<bos>Reykjavík is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "triggers": [
+          " capital",
+          ",",
+          " via"
+        ],
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " working"
+        ],
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " of"
+        ],
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "triggers": [
+          " capital",
+          " until",
+          " "
+        ],
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.⏎South Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " houſe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital — activates on the token \"capital\", especially in \"capital of\" phrases; signals city-capital descriptions (e.g., \"is the capital of X\")."
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3587704300880432,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " capitalism",
+          " competing"
+        ],
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Hellen"
+        ],
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,” said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "triggers": [
+          " capital",
+          " trillion",
+          " more"
+        ],
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "triggers": [
+          " capital",
+          "illa",
+          "."
+        ],
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.⏎Puerto del Rosario is"
+      },
+      {
+        "triggers": [
+          " capital",
+          " South",
+          " Korean"
+        ],
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital — activates on the word “capital” (any case), across meanings (city, money, etc.); consistently pushes against producing the token “capital.”"
+  },
+  {
+    "id": "6_10660_7",
+    "layer": 6,
+    "ctx_idx": 7,
+    "influence_score": 0.32907634973526,
+    "top_activations": [
+      {
+        "triggers": [
+          "Japanese",
+          "yama",
+          "ii"
+        ],
+        "score": 21.75,
+        "context": "<bos>Japanese researcher Ryuma Niiyama's robot is quite literally making strides in the field of robotics. His running robot, named Athlete, can only make"
+      },
+      {
+        "triggers": [
+          "Japanese",
+          "1",
+          " Nuclear"
+        ],
+        "score": 21.75,
+        "context": "<bos>Japanese Nuclear Emergency: Radiation Monitoring⏎RadNet Data for Reno, Nevada⏎This site contains information and data from March 11, 201"
+      },
+      {
+        "triggers": [
+          " japan",
+          " Japanese",
+          "ischer"
+        ],
+        "score": 23.5,
+        "context": "<bos>Kooperation von DLR und japanischer Raumfahrtagentur JAXA⏎When the Japanese Hayabusa-2 mission is launched towards asteroid "
+      },
+      {
+        "triggers": [
+          "Japanese",
+          " Language",
+          "<bos>"
+        ],
+        "score": 21.75,
+        "context": "<bos>Japanese Language Meta⏎to customize your list.⏎more stack exchange communities⏎Start here for a quick overview of the site⏎Detailed answers to any questions you"
+      },
+      {
+        "triggers": [
+          " Japanese",
+          "JAPAN",
+          " earthquake"
+        ],
+        "score": 26.0,
+        "context": "<bos>The Japanese earthquake could be the costliest disaster ever⏎JAPAN is still reeling from the earthquake and tsunami that struck its north-east coast on March 1"
+      }
+    ],
+    "promotes": [
+      " religieuses",
+      "脚注の使い方",
+      " Abbé",
+      "일본",
+      "曖昧さ回避"
+    ],
+    "demotes": [
+      "графія",
+      "tanooga",
+      "ecap",
+      "preventDefault",
+      " виправивши"
+    ],
+    "generated_description": "Japanese / Japan — activates on tokens mentioning “Japanese” or “Japan” and Japan-related topics (JAXA, Hayabusa, earthquake); often promotes Japanese-language tokens or disambiguation entries."
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3522544205188751,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " redund",
+          "ancies"
+        ],
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Hel",
+          "man"
+        ],
+        "score": 17.38,
+        "context": " Helman, Forbes Staff⏎I'm based in Houston, Texas. Energy capital of the world.⏎This article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " control",
+          "."
+        ],
+        "score": 17.25,
+        "context": " control.⏎Two days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " (",
+          "Special"
+        ],
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "triggers": [
+          " capital",
+          " in",
+          " English"
+        ],
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " виправивши",
+      " تضيفلها",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "⏎"
+    ],
+    "generated_description": "capital (city) — activates on the token \"capital\" used to mark/introduce a capital city; appears before mentions of the named capital or \"city is\" constructions."
+  },
+  {
+    "id": "16_4298_8",
+    "layer": 16,
+    "ctx_idx": 8,
+    "influence_score": 0.3895760178565979,
+    "top_activations": [
+      {
+        "triggers": [
+          " county",
+          " the",
+          " as"
+        ],
+        "score": 33.75,
+        "context": ", Texas Legislators created the County of Kleberg, with Kingsville as the county seat. Shortly thereafter, various events provided the impetus to further spur the growth"
+      },
+      {
+        "triggers": [
+          " is",
+          " capital",
+          " Sacramento"
+        ],
+        "score": 34.0,
+        "context": " 156,172 square miles. The capital of the State is Sacramento, with a population (1900) of 29"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " Port"
+        ],
+        "score": 34.25,
+        "context": "⏎The islands of Trobriand are about 90 minutes away from the capital of Port Moresby. Ferry services are also available from Alotau by use"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " Den"
+        ],
+        "score": 36.0,
+        "context": " Yogyakarta, Merapi is more than 530 kilometers from Bali's capital of Denpasar.⏎While no one can be certain when, or even"
+      },
+      {
+        "triggers": [
+          " is",
+          " Cyprus",
+          " capital"
+        ],
+        "score": 31.75,
+        "context": " the European Union. The capital city is Nicosia and the unrecognised capital of northern Cyprus is also Nicosia (known as Lefkoşa in Turkish). The currency of"
+      }
+    ],
+    "promotes": [
+      "unnitel",
+      "rawDesc",
+      "verläs",
+      " urbaine",
+      " urbanas"
+    ],
+    "demotes": [
+      "EDEFAULT",
+      "ритори",
+      "check",
+      "ImageContext",
+      "findpost"
+    ],
+    "generated_description": "capital-city marker — activates on mentions of \"capital\" with nearby structural words (of/is); signals naming or stating a country's/state's capital (e.g., \"capital is Sacramento\", \"capital of Port Moresby\")."
+  },
+  {
+    "id": "17_7178_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.3857771158218384,
+    "top_activations": [
+      {
+        "triggers": [
+          " Capitol",
+          " in",
+          " Washington"
+        ],
+        "score": 36.75,
+        "context": " until 1968.⏎The Code Talkers were honored at the Capitol in Washington by President George W. Bush in July of 200"
+      },
+      {
+        "triggers": [
+          " capitol",
+          " the",
+          " state"
+        ],
+        "score": 35.75,
+        "context": " its presence on the state flag and South Carolina legislators removed it last year from the capitol dome, says Dr. John Clark, a WMU associate professor of political"
+      },
+      {
+        "triggers": [
+          ":",
+          " Capital",
+          " Washington"
+        ],
+        "score": 44.25,
+        "context": " est.) 307,226,000. Capital: Washington, D.C.⏎The population includes people of European and Middle"
+      },
+      {
+        "triggers": [
+          " is",
+          " capital",
+          " ("
+        ],
+        "score": 32.75,
+        "context": ", and English is also spoken. The⏎currency is the peso. The capital is Manila (Manila).⏎A white equilateral triangle is located to the side,"
+      },
+      {
+        "triggers": [
+          " of",
+          " buildings",
+          " government"
+        ],
+        "score": 34.75,
+        "context": " of the City of Westminster, close to the historic Westminster Abbey and the government buildings of Whitehall and Downing Street.⏎Her Majesty's Royal Palace and Fortress,"
+      }
+    ],
+    "promotes": [
+      "Parliament",
+      "Capitol",
+      " Parliament",
+      " Legislative",
+      " Capitol"
+    ],
+    "demotes": [
+      "TagMode",
+      "zewod",
+      "AndEndTag",
+      "Portály",
+      " useRef"
+    ],
+    "generated_description": "Capital/capitol (government seat) — activates on mentions of capital cities, capitol/parliament buildings or nearby government terms (Washington, Manila, Westminster); promotes tokens like Parliament/Capitol/Legislative"
+  },
+  {
+    "id": "7_14257_7",
+    "layer": 7,
+    "ctx_idx": 7,
+    "influence_score": 0.3957044184207916,
+    "top_activations": [
+      {
+        "triggers": [
+          " Japan",
+          " Kure",
+          "ll"
+        ],
+        "score": 11.88,
+        "context": " between two countries that has, literally, taken flight.⏎A young girl from Japan and researchers at Kure Atoll have become friends. And it all began with"
+      },
+      {
+        "triggers": [
+          " Japanese",
+          "uro",
+          " islands"
+        ],
+        "score": 11.38,
+        "context": " (scientific name Decapterus macarellus), has many local names in the Japanese islands: shakkari (Koudu Island), aumuro oomuro"
+      },
+      {
+        "triggers": [
+          " Japan",
+          " would",
+          " close"
+        ],
+        "score": 11.38,
+        "context": " would close the gap between US standards and other countries manufacturing cars—including China, Japan and the European Union. With this gap closing, researchers noted the potential to"
+      },
+      {
+        "triggers": [
+          "omiya",
+          "yoshi",
+          "mazaki"
+        ],
+        "score": 11.62,
+        "context": " prevent cold surfaces from chilling the rest of their bodies, according to Hiroyoshi Ninomiya, a professor at Yamazaki Gakuen University, just west of Tokyo."
+      },
+      {
+        "triggers": [
+          " Japan",
+          " Asia",
+          " of"
+        ],
+        "score": 11.88,
+        "context": " of East Asia. It is a peninsula jutting off⏎of China, and Japan is only two hours away. Despite this close physical⏎proximity to the"
+      }
+    ],
+    "promotes": [
+      "ATUR",
+      "stylesheet",
+      "afar",
+      "islative",
+      "setVerticalGroup"
+    ],
+    "demotes": [
+      "Geplaatst",
+      "tagext",
+      "脚注の使い方",
+      "\"]));",
+      "Cyfeiriadau"
+    ],
+    "generated_description": "Japan / Japanese place names — activates on mentions of Japan, Japanese islands, cities, and Japanese personal/place names; flags East-Asia geographic context."
+  },
+  {
+    "id": "18_6101_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.36189210414886475,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " embassy",
+          " in"
+        ],
+        "score": 42.5,
+        "context": " Rising through the ranks, he becomes a military attache in Sudan's embassy in the UAE, and later a garrison commander and brigadier.⏎19"
+      },
+      {
+        "triggers": [
+          " with",
+          " history",
+          ","
+        ],
+        "score": 41.75,
+        "context": " history, fed more than one-third of North Korea's population. For most countries, bilateral food aid became their only significant form of engagement with the DPR"
+      },
+      {
+        "triggers": [
+          " from",
+          " above",
+          " under"
+        ],
+        "score": 53.5,
+        "context": " colonizing should be a royal endeavour and that colonies should be kept under rigid control from above. In 1620 Gorges succeeded in obtaining a charter"
+      },
+      {
+        "triggers": [
+          " from",
+          " centre",
+          " the"
+        ],
+        "score": 42.5,
+        "context": "administrative units\"). Under the new constitution there will be a devolution of power, from the centre to 47 self-governed ETHNIC counties, a"
+      },
+      {
+        "triggers": [
+          " in",
+          " monarchy",
+          " to"
+        ],
+        "score": 45.5,
+        "context": " of them no doubt started to feel as though they didn't need the monarchy in order to prosper in the fledgling America. This no doubt seemed ludicrous to"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " Beijing",
+      " Canberra",
+      "Washington",
+      " Washington"
+    ],
+    "demotes": [
+      "ⓧ",
+      " חיצוניים",
+      " NgModule",
+      "CASCADE",
+      " handleMessage"
+    ],
+    "generated_description": "say capital city — fires on prepositions/articles introducing place phrases (in, under, from, the, to); pushes major capital names like Beijing, Canberra, Washington"
+  },
+  {
+    "id": "18_9239_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.3242129385471344,
+    "top_activations": [
+      {
+        "triggers": [
+          "6",
+          "1",
+          "1"
+        ],
+        "score": 71.0,
+        "context": "Summer LandscapeMade in Japan, Asia⏎Edo Period (1615-1868), 1764⏎Tokuyama Gyok"
+      },
+      {
+        "triggers": [
+          " of",
+          ";",
+          " Japanese"
+        ],
+        "score": 65.5,
+        "context": " crystal design is very common in Japan. This tendency is affected by Japanese traditional Cultures; vertical arrangement of hexagonal family crests, vertical writing of formal Japanese, etc."
+      },
+      {
+        "triggers": [
+          "1",
+          "-",
+          "9"
+        ],
+        "score": 62.5,
+        "context": "They are cautious with strangers.⏎In Heian period(平安時代, 9c-12c), the⏎most part of Iga was the"
+      },
+      {
+        "triggers": [
+          "-",
+          " one",
+          " the"
+        ],
+        "score": 60.0,
+        "context": " Hiroshige, was one of the best-known artists of the Ukiyo-e school of woodblock printmaking.⏎Ukiyo-e means"
+      },
+      {
+        "triggers": [
+          " ",
+          "1",
+          " century"
+        ],
+        "score": 57.0,
+        "context": " popular school of painting and Hiroshige is definitely popular.⏎His scenes of 19th century Japan now on show at Blackburn Museum and Art Gallery have gone"
+      }
+    ],
+    "promotes": [
+      " Japón",
+      " япон",
+      " Японии",
+      " Japan",
+      " Japanese"
+    ],
+    "demotes": [
+      "httphttps",
+      "EndInit",
+      " resourceCulture",
+      "providedIn",
+      "ValueStyle"
+    ],
+    "generated_description": "Japan / Japanese — activates on \"Japanese\"/Japan-related words, historical periods and cultural terms; pushes output toward \"Japan\" (various language forms)."
+  },
+  {
+    "id": "18_1764_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.38050577044487,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " increased",
+          "."
+        ],
+        "score": 44.0,
+        "context": ". It is estimated that the total power consumed by ICT-related devices will have increased fivefold by 2025 (Fig. 1).⏎"
+      },
+      {
+        "triggers": [
+          " is",
+          " is",
+          " is"
+        ],
+        "score": 41.75,
+        "context": " force is applied equally to every part of the contacts. As a result, there is no contact where its contact resistance is not reduced.⏎Further, there is"
+      },
+      {
+        "triggers": [
+          " Properties",
+          " to",
+          " the"
+        ],
+        "score": 36.25,
+        "context": "<bos>Nominations of Cultural Properties to the World Heritage List (Val d'Orcia)⏎The World Heritage Committee,⏎1. Inscribes Val d'Or"
+      },
+      {
+        "triggers": [
+          " is",
+          " computing",
+          " cloud"
+        ],
+        "score": 44.0,
+        "context": " the data processing speed and throughput of computers as a result of the development of the cloud computing and supercomputer technology. It is estimated that the total power consumed by"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " of"
+        ],
+        "score": 40.75,
+        "context": " cookers are not widespread in Japan, according to professor Yuichi Nakajo of the Ashikaga Institute of Technology (AIT), but they are available commercially and"
+      }
+    ],
+    "promotes": [
+      " الرياضيه",
+      " castello",
+      "новниш",
+      " ¥",
+      "참고"
+    ],
+    "demotes": [
+      " calendriers",
+      " OMITTED",
+      "Erreferentziak",
+      "Hochspringen",
+      "+"
+    ],
+    "generated_description": "copula/preposition marker — activates on small function words (especially \"is\", \"of\", \"to\", \"the\"); signals upcoming predicate or noun-phrase continuation in factual/declarative text"
+  },
+  {
+    "id": "19_2695_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.355621337890625,
+    "top_activations": [
+      {
+        "triggers": [
+          " greater",
+          " metro",
+          " Angeles"
+        ],
+        "score": 44.75,
+        "context": " paper proposes a specific demonstration project in Southern California. Orange County, part of the greater Los Angeles metro area, has five new toll road projects under development: two"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 64.0,
+        "context": "936.⏎Five cities — St. Louis, Indianapolis Chicago, Detroit and Denver — are all on pace to shatter their all-time monthly heat records"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "13 election cycle. Ten of America's 30 largest cities -- including Boston, Detroit, Los Angeles, New York and Seattle -- elected mayors this"
+      },
+      {
+        "triggers": [
+          " major",
+          " and",
+          " in"
+        ],
+        "score": 47.75,
+        "context": " Los Angeles and Phoenix. They hope to ultimately map the CO2 emissions in all major cities acrosUltimately, they say, they hope to cover the entire United"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "-Ft. Worth. Belize is also served from Atlanta, Charlotte, Los Angeles, New York and Washington, DC, as well as Toronto, Canada ... more"
+      }
+    ],
+    "promotes": [
+      " Seattle",
+      " Atlanta",
+      " London",
+      " cities",
+      " Chicago"
+    ],
+    "demotes": [
+      "XmlAccessorType",
+      "Бахар",
+      "SBATCH",
+      "}');",
+      "řevě"
+    ],
+    "generated_description": "say CityName — activates on list conjunctions/punctuation/near tokens in city lists; pushes specific city tokens (Seattle, Atlanta, London, Chicago)."
+  },
+  {
+    "id": "18_9239_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.33338525891304016,
+    "top_activations": [
+      {
+        "triggers": [
+          "6",
+          "1",
+          "1"
+        ],
+        "score": 71.0,
+        "context": "Summer LandscapeMade in Japan, Asia⏎Edo Period (1615-1868), 1764⏎Tokuyama Gyok"
+      },
+      {
+        "triggers": [
+          " of",
+          ";",
+          " Japanese"
+        ],
+        "score": 65.5,
+        "context": " crystal design is very common in Japan. This tendency is affected by Japanese traditional Cultures; vertical arrangement of hexagonal family crests, vertical writing of formal Japanese, etc."
+      },
+      {
+        "triggers": [
+          "1",
+          "-",
+          "9"
+        ],
+        "score": 62.5,
+        "context": "They are cautious with strangers.⏎In Heian period(平安時代, 9c-12c), the⏎most part of Iga was the"
+      },
+      {
+        "triggers": [
+          "-",
+          " one",
+          " the"
+        ],
+        "score": 60.0,
+        "context": " Hiroshige, was one of the best-known artists of the Ukiyo-e school of woodblock printmaking.⏎Ukiyo-e means"
+      },
+      {
+        "triggers": [
+          " ",
+          "1",
+          " century"
+        ],
+        "score": 57.0,
+        "context": " popular school of painting and Hiroshige is definitely popular.⏎His scenes of 19th century Japan now on show at Blackburn Museum and Art Gallery have gone"
+      }
+    ],
+    "promotes": [
+      " Japón",
+      " япон",
+      " Японии",
+      " Japan",
+      " Japanese"
+    ],
+    "demotes": [
+      "httphttps",
+      "EndInit",
+      " resourceCulture",
+      "providedIn",
+      "ValueStyle"
+    ],
+    "generated_description": "Japan / Japanese — activates on mentions of Japan, Japanese culture, historical periods and names (Edo, Heian, Hiroshige, Japanese); promotes output tokens like \"Japan\"/language-specific forms."
+  },
+  {
+    "id": "19_9990_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.3791646361351013,
+    "top_activations": [
+      {
+        "triggers": [
+          "1",
+          " in",
+          " since"
+        ],
+        "score": 64.5,
+        "context": " the Fukushima site under control since an earthquake and tsunami caused three reactor meltdowns in March 2011.⏎Japan's Nuclear Regulation Authority has"
+      },
+      {
+        "triggers": [
+          " ",
+          "According",
+          "3"
+        ],
+        "score": 62.0,
+        "context": " help cool them. About 30 tonnes was dropped by helicopters yesterday.⏎According to Reuters: ‘Yukiya Amano, head of the Vienna-based"
+      },
+      {
+        "triggers": [
+          " ",
+          " ",
+          "4"
+        ],
+        "score": 72.0,
+        "context": "00 buildings destroyed by the tsunami on March 11, which also killed 40 of its residents. But here, and throughout the area that lies"
+      },
+      {
+        "triggers": [
+          " ",
+          "0",
+          " in"
+        ],
+        "score": 70.0,
+        "context": " loss during and after the massive earthquake and tsunami that shook Japan in March 2011. Its impact became an international issue because it was the cause of"
+      },
+      {
+        "triggers": [
+          " March",
+          " on",
+          " Fukushima"
+        ],
+        "score": 65.0,
+        "context": " on the future of nuclear power.⏎In the mid-afternoon on Friday, March 11 the seismic sensors at the Fukushima-Daiichi nuclear power plant"
+      }
+    ],
+    "promotes": [
+      "JAPAN",
+      " Tokyo",
+      "Japan",
+      " JAPAN",
+      " Japan"
+    ],
+    "demotes": [
+      " Paused",
+      "principalTable",
+      "SPJ",
+      "StoryboardSegue",
+      "XmlAccessorType"
+    ],
+    "generated_description": "say Japan — activates on Fukushima/tsunami/earthquake news context (March 2011, location words like “in”, “on”, “during”); strongly promotes tokens “Japan” / “Tokyo”."
+  },
+  {
+    "id": "19_9990_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.31338921189308167,
+    "top_activations": [
+      {
+        "triggers": [
+          "1",
+          " in",
+          " since"
+        ],
+        "score": 64.5,
+        "context": " the Fukushima site under control since an earthquake and tsunami caused three reactor meltdowns in March 2011.⏎Japan's Nuclear Regulation Authority has"
+      },
+      {
+        "triggers": [
+          " ",
+          "According",
+          "3"
+        ],
+        "score": 62.0,
+        "context": " help cool them. About 30 tonnes was dropped by helicopters yesterday.⏎According to Reuters: ‘Yukiya Amano, head of the Vienna-based"
+      },
+      {
+        "triggers": [
+          " ",
+          " ",
+          "4"
+        ],
+        "score": 72.0,
+        "context": "00 buildings destroyed by the tsunami on March 11, which also killed 40 of its residents. But here, and throughout the area that lies"
+      },
+      {
+        "triggers": [
+          " ",
+          "0",
+          " in"
+        ],
+        "score": 70.0,
+        "context": " loss during and after the massive earthquake and tsunami that shook Japan in March 2011. Its impact became an international issue because it was the cause of"
+      },
+      {
+        "triggers": [
+          " March",
+          " on",
+          " Fukushima"
+        ],
+        "score": 65.0,
+        "context": " on the future of nuclear power.⏎In the mid-afternoon on Friday, March 11 the seismic sensors at the Fukushima-Daiichi nuclear power plant"
+      }
+    ],
+    "promotes": [
+      "JAPAN",
+      " Tokyo",
+      "Japan",
+      " JAPAN",
+      " Japan"
+    ],
+    "demotes": [
+      " Paused",
+      "principalTable",
+      "SPJ",
+      "StoryboardSegue",
+      "XmlAccessorType"
+    ],
+    "generated_description": "Japan (Fukushima 2011) — activates on mentions of Fukushima, March 2011, tsunami/earthquake context; consistently pushes output tokens like “Japan” and “Tokyo.”"
+  },
+  {
+    "id": "20_1194_7",
+    "layer": 20,
+    "ctx_idx": 7,
+    "influence_score": 0.29078778624534607,
+    "top_activations": [
+      {
+        "triggers": [
+          "ō",
+          " (",
+          " ("
+        ],
+        "score": 80.0,
+        "context": " meaning \"soul\" or \"spirit.\" Alternative names include 亡霊 (Bōrei) meaning ruined or departed spirit, 死霊 (Shiryō)"
+      },
+      {
+        "triggers": [
+          " in",
+          " Ed",
+          "-"
+        ],
+        "score": 94.0,
+        "context": " popular type of Chinese lantern plant. It is cultivated at Shikabone-cho in Edogawa from spring just for the two days on which the Yonman"
+      },
+      {
+        "triggers": [
+          " venerable",
+          " the",
+          " is"
+        ],
+        "score": 94.0,
+        "context": " spring chicken. One of the first buddhist temples to arrive in Japan is the venerable Yakushiji in today’s Nara prefecture, not far from Kyoto"
+      },
+      {
+        "triggers": [
+          "1",
+          " in",
+          " in"
+        ],
+        "score": 80.0,
+        "context": " magnitude 9.0 earthquake struck off Japan's coast in 2011 in Iwaki, Fukushima prefecture, on March 11."
+      },
+      {
+        "triggers": [
+          " at",
+          " Tokyo",
+          " said"
+        ],
+        "score": 82.0,
+        "context": " previous Earth Summits,” said Ryoichi Yamamoto, development expert and professor emeritus at Tokyo University.⏎Celebrating the 20th anniversary of the first United Nations"
+      }
+    ],
+    "promotes": [
+      " Jepang",
+      " Tsuk",
+      " Hiro",
+      " Japan",
+      " Japanese"
+    ],
+    "demotes": [
+      " facie",
+      " bezeichneter",
+      "=\"@+",
+      "⋙",
+      "ngrx"
+    ],
+    "generated_description": "Japan / Japanese places — activates on Japanese place names, personal names, and Japan-related words (Tokyo, Edogawa, Osaka context, 2011 earthquake); promotes “Japan/Japanese” tokens."
+  },
+  {
+    "id": "20_13090_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.37502822279930115,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " and",
+          " New"
+        ],
+        "score": 116.0,
+        "context": " made up of slum property as it also included some fine Georgian buildings in New Street and the Old Square, which led to considerable extra expense as they could not be"
+      },
+      {
+        "triggers": [
+          " River",
+          ",",
+          " S"
+        ],
+        "score": 136.0,
+        "context": " were fewer mills on the bigger River Sowe: five (or possibly seven) above the confluence with the Sherbourne, including Binley, not in the county"
+      },
+      {
+        "triggers": [
+          ",",
+          " in",
+          " of"
+        ],
+        "score": 134.0,
+        "context": " Binley, not in the county of the city, and one on a tributary in the extreme north of the county. It is not possible to say whether this"
+      },
+      {
+        "triggers": [
+          " to",
+          " from",
+          " Rub"
+        ],
+        "score": 128.0,
+        "context": " up the whole of the Lickey ridge, running from Rubery in the north to Cofton Hill in the south. It is Cambrian (570 million"
+      },
+      {
+        "triggers": [
+          " River",
+          "'",
+          " in"
+        ],
+        "score": 114.0,
+        "context": " were most likely to find a home in Digbeth.⏎It was Digbeth's plentiful water supply which acted as a magnet - not only the River Rea"
+      }
+    ],
+    "promotes": [
+      " ExecuteAsync",
+      " Roskov",
+      "Hentet",
+      ")++;",
+      "SharedCtor"
+    ],
+    "demotes": [
+      "﻿/**",
+      "arduino",
+      " AssemblyTitle",
+      "ərbaycan",
+      "toastr"
+    ],
+    "generated_description": "Place/location token — fires on place-name words and nearby locational prepositions (in, from, to); activates on rivers, streets, towns and other geographic mentions."
+  },
+  {
+    "id": "21_5943_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.28091806173324585,
+    "top_activations": [
+      {
+        "triggers": [
+          " =",
+          " City",
+          " Capital"
+        ],
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:⏎- Capital City = Freetown⏎- Population = 5,245,695⏎- Official and Recognized Languages"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " a",
+          " "
+        ],
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.⏎Israel's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " to"
+        ],
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.⏎As presented here, in"
+      },
+      {
+        "triggers": [
+          " in",
+          " ",
+          "9"
+        ],
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " partnership"
+        ],
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in⏎October 1998 in a national launch by then Deputy President Thabo⏎Mbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "say capital/city name — activates on \"capital\"/prepositions (\"of\",\"in\",\"to\") before place context; pushes country-capital or major city tokens (London, Nairobi, Toronto, Sydney, Dublin)"
+  },
+  {
+    "id": "17_1084_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.3944939970970154,
+    "top_activations": [
+      {
+        "triggers": [
+          " (",
+          " Fayette",
+          " more"
+        ],
+        "score": 32.5,
+        "context": " more from the following Kentucky Counties: Calloway, Christian, Daviess, Fayette (Lexington), Henderson, Hopkins, Logan, McCracken, Muhlenberg,"
+      },
+      {
+        "triggers": [
+          " in",
+          " especially",
+          " in"
+        ],
+        "score": 31.25,
+        "context": " always forget to handle the rubbish so as not to couse polutions. especially in Indonesia is still very bad in the process waste in the landfill. mountains of"
+      },
+      {
+        "triggers": [
+          " them",
+          " within",
+          " most"
+        ],
+        "score": 35.0,
+        "context": "0 square miles in size, with only 36 million people, most of them already crammed quite amicably within reasonably dense urban areas. California will always have"
+      },
+      {
+        "triggers": [
+          " in",
+          " easing",
+          " congestion"
+        ],
+        "score": 38.5,
+        "context": " off-peak times—holds great potential for easing traffic congestion and reducing auto emissions in Southern California. New technology for nonstop electronic toll collection, coupled with increased public"
+      },
+      {
+        "triggers": [
+          " around",
+          " the",
+          " capital"
+        ],
+        "score": 38.5,
+        "context": " rivers that have been polluted by chemicals and human excreta. In and around the capital city of Kigali, there is a concentration of people, farms, and industries"
+      }
+    ],
+    "promotes": [
+      " metropolitan",
+      " cities",
+      " City",
+      " urban",
+      " city"
+    ],
+    "demotes": [
+      " Archive",
+      " Archives",
+      "Archives",
+      " Orville",
+      " IFTT"
+    ],
+    "generated_description": "say city — activates on prepositions/articles introducing locations (in, around, within, the capital); promotes tokens like city, cities, metropolitan, urban."
+  },
+  {
+    "id": "23_6617_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3354351222515106,
+    "top_activations": [
+      {
+        "triggers": [
+          " from",
+          ",",
+          " of"
+        ],
+        "score": 31.75,
+        "context": " of the Austin Friars as well.⏎Located about 100 miles from London, Winchester has been a place of habitation continuously for over 2,"
+      },
+      {
+        "triggers": [
+          " in",
+          " that",
+          " declared"
+        ],
+        "score": 31.0,
+        "context": " Superintendent of Public Instruction Jack O'Connell declared that \"intelligent design\" was unwelcome in California's public school science classes. \"The introduction of intelligent design theory"
+      },
+      {
+        "triggers": [
+          " of",
+          " like",
+          " in"
+        ],
+        "score": 32.5,
+        "context": " them to thrive in subtropical climates like in the state of New South Wales just south of Queensland.⏎Moreton Bay Fig⏎Moreton Bay figs (scientific name"
+      },
+      {
+        "triggers": [
+          " how",
+          " of",
+          " benefits"
+        ],
+        "score": 28.25,
+        "context": " The solar policies adopted by these cities and their municipal utilities provide a strong example for how the rest of Texas can reach its solar energy potential.⏎Solar energy benefits"
+      },
+      {
+        "triggers": [
+          " in",
+          " the",
+          " Approximately"
+        ],
+        "score": 30.0,
+        "context": " Approximately 2,700 pedestrians and bicyclists are injured every year in the Washington region, and 89 are killed. Pedestrian and bicyclist"
+      }
+    ],
+    "promotes": [
+      " mód",
+      "IsContent",
+      "UnknownFields",
+      "SharedDtor",
+      " Đình"
+    ],
+    "demotes": [
+      " FLORIDA",
+      " Toronto",
+      " Edmonton",
+      " Vancouver",
+      " Brisbane"
+    ],
+    "generated_description": "Location preposition — activates on locative/function words (in, of, from, near, how) that introduce place names, regions, or location clauses."
+  },
+  {
+    "id": "20_1194_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.25560373067855835,
+    "top_activations": [
+      {
+        "triggers": [
+          "ō",
+          " (",
+          " ("
+        ],
+        "score": 80.0,
+        "context": " meaning \"soul\" or \"spirit.\" Alternative names include 亡霊 (Bōrei) meaning ruined or departed spirit, 死霊 (Shiryō)"
+      },
+      {
+        "triggers": [
+          " in",
+          " Ed",
+          "-"
+        ],
+        "score": 94.0,
+        "context": " popular type of Chinese lantern plant. It is cultivated at Shikabone-cho in Edogawa from spring just for the two days on which the Yonman"
+      },
+      {
+        "triggers": [
+          " venerable",
+          " the",
+          " is"
+        ],
+        "score": 94.0,
+        "context": " spring chicken. One of the first buddhist temples to arrive in Japan is the venerable Yakushiji in today’s Nara prefecture, not far from Kyoto"
+      },
+      {
+        "triggers": [
+          "1",
+          " in",
+          " in"
+        ],
+        "score": 80.0,
+        "context": " magnitude 9.0 earthquake struck off Japan's coast in 2011 in Iwaki, Fukushima prefecture, on March 11."
+      },
+      {
+        "triggers": [
+          " at",
+          " Tokyo",
+          " said"
+        ],
+        "score": 82.0,
+        "context": " previous Earth Summits,” said Ryoichi Yamamoto, development expert and professor emeritus at Tokyo University.⏎Celebrating the 20th anniversary of the first United Nations"
+      }
+    ],
+    "promotes": [
+      " Jepang",
+      " Tsuk",
+      " Hiro",
+      " Japan",
+      " Japanese"
+    ],
+    "demotes": [
+      " facie",
+      " bezeichneter",
+      "=\"@+",
+      "⋙",
+      "ngrx"
+    ],
+    "generated_description": "Japan / Japanese — activates on Japanese place names, cultural terms and events (Tokyo, Osaka, Kyoto, Edogawa, temples, 2011 quake); often promotes tokens like \"Japan\" / \"Japanese\"."
+  },
+  {
+    "id": "24_6082_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3664432466030121,
+    "top_activations": [
+      {
+        "triggers": [
+          " and",
+          " by",
+          "ous"
+        ],
+        "score": 60.25,
+        "context": " by precipitous mountains, Suzuka mountain⏎range(鈴鹿山脈) and Murou mountain range(室生山脈).⏎Mt Handou("
+      },
+      {
+        "triggers": [
+          ",",
+          " and",
+          ","
+        ],
+        "score": 57.25,
+        "context": " would strike in one of three zones to the south of the country – Tokai, Tonankai, and Nankai. No earthquake has hit these regions since"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " in"
+        ],
+        "score": 53.0,
+        "context": " the original tatami was used in different way.⏎The oldest description is seen in Kojiki,⏎the oldest history book in Japan written in 7"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " by"
+        ],
+        "score": 54.25,
+        "context": " by the Imagawa family. In 1582 it became a territory of Tokugawa Ieyasu, founder of the Tokugawa shogunate"
+      },
+      {
+        "triggers": [
+          " by",
+          "-",
+          "/"
+        ],
+        "score": 54.0,
+        "context": " made from metal and/or wood, very similar to the gunbai used today by sumo referees.⏎Types of Japanese war fans⏎- Gunsen (軍"
+      }
+    ],
+    "promotes": [
+      "ressee",
+      "Спољашње",
+      "tagHelperRunner",
+      "zzleHttp",
+      " متعلقه"
+    ],
+    "demotes": [
+      " lopp",
+      "enti",
+      "ofi",
+      "cer",
+      "威廉"
+    ],
+    "generated_description": "connective function words — activates on conjunctions/prepositions (and, of, by, in, or); marks phrase links and lists, often around commas and enumerations"
+  },
+  {
+    "id": "24_6394_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.30734455585479736,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " Colorado",
+          "."
+        ],
+        "score": 57.0,
+        "context": ".⏎CREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder⏎Superman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " from"
+        ],
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Illinois",
+          " to"
+        ],
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " Arizona"
+        ],
+        "score": 48.0,
+        "context": " – cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.⏎But now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "triggers": [
+          "⏎",
+          "⏎",
+          " Federal"
+        ],
+        "score": 47.0,
+        "context": " Federal Waters⏎New Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean⏎SAN FRANCISCO— The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$​",
+      "存于互联网档案馆",
+      "脚注の使い方",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "say PLACE — fires on prepositions (at/from/of/in/to) introducing geographic or institution names; predicts/boosts the following place/entity token."
+  },
+  {
+    "id": "24_5999_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.39081037044525146,
+    "top_activations": [
+      {
+        "triggers": [
+          " Network",
+          " searches",
+          " Translations"
+        ],
+        "score": 105.5,
+        "context": " Web's Largest Resource for⏎Definitions & Translations⏎A Member Of The STANDS4 Network⏎Nearby & related entries:⏎Alternative searches for minch:"
+      },
+      {
+        "triggers": [
+          " .",
+          " .",
+          " ."
+        ],
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .⏎How many different solutions can you find to this problem?⏎Arrange "
+      },
+      {
+        "triggers": [
+          " power",
+          " precision",
+          " could"
+        ],
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.⏎Most e"
+      },
+      {
+        "triggers": [
+          "-",
+          " Terminology",
+          " types"
+        ],
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.⏎- 1 Terminology⏎- 2 Basic"
+      },
+      {
+        "triggers": [
+          " Solution",
+          "sey",
+          " *"
+        ],
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution⏎By Nnimmo Bassey *⏎The fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " ་་",
+      " Forumite",
+      " itſelf",
+      "^(@)"
+    ],
+    "demotes": [
+      " européennes",
+      " helyzet",
+      " industriels",
+      " pracovní",
+      " atuais"
+    ],
+    "generated_description": "Section heading — activates on title-case or list-heading words (Translations, Terminology, Solution, Types, Network); signals web/page headings, list labels, or section titles."
+  },
+  {
+    "id": "23_850_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.27425920963287354,
+    "top_activations": [
+      {
+        "triggers": [
+          " Japanese",
+          "okan",
+          "day"
+        ],
+        "score": 67.0,
+        "context": "day excursions all over the world. Whether hiking the Inca Trail, experiencing a traditional Japanese Ryokan, or relaxing on the beaches of Thailand, Global Basecamps specializes"
+      },
+      {
+        "triggers": [
+          "1",
+          "em",
+          " and"
+        ],
+        "score": 66.5,
+        "context": "-renowned explorer and alpinist Naomi Uemura (1941-1984), who was preparing to reach the North Pole.⏎Eventually"
+      },
+      {
+        "triggers": [
+          " before",
+          " the",
+          " of"
+        ],
+        "score": 64.0,
+        "context": " Ashida River, facing the Inland Sea. A small fishing village before the construction of the Fukuyama Castle in 1619, it developed as a"
+      },
+      {
+        "triggers": [
+          " flourishing",
+          " of",
+          " the"
+        ],
+        "score": 66.0,
+        "context": " to this monstrous repertory, as did the writers and artists responsible for the flourishing of print culture from the seventeenth century. Although the circulation of monster images became a"
+      },
+      {
+        "triggers": [
+          " and",
+          " the",
+          " the"
+        ],
+        "score": 66.0,
+        "context": " expect any effect on surrounding areas.⏎On Saturday, officials from the JAEA and the research complex apologized for the accident. The minister of Education, Science and"
+      }
+    ],
+    "promotes": [
+      "setVerticalGroup",
+      " bezeichneter",
+      "AlterField",
+      "AddTagHelper",
+      " виправивши"
+    ],
+    "demotes": [
+      " Japan",
+      " Japanese",
+      " JAPAN",
+      "Japan",
+      "japan"
+    ],
+    "generated_description": "avoid 'Japan' — activates on small function words (the/of/and) before geographic phrases; consistently suppresses \"Japan\"/\"Japanese\" tokens in next-token logits."
+  },
+  {
+    "id": "21_12003_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.33127111196517944,
+    "top_activations": [
+      {
+        "triggers": [
+          " prosperous",
+          " the",
+          " peaceful"
+        ],
+        "score": 44.0,
+        "context": " on commands over longer distances than a voice could carry.⏎During the peaceful and prosperous Edo Period (1603-1868), fans became"
+      },
+      {
+        "triggers": [
+          " to",
+          " the",
+          " of"
+        ],
+        "score": 39.5,
+        "context": " relationships.⏎Trade with Japan started with the visit of ‘The Clove’ to the port of Hirado in 1613. The aim was"
+      },
+      {
+        "triggers": [
+          " called",
+          " \"",
+          " \""
+        ],
+        "score": 42.25,
+        "context": " The Japanese variety, called umeboshi, is often used for rice balls, called \"Onigiri\" or \"Omusubi\". The ume, from"
+      },
+      {
+        "triggers": [
+          " the",
+          " and",
+          ","
+        ],
+        "score": 41.25,
+        "context": "<bos>The terms gunto, gendaito and showato are commonly used in reference to Japanese swords of the WW II era; but they used in different ways to"
+      },
+      {
+        "triggers": [
+          " the",
+          " of",
+          " to"
+        ],
+        "score": 41.25,
+        "context": " memorable⏎places I have visited. The history of the sacred site stretches back to the middle of the⏎eighth century, and many traces of its past can be"
+      }
+    ],
+    "promotes": [
+      " Japão",
+      " japoneses",
+      " Japanese",
+      " Japan",
+      " Japón"
+    ],
+    "demotes": [
+      "posedge",
+      "Autoritní",
+      "URLException",
+      "endphp",
+      "出版年"
+    ],
+    "generated_description": "Japan topic — activates on function words around Japan-related mentions; consistently promotes tokens like \"Japan\", \"Japanese\", \"Japón\", \"Japão\"."
+  },
+  {
+    "id": "21_10336_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.396883100271225,
+    "top_activations": [
+      {
+        "triggers": [
+          " before",
+          ",",
+          " New"
+        ],
+        "score": 41.75,
+        "context": ", some of which were⏎fifteen miles removed from others. The British force before New-York was⏎increasing by frequent successive arrivals from Halifax, South-"
+      },
+      {
+        "triggers": [
+          ".",
+          " St",
+          " of"
+        ],
+        "score": 57.25,
+        "context": "⏎Later she witnessed firsthand the Bolshevik take-over of her beloved city of St. Petersburg. She and Boris escaped Communist Russia, fleeing first to a family"
+      },
+      {
+        "triggers": [
+          " and",
+          ",",
+          " of"
+        ],
+        "score": 42.25,
+        "context": " 14th and 15th-century architecture of Florence, Genoa and Venice. The palazzo style was justified primarily on associational grounds: Renaissance street"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 44.75,
+        "context": " as measured by annual average losses due to floods, span developed and developing countries: Guangzhou, Miami, New York, New Orleans, Mumbai, Nagoya, Tampa-"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " outside"
+        ],
+        "score": 41.5,
+        "context": "35 views of the main tourist sights of Rome and a few⏎views outside of the city. The series, begun in 1748, occupied"
+      }
+    ],
+    "promotes": [
+      "exitRule",
+      " cities",
+      " Theſe",
+      " city",
+      " ―――――"
+    ],
+    "demotes": [
+      "要知道",
+      "җ",
+      "das",
+      " das",
+      " De"
+    ],
+    "generated_description": "say city name — fires on prepositions/commas/and before place names or city lists; signals upcoming city/place token, promotes \"city\"/\"cities\" outputs."
+  },
+  {
+    "id": "14_10660_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.29951056838035583,
+    "top_activations": [
+      {
+        "triggers": [
+          " Japan",
+          "kawa",
+          "s"
+        ],
+        "score": 32.25,
+        "context": "<bos>MINERVA (MIcro/Nano Experimental Robot Vehicle for Asteroid), Japan's first planetary exploration rover, traveled to the Itokawa asteroid aboard Hayab"
+      },
+      {
+        "triggers": [
+          " Japan",
+          " Japanese",
+          " Japanese"
+        ],
+        "score": 33.0,
+        "context": "<bos>In Japan, there are a few etiquette rules when using chopsticks. Although I grew up in a Japanese-American home, there were some rules that my Japanese"
+      },
+      {
+        "triggers": [
+          " Japan",
+          "H",
+          "agen"
+        ],
+        "score": 31.75,
+        "context": "Hagen, 1870), was discovered in a natural ecosystem in Japan in 2006. Because Marmorkrebs are par"
+      },
+      {
+        "triggers": [
+          " Japan",
+          " Japan",
+          "ō"
+        ],
+        "score": 33.0,
+        "context": "<bos>- Views Japan’s Robots: Becoming More Human⏎- The Dolls that Sparked Japan’s Love of Robots: “Karakuri Ningyō"
+      },
+      {
+        "triggers": [
+          "ori",
+          " Takahashi",
+          " numbers"
+        ],
+        "score": 40.0,
+        "context": " numbers in the stomachs of individual seabirds in the wild.⏎Credit: Akinori Takahashi⏎Usage Restrictions: None⏎Related news release: Scientists develop novel method"
+      }
+    ],
+    "promotes": [
+      " Japão",
+      " eſt",
+      " Jpn",
+      " giapponese",
+      "Tembelea"
+    ],
+    "demotes": [
+      " SwitchCompat",
+      "ernan",
+      "mongoose",
+      " Lau",
+      " Loaf"
+    ],
+    "generated_description": "Japan / Japanese — activates on mentions of \"Japan\" or \"Japanese\"; often pushes foreign-language forms of \"Japan\" (e.g. Japão, giapponese)."
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.31048282980918884,
+    "top_activations": [
+      {
+        "triggers": [
+          " to",
+          " compact",
+          " fluorescent"
+        ],
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " spend"
+        ],
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "triggers": [
+          " attended",
+          " of",
+          " famous"
+        ],
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "triggers": [
+          ",",
+          " capita",
+          " from"
+        ],
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "triggers": [
+          " a",
+          " into",
+          " becoming"
+        ],
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.⏎For most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " Cæsar"
+    ],
+    "demotes": [
+      " stället",
+      " vérit",
+      " mères",
+      " prêtres",
+      " genoux"
+    ],
+    "generated_description": "say upcoming noun — activates on prepositions/articles/adjectives that introduce a following noun or proper name (locations, people, noun-phrase heads)."
+  },
+  {
+    "id": "25_3420_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3486420512199402,
+    "top_activations": [
+      {
+        "triggers": [
+          " from",
+          ",",
+          ","
+        ],
+        "score": 56.5,
+        "context": " in existence.⏎In this bundle I will be providing information on seven castles in the Kansai Region, one castle from each Prefecture - Osaka,Kyoto,Hy"
+      },
+      {
+        "triggers": [
+          " of",
+          " central",
+          "oka"
+        ],
+        "score": 62.0,
+        "context": "<bos>Shizuoka, city, capital of Shizuoka ken (prefecture), central Honshu, Japan. In 2003 Shizuoka"
+      },
+      {
+        "triggers": [
+          "),",
+          ",",
+          ","
+        ],
+        "score": 56.0,
+        "context": " The largest and main islands are, from north to south, Hokkaidō, Honshū (the largest island), Shikoku, and Kyūsh"
+      },
+      {
+        "triggers": [
+          ",",
+          " (",
+          ":"
+        ],
+        "score": 57.5,
+        "context": " Island), aumuro oomuro boomuro (large fish: Izu archipelago, Ogasawara archipelago). Usually it is called also muroaji because it"
+      },
+      {
+        "triggers": [
+          " the",
+          " struck",
+          " of"
+        ],
+        "score": 49.25,
+        "context": " national Disaster Prevention Day. More recently, a 6.8 magnitude earthquake struck the city of Kobe in 1995, killing more than 6"
+      }
+    ],
+    "promotes": [
+      " SwiftUI",
+      " Nippon",
+      "dymyr",
+      " Tian",
+      " Merdeka"
+    ],
+    "demotes": [
+      " Италијани",
+      "Hentet",
+      "AccessorTable",
+      " 卡片",
+      " سكانية"
+    ],
+    "generated_description": "say place name — activates on prepositions/commas that introduce geographic entities (of, from, commas in lists/parentheses); predicts following place/place-name tokens."
+  },
+  {
+    "id": "25_12223_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.29517123103141785,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          " of",
+          " of"
+        ],
+        "score": 59.0,
+        "context": " and Japan (anpo jōyaku) in 1960, hundreds of thousands of Japanese took their anger to the streets in front of the"
+      },
+      {
+        "triggers": [
+          " entertained",
+          " the",
+          " the"
+        ],
+        "score": 61.5,
+        "context": " robots have progressed since the mechanical “karakuri” or tea serving robots entertained the Victorians. It now has about 44% of the world'"
+      },
+      {
+        "triggers": [
+          ",",
+          " Though",
+          "."
+        ],
+        "score": 58.0,
+        "context": " would hardly know it from the gushing “historic” reports of the media. Though this is the first visit by Akihito as Emperor, Akihito"
+      },
+      {
+        "triggers": [
+          " to",
+          " professor",
+          " University"
+        ],
+        "score": 59.5,
+        "context": " past, their role has mostly been limited to capturing images inside the body. According to Ritsumeikan University professor Masaaki Makikawa, this new prototype robot"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " from",
+          " including"
+        ],
+        "score": 57.0,
+        "context": " 18 members from various divisions, including a veterinarian and a landscape gardener.⏎The team submitted a report to Gov. Shintaro Ishihara at the"
+      }
+    ],
+    "promotes": [
+      "\"])\r",
+      "}}}}",
+      "_))",
+      "﻿//",
+      "IndentedString"
+    ],
+    "demotes": [
+      " Japanese",
+      "Japanese",
+      " Japan",
+      " japanese",
+      " JAPAN"
+    ],
+    "generated_description": "Japanese-mention suppressor — fires on commas/prepositions/particles before Japanese proper nouns (Japan, Akihito, University); consistently pushes down output tokens \"Japan\"/\"Japanese\"."
+  }
+]

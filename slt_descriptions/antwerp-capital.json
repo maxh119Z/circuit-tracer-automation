@@ -1,0 +1,2790 @@
+[
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35316771268844604,
+    "top_activations": [
+      {
+        "triggers": [
+          " games",
+          " Olympic",
+          " gold"
+        ],
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " Jah"
+        ],
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "triggers": [
+          " capital",
+          " attempt",
+          " to"
+        ],
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "triggers": [
+          " games",
+          " games",
+          " digital"
+        ],
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.⏎Dave McCool, president and CEO of Muzzy"
+      },
+      {
+        "triggers": [
+          " capital",
+          " ancient",
+          " in"
+        ],
+        "score": 14.25,
+        "context": " in my mind’s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " à",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " متعلقه",
+      "+#+#",
+      "脚注の使い方",
+      "Diwedd"
+    ],
+    "generated_description": "Capital city — activates on mentions of cities/capitals and location-setting words (in, ancient, attempt toward); tends to push locative/output tokens (articles, “à”, “ville”)."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3263918161392212,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "Aza",
+          "di"
+        ],
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in ½ liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "triggers": [
+          " of",
+          "of",
+          " it"
+        ],
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family⏎originate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King⏎of Norway"
+      },
+      {
+        "triggers": [
+          " of",
+          " a",
+          " UK"
+        ],
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.⏎Dr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "triggers": [
+          " of",
+          " of",
+          " National"
+        ],
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "triggers": [
+          " of",
+          ".",
+          "⏎"
+        ],
+        "score": 37.5,
+        "context": ".⏎After this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " Anſ",
+      " Theſe",
+      " Monfieur",
+      " Efq",
+      " myſelf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say proper noun after \"of\" — activates on the preposition \"of\" when it introduces a following proper name/place/institution; signals upcoming named entity (locations, people, organizations)"
+  },
+  {
+    "id": "0_3598_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.394245445728302,
+    "top_activations": [
+      {
+        "triggers": [
+          " contained",
+          " rule",
+          ","
+        ],
+        "score": 22.0,
+        "context": " rule, as some people find this helpful. In the notation, each syllable is contained in [ ], and numbers 1 to 4 indicate the tone of that"
+      },
+      {
+        "triggers": [
+          " contained",
+          " impossible",
+          " for"
+        ],
+        "score": 21.25,
+        "context": " impossible for lawmen to access without detection by the outlaws concealed there. It contained an infrastructure, with each gang supplying its own food and livestock supply, as"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " blood"
+        ],
+        "score": 21.75,
+        "context": " of blood through the body, by way of the cardiac cycles. The heart is contained in the mediastinum in the thoracic cavity of the thorax.⏎The"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " the"
+        ],
+        "score": 21.75,
+        "context": " of the Bible, both Old and New Testaments (though not all that is contained in the Old Testament is directly relevant for Christians). The Bible ultimately is about"
+      },
+      {
+        "triggers": [
+          " contained",
+          " threat",
+          ","
+        ],
+        "score": 22.0,
+        "context": " threat, measures must be taken to ensure that it does not know that it is contained. SCP-850 must be kept in a large habitat maintained in"
+      }
+    ],
+    "promotes": [
+      "Geplaatst",
+      "contentLoaded",
+      " مرئيه",
+      "atshirt",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "WebServlet",
+      " />\";",
+      "/>\";",
+      "ly",
+      " involve"
+    ],
+    "generated_description": "\"contained\" / \"contained in\" — activates on the word \"contained\" and passive containment phrasing (e.g., \"contained in\", occurrences with preceding prepositions/commas)."
+  },
+  {
+    "id": "0_5626_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3480428159236908,
+    "top_activations": [
+      {
+        "triggers": [
+          " Croatia",
+          "Croatia",
+          "<bos>"
+        ],
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia⏎Croatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Gustav",
+          " a"
+        ],
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " diplomatic",
+          " mission"
+        ],
+        "score": 18.38,
+        "context": " diplomatic mission⏎According to the article 3 of the 1961 Vienna Convention, normal functions consist in:⏎- representing the sending State in the"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Town",
+          " Town"
+        ],
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "triggers": [
+          " Copenhagen",
+          ".",
+          " If"
+        ],
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "Vienna / European place names — activates on city or country names (Vienna, Copenhagen, Croatia); tends to push regional/directional tokens (east, west, Central) in output."
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3444632589817047,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " redund",
+          "ancies"
+        ],
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Hel",
+          "man"
+        ],
+        "score": 17.38,
+        "context": " Helman, Forbes Staff⏎I'm based in Houston, Texas. Energy capital of the world.⏎This article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " control",
+          "."
+        ],
+        "score": 17.25,
+        "context": " control.⏎Two days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " (",
+          "Special"
+        ],
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "triggers": [
+          " capital",
+          " in",
+          " English"
+        ],
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " виправивши",
+      " تضيفلها",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "⏎"
+    ],
+    "generated_description": "capital (city) — activates on occurrences of the word \"capital\" (often \"capital city\"), typically right before or referencing a named seat of government or city name."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.358004629611969,
+    "top_activations": [
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " an"
+        ],
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " music"
+        ],
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: τετράχορδoν, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " my"
+        ],
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " word"
+        ],
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " medicine"
+        ],
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " متعلقه",
+      "UserScript",
+      "",
+      " виправивши"
+    ],
+    "demotes": [
+      "<bos>",
+      "⏎⏎",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say \"In\" — sentence-initial preposition introducing topical clauses (e.g. \"In music theory,\", \"In medicine,\", \"In my previous...\")"
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3497772216796875,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "5",
+          "0"
+        ],
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Indian"
+        ],
+        "score": 28.38,
+        "context": " the Indian laws.⏎6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " output"
+        ],
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " interest",
+          " rate"
+        ],
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "triggers": [
+          " capital",
+          "1",
+          "9"
+        ],
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "álni",
+      "そうな",
+      " وعلى",
+      "리를"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital (word) — activates on the token \"capital\" (economic/financial contexts: capital assets, capital input, interest rate); tends to suppress generating the token \"capital\" in output."
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.35957252979278564,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " capitalism",
+          " competing"
+        ],
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Hellen"
+        ],
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,” said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "triggers": [
+          " capital",
+          " trillion",
+          " more"
+        ],
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "triggers": [
+          " capital",
+          "illa",
+          "."
+        ],
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.⏎Puerto del Rosario is"
+      },
+      {
+        "triggers": [
+          " capital",
+          " South",
+          " Korean"
+        ],
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital — fires on the token \"capital\" across senses (city/financial); reliably associated with demoting/avoiding the output token \"capital\"."
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3793717324733734,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " largest",
+          "<bos>"
+        ],
+        "score": 13.0,
+        "context": "<bos>Reykjavík is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "triggers": [
+          " capital",
+          ",",
+          " via"
+        ],
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " working"
+        ],
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " of"
+        ],
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "triggers": [
+          " capital",
+          " until",
+          " "
+        ],
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.⏎South Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " houſe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital — detects the noun \"capital\" (city or economic sense); fires on tokens like \"capital\", \"capital,\" and nearby determiners/qualifiers (e.g., \"the\", \"largest\", \"of\")."
+  },
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3819859027862549,
+    "top_activations": [
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          "."
+        ],
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          " in"
+        ],
+        "score": 15.62,
+        "context": " in that culture.⏎Exactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "triggers": [
+          " achieve",
+          "-",
+          "based"
+        ],
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " [",
+          "Crown"
+        ],
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " Increased",
+          " investment"
+        ],
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " againſt",
+      " becauſe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve (verb) — activates on the token \"achieve\" (and similar uses); signals contexts about accomplishing, attaining, or fulfilling goals/actions."
+  },
+  {
+    "id": "3_9559_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.3870823085308075,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "<bos>",
+          "Capital"
+        ],
+        "score": 17.75,
+        "context": "<bos>Capital of Tyrol, Austria. While Jews settled throughout Tyrol, especially in the southern part, as early as the beginning of the fourteenth century, no mention of"
+      },
+      {
+        "triggers": [
+          " of",
+          ",",
+          " to"
+        ],
+        "score": 11.88,
+        "context": ", to crush, do away with; to prohibit, subdue⏎- The government of China suppressed the student demonstrations by ordering tanks to Tiananmen square.⏎"
+      },
+      {
+        "triggers": [
+          " of",
+          " coast",
+          "2"
+        ],
+        "score": 14.5,
+        "context": "2% of the newshole. One day later, an earthquake off the coast of Indonesia killed an estimated 1,100 people, accounting for "
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " States"
+        ],
+        "score": 12.62,
+        "context": " on Pennsylvania Avenue houses the Charters of Freedom–the Declaration of Independence, the Constitution of the United States, and the Bill of Rights–and exhibits highlighting historical themes"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " States"
+        ],
+        "score": 11.75,
+        "context": "ts in New York, June has since been declared LGBT Pride Month by the President of the United States on five separate occasions, and although the exact timing and focus"
+      }
+    ],
+    "promotes": [
+      " Flag",
+      "Flag",
+      "flag",
+      " flag",
+      "memberOf"
+    ],
+    "demotes": [
+      "eradish",
+      "SharedCtor",
+      " nargin",
+      "ulemon",
+      "resizingMask"
+    ],
+    "generated_description": "say country — activates on prepositions/articles (\"of\", \"the\") that introduce place/country names; tends to promote country-related tokens (e.g., \"flag\")."
+  },
+  {
+    "id": "4_7671_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.39995044469833374,
+    "top_activations": [
+      {
+        "triggers": [
+          "quarter",
+          " staff",
+          " head"
+        ],
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 20.75,
+        "context": " a school for Native Americans.⏎1875: Helena is named capital of the Montana Territory.⏎1876: U.S. soldiers"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 22.75,
+        "context": " Copenhagen conference.⏎The officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " from"
+        ],
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "triggers": [
+          " headquarters",
+          " in",
+          " its"
+        ],
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "хьтан",
+      "Rüyada",
+      "endmodule"
+    ],
+    "generated_description": "Administrative center — activates on \"capital\", \"head\", \"headquarters\", \"HQ\" phrases naming a seat of government/organization; promotes tokens like \"HQ\", \"Headquarters\", \"coordinators\"."
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3463081121444702,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " This",
+          " will"
+        ],
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          "("
+        ],
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "triggers": [
+          " capital",
+          " are",
+          " a"
+        ],
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " terms"
+        ],
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "triggers": [
+          " capital",
+          " $",
+          "1"
+        ],
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " متعلقه",
+      " snippetHide"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "1",
+      "⏎",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital (economic) — activates on the token \"capital\" in finance/economics contexts; signals discussion of markets, loans, production, investment, or capital goods."
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.35642772912979126,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " especially",
+          " in"
+        ],
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "triggers": [
+          " capital",
+          "th",
+          "–"
+        ],
+        "score": 16.88,
+        "context": "th–18th century). In addition to being an important regional and provincial capital (of Eṣfahān province), the city is one of the most"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Information"
+        ],
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "triggers": [
+          " capital",
+          ".",
+          " In"
+        ],
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Q"
+        ],
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " raiſ",
+      " Monfieur",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".”",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital — activates on the token “capital” itself; fires across senses (city/provincial capital, financial/resource, capital letters)."
+  },
+  {
+    "id": "0_11375_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3309304118156433,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " way",
+          " by"
+        ],
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.⏎\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "triggers": [
+          " is",
+          " and",
+          " subtropical"
+        ],
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "triggers": [
+          " is",
+          " the",
+          " Yosh"
+        ],
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.⏎The Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "triggers": [
+          " is",
+          ",",
+          " all"
+        ],
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It’"
+      },
+      {
+        "triggers": [
+          " is",
+          " have",
+          "⏎"
+        ],
+        "score": 35.5,
+        "context": " have⏎a fresher taste and a more aromatic smell. The whole of the plant is used⏎for culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " themſelves",
+      " Majefty",
+      " Diſ",
+      " myſelf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " является",
+      " was"
+    ],
+    "generated_description": "Copula \"is\" — activates on the copular verb \"is\" in predicative clauses; tends to suppress plain \"is\"/\"has\" output and push archaic/formal tokens (Majefty, myſelf, Diſ)."
+  },
+  {
+    "id": "0_15734_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3977060914039612,
+    "top_activations": [
+      {
+        "triggers": [
+          " components",
+          ".",
+          " Results"
+        ],
+        "score": 13.5,
+        "context": ". Results could strongly influence the design of future fusion reactors.⏎The Laboratory develops components and scientific data for ITER, which represents the largest step to date toward the"
+      },
+      {
+        "triggers": [
+          " components",
+          "board",
+          "."
+        ],
+        "score": 13.0,
+        "context": "board. These accept through-hole devices and allow fast, reasonably secure connection of components with a minimum of wiring. An idea for a new circuit can be tried"
+      },
+      {
+        "triggers": [
+          " components",
+          " is",
+          " imparted"
+        ],
+        "score": 13.12,
+        "context": " is imparted by the polyunsaturated and monounsaturated fats that it contains. These components protect the heart against various heart diseases like blockage of arteries, by lowering cholesterol"
+      },
+      {
+        "triggers": [
+          " components",
+          "like",
+          " mid"
+        ],
+        "score": 13.12,
+        "context": " mid and hind legs flattened, oar-like; eyes divided into ventral and dorsal components; antennal segments 3-11 form short, cylindrical club and"
+      },
+      {
+        "triggers": [
+          " components",
+          " which",
+          ","
+        ],
+        "score": 13.0,
+        "context": " which, along with dietary studies utilizing experimental animals, suggest that a variety of dietary components may modulate the transformation and promotion stages of carcinogenesis.⏎Among these are"
+      }
+    ],
+    "promotes": [
+      " שוליים",
+      "μβρίου",
+      "gema",
+      "iedene",
+      "//};"
+    ],
+    "demotes": [
+      " kvinder",
+      " økonom",
+      "enumii",
+      "utnik",
+      " befolk"
+    ],
+    "generated_description": "components (plural noun) — activates on the token \"components\" in technical/biological/circuit contexts; often occurs near commas/periods and list-like descriptive phrases."
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3611339330673218,
+    "top_activations": [
+      {
+        "triggers": [
+          " realistic",
+          " and",
+          " testing"
+        ],
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn’t realistic.⏎WampServer allows you to easily set up a server on your"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " soak",
+          " plants"
+        ],
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.⏎"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " realistic",
+          "Ny"
+        ],
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"⏎The"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " what",
+          " you"
+        ],
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.⏎Develop an action plan for your goals."
+      },
+      {
+        "triggers": [
+          " realistic",
+          " stress",
+          " disorder"
+        ],
+        "score": 17.75,
+        "context": " stress disorder.⏎By bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Reſ",
+      " purpoſe",
+      " Majefty",
+      " Monfieur",
+      " myſelf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Portály",
+      " ("
+    ],
+    "generated_description": "realistic — activates on the adjective “realistic”; lights up for mentions of plausibility/true-to-life descriptions across varied contexts (planning, visuals, simulation, mental state)."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3698467016220093,
+    "top_activations": [
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "v"
+        ],
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " was"
+        ],
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          "s"
+        ],
+        "score": 34.25,
+        "context": "<bos>It’s no secret that New Mexico is one of the nation’s hot spots for nuclear activity. We don’t have any commercial nuclear power plants"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " is"
+        ],
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "Washington"
+        ],
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds – a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Portály",
+      "goku",
+      " légale"
+    ],
+    "generated_description": "It (dummy subject) — activates on sentence-start \"It\" used with copula (\"It is/was/’s\"), marking cleft/existential openings that introduce general statements."
+  },
+  {
+    "id": "14_3328_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.36410531401634216,
+    "top_activations": [
+      {
+        "triggers": [
+          " Netherlands",
+          " Netherlands",
+          "oops"
+        ],
+        "score": 38.5,
+        "context": "<bos>Mennonite Church in the Netherlands⏎The Mennonite Church in the Netherlands, or Algemene Doopsgezinde Sociëteit, is a body of"
+      },
+      {
+        "triggers": [
+          " Dutch",
+          " Research",
+          " HQ"
+        ],
+        "score": 37.5,
+        "context": " Research HQ⏎Please read THE BIRTH OF HAARP before proceeding⏎Originally revived by Dutchsinse here⏎Characterization of the Modified and Ambient Lower Ionosphere for"
+      },
+      {
+        "triggers": [
+          " Dutch",
+          " government",
+          " Netherlands"
+        ],
+        "score": 38.0,
+        "context": "<bos>The Dutch government established a camp at Westerbork to intern Jewish refugees who had entered the Netherlands illegally. This sketch of the Westerbork transit camp was"
+      },
+      {
+        "triggers": [
+          " Netherlands",
+          " Rembrandt",
+          "meer"
+        ],
+        "score": 38.5,
+        "context": " a series of travels to see as many kinds of art as possible. In the Netherlands he was particularly impressed by the works of Rembrandt and Jan Vermeer, and"
+      },
+      {
+        "triggers": [
+          " Netherlands",
+          " including",
+          " Australia"
+        ],
+        "score": 42.0,
+        "context": " including Australia, Austria, Canada, the Czech Republic, Finland, Ireland, the Netherlands, New Zealand and Switzerland where increasingly high rates of citizens identify themselves as non"
+      }
+    ],
+    "promotes": [
+      " Netherlands",
+      " dutch",
+      " Dutch",
+      "abestanden",
+      " Dutchman"
+    ],
+    "demotes": [
+      "GetKeyDown",
+      "inf",
+      "لار",
+      " handen",
+      "VersionUID"
+    ],
+    "generated_description": "Netherlands / Dutch — activates on mentions of the Netherlands, \"Dutch\"/Dutch-related terms; promotes output tokens like \"Netherlands\", \"Dutch\", \"dutch\"."
+  },
+  {
+    "id": "14_6585_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.3895019590854645,
+    "top_activations": [
+      {
+        "triggers": [
+          " Ohio",
+          "6",
+          " states"
+        ],
+        "score": 31.0,
+        "context": "6 states that have passed utility deregulation legislation: Massachusetts, New Jersey, Illinois, Ohio, California, and Rhode Island. (How does utility deregulation work?)⏎"
+      },
+      {
+        "triggers": [
+          " OH",
+          " Columbus",
+          "<bos>"
+        ],
+        "score": 29.5,
+        "context": "<bos>Powell, OH – For the second time in eight months, the Columbus Zoo and Aquarium responded to a request for emergency conservation funds following the confiscation of 5"
+      },
+      {
+        "triggers": [
+          " Ohio",
+          "Issue",
+          "1"
+        ],
+        "score": 29.75,
+        "context": "There are two state issues on the 2012 General Election ballot in Ohio.⏎Issue 1 asks voters whether a convention should be held to revise"
+      },
+      {
+        "triggers": [
+          " Ohio",
+          "<bos>",
+          "The"
+        ],
+        "score": 32.0,
+        "context": "<bos>The identity of the mound builders of the Ohio Valley, those subsequently referred to as Hopewell after a farm where some of their artifacts were found, has long"
+      },
+      {
+        "triggers": [
+          " Ohio",
+          " City",
+          " man"
+        ],
+        "score": 29.0,
+        "context": " City man who explores and photographs the city’s sewers, the tale of an Ohio woman who decides to sell her home when her neighbors sign up for gas drilling"
+      }
+    ],
+    "promotes": [
+      "Ohio",
+      "BeginInit",
+      " Ohio",
+      " linkovi",
+      "parsedMessage"
+    ],
+    "demotes": [
+      " Langer",
+      "PageContext",
+      " loob",
+      " ApiException",
+      " kumaş"
+    ],
+    "generated_description": "Ohio (U.S. state) — activates on \"Ohio\"/\"OH\" and related place mentions (Columbus, Ohio Valley, state ballot/issue contexts); tends to promote the token \"Ohio.\""
+  },
+  {
+    "id": "17_7178_8",
+    "layer": 17,
+    "ctx_idx": 8,
+    "influence_score": 0.33310043811798096,
+    "top_activations": [
+      {
+        "triggers": [
+          " Capitol",
+          " in",
+          " Washington"
+        ],
+        "score": 36.75,
+        "context": " until 1968.⏎The Code Talkers were honored at the Capitol in Washington by President George W. Bush in July of 200"
+      },
+      {
+        "triggers": [
+          " capitol",
+          " the",
+          " state"
+        ],
+        "score": 35.75,
+        "context": " its presence on the state flag and South Carolina legislators removed it last year from the capitol dome, says Dr. John Clark, a WMU associate professor of political"
+      },
+      {
+        "triggers": [
+          ":",
+          " Capital",
+          " Washington"
+        ],
+        "score": 44.25,
+        "context": " est.) 307,226,000. Capital: Washington, D.C.⏎The population includes people of European and Middle"
+      },
+      {
+        "triggers": [
+          " is",
+          " capital",
+          " ("
+        ],
+        "score": 32.75,
+        "context": ", and English is also spoken. The⏎currency is the peso. The capital is Manila (Manila).⏎A white equilateral triangle is located to the side,"
+      },
+      {
+        "triggers": [
+          " of",
+          " buildings",
+          " government"
+        ],
+        "score": 34.75,
+        "context": " of the City of Westminster, close to the historic Westminster Abbey and the government buildings of Whitehall and Downing Street.⏎Her Majesty's Royal Palace and Fortress,"
+      }
+    ],
+    "promotes": [
+      "Parliament",
+      "Capitol",
+      " Parliament",
+      " Legislative",
+      " Capitol"
+    ],
+    "demotes": [
+      "TagMode",
+      "zewod",
+      "AndEndTag",
+      "Portály",
+      " useRef"
+    ],
+    "generated_description": "Capital/capitol (government seat) — activates on 'capital'/'capitol' and nearby govt-building/place mentions; promotes related output tokens: Parliament, Capitol, Legislative."
+  },
+  {
+    "id": "19_2695_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3753567636013031,
+    "top_activations": [
+      {
+        "triggers": [
+          " greater",
+          " metro",
+          " Angeles"
+        ],
+        "score": 44.75,
+        "context": " paper proposes a specific demonstration project in Southern California. Orange County, part of the greater Los Angeles metro area, has five new toll road projects under development: two"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 64.0,
+        "context": "936.⏎Five cities — St. Louis, Indianapolis Chicago, Detroit and Denver — are all on pace to shatter their all-time monthly heat records"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "13 election cycle. Ten of America's 30 largest cities -- including Boston, Detroit, Los Angeles, New York and Seattle -- elected mayors this"
+      },
+      {
+        "triggers": [
+          " major",
+          " and",
+          " in"
+        ],
+        "score": 47.75,
+        "context": " Los Angeles and Phoenix. They hope to ultimately map the CO2 emissions in all major cities acrosUltimately, they say, they hope to cover the entire United"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "-Ft. Worth. Belize is also served from Atlanta, Charlotte, Los Angeles, New York and Washington, DC, as well as Toronto, Canada ... more"
+      }
+    ],
+    "promotes": [
+      " Seattle",
+      " Atlanta",
+      " London",
+      " cities",
+      " Chicago"
+    ],
+    "demotes": [
+      "XmlAccessorType",
+      "Бахар",
+      "SBATCH",
+      "}');",
+      "řevě"
+    ],
+    "generated_description": "City-in-list — activates on major city names or list elements (Los Angeles, Chicago, Detroit, Seattle); often fires in city lists or “and/,” separators; promotes city-name tokens."
+  },
+  {
+    "id": "18_6101_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.32402199506759644,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " embassy",
+          " in"
+        ],
+        "score": 42.5,
+        "context": " Rising through the ranks, he becomes a military attache in Sudan's embassy in the UAE, and later a garrison commander and brigadier.⏎19"
+      },
+      {
+        "triggers": [
+          " with",
+          " history",
+          ","
+        ],
+        "score": 41.75,
+        "context": " history, fed more than one-third of North Korea's population. For most countries, bilateral food aid became their only significant form of engagement with the DPR"
+      },
+      {
+        "triggers": [
+          " from",
+          " above",
+          " under"
+        ],
+        "score": 53.5,
+        "context": " colonizing should be a royal endeavour and that colonies should be kept under rigid control from above. In 1620 Gorges succeeded in obtaining a charter"
+      },
+      {
+        "triggers": [
+          " from",
+          " centre",
+          " the"
+        ],
+        "score": 42.5,
+        "context": "administrative units\"). Under the new constitution there will be a devolution of power, from the centre to 47 self-governed ETHNIC counties, a"
+      },
+      {
+        "triggers": [
+          " in",
+          " monarchy",
+          " to"
+        ],
+        "score": 45.5,
+        "context": " of them no doubt started to feel as though they didn't need the monarchy in order to prosper in the fledgling America. This no doubt seemed ludicrous to"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " Beijing",
+      " Canberra",
+      "Washington",
+      " Washington"
+    ],
+    "demotes": [
+      "ⓧ",
+      " חיצוניים",
+      " NgModule",
+      "CASCADE",
+      " handleMessage"
+    ],
+    "generated_description": "say capital city — fires on prepositions/articles (in, from, to, under, the, with, etc.) before location phrases; pushes major capital names (Beijing, Canberra, Washington)."
+  },
+  {
+    "id": "18_8765_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.31249454617500305,
+    "top_activations": [
+      {
+        "triggers": [
+          "’",
+          " Belgium",
+          " at"
+        ],
+        "score": 92.5,
+        "context": " at first glance. But to look a step further, I’d say it’s rather pretty predictable that things would turn out to be not working in Belgium"
+      },
+      {
+        "triggers": [
+          "0",
+          ",",
+          " "
+        ],
+        "score": 75.5,
+        "context": ".⏎As a result, there are disease outbreaks. Since late 2007, cholera outbreaks have affected hundreds of people in Rutshuru, Mw"
+      },
+      {
+        "triggers": [
+          " Belgian",
+          " ‘",
+          " referred"
+        ],
+        "score": 83.0,
+        "context": "<bos>Country of Origin: There are four closely related breeds of Belgian Shepherd collectively referred to as ‘Chien de Berger Belge’, which were classified as independent breeds"
+      },
+      {
+        "triggers": [
+          "1",
+          "9",
+          "9"
+        ],
+        "score": 101.5,
+        "context": " in 1969|⏎|Reign||17 July 1951 – 31 July 1993|⏎|"
+      },
+      {
+        "triggers": [
+          "9",
+          "0",
+          "5"
+        ],
+        "score": 82.0,
+        "context": " Leuven, pp. 59-82. ISBN 9789058678584⏎This paper analyses the kind"
+      }
+    ],
+    "promotes": [
+      " Flemish",
+      " Flanders",
+      "Belgian",
+      " Belgium",
+      " Belgian"
+    ],
+    "demotes": [
+      "مرار",
+      " disambiguazione",
+      "toThrow",
+      " houſe",
+      "\\#\\#"
+    ],
+    "generated_description": "Belgium / Belgian — activates on mentions of Belgium or Belgian; promotes related country/demonym tokens (Flanders, Flemish, Belgian)."
+  },
+  {
+    "id": "18_8765_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.27474918961524963,
+    "top_activations": [
+      {
+        "triggers": [
+          "’",
+          " Belgium",
+          " at"
+        ],
+        "score": 92.5,
+        "context": " at first glance. But to look a step further, I’d say it’s rather pretty predictable that things would turn out to be not working in Belgium"
+      },
+      {
+        "triggers": [
+          "0",
+          ",",
+          " "
+        ],
+        "score": 75.5,
+        "context": ".⏎As a result, there are disease outbreaks. Since late 2007, cholera outbreaks have affected hundreds of people in Rutshuru, Mw"
+      },
+      {
+        "triggers": [
+          " Belgian",
+          " ‘",
+          " referred"
+        ],
+        "score": 83.0,
+        "context": "<bos>Country of Origin: There are four closely related breeds of Belgian Shepherd collectively referred to as ‘Chien de Berger Belge’, which were classified as independent breeds"
+      },
+      {
+        "triggers": [
+          "1",
+          "9",
+          "9"
+        ],
+        "score": 101.5,
+        "context": " in 1969|⏎|Reign||17 July 1951 – 31 July 1993|⏎|"
+      },
+      {
+        "triggers": [
+          "9",
+          "0",
+          "5"
+        ],
+        "score": 82.0,
+        "context": " Leuven, pp. 59-82. ISBN 9789058678584⏎This paper analyses the kind"
+      }
+    ],
+    "promotes": [
+      " Flemish",
+      " Flanders",
+      "Belgian",
+      " Belgium",
+      " Belgian"
+    ],
+    "demotes": [
+      "مرار",
+      " disambiguazione",
+      "toThrow",
+      " houſe",
+      "\\#\\#"
+    ],
+    "generated_description": "Belgium / Belgian — activates on tokens like “Belgium”, “Belgian”; signals country-related content; promotes region/ethnicity words (Flanders, Flemish) and Belgian-related continuations."
+  },
+  {
+    "id": "19_7002_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3930809199810028,
+    "top_activations": [
+      {
+        "triggers": [
+          "Willem",
+          "||",
+          "||"
+        ],
+        "score": 72.0,
+        "context": " Rotterdam|⏎|Promotor||Arts, W.F.M. (Willem Frans)|⏎|Sponsor||Het Nationale Epilepsiefonds Epilepsia Rotterdam"
+      },
+      {
+        "triggers": [
+          "0",
+          "2",
+          " "
+        ],
+        "score": 71.5,
+        "context": ":⏎> >Antoon Pardon wrote:⏎> > > Op 2004-12-15, Fredrik Lundh schreef <fred"
+      },
+      {
+        "triggers": [
+          ":",
+          "8",
+          " /"
+        ],
+        "score": 75.5,
+        "context": " Series⏎Publisher: Netherlands Graduate School of Linguistics / Landelijke - LOT⏎Author: Marian Erkelens⏎Paperback: ISBN: 97890"
+      },
+      {
+        "triggers": [
+          " for",
+          " Minister",
+          " Agriculture"
+        ],
+        "score": 83.0,
+        "context": ", up five per cent from 2012.⏎These figures, from the Dutch Agricultural Research Institute, were announced by Minister for Agriculture Sharon Dijks"
+      },
+      {
+        "triggers": [
+          " for",
+          " Space",
+          " Institute"
+        ],
+        "score": 76.0,
+        "context": "Using SCIAMACHY, Annemieke Gloudemans from SRON Netherlands Institute for Space Research and her colleagues at Utrecht University, the Vrije Universiteit Amsterdam"
+      }
+    ],
+    "promotes": [
+      "rij",
+      "Voor",
+      " Van",
+      "verwijspagina",
+      " van"
+    ],
+    "demotes": [
+      " Chriftian",
+      " Majefty",
+      " Houſe",
+      " houſe",
+      " Monfieur"
+    ],
+    "generated_description": "say \"van/Voor\" — activates on English \"for\" (titles: \"Minister for\", \"Institute for\") and pushes Dutch prepositions/particles (van, Voor, van)."
+  },
+  {
+    "id": "21_5943_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.2818455100059509,
+    "top_activations": [
+      {
+        "triggers": [
+          " =",
+          " City",
+          " Capital"
+        ],
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:⏎- Capital City = Freetown⏎- Population = 5,245,695⏎- Official and Recognized Languages"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " a",
+          " "
+        ],
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.⏎Israel's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " to"
+        ],
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.⏎As presented here, in"
+      },
+      {
+        "triggers": [
+          " in",
+          " ",
+          "9"
+        ],
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " partnership"
+        ],
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in⏎October 1998 in a national launch by then Deputy President Thabo⏎Mbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "say major city — fires on \"capital/city\" and surrounding prepositions (\"of\",\"in\",\"to\"); promotes common city names (London, Dublin, Nairobi, Toronto, Sydney)."
+  },
+  {
+    "id": "21_467_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.37400639057159424,
+    "top_activations": [
+      {
+        "triggers": [
+          " ",
+          " the",
+          ","
+        ],
+        "score": 135.0,
+        "context": " internal wrangling and amid strong lobbying from the oil industry and the Canadian government, the 27 EU commissioners agreed to qualify tar sands as a quarter more CO"
+      },
+      {
+        "triggers": [
+          " executive",
+          " the",
+          " an"
+        ],
+        "score": 95.0,
+        "context": " the coal and steel and the atomic energy communities, establishing the common framework of an executive European Commission, whose members were appointed by national governments; a decision-taking"
+      },
+      {
+        "triggers": [
+          " the",
+          " ",
+          " European"
+        ],
+        "score": 100.0,
+        "context": ", the European Commission has put into effect an update of the European Union's 10-year-old directive on recycling \"e-waste,\" which"
+      },
+      {
+        "triggers": [
+          "The",
+          "2",
+          " a"
+        ],
+        "score": 98.0,
+        "context": " with pets: Pet passports to be introduced in July 2004⏎The European Commission today adopted a Decision establishing a model passport which will allow pets and"
+      },
+      {
+        "triggers": [
+          " the",
+          ",",
+          " EU"
+        ],
+        "score": 103.0,
+        "context": " as well as information on the animal's medical history.⏎David Byrne, the EU Health and Consumer Protection Commissioner said: \"This is great news for pet"
+      }
+    ],
+    "promotes": [
+      " european",
+      "European",
+      "EU",
+      " European",
+      " EU"
+    ],
+    "demotes": [
+      "Portail",
+      " resourceCulture",
+      " noDo",
+      "脚注の使い方",
+      "ChildScrollView"
+    ],
+    "generated_description": "European Commission — activates on mentions of EU institutions, especially \"the European Commission\"/\"EU\"; promotes tokens like \"European\"/\"EU\""
+  },
+  {
+    "id": "22_13502_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3919003903865814,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " at",
+          " to"
+        ],
+        "score": 77.0,
+        "context": " to new research presented at the joint International Congress of Endocrinology and European Congress of Endocrinology in Florence, Italy.⏎While numerous studies have linked eating quickly to overeating"
+      },
+      {
+        "triggers": [
+          " in",
+          " at",
+          " to"
+        ],
+        "score": 50.0,
+        "context": " and undeveloped country emissions to take to Copenhagen at Monday’s EU Environment Council meeting in Brussels.⏎Commit to zero net emissions⏎Based on various studies, including"
+      },
+      {
+        "triggers": [
+          ",",
+          "8",
+          ","
+        ],
+        "score": 52.0,
+        "context": " Conference and Expo April 14-17, 2008, Santa Clara, CA|⏎CSS also allows for comments, but it uses"
+      },
+      {
+        "triggers": [
+          " in",
+          " to",
+          " be"
+        ],
+        "score": 69.0,
+        "context": " to be presented Sunday at the 2011 European Multidisciplinary Cancer Congress in Stockholm. Coleman also presented findings from the study at the San Antonio Breast Cancer"
+      },
+      {
+        "triggers": [
+          " in",
+          ".",
+          " The"
+        ],
+        "score": 50.5,
+        "context": ". The results were presented this afternoon at the Europhysics Conference on High Energy Physics in Grenoble, France.⏎Physicists familiar with the experiments urge caution."
+      }
+    ],
+    "promotes": [
+      "InitVars",
+      " esternos",
+      " Италијани",
+      "FunctionFlags",
+      " TestBed"
+    ],
+    "demotes": [
+      " conv",
+      " ska",
+      "vili",
+      "ringing",
+      "sk"
+    ],
+    "generated_description": "say location — activates on prepositions/phrases (to/at/in/,/) that introduce cities/countries; signals/predicts an upcoming place-name (Florence, Brussels, Stockholm, Grenoble)."
+  },
+  {
+    "id": "23_13541_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3832770586013794,
+    "top_activations": [
+      {
+        "triggers": [
+          "4",
+          " the",
+          "."
+        ],
+        "score": 65.5,
+        "context": "<bos>- Shopping Bag ( 0 items )⏎In 1954 the U.S. Supreme Court sounded the death knell for school segregation with"
+      },
+      {
+        "triggers": [
+          " on",
+          " our",
+          ","
+        ],
+        "score": 46.75,
+        "context": "<bos>Subscribe To our E-Newsletter⏎Scholar Offers a Fresh Take on Middle East⏎Like it or not, the United States is embroiled in the Middle East"
+      },
+      {
+        "triggers": [
+          " by",
+          " the",
+          " how"
+        ],
+        "score": 53.0,
+        "context": " unsure exactly how many individuals in the United States have an FASD.⏎Studies by the Centers for Disease Control and Prevention (CDC) have reported prevalence rates of"
+      },
+      {
+        "triggers": [
+          " Hope",
+          " Root",
+          "9"
+        ],
+        "score": 44.5,
+        "context": " June 30, 2009⏎Afghanistan: Optimism and Hope Takes Root March 13, 2009⏎Afghanistan:"
+      },
+      {
+        "triggers": [
+          "4",
+          ",",
+          " Olympics"
+        ],
+        "score": 54.5,
+        "context": " Nearly one in ten people have this type of asthma. In 1984 Olympics, nearly 20 percent Olympians suffered from exercise induced asthma."
+      }
+    ],
+    "promotes": [
+      " فريبيس",
+      " ―――――",
+      " myſelf",
+      " Monfieur",
+      " itſelf"
+    ],
+    "demotes": [
+      " ",
+      ".",
+      " (",
+      "  ",
+      "-"
+    ],
+    "generated_description": "Headline / title tokens — activates on words inside headlines or section titles, often capitalized or line-initial; fires on small function words and content words within headlines."
+  },
+  {
+    "id": "23_6617_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.33505138754844666,
+    "top_activations": [
+      {
+        "triggers": [
+          " from",
+          ",",
+          " of"
+        ],
+        "score": 31.75,
+        "context": " of the Austin Friars as well.⏎Located about 100 miles from London, Winchester has been a place of habitation continuously for over 2,"
+      },
+      {
+        "triggers": [
+          " in",
+          " that",
+          " declared"
+        ],
+        "score": 31.0,
+        "context": " Superintendent of Public Instruction Jack O'Connell declared that \"intelligent design\" was unwelcome in California's public school science classes. \"The introduction of intelligent design theory"
+      },
+      {
+        "triggers": [
+          " of",
+          " like",
+          " in"
+        ],
+        "score": 32.5,
+        "context": " them to thrive in subtropical climates like in the state of New South Wales just south of Queensland.⏎Moreton Bay Fig⏎Moreton Bay figs (scientific name"
+      },
+      {
+        "triggers": [
+          " how",
+          " of",
+          " benefits"
+        ],
+        "score": 28.25,
+        "context": " The solar policies adopted by these cities and their municipal utilities provide a strong example for how the rest of Texas can reach its solar energy potential.⏎Solar energy benefits"
+      },
+      {
+        "triggers": [
+          " in",
+          " the",
+          " Approximately"
+        ],
+        "score": 30.0,
+        "context": " Approximately 2,700 pedestrians and bicyclists are injured every year in the Washington region, and 89 are killed. Pedestrian and bicyclist"
+      }
+    ],
+    "promotes": [
+      " mód",
+      "IsContent",
+      "UnknownFields",
+      "SharedDtor",
+      " Đình"
+    ],
+    "demotes": [
+      " FLORIDA",
+      " Toronto",
+      " Edmonton",
+      " Vancouver",
+      " Brisbane"
+    ],
+    "generated_description": "say PLACE — activates on prepositions/articles/connectors (of, from, in, the, how) that introduce geographic/place names (London, Texas, New South Wales, Washington)."
+  },
+  {
+    "id": "22_9269_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.39656567573547363,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          "2",
+          ","
+        ],
+        "score": 170.0,
+        "context": " occupation. From 2002-2005, I lived in Sittard, a hilly region that slips down between Belgium and Germany."
+      },
+      {
+        "triggers": [
+          " in",
+          " the",
+          "burg"
+        ],
+        "score": 132.0,
+        "context": "'s behind the mysterious return trip effect?⏎Researchers at Tilburg University in the Netherlands recently published their findings, in which they compared various previous data to figure"
+      },
+      {
+        "triggers": [
+          " the",
+          " in",
+          " the"
+        ],
+        "score": 126.0,
+        "context": "pen; Biologie|⏎|Abstract||The molluscs of the brackish waters in the Netherlands (Mollusca) |⏎The Netherlands is a river delta rich"
+      },
+      {
+        "triggers": [
+          " at",
+          " the",
+          " in"
+        ],
+        "score": 133.0,
+        "context": " severe illness,\" explained study author Dr. Marije Bomers, an internist at the VU University Medical Centre, in Amsterdam. \"The bacterium mostly affects older"
+      },
+      {
+        "triggers": [
+          " as",
+          " In",
+          " larger"
+        ],
+        "score": 129.0,
+        "context": " the fields, on the seashore, and sometimes in homes.\" In larger towns such as Amsterdam meetings were held in private homes from the beginning. For the sake of"
+      }
+    ],
+    "promotes": [
+      " tuli",
+      " Paesi",
+      "])))",
+      " ne",
+      " Ne"
+    ],
+    "demotes": [
+      " propOrder",
+      "ftagPool",
+      " TextAppearance",
+      "CppMethod",
+      " springfox"
+    ],
+    "generated_description": "say Dutch location — activates on prepositions/articles (\"in\", \"in the\", \"at\") immediately before Dutch places (Amsterdam, Tilburg, Sittard, \"the Netherlands\"); signals upcoming Dutch place token."
+  },
+  {
+    "id": "23_10660_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.2662089765071869,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          "UVEN",
+          " --"
+        ],
+        "score": 97.0,
+        "context": " EDT (1224 GMT)⏎From Correspondent Marsha Walton⏎LEUVEN, Belgium (CNN) -- Bananas and their cousin the plantain are more than just"
+      },
+      {
+        "triggers": [
+          " of",
+          " by",
+          " van"
+        ],
+        "score": 135.0,
+        "context": " Austria into Belgium. The description was written by Jan Boch, the scholarly town clerk of Antwerp, and the images were engraved by Pieter van der Borcht. Van"
+      },
+      {
+        "triggers": [
+          "s",
+          " Belgium",
+          "ons"
+        ],
+        "score": 97.5,
+        "context": "6,000-year-old wolf skull was found in Belgium's Trou des Nutons Cave. Researchers analyzed ancient and modern-day DNA from"
+      },
+      {
+        "triggers": [
+          " of",
+          " in",
+          " the"
+        ],
+        "score": 106.0,
+        "context": " in the late medieval period. He made his home and his name in the city of Bruges, Belgium, where he lived and worked for almost 30 years"
+      },
+      {
+        "triggers": [
+          ",",
+          " Alain",
+          " a"
+        ],
+        "score": 89.0,
+        "context": " a parasite.⏎Nieberding, Caroline M. ; ; Vanderpoorten, Alain et al⏎in Molecular Phylogenetics & Evolution (20"
+      }
+    ],
+    "promotes": [
+      "AddTagHelper",
+      "WithMany",
+      "matchCondition",
+      "awtextra",
+      "WebVitals"
+    ],
+    "demotes": [
+      " Belgian",
+      " Belgi",
+      " Belgium",
+      "Belgian",
+      " Dutch"
+    ],
+    "generated_description": "Belgian place mention — activates on prepositions/articles around Belgian city/country names (Antwerp, Bruges, Leuven); tends to suppress tokens like \"Belgium\"/\"Belgian\"/\"Dutch\"."
+  },
+  {
+    "id": "24_3187_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3988286852836609,
+    "top_activations": [
+      {
+        "triggers": [
+          " near",
+          " the",
+          " the"
+        ],
+        "score": 49.25,
+        "context": " and renaissance elements. The museum has a prominent position on the Museumplein, near the Van Gogh Museum and the Stedelijk Museum. The building is richly decorated with"
+      },
+      {
+        "triggers": [
+          ",",
+          " and",
+          ","
+        ],
+        "score": 50.0,
+        "context": " of work has been done in the Zuidlaardermeer, Weerribben, and lakes along lake IJssel. In addition, the foraging ecology of"
+      },
+      {
+        "triggers": [
+          ",",
+          " in",
+          " The"
+        ],
+        "score": 51.25,
+        "context": " on December 7, 1905, in Harenkarspel, The Netherlands. In 1933 he immigrated to the United"
+      },
+      {
+        "triggers": [
+          " in",
+          " University",
+          ","
+        ],
+        "score": 50.75,
+        "context": "ressed completely after the first year.⏎According to researchers who conducted the phase II study at the Leiden University Medical Center in Leiden, The Netherlands, spontaneous regression of"
+      },
+      {
+        "triggers": [
+          " of",
+          "),",
+          " and"
+        ],
+        "score": 56.0,
+        "context": " 1999 through a decentralized merger of the major university herbaria of Leiden (also known as the Rijksherbarium), Utrecht and Wageningen."
+      }
+    ],
+    "promotes": [
+      " Majefty",
+      " itſelf",
+      " ſeveral",
+      " Efq",
+      " Monfieur"
+    ],
+    "demotes": [
+      " ar",
+      "=\"#\"><",
+      " ko",
+      " Star",
+      " go"
+    ],
+    "generated_description": "say Dutch place — fires on prepositions/commas that introduce Dutch locations or landmarks; predicts towns/places (Leiden, Utrecht, Wageningen, IJssel, Museumplein, Van Gogh Museum)."
+  },
+  {
+    "id": "24_5999_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.35482409596443176,
+    "top_activations": [
+      {
+        "triggers": [
+          " Network",
+          " searches",
+          " Translations"
+        ],
+        "score": 105.5,
+        "context": " Web's Largest Resource for⏎Definitions & Translations⏎A Member Of The STANDS4 Network⏎Nearby & related entries:⏎Alternative searches for minch:"
+      },
+      {
+        "triggers": [
+          " .",
+          " .",
+          " ."
+        ],
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .⏎How many different solutions can you find to this problem?⏎Arrange "
+      },
+      {
+        "triggers": [
+          " power",
+          " precision",
+          " could"
+        ],
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.⏎Most e"
+      },
+      {
+        "triggers": [
+          "-",
+          " Terminology",
+          " types"
+        ],
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.⏎- 1 Terminology⏎- 2 Basic"
+      },
+      {
+        "triggers": [
+          " Solution",
+          "sey",
+          " *"
+        ],
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution⏎By Nnimmo Bassey *⏎The fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " ་་",
+      " Forumite",
+      " itſelf",
+      "^(@)"
+    ],
+    "demotes": [
+      " européennes",
+      " helyzet",
+      " industriels",
+      " pracovní",
+      " atuais"
+    ],
+    "generated_description": "Heading / keyword token — activates on title-case or emphasized topic words, section headings and keywords (Translations, Network, Terminology, Solution); signals topical/emphasized content words."
+  },
+  {
+    "id": "24_6394_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3093155324459076,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " Colorado",
+          "."
+        ],
+        "score": 57.0,
+        "context": ".⏎CREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder⏎Superman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " from"
+        ],
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Illinois",
+          " to"
+        ],
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " Arizona"
+        ],
+        "score": 48.0,
+        "context": " – cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.⏎But now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "triggers": [
+          "⏎",
+          "⏎",
+          " Federal"
+        ],
+        "score": 47.0,
+        "context": " Federal Waters⏎New Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean⏎SAN FRANCISCO— The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$​",
+      "存于互联网档案馆",
+      "脚注の使い方",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "say PLACE NAME — activates on prepositions/articles (in, at, of, to) immediately before location or institution names; signals an upcoming place or proper-noun token."
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.291344553232193,
+    "top_activations": [
+      {
+        "triggers": [
+          " to",
+          " compact",
+          " fluorescent"
+        ],
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " spend"
+        ],
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "triggers": [
+          " attended",
+          " of",
+          " famous"
+        ],
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "triggers": [
+          ",",
+          " capita",
+          " from"
+        ],
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "triggers": [
+          " a",
+          " into",
+          " becoming"
+        ],
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.⏎For most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " Cæsar"
+    ],
+    "demotes": [
+      " stället",
+      " vérit",
+      " mères",
+      " prêtres",
+      " genoux"
+    ],
+    "generated_description": "say preposition — triggers on structural tokens (of, in, to, from, into, a, commas); signals an upcoming noun phrase or phrase boundary."
+  },
+  {
+    "id": "24_15694_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3407628834247589,
+    "top_activations": [
+      {
+        "triggers": [
+          " between",
+          " on",
+          " and"
+        ],
+        "score": 36.5,
+        "context": " 27, 1953, was fought on the Korean Peninsula between North Korea and South Korea. North Korea was aided by China, and South"
+      },
+      {
+        "triggers": [
+          " from",
+          " New",
+          " separates"
+        ],
+        "score": 37.0,
+        "context": " Northumberland Strait is located on the east coast of Canada. It separates Prince Edward Island from New Brunswick and Nova Scotia.⏎The 12.7 kilometer ("
+      },
+      {
+        "triggers": [
+          " of",
+          " in",
+          " in"
+        ],
+        "score": 40.75,
+        "context": " 450,000 square kilometers in the Saharan Algeria Region in the extreme south of the country. The closest populated area near the park,"
+      },
+      {
+        "triggers": [
+          " in",
+          ",",
+          " of"
+        ],
+        "score": 35.5,
+        "context": ".⏎Currently Emery County, one of the 16 counties reporting Pertussis in Utah, has families dealing with the effects of this bacterial disease.⏎Pert"
+      },
+      {
+        "triggers": [
+          "2",
+          " of",
+          " from"
+        ],
+        "score": 37.5,
+        "context": " Morse recalls living through Quantrill's raid of LawrenceJuly 1, 2001⏎Abigail Prentice Barber graduated from Wheaton Seminary in Massachusetts in July"
+      }
+    ],
+    "promotes": [
+      " Louisiana",
+      " Pennsylvania",
+      " Kerala",
+      " Arizona",
+      " Michigan"
+    ],
+    "demotes": [
+      "Datuak",
+      "FieldBuilder",
+      "ensement",
+      "DoubleQuotes",
+      "CodeAttribute"
+    ],
+    "generated_description": "say place/state — activates on location prepositions (in, of, from, between, on, ,) that introduce places; promotes country/state/place name tokens (e.g. Louisiana, Pennsylvania, Arizona)"
+  },
+  {
+    "id": "25_6085_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3780452609062195,
+    "top_activations": [
+      {
+        "triggers": [
+          " by",
+          " to",
+          " the"
+        ],
+        "score": 41.5,
+        "context": " of the States in relation to the federal government, while others wish for more control by the Union. The governors, senators, and other local representatives in the USA"
+      },
+      {
+        "triggers": [
+          " in",
+          ",",
+          " Canberra"
+        ],
+        "score": 58.25,
+        "context": ",000 kangaroos living on the giant Majura military base in Canberra, ACT. About 3500 to 4000 have"
+      },
+      {
+        "triggers": [
+          ",",
+          " Embassy",
+          " Washington"
+        ],
+        "score": 45.75,
+        "context": " and literature who lectures in the Odssey Program of Johns Hopkins University, the Smithsonian Institution and the Russian Cultural Center of the Russian Embassy, Washington DC. He"
+      },
+      {
+        "triggers": [
+          "⏎",
+          "⏎",
+          "<bos>"
+        ],
+        "score": 38.75,
+        "context": "<bos>Australian National Botanic Gardens⏎A weekly news sheet prepared by a Gardens' volunteer.⏎Numbers in square brackets  refer to garden bed Sections. Plants in flower"
+      },
+      {
+        "triggers": [
+          " the",
+          " in",
+          " Washington"
+        ],
+        "score": 39.25,
+        "context": " income redistribution may contribute to poverty rather than enhance wealth.⏎- Although unemployment in the Washington, D.C., metropolitan area has been increasing, it remains almost"
+      }
+    ],
+    "promotes": [
+      "ształ",
+      " Detention",
+      " Freuden",
+      " MonoBehaviour",
+      "teza"
+    ],
+    "demotes": [
+      " Washington",
+      " Beijing",
+      "Washington",
+      " London",
+      " Ottawa"
+    ],
+    "generated_description": "say PLACE/CITY — fires on prepositions/commas/articles immediately before geographic proper nouns (in, , by, the + following token); signals an upcoming city/country/location name."
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.37670519948005676,
+    "top_activations": [
+      {
+        "triggers": [
+          " fill",
+          ".",
+          " ..."
+        ],
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "triggers": [
+          " fill",
+          " fill",
+          " when"
+        ],
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "triggers": [
+          " fill",
+          " not",
+          " been"
+        ],
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "triggers": [
+          " fill",
+          " expansion",
+          " and"
+        ],
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "triggers": [
+          " fill",
+          ".",
+          "⏎"
+        ],
+        "score": 17.25,
+        "context": ".⏎Besides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "נגלית",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " صوتيه",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill (verb) — activates on the verb \"fill\", often in \"fill the/this ...\" patterns; contexts: gaps, pixels, voids, jobs, tissues."
+  },
+  {
+    "id": "8_4621_7",
+    "layer": 8,
+    "ctx_idx": 7,
+    "influence_score": 0.3726269602775574,
+    "top_activations": [
+      {
+        "triggers": [
+          " Brussels",
+          " had",
+          " out"
+        ],
+        "score": 15.94,
+        "context": " had outgrown the Rue Guillaume premises. The brokers and traders urged the municipality of Brussels to build a new stock exchange. The new exchange was built on the site"
+      },
+      {
+        "triggers": [
+          "tier",
+          " Dum",
+          " cancer"
+        ],
+        "score": 13.19,
+        "context": " cancer more effectively.⏎To test their theory, Alberto Bianco and Hélène Dumortier at the CNRS Institute in Strasbourg, France, in collaboration with Maurizio Prato at"
+      },
+      {
+        "triggers": [
+          "bes",
+          " Belgium",
+          " Lob"
+        ],
+        "score": 16.75,
+        "context": "\", taken from the writing of Ratherius, Bishop of Verona (d. 974), found in the abbey at Lobbes in Belgium (P."
+      },
+      {
+        "triggers": [
+          " Belgium",
+          " Wars",
+          " and"
+        ],
+        "score": 12.44,
+        "context": " and tolerance. These bonds were strengthened by Canada’s contribution to the liberation of Belgium in the First and Second World Wars and the major convergences between the foreign"
+      },
+      {
+        "triggers": [
+          " yea",
+          "sts",
+          " infection"
+        ],
+        "score": 12.06,
+        "context": " infection at some point in their lives, but what is less well known is that yeasts can be lethal, and a major health concern for vulnerable hospital patients,\""
+      }
+    ],
+    "promotes": [
+      "#+#",
+      "SourceChecksum",
+      "﻿/*",
+      "xase",
+      "########."
+    ],
+    "demotes": [
+      "interopRequire",
+      "\u0012",
+      "LEncoder",
+      "Insets",
+      " ap"
+    ],
+    "generated_description": "Belgium/Brussels — activates on Belgian proper nouns and places (Brussels, Belgium, Lobbes, Dumortier); signals Belgium-related geographic/person entities."
+  }
+]

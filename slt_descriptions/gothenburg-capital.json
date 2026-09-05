@@ -1,0 +1,2858 @@
+[
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3564230799674988,
+    "top_activations": [
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " an"
+        ],
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " music"
+        ],
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: τετράχορδoν, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " my"
+        ],
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " word"
+        ],
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " medicine"
+        ],
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " متعلقه",
+      "UserScript",
+      "",
+      " виправивши"
+    ],
+    "demotes": [
+      "<bos>",
+      "⏎⏎",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say topic-intro — fires on sentence-initial \"In\" that introduces a topical noun phrase (e.g., \"In music theory,\" \"In medicine,\" \"In word processing,\")."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.32544681429862976,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "Aza",
+          "di"
+        ],
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in ½ liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "triggers": [
+          " of",
+          "of",
+          " it"
+        ],
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family⏎originate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King⏎of Norway"
+      },
+      {
+        "triggers": [
+          " of",
+          " a",
+          " UK"
+        ],
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.⏎Dr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "triggers": [
+          " of",
+          " of",
+          " National"
+        ],
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "triggers": [
+          " of",
+          ".",
+          "⏎"
+        ],
+        "score": 37.5,
+        "context": ".⏎After this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " Anſ",
+      " Theſe",
+      " Monfieur",
+      " Efq",
+      " myſelf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "of (preposition) — activates on the token \"of\", especially when introducing origin/possession/location phrases (of X), frequently before institutions, places, and proper nouns."
+  },
+  {
+    "id": "0_5626_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.33179932832717896,
+    "top_activations": [
+      {
+        "triggers": [
+          " Croatia",
+          "Croatia",
+          "<bos>"
+        ],
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia⏎Croatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Gustav",
+          " a"
+        ],
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " diplomatic",
+          " mission"
+        ],
+        "score": 18.38,
+        "context": " diplomatic mission⏎According to the article 3 of the 1961 Vienna Convention, normal functions consist in:⏎- representing the sending State in the"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Town",
+          " Town"
+        ],
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "triggers": [
+          " Copenhagen",
+          ".",
+          " If"
+        ],
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "Vienna / Central Europe — activates on mentions of Vienna and nearby places; promotes directional modifiers (east, west, Central) and downweights some Eastern European city names."
+  },
+  {
+    "id": "0_9026_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3756883442401886,
+    "top_activations": [
+      {
+        "triggers": [
+          "walks",
+          " picnic",
+          " trails"
+        ],
+        "score": 23.25,
+        "context": " and a turn-of the-century church. The park also includes elevated boardwalks, nature trails, wildlife exhibits, a planetarium, and a picnic area"
+      },
+      {
+        "triggers": [
+          " Nucleus",
+          ".|",
+          " fibrillation"
+        ],
+        "score": 29.75,
+        "context": "<bos>|Copyright © Nucleus Medical Media, Inc.|⏎- Age: 55 or older⏎- Sex: male⏎- Family history of atrial fibrillation⏎"
+      },
+      {
+        "triggers": [
+          " Jewell",
+          " Sandwich",
+          " white"
+        ],
+        "score": 26.12,
+        "context": ", says: \"The first white man⏎who settled in Tamworth was Mark Jewell (1772), whose father⏎resided in Sandwich.⏎"
+      },
+      {
+        "triggers": [
+          " Nile",
+          " Virus",
+          " ranked"
+        ],
+        "score": 25.5,
+        "context": ".⏎Last year ranked as the second worst year for reported cases of West Nile Virus (WNV) in the United States. Connecticut reported 21 cases"
+      },
+      {
+        "triggers": [
+          " alfalfa",
+          " alfalfa",
+          " snout"
+        ],
+        "score": 27.5,
+        "context": " are applying the microscopic roundworms called nematodes to their alfalfa crops to battle the alfalfa snout beetle, said Cornell entomology professor Elson J. Shields, who has"
+      }
+    ],
+    "promotes": [
+      "⏎⏎",
+      " (",
+      ".",
+      ",",
+      " "
+    ],
+    "demotes": [
+      " myſelf",
+      " itſelf",
+      " Efq",
+      " Monfieur",
+      " ―――――"
+    ],
+    "generated_description": "Concrete nouns / proper nouns — activates on content nouns: place/person/species/object names and similar; often capitalized tokens (e.g., Nile, Jewell, Nucleus, alfalfa, walks)."
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36415842175483704,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " especially",
+          " in"
+        ],
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "triggers": [
+          " capital",
+          "th",
+          "–"
+        ],
+        "score": 16.88,
+        "context": "th–18th century). In addition to being an important regional and provincial capital (of Eṣfahān province), the city is one of the most"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Information"
+        ],
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "triggers": [
+          " capital",
+          ".",
+          " In"
+        ],
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Q"
+        ],
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " raiſ",
+      " Monfieur",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".”",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital (token) — activates on the word \"capital\" across senses: city/provincial capital, financial capital, capital letters; surface-level lexical detector for that lemma."
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.348372220993042,
+    "top_activations": [
+      {
+        "triggers": [
+          " realistic",
+          " and",
+          " testing"
+        ],
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn’t realistic.⏎WampServer allows you to easily set up a server on your"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " soak",
+          " plants"
+        ],
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.⏎"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " realistic",
+          "Ny"
+        ],
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"⏎The"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " what",
+          " you"
+        ],
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.⏎Develop an action plan for your goals."
+      },
+      {
+        "triggers": [
+          " realistic",
+          " stress",
+          " disorder"
+        ],
+        "score": 17.75,
+        "context": " stress disorder.⏎By bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Reſ",
+      " purpoſe",
+      " Majefty",
+      " Monfieur",
+      " myſelf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Portály",
+      " ("
+    ],
+    "generated_description": "realistic — activates on the adjective \"realistic\"; fires when describing plausibility, appearance, timelines, or sensory/verisimilar qualities in a sentence."
+  },
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.343276709318161,
+    "top_activations": [
+      {
+        "triggers": [
+          " games",
+          " Olympic",
+          " gold"
+        ],
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " Jah"
+        ],
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "triggers": [
+          " capital",
+          " attempt",
+          " to"
+        ],
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "triggers": [
+          " games",
+          " games",
+          " digital"
+        ],
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.⏎Dave McCool, president and CEO of Muzzy"
+      },
+      {
+        "triggers": [
+          " capital",
+          " ancient",
+          " in"
+        ],
+        "score": 14.25,
+        "context": " in my mind’s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " à",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " متعلقه",
+      "+#+#",
+      "脚注の使い方",
+      "Diwedd"
+    ],
+    "generated_description": "Capital city — activates on mentions of \"capital\"/ancient capital and nearby city-name contexts; tends to push city-related output (ville, à, \"the\"/\"a\" before place names)."
+  },
+  {
+    "id": "0_11375_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.327598512172699,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " way",
+          " by"
+        ],
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.⏎\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "triggers": [
+          " is",
+          " and",
+          " subtropical"
+        ],
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "triggers": [
+          " is",
+          " the",
+          " Yosh"
+        ],
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.⏎The Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "triggers": [
+          " is",
+          ",",
+          " all"
+        ],
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It’"
+      },
+      {
+        "triggers": [
+          " is",
+          " have",
+          "⏎"
+        ],
+        "score": 35.5,
+        "context": " have⏎a fresher taste and a more aromatic smell. The whole of the plant is used⏎for culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " themſelves",
+      " Majefty",
+      " Diſ",
+      " myſelf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " является",
+      " was"
+    ],
+    "generated_description": "copula \"is\" — activates on \"is\"/other copulas; suppresses simple copula outputs and nudges toward archaic or emphatic forms (Majefty, myself, themselves)."
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.33389419317245483,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " This",
+          " will"
+        ],
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          "("
+        ],
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "triggers": [
+          " capital",
+          " are",
+          " a"
+        ],
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " terms"
+        ],
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "triggers": [
+          " capital",
+          " $",
+          "1"
+        ],
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " متعلقه",
+      " snippetHide"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "1",
+      "⏎",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital (economic) — activates on the token “capital” used in economics/finance contexts (factor of production, capital markets, raising/repaying capital)."
+  },
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3866032361984253,
+    "top_activations": [
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          "."
+        ],
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          " in"
+        ],
+        "score": 15.62,
+        "context": " in that culture.⏎Exactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "triggers": [
+          " achieve",
+          "-",
+          "based"
+        ],
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " [",
+          "Crown"
+        ],
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " Increased",
+          " investment"
+        ],
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " againſt",
+      " becauſe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve / \"to achieve\" — activates on the verb \"achieve\" (often in infinitive \"to achieve\") and similar occurrences signaling goal-oriented action."
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3611246347427368,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " capitalism",
+          " competing"
+        ],
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Hellen"
+        ],
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,” said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "triggers": [
+          " capital",
+          " trillion",
+          " more"
+        ],
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "triggers": [
+          " capital",
+          "illa",
+          "."
+        ],
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.⏎Puerto del Rosario is"
+      },
+      {
+        "triggers": [
+          " capital",
+          " South",
+          " Korean"
+        ],
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital (word) — activates on the token “capital” and close variants/contexts (city, finance, capitalism); often associated with occurrences of “capital” across sentences; suppresses output “capital.”"
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.34152302145957947,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " redund",
+          "ancies"
+        ],
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Hel",
+          "man"
+        ],
+        "score": 17.38,
+        "context": " Helman, Forbes Staff⏎I'm based in Houston, Texas. Energy capital of the world.⏎This article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " control",
+          "."
+        ],
+        "score": 17.25,
+        "context": " control.⏎Two days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " (",
+          "Special"
+        ],
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "triggers": [
+          " capital",
+          " in",
+          " English"
+        ],
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " виправивши",
+      " تضيفلها",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "⏎"
+    ],
+    "generated_description": "capital — activates on the word \"capital\", signals mentions of capital cities or headings about a place's capital (e.g., \"the capital city is Schwerin\", \"the capital of ...\")"
+  },
+  {
+    "id": "0_15734_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39661282300949097,
+    "top_activations": [
+      {
+        "triggers": [
+          " components",
+          ".",
+          " Results"
+        ],
+        "score": 13.5,
+        "context": ". Results could strongly influence the design of future fusion reactors.⏎The Laboratory develops components and scientific data for ITER, which represents the largest step to date toward the"
+      },
+      {
+        "triggers": [
+          " components",
+          "board",
+          "."
+        ],
+        "score": 13.0,
+        "context": "board. These accept through-hole devices and allow fast, reasonably secure connection of components with a minimum of wiring. An idea for a new circuit can be tried"
+      },
+      {
+        "triggers": [
+          " components",
+          " is",
+          " imparted"
+        ],
+        "score": 13.12,
+        "context": " is imparted by the polyunsaturated and monounsaturated fats that it contains. These components protect the heart against various heart diseases like blockage of arteries, by lowering cholesterol"
+      },
+      {
+        "triggers": [
+          " components",
+          "like",
+          " mid"
+        ],
+        "score": 13.12,
+        "context": " mid and hind legs flattened, oar-like; eyes divided into ventral and dorsal components; antennal segments 3-11 form short, cylindrical club and"
+      },
+      {
+        "triggers": [
+          " components",
+          " which",
+          ","
+        ],
+        "score": 13.0,
+        "context": " which, along with dietary studies utilizing experimental animals, suggest that a variety of dietary components may modulate the transformation and promotion stages of carcinogenesis.⏎Among these are"
+      }
+    ],
+    "promotes": [
+      " שוליים",
+      "μβρίου",
+      "gema",
+      "iedene",
+      "//};"
+    ],
+    "demotes": [
+      " kvinder",
+      " økonom",
+      "enumii",
+      "utnik",
+      " befolk"
+    ],
+    "generated_description": "components — activates on the word “components” in technical/scientific contexts and listings; often near punctuation or in noun lists."
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.3500233292579651,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "5",
+          "0"
+        ],
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Indian"
+        ],
+        "score": 28.38,
+        "context": " the Indian laws.⏎6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " output"
+        ],
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " interest",
+          " rate"
+        ],
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "triggers": [
+          " capital",
+          "1",
+          "9"
+        ],
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "álni",
+      "そうな",
+      " وعلى",
+      "리를"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital (word) — activates on occurrences of the token \"capital\" (economic/legal contexts: assets, interest, receipts); consistently demotes emitting \"capital\" in output."
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3989730179309845,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " largest",
+          "<bos>"
+        ],
+        "score": 13.0,
+        "context": "<bos>Reykjavík is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "triggers": [
+          " capital",
+          ",",
+          " via"
+        ],
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " working"
+        ],
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " of"
+        ],
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "triggers": [
+          " capital",
+          " until",
+          " "
+        ],
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.⏎South Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " houſe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital (city) — activates on the token “capital” and phrases stating a place is a capital; fires on sentences naming capital cities or administrative capitals."
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3930007517337799,
+    "top_activations": [
+      {
+        "triggers": [
+          " fill",
+          ".",
+          " ..."
+        ],
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "triggers": [
+          " fill",
+          " fill",
+          " when"
+        ],
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "triggers": [
+          " fill",
+          " not",
+          " been"
+        ],
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "triggers": [
+          " fill",
+          " expansion",
+          " and"
+        ],
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "triggers": [
+          " fill",
+          ".",
+          "⏎"
+        ],
+        "score": 17.25,
+        "context": ".⏎Besides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "נגלית",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " صوتيه",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill (verb) — activates on occurrences of \"fill\" meaning filling gaps/voids/areas; often \"to fill\" + noun (gap, void, pixels, jobs, etc.)."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.38528183102607727,
+    "top_activations": [
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "v"
+        ],
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " was"
+        ],
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          "s"
+        ],
+        "score": 34.25,
+        "context": "<bos>It’s no secret that New Mexico is one of the nation’s hot spots for nuclear activity. We don’t have any commercial nuclear power plants"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " is"
+        ],
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "Washington"
+        ],
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds – a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Portály",
+      "goku",
+      " légale"
+    ],
+    "generated_description": "Sentence-initial \"It\" — activates on clause-starting expletive \"It\" (It is/It was/It's) and similar sentence-beginning tokens, signals upcoming copula/expletive constructions."
+  },
+  {
+    "id": "4_3254_7",
+    "layer": 4,
+    "ctx_idx": 7,
+    "influence_score": 0.3074369430541992,
+    "top_activations": [
+      {
+        "triggers": [
+          "sth",
+          "agen",
+          " Ø"
+        ],
+        "score": 25.25,
+        "context": "<bos>By Andreas Østhagen As the effects of climate change are becoming increasingly obvious, the Arctic has gained particular attention as being one of the most vulnerable places to"
+      },
+      {
+        "triggers": [
+          "mark",
+          " in",
+          " its"
+        ],
+        "score": 21.0,
+        "context": " in its overall themes). I’ll have plenty of occasion to get into Tegmark’s ideas about what he believes to be not just a multiverse but a"
+      },
+      {
+        "triggers": [
+          "myr",
+          "s",
+          " Stockholm"
+        ],
+        "score": 21.75,
+        "context": " Les Prix Nobel. The Nobel Prizes 2001, Editor Tore Frängsmyr, [Nobel Foundation], Stockholm, 2002⏎"
+      },
+      {
+        "triggers": [
+          "und",
+          "res",
+          " Swedish"
+        ],
+        "score": 24.25,
+        "context": " Danish and Swedish governments signed an agreement to establish a fixed link across the Øresund. The agreement was ratified by the two countries' parliaments in August of"
+      },
+      {
+        "triggers": [
+          "ius",
+          "hlen",
+          "al"
+        ],
+        "score": 23.5,
+        "context": " page and give the cartographer/designer credit (in this case Hugo Ahlenius, UNEP/GRID-Arendal)⏎Center for International Earth Science"
+      }
+    ],
+    "promotes": [
+      " Sweden",
+      " Nilsson",
+      "Swedish",
+      " Swedish",
+      " schwed"
+    ],
+    "demotes": [
+      " مشين",
+      "+#+#",
+      "bootstrapcdn",
+      "rungsseite",
+      " autorytatywna"
+    ],
+    "generated_description": "Sweden / Swedish — activates on Swedish place names, surnames, and demonyms (Stockholm, Swedish, -sson fragments); pushes Sweden/Swedish tokens in output."
+  },
+  {
+    "id": "7_11083_7",
+    "layer": 7,
+    "ctx_idx": 7,
+    "influence_score": 0.35164496302604675,
+    "top_activations": [
+      {
+        "triggers": [
+          "ns",
+          "borg",
+          "d"
+        ],
+        "score": 26.0,
+        "context": ", N. Lynnerup, Á.E. Sveinbjörnsdóttir, and J. Arneborg 93⏎Our understanding of"
+      },
+      {
+        "triggers": [
+          "kj",
+          "ld",
+          "annes"
+        ],
+        "score": 22.75,
+        "context": ". What is the deeper moral meaning of his claim?⏎In Ragnar Danneskj÷ld and Robin Hood lay two contradictory moralities, each an inversion of"
+      },
+      {
+        "triggers": [
+          "jar",
+          " Medicine",
+          " for"
+        ],
+        "score": 25.25,
+        "context": " underway between two research groups, in which senior researcher Rebecka Hellsten and Professor Anders Bjartell at the Faculty of Medicine's division for Urological"
+      },
+      {
+        "triggers": [
+          "lund",
+          " Berg",
+          " Lars"
+        ],
+        "score": 25.25,
+        "context": " in other applications, they suggest.⏎In the new study, Lars A. Berglund and colleagues note that cellulose -- a tough, widely available substance obtained from"
+      },
+      {
+        "triggers": [
+          " Norway",
+          "s",
+          " Council"
+        ],
+        "score": 23.62,
+        "context": " wind farms is part of an innovation project supported by the Research Council of Norway’s Clean Energy for the Future (RENERGI) programme. Here Uni CIP"
+      }
+    ],
+    "promotes": [
+      "SharedCtor",
+      " AssemblyTitle",
+      "Ingrid",
+      "hoeddwyd",
+      "istoitu"
+    ],
+    "demotes": [
+      "VersionUID",
+      " køb",
+      " måte",
+      "føring",
+      " hjer"
+    ],
+    "generated_description": "Nordic name fragment — activates on Scandinavian proper-name pieces (dóttir, -borg, -lund, Bjar-, Danneskjöld); signals Nordic/Scandinavian personal or place names and context."
+  },
+  {
+    "id": "18_1545_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.2853420674800873,
+    "top_activations": [
+      {
+        "triggers": [
+          " Dutch",
+          "'",
+          ":"
+        ],
+        "score": 46.0,
+        "context": "<bos>Centuries after the Dutch Golden Age, the Netherlands was home to another painter who captured the world's imagination: Vincent Van Gough. In his early life"
+      },
+      {
+        "triggers": [
+          "5",
+          "9",
+          "9"
+        ],
+        "score": 59.0,
+        "context": " in 1941, and first opened for public use in 1950. The Metro has since grown to incorporate more than one hundred stations"
+      },
+      {
+        "triggers": [
+          " at",
+          " of",
+          " the"
+        ],
+        "score": 45.5,
+        "context": " at the age of 34, Linnaeus was appointed professor of medicine and botany at the University of Uppsala in Sweden. In this capacity he took over the university"
+      },
+      {
+        "triggers": [
+          " Norwe",
+          "gians",
+          " ("
+        ],
+        "score": 44.0,
+        "context": "g at Camp Randall, near Madison, Wisconsin. The majority of its members were Norwegians immigrants (some records state as many as 90%), with the"
+      },
+      {
+        "triggers": [
+          " Captain",
+          " was",
+          " Herman"
+        ],
+        "score": 48.5,
+        "context": " Norway she was known as the Fjeld of Tønsberg and her master was Captain Herman Andersen. In Sweden her name was Gustav of Gothenburg.⏎The"
+      }
+    ],
+    "promotes": [
+      "瑞典",
+      "Sweden",
+      " Swedish",
+      " unknownFields",
+      " Sweden"
+    ],
+    "demotes": [
+      ">{@",
+      " springfox",
+      "Portale",
+      "awtextra",
+      "keyDown"
+    ],
+    "generated_description": "country/nationality token — activates on country/nationality words (Dutch, Norwegians, Sweden); consistently pushes output tokens toward “Sweden”/“Swedish” (瑞典)."
+  },
+  {
+    "id": "18_1545_7",
+    "layer": 18,
+    "ctx_idx": 7,
+    "influence_score": 0.3045068383216858,
+    "top_activations": [
+      {
+        "triggers": [
+          " Dutch",
+          "'",
+          ":"
+        ],
+        "score": 46.0,
+        "context": "<bos>Centuries after the Dutch Golden Age, the Netherlands was home to another painter who captured the world's imagination: Vincent Van Gough. In his early life"
+      },
+      {
+        "triggers": [
+          "5",
+          "9",
+          "9"
+        ],
+        "score": 59.0,
+        "context": " in 1941, and first opened for public use in 1950. The Metro has since grown to incorporate more than one hundred stations"
+      },
+      {
+        "triggers": [
+          " at",
+          " of",
+          " the"
+        ],
+        "score": 45.5,
+        "context": " at the age of 34, Linnaeus was appointed professor of medicine and botany at the University of Uppsala in Sweden. In this capacity he took over the university"
+      },
+      {
+        "triggers": [
+          " Norwe",
+          "gians",
+          " ("
+        ],
+        "score": 44.0,
+        "context": "g at Camp Randall, near Madison, Wisconsin. The majority of its members were Norwegians immigrants (some records state as many as 90%), with the"
+      },
+      {
+        "triggers": [
+          " Captain",
+          " was",
+          " Herman"
+        ],
+        "score": 48.5,
+        "context": " Norway she was known as the Fjeld of Tønsberg and her master was Captain Herman Andersen. In Sweden her name was Gustav of Gothenburg.⏎The"
+      }
+    ],
+    "promotes": [
+      "瑞典",
+      "Sweden",
+      " Swedish",
+      " unknownFields",
+      " Sweden"
+    ],
+    "demotes": [
+      ">{@",
+      " springfox",
+      "Portale",
+      "awtextra",
+      "keyDown"
+    ],
+    "generated_description": "Sweden / Swedish — activates on Sweden-related mentions and Scandinavian nationalities; pushes output tokens for “Sweden”/“Swedish” (also shows up in promoted tokens)."
+  },
+  {
+    "id": "18_6101_8",
+    "layer": 18,
+    "ctx_idx": 8,
+    "influence_score": 0.39050132036209106,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " embassy",
+          " in"
+        ],
+        "score": 42.5,
+        "context": " Rising through the ranks, he becomes a military attache in Sudan's embassy in the UAE, and later a garrison commander and brigadier.⏎19"
+      },
+      {
+        "triggers": [
+          " with",
+          " history",
+          ","
+        ],
+        "score": 41.75,
+        "context": " history, fed more than one-third of North Korea's population. For most countries, bilateral food aid became their only significant form of engagement with the DPR"
+      },
+      {
+        "triggers": [
+          " from",
+          " above",
+          " under"
+        ],
+        "score": 53.5,
+        "context": " colonizing should be a royal endeavour and that colonies should be kept under rigid control from above. In 1620 Gorges succeeded in obtaining a charter"
+      },
+      {
+        "triggers": [
+          " from",
+          " centre",
+          " the"
+        ],
+        "score": 42.5,
+        "context": "administrative units\"). Under the new constitution there will be a devolution of power, from the centre to 47 self-governed ETHNIC counties, a"
+      },
+      {
+        "triggers": [
+          " in",
+          " monarchy",
+          " to"
+        ],
+        "score": 45.5,
+        "context": " of them no doubt started to feel as though they didn't need the monarchy in order to prosper in the fledgling America. This no doubt seemed ludicrous to"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " Beijing",
+      " Canberra",
+      "Washington",
+      " Washington"
+    ],
+    "demotes": [
+      "ⓧ",
+      " חיצוניים",
+      " NgModule",
+      "CASCADE",
+      " handleMessage"
+    ],
+    "generated_description": "say capital city — fires on prepositions/articles introducing locations (in/of/from/to/under/the), pushes capital-city tokens (Beijing, Canberra, Washington, etc.)"
+  },
+  {
+    "id": "19_2695_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.38395780324935913,
+    "top_activations": [
+      {
+        "triggers": [
+          " greater",
+          " metro",
+          " Angeles"
+        ],
+        "score": 44.75,
+        "context": " paper proposes a specific demonstration project in Southern California. Orange County, part of the greater Los Angeles metro area, has five new toll road projects under development: two"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 64.0,
+        "context": "936.⏎Five cities — St. Louis, Indianapolis Chicago, Detroit and Denver — are all on pace to shatter their all-time monthly heat records"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "13 election cycle. Ten of America's 30 largest cities -- including Boston, Detroit, Los Angeles, New York and Seattle -- elected mayors this"
+      },
+      {
+        "triggers": [
+          " major",
+          " and",
+          " in"
+        ],
+        "score": 47.75,
+        "context": " Los Angeles and Phoenix. They hope to ultimately map the CO2 emissions in all major cities acrosUltimately, they say, they hope to cover the entire United"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 62.25,
+        "context": "-Ft. Worth. Belize is also served from Atlanta, Charlotte, Los Angeles, New York and Washington, DC, as well as Toronto, Canada ... more"
+      }
+    ],
+    "promotes": [
+      " Seattle",
+      " Atlanta",
+      " London",
+      " cities",
+      " Chicago"
+    ],
+    "demotes": [
+      "XmlAccessorType",
+      "Бахар",
+      "SBATCH",
+      "}');",
+      "řevě"
+    ],
+    "generated_description": "major city mention — activates on city names and city-list contexts; consistently associated with promoting specific city tokens (Seattle, Atlanta, Chicago, London)"
+  },
+  {
+    "id": "19_14527_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.3466963469982147,
+    "top_activations": [
+      {
+        "triggers": [
+          " Gustaf",
+          "1",
+          "7"
+        ],
+        "score": 59.75,
+        "context": ").⏎The Order of Vasa was instituted by Gustaf III in 1772. The Order of Carl XIII was introduced in 1811"
+      },
+      {
+        "triggers": [
+          " with",
+          " in",
+          " the"
+        ],
+        "score": 66.0,
+        "context": "nia. The highest areas are found in the Kjolen mountain range along the border with Norway, where peaks rise to over 1,500 m;"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 52.25,
+        "context": " minimal impact on the environment. These established territories became fragmented, however, when Norway, Sweden, Finland and Russia began invading the north polar regions to colonize and"
+      },
+      {
+        "triggers": [
+          " with",
+          " ",
+          " and"
+        ],
+        "score": 82.0,
+        "context": " borders with Norway to the west and Finland to the northeast, the country also has 3,218 km of coastline, much of it on the Baltic"
+      },
+      {
+        "triggers": [
+          " ",
+          "4",
+          " the"
+        ],
+        "score": 73.0,
+        "context": ", and Iceland) known collectively as Scandinavia. With a land mass totalling around 450,295 sq km, Sweden is the fifth largest country"
+      }
+    ],
+    "promotes": [
+      "Демографія",
+      " Swedish",
+      " gynhyrchwyd",
+      " himo",
+      " محفوظة"
+    ],
+    "demotes": [
+      " Générale",
+      " kasarigan",
+      "TemporalType",
+      "mobileqq",
+      "HtmlAttribute"
+    ],
+    "generated_description": "Sweden — activates on Swedish-country references (Gustaf III, Kjolen/Kjolen range, borders with Norway/Finland); tends to promote the token \"Swedish\""
+  },
+  {
+    "id": "21_6065_7",
+    "layer": 21,
+    "ctx_idx": 7,
+    "influence_score": 0.37002208828926086,
+    "top_activations": [
+      {
+        "triggers": [
+          " (",
+          " Swedish",
+          " for"
+        ],
+        "score": 105.0,
+        "context": "., head of the microbial typing unit at the Swedish Institute for Communicable Disease Control (SMI); Gabriele Vaccari, Ph.D., researcher at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Glas",
+          " by"
+        ],
+        "score": 102.0,
+        "context": " 2⏎The Graal glass technique was invented at Orrefors Glasbruk in Sweden, in 1916 by. In simple terms, the"
+      },
+      {
+        "triggers": [
+          " over",
+          " from",
+          " and"
+        ],
+        "score": 113.5,
+        "context": " It stretches northward from the Brunkebergstorg square over Hamngatan; crosses Mäster Samuelsgatan and Oxtorgsgatan; passes over the bridge Mal"
+      },
+      {
+        "triggers": [
+          " tid",
+          "ala",
+          " in"
+        ],
+        "score": 96.5,
+        "context": ".⏎While he was studying, he got his first poem published in Upsala tidningar (1802). The following years he wrote and translated several"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " of"
+        ],
+        "score": 112.5,
+        "context": " He is most remembered today for his hymns⏎He was born in Stora Tuna in Dalarna (now part of Borlänge Municipality, Dalarna County"
+      }
+    ],
+    "promotes": [
+      " för",
+      " som",
+      " upp",
+      " av",
+      " och"
+    ],
+    "demotes": [
+      " stället",
+      " varandra",
+      "writeFieldEnd",
+      "AutoScaleMode",
+      " photolibrary"
+    ],
+    "generated_description": "Sweden places — activates on mentions of Sweden or Swedish place names/terms; pushes Swedish function words (för, som, upp, av, och)."
+  },
+  {
+    "id": "21_5943_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.2800981402397156,
+    "top_activations": [
+      {
+        "triggers": [
+          " =",
+          " City",
+          " Capital"
+        ],
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:⏎- Capital City = Freetown⏎- Population = 5,245,695⏎- Official and Recognized Languages"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " a",
+          " "
+        ],
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.⏎Israel's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " to"
+        ],
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.⏎As presented here, in"
+      },
+      {
+        "triggers": [
+          " in",
+          " ",
+          "9"
+        ],
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " partnership"
+        ],
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in⏎October 1998 in a national launch by then Deputy President Thabo⏎Mbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "capital city — activates on mentions of “capital”/“city” or place prepositions; pushes specific world-city tokens (Toronto, Sydney, Dublin, London, Nairobi)."
+  },
+  {
+    "id": "6_3840_7",
+    "layer": 6,
+    "ctx_idx": 7,
+    "influence_score": 0.359576940536499,
+    "top_activations": [
+      {
+        "triggers": [
+          " Sweden",
+          "å",
+          "ule"
+        ],
+        "score": 21.88,
+        "context": "<bos>Who says wheelchairs have to be boring? A sweet new ride developed at Sweden's Luleå University of Technology features a cutting edge navigational laser that lets"
+      },
+      {
+        "triggers": [
+          " Denmark",
+          " Finland",
+          " Estonia"
+        ],
+        "score": 19.38,
+        "context": " participation of 24 Member States including (Albania, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland,"
+      },
+      {
+        "triggers": [
+          " Sweden",
+          " Norway",
+          " been"
+        ],
+        "score": 19.0,
+        "context": " been ranked 56 out of 81 countries in the annual Web Index. Sweden, Norway, UK & USA are in the top 4 positions."
+      },
+      {
+        "triggers": [
+          "son",
+          " Johan",
+          " L"
+        ],
+        "score": 20.12,
+        "context": " the light and still get your Zs.”⏎Previously: Can adjusting your mobile device’s brightness help promote better sleep?⏎Photo by Johan Larrson"
+      },
+      {
+        "triggers": [
+          " Swedish",
+          " Nobel",
+          " Royal"
+        ],
+        "score": 21.62,
+        "context": " half of the Nobel Prize in Physics in 1986. The Royal Swedish Academy of Sciences bestowed the other half of the prestigious award to Ernst Ruska"
+      }
+    ],
+    "promotes": [
+      "Lähteet",
+      "\">'",
+      " tartalomajánló",
+      "\">${",
+      "<bos>"
+    ],
+    "demotes": [
+      " onCancelled",
+      "borderSide",
+      " resourceCulture",
+      "versch",
+      "AISSEE"
+    ],
+    "generated_description": "Sweden / Nordic mentions — activates on \"Sweden\"/\"Swedish\" and nearby Nordic country names, cities, institutions (Gothenburg, Luleå, Nobel, Royal Swedish Academy)"
+  },
+  {
+    "id": "19_14527_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3230637013912201,
+    "top_activations": [
+      {
+        "triggers": [
+          " Gustaf",
+          "1",
+          "7"
+        ],
+        "score": 59.75,
+        "context": ").⏎The Order of Vasa was instituted by Gustaf III in 1772. The Order of Carl XIII was introduced in 1811"
+      },
+      {
+        "triggers": [
+          " with",
+          " in",
+          " the"
+        ],
+        "score": 66.0,
+        "context": "nia. The highest areas are found in the Kjolen mountain range along the border with Norway, where peaks rise to over 1,500 m;"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 52.25,
+        "context": " minimal impact on the environment. These established territories became fragmented, however, when Norway, Sweden, Finland and Russia began invading the north polar regions to colonize and"
+      },
+      {
+        "triggers": [
+          " with",
+          " ",
+          " and"
+        ],
+        "score": 82.0,
+        "context": " borders with Norway to the west and Finland to the northeast, the country also has 3,218 km of coastline, much of it on the Baltic"
+      },
+      {
+        "triggers": [
+          " ",
+          "4",
+          " the"
+        ],
+        "score": 73.0,
+        "context": ", and Iceland) known collectively as Scandinavia. With a land mass totalling around 450,295 sq km, Sweden is the fifth largest country"
+      }
+    ],
+    "promotes": [
+      "Демографія",
+      " Swedish",
+      " gynhyrchwyd",
+      " himo",
+      " محفوظة"
+    ],
+    "demotes": [
+      " Générale",
+      " kasarigan",
+      "TemporalType",
+      "mobileqq",
+      "HtmlAttribute"
+    ],
+    "generated_description": "Sweden / Swedish topics — activates on Swedish proper names, geography, country facts (Gustaf, Kjolen, Norway/Finland borders); tends to push “Swedish.”"
+  },
+  {
+    "id": "22_13803_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.37144628167152405,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          " of",
+          " of"
+        ],
+        "score": 95.0,
+        "context": " Gustaf, Duke of Uppland⏎Oscar II of Sweden⏎Prince August, Duke of Dalarna⏎|Joseph François Oscar Bernadotte|⏎|House||"
+      },
+      {
+        "triggers": [
+          " of",
+          " between",
+          " the"
+        ],
+        "score": 107.5,
+        "context": " It is one of Denmark’s oldest cities strategically located at the narrowest part of the sound between Denmark and Sweden. In the past South Sweden used to be"
+      },
+      {
+        "triggers": [
+          " by",
+          " of",
+          " in"
+        ],
+        "score": 98.5,
+        "context": "ust-Parchim⏎Ludwigslust-Parchim is a district in the west of Mecklenburg-Vorpommern, Germany. It is bounded by"
+      },
+      {
+        "triggers": [
+          " the",
+          " the",
+          " of"
+        ],
+        "score": 112.0,
+        "context": " flat or rolling. Three of the principal rivers, the Ume, the Torne and the Angerman, flow into the Gulf of Bothnia. The highest areas"
+      },
+      {
+        "triggers": [
+          " near",
+          " (",
+          " is"
+        ],
+        "score": 86.0,
+        "context": " telescope is used to study for astronomy purposes and studying the skies.⏎Another impressive military site is the War Port near Liepaja (southwestern Latvia), which"
+      }
+    ],
+    "promotes": [
+      " defaultstate",
+      "########.",
+      "WithMany",
+      "tvguidetime",
+      " TestBed"
+    ],
+    "demotes": [
+      " carteira",
+      " beginnetje",
+      "anto",
+      "keyed",
+      "נצ"
+    ],
+    "generated_description": "say LOCATION — activates on prepositions/articles that introduce geographic/place names or spatial relations (in, of, near, by, the); signals upcoming toponyms."
+  },
+  {
+    "id": "23_10812_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3826282024383545,
+    "top_activations": [
+      {
+        "triggers": [
+          " after",
+          " and",
+          " population"
+        ],
+        "score": 46.75,
+        "context": " population (2006: ca.91,200), after Magdeburg and Halle (Saale).⏎Dessau is the largest population centre"
+      },
+      {
+        "triggers": [
+          " in",
+          " held",
+          " Education"
+        ],
+        "score": 39.75,
+        "context": " Education and Public Awareness (CEPA) of the Convention on Biological Diversity was held in Paris from 17 to 19 March 2008"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          "9"
+        ],
+        "score": 42.5,
+        "context": "⏎9th International Multidisciplinary Scientific GeoConference - SGEM2009, www.sgem.org, SGEM2009 Conference Proceedings"
+      },
+      {
+        "triggers": [
+          " in",
+          " to",
+          " new"
+        ],
+        "score": 38.0,
+        "context": " to new research presented at the joint International Congress of Endocrinology and European Congress of Endocrinology in Florence, Italy.⏎While numerous studies have linked eating quickly to overeating"
+      },
+      {
+        "triggers": [
+          " in",
+          " at",
+          " Research"
+        ],
+        "score": 46.25,
+        "context": "., of the Centre for Research in Environmental Epidemiology at the Municipal Institute of Medical Research in Barcelona, Spain.⏎The epidemiological study, the first to investigate the effects"
+      }
+    ],
+    "promotes": [
+      " JMenuItem",
+      "antMatchers",
+      "umán",
+      "MLLoader",
+      "脚注の使い方"
+    ],
+    "demotes": [
+      "Sucesor",
+      "isContained",
+      "hoeddwyd",
+      " ModelExpression",
+      " IFTT"
+    ],
+    "generated_description": "say place name — activates on structural token \"in\" (held in, Research in, in Paris), signals an upcoming city/location (Paris, Barcelona, Florence)."
+  },
+  {
+    "id": "21_6065_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.27465248107910156,
+    "top_activations": [
+      {
+        "triggers": [
+          " (",
+          " Swedish",
+          " for"
+        ],
+        "score": 105.0,
+        "context": "., head of the microbial typing unit at the Swedish Institute for Communicable Disease Control (SMI); Gabriele Vaccari, Ph.D., researcher at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Glas",
+          " by"
+        ],
+        "score": 102.0,
+        "context": " 2⏎The Graal glass technique was invented at Orrefors Glasbruk in Sweden, in 1916 by. In simple terms, the"
+      },
+      {
+        "triggers": [
+          " over",
+          " from",
+          " and"
+        ],
+        "score": 113.5,
+        "context": " It stretches northward from the Brunkebergstorg square over Hamngatan; crosses Mäster Samuelsgatan and Oxtorgsgatan; passes over the bridge Mal"
+      },
+      {
+        "triggers": [
+          " tid",
+          "ala",
+          " in"
+        ],
+        "score": 96.5,
+        "context": ".⏎While he was studying, he got his first poem published in Upsala tidningar (1802). The following years he wrote and translated several"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " of"
+        ],
+        "score": 112.5,
+        "context": " He is most remembered today for his hymns⏎He was born in Stora Tuna in Dalarna (now part of Borlänge Municipality, Dalarna County"
+      }
+    ],
+    "promotes": [
+      " för",
+      " som",
+      " upp",
+      " av",
+      " och"
+    ],
+    "demotes": [
+      " stället",
+      " varandra",
+      "writeFieldEnd",
+      "AutoScaleMode",
+      " photolibrary"
+    ],
+    "generated_description": "Swedish context — activates on mentions of Sweden or Swedish-language snippets; responds to location/preposition tokens and promotes common Swedish function words (för, som, upp, av, och)."
+  },
+  {
+    "id": "24_3865_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.365655779838562,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          "ha",
+          "un"
+        ],
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha paréntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "triggers": [
+          ",",
+          "otea",
+          "arina"
+        ],
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "triggers": [
+          ".",
+          " race",
+          "rae"
+        ],
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "triggers": [
+          ".",
+          ".",
+          "G"
+        ],
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "triggers": [
+          "6",
+          "3",
+          "0"
+        ],
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "⏎⏎"
+    ],
+    "generated_description": "say archaic/long‑s words — fires on punctuation (commas, periods, angle brackets) before tokens; promotes odd capitalizations and archaic forms (itſelf, myſelf, Monfieur)."
+  },
+  {
+    "id": "24_6394_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3129270374774933,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " Colorado",
+          "."
+        ],
+        "score": 57.0,
+        "context": ".⏎CREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder⏎Superman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " from"
+        ],
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Illinois",
+          " to"
+        ],
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " Arizona"
+        ],
+        "score": 48.0,
+        "context": " – cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.⏎But now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "triggers": [
+          "⏎",
+          "⏎",
+          " Federal"
+        ],
+        "score": 47.0,
+        "context": " Federal Waters⏎New Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean⏎SAN FRANCISCO— The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$​",
+      "存于互联网档案馆",
+      "脚注の使い方",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "say LOCATION preposition — activates on prepositions (in/of/at/from) introducing places or institutions; signals an upcoming toponym or location phrase."
+  },
+  {
+    "id": "22_13502_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3742806613445282,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " at",
+          " to"
+        ],
+        "score": 77.0,
+        "context": " to new research presented at the joint International Congress of Endocrinology and European Congress of Endocrinology in Florence, Italy.⏎While numerous studies have linked eating quickly to overeating"
+      },
+      {
+        "triggers": [
+          " in",
+          " at",
+          " to"
+        ],
+        "score": 50.0,
+        "context": " and undeveloped country emissions to take to Copenhagen at Monday’s EU Environment Council meeting in Brussels.⏎Commit to zero net emissions⏎Based on various studies, including"
+      },
+      {
+        "triggers": [
+          ",",
+          "8",
+          ","
+        ],
+        "score": 52.0,
+        "context": " Conference and Expo April 14-17, 2008, Santa Clara, CA|⏎CSS also allows for comments, but it uses"
+      },
+      {
+        "triggers": [
+          " in",
+          " to",
+          " be"
+        ],
+        "score": 69.0,
+        "context": " to be presented Sunday at the 2011 European Multidisciplinary Cancer Congress in Stockholm. Coleman also presented findings from the study at the San Antonio Breast Cancer"
+      },
+      {
+        "triggers": [
+          " in",
+          ".",
+          " The"
+        ],
+        "score": 50.5,
+        "context": ". The results were presented this afternoon at the Europhysics Conference on High Energy Physics in Grenoble, France.⏎Physicists familiar with the experiments urge caution."
+      }
+    ],
+    "promotes": [
+      "InitVars",
+      " esternos",
+      " Италијани",
+      "FunctionFlags",
+      " TestBed"
+    ],
+    "demotes": [
+      " conv",
+      " ska",
+      "vili",
+      "ringing",
+      "sk"
+    ],
+    "generated_description": "say PLACE — fires on prepositions/punctuation (in, at, to, comma/period) immediately before city or country names; signals an upcoming location mention."
+  },
+  {
+    "id": "23_657_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.36859506368637085,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " at",
+          " from"
+        ],
+        "score": 48.75,
+        "context": "ander, a professor from the Department of Clinical Sciences at Lund University and a consultant at Skane University Hospital in Sweden. 'Obesity is a common risk factor for"
+      },
+      {
+        "triggers": [
+          " of",
+          " their",
+          " beautiful"
+        ],
+        "score": 35.75,
+        "context": " Swedish authorities issued a swimming warning.⏎Swedes are famous for enjoying the waters of their beautiful coastline, especially during the summer months, when the long days make"
+      },
+      {
+        "triggers": [
+          " at",
+          ",",
+          " Uppsala"
+        ],
+        "score": 47.25,
+        "context": "⏎Eva K. Larsson, M.D., Ph.D., and colleagues at Uppsala University Hospital, Sweden, performed retinoscopies--tests for refractive errors"
+      },
+      {
+        "triggers": [
+          " from",
+          " of",
+          " the"
+        ],
+        "score": 48.75,
+        "context": " group of Swedish students and their 'Flying Fish'.⏎The Swedish students, from the University of Lund, recorded the motion of four fish under various lighting conditions -"
+      },
+      {
+        "triggers": [
+          " in",
+          "-",
+          "TH"
+        ],
+        "score": 43.75,
+        "context": "lainen, an evolutionary geneticist at the KTH-Royal Institute of Technology in Stockholm and an author of the new study. When humans first came to the"
+      }
+    ],
+    "promotes": [
+      " Pu",
+      " endforeach",
+      "ModelSerializer",
+      "IntoConstraints",
+      " getItemCount"
+    ],
+    "demotes": [
+      " feroit",
+      " auroit",
+      " étoient",
+      " avoit",
+      " avoient"
+    ],
+    "generated_description": "say Swedish place — activates on prepositions/articles that introduce Swedish locations or institutions (Lund, Uppsala, Stockholm, Swedish coastline) and signals upcoming place name."
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.29443061351776123,
+    "top_activations": [
+      {
+        "triggers": [
+          " to",
+          " compact",
+          " fluorescent"
+        ],
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " spend"
+        ],
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "triggers": [
+          " attended",
+          " of",
+          " famous"
+        ],
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "triggers": [
+          ",",
+          " capita",
+          " from"
+        ],
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "triggers": [
+          " a",
+          " into",
+          " becoming"
+        ],
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.⏎For most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " Cæsar"
+    ],
+    "demotes": [
+      " stället",
+      " vérit",
+      " mères",
+      " prêtres",
+      " genoux"
+    ],
+    "generated_description": "preposition/article introducer — activates on tokens that introduce noun phrases or modifiers (of, in, to, into, a); fires just before content nouns or noun phrases."
+  },
+  {
+    "id": "24_16325_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3548343777656555,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          ",",
+          " Norwegian"
+        ],
+        "score": 73.0,
+        "context": " as not to jeopardise the needs of future generations.” Norwegian Ministry of Environment, Oslo Symposium, 1994.⏎SCP aims at “doing"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " the"
+        ],
+        "score": 95.5,
+        "context": "lag is a municipality in Buskerud county, Norway. It is part of the traditional region of Numedal. The municipality of Rollag was established on"
+      },
+      {
+        "triggers": [
+          "logist",
+          "Norwegian",
+          "erna"
+        ],
+        "score": 78.0,
+        "context": ", the station houses about 18 engineers and other personnel.⏎Norwegian seismologist Tormod Kvaerna said Jan Mayen, about 37"
+      },
+      {
+        "triggers": [
+          " in",
+          " the",
+          ","
+        ],
+        "score": 98.0,
+        "context": "loff, director of the K.G. Jebsen Center of Exercise in Medicine in Trondheim, Norway.⏎\"Our observations suggest that resting heart rate may be"
+      },
+      {
+        "triggers": [
+          " in",
+          " Oslo",
+          " the"
+        ],
+        "score": 81.5,
+        "context": "The measles outbreak described here started on 19 January 2011 in Oslo and the index case was an unvaccinated two-year-old child from"
+      }
+    ],
+    "promotes": [
+      " fronteras",
+      "kos",
+      "kes",
+      "futbolista",
+      " ái"
+    ],
+    "demotes": [
+      " kasarigan",
+      " Norwegian",
+      " Norway",
+      " Norwe",
+      " Sweden"
+    ],
+    "generated_description": "say Oslo/Norway — fires on prepositions/articles (in/of/the, commas) immediately before Norwegian place names or \"Norwegian\", signals an upcoming Oslo/Norway mention."
+  },
+  {
+    "id": "15_3795_7",
+    "layer": 15,
+    "ctx_idx": 7,
+    "influence_score": 0.39422762393951416,
+    "top_activations": [
+      {
+        "triggers": [
+          "isen",
+          " type",
+          " not"
+        ],
+        "score": 24.0,
+        "context": " not match the reality on the ocean in front of him. Author David Warner Mathisen, a professional analyst and former US Army Infantry officer, observes that this type"
+      },
+      {
+        "triggers": [
+          " Lund",
+          " Sweden",
+          "<bos>"
+        ],
+        "score": 22.75,
+        "context": "<bos>May 2, 2011 A research team in Lund, Sweden has discovered primary biological matter in a fossil of an extinct varanoid lizard"
+      },
+      {
+        "triggers": [
+          "rik",
+          "heim",
+          " Norwegian"
+        ],
+        "score": 22.0,
+        "context": " show are appropriate. (some notes on the video from its author)⏎Eirik Solheim -the Norwegian guy who created the video - has a site that"
+      },
+      {
+        "triggers": [
+          "berg",
+          "ns",
+          "ø"
+        ],
+        "score": 23.0,
+        "context": " many nations; some contribute their hard labour, others financial support. Tønsberg has never had a project that to such an extent has encouraged its citizens to"
+      },
+      {
+        "triggers": [
+          "kan",
+          ",\"",
+          " said"
+        ],
+        "score": 23.88,
+        "context": ",\" said the study's co-author, Sigrid K. Braekkan, who warns the vertically and horizontally gifted to avoid sitting in one place for"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " im",
+      " am",
+      "schild",
+      "ylum"
+    ],
+    "demotes": [
+      " للاسماء",
+      " متعلقه",
+      "enumii",
+      " Paglinawan",
+      "IUrlHelper"
+    ],
+    "generated_description": "Scandinavian names/places — activates on Swedish/Norwegian proper nouns (Lund, Göteborg/Tønsberg, Eirik, Braekkan), diacritics (ø, å, æ), towns and surnames."
+  },
+  {
+    "id": "25_13416_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.3879086375236511,
+    "top_activations": [
+      {
+        "triggers": [
+          " used",
+          " such",
+          "z"
+        ],
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "triggers": [
+          "fia",
+          " /",
+          " at"
+        ],
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "triggers": [
+          "Mhz",
+          " overclock",
+          " cpu"
+        ],
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "triggers": [
+          " known",
+          " is",
+          "or"
+        ],
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "triggers": [
+          " to",
+          " and",
+          "s"
+        ],
+        "score": 81.0,
+        "context": ".⏎Since this early period the dance had been devided to be: court and people’s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " supérieures",
+      " supérieurs",
+      " religieuses",
+      " démocr"
+    ],
+    "demotes": [
+      "__);",
+      "   ",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "short content tokens — activates on short alphanumeric words/abbreviations (used, cpu, Mhz, is, or, at); nudges word-like tokens (e.g. French adjectives: sauvages, supérieures)"
+  },
+  {
+    "id": "25_10389_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.2688296437263489,
+    "top_activations": [
+      {
+        "triggers": [
+          ".",
+          " and",
+          " pioneered"
+        ],
+        "score": 72.0,
+        "context": " area that now uses biomass to generate all of its heat and some of its electricity. That city pioneered use of this renewable technology, and gradually biomass evolved from a"
+      },
+      {
+        "triggers": [
+          ",",
+          "s",
+          " of"
+        ],
+        "score": 87.0,
+        "context": " as well as foreign visitors.⏎In the early 1980's, an outbreak of graffiti and vandalism threatened the beauty and the safety of the"
+      },
+      {
+        "triggers": [
+          ".",
+          "⏎",
+          "Three"
+        ],
+        "score": 67.5,
+        "context": " for the feared illness by studying the molecular structure in the toxin in the cholera bacteria.⏎Three to five million people are infected by cholera ever year. The mortality"
+      },
+      {
+        "triggers": [
+          "The",
+          "s",
+          " the"
+        ],
+        "score": 71.0,
+        "context": " on an animal detection system to help make its cars safer in rural areas.⏎The new system uses the same radar and camera technology as Volvo's Pedestrian Detection"
+      },
+      {
+        "triggers": [
+          " the",
+          " in",
+          " central"
+        ],
+        "score": 83.0,
+        "context": "The Ridge Dividing Street\") is a 650 metres long street in central Stockholm, Sweden. It stretches northward from the Brunkebergstorg square"
+      }
+    ],
+    "promotes": [
+      "adaptiveStyles",
+      "ftagPool",
+      " @\"/",
+      " صوتيه",
+      "HtmlAttribute"
+    ],
+    "demotes": [
+      " Dutch",
+      " Swedish",
+      "Dutch",
+      " dutch",
+      " Danish"
+    ],
+    "generated_description": "sentence-start punctuation/article — activates on sentence boundaries and their leading tokens (The, Three, , . ⏎, articles like the/a), marks starts of new sentences or clauses"
+  },
+  {
+    "id": "8_1940_7",
+    "layer": 8,
+    "ctx_idx": 7,
+    "influence_score": 0.39779698848724365,
+    "top_activations": [
+      {
+        "triggers": [
+          " Egy",
+          " Pharaoh",
+          "pto"
+        ],
+        "score": 14.75,
+        "context": ":⏎What the Recent Exam of a Pharaoh Reveals⏎about the New Face of Egyptology⏎The June 2005 issue⏎of National Geographic"
+      },
+      {
+        "triggers": [
+          "ini",
+          " el",
+          "asr"
+        ],
+        "score": 17.0,
+        "context": " Molotov cocktail landed on a historic building at the corner of Qasr el Aini and Sheikh Rihan Streets. The building engulfed in flames was home to the"
+      },
+      {
+        "triggers": [
+          "6",
+          "4",
+          "9"
+        ],
+        "score": 17.12,
+        "context": "49-5, Order Number: 4495⏎416 pages, $34.95⏎Virtual servers are a technique for"
+      },
+      {
+        "triggers": [
+          " Kingdom",
+          " Egyptian",
+          " Kingdom"
+        ],
+        "score": 17.0,
+        "context": "<bos>The Middle Kingdom period of Egyptian history is characterized by a powerful noble class and similarly powerful priesthoods of several prominent gods jockeying for power. The Middle Kingdom"
+      },
+      {
+        "triggers": [
+          "mar",
+          " Linnaeus",
+          " University"
+        ],
+        "score": 19.12,
+        "context": " Creative Commons Attribution license.⏎Institution: firstname.lastname@example.org. School of Natural Sciences, Linnaeus University, 39182 Kalmar"
+      }
+    ],
+    "promotes": [
+      "Egy",
+      " المصرية",
+      " Egypt",
+      " Egy",
+      "Egypt"
+    ],
+    "demotes": [
+      "\u0012",
+      "IsMutable",
+      "NameInMap",
+      "ArrowToggle",
+      " Caspar"
+    ],
+    "generated_description": "Egypt / \"Egy-\" — activates on Egypt-related words (Egy, Egypt, Egyptian, Pharaoh, Egyptology); consistently promotes tokens like \"Egy\" / \"Egypt\"."
+  },
+  {
+    "id": "14_11187_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.290097713470459,
+    "top_activations": [
+      {
+        "triggers": [
+          " Stockholm",
+          ",",
+          " United"
+        ],
+        "score": 36.5,
+        "context": ", United Nations Development Program, Stimson Center, Global Environment Facility, and Stockholm International Water Institute described the opportunities and challenges surrounding international water cooperation.⏎Not"
+      },
+      {
+        "triggers": [
+          " Swedish",
+          "⏎",
+          "English"
+        ],
+        "score": 35.0,
+        "context": "⏎English, , 1,254kb⏎Compared to their native Swedish peers, immigrant students, on average, have weaker education outcomes at all levels"
+      },
+      {
+        "triggers": [
+          " Swedish",
+          " Nobel",
+          " Academy"
+        ],
+        "score": 38.5,
+        "context": "<bos>17 October 1984⏎Royal Swedish Academy of Sciences has decided to award the⏎1984 Nobel Prize in chemistry to⏎Professor"
+      },
+      {
+        "triggers": [
+          " Norwegian",
+          " Nobel",
+          " Nobel"
+        ],
+        "score": 37.0,
+        "context": " reduce, reuse, recycle ... repair⏎In 2004, the Norwegian Nobel committee made a revolutionary decision. In awarding the Nobel Peace Prize to an"
+      },
+      {
+        "triggers": [
+          " Norwegian",
+          " Jens",
+          "tenberg"
+        ],
+        "score": 35.0,
+        "context": " two years.⏎Asked about the impact of the U.S. election, Norwegian Prime Minister Jens Stoltenberg, co-chair of the U.N."
+      }
+    ],
+    "promotes": [
+      "Referanser",
+      " ainfi",
+      " kasarigan",
+      " lenker",
+      "enumii"
+    ],
+    "demotes": [
+      "Personendaten",
+      " д",
+      " seier",
+      "ルの",
+      " måned"
+    ],
+    "generated_description": "Sweden/Stockholm — fires on Swedish place and institution names; highlights tokens like Stockholm, Swedish, Nobel, Royal Swedish Academy."
+  }
+]

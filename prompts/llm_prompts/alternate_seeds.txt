@@ -8,7 +8,7 @@
 # Topic seeds (research-domain anchors)
 
 Anchor your prompts in behaviors that current mech-interp research treats as
-interesting test cases. Cap each topic at ~1 prompts; aim for breadth across
+interesting test cases. Cap each topic at ~3 prompts; aim for breadth across
 the categories below. Additionally, all of these topics have already been heavily studied, so any prompt should be relatively novel and possibly interesting, not begging the question, this is very important.
 
 **Factual recall and entity-attribute structure**

@@ -81,6 +81,12 @@ cd custom_automation
 # Single grouping variant (default a2)
 ./batch_reproduce.sh ../prompts/prompts_capital.csv
 
+./batch_reproduce.sh ../prompts/llm_prompts/prompts_complex_computation_2.csv
+
+./batch_reproduce.sh ../prompts/llm_prompts/prompts_other_interesting_2.csv
+./batch_reproduce.sh ../prompts/llm_prompts/prompts_parallel_computation_2.csv
+./batch_reproduce.sh ../prompts/llm_prompts/prompts_specific_2.csv
+
 # With validation (autointerp M1/M2/D1/D2 against Ungrouped distractors)
 ./batch_reproduce.sh ../prompts/prompts_capital.csv all
 

@@ -1,0 +1,2586 @@
+[
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3750763237476349,
+    "top_activations": [
+      {
+        "triggers": [
+          " games",
+          " Olympic",
+          " gold"
+        ],
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " Jah"
+        ],
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "triggers": [
+          " capital",
+          " attempt",
+          " to"
+        ],
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "triggers": [
+          " games",
+          " games",
+          " digital"
+        ],
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.⏎Dave McCool, president and CEO of Muzzy"
+      },
+      {
+        "triggers": [
+          " capital",
+          " ancient",
+          " in"
+        ],
+        "score": 14.25,
+        "context": " in my mind’s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " à",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " متعلقه",
+      "+#+#",
+      "脚注の使い方",
+      "Diwedd"
+    ],
+    "generated_description": "capital city — activates on mentions of a capital/city (e.g., \"capital\", \"ancient capital\"); often appears around place names or appositions, signals city/location context."
+  },
+  {
+    "id": "0_1701_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.36393049359321594,
+    "top_activations": [
+      {
+        "triggers": [
+          " Ortiz",
+          " Miguel",
+          "<bos>"
+        ],
+        "score": 17.75,
+        "context": "<bos>According to Miguel Angel Ortiz, a professor at the Pontifical University of the Holy Cross in Rome, Benedict wasn’t so much addressing the specific issue of"
+      },
+      {
+        "triggers": [
+          " Fernandez",
+          " Lorenzo",
+          " ("
+        ],
+        "score": 15.25,
+        "context": " (he was a tireless worker), visiting all corners of the country and defeating Lorenzo Fernandez of the incumbent COPEI party.⏎Once elected, CAP was dramatic the"
+      },
+      {
+        "triggers": [
+          " Gonzalez",
+          " work",
+          " making"
+        ],
+        "score": 16.62,
+        "context": " work making bread, assembly-line fashion. Each student had a job to do, without which the bread could not be made. Simultaneously, Ms. Gonzalez mixed"
+      },
+      {
+        "triggers": [
+          " Gómez",
+          " Rivera",
+          "Guillermo"
+        ],
+        "score": 22.88,
+        "context": "<bos>THE THOMASITES, BEFORE AND AFTER⏎Guillermo Gómez Rivera⏎They were called thus not due to St. Thomas of Aquinas but because they came in a cattle"
+      },
+      {
+        "triggers": [
+          " Víctor",
+          " Blanco",
+          " Chile"
+        ],
+        "score": 15.5,
+        "context": ", the phone booth-sized DECam now sits atop the 4-metre Víctor M Blanco Telescope in Chile. The aim is to capture the nature of dark"
+      }
+    ],
+    "promotes": [
+      " Ur",
+      " Ber",
+      " Cue",
+      "Portale",
+      " del"
+    ],
+    "demotes": [
+      " Mejía",
+      " Guimarães",
+      " Simón",
+      " Asunción",
+      " Concepción"
+    ],
+    "generated_description": "Hispanic personal names — activates on Spanish/Latin American given and surnames (Miguel, Ortiz, Lorenzo, Fernández, González, Víctor); leans toward Spanish connector tokens like “del.”"
+  },
+  {
+    "id": "0_5626_7",
+    "layer": 0,
+    "ctx_idx": 7,
+    "influence_score": 0.3588292598724365,
+    "top_activations": [
+      {
+        "triggers": [
+          " Croatia",
+          "Croatia",
+          "<bos>"
+        ],
+        "score": 17.62,
+        "context": "<bos>CRS History in Croatia⏎Croatia's transition from a socialist to a market-based economy as a result of the war has dramatically effected the country's"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Gustav",
+          " a"
+        ],
+        "score": 18.0,
+        "context": " a series of paintings made by Gustav Klimt for the ceiling of the University of Vienna's Great Hall between the years of 1900-1"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " diplomatic",
+          " mission"
+        ],
+        "score": 18.38,
+        "context": " diplomatic mission⏎According to the article 3 of the 1961 Vienna Convention, normal functions consist in:⏎- representing the sending State in the"
+      },
+      {
+        "triggers": [
+          " Vienna",
+          " Town",
+          " Town"
+        ],
+        "score": 18.25,
+        "context": " more energy than it uses. Town Town Erdberg, located on the outskirts of Vienna adjacent to a subway line and nearby the airport and a major highway, intends"
+      },
+      {
+        "triggers": [
+          " Copenhagen",
+          ".",
+          " If"
+        ],
+        "score": 16.88,
+        "context": ". If you want something to get yourself up to speed on the science ahead of Copenhagen this could well be the document to download. Its even better if you have"
+      }
+    ],
+    "promotes": [
+      " east",
+      " west",
+      " Ber",
+      " West",
+      " Central"
+    ],
+    "demotes": [
+      " Krakow",
+      " Bucharest",
+      " Ljubljana",
+      " Latvian",
+      " Sicilian"
+    ],
+    "generated_description": "Vienna — activates on mentions of Vienna (and nearby place names); often pushes regional qualifiers like \"Central\", \"East\", \"West\"."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3245548903942108,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "Aza",
+          "di"
+        ],
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in ½ liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "triggers": [
+          " of",
+          "of",
+          " it"
+        ],
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family⏎originate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King⏎of Norway"
+      },
+      {
+        "triggers": [
+          " of",
+          " a",
+          " UK"
+        ],
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.⏎Dr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "triggers": [
+          " of",
+          " of",
+          " National"
+        ],
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "triggers": [
+          " of",
+          ".",
+          "⏎"
+        ],
+        "score": 37.5,
+        "context": ".⏎After this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " Anſ",
+      " Theſe",
+      " Monfieur",
+      " Efq",
+      " myſelf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "say place/institution — activates on the preposition \"of\" (and similar tokens) when it precedes proper names: locations, institutions, titles or origin phrases (e.g., \"of Tennessee\", \"of St George's\")."
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.349709689617157,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "5",
+          "0"
+        ],
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Indian"
+        ],
+        "score": 28.38,
+        "context": " the Indian laws.⏎6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " output"
+        ],
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " interest",
+          " rate"
+        ],
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "triggers": [
+          " capital",
+          "1",
+          "9"
+        ],
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "álni",
+      "そうな",
+      " وعلى",
+      "리를"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital — activates on the token \"capital\" (economics/assets/financial capital) across contexts; consistently associated with demoting the literal \"capital\"/\"Capital\" tokens in output."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3781333565711975,
+    "top_activations": [
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " an"
+        ],
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " music"
+        ],
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: τετράχορδoν, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " my"
+        ],
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " word"
+        ],
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " medicine"
+        ],
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " متعلقه",
+      "UserScript",
+      "",
+      " виправивши"
+    ],
+    "demotes": [
+      "<bos>",
+      "⏎⏎",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "say topic — activates on sentence-start \"In\" introducing a domain/topic (e.g., \"In music theory,\", \"In medicine,\"); signals an upcoming topical noun phrase."
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39824220538139343,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " largest",
+          "<bos>"
+        ],
+        "score": 13.0,
+        "context": "<bos>Reykjavík is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "triggers": [
+          " capital",
+          ",",
+          " via"
+        ],
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " working"
+        ],
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " of"
+        ],
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "triggers": [
+          " capital",
+          " until",
+          " "
+        ],
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.⏎South Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " houſe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital — activates on the word \"capital\" and nearby mentions of capital city or financial capital; fires on passages stating or defining a place as a capital."
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36224088072776794,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " redund",
+          "ancies"
+        ],
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Hel",
+          "man"
+        ],
+        "score": 17.38,
+        "context": " Helman, Forbes Staff⏎I'm based in Houston, Texas. Energy capital of the world.⏎This article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " control",
+          "."
+        ],
+        "score": 17.25,
+        "context": " control.⏎Two days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " (",
+          "Special"
+        ],
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "triggers": [
+          " capital",
+          " in",
+          " English"
+        ],
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " виправивши",
+      " تضيفلها",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "⏎"
+    ],
+    "generated_description": "capital city — activates on the token \"capital\"; fires in phrases like \"the capital\", \"capital city\", typically just before or around naming the city/country."
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3655542731285095,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " capitalism",
+          " competing"
+        ],
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Hellen"
+        ],
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,” said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "triggers": [
+          " capital",
+          " trillion",
+          " more"
+        ],
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "triggers": [
+          " capital",
+          "illa",
+          "."
+        ],
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.⏎Puerto del Rosario is"
+      },
+      {
+        "triggers": [
+          " capital",
+          " South",
+          " Korean"
+        ],
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital (noun) — activates on occurrences of \"capital\" (city/economic contexts); consistently suppresses/gives negative weight to emitting the token \"capital\" in the output."
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3605431914329529,
+    "top_activations": [
+      {
+        "triggers": [
+          " realistic",
+          " and",
+          " testing"
+        ],
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn’t realistic.⏎WampServer allows you to easily set up a server on your"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " soak",
+          " plants"
+        ],
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.⏎"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " realistic",
+          "Ny"
+        ],
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"⏎The"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " what",
+          " you"
+        ],
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.⏎Develop an action plan for your goals."
+      },
+      {
+        "triggers": [
+          " realistic",
+          " stress",
+          " disorder"
+        ],
+        "score": 17.75,
+        "context": " stress disorder.⏎By bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Reſ",
+      " purpoſe",
+      " Majefty",
+      " Monfieur",
+      " myſelf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Portály",
+      " ("
+    ],
+    "generated_description": "Realistic (adjective) — activates on the token \"realistic\"; signals descriptions of plausibility/appearance or sensory detail (realistic look, timeline, thumps/battle effects)."
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38256052136421204,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " especially",
+          " in"
+        ],
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "triggers": [
+          " capital",
+          "th",
+          "–"
+        ],
+        "score": 16.88,
+        "context": "th–18th century). In addition to being an important regional and provincial capital (of Eṣfahān province), the city is one of the most"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Information"
+        ],
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "triggers": [
+          " capital",
+          ".",
+          " In"
+        ],
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Q"
+        ],
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " raiſ",
+      " Monfieur",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".”",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital — activates on the token \"capital\" (noun), in contexts referring to city, money, or general importance across varied sentences"
+  },
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.38668957352638245,
+    "top_activations": [
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          "."
+        ],
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          " in"
+        ],
+        "score": 15.62,
+        "context": " in that culture.⏎Exactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "triggers": [
+          " achieve",
+          "-",
+          "based"
+        ],
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " [",
+          "Crown"
+        ],
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " Increased",
+          " investment"
+        ],
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " againſt",
+      " becauſe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve / attain — activates on the verb “achieve” (and close synonyms); appears in contexts about reaching goals, accomplishing outcomes or meeting targets."
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39192983508110046,
+    "top_activations": [
+      {
+        "triggers": [
+          " fill",
+          ".",
+          " ..."
+        ],
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "triggers": [
+          " fill",
+          " fill",
+          " when"
+        ],
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "triggers": [
+          " fill",
+          " not",
+          " been"
+        ],
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "triggers": [
+          " fill",
+          " expansion",
+          " and"
+        ],
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "triggers": [
+          " fill",
+          ".",
+          "⏎"
+        ],
+        "score": 17.25,
+        "context": ".⏎Besides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "נגלית",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " صوتيه",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill (verb) — activates on the lexical verb “fill” and related uses (“fill the void,” “fill neighboring pixels,” “fill the tissue engineering gap”)."
+  },
+  {
+    "id": "0_11375_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3221937417984009,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " way",
+          " by"
+        ],
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.⏎\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "triggers": [
+          " is",
+          " and",
+          " subtropical"
+        ],
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "triggers": [
+          " is",
+          " the",
+          " Yosh"
+        ],
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.⏎The Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "triggers": [
+          " is",
+          ",",
+          " all"
+        ],
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It’"
+      },
+      {
+        "triggers": [
+          " is",
+          " have",
+          "⏎"
+        ],
+        "score": 35.5,
+        "context": " have⏎a fresher taste and a more aromatic smell. The whole of the plant is used⏎for culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " themſelves",
+      " Majefty",
+      " Diſ",
+      " myſelf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " является",
+      " was"
+    ],
+    "generated_description": "copula \"is\" — activates on the token \"is\" used as a linking verb in factual/descriptive sentences; associated with demoting \"is\" in output (pushes archaic alternatives)."
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3439582586288452,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " This",
+          " will"
+        ],
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          "("
+        ],
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "triggers": [
+          " capital",
+          " are",
+          " a"
+        ],
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " terms"
+        ],
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "triggers": [
+          " capital",
+          " $",
+          "1"
+        ],
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " متعلقه",
+      " snippetHide"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "1",
+      "⏎",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital — activates on the token \"capital\" in economic/finance contexts; signals discussion of production finance, loans, capital markets, repayment, investment."
+  },
+  {
+    "id": "4_67_7",
+    "layer": 4,
+    "ctx_idx": 7,
+    "influence_score": 0.3170435130596161,
+    "top_activations": [
+      {
+        "triggers": [
+          " Rivera",
+          " Rivera",
+          " mural"
+        ],
+        "score": 18.5,
+        "context": "⏎Unusual Diego Rivera Work Restored in Mexico City⏎The Mexican muralist Diego Rivera painted in New York City, San Francisco, Detroit, Europe and the Soviet"
+      },
+      {
+        "triggers": [
+          "hu",
+          "ahu",
+          "as"
+        ],
+        "score": 17.0,
+        "context": " indoor dog. He is prone to seek heat, and hates the cold. Chihuahuas are known to become attached to one person, and can be hesitant"
+      },
+      {
+        "triggers": [
+          " American",
+          " Mexican",
+          "ond"
+        ],
+        "score": 19.0,
+        "context": "⏎- The first Native American Girl Scout troop was formed with girls of the Onondaga Nation in central New York State, and a troop of Mexican American girls"
+      },
+      {
+        "triggers": [
+          "omas",
+          " have",
+          " to"
+        ],
+        "score": 17.25,
+        "context": " have to comply with a law releasing indentured workers from their obligation. Las Palomas became the gateway for east-west traffic passing through a gap in the Cab"
+      },
+      {
+        "triggers": [
+          " Bliss",
+          "rd",
+          " Brigade"
+        ],
+        "score": 17.0,
+        "context": "rd Brigade Combat Team, an infantry brigade combat team, and reactivated at Fort Bliss, Texas. The reorganization to an IBCT required the activation of a second"
+      }
+    ],
+    "promotes": [
+      " Obrador",
+      "BagConstraints",
+      "ajuato",
+      "calientes",
+      " Meksiku"
+    ],
+    "demotes": [
+      " autrement",
+      " asiatique",
+      " Araújo",
+      " Gonçalves",
+      " manna"
+    ],
+    "generated_description": "Mexico-related — activates on Mexican places, demonyms, Spanish names (Diego Rivera, Chihuahua, Mexican); promotes Mexican proper nouns/Spanish tokens (Obrador, Calientes, Meksiku)"
+  },
+  {
+    "id": "2_8734_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3994649052619934,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "port",
+          " sea"
+        ],
+        "score": 8.94,
+        "context": "⏎ALEXANDRIA (Arab. Iskendria), a city and chief seaport of Egypt, and for over a thousand years from its foundation the capital of"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Town",
+          " Lusaka"
+        ],
+        "score": 8.31,
+        "context": ", sometimes called Town Nyanja, is the lingua franca of the Zambian capital Lusaka and is widely spoken as a second language throughout Zambia. This is a"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Val",
+          "leys"
+        ],
+        "score": 11.38,
+        "context": " network of parks and preserves safeguarding the country’s natural patrimony.⏎Peaks & Valleys Beyond the capital, much of the DR is distinctly rural:"
+      },
+      {
+        "triggers": [
+          " capital",
+          " centre",
+          " –"
+        ],
+        "score": 10.81,
+        "context": " – in her village 200 kilometres east of Ouagadougou, the capital.⏎With the nearest health centre in Moaga, eight kilometres away,"
+      },
+      {
+        "triggers": [
+          " harbour",
+          " city",
+          " Sydney"
+        ],
+        "score": 8.44,
+        "context": " is a global problem but astronomers in Sydney say unnecessary sky glow has worsened in the harbourside city in recent years. They are particularly alarmed about a new 2"
+      }
+    ],
+    "promotes": [
+      "viewDidLoad",
+      " district",
+      " metropolis",
+      " town",
+      " city"
+    ],
+    "demotes": [
+      "UrlResolution",
+      " Wikimedijinoj",
+      " propOrder",
+      " ModelExpression",
+      "IUrlHelper"
+    ],
+    "generated_description": "Urban place token — activates on city/place words (capital, city, town, harbour, port, centre); pushes output toward place labels like “city”, “town”, “district”."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3969970941543579,
+    "top_activations": [
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "v"
+        ],
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " was"
+        ],
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          "s"
+        ],
+        "score": 34.25,
+        "context": "<bos>It’s no secret that New Mexico is one of the nation’s hot spots for nuclear activity. We don’t have any commercial nuclear power plants"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " is"
+        ],
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "Washington"
+        ],
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds – a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Portály",
+      "goku",
+      " légale"
+    ],
+    "generated_description": "Sentence-initial \"It\" — activates on expletive/dummy \"It\" at clause start (It is/It's/It was...), marking sentence-initial introductions."
+  },
+  {
+    "id": "5_12474_7",
+    "layer": 5,
+    "ctx_idx": 7,
+    "influence_score": 0.3358105719089508,
+    "top_activations": [
+      {
+        "triggers": [
+          " Mexico",
+          "atively",
+          ","
+        ],
+        "score": 21.5,
+        "context": "atively, but it has also strained their agricultural industry.⏎The least expensive water came from Mexico, where citizens pay about 50 cents per cubic meter."
+      },
+      {
+        "triggers": [
+          " Morelos",
+          "och",
+          "co"
+        ],
+        "score": 23.25,
+        "context": "-900 A.D.)⏎Xochicalco, State of Morelos⏎Originally, approximately 1.50 m.⏎National Museum of"
+      },
+      {
+        "triggers": [
+          " Mexico",
+          " America",
+          " jag"
+        ],
+        "score": 22.62,
+        "context": " population in North America. In fact, no jaguars had been spotted in Mexico since the early 1900s.⏎However, two independent"
+      },
+      {
+        "triggers": [
+          " Mexico",
+          "ca",
+          " Anthropology"
+        ],
+        "score": 27.38,
+        "context": ", were found in the crater of Nevado de Toluca Volcano, Estado de Mexico, by researchers from the National Institute of Anthropology and History⏎The material found"
+      },
+      {
+        "triggers": [
+          " Mexico",
+          " America",
+          " Maya"
+        ],
+        "score": 21.88,
+        "context": " Corpus of Maya Hieroglyphic Inscriptions with drawings and photographs of Maya monuments in Mexico and Central America; the Zooarchaeology Lab with collections specific to identifying and"
+      }
+    ],
+    "promotes": [
+      " Sie",
+      "ControllerTest",
+      "GenerationType",
+      " Ab",
+      " I"
+    ],
+    "demotes": [
+      " Efq",
+      " Shakspeare",
+      " myſelf",
+      " itſelf",
+      " poffible"
+    ],
+    "generated_description": "Mexico / Central America — activates on place names and references to Mexico, Central America (Morelos, Maya, Nevado de Toluca, North America contexts)."
+  },
+  {
+    "id": "14_2268_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.33996352553367615,
+    "top_activations": [
+      {
+        "triggers": [
+          " Texas",
+          " and",
+          " skipping"
+        ],
+        "score": 31.12,
+        "context": " and skipping to 'High' infectivity rates, with big states like Pennsylvania, Texas, Colorado and Illinois on that list, just to name a few. Questions"
+      },
+      {
+        "triggers": [
+          " Texas",
+          " Mexican",
+          " of"
+        ],
+        "score": 30.62,
+        "context": " of persons of Mexican descent living in California, Arizona, New Mexico, Colorado, Texas, and Chicago, Illinois. The purpose of the survey was to compile a"
+      },
+      {
+        "triggers": [
+          " Texas",
+          "<bos>",
+          "Both"
+        ],
+        "score": 31.38,
+        "context": "<bos>Both Texas A&M and the University of Missouri have acclaimed veterinary colleges, and the two schools have frequently collaborated on work involving animals. A current project could"
+      },
+      {
+        "triggers": [
+          " Texas",
+          " Plains",
+          " Mountains"
+        ],
+        "score": 36.0,
+        "context": " singing in spring.⏎Range Southwest, Western Canada, Rocky Mountains, Plains, Texas⏎Voice Local and scarce summer visitor (mainly May-Sep), restricted to"
+      },
+      {
+        "triggers": [
+          " Texas",
+          " Open",
+          " ocean"
+        ],
+        "score": 35.5,
+        "context": " Open ocean.⏎Range New England, Mid-Atlantic, Southeast, Florida, Texas.⏎Discussion Primarily a nocturnal species and a scavenger and opportunistic predator, the"
+      }
+    ],
+    "promotes": [
+      " Texans",
+      " Dallas",
+      "Texas",
+      " Texan",
+      " Texas"
+    ],
+    "demotes": [
+      "ValueStyle",
+      " Numerade",
+      "sizeCache",
+      " تضيفلها",
+      "出版年"
+    ],
+    "generated_description": "Texas — activates on mentions of the U.S. state Texas; often promotes tokens like \"Texas\", \"Texans\", \"Texan\", \"Dallas\"."
+  },
+  {
+    "id": "19_6810_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.26240748167037964,
+    "top_activations": [
+      {
+        "triggers": [
+          " General",
+          "1",
+          " to"
+        ],
+        "score": 99.0,
+        "context": "ten thousand men and marched to Michoacán on November 24, 1914, to join forces⏎with General Manuel M. Diéguez."
+      },
+      {
+        "triggers": [
+          ":",
+          " for",
+          " to"
+        ],
+        "score": 98.0,
+        "context": " following a meeting with Abraham González.⏎Pancho Villa - Fighting for Madero:⏎The local representative for Francisco Madero, a politician who was opposed to"
+      },
+      {
+        "triggers": [
+          "8",
+          "1",
+          "'"
+        ],
+        "score": 98.5,
+        "context": "<bos>Every year, September 16 is celebrated in commemoration of Mexico's first proclamation of independence from Spain in 1810. In that year"
+      },
+      {
+        "triggers": [
+          "5",
+          "ación",
+          "4"
+        ],
+        "score": 108.0,
+        "context": "cnia, Universidad Nacional Autónoma de México, Circuito Exterior, Ciudad Universitaria, Delegación Coyoacán, México D.F. 04510"
+      },
+      {
+        "triggers": [
+          "5",
+          "9",
+          " Mexican"
+        ],
+        "score": 96.0,
+        "context": "Telephony in Mexico was controlled by foreigner investors. However, in 1952, the Mexican government started contributing with financial programs, which helped that tele"
+      }
+    ],
+    "promotes": [
+      " MX",
+      "MEX",
+      "Mexico",
+      " Mexican",
+      " Mexico"
+    ],
+    "demotes": [
+      "HtmlAttribute",
+      " resourceCulture",
+      " дописавши",
+      "Diwedd",
+      "Enllaços"
+    ],
+    "generated_description": "say Mexico — fires on prepositions/articles/edges before place/place-names; signals/upweights \"Mexico\", \"Mexican\", \"MX\" (geographic/country token promotion)."
+  },
+  {
+    "id": "19_6810_7",
+    "layer": 19,
+    "ctx_idx": 7,
+    "influence_score": 0.2948076128959656,
+    "top_activations": [
+      {
+        "triggers": [
+          " General",
+          "1",
+          " to"
+        ],
+        "score": 99.0,
+        "context": "ten thousand men and marched to Michoacán on November 24, 1914, to join forces⏎with General Manuel M. Diéguez."
+      },
+      {
+        "triggers": [
+          ":",
+          " for",
+          " to"
+        ],
+        "score": 98.0,
+        "context": " following a meeting with Abraham González.⏎Pancho Villa - Fighting for Madero:⏎The local representative for Francisco Madero, a politician who was opposed to"
+      },
+      {
+        "triggers": [
+          "8",
+          "1",
+          "'"
+        ],
+        "score": 98.5,
+        "context": "<bos>Every year, September 16 is celebrated in commemoration of Mexico's first proclamation of independence from Spain in 1810. In that year"
+      },
+      {
+        "triggers": [
+          "5",
+          "ación",
+          "4"
+        ],
+        "score": 108.0,
+        "context": "cnia, Universidad Nacional Autónoma de México, Circuito Exterior, Ciudad Universitaria, Delegación Coyoacán, México D.F. 04510"
+      },
+      {
+        "triggers": [
+          "5",
+          "9",
+          " Mexican"
+        ],
+        "score": 96.0,
+        "context": "Telephony in Mexico was controlled by foreigner investors. However, in 1952, the Mexican government started contributing with financial programs, which helped that tele"
+      }
+    ],
+    "promotes": [
+      " MX",
+      "MEX",
+      "Mexico",
+      " Mexican",
+      " Mexico"
+    ],
+    "demotes": [
+      "HtmlAttribute",
+      " resourceCulture",
+      " дописавши",
+      "Diwedd",
+      "Enllaços"
+    ],
+    "generated_description": "say Mexico — activates on prepositions/punctuation before Mexican place names or demonyms; strongly promotes output tokens \"Mexico\", \"Mexican\", \"MX\""
+  },
+  {
+    "id": "19_1445_8",
+    "layer": 19,
+    "ctx_idx": 8,
+    "influence_score": 0.3796335756778717,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " Mexico",
+          " city"
+        ],
+        "score": 57.25,
+        "context": " city worker sells eggs at government subsidized prices as people line up outside the city truck in Mexico City, Friday, Aug. 24, 201"
+      },
+      {
+        "triggers": [
+          " of",
+          " near",
+          "."
+        ],
+        "score": 53.25,
+        "context": ". The formation and the nearby badlands are located about 14 miles south of I-70 near Quinter, Kansas.⏎On January 2"
+      },
+      {
+        "triggers": [
+          "),",
+          " and",
+          "),"
+        ],
+        "score": 52.75,
+        "context": " are known for the specific beers they produce. Dusseldorf (albtbier), Dortmund (Dortmunder), and Köln (Kölsch) all have a"
+      },
+      {
+        "triggers": [
+          " of",
+          " and",
+          " cities"
+        ],
+        "score": 54.25,
+        "context": " a new puppy for the holidays.⏎The Everett Herald reported recently that the cities of Everett and Mukilteo temporarily closed municipal off-leash dog parks out"
+      },
+      {
+        "triggers": [
+          " outside",
+          " planning",
+          " to"
+        ],
+        "score": 51.75,
+        "context": " planning to build a 2 megawatt biomass plant on county-owned land just outside Truckee.⏎Transportation cost is a complicating factor. It's"
+      }
+    ],
+    "promotes": [
+      "raisals",
+      "effect",
+      "STRUCTOR",
+      "曖昧さ回避",
+      " El"
+    ],
+    "demotes": [
+      "bootstrapcdn",
+      "الإنجليزية",
+      "DrawerToggle",
+      "istoitu",
+      " arşivlendi"
+    ],
+    "generated_description": "say place — activates on prepositions/conjunctions (in, of, near, outside, and) that introduce location/place names; signals an upcoming city/geographic entity."
+  },
+  {
+    "id": "22_13520_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3084568977355957,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          " in",
+          " Mexico"
+        ],
+        "score": 64.0,
+        "context": " for an indigenous tourism project in⏎Centla, 857 km south of Mexico City, told IPS.⏎\"Every year in June,\" she said"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " to"
+        ],
+        "score": 92.0,
+        "context": " Cortez arrived seventeen years later to the New World, the then Aztecan leader of the time, Montezuma II, believed Cortez to be the reincarnated Qu"
+      },
+      {
+        "triggers": [
+          " of",
+          " in",
+          " in"
+        ],
+        "score": 63.5,
+        "context": "coatl, were the major deities in the flourishing ancient city, in some parts of which, the magnificent decoration of various sanctuaries, including beautiful reliefs has been"
+      },
+      {
+        "triggers": [
+          " in",
+          " from",
+          " the"
+        ],
+        "score": 104.0,
+        "context": " Market, which dwarfed its European counterparts, as well as large stone statues excavated from the “House of Eagles” and the Templo Mayor in Mexico City. Another"
+      },
+      {
+        "triggers": [
+          " de",
+          ",",
+          " from"
+        ],
+        "score": 82.5,
+        "context": " old, were found in the crater of Nevado de Toluca Volcano, Estado de Mexico, by researchers from the National Institute of Anthropology and History⏎The material"
+      }
+    ],
+    "promotes": [
+      " nakalista",
+      " Mé",
+      " Ay",
+      " Lam",
+      " CD"
+    ],
+    "demotes": [
+      "رشف",
+      "setof",
+      " يتيمه",
+      "memoized",
+      " endblock"
+    ],
+    "generated_description": "say PLACE — activates on prepositions/articles (in, of, from, to, de, the) that precede geographic names; predicts upcoming location tokens (Mexico, Mexico City, Nevado de Toluca)."
+  },
+  {
+    "id": "17_14871_7",
+    "layer": 17,
+    "ctx_idx": 7,
+    "influence_score": 0.3336201608181,
+    "top_activations": [
+      {
+        "triggers": [
+          "och",
+          "ical",
+          "X"
+        ],
+        "score": 80.5,
+        "context": "Late Classic (600-900 A.D.)⏎Xochicalco, State of Morelos⏎Originally, approximately 1.50"
+      },
+      {
+        "triggers": [
+          " ",
+          " ",
+          "4"
+        ],
+        "score": 58.5,
+        "context": " constituted the region around the beginning of the Common Era.⏎At its height from 770 to 840 CE, Ek' Balam provides"
+      },
+      {
+        "triggers": [
+          " ",
+          " about",
+          "oti"
+        ],
+        "score": 60.5,
+        "context": " Initially a small settlement, it quickly grew into a city with a population of about 150,000. A great trading community, Teoti"
+      },
+      {
+        "triggers": [
+          " Tep",
+          "ea",
+          " Az"
+        ],
+        "score": 57.0,
+        "context": "0. He conducted operations against the Aztecs from a post called Segura, near Tepeaca. He stayed there until the brigantines were built for the"
+      },
+      {
+        "triggers": [
+          " Aztec",
+          " with",
+          " the"
+        ],
+        "score": 53.5,
+        "context": " companions.⏎Zinnias are natives of the New World and were probably cultivated in Aztec⏎gardens along with dahlias, sunflowers and morning glories before the Spanish⏎"
+      }
+    ],
+    "promotes": [
+      " przeci",
+      "ழு",
+      " medesimo",
+      " Voulez",
+      " AssemblyTitle"
+    ],
+    "demotes": [
+      "WithIOException",
+      "CPtr",
+      "naphthal",
+      " esterni",
+      "fjspx"
+    ],
+    "generated_description": "Mesoamerican names — triggers on ancient Mexican place/culture names (Xochicalco, Ek' Balam, Teotihuacan, Aztecs, Tep(eaca)-style proper nouns)."
+  },
+  {
+    "id": "24_3865_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.36878615617752075,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          "ha",
+          "un"
+        ],
+        "score": 109.5,
+        "context": "ates, pikeun ngolah sababaraha paréntah nu, sakumpulan data asupanana, bakal ngahasilkeun sarupaning bentuk a"
+      },
+      {
+        "triggers": [
+          ",",
+          "otea",
+          "arina"
+        ],
+        "score": 94.5,
+        "context": "aino, Mukaro uses wood (maiohuakan), turtle shell (hikotea), and skin drums as well as flutes (bahio, okarina),"
+      },
+      {
+        "triggers": [
+          ".",
+          " race",
+          "rae"
+        ],
+        "score": 85.0,
+        "context": " central Alabama, a bird thought to be of the Cuban race, M. s. sagrae. Since the first report of this species in the ABA Area,"
+      },
+      {
+        "triggers": [
+          ".",
+          ".",
+          "G"
+        ],
+        "score": 126.5,
+        "context": " baec, bac; akin to Icel., Sw., & LG. bak, Dan. bag; cf. OHG. bahho ham, Skr"
+      },
+      {
+        "triggers": [
+          "6",
+          "3",
+          "0"
+        ],
+        "score": 114.5,
+        "context": " werelt 360 ofte 350 voor de geboorte Jesu Christi is door stormen en tempgeesten een schricklijke watervloed"
+      }
+    ],
+    "promotes": [
+      " Monfieur",
+      " ainfi",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      " ",
+      ",",
+      " (",
+      "<eos>",
+      "⏎⏎"
+    ],
+    "generated_description": "punctuation token — activates on commas, periods, angle-bracket markers and other punctuation-bound subword tokens (also digits/abbrev fragments), marks punctuation boundaries in text"
+  },
+  {
+    "id": "23_13408_8",
+    "layer": 23,
+    "ctx_idx": 8,
+    "influence_score": 0.3459206819534302,
+    "top_activations": [
+      {
+        "triggers": [
+          ":",
+          "⏎",
+          ","
+        ],
+        "score": 82.0,
+        "context": " focused on⏎five of the poorest states: Chiapas,⏎Guerrero, Hidalgo, Oaxaca and Puebla.⏎Several innovative projects linked poverty⏎alleviation to reproductive"
+      },
+      {
+        "triggers": [
+          " of",
+          " on",
+          " the"
+        ],
+        "score": 71.5,
+        "context": " Mexico has become a shadow of its former self. Hundreds of thousands of butterflies used to descend on the cool mountains of central Mexico, but last year only 6"
+      },
+      {
+        "triggers": [
+          "ación",
+          ",",
+          ","
+        ],
+        "score": 70.0,
+        "context": "Facultad de Medicina Veterinaria y Zootecnia, Universidad Nacional Autónoma de México, Circuito Exterior, Ciudad Universitaria, Delegación Coyoacán, México D"
+      },
+      {
+        "triggers": [
+          ",",
+          ",",
+          " and"
+        ],
+        "score": 76.5,
+        "context": " was formerly distributed throughout the Sierra Madre Occidental of Mexico in Sonora, Chihuahua, Durango, Nayarit, Zacatecas (possibly) and north Jalisco with more isolated populations"
+      },
+      {
+        "triggers": [
+          " after",
+          " Los",
+          "las"
+        ],
+        "score": 66.0,
+        "context": " Sierra Gorda Biosphere Reserve holds second place among Mexican protected areas regarding its herpetological richness with 136 species, just after Los Tuxtlas"
+      }
+    ],
+    "promotes": [
+      " درو",
+      " mince",
+      "DrawerToggle",
+      "üyada",
+      " BoxFit"
+    ],
+    "demotes": [
+      "ClientSize",
+      "存于互联网档案馆",
+      "__).",
+      "tvguidetime",
+      "nloa"
+    ],
+    "generated_description": "list separator (comma/and) — activates on commas, colons, line breaks and coordinating words in enumerations; marks boundaries in lists of places/entities (e.g., Mexican states, locations)."
+  },
+  {
+    "id": "21_5943_8",
+    "layer": 21,
+    "ctx_idx": 8,
+    "influence_score": 0.32920753955841064,
+    "top_activations": [
+      {
+        "triggers": [
+          " =",
+          " City",
+          " Capital"
+        ],
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:⏎- Capital City = Freetown⏎- Population = 5,245,695⏎- Official and Recognized Languages"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " a",
+          " "
+        ],
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.⏎Israel's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " to"
+        ],
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.⏎As presented here, in"
+      },
+      {
+        "triggers": [
+          " in",
+          " ",
+          "9"
+        ],
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " partnership"
+        ],
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in⏎October 1998 in a national launch by then Deputy President Thabo⏎Mbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "Capital city — activates on “capital” and location preps (of/in/to) around place mentions; promotes major city names (London, Nairobi, Dublin, Toronto, Sydney)."
+  },
+  {
+    "id": "14_10090_7",
+    "layer": 14,
+    "ctx_idx": 7,
+    "influence_score": 0.3268883228302002,
+    "top_activations": [
+      {
+        "triggers": [
+          " America",
+          " around",
+          " the"
+        ],
+        "score": 34.0,
+        "context": " around the world. The hot climates of Australia and New Zealand, South and Central America, and Africa are the natural territories where many parrot species originate.⏎The"
+      },
+      {
+        "triggers": [
+          " Colombia",
+          " countries",
+          ","
+        ],
+        "score": 34.0,
+        "context": ", including leishmaniasis, constitute a significant public health concern and disease burden in Colombia and neighboring countries. The cutaneous form of leishmaniasis accounts for 9"
+      },
+      {
+        "triggers": [
+          "URAS",
+          "OND",
+          "OND"
+        ],
+        "score": 32.0,
+        "context": "<bos>RATIONALISATION OF THE PROTECTED AREAS SYSTEM OF HONDURAS⏎VOLUME II: BIODIVERSITY OF HONDURAS⏎Dr. Paul House⏎Carlos"
+      },
+      {
+        "triggers": [
+          " America",
+          " Mexico",
+          ","
+        ],
+        "score": 31.88,
+        "context": ", flash floods, lightning, landslides, mudslides and monsoon - Bangladesh, Central America, Congo, Mexico, Spain, Tunisia, USA, Viet Nam⏎At"
+      },
+      {
+        "triggers": [
+          " Colombia",
+          "ío",
+          " department"
+        ],
+        "score": 31.88,
+        "context": "ío (Spanish pronunciation: [kinˈdi.o]) is a department of Colombia. It is in the western central region of the country, crossed by the"
+      }
+    ],
+    "promotes": [
+      " насеље",
+      " /\\.",
+      " Meksiku",
+      " Picchu",
+      "Trọng"
+    ],
+    "demotes": [
+      "redux",
+      "oprot",
+      "hoga",
+      "eseorang",
+      " Cádiz"
+    ],
+    "generated_description": "Latin American place — activates on country/region names and related terms (Colombia, Honduras, Mexico, Central America), often on tokens surrounding commas/articles."
+  },
+  {
+    "id": "22_9666_8",
+    "layer": 22,
+    "ctx_idx": 8,
+    "influence_score": 0.3811185359954834,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          ",",
+          " of"
+        ],
+        "score": 73.5,
+        "context": " honor of his actions.⏎(Mexico City, Patzcuaro, Guadalajara, San Miguel de Allende)⏎From the manic pace of Mexico City’s"
+      },
+      {
+        "triggers": [
+          "–",
+          " of",
+          ","
+        ],
+        "score": 68.0,
+        "context": " in the municipality of Zinacantepec, on the Mexico–Toluca–Guadalajara highway west of Mexico City. Established in 1936"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          "⏎"
+        ],
+        "score": 66.0,
+        "context": " for an indigenous tourism project in⏎Centla, 857 km south of Mexico City, told IPS.⏎\"Every year in June,\" she said"
+      },
+      {
+        "triggers": [
+          ":",
+          "⏎",
+          " and"
+        ],
+        "score": 71.0,
+        "context": " focused on⏎five of the poorest states: Chiapas,⏎Guerrero, Hidalgo, Oaxaca and Puebla.⏎Several innovative projects linked poverty⏎alleviation to reproductive"
+      },
+      {
+        "triggers": [
+          ":",
+          " and",
+          ","
+        ],
+        "score": 67.0,
+        "context": " Mexico that were infested by Ae. albopictus were along the northern Mexican border: Coahuila, Nuevo Leon, and Tamaulipas (4,5; J"
+      }
+    ],
+    "promotes": [
+      "createServer",
+      "gruntled",
+      "pertino",
+      "InvalidProtocol",
+      "mybatisplus"
+    ],
+    "demotes": [
+      "RenderAtEndOf",
+      " Paglinawan",
+      " Farmington",
+      " Ellos",
+      "apy"
+    ],
+    "generated_description": "location introducer — activates on prepositions/punctuation that introduce places (of, in, on, “south of”, colons before place lists); often immediately before/around “Mexico City.”"
+  },
+  {
+    "id": "24_13490_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.28335776925086975,
+    "top_activations": [
+      {
+        "triggers": [
+          "zano",
+          " principal",
+          ","
+        ],
+        "score": 117.0,
+        "context": "<bos>Eduardo Solorzano, principal of San Fernando Middle School, has taken… (Kirk McKoy, Los Angeles…)⏎Third-grade teacher Kelly Vallian"
+      },
+      {
+        "triggers": [
+          "....",
+          ".",
+          " general"
+        ],
+        "score": 147.0,
+        "context": " ayer he ocupado esta plaza con las tropas de mi brigada, habiendo convenido al Sr. general Urrea.... [Letter from Valentín Canalizo dated Monterrey June"
+      },
+      {
+        "triggers": [
+          " from",
+          " change",
+          " of"
+        ],
+        "score": 127.0,
+        "context": ", merely adopting Señora in place of Señorita. Unless the woman you are writing about prefers some other title, you should likewise simply change from Miss to Mrs."
+      },
+      {
+        "triggers": [
+          " at",
+          " (",
+          " the"
+        ],
+        "score": 98.0,
+        "context": " Medicine in Madrid in 1883.⏎He was the director of the Zaragoza Museum (1879). He became a university professor at Valencia"
+      },
+      {
+        "triggers": [
+          "ela",
+          " in",
+          " and"
+        ],
+        "score": 113.0,
+        "context": " of life. They will meet a little Argentinian girl who visits her Abuela and Abuelo in their candy factory. Not only will they see how treats are"
+      }
+    ],
+    "promotes": [
+      " étoit",
+      " démocr",
+      " \"¡",
+      " Escuela",
+      " avoient"
+    ],
+    "demotes": [
+      " vPvB",
+      " ка",
+      "や",
+      " چ",
+      "ĩnh"
+    ],
+    "generated_description": "Accented/foreign names — activates on tokens around non‑English words or titles; pushes accented/French/Spanish tokens (é, ¡, Escuela, avoient)."
+  },
+  {
+    "id": "24_4147_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.27919772267341614,
+    "top_activations": [
+      {
+        "triggers": [
+          "Including",
+          " in",
+          " the"
+        ],
+        "score": 94.0,
+        "context": " thru March.⏎Hottest Months: The hottest months are April & May in the South, and July to September on Pacific Coast (Including Baja), and extremely"
+      },
+      {
+        "triggers": [
+          " in",
+          "panic",
+          " Maya"
+        ],
+        "score": 82.5,
+        "context": "<bos>An iconographic analysis conducted regarding different Maya murals created in Prehispanic times, between 600 and 1000 of the Common Era"
+      },
+      {
+        "triggers": [
+          ",",
+          " in",
+          " central"
+        ],
+        "score": 97.0,
+        "context": "60 fragments of sculptures, possibly of jaguars, were discovered by specialists in the archaeological park of Cihuatan, located in central El Salvador, the"
+      },
+      {
+        "triggers": [
+          " as",
+          "s",
+          ","
+        ],
+        "score": 83.5,
+        "context": " of these subjects, supported by well-selected testimony from the actors themselves, such as Hernando Cortâes, Sahagâun's informants as presented by"
+      },
+      {
+        "triggers": [
+          " from",
+          " northern",
+          " in"
+        ],
+        "score": 91.0,
+        "context": " record, and the first documented record, for Honduras. An undocumented sight record from northern Honduras in November 2005 was published in North American Birds ("
+      }
+    ],
+    "promotes": [
+      "小松",
+      "hu",
+      " يونيو",
+      " calendriers",
+      "曖昧さ回避"
+    ],
+    "demotes": [
+      " Mexico",
+      " Latin",
+      "Mexico",
+      " Mexican",
+      " MEX"
+    ],
+    "generated_description": "say location — activates on the preposition \"in\" before place names; signals upcoming geographic/place mention (South, Maya, central El Salvador, northern Honduras)."
+  },
+  {
+    "id": "24_13277_8",
+    "layer": 24,
+    "ctx_idx": 8,
+    "influence_score": 0.3054872751235962,
+    "top_activations": [
+      {
+        "triggers": [
+          " to",
+          " compact",
+          " fluorescent"
+        ],
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " spend"
+        ],
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "triggers": [
+          " attended",
+          " of",
+          " famous"
+        ],
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "triggers": [
+          ",",
+          " capita",
+          " from"
+        ],
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "triggers": [
+          " a",
+          " into",
+          " becoming"
+        ],
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.⏎For most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " Cæsar"
+    ],
+    "demotes": [
+      " stället",
+      " vérit",
+      " mères",
+      " prêtres",
+      " genoux"
+    ],
+    "generated_description": "say preposition — spikes on short function words introducing noun phrases or phrases (of, in, to, from, into, a, commas); signals upcoming noun/phrase content"
+  },
+  {
+    "id": "25_2040_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.29107266664505005,
+    "top_activations": [
+      {
+        "triggers": [
+          "ato",
+          " and",
+          "asso"
+        ],
+        "score": 82.0,
+        "context": " the tournament would start!⏎The stadium was designed by architects Juan Antonio Scasso and José Domato. The initial project consisted of four sectors built in an elliptical"
+      },
+      {
+        "triggers": [
+          " as",
+          ",",
+          " baroque"
+        ],
+        "score": 62.5,
+        "context": " intricate metaphors in baroque style and syntax, Góngora has even been immortalized as a literary term: a “gongorism” connotes an involved Latin"
+      },
+      {
+        "triggers": [
+          " Suarez",
+          ".",
+          " a"
+        ],
+        "score": 67.5,
+        "context": "<bos>One of the sisters -- Marina Suarez -- is a postdoc at the Johns Hopkins' Morton K. Blaustein Department of Earth and Planetary Sciences. Her"
+      },
+      {
+        "triggers": [
+          "zar",
+          " Susana",
+          "á"
+        ],
+        "score": 64.5,
+        "context": "<bos>The Caribbean Flamingo⏎By Susana Cortázar⏎They are iconic to South Florida. Drive by or visit just about any home in the area and chances are"
+      },
+      {
+        "triggers": [
+          ",",
+          " and",
+          " of"
+        ],
+        "score": 85.5,
+        "context": " of the various villages so-called in the provinces of Burgos, Guadaljar and Valladolid, these places being originally built in depressions in the ground. The word `"
+      }
+    ],
+    "promotes": [
+      " Latinos",
+      " Argentine",
+      " Spaniards",
+      " Spaniard",
+      " Spanish"
+    ],
+    "demotes": [
+      "WriteBarrier",
+      " linkovi",
+      "ymce",
+      "resizingMask",
+      " estekak"
+    ],
+    "generated_description": "Spanish names/places — activates on Spanish-language proper nouns and place names (e.g., Susana Cortázar, Burgos, Guadalajara); biases output toward Spanish/Latino tokens."
+  },
+  {
+    "id": "25_3178_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.33142632246017456,
+    "top_activations": [
+      {
+        "triggers": [
+          " by",
+          " and",
+          ":"
+        ],
+        "score": 71.0,
+        "context": " of the triangle formed by the three main cities of the country: Bogotá, Medellín and Cali. Quindio is the second smallest Colombian department (0.2"
+      },
+      {
+        "triggers": [
+          "the",
+          " of",
+          " in"
+        ],
+        "score": 63.0,
+        "context": " population of 102,110, lies either side of⏎the Grijalva river in Tabasco, a state of 2.2 million"
+      },
+      {
+        "triggers": [
+          " of",
+          " Elena",
+          " Santa"
+        ],
+        "score": 64.5,
+        "context": " \"goat-sucker\" - a cryptid or mythical beast that the villagers of Santa Elena believe preys on livestock. If you hold a festival you are"
+      },
+      {
+        "triggers": [
+          " in",
+          " the",
+          " in"
+        ],
+        "score": 74.5,
+        "context": " water supply: Santa Juana Dam in the Huasco River Valley and Puclaro Dam in the Elqui River Valley. Although both projects are typical huge⏎concrete-"
+      },
+      {
+        "triggers": [
+          " near",
+          " of",
+          " the"
+        ],
+        "score": 79.0,
+        "context": "jia Lagoons National⏎Sanctuary is located on the coast of Arequipa, near the mouth of⏎the Tambo river, 20 km (1"
+      }
+    ],
+    "promotes": [
+      " Guayaquil",
+      " Asunción",
+      " Ceará",
+      " Perú",
+      " Veracruz"
+    ],
+    "demotes": [
+      "webElementXpaths",
+      "awtextra",
+      " validamos",
+      "\"}}",
+      "Carriera"
+    ],
+    "generated_description": "say place name — fires on prepositions/articles introducing locations (“in”, “of”, “near”, “the” before place); promotes geographic/entities (Guayaquil, Asunción, Perú, Veracruz)."
+  },
+  {
+    "id": "25_9689_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.29848501086235046,
+    "top_activations": [
+      {
+        "triggers": [
+          ".",
+          " of",
+          " say"
+        ],
+        "score": 57.5,
+        "context": " name that counts, but where you're from.⏎\"More than half of Hispanics overall say it's the name of the country of origin of their"
+      },
+      {
+        "triggers": [
+          " started",
+          " of",
+          " of"
+        ],
+        "score": 55.0,
+        "context": " always had a bit of a soft-spot for fiestas (probably because of who started my exploration of Philippine history).⏎He aptly described them as our “highest"
+      },
+      {
+        "triggers": [
+          " of",
+          " Catholic",
+          ","
+        ],
+        "score": 57.0,
+        "context": " the Vietnam War through the voices, actions, the reflections in the eyes of eager Catholic nuns—yes, nuns. During these years, I was an elementary school"
+      },
+      {
+        "triggers": [
+          " The",
+          ".",
+          " about"
+        ],
+        "score": 49.5,
+        "context": " -- It's the one fact about Mexico that you probably didn't know. The country's name is not really Mexico, at least not officially."
+      },
+      {
+        "triggers": [
+          " what",
+          ":",
+          " portrays"
+        ],
+        "score": 52.5,
+        "context": ": Boston, MD: Rowan & Littlefield Publishers⏎ABSTRACT: This book portrays what works in creating better educational opportunities and effective school reform for Hispanic Americans, offering"
+      }
+    ],
+    "promotes": [
+      "ToScroll",
+      " Jurí",
+      " estekak",
+      "expandindo",
+      " Púb"
+    ],
+    "demotes": [
+      " Spanish",
+      " Mexican",
+      " Spaniard",
+      "Spanish",
+      " spanish"
+    ],
+    "generated_description": "Hispanic/Mexico topic — activates on small function tokens introducing mentions of Mexico/Hispanics/fiestas; associated with demoting output tokens like “Spanish”/“Mexican.”"
+  },
+  {
+    "id": "25_13416_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.35706159472465515,
+    "top_activations": [
+      {
+        "triggers": [
+          " used",
+          " such",
+          "z"
+        ],
+        "score": 111.0,
+        "context": " words that some found improper and backwards but are to be found in Miguel Cervantez's [sic] classic Don Quixote. My father commonly used words such"
+      },
+      {
+        "triggers": [
+          "fia",
+          " /",
+          " at"
+        ],
+        "score": 107.0,
+        "context": " Find the town name in the first column, parafia / USC. If available at one of the online sites, it will be listed. The dates in the"
+      },
+      {
+        "triggers": [
+          "Mhz",
+          " overclock",
+          " cpu"
+        ],
+        "score": 116.0,
+        "context": "2 5:36:27 AM cpu 2200Mhz/ ram 200mhz. memory overclocking just slightly noticeable in"
+      },
+      {
+        "triggers": [
+          " known",
+          " is",
+          "or"
+        ],
+        "score": 111.0,
+        "context": " to the daikon, a large, pungent white radish. The orange western carrot is known in some areas of China as \"foreign Daikon\" (or more"
+      },
+      {
+        "triggers": [
+          " to",
+          " and",
+          "s"
+        ],
+        "score": 81.0,
+        "context": ".⏎Since this early period the dance had been devided to be: court and people’s dance. A traditional dance was performed among other to mark the"
+      }
+    ],
+    "promotes": [
+      " sauvages",
+      " supérieures",
+      " supérieurs",
+      " religieuses",
+      " démocr"
+    ],
+    "demotes": [
+      "__);",
+      "   ",
+      " ]\r",
+      "()]\r",
+      "]]);"
+    ],
+    "generated_description": "Letter-only word token — fires on alphabetic/subword tokens (short words, letter sequences like used, such, is, or, fia, cpu/Mhz fragments); boosts natural-language (French) words, suppresses code/punctuation sequences."
+  },
+  {
+    "id": "25_6603_8",
+    "layer": 25,
+    "ctx_idx": 8,
+    "influence_score": 0.35528483986854553,
+    "top_activations": [
+      {
+        "triggers": [
+          " The",
+          ".",
+          " but"
+        ],
+        "score": 47.75,
+        "context": " gardens\" are now under threat from pollution, urban sprawl and invasive species. The creatures can survive in aquariums, water tanks and research labs, but these"
+      },
+      {
+        "triggers": [
+          " \"",
+          ".",
+          "."
+        ],
+        "score": 52.75,
+        "context": " Idaho. \"My friend said, 'Hey, look at that big dog!' \" he remembers with a chuckle. \"I said, 'No, I'"
+      },
+      {
+        "triggers": [
+          "1",
+          ".",
+          "1"
+        ],
+        "score": 43.0,
+        "context": ".1-210524 (I’ll call it 1RXS 1609) in the center, and the planet"
+      },
+      {
+        "triggers": [
+          " suggesting",
+          " any",
+          "A"
+        ],
+        "score": 50.5,
+        "context": "A weeklong expedition last year in Xochimilico lake didn't find any of the creatures, suggesting they only survived in captivity. But a team at"
+      },
+      {
+        "triggers": [
+          " =",
+          " y",
+          "⏎"
+        ],
+        "score": 45.5,
+        "context": "⏎(2) boundary line⏎(3) graphing using slope-intercept form, y = mx + b⏎(4) graphing using slope-intercept form"
+      }
+    ],
+    "promotes": [
+      "PerformLayout",
+      " հղումներ",
+      "DeleteBehavior",
+      "Enllaces",
+      "stateProvider"
+    ],
+    "demotes": [
+      " Ax",
+      " Ox",
+      " AX",
+      " OX",
+      " Rex"
+    ],
+    "generated_description": "say sentence-start — activates on punctuation/newline and following tokens (., quote, parenthesis, capitalized The/A, numbers); signals start of a new sentence or clause."
+  }
+]

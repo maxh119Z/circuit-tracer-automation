@@ -1,0 +1,16 @@
+slug,prompt,transcoder_set
+gemma-G,"The International Advanced Security Group (IAS",gemma
+gemma-addition,"3 + 5 = ",gemma
+gemma-addition2,"2 + 1 = ",gemma
+gemma-basket,"Fait: Michael Jordan joue au",gemma
+gemma-dollar,"Mexico:peso :: US:",gemma
+gemma-english,"Mexico:Spanish :: US:",gemma
+gemma-euro,"Mexico:peso :: Europe:",gemma
+gemma-girl-is,"The girl that the teacher sees",gemma
+gemma-girls-are,"The girls that the teacher sees",gemma
+gemma-gp-nps,"The guitarist knew the song",gemma
+gemma-keys-cabinet,"The keys on the cabinet",gemma
+gemma-michael-jordan,"Fact: Michael Jordan plays the sport of",gemma
+gemma-michael-jordan-es,"Hecho: Michael Jordan juega al",gemma
+gemma-saison,"La saison après le printemps s'apelle l'",gemma
+gemma-verano,"La estación después de la primavera se llama el",gemma

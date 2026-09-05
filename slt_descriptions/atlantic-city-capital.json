@@ -1,0 +1,3674 @@
+[
+  {
+    "id": "0_4323_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36691081523895264,
+    "top_activations": [
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          "."
+        ],
+        "score": 15.5,
+        "context": ". Since he set foot in Algiers, the socialist president had spared no effort to achieve what other French leaders have failed to achieve so far: overcoming the hindrance of"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " achieve",
+          " in"
+        ],
+        "score": 15.62,
+        "context": " in that culture.⏎Exactly what is safety is defined by the patterns necessary to achieve acceptable risk for organizational balance. Patterns necessary to achieve acceptable risk are going to"
+      },
+      {
+        "triggers": [
+          " achieve",
+          "-",
+          "based"
+        ],
+        "score": 15.75,
+        "context": "-based management (RBM) measures are driven by economic incentives but can also achieve biological goals such as rebuilding fish stocks. For example, a tradable rights"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " [",
+          "Crown"
+        ],
+        "score": 15.62,
+        "context": " [Crown] corporations, and hospitals), a feat the United States has yet to achieve. The combination of these two initiatives has sparked action across the entire country,"
+      },
+      {
+        "triggers": [
+          " achieve",
+          " Increased",
+          " investment"
+        ],
+        "score": 15.62,
+        "context": " Increased investment in vessel design will: reduce operating costs; increase vessel lifespan; increase vessel safety and hence reduce the probability of accidental loss. In order to achieve these"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " againſt",
+      " becauſe",
+      " zitate",
+      " Monfieur"
+    ],
+    "demotes": [
+      "-",
+      ".",
+      "<bos>",
+      "  ",
+      "<"
+    ],
+    "generated_description": "achieve (verb) — activates on the lexical token “achieve” and close variants; signals goal/attainment contexts and phrases about accomplishing/reaching objectives."
+  },
+  {
+    "id": "0_2848_3",
+    "layer": 0,
+    "ctx_idx": 3,
+    "influence_score": 0.3047569990158081,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "Aza",
+          "di"
+        ],
+        "score": 38.0,
+        "context": "Azadirachta indica) leaves. Mix all the ingredients together in ½ liter of water. Stir until well mixed. Let stand for 1 hour. Then"
+      },
+      {
+        "triggers": [
+          " of",
+          "of",
+          " it"
+        ],
+        "score": 37.5,
+        "context": " it is from his descendants that the Cunningham family⏎originate. Harvey de Cunningham of Kilmaurs was amoung those who fought against the King⏎of Norway"
+      },
+      {
+        "triggers": [
+          " of",
+          " a",
+          " UK"
+        ],
+        "score": 37.5,
+        "context": " a UK conference on foetal alcohol syndrome heard this week.⏎Dr Raja Mukherjee of St George's Medical School believes many more babies - up to one in"
+      },
+      {
+        "triggers": [
+          " of",
+          " of",
+          " National"
+        ],
+        "score": 37.5,
+        "context": " National Institute for Mathematical & Biological Synthesis at the University of Tennessee and Amy Zanne of the George Washington University in the Dec. 22, 20"
+      },
+      {
+        "triggers": [
+          " of",
+          ".",
+          "⏎"
+        ],
+        "score": 37.5,
+        "context": ".⏎After this life-changing incident, John continued to the Benedictine monastery of San Miniato del Monte to pray. While praying before a crucifix, he"
+      }
+    ],
+    "promotes": [
+      " Anſ",
+      " Theſe",
+      " Monfieur",
+      " Efq",
+      " myſelf"
+    ],
+    "demotes": [
+      " of",
+      " and",
+      " in",
+      ",",
+      " or"
+    ],
+    "generated_description": "preposition \"of\" — activates on the token \"of\" (and similar structural markers), especially when introducing possession, affiliations, places, or organization names."
+  },
+  {
+    "id": "0_3598_6",
+    "layer": 0,
+    "ctx_idx": 6,
+    "influence_score": 0.39349204301834106,
+    "top_activations": [
+      {
+        "triggers": [
+          " contained",
+          " rule",
+          ","
+        ],
+        "score": 22.0,
+        "context": " rule, as some people find this helpful. In the notation, each syllable is contained in [ ], and numbers 1 to 4 indicate the tone of that"
+      },
+      {
+        "triggers": [
+          " contained",
+          " impossible",
+          " for"
+        ],
+        "score": 21.25,
+        "context": " impossible for lawmen to access without detection by the outlaws concealed there. It contained an infrastructure, with each gang supplying its own food and livestock supply, as"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " blood"
+        ],
+        "score": 21.75,
+        "context": " of blood through the body, by way of the cardiac cycles. The heart is contained in the mediastinum in the thoracic cavity of the thorax.⏎The"
+      },
+      {
+        "triggers": [
+          " contained",
+          " of",
+          " the"
+        ],
+        "score": 21.75,
+        "context": " of the Bible, both Old and New Testaments (though not all that is contained in the Old Testament is directly relevant for Christians). The Bible ultimately is about"
+      },
+      {
+        "triggers": [
+          " contained",
+          " threat",
+          ","
+        ],
+        "score": 22.0,
+        "context": " threat, measures must be taken to ensure that it does not know that it is contained. SCP-850 must be kept in a large habitat maintained in"
+      }
+    ],
+    "promotes": [
+      "Geplaatst",
+      "contentLoaded",
+      " مرئيه",
+      "atshirt",
+      " disambiguazione"
+    ],
+    "demotes": [
+      "WebServlet",
+      " />\";",
+      "/>\";",
+      "ly",
+      " involve"
+    ],
+    "generated_description": "contained / \"contained in\" — activates on the token \"contained\", especially in the phrase \"contained in\"; signals containment/location relations."
+  },
+  {
+    "id": "0_12713_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3915904760360718,
+    "top_activations": [
+      {
+        "triggers": [
+          " City",
+          "3",
+          "0"
+        ],
+        "score": 16.0,
+        "context": "30 degrees Fahrenheit above normal for April in the region. Here in New York City, where Scientific American's offices are located, we may break the record"
+      },
+      {
+        "triggers": [
+          " City",
+          " the",
+          " Mechanical"
+        ],
+        "score": 15.62,
+        "context": " the Mechanical Department merged with the Engineering Department of Western Electric, located in New York City, as part of a corporate reorganization. Jewett moved to New York,"
+      },
+      {
+        "triggers": [
+          " City",
+          " West",
+          " information"
+        ],
+        "score": 15.62,
+        "context": " information in the article. \"With the introduction of West Nile virus into New York City in 1999 and its subsequent spread across the country, West"
+      },
+      {
+        "triggers": [
+          " City",
+          " task",
+          ".\""
+        ],
+        "score": 15.5,
+        "context": " task.\"⏎Smith, who grew up in Seattle and has lived in New York City and Germany (all areas with notably moody skies), is convinced she has seasonal"
+      },
+      {
+        "triggers": [
+          " City",
+          ".",
+          " The"
+        ],
+        "score": 15.75,
+        "context": ". The passenger, Dr. David Edson, was the son of former New York City mayor Franklin Edson.⏎A plaque was dedicated at the site on September "
+      }
+    ],
+    "promotes": [
+      " program",
+      "läufe",
+      " ",
+      "u",
+      "es"
+    ],
+    "demotes": [
+      "Personendaten",
+      "+#+#",
+      "sidemargin",
+      " AssemblyCulture",
+      " pinulongan"
+    ],
+    "generated_description": "New York City — activates on the token \"City\" when it follows \"New York\"; fires on mentions of New York City / NYC."
+  },
+  {
+    "id": "0_8885_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.34789642691612244,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " especially",
+          " in"
+        ],
+        "score": 16.62,
+        "context": " especially in the East. Important communications were also forwarded to the bishop of the provincial capital to be brought to the notice of the other bishops. Thus in the East"
+      },
+      {
+        "triggers": [
+          " capital",
+          "th",
+          "–"
+        ],
+        "score": 16.88,
+        "context": "th–18th century). In addition to being an important regional and provincial capital (of Eṣfahān province), the city is one of the most"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Information"
+        ],
+        "score": 16.75,
+        "context": "<bos>Information is a strategic resource with an importance similar to land, labour and capital. Collecting information is time consuming and expensive, but sharing this information saves time,"
+      },
+      {
+        "triggers": [
+          " capital",
+          ".",
+          " In"
+        ],
+        "score": 16.88,
+        "context": ". In the past, only three motivations have led societies to spend that kind of capital on ambitious, speculative projects: the celebration of a divine or royal power,"
+      },
+      {
+        "triggers": [
+          " capital",
+          "<bos>",
+          "Q"
+        ],
+        "score": 16.62,
+        "context": "<bos>Q. What is the rule for placing accents over capital letters in Romance languages? Is it the same for French, Spanish, and Italian, or does each"
+      }
+    ],
+    "promotes": [
+      " raiſ",
+      " Monfieur",
+      " Efq",
+      " itſelf",
+      " myſelf"
+    ],
+    "demotes": [
+      "ly",
+      " is",
+      ".”",
+      "mp",
+      "arse"
+    ],
+    "generated_description": "capital (word) — activates on the token \"capital\" across senses: city seat, financial/strategic capital, or capital letters; often in formal/historical contexts."
+  },
+  {
+    "id": "0_7118_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.32801222801208496,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " redund",
+          "ancies"
+        ],
+        "score": 17.25,
+        "context": " redundancies. (The first time a new vocabulary word appears it is written using capital letters.) Not listed are related 'Hands-on Activities', 'Media Materials"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Hel",
+          "man"
+        ],
+        "score": 17.38,
+        "context": " Helman, Forbes Staff⏎I'm based in Houston, Texas. Energy capital of the world.⏎This article was written for Forbes by Kirk Sorensen,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " control",
+          "."
+        ],
+        "score": 17.25,
+        "context": " control.⏎Two days earlier, a French armored division had begun advancing on the capital. Members of the Resistance, now called the French Forces of the Interior,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " (",
+          "Special"
+        ],
+        "score": 17.38,
+        "context": " (Special Service) Battalion, Royal Canadian Regiment of Infantry left the Orange Free State capital of Bloemfontein and marched eastwards to take part in a British offensive to"
+      },
+      {
+        "triggers": [
+          " capital",
+          " in",
+          " English"
+        ],
+        "score": 17.12,
+        "context": " in English, or nicknamed MeckPomm or MV) is a federal state in northern Germany. The capital city is Schwerin. The state was formed through the"
+      }
+    ],
+    "promotes": [
+      " EconPapers",
+      " propOrder",
+      " виправивши",
+      " تضيفلها",
+      "AddTagHelper"
+    ],
+    "demotes": [
+      ".",
+      "a",
+      "(",
+      ",",
+      "⏎"
+    ],
+    "generated_description": "capital city — activates on the token \"capital\" or phrases introducing a capital (e.g. \"the capital\", \"capital city is\", \"capital of X\"), marks discussion of a capital place."
+  },
+  {
+    "id": "0_11375_9",
+    "layer": 0,
+    "ctx_idx": 9,
+    "influence_score": 0.2952629625797272,
+    "top_activations": [
+      {
+        "triggers": [
+          " is",
+          " way",
+          " by"
+        ],
+        "score": 35.75,
+        "context": " way by the impending methane gas exploitation.⏎\"From our research, the lake is very stable at the moment and far from saturation. We tried to contribute to"
+      },
+      {
+        "triggers": [
+          " is",
+          " and",
+          " subtropical"
+        ],
+        "score": 36.0,
+        "context": " and subtropical waters, in brackish waters, and in rivers. The Atlantic tarpon is a powerful fighter, and often makes tremendous leaps to free itself when hooked."
+      },
+      {
+        "triggers": [
+          " is",
+          " the",
+          " Yosh"
+        ],
+        "score": 35.75,
+        "context": " the Yoshino and Kwanzan, now dominate.⏎The Yoshino cherry tree is the predominant variety that encircles the Tidal Basin and spills north onto the Washington"
+      },
+      {
+        "triggers": [
+          " is",
+          ",",
+          " all"
+        ],
+        "score": 36.25,
+        "context": ", all our emotions are rooted in the limbic system. The limbic brain is where we sense our emotional attachments, such as trust and loyalty. It’"
+      },
+      {
+        "triggers": [
+          " is",
+          " have",
+          "⏎"
+        ],
+        "score": 35.5,
+        "context": " have⏎a fresher taste and a more aromatic smell. The whole of the plant is used⏎for culinary purposes i.e. the juice, skin (per"
+      }
+    ],
+    "promotes": [
+      " themſelves",
+      " Majefty",
+      " Diſ",
+      " myſelf",
+      " Monfieur"
+    ],
+    "demotes": [
+      " is",
+      " has",
+      " Is",
+      " является",
+      " was"
+    ],
+    "generated_description": "is (3sg copula) — activates on the present-tense copula \"is\" before predicates; tends to demote \"is\" in outputs and correlate with promotion of archaic spellings."
+  },
+  {
+    "id": "0_1903_1",
+    "layer": 0,
+    "ctx_idx": 1,
+    "influence_score": 0.3396722972393036,
+    "top_activations": [
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " an"
+        ],
+        "score": 20.5,
+        "context": "<bos>In an advance toward eliminating pockets of infection in the brain that help make HIV disease incurable, scientists report the development of new substances that first plug the biological vacuum"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " music"
+        ],
+        "score": 20.5,
+        "context": "<bos>In music theory, traditionally, a tetrachord (Greek: τετράχορδoν, Latin: tetrachordum) is a series of three"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " my"
+        ],
+        "score": 20.5,
+        "context": "<bos>In my previous entries, I have discussed the imminent limits to the energy efficiency of field-effect transistors, and argued that new digital devices will soon be required"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " word"
+        ],
+        "score": 20.5,
+        "context": "<bos>In word processing, the strips of white space around the edge of the paper. Most word processors allow you to specify the widths of margins. The wider the"
+      },
+      {
+        "triggers": [
+          "In",
+          "<bos>",
+          " medicine"
+        ],
+        "score": 20.5,
+        "context": "<bos>In medicine, saline (also saline solution) is a general phrase referring to a sterile solution of sodium chloride (NaCl, more commonly known as salt) in"
+      }
+    ],
+    "promotes": [
+      "expandindo",
+      " متعلقه",
+      "UserScript",
+      "",
+      " виправивши"
+    ],
+    "demotes": [
+      "<bos>",
+      "⏎⏎",
+      "es",
+      "<h2>",
+      " The"
+    ],
+    "generated_description": "Sentence-initial \"In\" — activates on sentence-start preposition \"In\", used to open topical/prepositional phrases (e.g., \"In an...\", \"In music\", \"In my\", \"In medicine\")."
+  },
+  {
+    "id": "0_8939_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3424510359764099,
+    "top_activations": [
+      {
+        "triggers": [
+          " realistic",
+          " and",
+          " testing"
+        ],
+        "score": 18.0,
+        "context": " and testing a script a hundred times before it is done, this isn’t realistic.⏎WampServer allows you to easily set up a server on your"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " soak",
+          " plants"
+        ],
+        "score": 18.0,
+        "context": " soak plants in warm water (to relax the fabric and give them an even more realistic look) for 15-30 minutes prior to placement.⏎"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " realistic",
+          "Ny"
+        ],
+        "score": 17.5,
+        "context": "Nymph\" is realistic or cynical. I, for instance, tend to be realistic or cynical, so I prefer the argument in \"Nymph.\"⏎The"
+      },
+      {
+        "triggers": [
+          " realistic",
+          " what",
+          " you"
+        ],
+        "score": 17.5,
+        "context": " what you want to accomplish, how much money is associated with each, and a realistic timeline for reaching those goals.⏎Develop an action plan for your goals."
+      },
+      {
+        "triggers": [
+          " realistic",
+          " stress",
+          " disorder"
+        ],
+        "score": 17.75,
+        "context": " stress disorder.⏎By bringing to life a \"virtual Iraq,\" complete with the realistic thumps and bumps of battle, the program allows troops to \"relive"
+      }
+    ],
+    "promotes": [
+      " Reſ",
+      " purpoſe",
+      " Majefty",
+      " Monfieur",
+      " myſelf"
+    ],
+    "demotes": [
+      " je",
+      " des",
+      "<bos>",
+      "Portály",
+      " ("
+    ],
+    "generated_description": "realistic — activates on the token \"realistic\" (and close variants); fires in descriptive contexts emphasizing lifelike/true-to-life details."
+  },
+  {
+    "id": "1_1000_2",
+    "layer": 1,
+    "ctx_idx": 2,
+    "influence_score": 0.33249327540397644,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "5",
+          "0"
+        ],
+        "score": 28.12,
+        "context": "50s, the bank held the government account, provided significant short-term capital for railway development and, in the boom years, recklessly speculated in land and"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Indian"
+        ],
+        "score": 28.38,
+        "context": " the Indian laws.⏎6) The income in the form of sale proceeds from capital assets, such as property, land, shares, bonds, and mutual funds"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " output"
+        ],
+        "score": 28.38,
+        "context": " output are labour and capital. Labour describes inputs such as workers or hours, whilst capital includes offices, factories and machinery. Output can be determined by this equation,"
+      },
+      {
+        "triggers": [
+          " capital",
+          " interest",
+          " rate"
+        ],
+        "score": 27.88,
+        "context": " interest rate: the interest rate that would prevail at the existing levels of technology and capital if all stickiness of prices and wages were suddenly swept away. That is"
+      },
+      {
+        "triggers": [
+          " capital",
+          "1",
+          "9"
+        ],
+        "score": 28.38,
+        "context": "1961 (The Act) does not provide any definition for the terms capital receipt and the revenue receipts. In the absence of the any definition of word"
+      }
+    ],
+    "promotes": [
+      " bulat",
+      "álni",
+      "そうな",
+      " وعلى",
+      "리를"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " CAPITAL",
+      " Capital"
+    ],
+    "generated_description": "capital — activates on the word “capital” (economic/assets contexts); often suppresses producing the token “capital” in output (demotes forms of “capital”)."
+  },
+  {
+    "id": "2_7173_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3595297336578369,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " capitalism",
+          " competing"
+        ],
+        "score": 29.25,
+        "context": " competing efforts by different numbers to authorize their dreams for the city. As arguably the capital for global capitalism today, one focus of this course will seek to plot its"
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " Hellen"
+        ],
+        "score": 28.75,
+        "context": " the Hellenistic Roman period. We think that the site might have hosted the ancient capital Metelis,” said Dr Kenawi, who stresses the fact that the"
+      },
+      {
+        "triggers": [
+          " capital",
+          " trillion",
+          " more"
+        ],
+        "score": 29.25,
+        "context": " trillion more in agricultural exports. However, it is a conditional opportunity. Constraints on capital, skills, R&D and extension services, land access, supply chain"
+      },
+      {
+        "triggers": [
+          " capital",
+          "illa",
+          "."
+        ],
+        "score": 29.0,
+        "context": "illa. This growing importance as a port eventually led to Puerto Cabras becoming the capital of the island in 1860.⏎Puerto del Rosario is"
+      },
+      {
+        "triggers": [
+          " capital",
+          " South",
+          " Korean"
+        ],
+        "score": 28.75,
+        "context": " South Korean companies, in return, provides basic infrastructure, raw materiel and the capital to run the site and most importantly, employ North Korean workers and pay them"
+      }
+    ],
+    "promotes": [
+      " sounded",
+      "aarrggbb",
+      " Normdatei",
+      "sound",
+      " sound"
+    ],
+    "demotes": [
+      " capital",
+      "capital",
+      "Capital",
+      " Capital",
+      " CAPITAL"
+    ],
+    "generated_description": "capital — activates on the token \"capital\" across senses (city, finance); consistently suppresses/pushes away from outputting the word \"capital\" next."
+  },
+  {
+    "id": "2_8734_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.3877218961715698,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          "port",
+          " sea"
+        ],
+        "score": 8.94,
+        "context": "⏎ALEXANDRIA (Arab. Iskendria), a city and chief seaport of Egypt, and for over a thousand years from its foundation the capital of"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Town",
+          " Lusaka"
+        ],
+        "score": 8.31,
+        "context": ", sometimes called Town Nyanja, is the lingua franca of the Zambian capital Lusaka and is widely spoken as a second language throughout Zambia. This is a"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Val",
+          "leys"
+        ],
+        "score": 11.38,
+        "context": " network of parks and preserves safeguarding the country’s natural patrimony.⏎Peaks & Valleys Beyond the capital, much of the DR is distinctly rural:"
+      },
+      {
+        "triggers": [
+          " capital",
+          " centre",
+          " –"
+        ],
+        "score": 10.81,
+        "context": " – in her village 200 kilometres east of Ouagadougou, the capital.⏎With the nearest health centre in Moaga, eight kilometres away,"
+      },
+      {
+        "triggers": [
+          " harbour",
+          " city",
+          " Sydney"
+        ],
+        "score": 8.44,
+        "context": " is a global problem but astronomers in Sydney say unnecessary sky glow has worsened in the harbourside city in recent years. They are particularly alarmed about a new 2"
+      }
+    ],
+    "promotes": [
+      "viewDidLoad",
+      " district",
+      " metropolis",
+      " town",
+      " city"
+    ],
+    "demotes": [
+      "UrlResolution",
+      " Wikimedijinoj",
+      " propOrder",
+      " ModelExpression",
+      "IUrlHelper"
+    ],
+    "generated_description": "city/capital — activates on mentions of cities, towns, ports, harbours; signals urban place names (e.g. Alexandria, Lusaka, Sydney). Promotes tokens like city, town, district, metropolis"
+  },
+  {
+    "id": "2_11838_2",
+    "layer": 2,
+    "ctx_idx": 2,
+    "influence_score": 0.39538007974624634,
+    "top_activations": [
+      {
+        "triggers": [
+          " centre",
+          " town",
+          " improvement"
+        ],
+        "score": 13.5,
+        "context": " saw in this not only an opportunity to clear away the slums in the overcrowded town centre, but a chance to carry out a radical new town improvement. The Birmingham"
+      },
+      {
+        "triggers": [
+          " capital",
+          " town",
+          " province"
+        ],
+        "score": 11.12,
+        "context": " the wild.”⏎All of TRAFFIC’s surveys have indicated that Medan, the capital of North Sumatra province, and Pancur Batu, a smaller town situated about"
+      },
+      {
+        "triggers": [
+          " centers",
+          " squares",
+          " concerning"
+        ],
+        "score": 9.5,
+        "context": " concerning the public sphere, stresses the place gained by the sculpture in cities, city centers and squares as a public formation and analyzes the conditions for a sculpture to exist"
+      },
+      {
+        "triggers": [
+          " capital",
+          " Between",
+          " of"
+        ],
+        "score": 9.25,
+        "context": " Between 1863 and 1918, it was the capital of Anhalt. Since the second half of the 19th century"
+      },
+      {
+        "triggers": [
+          " capital",
+          " city",
+          " highlands"
+        ],
+        "score": 13.0,
+        "context": " has eroded the traditional way of life for this community, who mainly live around the capital city and the highlands.⏎But as Riuki demonstrates, this is not"
+      }
+    ],
+    "promotes": [
+      " itſelf",
+      " downtown",
+      "GEBURTS",
+      "庁",
+      " himſelf"
+    ],
+    "demotes": [
+      "Kick",
+      " Kick",
+      " kick",
+      "kick",
+      "ով"
+    ],
+    "generated_description": "Urban center (city/town/capital) — activates on tokens about cities, towns, capitals, city centers/downtown; marks urban-place mentions."
+  },
+  {
+    "id": "2_3642_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.37052515149116516,
+    "top_activations": [
+      {
+        "triggers": [
+          " City",
+          "⏎",
+          "T"
+        ],
+        "score": 21.75,
+        "context": "⏎Trolleys, pedestrians, and automobiles creating congestion in early 1900s Center City Philadelphia.⏎Digital Collection number: pdcsm0"
+      },
+      {
+        "triggers": [
+          " City",
+          "|",
+          "GN"
+        ],
+        "score": 22.0,
+        "context": "|GNIS feature ID||0758233|⏎Jefferson City is the capital of the U.S. state of Missouri. It is"
+      },
+      {
+        "triggers": [
+          " City",
+          "Data",
+          " Viewer"
+        ],
+        "score": 22.5,
+        "context": "Data Viewer Popular Beyond Expectations⏎Incorporated in 1884, Park City, Utah, has a rich silver mining history that spans from 18"
+      },
+      {
+        "triggers": [
+          " City",
+          " City",
+          "<bos>"
+        ],
+        "score": 22.5,
+        "context": "<bos>Park City, Utah, Uses GIS to Create Environmental Information Repository⏎Data Viewer Popular Beyond Expectations⏎Incorporated in 1884, Park City,"
+      },
+      {
+        "triggers": [
+          " City",
+          " City",
+          ","
+        ],
+        "score": 22.0,
+        "context": " City, dies just six months before his 70th birthday at his Kansas City home.⏎Jesse Clyde Nichols died on February 16, 1"
+      }
+    ],
+    "promotes": [
+      "참고",
+      "LookAnd",
+      "contentLoaded",
+      "原始内容存档于",
+      " CURIAM"
+    ],
+    "demotes": [
+      " City",
+      "City",
+      " CITY",
+      "city",
+      " city"
+    ],
+    "generated_description": "City token — fires on the literal word \"City\" in place names (Park City, Jefferson City, Kansas City). Consistently pushes away/discounts the token \"City\" in outputs."
+  },
+  {
+    "id": "0_5660_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.31821146607398987,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " This",
+          " will"
+        ],
+        "score": 17.25,
+        "context": " This will never happen, for the simple reason that competition, economies of scale, free trade, and mobile capital have also brought with them economic benefits which most governments"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          "("
+        ],
+        "score": 17.38,
+        "context": "(b) Industries generally need long-term loans, which are provided in the capital market. However, capital market depends upon the nature of and the conditions in"
+      },
+      {
+        "triggers": [
+          " capital",
+          " are",
+          " a"
+        ],
+        "score": 17.38,
+        "context": " are a help, but not an essential, of production. The remaining requisite, capital, is itself the product of labour: its instrumentality in production is therefore"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " terms"
+        ],
+        "score": 17.38,
+        "context": " terms on repayment of debt capital vary and are negotiated between lender and borrower. Raising capital through the sale of stock is complex and highly regulated; you should seek legal"
+      },
+      {
+        "triggers": [
+          " capital",
+          " $",
+          "1"
+        ],
+        "score": 17.75,
+        "context": " $10 an hour, what is the lowest-cost combination of labor and capital that can produce 25 units of output? Assume that labor has to"
+      }
+    ],
+    "promotes": [
+      "principalTable",
+      " MainAxisSize",
+      "SequentialGroup",
+      " متعلقه",
+      " snippetHide"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "1",
+      "⏎",
+      "<bos>",
+      "'"
+    ],
+    "generated_description": "capital (economics) — activates on the word \"capital\" in economic contexts: production, capital markets, loans, raising capital, factor-of-production mentions."
+  },
+  {
+    "id": "0_1961_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.33101972937583923,
+    "top_activations": [
+      {
+        "triggers": [
+          " games",
+          " Olympic",
+          " gold"
+        ],
+        "score": 14.62,
+        "context": " Olympic gold medals and more than 400 medals overall. In those first games, Alfred and Gustav Flatow, German cousins, won five of the gymnastics"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " Jah"
+        ],
+        "score": 14.25,
+        "context": " Jahan and the governor of Bengal, was also making plans to advance towards the capital to claim the throne. However, his march towards the capital ended when Sula"
+      },
+      {
+        "triggers": [
+          " capital",
+          " attempt",
+          " to"
+        ],
+        "score": 14.25,
+        "context": " attempt to reinstate obligatory study of the Russian language prompted opposition protests in Moldova's capital, Chisinau. Several media outlets rallied to defend the Romanian language and"
+      },
+      {
+        "triggers": [
+          " games",
+          " games",
+          " digital"
+        ],
+        "score": 14.25,
+        "context": " digital games boosts motivation and engagement, and 62 percent of teachers said that games make teaching easier.⏎Dave McCool, president and CEO of Muzzy"
+      },
+      {
+        "triggers": [
+          " capital",
+          " ancient",
+          " in"
+        ],
+        "score": 14.25,
+        "context": " in my mind’s eye. I was location-scouting in the ancient capital of Kyoto for Rashomon, my eleventh-century period film. The Da"
+      }
+    ],
+    "promotes": [
+      " à",
+      "ville",
+      " the",
+      " a",
+      ","
+    ],
+    "demotes": [
+      "TagMode",
+      " متعلقه",
+      "+#+#",
+      "脚注の使い方",
+      "Diwedd"
+    ],
+    "generated_description": "capital — activates on the word \"capital\" and capital-city contexts; fires when text references a capital or mentions a city/place as a capital."
+  },
+  {
+    "id": "0_15734_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.39443784952163696,
+    "top_activations": [
+      {
+        "triggers": [
+          " components",
+          ".",
+          " Results"
+        ],
+        "score": 13.5,
+        "context": ". Results could strongly influence the design of future fusion reactors.⏎The Laboratory develops components and scientific data for ITER, which represents the largest step to date toward the"
+      },
+      {
+        "triggers": [
+          " components",
+          "board",
+          "."
+        ],
+        "score": 13.0,
+        "context": "board. These accept through-hole devices and allow fast, reasonably secure connection of components with a minimum of wiring. An idea for a new circuit can be tried"
+      },
+      {
+        "triggers": [
+          " components",
+          " is",
+          " imparted"
+        ],
+        "score": 13.12,
+        "context": " is imparted by the polyunsaturated and monounsaturated fats that it contains. These components protect the heart against various heart diseases like blockage of arteries, by lowering cholesterol"
+      },
+      {
+        "triggers": [
+          " components",
+          "like",
+          " mid"
+        ],
+        "score": 13.12,
+        "context": " mid and hind legs flattened, oar-like; eyes divided into ventral and dorsal components; antennal segments 3-11 form short, cylindrical club and"
+      },
+      {
+        "triggers": [
+          " components",
+          " which",
+          ","
+        ],
+        "score": 13.0,
+        "context": " which, along with dietary studies utilizing experimental animals, suggest that a variety of dietary components may modulate the transformation and promotion stages of carcinogenesis.⏎Among these are"
+      }
+    ],
+    "promotes": [
+      " שוליים",
+      "μβρίου",
+      "gema",
+      "iedene",
+      "//};"
+    ],
+    "demotes": [
+      " kvinder",
+      " økonom",
+      "enumii",
+      "utnik",
+      " befolk"
+    ],
+    "generated_description": "components — fires on the plural noun \"components\"; triggers on mentions of parts/elements across technical, biological, and material contexts"
+  },
+  {
+    "id": "0_11124_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.36446428298950195,
+    "top_activations": [
+      {
+        "triggers": [
+          " fill",
+          ".",
+          " ..."
+        ],
+        "score": 17.5,
+        "context": ". ... Recellularization makes xenotransplantation a much more viable technology to fill the tissue engineering gap prior to the ability to grow complex organs from scratch."
+      },
+      {
+        "triggers": [
+          " fill",
+          " fill",
+          " when"
+        ],
+        "score": 16.5,
+        "context": " when you start a flood fill from each of those points, they will start to fill the neighboring pixels, and so on, and so on... This is the"
+      },
+      {
+        "triggers": [
+          " fill",
+          " not",
+          " been"
+        ],
+        "score": 17.25,
+        "context": " not been easily accessible nor compiled with this multisectoral view in mind. To fill this void, the Population Council began analyzing Demographic and Health Survey (DHS"
+      },
+      {
+        "triggers": [
+          " fill",
+          " expansion",
+          " and"
+        ],
+        "score": 17.5,
+        "context": " expansion and development. The development of the country depended primarily on attracting sufficient workers to fill the thousands of new jobs in the West and in the East as demands were"
+      },
+      {
+        "triggers": [
+          " fill",
+          ".",
+          "⏎"
+        ],
+        "score": 17.25,
+        "context": ".⏎Besides being a new species, Dahalokely is also helping to fill in some puzzling gaps in the fossil record for Madagascar. \"We had always"
+      }
+    ],
+    "promotes": [
+      " Athenians",
+      "נגלית",
+      " parietal",
+      " ihtiyac",
+      "tvguidetime"
+    ],
+    "demotes": [
+      "DockStyle",
+      " صوتيه",
+      "InjectAttribute",
+      "numerusform",
+      "makeConstraints"
+    ],
+    "generated_description": "fill / fill in — activates on the verb \"fill\" meaning to occupy or plug gaps/spaces (fill the void, fill pixels, fill jobs)."
+  },
+  {
+    "id": "0_12613_2",
+    "layer": 0,
+    "ctx_idx": 2,
+    "influence_score": 0.3795713186264038,
+    "top_activations": [
+      {
+        "triggers": [
+          " capital",
+          " largest",
+          "<bos>"
+        ],
+        "score": 13.0,
+        "context": "<bos>Reykjavík is the largest city and capital of Iceland with approximately 120 thousand people. It is located in the southwestern section of Iceland , just"
+      },
+      {
+        "triggers": [
+          " capital",
+          ",",
+          " via"
+        ],
+        "score": 13.0,
+        "context": ", via the New York Times Economix blog. He analyzed the value of housing capital, as a measure of profitability, in the U.S. from "
+      },
+      {
+        "triggers": [
+          " capital",
+          " the",
+          " working"
+        ],
+        "score": 12.88,
+        "context": " the working period 4 weeks, the period of circulation 1 week. Then capital I is 2000 p. st., consisting of 1"
+      },
+      {
+        "triggers": [
+          " capital",
+          " capital",
+          " of"
+        ],
+        "score": 13.12,
+        "context": " of Tucson. Settled c. 1868, it became territorial capital in 1889 and state capital in 1912"
+      },
+      {
+        "triggers": [
+          " capital",
+          " until",
+          " "
+        ],
+        "score": 13.12,
+        "context": " until 1945, then became a province of North Korea. Its capital is Hamhung.⏎South Hamgyong is divided into 3 cities"
+      }
+    ],
+    "promotes": [
+      " houſe",
+      " Majefty",
+      " Monfieur",
+      " Jefus",
+      " Efq"
+    ],
+    "demotes": [
+      "⏎⏎",
+      "aarrggbb",
+      "  ",
+      "',\\",
+      ")}>"
+    ],
+    "generated_description": "capital — activates on the token “capital”; fires for both city/state capitals and financial/asset “capital” contexts."
+  },
+  {
+    "id": "0_14737_8",
+    "layer": 0,
+    "ctx_idx": 8,
+    "influence_score": 0.3717055022716522,
+    "top_activations": [
+      {
+        "triggers": [
+          " City",
+          " climate",
+          "-"
+        ],
+        "score": 17.75,
+        "context": " climate-friendly education and activities⏎THE STRATEGY: Use Field Museum Research, the City's Chicago Climate Action Plan (CCAP) and the Chicago Wilderness Climate"
+      },
+      {
+        "triggers": [
+          " City",
+          " City",
+          " Union"
+        ],
+        "score": 17.75,
+        "context": ", U.S. 1 class, Union City High School North, Union City, New Jersey, September 22, 2008."
+      },
+      {
+        "triggers": [
+          " City",
+          " and",
+          " their"
+        ],
+        "score": 17.75,
+        "context": " and their slaves, in 1889 the property was sold to the City of New York and made a public parkland. It was added to the"
+      },
+      {
+        "triggers": [
+          " City",
+          " They",
+          " chose"
+        ],
+        "score": 18.0,
+        "context": " They chose it in 1847 shortly before the Americans took over Mexico City⏎- In 1867, they chose it because of the"
+      },
+      {
+        "triggers": [
+          " City",
+          " community",
+          "."
+        ],
+        "score": 18.25,
+        "context": " community.⏎These devices are types of the medical device Forceps:⏎These other medical devices are related to Forceps:⏎Search Specialists by State and City"
+      }
+    ],
+    "promotes": [
+      " ",
+      "'",
+      " The",
+      "⏎⏎",
+      " the"
+    ],
+    "demotes": [
+      " purpoſe",
+      " ſtate",
+      " myſelf",
+      " Houſe",
+      " Majefty"
+    ],
+    "generated_description": "City (capitalized) — fires on the token \"City\" in place names (e.g., Union City, City of New York); marks municipal-name mentions."
+  },
+  {
+    "id": "2_9457_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.3963181972503662,
+    "top_activations": [
+      {
+        "triggers": [
+          " City",
+          " Vera",
+          " Cruz"
+        ],
+        "score": 21.75,
+        "context": " Vera Cruz. The forced commanded by Gen. Winfield Scott moved inland and occupied Mexico City (September 14, 1847). A peace treaty"
+      },
+      {
+        "triggers": [
+          " Springs",
+          " Colorado",
+          " is"
+        ],
+        "score": 25.12,
+        "context": " Colorado is the decade of drought.⏎So says Brian Bledsoe, a Colorado Springs meteorologist who studies the history of ocean currents and uses what he learns to"
+      },
+      {
+        "triggers": [
+          " Francisco",
+          " San",
+          " at"
+        ],
+        "score": 23.0,
+        "context": " at the annual Integrated Solid State⏎Circuits Conference (ISSCC) in San Francisco. At the forefront of Intel’s announcements is its success in developing the"
+      },
+      {
+        "triggers": [
+          " Springs",
+          " Command",
+          " ("
+        ],
+        "score": 25.38,
+        "context": " Command (CONAD) have been tracking Santa. The tradition began after a Colorado Springs-based Sears Roebuck & Co. store advertisement for children to call Santa"
+      },
+      {
+        "triggers": [
+          "Seattle",
+          "Bari",
+          "Cleveland"
+        ],
+        "score": 21.62,
+        "context": "<bos>The scientists, who are affiliated with the University of Washington (Seattle, WA), Case Western Reserve University (Cleveland, OH), the University of Bari (Bari"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " LUMP",
+      "ajuku",
+      "caloosa",
+      "pannt"
+    ],
+    "demotes": [
+      "TagMode",
+      "WithIOException",
+      "XmlAccessType",
+      "+:+",
+      "TextWatcher"
+    ],
+    "generated_description": "City/place name — activates on proper city/place tokens; fires on single and multiword city names (San Francisco, Colorado Springs, Vera Cruz, Seattle, Cleveland, Bari)."
+  },
+  {
+    "id": "3_9559_3",
+    "layer": 3,
+    "ctx_idx": 3,
+    "influence_score": 0.37286606431007385,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          "<bos>",
+          "Capital"
+        ],
+        "score": 17.75,
+        "context": "<bos>Capital of Tyrol, Austria. While Jews settled throughout Tyrol, especially in the southern part, as early as the beginning of the fourteenth century, no mention of"
+      },
+      {
+        "triggers": [
+          " of",
+          ",",
+          " to"
+        ],
+        "score": 11.88,
+        "context": ", to crush, do away with; to prohibit, subdue⏎- The government of China suppressed the student demonstrations by ordering tanks to Tiananmen square.⏎"
+      },
+      {
+        "triggers": [
+          " of",
+          " coast",
+          "2"
+        ],
+        "score": 14.5,
+        "context": "2% of the newshole. One day later, an earthquake off the coast of Indonesia killed an estimated 1,100 people, accounting for "
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " States"
+        ],
+        "score": 12.62,
+        "context": " on Pennsylvania Avenue houses the Charters of Freedom–the Declaration of Independence, the Constitution of the United States, and the Bill of Rights–and exhibits highlighting historical themes"
+      },
+      {
+        "triggers": [
+          " of",
+          " the",
+          " States"
+        ],
+        "score": 11.75,
+        "context": "ts in New York, June has since been declared LGBT Pride Month by the President of the United States on five separate occasions, and although the exact timing and focus"
+      }
+    ],
+    "promotes": [
+      " Flag",
+      "Flag",
+      "flag",
+      " flag",
+      "memberOf"
+    ],
+    "demotes": [
+      "eradish",
+      "SharedCtor",
+      " nargin",
+      "ulemon",
+      "resizingMask"
+    ],
+    "generated_description": "say country — activates on \"of\" introducing countries/places or titles (e.g. \"coast of Indonesia\", \"President of the United States\"); promotes tokens like \"Flag\" (e.g. \"flag of X\")."
+  },
+  {
+    "id": "2_15120_8",
+    "layer": 2,
+    "ctx_idx": 8,
+    "influence_score": 0.3582907021045685,
+    "top_activations": [
+      {
+        "triggers": [
+          " City",
+          " York",
+          "0"
+        ],
+        "score": 35.25,
+        "context": " This second edition includes a new 90-page Introduction, \"New York City in 1960,\" in whichthe authors, with all"
+      },
+      {
+        "triggers": [
+          " City",
+          " York",
+          ":"
+        ],
+        "score": 36.75,
+        "context": ": James Prosek⏎Not long ago I attended a fundraising dinner in New York City hosted by the Yellowstone Park Foundation. The Park's head fisheries biologist had"
+      },
+      {
+        "triggers": [
+          " City",
+          " York",
+          ","
+        ],
+        "score": 35.5,
+        "context": ", Dr. Hugh Sampson, of Mt. Sinai School of Medicine in New York City, one of the primary authors of the National Institute of Allergy and Infectious Diseases"
+      },
+      {
+        "triggers": [
+          " City",
+          " City",
+          " York"
+        ],
+        "score": 38.0,
+        "context": " from every country on earth with differing cultures, it can be said that New York City is an urbanized microcosm of the globe. |⏎New York City"
+      },
+      {
+        "triggers": [
+          " City",
+          " York",
+          " New"
+        ],
+        "score": 36.25,
+        "context": " growth and development impacts its local ecology, its surviving urban wildlife, marine and terrestrial ecosystems, and air quality. In fact, New York City is exerting more and"
+      }
+    ],
+    "promotes": [
+      "*/;",
+      "UnknownFields",
+      "ADELPHIA",
+      " protoimpl",
+      " ***!"
+    ],
+    "demotes": [
+      "enido",
+      "igreja",
+      "ēj",
+      " prise",
+      "user"
+    ],
+    "generated_description": "New York City — activates on the phrase \"New York City\" (tokens New / York / City); fires on mentions across text, often adjacent to punctuation or headings."
+  },
+  {
+    "id": "4_7897_8",
+    "layer": 4,
+    "ctx_idx": 8,
+    "influence_score": 0.35054582357406616,
+    "top_activations": [
+      {
+        "triggers": [
+          "catch",
+          "aders",
+          "ws"
+        ],
+        "score": 17.0,
+        "context": " Worms, crustaceans and shellfish live in and on the tidal flats from which waders such as oystercatchers, redshanks, curlews and bar"
+      },
+      {
+        "triggers": [
+          " marshes",
+          " beaches",
+          " Gulf"
+        ],
+        "score": 15.06,
+        "context": " restore order to the Gulf remains to be seen.⏎In localized places such as marshes and beaches, they could stretch the ability of the Gulf’s natural restorative"
+      },
+      {
+        "triggers": [
+          " Shore",
+          "ps",
+          "allo"
+        ],
+        "score": 14.94,
+        "context": "8 a.m. from the National Aeronautics and Space Administration’s Wallops Flight Facility on Virginia’s Eastern Shore. The liftoff had been postponed"
+      },
+      {
+        "triggers": [
+          " marsh",
+          " salt",
+          " estuary"
+        ],
+        "score": 14.94,
+        "context": "The six-mile boat ride to the lighthouse station takes participants through a pristine salt marsh and estuary where you’ll have the chance to view a wide array of"
+      },
+      {
+        "triggers": [
+          " marsh",
+          " dunes",
+          " beaches"
+        ],
+        "score": 14.31,
+        "context": " spaces. With more than 25,000 acres of water, marsh, meadowland, beaches, dunes and forests in Brooklyn and Queens – and"
+      }
+    ],
+    "promotes": [
+      "beach",
+      " Beach",
+      "Beach",
+      " beach",
+      " beaches"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "іга",
+      "addContainerGap",
+      " AspNetCore",
+      "adalajara"
+    ],
+    "generated_description": "coastal habitat — activates on marsh/beach/shore/estuary/dunes tokens; tends to promote “beach”/“beaches” in output."
+  },
+  {
+    "id": "4_7671_3",
+    "layer": 4,
+    "ctx_idx": 3,
+    "influence_score": 0.38268405199050903,
+    "top_activations": [
+      {
+        "triggers": [
+          "quarter",
+          " staff",
+          " head"
+        ],
+        "score": 30.25,
+        "context": "21st, 2013, intended for European-based headquarter staff involved in nutrition and mortality surveys. Please make sure you have filled out"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 20.75,
+        "context": " a school for Native Americans.⏎1875: Helena is named capital of the Montana Territory.⏎1876: U.S. soldiers"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " the"
+        ],
+        "score": 22.75,
+        "context": " Copenhagen conference.⏎The officials will meet this week in Majuro, the capital of the Marshall Islands, a nation where islands average less than one meter above sea"
+      },
+      {
+        "triggers": [
+          " of",
+          " capital",
+          " from"
+        ],
+        "score": 22.0,
+        "context": " first known and included Anatolian peoples as well as several Hellenic groups. The capital of Macedon from c.400 to 167 B."
+      },
+      {
+        "triggers": [
+          " headquarters",
+          " in",
+          " its"
+        ],
+        "score": 21.5,
+        "context": " a Mi'kmaq First Nation on Prince Edward Island, Canada, with its headquarters in Lennox Island, northeast of Tyne Valley. The band consists of a single"
+      }
+    ],
+    "promotes": [
+      " coordinators",
+      " HQ",
+      "Headquarters",
+      " Headquarters",
+      " headquarters"
+    ],
+    "demotes": [
+      "HasAnnotation",
+      "IBOutlet",
+      "хьтан",
+      "Rüyada",
+      "endmodule"
+    ],
+    "generated_description": "Capital/headquarters — activates on mentions like \"capital of\", \"head\", \"headquarters\"; signals place-seat mentions (capitals, HQs); promotes tokens like \"HQ\"/\"Headquarters\"/\"coordinators\"."
+  },
+  {
+    "id": "5_3992_1",
+    "layer": 5,
+    "ctx_idx": 1,
+    "influence_score": 0.3681228756904602,
+    "top_activations": [
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "v"
+        ],
+        "score": 35.5,
+        "context": "<bos>(v.) To line up. In computer science, queuing refers to lining up jobs for a computer or device. For example, if you want to print"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " was"
+        ],
+        "score": 34.25,
+        "context": "<bos>It was Einstein who first looked at the problem of the structure and dynamics of the Universe, by using for this study the general theory of relativity he proposed in"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          "s"
+        ],
+        "score": 34.25,
+        "context": "<bos>It’s no secret that New Mexico is one of the nation’s hot spots for nuclear activity. We don’t have any commercial nuclear power plants"
+      },
+      {
+        "triggers": [
+          "It",
+          "<bos>",
+          " is"
+        ],
+        "score": 34.25,
+        "context": "<bos>It is well known that the Middle East is a water scarce region. Water however is not the only element determining the survival of Middle Eastern regimes. Environmental discourse"
+      },
+      {
+        "triggers": [
+          "(",
+          "<bos>",
+          "Washington"
+        ],
+        "score": 35.5,
+        "context": "<bos>(Washington, D.C., June 7, 2012) A deadly predator of birds – a mongoose Herpestes javanicus"
+      }
+    ],
+    "promotes": [
+      "0",
+      "3",
+      "S",
+      "2",
+      "G"
+    ],
+    "demotes": [
+      "drawSprites",
+      "FormTagHelper",
+      "Portály",
+      "goku",
+      " légale"
+    ],
+    "generated_description": "Sentence-opening \"It\" — activates on expletive \"It\" at sentence start, typically before copula forms (is/was/’s), marks expository sentence openers."
+  },
+  {
+    "id": "4_4562_8",
+    "layer": 4,
+    "ctx_idx": 8,
+    "influence_score": 0.3215550184249878,
+    "top_activations": [
+      {
+        "triggers": [
+          " County",
+          " website",
+          " for"
+        ],
+        "score": 16.62,
+        "context": " website for science experiments! No animals needed!⏎Keep in mind that the Ocean County Library has a wonderful collection of books and materials on this subject as well."
+      },
+      {
+        "triggers": [
+          "J",
+          "stown",
+          "ight"
+        ],
+        "score": 21.0,
+        "context": ", April 13, at his home in Hightstown, N.J.⏎Over a long, productive scientific life, he was known for his"
+      },
+      {
+        "triggers": [
+          " State",
+          " of",
+          " West"
+        ],
+        "score": 17.0,
+        "context": " of West Nile Virus are on the rise throughout the United States. In the Garden State alone there have been fifteen confirmed cases of the virus afflicting people, one"
+      },
+      {
+        "triggers": [
+          "J",
+          "Princeton",
+          " N"
+        ],
+        "score": 19.88,
+        "context": " avoid the kind of spills seen in the northeast.⏎“Princeton, N.J.-based Climate Central said that future sewage leaks are a major risk because rising"
+      },
+      {
+        "triggers": [
+          " State",
+          " Acres",
+          " $"
+        ],
+        "score": 17.0,
+        "context": " $400 million dollar bond referendum which will be earmarked to replenish the Garden State Preservation Trust Fund (GSPT). Through the popular Green Acres, Farm"
+      }
+    ],
+    "promotes": [
+      " Rutgers",
+      "mybatisplus",
+      " ddelweddau",
+      "quelize",
+      " NJ"
+    ],
+    "demotes": [
+      "orianCalendar",
+      " []:",
+      " egens",
+      " fum",
+      " GROWTH"
+    ],
+    "generated_description": "New Jersey — activates on N.J./Garden State mentions (Princeton, Ocean County, Atlantic City, Hightstown); signals New Jersey context; promotes NJ/Rutgers-related tokens."
+  },
+  {
+    "id": "16_1678_8",
+    "layer": 16,
+    "ctx_idx": 8,
+    "influence_score": 0.3773695230484009,
+    "top_activations": [
+      {
+        "triggers": [
+          "-",
+          "9",
+          "5"
+        ],
+        "score": 75.5,
+        "context": "pted from the New Jersey Permanent Statutes, Title 52, Section 52:9A-4.⏎TITLE 52 STATE GOVERNMENT, DEPART"
+      },
+      {
+        "triggers": [
+          "-",
+          "5",
+          ":"
+        ],
+        "score": 70.5,
+        "context": "in accordance with N.J.A.C. 8:58-1.5, 1.6, 1.7. Reported"
+      },
+      {
+        "triggers": [
+          "'",
+          " state",
+          "s"
+        ],
+        "score": 60.0,
+        "context": " informed decisions regarding the bay, but could be a model of action for the state's other impaired bodies of water.⏎While we gather data for long-"
+      },
+      {
+        "triggers": [
+          "-",
+          "J",
+          " "
+        ],
+        "score": 61.5,
+        "context": " statute (N.J.S.A. 2C:21-17), which makes it an⏎offense to impersonate another,"
+      },
+      {
+        "triggers": [
+          "-",
+          "J",
+          " "
+        ],
+        "score": 61.5,
+        "context": " Identity Theft is covered by the Wrongful⏎Impersonation statute (N.J.S.A. 2C:21-17),"
+      }
+    ],
+    "promotes": [
+      " Newark",
+      "Jersey",
+      "archiviato",
+      "DeleteBehavior",
+      " Jersey"
+    ],
+    "demotes": [
+      "PyExc",
+      " Paglinawan",
+      "﻿#",
+      "Skocz",
+      "ніципалі"
+    ],
+    "generated_description": "New Jersey — fires on legal/abbrev tokens (N.J., N.J.S.A., \"state’s\"), often promotes \"Jersey\"/\"Newark\" in output."
+  },
+  {
+    "id": "18_6101_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.38572603464126587,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " embassy",
+          " in"
+        ],
+        "score": 42.5,
+        "context": " Rising through the ranks, he becomes a military attache in Sudan's embassy in the UAE, and later a garrison commander and brigadier.⏎19"
+      },
+      {
+        "triggers": [
+          " with",
+          " history",
+          ","
+        ],
+        "score": 41.75,
+        "context": " history, fed more than one-third of North Korea's population. For most countries, bilateral food aid became their only significant form of engagement with the DPR"
+      },
+      {
+        "triggers": [
+          " from",
+          " above",
+          " under"
+        ],
+        "score": 53.5,
+        "context": " colonizing should be a royal endeavour and that colonies should be kept under rigid control from above. In 1620 Gorges succeeded in obtaining a charter"
+      },
+      {
+        "triggers": [
+          " from",
+          " centre",
+          " the"
+        ],
+        "score": 42.5,
+        "context": "administrative units\"). Under the new constitution there will be a devolution of power, from the centre to 47 self-governed ETHNIC counties, a"
+      },
+      {
+        "triggers": [
+          " in",
+          " monarchy",
+          " to"
+        ],
+        "score": 45.5,
+        "context": " of them no doubt started to feel as though they didn't need the monarchy in order to prosper in the fledgling America. This no doubt seemed ludicrous to"
+      }
+    ],
+    "promotes": [
+      "berra",
+      " Beijing",
+      " Canberra",
+      "Washington",
+      " Washington"
+    ],
+    "demotes": [
+      "ⓧ",
+      " חיצוניים",
+      " NgModule",
+      "CASCADE",
+      " handleMessage"
+    ],
+    "generated_description": "say capital city — activates on prepositions/articles introducing locations (in, to, from, under, the); pushes specific capital names (Beijing, Canberra, Washington)"
+  },
+  {
+    "id": "6_2232_8",
+    "layer": 6,
+    "ctx_idx": 8,
+    "influence_score": 0.3620012700557709,
+    "top_activations": [
+      {
+        "triggers": [
+          " Branch",
+          " University",
+          "J"
+        ],
+        "score": 22.25,
+        "context": " Ph.D., Professor of Analytical and Environmental Chemistry at Monmouth University, West Long Branch, N.J. \"Our process uses pieces of plastic water, soda"
+      },
+      {
+        "triggers": [
+          " Wood",
+          " Johnson",
+          " Robert"
+        ],
+        "score": 24.12,
+        "context": " in their childhood obesity rates in recent years, according to the report from the Robert Wood Johnson Foundation.⏎Between 2006 and 201"
+      },
+      {
+        "triggers": [
+          " Jersey",
+          " eye",
+          " New"
+        ],
+        "score": 19.12,
+        "context": " made to giving \"eyes\" to the visually disabled.⏎According to a New Jersey state joint resolution, seeing eye dogs help blind persons achieve greater independence, dignity"
+      },
+      {
+        "triggers": [
+          " NJ",
+          " Edison",
+          " Edison"
+        ],
+        "score": 19.38,
+        "context": " in October 2009 at the EPA Edison Research Facility in Edison, NJ.⏎The permeable parking lot is made of 3 different surfaces that capture"
+      },
+      {
+        "triggers": [
+          " Jersey",
+          "Rut",
+          "feld"
+        ],
+        "score": 20.25,
+        "context": " from Michael Gochfeld, author with Joanna Burger of \"Butterflies of New Jersey: A Guide to Their Status, Distribution, Conservation and Appreciation\" (Rut"
+      }
+    ],
+    "promotes": [
+      "nj",
+      " NJ",
+      " '",
+      " بتاريخ",
+      "ttino"
+    ],
+    "demotes": [
+      " itſelf",
+      " himſelf",
+      " themſelves",
+      " ſeveral",
+      " ―――――"
+    ],
+    "generated_description": "New Jersey — activates on state/place mentions (New Jersey, NJ, Edison, Monmouth, Robert Wood Johnson, local proper nouns); pushes output toward \"nj\"/\"NJ\" tokens"
+  },
+  {
+    "id": "7_4944_8",
+    "layer": 7,
+    "ctx_idx": 8,
+    "influence_score": 0.3570302128791809,
+    "top_activations": [
+      {
+        "triggers": [
+          "ampton",
+          " NJ",
+          "ton"
+        ],
+        "score": 24.0,
+        "context": "<bos>Landfill & Development Co.⏎Mount Holly, Eastampton, and Lumberton, NJ⏎No meetings scheduled⏎EPA added the Landfill & Development Company site"
+      },
+      {
+        "triggers": [
+          "burn",
+          "burn",
+          "<bos>"
+        ],
+        "score": 16.0,
+        "context": "<bos>The entire last chapter was devoted to the Mills of Millburn because of their great importance and influence on the economic and social development of Millburn of the "
+      },
+      {
+        "triggers": [
+          " River",
+          "cong",
+          "ins"
+        ],
+        "score": 23.38,
+        "context": "largest contributor to the Delaware River, behind the Musconetcong River and Maurice River. The Paulins Kill drains an area of 176.8"
+      },
+      {
+        "triggers": [
+          "ung",
+          " Reservation",
+          " park"
+        ],
+        "score": 21.5,
+        "context": " sites of historic interest. These sites recall features from the early years of the Watchung Reservation, or describe uses of the land before it was incorporated into the park"
+      },
+      {
+        "triggers": [
+          " Freehold",
+          " Howell",
+          " High"
+        ],
+        "score": 20.0,
+        "context": " Language Supervisors from Howell High School, Dr. Meryl Norych, and Freehold High School, David Bleakly, lead the presentation explaining the progressive success"
+      }
+    ],
+    "promotes": [
+      "ConstraintMaker",
+      "DockStyle",
+      " concor",
+      " oprot",
+      "MigrationBuilder"
+    ],
+    "demotes": [
+      "WithIOException",
+      "]--;",
+      " ProtoMessage",
+      " المعيارى",
+      "Datuak"
+    ],
+    "generated_description": "New Jersey places — activates on NJ towns, rivers, parks, and the token “NJ”; represents New Jersey geographic mentions and local place names."
+  },
+  {
+    "id": "18_8959_9",
+    "layer": 18,
+    "ctx_idx": 9,
+    "influence_score": 0.3607662618160248,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          " Arizona",
+          " Department"
+        ],
+        "score": 45.5,
+        "context": " used to calculate rates, are projections from the Population Statistics Unit in the Arizona Department of Economic Security (data for 1987-1989"
+      },
+      {
+        "triggers": [
+          "2",
+          "7",
+          "0"
+        ],
+        "score": 42.5,
+        "context": "<bos>Georgia Wildlife Resources Division⏎2070 U.S. Hwy. 278, SE, Social Circle, GA 3002"
+      },
+      {
+        "triggers": [
+          "2",
+          " ",
+          ")"
+        ],
+        "score": 53.5,
+        "context": "50319-0075 :: (515) 281-7689 or toll-free at 1"
+      },
+      {
+        "triggers": [
+          " ",
+          ",",
+          " State"
+        ],
+        "score": 48.5,
+        "context": "., Wednesday, Jan. 5 in Room 5 of the State Office Building, St. Paul.⏎The Minnesota Water Sustainability Framework, commissioned by the "
+      },
+      {
+        "triggers": [
+          " Governor",
+          " George",
+          " Alabama"
+        ],
+        "score": 44.5,
+        "context": "<bos>The \"stand in the schoolhouse door\" incident was Alabama Governor George Wallace's symbolic opposition to school integration imposed by the federal government. The June "
+      }
+    ],
+    "promotes": [
+      "governor",
+      " statewide",
+      "Governor",
+      " Governor",
+      " governor"
+    ],
+    "demotes": [
+      " FEDERAL",
+      " National",
+      "National",
+      " NATIONAL",
+      " national"
+    ],
+    "generated_description": "U.S. state / governor — activates on state names and state-government phrases (State, Department, Governor); strongly promotes the token \"governor\"/\"Governor\", suppresses federal/national terms."
+  },
+  {
+    "id": "19_1445_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3353966772556305,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " Mexico",
+          " city"
+        ],
+        "score": 57.25,
+        "context": " city worker sells eggs at government subsidized prices as people line up outside the city truck in Mexico City, Friday, Aug. 24, 201"
+      },
+      {
+        "triggers": [
+          " of",
+          " near",
+          "."
+        ],
+        "score": 53.25,
+        "context": ". The formation and the nearby badlands are located about 14 miles south of I-70 near Quinter, Kansas.⏎On January 2"
+      },
+      {
+        "triggers": [
+          "),",
+          " and",
+          "),"
+        ],
+        "score": 52.75,
+        "context": " are known for the specific beers they produce. Dusseldorf (albtbier), Dortmund (Dortmunder), and Köln (Kölsch) all have a"
+      },
+      {
+        "triggers": [
+          " of",
+          " and",
+          " cities"
+        ],
+        "score": 54.25,
+        "context": " a new puppy for the holidays.⏎The Everett Herald reported recently that the cities of Everett and Mukilteo temporarily closed municipal off-leash dog parks out"
+      },
+      {
+        "triggers": [
+          " outside",
+          " planning",
+          " to"
+        ],
+        "score": 51.75,
+        "context": " planning to build a 2 megawatt biomass plant on county-owned land just outside Truckee.⏎Transportation cost is a complicating factor. It's"
+      }
+    ],
+    "promotes": [
+      "raisals",
+      "effect",
+      "STRUCTOR",
+      "曖昧さ回避",
+      " El"
+    ],
+    "demotes": [
+      "bootstrapcdn",
+      "الإنجليزية",
+      "DrawerToggle",
+      "istoitu",
+      " arşivlendi"
+    ],
+    "generated_description": "say place name — fires on locative/prepositional tokens and separators ('in', 'of', 'near', 'outside', 'and', '.') that introduce city/state/place names or lists"
+  },
+  {
+    "id": "20_1444_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.34655430912971497,
+    "top_activations": [
+      {
+        "triggers": [
+          "s",
+          " Transit",
+          " Pennsylvania"
+        ],
+        "score": 109.0,
+        "context": "⏎A giant battery bank installed by the side of the Southeast Pennsylvania Transit Authority’s subway tracks a little over a month ago is saving about nine megawatt-"
+      },
+      {
+        "triggers": [
+          " of",
+          "1",
+          " Penn"
+        ],
+        "score": 126.0,
+        "context": " Lydia Morris in 1887, the gardens did not officially become part of Penn until 1932, the same year Olmsted was brought"
+      },
+      {
+        "triggers": [
+          "1",
+          "6",
+          "9"
+        ],
+        "score": 119.0,
+        "context": " team managed to change their fate later on after they clinched three NFL trophies from 1948 to 1960 topped with two Super Bowl appearances"
+      },
+      {
+        "triggers": [
+          " the",
+          " at",
+          " University"
+        ],
+        "score": 110.0,
+        "context": " Delphine Dahan, who is an associate professor in the Department of Psychology at the University of Pennsylvania. In addition to her research on how adults understand language,"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " Lincoln"
+        ],
+        "score": 121.0,
+        "context": "3. It is a famous American football team with headquarters based in Lincoln Financial Field in Philadelphia, Pennsylvania. After the merger of National Football League (NFL) with"
+      }
+    ],
+    "promotes": [
+      " Philly",
+      " Phila",
+      "Philadelphia",
+      " PA",
+      " Philadelphia"
+    ],
+    "demotes": [
+      "reportWebVitals",
+      "(;;)",
+      "<![",
+      "省市镇",
+      "kloped"
+    ],
+    "generated_description": "Philadelphia — activates on Pennsylvania-area mentions (Pennsylvania, Univ. of Pennsylvania, Lincoln Financial Field); pushes tokens like \"Philadelphia\", \"Philly\", \"PA\"."
+  },
+  {
+    "id": "20_10193_8",
+    "layer": 20,
+    "ctx_idx": 8,
+    "influence_score": 0.32646510004997253,
+    "top_activations": [
+      {
+        "triggers": [
+          "⏎",
+          "0",
+          " ("
+        ],
+        "score": 98.0,
+        "context": " Broad Street⏎Westfield, NJ 07090⏎Phone: (908)232-3879 | Fax:"
+      },
+      {
+        "triggers": [
+          "'",
+          "⏎",
+          " offers"
+        ],
+        "score": 93.0,
+        "context": " offers suggestions for books and tips to find the right books for them.⏎You've packed the sunscreen, the beach towels and the hand-held video games"
+      },
+      {
+        "triggers": [
+          " County",
+          " website",
+          " for"
+        ],
+        "score": 92.0,
+        "context": " website for science experiments! No animals needed!⏎Keep in mind that the Ocean County Library has a wonderful collection of books and materials on this subject as well."
+      },
+      {
+        "triggers": [
+          "’",
+          " fusion",
+          " has"
+        ],
+        "score": 104.0,
+        "context": " fusion has been considered a safer way to generate power from nuclear reactions because it doesn’t produce radioactive waste or create dangerous contamination situations, as in the Chernobyl and"
+      },
+      {
+        "triggers": [
+          "2",
+          ".",
+          ","
+        ],
+        "score": 98.0,
+        "context": " in Normandy Beach, N.J., were destroyed by Hurricane Sandy in fall 2012. / Jack Gruber, USA TODAY⏎A special task force"
+      }
+    ],
+    "promotes": [
+      " Rutgers",
+      " Jersey",
+      " New",
+      "NJ",
+      " NJ"
+    ],
+    "demotes": [
+      "PyExc",
+      "PasswordEncoder",
+      "MessageOf",
+      " getItemId",
+      "ukone"
+    ],
+    "generated_description": "New Jersey — triggers on mentions/contexts of NJ (cities, counties, addresses); promotes tokens like “New”, “Jersey”, “NJ”, “Rutgers” in the output."
+  },
+  {
+    "id": "19_13547_9",
+    "layer": 19,
+    "ctx_idx": 9,
+    "influence_score": 0.3632332980632782,
+    "top_activations": [
+      {
+        "triggers": [
+          " beach",
+          " Beach",
+          " Venice"
+        ],
+        "score": 66.0,
+        "context": " settled in Venice Beach, California, in 1951, and his beach shack became a hangout for the Berman circle, which included actors Dean Stockwell"
+      },
+      {
+        "triggers": [
+          " Beach",
+          " Shore",
+          " a"
+        ],
+        "score": 62.0,
+        "context": " the Jersey Shore a new era of development was about to begin. In Spring Lake Beach, a group of wealthy eastern industrialists had combined with a number of influential"
+      },
+      {
+        "triggers": [
+          " beach",
+          ".",
+          " the"
+        ],
+        "score": 82.5,
+        "context": " behind their Surf City, N.J., homes on July 9. A beach replenishment project designed to protect the homes from catastrophic storms like Superstorm Sandy"
+      },
+      {
+        "triggers": [
+          " Beach",
+          " Sands",
+          " Intended"
+        ],
+        "score": 67.0,
+        "context": " Intended Audience: Geology and Geography undergraduate students Location: Guadalupe ...⏎SEM/EDS Beach Sands part of Example⏎Students pose a question that can be answered using the"
+      },
+      {
+        "triggers": [
+          " coastal",
+          "’",
+          ","
+        ],
+        "score": 61.5,
+        "context": "th Century. We’ve selected postcards showing sanitariums, healing springs, and coastal resorts to illustrate the different types of accommodations that became increasingly more popular after the"
+      }
+    ],
+    "promotes": [
+      " seashore",
+      "beach",
+      " seaside",
+      " beach",
+      " beachfront"
+    ],
+    "demotes": [
+      "κτηρισ",
+      "Steal",
+      " Galbraith",
+      "Fault",
+      "ⓒ"
+    ],
+    "generated_description": "Beach/coast terms — activates on \"beach\", \"shore\", \"coastal\" and place names like \"Venice Beach\"/\"Spring Lake Beach\"; pushes seaside/beachfront synonyms."
+  },
+  {
+    "id": "20_10193_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.27101871371269226,
+    "top_activations": [
+      {
+        "triggers": [
+          "⏎",
+          "0",
+          " ("
+        ],
+        "score": 98.0,
+        "context": " Broad Street⏎Westfield, NJ 07090⏎Phone: (908)232-3879 | Fax:"
+      },
+      {
+        "triggers": [
+          "'",
+          "⏎",
+          " offers"
+        ],
+        "score": 93.0,
+        "context": " offers suggestions for books and tips to find the right books for them.⏎You've packed the sunscreen, the beach towels and the hand-held video games"
+      },
+      {
+        "triggers": [
+          " County",
+          " website",
+          " for"
+        ],
+        "score": 92.0,
+        "context": " website for science experiments! No animals needed!⏎Keep in mind that the Ocean County Library has a wonderful collection of books and materials on this subject as well."
+      },
+      {
+        "triggers": [
+          "’",
+          " fusion",
+          " has"
+        ],
+        "score": 104.0,
+        "context": " fusion has been considered a safer way to generate power from nuclear reactions because it doesn’t produce radioactive waste or create dangerous contamination situations, as in the Chernobyl and"
+      },
+      {
+        "triggers": [
+          "2",
+          ".",
+          ","
+        ],
+        "score": 98.0,
+        "context": " in Normandy Beach, N.J., were destroyed by Hurricane Sandy in fall 2012. / Jack Gruber, USA TODAY⏎A special task force"
+      }
+    ],
+    "promotes": [
+      " Rutgers",
+      " Jersey",
+      " New",
+      "NJ",
+      " NJ"
+    ],
+    "demotes": [
+      "PyExc",
+      "PasswordEncoder",
+      "MessageOf",
+      " getItemId",
+      "ukone"
+    ],
+    "generated_description": "New Jersey — activates on NJ/Jersey mentions and nearby place/county names; promotes tokens like “New”, “Jersey”, “Rutgers”."
+  },
+  {
+    "id": "20_12445_9",
+    "layer": 20,
+    "ctx_idx": 9,
+    "influence_score": 0.31292250752449036,
+    "top_activations": [
+      {
+        "triggers": [
+          " N",
+          ".",
+          ","
+        ],
+        "score": 55.5,
+        "context": " tiny, motorless ship of the air; an overpowering feeling of extreme and biting cold—these are a few of my sensations experienced over Lakehurst, N."
+      },
+      {
+        "triggers": [
+          " at",
+          " in",
+          " New"
+        ],
+        "score": 58.5,
+        "context": "<bos>Earth Day in New Jersey⏎Earth Day in New Jersey⏎Celebration at Duke Farms 2010⏎Morning fog gave way to sunny skies in Hillsborough"
+      },
+      {
+        "triggers": [
+          "5",
+          " ",
+          " "
+        ],
+        "score": 63.0,
+        "context": "<bos>The following information was excerpted from the New Jersey Permanent Statutes, Title 52, Section 52:9A-4.⏎TITLE "
+      },
+      {
+        "triggers": [
+          " of",
+          " Consumer",
+          " New"
+        ],
+        "score": 57.5,
+        "context": " many New Jerseyans, addiction begins in the medicine cabinet. The New Jersey Division of Consumer Affairs has developed Project Medicine Drop as an important component of its effort to"
+      },
+      {
+        "triggers": [
+          " Environmental",
+          " of",
+          "’"
+        ],
+        "score": 58.5,
+        "context": " noise this late into the summer?⏎Robert Kent, Administrator of the Department of Environmental Protection’s Office of Mosquito Control Coordination says the age of insects is one"
+      }
+    ],
+    "promotes": [
+      " Rah",
+      " New",
+      "NJ",
+      "SequentialGroup",
+      " NJ"
+    ],
+    "demotes": [
+      "ukone",
+      ":✨",
+      "PyExc",
+      "ItemBackground",
+      "gina"
+    ],
+    "generated_description": "New Jersey — activates on mentions like “in New Jersey” / “of New Jersey”; sensitive to “New”/“NJ” tokens and promotes output tokens New / NJ."
+  },
+  {
+    "id": "21_5943_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.30007436871528625,
+    "top_activations": [
+      {
+        "triggers": [
+          " =",
+          " City",
+          " Capital"
+        ],
+        "score": 76.5,
+        "context": "<bos>Statistics & Facts:⏎- Capital City = Freetown⏎- Population = 5,245,695⏎- Official and Recognized Languages"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " a",
+          " "
+        ],
+        "score": 57.5,
+        "context": " a 3,000-year-old temple, archaeologists say.⏎Israel's Antiquities Authority said ruins of a structure were found at Tel Mot"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " to"
+        ],
+        "score": 54.0,
+        "context": " spectral landscape of the beachheads; the reception GIs enjoyed en route to the capital; the jubilant liberation of Paris itself.⏎As presented here, in"
+      },
+      {
+        "triggers": [
+          " in",
+          " ",
+          "9"
+        ],
+        "score": 54.0,
+        "context": " 9, several thousand people joined hands and encircled the U.S. Capitol in an effort to encourage action to relieve the crushing burden of debt on the world"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " partnership"
+        ],
+        "score": 52.0,
+        "context": " of partnership. The Partnership was formalised in⏎October 1998 in a national launch by then Deputy President Thabo⏎Mbeki, and"
+      }
+    ],
+    "promotes": [
+      " Toronto",
+      " Sydney",
+      " Dublin",
+      " London",
+      " Nairobi"
+    ],
+    "demotes": [
+      " InputDecoration",
+      "BeforeClass",
+      " EINVAL",
+      "unan",
+      "ScopeManager"
+    ],
+    "generated_description": "Capital city — activates on \"capital\"/\"capital city\"/related place mentions; pushes common city/capital names (Toronto, Sydney, Dublin, London, Nairobi)."
+  },
+  {
+    "id": "22_4999_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.3531687259674072,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          " and",
+          ","
+        ],
+        "score": 55.0,
+        "context": " the New York Sun.⏎Cities as large as New York, Boston, Chicago, St. Louis, and Denver have adopted living wages, as well as towns"
+      },
+      {
+        "triggers": [
+          " in",
+          ",",
+          " called"
+        ],
+        "score": 46.0,
+        "context": ", called the Central Jurisdiction. The first General Conference of the new Central Jurisdiction met in St. Louis, Missouri from June 18 to 23,"
+      },
+      {
+        "triggers": [
+          "-",
+          "-",
+          " or"
+        ],
+        "score": 56.0,
+        "context": " out market entry by holding monopolies over routes like New York-Los Angeles or Miami-Chicago. While airports tried to charm the CAB into approving new services and routes"
+      },
+      {
+        "triggers": [
+          " in",
+          " at",
+          " Info"
+        ],
+        "score": 47.0,
+        "context": " Info During a Hurricane Impact” at the 2010 National Hurricane Conference in Orlando, Fla. on March 30, 2010"
+      },
+      {
+        "triggers": [
+          " and",
+          ",",
+          " and"
+        ],
+        "score": 48.75,
+        "context": "Mex cuisine and a distinctly Latino atmosphere.⏎The urban cities of Austin, Dallas, and Houston host technological corporations and oil companies, while Fort Worth and San Antonio"
+      }
+    ],
+    "promotes": [
+      "nocache",
+      "WebMethod",
+      "EDEFAULT",
+      "存于互联网档案馆",
+      "GEBURTSDATUM"
+    ],
+    "demotes": [
+      " SafeMath",
+      " onOptions",
+      "lež",
+      "awtextra",
+      " sumpay"
+    ],
+    "generated_description": "list separator (comma/and) — activates on commas and conjunctions (and/or/in/at) that join city/place names or items in lists; signals list continuation before location tokens"
+  },
+  {
+    "id": "22_4652_9",
+    "layer": 22,
+    "ctx_idx": 9,
+    "influence_score": 0.31107237935066223,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " and",
+          " in"
+        ],
+        "score": 127.0,
+        "context": " day of the Haddington horse-drawn street car in 1876 at 66th Street and Haverford Road. Many of the horse-"
+      },
+      {
+        "triggers": [
+          " near",
+          " ",
+          " Philadelphia"
+        ],
+        "score": 109.0,
+        "context": " just 10 miles (15 km) southwest of Philadelphia, Penn., near 39.8 North and 75.4 West. Sandy"
+      },
+      {
+        "triggers": [
+          "1",
+          " to",
+          " the"
+        ],
+        "score": 131.0,
+        "context": " the business. Samuel then went to Philadelphia and managed the company warehouses. In 1842, Samuel Whitney became a partner with his brother, Thomas,"
+      },
+      {
+        "triggers": [
+          " in",
+          "In",
+          " Bishop"
+        ],
+        "score": 125.0,
+        "context": " Bishop Doane.⏎In 1849, Samuel and Thomas Whitney had a new home built in Glassborough. It, too, was constructed with"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " the"
+        ],
+        "score": 140.0,
+        "context": " own place in the wider cultural landscape.⏎With a permanent home in the heart of Southern New Jersey, and a⏎traveling museum with access to over 3"
+      }
+    ],
+    "promotes": [
+      "twimg",
+      "tagHelperRunner",
+      " intptr",
+      "ագրություններ",
+      " nahilalakip"
+    ],
+    "demotes": [
+      " terk",
+      "bParam",
+      "ExtendWith",
+      "ENIX",
+      "cznego"
+    ],
+    "generated_description": "say city/place — activates on prepositions/articles before location names; signals an upcoming place token (Philadelphia, Glassboro/Glassborough, street/place names)."
+  },
+  {
+    "id": "23_12174_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.28062552213668823,
+    "top_activations": [
+      {
+        "triggers": [
+          " Jersey",
+          " Curriculum",
+          " Core"
+        ],
+        "score": 81.0,
+        "context": ". Performance measures are designed to gauge how the District goals, objectives and the New Jersey Core Curriculum Standards are met. Annual results of assessments were used to compare student"
+      },
+      {
+        "triggers": [
+          " across",
+          " the",
+          ","
+        ],
+        "score": 79.5,
+        "context": " other supplies are ordered.⏎It’s late June, and while most schools across the state are packing up for the year, educators at Valley Settlement House in"
+      },
+      {
+        "triggers": [
+          ",",
+          " (",
+          " N"
+        ],
+        "score": 81.0,
+        "context": " , The Record (Hackensack N.J.)⏎HACKENSACK, N.J. — She lives in a world no one else can enter"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          "1"
+        ],
+        "score": 92.5,
+        "context": " Division of Fish and Wildlife began⏎to implement strategies to help the bald eagle population in 1982,⏎after decades of impacts from hunting and pesticide"
+      },
+      {
+        "triggers": [
+          " of",
+          " south",
+          " popular"
+        ],
+        "score": 101.0,
+        "context": " east coast, but biologists are just beginning to realize how popular the the south shore of Long Island is with the primitive arthropods, says Kim McKown, the"
+      }
+    ],
+    "promotes": [
+      "ViewInit",
+      "ilions",
+      "DebuggerNonUser",
+      "RefNanny",
+      "BeginContext"
+    ],
+    "demotes": [
+      " NJ",
+      " Jersey",
+      "Jersey",
+      "NJ",
+      " Illinois"
+    ],
+    "generated_description": "New Jersey context — activates on mentions of New Jersey (Jersey, N.J., NJ), towns/shore lines; consistently suppresses output tokens like “NJ”/“Jersey.”"
+  },
+  {
+    "id": "23_3004_9",
+    "layer": 23,
+    "ctx_idx": 9,
+    "influence_score": 0.35576820373535156,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " explains",
+          " Stephanie"
+        ],
+        "score": 68.5,
+        "context": " explains Stephanie Kirschbaum, OD, a VSP doctor at Doctors Chan, Moon & Kirschbaum in Grass Valley, CA. \"And just like our skin,"
+      },
+      {
+        "triggers": [
+          ",",
+          " West",
+          "’"
+        ],
+        "score": 67.0,
+        "context": " Against Time⏎By John F. McKeon⏎State Assemblyman and⏎Mayor, West Orange⏎Preserving New Jersey’s remaining open space is critical for"
+      },
+      {
+        "triggers": [
+          " including",
+          " but",
+          " of"
+        ],
+        "score": 74.5,
+        "context": " of California that are are home to the most rapid growth of solar power. Cities including Los Angeles have tripled their solar capacity since 2009, but"
+      },
+      {
+        "triggers": [
+          "⏎",
+          " Avenue",
+          "⏎"
+        ],
+        "score": 61.5,
+        "context": " 2013⏎- Glass Axis⏎1341 Norton Avenue⏎Columbus, OH 43212⏎- Thursday, December "
+      },
+      {
+        "triggers": [
+          " nearby",
+          " in",
+          " to"
+        ],
+        "score": 77.0,
+        "context": " Studio moved to a new 72,000 square foot studio in nearby Moonachie.⏎2. There will be 56 balloons in the"
+      }
+    ],
+    "promotes": [
+      " teme",
+      "IR",
+      " Her",
+      " IR",
+      " RTI"
+    ],
+    "demotes": [
+      " propOrder",
+      "oredCriteria",
+      " EnglishChoose",
+      "èlement",
+      "Hozzáférés"
+    ],
+    "generated_description": "say PLACE — activates on prepositions/commas/articles (in, to, including, , , Avenue) immediately before city/place names; signals upcoming location token."
+  },
+  {
+    "id": "21_3278_9",
+    "layer": 21,
+    "ctx_idx": 9,
+    "influence_score": 0.31649285554885864,
+    "top_activations": [
+      {
+        "triggers": [
+          " in",
+          " of",
+          " Southern"
+        ],
+        "score": 95.0,
+        "context": " to carve their own place in the wider cultural landscape.⏎With a permanent home in the heart of Southern New Jersey, and a⏎traveling museum with access to"
+      },
+      {
+        "triggers": [
+          "1",
+          "boro",
+          " H"
+        ],
+        "score": 107.0,
+        "context": " Heston Whitney. Samuel was born in Glassboro on July 7, 1819, to Ebenezer and Bathsheba Whitney. He was the"
+      },
+      {
+        "triggers": [
+          "0",
+          " explosives",
+          "."
+        ],
+        "score": 72.5,
+        "context": " explosives. One barge moored against the pier alone carried 100,000 pounds of dynamite and cases of detonating fuses.⏎Although guards were"
+      },
+      {
+        "triggers": [
+          "'",
+          " informed",
+          " decisions"
+        ],
+        "score": 78.0,
+        "context": " informed decisions regarding the bay, but could be a model of action for the state's other impaired bodies of water.⏎While we gather data for long-"
+      },
+      {
+        "triggers": [
+          "'",
+          " in",
+          " H"
+        ],
+        "score": 97.5,
+        "context": " Heston.⏎After being educated in a private school, Samuel entered Samuel Reeve's store in Haddonfield, at age 15, to learn"
+      }
+    ],
+    "promotes": [
+      "Билгалдахарш",
+      "存于互联网档案馆",
+      " tartalomajánló",
+      " GoogleFonts",
+      " Shogun"
+    ],
+    "demotes": [
+      "IsContent",
+      "jangkau",
+      " tesoro",
+      "'])->",
+      " gratuitement"
+    ],
+    "generated_description": "New Jersey place — activates on locality tokens and nearby prepositions before town/region mentions (Glassboro, Haddonfield, Southern New Jersey; often on “in”/“of”/“state’s”)"
+  },
+  {
+    "id": "24_5999_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3518640995025635,
+    "top_activations": [
+      {
+        "triggers": [
+          " Network",
+          " searches",
+          " Translations"
+        ],
+        "score": 105.5,
+        "context": " Web's Largest Resource for⏎Definitions & Translations⏎A Member Of The STANDS4 Network⏎Nearby & related entries:⏎Alternative searches for minch:"
+      },
+      {
+        "triggers": [
+          " .",
+          " .",
+          " ."
+        ],
+        "score": 96.5,
+        "context": " other, form a latin square (that is each row and each. . . .⏎How many different solutions can you find to this problem?⏎Arrange "
+      },
+      {
+        "triggers": [
+          " power",
+          " precision",
+          " could"
+        ],
+        "score": 103.5,
+        "context": ". Therefore, it would be a major breakthrough in cancer therapy if the power and precision of the immune system could be brought to bear against cancer.⏎Most e"
+      },
+      {
+        "triggers": [
+          "-",
+          " Terminology",
+          " types"
+        ],
+        "score": 125.5,
+        "context": "Secrets of Pawnless Endings) summarizing the research of endgame tablebases for several types of pawnless endings.⏎- 1 Terminology⏎- 2 Basic"
+      },
+      {
+        "triggers": [
+          " Solution",
+          "sey",
+          " *"
+        ],
+        "score": 98.5,
+        "context": "<bos>Biofuels Are Not the Solution⏎By Nnimmo Bassey *⏎The fact that agrofuels have triggered a new scramble for Africa is no longer news"
+      }
+    ],
+    "promotes": [
+      " doubtnut",
+      " ་་",
+      " Forumite",
+      " itſelf",
+      "^(@)"
+    ],
+    "demotes": [
+      " européennes",
+      " helyzet",
+      " industriels",
+      " pracovní",
+      " atuais"
+    ],
+    "generated_description": "Title/heading noun — activates on content words in titles, headings, menu links, or standalone list items (capitalized or standalone nouns like “Translations”, “Terminology”, “Solution”)"
+  },
+  {
+    "id": "24_6394_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3896663784980774,
+    "top_activations": [
+      {
+        "triggers": [
+          " at",
+          " Colorado",
+          "."
+        ],
+        "score": 57.0,
+        "context": ".⏎CREDIT: Tenio Popmintchev, JILA and University of Colorado at Boulder⏎Superman may make it seem easy, but it's actually difficult"
+      },
+      {
+        "triggers": [
+          " capital",
+          " of",
+          " from"
+        ],
+        "score": 46.5,
+        "context": " only about 40 miles (64.5 km) from the Scottish capital of Edinburgh, and sits right on the contested Scots-English border at the"
+      },
+      {
+        "triggers": [
+          " in",
+          " Illinois",
+          " to"
+        ],
+        "score": 55.0,
+        "context": " president in high school, and he received an athletic scholarship to the University of Illinois in 1959. He moved back to South Carolina after one year"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " Arizona"
+        ],
+        "score": 48.0,
+        "context": " – cannot both be defined precisely. This inherent property has left past attempts to witness quantum chaos fruitless.⏎But now Poul Jessen of the University of Arizona in"
+      },
+      {
+        "triggers": [
+          "⏎",
+          "⏎",
+          " Federal"
+        ],
+        "score": 47.0,
+        "context": " Federal Waters⏎New Rule Allows Petroleum Industry to Continue Dumping Toxins Into Ocean⏎SAN FRANCISCO— The Environmental Protection Agency today established a new requirement for oil and"
+      }
+    ],
+    "promotes": [
+      " InputDecoration",
+      "}$​",
+      "存于互联网档案馆",
+      "脚注の使い方",
+      "BeginContext"
+    ],
+    "demotes": [
+      " London",
+      " Jakarta",
+      "London",
+      " Madrid",
+      " Toronto"
+    ],
+    "generated_description": "say locative preposition — activates on at/of/in/to/from and similar; often appears immediately before place names, institutions, capitals, or locations."
+  },
+  {
+    "id": "24_633_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.33826541900634766,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          ",",
+          "For"
+        ],
+        "score": 73.5,
+        "context": " for state and federal money than smaller governments can.⏎For instance, Woodbridge Township, NJ (whose government represents 10 small towns) can afford to employ"
+      },
+      {
+        "triggers": [
+          " of",
+          " to",
+          " the"
+        ],
+        "score": 66.5,
+        "context": ", Puerto Rico and Canada.⏎The Seeing Eye moved to the Morristown area of New Jersey in 1931 and to its present Washington Valley campus"
+      },
+      {
+        "triggers": [
+          " in",
+          " at",
+          " of"
+        ],
+        "score": 68.0,
+        "context": " Garry Wheeler Stone describes metal detecting research done at the site of The Battle of Monmouth in New Jersey -- one of the longest and largest land battles of the Revolutionary War"
+      },
+      {
+        "triggers": [
+          " of",
+          " in",
+          " township"
+        ],
+        "score": 70.5,
+        "context": "993.⏎From 1988 to 1996, he held a variety of positions in the township of Teaneck in"
+      },
+      {
+        "triggers": [
+          " of",
+          "Because",
+          "."
+        ],
+        "score": 88.0,
+        "context": " seek grants from the state and federal governments for local projects.⏎Because the government of Woodbridge represents a larger number of people, they also have a stronger claim to"
+      }
+    ],
+    "promotes": [
+      "enschappelijke",
+      "出版年",
+      "Kep",
+      "WireFormat",
+      "RenderAtEndOf"
+    ],
+    "demotes": [
+      "tvguidetime",
+      "WebVitals",
+      " New",
+      "New",
+      "+:+"
+    ],
+    "generated_description": "say location — activates on prepositions/articles (in, of, to, the, for, because) immediately before place names, towns, states, or local-government mentions."
+  },
+  {
+    "id": "24_13277_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.28437235951423645,
+    "top_activations": [
+      {
+        "triggers": [
+          " to",
+          " compact",
+          " fluorescent"
+        ],
+        "score": 148.0,
+        "context": " item of the past in many cases and are incredibly energy inefficient compared to the new compact fluorescent light bulbs. While giving the same amount of light, they use less"
+      },
+      {
+        "triggers": [
+          " in",
+          " of",
+          " spend"
+        ],
+        "score": 144.0,
+        "context": " goose has become a common resident of Georgia. Practically all of the Canada geese seen in Georgia are resident birds, they are not migratory. These birds spend all year"
+      },
+      {
+        "triggers": [
+          " attended",
+          " of",
+          " famous"
+        ],
+        "score": 171.0,
+        "context": " in the UK - see Eton), founded in 1567. Some of the famous people who attended Rugby School include Alice in Wonderland's author Lewis"
+      },
+      {
+        "triggers": [
+          ",",
+          " capita",
+          " from"
+        ],
+        "score": 139.0,
+        "context": "9. According to the 2009 IMD World Competitiveness Yearbook, per capita GDP has gone from $578.11 in "
+      },
+      {
+        "triggers": [
+          " a",
+          " into",
+          " becoming"
+        ],
+        "score": 152.0,
+        "context": "-ovo-vegetarian, macrobiotic vegetarian and vegan.⏎For most people, becoming a demi-veg is usually the first step into vegetarianism because this diet"
+      }
+    ],
+    "promotes": [
+      " Ogni",
+      " Tutto",
+      " Oggi",
+      " Sopho",
+      " Cæsar"
+    ],
+    "demotes": [
+      " stället",
+      " vérit",
+      " mères",
+      " prêtres",
+      " genoux"
+    ],
+    "generated_description": "Preposition/article — activates on short function tokens (of, in, to, a, commas) that introduce noun/prepositional phrases; signals upcoming content words."
+  },
+  {
+    "id": "24_189_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.36569103598594666,
+    "top_activations": [
+      {
+        "triggers": [
+          " journal",
+          " of",
+          " the"
+        ],
+        "score": 37.5,
+        "context": " Institute of Technology, and his collaborators. Their research is published in the August issue of the journal Applied and Environmental Microbiology.⏎Mars, the Jovian moon,"
+      },
+      {
+        "triggers": [
+          " should",
+          " is",
+          "<bos>"
+        ],
+        "score": 33.5,
+        "context": "<bos>This information is intended for general information only and should not be considered as medical advice on the part of Health-Tourism.com. Any decision on medical treatments"
+      },
+      {
+        "triggers": [
+          " the",
+          " actual",
+          " but"
+        ],
+        "score": 45.0,
+        "context": ". Not just the type of fruit (orange, lemon, etc.), but the actual variety. For example, Valencia oranges will be ready to harvest later than navel"
+      },
+      {
+        "triggers": [
+          " a",
+          " use",
+          " usually"
+        ],
+        "score": 42.5,
+        "context": "When both clauses are of equal importance and can stand on their own, we usually use a full stop to separate them.⏎My toddler refuses to take a nap"
+      },
+      {
+        "triggers": [
+          " fewer",
+          " less",
+          " eat"
+        ],
+        "score": 45.0,
+        "context": " is it possible to lose weight without eating less food? The answer is to eat fewer calories, not less food, and this article shows you how.⏎No"
+      }
+    ],
+    "promotes": [
+      "<?>>",
+      "ñora",
+      "ándolos",
+      " \r",
+      " "
+    ],
+    "demotes": [
+      " ویکی‌پدیا",
+      "rungsseite",
+      "#+#",
+      " @\"/",
+      "awtextra"
+    ],
+    "generated_description": "Common short English words — activates on high‑frequency determiners/auxiliaries/conjunctions and other small tokens (the, of, is, a, but, should)."
+  },
+  {
+    "id": "24_15694_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3451872169971466,
+    "top_activations": [
+      {
+        "triggers": [
+          " between",
+          " on",
+          " and"
+        ],
+        "score": 36.5,
+        "context": " 27, 1953, was fought on the Korean Peninsula between North Korea and South Korea. North Korea was aided by China, and South"
+      },
+      {
+        "triggers": [
+          " from",
+          " New",
+          " separates"
+        ],
+        "score": 37.0,
+        "context": " Northumberland Strait is located on the east coast of Canada. It separates Prince Edward Island from New Brunswick and Nova Scotia.⏎The 12.7 kilometer ("
+      },
+      {
+        "triggers": [
+          " of",
+          " in",
+          " in"
+        ],
+        "score": 40.75,
+        "context": " 450,000 square kilometers in the Saharan Algeria Region in the extreme south of the country. The closest populated area near the park,"
+      },
+      {
+        "triggers": [
+          " in",
+          ",",
+          " of"
+        ],
+        "score": 35.5,
+        "context": ".⏎Currently Emery County, one of the 16 counties reporting Pertussis in Utah, has families dealing with the effects of this bacterial disease.⏎Pert"
+      },
+      {
+        "triggers": [
+          "2",
+          " of",
+          " from"
+        ],
+        "score": 37.5,
+        "context": " Morse recalls living through Quantrill's raid of LawrenceJuly 1, 2001⏎Abigail Prentice Barber graduated from Wheaton Seminary in Massachusetts in July"
+      }
+    ],
+    "promotes": [
+      " Louisiana",
+      " Pennsylvania",
+      " Kerala",
+      " Arizona",
+      " Michigan"
+    ],
+    "demotes": [
+      "Datuak",
+      "FieldBuilder",
+      "ensement",
+      "DoubleQuotes",
+      "CodeAttribute"
+    ],
+    "generated_description": "say state name — fires on prepositions/commas that introduce a geographic proper noun; tends to promote US state names (Pennsylvania, Louisiana, Arizona, Michigan) and similar places."
+  },
+  {
+    "id": "25_4717_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3867351710796356,
+    "top_activations": [
+      {
+        "triggers": [
+          "'",
+          " wrapped",
+          "’"
+        ],
+        "score": 332.0,
+        "context": " Got it Down?⏎Test your knowledge again:⏎Spring and Fall: What's Happening? Quiz⏎Think you’ve got your head wrapped around Spring"
+      },
+      {
+        "triggers": [
+          "'",
+          " number",
+          " planet"
+        ],
+        "score": 340.0,
+        "context": ",912 ways to say \"Where is the toilet, please?\" That's the number of languages known to be spoken by the peoples of planet Earth"
+      },
+      {
+        "triggers": [
+          " in",
+          " case",
+          " a"
+        ],
+        "score": 318.0,
+        "context": "9. The author concludes that laws reflect the attitudes of a society and the manner in which societal problems are resolved. In the case of Maryland, servant problems could"
+      },
+      {
+        "triggers": [
+          "'",
+          " ground",
+          " prognostic"
+        ],
+        "score": 338.0,
+        "context": " being the most popular nowadays, a groundhog as prognosticator. So, it's the weather is cloudy on this day, spring will come earlier, if"
+      },
+      {
+        "triggers": [
+          "According",
+          " gastro",
+          " higher"
+        ],
+        "score": 330.0,
+        "context": " including probiotics⏎for gastrointestinal complaints, are now widely recommended for children.⏎According to the survey findings:⏎Use of CAM was higher among teenagers (1"
+      }
+    ],
+    "promotes": [
+      " photolibrary",
+      " umbrella",
+      " penguin",
+      " witches",
+      " ་་"
+    ],
+    "demotes": [
+      " avoient",
+      " étoient",
+      " varandra",
+      " démocr",
+      " feroit"
+    ],
+    "generated_description": "word-start — activates on tokens that begin a new word/subword (after space or punctuation); fires on beginnings like “According”, “gastro”, “ground”, “in”, contractions’ ’s/’ve."
+  },
+  {
+    "id": "24_15013_9",
+    "layer": 24,
+    "ctx_idx": 9,
+    "influence_score": 0.3886983394622803,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          ",",
+          ","
+        ],
+        "score": 49.25,
+        "context": " on some of the biggest urban areas along and near the East Coast, including Boston, Providence, New York City, Philadelphia, Baltimore and Norfolk-Virginia Beach,"
+      },
+      {
+        "triggers": [
+          " in",
+          " researchers",
+          " reported"
+        ],
+        "score": 53.25,
+        "context": " researchers reported Tuesday at the annual meeting of the American Society of Tropical Medicine and Hygiene in Atlanta.⏎\"Showing that resistance is emerging outside of western Cambodia is a"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " President"
+        ],
+        "score": 56.75,
+        "context": " President George Bush and the nation’s governors jointly convened the first National Education Summit in 1989 in Charlottesville, Virginia. The summit led to the"
+      },
+      {
+        "triggers": [
+          " in",
+          " held",
+          ","
+        ],
+        "score": 57.25,
+        "context": " for years, researchers said last week at a meeting of the American Heart Association held in Orlando, Fla.⏎When a coronary artery becomes obstructed in a heart attack"
+      },
+      {
+        "triggers": [
+          " downtown",
+          " in",
+          " Smart"
+        ],
+        "score": 52.0,
+        "context": " Smart Grid?⏎Several hundred utility executives, government regulators, and engineers have gathered in downtown San Diego this week for a three-day conference that is focused on"
+      }
+    ],
+    "promotes": [
+      "spesies",
+      " automatiques",
+      " énergé",
+      " extérieurs",
+      " sauvages"
+    ],
+    "demotes": [
+      "الحياه",
+      "sidemargin",
+      "MigrationBuilder",
+      " beginnetje",
+      " المعيارى"
+    ],
+    "generated_description": "say place name — fires on lead-in tokens before locations (in, including, downtown, commas); signals/prefers an upcoming city/state/place token."
+  },
+  {
+    "id": "25_16302_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3981552720069885,
+    "top_activations": [
+      {
+        "triggers": [
+          ",",
+          " include",
+          ","
+        ],
+        "score": 92.0,
+        "context": " initiated, attracting other cells to join in the response.⏎To perform the test, blood must be drawn from the patient, and white blood cells (which include"
+      },
+      {
+        "triggers": [
+          " in",
+          " in",
+          " south"
+        ],
+        "score": 83.0,
+        "context": " the state. Many tropical and subtropical plants found in the Caribbean have their northern limit in south Florida.⏎“Forest Trees of Florida” has been a standard handbook"
+      },
+      {
+        "triggers": [
+          " said",
+          "gives",
+          " escape"
+        ],
+        "score": 92.0,
+        "context": " procedures and emergency medical treatment.⏎A NASA engineer who specializes in astronaut escape systems said Baumgartner's mission \"gives us a good foundation\" for improving the"
+      },
+      {
+        "triggers": [
+          " During",
+          " time",
+          " time"
+        ],
+        "score": 100.5,
+        "context": "5. This time he was successful in developing a car company that was profitable. During this time the Cadillac was introduced and became luxury car icon. Durant position as"
+      },
+      {
+        "triggers": [
+          " at",
+          " Base",
+          " in"
+        ],
+        "score": 81.0,
+        "context": " today by federal health officials shows that the decades-long case of drinking water contamination at Marine Corps Base Camp Lejeune in North Carolina is one of the worst on"
+      }
+    ],
+    "promotes": [
+      "IVOS",
+      "IENTE",
+      "ATIVO",
+      "EntityId",
+      "IMENTS"
+    ],
+    "demotes": [
+      "We",
+      "De",
+      "In",
+      "For",
+      "Can"
+    ],
+    "generated_description": "precedes Named Entity — activates on tokens that immediately come before proper names/places (said, in, Base, During, time, include), signals a following capitalized entity."
+  },
+  {
+    "id": "25_12274_9",
+    "layer": 25,
+    "ctx_idx": 9,
+    "influence_score": 0.3847135901451111,
+    "top_activations": [
+      {
+        "triggers": [
+          " of",
+          " of",
+          " of"
+        ],
+        "score": 62.0,
+        "context": " greatest bituminous coal-fields of Central Pennsylvania, the Clearfield district, the town of Clearfield being about forty miles to the northwest. Northeast of Tyrone, this"
+      },
+      {
+        "triggers": [
+          " in",
+          " System",
+          ","
+        ],
+        "score": 86.0,
+        "context": " surgery, George Argyropoulos, PhD, of the Geisinger Health System in Danville, Pa., and co-authors reported online in The Lancet.⏎"
+      },
+      {
+        "triggers": [
+          "In",
+          " a",
+          " \""
+        ],
+        "score": 58.0,
+        "context": " a \"cracker,\" could bring billions of investment dollars and thousands of jobs.⏎In Wheeling, W. Va., the spartan headquarters for the Upper Ohio River Valley"
+      },
+      {
+        "triggers": [
+          " and",
+          " near",
+          " in"
+        ],
+        "score": 82.0,
+        "context": " eaglets were relocated to hacking sites on the Susquehanna River near Harrisburg and in the northeastern part of the state.⏎By 1988, the"
+      },
+      {
+        "triggers": [
+          " in",
+          " including",
+          " of"
+        ],
+        "score": 65.0,
+        "context": "county area, including Northumberland County, banded together to form an organization that raised eyebrows in some circles. The idea was to protect policemen who, in the words of"
+      }
+    ],
+    "promotes": [
+      "XmlAccessorType",
+      " rowspan",
+      "Przypisy",
+      " كومونز",
+      " desem"
+    ],
+    "demotes": [
+      "PerformLayout",
+      "HtmlAttribute",
+      "Hentet",
+      "writeFieldEnd",
+      "setVerticalGroup"
+    ],
+    "generated_description": "say place name — activates on prepositions/articles that introduce locations (in, near, of, a, the), just before city/county/state names."
+  }
+]
