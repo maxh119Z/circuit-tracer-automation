@@ -51,35 +51,27 @@ For each `test_graphs/<slug>.json`:
 2. Build **clerps**: for every `node_id` that appears in a supernode and has a non-empty `clerp`
    in the graph → `[node_id, clerp]`. (Nodes without our clerp, e.g. `Emb:` nodes, left native.)
 3. `graph_id = <prefix>-<slug>` (globally unique + deterministic).
-4. `get(model, graph_id)` → reuse if present; else `generate(prompt, graph_id, node_threshold=…)`.
-5. `subgraph/save(...)` with our pinnedIds/supernodes/clerps (+ `overwriteId` if we saved before)
-   → `subgraphId`.
-6. `url = /{model}/graph?slug={graph_slug}&subgraph={subgraphId}`.
+4. `get(model, graph_id)` → reuse if present; else `generate(prompt, graph_id)` (Neuronpedia's
+   default generation settings — we don't pass thresholds).
+5. `subgraph/save(...)` with our `pinnedIds` + `supernodes` + `clerps` → `subgraphId`. **The saved
+   subgraph holds the whole view**, so nothing else needs to travel in the URL.
+6. `url = /{model}/graph?slug={graph_slug}&subgraph={subgraphId}` — short link that loads the saved
+   pins + supernodes + clerps. No long parameterized URL to build.
 7. Append row → CSV. **Write incrementally** so a crash mid-batch keeps progress.
 
 ---
 
 ## Script + CLI
 
-`viewing_graph/build_views.py --source <sel> [--name N] [--slug-prefix P] [--node-threshold T] [--limit N] [--dry-run]`
+`viewing_graph/build_views.py --source <sel> [--name N] [--slug-prefix P] [--limit N]`
 
 - **`--source`** (a `resolve_source()` selector — the "which graphs" function):
   - registered name (`capital` / `gemma` / `paper`) → predefined local dir or HF subpath,
   - a local directory of `<slug>.json`,
   - `hf:gemma-2/<set>/test_graphs` → `snapshot_download` from `circuit-tracer-automation/pipeline_automation`.
-- **Output** → this folder: `links_<name>.csv` (`slug, prompt, graph_slug, subgraph_id, url`) plus a
-  `state_<name>.json` mapping `slug → {graph_id, subgraph_id}` for idempotent re-runs.
+- **Output** → `links_<name>.csv` (`slug, prompt, graph_slug, subgraph_id, url`). The CSV *is* the
+  state: re-runs read it back and skip slugs already done.
 - Lightweight: only reads prompt + qParams; never touches the big nodes/links.
-
----
-
-## Fallback: raw URL (no save)
-
-For one-offs / when you don't want to write to your account: build the link with raw query params
-`pinnedIds` + `supernodes` + `clerps` + `pruningThreshold` + `densityThreshold` (URL-encode with
-`quote(..., safe='')`). Works, but **capped ~8 KB** — a ~24-feature graph with full clerps is
-~7.8 KB, so clerps overflow on larger graphs. Use `subgraph/save` as the default; this only for
-small/manual cases.
 
 ---
 
@@ -87,8 +79,8 @@ small/manual cases.
 
 1. **Node-id match** needs identical tokenization + same transcoders — confirmed for capitals with
    default gemma-2-2b generation; spot-check per dataset.
-2. **Generation pruning may drop supernode members** → they silently don't group. Mitigate with a
-   permissive `nodeThreshold` matching our graphs (`metadata.node_threshold` = 0.8).
+2. **Generation pruning may drop supernode members** → they silently don't group. We use
+   Neuronpedia's default generation settings; any dropped members just won't appear (acceptable).
 3. **Prompt ≤ 64 tokens** — capitals fine; wikipedia/mquake may exceed → length-check/skip.
 4. **gemma-2-2b only.**
 5. **Slug globally unique** → prefix; deterministic id → idempotent re-runs (get / overwriteId).
@@ -102,8 +94,6 @@ small/manual cases.
 
 ## Open tweak points (for you)
 
-- Generation params: pass `node_threshold=0.8` (match our graphs) or leave default (worked)?
 - Slug-prefix scheme (e.g. your Neuronpedia handle / project tag).
-- `displayName` for the saved subgraph (e.g. the slug, or "ADAG-SLT capitals").
-- Drop `Emb:` / `Output:` supernodes from the view? (least interesting, most collision-prone.)
+- `displayName` for the saved subgraph (e.g. the slug).
 - Final CSV columns.
