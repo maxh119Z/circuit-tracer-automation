@@ -24,7 +24,7 @@ Sources — `--source` picks a `test_graphs` folder and names the CSV:
     Note on wikipedia_context: 49 of its 500 prompts exceed the 64-token generate cap (up to 106 tokens). Those are refused by load_view before any API call; 451 are usable.
 Additional Srouce
     source                                  graphs  CSV
-    wikipedia_interesting (from our paper). 2       links_wikipedia_interesting.csv
+    wiki_interesting (from our paper). 2       links_wikipedia_interesting.csv
 
 Graphs are downloaded one at a time, as each is processed, because they are
 large — a bulk pull of wikipedia would cost 43 GB before the first graph is even
