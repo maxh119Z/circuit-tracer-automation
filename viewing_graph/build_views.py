@@ -45,6 +45,9 @@ Usage:
     # generate the whole source (resumes from the CSV if interrupted)
     python viewing_graph/build_views.py --source capital
 
+    # generate only wikipedia interesting graphs
+    python viewing_graph/build_views.py --source wiki_interesting
+
 Note: Neuronpedia rate-limits generation to roughly 30 graphs an hour. So 600 graphs will take 20 hours.
 """
 
