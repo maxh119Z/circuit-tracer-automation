@@ -15,7 +15,7 @@ Neuronpedia what it stored and compares it to the graph JSON we built it from:
 
 Usage:
     python viewing_graph/verify_views.py                      # round-trip check, all rows
-    python viewing_graph/verify_views.py --limit 1 --check-nodes
+    python viewing_graph/verify_views.py --first-n 1 --check-nodes
 """
 
 from __future__ import annotations
@@ -102,7 +102,7 @@ def main(argv: list[str] | None = None) -> int:
                         help="Links CSV to verify (default: links_<source>.csv).")
     parser.add_argument("--graphs-dir", type=Path, default=None,
                         help="Local test_graphs dir (default: fetch each graph from HF).")
-    parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--first-n", type=int, default=None)
     parser.add_argument("--model-id", default=MODEL_ID)
     parser.add_argument("--check-nodes", action="store_true",
                         help="Also download each generated graph and report supernode coverage.")
@@ -115,8 +115,8 @@ def main(argv: list[str] | None = None) -> int:
         raise SystemExit(f"{args.csv} does not exist — run build_views.py first.")
     with args.csv.open(newline="", encoding="utf-8") as fh:
         rows = list(csv.DictReader(fh))
-    if args.limit:
-        rows = rows[: args.limit]
+    if args.first_n:
+        rows = rows[: args.first_n]
     if not rows:
         raise SystemExit(f"{args.csv} has no rows.")
 
