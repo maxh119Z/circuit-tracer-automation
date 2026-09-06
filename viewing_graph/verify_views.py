@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import sys
 from pathlib import Path
 from urllib.request import urlopen
@@ -30,12 +31,14 @@ from urllib.request import urlopen
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_views import (  # noqa: E402
+    DEFAULT_SOURCE,
     MODEL_ID,
-    SOURCE,
+    load_env_file,
     VIEWING_DIR,
     GraphView,
     Neuronpedia,
-    download_graphs,
+    SOURCES,
+    fetch_graph_file,
     load_view,
     log,
 )
@@ -93,14 +96,20 @@ def main(argv: list[str] | None = None) -> int:
         description="Verify the saved Neuronpedia views behind links_<source>.csv.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
-    parser.add_argument("--csv", type=Path, default=VIEWING_DIR / f"links_{SOURCE}.csv")
+    parser.add_argument("--source", default=DEFAULT_SOURCE, choices=sorted(SOURCES),
+                        help="Which test_graphs folder the links were built from.")
+    parser.add_argument("--csv", type=Path, default=None,
+                        help="Links CSV to verify (default: links_<source>.csv).")
     parser.add_argument("--graphs-dir", type=Path, default=None,
-                        help="Local test_graphs dir (default: the HF snapshot).")
+                        help="Local test_graphs dir (default: fetch each graph from HF).")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--model-id", default=MODEL_ID)
     parser.add_argument("--check-nodes", action="store_true",
                         help="Also download each generated graph and report supernode coverage.")
     args = parser.parse_args(argv)
+    load_env_file()
+    if args.csv is None:
+        args.csv = VIEWING_DIR / f"links_{args.source}.csv"
 
     if not args.csv.exists():
         raise SystemExit(f"{args.csv} does not exist — run build_views.py first.")
@@ -111,14 +120,20 @@ def main(argv: list[str] | None = None) -> int:
     if not rows:
         raise SystemExit(f"{args.csv} has no rows.")
 
-    graphs_dir = args.graphs_dir or download_graphs(SOURCE, token=None)
+    subpath = SOURCES[args.source]
     np_client = Neuronpedia()
+
+    def local_graph(slug: str) -> Path:
+        """The graph JSON for a slug — from --graphs-dir, else fetched from HF."""
+        if args.graphs_dir:
+            return args.graphs_dir / f"{slug}.json"
+        return fetch_graph_file(f"{subpath}/{slug}.json", os.environ.get("HF_TOKEN"))
 
     ok, bad = 0, 0
     for index, row in enumerate(rows, 1):
         slug, graph_slug = row["slug"], row["graph_slug"]
         try:
-            local = load_view(graphs_dir / f"{slug}.json")
+            local = load_view(local_graph(slug))
             saved = fetch_saved_subgraph(np_client, args.model_id, graph_slug, row["subgraph_id"])
             if saved is None:
                 raise ValueError(f"subgraph {row['subgraph_id']} not found on {graph_slug}")

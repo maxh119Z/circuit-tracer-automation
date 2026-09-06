@@ -10,7 +10,7 @@ supernodes + clerps) onto it as a subgraph. The share URL is short and stable:
     https://neuronpedia.org/{model}/graph?slug={graph_slug}&subgraph={subgraph_id}
 
 Pipeline, per graph:
-  1. Pull `gemma-2/capital/test_graphs/*` from the HF dataset (once, up front).
+  1. Fetch the graph JSON from the HF dataset (one file at a time — see below).
   2. Read `metadata.prompt` (keep the leading `<bos>`) + `qParams`
      (`pinnedIds`, `supernodes`), and reshape node clerps -> [[node_id, clerp], ...].
   3. `get(model, graph_slug)` -> reuse if it already exists, else `generate(...)`.
@@ -18,19 +18,45 @@ Pipeline, per graph:
   5. Append `slug, prompt, graph_slug, subgraph_id, url` to the CSV — incrementally,
      so a crash mid-batch keeps progress and a re-run resumes.
 
+Sources — `--source` picks a `test_graphs` folder and names the CSV:
+
+    source             graphs   median each   to download   CSV
+    capital               100         47 MB        5.0 GB   links_capital.csv
+    math                  200         26 MB        5.2 GB   links_math.csv
+    neuronpedia           105          5 MB        0.5 GB   links_neuronpedia.csv
+    wikipedia             500         86 MB       42.9 GB   links_wikipedia.csv
+    wikipedia_context     500        113 MB       51.3 GB   links_wikipedia_context.csv
+
+  Notes on the two big sets:
+    - wikipedia's folder also holds 400 `.json.bak` backups (33 GB). They are not
+      graphs and are never downloaded — only `*.json` is listed.
+    - wikipedia_context prompts carry a leading context sentence, so its graphs
+      are ~31% larger than plain's, and 49 of its 500 prompts exceed the
+      64-token generate cap (up to 106 tokens). Those are refused by load_view
+      before any API call; 451 are usable.
+
+Graphs are downloaded one at a time, as each is processed, because they are
+large — a bulk pull of wikipedia would cost 43 GB before the first graph is even
+looked at, and would ignore --limit. Use --discard-downloads on the big sets to
+keep peak disk at one graph instead of the whole set.
+
 Auth:
-    HF_TOKEN             pull graphs from HuggingFace (or a cached `hf auth login`)
+    HF_TOKEN             pull graphs from HuggingFace (optional — dataset is public)
     NEURONPEDIA_API_KEY  generate graphs + save subgraphs (neuronpedia.org/account)
 
 Usage:
-    # checkpoint (a): pull the graphs and report what is readable
-    python viewing_graph/build_views.py --download-only
+    # what is in a source, without generating anything
+    python viewing_graph/build_views.py --source wikipedia --dry-run --limit 5
 
-    # checkpoints (b)/(c): one graph end-to-end
-    python viewing_graph/build_views.py --slug-prefix slt --limit 1
+    # a few links from one source
+    python viewing_graph/build_views.py --source math --limit 10
 
-    # checkpoint (d): the full capitals batch
-    python viewing_graph/build_views.py --slug-prefix slt
+    # the whole source (resumes from the CSV if interrupted)
+    python viewing_graph/build_views.py --source capital
+
+Note on throughput: Neuronpedia rate-limits generation to roughly 30 graphs an
+hour, and a 429 is waited out rather than failed, so a full source takes about
+(graphs / 30) hours. Then check the result with `verify_views.py --source X`.
 """
 
 from __future__ import annotations
@@ -45,7 +71,7 @@ import sys
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Callable, Iterable, TypeVar
+from typing import Any, Callable, TypeVar
 
 VIEWING_DIR = Path(__file__).resolve().parent
 REPO_ROOT = VIEWING_DIR.parent
@@ -56,9 +82,27 @@ REPO_ROOT = VIEWING_DIR.parent
 
 HF_REPO_ID = "circuit-tracer-automation/pipeline_automation"
 
-# MVP is capitals only. P2 adds the `--source` switch; only this subpath changes.
-SOURCE = "capital"
-HF_SUBPATH = "gemma-2/{source}/test_graphs"
+# Each source is just a different folder of `test_graphs/` in the same HF
+# dataset — the pipeline itself is identical. `--source X` writes `links_X.csv`.
+SOURCES = {
+    "capital": "gemma-2/capital/test_graphs",
+    "math": "gemma-2/math_problems/test_graphs",
+    "neuronpedia": "gemma-2/neuronpedia/test_graphs",
+    "wikipedia": "gemma-2/wikipedia/test_graphs_plain",
+    "wikipedia_context": "gemma-2/wikipedia_context/test_graphs",
+}
+DEFAULT_SOURCE = "capital"
+HF_REPO_TYPE = "dataset"
+
+# Filename globs limiting which graphs in a source we process. The neuronpedia
+# folder holds two things: our annotated runs (`*_ours*`) and the 15 original
+# Neuronpedia replication graphs they were derived from. The originals are the
+# human-curated baseline the validation sweep scores against — their groupings
+# live in `artifacts_neuronpedia/<slug>/manual_groups.json`, not in qParams — so
+# they are not ours to publish. Override with --include "*".
+SOURCE_INCLUDE = {
+    "neuronpedia": "*_ours*",
+}
 
 # Neuronpedia only supports gemma-2-2b for native generation.
 MODEL_ID = "gemma-2-2b"
@@ -82,9 +126,10 @@ DEFAULT_RATE_LIMIT_ATTEMPTS = 15
 
 # Neuronpedia slugs are globally unique across all users *and* `generate` is
 # unauthenticated, so any slug can already be held by someone else. Ours carry a
-# project prefix: `ct-slt-v1-<our slug>`. All 100 capital targets were free under
-# this prefix; `ct-slt` was not (albuquerque was taken).
-SLUG_PREFIX = "ct-slt-v1"
+# project prefix: `llm-slt-<our slug>`. Verified free for all capital and math
+# targets. A slug is fixed at generation — Neuronpedia has no rename route — so
+# changing this means regenerating every graph.
+SLUG_PREFIX = "llm-slt"
 
 CSV_FIELDS = ["slug", "prompt", "graph_slug", "subgraph_id", "url"]
 FAILURE_FIELDS = ["slug", "stage", "error"]
@@ -107,6 +152,7 @@ class GraphView:
 
     slug: str
     prompt: str
+    prompt_token_count: int
     pinned_ids: list[str]
     supernodes: list[list[str]]
     clerps: list[list[str]] = field(default_factory=list)
@@ -159,9 +205,21 @@ def load_view(path: Path, include_pinned_clerps: bool = False) -> GraphView:
         data = json.load(fh)
 
     metadata = data.get("metadata") or {}
-    prompt = metadata.get("prompt")
+    prompt = (metadata.get("prompt") or "").strip()
+
+    # `prompt_tokens` is what the model actually ran, so it wins over
+    # `metadata.prompt`, which is a display string some sets have annotated —
+    # every `_ours` graph in the neuronpedia set carries a variant tag like
+    # "[ours cap100]" appended to it. Generating from that text would build a
+    # graph for a different prompt, whose node_ids none of our supernodes or
+    # clerps would match, and the broken view would look fine until opened.
+    tokenized = "".join(metadata.get("prompt_tokens") or [])
+    if tokenized and prompt and tokenized != prompt:
+        log.warning("%s: metadata.prompt disagrees with prompt_tokens — using the "
+                    "tokenized prompt (%r, not %r)", path.name, tokenized, prompt)
+    prompt = tokenized or prompt
     if not prompt:
-        raise ValueError("metadata.prompt is missing or empty")
+        raise ValueError("metadata.prompt and metadata.prompt_tokens are both missing")
 
     q_params = data.get("qParams") or {}
     supernodes = _as_supernode_list(q_params.get("supernodes"))
@@ -170,6 +228,10 @@ def load_view(path: Path, include_pinned_clerps: bool = False) -> GraphView:
     view = GraphView(
         slug=metadata.get("slug") or path.stem,
         prompt=prompt,
+        # Our graphs carry the prompt already tokenized by the same tokenizer
+        # Neuronpedia uses, so the generate endpoint's 64-token cap can be
+        # checked for free, before spending an API call on a certain rejection.
+        prompt_token_count=len(metadata.get("prompt_tokens") or []),
         pinned_ids=pinned_ids,
         supernodes=supernodes,
         pruning_threshold=_as_float(q_params.get("pruningThreshold")),
@@ -375,48 +437,93 @@ class Neuronpedia:
 # HuggingFace
 # ---------------------------------------------------------------------------
 
-def download_graphs(source: str, token: str | None, repo_id: str = HF_REPO_ID) -> Path:
-    """Pull `gemma-2/<source>/test_graphs/*` and return the local directory."""
-    from huggingface_hub import snapshot_download
+def _hf(call, token):
+    """Run an HF call with the token if there is one, else anonymously.
 
-    subpath = HF_SUBPATH.format(source=source)
-
-    # (repo_type, token) pairs, tried in order. The dataset is public, so a stale
-    # cached login must not block the pull: HF answers 401 and then quietly falls
-    # back to whatever is already in the local cache, so we check for files
-    # ourselves rather than trusting the call to raise, and retry anonymously.
-    # `token=False` is what disables the cached-login lookup.
-    attempts: list[tuple[str, str | bool | None]] = [
-        ("dataset", token or False), ("model", token or False),
-    ]
-    if token:
-        attempts.append(("dataset", False))
-
+    The dataset is public, and a stale cached login 401s (reported as "repo not
+    found") rather than degrading gracefully — so anonymous is always the last
+    resort.
+    """
     last_error: Exception | None = None
-    for repo_type, attempt_token in attempts:
-        label = f"{repo_type} repo" + ("" if attempt_token else ", anonymous")
+    for attempt_token in ([token, False] if token else [False]):
         try:
-            log.info("Pulling %s/%s from HF (%s)…", repo_id, subpath, label)
-            local_root = snapshot_download(
-                repo_id=repo_id,
-                repo_type=repo_type,
-                allow_patterns=f"{subpath}/*",
-                token=attempt_token,
-            )
-        except Exception as exc:  # noqa: BLE001 — try the next (repo_type, token) pair
+            return call(attempt_token)
+        except Exception as exc:  # noqa: BLE001 — fall through to anonymous
             last_error = exc
-            log.debug("Not readable as a %s: %s", label, exc)
-            continue
-
-        graphs_dir = Path(local_root) / subpath
-        if any(graphs_dir.glob("*.json")):
-            return graphs_dir
-        log.debug("No graph JSONs under %s (%s)", graphs_dir, label)
-
     raise SystemExit(
-        f"Could not pull {repo_id}/{subpath} from HuggingFace. "
-        f"Set a valid HF_TOKEN (or run `hf auth login`).\nLast error: {last_error}"
+        f"HuggingFace request failed. Set a valid HF_TOKEN (or run `hf auth login`).\n"
+        f"Last error: {last_error}"
     )
+
+
+def list_source_files(source: str, token: str | None = None,
+                      include: str | None = None) -> list[str]:
+    """Repo-relative paths of a source's graph JSONs, sorted, without downloading them.
+
+    `include` is a filename glob; it defaults to the source's entry in
+    SOURCE_INCLUDE, and "*" means everything.
+    """
+    import fnmatch
+
+    from huggingface_hub import list_repo_files
+
+    try:
+        subpath = SOURCES[source]
+    except KeyError:
+        raise SystemExit(
+            f"unknown --source {source!r} (known: {', '.join(sorted(SOURCES))})"
+        ) from None
+
+    everything = _hf(
+        lambda t: list_repo_files(HF_REPO_ID, repo_type=HF_REPO_TYPE, token=t), token
+    )
+    files = sorted(
+        p for p in everything
+        if p.startswith(f"{subpath}/") and p.endswith(".json")
+        and p.rsplit("/", 1)[-1] not in NON_GRAPH_FILENAMES
+    )
+    if not files:
+        raise SystemExit(f"No graph JSONs found under {subpath} in {HF_REPO_ID}")
+
+    pattern = include if include is not None else SOURCE_INCLUDE.get(source)
+    if pattern and pattern != "*":
+        kept = [p for p in files if fnmatch.fnmatch(p.rsplit("/", 1)[-1], f"{pattern}.json")]
+        if not kept:
+            raise SystemExit(f"--include {pattern!r} matched none of the {len(files)} "
+                             f"graphs under {subpath}")
+        if len(kept) < len(files):
+            log.info("Source %r: %d of %d graphs match %r; the rest are skipped.",
+                     source, len(kept), len(files), pattern)
+        files = kept
+    return files
+
+
+def fetch_graph_file(repo_path: str, token: str | None = None) -> Path:
+    """Download one graph JSON (cached by HF) and return its local path.
+
+    Deliberately per-file rather than `snapshot_download` of the whole folder:
+    these graphs are large (wikipedia is ~86 MB each, ~43 GB for the set), so a
+    bulk pull would cost tens of GB before the first graph is even processed,
+    and would ignore --limit entirely.
+    """
+    from huggingface_hub import hf_hub_download
+
+    return Path(_hf(
+        lambda t: hf_hub_download(HF_REPO_ID, repo_path, repo_type=HF_REPO_TYPE, token=t),
+        token,
+    ))
+
+
+def discard_download(path: Path) -> None:
+    """Drop a cached graph file so a long run does not fill the disk."""
+    try:
+        blob = path.resolve()
+        if path.is_symlink():
+            path.unlink(missing_ok=True)
+        if blob.exists():
+            blob.unlink()
+    except OSError as exc:
+        log.debug("Could not discard %s: %s", path, exc)
 
 
 # The viewer's index file lives alongside the graphs in test_graphs/ — it is a
@@ -501,15 +608,25 @@ def build_one(
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Build shareable Neuronpedia links from our capital test_graphs.",
+        description="Build shareable Neuronpedia links from our test_graphs on HuggingFace.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
+    parser.add_argument("--source", default=DEFAULT_SOURCE, choices=sorted(SOURCES),
+                        help="Which test_graphs folder to pull. Sets the default CSV name.")
     parser.add_argument("--slug-prefix", default=SLUG_PREFIX,
                         help="Prefix for the Neuronpedia graph slug (keeps it globally unique).")
     parser.add_argument("--limit", type=int, default=None,
-                        help="Only process the first N graphs.")
-    parser.add_argument("--out", type=Path, default=VIEWING_DIR / f"links_{SOURCE}.csv",
-                        help="Output CSV. Doubles as the resume state.")
+                        help="Only process the first N graphs (default: all of them).")
+    parser.add_argument("--include", default=None,
+                        help="Filename glob selecting which graphs to process. Defaults to "
+                             "the source's SOURCE_INCLUDE entry (neuronpedia: '*_ours*', which "
+                             "leaves out the manual replication graphs). Pass '*' for all.")
+    parser.add_argument("--discard-downloads", action="store_true",
+                        help="Delete each graph JSON after use, keeping peak disk at one "
+                             "graph. The big sets are 43-51 GB; the cost is that re-runs "
+                             "and verification must download again.")
+    parser.add_argument("--out", type=Path, default=None,
+                        help="Output CSV (default: links_<source>.csv). Doubles as the resume state.")
     parser.add_argument("--graphs-dir", type=Path, default=None,
                         help="Use this local test_graphs dir instead of pulling from HF.")
     parser.add_argument("--download-only", action="store_true",
@@ -552,36 +669,63 @@ def load_env_file() -> None:
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
     load_env_file()
+    if args.out is None:
+        args.out = VIEWING_DIR / f"links_{args.source}.csv"
 
+    hf_token = os.environ.get("HF_TOKEN")
+
+    # Each entry is (slug, fetch) — `fetch` returns the local path, downloading
+    # the graph only when we are about to read it.
     if args.graphs_dir:
-        graphs_dir = args.graphs_dir
-        if not graphs_dir.is_dir():
-            raise SystemExit(f"--graphs-dir {graphs_dir} is not a directory")
+        if not args.graphs_dir.is_dir():
+            raise SystemExit(f"--graphs-dir {args.graphs_dir} is not a directory")
+        local_files = find_graph_files(args.graphs_dir, args.limit)
+        if not local_files:
+            raise SystemExit(f"No graph JSONs found in {args.graphs_dir}")
+        entries = [(f.stem, (lambda f=f: f)) for f in local_files]
+        where = str(args.graphs_dir)
     else:
-        graphs_dir = download_graphs(SOURCE, token=os.environ.get("HF_TOKEN"))
+        repo_paths = list_source_files(args.source, token=hf_token, include=args.include)
+        total = len(repo_paths)
+        if args.limit is not None:
+            repo_paths = repo_paths[: args.limit]
+        entries = [
+            (rp.rsplit("/", 1)[-1][: -len(".json")], (lambda rp=rp: fetch_graph_file(rp, hf_token)))
+            for rp in repo_paths
+        ]
+        where = f"{HF_REPO_ID}/{SOURCES[args.source]}"
+        if args.limit is not None and args.limit < total:
+            log.info("Source %r has %d graphs; --limit %d selected.", args.source, total, args.limit)
 
-    files = find_graph_files(graphs_dir, args.limit)
-    if not files:
-        raise SystemExit(f"No graph JSONs found in {graphs_dir}")
-    log.info("Found %d graph JSON(s) in %s", len(files), graphs_dir)
+    if not entries:
+        raise SystemExit("Nothing to do — --limit selected no graphs.")
+    log.info("%d graph(s) from %s", len(entries), where)
 
     # Checkpoint (a): confirm every graph on disk parses and carries a view.
     if args.download_only or args.dry_run:
         ok = 0
-        for path in files:
+        for slug, fetch in entries:
+            path = None
             try:
+                path = fetch()
                 view = load_view(path, include_pinned_clerps=args.include_pinned_clerps)
             except Exception as exc:  # noqa: BLE001
-                log.error("%s — UNREADABLE: %s", path.name, exc)
+                log.error("%s — UNREADABLE: %s", slug, exc)
+                if args.discard_downloads and path is not None:
+                    discard_download(path)
                 continue
             ok += 1
+            over = " OVER TOKEN CAP" if view.prompt_token_count > GRAPH_MAX_TOKENS else ""
             log.info(
-                "%s -> %s | prompt=%r | pinned=%d supernodes=%d clerps=%d",
-                path.name, make_graph_slug(args.slug_prefix, view.slug), view.prompt,
-                len(view.pinned_ids), len(view.supernodes), len(view.clerps),
+                "%s -> %s | tokens=%d%s | pinned=%d supernodes=%d clerps=%d | prompt=%r",
+                path.name, make_graph_slug(args.slug_prefix, view.slug),
+                view.prompt_token_count, over,
+                len(view.pinned_ids), len(view.supernodes), len(view.clerps), view.prompt,
             )
-        log.info("%d/%d graphs readable (prompt + qParams).", ok, len(files))
-        return 0 if ok == len(files) else 1
+            if args.discard_downloads:
+                discard_download(path)
+        log.info("%d/%d graphs readable (prompt + qParams).", ok, len(entries))
+        return 0 if ok == len(entries) else 1
 
     if not os.environ.get("NEURONPEDIA_API_KEY"):
         raise SystemExit("NEURONPEDIA_API_KEY is not set (get one at neuronpedia.org/account).")
@@ -604,19 +748,29 @@ def main(argv: list[str] | None = None) -> int:
         "edge_threshold": args.edge_threshold,
     }
 
-    succeeded, skipped, failed = 0, 0, 0
-    for index, path in enumerate(files, 1):
-        slug = path.stem
+    succeeded, skipped, no_view, failed = 0, 0, 0, 0
+    for index, (slug, fetch) in enumerate(entries, 1):
         if slug in done:
             skipped += 1
             continue
 
-        log.info("[%d/%d] %s", index, len(files), slug)
-        stage = "parse"
+        log.info("[%d/%d] %s", index, len(entries), slug)
+        stage = "download"
+        path = None
         try:
+            path = fetch()
+            stage = "parse"
             view = load_view(path, include_pinned_clerps=args.include_pinned_clerps)
             if not view.supernodes:
-                raise ValueError("no supernodes in qParams — nothing to overlay")
+                # Not a failure — there is simply no view of ours to overlay.
+                log.info("  no supernodes in qParams — skipping (nothing to overlay)")
+                no_view += 1
+                continue
+            if view.prompt_token_count > GRAPH_MAX_TOKENS:
+                raise ValueError(
+                    f"prompt is {view.prompt_token_count} tokens, over Neuronpedia's "
+                    f"{GRAPH_MAX_TOKENS}-token generate cap"
+                )
             graph_slug = make_graph_slug(args.slug_prefix, view.slug)
             log.info("  pinned=%d supernodes=%d clerps=%d",
                      len(view.pinned_ids), len(view.supernodes), len(view.clerps))
@@ -631,6 +785,9 @@ def main(argv: list[str] | None = None) -> int:
             append_row(failures_path, FAILURE_FIELDS,
                        {"slug": slug, "stage": stage, "error": str(exc)[:500]})
             continue
+        finally:
+            if args.discard_downloads and path is not None:
+                discard_download(path)
 
         append_row(args.out, CSV_FIELDS, {
             "slug": view.slug,
@@ -642,10 +799,11 @@ def main(argv: list[str] | None = None) -> int:
         succeeded += 1
         log.info("  -> %s", url)
 
-        if args.sleep and index < len(files):
+        if args.sleep and index < len(entries):
             time.sleep(args.sleep)
 
-    log.info("Done. %d built, %d skipped (already in CSV), %d failed.", succeeded, skipped, failed)
+    log.info("Done. %d built, %d skipped (already in CSV), %d skipped (no groupings), "
+             "%d failed.", succeeded, skipped, no_view, failed)
     if failed:
         log.info("Failures logged to %s — re-run to retry them.", failures_path)
     log.info("Links -> %s", args.out)
